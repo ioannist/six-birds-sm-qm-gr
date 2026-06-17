@@ -1,0 +1,4 @@
+handle,computed_result,classification,selection_status
+closure_chain,blind_for_all_active_N,intrinsic_closure_blindness,not_a_selector
+minimality,N=1,negative_control,selects_non_observed_active_minimum
+cp_phase_count,lower_bound_N=3,recognition_source_lower_bound,bound_not_selection

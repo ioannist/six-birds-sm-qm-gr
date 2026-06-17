@@ -1,0 +1,41 @@
+{
+  "CS_count": 8,
+  "CS_support_ids": [
+    "support_00",
+    "support_01",
+    "support_02",
+    "support_03",
+    "support_04",
+    "support_05",
+    "support_06",
+    "support_07"
+  ],
+  "RS_count": 4,
+  "RS_equals_CS": false,
+  "RS_not_subset_CS": false,
+  "RS_proper_subset_CS": true,
+  "RS_subset_CS": true,
+  "RS_support_ids": [
+    "support_00",
+    "support_01",
+    "support_02",
+    "support_05"
+  ],
+  "active_residual": "clean-separation recognition source currently introduced",
+  "anti_circularity_pass": true,
+  "carrier_rows": 12,
+  "frame_transfer_certified": false,
+  "main_object": "record-stability descent to gauge-layer carrier",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "stress record-stability on a broader carrier and seek independent record-layer evidence; grounding is relocated upward, not final",
+  "nonclean_failure_witness": "support_08",
+  "orientation": "ATTEMPT_record_stability_parent_layer_descent",
+  "proper_subset_witness": "support_03",
+  "root_landed": false,
+  "six_gates_pass": true,
+  "step": 57,
+  "target_in_RS": true,
+  "target_support_id": "support_05",
+  "verdict": "LAND_RECORD_STABILITY_PROPER_SUBSET"
+}

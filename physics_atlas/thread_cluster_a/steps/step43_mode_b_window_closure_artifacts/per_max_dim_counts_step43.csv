@@ -1,0 +1,6 @@
+max_dim,structures_total,structures_exact,structures_skipped,corrected_carrier,atomic_rewrite_packaging,consistency_completeness,corrected_chirality_faithful,higher_layer_mass_closure,clean_separation_delta_empty
+2,3,2,1,7386,58,50,0,0,0
+3,6,3,3,2408,78,64,64,8,8
+4,10,4,6,2196,20,16,16,4,0
+5,15,7,8,1577,12,12,12,0,0
+6,21,11,10,1873,12,12,12,0,0

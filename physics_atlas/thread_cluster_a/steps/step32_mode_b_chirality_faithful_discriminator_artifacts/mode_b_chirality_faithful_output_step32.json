@@ -1,0 +1,24 @@
+{
+  "carrier_principles": [
+    "atomic_rewrite_packaging",
+    "closure_consistency_completeness"
+  ],
+  "conjoined_survivor_count": 399,
+  "dominance_broken": false,
+  "frame_transfer_certified": false,
+  "landed": false,
+  "mode": "ModeB_chirality_faithful_discriminator",
+  "narrow_progress": true,
+  "new_physics_claim": false,
+  "new_principle": "chirality_faithfulness",
+  "next_grammar_delta": "conjoin an F24 role-obstruction selector or a stronger P6 audit-saturation ledger inside the chirality-faithful consistency-complete pool",
+  "reproduced_step31_count": 513,
+  "root_landed": false,
+  "step": 32,
+  "target_distinguished": false,
+  "target_passes_conjunction": true,
+  "target_passes_step31": true,
+  "target_structure_is_post_dominant": false,
+  "typed_no_go": false,
+  "verdict": "NARROW"
+}

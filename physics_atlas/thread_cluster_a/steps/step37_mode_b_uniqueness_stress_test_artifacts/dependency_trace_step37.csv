@@ -1,0 +1,4 @@
+predicate_component,primitive,role
+step35_survivors,higher-layer descent,Reuse the 12 mass-closure survivors before the old factor-local refinement.
+precise_unbroken_subgroup,P4/P6 closure staging,"Compute unbroken non-abelian subgroups after scalar breaking, including partial breaking inside a factor."
+scalar_stage_currency_minimum,currency,Minimize the scalar-stage currency tuple among precise subgroup survivors.

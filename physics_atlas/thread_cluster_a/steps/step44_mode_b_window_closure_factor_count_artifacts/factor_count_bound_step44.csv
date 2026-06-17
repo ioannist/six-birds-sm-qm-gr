@@ -1,0 +1,2 @@
+bound,status,covered_structures,obstructed_structures,structural_scope,remaining_scope_limit
+factor_count_ge_3_route_incidence_bound,structural-arguable-within-finite-component-cap,35,35,all factor counts >=3 inside the same component cap: min all-factor component dimension is at least 2^k > cap,component cap and representation alphabet are finite carrier inputs

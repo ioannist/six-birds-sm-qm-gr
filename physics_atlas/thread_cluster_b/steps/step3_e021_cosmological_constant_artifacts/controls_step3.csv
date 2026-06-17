@@ -1,0 +1,5 @@
+control_id,expected,obstruction_count,unaudited_counterterm_tracked,passes_guard,witness
+derivation_control_clean_UV_to_Lambda_fails,fails_clean_descent,4,False,True,0-1;0-2;1-2;3-4
+descending_control_UV_coupling_factors,factors,0,,True,none
+booked_ledger_monotone_nonvacuous,remaining_log_mismatch_monotone_decreases,,,True,12.0->8.0->4.0->0.0
+mismatch_ratio_marked_toy,ratio_not_presented_as_real_value,,,True,ratio=1000000000000.0; status=toy_modeled_not_real_120

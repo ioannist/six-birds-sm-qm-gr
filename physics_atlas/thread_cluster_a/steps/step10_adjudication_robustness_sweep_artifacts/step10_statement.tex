@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+
+\title{Cluster A Step 10: Robustness Sweep for E043 Adjudication}
+\author{Six Birds Physics Atlas}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Bounded Grade}
+
+This is a finite-grammar robustness sweep for the Step 6 E043 degeneracy audit. It tests whether the qualitative collapse-vs-landscape adjudication is stable across changes in threshold, width schedules, and grid resolution. It does not compute a physical value or settle a real mechanism.
+
+\section*{Sweep}
+
+The sweep covers 9520 cells:
+
+\begin{itemize}
+\item significance thresholds from 0.02 to 0.80,
+\item broad final widths from 1.00 to 4.00,
+\item sharp final widths from 0.02 to 1.00,
+\item the exact Step 6 grid plus log and linear grids at 6, 12, 24, and 48 points over two ranges.
+\end{itemize}
+
+A cell holds when the broad family remains multiply supported and the sharp family collapses to one significant point.
+
+\section*{Result}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Class & Cells & Fraction \\
+\midrule
+Verdict holds & 4922 & 0.517016806723 \\
+Flip & 4598 & 0.482983193277 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The sweep includes both holds and flips, so the test is not automatically passing.
+
+\section*{Step 6 Operating Point}
+
+The Step 6 point is threshold 0.25, broad final width 2.00, sharp final width 0.10 on the exact Step 6 grid. It is classified as \texttt{VERDICT\_HOLDS}. Its broad sequence is \texttt{6->6->6->6->6->6}; its sharp sequence is \texttt{3->2->2->1->1}.
+
+The nearest same-grid flip is a \texttt{sharp\_noncollapse} cell at the same threshold and broad width but sharp final width 0.40. The normalized margin to that flip is 0.306122448980.
+
+\section*{Flip Boundaries}
+
+Two flip families occur:
+
+\begin{itemize}
+\item \texttt{sharp\_noncollapse}: wide-sharp or low-threshold regimes where the sharp family remains multiply supported; 3990 cells.
+\item \texttt{broad\_false\_collapse}: high-threshold, coarse-grid, or narrow-broad regimes where the broad family is counted as a singleton; 608 cells.
+\end{itemize}
+
+\section*{Verdict}
+
+The Step 6 adjudication is robust across an explicitly mapped region of the finite toy grammar, and the Step 6 operating point is not a one-cell edge case. The result remains bounded by the declared finite sweep and its mapped flip boundaries.
+
+\end{document}

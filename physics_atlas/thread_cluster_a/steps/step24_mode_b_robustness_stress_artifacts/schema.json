@@ -1,0 +1,41 @@
+{
+  "step": 24,
+  "mode": "ModeB_generation_stress",
+  "artifact_root": "steps/step24_mode_b_robustness_stress_artifacts",
+  "widened_enumeration": {
+    "max_factors": 6,
+    "max_rank": 6,
+    "max_u1_roles": 3,
+    "candidate_count": 3699,
+    "closing_count": 4
+  },
+  "primary_winner": {
+    "structure_id": "r1|2_u1",
+    "factor_count": 2,
+    "u1_roles": 1,
+    "ranks": "1|2",
+    "dimensions": "2|3",
+    "minimal_score": "3|5|2|1"
+  },
+  "criteria_variations": {
+    "total": 9,
+    "stable_sm_shape": 8,
+    "flips": 1,
+    "flip_reason": "factor_count_first selects SU(5)"
+  },
+  "known_alternatives": {
+    "SU(5)": "admitted_nonminimal",
+    "SO(10)": "admitted_nonminimal",
+    "SU(6)_chiral_example": "admitted_nonminimal"
+  },
+  "known_alternatives_gate_pass": true,
+  "negative_controls_pass": true,
+  "stage_ii_pass": true,
+  "six_gates_pass": true,
+  "verdict": "FRAGILE",
+  "typed_no_go": true,
+  "next_grammar_delta": "add a principled discriminator between low-rank split-sector closure and one-factor simple unification economy",
+  "new_physics_claim": false,
+  "root_landed": false,
+  "frame_transfer_certified": false
+}

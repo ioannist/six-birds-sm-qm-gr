@@ -1,0 +1,202 @@
+{
+  "step": 2,
+  "toy_name": "finite_lqg_complementarity_xi_diagnostic",
+  "orientation": "Mode A complementary recognition-import diagnostic",
+  "carrier": {
+    "audit_energy": "identity on the Step 1 finite carrier",
+    "levels": [
+      2,
+      4
+    ],
+    "native_lens": "LQG-like spin-network geometry amplitude plus spin-foam route protocol",
+    "area_shadow_price_test": "RT-like area rows from boundary entanglement ledger"
+  },
+  "results": [
+    {
+      "region_count": 2,
+      "carrier_dimension": 4,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch"
+      ],
+      "lqg_native_probe_names_used": [
+        "spin_network_geometry_amplitude",
+        "spin_foam_route_protocol"
+      ],
+      "hed_native_probe_names_reference": [
+        "boundary_entanglement_S_0",
+        "boundary_entanglement_S_1"
+      ],
+      "dissolving_surviving_probe_names": [
+        "amplitude_geometry_probe",
+        "p3_route_mismatch_probe"
+      ],
+      "lqg_on_surviving_amplitude_p3": {
+        "raw_trace": 3.3306690738754696e-16,
+        "normalized_trace": 1.5936215664475933e-16,
+        "trace_K_DD": 2.09,
+        "min_eigenvalue": 8.802883075958474e-17,
+        "max_eigenvalue": 2.4503807662796223e-16,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "lqg_on_area_shadow_price": {
+        "raw_trace": 0.9999999999999998,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 0.9999999999999998,
+        "min_eigenvalue": 0.4999999999999999,
+        "max_eigenvalue": 0.4999999999999999,
+        "Xi_matrix": [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.5
+          ]
+        ]
+      },
+      "lqg_on_uncoupled_full_toy": {
+        "raw_trace": 1.0,
+        "normalized_trace": 0.3236245954692557,
+        "trace_K_DD": 3.09
+      },
+      "hed_reference_on_surviving_amplitude_p3": {
+        "raw_trace": 2.09,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 2.09
+      },
+      "combined_lens_reference_on_uncoupled_full_toy": {
+        "raw_trace": 3.3306690738754696e-16,
+        "normalized_trace": 1.0778864316749093e-16,
+        "note": "Mode C setup reference only; not used as a root verdict in Step 2"
+      },
+      "no_overread_check": {
+        "boundary_entanglement_used_in_lqg_native_lens": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "full_root_target_collapsed_by_single_lens": false,
+        "combined_lens_only_recorded_as_mode_c_setup": true
+      }
+    },
+    {
+      "region_count": 4,
+      "carrier_dimension": 6,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "entanglement_region_2",
+        "entanglement_region_3",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch"
+      ],
+      "lqg_native_probe_names_used": [
+        "spin_network_geometry_amplitude",
+        "spin_foam_route_protocol"
+      ],
+      "hed_native_probe_names_reference": [
+        "boundary_entanglement_S_0",
+        "boundary_entanglement_S_1",
+        "boundary_entanglement_S_2",
+        "boundary_entanglement_S_3"
+      ],
+      "dissolving_surviving_probe_names": [
+        "amplitude_geometry_probe",
+        "p3_route_mismatch_probe"
+      ],
+      "lqg_on_surviving_amplitude_p3": {
+        "raw_trace": 3.3306690738754696e-16,
+        "normalized_trace": 1.5936215664475933e-16,
+        "trace_K_DD": 2.09,
+        "min_eigenvalue": 8.802883075958474e-17,
+        "max_eigenvalue": 2.4503807662796223e-16,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "lqg_on_area_shadow_price": {
+        "raw_trace": 1.0,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 1.0,
+        "min_eigenvalue": 0.25,
+        "max_eigenvalue": 0.25,
+        "Xi_matrix": [
+          [
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25
+          ]
+        ]
+      },
+      "lqg_on_uncoupled_full_toy": {
+        "raw_trace": 1.0000000000000002,
+        "normalized_trace": 0.32362459546925576,
+        "trace_K_DD": 3.09
+      },
+      "hed_reference_on_surviving_amplitude_p3": {
+        "raw_trace": 2.09,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 2.09
+      },
+      "combined_lens_reference_on_uncoupled_full_toy": {
+        "raw_trace": 3.3306690738754696e-16,
+        "normalized_trace": 1.0778864316749093e-16,
+        "note": "Mode C setup reference only; not used as a root verdict in Step 2"
+      },
+      "no_overread_check": {
+        "boundary_entanglement_used_in_lqg_native_lens": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "full_root_target_collapsed_by_single_lens": false,
+        "combined_lens_only_recorded_as_mode_c_setup": true
+      }
+    }
+  ],
+  "refinement_stability": {
+    "lqg_surviving_normalized_level_2": 1.5936215664475933e-16,
+    "lqg_surviving_normalized_level_4": 1.5936215664475933e-16,
+    "lqg_area_normalized_level_2": 1.0,
+    "lqg_area_normalized_level_4": 1.0,
+    "lqg_surviving_absolute_delta": 0.0,
+    "lqg_area_absolute_delta": 0.0,
+    "interpretation": "LQG-like lens closes surviving amplitude/P3 sector but leaves area-shadow-price sector open"
+  },
+  "verdict_from_toy": "finite-carrier complementarity diagnostic: LQG and holography close opposite uncoupled sectors"
+}

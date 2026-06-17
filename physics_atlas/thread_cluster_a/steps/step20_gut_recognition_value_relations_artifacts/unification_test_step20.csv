@@ -1,0 +1,5 @@
+test,pair,log_mu_over_mz,scale_GeV,log10_scale_GeV,spread_inverse_coupling,relative_spread,clean_unification
+pair_crossing,alpha1-alpha2,25.451908457929,1.031713664757e+13,13.013559182688,,,
+pair_crossing,alpha1-alpha3,28.628457033119,2.472388417632e+14,14.393116700390,,,
+pair_crossing,alpha2-alpha3,34.650088245217,1.019243399894e+17,17.008277907861,,,
+least_squares_best_fit,all_three,28.212895084673,1.631700472484e+14,14.212640439292,3.927292592695,0.094790454547,False

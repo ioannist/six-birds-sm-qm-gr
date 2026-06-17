@@ -1,0 +1,5 @@
+predicate_component,primitive,role
+step35_survivors,higher-layer descent,Start from the 12 mass-closure survivors.
+confining_charged_matter_content,P6 audit,Classify confining-sector charged matter as fermionic types versus massive vector content.
+standard_confining_sector,higher-layer standardness,Require confining charged matter to be fermionic only.
+circularity_check,audit,Test whether standardness is equivalent to clean separation on this carrier.

@@ -1,0 +1,3 @@
+stage_ii_check,tested_count,closed_count,passes,evidence
+chirality_requires_complex_rep,5,0,True,no structure without complex representations closes
+every_candidate_gets_computed_verdict,70,70,True,no factor count is auto-failed by the charge solver

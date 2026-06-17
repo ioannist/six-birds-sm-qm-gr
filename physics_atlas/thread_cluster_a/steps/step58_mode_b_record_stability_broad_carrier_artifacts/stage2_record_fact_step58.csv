@@ -1,0 +1,3 @@
+fact,passes,evidence
+frozen_step57_identity_record_fact,True,Step57 stage2 identity preserves two distinct record states; this step imports the same record machinery
+broad_carrier_nonvacuity,True,Step35 corrected higher-layer carrier supplies rows outside the Step57 twelve-row carrier

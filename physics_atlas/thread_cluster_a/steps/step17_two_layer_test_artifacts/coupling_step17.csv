@@ -1,0 +1,4 @@
+measure_id,left_variables,right_variables,population_size,mi_bits,threshold_bits,verdict
+scale_vs_content_product,content_block,scale_id,1288,0.000000000000,0.05,independent
+step8_ew_vs_content_residual,content_block,ew_code,468,0.035998916880,0.05,low_borderline
+gauge_generation_control,gauge_code,n_gen,468,0.466203233486,0.1,coupling_detected

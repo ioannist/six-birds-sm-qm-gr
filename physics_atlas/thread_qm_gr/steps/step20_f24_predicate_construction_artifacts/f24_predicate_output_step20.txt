@@ -1,0 +1,5 @@
+Step 20 F24 predicate construction
+L selected family: BridgeMediatedRole
+L unique: True
+All controls classify as expected: True
+Family coverage: BlockedNonClosure, BridgeMediatedRole, BudgetedRole, CoarsenedRole, HiddenUpstreamRole, MemoryLayer, OutsideRoleScope, ScopedRole

@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP37_REPRODUCE_CARRIER,ModeB,step37_mode_b_uniqueness_stress_test,determinism,"Step 37 rederives the Step-35 higher-layer survivor count as 12."
+C_CLUSTER_A_STEP37_FACTOR_LOCAL_DEMOTED,ModeB,step37_mode_b_uniqueness_stress_test,correction,"The Step-36 factor-local rule is marked diagnostic-only because it rejects single-factor structures by construction."
+C_CLUSTER_A_STEP37_PRECISE_SUBGROUP,ModeB,step37_mode_b_uniqueness_stress_test,stress_test,"The precise unbroken-subgroup test admits all 12 survivors, including the single-factor 4 family."
+C_CLUSTER_A_STEP37_CURRENCY_RELATION,ModeB,step37_mode_b_uniqueness_stress_test,diagnostic_rejected,"The scalar-stage currency minimum computes 8 diagnostic survivors in structure 2|3, but the manager override rejects it as shape-in-disguise/minimality-like."
+C_CLUSTER_A_STEP37_CONTENT_LIMIT,ModeB,step37_mode_b_uniqueness_stress_test,residual,"The accepted Step-37 result is the small neutral family {2|3,4}; no structure uniqueness is accepted at Step 37."
+C_CLUSTER_A_STEP37_GATES,ModeB,step37_mode_b_uniqueness_stress_test,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and shape-flavored detector gates pass."
+C_CLUSTER_A_STEP37_VERDICT,ModeB,step37_mode_b_uniqueness_stress_test,verdict,"Verdict is SMALL_NEUTRAL_FAMILY_currency_rescue_REJECTED."
+C_CLUSTER_A_STEP37_NONCLAIM_BOUNDARY,ModeB,step37_mode_b_uniqueness_stress_test,honesty,"Finite structure-level stress-test only; no content derivation, value derivation, or external-transfer status upgrade is supplied."

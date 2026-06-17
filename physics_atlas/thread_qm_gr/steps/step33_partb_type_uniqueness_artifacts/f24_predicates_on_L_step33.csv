@@ -1,0 +1,9 @@
+candidate,family,fires,reason,witness_metric,computed_from
+L_actual_QM_GR_joint_quotient,MemoryLayer,False,no history/record coordinate map is present,3.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,HiddenUpstreamRole,False,no latent coordinate map is present,3.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,BridgeMediatedRole,True,explicit joint quotient passes the eight native gates and carries q and s,0.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=True,0.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,ScopedRole,False,no sub-carrier restriction is declared,3.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,CoarsenedRole,False,no coarsened role readout is present,3.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps
+L_actual_QM_GR_joint_quotient,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0,finite maps q_map role_map joint_map gate_metrics residual_records scope_maps

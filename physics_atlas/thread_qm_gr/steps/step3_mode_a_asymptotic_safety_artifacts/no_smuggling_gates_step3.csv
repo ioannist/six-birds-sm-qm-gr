@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_named_source_declared,pass,"lead import","The lead is declared before the audit as asymptotic safety: Weinberg's fixed-point scenario plus Reuter's nonperturbative gravitational RG flow.","Use only the UV-fixed-point route-closure row in Step 3."
+G2_target_lineage_non_equivalence,pass_for_child_fail_for_root,"lineage","Asymptotic safety is a specific continuum RG scenario for the P3 obstruction, not the full E018 root and not a coupled joint object.","Record P3-only child residual."
+G3_typed_carrier_and_lens,pass,"finite toy","The Step 1/2 carrier is reused; the AS-like native lens spans only p3_route_mismatch.","Keep amplitude and area tests separate."
+G4_no_silent_status_upgrade,pass,"recognition status","The fixed point and finite critical surface remain assumptions; truncation dependence and Lorentzian/predictivity caveats are carried.","Do not promote evidence to accepted root status."
+G5_scope_complementarity_recorded,pass,"amplitude and area sectors","Under the AS-like lens, amplitude(geometry) and area-shadow sectors each have normalized Xi = 1.0 at both refinement levels.","Record AS as P3-only."
+G6_no_answer_row_overread,pass,"finite toy","The native AS lens excludes boundary entanglement and bulk geometry-amplitude rows; no fixed background or Planck constant is inserted.","Leave coupling to Mode C/B."

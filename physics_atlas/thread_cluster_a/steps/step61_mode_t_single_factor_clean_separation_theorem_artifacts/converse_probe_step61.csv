@@ -1,0 +1,8 @@
+N,closers_checked,scalar_candidates,single_factor_substrate_count,leak_positive_count,single_factor_clean_count,counterexample_found,counterexample_support_key
+2,1630,64,0,0,0,False,
+3,85,54,0,0,0,False,
+4,56,43,12,12,0,False,
+5,20,32,0,0,0,False,
+6,20,32,0,0,0,False,
+7,0,10,0,0,0,False,
+8,0,10,0,0,0,False,

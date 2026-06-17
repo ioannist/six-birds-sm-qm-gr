@@ -1,0 +1,23 @@
+{
+  "step": 24,
+  "verdict": {
+    "derived_audit_verdict": "derived_audits_differ_reconciliation_is_sourcing_T_of_psi",
+    "born_and_stress_energy_same_audit": false,
+    "sourcing_T_of_psi": true
+  },
+  "guardrails": {
+    "audits_derived_from_psi": true,
+    "coherence_computed": true,
+    "sourcing_computed": true,
+    "root_landed": false
+  },
+  "summary": {
+    "density_equal_residual": 0.6944644768578695,
+    "density_proportional_residual": 0.5207123913178113,
+    "transport_equal_residual": 1.2894307568321801,
+    "transport_proportional_residual": 0.9994686548331937,
+    "direct_sourcing_residual": 0.0,
+    "T00_shared_audit_test_residual": 0.401568901271731,
+    "T0i_shared_audit_test_residual": 0.5443048422989993
+  }
+}

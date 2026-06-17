@@ -1,0 +1,73 @@
+{
+  "step": 14,
+  "orientation": "Mode B rung-coherence test: refinement stability on neutral currency",
+  "active_residual": "R_child_E018_after_RUNG2_NEUTRAL_CURRENCY_candidate",
+  "carrier": {
+    "type": "Step-13 neutral currency carrier with refinement lift",
+    "levels": [1, 2, 3],
+    "transitions": ["1->2", "2->3"],
+    "currency_modes": ["d0_neutral_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "dimensions": {
+      "d_qm": 3,
+      "d_gr": 3,
+      "d_u": 4,
+      "d_union": 6
+    },
+    "no_smuggling_controls": {
+      "identity_lift_used": false,
+      "trivial_lift_used": false,
+      "mixing_control_passes": false,
+      "circular_distance_from_self_used": false,
+      "one_hot_set_cover_used": false,
+      "target_layer_inserted": false,
+      "endpoint_derivation_claimed": false,
+      "literature_program_terms_used": false,
+      "step13_currency_loaded": true
+    }
+  },
+  "candidate_move": {
+    "id": "RUNG_1_ON_RUNG_2_REFINEMENT_STABILITY",
+    "description": "Test whether the compressed neutral currency survives nontrivial refinement while preserving both endpoint shadows.",
+    "structural_constraint": "The currency lift must commute with both shadow maps and preserve the shared modes plus the two shadow kernels."
+  },
+  "final_verdict": {
+    "type": "refinement_stable_candidate_external_review_required",
+    "root_landed": false,
+    "rung_coherence_passes": true,
+    "external_review_required": true,
+    "next_move": "RUNG_3_AUDIT_ON_REFINEMENT_STABLE_CURRENCY"
+  },
+  "track_fields": {
+    "commutator_residuals": {
+      "stable_commutator_max": 0.0,
+      "mixing_commutator_min": 0.5612486080160912,
+      "observed_range": [0.0, 0.5612486080160912]
+    },
+    "lift_nontriviality": {
+      "transition_1_to_2_shape": [32, 16],
+      "transition_2_to_3_shape": [64, 32],
+      "expansion_ratio": 2.0,
+      "identity_shape": false
+    },
+    "compression_and_distinctness": {
+      "compression_survives": true,
+      "distinct_shadows_survive": true,
+      "mixing_rejected_by_commutator": true
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A currency-compatible refinement must commute with both endpoint shadows."
+    ],
+    "analytical_structural": [
+      "Finite-carrier diagnostic: stable block refinement has zero commutator residual; mode-mixing refinement has residual 0.5612486080160912."
+    ],
+    "organizational_audit": [
+      "The structural constraint is recorded as the successor obligation for RUNG_3."
+    ],
+    "remaining_external_content": [
+      "External review must decide whether this finite-carrier refinement constraint has physical reach."
+    ]
+  }
+}
+

@@ -1,0 +1,6 @@
+gate,passes,evidence
+primitive_exclusion,True,no quotient label is supplied to the solver
+dependency_trace,True,Step48 classes and Step50 charge conventions declared
+negative_control,True,incommensurate charge control gives Z1
+uniform_application,True,target-blind center scoring
+honest_verdict,True,both classes have nontrivial centers

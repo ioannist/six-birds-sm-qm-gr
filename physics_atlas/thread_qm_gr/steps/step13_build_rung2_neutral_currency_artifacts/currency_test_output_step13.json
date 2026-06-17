@@ -1,0 +1,42 @@
+{
+  "step": 13,
+  "rung_id": "RUNG_2_NEUTRAL_CURRENCY",
+  "dimensions": {
+    "d_qm": 3,
+    "d_gr": 3,
+    "d_u": 4,
+    "d_union": 6
+  },
+  "observed_residuals": {
+    "neutral_recovery_max": 9.916641414829509e-17,
+    "placeholder_recovery_min": 1.4142135623730951,
+    "union_recovery_max": 9.916641414829509e-17,
+    "collapse_recovery_min": 1.8808144464156678,
+    "endpoint_nonfactorization_min": 0.37808491927495375
+  },
+  "verdict": {
+    "neutral_currency_built": true,
+    "neutral_recovery_passes": true,
+    "compression_passes": true,
+    "distinct_shadows": true,
+    "placeholder_fails": true,
+    "union_fails_compression": true,
+    "collapse_fails": true,
+    "nonfactorizing": true
+  },
+  "no_smuggling_check": {
+    "one_hot_set_cover_used": false,
+    "circular_distance_from_u_used": false,
+    "target_layer_inserted": false,
+    "endpoint_derivation_claimed": false,
+    "literature_program_terms_used": false,
+    "union_control_passes": false,
+    "placeholder_control_passes": false,
+    "collapse_control_passes": false,
+    "d_u_ge_d_union": false,
+    "shadow_maps_equal": false,
+    "step10_currency_mismatch_loaded": false,
+    "step12_union_rejected": true
+  },
+  "next_move": "RETEST_RUNG_1_REFINE_FIXEDPOINT_ON_NEUTRAL_CURRENCY"
+}

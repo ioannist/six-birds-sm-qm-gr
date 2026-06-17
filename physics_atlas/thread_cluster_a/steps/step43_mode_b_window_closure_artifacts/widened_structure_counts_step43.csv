@@ -1,0 +1,56 @@
+dimensions,factor_count,max_dim,coverage_mode,field_type_count,raw_solution_count,corrected_carrier,atomic_rewrite_packaging,consistency_completeness,corrected_chirality_faithful,higher_layer_mass_closure,clean_separation_delta_empty,target_passes_clean,coverage_note
+2,1,2,exact_full_chain,64,16180,730,2,2,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+3,1,3,exact_full_chain,54,850,85,49,49,49,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+4,1,4,exact_full_chain,43,560,56,20,16,16,4,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+5,1,5,exact_full_chain,32,200,20,12,12,12,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+6,1,6,exact_full_chain,32,200,20,12,12,12,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+2|2,2,2,exact_full_chain,162,396000,6656,56,48,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+2|3,2,3,exact_full_chain,152,53250,2153,29,15,15,8,8,True,one/two-factor structures through dimension 6 are exactly enumerated
+2|4,2,4,exact_full_chain,97,29790,1754,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+2|5,2,5,exact_full_chain,86,20080,1120,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+2|6,2,6,exact_full_chain,86,20080,1120,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+3|3,2,3,exact_full_chain,98,1700,170,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+3|4,2,4,exact_full_chain,87,2260,226,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+3|5,2,5,exact_full_chain,76,1050,105,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+3|6,2,6,exact_full_chain,76,1050,105,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+4|4,2,4,exact_full_chain,76,1600,160,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+4|5,2,5,exact_full_chain,65,960,96,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+4|6,2,6,exact_full_chain,65,960,96,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+5|5,2,5,exact_full_chain,54,400,40,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+5|6,2,6,exact_full_chain,54,400,40,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+6|6,2,6,exact_full_chain,54,400,40,0,0,0,0,0,False,one/two-factor structures through dimension 6 are exactly enumerated
+2|2|2,3,2,not_exact_enumerated,172,,,,,,,,,three-factor branch type_count=172 exceeds the declared sample limit 90; retained in the coverage ledger
+2|2|3,3,3,not_exact_enumerated,162,,,,,,,,,three-factor branch type_count=162 exceeds the declared sample limit 90; retained in the coverage ledger
+2|2|4,3,4,not_exact_enumerated,151,,,,,,,,,three-factor branch type_count=151 exceeds the declared sample limit 90; retained in the coverage ledger
+2|2|5,3,5,not_exact_enumerated,140,,,,,,,,,three-factor branch type_count=140 exceeds the declared sample limit 90; retained in the coverage ledger
+2|2|6,3,6,not_exact_enumerated,140,,,,,,,,,three-factor branch type_count=140 exceeds the declared sample limit 90; retained in the coverage ledger
+2|3|3,3,3,not_exact_enumerated,152,,,,,,,,,three-factor branch type_count=152 exceeds the declared sample limit 90; retained in the coverage ledger
+2|3|4,3,4,not_exact_enumerated,141,,,,,,,,,three-factor branch type_count=141 exceeds the declared sample limit 90; retained in the coverage ledger
+2|3|5,3,5,not_exact_enumerated,130,,,,,,,,,three-factor branch type_count=130 exceeds the declared sample limit 90; retained in the coverage ledger
+2|3|6,3,6,not_exact_enumerated,130,,,,,,,,,three-factor branch type_count=130 exceeds the declared sample limit 90; retained in the coverage ledger
+2|4|4,3,4,not_exact_enumerated,130,,,,,,,,,three-factor branch type_count=130 exceeds the declared sample limit 90; retained in the coverage ledger
+2|4|5,3,5,not_exact_enumerated,119,,,,,,,,,three-factor branch type_count=119 exceeds the declared sample limit 90; retained in the coverage ledger
+2|4|6,3,6,not_exact_enumerated,119,,,,,,,,,three-factor branch type_count=119 exceeds the declared sample limit 90; retained in the coverage ledger
+2|5|5,3,5,not_exact_enumerated,108,,,,,,,,,three-factor branch type_count=108 exceeds the declared sample limit 90; retained in the coverage ledger
+2|5|6,3,6,not_exact_enumerated,108,,,,,,,,,three-factor branch type_count=108 exceeds the declared sample limit 90; retained in the coverage ledger
+2|6|6,3,6,not_exact_enumerated,108,,,,,,,,,three-factor branch type_count=108 exceeds the declared sample limit 90; retained in the coverage ledger
+3|3|3,3,3,not_exact_enumerated,142,,,,,,,,,three-factor branch type_count=142 exceeds the declared sample limit 90; retained in the coverage ledger
+3|3|4,3,4,not_exact_enumerated,131,,,,,,,,,three-factor branch type_count=131 exceeds the declared sample limit 90; retained in the coverage ledger
+3|3|5,3,5,not_exact_enumerated,120,,,,,,,,,three-factor branch type_count=120 exceeds the declared sample limit 90; retained in the coverage ledger
+3|3|6,3,6,not_exact_enumerated,120,,,,,,,,,three-factor branch type_count=120 exceeds the declared sample limit 90; retained in the coverage ledger
+3|4|4,3,4,not_exact_enumerated,120,,,,,,,,,three-factor branch type_count=120 exceeds the declared sample limit 90; retained in the coverage ledger
+3|4|5,3,5,not_exact_enumerated,109,,,,,,,,,three-factor branch type_count=109 exceeds the declared sample limit 90; retained in the coverage ledger
+3|4|6,3,6,not_exact_enumerated,109,,,,,,,,,three-factor branch type_count=109 exceeds the declared sample limit 90; retained in the coverage ledger
+3|5|5,3,5,not_exact_enumerated,98,,,,,,,,,three-factor branch type_count=98 exceeds the declared sample limit 90; retained in the coverage ledger
+3|5|6,3,6,not_exact_enumerated,98,,,,,,,,,three-factor branch type_count=98 exceeds the declared sample limit 90; retained in the coverage ledger
+3|6|6,3,6,not_exact_enumerated,98,,,,,,,,,three-factor branch type_count=98 exceeds the declared sample limit 90; retained in the coverage ledger
+4|4|4,3,4,not_exact_enumerated,109,,,,,,,,,three-factor branch type_count=109 exceeds the declared sample limit 90; retained in the coverage ledger
+4|4|5,3,5,not_exact_enumerated,98,,,,,,,,,three-factor branch type_count=98 exceeds the declared sample limit 90; retained in the coverage ledger
+4|4|6,3,6,not_exact_enumerated,98,,,,,,,,,three-factor branch type_count=98 exceeds the declared sample limit 90; retained in the coverage ledger
+4|5|5,3,5,exact_sample_full_chain,87,1360,136,0,0,0,0,0,False,three-factor branch type_count=87 is within the declared tractable sample limit
+4|5|6,3,6,exact_sample_full_chain,87,1360,136,0,0,0,0,0,False,three-factor branch type_count=87 is within the declared tractable sample limit
+4|6|6,3,6,exact_sample_full_chain,87,1360,136,0,0,0,0,0,False,three-factor branch type_count=87 is within the declared tractable sample limit
+5|5|5,3,5,exact_sample_full_chain,76,600,60,0,0,0,0,0,False,three-factor branch type_count=76 is within the declared tractable sample limit
+5|5|6,3,6,exact_sample_full_chain,76,600,60,0,0,0,0,0,False,three-factor branch type_count=76 is within the declared tractable sample limit
+5|6|6,3,6,exact_sample_full_chain,76,600,60,0,0,0,0,0,False,three-factor branch type_count=76 is within the declared tractable sample limit
+6|6|6,3,6,exact_sample_full_chain,76,600,60,0,0,0,0,0,False,three-factor branch type_count=76 is within the declared tractable sample limit

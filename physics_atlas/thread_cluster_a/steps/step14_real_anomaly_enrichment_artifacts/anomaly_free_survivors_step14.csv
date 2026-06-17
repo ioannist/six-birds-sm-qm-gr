@@ -1,0 +1,8 @@
+candidate_id,group,selected_reference,equivalent_by_normalization,survivor_status,description
+SM_one_generation,SU3xSU2xU1,True,False,reference,Actual one-generation chiral SM content in left-handed convention
+SM_plus_vectorlike_lepton,SU3xSU2xU1,False,False,unselected_survivor,SM plus a vector-like electroweak doublet pair
+SM_plus_vectorlike_down,SU3xSU2xU1,False,False,unselected_survivor,SM plus a vector-like colored singlet pair
+SM_plus_sterile_neutrino,SU3xSU2xU1,False,False,unselected_survivor,SM plus one gauge-sterile right-neutrino conjugate
+hypercharge_label_swapped,SU3xSU2xU1,False,False,unselected_survivor,Anomaly-free solution with the two color singlet hypercharges exchanged
+scaled_hypercharge_x2,SU3xSU2xU1,False,True,unselected_survivor,Overall U(1) normalization scaled by two
+SU5_10_plus_5bar_decomposition,SU5_style_decomposed_to_SU3xSU2xU1,False,False,unselected_survivor,SU(5)-style 10 plus 5bar decomposed into one SM generation

@@ -1,0 +1,4 @@
+reading_id,support_id,component_id,left_state,right_state,left_value,right_value
+dynamical_breaking_reading,support_08,dynamical_breaking_reading_orbit_0,lepton,q_blue,0,1/3
+dynamical_breaking_reading,support_08,dynamical_breaking_reading_orbit_0,lepton,q_green,0,1/3
+dynamical_breaking_reading,support_08,dynamical_breaking_reading_orbit_0,lepton,q_red,0,1/3

@@ -1,0 +1,5 @@
+variation,population_size,sum_marginal_entropy_bits,joint_entropy_bits,total_correlation_bits,max_possible_sumH_bits,threshold_bits,verdict
+neutral_product,8640,13.076815597051,13.076815597053,0.000000000000,13.076815597051,0.01,independent_neutral_control
+structural_survivors,468,11.099669201047,8.870364719583,2.229304481463,11.099669201047,0.01,block_structured_coupling
+strict_naturalness_le_1,341,10.467261222836,8.413627929024,2.053633293812,10.467261222836,0.01,coupled_single_component
+subsample_80_seed_20260606,374,11.059168857271,8.546894459888,2.512274397383,11.059168857271,0.01,block_structured_coupling

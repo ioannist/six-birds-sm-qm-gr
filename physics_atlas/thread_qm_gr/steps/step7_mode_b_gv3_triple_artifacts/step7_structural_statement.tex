@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 7 Structural Statement: Bounded \(G_{v3}\) Triple-Audit No-Go}
+
+\begin{definition}[Bounded grammar \(G_{v3}\)]
+The grammar \(G_{v3}\) inherits the filtered rows \(u_i\), \(v\), and \(w\),
+which already generate the three pairwise bridge shadows.  A new triple-audit
+atom is admissible only if it has independently declared witness content and
+generates the triple row as a shadow.  The grammar excludes the native triple
+row, the pairwise-union row, and a primitive package-coherence stipulation.
+\end{definition}
+
+\begin{definition}[Carrier and target]
+At refinement level \(r\in\{2,4\}\), let the carrier have basis
+\[
+  u_1,\ldots,u_r,\quad v,\quad w,\quad t,\quad s,
+\]
+with \(C=I\).  The inherited native lens is
+\[
+  L_{uvw}=\{u_1,\ldots,u_r,v,w\}.
+\]
+The remaining target bridge is
+\[
+  B_T=t.
+\]
+The row \(s\) is an independent witness-control coordinate with no audited map
+to \(t\).
+\end{definition}
+
+\begin{proposition}[Local saturation of \(G_{v3}\)]
+For \(r=2,4\), the accepted \(G_{v3}\) search leaves
+\[
+  \frac{\tr\,\Xi_I(B_T\mid L_{uvw})}{\tr K_{B_TB_T}}=1.0.
+\]
+The coupled target residual remains
+\[
+  \tr\,\Xi_I=1.0,\qquad
+  \frac{\tr\,\Xi_I}{\tr K_{DD}}=\frac{1}{7}=0.14285714285714285.
+\]
+Adding a row in \(\mathrm{span}(L_{uvw})\) does not change the residual.  Adding
+\(s\) without an audited map to \(t\) also does not change the residual.
+Adding \(t\) itself makes the residual vanish, but that row is excluded by the
+grammar.
+\end{proposition}
+
+\begin{proof}
+The triple row \(t\) is orthogonal to the span of \(u_i\), \(v\), and \(w\).
+Therefore the Schur residual of \(t\) relative to \(L_{uvw}\) is its full
+unit trace.  A pairwise-union row lies in the same span, so it cannot alter the
+projection of \(t\).  The independent row \(s\) is orthogonal to \(t\), and
+without an audited map \(s\mapsto t\), it contributes no projection onto the
+target row.  The only zero-control adds \(t\) itself, which is precisely the
+excluded target-row insertion.  Hence \(G_{v3}\), as declared, is saturated
+with the triple residual still present.
+\end{proof}
+
+\begin{remark}[Structurally different next approach]
+A next approach must supply a run-generated or externally recognized triple
+mechanism with independent record content.  It cannot be another native copy of
+\(t\), and it cannot be the union of the three pairwise bridge atoms.
+\end{remark}
+
+\end{document}

@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_bounded_grammar_declared_first,pass,G_v3,"mode_b_grammar_manifest.csv contains G_E018_TriplePackageAudit_v3_DECLARED_STEP7 before the Step 7 toy audit.","Keep verdict inside declared G_v3."
+G2_no_bridge_smuggling,pass,triple bridge,"The only zero-residual control inserts t directly and is rejected; accepted search keeps t non-native.","Record native insertion as formal prohibition."
+G3_target_lineage_non_equivalence,pass,no-go verdict,"The no-go does not add a target-equivalent triple source; it leaves the canonical root open.","Add residual lineage row."
+G4_pairwise_union_reject,pass,pairwise package,"The u/v/w union adds no new span and leaves triple Xi positive; it is not treated as a triple package.","Record pairwise-union prohibition."
+G5_typed_carrier_completion_audit,pass,finite toy,"Carrier, inherited rows, candidate controls, completion/audit targets, and Xi computations are declared for r=2 and r=4.","Preserve diagnostic as bounded saturation."
+G6_no_silent_landing,pass,verdict,"Accepted G_v3 search leaves triple normalized Xi 1.0, so Step 7 issues a saturation no-go.","Name structurally different next approach."

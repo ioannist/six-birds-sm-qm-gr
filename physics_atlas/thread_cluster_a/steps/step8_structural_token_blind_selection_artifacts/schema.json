@@ -1,0 +1,30 @@
+{
+  "step": 8,
+  "name": "structural token-blind selection",
+  "thread": "thread_cluster_a",
+  "mode": "construction",
+  "deterministic": true,
+  "source_steps_reused": [1, 2, 7],
+  "artifact_outputs": {
+    "neutral_space": "neutral_candidate_space_step8.csv",
+    "survivors": "structural_survivors_step8.csv",
+    "breakdown": "admissibility_breakdown_step8.csv",
+    "mi": "mi_comparison_step8.csv",
+    "generation": "neutral_generation_procedure_step8.csv",
+    "summary": "structural_summary_step8.csv"
+  },
+  "final_verdict": {
+    "type": "structural_token_blind_selection_constructed",
+    "neutral_space_size": 8640,
+    "structural_survivor_count": 468,
+    "realized_point_status": "among_structural_survivors_not_unique",
+    "realized_point_structural_rank": 2,
+    "max_score_tie_count": 6,
+    "mi_neutral_bits": 0.0,
+    "mi_survivors_bits": 0.466203233486,
+    "token_blind_structural_functional": true,
+    "derives_sm_values": false,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  }
+}

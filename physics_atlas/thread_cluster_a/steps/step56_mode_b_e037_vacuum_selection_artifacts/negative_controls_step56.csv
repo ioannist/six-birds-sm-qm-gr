@@ -1,0 +1,4 @@
+control,passes,evidence
+stabilizing_selector_RM_decays,True,0.13333333333333333->0.014918414918414918;ratio=0.11188811188811189
+per_vacuum_descent_clean,True,"{""v_alpha"": {""R1_coarse"": 0.125, ""R2_fine"": 0.0}, ""v_beta"": {""R1_coarse"": 0.125, ""R2_fine"": 0.0}}"
+RM_computed_not_literal,True,"computed from route weights, not inserted as a verdict"

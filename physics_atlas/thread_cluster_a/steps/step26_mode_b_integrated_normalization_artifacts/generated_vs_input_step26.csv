@@ -1,0 +1,5 @@
+item,status,detail
+step23_generated_minimal_closer,generated_input_from_prior_step,read from minimal_closures_step23.csv
+balance_rule,input_rule,trace-zero sector balance and dimension-weighted trace
+normalization_ratio,generated_in_this_step,5/3
+weak_mixing_relation,generated_in_this_step,3/8

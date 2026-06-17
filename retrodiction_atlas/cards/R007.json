@@ -1,0 +1,144 @@
+{
+  "id": "R007",
+  "title": "Probability forced to the structural form of a stable unresolved fiber (F23): a substrate-neutral location-of-probability normal form recovering Kolmogorov-on-fibers and (loosely) the decoherent-histories branch slot, NOT the Born rule",
+  "argument_family": "uniqueness-necessity",
+  "derivability_class": "D",
+  "scientific_domain": "Information physics / quantum foundations (probability, decoherent histories, Born rule)",
+
+  "original_card": {
+    "one_sentence_claim": "SBT's F23 theorem forces any layer-level probability into a unique structural form -- a stable weight on a fiber the lens fails to resolve -- thereby pinning WHERE the Born/branch measure must live (the unresolved record fiber) while deliberately leaving the numerical weights undetermined; it recovers the decoherent-histories 'probability lives on branches' slot, not the Born rule.",
+    "target_known_fact": "The decoherent/consistent-histories reading (Griffiths 1984) that probability lives on branch fibers -- distinct microhistories sharing a coarse class carry a stable weight assignment -- together with the Kolmogorov measure-theoretic frame and the Born |amplitude|^2 measure as the value-assignment layer that F23 explicitly does NOT determine.",
+    "minimum_viable_result": "A short bridging proposition: instantiate the already-proved F23 iff at the dephasing-induced record quotient (thm:dephase), show the quantum outcome readout fails to descend (so the fiber is Unresolved), and verify on a finite surrogate that the unresolved/resolved split tracks CD_tau>0 vs CD_tau=0. Conclusion: SBT FORCES the structural form 'probability = stable weight on the unresolved record fiber' and FORBIDS probability on resolved fibers -- recovering the decoherent-histories branch-location claim with the weights declared, not derived.",
+    "stronger_result": "A within-SBT measure-selection principle (envariance- or Gleason-type) that PRODUCES the fiber weight m and turns Stable() from an assumed predicate into a derived constraint pinning the |amplitude|^2 form, yielding a partial Born-rule derivation.",
+    "fallback_result": "F23 + the quotient-descent criterion show that on ANY finite layer, a stable probability record exists exactly on lens-unresolved fibers and is forbidden on resolved ones, with CD_tau>0 the computable witness of unresolvedness -- an honest, Lean-anchored structural classification of where probability can live (recovering Kolmogorov-on-fibers and the decoherent-histories branch slot) without any claim about quantum outcomes or numerical weights."
+  },
+
+  "theory_basis": [
+    {"component": "thm:F23 Probability as Stable Unresolved Fiber: StableProbability(q,r,lambda,m) iff Unresolved(q,r) AND Stable(Pr_{q,r}); faithful direct Lean theorem probability_as_stable_unresolved_fiber", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F23, sec:status-records-coherence:probability, lines 4790-4848)", "role": "Core forced normal form: the iff that classifies probability as a stable weight on an unresolved fiber and forbids it on resolved fibers", "verified": true, "verification_note": "Verified verbatim at lines 4790-4815; proof at 4819-4842; 'does not determine numerical probability values' at line 4844; Griffiths 'comes closest' at 4847-4848; faithful direct-theorem row at line 10087."},
+    {"component": "Quotient-descent / definability criterion: a readout descends through a quotient iff it is constant on every fiber; Unresolved = exists two histories in a fiber with different readout", "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (lem:count-definable, def 'definable from theory f' / Pi_f-measurable)", "role": "Supplies the descent dichotomy (resolved vs unresolved) that is the genuine logical content of the first F23 equivalence", "verified": true},
+    {"component": "Micro-closure deficit CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t) with exact decomposition and CD_tau=0 iff tau-closed/lumpable; CD_tau = sum_x pi(x) D_KL(p_x^tau || bar-p^tau)", "paper": "Tsiokos_2026_To_Cast_a_Stone_with_Six_Birds_A_Closure_Deficit_Account_of_Randomness_under_Packaging_and_Budget.tex (prop:cd-decomposition, prop:cd-kl, prop:cd-zero, lines 178-261)", "role": "Dynamical cousin: quantifies the within-fiber unresolved predictive residue; gives a computable nonzero witness that a fiber is genuinely unresolved", "verified": true, "verification_note": "CD_1=4.34e-17 on exactly-lumpable (line 395, explicitly 'a calibration device'); CD=0.0482 at alpha=0.5,tau=1 (line 397); prop:cd-zero CD_tau=0 iff tau-closed verified at lines 251-261."},
+    {"component": "Dephasing Delta(rho)=sum_i Pi_i rho Pi_i is exactly idempotent with fixed points = diagonal/record-classical states (Lean dephase_idem, dephase_fixed_iff_exists_diagonal)", "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex (thm:dephase, lines 401-410)", "role": "Quantum instantiation OF THE PACKAGING MAP only; the binding of F23's abstract quotient to this record basis is NOT in any paper and rests on disclaimed pointer-basis selection (line 856)", "verified": true, "verification_note": "thm:dephase + Lean tags verified at lines 401-410; single-outcome non-selection ('produces a mixture ... without specifying which outcome occurred') at line 607; pointer-basis/single-outcome disclaimer at line 856; 'No Born-rule derivation' at line 853."}
+  ],
+
+  "free_parameters": [
+    "Weight assignment m / ledger lambda (the actual measure / Born weights) -- DECLARED, not produced (the load-bearing free input; this IS the Born measure)",
+    "Quotient q (the lens) and readout r -- selected, not derived (in the quantum case fixes the disclaimed record/pointer basis)",
+    "Stability predicate Stable(Pr_{q,r}) and the declared class of allowed perturbations defining it (an opaque primitive, never constructed; F23 proof line 4839-4840)",
+    "Record/pointer basis and dephasing strength lambda fixing the outcome fibers (thm:dephase)",
+    "Staging tau and within-fiber heterogeneity controlling CD_tau in the surrogate witness",
+    "Binary choice whether to invoke the quantum binding at all, or retreat to the substrate-neutral fallback (the card offers both)"
+  ],
+
+  "auxiliary_assumptions": [
+    "A weight assignment m (the measure / Born weights) is supplied externally -- the load-bearing gap; F23 'does not determine numerical probability values'.",
+    "Stable(Pr_{q,r}) holds under a declared perturbation class; stability is assumed, not derived; the perturbation class is never constructed in prose or Lean.",
+    "Mapping 'unresolved fiber' to a quantum outcome requires the dephasing/record packaging (thm:dephase) and the standard operational/Born predictions as given; this crosses the disclaimed pointer-basis and single-outcome-selection interfaces.",
+    "Finite combinatorial setting (A_FIN): histories, quotients and readouts are finite; the continuum amplitude structure of an actual quantum branch is not represented.",
+    "The decoherent-histories branch picture (Griffiths) is the external benchmark whose 'probability-lives-on-branches' claim SBT recovers structurally; the consistency-condition (decoherence-functional off-diagonal vanishing) is NOT reconstructed."
+  ],
+
+  "audit": {
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 8,
+    "data_points_matched": 2,
+    "overfitting_risk": "high",
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "F23 is an iff parameterized by freely-chosen q (lens), r (readout), and m (weight), with the explicit statement that it 'does not determine numerical probability values'. If probability were observed on resolved fibers one would relabel the lens so the value-bearing partition becomes 'unresolved'; a non-diagonal pointer basis arises only because m is DECLARED diagonal; any normalizable non-Born m satisfies StableProbability equally. The CD_tau witness is a hand-built calibration construct. Hence the apparatus carries essentially no falsifiable directional numerical content and could 'retrodict' the opposite observation with the same freedom."
+    },
+    "audit_verdict": "HIGH FLEXIBILITY / LOW EMPIRICAL CONTENT -- honest class-D recovery, must not be read as a Born-rule derivation. Load-bearing mechanism is orbit/quotient-descent (descends iff constant on fibers), reused across >=2 facts. The genuine forced content is elementary and tautology-adjacent. ~8 adjustable DoF vs ~2 hand-built calibration data points. The only physicist-relevant quantity (|amplitude|^2 weights) is IMPORTED. Two especially damaging implicit parameters: the quantum binding 'unresolved record fiber = quantum branch' is in NO paper and crosses disclaimed pointer-basis selection; and the Stable() conjunct is an undischarged primitive over an unconstructed perturbation class. Opposite-world test FAILS. Honest as a class-D slot/location statement; over-claimed if presented as a partial Born derivation."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 2,
+    "mean_survival": 2.13,
+    "fatal_objections_present": true,
+    "recurring_fatal_objections": [
+      "No quantum instantiation of F23 exists in any paper (the five F23 instantiations are survey sampling, chain-ladder insurance, Wright-Fisher, Shannon coding, Weibull reliability); the quantum binding is the card's own admitted gap and rests on disclaimed pointer-basis + single-outcome selection. Fatal to any reading of R007 as a quantum result.",
+      "Zero falsifiable numerical content; opposite-world test fails. F23 is an iff over freely chosen q, r, m; any normalizable m satisfies it equally. Makes no prediction a quantum-foundations referee would accept.",
+      "The only object with physical content -- the Born |amplitude|^2 weights -- is imported wholesale (ledger missing-interface 'No probability valuation / Born rule'; Quantum disclaimer line 853)."
+    ],
+    "recurring_serious_objections": [
+      "Stable() carries all the would-be 'stability' content but is an opaque primitive over an undeclared perturbation class (F23 proof line 4839-4840), satisfiable by fiat -- smuggling-adjacent under the no-smuggling semantics.",
+      "'Forbids probability on resolved fibers' is tautological: a constant-on-fibers readout is deterministic (a degenerate point mass) -- a restatement of quotient-descent, not a physical constraint.",
+      "The Griffiths consistent-histories match is asserted, not reconstructed; the decoherence-functional / medium-decoherence consistency condition is reproduced nowhere.",
+      "The CD_tau benchmark numbers are hand-built calibration constructs (To_Cast_a_Stone line 393-397), not external observations; CD_tau is explicitly NOT irreversibility and NOT novelty, so using it as a quantum-branch 'unresolvedness witness' over-reads it.",
+      "'Faithful' Lean only means the prose iff (with opaque Stable) is mirrored (Foundations IV lines 9810-9823); no weights, no quantum binding, and no Stable() construction are certified."
+    ],
+    "agreed_repairs": [
+      "Promote the substrate-neutral fallback (F23 + quotient-descent + CD_tau witness) to the PRIMARY claim; quarantine the quantum binding as an explicit conjecture, not SBT content.",
+      "State up front that NO measure/weights/Born values are produced and that m is the imported Born measure, with the ledger missing-interface and the Quantum 'No Born-rule derivation' disclaimer cited inline.",
+      "Downgrade 'recovers the decoherent-histories slot' to 'is loosely analogous to the branch-location reading (Griffiths, cited as the closest interpretation)' pending an actual reconstruction of the consistency condition.",
+      "Flag Stable() as an undischarged primitive over an unconstructed perturbation class, and CD_tau as a classical-lumpability witness used only qualitatively.",
+      "Optionally prove CD_tau>0 => Unresolved(q,r) in F23's exact sense on the surrogate, to convert the location claim from relabeling into a small genuine proposition."
+    ],
+    "what_would_change_minds": "A within-SBT measure-selection principle (envariance/Gleason-type) that PRODUCES the weights m and derives the Stable() perturbation class from substrate data, turning the second F23 conjunct into a derived constraint pinning |amplitude|^2 -- combined with an actual (not asserted) reconstruction of the Griffiths consistency condition. Short of that, a written, Lean-checked quantum instantiation of F23 at the dephasing quotient that demonstrably does not re-import the answer would modestly raise scores.",
+    "individual_scores": [2, 2.5, 2, 2]
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repair_strategy": "Narrow the claim and split off the overbroad quantum-derivation reading. The skeptic panel (min 2, mean 2.13, fatal objections present) converges on one allowed move: retreat from the quantum-branch framing to the substrate-neutral statement that F23 + quotient-descent actually prove, demote 'recovers' to 'is loosely analogous', expose m as the imported Born measure and Stable() as an undischarged primitive, and (optionally) convert the qualitative CD_tau-as-witness rhetoric into a stated lemma CD_tau>0 => Unresolved. No new assumptions, no hidden tuning, no concealment of imported physics, no unproven uniqueness, no 'naturally emerges'. The quantum-binding and partial-Born-derivation readings are split off as a clearly-labeled, currently-empty research frontier (the stronger_result), not part of the surviving claim.",
+    "applied_repairs": [
+      "NARROW: primary claim restricted to the substrate-neutral, finite-layer location-of-probability normal form actually proved by F23 + the quotient-descent criterion.",
+      "SPLIT: the quantum-branch identification ('unresolved record fiber = quantum branch') is split off as an explicit interpretive conjecture that crosses disclaimed pointer-basis + single-outcome selection and appears in no paper; it is NOT part of the surviving claim.",
+      "REPLACE EXACT WITH APPROXIMATE/HONEST: 'recovers the decoherent-histories slot' downgraded to 'is loosely analogous to the branch-LOCATION reading (Griffiths, the closest cited interpretation)'.",
+      "EXPOSE IMPORTED PHYSICS: m is labeled the imported Born measure (a free declared input); the headline states no weights/Born values are produced, citing the ledger missing-interface and the Quantum 'No Born-rule derivation' disclaimer.",
+      "FLAG UNDISCHARGED PRIMITIVE: Stable() and its 'allowed perturbations' class flagged as an opaque primitive never constructed; the second conjunct is acknowledged assumed, not derived.",
+      "CONVERT RHETORIC TO LEMMA (offered): the qualitative 'CD_tau witnesses unresolvedness' is converted to a stated, provable proposition CD_tau>0 => Unresolved(q,r) on the finite surrogate, replacing the calibration-anecdote framing.",
+      "SCOPE LEAN: 'faithful' restated to mean only the prose iff (with opaque Stable) is mirrored -- no weights, no quantum binding, no Stable() construction certified."
+    ],
+    "forbidden_repairs_avoided": "Did not add arbitrary assumptions, did not hide the imported Born measure, did not claim unproven uniqueness of the weights or of the lens, did not invoke 'naturally emerges', did not retune the CD benchmark to manufacture a match.",
+    "revised_one_sentence_claim": "On any finite layer, F23 (a faithful Lean-mirrored quotient-descent iff) forces the structural normal form 'a stable probability record can sit only on a lens-unresolved fiber and is forbidden on resolved fibers', recovering the Kolmogorov-on-fibers frame and a location loosely analogous to the decoherent-histories branch slot; it produces NO measure and is NOT a Born-rule derivation, with the weights m an external (Born) input and the stability predicate an undischarged primitive.",
+    "new_minimum_viable_result": "Restate the already-proved F23 iff and the quotient-descent criterion as a substrate-neutral location-of-probability normal form; add the elementary proposition CD_tau>0 => Unresolved(q,r) on a finite Markov surrogate (witnessed numerically by CD_1=4.34e-17 on lumpable/resolved vs CD=0.0482 at alpha=0.5 on heterogeneous/unresolved); explicitly mark m as the imported Born measure and Stable() as an undischarged primitive. Deliverable: theorem restatement + one figure (CD_tau vs heterogeneity) + an honest boundary table separating the forced shell (Lean-certified) from the open weights (missing interface).",
+    "remaining_objections_after_repair": [
+      "Even repaired, the genuine forced content is elementary and tautology-adjacent (the descent dichotomy); the 'forbidden on resolved fibers' half is the degenerate deterministic case. Low discriminative power is intrinsic, not a presentation flaw.",
+      "Stable() remains an undischarged primitive; the second conjunct of F23 carries no derived content. Repairing this requires the missing measure-selection / perturbation-class construction (research-grade, absent).",
+      "The Griffiths branch-location analogy is still only loosely asserted; the consistency-condition machinery is not reconstructed, so 'analogous' cannot be upgraded to 'coincides' without new work.",
+      "No measure/weights are produced; the only physicist-relevant quantity (Born values) is imported. R007 carries no falsifiable numerical content in its current form.",
+      "The CD_tau=>Unresolved proposition, while elementary, is not yet written/Lean-checked in any paper; until it is, the link is asserted."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 4,
+    "plausibility": 4,
+    "non_ad_hocness": 3,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 1,
+    "robustness": 3,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "Localizing the Born-rule gap into a sharply-defined slot (where a measure may sit) is a genuine but modest conceptual contribution; it produces no measure and changes no empirical content, so impact is low-moderate.",
+    "execution_ease": "High: F23, dephase_idem, and the CD_tau facts are already proved/Lean-certified; the repaired deliverable is a restatement plus an elementary CD_tau=>Unresolved proposition and a figure reusing existing pipelines. Days-to-weeks.",
+    "plausibility": "High for the repaired (substrate-neutral) claim: it is exactly what F23 + quotient-descent prove. The original quantum/Born framing was implausible as a derivation; once split off, the surviving statement is solidly grounded.",
+    "non_ad_hocness": "Moderate: the orbit/quotient-descent mechanism is reused across multiple SBT results and is principled, but the Stable() conjunct is an undischarged primitive and the weights are imported, which docks it. Not bespoke, but the substantive content is thin.",
+    "discriminative_power": "Very low: the opposite-world test fails -- any normalizable m, a relabeled lens, or a non-diagonal basis satisfies the iff equally. It forbids only the degenerate deterministic case. Essentially no falsifiable directional content.",
+    "audience_legibility": "High: a Lean-certified iff with a crisp resolved/unresolved dichotomy and an explicit boundary table is exactly legible to quantum-foundations, formal-methods, and philosophy-of-physics audiences -- provided it is not mis-sold as a Born derivation.",
+    "precision": "Very low: SBT explicitly disclaims the Born rule and produces no weights/amplitudes; the disclaimer caps precision. The structural form is exact but the numerical content (the only thing a physicist would quantify) is imported.",
+    "robustness": "Moderate: the descent dichotomy and CD_tau=0-iff-lumpable facts are robust and Lean/proof-anchored; but robustness of the *physics* claim is undercut because the load-bearing weights and Stable() are external. Robust as a classification, fragile as physics.",
+    "baseline_advantage": "Very low: SBT does not beat the standard account on any empirical content -- both decoherent histories and SBT import the weights at this stage. SBT adds an auditable resolved/unresolved dichotomy plus a CD_tau witness, but the predictive object (Born values) is recovered exactly as the baseline already has it.",
+    "publication_potential": "Low-moderate: publishable only as an honest short formal note / structural-classification piece (e.g. a foundations-of-physics or formal-methods venue), explicitly NOT as a Born-rule advance. As a partial Born derivation it would be rejected; as a localized-gap reframing with Lean anchoring it is a modest, defensible note."
+  },
+
+  "triage": {
+    "proposed_bin": "E",
+    "bin_rationale": "Conceptual reframing. The surviving, repaired result is a Lean-anchored structural normal form that sharply localizes the Born-rule gap and recovers Kolmogorov-on-fibers; it produces no number and beats no baseline, so it is not A/B/C/D. It is a clean conceptual reorganization (where probability can live, and the forbidden degenerate case), best filed as a reframing with an explicit boundary table. Not F (avoid) because the substrate-neutral core is honestly true, cheap, and Lean-anchored; the danger is purely presentational (mis-citation as a Born derivation), which the repair quarantines.",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short honest formal note + reproducible finite-surrogate notebook: (1) restate the already-proved F23 iff and the quotient-descent criterion as a substrate-neutral location-of-probability normal form; (2) add and (ideally) Lean-check the elementary proposition CD_tau>0 => Unresolved(q,r), with the finite-Markov figure (CD_1=4.34e-17 resolved vs CD=0.0482 unresolved); (3) an explicit boundary table separating the Lean-certified forced shell from the imported Born weights and the undischarged Stable() primitive; (4) a clearly-labeled 'repair frontier' paragraph naming the (currently absent) envariance/Gleason-type measure-selection principle. The quantum-branch identification appears, if at all, only as a flagged conjecture crossing the disclaimed pointer-basis and single-outcome interfaces.",
+    "target_audience": [
+      "Quantum foundations researchers (decoherent/consistent histories, Born-rule program)",
+      "Mathematical physicists interested in formal/Lean-verified structural classifications",
+      "Information physicists working on emergence and coarse-graining",
+      "Philosophers of physics on the nature of probability"
+    ]
+  },
+
+  "one_line_verdict": "An honest, Lean-anchored quotient-descent normal form that locates where a probability record may sit and sharply localizes the Born-rule gap -- but produces no measure, fails the opposite-world test, and must never be read as a Born-rule derivation; file as a low-priority conceptual reframing (bin E)."
+}

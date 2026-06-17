@@ -1,0 +1,5 @@
+check,passes,witness,evidence
+substrate_not_clean_reading_in_disguise,True,carrier_00827,Step41 nonempty defect with substrate true but capacity false
+capacity_not_clean_reading_in_disguise,True,carrier_07580,positive transition leak with capacity true but substrate false
+memory_branch_nonvacuous,True,carrier_08128,clean record-stable row exists
+resolution_uses_conjunction,True,carrier_00827|carrier_07580,neither substrate nor capacity alone is equivalent to clean separation

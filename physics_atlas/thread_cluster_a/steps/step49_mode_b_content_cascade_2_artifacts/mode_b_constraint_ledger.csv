@@ -1,0 +1,3 @@
+constraint_id,status,declared_at_step,role
+step48_integer_charge_shadow,blind,48,first content shadow
+step49_yukawa_texture_shadow,blind,49,second content shadow

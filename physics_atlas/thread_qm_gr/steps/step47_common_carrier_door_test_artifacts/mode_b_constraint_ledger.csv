@@ -1,0 +1,3 @@
+constraint_id,status,description
+C_STEP47_DOOR_TEST_NO_FABRICATED_GROUNDING,active,A grounding may be claimed only if a tested law forces shared-carrier existence non-circularly.
+C_STEP47_CAN_FAIL_CONTROLS,active,Complementary-pair and non-co-sourcing controls must have teeth.

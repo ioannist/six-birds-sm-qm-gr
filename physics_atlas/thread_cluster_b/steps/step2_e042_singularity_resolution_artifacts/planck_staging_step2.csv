@@ -1,0 +1,3 @@
+stage_id,l_P_toy,K_P,hbar_status,GR_sigma_status,description,n_star,epsilon_star,K_at_crossover,K_over_KP,regime_after_crossover,computed
+toy_planck_threshold,1.0,16.0,co-defined-in-L-staging-symbol,GR_smooth_access_has_d3_but_not_hbar_staging,Toy Planck curvature threshold where the L readout takes over from smooth GR.,,,,,,
+crossover,,,,,,4,0.125,51.84,3.24,planck_boundary_or_beyond,True

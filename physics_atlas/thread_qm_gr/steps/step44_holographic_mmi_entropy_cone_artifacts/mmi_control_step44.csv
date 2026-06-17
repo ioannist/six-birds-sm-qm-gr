@@ -1,0 +1,2 @@
+case_id,case_kind,S_A,S_B,S_C,S_AB,S_AC,S_BC,S_ABC,I3_standard,I3_prompt_negated,mmi_violated_standard,entropies_from_state
+GHZ_4party_control,generic_non_geometric_control,0.69314718056,0.69314718056,0.69314718056,0.69314718056,0.69314718056,0.69314718056,0.69314718056,0.69314718056,-0.69314718056,True,True

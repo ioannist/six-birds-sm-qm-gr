@@ -1,0 +1,4 @@
+signature_id,source_readout,target_readout,obstruction_count,witness,nonfactorizing,interpretation
+UV_Sigma_to_selected_Lambda,"UV_Sigma=(uv_cutoff,uv_spectrum_id,rho_UV_budget)",rho_Lambda_candidate,4,0-1;0-2;1-2;3-4,True,same UV Sigma but different selected vacuum readout
+Step1_GR_Sigma_to_d5_vacuum,"GR_smooth_Sigma_f=(d0,d2,d3)",d5_vacuum,1,3-4,True,Step 1 vacuum branch split at identical smooth geometry
+descending_control_UV_coupling,"UV_Sigma=(uv_cutoff,uv_spectrum_id,rho_UV_budget)",uv_determined_coupling,0,none,False,UV-determined control quantity factors cleanly

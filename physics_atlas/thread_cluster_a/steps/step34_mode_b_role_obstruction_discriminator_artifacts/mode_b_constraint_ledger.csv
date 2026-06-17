@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP34_REPRODUCE_CARRIER,ModeB,step34_mode_b_role_obstruction_discriminator,determinism,"Step 34 rederives the corrected Step-33 final carrier count as 80."
+C_CLUSTER_A_STEP34_F24_DEFINITION,ModeB,step34_mode_b_role_obstruction_discriminator,f24,"The F24 obstruction O_s counts same non-abelian-role q-fiber pairs with different charge-role readouts."
+C_CLUSTER_A_STEP34_DISTRIBUTION,ModeB,step34_mode_b_role_obstruction_discriminator,diagnostic,"The O_s distribution is 0:10, 1:34, and 2:36; the reference has O_s=1."
+C_CLUSTER_A_STEP34_F24_CUT,ModeB,step34_mode_b_role_obstruction_discriminator,typed_no_go,"The principled O_s=0 predicate leaves 10 survivors and excludes the reference support."
+C_CLUSTER_A_STEP34_TYPE_LIMIT,ModeB,step34_mode_b_role_obstruction_discriminator,type_limit,"Intrinsic gauge-closure filters narrow to a small family but do not supply the final reference selection."
+C_CLUSTER_A_STEP34_GATES,ModeB,step34_mode_b_role_obstruction_discriminator,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and no-tuning gates pass."
+C_CLUSTER_A_STEP34_VERDICT,ModeB,step34_mode_b_role_obstruction_discriminator,verdict,"Verdict is TYPED_NO_GO_TYPE_LIMIT: redirect to a higher-layer descent/content-cascade criterion or observed-input boundary."
+C_CLUSTER_A_STEP34_NONCLAIM_BOUNDARY,ModeB,step34_mode_b_role_obstruction_discriminator,honesty,"Finite F24 diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

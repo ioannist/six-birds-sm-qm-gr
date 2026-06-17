@@ -1,0 +1,2 @@
+assessment,status,step35_family_size,refined_residual_size,target_structure_only,target_requires_content_boundary,next_kind
+higher_layer_refinement,CONTENT_TYPE_LIMIT,12,8,True,True,content boundary: the remaining supports share the selected structure but differ by chiral content; continue into a matter-content cascade or observed-input boundary

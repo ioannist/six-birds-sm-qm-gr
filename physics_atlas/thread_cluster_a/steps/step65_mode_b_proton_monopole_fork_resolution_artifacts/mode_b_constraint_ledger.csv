@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step65_step41_fork_object,active,65,"fork object must be Step41 gauge-layer defect, not Step63 inter-layer defect"
+C_step65_memory_stability_selector,active_conditional,65,memory-stability selects clean branch on Step59 enumeration-strength grounding
+C_step65_no_physical_overclaim,active_validator,65,no claim of solving proton decay or certifying frame transfer

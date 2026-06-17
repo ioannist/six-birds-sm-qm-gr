@@ -1,0 +1,12 @@
+gate,status,scope,evidence
+C1_step14_refinement_loaded,pass,input,"The script reads Step-14 refinement_stability_output_step14.json and requires refinement_stable."
+C2_endpoint_audits_structured,pass,audit,"A_QM and A_GR have nonzero nonconstant coefficients on their respective shadows."
+C3_single_audit_restricts,pass,audit,"Consistent A_u restriction residuals to A_QM and A_GR are 0.0 at both levels."
+C4_shared_overlap_agrees,pass,route-consistency,"Consistent shared-mode residual is 0.0."
+C5_audit_commutes_with_refinement,pass,refinement,"Audit refinement commutator residual is 0.0 at both levels."
+C6_route_mismatch_control_fails,pass,anti-tautology,"Route-mismatch control shared-mode residual is 0.4472135954999581 and single_audit_exists is false."
+C7_nontrivial_audit,pass,no-smuggling,"Audit coefficient norm is 0.9013878188659973 and spread is 0.3974528273896162."
+C8_no_circular_test,pass,no-smuggling,"The diagnostic is shared-mode equality plus restriction and refinement commutators, not distance to itself."
+C9_structural_constraint_extracted,pass,frontier,"Constraint recorded: single audit exists iff endpoint audits agree on shared modes."
+C10_next_move_named,pass,frontier,"Next move is STEP16_FULL_LADDER_DESCENT."
+

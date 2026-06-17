@@ -1,0 +1,7 @@
+route,grammar_fragment,evidence_artifact,diagnostic_result,verdict,why_non_circular_closure_fails
+recognition_recombination,G_rec,steps/step4_mode_c_recombination_artifacts/step4_schema.json,"compatibility rows normalized Xi 1.0; coupled normalized Xi 4/7",bounded_no_go,"Existing imports recognize sectors separately but do not supply the triple compatibility package."
+pairwise_union,G_atom,steps/step7_mode_b_gv3_triple_artifacts/triple_audit_search_step7.csv,"triple normalized Xi 1.0 at r=2 and r=4",rejected_control,"The union of u_i, v, and w adds no triple content."
+orthogonal_witness_without_map,G_atom,steps/step7_mode_b_gv3_triple_artifacts/triple_audit_search_step7.csv,"triple normalized Xi 1.0 at r=2 and r=4",insufficient,"Independent content with no audited map to t does not generate B_T."
+native_triple_insertion,G_atom,steps/step7_mode_b_gv3_triple_artifacts/triple_audit_search_step7.csv,"zero residual only when t is native",smuggling_reject,"The target row is inserted as source."
+local_stochastic_run,G_run,steps/step8_mode_b_gv4_run_triple_artifacts/witness_audit_step8.csv,"completion Xi 0.4947207905172907 and 0.5371910513210945; witness gains negative",run_level_obstruction,"The run does not exhibit a common fixed point or positive held-out witness."
+rigged_diagonal_run,G_run,steps/step8_mode_b_gv4_run_triple_artifacts/witness_audit_step8.csv,"near-zero Xi only after forced diagonal readout",smuggling_reject,"The apparent closure is post-run forcing, not substrate output."

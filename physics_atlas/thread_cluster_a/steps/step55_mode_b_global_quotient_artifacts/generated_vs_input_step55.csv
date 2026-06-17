@@ -1,0 +1,8 @@
+item,status,detail
+content_classes,read_from_step48,two quotient classes
+UNIT_DENOMINATOR=6,input_declared_step50,Declared fixed integer-charge unit convention used by the shadow; not a content selector because both classes pass.
+WEAK_SHIFT_UNIT=3,input_declared_step50,Declared fixed weak-doublet charge-shift convention used by the shadow; not a content selector because both classes pass.
+inherited_step38_scalar_charge_normalization,input_declared_step50,"Step 48 reads Step-38 normalized support charges and unbroken-U(1) convention; fixed inherited convention, not a content selector because both classes pass."
+hypercharge_pattern,input_content_class,the content class charges are input; Step55 does not derive them
+trivially_acting_center,computed,"{""class_00"": ""Z6"", ""class_01"": ""Z6""}"
+selection_verdict,computed,GLOBAL_QUOTIENT_RECOVERED_SELECTION_BLIND

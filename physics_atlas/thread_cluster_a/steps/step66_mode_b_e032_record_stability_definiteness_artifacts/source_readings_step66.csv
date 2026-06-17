@@ -1,0 +1,3 @@
+source,path,used_for,detail
+E032_card,physics_atlas/missing_layers/cards/E032.json,non-descending selection object and B.2 witness,E3:missing-selection-principle: a layer carrying a single-outcome / which-branch indexical predicate that is non-definable 
+QM_record_stability_paper,Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex,QM closure package and record-stability packaging treatment,dephasing as idempotent nonselective record packaging; selected outcome as conditioning/refinement

@@ -1,0 +1,64 @@
+{
+  "step": 17,
+  "native_vocabulary": true,
+  "classifications": {
+    "L": {
+      "status": "candidate",
+      "strict": true,
+      "Delta_fact_count": 3,
+      "failed_gates": []
+    },
+    "union": {
+      "status": "failed_G_nosmuggle",
+      "strict": true,
+      "Delta_fact_count": 3,
+      "failed_gates": [
+        "G_nosmuggle"
+      ]
+    }
+  },
+  "distinguishing_gate": {
+    "gate": "G_nosmuggle",
+    "reason": "direct-sum package has duplicated shared observable rows while L identifies shared modes once",
+    "L_extra_coordinate_count": 0,
+    "union_extra_coordinate_count": 2
+  },
+  "bridge_tuples": {
+    "L": {
+      "name": "B_QM_to_L",
+      "T_j": "QM_package_toy",
+      "T_j_plus_1": "L_package_toy",
+      "pi_j": "pi_QM",
+      "pi_j_plus_1": "pi_L",
+      "L": "L_package_toy",
+      "V": "finite observable record over S",
+      "Theta": "eight_gate_native_classification",
+      "A": "audit record from Step 15",
+      "delta": [],
+      "N": "controls: QM-alone, GR-alone, direct-sum package",
+      "status": "candidate"
+    },
+    "union": {
+      "name": "B_QM_to_union",
+      "T_j": "QM_package_toy",
+      "T_j_plus_1": "union_package_toy",
+      "pi_j": "pi_QM",
+      "pi_j_plus_1": "pi_union",
+      "L": "union_package_toy",
+      "V": "finite observable record over S",
+      "Theta": "eight_gate_native_classification",
+      "A": "paired endpoint audit record",
+      "delta": [
+        "G_nosmuggle"
+      ],
+      "N": "controls: QM-alone, GR-alone, direct-sum package",
+      "status": "failed_G_nosmuggle"
+    }
+  },
+  "no_smuggling_check": {
+    "package_promotion_bridge_confused": false,
+    "union_non_strict_asserted": false,
+    "literature_program_terms_used": false,
+    "root_landed": false
+  }
+}

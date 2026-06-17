@@ -1,0 +1,9 @@
+output,classification,grade,scope,source_artifacts
+shared_frame_robustness_step6.py,analytical structural,finite-carrier diagnostic,"Builds readout battery, endpoint enrichments, controls, and obstruction recomputes.",steps/step6_shared_frame_robustness_artifacts/shared_frame_robustness_step6.py;steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv
+readout_battery_step6.csv,analytical structural,finite-carrier diagnostic,General-linear and nonlinear readout battery over GR Sigma.,steps/step6_shared_frame_robustness_artifacts/readout_battery_step6.csv
+enrichment_step6.csv,analytical structural,finite-carrier diagnostic,Genuine endpoint enrichment versus smuggling endpoint-plus-layer content.,steps/step6_shared_frame_robustness_artifacts/enrichment_step6.csv
+controls_step6.csv,analytical structural,finite-carrier diagnostic,Positive-detection and smuggling-detection controls.,steps/step6_shared_frame_robustness_artifacts/controls_step6.csv
+results_summary.md,organizational/audit,finite-carrier diagnostic,Human-readable robustness verdict and nonclaim context.,steps/step6_shared_frame_robustness_artifacts/results_summary.md
+schema.json,organizational/audit,finite-carrier diagnostic,Per-step schema and final verdict.,steps/step6_shared_frame_robustness_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite-carrier robustness only.,steps/step6_shared_frame_robustness_artifacts/nonclaim_boundary.md
+run_step6.py,organizational/audit,finite-carrier diagnostic,"Validator for obstruction recomputes, controls, smuggling flags, relative paths, ledgers, prior validators, and overclaim guard.",steps/step6_shared_frame_robustness_artifacts/run_step6.py

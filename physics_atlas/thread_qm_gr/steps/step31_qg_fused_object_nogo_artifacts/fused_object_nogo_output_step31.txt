@@ -1,0 +1,8 @@
+Step 31 fused-object bounded diagnostic
+Verdict: lemma2_fused_object_blocked_in_bounded_grammar
+Union G_nosmuggle pass: False
+Union extra coordinate count: 2
+Shared audit joint equal residual: 0.9935981568901483
+Directed route blocked by Step 30: True
+Fusion control G_nosmuggle pass: True
+Fusion control audit pass: True

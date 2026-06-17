@@ -1,0 +1,6 @@
+Step 24 derived physical audits from shared toy field
+Verdict: derived_audits_differ_reconciliation_is_sourcing_T_of_psi
+Born/stress-energy same audit: False
+Sourcing T[psi]: True
+Density proportional residual: 0.5207123913178113
+Transport proportional residual: 0.9994686548331937

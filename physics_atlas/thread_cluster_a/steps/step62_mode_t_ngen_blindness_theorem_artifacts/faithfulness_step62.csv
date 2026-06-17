@@ -1,0 +1,8 @@
+check,passes,evidence
+content_fields_match_step33_type_rows,True,matched=5; fields=5
+su2_mixed_matches_step33,True,step33=0; step51=0
+su3_cubic_matches_step33,True,step33=0; step51=0
+su3_mixed_matches_step33,True,step33=0; step51=0
+grav_u1_matches_step33,True,step33=0; step51=0
+u1_cubic_matches_step33,True,step33=0; step51=0
+witten_parity_matches_step33_corrected,True,step33_parity=0; step51_doublets_mod2=0; doublet_count=4

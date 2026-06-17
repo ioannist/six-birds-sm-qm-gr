@@ -1,0 +1,26 @@
+{
+  "step": 21,
+  "role_obstruction_count": 3,
+  "verdict": {
+    "L_computed_family": "BridgeMediatedRole",
+    "L_unique": true,
+    "all_candidates_unique": true,
+    "family_coverage": [
+      "BlockedNonClosure",
+      "BridgeMediatedRole",
+      "BudgetedRole",
+      "CoarsenedRole",
+      "HiddenUpstreamRole",
+      "MemoryLayer",
+      "OutsideRoleScope",
+      "ScopedRole"
+    ],
+    "all_eight_families_covered": true
+  },
+  "guardrails": {
+    "uses_input_case_names": false,
+    "uses_input_selector_bundle": false,
+    "mutual_exclusivity_from_case_names": false,
+    "root_landed": false
+  }
+}

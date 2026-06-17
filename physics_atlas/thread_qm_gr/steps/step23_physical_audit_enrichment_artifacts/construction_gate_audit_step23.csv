@@ -1,0 +1,8 @@
+gate,status,scope,evidence
+C1_quadratic_forms_used,pass,audits,"Audit matrices are square 3x3 quadratic forms rather than vectors."
+C2_qm_psd,pass,QM audit,"A_QM_Born_quadratic is symmetric and positive semidefinite."
+C3_physical_motivation_declared,pass,audits,"Born-like and curvature/geodesic-transport motivations are recorded."
+C4_subblock_computed,pass,parent reconciliation,"Shared sub-block residual is computed as 0.0 for L."
+C5_parent_restricts,pass,parent reconciliation,"Parent quadratic audit restricts to QM and GR with residuals 0.0."
+C6_incompatible_control_fails,pass,control,"Incompatible control has shared-sub-block residual 0.22484880190683132 and F51 status-compatible=false."
+C7_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

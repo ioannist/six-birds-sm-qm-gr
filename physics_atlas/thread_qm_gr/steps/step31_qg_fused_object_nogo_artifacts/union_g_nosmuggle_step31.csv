@@ -1,0 +1,3 @@
+case,target_dimension,row_rank,extra_coordinate_count,duplicate_pair_count,duplicate_pairs,G_nosmuggle_pass,description
+union_direct_sum,6,4,2,2,"[(0, 3), (2, 4)]",False,QM block stapled to GR block; d0 and d2 duplicated.
+nonduplicating_refinement_control,4,4,0,0,[],True,Common refinement with each mode represented once.

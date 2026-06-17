@@ -1,0 +1,26 @@
+{
+  "step": 6,
+  "orientation": "Shared-frame robustness under readout maps and adversarial endpoint enrichment",
+  "source_carrier": "steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv",
+  "readout_battery": {
+    "linear_map_count": 5,
+    "nonlinear_map_count": 3,
+    "targets": [
+      "d4_subplanck",
+      "d5_vacuum"
+    ]
+  },
+  "verdict": {
+    "type": "shared_frame_robustness_established",
+    "representation_independence_min_obstruction_d4": 3,
+    "representation_independence_min_obstruction_d5": 1,
+    "genuine_enrichment_min_obstruction_d4": 3,
+    "genuine_enrichment_min_obstruction_d5": 1,
+    "positive_detection_controls_pass": true,
+    "smuggling_detection_controls_pass": true,
+    "genuine_enrichment_controls_pass": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite-carrier robustness under declared readout/enrichment battery only; no physical frame-transfer certificate."
+}

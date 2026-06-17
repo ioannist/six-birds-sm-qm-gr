@@ -1,0 +1,7 @@
+Step 2 finite-carrier Xi diagnostic
+levels=[2, 4]
+lqg_surviving_normalized_residuals=[1.5936215664475933e-16, 1.5936215664475933e-16]
+lqg_area_normalized_residuals=[1.0, 1.0]
+lqg_surviving_sector_residuals=zero to numerical precision at both levels
+lqg_area_sector_residuals=one at both levels
+combined_lens_reference=zero only as Mode C setup reference, not a Step 2 root verdict

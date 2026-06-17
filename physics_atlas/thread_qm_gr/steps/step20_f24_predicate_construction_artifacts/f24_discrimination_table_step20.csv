@@ -1,0 +1,9 @@
+candidate,expected_family,selected_family,selected_count,passes
+L_candidate_package,BridgeMediatedRole,BridgeMediatedRole,1,True
+memory_control,MemoryLayer,MemoryLayer,1,True
+hidden_control,HiddenUpstreamRole,HiddenUpstreamRole,1,True
+budget_control,BudgetedRole,BudgetedRole,1,True
+scoped_control,ScopedRole,ScopedRole,1,True
+coarsened_control,CoarsenedRole,CoarsenedRole,1,True
+outside_scope_control,OutsideRoleScope,OutsideRoleScope,1,True
+blocked_control,BlockedNonClosure,BlockedNonClosure,1,True

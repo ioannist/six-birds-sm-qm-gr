@@ -1,0 +1,7 @@
+probe,dimensions,max_fields,outside_reason,chiral_closers_checked,capacity_positive,substrate_nonclean_capacity_positive,counterexample_found,counterexample_support_key,counterexample_scalar,counterexample_transition_leak_count,counterexample_neutral_record_token_count
+inside_step59_full_carrier,implemented_step59,5,inside_declared_carrier,11990,339,0,False,,,,
+relaxed_field_count_single_4,4,6,field_count_bound_relaxed,484,100,0,False,,,,
+larger_dimension_single_5,5,6,dimension_outside_implemented_step33_window,260,88,0,False,,,,
+larger_dimension_single_6,6,6,dimension_outside_implemented_step33_window,260,88,0,False,,,,
+relaxed_field_count_3x4,3|4,6,field_count_bound_relaxed,4247,185,0,False,,,,
+relaxed_field_count_4x4,4|4,6,field_count_bound_relaxed,1944,124,0,False,,,,

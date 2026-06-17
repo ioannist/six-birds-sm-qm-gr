@@ -1,0 +1,16 @@
+{
+  "content_type_limit": true,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_content_cascade_second_shadow",
+  "new_physics_claim": false,
+  "observed_input_required": true,
+  "reproduced_content_classes": 2,
+  "second_content_shadow": "generic_yukawa_texture_connectivity",
+  "shadow_failed_classes": 0,
+  "shadow_surviving_classes": 2,
+  "simulations_excluded_by_design": true,
+  "step": 49,
+  "target_class_passes": true,
+  "two_blind_shadows": true,
+  "verdict": "CONTENT_TYPE_LIMIT"
+}

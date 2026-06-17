@@ -1,0 +1,68 @@
+{
+  "step": 15,
+  "orientation": "Mode B audit rung on refinement-stable neutral currency",
+  "active_residual": "R_child_E018_after_RUNG1_on_RUNG2_refinement_stability_candidate",
+  "carrier": {
+    "type": "Step-13 neutral currency with Step-14 shadow-commuting refinement",
+    "levels": [1, 2],
+    "currency_modes": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "shared_modes": ["d0_density", "d2_transport"],
+    "no_smuggling_controls": {
+      "route_mismatch_control_passes": false,
+      "audit_trivial_zero": false,
+      "audit_trivial_constant": false,
+      "circular_test_used": false,
+      "one_hot_set_cover_used": false,
+      "target_layer_inserted": false,
+      "endpoint_derivation_claimed": false,
+      "literature_program_terms_used": false,
+      "step14_refinement_loaded": true
+    }
+  },
+  "candidate_move": {
+    "id": "RUNG_3_AUDIT_ON_REFINEMENT_STABLE_CURRENCY",
+    "description": "Construct a single nontrivial audit A on u whose restrictions recover both endpoint audits and which commutes with the refinement lift.",
+    "structural_constraint": "A single bridge audit exists iff A_QM and A_GR agree on shared modes {d0,d2}."
+  },
+  "final_verdict": {
+    "type": "audit_coheres_candidate_external_review_required",
+    "root_landed": false,
+    "rung_built": true,
+    "rungs_cohere": true,
+    "external_review_required": true,
+    "next_move": "STEP16_FULL_LADDER_DESCENT"
+  },
+  "track_fields": {
+    "audit_residuals": {
+      "consistent_shared_mode_residual_max": 0.0,
+      "consistent_audit_refinement_commutator_max": 0.0,
+      "route_mismatch_shared_mode_residual_min": 0.4472135954999581
+    },
+    "audit_nontriviality": {
+      "coefficient_norm": 0.9013878188659973,
+      "coefficient_spread": 0.3974528273896162,
+      "nonzero": true,
+      "nonconstant": true
+    },
+    "route_consistency": {
+      "consistent_case_passes": true,
+      "route_mismatch_control_fails": true,
+      "condition": "endpoint audits agree on shared modes {d0,d2}"
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A shared bridge audit exists iff the endpoint audits agree on shared currency modes."
+    ],
+    "analytical_structural": [
+      "Finite-carrier diagnostic: consistent audit residuals are zero; route-mismatch control shared residual is 0.4472135954999581."
+    ],
+    "organizational_audit": [
+      "Step 16 full-ladder descent is now the named next move."
+    ],
+    "remaining_external_content": [
+      "External review must judge whether the finite-carrier audit is meaningful beyond this toy."
+    ]
+  }
+}
+

@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP69_SELECTION_TRACK_ONLY,active,Uses SM candidate structures and record-stability flags only.
+C_STEP69_VERDICT_FROM_RS_BREAKING_COUNT,active,Prediction holds iff record-stable breaking count is zero.
+C_STEP69_ANTI_CIRCULARITY_CONTROLS,active,Substrate-only and capacity-only breaking witnesses must exist.

@@ -1,0 +1,5 @@
+level,cells,case,shared_mode_residual,qm_restriction_residual,gr_restriction_residual,audit_refinement_commutator_residual,audit_coefficient_norm,audit_coefficient_spread,audit_nonzero,audit_nonconstant,route_consistent,refinement_consistent,single_audit_exists,status
+1,4,consistent_audit,0.0,0.0,0.0,0.0,0.9013878188659973,0.3974528273896162,True,True,True,True,True,passes_candidate
+1,4,route_mismatch_control,0.4472135954999581,0.0,0.37139067635410383,0.0,0.9013878188659973,0.3974528273896162,True,True,False,True,False,fails_as_control_route_mismatch
+2,8,consistent_audit,0.0,0.0,0.0,0.0,0.9013878188659973,0.3974528273896162,True,True,True,True,True,passes_candidate
+2,8,route_mismatch_control,0.4472135954999581,0.0,0.37139067635410383,0.0,0.9013878188659973,0.3974528273896162,True,True,False,True,False,fails_as_control_route_mismatch

@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"predicate excludes shape, parent-group, empirical-content, and fixed-generation primitives"
+dependency_trace,True,components are traced in dependency_trace_step36.csv
+ablation,True,staged-potential refinement is load-bearing
+negative_controls,True,predicate fails some Step-35 survivors and is not a row picker
+stage_ii,True,Step-35 residual is reproduced and target status computed
+no_reductionism,True,predicate types compatibility; it does not derive content or values

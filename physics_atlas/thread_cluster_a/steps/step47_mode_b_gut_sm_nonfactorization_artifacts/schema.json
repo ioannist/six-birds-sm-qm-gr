@@ -1,0 +1,19 @@
+{
+  "artifact_root": "steps/step47_mode_b_gut_sm_nonfactorization_artifacts",
+  "delta_gut_to_sm_count": 0,
+  "delta_sm_to_gut_count": 15,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_GUT_SM_nonfactorization",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "physical_reading_resolved": false,
+  "six_gates_pass": true,
+  "state_count": 9,
+  "status_family_separation_pass": true,
+  "step": 47,
+  "step46_identity_consistent": true,
+  "structdown_only": true,
+  "structural_verdict": "GENUINE_STRUCTURAL_REFINEMENT",
+  "topdown_channel_certified": false,
+  "xy_witness_identity": true
+}

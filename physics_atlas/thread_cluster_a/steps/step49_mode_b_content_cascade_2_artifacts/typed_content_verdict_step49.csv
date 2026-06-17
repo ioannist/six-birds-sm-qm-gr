@@ -1,0 +1,2 @@
+verdict,reproduced_content_classes,shadow_surviving_classes,target_class_passes,content_type_limit,two_blind_shadows,observed_input_required,simulations_excluded_by_design,next_grammar_delta
+CONTENT_TYPE_LIMIT,2,2,True,True,True,True,True,F26/observed-input boundary for TODO #2

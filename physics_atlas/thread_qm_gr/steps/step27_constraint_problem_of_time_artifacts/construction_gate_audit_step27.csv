@@ -1,0 +1,9 @@
+gate,status,evidence,defect_if_failed
+clock_carrier_added,pass,clock_extended_carrier_step27.json records M=16 clock and N=8 field,missing_clock_carrier
+constraint_operator_declared,pass,constraint_operators_step27.npz stores P_clock H_field and C_operator,missing_constraint_operator
+constraint_hermitian,pass,run_step27.py verifies C equals its adjoint,nonhermitian_constraint
+kernel_computed,pass,constraint_spectrum_step27.csv records the C spectrum,kernel_asserted_not_computed
+physical_state_residual_computed,pass,physical_space_residuals_step27.csv gives ||C Psi||=8.547035876629756e-16,state_residual_missing
+relational_readout_computed,pass,relational_time_readout_step27.csv compares conditioned fields to Step 26 stationary dynamics,relational_readout_asserted
+empty_kernel_control_fails,pass,control kernel dimension is 0 and min abs eigenvalue is 0.9868198124684662,toothless_constraint_control
+external_review_scope,open,toy finite constraint only; broader adequacy remains external review,self_certified_overread

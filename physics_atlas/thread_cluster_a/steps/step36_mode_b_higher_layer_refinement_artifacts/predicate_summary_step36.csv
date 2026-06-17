@@ -1,0 +1,2 @@
+reproduced_step35_survivors,refined_survivors,single_factor_eliminated,target_passes,target_distinguished,target_dimensions,target_witness,verdict,next_grammar_delta
+12,8,True,True,False,2|3,rank_one_fundxsinglet:-3,CONTENT_TYPE_LIMIT,content boundary: the remaining supports share the selected structure but differ by chiral content; continue into a matter-content cascade or observed-input boundary

@@ -1,0 +1,4 @@
+control,passes,carrier_id,dimensions,support_key,substrate_passes,capacity_passes,RS_member,CS_member,explanation
+substrate_only_breaking,True,carrier_00827,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,True,False,False,False,substrate alone can occur in the breaking branch
+capacity_only_breaking,True,carrier_00770,3,antifund:0 + antisym2:0 + fund:-6 + fund:6,False,True,False,False,record capacity alone can occur in the breaking branch
+conjunction_clean_nonvacuous,True,carrier_08128,2|3,rank_one_fundxantifund:-6 + rank_one_fundxantifund:6 + rank_one_fundxfund:-3 + rank_one_fundxfund:3,True,True,True,True,the conjunction is populated and lands in the clean branch on the carrier

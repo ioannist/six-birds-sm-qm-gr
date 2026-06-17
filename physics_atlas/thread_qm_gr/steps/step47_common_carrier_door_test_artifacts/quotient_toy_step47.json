@@ -1,0 +1,59 @@
+{
+  "source_paths_thread_root_relative": {
+    "step18": "steps/step18_f37_complementarity_f24_resolution_artifacts",
+    "step25": "steps/step25_sourcing_unification_artifacts",
+    "step26": "steps/step26_semiclassical_dynamics_artifacts",
+    "ladder_vs_fork": "interpretation/ladder_vs_fork.md"
+  },
+  "main_pair": {
+    "q_QM": "pi_QM=(d0,d1,d2)",
+    "q_GR": "pi_GR=(d0,d2,d3)",
+    "L_joint": "pi_L=(d0,d1,d2,d3)",
+    "qm_residual": 0.0,
+    "gr_residual": 0.0,
+    "admissible_joint": true
+  },
+  "complementary_control": {
+    "grammar": "finite linear quotient idempotents with admissible joints restricted to commuting projections",
+    "P_X": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "P_Y": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    "rank_P_X": 1,
+    "rank_P_Y": 1,
+    "commutator_residual": 0.7071067811865476,
+    "admissible_joint": false
+  },
+  "semiclassical_cosourcing_warrant_from_step25": {
+    "L_single_psi_sources_both": true,
+    "non_co_sourced_control_pass": false,
+    "L_max_born_residual": 0.0,
+    "L_max_stress_residual": 0.0,
+    "control_max_stress_residual": 0.3806026603775931,
+    "control_mean_stress_residual": 0.2469245783396815
+  },
+  "semiclassical_backreaction_warrant_from_step26": {
+    "potential_sourced_from_T00": true,
+    "consistent_coupling_converged": true,
+    "runaway_control_converged": false,
+    "consistent_kappa": 0.3,
+    "consistent_fixed_point_residual": 3.4936318023019015e-16,
+    "runaway_fixed_point_residual": 1.4285712942487314
+  }
+}

@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP50_F39_GEOMETRIC_NOT_SPECTRAL,active,"F39 ledger must be Step44 min-cut geometry, not entropy_from_region or the state SVD spectrum."
+C_STEP50_STRICT_SATURATION_GAP,active,Finite-D Born entropy must be strictly below geometric area; exact equality is a tautology warning.
+C_STEP50_SHARED_MONOGAMY_CAN_FAIL,active,Co-sourced ledgers must share I3<=0 while GHZ Born I3 breaks it.

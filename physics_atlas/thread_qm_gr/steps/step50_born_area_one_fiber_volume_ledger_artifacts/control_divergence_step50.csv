@@ -1,0 +1,2 @@
+control_id,f23_born_source,f39_geometry_source,ghz_i3_born,geom_i3_mincut,ghz_breaks_combiner,interpretation
+GHZ_born_breaks_geometric_monogamy_class,explicit GHZ state Born measure,Step44 D=2 min-cut geometric ledger,0.69314718056,-4.4408920985e-16,True,The Born ledger is outside the holographic monogamy class while the geometric min-cut ledger remains inside.

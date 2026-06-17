@@ -1,0 +1,52 @@
+{
+  "active_residual": "introduced_clean_separation_recognition_source",
+  "all_su4_vectors_baryon_orbit_enlargers": true,
+  "anti_smuggle_self_check_pass": true,
+  "artifact_root": "steps/step52_mode_b_clean_separation_minimality_artifacts",
+  "carrier_2x3": 8,
+  "carrier_su4": 4,
+  "carrier_total": 12,
+  "frame_transfer_certified": false,
+  "insufficient_weaker_predicates": [
+    "no_light_xy"
+  ],
+  "main_object": "clean-separation logical-strength minimality on Step-35/38 12-row carrier",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "orientation": "ATTEMPT_minimality_computation",
+  "per_predicate_survivor_counts": {
+    "bare_proton_stability": {
+      "2x3": 8,
+      "su4": 0,
+      "total": 8
+    },
+    "base_shadow": {
+      "2x3": 8,
+      "su4": 4,
+      "total": 12
+    },
+    "clean_separation": {
+      "2x3": 8,
+      "su4": 0,
+      "total": 8
+    },
+    "no_baryon_violating_xy": {
+      "2x3": 8,
+      "su4": 0,
+      "total": 8
+    },
+    "no_light_xy": {
+      "2x3": 8,
+      "su4": 4,
+      "total": 12
+    }
+  },
+  "root_landed": false,
+  "six_gates_pass": true,
+  "step": 52,
+  "sufficient_weaker_predicates": [
+    "no_baryon_violating_xy",
+    "bare_proton_stability"
+  ],
+  "verdict": "MINIMALITY_MIXED"
+}

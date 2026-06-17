@@ -1,0 +1,7 @@
+gate,status,scope,evidence
+C1_field_carrier_reused,pass,carrier,"Step 25 reads the Step 24 sampled field carrier."
+C2_single_psi_consistency_computed,pass,co-sourcing,"Born[psi] and T[psi] residuals are computed for every sample."
+C3_l_zero_residuals,pass,L,"L_co_sourced has max Born residual 0.0 and max stress residual 0.0."
+C4_control_independent_gr_field,pass,control,"The control uses T[psi_{sample+1}] for the GR descent."
+C5_control_fails,pass,control,"The non-co-sourced control has max stress residual 0.3806026603775931."
+C6_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

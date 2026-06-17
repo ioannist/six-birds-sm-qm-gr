@@ -1,0 +1,6 @@
+axiom,role,detail
+frozen_step57_record_requirement,RS scoring,"persistence, capacity, distinguishability imported without redefinition"
+frozen_step35_base_substrate,stable substrate scoring,higher-layer mass closure imported without retuning
+frozen_step41_defect,CS scoring,factorization-defect pair computation imported without redefinition
+corrected_step33_carrier,coverage carrier,all corrected chiral closer rows in the Step33 window
+adversarial_non_CS_capacity_search,teeth,searches non-CS rows with capacity and/or substrate for divergence witnesses

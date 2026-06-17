@@ -1,0 +1,50 @@
+{
+  "carrier_source": "step42_frozen_perturbed_generic",
+  "central_diff_nullity": [
+    5,
+    5,
+    5
+  ],
+  "central_diff_rank": [
+    9,
+    9,
+    9
+  ],
+  "central_difference": true,
+  "clean_shadow_edge_count_both_direction": [
+    2,
+    2,
+    2
+  ],
+  "conditional_on_step47_step48": true,
+  "control_nullity": 0,
+  "degenerate_point_rejected": true,
+  "derives_holography": false,
+  "disproves_in_nature": false,
+  "falsifiable_prediction": "Boundary entanglement does not determine the frozen Step-42 bulk geometry on generic perturbations: central-difference nullity is [5, 5, 5] across seeds [101, 202, 303], with both-direction clean-shadow edge counts [2, 2, 2]. Complete reconstruction from entanglement alone therefore fails on this finite carrier; non-entanglement bulk data is required.",
+  "falsification_condition": "A comparable nondegenerate frozen holographic/tensor-network carrier with full boundary entanglement fingerprint, central-difference nullity 0, and no both-direction clean shadows would falsify this SBT-fork prediction on that carrier.",
+  "fingerprint_feature_count": 11049,
+  "frame_transfer_certified": false,
+  "generic_seeds": [
+    101,
+    202,
+    303
+  ],
+  "invisible_sector_characterization": "entanglement_shadow_capacities",
+  "orientation": "QM_GR_E018_generic_entanglement_to_geometry_kernel_test",
+  "overlaps_entanglement_shadow_literature": true,
+  "root_landed": false,
+  "step": 55,
+  "verdict": "ENTANGLEMENT_DOES_NOT_DETERMINE_GEOMETRY_ITFROMQUBIT_FAILS",
+  "witness": {
+    "delta": 0.15,
+    "edge": "L-M2",
+    "edge_index": 6,
+    "geometric_gap": 0.15000000000000213,
+    "minus_residual": 0.0,
+    "moved_kind": "bulk_volume",
+    "moved_quantity": "bulk_volume_total_interior_edge_weight",
+    "plus_residual": 0.0,
+    "seed": 101
+  }
+}

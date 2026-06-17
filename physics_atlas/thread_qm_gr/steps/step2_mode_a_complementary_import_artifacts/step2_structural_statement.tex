@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 2 Structural Statement: Complementary LQG Import Audit}
+
+\begin{definition}[Lead complementary recognition source]
+For Step 2, the lead named recognition source is loop quantum gravity /
+canonical quantum geometry / spin-foam quantum geometry.  Its declared source
+atoms are Ashtekar variables, spin-network states and area-volume operators,
+and spin-foam transition-amplitude language.  Its declared caveats are the
+semiclassical limit, dynamics and constraint control, anomaly questions, and
+matter-coupling obligations.
+\end{definition}
+
+\begin{definition}[Reused finite carrier]
+At refinement level \(r\in\{2,4\}\), reuse the Step 1 carrier
+\[
+  E_r=\mathbb{R}^{r+2},\qquad C=I.
+\]
+The first \(r\) coordinates are boundary entanglement-ledger coordinates
+\(s_1,\ldots,s_r\).  The last two coordinates are \(g\), a
+geometry-amplitude coordinate, and \(m\), a P3 route-mismatch coordinate.
+
+The LQG-like native lens is
+\[
+  L^{\mathrm{LQG}}_r=\{g,\;m+0.30g\}.
+\]
+The surviving Step 1 target sector is
+\[
+  D^{\mathrm{surv}}_r=\{g,\;m+0.30g\}.
+\]
+The RT-like area-shadow sector is
+\[
+  D^{\mathrm{area}}_r=\{s_i/\sqrt r:1\le i\le r\}.
+\]
+\end{definition}
+
+\begin{proposition}[Complementary finite-carrier recognition]
+On the declared carrier,
+\[
+  \Xi_I(D^{\mathrm{surv}}_r\mid L^{\mathrm{LQG}}_r)=0
+\]
+up to numerical precision for \(r=2,4\).  At the same two refinement levels,
+\[
+  \frac{\tr\,\Xi_I(D^{\mathrm{area}}_r\mid L^{\mathrm{LQG}}_r)}
+       {\tr K_{DD}^{\mathrm{area}}}=1.0 .
+\]
+\end{proposition}
+
+\begin{proof}
+The surviving target rows are exactly in the span of the LQG-like source rows,
+so exact adequacy holds for that child sector.  The area-shadow rows live
+entirely in the boundary entanglement-ledger coordinates, which are orthogonal
+to the LQG-like native span.  The Schur correction therefore removes nothing
+from the area sector, leaving the whole area currency as residual.  The
+numerical values are computed in \texttt{simulate\_step2\_lqg\_xi.py}.
+\end{proof}
+
+\begin{remark}[Complementarity]
+In the Step 1 toy, the holographic entanglement lens closes the area-shadow
+sector and leaves the amplitude/P3 sector.  In the Step 2 toy, the LQG-like
+lens closes the amplitude/P3 sector and leaves the area-shadow sector.  The
+two imports are therefore complementary partial recognition sources on this
+declared carrier.
+\end{remark}
+
+\begin{remark}[Mode C setup only]
+Adding both source lenses closes the uncoupled finite toy.  Step 2 does not
+promote this to the coupled E018 root because no operational recombination
+bridge between the two source records has been audited.
+\end{remark}
+
+\end{document}

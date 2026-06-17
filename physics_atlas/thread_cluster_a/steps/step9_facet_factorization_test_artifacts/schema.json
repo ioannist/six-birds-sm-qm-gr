@@ -1,0 +1,41 @@
+{
+  "step": 9,
+  "artifact_type": "facet_factorization_test",
+  "thread": "thread_cluster_a",
+  "source_step": 8,
+  "facet_variables": [
+    "gauge_code",
+    "rep_code",
+    "n_gen",
+    "texture_code",
+    "ew_code",
+    "uv_code",
+    "vacuum_code"
+  ],
+  "inputs": {
+    "neutral_candidate_space": "steps/step8_structural_token_blind_selection_artifacts/neutral_candidate_space_step8.csv",
+    "structural_survivors": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv"
+  },
+  "metrics": {
+    "edge_threshold_bits": 0.01,
+    "neutral_total_correlation_bits": 0.0,
+    "survivor_total_correlation_bits": 2.229304481463,
+    "survivor_sum_marginal_entropy_bits": 11.099669201047,
+    "survivor_joint_entropy_bits": 8.870364719583,
+    "survivor_component_count": 2,
+    "survivor_block_partition": "gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code / ew_code",
+    "survivor_inter_block_residual_bits": 0.03599891688,
+    "strict_naturalness_total_correlation_bits": 2.053633293812,
+    "strict_naturalness_component_count": 1,
+    "subsample_seed": 20260606,
+    "subsample_total_correlation_bits": 2.512274397383,
+    "subsample_component_count": 2
+  },
+  "verdict": {
+    "separability": "block_structured_coupling",
+    "honest_grade": "finite-carrier-diagnostic",
+    "one_physical_layer_proven": false,
+    "physical_values_inferred": false,
+    "external_review_required": true
+  }
+}

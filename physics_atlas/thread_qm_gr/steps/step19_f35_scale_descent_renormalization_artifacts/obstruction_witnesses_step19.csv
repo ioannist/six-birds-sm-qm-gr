@@ -1,0 +1,17 @@
+law,scale_step,kind,cell_i,cell_j,quotient_label,source_label_i,source_label_j,target_label,law_gap
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,0,1,0,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,2,3,1,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,4,5,2,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,6,7,3,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,8,9,4,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,10,11,5,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,12,13,6,2.0
+non_descending_control,Q1_fine16->Q2_mid8,fiber,,,,14,15,7,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,0,1,0,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,2,3,1,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,4,5,2,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,6,7,3,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,8,9,4,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,10,11,5,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,12,13,6,,,,2.0
+non_descending_control,Q2_mid8->Q3_coarse4,O_n,14,15,7,,,,2.0

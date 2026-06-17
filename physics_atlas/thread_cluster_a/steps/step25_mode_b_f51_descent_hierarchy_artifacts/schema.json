@@ -1,0 +1,22 @@
+{
+  "artifact_root": "steps/step25_mode_b_f51_descent_hierarchy_artifacts",
+  "child_closer": {
+    "dimensions": "2|3",
+    "selected_charge_vector": "3|-2",
+    "structure_id": "r1|2_u1"
+  },
+  "exact_parent_count": 1,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_F51_parent_shadow_test",
+  "negative_control_count": 1,
+  "new_physics_claim": false,
+  "next_grammar_delta": "test richer parent-refinement branches and neutral-residual policies beyond the finite generated closer set",
+  "root_landed": false,
+  "scoped_neutral_parent_count": 1,
+  "six_gates_pass": true,
+  "source_step": "steps/step24_mode_b_robustness_stress_artifacts",
+  "stage_ii_pass": true,
+  "step": 25,
+  "typed_no_go": false,
+  "verdict": "HIERARCHY_SCOPED"
+}

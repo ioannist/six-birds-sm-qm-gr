@@ -1,0 +1,10 @@
+Step 13 neutral currency test
+Neutral recovery max: 9.916641414829509e-17
+Placeholder recovery min: 1.4142135623730951
+Union recovery max: 9.916641414829509e-17
+Union compression passes: False
+Collapse recovery min: 1.8808144464156678
+Endpoint nonfactorization min: 0.37808491927495375
+d_qm/d_gr/d_u/d_union: 3/3/4/6
+Neutral currency built: True
+Next move: RETEST_RUNG_1_REFINE_FIXEDPOINT_ON_NEUTRAL_CURRENCY

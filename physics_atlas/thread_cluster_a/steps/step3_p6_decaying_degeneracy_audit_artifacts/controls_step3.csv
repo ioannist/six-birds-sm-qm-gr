@@ -1,0 +1,6 @@
+control_id,expected,passes_guard,computed_witness
+decays_vs_not,selection_final_1_landscape_final_gt_1,True,selection=9->5->4->2->1->1; landscape=9->9->9->9->9->9
+monotone_selection_nonincreasing,g_selection_never_increases,True,9->5->4->2->1->1
+lands_on_w_SM,final_selected_survivor_is_w_SM,True,w_SM
+landscape_not_secretly_selecting,landscape_final_degeneracy_stays_large,True,9->9->9->9->9->9
+selection_carrier_not_field_pair,candidate_space_measure_refinement,True,carrier=Step2_survivors; audit=degeneracy_count_under_selection_refinement

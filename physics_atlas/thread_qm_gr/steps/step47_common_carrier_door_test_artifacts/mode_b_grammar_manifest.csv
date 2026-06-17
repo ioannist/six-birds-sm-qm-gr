@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,objects,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_CommonCarrierDoorTest_v1,47,finite quotient maps; admissible joint quotients; commuting-idempotent complementary control; co-sourcing warrant audit,Excludes proofs that assume the common carrier and then infer its grounding.,The complementary control has no admissible joint and the independent-field control removes the warrant.,trans-semiclassical carrier survival / frame-transfer test

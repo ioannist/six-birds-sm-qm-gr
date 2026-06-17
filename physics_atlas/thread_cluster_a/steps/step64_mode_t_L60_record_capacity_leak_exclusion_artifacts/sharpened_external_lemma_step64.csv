@@ -1,0 +1,2 @@
+lemma_id,statement,status,evidence,next_required_input
+L64_charge_orientation_cap,"For frozen Step35 leak-positive substrate closers, mass-closure charge-linking plus corrected chirality should imply no line-dual mirror pair and at most one zero-charge like-orientation triple.",sharpened_external_open_sublemma,near_miss_table_step64.csv: all 60 rows have neutral_record_token_count <= 1,"a structural anomaly/mass-closure proof of the charge-orientation cap, independent of enumeration"

@@ -1,0 +1,41 @@
+{
+  "active_residual": "E018 gravitational mediation prediction from fork grammar",
+  "channel_restriction_derived_from": [
+    "step48_access_tuple",
+    "T_QG_NoGo"
+  ],
+  "conditional_on_step47_step48": true,
+  "contradicts": "mainstream_expectation_BMV_positive",
+  "control_chsh": 2.449489742783177,
+  "control_entangles": true,
+  "control_local_coherence_abs": 0.3535533905932736,
+  "control_local_coherence_damping": 0.2928932188134524,
+  "control_negativity": 0.35355339059327356,
+  "control_phase_radians": 1.5707963267948966,
+  "control_violates_local_bound": true,
+  "disproves_quantum_gravity": false,
+  "falsification_condition": "A confirmed BMV-positive observation of gravitationally mediated entanglement between masses would falsify the fork-channel reading; a direct confirmed free-gravitational quantum would also reject it.",
+  "fork_channel_chsh": 0.0,
+  "fork_channel_entangles": false,
+  "fork_channel_local_coherence_abs": 0.0,
+  "fork_channel_local_coherence_damping": 1.0,
+  "fork_channel_negativity": 0.0,
+  "frame_transfer_certified": false,
+  "gravity_proven_classical": false,
+  "initial_entanglement": 6.237923272134049e-18,
+  "lhv_strategy_count": 16,
+  "local_bound_enumerated": 2.0,
+  "mean_field_channel_used": false,
+  "mediator_record_dimension": 4,
+  "orientation": "QM_GR_fork_gravitational_mediation_BMV_prediction",
+  "overlaps": [
+    "LOCC_theorem",
+    "KTM_classical_channel"
+  ],
+  "party_dimension_A": 2,
+  "party_dimension_B": 2,
+  "prediction": "Gravitationally induced entanglement is not expected in BMV-type experiments under the fork grammar: the geometry arm behaves as a classically indexed record channel, producing decoherence without matter-matter entanglement.",
+  "root_landed": false,
+  "step": 56,
+  "verdict": "FORK_CHANNEL_DECOHERES_WITHOUT_ENTANGLING_BMV_NULL_PREDICTED"
+}

@@ -1,0 +1,5 @@
+test,passes,evidence
+standardness_implies_clean_separation,True,standard_count=8; clean_count=8
+clean_separation_implies_standardness,True,true on this finite carrier
+extensional_equivalence_on_carrier,True,standardness and clean separation select the same rows
+derived_fundamental_not_established,True,standardness is equivalent to the vector-exotic absence condition on this carrier

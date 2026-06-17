@@ -1,0 +1,5 @@
+ablation,effect,load_bearing
+remove_route_measure_mismatch,RM becomes 0,True
+remove_proportional_refinement,nondecay is no longer supported,True
+remove_per_vacuum_descent_maps,Stage-II calibration fails,True
+remove_stabilizing_control,diagnostic teeth not certified,True

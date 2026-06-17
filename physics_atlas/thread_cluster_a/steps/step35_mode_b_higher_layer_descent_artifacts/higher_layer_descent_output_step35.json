@@ -1,0 +1,15 @@
+{
+  "frame_transfer_certified": false,
+  "higher_layer_survivors": 12,
+  "mode": "ModeB_higher_layer_descent",
+  "new_physics_claim": false,
+  "next_grammar_delta": "conjoin a further higher-layer requirement such as scalar potential closure or family replication consistency",
+  "reproduced_corrected_carrier": 80,
+  "root_landed": false,
+  "step": 35,
+  "target_dimensions": "2|3",
+  "target_distinguished": false,
+  "target_passes": true,
+  "target_witness": "rank_one_fundxsinglet:-3",
+  "verdict": "NARROW"
+}

@@ -1,0 +1,5 @@
+control,passes,evidence
+fails_some_step35_survivors,True,4 of 12 fail the staged potential predicate
+not_a_target_row_picker,True,target passes=True; refined survivor count=8
+single_factor_region_can_fail,True,structure 4 refined survivors=0
+no_fixed_family_count,True,no replication number enters the staged scalar-potential predicate

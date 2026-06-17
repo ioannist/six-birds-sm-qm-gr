@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,target sector literals absent from carrier primitives
+structural_unsmuggle,True,general closure is run for every factor count and U-role count
+known_alternatives,True,known chiral alternatives have computed admission/non-minimal reasons
+negative_controls,True,should-not-close controls fail by computed verdict
+stage_ii_earning,True,known-alternative and flip checks pass
+no_single_axiom_equivalence,True,no axiom fixes the target factor count or rank pattern

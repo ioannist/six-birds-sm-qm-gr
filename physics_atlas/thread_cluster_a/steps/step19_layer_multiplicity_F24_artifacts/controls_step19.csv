@@ -1,0 +1,4 @@
+control,obstruction_pairs,passes,witness
+known_descending_role,0,True,s_ctrl=q_key is constant on q-fibers
+known_splitting_role,8640,True,ew_code varies inside q-fibers
+main_role_split,5760,True,F47 scale readout varies inside q-fibers

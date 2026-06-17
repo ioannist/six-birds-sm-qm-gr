@@ -1,0 +1,4 @@
+case,source_quotient,target_quotient,defect_count,factors
+q_GR_through_q_QM,"q_QM=(d0,d1,d2)","q_GR=(d0,d2,d3)",8,False
+q_QM_through_q_GR,"q_GR=(d0,d2,d3)","q_QM=(d0,d1,d2)",8,False
+control_coarse_through_fine,"fine=(x0,x1,x2)","coarse=(x0,x2)",0,True

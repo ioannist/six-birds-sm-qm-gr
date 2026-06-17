@@ -1,0 +1,14 @@
+{
+  "step": 23,
+  "verdict": {
+    "physical_audit_verdict": "survives_physical_signature_enrichment",
+    "L_physical_audits_compatible": true,
+    "incompatible_control_pass": false
+  },
+  "guardrails": {
+    "quadratic_forms_used": true,
+    "qm_form_psd": true,
+    "subblock_residual_computed": true,
+    "root_landed": false
+  }
+}

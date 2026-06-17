@@ -1,0 +1,24 @@
+{
+  "step": 6,
+  "orientation": "Shared-frame robustness",
+  "active_residual": "R_cluster_b_after_step5_honest_regrade",
+  "candidate_move": "Recompute d4/d5 non-descending under general-linear and nonlinear readouts plus genuine/smuggling endpoint enrichments.",
+  "final_verdict": {
+    "type": "shared_frame_robustness_established",
+    "representation_independence_min_obstruction_d4": 3,
+    "representation_independence_min_obstruction_d5": 1,
+    "genuine_enrichment_min_obstruction_d4": 3,
+    "genuine_enrichment_min_obstruction_d5": 1,
+    "positive_detection_controls_pass": true,
+    "smuggling_detection_controls_pass": true,
+    "genuine_enrichment_controls_pass": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "readout_battery": "readout_battery_step6.csv",
+    "enrichment": "enrichment_step6.csv",
+    "controls": "controls_step6.csv",
+    "next_live_option": "Cluster_B_external_frame_transfer_review_or_R6_followup"
+  }
+}

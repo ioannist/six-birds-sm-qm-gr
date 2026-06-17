@@ -1,0 +1,9 @@
+candidate,modes,dim,both_endpoints_factor,admissible,minimal,relation_to_L,computed_witness,linear_decision_basis
+L_join,"d0_density,d1_phase,d2_transport,d3_curvature",4,True,True,True,is_join,qm_res=0; gr_res=0; rank=4/4; L_from_candidate=0; candidate_from_L=0,True
+drop_d0_density,"d1_phase,d2_transport,d3_curvature",3,False,False,False,sub_minimal_fails,qm_res=0.57735; gr_res=0.57735; rank=3/3; L_from_candidate=0.5; candidate_from_L=0,True
+drop_d1_phase,"d0_density,d2_transport,d3_curvature",3,False,False,False,sub_minimal_fails,qm_res=0.57735; gr_res=0; rank=3/3; L_from_candidate=0.5; candidate_from_L=0,True
+drop_d2_transport,"d0_density,d1_phase,d3_curvature",3,False,False,False,sub_minimal_fails,qm_res=0.57735; gr_res=0.57735; rank=3/3; L_from_candidate=0.5; candidate_from_L=0,True
+drop_d3_curvature,"d0_density,d1_phase,d2_transport",3,False,False,False,sub_minimal_fails,qm_res=0; gr_res=0.57735; rank=3/3; L_from_candidate=0.5; candidate_from_L=0,True
+M_super_5mode,"d0_density,d1_phase,d2_transport,d3_curvature,d4_extra",5,True,True,False,super_minimal_nonminimal,qm_res=0; gr_res=0; rank=5/5; L_from_candidate=0; candidate_from_L=0.447214,True
+union_direct_sum,"d0_density,d1_phase,d2_transport,d0_density_dup,d2_transport_dup,d3_curvature",6,True,False,False,nonadmissible_union,qm_res=1.81299e-16; gr_res=1.81299e-16; rank=4/6; L_from_candidate=1.57009e-16; candidate_from_L=0,True
+L_prime_relabel,"d3_curvature,d0_density,d2_transport,d1_phase",4,True,True,True,iso_to_L,qm_res=0; gr_res=0; rank=4/4; L_from_candidate=0; candidate_from_L=0,True

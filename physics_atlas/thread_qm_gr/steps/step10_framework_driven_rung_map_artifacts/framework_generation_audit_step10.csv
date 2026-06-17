@@ -1,0 +1,8 @@
+gate,status,scope,reason
+F1_framework_only_spine,pass,rung map,"Rungs are generated from role/currency/fixed-point residual blocks in the finite carrier."
+F2_no_named_program_decomposition,pass,rung map,"No named external program decomposition is used as the rung structure."
+F3_no_target_layer_source,pass,carrier,"The carrier has no native target layer L and no endpoint-descent source row."
+F4_no_single_rung_full_gap,pass,rungs,"Each rung closes only its own residual block and leaves endpoint rows unresolved."
+F5_endpoint_nonclosure,pass,rungs,"Each rung closes atoms absent from both endpoint closures; own-rung-vs-endpoints normalized Xi is 1.0."
+F6_clean_emergence_candidate,pass,rungs,"Each rung is a strict extension, nonfactorizing against endpoints, and reduces direct residual."
+F7_next_build_named,pass,frontier,"The first rung to build is RUNG_1_REFINE_FIXEDPOINT."

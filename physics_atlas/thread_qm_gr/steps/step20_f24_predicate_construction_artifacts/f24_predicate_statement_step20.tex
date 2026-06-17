@@ -1,0 +1,32 @@
+\paragraph{Step 20 finite-carrier predicate statement.}
+Let \(H\) be the declared finite carrier, \(q:H\to Q\) the current
+access quotient, and \(s:H\to S\) a declared role readout with
+\(\mathcal O_s\neq\emptyset\).  A candidate resolution record \(R\)
+is evaluated by eight computable predicates
+\[
+\mathrm{Mem}(R),\mathrm{Hid}(R),\mathrm{Med}(R),\mathrm{Bud}(R),
+\mathrm{Scp}(R),\mathrm{Crs}(R),\mathrm{Out}(R),\mathrm{Blk}(R).
+\]
+Each predicate is the conjunction of RoleSplit\((q,s)\), a unique
+declared mechanism flag, and the corresponding operational witness:
+memory residue record, hidden upstream latent, explicit admissible
+mediation object, priced residual, proper scope restriction, target
+coarsening, named outside-scope direction, or blocked nonclosure.
+
+\paragraph{Exclusivity and coverage on the Step 20 suite.}
+On the declared Step 20 finite carrier and candidate suite,
+exactly one predicate fires for every candidate record, and every
+family is selected by at least one candidate.  Thus the constructed
+selectors are mutually exclusive and exhaustive on the suite used in
+this diagnostic.
+
+\paragraph{Classification of \(L\).}
+For the candidate package \(L\), the mediation predicate fires because
+the candidate record contains an explicit admissible object carrying
+both \(q\) and \(s\), passing the native gates, commuting with the
+declared projections, and strictly refining \(q\).  The other seven
+predicates fail on their own operational criteria.  Therefore
+\[
+  L \mapsto \operatorname{BridgeMediatedRole}
+\]
+on the Step 20 finite carrier.

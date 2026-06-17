@@ -1,0 +1,7 @@
+Cluster B Step 1 shared-substrate frame
+Verdict: shared_substrate_frame_established
+E042 GR obstruction count: 3
+E021 GR obstruction count: 1
+Smooth shadow descent residual: 0
+d4 smooth obstruction count: 0
+d4 high-curvature obstruction count: 3

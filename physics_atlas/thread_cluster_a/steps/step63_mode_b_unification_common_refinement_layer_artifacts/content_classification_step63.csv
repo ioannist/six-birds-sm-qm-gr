@@ -1,0 +1,8 @@
+artifact,claim,grade,source
+step63_results_summary.md,summary and caveats,organizational,step63_results_summary.md
+parent_candidates_step63.csv,candidate parent F51 check,finite-carrier-diagnostic,parent_candidates_step63.csv
+trace_arithmetic_step63.csv,embedding trace-ratio computation,analytical-structural,trace_arithmetic_step63.csv
+hypercharge_normalization_step63.csv,parent-generator normalization computation,analytical-structural,hypercharge_normalization_step63.csv
+refinement_defect_step63.csv,X/Y coset as F51 refinement defect,finite-carrier-diagnostic,refinement_defect_step63.csv
+step63_statement.tex,conditional common-refinement grounding statement,analytical-structural,step63_statement.tex
+run_step63.py,validator,organizational,run_step63.py

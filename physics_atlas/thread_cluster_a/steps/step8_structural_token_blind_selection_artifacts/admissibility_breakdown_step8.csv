@@ -1,0 +1,8 @@
+stage,survivor_count,removed_since_previous,fraction_of_neutral
+neutral_product,8640,0,1.00000000
+anomaly_free,3240,5400,0.37500000
+plus_gauge_rep_consistency,3240,0,0.37500000
+plus_generation_chirality,1836,1404,0.21250000
+plus_texture,1134,702,0.13125000
+plus_uv,549,585,0.06354167
+plus_naturalness,468,81,0.05416667

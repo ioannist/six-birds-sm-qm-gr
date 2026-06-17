@@ -1,0 +1,5 @@
+gate,passes,evidence
+delta_fact_computed,True,one directional nonfactorization
+witness_identity,True,Delta witnesses equal Step-41 colored coset witness set
+structdown_only,True,physical status not inferred
+negative_controls,True,empty reverse and nonempty forward both checked

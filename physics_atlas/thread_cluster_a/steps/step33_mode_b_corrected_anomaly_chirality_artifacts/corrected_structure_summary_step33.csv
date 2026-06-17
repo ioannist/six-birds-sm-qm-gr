@@ -1,0 +1,10 @@
+dimensions,field_type_count,raw_solution_count,corrected_distinct_chiral_closer_count
+2,64,16180,730
+3,54,850,85
+4,43,560,56
+2|2,162,396000,6656
+2|3,152,53250,2153
+2|4,97,29790,1754
+3|3,98,1700,170
+3|4,87,2260,226
+4|4,76,1600,160

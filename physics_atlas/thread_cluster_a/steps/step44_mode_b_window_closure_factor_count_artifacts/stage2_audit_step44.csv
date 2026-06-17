@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+step43_status_loaded,True,WINDOW_STABLE_BOUND_CANDIDATE_PARTIAL
+component_cap_bound_computed,True,cap=6
+all_factor_incidence_absent,True,all 35 rows have zero all-factor incidence

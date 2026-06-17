@@ -1,0 +1,5 @@
+Step 8 finite stochastic run diagnostic
+Substrate: local stochastic binary ring; no triple objective or sector readout in the update rule.
+N=32: completion Xi=0.4947207905172907; held-out interaction gain=-0.02326224393247789; candidate_pass=False
+N=64: completion Xi=0.5371910513210945; held-out interaction gain=-0.08539192789918792; candidate_pass=False
+Verdict from run: run-level obstruction; rejected controls show what rigging would require.

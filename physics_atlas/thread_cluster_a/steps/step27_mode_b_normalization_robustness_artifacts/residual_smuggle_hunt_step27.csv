@@ -1,0 +1,4 @@
+choice,baseline,alternatives_tested,load_bearing,result
+charge_unit_denominator,product_dimensions,lcm_dimensions; total_slots; integer_weights,True,total_slots convention flips the weak-mixing value
+rank_one_readout_selection,unique_rank_one,first_non_rank_one; all_factors,True,alternate readout choices flip the weak-mixing value
+hidden_forcing_scan,computed_for_each_convention,non-generated controls,False,no automatic all-structure return found; controls do not reproduce the target

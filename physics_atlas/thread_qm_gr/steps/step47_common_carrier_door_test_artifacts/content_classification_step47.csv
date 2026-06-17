@@ -1,0 +1,8 @@
+artifact,classification,grade,scope
+common_carrier_door_test_step47.py,analytical-structural,finite-carrier-diagnostic,computes the forces-vs-form door-test and controls
+law_door_test_step47.csv,analytical-structural,finite-carrier-diagnostic,per-law form/existence table
+common_carrier_controls_step47.csv,analytical-structural,finite-carrier-diagnostic,complementary-pair and non-co-sourcing controls
+co_sourcing_warrant_step47.csv,remaining-external,recognition-source,semiclassical co-sourcing warrant imported from known physics and Step25 audit
+step47_results_summary.md,organizational,summary,door-test result and caveats
+common_carrier_door_test_statement_step47.tex,analytical-structural,finite-carrier-diagnostic,formal statement of recognition-source verdict
+run_step47.py,organizational,validator,artifact and no-overclaim validation

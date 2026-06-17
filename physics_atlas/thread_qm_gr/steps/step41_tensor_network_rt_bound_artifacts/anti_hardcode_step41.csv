@@ -1,0 +1,3 @@
+check,passes,evidence
+no_continuum_constant_literal_in_computation_path,True,finite graph capacities use log bond dimension; no continuum coefficient selector is present
+entropy_not_read_from_min_cut,True,contracted-state entropy and graph min-cut are separate code paths

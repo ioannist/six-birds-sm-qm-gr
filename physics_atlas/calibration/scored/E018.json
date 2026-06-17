@@ -1,0 +1,53 @@
+{
+  "id": "E018",
+  "edge": "quantum_mechanics -> general_relativity",
+  "arrow": "bidirectional",
+  "scored_tier": "E3",
+  "scored_modality": "emergence-up",
+  "decision_path": "foreclosed-gap-E3",
+  "e3_subreason": "no_faithful_M",
+  "read_only_obeyed": true,
+  "diagnostic": {
+    "descent": {
+      "step": "STEP 1 (descent-test)",
+      "verdict": "vacuous (test not constructible)",
+      "faithful_finite_M_exists": false,
+      "reason": "QM and GR share NO common observable algebra. QM.Sigma_f = expectation values <A> of a finite observable algebra on a fixed-background finite-d Hilbert space (diagonal Born weights); it contains no metric / spacetime-geometry predicate. GR.Sigma_f (the CLASSICAL casting) = diffeomorphism-invariant curvature invariants (R, Ricci, Kretschmann), causal structure, horizons, ADM mass, weak-field potential, and EXPLICITLY excludes 'any quantum-gravitational predicate ... a quantum state of the metric -- non-definable from the classical geometric lens.' Neither layer's accepted_observables lie in the other's Sigma_f, so there is no quotient q carrying the source readout into the target lens.",
+      "why_no_faithful_M": "To run Xi I must declare finite native (target) probe L0 and dissolving (source) probe D0 on ONE shared finite carrier. Co-locating QM expectation-value probes with GR curvature probes on a single carrier requires an embedding that is UNCONSTRAINED by physics (no shared Sigma_f anchors it). The Xi value is then an artifact of that arbitrary modeling choice, not a property of the QM<->GR relation -- delete the hand-chosen embedding and no inter-layer relation remains (gate E.4 relabeling residual fails).",
+      "computational_probe": {
+        "script": "/tmp/e018_probe.py",
+        "finding": "Under arbitrary-but-equally-plausible embeddings, ||Xi|| ranged ~12.8..27.2 with no principled choice among them; a hand-forced D0=A*L0 embedding drives ||Xi||~7e-14 (force-E1) while a hand-forced orthogonal embedding gives ||Xi||=2.0 (force-E3). Xi is dictated entirely by the unconstrained co-location, confirming no faithful minimal M exists.",
+        "Xi_arbitrary_embeddings": [12.8526, 16.954, 27.2047, 18.6033],
+        "Xi_forced_E1": 7.3e-14,
+        "Xi_forced_E3": 2.0
+      },
+      "refinement_stability": "N/A -- there is no principled M to refine; arbitrary embeddings give arbitrary Xi at every stage (gate E.9 cannot even be posed faithfully). This is a vacuous test, NOT a built-and-failed descent.",
+      "STEP_0d": "Per rubric STEP 0d / gate E.10 no-faithful-M corollary, the descent-test is VACUOUS; numeric branches HALT. QM<->GR is the rubric's named canonical candidate for this route (digest sec.3 fence; rubric H.iii)."
+    },
+    "recognition": {
+      "step": "STEP 2 (recognition-search)",
+      "logged_negative": true,
+      "verdict": "no named external principle closes the edge",
+      "reason": "There is no named, citable, load-bearing external principle that, under a stated closure assumption, closes QM<->GR the way Gleason's theorem closes the Born rule (E007) or QFT-in-curved-spacetime + the first law of BH mechanics closes GR -> BH-thermo (E005/E034). A complete quantum theory of gravity is precisely the OPEN problem. Candidate substructures (string-theory, loop quantum gravity, causal sets) are not_established and may not source a closing import; removing any of them leaves the gap intact. Recognition-landing (B.6a) requires a single named principle whose removal collapses the relation -- none exists here -> not a recognition-landing, not E2.",
+      "named_import": null
+    },
+    "emergence_run": {
+      "step": "STEP 3 (run-search)",
+      "logged_negative": true,
+      "verdict": "no constructible non-descending run-object",
+      "reason": "E0 requires the POSITIVE construction of a non-descending object whose generation provably requires RUNNING an already-existing substrate method (as lattice QCD already exists for E001 proton mass). No accepted, constructible substrate-run produces 'the quantum-gravity bridge' / a quantum state of the metric. Candidate substrates are not_established and there is no agreed run method that already exists as a method. E0 is not a doubt-haven (gate E.5/E.7): absent a positive run-object construction, doubt demotes to E3, not E0. No run-target stub is frozen.",
+      "non_descending_object": null,
+      "run_method_exists": false
+    },
+    "gap": {
+      "step": "STEP 4 (foreclosure)",
+      "verdict": "SEAL E3 -- sharpened gap / no-go, located but NOT closed",
+      "located_obstruction": "The missing predicate is a quantum state of the metric: GR.Sigma_f explicitly certifies it as non-definable from the classical geometric lens, and QM.Sigma_f (fixed-background finite-d Hilbert space) contains no spacetime-geometry predicate. Factorization fails for the structural reason that the two lenses have disjoint definability algebras with no common refinement on offer as an accepted layer; a quantum theory of the metric would be a STRICT EXTENSION (emergence, non-factorization, primer sec.4) above the classical-geometry layer, not a descent.",
+      "modality_note": "Typed emergence-up (a quantized-metric layer would be a package change / strict extension above classical GR). Per B.8, emergence-up may seal {E2, E0, E3} but NEVER E1 (the up arrow is never run as a derivation; gate E.8). With no named import (not E2) and no constructible run (not E0), it lands E3.",
+      "anti_control_consistency": "Matches the must_not_seal_E1_or_E2 character of the firewall: this edge does NOT 'unify by deriving both from shared math' (primer trap #1). It is a typed open problem (the quantum-gravity gap)."
+    }
+  },
+  "modality_tier_emittable": "emergence-up x E3 is an emittable (modality,tier) pair per the rubric B.8 compatibility table.",
+  "rationale": "QM and GR have disjoint definability algebras (QM: quantum expectation values on a fixed-background finite Hilbert space; GR: classical diffeomorphism-invariant curvature/causal scalars), with neither's accepted observables expressible in the other's Sigma_f. No faithful finite toy model M of the pair can be built: any Xi is fixed by an unconstrained, physically-unanchored co-location of the two probe families on one carrier (computationally demonstrated -- Xi forced to ~0 or ~2 at will), so the descent-test is VACUOUS (e3_subreason: no_faithful_M), not run-and-failed. Recognition-search returns no named principle that closes the edge (a quantum theory of gravity is the open problem; string/LQG are not_established). Run-search exhibits no constructible non-descending run-object on an existing substrate method, and E0 is not a doubt-haven. By STEP 0d / STEP 4 the edge SEALS E3, the unique conservative terminal, with the obstruction located as the missing 'quantum state of the metric' predicate -- a strict extension (emergence-up), non-definable from below, not a descent.",
+  "confidence": "high"
+}

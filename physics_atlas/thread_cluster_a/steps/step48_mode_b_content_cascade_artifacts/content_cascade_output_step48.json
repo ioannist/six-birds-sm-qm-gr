@@ -1,0 +1,16 @@
+{
+  "content_shadow": "integer_physical_color_singlet_charge_quantization",
+  "content_type_limit": true,
+  "distinct_content_classes": 2,
+  "frame_transfer_certified": false,
+  "input_clean_rosters": 8,
+  "mode": "ModeB_content_cascade",
+  "new_physics_claim": false,
+  "observed_input_required": true,
+  "shadow_failed_classes": 0,
+  "shadow_surviving_classes": 2,
+  "simulations_excluded_by_design": true,
+  "step": 48,
+  "target_class_survives": true,
+  "verdict": "CONTENT_TYPE_LIMIT"
+}

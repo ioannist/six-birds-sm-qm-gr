@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"record requirement uses persistence, distinguishability, capacity only"
+dependency_trace,True,dependency_trace_step57.csv lists record axioms
+ablation,True,ablation_step57.csv shows each component load-bearing
+negative_controls,True,degenerate/non-record controls do not imply CS
+stage2,True,identity preserves and erasure collapses two records
+no_single_axiom_equivalence,True,proper subset depends on all three record requirements

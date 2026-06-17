@@ -1,0 +1,7 @@
+audit_item,status,scope,evidence,residual
+assumption_compatibility,fail_current_grammar,"three import profiles","Pairwise conflicts are recorded in compatibility_conflicts_step4.csv; no import supplies the bridge rows needed to make all assumptions one closure package.","R_child_E018_after_ModeC_no_go_bridge_delta"
+sector_only_control,rejected,"guard control","Recognized sector rows alone have zero residual, but this is only co-presence of disjoint sectors and is not used as a recombination landing.","N/A"
+compatibility_constraints,positive_residual,"declared finite toy","Compatibility bridge rows have normalized Xi = 1.0 at both refinement levels.","Bridge rows absent from current source grammar."
+coupled_joint_with_constraints,positive_residual,"declared finite toy","Coupled joint target with constraints has raw Xi = 4.0 and normalized Xi = 0.5714285714285714 at both refinement levels.","Four bridge rows remain."
+overread_control,rejected,"target-equivalent control","Adding compatibility bridge rows to the native lens makes Xi zero, but that adds the missing bridge as an input.","Mode B must design the bridge."
+typed_verdict,bounded_grammar_no_go,"Mode C recombination","Existing recognized imports cannot close the coupled joint without an additional compatibility grammar.","G_E018_CoupledQGBridge_v1"

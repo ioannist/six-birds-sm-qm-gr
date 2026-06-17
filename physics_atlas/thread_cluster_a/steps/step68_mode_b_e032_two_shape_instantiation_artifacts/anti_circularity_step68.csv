@@ -1,0 +1,7 @@
+gate,passes,evidence
+both_shapes_reproduce_born_weights,True,collapse probabilities and self-locating measures equal base |c_k|^2 weights
+shape_A_selection_from_D_not_readout_relabel,True,D gains lambda_collapse and branch-pruning kernel
+shape_B_no_hidden_D_touch,True,D and E unchanged; branches persist
+shapes_genuinely_distinct,True,D-touch/non-idempotent global pruning versus Sigma_f-only idempotent per-copy indexical
+base_nonfactorization_still_holds,True,Step66 full-branching and selected readouts share Sigma_f while selection splits
+no_side_picked,True,both shapes are minimal exemplars; neither is asserted physical

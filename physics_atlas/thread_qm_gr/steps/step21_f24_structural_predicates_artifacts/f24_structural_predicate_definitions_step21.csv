@@ -1,0 +1,9 @@
+family,step20_source_lines,structural_criterion
+MemoryLayer,F24 1418-1514; F3 2433-2495,computed by factorization of s through history_map and non-factorization of history_map through q
+HiddenUpstreamRole,F24 1418-1514; F13a 1050-1162,"computed by factorization of s through latent_map, non-factorization of latent_map through q, and no passing explicit joint object"
+BridgeMediatedRole,F24 1418-1514; F22 4638-4678; F51 8528-8582,computed by explicit joint residuals a∘j=q and role∘j=s plus native gate checks and strict refinement
+BudgetedRole,F24 1418-1514; F6 1620-1718; F9 2071-2140,computed by positive priced adequate residual and absence of exact resolution
+ScopedRole,F24 1418-1514; F52 8663-8712,computed by O_s nonempty on H and empty on a proper sub-carrier
+CoarsenedRole,F24 1418-1514; F2 2286-2378; F39 7120-7225,computed by O_s becoming empty under a changed coarsened role readout
+OutsideRoleScope,F24 1418-1514; F52 8663-8712,computed by d3 not in in_scope_directions and present in named_outside_directions
+BlockedNonClosure,F24 1418-1514; F9 2071-2140; F52 8663-8712,computed by non-idempotent closure or inadequate residual after all other structural predicates fail

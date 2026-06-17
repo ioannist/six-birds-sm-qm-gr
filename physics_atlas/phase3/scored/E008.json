@@ -1,0 +1,55 @@
+{
+  "id": "E008",
+  "superseded_by_merge_adjudication": true,
+  "superseded_by_merge_adjudication_note": "MERGE ADJUDICATION (R3) GOVERNS: the frozen contract governs the value_split. Per CONTRACT.value_split_schema, value_split.reported_tier='E0' (the run-only value-leg) while the edge HEADLINE tier stays E1 (the form/structure RG-descent is the edge's own closure). This raw record's earlier 'manifest is inconsistent' claim is WITHDRAWN -- reported_tier (value-leg E0) and edge_scored_tier (headline E1) are distinct, non-conflicting schema fields (validator C10).",
+  "source_theory_id": "relativistic_qft",
+  "target_theory_id": "rg_eft",
+  "arrow_direction": "down",
+  "scored_tier": "E1",
+  "scored_modality": "shadow-down",
+  "secondary_modalities": [],
+  "conditionality_flags": [],
+  "named_import": null,
+  "decision_path": "STEP0 preconditions pass (both endpoints are frozen theory_card ids; rg_eft is experimentally_established; M declared before computation; (shadow-down,E1) is emittable per B.8) -> STEP1 DESCENT-TEST: on the declared finite Wilsonian-RG-step toy M, the FORM/STRUCTURE leg factors as D0 = A*L0 exactly (tree-level integrating-out is a fixed finite linear coarse-graining, a geometric series in E/Lambda), so xi_rel -> ~machine-zero STABLY at both refinements; no over-read (gate E.3 passes) -> SEAL E1 (form-leg = the edge's own closure). The matched-coupling VALUE leg is fenced out as a value_split E0 sub-target. STOP at STEP1.",
+  "diagnostic": {
+    "toy_model": "Finite Wilsonian-RG-step model M of relativistic_qft -> rg_eft. Carrier: UV field modes split into LIGHT (kept by the IR lens) + HEAVY (integrated out). FORM-leg: L0 (rg_eft native probe) = the effective-operator basis the IR lens keeps (relevant+marginal+leading-irrelevant light operators); D0 (relativistic_qft dissolving probe) = the UV light-sector readout AFTER tree-level heavy-mode elimination = a finite truncated geometric series in eps=E/Lambda acting on L0, hence D0 = A*L0 with A = I + sum_k eps^k W_k. Audit energy C0 = G G^T + I (PSD). VALUE-leg toy: IR lens keeps a PROPER subspace (k_keep<d) = the FORM directions; the strong-coupling matched coupling g_eff = g/(1-c*g) (nonperturbative resummation / Landau-pole / dimensional-transmutation-style nonlinearity) loads a run-only direction ORTHOGONAL to the kept IR span, so the value readout carries energy outside P_L.",
+    "refinements": {
+      "h1": {"n_light": 4, "n_heavy": 2, "eps_E_over_Lambda": 0.30},
+      "h2": {"n_light": 9, "n_heavy": 3, "eps_E_over_Lambda": 0.10}
+    },
+    "FORM_leg_descent": {
+      "h1": {"raw_Xi_norm": 1.744e-15, "K_DD_norm": 2.699e0, "xi_rel": 6.463e-16},
+      "h2": {"raw_Xi_norm": 8.906e-15, "K_DD_norm": 1.126e0, "xi_rel": 7.907e-15},
+      "verdict": "xi_rel -> ~machine-zero STABLY across h1, h2; exact factorization D0 = A*L0 (ker L0 subset ker D0). Clean computable descent (E1).",
+      "ker_containment": "D0 = A*L0 exact at both refinements (verified True)."
+    },
+    "VALUE_leg_overread_check": {
+      "h1": {"d": 6, "k_keep": 4, "g_max": 0.85, "w_run_g_eff": 5.67, "raw_Xi_norm": 9.996e0, "xi_rel": 5.568e-1},
+      "h2": {"d": 12, "k_keep": 8, "g_max": 0.92, "w_run_g_eff": 11.50, "raw_Xi_norm": 2.190e1, "xi_rel": 5.224e-1},
+      "verdict": "xi_rel STABLE POSITIVE (~0.52-0.56) across both refinements with analytic control: the strong-coupling matched-coupling VALUE lives along a run-only (non-kept) direction the IR lens cannot span; no finite linear shortcut. The VALUE leg does NOT descend => E0, deferred. This is the located obstruction fenced OUT of the E1 form-leg, NOT smuggled into it."
+    },
+    "gates": {
+      "E.0_casting_not_tuned": "pass (both cards' casting_justification cite standard Wilsonian/path-integral QFT and the standard RG/EFT construction, independent of this atlas; casting_alternatives recorded, non-fragile)",
+      "E.1_M_declared_before_computation": "pass (M declared before any Xi)",
+      "E.2_modality_test_passed": "pass (B.1 DESCENT-LEGALITY returned PASS on the form leg)",
+      "E.3_no_over_read": "pass (recovered FORM answer lies in rg_eft.accepted_observables = matching coefficients / beta functions / anomalous dimensions / running couplings; no ħ/thermal/external predicates imported; the non-descending strong-coupling VALUE is fenced to the E0 value-leg, not claimed by the E1 leg)",
+      "E.5_conservative_default": "n/a (no doubt at STEP1; form verdict unambiguous and refinement-stable)",
+      "E.6_tier_fragility": "pass/not-fragile (card casting_alternatives note both QFT alternatives keep the same Sigma_f and do not flip the RG-descent tier; rg_eft alternatives keep beta-functions/anomalous-dimensions, E008 stays E1 at structure level under any formulation)",
+      "E.8_anti_emergence_derivation": "pass (E1 sealed by a DOWN descent Xi on D|L with source=higher (relativistic_qft); not an up-direction computation)",
+      "E.9_refinement_stability": "pass (form verdict xi_rel->~0 stable at h1 and h2; value verdict xi_rel stable-positive at h1 and h2; no flip)",
+      "E.11_near_intra_layer": "n/a (near_intra=false; relativistic_qft and rg_eft are distinct layers with distinct lens f / Sigma_f, a genuine RG quotient, not a tensor-factor restriction)"
+    }
+  },
+  "value_split": {
+    "form_tier": "E1",
+    "value_tier": "E0",
+    "split_type": "form_value",
+    "value_node": "matched-low-energy-couplings",
+    "reported_tier": "E0",
+    "note": "split_type=form_value. The FROZEN CONTRACT governs (R3): per CONTRACT.value_split_schema.reported_tier_rule, reported_tier_by_split_type[form_value]=value_tier=E0, so value_split.reported_tier='E0' (the run-only matched-low-energy-couplings value-leg, run-only at strong coupling: xi_rel~0.53 stable-positive, carried on the Run-Target ledger and NEVER summed into the E1 count). The EDGE HEADLINE tier stays E1 (edge_scored_tier='E1' in CONTRACT.value_split_schema.rows_carrying_value_split['E008']): the edge's OWN closure IS the EQUATION/STRUCTURE descent (form_tier E1), while the E0 value-leg is the separate never-summed Run-Target entry. The earlier claim that the manifest was 'inconsistent' is WITHDRAWN: reported_tier='E0' (the value-leg) and headline edge_scored_tier='E1' (the form-descent closure) are the two distinct schema fields and are non-conflicting per R3 (validator C10 enforces exactly this pairing)."
+  },
+  "near_intra_layer_result": null,
+  "rationale": "E008 is the paradigm Wilsonian RG / EFT shadow: integrating out high-energy modes casts the UV (relativistic_qft) theory onto a low-energy effective theory (rg_eft). The DESCENT structural test (B.1) passes for the FORM of the relation -- tree-level mode-elimination is a fixed finite linear coarse-graining (geometric series in E/Lambda), giving an exact factorization D0 = A*L0 and xi_rel -> ~machine-zero stably across two refinements. This is a coarse-graining physics already accepts (is_rg_eft_descent=true; 'textbook in costume', counted as an E1 shadow that is textbook RG/EFT, not novel SBT content). The structural descent modality is PRIMARY (B.7a precedence: any structural test that passes is primary), so primary_modality = shadow-down; this is NOT a recognition-landing (is_recognition=false, no named import is needed for the form descent). The matched-coupling VALUES are genuinely run-only at strong coupling (nonperturbative resummation / dimensional transmutation has no finite linear shortcut; xi_rel~0.53 stable-positive on the value-leg toy) -> they form a real value_split E0 sub-target carried separately on the Run-Target Manifest, never summed with the E1 form-leg. Edge scored E1 (form-descent is the edge's own closure), modality shadow-down.",
+  "self_audit": "§9 trap-checklist + over-read check on myself: (1) 'unify by deriving both from shared math' -- not done; this is a one-directional DOWN shadow, not a claimed factorization of two peers. (2) 'derive the emergent constant' -- explicitly NOT done; the run-only matched VALUES are fenced into the E0 value-leg and deferred, never derived. (3) 'shortcut the run with a closed form' -- the value-leg toy confirms NO finite linear shortcut reaches the strong-coupling value (xi_rel stays positive); the E0 deferral respects irreducibility. (4) 'SBT is just a textbook lemma relabeled' -- ACKNOWLEDGED and embraced: this IS textbook RG/EFT (is_rg_eft_descent=true), and the rubric explicitly counts it as a textbook E1 shadow, not novel SBT content; the SBT content here is only the descent-legality typing, not a new claim. E.4 relabeling-residual: removing the RG relabeling does NOT erase the relation (the descent legality Xi=0 is a computed fact about the mode-elimination map, not a renaming) -> a genuine inter-layer relation, not a relabel. (5) 'higher reduces to lower' -- refused: the arrow runs DOWN (shadow), the UP/UV-completion direction is the separate E009 edge (E3, non-definable from the IR). OVER-READ check (gate E.3): the E1 form-descent recovers only rg_eft.accepted_observables (matching coefficients, beta functions, anomalous dimensions); no ħ/thermal/external predicate is imported (contrast E005); the non-descending strong-coupling value is the located obstruction, correctly fenced to the E0 value-leg and NOT counted in the E1 leg -- no over-read. SCOPE: no irreducible run performed (only finite linear algebra on declared M), no empirical claim, no constant derived; the E0 value-leg is specced-and-deferred, not run.",
+  "drift_vs_provisional": "Tier+modality AGREE with the frozen provisional guess at the headline level: provisional_modality_guess=shadow-down (matches scored_modality), provisional_tier_guess=E1 and headline_tier=E1 (matches scored_tier=E1). DERIVED fresh, not copied: I ran the FORM-leg descent (xi_rel~1e-15 stable) and an independent VALUE-leg over-read toy (xi_rel~0.53 stable-positive) to confirm BOTH the E1 form-descent AND the reality of the E0 value-split rather than assuming them. No manifest inconsistency (the earlier such claim is WITHDRAWN per R3): the frozen contract value_split carries reported_tier='E0' (the run-only value-leg) AND edge_scored_tier='E1' (the headline form-descent closure) as the two distinct schema fields the R3 reported_tier_rule requires -- they are non-conflicting (validator C10 enforces exactly this pairing). This raw record now matches the frozen contract: value_split.reported_tier='E0', headline tier E1. The E0 value-leg stays on a separate, never-summed Run-Target ledger."
+}

@@ -1,0 +1,9 @@
+output,classification,grade,scope,source_artifacts
+e021_rg_measure_step8.py,analytical structural,finite-toy-diagnostic,"Builds moduli grid, toy RG flow, measure selection, Lambda readout, obstructions, and controls.",steps/step8_e021_rg_measure_robustness_artifacts/e021_rg_measure_step8.py;steps/step3_e021_cosmological_constant_artifacts/results_summary.md
+rg_measure_vacua_step8.csv,analytical structural,finite-toy-diagnostic,"Vacuum candidates, RG running, selection score, selected modulus, and realized Lambda.",steps/step8_e021_rg_measure_robustness_artifacts/rg_measure_vacua_step8.csv
+nonfactorization_step8.csv,analytical structural,finite-toy-diagnostic,"Bare-UV, enriched-Sigma, selection-relocation, RG-derived, and no-selection obstruction recomputes.",steps/step8_e021_rg_measure_robustness_artifacts/nonfactorization_step8.csv
+controls_step8.csv,analytical structural,finite-toy-diagnostic,"RG-derived, no-selection, and selection-relocation controls.",steps/step8_e021_rg_measure_robustness_artifacts/controls_step8.csv
+results_summary.md,organizational/audit,finite-toy-diagnostic,Human-readable E021 robustness verdict and bounded scope.,steps/step8_e021_rg_measure_robustness_artifacts/results_summary.md
+schema.json,organizational/audit,finite-toy-diagnostic,Per-step schema and final verdict.,steps/step8_e021_rg_measure_robustness_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite RG/measure toy.,steps/step8_e021_rg_measure_robustness_artifacts/nonclaim_boundary.md
+run_step8.py,organizational/audit,finite-toy-diagnostic,"Validator for RG/measure selection, factorization, controls, source paths, ledgers, prior validators, and overclaim guard.",steps/step8_e021_rg_measure_robustness_artifacts/run_step8.py

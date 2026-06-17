@@ -1,0 +1,8 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP39_REPRODUCE_CARRIER,ModeB,step39_mode_b_clean_separation_derivation,determinism,"Step 39 rederives the Step-35 higher-layer survivor count as 12."
+C_CLUSTER_A_STEP39_STANDARDNESS,ModeB,step39_mode_b_clean_separation_derivation,standardness,"The tested standard confining-sector requirement permits fermionic charged matter and rejects confining-charged massive vector content."
+C_CLUSTER_A_STEP39_IMPLICATION,ModeB,step39_mode_b_clean_separation_derivation,implication,"Standardness implies clean separation on the finite carrier."
+C_CLUSTER_A_STEP39_EQUIVALENCE,ModeB,step39_mode_b_clean_separation_derivation,circularity,"Clean separation also implies standardness on the finite carrier, so the two are extensionally equivalent."
+C_CLUSTER_A_STEP39_RELAXATION,ModeB,step39_mode_b_clean_separation_derivation,robustness,"Relaxing the vector exclusion brings the single-factor 4 family back; the condition is load-bearing."
+C_CLUSTER_A_STEP39_VERDICT,ModeB,step39_mode_b_clean_separation_derivation,verdict,"Verdict is INDEPENDENT_INTRODUCED_CIRCULAR."
+C_CLUSTER_A_STEP39_NONCLAIM_BOUNDARY,ModeB,step39_mode_b_clean_separation_derivation,honesty,"Clean separation remains qualified and introduced; no fundamental derivation or external-transfer status upgrade is supplied."

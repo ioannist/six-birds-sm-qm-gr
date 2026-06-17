@@ -1,0 +1,8 @@
+Step 34 Part B instance-uniqueness
+Verdict: instance_uniqueness_minimal_common_refinement_up_to_equivalence
+L unique minimal: True
+Sub-minimal drop-one-mode candidates fail by linear map obstruction.
+M_super_5mode is admissible but non-minimal.
+union_direct_sum is non-admissible by duplicate-coordinate defect.
+L_prime_relabel is isomorphic to L by the exhibited permutation.
+Super-minimal admissible refinements exist; uniqueness is minimal up to equivalence.

@@ -1,0 +1,86 @@
+{
+  "step": 13,
+  "orientation": "Mode B reordered neutral-currency construction",
+  "active_residual": "R_child_E018_framework_currency_mismatch_after_step12_rejection",
+  "carrier": {
+    "type": "finite structured currency carrier",
+    "levels": [1, 2],
+    "cells": [4, 8],
+    "qm_currency_dimension": 3,
+    "gr_currency_dimension": 3,
+    "neutral_currency_dimension": 4,
+    "union_dimension": 6,
+    "currency_modes": {
+      "qm": ["q_amplitude_density", "q_phase_order", "q_coherence_transport"],
+      "gr": ["g_metric_density", "g_transport_flux", "g_curvature_scale"],
+      "neutral_u": ["u_neutral_density", "u_phase_order", "u_transport_flux", "u_curvature_scale"]
+    },
+    "no_smuggling_controls": {
+      "one_hot_set_cover_used": false,
+      "circular_distance_from_u_used": false,
+      "target_layer_inserted": false,
+      "endpoint_derivation_claimed": false,
+      "literature_program_terms_used": false,
+      "union_control_passes": false,
+      "placeholder_control_passes": false,
+      "collapse_control_passes": false,
+      "d_u_ge_d_union": false,
+      "shadow_maps_equal": false,
+      "step12_union_rejected": true
+    }
+  },
+  "candidate_move": {
+    "id": "RUNG_2_NEUTRAL_CURRENCY",
+    "description": "Build one compressed source currency u whose two distinct shadows recover the enriched QM-side and GR-side currency dynamics.",
+    "shadow_maps": {
+      "S_QM": "u_neutral_density, u_phase_order, u_transport_flux",
+      "S_GR": "u_neutral_density, u_transport_flux, u_curvature_scale"
+    }
+  },
+  "final_verdict": {
+    "type": "neutral_currency_built_candidate_external_review_required",
+    "root_landed": false,
+    "rung_built": true,
+    "external_review_required": true,
+    "next_move": "RETEST_RUNG_1_REFINE_FIXEDPOINT_ON_NEUTRAL_CURRENCY"
+  },
+  "track_fields": {
+    "recovery_residuals": {
+      "neutral_recovery_max": 9.916641414829509e-17,
+      "placeholder_recovery_min": 1.4142135623730951,
+      "union_recovery_max": 9.916641414829509e-17,
+      "collapse_recovery_min": 1.8808144464156678
+    },
+    "compression": {
+      "d_qm": 3,
+      "d_gr": 3,
+      "d_u": 4,
+      "d_union": 6,
+      "passes": true,
+      "union_control_rejected": true
+    },
+    "distinctness": {
+      "neutral_shadow_distinctness": 1.1547005383792517,
+      "shadow_maps_equal": false
+    },
+    "nonfactorization": {
+      "endpoint_nonfactorization_min": 0.37808491927495375,
+      "shared_compression_fraction": 0.3333333333333333
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A compressed neutral currency with d_u=4 recovers two distinct d=3 endpoint currencies on this finite carrier."
+    ],
+    "analytical_structural": [
+      "Finite-carrier diagnostic: the direct-sum control recovers both endpoints but fails the strict compression criterion."
+    ],
+    "organizational_audit": [
+      "Step-12 union rejection is recorded as a transferred constraint."
+    ],
+    "remaining_external_content": [
+      "External review must judge whether the finite-carrier currency is physically meaningful beyond this toy."
+    ]
+  }
+}
+

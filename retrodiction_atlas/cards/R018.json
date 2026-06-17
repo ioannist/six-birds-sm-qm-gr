@@ -1,0 +1,218 @@
+{
+  "id": "R018",
+  "card": {
+    "id": "R018",
+    "one_sentence_claim": "SBT recovers \"conserved quantity\" as a quotient-definability normal form: a readout C:X->V is conserved for a declared symmetry/route iff it is constant on the declared orbits iff it factors through the orbit quotient (C = barC o q_orb), with Noether/momentum, Lavoisier/mass, and knot invariants as instances of this single descent statement (F27, Lean-certified).",
+    "target_known_fact": "Noether's theorem (Noether 1918) and the general notion of a conserved quantity as an invariant of the symmetry orbit: momentum from translation invariance, charge from gauge invariance, energy from time-translation, plus conservation of mass (Lavoisier 1789) and topological invariants under Reidemeister moves.",
+    "scientific_domain": "Classical/quantum field theory and statistical mechanics (symmetry and conservation laws); cross-domain (chemistry, knot theory, PL type theory, probability).",
+    "argument_family": "symmetry-emergence (specialization of SBT's quotient-definability / descent machinery to the orbit map of a declared group/route action)",
+    "derivability_class": "A",
+    "theory_basis": [
+      {
+        "component": "F27 Conservation as Orbit Descent (thm:F27): 'A quantity C:X->V is conserved for a declared route or symmetry structure if and only if it descends through the orbit quotient'; Lean theorem StatusRecordsCoherence.ConservationAsOrbitDescent.conservation_as_orbit_descent, semantic alignment 'faithful'",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+        "role": "Primary statement and Lean anchor: the conserved = orbit-quotient-definable biconditional plus its five layer instantiations (Lavoisier mass, Reidemeister/Jones-Alexander knot invariants, subject reduction, Meselson-Stahl, martingales) and the line 'The classical variational-symmetry instance of this orbit-descent reading is Noether's theorem'"
+      },
+      {
+        "component": "Quotient-definability backbone: a lens f:Z->X induces definability algebra Sigma_f (predicates measurable wrt f); P5 packaging cl_j(A)=Pi_j^{-1}(Pi_j(A)) is the idempotent quotient closure; a readout is admissible/definable iff it is constant on fibers and factors through the quotient",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex",
+        "role": "The general descent/definability machinery (sec 'Theories as partitions and definability', sec:idempotent-endo, thm:meta-prim P5) of which F27 is the orbit-map specialization; supplies why conserved = closure-invariant is the SAME move as macro-observable admissibility"
+      },
+      {
+        "component": "HL-META-1 update-vs-quotient compatibility / descent: macro update F^sharp([p])=[F(p)] is well-defined iff p~_j q => F(p)~_j F(q); P4 staging/sectors as conserved-block labels (refinement chain depth)",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_II_Admissibility_Meta_Theory_and_the_Exact_Six_Program.tex",
+        "role": "Provides the dynamics-side reading: a conserved sector label is well-defined under the declared dynamics exactly when the dynamics respects the orbit quotient (P1 descent); ties conservation to the same compatibility slot used throughout SBT"
+      }
+    ],
+    "proof_route": {
+      "required_definitions": [
+        "Declared symmetry/route structure: a group (or route monoid) action on the carrier X with orbit equivalence ~_orb and orbit-quotient map q_orb:X->X/~_orb (an external input, A_LENS-style declaration)",
+        "Conserved readout: C:X->V with 'conserved' DEFINED as orbit-constancy, C(x)=C(x') whenever x~_orb x'",
+        "Descent / factoring through the quotient: existence of barC:X/~_orb->V with C = barC o q_orb",
+        "Definability algebra Sigma_f / fiber-constancy (Foundations I): the readouts definable at lens f are exactly those constant on the partition cells",
+        "(For the dynamics reading) HL-META-1 update-vs-quotient compatibility: dynamics F descends to the quotient iff it respects ~_orb"
+      ],
+      "required_lemmas": [
+        {
+          "statement": "Orbit-descent biconditional: C is constant on orbits iff there exists barC with C = barC o q_orb (so conserved iff orbit-quotient-definable). Proof: forward, define barC([x])=C(x), well-defined by orbit-constancy; backward, q_orb is constant on orbits so barC o q_orb is too.",
+          "difficulty": "trivial",
+          "already_in_papers": true,
+          "paper": "Foundations IV thm:F27 (lines 5280-5297), Lean conservation_as_orbit_descent, 'faithful'"
+        },
+        {
+          "statement": "Definability-as-fiber-constancy: a readout is Sigma_f-definable iff it is constant on f-fibers and factors through q_f (the general backbone that F27 specializes by taking f = orbit map).",
+          "difficulty": "trivial",
+          "already_in_papers": true,
+          "paper": "Foundations of Emergence Calculus, sec 'Theories as partitions and definability', def at lines 1001-1005 (h definable iff h = tilde h o f); P5 packaging in thm:meta-prim"
+        },
+        {
+          "statement": "Dynamics-respects-quotient (sector well-definedness): the conserved-block label descends to a closed macro update iff HL-META-1 holds (F respects orbit equivalence); when it fails no closed macro conservation law exists at that lens.",
+          "difficulty": "easy",
+          "already_in_papers": true,
+          "paper": "Foundations II thm:meta-prim P1 / HL-META-1; Foundations IV F18 Lawhood Descent"
+        },
+        {
+          "statement": "Bridge lemma (NEEDED, OUT OF CURRENT SCOPE): from a continuous variational symmetry of an action functional, produce the orbit structure AND the explicit conserved current J^mu with d_mu J^mu = 0 on-shell, i.e. the actual content of Noether's first theorem. SBT has no continuum/Lagrangian interface to generate this; the orbit and the symmetry->current map must be imported.",
+          "difficulty": "hard",
+          "already_in_papers": false,
+          "paper": "MISSING: no continuum/Lagrangian/variational interface in the certified core (ledger missing_interfaces: 'No continuum/continuous-state interface'; 'continuum emergence is only a structural normal form F43, no convergence theorem, no field theory'). Corpus mentions the Noether current once (Foundations IV line 3415) and CITES Noether 1918 as an external continuum fact, never derives it."
+        }
+      ],
+      "main_steps": [
+        "1. Declare the symmetry/route: supply the group/route action on X and form the orbit-quotient map q_orb (external input; this is where the physics enters).",
+        "2. Define 'conserved' as orbit-constancy of the candidate readout C (the SBT reading of a conservation law).",
+        "3. Apply the orbit-descent biconditional (thm:F27): conserved iff C factors through q_orb iff C is a Sigma_orb-definable / closure-invariant readout. This is the already-Lean-certified core and is essentially a one-paragraph universal-algebra argument.",
+        "4. Add the dynamics reading: state HL-META-1 explicitly as a hypothesis (the declared dynamics respects ~_orb) so that the conserved label is a well-defined sector under the SBT update; cite F18 Lawhood Descent that lawhood requires the descended readout be declared at the access layer.",
+        "5. Read off the layer instantiations already in F27 (Lavoisier mass, Reidemeister/Jones-Alexander, subject reduction, Meselson-Stahl, martingale) as one normal form, and place Noether/momentum as the classical-variational instance WITHOUT claiming to derive the current.",
+        "6. Fence the scope explicitly: state that step 3 captures only conserved<=>orbit-invariant, NOT the existence-of-current direction; the symmetry group and the symmetry->current map are imported."
+      ],
+      "data_comparison_steps": [
+        "No empirical dataset is involved or appropriate: F27 is a structural normal form, not a numerical/empirical claim (SBT disclaims empirical realization).",
+        "Cross-domain consistency check (already in paper, can be re-exhibited as worked examples): instantiate the orbit quotient in each of the five declared layers and confirm the standard invariant (total mass; Jones/Alexander polynomial; typing judgement under reduction; template-strand identity; conditional expectation) is orbit-constant and recovers the textbook conservation statement.",
+        "Sanity 'null' check: exhibit a readout NOT constant on the declared orbits (e.g. a gauge-variant coordinate) and confirm it fails to descend, so F27 correctly classifies it as non-conserved relative to that declared symmetry."
+      ],
+      "minimum_viable_result": "Restate and re-exhibit F27 as a SINGLE Lean-certified quotient-definability normal form: 'conserved = orbit-quotient-definable = closure-invariant', specializing the Foundations I definability backbone to the orbit map, and tabulate Lavoisier/mass, Reidemeister/knot-invariant, subject-reduction, Meselson-Stahl, and martingale as five instances of the one statement, with Noether named (not derived) as the variational instance. This already exists and is Lean-anchored; the deliverable is the honest unifying write-up plus the explicit scope fence.",
+      "stronger_result": "A genuine SELECTION result: tie the choice of WHICH symmetry/orbit is physically realized to an SBT stability/closure criterion (e.g. show that the orbit quotient that survives idempotent packaging E, or the one minimizing closure deficit CD_tau, coincides with the realized conserved sector), so that conservation laws are not merely re-described but their realized content is constrained by SBT machinery. This would convert R018 from a re-description into a partial derivation of which conserved quantities appear.",
+      "estimated_bottlenecks": [
+        "The hard bridge lemma (continuous symmetry => existence of conserved current) is genuinely out of scope: there is no continuum, no Lagrangian, no variational calculus, and no stochastic-lens backbone in the certified core, so the deep content of Noether cannot be produced from within SBT.",
+        "The symmetry group and its action are smuggled physics (free parameter); SBT neither enumerates conserved quantities nor predicts which symmetry is realized, so any 'prediction' is downstream of the declaration.",
+        "The stronger selection result requires a canonical-lens / orbit-selection principle that SBT explicitly lacks (pointer-basis/lens selection is a disclaimed missing interface), so it is research-grade, not a write-up.",
+        "Only EXACT orbit-constancy is handled; approximate/asymptotic/broken-symmetry conservation has no machinery."
+      ],
+      "fallback_result": "If even the unifying write-up is contested, the irreducible fallback is the bare Lean-certified statement F27 (StatusRecordsCoherence.ConservationAsOrbitDescent.conservation_as_orbit_descent, 'faithful'): for a declared orbit quotient, a readout is conserved iff it factors through that quotient. This is true, certified, and elementary, and stands regardless of any physics bridge."
+    },
+    "free_parameters": [
+      "Declared symmetry/route structure: the group (or route) action on X and its orbit quotient q_orb, supplied externally (not produced by SBT)",
+      "Carrier X and the candidate readout C:X->V",
+      "Choice of lens f / which quotient q_orb is taken (which distinctions are observable); equivalently the refinement-chain depth j that labels sectors (P4 staging)"
+    ],
+    "auxiliary_assumptions": [
+      "The physical symmetry group and its action are declared inputs (smuggled physics); SBT does not produce them",
+      "Identifying SBT orbit-descent with the physicist's conserved current requires an externally supplied Noether map symmetry->current and a continuum/Lagrangian bridge that SBT lacks",
+      "'Conserved' is identified with exact orbit-constancy; no approximate, asymptotic, or spontaneously-broken-symmetry conservation is handled",
+      "(Dynamics reading) the declared dynamics respects the orbit equivalence (HL-META-1 holds), otherwise no closed macro conservation law exists at that lens",
+      "Finite setting (A_FIN): all carriers are finite; continuous groups enter only through their declared finite orbit data"
+    ],
+    "data_matched": [
+      "No empirical dataset matched (structural normal form; empirical realization disclaimed)",
+      "Qualitative cross-domain consistency only: total mass under chemical rearrangement (Lavoisier), Jones/Alexander polynomial invariance under Reidemeister moves, subject reduction in typed lambda calculi, Meselson-Stahl template-strand identity, martingale property under conditional expectation"
+    ],
+    "baseline_comparison": "Strictly weaker than the standard account on physics content, and at best a re-organization, not a derivation. SBT RECOVERS only the easy direction of Noether's framework (conserved <=> invariant on the symmetry orbit), which is a near-tautology equivalent to the standard 'a function on the quotient is a function constant on fibers'. It does NOT recover the deep direction (continuous symmetry of an action => existence of a conserved current), does not produce the Noether current J^mu, does not enumerate or predict conserved quantities, and imports the symmetry group as a declared input. The genuine added value over the textbook account is organizational: it places Noether/momentum, Lavoisier/mass, knot invariants, subject reduction, and martingales under one Lean-certified descent normal form, and connects 'conserved' to the SAME definability/closure machinery that certifies macro-observable admissibility (F18 Lawhood Descent, P5 packaging). So: recovers (trivially) + reorganizes (genuinely), does not exceed.",
+    "why_scientists_care": "It is one of SBT's cleanest, most honest, Lean-anchored demonstrations of its core thesis that heterogeneous structural facts (conservation in physics, chemistry, knot theory, type theory, probability) are instances of a single quotient-definability/descent move. For physicists the payoff is conceptual compression and a precise statement of WHERE the physics enters (the declared symmetry and the symmetry->current map), cleanly separating the trivial descent bookkeeping from the substantive variational content of Noether. The fertile open question it sharpens is whether the SELECTION of the realized symmetry/conserved sector can be tied to an SBT stability/closure criterion, which would turn a re-description into a partial law.",
+    "target_audience": [
+      "mathematical physicists working on symmetry and conservation laws",
+      "category-theory / structural-foundations researchers (descent, quotients, definability)",
+      "formal-methods / Lean mechanization community",
+      "applied mathematicians and cross-domain modelers interested in unifying normal forms (knot invariants, type soundness, martingales)"
+    ],
+    "recommended_artifact": "A short focused note (4-6 pages): (1) state F27 as the conserved = orbit-quotient-definable = closure-invariant normal form, with the existing Lean theorem cited verbatim and its 'faithful' status explained (Lean covers only the stated biconditional, no physics); (2) derive it as a one-paragraph specialization of the Foundations I definability backbone (constant-on-fibers <=> factors-through-quotient, lines 1001-1005) and the HL-META-1 dynamics-descent reading; (3) tabulate the five layer instantiations plus Noether/momentum NAMED as the variational instance; (4) a prominent scope fence separating the certified easy direction from the un-derived current/selection content. Optionally ship the Lean snippet as a reproducibility artifact.",
+    "execution_cost": "Low for the minimum-viable result: it is essentially a careful, honestly-fenced write-up of an already-proved, already-Lean-certified theorem plus its existing instantiations (days to weeks, no new mathematics). High/research-grade for the stronger selection result, which requires a canonical-lens / orbit-selection principle that SBT explicitly disclaims (open problem).",
+    "honest_status_note": "GROUNDED and Lean-anchored, but must NOT be presented as 'deriving Noether'. The certified content (thm:F27, conservation_as_orbit_descent, semantic alignment 'faithful') is the elementary biconditional conserved<=>constant-on-orbits<=>factors-through-quotient, a 4-line universal-algebra argument; the paper itself states it 'does not enumerate conserved quantities' and Foundations IV 'is not a unification claim' (N3). The deep direction of Noether (symmetry of an action => existence of a current) is out of scope: the ledger lists no continuum/Lagrangian/variational interface, and the symmetry group is a declared (smuggled) input. Crossing into 'SBT predicts conserved quantities' or 'derives the Noether current' would violate the disclaimers (no continuum theories) and the candidate's own initial_risks. Honest framing: a trivially-true, Lean-certified, genuinely-unifying RE-ORGANIZATION of conservation as descent, with Noether named as an instance, not produced."
+  },
+  "audit": {
+    "explicit_parameters": [
+      {"name": "Declared symmetry/route structure: the group (or route monoid) action on X and its orbit-quotient map q_orb", "role": "Defines the orbits on which 'conserved = constant'; this is where ALL physics enters. SBT does not produce it (ledger free_parameters: 'orbit/symmetry ... supplied from OUTSIDE the calculus').", "source": "External declaration (A_LENS-style); Foundations IV thm:F27 'declared route or symmetry structure'", "fixed_before_comparison": false},
+      {"name": "Carrier X (configuration space) and candidate readout C:X->V", "role": "The state space and the function whose conservation is asserted; both supplied externally per instance.", "source": "External declaration per layer instantiation (Lavoisier configs, knot diagrams, typable expressions, DNA duplexes, path space)", "fixed_before_comparison": false},
+      {"name": "Lens f / which quotient q_orb is taken (which distinctions observable)", "role": "Selects the partition; ledger: 'nor that any particular choice of lens f or timescale tau is preferred'. Choosing a coarser/finer orbit changes whether a given C descends.", "source": "Foundations I A_LENS; ledger free_parameters 'Lens f'", "fixed_before_comparison": false},
+      {"name": "Refinement-chain depth j / P4 staging (sector labels)", "role": "Labels conserved blocks / sectors in the dynamics reading; which depth indexes the conserved sector is adjustable.", "source": "Foundations II thm:meta-prim P4; ledger primitives P4", "fixed_before_comparison": false},
+      {"name": "Identity/definition of 'conserved' as EXACT orbit-constancy", "role": "The predicate being tested is DEFINED as orbit-constancy, making the biconditional analytic. Choosing exact (not approximate/broken) conservation is a modeling choice.", "source": "thm:F27 statement (line 5283): 'conserved ... if and only if ... C(x)=C(x') whenever x,x' lie in same declared orbit'", "fixed_before_comparison": false}
+    ],
+    "implicit_parameters": [
+      {"name": "Symmetry->current (Noether) map", "risk": "To identify SBT orbit-descent with a physicist's conserved current J^mu, an external Noether map and continuum/Lagrangian bridge must be imported. SBT has NO continuum/variational interface (ledger missing_interfaces). High risk of overclaim if framed as 'deriving Noether'."},
+      {"name": "Choice of which group/orbit is 'physically realized'", "risk": "SBT has no canonical-lens / orbit-selection principle (pointer-basis/lens selection explicitly disclaimed). Whatever symmetry is declared determines the answer; the selection is smuggled, so any 'prediction' is downstream of the declaration."},
+      {"name": "Dynamics-respects-quotient assumption (HL-META-1)", "risk": "The dynamics reading silently assumes F respects ~_orb so the conserved label is a well-defined sector. If false, no closed macro conservation law exists at that lens; this is an additional unstated compatibility hypothesis."},
+      {"name": "Prototype/completion U_f in the dynamics-side packaging", "risk": "Where packaging enters (P5), lifts are SELECTED not unique (ledger missing_interfaces). For the bare F27 biconditional this is dormant, but any closure-deficit / stability strengthening would inherit it."},
+      {"name": "Finiteness (A_FIN) embedding of continuous groups", "risk": "Continuous symmetry groups (translation, gauge, time-translation) enter only via 'declared finite orbit data'; the reduction of a Lie group to finite orbit data is an unaudited modeling step."}
+    ],
+    "adjustable_choices": [
+      "Which group/route action and orbit quotient q_orb to declare (translation, gauge, Reidemeister moves, reduction relation, filtration extension, chemical-rearrangement, replication round)",
+      "Which carrier X and readout C to attach per domain",
+      "Whether to read 'conserved' as exact orbit-constancy vs approximate (only exact is handled)",
+      "Whether to add the dynamics reading (HL-META-1 / P4 sector) or stop at the static biconditional",
+      "Which lens refinement / coarse-graining depth labels the sector",
+      "Which of the 5+ layer instantiations to exhibit as worked examples",
+      "Naming Noether as 'the variational instance' vs attempting (out-of-scope) to derive the current"
+    ],
+    "degrees_of_freedom_estimate": 6,
+    "data_points_matched": 0,
+    "overfitting_risk": "high",
+    "adhoc_test_answers": [
+      {"question": "Was the target fact (Noether/conservation laws) known before the theory component was built?", "answer": "Yes. Noether 1918, Lavoisier 1789, Reidemeister 1927, Meselson-Stahl 1958, Wright-Felleisen 1994, Doob 1953 all predate SBT. F27 is explicitly written to NAME these as instances ('The classical variational-symmetry instance of this orbit-descent reading is Noether's theorem'). The target was used to design the instantiation list, not predicted."},
+      {"question": "Is the matching mechanism a genuine derivation or a re-description / definitional identity?", "answer": "A definitional identity (re-description). 'Conserved' is DEFINED as orbit-constancy, so the biconditional 'conserved iff factors through q_orb' is the textbook universal-algebra fact 'a function on the quotient = a function constant on fibers' (Foundations I def lines 1001-1006). The F27 proof is 4 lines. SBT recovers only the trivial direction; it does NOT derive the existence-of-current (deep) direction of Noether."},
+      {"question": "How many free parameters/choices are absorbed relative to data matched?", "answer": "Roughly 6 adjustable structural choices (group/orbit, carrier, readout, lens depth, exact-vs-approx, dynamics-reading) against ZERO empirical data points (it is a structural normal form; SBT disclaims empirical realization). The ratio is unbounded: arbitrary freedom, no numeric target. Match is qualitative cross-domain consistency only."},
+      {"question": "Does the mechanism import known physics rather than produce it?", "answer": "Yes, almost entirely. The symmetry group and its action are 'smuggled physics' (declared inputs); ledger lists 'No continuum/Lagrangian/variational interface'. The actual content of Noether (symmetry of an action => conserved current) is OUT OF SCOPE (the card's own 'hard, not in papers' bridge lemma). SBT supplies only the descent bookkeeping atop imported group theory."},
+      {"question": "Would the theory have equally accommodated the OPPOSITE observation?", "answer": "Yes. If a quantity were observed NOT conserved, SBT accommodates this just as easily by declaring an orbit structure under which C fails to descend (the card's own 'null check': a gauge-variant coordinate 'fails to descend, so F27 correctly classifies it as non-conserved'). The free orbit declaration absorbs both outcomes symmetrically. F27 cannot be falsified by any conservation/non-conservation observation."},
+      {"question": "Does the same mechanism reuse across >=2 independent facts?", "answer": "Yes, strongly: the single orbit-descent mechanism is exhibited across 5 declared layers (Lavoisier mass, Reidemeister/Jones-Alexander knot invariants, subject reduction, Meselson-Stahl template-strand, martingale conditional expectation) plus Noether/momentum named as the variational instance. This cross-domain reuse is the genuine (organizational) value; mechanism_tag = orbit-descent."},
+      {"question": "Is the Lean certification load-bearing for the physics claim?", "answer": "No. The Lean theorem (conservation_as_orbit_descent, 'faithful') certifies only the elementary biconditional conserved<=>constant-on-orbits<=>factors-through-quotient. It does NOT certify any physics, any current, or which symmetry is realized. 'Faithful' (per app:formalization line 9810: 'uses the base wording without qualification') means Lean covers the same trivial statement, not the Noether content. Certification is real but applies to a near-tautology."},
+      {"question": "Does the claim cross any SBT disclaimer?", "answer": "Only if overstated. As fenced (F27 'does not enumerate conserved quantities', Noether 'named not derived'), it honors the disclaimers (no continuum theories, no continuum/variational interface). Crossing into 'SBT predicts conserved quantities' or 'derives the Noether current J^mu' WOULD violate the no-continuum disclaimer and the missing-interface ledger; the card flags this explicitly as forbidden."}
+    ],
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "F27 is symmetric under the observation it is meant to explain, because the orbit structure is a FREE declared input and 'conserved' is DEFINED as orbit-constancy. In a world where a putative quantity is NOT conserved, SBT 're-explains' it by declaring an orbit/symmetry under which C does not descend, and F27 classifies it as non-conserved with identical machinery (the candidate's own 'null check' does exactly this with a gauge-variant coordinate). Likewise it could host a fake/extra conservation law by declaring a coarser orbit. Because the group action carries all empirical content and is never produced or constrained by SBT (no orbit-selection principle; pointer/lens selection disclaimed), no conservation or non-conservation observation could falsify F27. This is the signature of an analytic re-description, not a predictive law: the biconditional is true in every possible world for any declared orbit. The genuine, non-vacuous content is purely organizational (one descent normal form across >=5 domains), and that organizational claim is itself unfalsifiable by physics."
+    },
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "audit_verdict": "HIGH FLEXIBILITY / ANALYTIC RE-DESCRIPTION, honestly fenced. R018 is GROUNDED and Lean-anchored but is a near-tautology: 'conserved' is DEFINED as orbit-constancy, so F27 (Tsiokos_2026_Six_Birds_Foundations_IV...tex, thm:F27, lines 5280-5297) is the textbook universal-algebra fact 'function on the quotient = function constant on fibers', a direct specialization of the Foundations I definability backbone (Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex, def at lines 1001-1006: h definable iff h=tilde h o f). The Lean theorem StatusRecordsCoherence.ConservationAsOrbitDescent.conservation_as_orbit_descent ('faithful') certifies only this 4-line biconditional, not any physics. Degrees of freedom (~6 structural choices) vastly exceed data points matched (0 empirical). The opposite-world test FAILS decisively: the free orbit declaration absorbs both conservation and non-conservation, so F27 is unfalsifiable by any physical observation. The target facts (Noether 1918, Lavoisier 1789, Reidemeister, Meselson-Stahl, Doob) all predate and were used to construct the instantiation list. The deep direction of Noether is genuinely OUT OF SCOPE (ledger missing_interfaces 'No continuum/Lagrangian/variational interface'; the symmetry group is smuggled physics; corpus line 3415 cites Noether 1918 as external fact). Mechanism reuse is strong and real (orbit-descent across >=5 layers + Noether named), which is the ONLY genuine added value (organizational compression), NOT a derivation. Verdict: keep strictly as a Lean-certified unifying RE-ORGANIZATION with Noether NAMED not derived; any framing as 'SBT predicts conserved quantities' or 'derives the Noether current' crosses the no-continuum disclaimer and must be rejected. Irreducible fallback (bare certified biconditional) is true, elementary, and survives regardless of physics bridge."
+  },
+  "skeptic_panel": {
+    "min_survival": 2,
+    "mean_survival": 2.13,
+    "fatal_objections_present": true,
+    "skeptics": [
+      {"skeptic_role": "Particle phenomenologist / high-energy theorist", "adversarial_survival_score": 2, "fatal": true, "core": "If presented as a RETRODICTION OF NOETHER'S THEOREM it is fatally false: zero Noether content (symmetry->current map, d_mu J^mu=0, gauge<->charge, anomalies) is derived. The biconditional is unfalsifiable (opposite-world fails). Repairable only by reclassifying the target to 'conserved quantity is an invariant of the symmetry orbit' and enforcing the scope fence.", "is_actually_new": false, "beats_baseline": false},
+      {"skeptic_role": "Mathematical physicist (Noether's theorems, derivation-vs-definition)", "adversarial_survival_score": 2, "fatal": false, "core": "F27 is an analytic re-description; 'conserved' DEFINED as orbit-constancy makes the biconditional the universal-algebra triviality stated three times (F27 lines 5280-5297, F18 Lawhood Descent, Foundations I def lines 999-1006). 'Faithful' Lean tag certifies the 4-line fact, no physics. Repair: state the definitional identity openly, explain 'faithful', make HL-META-1 explicit.", "is_actually_new": false, "beats_baseline": false},
+      {"skeptic_role": "EFT / known-physics-recovery skeptic", "adversarial_survival_score": 2, "fatal": false, "core": "Symmetry group carries 100% of empirical content and is a free declared input; deep Noether direction out of scope. Lean cert not load-bearing for physics. Target facts predate and were used to construct the instantiation list (curve-fitting the example list). Repair: frame strictly as Lean-certified RE-ORGANIZATION, cite missing_interfaces, name the ~6 DOF and 0 data points, make HL-META-1 explicit, restrict load-bearing examples to genuinely finite/combinatorial instances.", "is_actually_new": false, "beats_baseline": false},
+      {"skeptic_role": "Mathematical physicist + universal-algebra/descent", "adversarial_survival_score": 2.5, "fatal": false, "core": "Near-tautology; recovers (trivially) + reorganizes, never exceeds. Organizational value is a choice of tabulation, not a theorem (FIV disclaims being 'a unification claim', lines 210-211). DOF >> data. Repair: frame as Lean-certified elementary unifying RE-ORGANIZATION, Noether NAMED not derived; quote paper scope language verbatim; make HL-META-1 explicit; restrict load-bearing worked examples to genuinely finite orbit data.", "is_actually_new": false, "beats_baseline": false}
+    ],
+    "what_would_change_minds": "A genuine SELECTION result tying which orbit/conserved sector is physically realized to an internal SBT stability/closure criterion (orbit surviving idempotent packaging E, or minimizing closure deficit CD_tau), with the symmetry NOT declared by hand; OR a constructive finite Noether-style map producing a nonzero conserved current with an exact discrete continuity equation from declared finite symmetry data. Both are blocked by disclaimed missing interfaces (no canonical-lens/orbit-selection; no continuum/variational interface)."
+  },
+  "repair_and_scores": {
+    "id": "R018",
+    "repair_status": "repaired",
+    "revised_one_sentence_claim": "SBT supplies a single Lean-certified quotient-definability NORMAL FORM for conservation, F27: for a declared orbit quotient q_orb, a readout C:X->V is conserved (defined as orbit-constant) iff it factors as C = barC o q_orb iff it is Sigma_orb-definable/closure-invariant -- the textbook 'function-on-the-quotient = function-constant-on-fibers' fact specialized to the orbit map -- which re-organizes Lavoisier mass, Reidemeister/Jones-Alexander knot invariants, subject reduction, Meselson-Stahl template-strand identity, and the martingale property as five instances of one descent statement, with Noether's theorem NAMED (not derived) as the classical-variational instance; the symmetry group, its action, and the symmetry->current map are imported, and only the conserved=>orbit-invariant direction is captured.",
+    "new_minimum_viable_result": "An honestly-fenced 4-6 page note that (1) states F27 as 'conserved = orbit-quotient-definable = closure-invariant', citing the Lean theorem conservation_as_orbit_descent verbatim and explaining 'faithful' = 'Lean covers the stated biconditional, no physics' (FIV line 9810); (2) derives it in one paragraph as the orbit-map specialization of the Foundations I definability backbone (h definable iff h = tilde h o f, lines 1001-1005) and notes it is the same move as F18 Lawhood Descent; (3) tabulates the five finite/combinatorial layer instances as the load-bearing cross-domain content, with Noether/momentum/energy/charge NAMED as the (out-of-scope-to-derive) variational instance; (4) carries a prominent scope fence stating that only conserved=>orbit-invariant is captured and Lean-certified, that the existence-of-current direction and the symmetry->current map are imported, that the symmetry group is a declared free input, that HL-META-1 (dynamics respects ~_orb) is an explicit hypothesis for the dynamics reading, and that the biconditional is analytic and therefore unfalsifiable by any physical observation -- the only non-vacuous claim being organizational reuse across >=5 domains.",
+    "changes_made": [
+      "NARROWED THE TARGET (allowed): reclassified from 'retrodiction of Noether's theorem (Noether 1918)' to 'recovery of the general structural notion that a conserved quantity is an invariant of the symmetry orbit (a function on the orbit quotient)'. This defuses the particle phenomenologist's fatal objection, which was fatal ONLY against the over-stated 'recovers Noether' target.",
+      "CLARIFIED THE MAPPING (allowed): stated openly that 'conserved' is DEFINED as orbit-constancy, so the biconditional is the universal-algebra identity 'function-on-quotient = function-constant-on-fibers' (Foundations I lines 1001-1005), the same move as F18 Lawhood Descent -- i.e. one fact stated three times, not three results.",
+      "CLARIFIED LEAN SCOPE (allowed): added that 'faithful' (FIV line 9810: 'uses the base wording without qualification') certifies only the 4-line biconditional and NO physics; removed any pairing of 'Lean-certified' with 'Noether' that could imply the Noether content is verified.",
+      "CONVERTED RHETORIC TO A LEMMA SEQUENCE (allowed): the 'unification' rhetoric is replaced by an explicit 3-lemma chain (orbit-descent biconditional [trivial, certified]; definability-as-fiber-constancy [trivial, in papers]; dynamics-respects-quotient via HL-META-1 [easy, in papers]) plus a 4th MISSING bridge lemma (symmetry=>current) flagged hard/out-of-scope.",
+      "MADE A HIDDEN ASSUMPTION EXPLICIT (allowed): promoted HL-META-1 (the declared dynamics respects ~_orb) from a silent background assumption in the dynamics reading to a stated hypothesis in main_step 4.",
+      "SPLIT THE OVERBROAD CLAIM (allowed): separated the certified easy direction (conserved => orbit-invariant) from the un-derived deep direction (continuous action symmetry => conserved current J^mu), and from the un-available selection result (which symmetry is realized).",
+      "SOFTENED 'unification' to 'organizational/structural normal form / conceptual compression' (allowed), consistent with FIV's own disclaimer 'not a unification claim' (lines 210-211, N3).",
+      "RESTRICTED LOAD-BEARING EXAMPLES (allowed): designated the genuinely finite/combinatorial instances (Reidemeister, subject reduction, Lavoisier multiset, martingale) as carrying the cross-domain weight, and fenced the continuous-group instances (Noether/translation/gauge) as illustrative naming only, flagging the A_FIN reduction of Lie groups as an unaudited modeling step.",
+      "ADDED THE UNFALSIFIABILITY ACKNOWLEDGEMENT (allowed clarification): stated that the biconditional is analytic and absorbs both conservation and non-conservation, so it carries no falsifiable physical content; only the organizational reuse claim is non-vacuous (and is itself unfalsifiable by physics)."
+    ],
+    "remaining_objections": [
+      "Even fully repaired, the certified content is an analytic near-tautology (a definitional identity), not a derivation; its discriminative/predictive power against any physical observation is exactly zero (opposite-world test fails permanently -- this is intrinsic, not a framing defect).",
+      "All empirical content is imported via the declared symmetry group and its orbit action; SBT neither enumerates nor predicts which conserved quantities appear and has no orbit-selection principle (disclaimed missing interface).",
+      "The deep, physically substantive direction of Noether (continuous variational symmetry => conserved current J^mu with d_mu J^mu = 0 on-shell) remains entirely out of scope: no continuum/Lagrangian/variational interface exists in the certified core; the corpus only cites Noether 1918 as an external fact (FIV line 3415).",
+      "Anomalies (quantum failure d_mu J^mu != 0), approximate/asymptotic conservation, and spontaneously-broken-symmetry conservation -- the physically interesting regimes -- have no machinery (only exact orbit-constancy is handled).",
+      "The 'stronger result' (tying the realized conserved sector to idempotent-packaging survival or minimal CD_tau) is genuinely research-grade and blocked by a disclaimed missing interface; it is not deliverable as a write-up.",
+      "The cross-domain instantiation list was constructed by NAMING pre-existing known facts as instances (target used to design the theory), so the cross-domain agreement carries no inferential weight beyond bookkeeping."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 5,
+      "plausibility": 5,
+      "non_ad_hocness": 4,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "precision": 2,
+      "robustness": 4,
+      "baseline_advantage": 1,
+      "publication_potential": 2
+    },
+    "proposed_bin": "E",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short (4-6 page) honestly-fenced expository note: state F27 as the conserved = orbit-quotient-definable = closure-invariant normal form with the Lean theorem cited verbatim and 'faithful' explained as covering only the biconditional; derive it in one paragraph as the orbit-map specialization of the Foundations I definability backbone (lines 1001-1005) and identify it with F18 Lawhood Descent (same move); tabulate the five finite/combinatorial layer instances as the load-bearing content with Noether NAMED as the variational instance; carry a prominent scope fence (imported symmetry group and symmetry->current map; explicit HL-META-1 hypothesis; analytic/unfalsifiable nature; only organizational reuse is non-vacuous). Optionally ship the Lean snippet as a reproducibility artifact. Do NOT attempt the selection result (research-grade, blocked by disclaimed missing interface).",
+    "one_line_verdict": "A true, Lean-certified, elementary universal-algebra biconditional honestly re-organizing conservation as orbit-descent across >=5 domains with Noether NAMED not derived; survives only as a conceptual-reframing note (bin E) -- zero discriminative power and no physics beyond imported group theory, so low priority.",
+    "mechanism_tag": "orbit-descent",
+    "target_audience": [
+      "category-theory / structural-foundations researchers (descent, quotients, definability)",
+      "formal-methods / Lean mechanization community",
+      "mathematical physicists interested in a precise demarcation of where the physics enters conservation laws (declared symmetry + symmetry->current map vs trivial descent bookkeeping)",
+      "applied mathematicians and cross-domain modelers interested in unifying normal forms (knot invariants, type soundness, martingales)"
+    ]
+  }
+}

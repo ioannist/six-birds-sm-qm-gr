@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,target constants and recognition names absent from carrier primitives
+dependency_trace,True,dependency_trace_step21.csv lists A1-A7
+ablation,True,each axiom removal blocks at least one required closure component
+negative_controls,True,three false targets are rejected
+stage_ii_earning,True,generated dual/pair content has zero anomaly sums
+no_single_axiom_equivalence,True,all ablation rows mark single_axiom_equivalent_to_target=False

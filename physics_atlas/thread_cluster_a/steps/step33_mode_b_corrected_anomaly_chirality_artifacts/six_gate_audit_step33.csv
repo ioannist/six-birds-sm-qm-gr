@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,build script excludes forbidden prior literals and target-shape primitives
+dependency_trace,True,"components traced to P2, P5/P1/F27, P3/P6, and P3"
+ablation,True,active components are recorded as load-bearing
+negative_controls,True,predicate is not a row picker and fails some corrected Step-31 survivors
+stage_ii,True,reference presence and pass/fail channels are detected
+correctness_self_check,True,"rank-one cubic zero, higher-rank A(R) intact, self-conjugacy used"

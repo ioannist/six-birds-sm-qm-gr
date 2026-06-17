@@ -1,0 +1,47 @@
+{
+  "step": 24,
+  "orientation": "Derived physical audits from shared finite field",
+  "active_residual": "R_child_E018_after_physical_audit_enrichment",
+  "carrier": {
+    "type": "periodic finite 1D complex field",
+    "sites": 8,
+    "samples": 26,
+    "field": "psi: Z_N -> C"
+  },
+  "candidate_move": {
+    "id": "derive_Born_and_stress_energy_audits_from_shared_psi",
+    "description": "Compute rho,j,T00,T0i from the same sampled fields and measure shared-mode coherence plus sourcing."
+  },
+  "final_verdict": {
+    "type": "derived_physical_audit_classification_complete",
+    "derived_audit_verdict": "derived_audits_differ_reconciliation_is_sourcing_T_of_psi",
+    "born_and_stress_energy_same_audit": false,
+    "sourcing_T_of_psi": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "audits_derived_from_psi": true,
+    "coherence_computed": true,
+    "sourcing_computed": true,
+    "density_equal_residual": 0.6944644768578695,
+    "density_proportional_residual": 0.5207123913178113,
+    "transport_equal_residual": 1.2894307568321801,
+    "transport_proportional_residual": 0.9994686548331937,
+    "direct_sourcing_residual": 0.0
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "The derived Born and stress-energy audits differ on the shared modes in this toy."
+    ],
+    "analytical_structural": [
+      "The GR-side audit is a deterministic functional T[psi], not the same shared audit as rho,j."
+    ],
+    "organizational_audit": [
+      "Sampled fields, audit values, coherence residuals, and sourcing checks are saved."
+    ],
+    "remaining_external_content": [
+      "Richer dynamics and physical interpretation remain future construction and external review."
+    ]
+  }
+}

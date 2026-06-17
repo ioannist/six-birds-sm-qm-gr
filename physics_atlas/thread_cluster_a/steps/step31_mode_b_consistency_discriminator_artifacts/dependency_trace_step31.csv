@@ -1,0 +1,4 @@
+predicate_component,primitive,role
+atomic_rewrite_packaging,P5/P1/F27,Step-29 active intrinsic package screen.
+closure_consistency_completeness,P3/P6,"Require action-faithful complete incidence routes: factor-only routes, bridge route where applicable, and at most one audit-only role."
+rank_one_global_chirality_diagnostic,P3,Stage II diagnostic identifying rank-one conjugacy artifacts.

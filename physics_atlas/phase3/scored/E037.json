@@ -1,0 +1,45 @@
+{
+  "id": "E037",
+  "source": "string-theory",
+  "target": "standard_model",
+  "arrow": "up",
+  "scored_tier": "E3",
+  "scored_modality": "emergence-up",
+  "secondary_modalities": [],
+  "decision_path": "STEP0 -> STEP1(descent fails) -> STEP2(recognition: nothing named) -> STEP3(run-search: no constructible run-object selecting our vacuum) -> STEP4 FORECLOSURE = E3",
+  "diagnostic": {
+    "toy_model": {
+      "description": "Finite stand-in for string-landscape -> Standard-Model descent. Source carrier Z = a finite landscape of K candidate VACUA; per-vacuum the low-energy lens f reads off an n_param=8 toy spectrum (gauge group + matter + couplings), but f is BLIND to the SELECTION coordinate (which vacuum is realized) -- exactly the source card's declared 'NOT in Sigma_f: WHICH compactification yields our SM'. State layout = [spectra (K*n_param); selection one-hot (K)].",
+      "L0_native_source_probe": "string lens f: reads all per-vacuum spectra (K*n_param rows) but the trailing K selection columns are ZERO => the vacuum-selection coordinate is in ker(L0).",
+      "D0_dissolving_target_probe": "Standard-Model readout: returns OUR specific (selected) vacuum's parameter vector (n_param numbers); it is selection-SENSITIVE (couples to the selection one-hot of the other vacua) => selection is NOT in ker(D0).",
+      "C0_audit_energy": "identity (least-commitment PSD audit)",
+      "refinement": "h <- enlarge the candidate-vacua landscape K (the honest 'finer enumeration of the source carrier'; the landscape grows toward ~10^500, the selection degeneracy does NOT decay).",
+      "Xi_definition": "Schur complement Xi = K_DD - K_DL K_LL^dagger K_LD; relative residual xi_rel = ||Xi|| / ||K_DD||"
+    },
+    "descent_test": {
+      "h1_K4": {"raw_Xi": 2.7040, "xi_rel": 0.7300, "K_DD_norm": 3.7040},
+      "h2_K12": {"raw_Xi": 6.6392, "xi_rel": 0.8691, "K_DD_norm": 7.6392},
+      "verdict": "xi_rel STABLE-POSITIVE and bounded away from machine-zero across both refinements (0.730 -> 0.869); does NOT go to machine-zero. NOT a clean descent. The obstruction is the vacuum-selection coordinate in ker(L0) but not ker(D0); analytically controlled (= the non-decaying selection degeneracy declared in the source card's D field). Step 1 -> NOT E1."
+    },
+    "non_factorization_witness_B2": {
+      "construction": "two source states a,b with IDENTICAL per-vacuum spectra (same L0 image, => same in source Sigma_f) but selecting different vacua (selection one-hot vacuum 0 vs vacuum 3).",
+      "L0_difference": 0.0,
+      "D0_difference": 1.583,
+      "verdict": "states identified by the string lens are distinguished by the SM readout => non-factorization holds; the SM-selecting (vacuum-selection) distinction is non-definable from below. Confirms the UP/emergence arrow."
+    },
+    "recognition_search": "Logged NEGATIVE. No single named, load-bearing external principle selects OUR vacuum under a stated assumption. Swampland constraints prune EFTs but do not select our vacuum; anthropic/measure arguments are contested, non-predictive, and not a single named load-bearing closing principle; no named theorem maps the string landscape to SU(3)xSU(2)xU(1) + 3 generations + the ~19 SM parameters. Step 2 -> NOT E2.",
+    "run_search": "Logged NEGATIVE. No CONSTRUCTIBLE non-descending run-object whose generation provably requires a run yields OUR SM vacuum. Contrast E001 (QCD->hadron-spectrum), where lattice QCD is an ACCEPTED run producing an out-of-sample spectrum; here the vacuum-selection degeneracy does not decay and no accepted run picks the vacuum. Per gate E.5/E.7, E0 is not a doubt-haven (sealing needs a positively constructed run-object, which does not exist). Step 3 -> NOT E0.",
+    "foreclosure_E3": {
+      "missing_Sigma_f_predicate": "vacuum selection (WHICH compactification / point in the landscape yields our Standard Model) -- declared non-definable in string Sigma_f by the source card itself.",
+      "where_factorization_fails": "at the selection coordinate: ker(L0) is NOT contained in ker(D0); the SM-selecting information is precisely what the source lens f discards.",
+      "e3_subreason": "foreclosed_selection (run-and-failed descent + empty recognition + no constructible selecting run-object; NOT a no_faithful_M vacuous E3 -- a faithful finite M was built and the descent genuinely ran and failed)."
+    },
+    "established_status_constraint": "source 'string-theory' is node_kind=candidate_substructure, established_status=not_established => per the may_source_E1 rule (rubric A.7.1) it MAY NOT source an E1 descent; an E1 was structurally unavailable independently of the numeric residual."
+  },
+  "named_import": null,
+  "value_split": null,
+  "near_intra_layer_result": null,
+  "rationale": "string-theory -> Standard Model is an UP (emergence) edge. The descent test fails decisively: the normalized residual xi_rel is stable-positive (0.730 -> 0.869) across two refinements, never machine-zero -- the located obstruction is the vacuum-selection coordinate the source lens discards, with analytic control (the non-decaying landscape degeneracy, ~10^500 vacua). Non-factorization (B.2) holds: states identical in the string lens are distinguished by the SM readout, so OUR SM is non-definable from below -- emergence-up is the PRIMARY modality (no structural DOWN modality -- descent/duality/common-refinement/holonomy/currency -- closes it, so by the B.7a precedence rule and B.8 emittability, emergence-up E1 is forbidden). Recognition-search returns nothing named (no principle selects our vacuum), so it is NOT a recognition-landing and NOT E2. Run-search finds no constructible non-descending run-object yielding our vacuum, and E0 is not a doubt-haven, so NOT E0. The edge forecloses to E3: a sharpened, located gap -- the landscape vacuum-selection problem -- not a closure. Even the leading unification candidate lands E3, the predicted foreclosure shape.",
+  "self_audit": "Section-9 trap-checklist + over-read check run on myself. (1) Did NOT try to unify/derive string->SM by shared math (trap 1): I tested for the common-third / descent and it FAILED, and refused to manufacture a factorization phi -- non-factorization is exactly what holds. (2) Did NOT try to derive an emergent constant (trap 2): the SM's ~19 parameters are MEASURED INPUTS per its card and I derived none; the proton-mass-style run that WOULD generate content is absent here (no accepted vacuum-selecting run), so this is not even E0. (5) Kept the up/down asymmetry (trap 5): the arrow is UP; I only ever ran the DOWN descent test (Step 1) as a computation and it failed -- I never ran the up arrow as a derivation. (4) Not posed within a layer (trap 4): string-theory and the SM are distinct layers with distinct lens/Sigma_f; near_intra=false; this is a genuine between-layer edge. (8) A foreclosure is NOT a failure (trap 8): E3 here is SBT working -- the predicted foreclosure-dominant shape, the landscape gap located and typed, not closed. OVER-READ CHECK: xi_rel is large (no small-Xi over-read as in E005); the gap is driven solely by the source's OWN declared-discarded selection coordinate -- no foreign predicate (hbar, thermal meaning, etc.) was imported to manufacture it; the readout did not over-read string's Sigma_f. The word 'solved' is avoided; no empirical claim, no constant derived.",
+  "drift_vs_provisional": "NO TIER DRIFT: fresh tier E3 == frozen provisional_tier_guess E3, and fresh modality emergence-up == provisional_modality_guess emergence-up (independently re-derived via the descent + recognition + run search, not copied). Consistent with CONTRACT.json tier_map E3 list and the string-theory not_established status. ONE drift on a side-field: route.json carries has_value_split=true for E037, but the fresh analysis finds NO form/value tier split to record -- the whole edge forecloses (E3), and the form-leg does NOT descend E1 (the not_established source cannot source an E1, so there is no E1 form-leg to split off against an E0/E2 value-leg). Hence value_split=null (the edge_manifest.jsonl value_split field is also null, agreeing). Drift is informative: the has_value_split flag appears to be a stale/over-broad route hint for this fully-foreclosed edge."
+}

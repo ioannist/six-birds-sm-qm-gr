@@ -1,0 +1,2 @@
+target,relation_to_canonical_root,parent_residual,status,source_artifacts
+competitor-coverage,sub_residual of the SM-gauge-structure-selection canonical root,conditional 2|3 selection in covered window,COMPETITORS_TABULATED_SM_SELECTED_IN_COVERED_WINDOW,steps/step53_mode_b_competitor_structures_artifacts/competitor_structures_step53.py

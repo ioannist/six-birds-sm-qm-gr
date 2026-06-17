@@ -1,0 +1,4 @@
+seed,perturbation,nongauge_state_change_residual,nongauge_perturbation_changes_state
+101,"left[0,0]+=0.1",0.00196574421041,True
+202,"left[0,0]+=0.1",0.00196813162295,True
+303,"left[0,0]+=0.1",0.00227847271505,True

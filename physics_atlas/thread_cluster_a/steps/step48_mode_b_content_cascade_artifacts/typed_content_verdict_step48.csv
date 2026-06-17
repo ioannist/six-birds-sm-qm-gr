@@ -1,0 +1,2 @@
+verdict,distinct_content_classes,shadow_surviving_classes,target_class_survives,content_type_limit,observed_input_required,simulations_excluded_by_design,next_grammar_delta
+CONTENT_TYPE_LIMIT,2,2,True,True,True,True,observed-input/F26 boundary or another neutral content shadow

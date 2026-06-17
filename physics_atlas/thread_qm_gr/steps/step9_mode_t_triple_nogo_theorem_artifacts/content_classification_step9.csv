@@ -1,0 +1,10 @@
+artifact,output_or_claim,classification,grade,scope
+T_E018_TripleNoGo.tex,"self-contained bounded-grammar no-go theorem",analytical structural,finite-carrier diagnostic theorem,"Scoped to G* only; proof consolidates prior diagnostics."
+seven_gate_audit_step9.csv,"construction-grade seven-gate audit",organizational/audit,diagnostic-complete,"Checks theorem scope, non-circularity, evidence, lineage, and next obligation."
+route_audit_step9.csv,"per-route rejected-route audit",analytical structural,finite-carrier diagnostic,"Shows insertion, pairwise union, rigging, and no-atom routes."
+step9_results_summary.md,"Mode T theorem summary",organizational/audit,diagnostic-complete,"Summarizes theorem verdict and completion status."
+step9_schema.json,"typed theorem schema",organizational/audit,diagnostic-complete,"Machine-readable Mode T exit state."
+nonclaim_boundary_step9.md,"mandatory nonclaim boundary",organizational/audit,diagnostic-complete,"Prevents absolute overclaim."
+run_step9.py,"artifact and overclaim validator",organizational/audit,diagnostic-complete,"Checks required artifacts, schema fields, ledger updates, and forbidden phrases."
+mode_b_target_lineage.csv,"Mode T consolidation lineage row",organizational/audit,diagnostic-complete,"Track lineage only."
+mode_b_grammar_manifest.csv,"Mode T theorem exit and G_v5 obligation",organizational/audit,diagnostic-complete,"Grammar tracking only."

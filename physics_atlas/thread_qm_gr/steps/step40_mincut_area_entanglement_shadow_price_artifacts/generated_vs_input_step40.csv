@@ -1,0 +1,7 @@
+item,status,detail
+bulk_graph_topology_and_bond_dimensions,input,declared finite graph carrier; not a physical bulk
+boundary_state_schmidt_dimensions,input,declared boundary state data; controls decouple it from the graph
+min_cut_area_dual,generated,computed by max-flow/min-cut optimization over graph capacities
+entanglement_entropy_S,generated,computed from the reduced-density-matrix spectrum of the boundary state
+coefficient_area_over_entropy,generated,computed as min-cut area divided by independently-computed entropy
+RT_bit_threads_recognition,recognition_landing,named after min-cut=max-flow is computed; not an input axiom

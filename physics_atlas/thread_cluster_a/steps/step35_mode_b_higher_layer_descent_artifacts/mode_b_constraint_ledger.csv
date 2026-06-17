@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP35_REPRODUCE_CARRIER,ModeB,step35_mode_b_higher_layer_descent,determinism,"Step 35 rederives the corrected Step-33 final carrier count as 80."
+C_CLUSTER_A_STEP35_HIGHER_LAYER_PREDICATE,ModeB,step35_mode_b_higher_layer_descent,higher_layer_descent,"The predicate requires an enumerated neutral scalar witness for mass-completability and a proper-breaking proxy with an abelian remainder."
+C_CLUSTER_A_STEP35_NARROW,ModeB,step35_mode_b_higher_layer_descent,narrow,"The predicate leaves 12 of 80 survivors and retains the reference support."
+C_CLUSTER_A_STEP35_STRUCTURE_COUNTS,ModeB,step35_mode_b_higher_layer_descent,diagnostic,"The survivors are 8 in structure 2|3 and 4 in structure 4; structure 3 has zero survivors."
+C_CLUSTER_A_STEP35_NOT_UNIQUE,ModeB,step35_mode_b_higher_layer_descent,residual,"The reference passes with witness rank_one_fundxsinglet:-3 but is not uniquely distinguished."
+C_CLUSTER_A_STEP35_GATES,ModeB,step35_mode_b_higher_layer_descent,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and anti-reductionism gates pass."
+C_CLUSTER_A_STEP35_VERDICT,ModeB,step35_mode_b_higher_layer_descent,verdict,"Verdict is NARROW: conjoin a stricter higher-layer requirement such as scalar-potential closure or family-replication consistency."
+C_CLUSTER_A_STEP35_NONCLAIM_BOUNDARY,ModeB,step35_mode_b_higher_layer_descent,honesty,"Finite compatibility diagnostic only; no matter-content derivation, value derivation, or frame-transfer status upgrade is supplied."

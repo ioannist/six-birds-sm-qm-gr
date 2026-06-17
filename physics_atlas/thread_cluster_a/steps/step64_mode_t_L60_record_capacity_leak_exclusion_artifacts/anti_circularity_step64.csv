@@ -1,0 +1,4 @@
+check,passes,witness,evidence
+substrate_not_conclusion_in_disguise,True,carrier_08128,substrate and capacity can hold on a clean row with multiple records
+leak_not_capacity_failure_in_disguise,True,carrier_07580,leak and capacity can coexist when substrate fails
+antecedent_nonempty,True,carrier_00827,substrate and leak-positive rows exist; they fail capacity

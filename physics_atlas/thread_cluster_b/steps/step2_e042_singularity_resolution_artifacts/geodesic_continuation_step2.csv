@@ -1,0 +1,8 @@
+step,epsilon_signed,GR_defined,GR_affine_parameter,GR_terminates_here,L_defined,L_affine_parameter,L_R_continuation,L_readout_finite,segment
+0,0.25,True,0.75,False,True,0.75,0.74,True,pre_locus
+1,0.125,True,0.875,False,True,0.875,0.745,True,pre_locus
+2,0.0625,True,0.9375,False,True,0.9375,0.7475,True,pre_locus
+3,0.0,False,1.0,True,True,1.0,0.75,True,locus
+4,-0.0625,False,1.0,False,True,1.0625,0.7475,True,post_locus
+5,-0.125,False,1.0,False,True,1.125,0.745,True,post_locus
+6,-0.25,False,1.0,False,True,1.25,0.74,True,post_locus

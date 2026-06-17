@@ -1,0 +1,43 @@
+{
+  "step": 29,
+  "orientation": "Consolidation of verified QM-GR layer toy-model construction",
+  "active_residual": "R_child_E018_after_nonstationary_relational_history",
+  "carrier": {
+    "type": "consolidated finite-carrier statement",
+    "source_steps": "10-28",
+    "primary_native_carrier": "finite modes d0,d1,d2,d3",
+    "primary_physical_carrier": "finite periodic complex field plus finite clocks"
+  },
+  "candidate_move": {
+    "id": "consolidated_external_review_statement",
+    "description": "Assemble verified per-step artifacts into one honest TeX statement and Markdown findings synthesis."
+  },
+  "final_verdict": {
+    "type": "consolidated_statement_complete_for_external_review",
+    "root_landed": false,
+    "external_review_required": true,
+    "new_construction_claimed": false
+  },
+  "track_fields": {
+    "tex_statement_written": true,
+    "markdown_synthesis_written": true,
+    "claim_classification_written": true,
+    "nonclaim_boundary_written": true,
+    "honest_grade_present": true,
+    "open_obligations_present": true
+  },
+  "framework_outputs": {
+    "native_law_verified": [
+      "Step 17-22 native classifications are consolidated with source citations."
+    ],
+    "toy_diagnostic": [
+      "Step 23-28 physical toy content is consolidated with source citations."
+    ],
+    "organizational_audit": [
+      "Claim-grade ledger and validator are provided."
+    ],
+    "remaining_external_content": [
+      "Frame transfer and richer physical carriers remain open."
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+control_id,expected,observed,passes
+GR_K_genuinely_diverges,K grows and increments do not shrink,K_start=0.81; K_end=13271.04; last_increment=9953.28,True
+no_resolution_R_bad_fails_stabilization,bad readout diverges and does not stabilize,R_bad_start=0.9; R_bad_end=115.2; last_increment=57.6,True
+L_R_resolved_stabilizes,resolved readout finite with shrinking increments,R_start=0.05833333333333335; R_end=0.749957784016927; last_increment=0.0001266479492186834,True
+smooth_regime_no_spurious_resolution,resolution not triggered while K<K_P and d4 factors through d3,smooth_resolution_triggered=False; d4_smooth_obstruction=0,True

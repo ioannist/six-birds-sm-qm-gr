@@ -1,0 +1,5 @@
+case_id,case_kind,bond_dim,tensor_kind,boundary_leg_count,region_A_legs,region_A_leg_count,nonzero_boundary_amplitudes,rho_A_eigenvalues,entropy_S_A,min_cut_area,max_flow_value,area_minus_entropy_gap,strict_gap,saturation_ratio_S_over_area,bound_holds,saturates,min_cut_edges,min_cut_edge_count,min_cut_nontrivial,state_from_contraction
+holo_refinement_D2,holographic_saturating,2,copy,4,p0|p1,2,2,0.5;0.5,0.69314718056,0.69314718056,0.69314718056,-1.11022302463e-16,False,1,True,True,L->R:0.69314718056,1,True,True
+holo_refinement_D3,holographic_saturating,3,copy,6,p0|p1|p2,3,3,0.333333333333;0.333333333333;0.333333333333,1.09861228867,1.09861228867,1.09861228867,2.22044604925e-16,False,1,True,True,L->R:1.09861228867,1,True,True
+product_control_D2,product_gap_control,2,fixed_zero,4,p0|p1,2,1,1,-0,0.69314718056,0.69314718056,0.69314718056,True,-0,True,False,L->R:0.69314718056,1,True,True
+weighted_control_D3,generic_gap_control,3,weighted_copy,6,p0|p1|p2,3,3,0.0714285714286;0.285714285714;0.642857142857,0.830471712436,1.09861228867,1.09861228867,0.268140576232,True,0.755927929263,True,False,L->R:1.09861228867,1,True,True

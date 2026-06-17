@@ -1,0 +1,7 @@
+Step 12 bound RUNG_1 to Step-10 closures
+Bound adequacy max: 0.0
+Placeholder adequacy min: 1.6439075512412435
+Generic averaging adequacy min: 1.6082340987860118
+Endpoint nonfactorization min: 0.5711663892206134
+Bound rung built: True
+Next build: RUNG_2_NEUTRAL_CURRENCY

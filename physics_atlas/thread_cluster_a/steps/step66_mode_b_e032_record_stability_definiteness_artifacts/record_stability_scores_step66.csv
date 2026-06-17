@@ -1,0 +1,3 @@
+readout_id,selection_predicate,persistence_passes,distinguishability_passes,capacity_passes,record_stability_passes,actual_branch_count,record_tokens,requires_single_outcome,closure_slot_touched_by_record_requirement
+full_branching_state,no_single_global_actual_branch,True,True,True,True,2,a0:persistent:distinguishable|a1:persistent:distinguishable,False,Sigma_f
+selected_single_outcome_k0,selected:k0,True,True,True,True,1,a0:persistent:distinguishable|a1:persistent:distinguishable,False,Sigma_f

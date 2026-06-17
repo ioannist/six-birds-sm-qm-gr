@@ -1,0 +1,15 @@
+mediator,rank,dim,carries_both,admissible,minimal,relation_to_L,qm_residual,gr_residual,L_from_M_residual,M_from_L_residual,iso_residual
+linear_invertible_A_0,4,4,True,True,True,iso_to_L,3.965928231439871e-15,6.9391300364690945e-15,6.0246128549997446e-15,0.0,6.0246128549997446e-15
+linear_invertible_A_1,4,4,True,True,True,iso_to_L,8.925182703092704e-16,8.914470069808947e-16,7.887164938378665e-16,0.0,7.887164938378665e-16
+linear_invertible_A_2,4,4,True,True,True,iso_to_L,6.02355248606533e-16,7.155473489251599e-16,6.344187273140223e-16,0.0,6.344187273140223e-16
+linear_invertible_A_3,4,4,True,True,True,iso_to_L,1.9228481459974275e-15,1.4072580228748551e-15,1.6833262164500478e-15,0.0,1.6833262164500478e-15
+linear_invertible_A_4,4,4,True,True,True,iso_to_L,7.644588861744859e-16,9.088686678790478e-16,8.934924966329188e-16,0.0,8.934924966329188e-16
+linear_invertible_A_5,4,4,True,True,True,iso_to_L,5.537214117270123e-16,6.694206314880639e-16,6.383258588930523e-16,0.0,6.383258588930523e-16
+linear_invertible_A_6,4,4,True,True,True,iso_to_L,1.7746715787203359e-15,2.1044374321476813e-15,1.8817408356369164e-15,0.0,1.8817408356369164e-15
+linear_invertible_A_7,4,4,True,True,True,iso_to_L,5.539282781003416e-16,5.611749872897432e-16,5.428925401224762e-16,0.0,5.428925401224762e-16
+linear_rank3_too_small_0,3,3,False,False,False,sub_minimal_fails,0.394267400805567,0.5483486687434569,0.5,0.0,0.5
+linear_rank3_too_small_1,3,3,False,False,False,sub_minimal_fails,0.5760919202450299,0.33185884982689534,0.5,0.0,0.5
+linear_rank3_too_small_2,3,3,False,False,False,sub_minimal_fails,0.5732785183963325,0.5442064245922632,0.5,0.0,0.5
+linear_rank3_too_small_3,3,3,False,False,False,sub_minimal_fails,0.5770056543008474,0.2400351384866729,0.5,0.0,0.5
+linear_rank3_too_small_4,3,3,False,False,False,sub_minimal_fails,0.5708339133985014,0.4413438227173352,0.5,0.0,0.5
+linear_overcomplete_5row_redundant,4,5,True,True,False,super_minimal_nonminimal,5.408518023211769e-16,5.250569821237314e-16,5.067085404615374e-16,0.0,5.067085404615374e-16

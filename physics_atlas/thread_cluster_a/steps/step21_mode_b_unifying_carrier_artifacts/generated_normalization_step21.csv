@@ -1,0 +1,6 @@
+quantity,fraction,decimal,source
+trace_charge_squared,5/6,0.833333333333,sum over generated slot charges
+trace_weak_squared,1/2,0.500000000000,sum over weak-sector generator
+normalization_ratio,5/3,1.666666666667,trace_charge_squared / trace_weak_squared
+weak_mixing_relation,3/8,0.375000000000,one over one plus normalization ratio
+charge_unit,1/6,0.166666666667,primitive holonomy grid

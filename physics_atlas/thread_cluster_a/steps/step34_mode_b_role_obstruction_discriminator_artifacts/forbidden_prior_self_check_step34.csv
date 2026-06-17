@@ -1,0 +1,8 @@
+check,passes,evidence
+uses_slot_count_prior,False,"O_s uses q-fibers and charge readouts, not slot count"
+uses_larger_group_prior,False,no parent or larger-group data enters the F24 predicate
+uses_exterior_only_prior,False,carrier is inherited from corrected neutral enumeration
+reduces_to_minimality,False,O_s is not an ordering or minimum-score rule
+reduces_to_shape,False,F24-descending survivors count is 10
+reduces_to_tuning,False,criterion is O_s=0 chosen before target status is read
+uses_target_reference,False,reference key is used only for status reporting

@@ -1,0 +1,9 @@
+artifact,classification,scope
+rank_reconstruction_step53.csv,finite-carrier-diagnostic,Rank and explicit GL reconstruction on the Step42 carrier.
+gauge_orbit_step53.csv,finite-carrier-diagnostic,Gauge invariance and raw obstruction witness.
+invariant_functionals_step53.csv,finite-carrier-diagnostic,Interior-defined gauge-invariant functionals and full-boundary recovery checks.
+partial_readout_witness_step53.csv,finite-carrier-diagnostic,Partial readout obstruction witness.
+f34_obstruction_witnesses_step53.csv,finite-carrier-diagnostic,F34 obstruction-set verdict rows.
+f34_information_loss_statement_step53.tex,analytical-structural finite-carrier-diagnostic,Finite toy F34 statement; not a physical BH theorem.
+step53_results_summary.md,organizational + structural-recognition,Summary and caveats.
+run_step53.py,organizational validator,Self/chain validation with recomputation teeth.

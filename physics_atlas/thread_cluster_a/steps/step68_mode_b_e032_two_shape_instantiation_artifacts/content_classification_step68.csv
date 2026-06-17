@@ -1,0 +1,14 @@
+artifact,claim,grade,source
+shape_extensions_step68.csv,two minimal E032 shape exemplars,finite-carrier-diagnostic,shape_extensions_step68.csv
+discriminator_step68.csv,D-vs-Sigma_f discriminator separates the exemplars,finite-carrier-diagnostic,discriminator_step68.csv
+born_weight_check_step68.csv,both shapes reproduce the Step66 Born weights,finite-carrier-diagnostic,born_weight_check_step68.csv
+base_nonfactorization_reuse_step68.csv,Step66 base nonfactorization witness reused,finite-carrier-diagnostic,base_nonfactorization_reuse_step68.csv
+anti_circularity_step68.csv,anti-circularity and distinctness checks,organizational,anti_circularity_step68.csv
+frozen_step66_reuse_step68.csv,Step66 reuse record,organizational,frozen_step66_reuse_step68.csv
+step68_statement.tex,two-shape instantiation and discriminator statement,finite-carrier-diagnostic,step68_statement.tex
+step68_results_summary.md,summary and caveats,organizational,step68_results_summary.md
+nonclaim_boundary_step68.md,nonclaim boundary,organizational,nonclaim_boundary_step68.md
+mode_b_constraint_ledger.csv,Mode-B constraints,organizational,mode_b_constraint_ledger.csv
+mode_b_target_lineage.csv,target lineage,organizational,mode_b_target_lineage.csv
+mode_b_grammar_manifest.csv,grammar manifest,organizational,mode_b_grammar_manifest.csv
+run_step68.py,validator,organizational,run_step68.py

@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step48_content_shadow,48,eight clean 2|3 content rosters from Step 38,relabeling quotient; integer color-singlet charge shadow,"No target roster, specific observed content list, generation count, or Yukawa texture is inserted.",The shadow fails a fractional color-singlet control while all residual content classes pass.,Either test a further neutral content shadow or accept the observed-input/F26 boundary for this cascade branch.

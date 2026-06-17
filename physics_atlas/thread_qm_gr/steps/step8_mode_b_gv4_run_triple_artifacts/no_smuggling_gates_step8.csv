@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_bounded_run_grammar_declared_first,pass,G_v4,"mode_b_grammar_manifest.csv contains G_E018_RunGeneratedTripleMechanism_v4_DECLARED_STEP8 before the simulation artifact is evaluated.","Keep interpretation inside declared run grammar."
+G2_no_built_in_triple,pass,substrate,"The update rule has no triple objective, no sector readouts, and no target row input.","Record no-rigging flags."
+G3_witness_independence,pass,witness,"The accepted witness is held-out interaction gain beyond pairwise predictors; pairwise union is a rejected control.","Do not count pairwise-union statistics."
+G4_target_lineage_non_equivalence,pass,verdict,"The run does not claim root closure; it reports a failed candidate threshold and leaves the residual open.","Add run-obstruction lineage."
+G5_two_refinement_run_audit,pass,run,"N=32 and N=64 both fail the completion and witness thresholds.","Carry stable obstruction forward."
+G6_rejected_controls_fenced,pass,controls,"Rigged diagonal completion produces near-zero Xi only after post-run forcing and is not accepted.","Record forced-diagonal prohibition."

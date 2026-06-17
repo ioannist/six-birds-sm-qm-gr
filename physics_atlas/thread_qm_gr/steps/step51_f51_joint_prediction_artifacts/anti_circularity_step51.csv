@@ -1,0 +1,5 @@
+gate,passes,evidence
+compatibility_predicate_i3_independent,True,source block COMPATIBILITY_PREDICATE_BEGIN/END contains no I3 reference
+ghz_excluded_by_computed_vector_mismatch,True,GHZ max relative gap 0.789690082143
+with_compatibility_forces_mmi,True,with-compat max I3 -0.03321027292
+broken_compatibility_unforces_mmi,True,no-compat broad max I3 0.69314718056

@@ -1,0 +1,6 @@
+criterion,single_factor_unsatisfiable_by_construction,single_factor_has_computed_verdict,flagged_shape_flavored,evidence
+precise_unbroken_nonabelian_subgroup,False,True,False,allows partial breaking inside a single factor
+unbroken_low_energy_consistency,False,True,False,mass-completion plus unbroken subgroup; diagnostic only
+full_cascade_consistency,False,True,False,potential proxy plus mass-completion plus precise subgroup; diagnostic only
+scalar_stage_currency_minimum,True,True,True,diagnostic_only/REJECTED: manager override finds this reduces to smallest broken factor and is minimality-like
+step36_factor_local_breaking_diagnostic,True,False,True,diagnostic only: this old rule is unsatisfiable for single-factor structures by construction

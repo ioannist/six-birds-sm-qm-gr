@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"shape, charges, and weak-mixing value are read or computed, not carrier primitives"
+dependency_trace,True,dependency_trace_step26.csv lists all axiom families used
+ablation,True,ablation_step26.csv shows each family is load-bearing
+negative_controls,True,non-generated controls do not reproduce the generated normalization
+stage_ii_earning,True,charge quantization is reproduced on the generated structure
+no_single_axiom_equivalence,True,no axiom alone fixes the normalization value

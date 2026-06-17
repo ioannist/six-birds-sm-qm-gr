@@ -1,0 +1,5 @@
+bridge,source_in_G_v2,generation_map,normalized_xi_r2,normalized_xi_r4,status,target_equivalence_audit
+Bridge_HED_LQG_area_geometry,inherited_G_v1,average(u_i),0.0,0.0,closed_by_inherited_generation,"strict pairwise bridge; not the root target"
+Bridge_LQG_AS_discrete_continuum,inherited_G_v1,v,0.0,0.0,closed_by_inherited_generation,"strict pairwise bridge; not the root target"
+Bridge_HED_AS_boundary_continuum,G_v2_new_atom,w,0.0,0.0,closed_by_G_v2_generation,"specific holographic-RG flow shadow; not a bare HED-AS equivalence"
+Bridge_triple_joint_package,none_in_G_v2,not_generated,1.0,1.0,survives_G_v2,"highest-risk row; primitive package compatibility is rejected"

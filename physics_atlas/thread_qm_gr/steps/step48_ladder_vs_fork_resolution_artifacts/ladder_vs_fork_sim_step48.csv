@@ -1,0 +1,4 @@
+attempt_id,source_readout,target_readout,row_factorization_residual,pair_defect_count,route_mismatch_normalized,lawful_quotient_closes,interpretation
+plain_ladder_GR_as_quotient_of_QM,3 rows,3 rows,0.57735026919,8,0.5,False,Direct vertical attempt: q_GR = phi after q_QM.
+weak_RT_QM_accessible_shadow_ladder,4 rows,3 rows,0.57735026919,8,0.5,False,"Weak-RT / QM-accessible-shadow attempt: adjoin A_RT computed from q_QM, then test q_GR factorization."
+nested_control_GR_nested_as_quotient_of_QM,3 rows,3 rows,0,0,0,True,Can-fail control: GR readout is deliberately nested in q_QM.

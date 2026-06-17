@@ -1,0 +1,316 @@
+{
+  "$schema_version": "1.0",
+  "title": "Physics Layer Atlas — Machine Contract (single source of truth for the freeze validator)",
+  "status": "FROZEN",
+  "date": "2026-06-04",
+  "provenance": {
+    "derived_from": "EXTERNAL_REVIEW_v1.md required changes R1,R2,R5,R6,R8 + O2,O4; AND EXTERNAL_REVIEW_v3.md (re-review, APPROVE-WITH-REQUIRED-CHANGES) required changes R2 (recognition rows incl. E028b + single Gleason import + C11), R3 (split-type-dependent reported_tier + C10), R4 (near-intra-layer machine fields + C9), R5 (E.7 anti-control interlock machine fields + hardened C5)",
+    "governs": "TYPING_RUBRIC.md, SCIENCE_DIGEST.md, theory_manifest.jsonl, edge_manifest.jsonl, closure_card_manifest.jsonl, FREEZE_NOTES.md",
+    "rule": "Where prose and this file disagree, the freeze validator reads THIS file; where an SBT paper and this file disagree, the paper governs (flag the discrepancy).",
+    "single_source_of_truth": "This CONTRACT.json is the SINGLE source of truth for the freeze validator. Every predicate the contract/rubric claim MUST be enforced by validate_freeze_gate.mjs; the new enforced checks introduced here are C5(hardened, R5), C9 (R4 near-intra-layer), C10 (R3 reported_tier consistency), C11 (R2 recognition-landing named_import). The edges agent updates edge rows; the Prose agent recomputes the registered-null counts; the workflow agent wires C5/C9/C10/C11 into the validator."
+  },
+
+  "canonical_modalities": [
+    "shadow-down",
+    "emergence-up",
+    "duality-equivalence",
+    "common-refinement",
+    "currency-shadow-price",
+    "holonomy",
+    "recognition-landing"
+  ],
+  "modality_string_check": {
+    "rule": "every edge provisional_modality_guess AND any audited modality MUST be exactly one of canonical_modalities; any other string is rejected at freeze",
+    "rubric_ref": "TYPING_RUBRIC.md §B (B.1-B.6a), §B.8 note"
+  },
+
+  "modality_tier_compat": {
+    "shadow-down":          ["E1", "E2", "E3"],
+    "emergence-up":         ["E2", "E0", "E3"],
+    "duality-equivalence":  ["E1", "E2", "E3"],
+    "common-refinement":    ["E1", "E2", "E3"],
+    "currency-shadow-price":["E1", "E2", "E0", "E3"],
+    "holonomy":             ["E1", "E2", "E3"],
+    "recognition-landing":  ["E2"]
+  },
+  "modality_tier_compat_note": "A (modality, tier) pair whose tier is not in the modality's allowed list is NOT emittable by the deterministic procedure (rubric §C.5) and is rejected at freeze. Forbidden pairs explicitly include shadow-down/E0, emergence-up/E1, and any recognition-landing tier other than E2. Mirrors the rubric §B.8 table. The modality checked against this table is the PRIMARY modality (the existing per-edge 'modality' field, == primary_modality per modality_precedence_rule); secondary_modalities / conditionality_flags are NOT checked against this table and are never counted in the registered null.",
+
+  "modality_precedence_rule": {
+    "review_fix": "R-P2 (Pause-2 calibration: external reviewer adjudication of the E005 MODALITY-label ambiguity; resolution option (b) = primary + secondary modality with a precedence rule)",
+    "provenance": "EXTERNAL_REVIEW_PAUSE2.md (verdict CALIBRATION-PASS on tier; E005 primary = currency-shadow-price, secondary = recognition-conditional)",
+    "summary": "Each edge has EXACTLY ONE primary_modality (the existing 'modality' field; NOT renamed) used for (modality,tier) emittability and headline/registered-null reporting. An edge MAY also carry an OPTIONAL secondary_modalities array and/or conditionality_flags array, which are descriptive residual annotations ONLY and are NEVER used for emittability or counting.",
+    "primary_modality_field": "modality",
+    "primary_modality_note": "The existing per-edge 'modality' field IS the primary_modality. This rule does NOT rename it. The freeze validator continues to read 'modality' for emittability (modality_tier_compat) and for the registered-null tally; it is the primary_modality.",
+    "rule": [
+      "(1) STRUCTURAL-IS-PRIMARY: if any STRUCTURAL modality test passes -- duality (B.3), common-refinement (B.4), holonomy (B.6), currency-shadow-price (B.5), shadow-down/descent (B.1), or emergence-up (B.2) -- that structural modality is the primary_modality (resolved among themselves by the rubric B.7 precedence chain duality>common-refinement>holonomy>currency>descent>emergence when more than one passes).",
+      "(2) RECOGNITION-LANDING-IS-RESIDUAL-PRIMARY: recognition-landing (B.6a) is the primary_modality ONLY when NO structural modality closes the edge AND the imported named principle is the ENTIRE landing mechanism (the B.6a RECOGNITION-ONLY test (i)-(iii) all hold). This is unchanged from B.6a/B.7.",
+      "(3) RECOGNITION-CONDITIONAL-IS-A-SECONDARY-FLAG: if a STRUCTURAL modality is primary but the edge is at tier E2 and still requires a NAMED external import to close, record 'recognition-conditional' in conditionality_flags (equivalently secondary_modalities). This is DISTINCT from primary recognition-landing: the structural test passed (so the edge is NOT residual), but its E2 closure is conditional on a named import. The primary modality stays structural; the secondary flag records the import conditionality."
+    ],
+    "discriminator": "Primary recognition-landing requires NO structural test passes (B.6a (i)-(iii)); a recognition-conditional SECONDARY flag is used precisely when a structural test DID pass but the edge nevertheless lands E2 via a named import. The two are mutually exclusive on a given edge: an edge is EITHER primary recognition-landing (residual) OR a structural primary carrying a recognition-conditional secondary flag, never both.",
+    "currency_exemplar_crossref": "The structural relation for E005 is the rubric B.5 currency/shadow-price exemplar 'surface gravity as the price in black-hole thermodynamics' (TYPING_RUBRIC.md B.5). Because that structural test passes, E005's primary_modality is currency-shadow-price, NOT recognition-landing.",
+    "rubric_ref": "TYPING_RUBRIC.md B.7a (and B.8 note, B.5)"
+  },
+
+  "secondary_modality_schema": {
+    "review_fix": "R-P2 (Pause-2)",
+    "fields": ["secondary_modalities", "conditionality_flags"],
+    "secondary_modalities": {
+      "type": "array_of_strings",
+      "optional": true,
+      "allowed_values": ["recognition-conditional"],
+      "meaning": "OPTIONAL descriptive residual annotation(s) on an edge whose primary_modality is structural. Currently the only defined secondary value is 'recognition-conditional' (a structural E2 edge whose closure leans on a named import). NEVER used for emittability (modality_tier_compat) and NEVER counted in the registered_null. NOTE: 'recognition-conditional' is a SECONDARY-FLAG string and is intentionally NOT a member of canonical_modalities (which are the PRIMARY-modality strings); it may appear ONLY in secondary_modalities/conditionality_flags, never as the primary 'modality' field."
+    },
+    "conditionality_flags": {
+      "type": "array_of_strings",
+      "optional": true,
+      "allowed_values": ["recognition-conditional"],
+      "meaning": "Equivalent carrier for conditionality annotations (e.g. ['recognition-conditional']); an edge may use conditionality_flags and/or secondary_modalities to record that its E2 structural closure is conditional on a named import."
+    },
+    "import_hygiene_parallel_check": {
+      "review_fix": "R-P2 (parallels C11 for the secondary flag)",
+      "rule": "for EVERY edge carrying a SECONDARY 'recognition-conditional' flag (in secondary_modalities or conditionality_flags) at tier E2 -- even though its PRIMARY modality is structural, not recognition-landing -- the freeze validator asserts the SAME named-import hygiene as C11: the row carries exactly ONE non-empty named_import, frozen at declaration, a SINGLE principle NOT a menu (no '/'-separated or 'or'-separated alternation, no 'one to be frozen' placeholder), and not substitutable at typing time (gate E.0). A recognition-conditional E2 row with zero, multiple, or menu-style named_import is rejected at freeze.",
+      "applies_to": "currently E005 (primary currency-shadow-price, secondary recognition-conditional, E2). Fences any future structural-E2 edge that imports a named principle.",
+      "distinct_from_C11": "C11 checks PRIMARY recognition-landing rows (recognition_resolution.affected_edges); this parallel check covers SECONDARY recognition-conditional flags on structural-primary E2 rows. The two sets are disjoint (an edge is one or the other, never both -- see modality_precedence_rule.discriminator).",
+      "validator_check_id": "C13"
+    },
+    "rubric_ref": "TYPING_RUBRIC.md B.7a, E.0 (secondary-flag import-hygiene parallel)"
+  },
+
+  "recognition_resolution": {
+    "mode": "add_modality",
+    "decision_summary": "RESOLVED R2 by ADDING 'recognition-landing' as an explicit canonical modality (rubric §B.6a) rather than retagging. The recognition-landing edges span both arrow directions (up and down) and different underlying mechanisms (failed descent, top-down currency, located emergence); a retag map would scatter them across descent/currency/emergence and ERASE the single fact that defines them. Recognition-landing is tier-locked to E2.",
+    "operational_test": "An edge is a recognition-landing iff ALL THREE hold on the declared toy model M: (i) no internal descent closes it (descent-test fails, Xi != 0 stably); (ii) no internal duality (B.3) and no internal common-refinement (B.4) closes it; (iii) the edge is characterized ONLY by a single named, citable external principle imported under a stated closure assumption (remove the named import and no inter-layer relation remains). If any structural test passes, the edge is that structural modality, NOT a recognition-landing. If recognition-search returns nothing named, it is NOT a recognition-landing but a sharpened gap E3, re-typed by its arrow before sealing.",
+    "tier_lock": "E2",
+    "retag_map": {},
+    "membership_rule": "MEMBERSHIP IS RULE-DRIVEN, NOT A HARD COUNT (R2): the affected_edges set is DEFINED as 'every edge row in edge_manifest.jsonl whose audited modality == recognition-landing'. The validator enumerates recognition-landing rows from the manifest and asserts the set equals affected_edges below; it does NOT trust a frozen integer. affected_edges is the frozen enumeration of that set at this freeze (currently 8 rows). If the manifest's recognition-landing set changes, affected_edges must be re-enumerated to match -- a stale list is rejected.",
+    "affected_edges": ["E007", "E022", "E025", "E026", "E027a", "E028b", "E030", "E033"],
+    "affected_edges_count_note": "8 recognition-landing rows (E028b ADDED per R2: the v2 list omitted it; the E028 supersession split E028 into E028a shadow-down/E1 and E028b recognition-landing/E2, and E028b is a full recognition-landing row that MUST appear here).",
+    "affected_edges_named_imports": {
+      "E007": "Gleason's theorem (the unique measure on the lattice of projections of a Hilbert space of dim >= 3 is tr(rho P)) -- the SINGLE frozen import (R2/R4); envariance and the decision-theoretic axiom set are NOT in the contract, they live only as alternatives_not_used on the E007 edge row",
+      "E022": "Jacobson's 'Einstein equation of state' (Clausius dQ=TdS + Bekenstein-Hawking S=A/4 ansatz + local Rindler thermality)",
+      "E025": "the Eigenstate Thermalization Hypothesis (ETH) ansatz on energy-eigenbasis matrix elements",
+      "E026": "the einselection / predictability-sieve criterion (commutation with the interaction Hamiltonian)",
+      "E027a": "the group-cohomology / cobordism classification of SPT phases",
+      "E028b": "the value of Lambda + the dark-matter sector + an initial-conditions / cosmological-measure assumption (imported named external cosmological content)",
+      "E030": "the Past Hypothesis (a low-entropy initial boundary condition)",
+      "E033": "the Stosszahlansatz (molecular-chaos / pre-collision statistical independence)"
+    },
+    "named_import_check": {
+      "review_fix": "R2",
+      "rule": "for EVERY edge row whose audited modality == recognition-landing, the freeze validator asserts: (i) the row is present in affected_edges; (ii) the row carries exactly ONE non-empty named_import field; (iii) the contract import for that row is a SINGLE frozen principle, NOT a menu (no '/'-separated or 'or'-separated alternation, no 'one to be frozen' placeholder). A recognition-landing row with zero, multiple, or menu-style named_import is rejected at freeze. Conversely every id in affected_edges MUST have modality recognition-landing in the manifest.",
+      "validator_check_id": "C11"
+    },
+    "edges_agent_action": "Apply mechanically: keep modality string 'recognition-landing' on these 8 edges (now canonical); assert each carries tier E2 and a single frozen named_import; no retagging needed. E007's import is frozen to Gleason's theorem ONLY (envariance / decision-theoretic are alternatives_not_used on the row, not contract imports)."
+  },
+
+  "value_split_schema": {
+    "fields": ["form_tier", "value_tier", "split_type", "value_node"],
+    "form_tier_enum": ["E1", "E2", "E0", "E3"],
+    "value_tier_enum": ["E1", "E2", "E0", "E3"],
+    "split_type_enum": ["form_value", "form_value_imported", "theorem_run"],
+    "split_type_meaning": {
+      "form_value": "the FORM of a relation descends/lands at form_tier (typically E1) while its NUMERICAL VALUES are run-only or imported (value_tier in {E0, E2})",
+      "form_value_imported": "sub-case of form_value: geometry/form descends (E1) but the predictive CONTENT is an imported named principle (value_tier E2)",
+      "theorem_run": "the analytic OPEN-THEOREM status is form_tier E3 (open named external problem) while the RUN-EXHIBITED phenomenon is value_tier E0 (a substrate run exhibits it)"
+    },
+    "reported_tier_rule": {
+      "review_fix": "R3",
+      "rule": "reported_tier is SPLIT-TYPE-DEPENDENT (not a flat form_tier). It names which leg carries the edge's PRIMARY (headline) claim, which is the leg counted in the registered null; the OTHER leg is recorded on a separate ledger and NEVER summed.",
+      "reported_tier_by_split_type": {
+        "form_value": "value_tier",
+        "form_value_imported": "value_tier",
+        "theorem_run": "form_tier"
+      },
+      "rationale_form_value": "for split_type in {form_value, form_value_imported} the edge's PRIMARY claim is the PREDICTIVE inter-layer connection, which is incomplete without the imported/run-generated value leg (e.g. ChPT is not predictive from the symmetry skeleton alone; it needs the run-generated LECs). The headline tier is therefore the value_tier; the form-descends leg is recorded but is NOT the edge's claimed closure status. CONSEQUENCE (R3 SINGLE SEMANTICS): E029 (ChPT) has form_tier E1 / value_tier E2 / split_type form_value_imported, so its reported (headline) tier is the value_tier E2 (recognition-conditional on the imported run-generated LECs). The headline (edge_scored_tier) EQUALS reported_tier=E2 -- the strong headline_tier_invariant with no nuance exception. The form-descends-E1 leg is recorded but is NOT counted in the E1 null; the two legs are never summed. (E029 does not contribute to the E1 count.)",
+      "rationale_theorem_run": "for split_type == theorem_run the edge's PRIMARY claim is the ANALYTIC THEOREM status (the open named external problem); the run-exhibited leg is a SEPARATE never-summed E0 ledger entry. The headline tier is therefore the form_tier. CONSEQUENCE: E041 (confinement) has form_tier E3 / value_tier E0 / split_type theorem_run, so its reported (headline) tier STAYS E3; the lattice-run-exhibited string tension is the E0 ledger leg, carried separately, never summed.",
+      "headline_tier_invariant": "A row's headline (scored) tier MUST EQUAL value_split.reported_tier (the value computed by reported_tier_by_split_type for that row's split_type). A row whose scored_tier disagrees with its value_split.reported_tier is rejected at freeze (validator check C10). Under the R3 single semantics this is exact for E029: split_type form_value_imported => reported_tier = value_tier = E2 = edge_scored_tier (no nuance exception). For the form_value descent rows E004/E008/E035a/E038 the reported leg is the value_tier (E0, the run-only numerical values carried separately on the Run-Target ledger), while the edge's own closure is the EQUATION/STRUCTURE descent E1 fixed by calibration/descent; here the edge_scored_tier (E1) is the edge's audited closure and the E0 value-leg is a SEPARATE never-summed Run-Target entry, neither counted in the E1 null as the value leg. The narrow invariant the validator enforces (C10): scored_tier may equal the contract's frozen per-row edge_scored_tier, but it must NOT be silently set to a value_split leg that the reported_tier_rule says is NOT the reported leg (it must not report the form_tier of a form_value row as if that form-leg were the edge's predictive closure)."
+    },
+    "no_summing_within_edge": "the NON-reported leg is carried SEPARATELY (into the Run-Target Manifest when E0, the conditional ledger when E2) and is NEVER summed with the reported_tier leg, independent of split_type. For form_value/form_value_imported the reported leg is the value_tier and the form_tier (E1) leg is NOT counted in the E1 null; for theorem_run the reported leg is the form_tier (E3) and the run-exhibited value_tier (E0) leg is the separate ledger entry.",
+    "rows_carrying_value_split": {
+      "E004":  {"form_tier": "E1", "value_tier": "E0", "split_type": "form_value",  "value_node": "transport-coefficients",       "reported_tier": "E0", "edge_scored_tier": "E1", "reported_leg_note": "split-type form_value => reported leg is the value_tier (E0, transport coefficients); the form_tier E1 (the hydrodynamic EQUATIONS) is the separate descent ledger. E004 is the E1 calibration CONTROL (must_seal_E1): the EQUATION-level descent is the calibration target and the edge's scored tier is E1; the value-coefficient leg E0 is carried to the Run-Target Manifest, never summed. (For a calibration control the edge_scored_tier is fixed by the calibration_known_tier; the value_split flags the never-summed E0 sub-target.)"},
+      "E008":  {"form_tier": "E1", "value_tier": "E0", "split_type": "form_value",  "value_node": "matched-low-energy-couplings", "reported_tier": "E0", "edge_scored_tier": "E1", "reported_leg_note": "form_value: the RG/EFT mode-elimination STRUCTURE descends E1 (edge scored E1, a textbook RG shadow); matched-coupling VALUES are the E0 value-leg, carried separately, never summed."},
+      "E029":  {"form_tier": "E1", "value_tier": "E2", "split_type": "form_value_imported",  "value_node": "chiral-low-energy-constants",  "reported_tier": "E2", "edge_scored_tier": "E2", "reported_leg_note": "form_value_imported (R3 SINGLE SEMANTICS): the chiral SYMMETRY SKELETON descends from QCD (form_tier E1, a clean form-descent leg, RECORDED but NOT counted in the E1 null) but the PREDICTIVE CONTENT (f_pi, the chiral condensate, the LECs) is an IMPORTED named principle -- the run-generated low-energy constants imported from lattice QCD under a stated closure assumption (value_tier E2, recognition-conditional). Per reported_tier_by_split_type[form_value_imported]=value_tier, reported_tier=E2; the edge's headline (edge_scored_tier) EQUALS reported_tier=E2 (the strong headline_tier_invariant, no nuance exception needed). The form-descends-E1 leg and the E2 imported-value leg are NEVER summed. E029 does NOT contribute to the E1 count."},
+      "E035a": {"form_tier": "E1", "value_tier": "E0", "split_type": "form_value",  "value_node": "hadron-spectrum",             "reported_tier": "E0", "edge_scored_tier": "E1", "reported_leg_note": "form_value: the continuum-limit STRUCTURE (a->0) is a descent in principle (edge scored E1-candidate); every physical readout (spectrum, Lambda_QCD) is the E0 value-leg (= E035b / E001), carried separately, never summed."},
+      "E038":  {"form_tier": "E1", "value_tier": "E0", "split_type": "form_value",  "value_node": "critical-exponent-values",     "reported_tier": "E0", "edge_scored_tier": "E1", "reported_leg_note": "form_value: the universality-CLASS ASSIGNMENT is a computable RG descent (edge scored E1); high-precision exponent VALUES at a nontrivial fixed point are the E0 value-leg, carried separately, never summed."},
+      "E041":  {"form_tier": "E3", "value_tier": "E0", "split_type": "theorem_run", "value_node": "confinement-string-tension",   "reported_tier": "E3", "edge_scored_tier": "E3", "reported_leg_note": "theorem_run: R3 CONSEQUENCE -- the reported (headline) leg is the form_tier E3 (the open Yang-Mills mass-gap / confinement PROOF, Clay Millennium); E041 STAYS E3. The lattice-run-exhibited string tension is the value_tier E0 ledger leg, carried separately into the Run-Target Manifest, never summed."}
+    },
+    "rows_carrying_value_split_note": "reported_tier per row is computed by reported_tier_rule.reported_tier_by_split_type (value_tier for form_value/form_value_imported, form_tier for theorem_run). edge_scored_tier is the edge's headline tier in the registered null. For E029 (form_value_imported) reported_tier=value_tier=E2=edge_scored_tier exactly (the imported predictive leg IS the edge's closure). For the form_value descent rows E004/E008/E035a/E038 the edge_scored_tier is E1 (the EQUATION/STRUCTURE descent fixed by calibration/descent), while the run-only value leg E0 is a SEPARATE never-summed Run-Target entry rather than the edge's own closure. The headline_tier_invariant (validator C10) enforces that a row may not silently report a NON-reported value_split leg as its closure: in particular E029's form-descent E1 leg may NOT be counted as an E1 (the edge is E2), and E041 may NOT be counted as an E0 (its run-exhibited E0 leg is not the edge's headline).",
+    "edges_agent_action": "Each value_split-bearing row carries split_type and the reported_tier per the map above (E029 form_value_imported, E041 theorem_run, the other four form_value). PER R3 SINGLE SEMANTICS: E029's edge scored_tier is E2 = reported_tier = value_tier (recognition-conditional on the imported run-LECs); its form-descends-E1 leg is recorded but NOT counted in the E1 null. E041's edge scored_tier STAYS E3 (the open-theorem leg is the headline); its run-exhibited E0 leg is the separate Run-Target ledger entry. The registered_null below reflects this: E029 is in the E2 set, never the E1 set.",
+    "E028_supersession_note": "O1 SUPERSEDED the single E028 form_value_imported value-split row: E028 was split into TWO separate ledger rows in edge_manifest.jsonl -- E028a (general_relativity -> lambda_cdm, shadow-down, E1, the bare FLRW geometry/form) and E028b (general_relativity -> lambda_cdm, recognition-landing, E2, the imported Lambda/dark-matter/measure content). The form/value separation that the old E028 expressed via an intra-edge value_split is now expressed as the E028a (E1) vs E028b (E2) two-row split, carried on SEPARATE ledgers and NEVER summed. The 'form_value_imported' split_type enum member is now instantiated by E029 (ChPT: form-descends-E1 skeleton + imported-E2 run-generated LECs), which is the canonical R3 single-semantics form_value_imported row; E028 no longer exists as a single value-split row (it is the E028a/E028b two-row split)."
+  },
+
+  "node_established_rule": {
+    "field": "established_status",
+    "field_enum": ["experimentally_established", "not_established"],
+    "may_source_E1_rule": "a node may be the SOURCE of an E1 (computable-descent) edge ONLY IF its established_status == experimentally_established; a not_established node has no accepted-observables to descend to and may only be a target, or a source of E2/E0/E3",
+    "applies_to": "every registered node (theory cards are trivially experimentally_established)",
+    "frozen_statuses": {
+      "lattice-gauge-theory":          {"established_status": "experimentally_established", "justification": "standard validated computational formulation of QCD", "sources_E1_edge": "E035a"},
+      "many-body-quantum":             {"established_status": "experimentally_established", "justification": "interacting many-body quantum matter is experimentally realized", "sources_E1_edge": "E040"},
+      "fermi-liquid-theory":           {"established_status": "experimentally_established", "justification": "Landau Fermi-liquid is an experimentally confirmed low-energy description of normal metals"},
+      "chiral-perturbation-theory":    {"established_status": "experimentally_established", "justification": "ChPT is a confirmed low-energy EFT of QCD; here only a TARGET (E029), not an E1 source"},
+      "conformal-field-theory":        {"established_status": "not_established", "justification": "as a free-standing inter-layer source it is not an established peer layer; appears only in E2 duality (E023)"},
+      "string-theory":                 {"established_status": "not_established", "justification": "no accepted observables; candidate UV completion only; sources E3 (E037), never E1"},
+      "quantum-field-theory-curved":   {"established_status": "not_established", "justification": "semiclassical named construction; appears as E2 target (E034), never an E1 source"},
+      "decoherence-pointer-basis":     {"established_status": "not_established", "justification": "selection criterion is itself an imported principle (E026 E2); not an E1 source"},
+      "classical-probability":         {"established_status": "not_established", "justification": "target of the Born-rule recognition landing (E007 E2); not an E1 source"}
+    },
+    "enforcement": "for any edge with source_kind == candidate_substructure whose sealed tier is E1, the freeze validator looks up the source node established_status; if not_established the bundle is rejected (re-type to E2/E0/E3 or promote the node to a justified full card)",
+    "rubric_ref": "TYPING_RUBRIC.md §A.7.1"
+  },
+
+  "calibration_rules": [
+    {
+      "id": "E001",
+      "edge": "qcd -> hadron-spectrum (proton mass)",
+      "calibration_known_tier": "E0",
+      "calibration_rule": "must_seal_E0",
+      "spec": "physical-quark-mass lattice QCD: no free proton/hadron MASS parameter; quark masses and coupling/scale are fixed independently under the declared lattice-QCD protocol (scale set by one hadronic input, running by dimensional transmutation); the proton-mass / hadron-spectrum readout is out-of-sample and NOT fitted. Deferred to the Run-Target Manifest; NOT run, NOT derived. THE anchor."
+    },
+    {"id": "E002", "edge": "statistical_mechanics -> thermodynamics", "calibration_known_tier": "E1", "calibration_rule": "must_seal_E1", "spec": "Xi=0 descent on a finite ensemble->macrostate toy; refinement-stable (E.9)"},
+    {"id": "E003", "edge": "special_relativity -> classical_mechanics", "calibration_known_tier": "E1", "calibration_rule": "must_seal_E1", "spec": "clean v/c->0 limit-descent (Wigner-Inonu)"},
+    {"id": "E004", "edge": "kinetic_theory -> hydrodynamics", "calibration_known_tier": "E1", "calibration_rule": "must_seal_E1", "spec": "Chapman-Enskog Xi=0 for the EQUATIONS; transport-coefficient VALUES are a value_split E0 sub-target (split_type form_value), never summed"},
+    {"id": "E005", "edge": "general_relativity -> black_hole_thermodynamics", "calibration_known_tier": "E2", "calibration_rule": "must_seal_E2", "primary_modality": "currency-shadow-price", "secondary_modalities": ["recognition-conditional"], "conditionality_flags": ["recognition-conditional"], "named_import_frozen": "QFT in curved spacetime (Hawking thermal flux) + the first law of black-hole mechanics, semiclassical no-back-reaction (= E034)", "spec": "PAUSE-2 RESOLVED (R-P2, option b): primary_modality = currency-shadow-price (the structural B.5 'surface gravity as the price in BH thermodynamics' exemplar passes, so the structural modality is PRIMARY per modality_precedence_rule -- it is NOT a primary recognition-landing); secondary flag recognition-conditional because classical GR's Xi~0 is an OVER-READ (the h-bar/thermal predicates are imported, not in GR's Sigma_f). Must come out E2-conditional; named import FROZEN at declaration, NOT substitutable (gate E.0 + secondary-flag import-hygiene parallel C13); a SINGLE principle, not a menu. Jacobson is NOT this edge (that is E022, the opposite-arrow PRIMARY recognition-landing)."},
+    {"id": "E018", "edge": "quantum_mechanics -> general_relativity", "calibration_known_tier": "E3", "calibration_rule": "must_not_seal_E1_or_E2", "spec": "anti-control; likely no_faithful_M E3 sub-reason"},
+    {"id": "E019", "edge": "standard_model -> gauge-group-origin", "calibration_known_tier": "E3", "calibration_rule": "must_not_seal_E1_or_E2", "spec": "anti-control; open_question target forces E0/E3 only"},
+    {"id": "E020", "edge": "standard_model -> fermion-generations", "calibration_known_tier": "E3", "calibration_rule": "must_not_seal_E1_or_E2", "spec": "anti-control; open_question target forces E0/E3 only"},
+    {"id": "E021", "edge": "general_relativity -> cosmological-constant", "calibration_known_tier": "E3", "calibration_rule": "must_not_seal_E1_or_E2", "spec": "anti-control; open_question target forces E0/E3 only"}
+  ],
+
+  "anti_control_rules": {
+    "must_not_seal_E1_or_E2": {
+      "allowed_computed_tiers": ["E3", "E0"],
+      "E0_pass_condition": "an anti-control passes via E0 ONLY IF (i) its run_target_stub was frozen BEFORE scoring AND (ii) the E.7 double-run interlock (descent-test negative + recognition-search negative + a constructible non-descending run-object positively exhibited) is logged. (review fix O4)",
+      "E0_fail_action": "if an anti-control computes E0 without a pre-frozen run_target_stub satisfying E.7, demote it to E3 (conservative-default, §E.5); it does NOT pass on a bare E0 label",
+      "rationale": "without this fence E0 becomes a flattering 'real emergence, deferred' haven for an edge that should foreclose to E3",
+      "current_anti_controls": ["E018", "E019", "E020", "E021"],
+      "current_expectation": "all four expected at E3 (not E0)"
+    },
+    "e7_interlock_schema": {
+      "review_fix": "R5 (machine-encodes the O4 E.7 double-run interlock; closes reviewer mutation test 2 -> hardened validator check C5)",
+      "applies_to": "every anti-control edge (calibration_rule == 'must_not_seal_E1_or_E2') that is sealed at scored_tier E0; also the general E.7 interlock for any edge sealing E0 via the anti-control path",
+      "machine_fields": {
+        "descent_test_logged_negative": {"type": "boolean", "meaning": "the Step-1 descent-test was ACTUALLY run and logged with a NEGATIVE (Xi != 0 stably) result"},
+        "recognition_search_logged_negative": {"type": "boolean", "meaning": "the Step-2 recognition-search was ACTUALLY run and logged returning NO named external principle"},
+        "non_descending_run_object_exhibited": {"type": "boolean", "meaning": "a constructible non-descending run-object (B.2 non-factorization) whose generation provably requires a run was POSITIVELY exhibited (the E.7 positive construction; E0 is not a doubt-haven)"},
+        "run_target_stub_frozen_pre_scoring": {"type": "boolean", "meaning": "the run_target_stub was frozen BEFORE the scored run (not added post-hoc); the validator additionally requires a non-empty run_target_stub string present at freeze-time"}
+      },
+      "rule": "an anti-control edge may carry scored_tier == 'E0' ONLY IF ALL FOUR booleans {descent_test_logged_negative, recognition_search_logged_negative, non_descending_run_object_exhibited, run_target_stub_frozen_pre_scoring} are PRESENT and == true (and a non-empty run_target_stub is present). If any is absent or false, the bare E0 is a conservative-default failure and the edge is DEMOTED to E3 (§E.5); it does NOT pass the anti-control gate on the strength of an E0 label.",
+      "validator_check_id": "C5 (hardened)",
+      "validator_assertion": "for every edge with calibration_rule == 'must_not_seal_E1_or_E2' and scored_tier == 'E0', assert all four interlock booleans are present and true AND run_target_stub is non-empty; otherwise reject (or treat as E3-demoted, equivalently a freeze block for an E0-labelled anti-control lacking the interlock). The reviewer's mutation test 2 (E018 -> scored_tier=E0, scored_modality=emergence-up, arbitrary stub, no E.7 log) must FAIL here: the four booleans are absent.",
+      "current_state": "the four current anti-controls E018/E019/E020/E021 are all expected at E3; none carries an E0 seal, so none asserts the four booleans true at this freeze. The schema fences any future anti-control E0 (or any re-typing of these) and is what mutation test 2 trips on.",
+      "rubric_ref": "TYPING_RUBRIC.md §E.7, §F anti-control rule"
+    }
+  },
+
+  "full_card_freeze_rule": {
+    "gate": "E.12",
+    "rule": "No toy model M may be declared (gate E.1) and no Xi/RM/ID may be computed for ANY edge until the FULL closure-package card (every §A field: Z, f, Sigma_f, E, D, accepted_observables, lawful_layer_note, casting_justification, casting_alternatives, status) is frozen and hashed for EVERY theory id AND EVERY casting-bearing node, BEFORE any M declaration or Xi computation.",
+    "artifact": "closure_card_manifest.jsonl (long form of the theory_manifest.jsonl stubs), added to SHA256SUMS",
+    "validator_asserts": [
+      "every theory id and every casting-bearing node has a complete frozen card (no provisional_Z/f/E stub used at scoring time)",
+      "each card hash predates the first M hash and the first Xi computation for every incident edge"
+    ],
+    "fail_action": "affected edges' tiers are void; freeze BLOCKED until full cards are frozen and edges recomputed against them",
+    "registered_null_caveat": "Any reported E1 count (pre- or post-audit) MUST carry the O2 caveat: 'the audited E1 set must REMOVE any near-intra-layer candidate that fails gate E.4'. Pending near-intra-layer rows (E016, E017, E039) are carried as E1-pending, never counted as sealed E1, until their near_intra_layer_check resolves.",
+    "rubric_ref": "TYPING_RUBRIC.md §A intro, §E.12, §E.13"
+  },
+
+  "registered_null_caveat": {
+    "review_fix": "O2",
+    "rule": "audited E1 must remove any near-intra-layer candidate that fails gate E.4 (within-a-layer restriction, no residual relation)",
+    "pending_near_intra_layer_rows": ["E016", "E017", "E039"],
+    "pending_field": "near_intra_layer_check",
+    "counting_rule": "an edge with an unresolved near_intra_layer_check may be carried as 'E1-pending' but MUST NOT be counted as a sealed E1; an E1 total quoted without this caveat is a flattering-by-padding violation"
+  },
+
+  "near_intra_layer_schema": {
+    "review_fix": "R4 (enforces O2 / rubric gate E.4 / E.11; closes reviewer mutation test 1 -> validator check C9)",
+    "applies_to": "every edge flagged near-intra-layer (currently E016, E017, E039) -- i.e. every edge whose 'descent' is a restriction to a tensor factor of the SAME theory or a within-shared-layer compatibility relation",
+    "machine_fields": {
+      "near_intra_layer_check": {
+        "type": "boolean",
+        "meaning": "true iff this edge is subject to the near-intra-layer gate E.4/E.11 (it is a candidate within-a-layer restriction that MUST pass the E.4 relabeling test before it may count as a clean E1). The legacy free-text 'PENDING_E4: ...' string is superseded by this boolean plus near_intra_layer_result; the prose remains as a human note but the validator reads these two machine fields."
+      },
+      "near_intra_layer_result": {
+        "type": "enum",
+        "enum": ["pending", "passed", "failed"],
+        "meaning": "pending = E.4 relabeling test not yet run/recorded (the v3 state for E016/E017/E039); passed = E.4 confirmed a GENUINE inter-layer quotient (own Sigma_f, own accepted_observables; removing the renaming leaves a residual relation) -> the edge MAY be a sealed E1; failed = E.4 showed a within-layer tensor-factor restriction (removing the renaming leaves no residual relation) -> the edge is 'within-a-layer, no SBT content', REMOVED from the E1 count."
+      }
+    },
+    "rule": "scored_tier E1 is FORBIDDEN for a near_intra_layer_check:true edge UNLESS near_intra_layer_result == 'passed'. A pending result means the edge may be carried only as 'E1-pending', never counted as a sealed E1. A failed gate-E.4 (near_intra_layer_result == 'failed') => the edge is REMOVED from the E1 count and marked 'within-a-layer, no SBT content' (its modality/tier no longer contributes E1).",
+    "validator_check_id": "C9",
+    "validator_assertion": "in scored mode, for every edge with near_intra_layer_check == true and scored_tier == 'E1', assert near_intra_layer_result == 'passed'; otherwise reject. (A scored copy that sets every scored_tier=provisional but leaves E016/E017/E039 as unresolved E1 must FAIL here -- the reviewer's mutation test 1.)",
+    "current_state": "E016, E017, E039 all carry near_intra_layer_check:true, near_intra_layer_result:'pending' at this freeze (E.4 not yet run); none may be counted as a sealed E1.",
+    "rubric_ref": "TYPING_RUBRIC.md §E.4, §E.11"
+  },
+
+  "tier_order": ["E1", "E2", "E0", "E3"],
+  "tier_order_meaning": "the single conservatism/informativeness ordering E1 (most-flattering) > E2 > E0 > E3 (least-flattering); E3 is the unique conservative terminal; doubt demotes strictly toward E3; E0 is NOT a doubt-haven (sealing it needs the positive construction of a non-descending run-object, gate E.7). rubric §E.5.",
+
+  "no_summing": "E1 never summed with E2/E0",
+  "no_summing_full": "The four tiers live on separate ledgers and are reported per tier, never pooled. E2 (recognition-conditional) and E0 (run-only, deferred) are never summed with E1 (accepted descent). Even WITHIN a single edge, a value_split's value_tier is never summed with its form_tier (independent of split_type).",
+
+  "normalized_xi_criterion": {
+    "review_fix": "R-P2 (Pause-2: the descent test reads the NORMALIZED relative residual, not the raw Xi norm)",
+    "provenance": "EXTERNAL_REVIEW_PAUSE2.md OTHER FINDINGS (E001: raw Xi grows 7.84e8->2.25e9 but the relative residual shrinks 0.197->0.042 while staying positive; base the E0-vs-E1 descent criterion on the NORMALIZED residual).",
+    "definition": "the relative residual xi_rel(h) := ||Xi_C(D|L; h)|| / ||K_DD(h)||, a dimensionless ratio in [0,1] -- the located obstruction normalized by the total source-readout currency K_DD (the fraction of the dissolving readout T_D lying outside the native range P_L). xi_rel = 0 <=> Xi = 0 (exact-adequacy equivalence preserved), but xi_rel is SCALE-INVARIANT and is the quantity the descent test reads.",
+    "report_both": "the edge log MUST report BOTH the raw Xi and the normalized xi_rel at EACH of the two refinements h1, h2; the descent verdict is taken from xi_rel, NEVER from the raw Xi norm alone (a small raw Xi is NOT sufficient for E1; a large/growing raw Xi is NOT disqualifying).",
+    "E1_criterion": "CLEAN DESCENT (E1) requires xi_rel -> ~machine-zero STABLY across both declared refinements h1 ⊏ h2 (gate E.9), AND no-over-read (E.3). The refinement-stability check (E.9) is on xi_rel, not raw Xi.",
+    "E0_E3_criterion": "E0/E3 (obstruction / gap): the NORMALIZED residual stays BOUNDED AWAY FROM ZERO under refinement (a stable positive relative residual) WITH ANALYTIC CONTROL of that fraction (a known nonzero lower bound, not a numerical accident). This is the normalized analogue of Xi > 0.",
+    "worked_example_E001": "E001 (QCD -> hadron-spectrum, the E0 anchor) is the canonical STABLE-POSITIVE-NORMALIZED-RESIDUAL + ANALYTIC-CONTROL example: raw Xi GROWS (7.84e8 -> 2.25e9) under refinement but the NORMALIZED residual shrinks toward a stable positive floor (xi_rel 0.197 -> 0.042) and STAYS POSITIVE -- it does NOT reach machine-zero. The E0/E3 signal is exactly this (stable positive normalized residual + analytic control), NOT monotone raw growth. The proton mass is run-only (no D0=A.L0 shortcut); the positive xi_rel floor is the blind-spot currency of the missing run. Hence E001 seals E0 (its modality is emergence; rubric C.4).",
+    "worked_example_E005": "E005 (GR -> black-hole-thermodynamics) is the canonical OVER-READ example: classical GR's toy-model Xi comes out NUMERICALLY SMALL (xi_rel ~ 0 on a GR-only probe family) -- but this is an OVER-READ (gate E.3 fail), NOT a clean descent. The h-bar coefficients and the thermal reinterpretation (T = kappa/2pi, S = A/4) are NOT in GR's Sigma_f, so a GR-only probe family literally cannot express the thermal predicates; its small Xi certifies adequacy only for the NON-thermal content and silently drops the imported h-bar/thermal predicates. Once the thermal observables are in the readout map (D.4.v) the descent over-reads its source (E.3) and is blocked; the edge lands E2 via the named import. Lesson: a small numeric Xi when h-bar/thermal predicates are imported is an OVER-READ, not an E1.",
+    "rubric_ref": "TYPING_RUBRIC.md D.1.1, C.1, C.5 STEP 1, E.9"
+  },
+
+  "gate_policy": {
+    "review_fix": "R-P2 (Pause-2: the calibration gate-policy adjudicated by the external reviewer)",
+    "provenance": "EXTERNAL_REVIEW_PAUSE2.md Gate policy + Adjudication (tier-only hard for calibration; modality mismatch routed to adjudication, not auto-fail).",
+    "calibration_hard_gate": "TIER ONLY. Calibration PASS/FAIL hard-gates on the per-row TIER: every is_calibration must_seal_* row's computed_tier must EQUAL its calibration_known_tier, and every must_not_seal_E1_or_E2 anti-control's computed_tier must land in {E3, E0} (E0 only with the E.7 interlock). A tier mismatch on a calibration row BLOCKS the freeze.",
+    "modality_hard_checks": "modality checks hard-gate on: (i) canonical modality strings (canonical_modalities; every PRIMARY modality string is one of the 7); (ii) primary-modality/tier emittability (modality_tier_compat, on the PRIMARY modality); (iii) recognition-import hygiene (C11 for primary recognition-landing rows AND C13 for secondary recognition-conditional flags). These are hard freeze-blockers.",
+    "modality_mismatch_is_adjudicated_not_auto_fail": "A blind-vs-frozen PRIMARY-modality MISMATCH on a calibration row is ROUTED TO ADJUDICATION (recorded, then the scored gate re-run on the adjudicated modality), NOT auto-failed. Rationale (reviewer): modality is empirically LESS deterministic than tier on hard/faceted edges -- two of nine Pause-2 blind edges (E005, E018) disagreed on modality while getting tier right. The tier gate is the hard calibration gate; the modality is adjudicated. (E005: blind currency vs frozen currency-shadow-price -- now resolved primary currency-shadow-price + secondary recognition-conditional. E018: blind emergence-up vs frozen common-refinement, tier E3 either way.)",
+    "do_not_force_align_silently": "When a blind run disagrees with the frozen primary modality, the adjudication MUST be recorded (not silently force-aligned) and the scored gate re-run; the resolution and the re-run are logged.",
+    "freeze_notes_ref": "recorded in FREEZE_NOTES.md (gate-policy section) and enforced via the freeze_gate_predicate clauses (c) [canonical+emittable] and (g)/(h) [C11/C13 import hygiene].",
+    "rubric_ref": "TYPING_RUBRIC.md F (calibration), B.7a, B.8"
+  },
+
+  "registered_null": {
+    "status": "SINGLE SOURCE OF TRUTH for the registered-null tally. All frozen prose (FREEZE_NOTES.md, edge_manifest_notes.md, SCIENCE_DIGEST.md, TYPING_RUBRIC.md) cites THIS object; a prose count that disagrees with these numbers is stale and is a freeze-blocking drift.",
+    "kind": "PRE-AUDIT prediction (the registered null), recomputed from the FINAL edge_manifest.jsonl provisional_tier_guess; NOT the audited verdict. Recorded so the post-audit scored run cannot be tuned toward it.",
+    "computed_from": "edge_manifest.jsonl, field provisional_tier_guess, over all 46 edge rows (E029 is E2, NOT E1; E028 is split into E028a (E1) + E028b (E2), no single-E028 value-split row).",
+    "n_edges": 46,
+    "per_tier": {
+      "E1": 19,
+      "E2": 13,
+      "E0": 4,
+      "E3": 10
+    },
+    "tier_members": {
+      "E0": ["E001", "E027b", "E031", "E035b"],
+      "E1": ["E002", "E003", "E004", "E006", "E008", "E010", "E011", "E012", "E013", "E014", "E015", "E016", "E017", "E028a", "E035a", "E036", "E038", "E039", "E040"],
+      "E2": ["E005", "E007", "E022", "E023", "E024", "E025", "E026", "E027a", "E028b", "E029", "E030", "E033", "E034"],
+      "E3": ["E009", "E018", "E019", "E020", "E021", "E032", "E037", "E041", "E042", "E043"]
+    },
+    "E1_caveat": "The E1 count of 19 INCLUDES the 3 near-intra-layer rows (E016, E017, E039) carried as E1-PENDING (near_intra_layer_check:true, near_intra_layer_result:'pending'); these are NEVER counted as SEALED E1 (registered_null_caveat / near_intra_layer_schema / C9). The audited E1 set must REMOVE any that fails gate E.4. So sealed-E1-eligible (non-pending) = 16; E1-pending = 3.",
+    "E2_recognition_landing_subset": "8 of the 13 E2 rows carry PRIMARY modality recognition-landing (E007, E022, E025, E026, E027a, E028b, E030, E033 = recognition_resolution.affected_edges); the other 5 E2 rows (E005, E023, E024, E029, E034) have a STRUCTURAL primary modality (duality/currency/shadow-down) and land via a named import WITHOUT the primary recognition-landing tag. Of these, E005 (primary currency-shadow-price) additionally carries the SECONDARY recognition-conditional flag (modality_precedence_rule / secondary_modality_schema, Pause-2 R-P2); the secondary flag does NOT change E005's primary modality or its place in the E2 tally (it is counted ONCE, at currency-shadow-price/E2).",
+    "value_split_legs_not_counted": "value_split E0/E2 value-legs are carried on SEPARATE ledgers and are NOT in these per-tier counts: E029's form-descends-E1 leg is NOT in E1 (the edge is E2); E041's run-exhibited-E0 leg is NOT in E0 (the edge is E3); the form_value E0 value-legs of E004/E008/E035a/E038 are NOT separately counted (those edges are counted once at their E1 headline). Each edge contributes EXACTLY ONCE, at its headline (scored) tier.",
+    "predicted_shape": "shadow-heavy (E1-dominant) / emergence-sparse (E0 + foreclosed E3), with E2 a substantial but separate conditional band -- foreclosure-dominance, the framework working not failing (primer §9 #8). E1 is NEVER summed with E2/E0/E3."
+  },
+
+  "freeze_gate_predicate": {
+    "FREEZE_iff": [
+      "(a) every is_calibration row with a must_seal_* rule has computed_tier == calibration_known_tier",
+      "(b) [C5 hardened, R5] every E3 anti-control (must_not_seal_E1_or_E2) has computed_tier in {E3, E0}, AND any anti-control computed E0 carries a pre-frozen non-empty run_target_stub AND ALL FOUR E.7 interlock booleans (descent_test_logged_negative, recognition_search_logged_negative, non_descending_run_object_exhibited, run_target_stub_frozen_pre_scoring) present and true (e7_interlock_schema)",
+      "(c) every edge endpoint resolves (registry §A.7), every (PRIMARY-modality, tier) pair is emittable (modality_tier_compat, evaluated on the PRIMARY modality == the 'modality' field per modality_precedence_rule), every PRIMARY modality string is canonical (canonical_modalities), and every E1 sourced from a candidate_substructure has that node experimentally_established (node_established_rule). Secondary_modalities / conditionality_flags are NOT checked for emittability and are NOT counted in the registered null.",
+      "(d) every casting-bearing card was frozen in full (closure_card_manifest.jsonl) before any M/Xi (full_card_freeze_rule / gate E.12)",
+      "(e) [C9, R4] every E1 count carries the O2 registered-null caveat and no near-intra-layer row (near_intra_layer_check:true) is counted as a sealed E1 unless near_intra_layer_result=='passed'; a failed gate-E.4 row is removed from E1 (near_intra_layer_schema / registered_null_caveat)",
+      "(f) [C10, R3] every row's scored/headline tier equals its value_split.reported_tier (computed by reported_tier_rule.reported_tier_by_split_type); a row may not silently report a NON-reported value_split leg as its closure (value_split_schema.reported_tier_rule)",
+      "(g) [C11, R2] every edge whose PRIMARY modality == recognition-landing is in recognition_resolution.affected_edges, carries exactly one non-empty named_import, and its contract import is a single frozen principle (NOT a menu); and every id in affected_edges is a recognition-landing row (recognition_resolution.named_import_check)",
+      "(h) [C13, R-P2] every edge carrying a SECONDARY recognition-conditional flag (in secondary_modalities or conditionality_flags) at tier E2 carries exactly one non-empty named_import, a single frozen principle (NOT a menu), not substitutable at typing time -- the import-hygiene parallel of C11 for secondary flags (secondary_modality_schema.import_hygiene_parallel_check). Currently applies to E005.",
+      "(i) [R-P2 gate-policy] calibration hard-gates on TIER (clause a/b); a blind-vs-frozen PRIMARY-modality mismatch on a calibration row is ROUTED TO ADJUDICATION and the scored gate re-run, NOT auto-failed (gate_policy.modality_mismatch_is_adjudicated_not_auto_fail). The modality HARD checks remain clauses (c)/(g)/(h): canonical primary strings, primary-modality/tier emittability, and recognition-import hygiene (C11 primary + C13 secondary)."
+    ],
+    "enforced_by": "the workflow's Assemble phase, programmatically, by comparing machine-checkable fields against THIS file (not by reading prose). An un-wired freeze-blocker is decorative.",
+    "validator_target": "validate_freeze_gate.mjs (the existing validator wires C1-C12; the workflow agent wires the new C13 (R-P2 secondary recognition-conditional named_import hygiene) and re-runs SHA256SUMS over the bundle)",
+    "enforced_check_ids": ["C1-C8 (existing)", "C5 (hardened per R5)", "C9 (R4 near-intra-layer)", "C10 (R3 reported_tier consistency)", "C11 (R2 recognition-landing named_import)", "C12 (R6 registered-null tally + stale-prose guard, existing)", "C13 (R-P2 secondary recognition-conditional named_import hygiene, NEW)"]
+  }
+}

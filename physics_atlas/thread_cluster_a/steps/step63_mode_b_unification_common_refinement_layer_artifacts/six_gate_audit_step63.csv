@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,REQ_U and declared source do not name the answer values or parent labels
+dependency_trace,True,REQ_U plus declared minimal-simple/single-package source plus trace computation
+ablation,True,without declared source the product control satisfies REQ_U with free normalization
+negative_control,True,product normalization scale-two example gives trace ratio 3/23
+stage_ii,True,Step47 refinement defect and X/Y witness identity reproduced
+no_single_axiom_equivalence,True,REQ_U alone is insufficient; the source is separately declared and load-bearing

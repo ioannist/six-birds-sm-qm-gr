@@ -1,0 +1,6 @@
+predicate_id,description,total_survivors,survivors_2x3,survivors_su4,selection_matches_clean_cut
+base_shadow,"base shadow, no clean-separation condition",12,8,4,False
+no_light_xy,allows massive coset vectors; forbids only forced-light ones,12,8,4,False
+no_baryon_violating_xy,forbids the F27 baryon-orbit-enlarging subset,8,8,0,True
+bare_proton_stability,requires the baryon readout to descend,8,8,0,True
+clean_separation,forbids all confining-charged broken vectors,8,8,0,True

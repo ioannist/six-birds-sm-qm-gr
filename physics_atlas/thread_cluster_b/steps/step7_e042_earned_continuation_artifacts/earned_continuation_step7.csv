@@ -1,0 +1,11 @@
+step_index,r_in,r_out,regime,K_lorentzian,GR_input_state,GR_output_state,GR_terminated,U_good_input_state,U_good_drive,U_good_output_state,U_good_output_finite,U_good_generated_by_rule,U_good_rule,U_bad_input_state,U_bad_drive,U_bad_output_state,U_bad_terminated,U_bad_output_finite
+0,2.0,1.0,pre_locus,0.75,0.8,0.7156250000000001,False,0.8,0.04477611940298507,0.7919402985074627,True,True,x_next=x-step*K/(K+K_planck),0.8,0.046875,0.7156250000000001,False,True
+1,1.0,0.5,pre_locus,48.0,0.7156250000000001,-4.684375,False,0.7919402985074627,0.75,0.6569402985074627,True,True,x_next=x-step*K/(K+K_planck),0.7156250000000001,3.0,-4.684375,False,True
+2,0.5,0.25,pre_locus,3072.0,-4.684375,-350.284375,False,0.6569402985074627,0.9948186528497409,0.4778729409945094,True,True,x_next=x-step*K/(K+K_planck),-4.684375,192.0,-350.284375,False,True
+3,0.25,0.125,pre_locus,196608.0,-350.284375,-22468.684375,False,0.4778729409945094,0.9999186264138661,0.2978875882400135,True,True,x_next=x-step*K/(K+K_planck),-350.284375,12288.0,-22468.684375,False,True
+4,0.125,0.0625,pre_locus,12582912.0,-22468.684375,-1438046.284375,True,0.2978875882400135,0.9999987284358617,0.11788781712155838,True,True,x_next=x-step*K/(K+K_planck),-22468.684375,786432.0,-1438046.284375,True,False
+5,0.0625,0.03125,pre_locus,805306368.0,-1438046.284375,inf,True,0.11788781712155838,0.9999999801317855,-0.062112179302163006,True,True,x_next=x-step*K/(K+K_planck),-1438046.284375,inf,inf,True,False
+6,0.03125,0.015625,pre_locus,51539607552.0,-1438046.284375,inf,True,-0.062112179302163006,0.9999999996895591,-0.24211217924628364,True,True,x_next=x-step*K/(K+K_planck),-1438046.284375,inf,inf,True,False
+7,0.015625,0.0,pre_locus,3298534883328.0,-1438046.284375,inf,True,-0.24211217924628364,0.9999999999951493,-0.4221121792454105,True,True,x_next=x-step*K/(K+K_planck),-1438046.284375,inf,inf,True,False
+8,0.0,-0.015625,locus,inf,-1438046.284375,inf,True,-0.4221121792454105,1.0,-0.6021121792454105,True,True,x_next=x-step*K/(K+K_planck),-1438046.284375,inf,inf,True,False
+9,-0.015625,-0.03125,post_locus,3298534883328.0,-1438046.284375,inf,True,-0.6021121792454105,0.9999999999951493,-0.7821121792445374,True,True,x_next=x-step*K/(K+K_planck),-1438046.284375,inf,inf,True,False

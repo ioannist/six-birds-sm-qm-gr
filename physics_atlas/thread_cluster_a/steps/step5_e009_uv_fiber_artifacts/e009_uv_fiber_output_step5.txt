@@ -1,0 +1,8 @@
+Cluster A Step 5 E009 UV-fiber facet
+Verdict: e009_uv_fiber_facet_constructed
+realized IR: IR_SM_TOY
+realized fiber size: 6
+UV obstruction: 16
+derived IR obstruction: 0
+admissible fiber before selection: 3
+selected UV: U_SM

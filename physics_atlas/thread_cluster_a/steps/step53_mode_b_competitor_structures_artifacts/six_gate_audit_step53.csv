@@ -1,0 +1,5 @@
+gate,passes,evidence
+primitive_exclusion,True,no new target-selector rule introduced
+dependency_trace,True,generated_vs_input records Step43/44 sources
+negative_control,True,SM survives; mass-closure gate passes SM while excluding SU(5)
+honest_scope,True,caveats led in summary and nonclaim boundary

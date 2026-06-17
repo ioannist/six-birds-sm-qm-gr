@@ -1,0 +1,2 @@
+operating_grid_config,operating_threshold,operating_broad_final_sigma,operating_sharp_final_sigma,operating_cell_class,operating_broad_sequence,operating_sharp_sequence,nearest_flip_kind,nearest_flip_threshold,nearest_flip_broad_final_sigma,nearest_flip_sharp_final_sigma,nearest_flip_normalized_margin
+step6_exact,0.25,2.00,0.10,VERDICT_HOLDS,6->6->6->6->6->6,3->2->2->1->1,sharp_noncollapse,0.25,2.00,0.40,0.306122448980

@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP22_ENUMERATION,ModeB,step22_mode_b_group_shape_generation,carrier,"Bounded sector-structure enumeration scans factor counts 0..3 and ranks 1..4, giving 35 candidate structures."
+C_CLUSTER_A_STEP22_CLOSURE_TESTS,ModeB,step22_mode_b_group_shape_generation,closure,"Closure requires nontrivial chirality, anomaly cancellation, Witten parity where relevant, finite charge-grid closure, and minimality."
+C_CLUSTER_A_STEP22_MINIMAL_STRUCTURE,ModeB,step22_mode_b_group_shape_generation,generated_output,"Exactly one minimal closing structure is generated: ranks 1|2 and dimensions 2|3."
+C_CLUSTER_A_STEP22_RECOGNITION,ModeB,step22_mode_b_group_shape_generation,recognition,"The generated dimensions 2|3 recognition-land on the SM gauge-sector shape after the audit, up to factor order."
+C_CLUSTER_A_STEP22_CONTROLS,ModeB,step22_mode_b_group_shape_generation,anti_smuggling,"Abelian-only, real-rep-only, and single-complex-factor controls do not close; Stage II checks pass."
+C_CLUSTER_A_STEP22_NONCLAIM_BOUNDARY,ModeB,step22_mode_b_group_shape_generation,honesty,"Finite enumeration only; not an E019 closure, not a physical gauge-sector theorem, and no frame-transfer status upgrade."

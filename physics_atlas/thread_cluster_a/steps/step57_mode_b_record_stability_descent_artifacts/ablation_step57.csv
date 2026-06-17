@@ -1,0 +1,4 @@
+ablation,effect,load_bearing
+remove_persistence,non-clean carrier rows can pass,True
+remove_distinguishability,RS becomes extensionally equal to CS on this carrier,True
+remove_capacity,non-clean low-capacity rows can pass,True

@@ -1,0 +1,6 @@
+Cluster B Step 7 E042 earned continuation
+Verdict: E042_earned_continuation_constructed_finite_toy
+max pre-locus finite Lorentzian K: 3298534883328.0
+R_L last: 0.7499999997671694
+last U_good state: -0.7821121792445374
+U_bad fails to continue: true

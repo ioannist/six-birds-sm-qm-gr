@@ -1,0 +1,70 @@
+{
+  "id": "E005",
+  "edge": "general_relativity -> black_hole_thermodynamics",
+  "arrow": "down",
+  "scored_tier": "E2",
+  "scored_modality": "currency-shadow-price",
+  "secondary_modalities": [
+    "recognition-conditional"
+  ],
+  "conditionality_flags": [
+    "recognition-conditional"
+  ],
+  "decision_path": "currency-shadow-price-structural-E2 (primary) + recognition-conditional secondary",
+  "pause2_retyping": {
+    "rule_applied": "TYPING_RUBRIC §B.7a MODALITY PRECEDENCE RULE (Pause-2 review fix R-P2)",
+    "deterministic": true,
+    "why": "STRUCTURAL beats RESIDUAL recognition. The currency/shadow-price structural test (§B.5) PASSES on this edge: the rubric's currency def explicitly names 'surface gravity as the price in black-hole thermodynamics' as the exemplar (TYPING_RUBRIC §B.5, the SHADOW-PRICE test) -- a higher-layer (GR horizon) constraint induces a dual/price variable (surface gravity kappa, read as the thermodynamic price/temperature) that couples back down. Because a STRUCTURAL modality passes, it is the PRIMARY modality (§B.7a precedence clause 1; §B.7 'if a structural test passes, the edge is that structural modality, not a recognition-landing'). recognition-landing is RESIDUAL-by-construction (§B.6a / §B.7) and is therefore NOT primary here. Since the edge nevertheless lands at tier E2 and still requires a named external import to close the THERMAL content (classical GR's Xi~0 is an OVER-READ: the hbar coefficients and the thermal reinterpretation T=kappa/2pi, S=A/4 are NOT in GR's Sigma_f), recognition-conditional is recorded as a SECONDARY flag (§B.7a precedence clause 3), NOT as primary recognition-landing.",
+    "discriminator": "Primary recognition-landing requires NO structural test to pass (§B.6a test (i)-(iii) all hold); here a structural test (currency/shadow-price, B.5) DID pass, so the edge is a structural-currency-E2 edge carrying a recognition-conditional SECONDARY flag -- mutually exclusive with primary recognition-landing.",
+    "blind_value_was": "recognition-landing (the blind agent under-applied the residual rule -- it was right on TIER (E2) and right that classical GR alone does not close the thermal content, but assigned the residual recognition modality where a structural currency modality passes)",
+    "corrected_primary_modality": "currency-shadow-price",
+    "tier_unchanged": "E2"
+  },
+  "diagnostic": {
+    "descent": {
+      "ran": true,
+      "verdict": "Xi numerically -> 0 but only as an OVER-READ / relabeling artifact; gate E.3 (no-over-read) FAILS, so STEP 1 does NOT seal E1. The located obstruction is the missing hbar/thermal predicate.",
+      "toy_model_M": {
+        "carrier_Z": "finite family of nearby STATIONARY Kerr-Newman horizon configurations near a Schwarzschild fiducial (M0=1,J0=0,Q0=0 in G=c=1), parameterised by small perturbations (dM,dJ,dQ); each config is a point z in Z. The staged finite carrier is the standard numerical-relativity/ADM-style staged horizon data, refined by adding configs.",
+        "target_native_probe_L0": "black-hole-THERMODYNAMICS readouts (the native layer that 'explains'): Hawking temperature T = hbar*kappa/(2pi), Bekenstein-Hawking entropy S = A/(4 G hbar), plus M,J,Q; centered (affine-response per the exact-adequacy theorem).",
+        "source_dissolving_probe_D0": "classical-GR geometric readouts to be dissolved: horizon area A, surface gravity kappa, mass M, angular momentum J, charge Q (all in GR's Sigma_f; NO hbar, the first law of MECHANICS dM=(kappa/8piG)dA+OmegadJ+PhidQ).",
+        "audit_energy_C0": "identity (uniform/least-commitment PSD audit on the carrier configs); declared, not tuned.",
+        "residual": "Xi_C(D|L) = K_DD - K_DL K_LL^+ K_LD, finite Schur complement (Moore-Penrose pseudoinverse)."
+      },
+      "Xi_values": {
+        "naive_Xi_D_is_GR_geom_given_L_is_BHT_thermo": {
+          "h1_coarser": {"n": 12, "norm2": 1.005e-09, "rel": 9.875e-12},
+          "h2_finer": {"n": 40, "norm2": 2.263e-09, "rel": 2.631e-12}
+        },
+        "reverse_Xi_D_is_thermal_TS_given_L_is_GR_geom": {
+          "h1": {"n": 12, "norm2": 4.750e-11, "rel": 7.472e-12},
+          "h2": {"n": 40, "norm2": 7.474e-11, "rel": 1.391e-12}
+        }
+      },
+      "refinement_stability_E9": "PASS for the VERDICT: the over-read finding is stable across h1/h2/h3 (n=12,40,100) with no flip. The numeric Xi~0 is itself stable too, but it is an over-read, not a clean descent.",
+      "over_read_E3": "FAIL for E1. Xi~0 is achieved ONLY because T and S are linear rescalings of kappa and A; the descent map's coefficients ARE the hbar bridge (T<-(hbar/2pi)kappa, S<-(1/4 G hbar)A) and the THERMAL reinterpretation of the first law (mechanics dM=(kappa/8pi)dA+... -> thermodynamics dM=TdS+...). hbar is DIMENSIONALLY ABSENT from classical GR's Sigma_f (a purely classical theory has no action quantum); GR supplies geometric kappa, A and the first law of MECHANICS, but nothing in classical GR fixes that kappa/2pi is a TEMPERATURE or A/4 an ENTROPY. So the target-distinctive content {T, S, first-law-THERMO} is over-read at all refinements. Per gate E.3 the over-read part is the LOCATED obstruction and the edge proceeds to STEP 2; it is NOT E1.",
+      "discrimination_check": "The naive Xi=0 is precisely the relabeling/over-read trap (E.4/E.3): deleting the named hbar/thermal bridge (the descent coefficients) leaves only the geometric first law of mechanics, with NO T and NO S, so the apparent factorization vanishes when the import is removed -> it was an import, not an internal descent."
+    },
+    "currency_shadow_price": {
+      "ran": true,
+      "structural_test_B5": "PASS. The SHADOW-PRICE operational test (TYPING_RUBRIC §B.5) holds: the higher-layer (GR horizon-geometry) constraint induces, on the lower/coupled thermodynamic description, a DUAL / price variable -- surface gravity kappa as the 'price' that couples back down to the horizon's first-law budget. This is the rubric's own named currency exemplar ('surface gravity as the price in black-hole thermodynamics'). The budgeted positive obstruction (the residual thermal content not in GR's Sigma_f) has a finite shadow-price reading on the toy model.",
+      "price_descends_question": "The price needs a NAMED principle to fix its thermodynamic meaning (kappa/2pi = TEMPERATURE), so it is the (currency, E2) cell of the §B.8 table -- NOT (currency, E1) where the price would descend cleanly. This is why the structural-currency modality lands E2 (conditional), with the named import recorded as the secondary recognition-conditional flag.",
+      "modality_tier_cell": "(currency-shadow-price, E2) -- emittable per §B.8 (the currency row allows E2: 'price needs a named principle')."
+    },
+    "recognition_conditional_secondary": {
+      "ran": true,
+      "is_secondary_flag_not_primary": "recognition-conditional is recorded as a SECONDARY flag (conditionality_flags / secondary_modalities) per §B.7a clause 3, NOT as the primary modality. The structural currency test PASSED, so the edge is NOT a residual primary recognition-landing.",
+      "named_import": "QFT in curved spacetime (Hawking thermal flux) + the first law of black-hole mechanics (the four laws of black-hole mechanics).",
+      "closure_assumption": "Semiclassical, no-back-reaction regime (l_Planck^2 / horizon-area -> 0; the small parameter in the target card's defect ledger). Valid for large astrophysical horizons; breaks at Planckian size.",
+      "named_import_source_edge": "E034",
+      "import_hygiene_C13": "The single frozen named_import is enforced in PARALLEL by check C13 (= the C11 import-hygiene applied to a SECONDARY recognition-conditional flag): exactly one non-menu principle, frozen at declaration, not substitutable at typing time (gate E.0). NOTE: because the PRIMARY modality is currency-shadow-price (NOT recognition-landing), E005 is NOT a member of CONTRACT.recognition_resolution.affected_edges (the C11 primary-recognition set), so C11 does not apply -- C13 parallel hygiene does.",
+      "smuggle_audit_E4": "PASS - remove the named import and NO inter-layer thermodynamic relation remains: classical GR alone yields only the geometric first law of MECHANICS (dM=(kappa/8piG)dA+...), with no temperature, no entropy, no thermodynamic content. The import is the load-bearing thing that closes the THERMAL content, not a relabel.",
+      "no_over_read_E3": "PASS for the conditional landing - the recovered thermodynamic readouts (Hawking T, BH entropy S, first-law-thermo) lie in black_hole_thermodynamics.accepted_observables; the edge does NOT claim the microscopic state-counting that explains S=A/4G (explicitly an open frontier, NOT claimed)."
+    },
+    "emergence_run": null,
+    "gap": null
+  },
+  "rationale": "DOWN/shadow arrow, edge general_relativity -> black_hole_thermodynamics. PAUSE-2 RE-TYPING under TYPING_RUBRIC §B.7a MODALITY PRECEDENCE RULE (review fix R-P2): the PRIMARY modality is the STRUCTURAL one. STEP 0: both endpoints are frozen full theory cards; genuinely between-layer (GR's lens = curvature/causal geometry with NO hbar/thermal predicate in Sigma_f; BHT's lens = horizon thermodynamic variables T,S with hbar in); a faithful finite toy model exists (stationary Kerr-Newman horizon family) so STEP 0d (no_faithful_M) does NOT fire. The CURRENCY/SHADOW-PRICE structural test (§B.5) PASSES -- 'surface gravity as the price in black-hole thermodynamics' is the rubric's own currency exemplar; the higher-layer horizon constraint induces a dual price (surface gravity) coupling back down. Because a structural test passes, that structural modality is PRIMARY (§B.7a clause 1; §B.7: a structural pass beats residual recognition), so primary_modality = currency-shadow-price, NOT recognition-landing. STEP 1 DESCENT-TEST on the declared finite M: the adequacy residual Xi is numerically ~0 (norm2 ~1e-9 across two refinements n=12,40), BUT this is an OVER-READ / relabeling artifact -- T = hbar*kappa/2pi and S = A/4Ghbar are mere linear rescalings of the geometric kappa,A, and the descent map's coefficients ARE the hbar bridge and the thermal reinterpretation of the first law, neither of which is in classical GR's Sigma_f (hbar is dimensionally absent from a purely classical theory). So gate E.3 FAILS and STEP 1 does NOT seal E1; the over-read locates the obstruction (the missing hbar/thermal predicate). The structural-currency price needs a NAMED principle to fix its thermodynamic meaning, so the edge lands at the (currency-shadow-price, E2) cell of §B.8. The named import -- QFT in curved spacetime (Hawking thermal flux) + the first law of black-hole mechanics, under the semiclassical no-back-reaction assumption (= the E034 construction) -- is recorded as a SECONDARY recognition-conditional flag (§B.7a clause 3), enforced in parallel by check C13 (NOT C11, since the PRIMARY modality is structural, not recognition-landing). Smuggle-audit E.4 PASSES (delete the import and only the geometric first law of mechanics remains, with no T,S -> no thermodynamic relation). No-over-read E.3 PASSES for the conditional landing (recovered T,S, first-law-thermo are in the target's accepted_observables; the microscopic S=A/4G state-counting is explicitly NOT claimed). DETERMINISTIC OUTCOME: primary_modality = currency-shadow-price (structural beats residual recognition), tier = E2 (unchanged), secondary = recognition-conditional. NEVER summed with E1, NOT a derivation. (Contrast E022, the opposite-arrow thermo->GR recovery, which IS a primary recognition-landing because no structural GR test closes it and Jacobson's 'Einstein equation of state' is the entire landing mechanism.)",
+  "confidence": "high",
+  "read_only_obeyed": true
+}

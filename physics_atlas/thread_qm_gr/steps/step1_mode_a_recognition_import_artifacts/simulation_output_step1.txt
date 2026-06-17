@@ -1,0 +1,8 @@
+Step 1 finite-carrier Xi diagnostic
+levels=[2, 4]
+full_joint_normalized_residuals=[0.6608695652173913, 0.6608695652173913]
+full_joint_raw_residuals=[2.09, 2.09]
+refinement_absolute_delta=0
+refinement_ratio=1
+rt_area_sector_residuals=zero to numerical precision at both levels
+overread_control=zero only when forbidden bulk answer rows are added to native lens

@@ -1,0 +1,5 @@
+ablation,descent_supported,evidence
+remove_child_target_roles,False,no comparison target remains
+remove_parent_dimension_relation,False,direct and envelope rewrites lose support
+remove_content_pattern_rewrite,False,parent image cannot be generated
+remove_charge_preservation,False,charged roles no longer match the target

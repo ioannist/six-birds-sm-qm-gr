@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step67_sigma_f_internal_class,active,67,non-control record properties must be Sigma_f-internal
+C_step67_global_exclusivity_ant/control,anti_control,67,marks the smuggle line for uniqueness
+C_step67_no_shape_pick,active_validator,67,do not select collapse or many-worlds shape

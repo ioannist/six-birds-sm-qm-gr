@@ -1,0 +1,16 @@
+artifact,output,classification,grade,scope
+classify_f37_f24_step18.py,"Finite F37 and F24 classifier","analytical structural","finite-carrier diagnostic","Step 18 carrier only"
+f37_joint_quotient_witness_step18.json,"Joint quotient maps j a b and product control maps","analytical structural","finite-carrier diagnostic","F37"
+f37_commuting_checks_step18.csv,"Commuting residuals and admissibility for L_joint and product control","analytical structural","finite-carrier diagnostic","F37"
+f24_role_obstruction_step18.csv,"Role obstruction witnesses for q_QM and d3","analytical structural","finite-carrier diagnostic","F24"
+f24_resolution_cases_step18.csv,"Six F24 cases with source criteria and toy tests","analytical structural","finite-carrier diagnostic","F24"
+fiv_source_record_step18.json,"FIV file and source-read locations","organizational/audit","diagnostic-complete","Step 18"
+fiv_source_extract_step18.md,"Readable FIV source record and caveat","organizational/audit","diagnostic-complete","Step 18"
+native_culmination_output_step18.json,"Verdict payload and no-smuggling flags","organizational/audit","diagnostic-complete","Step 18"
+native_culmination_output_step18.txt,"Readable numerical summary","organizational/audit","diagnostic-complete","Step 18"
+step18_results_summary.md,"F37/F24 orientation, residuals, case selection, verdict","organizational/audit","diagnostic-complete","Step 18"
+step18_schema.json,"Machine-readable schema and verdict","organizational/audit","diagnostic-complete","Step 18"
+nonclaim_boundary_step18.md,"Mandatory nonclaim boundary","organizational/audit","diagnostic-complete","Step 18"
+construction_gate_audit_step18.csv,"Gate and source-read audit","organizational/audit","diagnostic-complete","Step 18"
+run_step18.py,"Validation script for artifacts, F37 residuals, F24 uniqueness, source-read flag, and overclaim scan","organizational/audit","diagnostic-complete","Step 18"
+

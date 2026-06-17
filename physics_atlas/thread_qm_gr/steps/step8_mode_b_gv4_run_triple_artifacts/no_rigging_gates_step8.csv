@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+R1_no_triple_objective_in_substrate,pass,substrate,"The stochastic update rule contains only local neighbor coupling and inertia; it has no sector readout or triple loss term.","Keep as no-rigging constraint."
+R2_no_target_row_input,pass,substrate,"The triple target row is not an input to the dynamics; it appears only as an audit question after the run.","Record target-row insertion as prohibited."
+R3_witness_measured_after_run,pass,witness,"The interaction witness is computed from held-out trajectory windows after simulation.","Preserve held-out measurement rule."
+R4_witness_not_pairwise_union,pass,witness,"The accepted witness is an interaction-gain test beyond pairwise predictors; the pairwise-union statistic is recorded only as a rejected control.","Reject pairwise-union witness controls."
+R5_no_posthoc_diagonal_forcing,pass,completion,"The measured sector plateau is used directly; the rigged diagonal completion is a rejected control.","Do not count forced equal plateaus."
+R6_two_refinement_audit,pass,run,"N=32 and N=64 both fail the candidate thresholds, with positive completion Xi and non-positive held-out interaction gains.","Carry run-level obstruction forward."

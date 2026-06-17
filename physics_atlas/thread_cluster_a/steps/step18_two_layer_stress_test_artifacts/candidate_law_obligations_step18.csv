@@ -1,0 +1,5 @@
+obligation,status,witness
+faithful_enrichment,radiative_channel_added,scale cost depends on dominant fermion proxy plus subdominant gauge/rep terms
+independently_checkable_consequence,advanced_as_coupled_but_distinct_architecture,active channel coupling is non-negligible but below the gauge-generation reference
+derived_formula,not_advanced_this_step,"radiative sensitivity formula is structural input, not a new closed-form law"
+limit_recovery,radiative_sensitivity_represented,quadratic cutoff sensitivity with dominant fermion contribution is represented

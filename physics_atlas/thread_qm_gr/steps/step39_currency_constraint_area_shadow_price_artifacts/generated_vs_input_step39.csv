@@ -1,0 +1,7 @@
+item,status,detail
+finite_bipartite_boundary_carrier,input,declared finite holographic toy carrier; not a physical AdS/CFT derivation
+boundary_Bell_link_state,input,carrier preparation rule; area-entropy identity is not an axiom and is tested by controls
+von_Neumann_entropy_S_A,generated,computed from rho_A eigenvalues
+geometric_boundary_area,generated_from_declared_lens,boundary crossing count from the geometric lens
+exchange_rate_k,generated,"computed from dA*/dS; refinement values 1.44269504089, 1.44269504089"
+Ryu_Takayanagi_recognition,recognition_landing,named after the relation is computed; not a carrier axiom or selector

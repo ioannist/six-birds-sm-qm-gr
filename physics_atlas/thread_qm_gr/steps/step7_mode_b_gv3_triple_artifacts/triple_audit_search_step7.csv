@@ -1,0 +1,5 @@
+candidate,declared_source_content,target_equivalence_audit,xi_triple_r2,xi_triple_r4,xi_coupled_norm_r2,xi_coupled_norm_r4,status,reason
+accepted_G_v3_search,no admissible independent witness atom,"not target-equivalent because no bridge claim is made; residual remains",1.0,1.0,0.14285714285714285,0.14285714285714285,bounded_saturation_no_go,"G_v3 cannot close the triple bridge without independent witness content."
+pairwise_union_as_triple_completion,"dependent row in span(u_i,v,w)","reject: union is not independent triple content",1.0,1.0,0.1428571428571428,0.1428571428571428,rejected_control,"Adds no span and leaves triple residual positive."
+independent_witness_without_bridge_map,"orthogonal witness row s with no audited map to t","reject as insufficient: independent content alone does not generate the triple bridge",1.0,1.0,0.14285714285714285,0.14285714285714285,rejected_control,"The witness does not project to the triple row."
+native_triple_row_insertion,"t used directly as a native source row","reject as target-equivalent bridge insertion",0.0,0.0,0.0,0.0,rejected_control,"Zero residual is obtained only by inserting the target row."

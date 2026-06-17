@@ -1,0 +1,11 @@
+candidate_id,group,description,su3_cubic,su3_sq_u1,su2_sq_u1,u1_cubic,grav_u1,su2_doublet_count,su2_witten_even,su5_cubic,anomaly_free,selected_reference,equivalent_by_normalization
+SM_one_generation,SU3xSU2xU1,Actual one-generation chiral SM content in left-handed convention,0,0,0,0,0,4,True,0,True,True,False
+bad_u_hypercharge,SU3xSU2xU1,Alternative hypercharge assignment changing only u_c,0,1/6,0,7/9,1,4,True,0,False,False,False
+quark_sector_only,SU3xSU2xU1,Quark multiplets without the correlated lepton sector,0,0,1/4,-3/4,0,3,False,0,False,False,False
+missing_e_c,SU3xSU2xU1,SM reps with the charged lepton singlet removed,0,0,0,-1,-1,4,True,0,False,False,False
+SM_plus_vectorlike_lepton,SU3xSU2xU1,SM plus a vector-like electroweak doublet pair,0,0,0,0,0,6,True,0,True,False,False
+SM_plus_vectorlike_down,SU3xSU2xU1,SM plus a vector-like colored singlet pair,0,0,0,0,0,4,True,0,True,False,False
+SM_plus_sterile_neutrino,SU3xSU2xU1,SM plus one gauge-sterile right-neutrino conjugate,0,0,0,0,0,4,True,0,True,False,False
+hypercharge_label_swapped,SU3xSU2xU1,Anomaly-free solution with the two color singlet hypercharges exchanged,0,0,0,0,0,4,True,0,True,False,False
+scaled_hypercharge_x2,SU3xSU2xU1,Overall U(1) normalization scaled by two,0,0,0,0,0,4,True,0,True,False,True
+SU5_10_plus_5bar_decomposition,SU5_style_decomposed_to_SU3xSU2xU1,SU(5)-style 10 plus 5bar decomposed into one SM generation,0,0,0,0,0,4,True,0,True,False,False

@@ -1,0 +1,23 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section*{Step 41 Tensor-Network RT Bound}
+This statement is scoped to the declared finite tensor-network carrier.
+
+For each tested tensor network, the boundary state \(|\psi_{\partial}\rangle\) is obtained by explicitly contracting internal indices. For a boundary region \(A\), the reduced density matrix \(\rho_A\) is then formed from the contracted amplitude vector, and
+\[
+  S(A)=-\operatorname{Tr}(\rho_A\log\rho_A)
+\]
+is computed from its spectrum.
+
+The geometric area is computed separately as a min-cut in the capacitated bulk graph:
+\[
+  \operatorname{Area}(\gamma_A)=\min_{\gamma:A|\bar A}\sum_{e\in\gamma} \log D_e.
+\]
+On all tested contracted states,
+\[
+  S(A)\le \operatorname{Area}(\gamma_A).
+\]
+The copy-tensor holographic cases saturate this bound at two bond dimensions. Product and weighted tensor controls produce strict gaps, so the equality is not an identity imposed by construction.
+
+This finite saturable-bound structure recognition-lands on the Ryu--Takayanagi/random-tensor-network form. It is not a continuum coefficient derivation and not a quantum-gravity solution.
+\end{document}

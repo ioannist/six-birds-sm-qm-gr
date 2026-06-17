@@ -1,0 +1,6 @@
+artifact,classification,grade,scope
+step49_results_summary.md,organizational,review-response,"Documents R1/R2/R4 relabel/caveat/warrant-extension fixes; no new computation"
+step49_schema.json,organizational,review-response,"Machine-readable review-response status"
+content_classification_step49.csv,organizational,review-response,"Classifies this response bundle"
+nonclaim_boundary_step49.md,organizational,review-response,"States that this step adds no new result or physical claim"
+run_step49.py,organizational,validator,"Validates required review-response text, unchanged pinned values, and Step47/48 self validators"

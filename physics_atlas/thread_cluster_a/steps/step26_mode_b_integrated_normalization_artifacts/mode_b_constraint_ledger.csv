@@ -1,0 +1,6 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP26_STEP23_INPUT,ModeB,step26_mode_b_integrated_normalization,carrier,"The structure is read from Step-23 minimal_closures_step23.csv: generated closer r1|2 with ranks 1|2, dimensions 2|3, and charge vector 3|-2."
+C_CLUSTER_A_STEP26_TRACE_COMPUTE,ModeB,step26_mode_b_integrated_normalization,diagnostic,"The balance rule computes charge unit 1/6, Tr(Y^2)=5/6, Tr(T3^2)=1/2, normalization ratio 5/3, and sin^2(theta_W)=3/8."
+C_CLUSTER_A_STEP26_NEGATIVE_CONTROLS,ModeB,step26_mode_b_integrated_normalization,can_fail,"Non-generated Step-23 structures either compute a different relation or fail the readout, proving the audit is not always-returning."
+C_CLUSTER_A_STEP26_STAGEII,ModeB,step26_mode_b_integrated_normalization,stage_ii,"Charge quantization is reproduced on the generated structure, with integer role charge weights."
+C_CLUSTER_A_STEP26_NONCLAIM_BOUNDARY,ModeB,step26_mode_b_integrated_normalization,honesty,"Finite integrated normalization only; not a physical unification theorem and no frame-transfer status upgrade."

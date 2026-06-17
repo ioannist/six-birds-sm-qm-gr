@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+C_STEP42_QM_GR_ANCHOR,active,42,QM-GR E018 only
+C_STEP42_MULTIEDGE_MINIMAL_SURFACE,active_validator,42,min-cut crosses >=2 bulk edges and beats a competing cut
+C_STEP42_GENUINE_HOLOGRAPHIC_TENSOR,active_validator,42,"random tensor network trend, not GHZ/copy exact identity"
+C_STEP42_STRICT_GAP_CONTROL,active_validator,42,non-holographic tensor on same geometry has S<min-cut

@@ -1,0 +1,3 @@
+reading_id,support_id,dimensions,step41_delta_witness_count,realized_coset_generator_count,step45_identity_consistent,coset_equals_delta_witnesses
+clean_shadow_reading,support_05,2|3,0,0,True,True
+dynamical_breaking_reading,support_08,4,6,6,True,True

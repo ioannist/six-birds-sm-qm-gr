@@ -1,0 +1,8 @@
+Step 5 finite-carrier P* bounded design diagnostic
+levels=[2, 4]
+coupled_joint_normalized_residuals=[0.2857142857142857, 0.2857142857142857]
+coupled_joint_raw_residuals=[2.0, 2.0]
+all_bridge_normalized_residuals=[0.5, 0.5]
+closed_bridges=Bridge_HED_LQG_area_geometry,Bridge_LQG_AS_discrete_continuum
+surviving_bridges=Bridge_HED_AS_boundary_continuum,Bridge_triple_joint_package
+overread_control=zero only if residual bridge rows are added to native lens

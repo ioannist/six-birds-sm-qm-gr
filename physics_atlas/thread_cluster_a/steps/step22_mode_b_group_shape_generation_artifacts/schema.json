@@ -1,0 +1,31 @@
+{
+  "step": 22,
+  "mode": "ModeB_generation",
+  "artifact_root": "steps/step22_mode_b_group_shape_generation_artifacts",
+  "enumeration": {
+    "max_factors": 3,
+    "max_rank": 4,
+    "structure_count": 35,
+    "closing_count": 1
+  },
+  "minimal_generated_structures": [
+    {
+      "structure_id": "r1|2",
+      "ranks": "1|2",
+      "dimensions": "2|3",
+      "total_rank": 3,
+      "total_slots": 5,
+      "recognition_lands_on_sm_shape": true
+    }
+  ],
+  "primitive_exclusion_pass": true,
+  "negative_controls_pass": true,
+  "stage_ii_pass": true,
+  "six_gates_pass": true,
+  "verdict": "GENERATED",
+  "typed_no_go": false,
+  "next_grammar_delta": "stress against richer factor ranges, representation families, and alternative closure measures",
+  "new_physics_claim": false,
+  "root_landed": false,
+  "frame_transfer_certified": false
+}

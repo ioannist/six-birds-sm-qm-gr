@@ -1,0 +1,7 @@
+artifact,classification,grade,scope
+ladder_vs_fork_resolution_step48.py,analytical-structural,finite-carrier-diagnostic,"computes ladder defects, fork closure, weak-RT framing test, and nested-control flip"
+ladder_vs_fork_sim_step48.csv,analytical-structural,finite-carrier-diagnostic,directed quotient attempts and nested control
+fork_closure_step48.csv,analytical-structural,finite-carrier-diagnostic,common-carrier fork closure check
+rt_relation_frame_step48.csv,analytical-structural,recognition-landing,frames accepted RT result as fork relation rather than endpoint quotient
+step48_results_summary.md,organizational,summary,conditional ladder-vs-fork decision and caveats
+ladder_vs_fork_statement_step48.tex,analytical-structural,finite-carrier-diagnostic,statement of fork selected over ladder in the bounded grammar

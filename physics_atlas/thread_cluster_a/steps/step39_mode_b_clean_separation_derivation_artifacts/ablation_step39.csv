@@ -1,0 +1,4 @@
+removed_component,survivors_without_component,load_bearing,upstream_load_bearing,note
+standardness_no_vector_condition,12,True,False,load-bearing inside Step 39 residual
+mass_completion,8,False,True,"already satisfied by the inherited Step-35 carrier; load-bearing upstream, not within Step 39 residual"
+confining_subgroup,8,False,True,"already satisfied by the inherited Step-35 carrier; load-bearing upstream, not within Step 39 residual"

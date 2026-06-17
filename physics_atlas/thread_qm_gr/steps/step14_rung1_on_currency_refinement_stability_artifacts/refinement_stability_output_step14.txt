@@ -1,0 +1,7 @@
+Step 14 RUNG_1-on-currency refinement stability
+Stable commutator max: 0.0
+Mixing commutator min: 0.5612486080160912
+Mixing control passes: False
+Stable lift nontrivial: True
+Refinement stable: True
+Next move: RUNG_3_AUDIT_ON_REFINEMENT_STABLE_CURRENCY

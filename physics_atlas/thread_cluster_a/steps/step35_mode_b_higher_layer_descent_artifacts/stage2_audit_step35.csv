@@ -1,0 +1,5 @@
+stage_ii_check,passes,evidence
+corrected_80_reproduced,True,80
+scalar_alphabet_nonempty,True,2|3:152;3:54;4:43
+target_status_computed,True,2|3; witness=rank_one_fundxsinglet:-3; passes=True
+compatibility_not_derivation,True,predicate computes existence of next-layer closure witnesses only

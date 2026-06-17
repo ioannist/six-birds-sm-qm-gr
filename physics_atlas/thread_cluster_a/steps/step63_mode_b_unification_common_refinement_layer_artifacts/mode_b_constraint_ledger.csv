@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step63_REQ_U,active_declared_source,63,F51 common-refinement route requirement
+C_step63_minimal_simple_single_package,active_declared_source_load_bearing,63,selects the minimal simple parent class from REQ_U parents
+C_step63_no_hardcode_ratio,active_validator,63,"trace ratio must be computed, not inserted"

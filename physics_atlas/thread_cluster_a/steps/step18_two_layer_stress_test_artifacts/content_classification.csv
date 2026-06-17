@@ -1,0 +1,7 @@
+claim_id,claim,grade,classification,source_artifacts
+radiative_channel,The scale facet is stress-tested with a content-dependent radiative sensitivity channel.,finite-carrier-diagnostic,faithful-structural-channel,steps/step18_two_layer_stress_test_artifacts/radiative_channel_step18.csv
+active_coupling,"With the channel active, content-scale coupling is non-negligible but below the gauge-generation reference.",finite-carrier-diagnostic,coupling-diagnostic,steps/step18_two_layer_stress_test_artifacts/architecture_verdict_step18.csv;steps/step18_two_layer_stress_test_artifacts/coupling_strength_sweep_step18.csv
+can_fail_monotonicity,The measured coupling rises as injected channel strength rises.,finite-carrier-diagnostic,anti-insensitivity-control,steps/step18_two_layer_stress_test_artifacts/coupling_strength_sweep_step18.csv;steps/step18_two_layer_stress_test_artifacts/controls_step18.csv
+robustness_sweep,"Threshold, estimator, and grouping sweep maps the two-layer versus coupled verdict boundary.",finite-carrier-diagnostic,robustness-sweep,steps/step18_two_layer_stress_test_artifacts/robustness_sweep_step18.csv
+coupled_but_distinct_verdict,The stress test revises the clean split to coupled-but-distinct.,finite-carrier-diagnostic,architecture-verdict,steps/step18_two_layer_stress_test_artifacts/overall_verdict_step18.json
+nonclaim_boundary,Toy-structural only; no physical scale value or real mechanism is supplied.,organizational,scope-boundary,steps/step18_two_layer_stress_test_artifacts/nonclaim_boundary.md

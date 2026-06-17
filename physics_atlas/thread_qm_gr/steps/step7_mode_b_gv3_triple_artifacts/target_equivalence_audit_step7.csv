@@ -1,0 +1,5 @@
+test_item,audit_question,result,gate_status,nonclaim
+pairwise_union,"Is u+v+w strictly stronger than pairwise closure and weaker than the triple bridge?",fails_independence,smuggling_reject_control,"The union is not counted as a triple completion."
+native_triple_row,"Is using t as a native source weaker than the triple bridge?",fails_non_equivalence,smuggling_reject_control,"The zero residual is not counted as a result."
+independent_witness_without_map,"Does an independent witness row generate t without an audited map?",no_generation,pass_as_negative_control,"Independent content alone is not a closure."
+accepted_G_v3_search,"Is there an admissible independent triple-audit atom in this grammar?",none_found,no_go,"The bounded grammar saturates with the triple residual still present."

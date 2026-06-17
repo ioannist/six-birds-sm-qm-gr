@@ -1,0 +1,13 @@
+artifact,output_or_claim,classification,grade,scope
+bounded_grammar_step8.csv,"G_v4 run-generated triple mechanism grammar",predictive structural,theorem-grade audit form,"Constrains the run before simulation."
+substrate_design_step8.csv,"local stochastic binary ring and readout definitions",predictive structural,finite-carrier diagnostic,"Defines a constructible substrate and measured sector proxies."
+simulate_step8_gv4_run.py,"finite stochastic run and witness computation",analytical structural,finite-carrier diagnostic,"Runs the declared substrate at two refinements."
+simulation_output_step8.json,"run-level obstruction with measured completion Xi and held-out witness",analytical structural,finite-carrier diagnostic,"Two-refinement run result only."
+run_diagnostic_step8.csv,"metric-level run diagnostics",analytical structural,finite-carrier diagnostic,"Threshold and rejected-control table."
+witness_audit_step8.csv,"independent witness and no-rigging audit",analytical structural,finite-carrier diagnostic,"Out-of-sample witness classification."
+no_rigging_gates_step8.csv,"no-rigging gate statuses",organizational/audit,diagnostic-complete,"Checks substrate-input and witness independence."
+nonclaim_boundary_step8.md,"explicit nonclaims",organizational/audit,diagnostic-complete,"Prevents overreading the run-level obstruction."
+step8_structural_statement.tex,"formal run-level obstruction statement",analytical structural,finite-carrier diagnostic,"Finite-run proposition for this substrate class."
+mode_b_target_lineage.csv,"new child residual after G_v4 run obstruction",organizational/audit,diagnostic-complete,"Track lineage only."
+mode_b_grammar_manifest.csv,"G_v4 declaration and G_v5 obligation",organizational/audit,diagnostic-complete,"Grammar tracking only."
+mode_b_constraint_ledger.csv,"run-level no-rigging constraints",organizational/audit,diagnostic-complete,"Constraint tracking only."

@@ -1,0 +1,5 @@
+ablation,normalization_supported,evidence
+remove_step23_generated_closer,False,no generated structure to evaluate
+remove_trace_zero_balance_rule,False,charge unit and weights are unavailable
+remove_rank_one_readout,False,T3 trace cannot be selected
+remove_trace_metric,False,trace ratio cannot be computed

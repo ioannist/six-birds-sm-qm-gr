@@ -1,0 +1,33 @@
+{
+  "step": 3,
+  "orientation": "Cluster A P6 decaying-degeneracy audit",
+  "carrier": "candidate-space survivors plus measure-refinement audit",
+  "verdict": {
+    "type": "p6_decaying_degeneracy_audit_constructed",
+    "initial_selection_degeneracy": 9,
+    "final_selection_degeneracy": 1,
+    "selection_sequence": [
+      9,
+      5,
+      4,
+      2,
+      1,
+      1
+    ],
+    "landscape_sequence": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "selection_decays_to_w_SM": true,
+    "landscape_nondecaying": true,
+    "monotone_selection": true,
+    "final_survivor": "w_SM",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite degeneracy-audit shape only; no physical vacuum mechanism or value is determined."
+}

@@ -1,0 +1,7 @@
+item,status,detail
+looped_two_cluster_bulk_graph,input,declared finite graph carrier with internal bridge and side loops
+copy_weighted_fixed_zero_tensor_entries,input,explicit tensor-entry rules written in tensor_network_tensors_step41.json
+boundary_state_amplitudes,generated,computed by summing internal indices in contract_boundary_state
+rho_A_spectrum_and_entropy,generated,computed from the contracted state vector
+min_cut_area,generated,computed by max-flow/min-cut on the graph
+RT_bound_recognition,recognition_landing,named after S<=area and saturation/gap are computed

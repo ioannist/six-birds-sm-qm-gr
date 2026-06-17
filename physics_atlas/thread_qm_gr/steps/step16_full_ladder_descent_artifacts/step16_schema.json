@@ -1,0 +1,75 @@
+{
+  "step": 16,
+  "orientation": "Mode B full-ladder descent audit",
+  "active_residual": "R_child_E018_after_RUNG3_audit_coherence_candidate",
+  "carrier": {
+    "type": "assembled finite bridge L",
+    "levels": [1, 2],
+    "dimension": {
+      "d_L": 4,
+      "d_union": 6
+    },
+    "components": [
+      "compressed neutral currency u",
+      "shadow-commuting refinement lift",
+      "shared audit A_u"
+    ],
+    "no_smuggling_controls": {
+      "control_passes": false,
+      "d_L_ge_d_union": false,
+      "circular_test_used": false,
+      "one_hot_set_cover_used": false,
+      "target_layer_inserted": false,
+      "endpoint_derivation_claimed": false,
+      "literature_program_terms_used": false,
+      "root_landed": false,
+      "prior_rungs_loaded": true
+    }
+  },
+  "candidate_move": {
+    "id": "L_FULL_LADDER_CANDIDATE",
+    "description": "Assemble the compressed currency, shadow-commuting refinement, and shared audit into one finite bridge and test endpoint audited shadows."
+  },
+  "final_verdict": {
+    "type": "candidate_bridge_structure_external_review_required",
+    "root_landed": false,
+    "candidate_bridge_structure": true,
+    "external_review_required": true,
+    "external_review_flag": "EXTERNAL_REVIEW_FRAME_TRANSFER_GATE"
+  },
+  "track_fields": {
+    "adequacy_residuals": {
+      "candidate_L_adequacy_max": 0.0,
+      "qm_alone_adequacy_min": 0.47143714685247295,
+      "gr_alone_adequacy_min": 0.44578629323337904,
+      "union_adequacy_min": 1.4142135623730951
+    },
+    "controls": {
+      "qm_alone_fails": true,
+      "gr_alone_fails": true,
+      "union_fails_compression": true
+    },
+    "five_constraints": {
+      "no_union": true,
+      "compression": true,
+      "currency_before_refinement": true,
+      "refinement_morphism": true,
+      "audit_route_consistency": true
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A compressed bridge chart must satisfy all five constraints simultaneously."
+    ],
+    "analytical_structural": [
+      "Finite-carrier diagnostic: candidate L residual is 0.0, while all three controls fail."
+    ],
+    "organizational_audit": [
+      "External review flag is EXTERNAL_REVIEW_FRAME_TRANSFER_GATE."
+    ],
+    "remaining_external_content": [
+      "External review must assess frame transfer beyond the finite toy carrier."
+    ]
+  }
+}
+

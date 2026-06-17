@@ -1,0 +1,40 @@
+{
+  "step": 16,
+  "bridge_id": "L_full_ladder_candidate",
+  "dimensions": {
+    "d_L": 4,
+    "d_union": 6
+  },
+  "observed_residuals": {
+    "candidate_L_adequacy_max": 0.0,
+    "qm_alone_adequacy_min": 0.47143714685247295,
+    "gr_alone_adequacy_min": 0.44578629323337904,
+    "union_adequacy_min": 1.4142135623730951,
+    "observed_range": [
+      0.0,
+      0.44578629323337904,
+      1.4142135623730951
+    ]
+  },
+  "verdict": {
+    "candidate_bridge_structure": true,
+    "candidate_L_passes": true,
+    "qm_alone_fails": true,
+    "gr_alone_fails": true,
+    "union_fails_compression": true,
+    "five_constraints_satisfied": true,
+    "external_review_required": true
+  },
+  "no_smuggling_check": {
+    "control_passes": false,
+    "d_L_ge_d_union": false,
+    "circular_test_used": false,
+    "one_hot_set_cover_used": false,
+    "target_layer_inserted": false,
+    "endpoint_derivation_claimed": false,
+    "literature_program_terms_used": false,
+    "root_landed": false,
+    "prior_rungs_loaded": true
+  },
+  "external_review_flag": "EXTERNAL_REVIEW_FRAME_TRANSFER_GATE"
+}

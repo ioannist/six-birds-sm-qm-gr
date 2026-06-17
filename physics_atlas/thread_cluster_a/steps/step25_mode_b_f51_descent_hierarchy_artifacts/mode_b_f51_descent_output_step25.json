@@ -1,0 +1,58 @@
+{
+  "child": {
+    "dimensions": "2|3",
+    "selected_charge_vector": "3|-2",
+    "structure_id": "r1|2_u1"
+  },
+  "descent_verdicts": [
+    {
+      "charged_content_obstruction": 0,
+      "child_dimensions": "2|3",
+      "computed_reason": "computed_by_partition_dual_pair_rewrite",
+      "descent_type": "computed_by_partition_dual_pair_rewrite",
+      "exact_structure_match": true,
+      "full_content_obstruction": 0,
+      "parent_dimension": 5,
+      "parent_id": "SU(5)",
+      "parent_pattern": "antisym_plus_dual",
+      "verdict": "PASS_EXACT_PARENT_SHADOW"
+    },
+    {
+      "charged_content_obstruction": 0,
+      "child_dimensions": "2|3",
+      "computed_reason": "computed_by_even_envelope_rewrite_with_neutral_residual",
+      "descent_type": "computed_by_even_envelope_rewrite_with_neutral_residual",
+      "exact_structure_match": false,
+      "full_content_obstruction": 1,
+      "parent_dimension": 10,
+      "parent_id": "SO(10)",
+      "parent_pattern": "single_spinor_pattern",
+      "verdict": "PASS_SCOPED_NEUTRAL_RESIDUAL"
+    },
+    {
+      "charged_content_obstruction": 5,
+      "child_dimensions": "2|3",
+      "computed_reason": "content_pattern_has_no_parent_quotient_rewrite_in_declared_grammar",
+      "descent_type": "content_pattern_has_no_parent_quotient_rewrite_in_declared_grammar",
+      "exact_structure_match": false,
+      "full_content_obstruction": 5,
+      "parent_dimension": 6,
+      "parent_id": "SU(6)_chiral_example",
+      "parent_pattern": "antisym_plus_antifundamentals",
+      "verdict": "FAIL_NOT_PARENT"
+    }
+  ],
+  "exact_parent_count": 1,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_F51_parent_shadow_test",
+  "negative_control_count": 1,
+  "new_physics_claim": false,
+  "next_grammar_delta": "test richer parent-refinement branches and neutral-residual policies beyond the finite generated closer set",
+  "root_landed": false,
+  "scoped_neutral_parent_count": 1,
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "step": 25,
+  "typed_no_go": false,
+  "verdict": "HIERARCHY_SCOPED"
+}

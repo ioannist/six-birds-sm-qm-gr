@@ -1,0 +1,34 @@
+\paragraph{Step 21 structural F24 selectors.}
+Let \(H\) be the finite carrier, \(q:H\to Q\) the current access
+quotient, and \(s:H\to S\) the role readout.  For finite readouts
+\(u:H\to U\) and \(v:H\to V\), write
+\[
+  u\preceq v
+  \quad\Longleftrightarrow\quad
+  \forall h,h'\in H,\ v(h)=v(h')\Rightarrow u(h)=u(h').
+\]
+Thus \(u\preceq v\) says that \(u\) factors through \(v\).
+
+The Step 21 predicates are structural predicates on a candidate record
+\(C\):
+\[
+\begin{array}{ll}
+\mathrm{Mem}(C) &\iff s\preceq m_C \text{ and } m_C\npreceq q,\\
+\mathrm{Hid}(C) &\iff s\preceq \ell_C,\ \ell_C\npreceq q,\text{ and no admissible explicit }J_C,\\
+\mathrm{Med}(C) &\iff J_C \text{ exists, } a_Cj_C=q,\ r_Cj_C=s,\text{ gates pass, and }j_C\text{ strictly refines }q,\\
+\mathrm{Bud}(C) &\iff \Xi_C>0 \text{ is priced and adequately statused, with no exact resolution},\\
+\mathrm{Scp}(C) &\iff \mathcal O_s(H)\ne\emptyset \text{ and }\mathcal O_s(H_C)=\emptyset\text{ for a proper }H_C\subset H,\\
+\mathrm{Crs}(C) &\iff \mathcal O_{\bar s_C}(H)=\emptyset \text{ for a changed coarsened readout }\bar s_C,\\
+\mathrm{Out}(C) &\iff s \text{ is named outside the declared access scope},\\
+\mathrm{Blk}(C) &\iff \text{no prior structural predicate fires and closure formation or residual status fails}.
+\end{array}
+\]
+
+\paragraph{Computed classification.}
+For \(L\), \(J=O_L\), \(j=\pi_L\), \(a=\pi_{\mathrm{QM}}\), and
+\(r=d3\).  The computed residuals satisfy \(a\circ j=q\) and
+\(r\circ j=s\), all native gate checks pass, and \(\Delta_{\mathrm{fact}}\)
+is nonempty.  Therefore \(L\) selects \(\mathrm{Med}\), i.e.
+\[
+  L\mapsto \operatorname{BridgeMediatedRole}.
+\]

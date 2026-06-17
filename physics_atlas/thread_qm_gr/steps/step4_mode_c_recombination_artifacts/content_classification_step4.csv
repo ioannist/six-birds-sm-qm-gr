@@ -1,0 +1,13 @@
+artifact,output,category,grade,scope,nonclaim_reference
+step4_results_summary.md,"Mode C recombination audit and no-go verdict","organizational/audit",n/a,"R_child_E018_after_HED_LQG_AS_coupled_joint_gap","NC1;NC2;NC3"
+compatibility_conflicts_step4.csv,"Pairwise and triple compatibility conflict ledger","predictive structural","applied typed gate verdict","Assumption compatibility audit","NC1;NC4"
+recombination_audit_step4.csv,"Mode C compatibility audit table","predictive structural","bounded-grammar no-go","Current recognition grammar","NC1;NC2;NC5"
+no_smuggling_gates_step4.csv,"Six gate statuses including span-overread rejection","predictive structural","applied typed gate verdict","Mode C guard and no-smuggling audit","NC2;NC5"
+simulate_step4_recombination_xi.py,"Constrained finite-carrier Schur complement diagnostic","analytical structural","finite-carrier diagnostic","Two refinement levels for compatibility bridge residual","NC3;NC4"
+simulation_output_step4.json,"Raw Xi matrices, traces, normalized residuals, stability","analytical structural","finite-carrier diagnostic","Extended carrier with compatibility rows","NC3;NC4"
+xi_diagnostic_step4.csv,"Tabulated Step 4 Xi diagnostics","analytical structural","finite-carrier diagnostic","Sector control, compatibility rows, coupled target, overread control","NC2;NC3;NC5"
+step4_structural_statement.tex,"Typed bounded-grammar no-go statement","analytical structural","finite-carrier diagnostic no-go","Current recognition grammar G0","NC1;NC2;NC3;NC5"
+nonclaim_boundary_step4.md,"Mandatory nonclaim boundary","organizational/audit",n/a,"All Step 4 outputs","NC1-NC8"
+step4_schema.json,"Machine-readable Step 4 status record","organizational/audit",n/a,"Step 4 artifact contract","NC1-NC8"
+mode_b_target_lineage.csv,"No-go residual rows appended","organizational/audit",n/a,"Target-lineage ledger","NC6"
+mode_b_grammar_manifest.csv,"Mandatory next grammar delta initialized","remaining external content",n/a,"Mode B construction grammar","NC7"

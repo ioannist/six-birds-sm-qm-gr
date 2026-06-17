@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step38_clean_separation_residual,active_source,38,carrier and broken-vector counts
+step45_f27_baryon_orbit_descent,active_source,45,baryon-orbit-enlarger subset and F27 obstruction
+step52_minimality_variants_no_target_reencoding,active_anti_smuggle_constraint,52,minimality variants must not re-encode the target structure as a selector

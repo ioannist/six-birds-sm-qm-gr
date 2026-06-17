@@ -1,0 +1,3 @@
+case,clock_states,field_dim,constraint_dim,kernel_dim_tol_1e_minus_8,min_abs_eigenvalue,state_constraint_residual,state_norm,physical_space_nonempty,control_passes
+compatible_constraint,16,8,128,1,6.078037368996421e-16,8.547035876629756e-16,1.0,True,False
+empty_kernel_control,16,8,128,0,0.9868198124684662,0.9868198124684665,1.0,False,False

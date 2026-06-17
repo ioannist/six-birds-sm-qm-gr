@@ -1,0 +1,6 @@
+constraint_id,verified,residual_or_metric,evidence
+C1_no_union,True,0.0,candidate_L is single-layer; union_direct_sum is rejected as not single-layer
+C2_compression,True,0.6666666666666666,d_L=4 and d_union=6
+C3_currency_before_refinement,True,0.0,Step 14 refinement acts on the Step 13 neutral currency carrier u
+C4_refinement_morphism,True,0.0,Step 14 shadow-commutator residual
+C5_audit_route_consistency,True,0.0,Step 15 shared-overlap and audit-refinement residuals

@@ -1,0 +1,8 @@
+item,value,source,detail
+RT_coefficient_area_per_entropy,1,steps/step41_tensor_network_rt_bound_artifacts/tensor_network_rt_bound_sim_step41.csv,computed from saturated rows holo_refinement_D2;holo_refinement_D3; Step42 trend 0.729363692238->0.940570240858
+linearized_area_energy_relation,delta_A = 1 * delta_H_mod,first_law_rows_step43.csv,delta_A per unit t = 0.0366846845685
+area_response_t_0.05,0.00183423422843,relative_entropy_step43.csv,linearized RT image; finite-t entropy response deviates by relative entropy
+area_response_t_0.1,0.00366846845685,relative_entropy_step43.csv,linearized RT image; finite-t entropy response deviates by relative entropy
+area_response_t_0.2,0.00733693691371,relative_entropy_step43.csv,linearized RT image; finite-t entropy response deviates by relative entropy
+area_response_t_0.5,0.0183423422843,relative_entropy_step43.csv,linearized RT image; finite-t entropy response deviates by relative entropy
+area_response_t_1,0.0366846845685,relative_entropy_step43.csv,linearized RT image; finite-t entropy response deviates by relative entropy

@@ -1,0 +1,6 @@
+gate,passes,evidence
+primitive_exclusion,True,no target class or observed roster literal used by rank scoring
+dependency_trace,True,generated_vs_input records Step48/49/38 sources
+negative_control,True,rank-deficient control fails
+distinctness,True,definitionally distinct from Steps 48 and 49
+honest_verdict,True,both classes pass

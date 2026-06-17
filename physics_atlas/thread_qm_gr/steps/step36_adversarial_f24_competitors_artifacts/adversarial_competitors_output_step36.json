@@ -1,0 +1,27 @@
+{
+  "step": 36,
+  "orientation": "adversarial F24 competitor defeat",
+  "competitors_built": 5,
+  "families": [
+    "HiddenUpstreamRole",
+    "CoarsenedRole",
+    "BudgetedRole",
+    "ScopedRole",
+    "MemoryLayer"
+  ],
+  "all_defining_structures_present": true,
+  "all_competitors_defeated": true,
+  "all_controls_pass": true,
+  "coarsening": {
+    "d3_min_heldout_residual": 1.1220677985658054,
+    "d2_control_max_heldout_residual": 6.304854800243424e-16,
+    "role_obstruction_count": 3
+  },
+  "verdict": {
+    "type": "type_uniqueness_by_adversarial_defeat",
+    "bounded_grammar_scope": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Competitors are defeated as full exact reconciliation types in G*, not as universally invalid methods."
+}

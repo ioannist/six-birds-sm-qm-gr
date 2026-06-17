@@ -1,0 +1,9 @@
+case_id,a_setting,b_setting,correlation_E,computed_from
+Bell_phi_plus,a0,b0,0.707106781187,Tr(rho * A_i tensor B_j)
+Bell_phi_plus,a0,b1,0.707106781187,Tr(rho * A_i tensor B_j)
+Bell_phi_plus,a1,b0,0.707106781187,Tr(rho * A_i tensor B_j)
+Bell_phi_plus,a1,b1,-0.707106781187,Tr(rho * A_i tensor B_j)
+classical_correlated_mixture,a0,b0,0.707106781187,Tr(rho * A_i tensor B_j)
+classical_correlated_mixture,a0,b1,0.707106781187,Tr(rho * A_i tensor B_j)
+classical_correlated_mixture,a1,b0,0,Tr(rho * A_i tensor B_j)
+classical_correlated_mixture,a1,b1,0,Tr(rho * A_i tensor B_j)

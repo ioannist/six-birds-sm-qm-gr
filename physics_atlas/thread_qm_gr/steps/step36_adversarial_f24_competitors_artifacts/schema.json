@@ -1,0 +1,34 @@
+{
+  "step": 36,
+  "orientation": "adversarial F24 competitor defeat",
+  "active_residual": "R_child_E018_after_T_QGR_Unique_bounded_theorem",
+  "carrier": {
+    "states": 8,
+    "q_QM": ["d0_density", "d1_phase", "d2_transport"],
+    "q_GR": ["d0_density", "d2_transport", "d3_curvature"],
+    "L": "identity on four modes"
+  },
+  "candidate_move": "Construct genuine HiddenUpstreamRole, CoarsenedRole, BudgetedRole, ScopedRole, and MemoryLayer competitors and compute their defeats plus controls.",
+  "computed_outputs": {
+    "script": "adversarial_f24_competitors_step36.py",
+    "competitor_defeats": "competitor_defeats_step36.csv",
+    "coarsening_fits": "coarsening_fits_step36.csv",
+    "controls": "controls_step36.csv",
+    "output": "adversarial_competitors_output_step36.json"
+  },
+  "final_verdict": {
+    "type": "type_uniqueness_by_adversarial_defeat",
+    "competitors_built": 5,
+    "all_defining_structures_present": true,
+    "all_competitors_defeated": true,
+    "all_controls_pass": true,
+    "bounded_grammar_scope": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "reviewer_objection": "Step 33 type-uniqueness was partly absence-driven.",
+    "response": "Build each adversarial family candidate with its defining structure and defeat it computationally.",
+    "nonclaim": "Defeat is only as full exact reconciliation type in G*; competitor methods may remain useful approximations or local descriptions."
+  }
+}

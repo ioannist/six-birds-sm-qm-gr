@@ -1,0 +1,5 @@
+control_id,expected,passes_guard,computed_witness
+broad_measure_fails_to_collapse,broad_final_degeneracy_gt_1,True,6->6->6->6->6->6
+derivation_collapses,derivation_final_degeneracy_1,True,6->5->4->2->1->1
+sharp_measure_also_collapses,sharp_measure_final_degeneracy_1,True,3->2->2->1->1
+selection_carrier_not_field_pair,scale_grid_degeneracy_audit,True,carrier=scale_ratio_grid; audit=effective_degeneracy_under_refinement

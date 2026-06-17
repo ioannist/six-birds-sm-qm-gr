@@ -1,0 +1,308 @@
+{
+  "atoms": [
+    "typed_carrier",
+    "composition_slot",
+    "q_amplitude_currency",
+    "q_probability_audit",
+    "q_record_branch",
+    "q_unitary_fixedpoint",
+    "g_metric_currency",
+    "g_curvature_audit",
+    "g_event_locality",
+    "g_geodesic_fixedpoint",
+    "r_refinement_index",
+    "r_fixedpoint_lift",
+    "r_currency_exchange",
+    "r_shadow_price_neutral",
+    "r_audit_commutator",
+    "r_descent_budget"
+  ],
+  "roles": {
+    "P1_carrier": [
+      "typed_carrier",
+      "g_event_locality",
+      "r_refinement_index"
+    ],
+    "P2_composition": [
+      "composition_slot",
+      "r_fixedpoint_lift"
+    ],
+    "P3_route": [
+      "q_unitary_fixedpoint",
+      "g_geodesic_fixedpoint",
+      "r_audit_commutator"
+    ],
+    "P4_records": [
+      "q_record_branch",
+      "g_event_locality",
+      "r_refinement_index"
+    ],
+    "P5_currency": [
+      "q_amplitude_currency",
+      "g_metric_currency",
+      "r_currency_exchange",
+      "r_shadow_price_neutral"
+    ],
+    "P6_audit": [
+      "q_probability_audit",
+      "g_curvature_audit",
+      "r_audit_commutator",
+      "r_descent_budget"
+    ]
+  },
+  "qm_package": {
+    "Z": [
+      "typed_carrier",
+      "composition_slot",
+      "q_amplitude_currency",
+      "q_probability_audit",
+      "q_record_branch",
+      "q_unitary_fixedpoint",
+      "g_metric_currency",
+      "g_curvature_audit",
+      "g_event_locality",
+      "g_geodesic_fixedpoint",
+      "r_refinement_index",
+      "r_fixedpoint_lift",
+      "r_currency_exchange",
+      "r_shadow_price_neutral",
+      "r_audit_commutator",
+      "r_descent_budget"
+    ],
+    "seed": [
+      "q_record_branch",
+      "typed_carrier"
+    ],
+    "rules": [
+      {
+        "antecedent": [
+          "typed_carrier"
+        ],
+        "consequent": [
+          "composition_slot"
+        ]
+      },
+      {
+        "antecedent": [
+          "composition_slot",
+          "typed_carrier"
+        ],
+        "consequent": [
+          "q_amplitude_currency"
+        ]
+      },
+      {
+        "antecedent": [
+          "q_amplitude_currency"
+        ],
+        "consequent": [
+          "q_unitary_fixedpoint"
+        ]
+      },
+      {
+        "antecedent": [
+          "q_amplitude_currency",
+          "q_record_branch"
+        ],
+        "consequent": [
+          "q_probability_audit"
+        ]
+      }
+    ],
+    "closed_seed": [
+      "composition_slot",
+      "q_amplitude_currency",
+      "q_probability_audit",
+      "q_record_branch",
+      "q_unitary_fixedpoint",
+      "typed_carrier"
+    ],
+    "Sigma_f_count": 25600,
+    "role_profile": {
+      "P1_carrier": {
+        "closed_count": 1,
+        "total_count": 3,
+        "closed_fraction": 0.3333333333333333,
+        "closed_atoms": [
+          "typed_carrier"
+        ]
+      },
+      "P2_composition": {
+        "closed_count": 1,
+        "total_count": 2,
+        "closed_fraction": 0.5,
+        "closed_atoms": [
+          "composition_slot"
+        ]
+      },
+      "P3_route": {
+        "closed_count": 1,
+        "total_count": 3,
+        "closed_fraction": 0.3333333333333333,
+        "closed_atoms": [
+          "q_unitary_fixedpoint"
+        ]
+      },
+      "P4_records": {
+        "closed_count": 1,
+        "total_count": 3,
+        "closed_fraction": 0.3333333333333333,
+        "closed_atoms": [
+          "q_record_branch"
+        ]
+      },
+      "P5_currency": {
+        "closed_count": 1,
+        "total_count": 4,
+        "closed_fraction": 0.25,
+        "closed_atoms": [
+          "q_amplitude_currency"
+        ]
+      },
+      "P6_audit": {
+        "closed_count": 1,
+        "total_count": 4,
+        "closed_fraction": 0.25,
+        "closed_atoms": [
+          "q_probability_audit"
+        ]
+      }
+    },
+    "currency": "amplitude/probability-record currency",
+    "emergence_content_E": [
+      "q_amplitude_currency",
+      "q_probability_audit",
+      "q_record_branch",
+      "q_unitary_fixedpoint"
+    ],
+    "audit_descent_D": "probability-record audit over q_probability_audit"
+  },
+  "gr_package": {
+    "Z": [
+      "typed_carrier",
+      "composition_slot",
+      "q_amplitude_currency",
+      "q_probability_audit",
+      "q_record_branch",
+      "q_unitary_fixedpoint",
+      "g_metric_currency",
+      "g_curvature_audit",
+      "g_event_locality",
+      "g_geodesic_fixedpoint",
+      "r_refinement_index",
+      "r_fixedpoint_lift",
+      "r_currency_exchange",
+      "r_shadow_price_neutral",
+      "r_audit_commutator",
+      "r_descent_budget"
+    ],
+    "seed": [
+      "typed_carrier"
+    ],
+    "rules": [
+      {
+        "antecedent": [
+          "typed_carrier"
+        ],
+        "consequent": [
+          "composition_slot"
+        ]
+      },
+      {
+        "antecedent": [
+          "composition_slot",
+          "typed_carrier"
+        ],
+        "consequent": [
+          "g_event_locality"
+        ]
+      },
+      {
+        "antecedent": [
+          "g_event_locality"
+        ],
+        "consequent": [
+          "g_geodesic_fixedpoint",
+          "g_metric_currency"
+        ]
+      },
+      {
+        "antecedent": [
+          "g_geodesic_fixedpoint",
+          "g_metric_currency"
+        ],
+        "consequent": [
+          "g_curvature_audit"
+        ]
+      }
+    ],
+    "closed_seed": [
+      "composition_slot",
+      "g_curvature_audit",
+      "g_event_locality",
+      "g_geodesic_fixedpoint",
+      "g_metric_currency",
+      "typed_carrier"
+    ],
+    "Sigma_f_count": 17408,
+    "role_profile": {
+      "P1_carrier": {
+        "closed_count": 2,
+        "total_count": 3,
+        "closed_fraction": 0.6666666666666666,
+        "closed_atoms": [
+          "typed_carrier",
+          "g_event_locality"
+        ]
+      },
+      "P2_composition": {
+        "closed_count": 1,
+        "total_count": 2,
+        "closed_fraction": 0.5,
+        "closed_atoms": [
+          "composition_slot"
+        ]
+      },
+      "P3_route": {
+        "closed_count": 1,
+        "total_count": 3,
+        "closed_fraction": 0.3333333333333333,
+        "closed_atoms": [
+          "g_geodesic_fixedpoint"
+        ]
+      },
+      "P4_records": {
+        "closed_count": 1,
+        "total_count": 3,
+        "closed_fraction": 0.3333333333333333,
+        "closed_atoms": [
+          "g_event_locality"
+        ]
+      },
+      "P5_currency": {
+        "closed_count": 1,
+        "total_count": 4,
+        "closed_fraction": 0.25,
+        "closed_atoms": [
+          "g_metric_currency"
+        ]
+      },
+      "P6_audit": {
+        "closed_count": 1,
+        "total_count": 4,
+        "closed_fraction": 0.25,
+        "closed_atoms": [
+          "g_curvature_audit"
+        ]
+      }
+    },
+    "currency": "metric/curvature-transport currency",
+    "emergence_content_E": [
+      "g_curvature_audit",
+      "g_event_locality",
+      "g_geodesic_fixedpoint",
+      "g_metric_currency"
+    ],
+    "audit_descent_D": "curvature-route audit over g_curvature_audit"
+  }
+}

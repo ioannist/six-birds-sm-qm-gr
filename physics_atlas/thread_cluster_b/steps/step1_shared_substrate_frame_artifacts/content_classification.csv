@@ -1,0 +1,11 @@
+output,classification,grade,scope,source_artifacts
+shared_substrate_frame_step1.py,analytical structural,finite-carrier diagnostic,"Constructs L_ext and computes non-factorization signatures, smooth descent, and controls.","steps/step1_shared_substrate_frame_artifacts/shared_substrate_frame_step1.py"
+extended_carrier_step1.csv,organizational/audit,finite-carrier diagnostic,"Declared lifted 12-state L_ext carrier with d4_subplanck and d5_vacuum coordinates.","steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv"
+frame_signatures_step1.csv,analytical structural,finite-carrier diagnostic,"Computed E021/E042 non-descending signatures against GR smooth Sigma_f and q_QM.","steps/step1_shared_substrate_frame_artifacts/frame_signatures_step1.csv"
+shadow_descent_step1.csv,analytical structural,finite-carrier diagnostic,"Computed smooth-regime GR descent and high-curvature boundary tear for d4.","steps/step1_shared_substrate_frame_artifacts/shadow_descent_step1.csv"
+controls_step1.csv,analytical structural,finite-carrier diagnostic,"Descending-readout and smooth-d4 controls proving the non-factorization test has teeth.","steps/step1_shared_substrate_frame_artifacts/controls_step1.csv"
+shared_substrate_frame_output_step1.json,organizational/audit,finite-carrier diagnostic,"Machine-readable verdict and witnesses.","steps/step1_shared_substrate_frame_artifacts/shared_substrate_frame_output_step1.json"
+results_summary.md,organizational/audit,finite-carrier diagnostic,"Human-readable frame verdict, witnesses, and next options.","steps/step1_shared_substrate_frame_artifacts/results_summary.md"
+schema.json,organizational/audit,finite-carrier diagnostic,"Per-step schema and final verdict.","steps/step1_shared_substrate_frame_artifacts/schema.json"
+nonclaim_boundary.md,organizational/audit,finite-carrier diagnostic,"Scope boundary for finite-carrier frame and no-overclaim discipline.","steps/step1_shared_substrate_frame_artifacts/nonclaim_boundary.md"
+run_step1.py,organizational/audit,finite-carrier diagnostic,"Validator for artifact presence, computed witnesses, controls, relative paths, ledgers, and overclaim blocklist.","steps/step1_shared_substrate_frame_artifacts/run_step1.py"

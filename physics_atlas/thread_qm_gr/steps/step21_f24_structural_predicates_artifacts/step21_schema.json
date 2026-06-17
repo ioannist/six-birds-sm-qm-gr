@@ -1,0 +1,46 @@
+{
+  "step": 21,
+  "orientation": "Mode B native structural F24 predicate construction",
+  "active_residual": "R_child_E018_after_F24_predicate_construction_classification",
+  "carrier": {
+    "type": "finite 8-state role-split carrier",
+    "q": "q_QM=(d0,d1,d2)",
+    "s": "d3",
+    "role_obstruction_count": 3,
+    "candidate_count": 8
+  },
+  "candidate_move": {
+    "id": "structuralize_F24_resolution_case_selectors",
+    "description": "Compute each F24 family predicate from actual candidate maps and reclassify L."
+  },
+  "final_verdict": {
+    "type": "native_F24_structural_predicate_construction_complete",
+    "L_computed_family": "BridgeMediatedRole",
+    "L_unique": true,
+    "controls_discriminate": true,
+    "all_eight_families_covered": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "uses_input_case_names": false,
+    "uses_input_selector_bundle": false,
+    "mutual_exclusivity_from_case_names": false,
+    "structural_predicate_count": 8,
+    "all_candidates_unique": true
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "Each F24 family can be selected on the finite suite by map-level criteria."
+    ],
+    "analytical_structural": [
+      "L computes as BridgeMediatedRole from its explicit joint maps and native gate checks."
+    ],
+    "organizational_audit": [
+      "Candidate structures and predicate evaluations are saved."
+    ],
+    "remaining_external_content": [
+      "Broader faithfulness of these structural predicates remains external review."
+    ]
+  }
+}

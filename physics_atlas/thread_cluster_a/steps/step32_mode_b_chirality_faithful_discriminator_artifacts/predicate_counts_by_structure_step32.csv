@@ -1,0 +1,10 @@
+dimensions,step31_survivors,chirality_faithful_survivors,failed_chirality_faithfulness,target_passes
+2,4,2,2,0
+2|2,384,272,112,0
+2|3,60,60,0,1
+2|4,0,0,0,0
+3,49,49,0,0
+3|3,0,0,0,0
+3|4,0,0,0,0
+4,16,16,0,0
+4|4,0,0,0,0

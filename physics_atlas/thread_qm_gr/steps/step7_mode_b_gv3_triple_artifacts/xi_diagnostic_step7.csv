@@ -1,0 +1,17 @@
+level_regions,carrier_dimension,test,target,raw_trace_xi,trace_kdd,normalized_trace_xi,status
+2,6,accepted_G_v3_search,Bridge_triple_joint_package,1.0,1.0,1.0,survives_G_v3
+2,6,accepted_G_v3_search,coupled_joint,1.0,7.0,0.14285714285714285,bounded_no_go_residual
+2,6,pairwise_union_as_triple_completion,triple_bridge,1.0,1.0,1.0,rejected_control
+2,6,pairwise_union_as_triple_completion,coupled_joint,0.9999999999999996,7.0,0.1428571428571428,rejected_control
+2,6,independent_witness_without_bridge_map,triple_bridge,1.0,1.0,1.0,rejected_control
+2,6,independent_witness_without_bridge_map,coupled_joint,1.0,7.0,0.14285714285714285,rejected_control
+2,6,native_triple_row_insertion,triple_bridge,0.0,1.0,0.0,rejected_control
+2,6,native_triple_row_insertion,coupled_joint,0.0,7.0,0.0,rejected_control
+4,8,accepted_G_v3_search,Bridge_triple_joint_package,1.0,1.0,1.0,survives_G_v3
+4,8,accepted_G_v3_search,coupled_joint,1.0,7.0,0.14285714285714285,bounded_no_go_residual
+4,8,pairwise_union_as_triple_completion,triple_bridge,1.0,1.0,1.0,rejected_control
+4,8,pairwise_union_as_triple_completion,coupled_joint,0.9999999999999996,7.0,0.1428571428571428,rejected_control
+4,8,independent_witness_without_bridge_map,triple_bridge,1.0,1.0,1.0,rejected_control
+4,8,independent_witness_without_bridge_map,coupled_joint,1.0,7.0,0.14285714285714285,rejected_control
+4,8,native_triple_row_insertion,triple_bridge,0.0,1.0,0.0,rejected_control
+4,8,native_triple_row_insertion,coupled_joint,0.0,7.0,0.0,rejected_control

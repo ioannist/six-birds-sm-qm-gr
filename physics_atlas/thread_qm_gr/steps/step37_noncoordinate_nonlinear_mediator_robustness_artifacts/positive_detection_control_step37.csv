@@ -1,0 +1,3 @@
+control_name,carries_endpoints,strict,minimal,equivalence_class,inequivalent_to_other,computed_witness
+control_mediator_x_partition,True,True,True,x_partition,True,rank=1; to_other_res=0.866025; from_other_res=0.866025
+control_mediator_y_partition,True,True,True,y_partition,True,rank=1; to_other_res=0.866025; from_other_res=0.866025

@@ -1,0 +1,5 @@
+check,passes,evidence
+no_target_roster_in_shadow,True,target flag used only after scoring
+no_specific_content_literals,True,shadow uses color-singlet and charge-integrality predicates
+fractional_control_fails,True,failure_examples=1
+all_residual_classes_pass,True,classes=2

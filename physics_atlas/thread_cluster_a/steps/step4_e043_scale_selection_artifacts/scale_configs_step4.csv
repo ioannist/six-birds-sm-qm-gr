@@ -1,0 +1,8 @@
+config_id,M_cutoff,g_EW,yukawa_proxy,vev_proxy,m_H2,r,EW_Sigma,derived_EW_observable,role,realized
+scale_SM,100.0,0.65,1.0,1.0,1.0,0.0001,mH2=1|gEW=0.65|y=1|vev=1,0.5725,realized_small_ratio,True
+scale_same_EW_midcut,30.0,0.65,1.0,1.0,1.0,0.00111111111111,mH2=1|gEW=0.65|y=1|vev=1,0.5725,same_EW_different_cutoff,False
+scale_same_EW_lowcut,10.0,0.65,1.0,1.0,1.0,0.01,mH2=1|gEW=0.65|y=1|vev=1,0.5725,same_EW_different_cutoff,False
+scale_alt_mass,100.0,0.65,1.0,1.0,1.21,0.000121,mH2=1.21|gEW=0.65|y=1|vev=1,0.682225,different_EW_input,False
+scale_alt_coupling,100.0,0.7,1.0,1.0,1.0,0.0001,mH2=1|gEW=0.7|y=1|vev=1,0.64,different_EW_input,False
+scale_alt_vev,100.0,0.65,1.0,1.2,1.0,0.0001,mH2=1|gEW=0.65|y=1|vev=1.2,0.5825,different_EW_input,False
+scale_large_ratio,10.0,0.72,1.1,1.2,2.5,0.025,mH2=2.5|gEW=0.72|y=1.1|vev=1.2,1.6585,large_ratio_alternative,False

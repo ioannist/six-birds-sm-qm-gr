@@ -1,0 +1,9 @@
+gate,status,evidence,defect_if_failed
+nonstationary_initial_state,pass,minimum eigen residual is 0.35409006012453015,stationary_history_overread
+state_changes,pass,maximum phase-invariant state change is 0.18847313451682898,no_genuine_evolution
+potential_changes,pass,maximum sourced-potential change is 0.001673580612625418,potential_static_overread
+constraint_map_constructed,pass,constraint_operators_step28.npz stores generated C and control C,missing_constraint_map
+constraint_residual_computed,pass,generated ||C Psi|| is 4.220196766037856e-16,constraint_asserted_not_computed
+relational_readout_computed,pass,field and potential readout residuals are below 1e-15,relational_readout_asserted
+wrong_generator_control_fails,pass,identity-generator control residual is 0.0925307478333232,toothless_relational_control
+external_review_scope,open,toy history-adapted constraint only; broader adequacy remains external review,self_certified_overread

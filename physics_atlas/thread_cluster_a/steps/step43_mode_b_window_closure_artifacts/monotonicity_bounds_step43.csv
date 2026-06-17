@@ -1,0 +1,4 @@
+bound_candidate,status,covered_evidence,claim_scope
+single_factor_N_ge_3_clean_separation_bound,structural-arguable,3:higher=0:clean=0;4:higher=4:clean=0;5:higher=0:clean=0;6:higher=0:clean=0,"For a single SU(N) factor broken to a confining subgroup, the coset vectors transform under that subgroup, so Delta_fact is nonempty whenever the higher-layer base exists."
+factor_count_ge_3_bound,empirical-partial,exact_samples=7; skipped_dense_branches=28; exact_sample_clean=0,The sampled high-dimension three-factor corner has no clean survivors; the dense low-dimension three-factor region remains a declared coverage gap for the next window-closure step.
+charge_lattice_bound,empirical-only,charge_units=-6..6 in units inherited from the corrected Step-28/33 carrier; clean set is unchanged inside this lattice.,No theorem-level charge bound is claimed in Step 43; the charge window remains finite and explicit.

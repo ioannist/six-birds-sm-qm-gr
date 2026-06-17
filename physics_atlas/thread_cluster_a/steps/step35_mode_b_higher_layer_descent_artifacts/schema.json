@@ -1,0 +1,20 @@
+{
+  "artifact_root": "steps/step35_mode_b_higher_layer_descent_artifacts",
+  "forbidden_prior_self_check_pass": true,
+  "frame_transfer_certified": false,
+  "higher_layer_survivors": 12,
+  "mode": "ModeB_higher_layer_descent",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "conjoin a further higher-layer requirement such as scalar potential closure or family replication consistency",
+  "reproduced_corrected_carrier": 80,
+  "root_landed": false,
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "step": 35,
+  "target_dimensions": "2|3",
+  "target_distinguished": false,
+  "target_passes": true,
+  "target_witness": "rank_one_fundxsinglet:-3",
+  "verdict": "NARROW"
+}

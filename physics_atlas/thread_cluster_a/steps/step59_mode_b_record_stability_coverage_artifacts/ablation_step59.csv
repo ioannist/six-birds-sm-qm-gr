@@ -1,0 +1,5 @@
+ablation,effect,load_bearing
+remove_frozen_record_requirement,RS predicate could be retuned to fit the coverage carrier,True
+remove_frozen_base_substrate,capacity-only non-CS rows could be mistaken for record-stable,True
+remove_frozen_defect,CS side of the inclusion test is no longer the Step41 condition,True
+remove_adversarial_capacity_search,coverage claim would not test the likely break region,True

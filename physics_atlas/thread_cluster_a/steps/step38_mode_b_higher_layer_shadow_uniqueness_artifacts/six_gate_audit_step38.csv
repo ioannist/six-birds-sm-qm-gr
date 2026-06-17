@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"predicate excludes fixed factor count, parent, target-content, and size-ordering primitives"
+dependency_trace,True,dependencies are listed in dependency_trace_step38.csv
+ablation,True,only the clean-shadow condition is load-bearing within Step 38 residual
+negative_controls,True,base keeps the small family; clean shadow rejects exotic broken vectors
+stage_ii,True,Step-35 residual and single-factor exotic difference are computed
+shape_minimality_detector,True,current requirement unflagged; rejected diagnostics flagged

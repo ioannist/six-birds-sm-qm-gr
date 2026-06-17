@@ -1,0 +1,7 @@
+check,passes,evidence
+su2_fund_cubic_zero,True,0
+su2_sym2_cubic_zero,True,0
+higher_fund_cubic_intact,True,1|1
+higher_antifund_cubic_intact,True,-1|-1
+su4_antisym2_real_zero,True,0
+complexness_uses_self_conjugacy,True,rank-one fundamental self-conjugate; higher fundamental not self-conjugate

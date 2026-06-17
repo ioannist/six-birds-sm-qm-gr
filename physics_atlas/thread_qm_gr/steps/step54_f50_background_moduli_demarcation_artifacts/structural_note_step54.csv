@@ -1,0 +1,3 @@
+note_id,structural_b_independence,condition,explanation
+actual_step26_background_dependence,False,No full b-independence theorem: Step26 uses T00[psi]=|grad psi|^2 + background*|psi|^2 and V=background+kappa*T00.,"A scalar background shift includes an identity-like Hamiltonian shift, but also enters kappa*background*|psi|^2, so it does not cancel generally in the fixed-point iteration."
+finite_sweep_honesty,False,The classification is enumeration-strength over the declared offsets and frozen 60-step convergence criterion.,Multiple backgrounds pass and multiple fail; the result is bounded/swept moduli rather than a singleton value law.

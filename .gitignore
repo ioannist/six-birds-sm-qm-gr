@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+.DS_Store
+conversation_history/
+.env
+
+# Local tool/process state; not part of public release artifacts.
+.codex/
+.agents/
+.pytest_cache/
+**/.pytest_cache/
+**/__pycache__/
+**/.codex_thread_id
+**/manager_log.md
+
+# Build outputs and generated caches.
+paper/build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Large/internal working products excluded from the paper release index.
+physics_atlas/review_packets/
+lattice_qcd_layer/
+physics_atlas/wf*.mjs
+unification_atlas/wf*.mjs
+ChatGPT Image *.png
+*.npy
+*.npz
+*.pstats

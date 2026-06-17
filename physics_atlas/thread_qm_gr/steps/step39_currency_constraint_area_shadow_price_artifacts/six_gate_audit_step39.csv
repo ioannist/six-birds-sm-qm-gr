@@ -1,0 +1,8 @@
+gate,passes,evidence
+primitive_exclusion,True,no area-entanglement identity or continuum Newton coefficient appears in carrier primitives
+dependency_trace,True,dependency_trace_step39.csv lists all load-bearing carrier axioms
+ablation,True,product/volume/slack ablations break the relation or price
+negative_controls_have_teeth,True,can_fail_controls_step39.csv records collapsed controls
+stage_II_earns_place,True,budget sweep has monotone price and a zero-price slack tail
+no_single_axiom_equivalence,True,"each axiom alone lacks either entropy, area, budget, or dual program"
+refinement_stability,True,computed k is stable at two boundary refinements

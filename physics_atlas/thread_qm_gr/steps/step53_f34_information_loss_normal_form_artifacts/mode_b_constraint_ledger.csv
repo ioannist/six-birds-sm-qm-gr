@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP53_FULL_RANK_GENERIC_STRATUM,active,Full-boundary recovery claim is conditional on computed full-rank generic stratum.
+C_STEP53_GAUGE_NOT_RAW,active,Raw tensor loss is nonempty but physical loss is gauge-only at full boundary.
+C_STEP53_PARTIAL_READOUT_CAN_FAIL,active,A partial readout must exhibit a real obstruction witness.

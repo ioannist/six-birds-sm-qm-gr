@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,mode,proof_grammar,exit_state,window_independent,non_triviality_argument,excluded_designs_rationale
+G_step61_single_factor_parametric_coset_proof,61,ModeT,frozen Step35 substrate path plus frozen Step41 defect construction plus SU(N)->SU(N-1) residual arithmetic,constructed_theorem,True,single-factor substrate examples exist and all have positive defect; multi-factor clean substrate examples show substrate is not the conclusion in disguise,"no clean-separation hypothesis, no target restatement, no finite N cap in the symbolic proof"

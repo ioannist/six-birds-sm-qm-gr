@@ -1,0 +1,3 @@
+stage_ii_check,passes,evidence
+reducible_packages_detected,True,276690 p2 closers fail the atomic-package audit
+target_atomic_rewrite_package_survives,True,target reference passes the intrinsic package predicate once

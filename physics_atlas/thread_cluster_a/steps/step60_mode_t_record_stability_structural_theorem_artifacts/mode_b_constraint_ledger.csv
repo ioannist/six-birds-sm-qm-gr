@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step60_no_enumeration_as_proof,active_mode_t_constraint,60,enumeration evidence cannot be relabeled as a theorem
+step60_frozen_predicates,active_anti_smuggle_constraint,60,"record, substrate, and defect predicates are imported frozen"
+step60_target_theorem_no_target_hypothesis,active_anti_circularity_constraint,60,"proof may assume substrate and capacity only, not the target"

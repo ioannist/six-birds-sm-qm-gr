@@ -1,0 +1,8 @@
+Step 33 Part B type-uniqueness
+Selected family: BridgeMediatedRole
+Fired families: BridgeMediatedRole
+Unique type: True
+O_s obstruction count: 3
+All q_QM coarsenings leave O_s nonempty: True
+Verdict: type_uniqueness_bridge_mediated_role_on_L
+Instance uniqueness remains open.

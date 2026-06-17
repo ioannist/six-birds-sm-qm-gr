@@ -1,0 +1,5 @@
+step,claim,passes,evidence
+premise_1,non-control record properties are Sigma_f-internal,True,"self_locating_indexical_record,intersubjective_agreement,record_robustness_no_recoherence,complete_record"
+premise_2,Step66 pair has identical Sigma_f but different selection predicate,True,pointer_basis=a0|a1;born_weights=1/3|2/3;rho_diag=1/3|2/3;expectation_pointer=2/3
+inference,a Sigma_f-internal property must take the same value on the two readouts,True,same Sigma_f key for both readouts
+conclusion,no Sigma_f-internal record property can force the selection predicate on this witness class,True,the only forcing battery property is the non-Sigma_f global-exclusivity anti-control

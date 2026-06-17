@@ -1,0 +1,20 @@
+{
+  "active_residual": "Step60 L60 gauge-to-matter bridge",
+  "anti_circularity_pass": true,
+  "converse_counterexample_found": false,
+  "discharges_L60": false,
+  "exit_state": "sharpened_external",
+  "frame_transfer_certified": false,
+  "main_object": "substrate and transition leak imply fewer than two neutral record tokens",
+  "max_record_count_among_them": 1,
+  "new_physics_claim": false,
+  "non_CS_substrate_count": 60,
+  "orientation": "ModeT_L60_record_capacity_leak_exclusion_attempt",
+  "root_landed": false,
+  "sharpened_sublemma": "L64_charge_orientation_cap",
+  "six_gates_pass": false,
+  "step": 64,
+  "structural_proof_grade": "sharpened",
+  "verdict": "L60_SHARPENED_TO_CHARGE_ORIENTATION_CAP_NO_STRUCTURAL_PROOF",
+  "window_independent": false
+}

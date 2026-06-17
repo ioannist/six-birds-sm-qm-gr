@@ -1,0 +1,4 @@
+audit,dimension,symmetric,positive_semidefinite,eigenvalues,motivation
+A_QM_Born_quadratic,3,True,True,0.682965978977;1.05435679812;1.3626772229,"Born-like probability signature: positive quadratic amplitude-square form on d0,d1,d2."
+A_GR_curvature_quadratic,3,True,True,0.436355911148;1.07398918895;1.38965489991,"Curvature/geodesic-transport signature: symmetric quadratic form on density, transport, curvature modes."
+A_GR_incompatible_control,3,True,True,0.410034030897;1.08470139965;1.45526456945,"Curvature-like control with mismatched shared d0,d2 block."

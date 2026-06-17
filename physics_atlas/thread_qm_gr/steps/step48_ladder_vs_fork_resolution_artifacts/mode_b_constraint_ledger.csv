@@ -1,0 +1,3 @@
+constraint_id,status,description
+C_STEP48_FORK_CONDITIONAL_ON_PREMISE,active,The fork-vs-ladder decision is conditional on Step47's common-carrier recognition premise.
+C_STEP48_NESTED_CONTROL_FLIPS,active,A genuinely nested endpoint pair must make the ladder close and turn off the directed no-go.

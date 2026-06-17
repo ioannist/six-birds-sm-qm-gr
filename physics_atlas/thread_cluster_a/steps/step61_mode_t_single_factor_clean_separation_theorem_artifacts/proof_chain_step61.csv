@@ -1,0 +1,5 @@
+step,claim,status,evidence
+1,single_factor_substrate_forces_scalar_action,proved_from_frozen_code,higher_layer_mass_closure returns pass only when scalar_breaks_to_unbroken_u1 is true; scalar_breaks_to_unbroken_u1 requires active_nonabelian and nonzero charge
+2,scalar_action_plus_single_factor_substrate_forces_dim_at_least_3,proved_by_residual_arithmetic,single-factor substrate requires residual dim-1 >= 2; therefore dim >= 3
+3,residual_at_least_2_forces_nonempty_defect,proved_from_frozen_delta_code,build_bosons creates massless confining generators and 2*(dim-1) massive charged coset vectors; compute_delta pairs them by shared nontrivial confining readout and different mass status
+cross_check,enumerated_single_factor_substrate_rows_have_no_clean_counterexample,verified,substrate_total=12; clean_total=0

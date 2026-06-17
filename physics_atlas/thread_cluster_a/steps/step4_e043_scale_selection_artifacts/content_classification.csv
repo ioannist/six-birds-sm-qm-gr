@@ -1,0 +1,10 @@
+output,classification,grade,scope,source_artifacts
+e043_scale_selection_step4.py,analytical structural,finite-toy-diagnostic,"Builds EW scale configs, scale-ratio non-factorization, two horns, and controls.",steps/step4_e043_scale_selection_artifacts/e043_scale_selection_step4.py
+scale_configs_step4.csv,analytical structural,finite-toy-diagnostic,"Finite toy EW configurations, cutoff, m_H2, ratio, EW Sigma, and derived observable.",steps/step4_e043_scale_selection_artifacts/scale_configs_step4.csv
+scale_nonfactorization_step4.csv,analytical structural,finite-toy-diagnostic,Scale-ratio non-descending test and derived-observable control.,steps/step4_e043_scale_selection_artifacts/scale_nonfactorization_step4.csv
+two_horns_step4.csv,analytical structural,finite-toy-diagnostic,"Derivation attractor, measure peak, and no-selection controls.",steps/step4_e043_scale_selection_artifacts/two_horns_step4.csv
+controls_step4.csv,analytical structural,finite-toy-diagnostic,"Non-descending, derived-observable, horn, no-selection, and carrier controls.",steps/step4_e043_scale_selection_artifacts/controls_step4.csv
+results_summary.md,organizational/audit,finite-toy-diagnostic,Human-readable E043 scale-selection verdict and bounded scope.,steps/step4_e043_scale_selection_artifacts/results_summary.md
+schema.json,organizational/audit,finite-toy-diagnostic,Per-step schema and final verdict.,steps/step4_e043_scale_selection_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite E043 scale-selection facet.,steps/step4_e043_scale_selection_artifacts/nonclaim_boundary.md
+run_step4.py,organizational/audit,finite-toy-diagnostic,"Validator for computed non-factorization, horns, controls, source paths, ledgers, and overclaim guard.",steps/step4_e043_scale_selection_artifacts/run_step4.py

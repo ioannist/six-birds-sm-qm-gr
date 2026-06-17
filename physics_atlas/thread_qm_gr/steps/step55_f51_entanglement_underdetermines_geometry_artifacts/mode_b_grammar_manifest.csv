@@ -1,0 +1,2 @@
+grammar_id,carrier,fingerprint,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_GenericFrozenCarrierKernelTest_v4,generic perturbations of frozen Step42 graph,all boundary-region min-cut entropies plus all MI and I3/MMI,Excludes uniform degenerate point and one-sided-only slack test.,Boundary-tree control has nullity zero.,Test richer boundary observables and continuum carriers.

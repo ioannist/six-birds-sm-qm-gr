@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"current predicates exclude shape, parent, and target-content primitives"
+dependency_trace,True,dependencies are listed in dependency_trace_step37.csv
+ablation,True,precise subgroup and currency components are load-bearing
+negative_controls,True,precise test admits single-factor partial breaking and currency is not a row picker
+stage_ii,True,Step-35 residual reproduced and old rule demoted
+shape_flavored_detector,True,old rule and scalar-stage currency rescue are both flagged

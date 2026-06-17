@@ -1,0 +1,4 @@
+control,structure_id,should_close,closes,passes,failure_reason
+abelian_only,rnone,False,False,True,no_complex_representation
+real_rep_only,r1,False,False,True,no_complex_representation
+single_complex_factor,r2,False,False,True,no_nontrivial_trace_zero_charge_grid

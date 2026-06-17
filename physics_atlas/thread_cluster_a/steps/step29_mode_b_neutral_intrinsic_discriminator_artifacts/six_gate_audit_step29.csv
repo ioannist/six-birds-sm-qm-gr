@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,build script excludes forbidden prior literals and target-shape primitives
+dependency_trace,True,"predicate components are traced to P5, P1, and F27"
+ablation,True,each component increases survivors when removed
+negative_controls,True,false target not uniquely selected and some P2 closers fail
+stage_ii,True,reducible package detection and target survival recorded
+no_single_axiom_equivalence,True,no component is equivalent to selecting the reference

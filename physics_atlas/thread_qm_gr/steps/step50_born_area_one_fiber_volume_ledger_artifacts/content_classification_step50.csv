@@ -1,0 +1,9 @@
+artifact,classification,grade,scope
+born_area_one_ledger_step50.py,analytical-structural,finite-carrier-diagnostic,"computes geometric F39 min-cut, F23 Born entropy, seed-invariance, shared monogamy, and GHZ control"
+born_area_ledger_scores_step50.csv,analytical-structural,structural-recognition,per-region RT bound and saturation ratios
+seed_invariance_step50.csv,analytical-structural,finite-carrier-diagnostic,geometric area invariant under state-seed changes while Born entropy varies
+combiner_comparison_step50.csv,analytical-structural,structural-recognition,shared monogamy/MMI combiner class
+control_divergence_step50.csv,analytical-structural,finite-carrier-diagnostic,GHZ Born combiner break against geometric min-cut class
+step50_results_summary.md,organizational,summary,honest grade and revised anti-tautology result
+born_area_one_ledger_statement_step50.tex,analytical-structural,structural-recognition,statement of shared-combiner result
+run_step50.py,organizational,validator,anti-tautology and shared-combiner validation

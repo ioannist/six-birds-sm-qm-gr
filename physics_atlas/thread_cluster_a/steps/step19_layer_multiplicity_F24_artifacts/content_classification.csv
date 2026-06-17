@@ -1,0 +1,6 @@
+claim_id,claim,grade,classification,source_artifacts
+role_obstruction,The F24 role obstruction is nonempty for the scale/naturalness role.,finite-carrier-diagnostic,nonfactorization,steps/step19_layer_multiplicity_F24_artifacts/role_obstruction_fibers_step19.csv;steps/step19_layer_multiplicity_F24_artifacts/role_obstruction_witnesses_step19.csv
+f24_resolution,"The F24 resolution is BudgetedRole, not MemoryLayer.",finite-carrier-diagnostic,layer-multiplicity,steps/step19_layer_multiplicity_F24_artifacts/f24_resolution_step19.csv;steps/step19_layer_multiplicity_F24_artifacts/overall_verdict_step19.json
+f47_selector,The scale facet is an F47 small selector region with realized point inside it.,finite-carrier-diagnostic,fine-tuning-selector,steps/step19_layer_multiplicity_F24_artifacts/f47_selector_region_step19.csv;steps/step19_layer_multiplicity_F24_artifacts/f47_selector_summary_step19.csv
+controls,Known descending and known splitting controls are distinguished.,finite-carrier-diagnostic,can-fail-control,steps/step19_layer_multiplicity_F24_artifacts/controls_step19.csv
+nonclaim_boundary,"Toy instantiation only; MI is structural dependency, not a TDGate-certified cause relation.",organizational,scope-boundary,steps/step19_layer_multiplicity_F24_artifacts/nonclaim_boundary.md

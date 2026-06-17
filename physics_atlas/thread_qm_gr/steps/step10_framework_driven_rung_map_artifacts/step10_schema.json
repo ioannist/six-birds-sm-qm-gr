@@ -1,0 +1,107 @@
+{
+  "step": 10,
+  "orientation": "framework-driven rung finding between finite QM and GR closure packages",
+  "active_residual": "R_child_E018_after_ModeT_triple_nogo_theorem",
+  "carrier": {
+    "kind": "finite SBT closure-package carrier",
+    "basis_atoms": [
+      "typed_carrier",
+      "composition_slot",
+      "q_amplitude_currency",
+      "q_probability_audit",
+      "q_record_branch",
+      "q_unitary_fixedpoint",
+      "g_metric_currency",
+      "g_curvature_audit",
+      "g_event_locality",
+      "g_geodesic_fixedpoint",
+      "r_refinement_index",
+      "r_fixedpoint_lift",
+      "r_currency_exchange",
+      "r_shadow_price_neutral",
+      "r_audit_commutator",
+      "r_descent_budget"
+    ],
+    "qm_package": {
+      "closure_model_file": "closure_packages_step10.json",
+      "closed_seed_atoms": [
+        "composition_slot",
+        "q_amplitude_currency",
+        "q_probability_audit",
+        "q_record_branch",
+        "q_unitary_fixedpoint",
+        "typed_carrier"
+      ],
+      "currency": "amplitude/probability-record currency"
+    },
+    "gr_package": {
+      "closure_model_file": "closure_packages_step10.json",
+      "closed_seed_atoms": [
+        "composition_slot",
+        "g_curvature_audit",
+        "g_event_locality",
+        "g_geodesic_fixedpoint",
+        "g_metric_currency",
+        "typed_carrier"
+      ],
+      "currency": "metric/curvature-transport currency"
+    },
+    "no_smuggling_controls": {
+      "literature_decomposition_imported": false,
+      "target_layer_inserted_as_source": false,
+      "qm_to_gr_descent_inserted_as_source": false,
+      "single_rung_closes_full_gap": false,
+      "rungs_generated_from_residual_blocks": true
+    }
+  },
+  "candidate_move": {
+    "mode": "RE-SPINE framework rung map",
+    "method": "Compute role-profile difference, currency mismatch, and fixed-point Schur residual structure on finite closure packages.",
+    "target_lineage_non_equivalence": "The rung map names candidate intermediate signatures only; it is not a root closure claim."
+  },
+  "final_verdict": {
+    "type": "framework_generated_rung_map",
+    "summary": "The framework diagnostic finds three ordered candidate rungs: refinement fixed-point, neutral currency, and audit commutator.",
+    "grade": "finite-carrier diagnostic rung map",
+    "root_landed": false,
+    "rung_count": 3,
+    "first_rung_to_build": "RUNG_1_REFINE_FIXEDPOINT",
+    "new_spine": [
+      "RUNG_1_REFINE_FIXEDPOINT",
+      "RUNG_2_NEUTRAL_CURRENCY",
+      "RUNG_3_AUDIT_COMMUTATOR"
+    ],
+    "child_residuals": [
+      "R_child_E018_framework_rung_map_v1"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "xi_results": {
+      "direct_qm_to_gr_plus_framework_witness": {
+        "raw_trace": 10.0,
+        "trace_K_DD": 12.0,
+        "normalized_trace": 0.8333333333333334
+      },
+      "currency_mismatch": {
+        "raw_trace": 1.0,
+        "trace_K_DD": 1.0,
+        "normalized_trace": 1.0
+      },
+      "all_framework_rungs_inserted": {
+        "raw_trace": 4.0,
+        "trace_K_DD": 12.0,
+        "normalized_trace": 0.3333333333333333
+      }
+    },
+    "rung_map_file": "rung_map_step10.csv",
+    "gap_diagnostic_file": "gap_diagnostic_step10.json",
+    "closure_packages_file": "closure_packages_step10.json",
+    "content_classification_file": "content_classification_step10.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step10.md",
+    "lineage_update": "../../mode_b_target_lineage.csv",
+    "grammar_manifest": "../../mode_b_grammar_manifest.csv",
+    "constraint_ledger": "../../mode_b_constraint_ledger.csv"
+  }
+}

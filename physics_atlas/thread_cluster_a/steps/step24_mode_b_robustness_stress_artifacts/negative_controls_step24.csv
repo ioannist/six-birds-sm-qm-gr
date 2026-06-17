@@ -1,0 +1,4 @@
+control,structure_id,should_close,closes,passes,failure_reason
+abelian_only,rnone_u0,False,False,True,chirality_test_failed
+real_rep_only,r1_u0,False,False,True,chirality_test_failed
+anomaly_or_slot_obstructed,r2_u0,False,False,True,computed_total_slot_anomaly_obstruction

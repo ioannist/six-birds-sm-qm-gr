@@ -1,0 +1,3 @@
+case,constraint_rows,constraint_cols,rank_tol_1e_minus_8,null_dim_tol_1e_minus_8,history_constraint_residual,passes_constraint
+generated_relational_constraint,120,128,120,8,4.220196766037856e-16,True
+wrong_identity_generator_control,120,128,120,8,0.0925307478333232,False

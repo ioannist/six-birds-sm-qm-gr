@@ -1,0 +1,7 @@
+artifact,claim,grade,source
+record_property_battery_step67.csv,battery of record properties is blind except anti-control,finite-carrier-diagnostic,record_property_battery_step67.csv
+structural_argument_step67.csv,Sigma_f-definability class argument,analytical-structural,structural_argument_step67.csv
+anti_smuggle_step67.csv,global exclusivity flagged as smuggle line,organizational,anti_smuggle_step67.csv
+step67_results_summary.md,summary and caveats,organizational,step67_results_summary.md
+step67_statement.tex,record-irreducibility statement,analytical-structural,step67_statement.tex
+run_step67.py,validator,organizational,run_step67.py

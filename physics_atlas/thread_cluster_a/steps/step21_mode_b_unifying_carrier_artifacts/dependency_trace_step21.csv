@@ -1,0 +1,8 @@
+axiom_id,axiom,used_for
+A1,finite slot carrier with two sector fibers,q lens and trace audit
+A2,sector constancy of the neutral role,well-defined sector charge readout
+A3,trace neutrality across the promoted package,balanced generator equation
+A4,primitive integer holonomy grid,charge quantization
+A5,trace metric on generated operators,coupling normalization
+A6,bridge operators forgotten by q,U non-descent witness
+A7,dual and pair rewrite closure,Stage II anomaly audit

@@ -1,0 +1,11 @@
+artifact,classification,scope
+step51_results_summary.md,organizational + structural-recognition,Summarizes the computed F51/MMI consequence and limits.
+step51_schema.json,organizational,Machine-readable status and validator fields.
+f51_commuting_squares_step51.csv,finite-carrier-diagnostic,Zero-residual F51 square computation.
+geometric_dual_compatibility_step51.csv,finite-carrier-diagnostic,I3-independent entropy-vector/min-cut compatibility test.
+admissible_sets_step51.csv,finite-carrier-diagnostic,Computed with-compatibility and no-compatibility admissible sets.
+child_free_witnesses_step51.csv,finite-carrier-diagnostic,GHZ child witness and GR-alone underdetermination.
+broken_compatibility_control_step51.csv,finite-carrier-diagnostic,Computed no-compatibility control showing MMI unforced.
+anti_circularity_step51.csv,finite-carrier-diagnostic,Anti-circularity gate evidence.
+f51_joint_prediction_statement_step51.tex,analytical-structural finite-carrier-diagnostic,Statement of the finite-carrier consequence; not theorem-grade over all holographic systems.
+run_step51.py,organizational validator,Self/chain validation with anti-circularity teeth.

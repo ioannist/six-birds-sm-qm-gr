@@ -1,0 +1,4 @@
+Step 23 physical quadratic audit enrichment
+Verdict: survives_physical_signature_enrichment
+L compatible: True
+Incompatible control pass: False

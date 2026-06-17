@@ -1,0 +1,23 @@
+\section{Step 28: Neutral Representation De-Smuggling}
+
+\paragraph{Deflationary correction.}
+The external review found that the Step 23--26 gauge-shape landing carried two priors: a slot-count-five lock and an exterior-content ansatz. Step 28 removes both. The build script uses no slot-count equality guard, and the representation alphabet is the neutral set
+\[
+\{\mathrm{singlet},\mathrm{fund},\mathrm{antifund},\mathrm{antisym2},\mathrm{sym2},\mathrm{adjoint}\}.
+\]
+
+\paragraph{Neutral anomaly computation.}
+For each finite candidate in the declared window, the cubic anomaly coefficient is computed as a sum over representation rows using
+\[
+A(\mathrm{fund})=1,\quad
+A(\mathrm{antifund})=-1,\quad
+A(\mathrm{antisym2})=d-4,\quad
+A(\mathrm{sym2})=d+4,
+\]
+with adjoint and singlet contributions zero. The audit also computes mixed nonabelian--abelian, gravitational--abelian, abelian cubic, and Witten parity conditions.
+
+\paragraph{Result.}
+The neutral window contains 280,983 anomaly-free chiral closers across 9 structures. The Step-14 reference support is present in the `2|3' structure, but it is not minimal and is not uniquely distinguished. The verdict is therefore \texttt{CONFIRM\_SMUGGLE}: the earlier landing is demoted to a finite GUT-exterior closure audit / recognition recovery.
+
+\paragraph{Scope.}
+This is a finite-carrier diagnostic. It does not provide a physical gauge-structure theorem, a real selection mechanism, or any frame-transfer status upgrade. The next grammar delta is to add a neutral discriminator beyond anomaly-freedom/minimality, or to declare the exterior/GUT prior explicitly as recognition input.

@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step58_frozen_record_requirement,active_anti_smuggle_constraint,58,Step57 record requirement must be imported verbatim and not retuned
+step58_neutral_broad_carrier,active_anti_smuggle_constraint,58,carrier must include non-CS rows and must not be prefiltered to CS
+step58_divergence_witness_search,active_decisive_test,58,hunt for RS true and CS false witness

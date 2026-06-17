@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step66_no_single_outcome_smuggle,active,66,record predicate cannot require uniqueness
+C_step66_nonfactorization_witness,active,66,Sigma_f-identical readouts split by selection predicate
+C_step66_D_vs_Sigma_location,active,66,forcing selection must locate in D or Sigma_f; naive record stability touches neither

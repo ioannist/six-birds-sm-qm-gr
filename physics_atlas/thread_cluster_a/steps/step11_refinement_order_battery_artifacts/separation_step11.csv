@@ -1,0 +1,2 @@
+all_order_count,random_order_count,min_genuine_final_degeneracy,max_genuine_final_degeneracy,min_landscape_final_degeneracy,max_landscape_final_degeneracy,separation_margin,flipping_order_count,verdict
+204,200,1,1,6,27,5,0,order_invariant_separation

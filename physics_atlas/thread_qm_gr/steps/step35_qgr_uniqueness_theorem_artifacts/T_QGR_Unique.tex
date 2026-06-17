@@ -1,0 +1,225 @@
+\section*{T\_QGR\_Unique: A Bounded-Grammar Uniqueness Theorem for the QM--GR Reconciliation}
+
+\paragraph{Grade.}
+This is a finite-carrier bounded-grammar theorem.  It consolidates Lemma 3
+(Step 33) and Lemma 4 (Step 34).  The uniqueness grade is precise:
+\[
+  \text{unique resolution family}
+  \quad+\quad
+  \text{unique minimal admissible common refinement up to isomorphism}.
+\]
+It is not an absolute physical uniqueness theorem, not an unrestricted
+frame-transfer certificate, and not a claim that the minimal package is the
+only admissible refinement.
+
+\subsection*{Definitions}
+
+\paragraph{Bounded grammar \(G^\ast\).}
+In this theorem, \(G^\ast\) is the finite grammar consisting of:
+\begin{itemize}
+\item the declared carrier over modes
+  \((d0,d1,d2,d3)\), with \(d0\) density, \(d1\) phase, \(d2\)
+  transport, and \(d3\) curvature;
+\item endpoint access quotients
+  \[
+    q_{QM}=(d0,d1,d2),
+    \qquad
+    q_{GR}=(d0,d2,d3);
+  \]
+\item the candidate package
+  \[
+    L=(d0,d1,d2,d3);
+  \]
+\item the co-sourced field-readout model in which a field \(\psi\) supplies
+  \(\mathrm{Born}[\psi]=(\rho,j)\) and \(T[\psi]=(T00,T0i)\);
+\item the native promotion-bridge gates
+  \(G_{suff},G_{desc},G_{stab},G_{ctrl},G_{nosmuggle},G_{vis},G_{audit},G_{strict}\);
+\item F24 layer-multiplicity resolution families:
+  \(\texttt{MemoryLayer}\), \(\texttt{HiddenUpstreamRole}\),
+  \(\texttt{BridgeMediatedRole}\), \(\texttt{BudgetedRole}\),
+  \(\texttt{ScopedRole}\), \(\texttt{CoarsenedRole}\),
+  \(\texttt{OutsideRoleScope}\), and \(\texttt{BlockedNonClosure}\);
+\item F51 unification as common refinement;
+\item the anti-reductionism guardrail: a lawful move may chart, type,
+  recognize, construct, simulate, or audit a layer, but may not smuggle one
+  endpoint as a derivation of the other across a foreclosed boundary.
+\end{itemize}
+
+\paragraph{Access quotient.}
+An access quotient is a finite readout map from the carrier to an observable
+coordinate package.  In this theorem the endpoint access quotients are
+\(q_{QM}\) and \(q_{GR}\).
+
+\paragraph{Common refinement and F51 join.}
+A package \(P\) is a common refinement of \(q_{QM}\) and \(q_{GR}\) when both
+endpoint quotients factor through \(P\).  In the coordinate-lattice grammar,
+the minimal such package is the join of the endpoint-distinguished directions.
+For the declared data, this join is
+\[
+  \{d0,d1,d2\}\cup\{d0,d2,d3\}
+  =
+  \{d0,d1,d2,d3\}=L.
+\]
+
+\paragraph{Admissible.}
+A candidate mediator is admissible only if it carries both endpoint descents
+and passes the native gates, including the no-smuggling gate excluding
+duplicated shared coordinates.
+
+\paragraph{Reconciliation.}
+A QM--GR reconciliation in \(G^\ast\) is a lawful package through which the
+two endpoint access quotients are jointly mediated without directed reduction
+or fused-audit smuggling.  Steps 24--28 give the physical-content form of the
+candidate as a co-sourcing field package: one field \(\psi\) sources both the
+Born/QM and stress-energy/GR readouts.
+
+\paragraph{Unique up to equivalence.}
+Two minimal mediators are equivalent when there is an isomorphism of quotient
+coordinates between them preserving the endpoint descents.  In Step 34 this is
+exhibited by a permutation \(P\) with residual \(0\) in both directions
+between \(L\) and \(L'=PL\).
+
+\subsection*{Theorem}
+
+Within \(G^\ast\), the co-sourcing common-refinement field package \(L\) is
+the unique minimal lawful QM--GR reconciliation up to equivalence.
+
+More precisely:
+\begin{enumerate}
+\item Type uniqueness: the F24 role-split resolves only as
+  \(\texttt{BridgeMediatedRole}\) for the actual maps of \(L\).
+\item Instance uniqueness: inside \(\texttt{BridgeMediatedRole}\), \(L\) is
+  the unique minimal admissible common refinement of \(q_{QM}\) and
+  \(q_{GR}\), up to isomorphism.
+\end{enumerate}
+
+The theorem does not say that \(L\) is the only admissible object.  Step 34
+constructs a five-mode admissible refinement \(M=L+d4\); it is lawful at the
+tested gate level but non-minimal because \(L\) factors through it.
+
+\subsection*{Proof}
+
+\paragraph{Lemma 3: type uniqueness.}
+Step 33 applies all eight structural F24 predicates to the actual maps of
+\(L\).  Exactly one predicate fires:
+\[
+  \texttt{BridgeMediatedRole}(L)=\top.
+\]
+The witness residual for the explicit joint quotient is \(0.0\), and the
+native gate proxy has pass count \(8\).  The remaining seven F24 families are
+computed-excluded.
+
+The Step 33 coarsening search checks all \(8\) quotients obtained by retaining
+subsets of \(q_{QM}\)'s modes.  Every such coarsening leaves \(O_s\) nonempty;
+the minimum obstruction count is \(3\).  Thus
+\(\texttt{CoarsenedRole}\), the finite analogue of a coarsened-only
+reconciliation, is excluded as the full reconciliation type in this grammar.
+The other exclusions are likewise structural: no hidden latent is present,
+the resolution is exact rather than residual-only, no proper scope restriction
+is used, no history coordinate carries the split, \(d3\) is in scope, and a
+closure forms.
+
+Sources:
+\texttt{steps/step33\_partb\_type\_uniqueness\_artifacts/step33\_results\_summary.md},
+\texttt{steps/step33\_partb\_type\_uniqueness\_artifacts/f24\_predicates\_on\_L\_step33.csv},
+and
+\texttt{steps/step33\_partb\_type\_uniqueness\_artifacts/excluded\_family\_rulings\_step33.csv}.
+
+\paragraph{Lemma 4: instance uniqueness.}
+Step 34 computes the common-refinement lattice around \(q_{QM}\) and
+\(q_{GR}\).  Both endpoints factor through \(L\) with residual \(0.0\), and
+the directions of \(L\) are exactly the union of the endpoint directions.  So
+\(L\) is the coordinate-lattice join.
+
+Every drop-one-mode subobject fails to carry both endpoints by positive linear
+obstruction.  The missing-mode endpoint residual in each failure case is
+\[
+  0.5773502691896258.
+\]
+The five-mode refinement \(M=L+d4\) is admissible but non-minimal:
+\[
+  \mathrm{res}(L\leftarrow M)=0.0,
+  \qquad
+  \mathrm{res}(M\leftarrow L)=0.4472135954999579.
+\]
+The direct-sum union
+\[
+  (d0,d1,d2,d0,d2,d3)
+\]
+is not admissible: it has rank \(4\) in dimension \(6\), with extra coordinate
+count \(2\).  Finally, a relabeled copy \(L'=PL\) is isomorphic to \(L\) by an
+exhibited permutation, with residual \(0.0\) in both directions.
+
+Sources:
+\texttt{steps/step34\_partb\_instance\_uniqueness\_artifacts/results\_summary.md},
+\texttt{steps/step34\_partb\_instance\_uniqueness\_artifacts/mediator\_candidates\_step34.csv},
+\texttt{steps/step34\_partb\_instance\_uniqueness\_artifacts/descent\_residuals\_step34.csv},
+and
+\texttt{steps/step34\_partb\_instance\_uniqueness\_artifacts/isomorphism\_check\_step34.csv}.
+
+\paragraph{Controls.}
+Step 33's predicate computation is not tag-driven: the family firing is
+computed from \(L\)'s actual maps, and a second firing family would be reported
+as non-uniqueness.  Step 34's super-minimal control shows that the uniqueness
+claim is not vacuous: other admissible mediators exist, but they are
+refinements above the minimal join rather than second minimal mediators.  The
+drop-one-mode controls show that proper subobjects fail to carry both endpoint
+quotients.
+
+\paragraph{Conclusion.}
+Lemma 3 gives unique resolution type.  Lemma 4 gives unique minimal instance
+within that type, up to isomorphism.  Therefore \(L\) is the unique minimal
+lawful QM--GR reconciliation in \(G^\ast\), up to equivalence.
+
+\subsection*{Relation to Part A}
+
+T\_QG\_NoGo (Step 32) proves that the directed and fused single-object routes
+are not lawful in \(G^\ast\).  T\_QGR\_Unique proves that the lawful
+co-sourcing common-refinement route is unique at the bounded minimal
+up-to-equivalence grade.  Together, the two Mode-T theorems complete the
+bounded program: the fused/derived target is foreclosed in \(G^\ast\), and the
+co-sourcing common-refinement is forced as the unique minimal lawful
+reconciliation in \(G^\ast\).
+
+\subsection*{Seven-Gate Audit}
+
+\begin{enumerate}
+\item Self-contained definitions: \(G^\ast\), access quotient, common
+  refinement, F51 join, admissibility, reconciliation, and equivalence are
+  defined above.
+\item Lemma evidence: Lemma 3 cites Step 33 computation; Lemma 4 cites Step 34
+  computation.
+\item Controls: Step 33 structural predicate controls and Step 34
+  sub-minimal, super-minimal, union, and isomorphism controls are cited.
+\item Bounded grade: finite-carrier bounded-grammar uniqueness, up to
+  equivalence, at the unique-minimal common-refinement grade.
+\item No-smuggling: the direct-sum union's \(G_{nosmuggle}\) failure is part of
+  the instance proof.
+\item Scope boundary: no statement beyond \(G^\ast\) is asserted.
+\item Next obligation: external frame-transfer review
+  \(G\_E018\_FRAME\_TRANSFER\_EXTERNAL\_REVIEW\_STEP35\).
+\end{enumerate}
+
+\subsection*{Interpretation}
+
+Framework-side, the result explains why the co-sourcing semiclassical pattern
+is the lawful reconciliation recovered by the construction: it is the minimal
+common refinement selected by the grammar.  The excluded F24 families line up
+with alternative full-reconciliation programs in the finite analogue: hidden
+latent, coarsened-only, residual-only, regime-scoped, memory-only,
+outside-scope, and blocked-nonclosure resolutions.  They may remain useful as
+local methods or approximations, but they are not the full reconciliation type
+for this \(L\) in \(G^\ast\).  See
+\texttt{interpretation/quantum\_gravity\_is\_illegal.md}
+and
+\texttt{interpretation/ladder\_vs\_fork.md}.
+
+\subsection*{Nonclaim}
+
+This theorem is a bounded statement internal to \(G^\ast\).  It does not make
+an absolute physical uniqueness claim, does not assert a complete physical
+model, does not derive one endpoint from the other, and does not certify frame
+transfer.  The uniqueness notion is exactly: unique resolution family plus
+unique minimal admissible common refinement up to isomorphism on the declared
+finite carrier.  Super-minimal admissible refinements exist and are
+non-minimal.  External review remains the standing next gate.

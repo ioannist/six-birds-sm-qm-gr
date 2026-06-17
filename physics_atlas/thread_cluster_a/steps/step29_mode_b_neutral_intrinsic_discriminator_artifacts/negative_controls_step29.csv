@@ -1,0 +1,4 @@
+control,passes,evidence
+false_target_not_singled_out,True,non-reference survivor exists and predicate survivor count is 1851
+predicate_discriminates_against_some_p2_closers,True,example failing p2 closer: 2::adjoint:-6 + sym2:6
+target_not_forced,True,target passes but is not uniquely selected

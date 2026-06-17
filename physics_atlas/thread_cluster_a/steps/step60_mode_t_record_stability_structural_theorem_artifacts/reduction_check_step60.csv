@@ -1,0 +1,5 @@
+check,passes,evidence
+substrate_nonempty,True,substrate_rows=376
+delta_nonempty_iff_transition_leak_positive_given_substrate,True,verified on Step59 substrate rows
+delta_witness_count_tracks_transition_leak_count,True,Step41 witness count equals transition leak count for evaluated substrate rows
+transition_leak_positive_iff_scalar_breaks_dim_ge_3,True,broken dim-2 leaves residual 1; broken dim>=3 gives charged transition vectors

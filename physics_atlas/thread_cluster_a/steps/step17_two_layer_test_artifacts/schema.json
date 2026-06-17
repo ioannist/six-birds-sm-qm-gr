@@ -1,0 +1,30 @@
+{
+  "step": 17,
+  "artifact_dir": "steps/step17_two_layer_test_artifacts",
+  "verdict": {
+    "step": 17,
+    "source_steps": {
+      "content_selection": "steps/step16_content_selection_principle_artifacts/overall_verdict_step16.json",
+      "facet_factorization": "steps/step9_facet_factorization_test_artifacts",
+      "structural_survivors": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv"
+    },
+    "carrier_disjoint": true,
+    "measure_kind_distinct": true,
+    "scale_vs_content_product_mi_bits": 0.0,
+    "step8_ew_vs_content_residual_bits": 0.035998916879877996,
+    "gauge_generation_control_mi_bits": 0.4662032334857935,
+    "control_detects_known_coupling": true,
+    "coupling_threshold_bits": 0.05,
+    "control_threshold_bits": 0.1,
+    "verdict": "two_selection_layers",
+    "revised_architecture": "content_anomaly_selection_layer plus separate scale_naturalness_selection_layer",
+    "hierarchy_resolved": false,
+    "physical_mass_value_supplied": false,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "inputs": {
+    "step8_survivors": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv",
+    "step16_verdict": "steps/step16_content_selection_principle_artifacts/overall_verdict_step16.json"
+  }
+}

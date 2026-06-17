@@ -1,0 +1,6 @@
+check,passes,evidence
+uses_slot_count_prior,False,"predicates use scalar subgroup and currency data, not slot count"
+uses_parent_or_larger_group_prior,False,no parent or larger-group data enter the predicates
+requires_fixed_factor_count,False,single-factor candidates receive computed subgroup and currency verdicts
+uses_target_content,False,reference key is used only for status reporting
+shape_flavored_current_principle,False,not active as a selector; manager override is recorded in the shape detector

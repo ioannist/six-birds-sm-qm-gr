@@ -1,0 +1,2 @@
+target_residual,canonical_root,sub_residual_of,status,source_artifacts
+window closure for conditional clean-separation selection,distinguish the SM gauge structure by neutral closure plus higher-layer shadow,bounded-window caveat after Steps 38/41,WINDOW_STABLE_BOUND_CANDIDATE_PARTIAL,steps/step43_mode_b_window_closure_artifacts/window_closure_step43.py

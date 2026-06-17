@@ -1,0 +1,22 @@
+{
+  "step": 19,
+  "FIV_source_read": true,
+  "FIV_source_record": {
+    "file": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+    "F35_lines_read": "6470-6523",
+    "source_statement": "t descends to Q_n iff O_n(t) is empty iff a quotient law tbar_n exists; the renormalized law at Q_{n+1} exists iff tbar_n is constant on c-fibers."
+  },
+  "verdict": {
+    "F35_verdict": "renormalizes_on_toy",
+    "joint_law_renormalizes": true,
+    "non_descending_control_fails": true,
+    "obstruction_scale": "none"
+  },
+  "no_smuggling_check": {
+    "non_descending_control_descends": false,
+    "O_n_computed_without_coarsening": false,
+    "f35_source_read": true,
+    "literature_program_terms_used": false,
+    "root_landed": false
+  }
+}

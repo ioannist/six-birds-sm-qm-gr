@@ -1,0 +1,6 @@
+factor_count,candidate_count,closing_count,minimal_closing_dimensions,computed_verdicts
+0,1,0,none,True
+1,4,0,none,True
+2,10,1,2|3,True
+3,20,0,none,True
+4,35,0,none,True

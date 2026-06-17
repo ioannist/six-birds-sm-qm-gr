@@ -1,0 +1,23 @@
+{
+  "atomic_rewrite_packaging_count": 156,
+  "closure_consistency_count": 130,
+  "corrected_carrier_count": 11990,
+  "corrected_chirality_count": 80,
+  "corrected_pre_post_dominance_changed": false,
+  "frame_transfer_certified": false,
+  "landed": false,
+  "mode": "ModeB_corrected_anomaly_chirality",
+  "narrow_progress": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "conjoin an F24 role-obstruction selector or P6 audit-saturation ledger over the corrected chirality-faithful pool",
+  "old_carrier_count": 280983,
+  "old_dominance_broken": true,
+  "root_landed": false,
+  "step": 33,
+  "target_distinguished": false,
+  "target_passes_final": true,
+  "target_present_carrier": true,
+  "target_structure_is_post_dominant": false,
+  "typed_no_go": false,
+  "verdict": "NARROW"
+}

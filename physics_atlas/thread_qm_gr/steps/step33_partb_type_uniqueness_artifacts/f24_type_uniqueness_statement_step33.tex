@@ -1,0 +1,29 @@
+\section*{Step 33: F24 Type-Uniqueness of the QM--GR Role-Split}
+
+\paragraph{Finite data.}
+Let \(H\) be the eight-state finite carrier over modes
+\[
+  (d_0\ {\rm density}, d_1\ {\rm phase}, d_2\ {\rm transport}, d_3\ {\rm curvature}).
+\]
+Let \(q_{\rm QM}=(d_0,d_1,d_2)\), let \(s=d_3\), and let
+\[
+  \pi_L=(d_0,d_1,d_2,d_3).
+\]
+The maps \(a\pi_L=q_{\rm QM}\) and \(b\pi_L=s\) are the actual maps used in Steps 17--18 and structuralized in Step 21.
+
+\paragraph{Computation.}
+The script \texttt{type\_uniqueness\_step33.py} evaluates all eight structural F24 predicates on \(L\).  The predicate table records exactly one firing predicate:
+\[
+  {\rm BridgeMediatedRole}(L)=\top,
+\]
+with all seven remaining families false.  The coarsening search checks every quotient obtained by retaining a subset of the \(q_{\rm QM}\) modes; every such coarsening leaves \(O_s\) nonempty, with minimum obstruction count \(3\).
+
+\paragraph{Verdict.}
+Within the declared finite grammar, the QM--GR role-split has a unique F24 resolution type:
+\[
+  \boxed{{\rm BridgeMediatedRole}.}
+\]
+The hidden-latent, coarsened-only, budget-only, scoped-only, memory, outside-scope, and blocked-nonclosure alternatives are computed-excluded as full reconciliation types for this \(L\).
+
+\paragraph{Nonclaim.}
+This is type-uniqueness only.  It does not prove instance-uniqueness among all possible mediated objects, and it does not certify frame transfer beyond the finite carrier.

@@ -1,0 +1,5 @@
+Step 19 F35 scale descent / renormalization
+Joint law renormalizes on toy: True
+Non-descending control passes F35: False
+Non-descending control has O_n obstruction: True
+F35 verdict: renormalizes_on_toy

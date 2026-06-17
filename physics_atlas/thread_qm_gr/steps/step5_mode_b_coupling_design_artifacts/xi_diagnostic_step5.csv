@@ -1,0 +1,17 @@
+level_regions,carrier_dimension,group,name,raw_trace_xi,trace_kdd,normalized_trace_xi,status
+2,5,sector,area_shadow_sector,0.0,0.9999999999999998,0.0,closed_by_Pstar_v1
+2,5,sector,amplitude_geometry_sector,0.0,0.9999999999999998,0.0,closed_by_Pstar_v1
+2,5,sector,p3_route_sector,0.0,1.0,0.0,closed_by_Pstar_v1
+2,5,bridge,Bridge_HED_LQG_area_geometry,0.0,0.9999999999999998,0.0,closed_by_generation_map
+2,5,bridge,Bridge_LQG_AS_discrete_continuum,0.0,1.0,0.0,closed_by_generation_map
+2,5,bridge,Bridge_HED_AS_boundary_continuum,1.0,1.0,1.0,survives_G_v1
+2,5,bridge,Bridge_triple_joint_package,1.0,1.0,1.0,survives_G_v1
+2,5,coupled_joint,all_sectors_plus_all_bridges,2.0,7.0,0.2857142857142857,partial_residual_survives
+4,7,sector,area_shadow_sector,0.0,1.0,0.0,closed_by_Pstar_v1
+4,7,sector,amplitude_geometry_sector,0.0,1.0,0.0,closed_by_Pstar_v1
+4,7,sector,p3_route_sector,0.0,1.0,0.0,closed_by_Pstar_v1
+4,7,bridge,Bridge_HED_LQG_area_geometry,0.0,1.0,0.0,closed_by_generation_map
+4,7,bridge,Bridge_LQG_AS_discrete_continuum,0.0,1.0,0.0,closed_by_generation_map
+4,7,bridge,Bridge_HED_AS_boundary_continuum,1.0,1.0,1.0,survives_G_v1
+4,7,bridge,Bridge_triple_joint_package,1.0,1.0,1.0,survives_G_v1
+4,7,coupled_joint,all_sectors_plus_all_bridges,2.0,7.0,0.2857142857142857,partial_residual_survives

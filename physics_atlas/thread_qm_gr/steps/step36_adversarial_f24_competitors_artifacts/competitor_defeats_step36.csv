@@ -1,0 +1,6 @@
+family,competitor_name,defining_structure_present,defeat_mechanism,computed_witness,L_comparison,passes_full_reconciliation
+HiddenUpstreamRole,H_latent_lambda_d3,True,inadmissible_or_collapses_to_L,hidden_failed_gates=G_suff;G_desc;G_vis;G_audit;G_strict; hidden_gr_residual=0.57735; exposed_gate_pass=True; exposed_iso_residual=0; L_explicit_gate_pass=True,L is explicit and admissible; exposed lambda equals L up to zero residual,False
+CoarsenedRole,C_best_linear_and_polynomial_d3_from_qQM,True,positive_residual_even_nonlinear,min_heldout_residual_degrees_1_to_4=1.12207; O_s_count=3; witnesses=0-1;2-3;6-7,L carries d3 exactly with explicit joint residual 0,False
+BudgetedRole,B_rank_reduced_cutoff_d3_hat,True,positive_cutoff_residual,cutoff_gr_residual=0.57735; priced_residual=0.57735; L_gr_residual=0,L closes endpoint descent exactly while B retains a priced cutoff residual,False
+ScopedRole,S_proper_scope_no_duplicate_fibers,True,fails_off_scope,scope_indices=0;2;4;5;6; scope_O_s=0; full_O_s=3,L reconciles the full carrier; S only resolves a proper subcarrier,False
+MemoryLayer,Mem_history_record_d3,True,inadmissible_or_collapses_to_L,history_hidden_failed_gates=G_suff;G_desc;G_vis;G_audit;G_strict; history_gr_residual=0.57735; exposed_gate_pass=True; exposed_iso_residual=0,audited history coordinate is the same explicit joint coordinate as L,False

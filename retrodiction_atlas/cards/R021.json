@@ -1,0 +1,132 @@
+{
+  "id": "R021",
+  "schema_note": "Enriched card merging the original retrodiction card, the parameter/ad-hoc audit, the four-skeptic adversarial panel, and the Repair-Agent + Fertility-Judge output (repair + 0-5 scores + triage). Written by the Repair Agent for R021. All source claims were re-verified against /home/repos/six-birds-papers/Tsiokos_2026_Self_Dual_Trace_Confinement...tex (master theorem lines 874-894; typed-cone scope 1151-1158; no-novelty 1182-1196; CPT pointer 1232-1238), Foundations IV (F14 layer-inst lines 2953-3019; statPartial/needs-strengthening 9824, 10074; disjunction guard 9692/9898), and the RH paper (conditional GamSDTC-Selberg => RH, lines 149-152, 219-274).",
+
+  "original_card": {
+    "one_sentence_claim": "SBT's proved duality-confinement membrane theorem (MasterTheorem.masterTheorem) converts, for any involutive ledger with separating anti-invariant readout and a trace-vanishing domination sequence, the budget A_X<=B_n with trace B_n -> 0 into confinement of visible mass to the fixed locus Fix(J); instantiating J as the CPT operation yields a STRUCTURAL PREDICTION (not a theorem) that a CPT-genuine formed layer cannot retain visible CPT-odd mass once domination records are supplied.",
+    "target_known_fact": "The CPT theorem (Lueders-Pauli; Streater-Wightman): a Lorentz-invariant local quantum field theory with the spin-statistics connection is invariant under the antiunitary CPT operation, so observable physics is confined to the CPT-invariant sector. The same template targets charge conjugation C (particle-antiparticle / self-conjugate fixed locus), self-adjointness (reality of self-adjoint spectra under Hermitian conjugation), and unbroken PT-symmetric Hamiltonians with real spectra (Bender-Boettcher 1998).",
+    "scientific_domain": "Quantum field theory / particle physics: discrete spacetime/internal symmetries (CPT, C, PT, self-adjointness) reframed as confinement to a duality fixed locus under an involutive ledger.",
+    "argument_family": "symmetry-emergence (fixed-locus confinement of an anti-invariant obstruction under an involutive self-duality + vanishing trace budget)",
+    "derivability_class": "D",
+    "minimum_viable_result": "Do NOT touch CPT. Produce a fully worked, Lean-checked single-substrate validation of the master theorem on a substrate where the involution, separating readout, and a CONSTRUCTED (not opaque) trace-vanishing domination sequence are all explicit and elementary -- e.g. the transpose involution on Mat_n(R) (Frobenius skew readout, fixed locus Sym_n) or the finite Hermitian-symmetric DTFT instantiation from F14. This demonstrates the engine end-to-end with no opaque recognition source, exactly recovering an elementary fixed-locus fact, and is honestly labeled as engine validation, not a physics retrodiction.",
+    "baseline_comparison": "RECOVERY (and weaker than recovery, for CPT specifically): SBT does NOT do better than, and does not even independently reproduce, the standard CPT account. The standard CPT theorem DERIVES CPT invariance from Lorentz invariance + locality + spin-statistics. SBT's master theorem assumes a genuine CPT involution and a vanishing CPT-odd budget already exist, then mechanically converts them into confinement -- i.e. it reorganizes/relabels an assumed symmetry. What is genuinely reorganized is the SHARED SHAPE across discrete symmetries (CPT, C, PT, self-adjointness, Galois, Smith theory): one uniform 'confinement to a fixed locus under involution + vanishing anti-invariant trace budget' law. The proved master theorem is a typed-cone abstraction of an elementary classical fact (a positive trace-class operator dominated by traces tending to zero is zero); the paper explicitly claims no novelty for the underlying operator theory.",
+    "honest_status_note": "NOT a theorem of SBT and NOT a derivation of the CPT theorem. SDTC sec:scope/sec:discussion states CPT/gauge/C are 'structural predictions and validation targets for future work, not theorems established here' and 'a pointer toward the shape of a validation problem, not a derivation of CPT invariance.' What IS proved and Lean-certified is only the apparatus/master theorem at the typed positive-cone level. For CPT, all three load-bearing hypotheses are externally supplied. Correctly tagged grounded=false, derivability_class D."
+  },
+
+  "verification_notes": {
+    "master_theorem_confirmed": "SDTC thm:duality_confinement:master-theorem (lines 874-894): given involutive object ledger with qualitatively separating psim, B_n with A_X<=B_n and trace B_n->0, then A_X=0 in the typed positive cone and mu(X\\Fix(J))=0. Footnoted as Lean-verified MasterTheorem.masterTheorem. Proof is a four-step operator squeeze; step three explicitly 'uses the typed-cone abstraction rather than a full trace-class operator theory' (lines 919-924).",
+    "no_novelty_confirmed": "SDTC lines 1182-1196: 'No novelty is claimed for standard operator theory' -- Douglas factorization, trace functionals, Loewner order, Markov estimates, AM-GM, rank-one trace identities are classical; the contribution is 'the structural packaging.'",
+    "typed_cone_scope_confirmed": "SDTC lines 1151-1158: master theorem at abstract positive-cone level only; trace-class/Hilbert-Schmidt/Schatten generality 'is not developed here as a full analytic model.'",
+    "cpt_is_pointer_confirmed": "SDTC lines 1232-1238: CPT candidate involution = CPT operation; fixed locus = CPT-invariant sector; readout = CPT-anti-invariant component; 'The structural prediction is that a CPT-genuine formed layer cannot retain visible CPT-odd mass once the domination records are available. This is a pointer toward the shape of a validation problem, not a derivation of CPT invariance.' CPT is NOT among the discharged F14 instantiations.",
+    "f14_status_confirmed": "Foundations IV F14 marked statPartial / needs-strengthening (lines 9824, 10074), discharged only via a definitional disjunction guard with DualityFixitySubstrateAnchor (lines 9692, 9886-9941); no public constructor. F14 layer instantiations (lines 2953-3019) list transpose/Sym_n (Frobenius readout), Bender-Boettcher PT, Hermitian-symmetric DTFT, Galois conjugation, Smith theory -- all elementary math/known physics; CPT/C/gauge appear only as discussion pointers, not instantiations.",
+    "transpose_substrate_status": "The transpose/Sym_n instantiation (lines 2956-2966) describes the readout ||A-A^T||_F and asserts that 'vanishing of this norm along a Loewner-dominating sequence controlled by a self-adjoint trace budget forces A into Sym_n.' This is a normal-form POINTER stated qualitatively; the domination sequence is described, not CONSTRUCTED-and-Lean-checked end-to-end. The card's minimum-viable result (actually construct it) is therefore genuinely not yet done in the corpus -- the proposed quick win is real, not redundant.",
+    "rh_conditional_confirmed": "RH-via-SDTC main theorem is the conditional GamSDTC-Selberg => RH on the typed zero ledger (lines 149-152, 219-274); 'not an unconditional proof in standard ZFC'; the recognition source GamSDTC-Selberg is 'not claimed to be derivable' (line 274). So even the strongest existing single-substrate instance rests on an undischarged external recognition source -- the CPT case is not weaker in KIND, only in that CPT additionally imports the Lorentz+locality=>CPT physics from entirely outside SBT.",
+    "disclaimers_crossed": "As a derivation of the CPT theorem, the claim would cross SBT's standing disclaimers (no continuum/QFT interface; no pointer-basis/lens selection; finite/typed-cone only). The SDTC paper avoids this by labeling CPT a structural prediction, not a theorem -- so the framing itself does NOT cross a disclaimer, but any upgrade to 'retrodiction/derivation' would."
+  },
+
+  "audit": {
+    "degrees_of_freedom_estimate": 6,
+    "data_points_matched": 0,
+    "overfitting_risk": "high",
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "explicit_parameters_summary": "J declared = CPT (not selected by SBT); trace-vanishing domination sequence B_n (opacity-guarded, undischarged, no public constructor for CPT); separating anti-invariant readout psim (unproved for CPT); carrier X / measure mu / response space Y / J_iso (declared per substrate); quantitative separation modulus m(epsilon).",
+    "implicit_parameters_summary": "Lens/pointer-basis/record-algebra defining 'the visible ledger' (disclaimed, no canonical-lens principle); completion/prototype lift U_f (selected, not unique); typed-cone faithfulness to the operator algebra (open extension); 'formed closure' declaration (asserted, not constructed); timescale tau in the packaging endomap; choice of which component is labeled anti-invariant (J_iso declaration).",
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "In a CPT-violating world the template accommodates equally: withholding/failing to supply the opaque domination sequence makes the master theorem's hypothesis fail and it concludes nothing -- visible CPT-odd mass is allowed. To 'predict' confinement, declare J=CPT, assert a separating readout, and supply a trace-vanishing B_n. SBT has no internal machinery deciding which world obtains: it does not derive J=CPT, does not prove separation, has no constructor for B_n. The one mild guard is monotonicity -- the engine cannot manufacture confinement WITHOUT a vanishing-trace input, so it cannot fake confinement out of nothing -- but it also cannot rule the opposite world out, and supplying the input is unconstrained."
+    },
+    "audit_verdict": "HIGH FLEXIBILITY / NOT A RETRODICTION (engine real, CPT application is a declared relabeling). grounded=false and derivability_class D are correct. Proved+Lean-certified content (MasterTheorem.masterTheorem) is an abstract typed-cone squeeze the paper itself states is an elementary classical operator fact for which 'no novelty is claimed.' For CPT all three load-bearing hypotheses are externally supplied; ~5 explicit + ~6 implicit free choices vs ZERO quantitative data points; opposite-world test passes trivially; real circularity (the three hypotheses jointly approximate the conclusion). Mechanism reuse is genuine (transpose/Sym_n, Hermitian DTFT, PT/Bender-Boettcher, Galois, Smith, RH critical line, plus CPT/C/gauge pointers) but discharged instances are elementary math facts and every physics instance is an undischarged pointer. Honesty is exemplary and every gap disclosed. RECOMMENDATION: deliver the Lean-checked engine validation on an elementary substrate with a CONSTRUCTED domination sequence (transpose/Sym_n), and write CPT/C/self-adjointness as clearly-flagged conditional structural predictions with the three undischarged hypotheses called out, parallel to RH-via-SDTC. Do NOT present any CPT result as a theorem."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.0,
+    "fatal_objections_present": true,
+    "roles": [
+      "Skeptical general relativist / axiomatic-QFT physicist",
+      "Skeptical mathematical physicist (axiomatic/algebraic QFT and operator theory)",
+      "Effective-field-theory / known-physics-recovery skeptic",
+      "Axiomatic/algebraic QFT specialist with operator-theory and formal-verification background"
+    ],
+    "consensus_fatal_objections": [
+      "For CPT the conclusion is recovered by feeding it in: declaring J=CPT-genuine and asserting a trace-vanishing CPT-odd budget is essentially asserting 'CPT is a genuine symmetry with vanishing anti-invariant content' -- the conclusion itself (real, not hypothetical, circularity).",
+      "Opposite-world test passes trivially: withholding the opaque, no-public-constructor domination sequence B_n makes the engine permit visible CPT-odd mass; the output is a faithful echo of the declared budget, giving zero discriminating power over nature.",
+      "Zero quantitative data points matched; CPT is a selection-rule/no-go fact, no CPT-violation bound (e.g. neutral-kaon mass-difference limits) is computed or used; the 'match' is the assumed input re-emitted.",
+      "The hard physics (Lorentz invariance + microcausality + spin-statistics => CPT) is entirely absent from every SBT paper; SBT imports it wholesale as a declaration -- worse than RECOVERY against the standard CPT theorem which DERIVES it."
+    ],
+    "consensus_serious_objections": [
+      "Master theorem is only at the typed positive-cone level; genuine QFT CPT-odd content needs trace-class/Schatten operator theory, an acknowledged open extension; transport is unverified.",
+      "Lens/pointer-basis non-uniqueness: 'CPT-odd visible component' is defined only relative to an undeclared record basis (disclaimed by SBT); the budget A_X is basis/embedding-dependent.",
+      "Mechanism reuse is real but every PHYSICS instance is undischarged; only elementary math facts (transpose, DTFT, Galois, Smith) are genuinely closed, and even RH-via-SDTC is conditional on an unconstructed recognition source.",
+      "DOF (~5 explicit + ~6 implicit) vastly exceed data matched (zero); unfalsifiable for CPT; overfitting_risk correctly HIGH."
+    ],
+    "repairable_objections_consensus": [
+      "The minimum-viable / fallback deliverable IS sound and survives review: a Lean-checked engine validation on an elementary substrate (transpose involution on Mat_n(R), Frobenius skew readout ||A-A^T||_F, fixed locus Sym_n) with a CONSTRUCTED (non-opaque) domination sequence, honestly labeled engine validation, crossing no disclaimer.",
+      "The 'stronger result' for quantum self-adjointness (J=Hermitian conjugation, fixed locus self-adjoint operators, skew-Hermitian readout) could in principle CONSTRUCT a trace-vanishing domination sequence from formed-closure data and upgrade one F14 row from pointer to worked validation -- research-level, not done.",
+      "The honest-status framing is already exemplary (grounded=false, derivability_class D, explicit circularity-risk note, 'structural prediction not theorem') and need not be repaired."
+    ],
+    "minimum_acceptance_conditions_consensus": [
+      "Present NO CPT/C/gauge/PT result as a theorem of SBT or as a derivation/recovery of the CPT theorem.",
+      "Restrict the deliverable to (a) restating MasterTheorem.masterTheorem and (b) a Lean-checked engine validation on an elementary substrate with a CONSTRUCTED domination sequence (transpose/Sym_n canonical).",
+      "Any CPT statement appears only as an explicitly-flagged conditional structural prediction with all three undischarged hypotheses (genuine CPT involution, separating CPT-odd readout, trace-vanishing recognition source) named as the gap, parallel to the RH-via-SDTC conditional.",
+      "State the typed-cone vs trace-class scope fence and the finite-state / no-continuum / no-pointer-basis limitations explicitly wherever CPT/QFT is mentioned; carry grounded=false and derivability_class D verbatim.",
+      "Concede the engine confines mass to Fix(J) for ANY declared involution J once an opaque vanishing budget is asserted, so the conclusion tracks the declaration, not nature."
+    ],
+    "is_actually_new": false,
+    "beats_baseline": false,
+    "adversarial_survival_scores": [1, 1, 1, 1]
+  },
+
+  "repair_and_scores": {
+    "repair_status": "repaired_narrowed",
+    "repair_summary": "Applied only allowed repairs: (1) SPLIT the overbroad claim into its two genuinely distinct parts -- the Lean-certified substrate-agnostic master theorem (real) versus the CPT instantiation (a declared relabeling); (2) NARROWED the deliverable from 'CPT structural prediction' to the engine-validation minimum-viable result; (3) turned the qualitative F14 transpose pointer into a CONSTRUCTED bound target (build, not merely describe, the trace-vanishing domination sequence B_n for ||A-A^T||_F so that A_X<=B_n, trace B_n->0 => A=A^T, Lean-checked end to end); (4) REMOVED the CPT-as-prediction status, re-expressing CPT/C/self-adjointness strictly as conditional implications 'IF a genuine involutive self-duality with separating anti-invariant readout and a trace-vanishing domination source is supplied THEN visible anti-invariant mass confines to Fix(J)', with the three undischarged hypotheses named as the gap. No arbitrary assumptions added, no imported physics hidden, no uniqueness asserted, no 'naturally emerges' rhetoric. The repaired object makes NO physics retrodiction claim and crosses NO SBT disclaimer.",
+    "what_could_not_be_repaired": "The CPT retrodiction itself cannot be repaired into a derivation by allowed moves: it requires either importing the Lorentz+locality+spin-statistics=>CPT content (outside SBT scope, forbidden to fabricate) or constructing the opaque domination sequence for an actual QFT carrier (research-level, no public constructor). Both are genuine open research, not editorial repairs. The opposite-world flexibility and circularity are structural, not removable by narrowing.",
+    "repaired_one_sentence_claim": "SBT's Lean-certified duality-confinement master theorem (MasterTheorem.masterTheorem) is an elementary typed-positive-cone squeeze -- given an involutive ledger with a qualitatively separating anti-invariant readout and a trace-vanishing domination sequence (A_X<=B_n, trace B_n->0), it forces A_X=0 and mu(X\\Fix(J))=0 -- and the defensible deliverable is an end-to-end engine validation on an elementary substrate with a CONSTRUCTED (non-opaque) domination sequence (transpose involution on Mat_n(R), Frobenius skew readout, fixed locus Sym_n), with CPT/C/self-adjointness stated only as clearly-flagged conditional structural predictions whose three undischarged hypotheses (genuine involution, separating readout, trace-vanishing recognition source) are the gap.",
+    "new_minimum_viable_result": "A Lean-checked engine-validation note that (1) restates MasterTheorem.masterTheorem unchanged; (2) fully instantiates it on Mat_n(R) under the transpose involution with the Frobenius skew readout ||A-A^T||_F, CONSTRUCTING an explicit positive-cone sequence B_n with A_X<=B_n and trace B_n->0 (e.g. B_n = (1/n) * (a fixed positive dominator) or a directly built shrinking envelope of the skew part), numerically and symbolically exhibiting the squeeze A_X<=B_n, trace B_n->0 => A_X=0 => A=A^T on a few explicit matrices; (3) optionally repeats on the finite Hermitian-symmetric DTFT case; and (4) writes the CPT/C/self-adjointness conditionals in a clearly-flagged 'structural prediction / validation target' section with the three undischarged hypotheses called out, parallel to the RH-via-SDTC conditional. Explicitly labeled engine validation, NOT a physics retrodiction; carries grounded=false, derivability_class D.",
+    "scores": {
+      "impact": 2,
+      "execution_ease": 4,
+      "plausibility": 4,
+      "non_ad_hocness": 2,
+      "discriminative_power": 0,
+      "audience_legibility": 4,
+      "precision": 2,
+      "robustness": 2,
+      "baseline_advantage": 0,
+      "publication_potential": 2
+    },
+    "score_rationale": {
+      "impact": "2 -- A uniform 'confinement to a fixed locus under involution + vanishing anti-invariant trace budget' law is an appealing organizational observation across CPT/C/PT/self-adjointness/Galois/Smith, but the discharged instances are elementary facts and every physics instance is an undischarged pointer, so the actual physics impact is near zero; the engine-validation note has modest formal-methods/expository impact only.",
+      "execution_ease": "4 -- The master theorem is already proved and Lean-certified; the minimum-viable transpose/Sym_n construction with a CONSTRUCTED domination sequence is days-to-weeks of careful work plus Lean plumbing. Capped below 5 by the Lean plumbing and the need to genuinely build (not describe) the squeeze.",
+      "plausibility": "4 -- The proved squeeze is correct and elementary; the engine-validation deliverable will plainly succeed. Not 5 because the typed-cone-to-trace-class transport for any genuine operator content remains unverified.",
+      "non_ad_hocness": "2 -- The engine itself is non-ad-hoc (a clean abstraction of a classical fact, Lean-anchored). But the CPT instantiation is maximally ad hoc: J=CPT, separation, and the vanishing budget are all declared/opaque, jointly encoding the conclusion. The split deliverable rescues the engine half but the physics half stays ad hoc; net 2.",
+      "discriminative_power": "0 -- Opposite-world test passes trivially (withhold the opaque domination sequence and the engine permits visible CPT-odd mass). Zero data points matched; the output is a faithful echo of the declared budget. No power to distinguish a CPT-respecting from a CPT-violating world.",
+      "audience_legibility": "4 -- Lean-certified, cleanly stated, honestly scoped; mathematical physicists, operator theorists, and the Lean community can read it directly. Slightly below 5 because the CPT framing risks being over-read as a physics claim by non-specialists.",
+      "precision": "2 -- The engine statement is precise (exact squeeze, exact fixed locus). But SBT's disclaimers cap precision for anything touching CPT/QFT: no continuum interface, no pointer-basis selection, finite/typed-cone only, so the physics-facing claim has no quantitative precision (no CPT-violation bound computed).",
+      "robustness": "2 -- The proved engine is robust. The CPT application is fragile: basis/lift-dependent budget, opacity-guarded recognition source, typed-cone vs trace-class gap. The engine-validation deliverable is robust but narrow.",
+      "baseline_advantage": "0 -- Pure recovery, and for CPT specifically WORSE than recovery: the standard CPT theorem derives invariance from physical axioms; SBT imports the involution and the vanishing budget as declarations and relabels. No advantage over the Lueders-Pauli/Streater-Wightman baseline; disclaimers cap this at 0.",
+      "publication_potential": "2 -- The engine-validation note (restated master theorem + constructed transpose/Sym_n squeeze + honest conditional CPT section) is a clean, honest, Lean-anchored short note publishable as a formal-methods / structural-law validation, but it is elementary, makes no new physics or math claim, and the paper itself disclaims novelty -- so limited venue appeal beyond the SBT/Lean community."
+    },
+    "remaining_objections": [
+      "Even after narrowing, the CPT/C/gauge rows remain undischarged pointers with no public constructor for the recognition source; the conditional is real but vacuous until a trace-vanishing domination sequence is CONSTRUCTED for a genuine physical substrate.",
+      "The typed-cone-to-trace-class/Schatten transport is unverified, so the engine has not been shown to model any real CPT-odd operator content.",
+      "The 'CPT-odd visible component' remains basis/lens-dependent (no canonical-lens principle), so even the object being confined is not canonically defined for physics.",
+      "Zero quantitative data points are matched and the opposite-world test still passes; the construction has no discriminating power over nature even after repair (this is structural, not editorial).",
+      "Circularity persists for the physics rows: the three hypotheses jointly approximate the conclusion; narrowing discloses this but does not remove it."
+    ],
+    "proposed_bin": "B",
+    "bin_rationale": "B = foundational sanity check. The defensible deliverable is exactly an engine-validation / sanity check: restate a Lean-certified theorem and exercise it end-to-end on an elementary substrate with a CONSTRUCTED (non-opaque) domination sequence, confirming the apparatus does what it claims and recovering an elementary fixed-locus fact. It is not a quick publishable win (A) because it makes no new claim; not a flagship (C); not numerical-risk (D); and it is more than a pure conceptual reframing (E) because it produces a concrete Lean-checked artifact. F (avoid/delay) is wrong because the engine validation is cheap, honest, and genuinely fills the corpus gap (the transpose row is currently only a qualitative pointer). The CPT physics retrodiction itself belongs in F (avoid) and must not be pursued as a derivation.",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short Lean-checked engine-validation note: (1) restate MasterTheorem.masterTheorem; (2) fully instantiate on Mat_n(R) under transpose (Frobenius skew readout ||A-A^T||_F, fixed locus Sym_n) with an explicitly CONSTRUCTED positive-cone domination sequence B_n (A_X<=B_n, trace B_n->0), demonstrated numerically and symbolically; (3) optionally the finite Hermitian-symmetric DTFT case from F14; (4) a clearly-flagged 'structural prediction / validation target' section writing the conditional CPT/C/self-adjointness statements with the three undischarged hypotheses named as the gap, parallel to RH-via-SDTC. No CPT result presented as a theorem.",
+    "one_line_verdict": "Real Lean-certified engine (an elementary typed-cone squeeze) wrapped around a CPT 'prediction' that is a declared, opposite-world-symmetric relabeling with zero discriminative power; repair = ship the honest engine validation on transpose/Sym_n with a CONSTRUCTED domination sequence and keep CPT as a flagged conditional only.",
+    "mechanism_tag": "orbit-descent",
+    "target_audience": [
+      "Mathematical physicists working on discrete symmetries (CPT, C, PT-symmetric quantum mechanics) and axiomatic/algebraic QFT",
+      "Researchers in operator theory / trace-class methods interested in fixed-locus / Loewner-domination squeeze arguments",
+      "Formal-methods / Lean proof-engineering community (the master theorem and apparatus are Lean-certified at the typed-cone level)",
+      "SBT / structural-emergence framework researchers building Foundations IV layer-agnostic law instantiations"
+    ]
+  }
+}

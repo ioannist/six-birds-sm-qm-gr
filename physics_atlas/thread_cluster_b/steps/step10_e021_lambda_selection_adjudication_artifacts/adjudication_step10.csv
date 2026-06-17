@@ -1,0 +1,4 @@
+horn,initial_degeneracy,final_degeneracy,sequence,monotone_nonincreasing,collapses_to_point,final_significant_Lambda_values,certified_by_P6,framework_status
+broad_anthropic_landscape,10,10,10->10->10->10->10->10,True,False,0.002926268369341;0.003166268369341;0.003386268369341;0.004106268369341;0.004353964606318;0.004546268369341;0.004593964606318;0.004813964606318;0.005533964606318;0.005973964606318,False,landscape_nonclosing
+relaxation_attractor,10,1,10->10->5->1->1->1,True,True,0.0031662683693406,True,certified_selection
+sharp_selecting_measure,10,1,10->10->7->3->2->1,True,True,0.003166268369341,True,certified_selection

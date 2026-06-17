@@ -1,0 +1,2 @@
+reproduced_step35_survivors,base_shadow_survivors,clean_shadow_survivors,clean_shadow_structures,single_factor_base_survives,single_factor_clean_survives,target_passes,target_distinguished,verdict,next_grammar_delta
+12,12,8,2|3:8,True,False,True,False,SHADOW_UNIQUENESS_WITH_CONTENT_LIMIT,content boundary remains: clean higher-layer shadow selects the structure family but leaves content orientation unresolved

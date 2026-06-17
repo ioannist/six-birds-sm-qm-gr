@@ -1,0 +1,5 @@
+object,dimension,visible_basis,qm_only_mode
+party_A,2,"path bit a in {0,1}",relative phase in local superposition
+party_B,2,"path bit b in {0,1}",relative phase in local superposition
+fork_admissible_mediator_record,4,"record label (a,b)",absent by fork access tuple and fused-route no-go
+forbidden_control_phase,1,not a record channel,coherent conditional phase phi=1.57079632679

@@ -1,0 +1,23 @@
+antecedent,consequent,implication_holds_on_carrier,extensionally_equivalent_on_carrier,witness_against_implication
+base_shadow,no_light_xy,True,True,
+base_shadow,no_baryon_violating_xy,False,False,support_08|support_09|support_10|support_11
+base_shadow,bare_proton_stability,False,False,support_08|support_09|support_10|support_11
+base_shadow,clean_separation,False,False,support_08|support_09|support_10|support_11
+no_light_xy,base_shadow,True,True,
+no_light_xy,no_baryon_violating_xy,False,False,support_08|support_09|support_10|support_11
+no_light_xy,bare_proton_stability,False,False,support_08|support_09|support_10|support_11
+no_light_xy,clean_separation,False,False,support_08|support_09|support_10|support_11
+no_baryon_violating_xy,base_shadow,True,False,
+no_baryon_violating_xy,no_light_xy,True,False,
+no_baryon_violating_xy,bare_proton_stability,True,True,
+no_baryon_violating_xy,clean_separation,True,True,
+bare_proton_stability,base_shadow,True,False,
+bare_proton_stability,no_light_xy,True,False,
+bare_proton_stability,no_baryon_violating_xy,True,True,
+bare_proton_stability,clean_separation,True,True,
+clean_separation,base_shadow,True,False,
+clean_separation,no_light_xy,True,False,
+clean_separation,no_baryon_violating_xy,True,True,
+clean_separation,bare_proton_stability,True,True,
+clean_separation,no_baryon_violating_xy,True,True,definition-level clean is stronger; converse can fail on richer carriers with B-preserving exotic vectors
+no_baryon_violating_xy,bare_proton_stability,True,True,F27 descent obstruction is computed from the same baryon-orbit-enlarging subset

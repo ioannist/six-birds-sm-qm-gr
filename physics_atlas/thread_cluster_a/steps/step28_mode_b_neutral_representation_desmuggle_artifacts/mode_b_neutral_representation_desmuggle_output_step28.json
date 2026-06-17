@@ -1,0 +1,16 @@
+{
+  "frame_transfer_certified": false,
+  "minimal_closer_count": 4,
+  "minimal_score": "1|4|2|2",
+  "mode": "ModeB_neutral_representation_desmuggle",
+  "neutral_anomaly_free_closer_count": 280983,
+  "new_physics_claim": false,
+  "next_grammar_delta": "add a neutral discriminator beyond anomaly-freedom/minimality or declare GUT-exterior recognition as a Mode-A prior",
+  "reference_distinguished_without_prior": false,
+  "reference_present": true,
+  "root_landed": false,
+  "step": 28,
+  "structure_count": 9,
+  "typed_no_go": true,
+  "verdict": "CONFIRM_SMUGGLE"
+}

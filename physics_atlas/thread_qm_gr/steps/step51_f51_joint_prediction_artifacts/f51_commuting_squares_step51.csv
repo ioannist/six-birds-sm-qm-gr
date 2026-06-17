@@ -1,0 +1,3 @@
+square_id,parent,child,projection_pi,interpretation_iota,computed_residual_norm,commutes
+F51_QM_square,"Q_U=L=(d0,d1,d2,d3)","q_QM=(d0,d1,d2)","pi_QM selects rows [d0,d1,d2]",identity inclusion on the finite L carrier,0,True
+F51_GR_square,"Q_U=L=(d0,d1,d2,d3)","q_GR=(d0,d2,d3)","pi_GR selects rows [d0,d2,d3]",identity inclusion on the finite L carrier,0,True

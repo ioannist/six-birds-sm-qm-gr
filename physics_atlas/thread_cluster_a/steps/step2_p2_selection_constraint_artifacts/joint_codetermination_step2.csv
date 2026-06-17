@@ -1,0 +1,3 @@
+metric,gauge_values,n_gen_values,observed_pair_count,cartesian_pair_count,missing_pair_count,mutual_information_bits,correlated_among_survivors,joint_selected_pair,selected_world,witness
+survivor_support,G_PS_TOY;G_SM;G_TOY_E6,2;3;4,5,9,4,0.330856,True,G_SM|3,w_SM,missing_pairs=G_PS_TOY|2;G_PS_TOY|4;G_TOY_E6|2;G_TOY_E6|3
+joint_selection_fixes_facets,,,,,,,True,G_SM|3,w_SM,one selected world fixes E019 gauge/rep and E020 generation/texture together

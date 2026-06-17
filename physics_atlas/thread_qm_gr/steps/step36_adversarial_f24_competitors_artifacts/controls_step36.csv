@@ -1,0 +1,6 @@
+control,passes,computed_witness
+L_positive_anchor,True,L_gate_pass=True; O_s_under_L=0
+genuine_coarsening_d2_from_qQM,True,max_d2_heldout_residual=6.30485e-16
+coarsening_d3_fails_even_nonlinear,True,min_d3_heldout_residual=1.12207
+equivalent_L_prime_not_rejected,True,L_prime_iso_residual=0
+no_adversarial_competitor_passes_full_reconciliation,True,passing_competitor_count=0

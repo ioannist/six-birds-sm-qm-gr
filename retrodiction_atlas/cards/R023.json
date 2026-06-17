@@ -1,0 +1,140 @@
+{
+  "id": "R023",
+  "schema_note": "Enriched card for retrodiction R023. Merges: (1) the original consolidated candidate card, (2) the parameter/overfitting audit, (3) the four-skeptic adversarial panel, and (4) this Repair-Agent repair + Fertility-Judge scoring. Source-verified against the frozen ledger and the SBT .tex corpus on 2026-06-02. All filename + theorem/section citations were grep-checked.",
+
+  "original_card": {
+    "one_sentence_claim": "SBT reproduces the phenomenological \"emergence comes in a few primitive kinds, separated by whether directed circulation (entropy production) is present\" pattern -- the Prigogine equilibrium-vs-dissipative-structure divide -- as a control-validated two-class separation (packaging-without-drive vs packaging-with-drive) certified by its affinity/path-KL directionality certificate, with Lean/proved no-fake-arrow controls (arrow-DPI + protocol trap) ensuring the drive axis is not a coarse-graining artifact.",
+    "target_known_fact": "The phenomenological distinction between equilibrium phase formation and nonequilibrium/dissipative-structure formation (Prigogine), separable by the presence of entropy production / directed circulation / time-asymmetry at the transition. Standard mathematical sub-facts recovered exactly: detailed balance => zero entropy production at stationarity (Kelly 1979); Schnakenberg cycle-affinity 'current x affinity' form for a driven cycle; data-processing inequality (Cover-Thomas) at the path-measure level.",
+    "scientific_domain": "Statistical mechanics / nonequilibrium physics / emergence taxonomy",
+    "argument_family": "structural",
+    "derivability_class": "C",
+    "minimum_viable_result": "A fully reproducible two-class demonstration: two finite-state closure packages that both undergo structural birth (P5 fixed point) but are separated, orders of magnitude apart and stably under lens swaps, by the affinity/path-KL directionality certificate -- with both no-fake-arrow controls (arrow-DPI + protocol trap) passing -- recovering, as a control-validated structural normal form, the equilibrium-vs-dissipative dichotomy 'separated by whether entropy-production-like directed circulation is present at the transition.'",
+    "primary_source_papers": [
+      "Tsiokos_2026_To_Classify_a_Stone_with_Six_Birds_Primitive_Activation_and_Observable_Separation_of_Layer_Birth_Classes.tex",
+      "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex",
+      "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex",
+      "Tsiokos_2026_To_Create_a_Stone_with_Six_Birds_Emergent_Geometric_and_Thermodynamic_Regimes_from_a_Minimal_Stochastic_Substrate.tex"
+    ]
+  },
+
+  "source_verification": {
+    "method": "grep over all 50 SBT .tex files plus targeted reads of To_Classify_a_Stone, Six_Birds_No_Go_Theorems, Six_Birds_Protocol_Trap, To_Create_a_Stone.",
+    "confirmed_findings": [
+      "TARGET NAME ABSENT: 'Prigogine' appears in 0 of 50 papers; 'dissipative structure' in 0; 'Benard'/'Belousov' in 0. In To_Classify_a_Stone specifically: 'Prigogine'=0, 'equilibrium'=0, 'entropy production'=0, 'dissipative'=0 occurrences. To_Classify uses 'affinity' (22x) and 'directed circulation'/'directionality' (18x). The Prigogine equilibrium-vs-dissipative framing is supplied entirely by the card author, NOT by SBT.",
+      "CLASS-I/II AFFINITY SEPARATION VERIFIED: To_Classify line 221 -- Class-I Aff_ref ~ -5.7e-19 (machine zero), Class-II Aff_ref ~ 3.45e-2 (line 216); 1e-3 onset reached near lambda=0.40 for Class-II only.",
+      "STRUCTURAL THRESHOLDS VERIFIED: CE=0.025, M_obj=0.90, lambda_struct,ref = max(lambda_CE, lambda_Mobj) (To_Classify lines 154-158, 180).",
+      "TWO-CLASS CORE IS THE ROBUST RESULT: To_Classify line 253 states the Class-I/II structural/drive signatures 'survive the standard spectral and diffusion lens perturbations' and is 'the most mature result in the paper.'",
+      "FOUR-CLASS IS LENS-FRAGILE: To_Classify Table tab:class-iii-iv-lens-caveat (lines 322-331) -- all four non-manual swaps have persistence=false; Class-III/spectral and /diffusion collapse to Class-I; Class-IV/spectral and /diffusion go to uncl./Class-II. Class-III Aff_ref ~ 1.13e-17 (line 261, effectively zero = structure-without-drive).",
+      "LEAN ATTRIBUTION OVERSTATED: identifier 'tvdist_pushforward_le' / 'tvdist_pushforward' appears in 0 papers; 'tvdist' appears ONLY in the Quantum paper, NOT in the No-Go paper. The No-Go paper (lines 895-896) states only 'the uniqueness consequence of strict contraction for fixed distributions' is formalized, and 'the total-variation/Dobrushin framework ... [is] used here at the level of the paper proof and ... not part of the formalized core.' NG_ARROW_DPI itself (proof at No-Go line 516) is a paper-proved path-KL inequality, NOT a Lean lemma named tvdist_pushforward_le.",
+      "PROTOCOL-TRAP CONSTANTS VERIFIED: Protocol_Trap defines EPR_strobe = 0.0833..., EPR_lifted_unbiased ~ 5.6e-18 (lines 29,49); decomposition EPR_lifted(b) = alpha*beta*b*log((1+b)/(1-b)) (line 281); EPR(S,s) = beta*b*log((1+b)/(1-b)) is the exact Schnakenberg current-times-affinity form (line 276). schnakenberg cited in Protocol_Trap + 7 other papers.",
+      "MICRO-THERMO DISCLAIMER VERIFIED: To_Create lines 743 ('audit-defined regimes, not claims of ... physical thermodynamics') and 773 ('Sigma_10(pi) and related cycle diagnostics are macro-level proxies; they do not, by themselves, quantify micro-level entropy production'). Ledger missing_interfaces: 'No micro-thermodynamic interface ... Sigma_T/EPR are informational/audit proxies, NOT physical entropy production.'"
+    ],
+    "net_effect_on_card": "Two of the four skeptics' FATAL objections are factually correct and verified at the source: (1) the named target (Prigogine divide) is absent from the corpus; (2) the separating coordinate is a declared input (drive b), not a prediction. The Lean-name overclaim is also confirmed. These force a substantive (allowed) narrowing of the headline rather than rejection, because the SBT-INTERNAL two-class separation + the no-fake-arrow discipline are genuinely present, correctly stated, and disclaimer-clean."
+  },
+
+  "audit_summary": {
+    "degrees_of_freedom_estimate": 14,
+    "data_points_matched": 3,
+    "overfitting_risk": "high",
+    "mechanism_tag": "cycle-affinity",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_could_explain": true,
+    "audit_verdict": "HIGH flexibility / overfitting risk, partially mitigated by honest disclosure and a genuinely rigid sub-core. ~14 adjustable DOF (substrate design per class, lens choice, tau, prototype lift U_f, drive b/alpha/beta, five declared thresholds CE=0.025 / M_obj=0.90 / affinity onsets 1e-3,1e-2,5e-2 / drive cutoffs 1e-3,1e-6, the four-class rubric, structural-observable choice, toy->Prigogine analogy map) vs only 3 matched textbook sub-facts (detailed-balance=>EPR=0, Schnakenberg current x affinity, DPI) + one qualitative dichotomy. The separating coordinate (drive present/absent) is a single bit INSERTED via b, not predicted. The headline crosses two explicit SBT disclaimers (micro-thermodynamic reading of Sigma_T/EPR; identification of toy classes with physical emergence kinds); four-class taxonomy NOT robust (Class-III/IV collapse under every non-manual lens swap). DEFENSIBLE: the cycle-affinity / audit-DPI mechanism reuses across the 3 recovered sub-facts, and the no-fake-arrow discipline (arrow-DPI + protocol-trap decomposition EPR_lifted=alpha*EPR_clock) is a rigid, falsifiable, disclaimer-clean methodological constraint. Derivability class C (recovery/structural reorganization) is correct."
+  },
+
+  "skeptic_panel_summary": {
+    "min_survival": 1.5,
+    "mean_survival": 1.75,
+    "fatal_objections_present": true,
+    "scores": [2.5, 1.5, 1.5, 1.5],
+    "shared_fatal_objections": [
+      "The named target ('Prigogine equilibrium-vs-dissipative-structure divide') appears NOWHERE in the SBT corpus (verified: 0 occurrences of Prigogine/dissipative-structure; 0 of 'equilibrium'/'entropy production' in To_Classify_a_Stone). The 'retrodiction of the Prigogine divide' is a card-layer overlay, not an SBT result; the source paper makes only an internal 'packaging-without-drive vs packaging-with-drive' claim.",
+      "The separating coordinate is an inserted free parameter (drive bias b), not a prediction: b=0 manufactures Class-I, b>0 manufactures Class-II; SBT can produce either world at will and can re-label an apparently driven system drive-free via the protocol trap (could_explain_opposite=true). A verdict that equals a hand-set input is recovery/post-classification, not retrodiction."
+    ],
+    "serious_objections": [
+      "Crosses the explicit micro-thermodynamic disclaimer: Sigma_T/EPR are finite relative entropy (informational proxy), not physical entropy production (To_Create 773; ledger missing_interfaces). 'Entropy production present at the transition' is recovered only FORMALLY.",
+      "The 'four primitive kinds' headline is not robust: all four non-manual lens swaps fail (tab:class-iii-iv-lens-caveat); only the two-class core survives standard spectral/diffusion swaps.",
+      "Pure recovery, no baseline advantage: card's own baseline_comparison concedes SBT 'does NOT do better than the standard account; ... RECOVERS, not derives.' Only proved content is textbook (Kelly 1979, Schnakenberg 1976, Cover-Thomas DPI).",
+      "DOF (~14) vastly exceeds matched data (3 sub-facts + 1 qualitative dichotomy); thresholds tuned post hoc, no pre-registration."
+    ],
+    "repairable_objections": [
+      "Lean-certification overclaim: state that the formalized component is one-step TV/Dobrushin uniqueness-consequence only (No-Go lines 895-896) and that arrow-DPI is a paper-proved KL inequality; do not attach the identifier 'tvdist_pushforward_le' (which lives only in the Quantum paper, not No-Go) to NG_ARROW_DPI.",
+      "Restate the headline as RECOVERY / structural normal form, naming the toy->physics step as analogy, so the one-sentence claim itself (not only the honest_status_note) crosses no disclaimer.",
+      "Scope the robust claim to the two-class core; demote four-class taxonomy to manual-channel-only, lens-fragile, exponents out of scope.",
+      "Acknowledge in the claim that drive present/absent is a declared input via b; the deliverable is an auditable post-classification + a no-fake-arrow discipline, not a prediction of which regime nature realizes."
+    ],
+    "what_would_change_minds": "Either (a) a non-analogical, parameter-free bridge identifying the toy classes with named physical sector types PLUS a micro-thermodynamic interface licensing Sigma_T as physical entropy production; or (b) drive present/absent emerging UNFORCED from generic (non-hand-built) dynamics PLUS a canonical-lens principle making four-class labels lens-invariant; or a single real dissipative system (Benard/BZ) quantitatively placed-and-predicted on the map. None exist. Absent these, full commitment to the two-class-recovery + no-fake-arrow-discipline framing in the headline is what raises the score.",
+    "is_actually_new_consensus": false,
+    "beats_baseline_consensus": false
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repair_philosophy": "Two skeptic fatal objections are factually correct (target absent from corpus; separating bit is a declared input). They are NOT fatal to a NARROWED claim, only to the OVERCLAIMED headline. All repairs are within the allowed set -- narrow the claim, replace exact with approximate, clarify the toy->physics mapping as analogy, remove the two disclaimer-crossing assumptions from the headline, split the overbroad four-class claim into a robust two-class core plus a demoted fragile extension, correct the Lean provenance, and convert 'reproduces Prigogine' rhetoric into an explicit lemma sequence ending in a recovery statement. No new assumptions, no hidden tuning, no imported-physics concealment, no unproven uniqueness, no undefined 'naturally emerges' were added. The repaired claim coincides with the card's own honest_status_note and fallback_result, which the source paper already supports verbatim.",
+    "allowed_repairs_applied": [
+      "NARROW: dropped 'reproduces the Prigogine equilibrium-vs-dissipative-structure divide' as an SBT result; restated as an SBT-internal two-class separation (packaging-without-drive vs packaging-with-drive) that, BY EXTERNAL ANALOGY ONLY, has the same drive-present/absent structure as the textbook equilibrium/nonequilibrium dichotomy.",
+      "CLARIFY MAPPING: explicitly labeled the toy-class -> physical-emergence-kind identification as an external analogy supplied by the reader, not present in or derived by the corpus (verified: 0 occurrences of Prigogine/dissipative-structure).",
+      "REPLACE EXACT WITH APPROXIMATE / honest: 'entropy production' replaced everywhere by 'finite path-space KL asymmetry / cycle affinity (an informational audit proxy, NOT physical entropy production),' per the To_Create and ledger disclaimers.",
+      "SPLIT OVERBROAD CLAIM: separated the robust two-class core (Class-I vs Class-II, machine-zero vs 3.45e-2, stable under standard spectral/diffusion lens swaps) from the fragile four-class extension (Class-III/IV: manual-channel-only, all four non-manual lens swaps fail persistence; exponents out of scope).",
+      "REMOVE ASSUMPTION: deleted the implicit claim that the drive verdict is a prediction; stated that drive present/absent is a declared input (parameter b), so the deliverable is an auditable post-classification, not a retrodiction of which regime nature realizes.",
+      "CORRECT PROVENANCE: re-sourced the Lean claim -- arrow-DPI (NG_ARROW_DPI) is a paper-proved path-KL inequality; the formalized component on that front is the one-step strict-contraction uniqueness consequence (No-Go lines 895-896); the only 'tvdist' Lean object lives in the Quantum paper and is not the arrow-DPI bound. Removed the 'finite TV version Lean-certified as tvdist_pushforward_le' attribution to NG_ARROW_DPI.",
+      "CONVERT RHETORIC TO LEMMA SEQUENCE: recast the deliverable as L1 (detailed balance => EPR=0 = Sigma_T=0; Kelly 1979) -> L2 (driven 3-cycle EPR = beta*b*log((1+b)/(1-b)) = Schnakenberg current x affinity) -> L3 (arrow-DPI: deterministic pushforward cannot increase path-KL; Cover-Thomas) -> L4 (protocol-trap decomposition EPR_lifted = alpha*EPR_clock; holonomy alone => zero drive) -> C (a control-validated two-class normal form separating drive-free from drive-active layer birth, which RECOVERS by analogy the structure of the equilibrium/dissipative dichotomy)."
+    ],
+    "repaired_one_sentence_claim": "Within its finite, autonomous, microreversible setting, SBT exhibits a control-validated two-class separation of layer birth -- packaging-without-drive (Class-I, affinity ~ -5.7e-19, machine zero) vs packaging-with-drive (Class-II, affinity ~ 3.45e-2), both reaching a packaged P5 fixed point but separated by the path-KL / cycle-affinity directionality certificate, stable under standard spectral/diffusion lens swaps -- where the separating coordinate is a DECLARED drive input (not a prediction) and the affinity is a finite informational proxy (not physical entropy production); the genuinely rigid contribution is a no-fake-arrow discipline (paper-proved arrow-DPI + protocol-trap decomposition EPR_lifted=alpha*EPR_clock) certifying the drive axis is neither a coarse-graining nor a hidden-schedule artifact, and the resemblance to the Prigogine equilibrium-vs-dissipative divide is an external analogy (absent from the SBT corpus), not an SBT derivation.",
+    "repaired_minimum_viable_result": "A reproducible two-class demonstration: two finite-state closure packages that both undergo structural birth (CE<=0.025, M_obj>=0.90) but are separated by orders of magnitude in the path-KL/cycle-affinity certificate (Class-I ~ machine zero vs Class-II ~ 3.45e-2), stably under standard lens swaps, with BOTH no-fake-arrow controls passing -- (a) deterministic-pushforward arrow-DPI (paper-proved KL monotonicity) giving no false positive, and (b) the protocol-trap decomposition EPR_lifted=alpha*EPR_clock (reversible-clock null EPR ~ 5.6e-18; driven EPR = alpha*beta*b*log((1+b)/(1-b))) certifying holonomy alone does not fake an arrow. This recovers, as a structural normal form, the qualitative statement 'drive-free vs drive-active births are separated by the presence of directed circulation,' with all four load-bearing lemmas already proved (and the one-step contraction-uniqueness piece Lean-formalized). The four-class extension and any physical equilibrium/dissipative identification are explicitly out of scope of the robust claim.",
+    "remaining_objections_after_repair": [
+      "Even repaired, the result is recovery (derivability class C), not a novel prediction: it beats no nonequilibrium-stat-mech baseline (Schnakenberg/Seifert) and produces no new exponents, no real-system retrodiction.",
+      "The separating bit is still an input (b); SBT predicts neither which world obtains nor that any arbitrary dynamics self-organizes into one class -- so the 'taxonomy' is a sorting of declared substrates, not an emergent count of kinds.",
+      "The value-add (no-fake-arrow discipline) is reorganized textbook math (Kelly + Schnakenberg + Cover-Thomas DPI) plus a methodological constraint; genuinely useful and disclaimer-clean, but not new physics.",
+      "Four-class taxonomy cannot be presented as robust under any repair: it survives only in the post-hoc-selected manual lens channel, and the ledger records no canonical-lens-selection rule.",
+      "The micro-thermodynamic and toy->physics-kind bridges remain missing (NOT PROVED / explicitly disclaimed); without them the link to physical emergence taxonomy stays analogical."
+    ],
+    "minimum_acceptance_conditions_met": [
+      "Headline restated as recovery/structural-normal-form, Prigogine flagged as external analogy (not an SBT result).",
+      "Robust claim scoped to the two-class core; four-class demoted to manual-channel-only, lens-fragile, exponents out of scope.",
+      "Lean provenance corrected: arrow-DPI = paper-proved KL inequality; one-step contraction-uniqueness = formalized component; 'tvdist' identifier belongs to the Quantum paper, not NG_ARROW_DPI.",
+      "Separating coordinate explicitly named a declared input (b); deliverable is auditable post-classification + no-fake-arrow discipline.",
+      "Micro-thermodynamic disclaimer carried in the one-sentence claim: affinity is a finite informational proxy, not physical entropy production."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 4,
+    "plausibility": 4,
+    "non_ad_hocness": 2,
+    "discriminative_power": 1,
+    "audience_legibility": 3,
+    "precision": 2,
+    "robustness": 2,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+
+  "score_rationale": {
+    "impact": "2 -- The reusable no-fake-arrow discipline (a candidate 'driven/dissipative' class must carry a real cycle-affinity certificate, never protocol holonomy alone) is a clean, transferable constraint for nonequilibrium / complex-systems modelers auditing arrow-of-time claims. But it is methodological hygiene over textbook results, not a new physical fact; the headline emergence-taxonomy impact is illusory once Prigogine is removed as a derived result.",
+    "execution_ease": "4 -- The two-class MVR and both controls are already implemented, numerically demonstrated, and (DPI/protocol-trap) paper-proved with a Lean-formalized contraction-uniqueness piece. Reproduction is a repo re-run plus exposition (days). Capped below 5 only because the lens-robustness story for the demoted four-class part is unstable and the public repos must be re-verified.",
+    "plausibility": "4 -- The repaired claim is essentially certainly true: it is a reorganization of detailed-balance=>EPR=0, Schnakenberg current x affinity, and DPI, with verified numbers (Class-I -5.7e-19, Class-II 3.45e-2, EPR_strobe 0.0833, EPR_lifted_unbiased 5.6e-18). High confidence precisely because it is recovery, not a bet on new physics.",
+    "non_ad_hocness": "2 -- ~14 adjustable DOF vs 3 matched sub-facts; the separating bit is inserted via b; thresholds (CE=0.025, M_obj=0.90, affinity onsets) tuned to the demonstration; substrates hand-built to instantiate the rubric. The cycle-affinity mechanism does genuinely reuse across the three sub-facts and the controls actively forbid the dishonest fake-arrow move (the one real rigidity), which lifts this off the floor -- but the positive taxonomy is constructed, not forced.",
+    "discriminative_power": "1 -- could_explain_opposite=true: b=0 vs b>0 produces either verdict at will, and the protocol trap can turn an apparent arrow off. The framework forbids only the dishonest attribution (holonomy-as-arrow); it makes no commitment to which regime nature realizes. As a discriminating retrodiction it is near-vacuous; the single rigid bit is the negative no-fake-arrow constraint.",
+    "audience_legibility": "3 -- Stochastic-thermodynamics and Markov-modeling audiences will immediately recognize Kelly/Schnakenberg/DPI and the clean null-vs-driven separation, and the no-fake-arrow framing is legible and appealing. Docked because the card's headline vocabulary (Prigogine, 'four primitive kinds') is misleading relative to the source and would confuse readers who grep the corpus; legibility is high only AFTER the repair strips that overlay.",
+    "precision": "2 -- The internal quantities are sharp (machine-zero vs 3.45e-2; exact Schnakenberg closed form). But the load-bearing physical statement ('entropy production present at the transition') is only formal: Sigma_T/EPR is a finite informational proxy explicitly disclaimed as not physical entropy production, so the precision that matters for the named target is capped low by the disclaimer.",
+    "robustness": "2 -- The two-class core is genuinely robust (survives standard spectral/diffusion lens swaps; To_Classify line 253). But the headline four-class taxonomy fails ALL four non-manual lens swaps (tab:class-iii-iv-lens-caveat persistence=false) and exponents are grid-unstable. Averaged: the robust deliverable is real but narrow, and the advertised deliverable is not robust.",
+    "baseline_advantage": "1 -- The card's own baseline_comparison concedes SBT does NOT beat the standard account: it RECOVERS/reorganizes. No new exponents, no real-system prediction (no Benard/BZ), no quantity a Schnakenberg/Seifert baseline lacks. The only delta is the audit-discipline framing, which is a presentation gain, not a predictive advantage. Crossing the micro-thermodynamic disclaimer further caps this.",
+    "publication_potential": "2 -- Publishable ONLY as the repaired short methods/structural note ('a control-validated two-class separation of layer birth under audited directionality') paired with the two reproducibility repos and the no-fake-arrow figure. As the card's headline (four-class taxonomy reproducing the Prigogine divide) it would not survive a stochastic-thermodynamics referee, since the target is absent from the corpus and the bridge is unproven analogy. The demoted, honest version is a modest methods contribution."
+  },
+
+  "proposed_bin": "E",
+  "recommended_priority": "Low-to-moderate. Pursue ONLY as the repaired honest core (two-class separation + no-fake-arrow discipline); do not invest in the four-class / Prigogine-mapping / universality-exponent directions, which are disclaimed, lens-fragile, or unproven. Best use is as a reusable methodological note and as the disclaimer-clean negative-result anchor (arrow-DPI + protocol-trap) that other SBT physics cards can cite.",
+  "one_line_verdict": "A genuine, fully-reproducible RECOVERY (two-class drive-free vs drive-active layer birth + a rigid, disclaimer-clean no-fake-arrow discipline) wearing a borrowed Prigogine headline that is absent from the corpus and carried by an unproven analogy plus a hand-inserted drive bit; repairable by demotion, but it beats no baseline and predicts nothing.",
+  "mechanism_tag": "cycle-affinity",
+  "recommended_artifact": "A short methods/structural note: 'A control-validated two-class separation of layer birth (drive-free vs drive-active) under audited directionality,' leading with the Class-I/Class-II affinity separation (machine-zero vs 3.45e-2, stable under standard lens swaps) and the two no-fake-arrow controls (paper-proved arrow-DPI + protocol-trap decomposition EPR_lifted=alpha*EPR_clock, with the one-step contraction-uniqueness piece noted as Lean-formalized). Explicitly mark the equilibrium/dissipative resemblance as an external analogy and defer the four-class extension and exponent question. Pair with the public repos six-birds-layer-birth and six-birds-protocol-trap and a single figure (affinity-separated structural-birth comparison + the EPR(b)=alpha*EPR_clock control curve).",
+  "target_audience": [
+    "Nonequilibrium statistical mechanics / stochastic thermodynamics researchers (Schnakenberg / Seifert lineage)",
+    "Complex-systems and emergence theorists (phase-transition / dissipative-structure community)",
+    "Applied probability / Markov-chain modelers auditing arrow-of-time and coarse-graining claims",
+    "SBT-internal methodology authors (as a disclaimer-clean negative-result / audit-discipline anchor)"
+  ]
+}

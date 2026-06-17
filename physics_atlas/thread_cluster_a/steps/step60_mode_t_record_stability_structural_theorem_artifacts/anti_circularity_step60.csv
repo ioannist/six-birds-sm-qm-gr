@@ -1,0 +1,5 @@
+check,passes,evidence
+substrate_independently_satisfied_by_non_CS,True,non_CS_substrate=60
+capacity_independently_satisfied_by_non_CS,True,non_CS_capacity=311
+conjunction_lands_in_CS_on_carrier,True,substrate_capacity_non_CS=0
+not_extensionally_tautological,True,each conjunct has non-CS witnesses; only the conjunction is empty outside CS

@@ -1,0 +1,9 @@
+family,fires,computed_reason
+MemoryLayer,False,scale readout uses content-dependent radiative score and does not form an independently closed access quotient
+HiddenUpstreamRole,False,scale role is visible and audited on the finite carrier; no latent outside quotient is used
+BridgeMediatedRole,False,no bridge/common parent construction is introduced; the role is priced as a budget
+BudgetedRole,True,nonempty role split is carried as finite naturalness budget with F47 small selector region
+ScopedRole,False,"role and obstruction are computed on the full finite carrier, not a proper scope only"
+CoarsenedRole,False,s does not descend through q; obstruction is nonempty
+OutsideRoleScope,False,scale role is explicitly in the tested selection scope
+BlockedNonClosure,False,F47 budget ledger is finite and audited; no unclosed obstruction remains

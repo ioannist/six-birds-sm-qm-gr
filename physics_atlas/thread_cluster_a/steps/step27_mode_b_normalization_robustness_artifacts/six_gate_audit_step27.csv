@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"target relation and generated structure are read from prior artifacts, not carrier literals"
+convention_can_fail,True,convention family contains matching and flipping rows
+negative_controls,True,non-generated structures never reproduce the target under the convention family
+consequence_consistency,True,Step-25 parent-shadow rows use the same generated child dimensions
+stage_ii_earning,True,charge quantization persists on the generated row
+no_single_axiom_equivalence,True,"convention variation shows the trace convention is load-bearing, not hidden as an axiom"

@@ -1,0 +1,19 @@
+{
+  "active_residual": "two residual Step-48 content classes",
+  "anti_smuggle_self_check_pass": true,
+  "artifact_root": "steps/step54_mode_b_content_cascade_3_artifacts",
+  "frame_transfer_certified": false,
+  "main_object": "third content shadow: full charged-sector mass generation rank",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "orientation": "ATTEMPT_content_computation",
+  "reproduced_content_classes": 2,
+  "root_landed": false,
+  "shadow_surviving_classes": 2,
+  "six_gates_pass": true,
+  "step": 54,
+  "surviving_classes": "class_00|class_01",
+  "target_class_passes": true,
+  "three_blind_shadows": true,
+  "verdict": "CONTENT_TYPE_LIMIT_3_SHADOWS_BLIND"
+}

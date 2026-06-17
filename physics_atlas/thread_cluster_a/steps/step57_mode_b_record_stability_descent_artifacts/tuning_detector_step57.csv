@@ -1,0 +1,3 @@
+check,passes,evidence
+capacity_threshold_minimal,True,two distinguishable records is the minimal nontrivial record alphabet
+threshold_not_target_specific,True,"threshold is independent of support id, target flag, and structure label"

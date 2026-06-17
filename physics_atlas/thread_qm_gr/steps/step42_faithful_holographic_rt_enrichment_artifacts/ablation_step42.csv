@@ -1,0 +1,6 @@
+ablation_id,ablation,bond_dim,tensor_kind,region,entropy_S_A,min_cut_area,area_minus_entropy_gap,saturation_ratio,bound_holds,strict_gap,outcome
+baseline_random_D3_seed101,all_structure_present,3,random_gaussian,left_all,2.98306859936,3.295836866,0.312768266648,0.905102018284,True,True,strict gap
+swap_to_product_tensor_D3,swap_holographic_tensor_for_product,3,product,left_all,-0,3.295836866,3.295836866,-0,True,True,strict gap
+swap_to_weighted_degenerate_tensor_D3,swap_holographic_tensor_for_degenerate,3,weighted_degenerate,left_all,0.830471712436,3.295836866,2.46536515357,0.251975976421,True,True,strict gap
+shrink_bond_dim_random_D2_seed101,shrink_bond_dimension,2,random_gaussian,left_all,1.47545512261,2.07944154168,0.603986419069,0.709543929482,True,True,strict gap
+different_region_left_pair_D3_seed101,different_region_A,3,random_gaussian,left_pair,2.16454821864,2.19722457734,0.0326763587012,0.985128348263,True,True,strict gap

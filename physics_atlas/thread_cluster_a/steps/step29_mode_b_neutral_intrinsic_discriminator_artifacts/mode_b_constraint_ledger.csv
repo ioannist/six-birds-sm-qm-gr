@@ -1,0 +1,8 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP29_INTRINSIC_PREDICATE,ModeB,step29_mode_b_neutral_intrinsic_discriminator,closure_principle,"The tested neutral intrinsic predicate is atomic_rewrite_packaging: P5 atomic package, P1 no spectator action, and F27 primitive charge orbit."
+C_CLUSTER_A_STEP29_CARRIER,ModeB,step29_mode_b_neutral_intrinsic_discriminator,carrier,"The carrier is the Step-28 neutral P2-closer space with 280983 anomaly-free chiral closers."
+C_CLUSTER_A_STEP29_NARROWING,ModeB,step29_mode_b_neutral_intrinsic_discriminator,diagnostic,"The intrinsic predicate narrows the carrier from 280983 P2 closers to 1851 survivors."
+C_CLUSTER_A_STEP29_REFERENCE_STATUS,ModeB,step29_mode_b_neutral_intrinsic_discriminator,diagnostic,"The Step-14 reference support passes the predicate but is not uniquely distinguished."
+C_CLUSTER_A_STEP29_ABLATION,ModeB,step29_mode_b_neutral_intrinsic_discriminator,anti_smuggling,"Removing any one predicate component increases survivor count, so each component is load-bearing."
+C_CLUSTER_A_STEP29_VERDICT,ModeB,step29_mode_b_neutral_intrinsic_discriminator,verdict,"Verdict is NARROW: genuine progress without unique landing; next grammar delta is a budgeted closure currency or F24/F47 role-obstruction audit."
+C_CLUSTER_A_STEP29_NONCLAIM_BOUNDARY,ModeB,step29_mode_b_neutral_intrinsic_discriminator,honesty,"Finite intrinsic-discriminator diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

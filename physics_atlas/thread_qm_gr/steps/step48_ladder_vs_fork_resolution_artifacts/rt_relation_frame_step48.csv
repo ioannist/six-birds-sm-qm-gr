@@ -1,0 +1,2 @@
+relation,source,rt_verdict,min_cut_edge_count,D4_saturation_ratio,framing_in_step48,reason
+Batch_A_RT_area_shadow_price_entanglement,steps/step42_faithful_holographic_rt_enrichment_artifacts/step42_schema.json,RT_BOUND_SATURATED_MULTIEDGE_HOLOGRAPHIC,3,0.940570240858,fork_relation_between_co_sourced_readouts_not_ladder_quotient,An RT shadow computed from the QM arm does not split q_QM fibers and still leaves q_GR factorization defective.

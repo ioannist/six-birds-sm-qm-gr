@@ -1,0 +1,8 @@
+gate,status,scope,evidence
+C1_shared_field_defined,pass,carrier,"A periodic finite complex field psi is sampled on N=8 sites."
+C2_audits_derived_from_psi,pass,derivation,"rho j T00 and T0i are computed from psi by finite-difference formulas."
+C3_coherence_computed,pass,shared modes,"Equality and proportionality residuals are computed for density and transport."
+C4_same_audit_rejected,pass,shared modes,"Density proportional residual 0.5207123913178113 and transport proportional residual 0.9994686548331937 are positive."
+C5_sourcing_computed,pass,sourcing,"Direct T[psi] sourcing residual is 0.0."
+C6_shared_audit_not_sufficient,pass,sourcing,"Held-out residuals from rho,j to T00,T0i are positive."
+C7_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

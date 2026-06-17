@@ -1,0 +1,4 @@
+ablation,effect,load_bearing
+remove_frozen_import_gate,record requirement could be retuned to fit the broader carrier,True
+prefilter_carrier_to_CS,divergence witness search becomes vacuous,True
+remove_divergence_search,cannot distinguish robust descent from carrier coincidence,True

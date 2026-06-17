@@ -1,0 +1,7 @@
+Cluster A Step 1 shared selection-layer frame
+Verdict: shared_selection_layer_frame_established
+candidate count: 9
+selected world: w_SM
+joint obstruction count: 36
+selection underdetermination obstruction count: 1
+derived observable obstruction count: 0

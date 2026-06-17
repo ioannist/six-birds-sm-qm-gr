@@ -1,0 +1,6 @@
+quantity,value,reference
+active_content_scale_coupling_bits,0.391243563629,gauge_generation=0.466203233486
+step17_inherited_residual_bits,0.035998916880,before radiative channel
+two_layer_fraction,0.333333333333,robustness sweep
+coupled_but_distinct_fraction,0.666666666667,robustness sweep
+one_layer_break_fraction,0.000000000000,robustness sweep

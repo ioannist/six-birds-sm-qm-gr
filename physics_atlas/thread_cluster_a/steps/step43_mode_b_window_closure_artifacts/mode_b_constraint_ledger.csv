@@ -1,0 +1,7 @@
+constraint_id,status,declared_at_step,role
+step29_atomic_rewrite_packaging,active,29,P5/P1/F27 intrinsic package
+step31_consistency_completeness,active,31,P3/P6 consistency
+step33_corrected_chirality,active,33,self-conjugacy chirality correction
+step35_higher_layer_mass_closure,active,35,higher-layer compatibility
+step41_delta_fact_clean_separation,active_conditional,41,recognition-source clean-separation condition
+step43_window_closure,partial_window_stress_test,43,widened-window robustness and bound-candidate audit

@@ -1,0 +1,6 @@
+test_id,source_sigma,target,obstruction_count,nonfactorizing,witness,verdict
+Lambda_from_bare_UV,"cutoff,spectrum_code,g_uv,beta0",realized_Lambda,4,True,A_left-A_right;A_left-A_far_right;A_right-A_far_right;B_center-B_left,non_descending_from_bare_UV
+Lambda_from_UV_selected_phi,"cutoff,spectrum_code,g_uv,beta0,selected_phi_star",realized_Lambda,0,False,none,descends_after_selection_included
+phi_star_from_bare_UV,"cutoff,spectrum_code,g_uv,beta0",selected_phi_star,4,True,A_left-A_right;A_left-A_far_right;A_right-A_far_right;B_center-B_left,selection_non_descending_from_bare_UV
+g_IR_from_bare_UV,"cutoff,spectrum_code,g_uv,beta0",g_IR,0,False,none,RG_derived_descending
+no_selection_Lambda_from_bare_UV,"cutoff,spectrum_code,g_uv,beta0",no_selection_Lambda,0,False,none,no_selection_control_descending

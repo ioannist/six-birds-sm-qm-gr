@@ -1,0 +1,6 @@
+gate,passes,evidence
+primitive_exclusion,True,"variants use computed counts/obstructions, not target-family names"
+dependency_trace,True,generated_vs_input_step52.csv records Step38/45 sources
+negative_control,True,null/no-light controls keep all rows; clean cut is load-bearing
+witness_identity,True,Step41 witnesses equal Step45-style orbit enlargers on carrier
+honest_caveats,True,results and nonclaim boundary lead with carrier/coarse/recognition caveats

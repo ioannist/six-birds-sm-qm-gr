@@ -1,0 +1,4 @@
+item,status,detail
+content_classes,read_from_step48,2
+yukawa_texture_shadow,computed,survivors=2
+verdict,computed,CONTENT_TYPE_LIMIT

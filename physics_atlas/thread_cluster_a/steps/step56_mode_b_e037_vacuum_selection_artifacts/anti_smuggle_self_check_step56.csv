@@ -1,0 +1,5 @@
+check,passes,evidence
+no_our_vacuum_or_SM_selector,True,carrier labels are v_alpha/v_beta and abstract EFT vectors
+RM_computed_from_routes,True,RM is total variation of computed route weights
+negative_control_has_teeth,True,stabilizing-selector control decays
+not_divergence_from_convention,True,card firewall divergence_holds=false

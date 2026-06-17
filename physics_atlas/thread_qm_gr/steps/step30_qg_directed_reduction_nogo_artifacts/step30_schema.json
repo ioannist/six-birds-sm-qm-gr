@@ -1,0 +1,49 @@
+{
+  "step": 30,
+  "orientation": "Bounded no-go Lemma 1: directed endpoint reduction test",
+  "active_residual": "R_child_E018_after_nonstationary_relational_history",
+  "carrier": {
+    "type": "finite four-mode native carrier plus Step 24 field-audit table",
+    "modes": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "q_QM": ["d0", "d1", "d2"],
+    "q_GR": ["d0", "d2", "d3"]
+  },
+  "candidate_move": {
+    "id": "directed_reduction_factorization_audit_route_test",
+    "description": "Compute quotient factorization defects, audit held-out non-derivability in both directions, route mismatch, and a passing vertical-stack control."
+  },
+  "final_verdict": {
+    "type": "lemma1_directed_reduction_blocked_in_bounded_grammar",
+    "q_GR_factors_through_q_QM": false,
+    "q_QM_factors_through_q_GR": false,
+    "control_factors": true,
+    "route_mismatch_positive": true,
+    "control_route_commutes": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "defect_count_q_GR_through_q_QM": 8,
+    "defect_count_q_QM_through_q_GR": 8,
+    "route_mismatch_normalized": 0.5,
+    "control_route_mismatch_normalized": 0.0,
+    "audit_T_from_Born_joint_heldout_residual": 0.5991748529352457,
+    "audit_Born_from_T_joint_heldout_residual": 0.5776762928080916,
+    "genuine_reduction_control_passes": true
+  },
+  "framework_outputs": {
+    "native_law_verified": [
+      "Factorization defects are computed directly on finite quotient maps."
+    ],
+    "toy_diagnostic": [
+      "Audit non-derivability uses held-out diagnostics on the Step 24 finite field table."
+    ],
+    "organizational_audit": [
+      "Defects, residuals, route mismatch, and control rows are saved."
+    ],
+    "remaining_external_content": [
+      "The no-go is bounded to the declared grammar and awaits additional lemmas."
+    ]
+  }
+}

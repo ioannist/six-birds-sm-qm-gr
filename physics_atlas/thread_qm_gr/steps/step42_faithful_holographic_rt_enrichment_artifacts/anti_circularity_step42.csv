@@ -1,0 +1,7 @@
+gate,passes,witness,evidence
+entropy_from_contracted_state,True,boundary_state_matrix -> entropy_from_region,entropy is computed from the reduced density spectrum of a contracted boundary state
+multi_edge_minimal_surface,True,random_D2_seed101,min-cut crosses three bulk edges and beats the boundary competing cut
+random_saturation_trends_toward_one,True,D2_to_D4_mean_ratio,0.729363692238 -> 0.940570240858
+not_exact_at_smallest_D,True,D2,D=2 mean ratio 0.729363692238
+strict_gap_control,True,product_control_D3,product and degenerate tensors on the same geometry have S<min-cut
+not_all_saturate,True,product_control_D3,strict-gap rows prevent identity-style saturation

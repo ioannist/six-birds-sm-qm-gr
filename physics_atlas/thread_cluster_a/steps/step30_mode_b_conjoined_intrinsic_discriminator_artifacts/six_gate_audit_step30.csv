@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,build script excludes forbidden prior literals and target-shape primitives
+dependency_trace,True,components traced to P5/P1/F27 and C1/C4
+ablation,True,removing inherited components changes the currency-minimum count or identity; removing currency leaves 1851
+negative_controls,True,currency is not a target row picker and excludes many survivors
+stage_ii,True,Step-29 count reproduced and charge-orbit removal exposes zero-price degeneracy
+no_single_axiom_equivalence,True,new predicate is not equivalent to selecting the target

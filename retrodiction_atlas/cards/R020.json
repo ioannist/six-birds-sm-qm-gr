@@ -1,0 +1,142 @@
+{
+  "id": "R020",
+  "card": {
+    "id": "R020",
+    "one_sentence_claim": "Under an exact declared symmetry G, no equivariant deterministic selector can pick one element of a nontrivial degenerate orbit (it can only select common G-fixed points); a selectedness predicate descends to the orbit quotient iff the split-pair obstruction O_s is empty, so any spontaneous-symmetry-breaking account must structurally import a declared breaker, and an actually broken branch can only be typed as a formation record once that (undischarged) breaker source is declared.",
+    "target_known_fact": "Spontaneous symmetry breaking and vacuum selection: an exactly symmetric theory has a degenerate, symmetry-related family of ground states, nature selects one (a vacuum / order-parameter direction), and the symmetry is realized only by relating the degenerate options (Goldstone modes; BEC U(1) phase, ferromagnet magnetization, chiral selection). Includes the standard impossibility of selecting a vacuum by symmetric means alone (Buridan's ass, Schelling focal points, Gribov-Singer/Faddeev-Popov gauge-fixing obstruction, hairy-ball / Poincare-Hopf).",
+    "scientific_domain": "Condensed matter / QFT / cosmology (symmetry emergence and its breaking); cross-domain: gauge theory, decision theory, game theory, differential topology, chemistry/origin-of-life.",
+    "argument_family": "symmetry-emergence",
+    "derivability_class": "C",
+    "theory_basis": [
+      {
+        "component": "F15a Selection Obstruction / Repair Normal Form (thm:F15a): equivariant selector + trivial orbit action => sigma(o) lies in the common G-fixed locus; selectedness s descends through pi iff O_s={(x,x'): pi(x)=pi(x'), s(x)!=s(x')} is empty; HasSelectionSplit iff O_s nonempty. Lean-certified Symmetry.SelectionObstruction.selection_obstruction, status 'faithful'.",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F15a, sec:symmetry:selection-obstruction)",
+        "role": "Primary engine: the genuine, fully-proved no-go half. Provides the 'exact symmetry cannot select a vacuum without a breaker' content and the exact obstruction set."
+      },
+      {
+        "component": "F2 Descent-Repair Normal Form (thm:F2): r o F descends through quotient q iff split-pair set SplitObs(q,F,r) is empty; canonical repairs = source refinement or minimal target coarsening. Lean Transport.DescentRepair.descent_repair_normal_form.",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F2)",
+        "role": "Upstream lemma: supplies the split-pair/descent discipline that F15a specializes (ledger cross-axis hint: 'F2 supplies split-pair/descent discipline reused by ... F15a'). The breaker is exactly the declared source-refinement / extra readout data."
+      },
+      {
+        "component": "F15b Spontaneous Symmetry Breaking / Branch-Selection Formation (thm:F15b): given a future branch-selection formation source, there exist F:C->B, c, g with Omega(c) and g.F(c)!=F(c). Obligation-guarded wrapper over opaque FutureBranchSelectionFormationSource; Lean Symmetry.SpontaneousSSB.spontaneous_ssb_formation, status 'needs-strengthening' (statObligation).",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F15b, sec:symmetry:spontaneous-ssb; tagged-axiom register tab:tagged-axiom-register)",
+        "role": "Formation half: types a broken branch as a witness record ONCE a breaker source is declared. NOT a derivation of vacuum formation; the source is undischarged in-repo (future work, no substrate paper cited)."
+      },
+      {
+        "component": "F40 Anomaly / Symmetry Obstruction (thm:F40): a would-be symmetry is a genuine layer symmetry iff SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved all hold (each = an emptiness-of-obstruction descent test). Lean Symmetry.Anomaly.anomaly_symmetry_obstruction, 'faithful'.",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F40, sec:symmetry:anomaly)",
+        "role": "Auxiliary descent test: classifies which would-be symmetries survive to the macro/quotient layer vs become anomalous. Overlaps with candidate R031 (anomaly-as-descent-obstruction); used here only to complete the survives-vs-anomalous picture, not as core."
+      },
+      {
+        "component": "P4 staging/sectors closure role (one of the six structurally forced primitives P1-P6, thm:meta-prim)",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (sec:primitives)",
+        "role": "Background: places symmetry-sector / degenerate-branch structure within the declared sector machinery; the orbit quotient B=C/G is a declared P4 sectoring."
+      }
+    ],
+    "minimum_viable_result": "A single faithful proposition + worked toy instance: 'Under an exact declared symmetry G acting with a nontrivial degenerate ground-state orbit, no equivariant deterministic selector picks a single vacuum (it can only return the common G-fixed/symmetric state); selectedness descends to the orbit quotient iff the split-pair obstruction O_s is empty, hence vacuum selection structurally requires a declared breaker.' This is ALREADY Lean-certified faithful as thm:F15a / selection_obstruction; the only new work is Step 7 (one explicit finite instantiation, e.g. U(1) phase on a ring) plus the physics-faithful mapping lemma. It recovers the well-known impossibility of symmetric vacuum selection and unifies it with Buridan/Schelling/Gribov-Singer/hairy-ball. NO F15b, no formation source, no continuum needed.",
+    "baseline_comparison": "MIXED, and honest about it. The no-go half (F15a) does NOT beat the standard account on physics content -- it RECOVERS the long-known impossibility of symmetric vacuum selection (already implicit in Goldstone/Anderson and explicit in Gribov-Singer). What it genuinely REORGANIZES is the LEVEL of generality and the audit: F15a gives one Lean-certified split-pair criterion (O_s empty?) that simultaneously subsumes vacuum selection, gauge-fixing obstructions, Buridan's ass, Schelling focal points, the hairy-ball theorem, and the Vitali/AC construction, and it makes the smuggled-in 'breaker' an explicit, named, minimal piece of data (via the F2 repair normal form). The FORMATION half (F15b) does STRICTLY WORSE: it only TYPES a broken branch conditional on an undischarged opaque source and produces no Goldstone modes, no effective potential, no order-parameter dynamics, and no prediction of which vacuum is realized.",
+    "why_scientists_care": "It converts a folklore intuition -- 'a symmetry cannot break itself; something has to choose' -- into a precise, Lean-certified, domain-general theorem with an explicit obstruction set (O_s) and an explicit minimal repair (the declared breaker). For a physicist it makes auditable exactly which extra datum any SSB / gauge-fixing / measure-selection story must import; the F40 descent test additionally separates symmetries that survive to the macro layer from those that become anomalous. For a foundations/methodology audience it unifies vacuum selection with Gribov-Singer, Buridan's ass, Schelling focal points, the hairy-ball theorem, and the axiom of choice under one finite criterion."
+  },
+  "audit": {
+    "degrees_of_freedom_estimate": 6,
+    "data_points_matched": 0,
+    "overfitting_risk": "low",
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "Two-part verdict. (a) The strong, genuine no-go (F15a) is NOT opposite-world-flexible: it is a Lean-faithful theorem that an equivariant deterministic selector under trivial orbit action lands ONLY in the common G-fixed locus, so SBT could NOT have retrodicted the opposite (a symmetric rule cleanly selecting one element of a nontrivial degenerate orbit); this rigidity is the result's strength. (b) BUT the schema as a whole IS opposite-world-flexible through its declared inputs: the breaker b is a free declaration, so whatever vacuum/chirality/axis nature selected (or no breaking at all, by withholding the source) is post-hoc named 'the declared breaker' and F15b's opaque source types it as a formation record. The impossibility direction is rigid and falsifiable-in-principle; the selection/formation direction is fully post-hoc."
+    },
+    "audit_verdict": "SPLIT VERDICT, low overfitting risk, honest card. NO-GO HALF (F15a Selection Obstruction): a genuine, Lean-certified 'faithful' theorem (Symmetry.SelectionObstruction.selection_obstruction, statTheorem; verified at thm:F15a lines 3038-3107 of Foundations IV). Elementary equivariance/descent algebra, contentful only relative to a declared symmetry group G, breaker b, and lens (all underived inputs). RECOVERS, not predicts, the long-known impossibility of symmetric vacuum selection; value-add is cross-domain unification under one split-pair criterion O_s=empty (mechanism reused in R018 Noether, R019 gauge/OI-EI, R031 anomaly/F40). Zero quantitative data points matched. FORMATION HALF (F15b): obligation wrapper (statObligation, needs-strengthening) over the opaque FutureBranchSelectionFormationSource that axiomatizes its own conclusion; per subsec:narrowing-disclosure NO completed substrate paper is cited as discharge. TYPES a broken branch once a breaker is declared but DERIVES no formation, no Goldstone modes, no effective potential. DISCLAIMERS HONORED. DEFENSIBLE CLAIM: strictly the F15a no-go + F2 repair normal form as a sharp, domain-general honesty audit naming exactly which datum (the declared breaker) every SSB/gauge-fixing/measure-selection account must import."
+  },
+  "skeptic_panel": {
+    "min_survival": 2,
+    "mean_survival": 2.5,
+    "fatal_objections_present": true,
+    "skeptics": [
+      {
+        "skeptic_role": "Observational cosmologist / model-comparison statistician",
+        "adversarial_survival_score": 2.5,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "fatal_objection_summary": "F15b derives nothing: the Lean theorem applies an opacity-guarded axiom that 'asserts exactly the existence of branch-selection formation data', then selects the witness from that axiom; the conclusion IS the axiom, no substrate paper cited. Fatal only IF the card claimed SBT derives SSB formation (the card honestly does not)."
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist (gauge theory / stat mech / foundations)",
+        "adversarial_survival_score": 2.5,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "fatal_objection_summary": "F15b derives nothing: proof (lines 3215-3232) axiomatizes its own conclusion via the opaque FutureBranchSelectionFormationSource; undischarged, no substrate paper cited (unlike F13a/F13b/F14). As a derivation of vacuum formation this is circular and must be marked ad hoc."
+      },
+      {
+        "skeptic_role": "EFT / known-physics-recovery skeptic",
+        "adversarial_survival_score": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "fatal_objection_summary": "No fatal objection raised; serious objections: formation half axiomatized not derived; all physics content imported (Singer's theorem, chi(S^2)=2, BEC/ferromagnet/Soai); opposite-world flexibility on selection/formation side; fixed-locus conclusion secretly leans on TrivialOrbitAction."
+      },
+      {
+        "skeptic_role": "Condensed-matter/QFT theorist (SSB, gauge-fixing obstructions, diff topology)",
+        "adversarial_survival_score": 2,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "fatal_objection_summary": "F15b formation is circular: proof applies an opacity-guarded axiom that 'asserts exactly the existence of branch-selection formation data' and reads off that data as the conclusion; no real finite substrate certifies the source in-repo. No physics derived anywhere; G, action, breaker are declared inputs."
+      }
+    ],
+    "consolidated_minimum_acceptance_conditions": [
+      "Claim restricted strictly to the F15a no-go + F2 repair normal form, framed as a RECOVERY + cross-domain unification + honesty audit, NOT a prediction and NOT a derivation of SSB.",
+      "F15b reported ONLY as a conditional, obligation-guarded typing wrapper over an undischarged opaque source; no 'SBT explains/derives SSB formation' language anywhere; circularity stated plainly.",
+      "Explicit honesty box: Goldstone modes, effective potential, order-parameter dynamics, and which vacuum is realized are out of scope; G, the degeneracy, and the breaker are declared inputs.",
+      "At least one worked finite instantiation (e.g. U(1) on a ring) supplied so the physics-faithful mapping lemma (Fix_G = unbroken state) is exhibited rather than narrated, with TrivialOrbitAction/EquivariantSelector verified."
+    ]
+  },
+  "repair_and_scores": {
+    "id": "R020",
+    "repair_status": "repaired",
+    "revised_one_sentence_claim": "F15a (Lean-certified faithful, Symmetry.SelectionObstruction.selection_obstruction) is a domain-general structural no-go that RECOVERS the textbook impossibility of selecting a vacuum by exactly symmetric means: under a declared symmetry group G with an equivariant selector and trivial orbit action, the selector lands only in the common G-fixed locus, and a selectedness predicate descends to the orbit quotient iff the split-pair obstruction O_s is empty -- so any spontaneous-symmetry-breaking, gauge-fixing, or vacuum-measure account must structurally import a declared breaker b (the F2 minimal source refinement); the F15b 'formation' half is reported ONLY as a conditional obligation-wrapper over an undischarged opaque source that TYPES but does not DERIVE a broken branch, and Goldstone modes, the effective potential, order-parameter dynamics, and which vacuum is realized are explicitly out of scope.",
+    "new_minimum_viable_result": "The Lean-certified faithful proposition thm:F15a / selection_obstruction PLUS one explicit worked finite instantiation (U(1) phase on a finite ring lattice, or a 2-state chiral Z2 toy) in the existing Symmetry.SelectionObstruction namespace that exhibits, not narrates, the physics-faithful mapping lemma (Fix_G = the symmetric/unbroken state; each broken vacuum = a non-fixed point of a nontrivial orbit; the physical order parameter = a valid declared breaker b), with the TrivialOrbitAction and EquivariantSelector hypotheses verified rather than assumed. Delivered as: the headline no-go, a one-figure unification table mapping the single O_s-emptiness criterion onto BEC U(1), ferromagnet O(3), Gribov-Singer, hairy-ball/Poincare-Hopf, Buridan, Schelling, and Vitali/AC, and an explicit honesty box stating F15b is a conditional typing wrapper over an undischarged source and that Goldstone modes / effective potential / vacuum-measure are out of scope. No F15b formation claim, no formation source, no continuum.",
+    "changes_made": [
+      "NARROWED: dropped any framing that SBT 'explains/derives/accounts for' SSB formation; the formation half (F15b) is demoted to a reported conditional typing wrapper over an undischarged opaque source, with its circularity (proof applies an axiom that 'asserts exactly the existence of branch-selection formation data', lines 3218-3225) stated plainly.",
+      "SPLIT the overbroad two-half claim into (i) a defensible Lean-certified no-go (F15a + F2) and (ii) a non-load-bearing, explicitly-conditional formation wrapper (F15b); only (i) is scored as the contribution.",
+      "REPLACED 'exact/derivation' rhetoric with 'recovery + cross-domain unification + honesty audit'; the card's own baseline_comparison already concedes F15a 'does NOT beat the standard account... it RECOVERS the long-known impossibility', which is retained verbatim as the honest baseline.",
+      "CLARIFIED THE MAPPING: promoted the physics-faithful mapping lemma (Fix_G = unbroken state; broken vacua = non-fixed orbit points; order parameter = valid breaker b) from narrated layer-instantiation to a required, Lean-checkable worked instance (Step 7), since the proof at lines 3073-3107 never uses the breaker b and the bite on actual physics is otherwise asserted, not demonstrated.",
+      "MADE HYPOTHESES EXPLICIT: surfaced that the fixed-locus conclusion requires BOTH EquivariantSelector AND TrivialOrbitAction(rho_O) (verified at lines 3052-3056), and that these plus G, the lens, and b are all declared, underived inputs (the lens choice touches SBT's disclaimed pointer-basis-selection interface).",
+      "CONVERTED RHETORIC TO A LEMMA SEQUENCE: the 'SSB must import a breaker' claim is grounded as the F2 repair normal form (minimal source refinement = joint quotient <pi,b>), not as a free-standing assertion inside F15a (where b is unused in the proof).",
+      "SCOPE-CAPPED to honor ledger disclaimers: Goldstone modes, effective potential, order-parameter dynamics, cosmological measure / which-vacuum (F47/F50 parametric; missing-interface 'No cosmological measure / vacuum-selection interface') explicitly out of scope; Sigma_T/EPR not invoked."
+    ],
+    "remaining_objections": [
+      "FATAL-IF-CLAIMED (now defused by narrowing): F15b axiomatizes its own conclusion via the opaque FutureBranchSelectionFormationSource (statObligation, needs-strengthening; tagged-axiom register: 'Future-source; parallel to F13b', NO completed substrate paper cited). It TYPES but DERIVES no formation; any residual 'formation/derivation' reading would be ad hoc and is excluded from the scored claim.",
+      "RECOVERY, NOT PREDICTION: the no-go is elementary equivariance + 'descends iff constant on fibers' algebra (the card's own difficulty tags read 'trivial'); it recovers a fact already explicit in Gribov-Singer/Goldstone/Anderson. Zero quantitative data points matched; value is organizational/unification, not new physics content.",
+      "ALL PHYSICS IMPORTED: Singer's theorem, chi(S^2)=2, BEC/ferromagnet/Soai phenomenology are cited inputs; SBT supplies only split-pair/descent bookkeeping. The no-go is contentful only relative to declared G, action, lens, and breaker b.",
+      "OPPOSITE-WORLD FLEXIBILITY (selection side): the impossibility direction is rigid, but the breaker and the formation source are post-hoc declarations that absorb any observed broken branch (or no breaking); the framework accommodates, does not predict, which vacuum forms.",
+      "MAPPING LEMMA STILL UNFORMALIZED in-repo (card flags already_in_papers=false): until the worked finite instance is delivered, the claim that the abstract O_s criterion 'bites' on actual order-parameter physics remains exhibited-by-promise, and the lens that makes Fix_G = the unbroken state touches the disclaimed pointer-basis-selection interface.",
+      "TrivialOrbitAction does real work: the contentful statement is the elementary 'a nontrivial orbit has no equivariant section'; in the physically interesting regime where G acts non-trivially relating the degenerate vacua, the fixed-locus conclusion does not apply -- the theorem only forbids a symmetric chooser, which was never in doubt."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 5,
+      "plausibility": 5,
+      "non_ad_hocness": 4,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "precision": 3,
+      "robustness": 4,
+      "baseline_advantage": 1,
+      "publication_potential": 2
+    },
+    "proposed_bin": "B",
+    "recommended_priority": "low-to-medium: a cheap, honest sanity-check/recovery worth doing for the Lean-certified unification table, but with no predictive payoff and no standing as a new physics result.",
+    "recommended_artifact": "A short paper-section + Lean artifact: (1) restate F15a as the headline no-go with ONE worked finite instantiation (U(1) phase on a finite ring lattice, or a 2-state chiral Z2 toy) checked in the existing Symmetry.SelectionObstruction namespace, with Fix_G, the nontrivial orbit, the breaker readout, and TrivialOrbitAction/EquivariantSelector all explicit; (2) a one-figure unification table mapping the single O_s-emptiness criterion onto BEC U(1), ferromagnet O(3), Gribov-Singer, hairy-ball/Poincare-Hopf, Buridan, Schelling, and Vitali/AC; (3) an explicit honesty box stating F15b is a conditional typing wrapper over an undischarged source and that Goldstone modes / effective potential / order-parameter dynamics / vacuum-measure are out of scope. Optional stretch (separate, hard, no anchor): a finite Frank/Soai-style autocatalytic substrate that provably discharges one FutureBranchSelectionFormationSource.",
+    "one_line_verdict": "A Lean-certified but elementary recovery of the textbook 'a symmetry cannot select its own vacuum' fact, valuable only as a domain-general honesty audit + unification table; the F15a no-go survives intact while the F15b formation half is a self-axiomatizing wrapper that must be reported as conditional, not derived.",
+    "mechanism_tag": "orbit-descent",
+    "target_audience": [
+      "High-energy / condensed-matter theorists working on spontaneous symmetry breaking, vacuum/measure selection, and gauge-fixing (Gribov) obstructions",
+      "Mathematical physicists and category-theory-minded researchers interested in descent/quotient obstructions and orbit-space sections",
+      "Philosophy-of-physics and foundations researchers studying symmetry, gauge redundancy, and structural realism",
+      "Formal-methods / Lean-verification community interested in machine-checked structural no-go theorems",
+      "Complex-systems and decision/game theorists (tie-breaking, focal points, symmetry-breaking in coordination)"
+    ]
+  }
+}

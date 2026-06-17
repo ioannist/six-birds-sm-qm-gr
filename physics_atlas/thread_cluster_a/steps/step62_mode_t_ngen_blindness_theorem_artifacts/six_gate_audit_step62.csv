@@ -1,0 +1,8 @@
+gate,passes,evidence
+no_smuggling,True,hypotheses are per-unit anomaly freedom and even doublet count; N-independence is derived
+target_invariance_lineage,True,statement is N_gen blindness for frozen closure_row
+no_stipulated_descent,True,proof inspects closure_row gate arithmetic directly
+anti_tautology_operational_predicate,True,closure gates remain frozen computable predicates
+anti_vacuity,True,"SM unit passes for N=1,2,3,4,5,6,7,8,20,1000"
+anti_circularity,True,odd-doublet control breaks blindness
+uniform_parametric_bound,True,proof uses symbolic N multiplication/parity and no upper bound; N=1000 probe passes

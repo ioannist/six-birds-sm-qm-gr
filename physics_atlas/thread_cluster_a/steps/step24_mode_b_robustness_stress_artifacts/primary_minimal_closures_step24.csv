@@ -1,0 +1,2 @@
+source,structure_id,factor_count,u1_roles,ranks,dimensions,total_rank,total_slots,charge_basis_dim,tested_charge_vectors,selected_charge_vectors,complex_rep_exists,chirality_ok,charge_quantized,anomaly_free,witten_ok,closes,failure_reason,minimal_score,cubic_coefficients,mixed_coefficients,gravity_sum,charge_cubed_sum,verdict_computed,content_pattern,computed_reason
+widened_enumeration,r1|2_u1,2,1,1|2,2|3,3,5,1,1,3|-2,True,True,True,True,True,True,closes,3|5|2|1,0|0,0|0,0,0,True,,

@@ -1,0 +1,150 @@
+{
+  "id": "R011",
+  "schema_note": "Fully enriched retrodiction card: original CARD + AUDIT + SKEPTIC PANEL + REPAIR + SCORES, merged. All source claims verified against /home/repos/six-birds-papers/Tsiokos_2026_To_Plot_a_Stone_with_Six_Birds_Constructing_and_Auditing_Emergent_Geometry_from_Markov_Dynamics.tex (To_Plot) and ledger.json on 2026-06-02.",
+
+  "card": {
+    "one_sentence_claim": "Defining macro distance as minimal protocol cost with edge cost = -log(Phat+eta), an isotropic lazy random walk on a torus under increasing staging tau drives the negative-log displacement cost toward a separable quadratic (Pythagorean/Euclidean) form via the CLT, while an L1 control does not - a computational demonstration (not a theorem) that Euclidean metric structure can emerge as a stable P6 accounting law, with curvature read off as loop holonomy.",
+    "target_known_fact": "Under repeated isotropic diffusion the CLT makes displacement distributions approximately Gaussian, so the negative-log transition probability (a natural cost/action) becomes approximately quadratic and separable, giving the Pythagorean/Euclidean (L2) metric rather than L1; this is the discrete shadow of the Onsager-Machlup action and of Varadhan's short-time heat-kernel asymptotics (-2t log p_t -> d^2), and underlies diffusion-map geometry (Coifman-Lafon). Curvature appears as loop holonomy.",
+    "scientific_domain": "Statistical mechanics / emergent geometry / information physics (finite-state Markov dynamics; manifold learning / diffusion geometry)",
+    "argument_family": "low-energy-limit (staging tau -> large is the 'low-energy'/long-time diffusive limit; the metric is the emergent normal form of accounting cost in that limit)",
+    "derivability_class": "C",
+    "minimum_viable_result": "A reproducible computational demonstration (already essentially in-paper) that, for a single isotropic torus random walk, defining cost = -log p_tau makes the Pythagorean residual collapse toward zero and cost contours circularize as tau grows, while an L1 control does not - i.e. Euclidean (L2) metric structure emerges as a stable P6 accounting law in the isotropic staged-diffusion regime, with the Gaussian/CLT input explicitly imported. This recovers (does not derive) the standard 'diffusive cost is quadratic => L2 geometry' fact and reorganizes it as an audited closure artifact.",
+    "data_matched": [
+      "Pythagorean residual collapse: median |R_tau| 33.19 (tau=4) -> 0.0586 (tau=128); quadratic-fit RMS 12.10 -> 0.1509; regime transition near tau ~ 16 (pythagoras_rw_grid_summary.json; To_Plot line 504, 598).",
+      "Axis-scaling at tau=128: quadratic-axis RMS small vs linear-axis RMS large (cost grows quadratically, not linearly, in displacement).",
+      "L1 negative control: diamond-shaped contours, near-zero axis-linear RMS by construction, quadratic-axis fit poor, no residual collapse (To_Plot line 612-623).",
+      "Curvature companion (holonomy_demo_summary.json): median loop-holonomy 0.0479 (plane-like grid) vs 0.5980 (sphere-like) over 791 vs 800 loops; median ratio ~12.49 (To_Plot line 559).",
+      "Qualitative match to standard diffusive geometry: isotropic-Gaussian heat kernel => circular (L2) level sets, the textbook expectation (no novel empirical data; all synthetic/controlled substrates)."
+    ],
+    "baseline_comparison": "RECOVERY, not improvement, at the load-bearing step. The standard account (CLT => Gaussian heat kernel => -log p quadratic => L2/Euclidean cost) already explains why diffusive transport cost is quadratic and Euclidean rather than L1. SBT does NOT derive the Gaussian/CLT step - it imports it (cited Durrett2019Probability, To_Plot line 574) - and adds only an audit/closure layer that reframes the result ('distance is accounting (P6)', Pythagoras as a stable closure fixed point, curvature as P3 holonomy). Value-add is methodological: a reproducible, falsification-first, audit-attached demonstration with a Lean-anchored triangle inequality / separation quotient and an explicit (definitional) negative control, not a new physical or mathematical result.",
+    "honest_status_note": "Derivability class C: stylized COMPUTATIONAL DEMONSTRATION, not a derivation. Load-bearing step (CLT => approximately Gaussian displacement => -log p quadratic) is IMPORTED from standard probability (cited Durrett). Only triangle inequality and separation-quotient are Lean-anchored; the quadratic emergence is a finite-tau empirical trend with NO convergence theorem (continuum interface explicitly disclaimed, ledger F43). Varadhan is NOT cited in To_Plot (verified: zero hits) - interpretive overlay added by the atlas builder. Onsager-Machlup also absent from To_Plot (verified). Acknowledged circularity: Euclidean structure partly injected by the isotropic substrate (ledger line 206). L1 control is definitional, not a matched dynamical control (To_Plot line 618). Holonomy explicitly NOT a curvature-tensor certificate (To_Plot line 559). Honors SBT disclaimers."
+  },
+
+  "theory_basis": [
+    {"component": "Emergent (pseudo)metric d_eta(x,y) = all-pairs shortest path on graph with edge cost c_eta(x->y) = -log(Phat(x,y)+eta), symmetrized; 'distance is accounting' (P6) optimized over protocol composition (P3). Nonnegativity + triangle-inequality-by-path-concatenation give a pseudometric; quotient by zero-distance gives a metric.", "paper": "To_Plot (eq:cost line 210; eq:shortest-path-metric; lines 233-250; metric status)", "role": "Defines the cost->distance interface; the object on which the Pythagorean residual test is run. Triangle inequality + separation quotient are Lean-anchored (App. Lean), the only certified pieces."},
+    {"component": "P4 staging via tau-step kernel and induced macro kernel Phat; P2 isotropy of the substrate enforces direction symmetry. E5 experiment: cost surface C_tau(dx,dy)=-log p_tau(dx,dy) on a large 2D torus lazy isotropic random walk.", "paper": "To_Plot (E5, eq:quadratic-cost line 577, eq:pyth-residual line 591; Fig pythagoras-residuals)", "role": "Supplies the staging knob and the isotropic substrate; the empirical engine producing the residual collapse 33.19->0.0586."},
+    {"component": "Pythagorean residual R_tau(dx,dy) with quadratic-vs-linear axis-scaling fits; L1 control C_L1=|dx|+|dy| as negative control.", "paper": "To_Plot (eq:pyth-residual; 'Control: Manhattan cost fails' line 612)", "role": "The falsifiable diagnostic and its negative control (the falsifier)."},
+    {"component": "Curvature as loop holonomy: local kNN neighborhoods -> local MDS into R^2 -> Procrustes alignment transport around triangles -> rotation-angle residue (median 0.0479 plane vs 0.5980 sphere-like). P3 made geometric.", "paper": "To_Plot (Sec Holonomy line 331; E2; line 559)", "role": "The 'curvature companion' compressed into the same isotropy+staging+packaging pipeline; a diagnostic separator, NOT a curvature-tensor certificate."},
+    {"component": "CLT / approximately Gaussian displacement after staging (cited Durrett); diffusion-map geometry (cited Coifman-Lafon).", "paper": "To_Plot (E5 line 574, cite Durrett2019Probability)", "role": "IMPORTED, not produced: the Gaussian heat kernel and the -log p ~ quadratic step are borrowed from standard probability. SBT supplies only the cost->distance audit layer atop it."}
+  ],
+
+  "free_parameters": [
+    "Staging / lens tau (limit is tau large; regime transition near tau ~ 16; too-large tau inflates prototype drift)",
+    "Cost-to-distance convention: cost = -log(Phat+eta) and the eta log-regularizer / edge thresholds",
+    "Substrate geometry / isotropy declared externally (torus RW = flat; sphere-like kNN graph = curved; anisotropic gating = deformed)",
+    "Torus size N and displacement window (finite-size aliasing failure mode)",
+    "Holonomy neighborhood parameters (k_neigh, overlap thresholds, neighborhood expansion)",
+    "Prototype / lift U choice and refinement-ladder depth (E5 bypasses the lens ladder, measuring displacement likelihood directly)"
+  ],
+
+  "auxiliary_assumptions": [
+    "Substrate diffusion is isotropic and homogeneous; anisotropy/constraints deform the metric (E4), so Euclidean form is conditional on declared isotropy.",
+    "Cost is defined as -log transition probability (a specific, non-unique accounting convention); a different convention need not yield L2.",
+    "Staging pushes the substrate into a clean Gaussian/CLT diffusion regime; the Gaussian heat kernel and the -log p ~ quadratic step are IMPORTED (cited Durrett), not produced.",
+    "Finite-state substrate throughout; quadratic/Pythagorean form is a finite-tau empirical trend, not a proven continuum limit.",
+    "Displacement window stays inside the non-aliased support of the torus (N >> diffusion length).",
+    "The L1 comparison is a definitional (geometric) control, not a matched dynamical alternative."
+  ],
+
+  "audit": {
+    "degrees_of_freedom_estimate": 10,
+    "data_points_matched": 2,
+    "overfitting_risk": "high",
+    "mechanism_tag": "idempotent-packaging",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_could_explain_opposite": true,
+    "opposite_world_explanation": "The same pipeline 'retrodicts' the opposite geometry by changing one declared input: anisotropic gating (E4) deforms the metric off-Euclidean; the L1 control is itself a faithfully rendered diamond (non-Euclidean) answer; a sphere-like kNN graph flips holonomy 0.0479->0.5980; a too-small torus vs tau stalls emergence entirely. Substrate-in/geometry-out renderer; the Euclidean answer is selected by choosing an isotropic flat substrate plus the -log-Gaussian convention (ledger line 206).",
+    "audit_verdict": "FLEXIBILITY HIGH / overfitting risk HIGH, but HONESTLY DISCLOSED. Class-C computational demonstration that RECOVERS (does not derive) the textbook fact that diffusive transport cost is quadratic, hence Euclidean (L2) rather than L1, with a flat-vs-curved holonomy companion. ~10 effective DoF against ~2 qualitative self-generated targets. Load-bearing CLT step imported (Durrett). Only triangle inequality + separation quotient Lean-anchored; Pythagoras emergence itself is NOT Lean-certified (To_Plot line 628 explicitly: 'does not claim Euclidean geometry is fundamental'). Opposite-world fails cleanly. Target-designed end to end. Varadhan/Onsager-Machlup are atlas overlay, absent from To_Plot (verified by grep). No SBT disclaimer crossed. A falsification-first reskin of known diffusive geometry as a P6 idempotent-packaging artifact; methodologically clean, honestly bounded, scientifically a RECOVERY with high definitional flexibility and zero novel content at the load-bearing step."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 1.5,
+    "mean_survival": 1.88,
+    "fatal_objections_present": true,
+    "fatal_objections_note": "Fatal objections (no finite->continuum theorem; Varadhan absent) land ONLY against the STRONGER continuum/Varadhan result, which the card explicitly disclaims (F43). Against the narrowed Class-C demonstration claim no fatal objection survives, because the card pre-concedes every refutation point (imported CLT, no theorem, no curvature tensor, definitional control).",
+    "verified_against_source": {
+      "abstract_verb_derives": "CONFIRMED at To_Plot line 49: 'a reproducible computational pipeline that derives metric structure' - over-claims relative to body (line 582: 'intentionally stylized'; line 628: 'does not claim Euclidean geometry is fundamental').",
+      "CLT_imported": "CONFIRMED at To_Plot line 574: 'the central limit regime makes the displacement distribution approximately Gaussian [cite Durrett2019Probability]; ... the negative log probability becomes approximately quadratic'.",
+      "E5_bypasses_lens": "CONFIRMED at To_Plot line 582: 'rather than passing through a lens ladder, we measure displacement likelihood directly'.",
+      "L1_definitional": "CONFIRMED at To_Plot line 618: 'this is a geometric negative control rather than a matched dynamical control ... Matched dynamical controls (e.g., anisotropic or driven/nonreversible walks) are a natural next step'.",
+      "holonomy_not_tensor": "CONFIRMED at To_Plot line 559: 'we do not infer a smooth curvature tensor or sectional curvature from this estimator'.",
+      "varadhan_onsager_absent": "CONFIRMED: zero hits for 'varadhan', 'onsager', 'machlup' in To_Plot - atlas-builder overlay, not SBT content.",
+      "acknowledged_circularity": "CONFIRMED at ledger line 206: emergent geometries 'SEEDED by physically-coordinated substrate generators (S^2, 2D torus)' and spectral lens - 'acknowledged circularity risk'."
+    },
+    "skeptics": [
+      {"skeptic_role": "Skeptical general relativist (diffeo-invariance, metric/curvature tensors, continuum limit)", "adversarial_survival_score": 1.5, "is_actually_new": false, "beats_baseline": false, "main_objection": "Load-bearing content imported not derived; no diffeomorphism-invariant content (separability defined relative to lattice axes); holonomy is not curvature in any GR sense; opposite-world flexibility real; abstract 'derives' over-claims.", "fatal_objections": []},
+      {"skeptic_role": "Mathematical physicist (large deviations / heat-kernel asymptotics / discrete-to-continuum limits)", "adversarial_survival_score": 2.5, "is_actually_new": false, "beats_baseline": false, "main_objection": "Result imported and relabeled; Lean content (triangle inequality, separation quotient) is generic and carries zero Euclidean-specific information; Pythagoras.lean (if any) is a classical R^2 fact; Euclidean answer injected by isotropic substrate + -log convention + axis-aligned residual functional.", "fatal_objections": ["None survive against the card's own Class-C claim, which pre-concedes every refutation point; the fatal blow lands only against the stronger continuum result the card does not assert."]},
+      {"skeptic_role": "EFT / known-physics-recovery skeptic", "adversarial_survival_score": 2.0, "is_actually_new": false, "beats_baseline": false, "main_objection": "Load-bearing content imported (Durrett line 574); Euclidean answer injected by isotropic substrate and -log convention; diagnostic tuned to the answer; no improvement over standard account and strictly less rigor; Varadhan/Onsager are overlay.", "fatal_objections": []},
+      {"skeptic_role": "Probabilist / stochastic-geometry specialist (heat-kernel asymptotics, diffusion maps), hostile referee", "adversarial_survival_score": 1.5, "is_actually_new": false, "beats_baseline": false, "main_objection": "Imports-not-derives at the load-bearing step (line 574); opposite-world test fails cleanly; the L2-over-L1 conclusion is undergraduate algebra once the Gaussian step is granted; no theorem, no convergence statement, only textbook Lean facts that do not touch the emergence claim.", "fatal_objections": ["Imports-not-derives at the load-bearing step (verified line 574).", "Opposite-world test fails cleanly: the same pipeline renders any declared geometry."]}
+    ],
+    "consensus_minimum_acceptance_conditions": [
+      "Accept ONLY as a Class-C computational demonstration / pedagogical exhibit, never as a derivation or prediction, with the Gaussian/CLT step explicitly stamped as imported.",
+      "Remove or quarantine the Varadhan and Onsager-Machlup framing (verified absent from To_Plot).",
+      "Soften the abstract's 'derives metric structure' to 'constructs/recovers', consistent with the body.",
+      "Provide at least one matched DYNAMICAL negative control (anisotropic/driven walk) so the falsifier is not purely definitional.",
+      "Restrict Lean-certification credit to triangle inequality + separation quotient only; do not let any Pythagoras.lean R^2 fact be read as certifying emergence.",
+      "State plainly that the Euclidean outcome is conditional on the externally declared isotropic flat substrate and the -log cost convention.",
+      "(Repairable add) Prove the easy lemma 'isotropic Gaussian displacement => R_tau->0 + circular contours; L1 => diamond, R bounded away from 0', flagged as downstream of the imported CLT."
+    ],
+    "what_would_change_minds": "A genuine finite->continuum (discrete-Varadhan / heat-kernel) convergence theorem proving the rescaled accounting metric d_eta -> Riemannian geodesic distance with the correct heat-kernel constant in a frame-independent way, computed on the SBT closure object Phat (NOT bypassing the lens as E5 does), PLUS a theorem linking the Procrustes holonomy estimator to actual sectional curvature, PLUS a demonstration that the isotropic-Gaussian step law and the -log cost convention are forced rather than injected. None exists (F43 disclaims it)."
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repair_rationale": "All applied repairs are within the allowed set (narrow scope, replace exact->approximate, clarify the imported/derived boundary, remove the Varadhan/Onsager overlay, soften an over-claiming verb, convert one rhetorical claim into a stated lemma, split the L2 exhibit from the holonomy companion). No new assumptions, hidden tuning, hidden imports, or undefined 'emerges' were introduced. Against the narrowed claim no fatal objection survives; the card already honors every SBT disclaimer. The result remains a RECOVERY, so scores are capped accordingly.",
+    "revised_one_sentence_claim": "On a single isotropic lazy random walk on a torus, ADOPTING the (imported, Durrett-cited) local-CLT fact that staged displacement becomes approximately Gaussian, the chosen accounting convention cost = -log(p_tau+eta) makes the axis-separable Pythagorean residual collapse toward zero and cost level-sets circularize as tau grows while a definitional L1 control yields fixed diamond contours - a reproducible, audit-attached, Lean-anchored (triangle inequality + separation quotient only) COMPUTATIONAL RECOVERY (not a derivation, no continuum theorem, no curvature tensor) of the textbook 'diffusive cost is quadratic => L2 not L1' fact, reframed as a stable P6 accounting law conditional on the externally declared isotropic flat substrate, with a separate, neighborhood-sensitive loop-holonomy diagnostic separating flat from curved substrates.",
+    "new_minimum_viable_result": "A reproducible computational exhibit (committed config pythagoras_rw_grid.yaml): for an isotropic torus random walk, cost = -log(p_tau+eta) yields Pythagorean-residual collapse (median |R_tau| 33.19 -> 0.0586 over tau in {4..128}, transition ~tau 16) and circularizing contours, while a definitional L1 control yields fixed diamond contours and fails the quadratic-axis fit - explicitly RECOVERING the standard diffusive-cost-is-quadratic => L2 fact with the local CLT stamped as imported (Durrett), no continuum/Varadhan theorem claimed, Lean credit restricted to triangle inequality + separation quotient. Optional rigor add: the downstream-of-CLT lemma 'isotropic Gaussian displacement => R_tau -> 0 uniformly on a fixed window and circular level sets; L1 => diamond, R bounded away from 0'.",
+    "changes_made": [
+      "Narrowed scope: 'drives ... via the CLT' restated as 'ADOPTING the imported local-CLT fact'; the load-bearing Gaussian step is stamped IMPORTED (Durrett, To_Plot line 574), not produced by SBT.",
+      "Replaced exact/strong language with approximate/conditional: 'Euclidean metric structure emerges' -> 'recovers the textbook L2-over-L1 fact, conditional on the declared isotropic flat substrate and the -log convention'.",
+      "Removed the Varadhan and Onsager-Machlup framing from the SBT-content claim (verified zero hits in To_Plot); retained only as external context, flagged as atlas overlay.",
+      "Softened the abstract verb 'derives' (To_Plot line 49) to 'constructs/recovers', matching the body (lines 582, 628).",
+      "Restricted Lean-certification credit to triangle inequality + separation quotient only; explicitly excluded the Pythagoras emergence claim from Lean certification (line 628).",
+      "Split the claim: L2-emergence exhibit (E5) separated from the weaker, neighborhood-sensitive loop-holonomy curvature companion (E2), which is explicitly NOT a curvature-tensor certificate (line 559).",
+      "Converted the qualitative 'collapse' rhetoric into a proposed stated lemma (Gaussian => R_tau->0 + circular contours; L1 => diamond), flagged as downstream of the imported CLT.",
+      "Made the definitional-vs-dynamical control status explicit and recommended a matched dynamical (anisotropic/driven) control as the genuine falsifier."
+    ],
+    "remaining_objections": [
+      "Even after repair, the load-bearing content (CLT => Gaussian => -log p quadratic => L2) is imported, so SBT adds reorganization, not new content, at the step that decides the result.",
+      "Opposite-world flexibility persists: the pipeline renders any declared substrate geometry (anisotropic/diamond/curved/stalled); the Euclidean answer is selected by the isotropic flat substrate + -log convention.",
+      "Separability is frame-dependent (axis-aligned lattice coordinates); no diffeomorphism-invariant / isometry-invariant characterization is provided.",
+      "Holonomy companion is a substrate-in/number-out separator, neighborhood-parameter sensitive (even loop count 791 vs 800 is config-dependent), explicitly not a curvature tensor.",
+      "The negative control remains definitional (L1) unless a matched dynamical control is run.",
+      "No finite->continuum theorem (F43 disclaimed); the quadratic emergence stays a finite-tau empirical trend.",
+      "DoF (~10) >> independent self-generated targets (~2); all 'data' synthetic."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 5,
+    "plausibility": 5,
+    "non_ad_hocness": 2,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 2,
+    "robustness": 2,
+    "baseline_advantage": 1,
+    "publication_potential": 3
+  },
+  "score_rationale": {
+    "impact": "2 - A clean conceptual bridge between finite Markov dynamics, diffusion-map geometry and emergent-geometry programs, but it recovers a textbook fact; no new physics or mathematics at the load-bearing step.",
+    "execution_ease": "5 - Already in-paper and reproducible from committed configs (pythagoras_rw_grid.yaml, holonomy_demo.yaml); the easy lemma is hours of algebra.",
+    "plausibility": "5 - The recovered fact (diffusive cost is quadratic => L2) is textbook-certain; the demonstration reproduces the expected numbers.",
+    "non_ad_hocness": "2 - The -log cost convention, the axis-aligned Pythagorean-residual functional, and the isotropic flat substrate are all chosen to produce the target; diagnostic tuned to the expected separable-quadratic form. Lean anchoring of triangle inequality + separation quotient earns partial credit.",
+    "discriminative_power": "1 - Opposite-world fails cleanly: the same pipeline renders anisotropic/diamond/curved/stalled outcomes; the negative control is definitional, not dynamical; cannot predict which geometry obtains.",
+    "audience_legibility": "4 - Falsification-first, audit-attached, runnable-from-config, with explicit failure modes and honest disclaimers; legible to multiple communities.",
+    "precision": "2 - Quantitative in-paper (33.19 -> 0.0586, transition ~tau 16) but no fixed pass/fail threshold, no convergence theorem, no metric tensor; precision capped by SBT's disclaimed continuum interface (F43).",
+    "robustness": "2 - Documented failure modes (finite-size aliasing, over-staging drift, neighborhood-sensitive holonomy) and frame-dependence make the result regime-fragile; the headline holds only in a hand-selected window.",
+    "baseline_advantage": "1 - Explicitly RECOVERY, not improvement; does worse than the standard account on rigor (Varadhan gives a theorem where SBT gives only a finite-tau trend). Capped low.",
+    "publication_potential": "3 - Publishable as a methods/pedagogical note or workshop exhibit on auditable emergent-geometry pipelines, with honest framing; not a results paper for a physics or math venue given zero novel content at the load-bearing step."
+  },
+
+  "triage": {
+    "proposed_bin": "E",
+    "bin_rationale": "Conceptual reframing: the genuine contribution is methodological/pedagogical - reframing Pythagoras/L2 as a P6 'distance is accounting' closure artifact with a Lean-anchored metric core and an explicit (currently definitional) falsifier. It is not a quick novel win (A), not a foundational sanity check of SBT internals (B), not a flagship result (C - it recovers, does not derive), and not a high-risk numerical bet (D - the numerics already exist and are inexpensive). The only path to genuine novelty (a discrete-Varadhan continuum theorem) is exactly SBT's disclaimed missing interface (F43) and would be high-risk new mathematics, not this exhibit.",
+    "recommended_priority": "low",
+    "recommended_artifact": "A self-contained reproducible note: (1) the E5 torus-RW pipeline reproducing the residual-collapse table (33.19->0.0586) and the L1 control, plus the holonomy plane-vs-sphere separation, from committed configs; (2) the short rigorous downstream-of-CLT lemma (isotropic Gaussian displacement => R_tau->0 + circular contours; L1 => diamond); (3) explicit honest framing that the Gaussian step is imported (Durrett), Varadhan/Onsager are not SBT content, the abstract verb is 'recovers' not 'derives', Lean credit is triangle inequality + separation quotient only, and the Euclidean outcome is conditional on the declared isotropic flat substrate. Cheap value-add: add a matched DYNAMICAL (anisotropic/driven) control to upgrade the falsifier from definitional to dynamical."
+  }
+}

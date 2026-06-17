@@ -1,0 +1,5 @@
+stage,survivor_count,target_passes
+corrected_neutral_carrier,11990,True
+atomic_rewrite_packaging,156,True
+closure_consistency_completeness,130,True
+corrected_chirality_faithfulness,80,True

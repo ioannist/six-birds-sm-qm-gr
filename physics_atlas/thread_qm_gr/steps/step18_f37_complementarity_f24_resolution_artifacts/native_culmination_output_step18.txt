@@ -1,0 +1,7 @@
+Step 18 F37/F24 native culmination
+F37 L a∘j residual: 0.0
+F37 L b∘j residual: 0.0
+F37 verdict on toy: not complementary = True
+Product control admissible: False
+F24 role obstruction count: 3
+F24 selected case: BridgeMediatedRole

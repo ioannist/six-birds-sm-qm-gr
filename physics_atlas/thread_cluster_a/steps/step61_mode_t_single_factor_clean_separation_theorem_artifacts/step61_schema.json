@@ -1,0 +1,19 @@
+{
+  "active_residual": "single-factor clean-separation bound from Step43",
+  "anti_circularity_pass": true,
+  "converse_counterexample_found": false,
+  "exit_state": "constructed_theorem",
+  "frame_transfer_certified": false,
+  "main_object": "single SU(N) substrate implies non-empty factorization defect",
+  "new_physics_claim": false,
+  "orientation": "ModeT_single_factor_structural_theorem",
+  "root_landed": true,
+  "scope": "single-factor axis only; multi-factor cap-bound remains separate",
+  "single_factor_clean_count": 0,
+  "single_factor_substrate_count": 12,
+  "six_gates_pass": true,
+  "step": 61,
+  "structural_proof_grade": "constructed",
+  "verdict": "SINGLE_FACTOR_CLEAN_SEPARATION_EXCLUSION_CONSTRUCTED",
+  "window_independent": true
+}

@@ -1,0 +1,5 @@
+constraint_id,status,description
+C_STEP51_COMPATIBILITY_I3_INDEPENDENT,active,Compatibility must be a geometric min-cut vector match and not an I3 rule.
+C_STEP51_GHZ_MISMATCH_COMPUTED,active,GHZ parent exclusion must be a computed entropy-vector mismatch.
+C_STEP51_BROKEN_COMPAT_CONTROL_COMPUTED,active,No-compatibility control booleans must be computed from explicit admissible sets.
+C_STEP51_CONDITIONAL_ON_STEP47,active,The result remains conditional on the Step47 common-carrier premise.

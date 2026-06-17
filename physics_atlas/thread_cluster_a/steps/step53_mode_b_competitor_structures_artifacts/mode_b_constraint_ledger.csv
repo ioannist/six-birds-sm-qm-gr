@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step43_one_two_factor_window,active_source,43,exact filter rows for one/two-factor competitors
+step44_factor_count_bound,active_source,44,three-factor cap-conditional route-completeness exclusion
+step53_no_new_anti_competitor_rule,active_anti_smuggle_constraint,53,competitor exclusions must cite pre-existing gates

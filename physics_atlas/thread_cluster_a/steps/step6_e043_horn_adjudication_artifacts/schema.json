@@ -1,0 +1,29 @@
+{
+  "step": 6,
+  "orientation": "E043 horn adjudication by P6 decaying-degeneracy audit",
+  "active_residual": "R_cluster_a_after_step5_e009_uv_fiber",
+  "candidate_move": "Run derivation, broad-measure, and sharp-measure horns through P6 effective-degeneracy audit.",
+  "final_verdict": {
+    "type": "e043_horn_adjudication_constructed",
+    "certified_horns": [
+      "derivation_attractor",
+      "sharp_selecting_measure"
+    ],
+    "failed_horns": [
+      "broad_anthropic_measure"
+    ],
+    "derivation_sequence": "6->5->4->2->1->1",
+    "broad_measure_sequence": "6->6->6->6->6->6",
+    "sharp_measure_sequence": "3->2->2->1->1",
+    "broad_measure_final_degeneracy": 6,
+    "criterion": "P6_decaying_degeneracy_collapses_to_point",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "horn_degeneracy": "horn_degeneracy_step6.csv",
+    "adjudication": "adjudication_step6.csv",
+    "controls": "controls_step6.csv",
+    "next_live_option": "Step7_cluster_a_consolidation_or_manager_selected_followup"
+  }
+}

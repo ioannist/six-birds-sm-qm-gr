@@ -1,0 +1,7 @@
+Step 6 finite G_v2 Xi diagnostic
+G_v2 native lens: inherited u_i and v, plus holographic-RG row w.
+Closed by generation: HED-LQG, LQG-AS, HED-AS boundary/continuum.
+Survives: triple shared completion/audit package.
+r=2: coupled raw Xi=1.0, normalized Xi=0.14285714285714285; all-bridge normalized Xi=0.25; Step-5 survivor-pair normalized Xi=0.5
+r=4: coupled raw Xi=1.0, normalized Xi=0.14285714285714285; all-bridge normalized Xi=0.25; Step-5 survivor-pair normalized Xi=0.5
+Rejected control: adding the triple residual as native gives zero residual but is not generation.

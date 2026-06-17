@@ -1,0 +1,5 @@
+constraint_id,status,detail
+C_STEP41_RT_BOUND_NOT_IDENTITY,inherited,S(A)<=min-cut and strict-gap control from Step41
+C_STEP42_MULTIEDGE_HOLOGRAPHIC_ENRICHMENT,inherited,random tensors and multi-edge minimal surface
+C_STEP43_FIRST_LAW_LEADING_ORDER_NOT_IDENTITY,active,Delta S_rel > 0 at finite t
+C_STEP43_AREA_ENERGY_DERIVED_NOT_ASSUMED,active,area response is RT coefficient times independently computed modular energy

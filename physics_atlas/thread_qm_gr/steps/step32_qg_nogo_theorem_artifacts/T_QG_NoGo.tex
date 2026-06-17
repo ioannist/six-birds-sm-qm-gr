@@ -1,0 +1,164 @@
+\section*{T\_QG\_NoGo: A Bounded-Grammar No-Go Theorem for the Fused/Derived QG Object}
+
+\paragraph{Grade.}
+This is a finite-carrier bounded-grammar theorem.  It consolidates Lemma 1
+(Step 30) and Lemma 2 (Step 31).  It is not an unconditional analytic theorem
+and not an absolute statement about every possible physical theory.
+
+\subsection*{Definitions}
+
+\paragraph{Bounded grammar \(G^\ast\).}
+In this theorem, \(G^\ast\) is the finite grammar consisting of:
+\begin{itemize}
+\item the native carrier \(L=(d0,d1,d2,d3)\);
+\item endpoint access quotients
+  \(q_{QM}=(d0,d1,d2)\) and \(q_{GR}=(d0,d2,d3)\);
+\item the finite field-readout model in which a field \(\psi\) supplies
+  \(\mathrm{Born}[\psi]=(\rho,j)\) and \(T[\psi]=(T00,T0i)\);
+\item the native promotion-bridge gates
+  \(G_{suff},G_{desc},G_{stab},G_{ctrl},G_{nosmuggle},G_{vis},G_{audit},G_{strict}\);
+\item the anti-reductionism guardrail: a lawful move may chart, type,
+  recognize, construct, simulate, or audit a layer, but may not smuggle one
+  endpoint as a derivation of the other across a foreclosed boundary.
+\end{itemize}
+
+\paragraph{Fused/derived QG object.}
+The forbidden target tested here is not the co-sourcing common-refinement
+package.  It is a single package that is intended to be both endpoint roles at
+once by one of two routes:
+\begin{enumerate}
+\item \emph{directed route}: one endpoint is a lawful quotient or derivation of
+  the other;
+\item \emph{fused route}: a single object is formed by stapling the endpoint
+  packages together or by one audit serving both endpoint roles.
+\end{enumerate}
+
+\paragraph{Lawful in \(G^\ast\).}
+A candidate is lawful in \(G^\ast\) only if its quotient maps, audits, route
+orders, and controls pass the declared native gates and no-smuggling checks on
+the finite carrier.
+
+\subsection*{Theorem}
+
+Within \(G^\ast\), no single lawful fused/derived endpoint object forms by the
+directed or fused routes.
+
+More precisely:
+\begin{enumerate}
+\item The directed route fails: neither endpoint quotient factors through the
+  other, endpoint audits are not mutually recovered by the finite held-out
+  diagnostic, and the two directed route completions do not commute.
+\item The fused route fails: the direct-sum object fails \(G_{nosmuggle}\), and
+  the field-derived Born and stress-energy audits do not agree as one shared
+  audit on the density/transport overlap.
+\end{enumerate}
+
+The co-sourcing common-refinement package constructed in Steps 18--28 remains
+the lawful reconciliation candidate in this finite grammar.  Full uniqueness
+of that reconciliation is a separate Part-B obligation and is not claimed by
+this theorem.
+
+\subsection*{Proof}
+
+\paragraph{Directed route.}
+Step 30 computes the quotient factorization defects:
+\[
+|\Delta(q_{GR}\mid q_{QM})|=8,
+\qquad
+|\Delta(q_{QM}\mid q_{GR})|=8.
+\]
+Thus neither endpoint quotient factors through the other on the declared
+carrier.
+
+Step 30 also computes audit held-out residuals:
+\[
+\mathrm{res}(T[\psi]\leftarrow(\rho,j))=0.5991748529352457,
+\]
+and
+\[
+\mathrm{res}((\rho,j)\leftarrow T[\psi])=0.5776762928080916.
+\]
+The directed route-order diagnostic gives normalized mismatch \(0.5\).
+
+The vertical-stack control in Step 30 has factorization defect \(0\) and route
+mismatch \(0.0\).  Therefore the test is not rigged to reject every directed
+stack.  Source:
+\texttt{steps/step30\_qg\_directed\_reduction\_nogo\_artifacts/step30\_results\_summary.md}.
+
+\paragraph{Fused route: union.}
+Step 31 computes the direct-sum map
+\[
+\pi_{union}=(d0,d1,d2,d0,d2,d3).
+\]
+It has target dimension \(6\), rank \(4\), extra coordinate count \(2\), and
+duplicate pair count \(2\).  Thus it fails \(G_{nosmuggle}\).  The
+nonduplicating refinement control has dimension \(4\), rank \(4\), extra
+coordinate count \(0\), and passes.  Source:
+\texttt{steps/step31\_qg\_fused\_object\_nogo\_artifacts/step31\_results\_summary.md}.
+
+\paragraph{Fused route: shared audit.}
+Step 31 uses the Step 24 field-derived audits.  On the shared
+density/transport overlap, the joint equal residual is
+\[
+0.9935981568901483.
+\]
+The density proportional residual is \(0.5207123913178113\), and the
+transport proportional residual is \(0.9994686548331937\).  Hence the single
+shared-audit route fails on the declared finite data.  The agreeing-audit
+control has residual \(0.0\) and passes.  Sources:
+\texttt{steps/step24\_derived\_physical\_audits\_artifacts/step24\_results\_summary.md}
+and
+\texttt{steps/step31\_qg\_fused\_object\_nogo\_artifacts/step31\_results\_summary.md}.
+
+\paragraph{Constructed lawful reconciliation candidate.}
+Steps 18--22 classify \(L\) as an admissible joint quotient, a computed
+\(\texttt{BridgeMediatedRole}\), scale-consistent on the toy, and an F51
+common-refinement unification on the finite carrier.  Steps 24--28 add the
+finite physical content: \(\psi\) co-sources \(\mathrm{Born}[\psi]\) and
+\(T[\psi]\), admits a self-consistent semiclassical toy dynamic, and admits
+stationary plus non-stationary relational clock-field representations.
+Sources:
+\texttt{steps/step18\_f37\_complementarity\_f24\_resolution\_artifacts/step18\_results\_summary.md},
+\texttt{steps/step22\_f51\_unification\_common\_refinement\_artifacts/step22\_results\_summary.md},
+and
+\texttt{steps/step29\_consolidated\_statement\_artifacts/consolidated\_findings\_step29.md}.
+
+\paragraph{Conclusion.}
+The directed and fused routes fail, each with a passing can-fail control.
+Therefore the fused/derived endpoint object is not lawful in \(G^\ast\).  The
+standing lawful candidate is the co-sourcing common-refinement, with uniqueness
+left to Part B.
+
+\subsection*{Seven-Gate Audit}
+
+\begin{enumerate}
+\item Self-contained definitions: \(G^\ast\), directed route, fused route, and
+  lawful candidate are defined above.
+\item Route evidence: directed, union, and shared-audit routes cite Step 30 and
+  Step 31 computations.
+\item Controls: vertical-stack, nonduplicating-refinement, and agreeing-audit
+  controls pass.
+\item Bounded grade: finite-carrier bounded-grammar theorem.
+\item No-smuggling: \(G_{nosmuggle}\) is explicitly applied to the union route.
+\item Scope boundary: no statement beyond \(G^\ast\) is asserted.
+\item Next obligation: Part B must test uniqueness or exhaust lawful
+  reconciliation families.
+\end{enumerate}
+
+\subsection*{Interpretation}
+
+The framework-side interpretation is that the technical walls are the grammar
+enforcing its no-smuggling and anti-reduction commitments.  P3 appears as
+route-order mismatch; P2 appears as the requirement for constrained relational
+time rather than external-time presentation.  The lawful object recovered in
+the finite construction is not a fused endpoint object; it is the co-sourcing
+field layer.  See
+\texttt{interpretation/quantum\_gravity\_is\_illegal.md}
+and
+\texttt{interpretation/ladder\_vs\_fork.md}.
+
+\subsection*{Nonclaim}
+
+This theorem is a bounded statement internal to \(G^\ast\).  It does not make
+an absolute claim about all possible physical theories, does not assert a
+complete physical model, and does not close the Part-B uniqueness program.

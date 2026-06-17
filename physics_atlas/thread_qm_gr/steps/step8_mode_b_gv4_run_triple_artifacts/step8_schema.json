@@ -1,0 +1,75 @@
+{
+  "step": 8,
+  "orientation": "Mode B G_v4 run-generated triple mechanism",
+  "active_residual": "R_child_E018_after_Gv3_triple_no_go",
+  "carrier": {
+    "kind": "finite stochastic substrate run",
+    "refinement_levels": [32, 64],
+    "substrate": "binary periodic ring with local stochastic nearest-neighbor dynamics",
+    "sector_readouts": [
+      "boundary mutual-information area proxy",
+      "first Fourier-mode amplitude geometry proxy",
+      "coarse/evolve route-closure proxy"
+    ],
+    "completion": "common fixed-point diagonal subspace measured from sector plateaus after the run",
+    "audit": "Schur residual to the common fixed-point subspace plus held-out interaction witness",
+    "independent_witness": "held-out interaction R2 gain beyond pairwise predictors",
+    "rejected_controls": [
+      "pairwise_union_witness",
+      "rigged_diagonal_completion"
+    ],
+    "no_rigging_controls": {
+      "triple_objective_in_substrate": false,
+      "triple_target_row_input": false,
+      "pairwise_union_used_as_witness": false,
+      "witness_measured_after_run": true,
+      "witness_heldout": true,
+      "sector_readouts_used_in_update_rule": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode B",
+    "grammar": "G_E018_RunGeneratedTripleMechanism_v4",
+    "predicate_name": "local_stochastic_binary_ring_run",
+    "design_assumption": "A local stochastic substrate might exhibit a shared triple completion in run-readouts without a triple objective in the update rule.",
+    "target_lineage_non_equivalence": "The run has no target-row input and reports failed thresholds, so it does not restate the canonical root."
+  },
+  "final_verdict": {
+    "type": "run_level_no_go_obstruction",
+    "summary": "The declared stochastic substrate does not exhibit a non-rigged triple mechanism: completion Xi remains positive and the held-out interaction witness is not positive at either refinement.",
+    "grade": "finite-run diagnostic obstruction plus applied no-rigging gate verdict",
+    "root_landed": false,
+    "candidate_pass": false,
+    "surviving_bridge": "Bridge_triple_joint_package",
+    "next_grammar_delta": "G_E018_IndependentDynamicsOrRecognition_v5",
+    "child_residuals": [
+      "R_child_E018_after_Gv4_run_obstruction"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "acceptable_landing_tested": "E0 run-exhibited emergent triple mechanism",
+    "xi_orientation": "Schur residual of sector plateau against common fixed-point subspace",
+    "xi_results": {
+      "completion_fixed_point_normalized_xi": {
+        "level_32": 0.4947207905172907,
+        "level_64": 0.5371910513210945
+      },
+      "heldout_interaction_gain": {
+        "level_32": -0.02326224393247789,
+        "level_64": -0.08539192789918792
+      },
+      "completion_xi_absolute_delta": 0.04247026080380378,
+      "heldout_interaction_gain_absolute_delta": 0.062129683966710036
+    },
+    "gate_status_file": "no_smuggling_gates_step8.csv",
+    "no_rigging_file": "no_rigging_gates_step8.csv",
+    "content_classification_file": "content_classification_step8.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step8.md",
+    "simulation_output": "simulation_output_step8.json",
+    "lineage_update": "../../mode_b_target_lineage.csv",
+    "grammar_manifest": "../../mode_b_grammar_manifest.csv",
+    "constraint_ledger": "../../mode_b_constraint_ledger.csv"
+  }
+}

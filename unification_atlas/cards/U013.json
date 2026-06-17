@@ -1,0 +1,214 @@
+{
+  "id": "U013",
+  "schema_note": "Enriched U013 card: merges the original unification candidate, the audit, the 4-skeptic panel, and the Test-Hardener+Fertility-Judge repair+scores produced 2026-06-03. Repair narrows the claim from a four-domain unification to a two-deterministic-leg shared-proof reorganization (D2 no-false-arrows + D4 lumpability) with the QM no-signalling leg explicitly split off as imported recovery. All load-bearing corpus claims were re-verified in-repo on 2026-06-03 (see source_reverification_2026_06_03).",
+
+  "original_card": {
+    "id": "U013",
+    "one_sentence_claim": "A single coarsening-monotonicity contract -- the audit functional A satisfies A(Q_f mu, Q_f mu') <= A(mu, mu') under every admissible pushforward Q_f -- is the one consistency condition behind three normally-separate physics nulls: no-false-arrows (a coarse-grained irreversibility arrow cannot exceed the micro arrow), the lumpability/closure-deficit null (exactly lumpable coarse-graining carries zero closure obstruction, CD_tau=0 iff tau-closed), and operational no-signalling (a remote basis choice leaves a local unconditional marginal invariant); read on three declared lenses, each null is the same monotone-divergence inequality saturating at its hypothesis surface, with the deterministic classical legs proved (Lean-anchored for the TV face) and the quantum no-signalling leg honestly imported.",
+    "domains_unified": [
+      "D2 (nonequilibrium statistical mechanics / stochastic thermodynamics: no-false-arrows)",
+      "D3 (information theory: monotone-divergence / DPI backbone, CMI chain rule)",
+      "D4 (renormalization / coarse-graining: lumpability and closure deficit)",
+      "QM (quantum measurement / quantum information: no-signalling marginal-invariance face)"
+    ],
+    "argument_family": "constraint-unification",
+    "shared_mechanism": "audit-DPI: the coarsening-monotone audit functional A -- instantiated as path-space KL asymmetry Sigma_T, total variation, quantum relative entropy, or conditional mutual information -- is non-increasing under any admissible coarse-graining pushforward Q_f (or partial trace / CPTP map). Each physics null is this one inequality read on a declared lens and saturated at its hypothesis surface.",
+    "derivability_class": "B",
+    "minimum_viable_unification": "A short note proving: GIVEN the audit-monotonicity contract A(Q_f mu, Q_f mu') <= A(mu, mu'), the three nulls are corollaries on three declared lenses -- (i) NG_ARROW_DPI / thm:dpi_path delivers no-false-arrows; (ii) the CMI identity with CD_tau=0 iff tau-closed delivers the lumpability / closure-deficit null (Kemeny-Snell recovered); (iii) no-signalling marginal invariance, with the finite deterministic TV-DPI as the classical analogue while the genuine quantum guard is the IMPORTED CPTP-DPI.",
+    "honest_status_note": "PARTIALLY beats the deflation critique. The underlying object IS textbook f-divergence monotonicity (DPI); SBT adds ZERO new quantitative content. The 'one law' is carried by NAMING: the commutative-subalgebra corollary that would make the classical and quantum legs literally the same theorem is UNWRITTEN. The QM no-signalling leg imports partial-trace/CPTP marginal invariance, CPTP-DPI, and Born statistics by citation; SBT does no work on the only step with physical content, so that leg is class-A recovery and opposite-world ELASTIC. Only the deterministic-partition TV audit is claimed Lean-certified; KL/Sigma_T audits and stochastic kernels are acknowledged-missing. What genuinely survives: for the two DETERMINISTIC legs (D2 no-false-arrows, D4 lumpability) the unification is a deductive, opposite-world-INELASTIC theorem, and the SAME inequality demonstrably spans three normally-disconnected domains.",
+    "builds_on_retro_cards": ["R028", "R004", "R030", "R029"]
+  },
+
+  "source_reverification_2026_06_03": {
+    "method": "Direct in-repo grep/find over /home/repos/six-birds-papers (50 .tex, 1 .py, 0 .lean) plus inspection of retrodiction_atlas/cards/{R028,R004,R030,R029}.json.",
+    "confirmed": [
+      "D4/D3 deterministic legs are GENUINELY PROVED in-corpus: prop:cd-decomposition (To_Cast_a_Stone line 178, H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau), prop:cd-kl (line 217, expected-KL form), prop:cd-zero (line 251, CD_tau=0 iff tau-closed; explicitly tied to Kemeny-Snell/Buchholz lumpability) all carry full written proofs.",
+      "R028 deterministic DPI leg is OPPOSITE-WORLD INELASTIC: opposite_world_test.could_explain_opposite=false, explanation 'The classical half is a deductive theorem'.",
+      "thm:tv-dpi exists as a theorem environment (Quantum line 805, 'Deterministic audit contraction (finite TV DPI)').",
+      "no-signalling appears as PROSE only at Quantum line 785 ('this invariance is the no-signalling constraint'); it is NOT a theorem environment and is backed by an EPR Python demonstration figure (line 796)."
+    ],
+    "confirmed_failures": [
+      "HIDDEN IMPORT verified at the QM leg: Quantum line 253 'We cite these standard facts rather than re-prove them here' (trace-distance contraction, relative-entropy monotonicity under CPTP); line 815-816 'We will not re-prove the full quantum DPI here' (Lindblad1975 cited). SBT does zero internal work on the only physically-substantive step.",
+      "R004 QM no-signalling leg is OPPOSITE-WORLD ELASTIC: revised claim states SBT 'RE-EXPRESSES (does not derive) operational no-signalling'; remaining_objections confirm 'DEEP PHYSICS IMPORTED, NOT DERIVED' and 'To_Notch lines 552-561 exhibit the signalling box b=x at max-TV=1 using the identical separator' (could_explain_opposite=true).",
+      "LEMMA 7 (commutative/diagonal/abelian-subalgebra corollary deriving classical DPI from CPTP relative-entropy monotonicity) is UNWRITTEN: grep for 'commutative subalgebra|diagonal subalgebra|abelian subalgebra' across all 50 .tex returns ZERO matches. Note: Quantum line 880 mentions packaging maps as 'conditional expectation onto a commutative record algebra' as a passing descriptive remark -- this is NOT the unification lemma and proves nothing about DPI-as-specialization.",
+      "LEAN ANCHOR IS BIBLIOGRAPHIC: find -name '*.lean' returns 0 files. 'tvdist_pushforward_le' and 'DPI_Finite.lean' appear only as identifiers inside .tex (Quantum lines 814, 951). The 'Lean-certified TV face' that underwrites the inelasticity selling point cannot be checked in-repo.",
+      "Only 1 .py file exists, so the R030 null-control battery (CD_1~4.34e-17, no_signalling_dist~2.22e-16) could not be fully reproduced in-repo from this corpus snapshot."
+    ]
+  },
+
+  "audit": {
+    "compression": {
+      "assumptions_without": 7,
+      "assumptions_with": 4,
+      "params_without": 6,
+      "params_with": 4,
+      "compression_strength": "medium",
+      "hidden_import_risk": "HIGH on the QM leg, LOW on the deterministic legs. The three deterministic legs (D2 path-KL DPI, D3 CMI chain rule, D4 lumpability) genuinely collapse to one finite divergence-contraction theorem SBT proves; the QM leg achieves NO assumption reduction (CPTP-DPI, partial-trace marginal invariance, Born statistics imported wholesale by citation). The single bridge lemma (lemma 7) that would make this an honest assumption-merge is unwritten. Compression is real but NAMING-level for cross-domain scope: capped at medium."
+    },
+    "baseline": {
+      "merely_repackages": false,
+      "theory_advantage": [
+        "Inelasticity on the two deterministic legs: path-KL/TV-DPI and CD_tau>=0 are DEDUCTIVE finite theorems; SBT provably cannot produce macro-arrow>micro-arrow or a fabricated closure obstruction (R028 could_explain_opposite=false). The corpus's single genuinely non-elastic constraint-unification result.",
+        "Explicit observable-preserving bridge maps for D2/D3/D4 (3 of 7 maps at quality >=4, invertible/lossless for D3/D4), making legible that irreversibility-arrow bounds, effective-theory closure obstructions, and (classically) no-signalling are the same monotone inequality.",
+        "Finite, exactly-computable, partly mechanizable formulation with machine-zero null controls."
+      ],
+      "theory_disadvantage": [
+        "ZERO new quantitative content: the underlying object IS textbook DPI; no new bound, constant, or forbidden region.",
+        "The 'one law' is carried by NAMING: the commutative-subalgebra bridge lemma is UNWRITTEN in every .tex.",
+        "The QM leg is imported and opposite-world ELASTIC (signalling box at max-TV=1 representable at zero cost; R004).",
+        "No RG semigroup (NG_LADDER_IDEM: fixed completion stabilizes in one step), so strictly weaker than B_EFT on D4/RG; Sigma_T/EPR are explicitly NOT physical entropy production, so it cannot reach B_ENTROPIC's physics."
+      ]
+    },
+    "anti_superficial": {
+      "same_word": { "pass": true, "note": "'Audit functional A' / monotone divergence is ONE genuine object (relative entropy / f-divergence) consistently used; the shared word tracks a shared object, not equivocation." },
+      "shared_mechanism": { "pass": true, "note": "Borderline-pass: one finite divergence-contraction theorem does real work in D2/D3/D4; the QM leg is imported, not the same proved mechanism -- 3 legs of one mechanism + 1 relabeled patch." },
+      "bridge_map": { "pass": true, "note": "Observable-preserving maps explicitly written for the deterministic legs (Q_f=f_* pushforward / conditional expectation; 3 of 7 maps at quality >=4, invertible/lossless for D3/D4). QM bridge maps are quality 1-2 (analogical/limiting)." },
+      "hidden_import": { "pass": false, "note": "FAILS at the QM leg: the contract claims to subsume no-signalling but imports partial-trace/CPTP marginal invariance, CPTP-DPI, and Born statistics by citation. Deterministic legs do NOT hidden-import." },
+      "elasticity": { "pass": false, "note": "MIXED, scored fail: the unification as a WHOLE inherits elasticity from its weakest leg (R004 QM no-signalling, opposite-world ELASTIC). Only R028's deterministic DPI is inelastic." },
+      "compression": { "pass": true, "note": "Fewer independent assumptions than four separate theories for the deterministic core; partial pass -- parameter count barely drops, QM leg adds none." },
+      "surprise": { "pass": false, "note": "No new relation, constraint, or forbidden case beyond textbook DPI; every leg is recovery/re-proof. The only 'forbidden case' (no macro-arrow>micro-arrow) is the DPI restated." }
+    },
+    "mechanism_tag": "audit-DPI",
+    "audit_verdict": "PARTIAL UNIFICATION -- the corpus's single best constraint-unification shot and its only non-elastic one, but it beats the deflation critique only on SCOPE + INELASTICITY for its two deterministic legs (D2 no-false-arrows, D4 lumpability), never on novelty. COMPRESSION is real but MEDIUM and naming-level. HIDDEN IMPORT is the decisive failure (QM no-signalling imports CPTP-DPI/partial-trace/Born by citation; lemma 7 unwritten; 0 .lean files so even the TV anchor is bibliographic). Anti-superficiality PASSES same_word, shared_mechanism (borderline), bridge_map, compression; FAILS hidden_import, elasticity, surprise. Does NOT merely repackage a named physics unification, but vs the honest baseline (textbook f-divergence/Petz monotonicity + Kemeny-Snell + standard no-signalling) it adds no new bound. DEFENSIBLE CONTENT: for D2/D4 it is a deductive, opposite-world-INELASTIC theorem and the same inequality spans three normally-disconnected courses -- ship ONLY as RECOVERY + REORGANIZATION with an inelasticity guarantee."
+  },
+
+  "skeptic_panel": {
+    "summary": {
+      "min_survival": 2,
+      "mean_survival": 2,
+      "fatal_present": true,
+      "is_real_unification": "0/4",
+      "beats_deflation": "0/4",
+      "beats_baseline": "0/4"
+    },
+    "skeptics": [
+      {
+        "skeptic_role": "Quantum-foundations skeptic",
+        "fatal_objections": [
+          "HIDDEN IMPORT on the load-bearing leg: no-signalling face imports partial-trace/CPTP marginal invariance, CPTP-DPI, and Born statistics by citation (Quantum lines 253, 815-816).",
+          "THE UNIFYING THEOREM DOES NOT EXIST: the commutative/diagonal-subalgebra corpus corollary ('lemma 7') is unwritten -- grep returns nothing. 'One monotone, four domains' is shared vocabulary plus a shared citation."
+        ],
+        "is_real_unification": false, "beats_deflation": false, "beats_baseline": false,
+        "adversarial_survival_score": 2,
+        "what_would_change_my_mind": "A written, checked proof of the commutative/diagonal-subalgebra corollary deriving the finite classical path-space KL/TV-DPI as a strict specialization of CPTP relative-entropy monotonicity, plus actually-shipped compiling Lean extending certification from the TV face to KL/Sigma_T and stochastic kernels."
+      },
+      {
+        "skeptic_role": "Nonequilibrium statistical physicist",
+        "fatal_objections": [
+          "As a NEW unification it is empty: the shared object is textbook f-divergence/Petz monotonicity; no new bound, constant, or forbidden region.",
+          "The 'one law' connecting classical and quantum legs is UNWRITTEN (lemma 7 in no .tex)."
+        ],
+        "is_real_unification": false, "beats_deflation": false, "beats_baseline": false,
+        "adversarial_survival_score": 2,
+        "what_would_change_my_mind": "A written, checked proof of the commutative-subalgebra lemma + extended (actually-shipped) Lean covering the KL/Sigma_T audit and stochastic kernels."
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist (bridge-map / hidden-import auditor)",
+        "fatal_objections": [
+          "QM no-signalling leg is fatal-as-a-derivation: the only step with physical content is imported by citation; the contract assumes the Hilbert/CPTP/partial-trace structure it claims to unify.",
+          "The keystone unification lemma is UNWRITTEN in every .tex; the 'single theorem' status that would distinguish this from deflation does not exist in the corpus."
+        ],
+        "is_real_unification": false, "beats_deflation": false, "beats_baseline": false,
+        "adversarial_survival_score": 2,
+        "what_would_change_my_mind": "A written and machine-checked proof of the commutative/diagonal-subalgebra corollary pulling the no-signalling leg into the SAME proved theorem, with shipped/compiling Lean for KL/Sigma_T and stochastic kernels."
+      },
+      {
+        "skeptic_role": "Hostile cross-domain referee (stochastic-thermo / quantum-information)",
+        "fatal_objections": [
+          "Binding lemma making classical and quantum legs the SAME theorem is unwritten; the four-domain headline is naming, not shared proof.",
+          "ZERO new content: the underlying object IS textbook DPI; the only 'forbidden case' is the DPI restated.",
+          "Hidden-import at the QM seam: imports CPTP-DPI/partial-trace/Born, assuming exactly the quantum structure it claims to unify."
+        ],
+        "is_real_unification": false, "beats_deflation": false, "beats_baseline": false,
+        "adversarial_survival_score": 2,
+        "what_would_change_my_mind": "A written, machine-checked proof of the commutative-subalgebra corollary plus existing, compiling Lean extended from the TV face to KL/Sigma_T and stochastic kernels -- converting four parallel theorems sharing a label into one mechanized theorem with commutative and noncommutative specializations."
+      }
+    ],
+    "panel_consensus": "Unanimous (4/4): NOT a real unification, does NOT beat deflation, does NOT beat baseline AS A FOUR-DOMAIN CLAIM. Unanimous that the TWO DETERMINISTIC LEGS (D2 no-false-arrows, D4 lumpability) are genuine, proved, opposite-world-INELASTIC shared-mechanism content and that the honest path is to ship exactly those as RECOVERY + REORGANIZATION while explicitly demoting the QM no-signalling leg to imported/class-A/elastic. All four name the same single repair that would upgrade naming to theorem: write+check the commutative/diagonal-subalgebra corollary (lemma 7) and ship compiling Lean."
+  },
+
+  "repair_and_scoring": {
+    "repair_status": "repaired",
+    "repair_kind": "split overbroad unification + narrow scope + admit a domain is only imported/sketched + convert vague QM claim into an explicit import boundary",
+    "revised_one_sentence_claim": "GIVEN the audit-monotonicity contract A(Q_f mu, Q_f mu') <= A(mu, mu') for a monotone f-divergence under a deterministic coarse-graining pushforward, the SAME finite divergence-contraction theorem yields two normally-separate, deductively-proved nulls -- no-false-arrows (a coarse-grained path-KL irreversibility proxy Sigma_T cannot exceed the micro proxy; NG_ARROW_DPI/thm:dpi_path) and the lumpability/closure-deficit null (CD_tau=I(X_t;Y_{t+tau}|Y_t)=0 iff the partition is tau-closed; prop:cd-zero, Kemeny-Snell recovered) -- with explicit invertible/lossless bridge maps and opposite-world INELASTICITY for both; the quantum no-signalling face is NOT unified but openly IMPORTED (CPTP relative-entropy monotonicity, partial-trace marginal invariance, and Born statistics by citation), shown only as a same-shaped classical TV-DPI analogue, and is opposite-world ELASTIC.",
+    "new_minimum_viable_unification": "A 2-leg RECOVERY + REORGANIZATION note. (1) State the audit-monotonicity contract once on a finite probability space with A a monotone f-divergence and Q_f a deterministic surjective pushforward. (2) D2 leg: instantiate A=Sigma_T (path-space KL asymmetry); by reversal-commutation + KL contraction under the pointwise path extension f^{(T+1)} obtain NG_ARROW_DPI (no-false-arrows), with EPR=0 at the detailed-balance saturation surface. (3) D4 leg: instantiate A as the CMI gap; by prop:cd-decomposition/prop:cd-kl, CD_tau=I(X_t;Y_{t+tau}|Y_t)>=0 is the DPI in conditional form, and prop:cd-zero gives CD_tau=0 iff tau-closed (Kemeny-Snell at tau=1). Both legs are deductive theorems already written in the corpus, hence opposite-world INELASTIC (SBT cannot produce macro-arrow>micro-arrow or a fabricated closure obstruction). (4) Demarcation appendix: exhibit the finite TV-DPI (thm:tv-dpi) as the same-shaped classical analogue of operational no-signalling, and EXPLICITLY flag that the quantum content (CPTP-DPI, partial-trace marginal invariance, Born statistics) is IMPORTED by citation and opposite-world ELASTIC -- not unified. (5) Carry the Sigma_T-is-an-informational-proxy disclaimer and the lens-is-a-free-input disclaimer on every cross-domain statement. The honest selling point: ONE proved finite monotone-divergence theorem controls both irreversibility-arrow bounds and effective-theory closure obstructions -- two results normally taught in two disconnected courses -- inelastically.",
+    "changes_made": [
+      "SPLIT the four-domain unification: demoted the QM no-signalling leg from a unified domain to an explicitly IMPORTED, opposite-world-ELASTIC demarcation appendix; the headline unification is now the two DETERMINISTIC legs (D2 no-false-arrows + D4 lumpability) plus the D3 information-theory backbone they share.",
+      "REMOVED the claim that the audit contract 'subsumes' no-signalling; replaced with the honest statement that SBT RE-EXPRESSES no-signalling as marginal-invariance and IMPORTS the only physically-substantive step (matches R004's verified verdict).",
+      "REPLACED the analogical QM bridge (quality 1-2) being counted toward the unification with an explicit relation: the finite TV-DPI is offered ONLY as a same-shaped classical analogue, not as evidence the quantum fact is derived.",
+      "ADDED a concrete cross-domain consequence for the surviving core: the SAME inequality forbids BOTH a macro irreversibility arrow exceeding the micro arrow AND a coarse-graining that manufactures (rather than merely hides) a closure obstruction -- one inelastic theorem, two textbook nulls.",
+      "DOWNGRADED the 'Lean-certified' claim to 'Lean-CLAIMED, currently bibliographic' since find -name '*.lean' returns 0 files in-repo; the inelasticity guarantee now rests on the WRITTEN .tex proofs (prop:cd-zero etc.), which were verified, not on an unverifiable Lean anchor.",
+      "RELABELED the 'one law' connecting classical and quantum as NAMING-only and flagged lemma 7 (commutative-subalgebra corollary) as the single unwritten, high-value upgrade -- not assumed to exist.",
+      "RE-AFFIRMED disclaimers: Sigma_T/EPR are informational proxies (NOT physical entropy production, NOT a derived second law); the lens is a declared FREE input (no pointer-basis selection derived)."
+    ],
+    "remaining_objections": [
+      "ZERO new quantitative content survives even after repair: the shared object is textbook f-divergence/Petz monotonicity. Deflation wins decisively on novelty; the defensible value is scope + inelasticity for the two deterministic legs, not a new bound.",
+      "The QM no-signalling leg remains imported and opposite-world ELASTIC; the repair quarantines it honestly but does not fix it. Only writing+checking the commutative-subalgebra corollary (lemma 7) would pull it into the derived core, and that lemma is unwritten in every .tex.",
+      "The inelasticity guarantee now rests on the written .tex proofs (verified) but the advertised Lean mechanization is bibliographic (0 .lean files); the 'machine-checked' selling point is currently unverifiable in-repo.",
+      "KL/Sigma_T audits and stochastic (non-deterministic) kernels are acknowledged-missing even in the bibliographic Lean, so the certified spine does not cover the D2 leg at full strength; the D4 leg is the most fully written.",
+      "Even the surviving 2-leg core is, at the right abstraction, decades-old prior art (path-KL coarse-graining bound; Kemeny-Snell lumpability as CMI-vanishing) -- the reorganization is correct but unsurprising to specialists in either domain.",
+      "Risk of the D2 'arrow/thermodynamics' framing drifting toward a disclaimed derived second law if the informational-proxy disclaimer is dropped."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 4,
+      "plausibility": 4,
+      "depth_of_unification": 2,
+      "breadth_of_unification": 2,
+      "non_ad_hocness": 3,
+      "bridge_explicitness": 3,
+      "derivational_strength": 3,
+      "compression_power": 2,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "robustness": 3,
+      "baseline_advantage": 2,
+      "adversarial_survival": 2,
+      "publication_potential": 3
+    },
+    "score_rationale": {
+      "impact": "2 -- reorganizes textbook material; no new bound, prediction, or forbidden region. The credibility-anchor value (one inelastic theorem the audit layer cannot fake a false positive against) is real but internal to SBT, not field-moving.",
+      "execution_ease": "4 -- the surviving 2-leg MVU is LOW cost: NG_ARROW_DPI/thm:dpi_path and prop:cd-decomposition/cd-kl/cd-zero are ALREADY WRITTEN and verified in-corpus; assembling them into one demarcation note with explicit bridge maps is light. Capped below 5 by the still-needed honest-import write-up and the missing Lean artifacts if mechanization is to be claimed.",
+      "plausibility": "4 -- the two deterministic legs are deductive theorems verified in the .tex; they are correct and SBT genuinely cannot violate them. Not 5 because the broader 'one contract' framing leans on the unwritten lemma 7 for full force.",
+      "depth_of_unification": "2 -- for the deterministic core the depth is genuine (one finite contraction theorem instantiated as Sigma_T and as the CMI gap), but it is shallow recovery of a known abstraction; the analogical-only QM bridge contributes no depth (capped per the rubric: analogical bridges cap depth).",
+      "breadth_of_unification": "2 -- after the honest split, only 2 deductive domains (D2, D4) plus their shared D3 backbone are genuinely unified; the QM domain is imported, not unified. Two normally-disconnected courses sharing one theorem is real but narrow breadth.",
+      "non_ad_hocness": "3 -- the deterministic legs are non-ad-hoc (the divergence object is one genuine f-divergence, not a pun; same_word passes). Capped at 3 because the cross-domain 'one law' is carried by naming (lemma 7 unwritten) and the QM leg is a relabeled import -- hidden_import FAILED, which caps non_ad_hocness.",
+      "bridge_explicitness": "3 -- D3/D4 bridge maps are explicit, invertible, and lossless (Q_f=f_* / conditional expectation; CMI chain rule); D2 map is explicit and operational. Capped at 3 (not higher) because the QM bridge maps are analogical/limiting (quality 1-2) and hidden_import FAILED at that leg.",
+      "derivational_strength": "3 -- D2 and D4 are written deductive derivations (verified); D3 is the textbook carrier. Capped by: QM leg is assumed/imported (not derived), and the advertised Lean mechanization is bibliographic (0 .lean), so the strongest 'machine-checked' derivational claim is unverifiable in-repo.",
+      "compression_power": "2 -- genuine assumption compression for the deterministic core (~7 separate-domain assumptions -> ~4), but parameter count barely drops (lens/divergence/horizon stay free; lens is a disclaimed input) and the QM leg achieves zero compression. Medium-low.",
+      "discriminative_power": "1 -- the only 'forbidden case' is the DPI restated (no macro-arrow>micro-arrow); it forbids nothing an honest textbook implementation would not already forbid. surprise FAILED and the QM leg is opposite-world elastic. Near-zero new discriminative content.",
+      "audience_legibility": "4 -- the reorganized claim is clean and teachable (one monotone, two textbook nulls), with explicit bridge maps and clearly-labeled import boundaries; legible to all five target audiences. Not 5 because the honest-status caveats are numerous.",
+      "robustness": "3 -- the two deterministic legs are robust (deductive, opposite-world INELASTIC, R028 confirmed); the overall claim is fragile precisely at the imported/elastic QM leg, which the repair quarantines but does not strengthen.",
+      "baseline_advantage": "2 -- does NOT merely repackage a named physics unification (domains orthogonal to B_EW/GUT/string), but vs the honest baseline (textbook DPI/Petz + Kemeny-Snell + standard no-signalling) it adds no new bound and is strictly weaker than B_EFT (no RG semigroup) and cannot reach B_ENTROPIC's physical entropy. Slim advantage = inelasticity + packaged scope only.",
+      "adversarial_survival": "2 -- mirrors the panel: 0/4 real-unification, 0/4 beats-deflation, all fatal objections present (hidden import + unwritten lemma 7), min/mean survival 2. The two-leg core survives as recovery; the four-domain unification does not.",
+      "publication_potential": "3 -- publishable as an honest RECOVERY + REORGANIZATION / demarcation note (one inelastic monotone-divergence theorem behind two textbook nulls, with a clearly-marked import boundary and a named open lemma), suitable for a methods/foundations venue. NOT publishable as a new four-domain physics unification or a derived no-signalling theorem."
+    },
+    "proposed_bin": "B",
+    "bin_rationale": "B = skeptic-resistant structural. After honest narrowing to the two deterministic legs, the surviving content is a deductive, opposite-world-INELASTIC shared-mechanism reorganization that all four skeptics agreed is genuine and that withstands the deflation critique on the inelasticity+scope axis (just not on novelty). It is the corpus's single non-elastic constraint-unification result and the credibility anchor for the whole audit layer -- structural rather than a quick cosmetic win (A), but not a flagship (D) since it makes no new prediction.",
+    "recommended_priority": "medium-high",
+    "priority_rationale": "High strategic value as the audit layer's inelasticity credibility anchor and low execution cost for the MVU (both legs already written), but capped at medium-high by zero new quantitative content and the gating dependency (lemma 7 + actual Lean) needed to upgrade naming to theorem and to absorb the QM leg.",
+    "recommended_artifact": "A short audit-grade RECOVERY + REORGANIZATION note: state the audit-monotonicity contract once, derive the two deterministic nulls (no-false-arrows via NG_ARROW_DPI/thm:dpi_path; lumpability via the CD_tau identity, Kemeny-Snell recovered) as corollaries on two declared lenses with explicit invertible/lossless bridge maps, and append a clearly-labeled DEMARCATION section showing the finite TV-DPI as the same-shaped classical analogue of no-signalling while flagging the quantum content as IMPORTED and opposite-world ELASTIC. Stretch goals (separately gated): (a) actually ship and compile DPI_Finite.lean (tvdist_pushforward_le) and extend it to the KL/Sigma_T audit and stochastic kernels so the inelasticity anchor is checkable; (b) attempt the commutative/diagonal-subalgebra corollary (lemma 7) deriving classical DPI from CPTP relative-entropy monotonicity, which would pull the QM leg into the derived core. Sell strictly as recovery + reorganization with an inelasticity guarantee -- never as new physics, a derived second law, or a derived no-signalling theorem.",
+    "one_line_verdict": "Repaired by amputation: the four-domain unification fails (hidden-imported, elastic QM leg; unwritten lemma 7; bibliographic Lean), but the two-deterministic-leg core (no-false-arrows + lumpability) survives as a deductive, opposite-world-INELASTIC reorganization of textbook DPI -- ship it as recovery + reorganization with an inelasticity guarantee, never as new physics.",
+    "mechanism_tag": "audit-DPI",
+    "target_audience": [
+      "Stochastic-thermodynamics / nonequilibrium statistical mechanics researchers (coarse-graining bounds on entropy-production proxies)",
+      "Information theorists (data-processing inequality, monotone divergences, conditional mutual information)",
+      "Markov-chain / model-reduction practitioners (exact lumpability, closure of effective theories)",
+      "Formal-methods / Lean-proof and reproducibility-minded reviewers auditing the inelasticity claim",
+      "Quantum-information / foundations researchers (as the audience for the explicitly-demarcated imported no-signalling leg, NOT as a unified domain)"
+    ]
+  },
+
+  "proposed_bin": "B",
+  "recommended_priority": "medium-high",
+  "recommended_artifact": "Short audit-grade RECOVERY + REORGANIZATION note deriving the two deterministic nulls (no-false-arrows + lumpability) from one audit-monotonicity contract on two declared lenses, with explicit invertible bridge maps and a clearly-labeled imported/elastic QM no-signalling demarcation appendix; stretch goals are shipping compiling Lean (DPI_Finite.lean + KL/Sigma_T + stochastic kernels) and writing the commutative-subalgebra corollary (lemma 7).",
+  "one_line_verdict": "Repaired by amputation: the four-domain unification fails (hidden-imported, elastic QM leg; unwritten lemma 7; bibliographic Lean), but the two-deterministic-leg core (no-false-arrows + lumpability) survives as a deductive, opposite-world-INELASTIC reorganization of textbook DPI -- ship as recovery + reorganization with an inelasticity guarantee.",
+  "mechanism_tag": "audit-DPI",
+  "target_audience": [
+    "Stochastic-thermodynamics / nonequilibrium statistical mechanics researchers",
+    "Information theorists (DPI, monotone divergences, conditional mutual information)",
+    "Markov-chain / model-reduction and renormalization practitioners (exact lumpability)",
+    "Formal-methods / Lean-proof and reproducibility-minded reviewers",
+    "Quantum-information / foundations researchers (as audience for the demarcated imported no-signalling leg)"
+  ]
+}

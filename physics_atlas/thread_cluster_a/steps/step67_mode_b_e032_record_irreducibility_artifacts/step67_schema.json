@@ -1,0 +1,19 @@
+{
+  "active_residual": "E032 single-outcome selection after Step66 record-stability blindness",
+  "all_noncontrol_properties_blind": true,
+  "anti_smuggle_pass": true,
+  "battery_property_count": 5,
+  "derives_collapse": false,
+  "exit_state": "SELECTION_RECORD_IRREDUCIBLE_STRUCTURAL",
+  "frame_transfer_certified": false,
+  "new_physics_claim": false,
+  "only_forcings_are_smuggle_or_beyond_sigma_f": true,
+  "orientation": "ModeB_E032_record_irreducibility",
+  "picks_a_shape": false,
+  "root_landed": true,
+  "selection_not_sigma_f_definable": true,
+  "solves_measurement_problem": false,
+  "step": 67,
+  "structural_argument_grade": "structural",
+  "verdict": "SELECTION_NOT_FORCED_BY_SIGMA_F_INTERNAL_RECORD_PROPERTIES"
+}

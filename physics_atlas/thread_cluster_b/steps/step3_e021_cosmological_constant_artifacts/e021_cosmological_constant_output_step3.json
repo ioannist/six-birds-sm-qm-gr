@@ -1,0 +1,51 @@
+{
+  "step": 3,
+  "orientation": "E021 construction as audited P5/P6 vacuum readout of L",
+  "source_step1_carrier": "steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv",
+  "rho_IR_selected": 0.0010400000000000001,
+  "rho_UV_toy": 1040000000.0000001,
+  "toy_mismatch_ratio": 1000000000000.0,
+  "toy_log10_mismatch": 12.0,
+  "predicates": {
+    "P5_vacuum_currency": {
+      "audited_in_L": true,
+      "GR_status": "input_parameter_untracked_by_GR",
+      "rho_Lambda_readout": 0.0010400000000000001
+    },
+    "P6_uv_ir_ledger": {
+      "unaudited_counterterm_tracked": false,
+      "booked_ledger_monotone": true,
+      "mismatch_ratio_modeled_toy": true
+    },
+    "P2_selection": {
+      "ensemble_size": 5,
+      "selected_candidate": "vac_A_selected",
+      "selection_rule": "minimum_selection_score"
+    },
+    "nonfactorization": {
+      "UV_to_Lambda_obstruction_count": 4,
+      "Step1_GR_to_d5_obstruction_count": 1
+    }
+  },
+  "controls": {
+    "derivation_control_fails": true,
+    "descending_control_factors": true,
+    "booked_ledger_nonvacuous": true,
+    "mismatch_ratio_marked_toy": true
+  },
+  "verdict": {
+    "type": "E021_audited_vacuum_readout_constructed_finite_toy",
+    "firm_part_selected_run_readout": true,
+    "firm_part_missing_audit_ledger": false,
+    "modeled_p6_ledger_illustrative": true,
+    "contested_distinct_audit_currency_reading": true,
+    "P5_currency_built": true,
+    "P6_ledger_booked": true,
+    "P2_selection_built": true,
+    "nonfactorization_signature_computed": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite-carrier E021 construction: audited vacuum currency, toy UV-to-IR ledger, and selected/run readout shape only; no Lambda value or selection mechanism is supplied."
+}

@@ -1,0 +1,28 @@
+{
+  "step": 1,
+  "orientation": "Cluster B shared-substrate frame for E021 and E042",
+  "active_residual": "root_cluster_b_E021_E042",
+  "carrier": {
+    "base": "E018 co-sourcing four-mode toy",
+    "extended": "L_ext=(d0_density,d1_phase,d2_transport,d3_curvature,d4_subplanck,d5_vacuum)",
+    "state_count": 12,
+    "gr_smooth_sigma": ["d0_density", "d2_transport", "d3_curvature"],
+    "q_QM": ["d0_density", "d1_phase", "d2_transport"]
+  },
+  "candidate_move": "Extend L with E042 d4_subplanck and E021 d5_vacuum readouts; compute non-factorization against GR smooth Sigma_f and q_QM; verify smooth-regime shadow descent and controls.",
+  "final_verdict": {
+    "type": "shared_substrate_frame_established",
+    "E021_non_descending_readout_of_L": true,
+    "E042_non_descending_readout_of_L": true,
+    "smooth_shadow_descent_holds": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "targets": ["E021_cosmological_constant", "E042_singularities"],
+    "E021_readout": "d5_vacuum",
+    "E042_readout": "d4_subplanck",
+    "next_live_options": ["E042_high_curvature_regime_build", "E021_vacuum_budget_regime_build"]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "frame_transfer_certified": false,
+  "mode": "ModeB_higher_layer_refinement",
+  "new_physics_claim": false,
+  "next_grammar_delta": "content boundary: the remaining supports share the selected structure but differ by chiral content; continue into a matter-content cascade or observed-input boundary",
+  "refined_survivors": 8,
+  "reproduced_step35_survivors": 12,
+  "root_landed": false,
+  "single_factor_eliminated": true,
+  "step": 36,
+  "target_dimensions": "2|3",
+  "target_distinguished": false,
+  "target_passes": true,
+  "target_structure_only": true,
+  "target_witness": "rank_one_fundxsinglet:-3",
+  "verdict": "CONTENT_TYPE_LIMIT"
+}

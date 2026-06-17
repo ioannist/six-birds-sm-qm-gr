@@ -1,0 +1,3 @@
+source,target,permutation_matrix,residual,is_iso_half
+L,L_prime_relabel,"[[0.0, 0.0, 0.0, 1.0], [1.0, 0.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 1.0, 0.0, 0.0]]",0.0,True
+L_prime_relabel,L,"[[0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 0.0, 1.0], [0.0, 0.0, 1.0, 0.0], [1.0, 0.0, 0.0, 0.0]]",0.0,True

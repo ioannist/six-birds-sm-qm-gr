@@ -1,0 +1,4 @@
+control,passes,evidence
+not_a_target_row_picker,True,target passes but final survivors are 80
+fails_some_corrected_step31_survivors,True,50 corrected Step-31 survivors fail corrected chirality
+dominance_test_computed,True,dominant structure computed before/after as 3 -> 3

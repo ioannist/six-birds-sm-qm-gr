@@ -1,0 +1,25 @@
+support_id,dimensions,support_key,witness_boson_id,witness_kind,expected_exotic_count
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_00,confining_charged_massive_vector,6
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_01,confining_charged_massive_vector,6
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_02,confining_charged_massive_vector,6
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_03,confining_charged_massive_vector,6
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_04,confining_charged_massive_vector,6
+support_08,4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,s08_broken_confining_charged_05,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_00,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_01,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_02,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_03,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_04,confining_charged_massive_vector,6
+support_09,4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,s09_broken_confining_charged_05,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_00,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_01,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_02,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_03,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_04,confining_charged_massive_vector,6
+support_10,4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,s10_broken_confining_charged_05,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_00,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_01,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_02,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_03,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_04,confining_charged_massive_vector,6
+support_11,4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,s11_broken_confining_charged_05,confining_charged_massive_vector,6

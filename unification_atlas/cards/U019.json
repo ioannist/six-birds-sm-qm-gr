@@ -1,0 +1,209 @@
+{
+  "id": "U019",
+  "schema_note": "Merged enriched unification card. Sections: original_card (the U019 candidate as supplied), source_verification (independent line-checks against the cited papers), audit (compression/baseline/anti-superficiality controls as supplied), skeptic_panel (4 adversarial referees as supplied), repair_and_scoring (this Test-Hardener+Fertility-Judge pass), then triage fields. All load-bearing claims were independently verified against source .tex: To_Cast_a_Stone (lines 89,110,114,166,178,217,251,261,296,298,357,393,395,397,406,415,519-544), Six_Birds_No_Go_Theorems (lines 176,178,303-332,415,439-446,673,693,722), Holonomy_with_Memory (lines 115,125,205,340,447-475,767). Quotes <=25 words. SBT self-disclaimers honored; gaps marked. All numerics (CD_1=4.34e-17, RM^uniform_1=5.29e-17, residual<=2.87e-16, r=0.959 uniform-lift, alpha-sweep 0.00827->0.0482) read from the frozen benchmark summaries in To_Cast_a_Stone sec:results-markov.",
+
+  "source_verification": {
+    "verified_true": [
+      "CD_tau decomposition H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau is prop:cd-decomposition (Cast line 178), proved by conditional-MI chain rule (lines 186-203).",
+      "Expected-KL form CD_tau=sum_x pi(x) D_KL(p_x||pbar) is prop:cd-kl (Cast line 217-239).",
+      "CD_tau=0 <=> tau-closed under full support is prop:cd-zero (Cast line 251-258), clean iff with full-support converse.",
+      "D4 lumpability concession VERIFIED VERBATIM, Cast line 261: 'tau-closedness at tau=1 is the classical lumpability condition stated in terms of packaged destination distributions; for tau>1 it is the same condition after staging by tau' (cites Kemeny-Snell, Buchholz).",
+      "Variational identity is the NG_MACRO_CLOSURE_DEFICIT theorem (No-Go line 415) with best macro kernel lem (No-Go line 722); Csiszar concession VERIFIED, No-Go line 326 'the variational minimizer below is a finite KL-projection viewpoint [Csiszar1975]' and line 693 'the variational minimizer is a finite KL-projection instance'.",
+      "NG_LADDER_IDEM VERIFIED, No-Go line 439-444: idempotent packaging stabilizes after one step, 'later iterates add no new structure because the map has already stabilized' -> forbids an RG semigroup.",
+      "Pinsker route-mismatch bound is prop:rm-lower-bound (Cast line 298); stated for the stationary-conditional lift (line 296 defines RM^stat targeting pbar_y).",
+      "r=0.959 uses the UNIFORM lift, NOT the stationary lift, VERIFIED Cast line 397: 'the Pearson correlation between RM^uniform and CD is r=0.959 ... Although Prop rm-lower-bound is stated for the stationary-conditioned route mismatch, the cheaper operational mismatch already serves as a practical proxy'.",
+      "Lumpable benchmark numbers VERIFIED Cast line 395: 'CD_1(Pi)=4.34e-17 and RM^uniform_1(Pi)=5.29e-17 ... maximum absolute residual 2.87e-16 over all rows ... the benchmark serves as a calibration device'.",
+      "Lean KL bridge is intentionally modest, VERIFIED Cast lines 519-542: 'It does not attempt a full mechanization of conditional mutual information ... Instead it certifies the KL step', companion repo github.com/ioannist/six-birds-randomness.",
+      "D3 BRIDGE VERIFIED ABSENT: Cast never cites the Holonomy paper; its only 'holonomy' tokens are the P3 primitive label 'protocol holonomy / route mismatch' (lines 96,125). Cast cites Shalizi-Crutchfield ONLY as external tradition (line 114): 'Computational mechanics similarly isolates predictive sufficiency ... Our contribution is different in emphasis'.",
+      "Holonomy DECLINES causal-state identification, VERIFIED line 115: 'The present paper does not identify PredictiveQ with any one of those formalisms'; line 767: 'The paper does not claim to subsume those frameworks'; line 125: results 'are individually standard'.",
+      "Disjoint state spaces VERIFIED Holonomy line 466: 'the exact finite quotients CurrentQ and PredictiveQ are computed by exact equality of signature vectors'; line 475: 'the present quotients are defined by event signatures rather than by preservation of the Markov property under aggregation' -- NOT the same object as conditional MI on a Markov chain."
+    ],
+    "verified_false_or_unsupported": [
+      "The headline 'three-domain duality' is NOT supported: the D3 leg's bridging lemma (CD_tau=0 <=> single-lag predictive sufficiency in the Holonomy/causal-state sense) is absent and the two formalisms do not share a state space.",
+      "Treating D2 as an independent third(/second) domain doing separate work is partly inflationary: D2 is the SAME finite stationary Markov substrate as D4; the 'D2 noise budget' IS the exact split H(Y|Y)=H(Y|X)+CD computed on the identical object. The genuine claim is 'one object, two readings of one identity', not mechanism reuse across two physically distinct domains."
+    ],
+    "no_disclaimer_crossed": "Confirmed: no Born rule, no continuum/Lorentz/Fock, no RG flow (NG_LADDER_IDEM honored), CD>0 is NOT read as irreversibility/entropy production (disclaimer 13 honored), lens Pi is a free input (MISS_LENS_SEL flagged), hashing/one-wayness scoped OUT entirely (unlike R029)."
+  },
+
+  "original_card": {
+    "id": "U019",
+    "one_sentence_claim": "The closure deficit CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t) is a single exact conditional-mutual-information obstruction whose vanishing simultaneously IS exact Markov lumpability / a closed effective macro law (D4) and, via a moderate-difficulty bridging lemma, IS single-lag predictive sufficiency / screening-off of the micro past from the packaged future (D3), both computed on one finite stationary Markov substrate (D2); so 'the coarse dynamics closes' and 'the coarse state screens off the future' are observable-preserving duals -- they agree on the best-macro-kernel K* and every f-definable predictive statistic -- differing only in which side of the exact split H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau one reads.",
+    "domains_unified": [
+      "D4 (renormalization / coarse-graining / Mori-Zwanzig closure obstruction)",
+      "D3 (information theory: predictive sufficiency / computational-mechanics causal states)",
+      "D2 (statistical mechanics of finite coarse-grained effective dynamics)"
+    ],
+    "argument_family": "duality-unification (one scalar conditional-MI obstruction whose vanishing is jointly characterized two ways under one observable-preserving lens)",
+    "shared_mechanism": "A single scalar information obstruction, the closure deficit CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t), carrying the exact decomposition H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau and the variational identity CD_tau=min_K L_tau(K)=L_tau(K*) with K*_y=Law(Y_{t+tau}|Y_t=y) (a finite Csiszar-1975 KL-projection). The SAME object does double duty: its vanishing is the closure side (dynamics admits a closed macro kernel = lumpability) and the sufficiency side (the coarse state screens micro past from packaged future). It is an audit-DPI / conditional-MI relative of the one-monotonicity audit functional A (R028): both are nonnegative information quantities monotone under coarsening, here specialized to a conditional MI rather than a path-KL.",
+    "derivability_class": "B",
+    "minimum_viable_unification": "A self-contained note proving (all already in the papers) that CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t) is the exact observable-preserving obstruction whose vanishing IS lumpability / a closed effective law (D4, exact at tau=1, prop:cd-zero) and -- via the new single-lag bridging lemma -- IS single-lag predictive sufficiency / screening-off (D3), both computed on one finite stationary Markov substrate (D2), with the No-Go best-macro-kernel variational identity fixing the shared observable K*, the exact intrinsic-vs-manufactured noise split, the Pinsker route-mismatch bound (r=0.959, uniform lift flagged), the controlled Markov benchmark (CD_1~4.34e-17, residual <=2.87e-16), and the Lean KL step as evidence.",
+    "note": "Full theory_basis, bridge_dictionary, domain_derivations, proof_route, stronger_unification, bottlenecks, fallback, baseline_comparison, why_scientists_care, target_audience, recommended_artifact, execution_cost, builds_on_retro_cards (R029,R028,R018) and honest_status_note are as supplied in the task card and are not re-transcribed here to avoid duplication; the repair_and_scoring section below records every binding change."
+  },
+
+  "audit": {
+    "compression": {
+      "assumptions_without": 7,
+      "assumptions_with": 4,
+      "params_without": 6,
+      "params_with": 5,
+      "compression_strength": "low-to-medium",
+      "hidden_import_risk": "HIGH on the D3 leg: predictive sufficiency is not derived from CD_tau but imported as a within-paper slogan plus an external Shalizi-Crutchfield citation. The cross-formalism bridging lemma is VERIFIED ABSENT (Cast does not cite Holonomy; objects on different state spaces; Holonomy declines causal-state identification). The D4/D2 compression is genuine but near-tautological: per Cast line 261, CD_tau=0<=>lumpable is an elementary conditional-MI chain-rule rebranding of Kemeny-Snell/Buchholz. Free-param count barely moves (free lens Pi, tau, lift choice, predictor budget, choice of which facts to call 'dual' all persist); compression is in conceptual packaging, not parametric economy."
+    },
+    "baseline": {
+      "natural_baseline": "B_EFT (effective field theory / RG / Mori-Zwanzig) for D4/D2; Shalizi-Crutchfield computational mechanics for D3; Csiszar-1975 KL-projection for the variational identity.",
+      "theory_advantage": [
+        "Exact split H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau cleanly separates irreducible substrate uncertainty from lens-manufactured non-closure -- a useful diagnostic the bare EFT/lumpability statements do not foreground.",
+        "Exactly computable in finite benchmarks (CD_1~4.34e-17 on lumpable cases, residual<=2.87e-16) with a cheap, provably controlling Pinsker route-mismatch proxy.",
+        "A Lean-checked KL step anchors the divergence reading; one scalar carries closure and (informally) sufficiency, giving real expository compression."
+      ],
+      "theory_disadvantage": [
+        "Strictly WEAKER than EFT: NG_LADDER_IDEM forbids an RG semigroup -- coarse-graining without flow; no beta functions, no universality, no critical exponents.",
+        "In its home domain (D_INFO) deflation lands hardest: monotone divergences, conditional MI, lumpability and causal-state theory are all textbook; SBT names rather than beats them.",
+        "The D3 leg does not reach the Shalizi-Crutchfield baseline -- the bridging lemma is absent and the Holonomy quotient lives in a different formalism.",
+        "Exact lumpability holds cleanly only at tau=1; tau>1 is the generally-weaker lag-tau closedness."
+      ],
+      "merely_repackages": true
+    },
+    "anti_superficial": {
+      "same_word": { "pass": true, "note": "'Closure' and 'sufficiency' are genuinely two readings of the SAME scalar CD_tau=0, not a pun. The one term-overload risk ('predictive sufficiency' = within-paper single-lag slogan vs Holonomy/Shalizi-Crutchfield causal states) is honestly flagged." },
+      "shared_mechanism": { "pass": true, "note": "One scalar CMI obstruction does identical work for D4 (CD=0<=>lumpable) and D2 (the H(Y|X)+CD split) on ONE substrate. But it is only TWO domains of genuine reuse; D3 rides on the same object via an unproved bridge, so the 'three-domain' headline is two-domain mechanism + one adjacency." },
+      "bridge_map": { "pass": false, "note": "D4/D2 bridge maps are writable and observable-preserving (agree on K*_y=Law(Y_{t+tau}|Y_t=y)). The D3 bridge map is NOT writable: it requires the lemma marked already_in_papers:false. Cast does not cite Holonomy; objects do not share a state space; Holonomy disclaims causal-state identification. FAILS for the full three-domain claim." },
+      "hidden_import": { "pass": false, "note": "The D3 'sufficiency' face is imported, not derived: CD_tau=0 is REDEFINED as single-lag sufficiency rather than shown to coincide with an independent sufficiency object. CD=0<=>lumpable is (Cast line 261) classical lumpability restated as a conditional MI." },
+      "elasticity": { "pass": false, "note": "Inherits lens-selection elasticity (R029/R028/R018; lens Pi free, MISS_LENS_SEL). The rigorous legs are mathematical IDENTITIES, so no false instance can be retrodicted but they carry no empirical content; any non-closing partition is read as 'CD>0, manufactured randomness'. R029 opposite_world_test could_explain_opposite=true." },
+      "compression": { "pass": true, "note": "Marginally passes: real conceptual compression of two established facts under one elementary identity plus the noise-budget split, but compression of EXPOSITION, not of assumptions/parameters." },
+      "surprise": { "pass": false, "note": "No new relation/constraint/forbidden case beyond relabeling. Matched numbers are calibration/regression certificates of identities that MUST hold. The 'duality' is a true but expository equivalence; the noise split is a one-line chain-rule consequence." }
+    },
+    "mechanism_tag": "closure-deficit",
+    "audit_verdict": "PARTIAL UNIFICATION / RECOVERY + REORGANIZATION, NOT A NEW UNIFICATION; HIGH MISFRAMING RISK. Genuine asset: the scalar CD_tau does double duty across D4 and D2 via the exact split and the Csiszar KL-projection identity, with a Pinsker-bounded route-mismatch proxy (r=0.959, uniform-lift heuristic correctly flagged) and a Lean-checked KL step -- beating the crude 'quotient-in-costume' deflation in one checkable way (a single nonnegative scalar, not a quotient; genuine information geometry). BUT the three-domain headline fails: D3 rests on a VERIFIED-ABSENT bridging lemma; the load-bearing D4 leg is self-admitted lumpability rebranding (line 261); NG_LADDER_IDEM makes SBT strictly weaker than B_EFT; the lens is free and the rigorous legs are identities (elasticity inherited). 4 of 7 anti-superficial controls pass; bridge_map, hidden_import, elasticity, surprise fail for the headline. Defensible deliverable = the card's own fallback: a two-domain (D4+D2) exact-decomposition diagnostic note with D3 demoted to the within-paper single-lag slogan plus informal adjacency. No SBT disclaimer crossed."
+  },
+
+  "skeptic_panel": {
+    "thresholds": { "min_survival": 1.5, "mean_survival": 2.25, "fatal_present": true, "is_real_unification_count": "0/4", "beats_deflation_count": "1/4", "beats_baseline_count": "0/4" },
+    "skeptics": [
+      {
+        "skeptic_role": "Nonequilibrium statistical physicist (entropy production, coarse-graining pitfalls, fluctuation theorems).",
+        "main_objection": "The advertised THREE-domain duality collapses to a genuine TWO-domain recovery (D4 lumpability + D2 noise-budget split) plus one absent bridge. The D3 leg rests on a bridging lemma marked already_in_papers:false and verified absent (Cast never cites Holonomy/PredictiveQ/future-sufficiency/screening-off; objects do not share a state space). What survives is one nontrivial info-geometric identity doing double duty across D4/D2 -- which DOES beat the crude quotient-in-costume deflation because CD_tau is a single scalar -- but D4 is self-admitted lumpability rebranding (line 261). Recovery + reorganization, not new three-domain unification.",
+        "fatal_objections": [],
+        "is_real_unification": false,
+        "beats_deflation": true,
+        "beats_baseline": false,
+        "adversarial_survival_score": 2.5
+      },
+      {
+        "skeptic_role": "Skeptical information theorist / RG skeptic (DPI, sufficiency, KL-projection fixed points, universality).",
+        "main_objection": "Only TWO of the three legs share the mechanism; D3 rests on a verified-absent bridging lemma and the 'predictive sufficiency' face is redefined as CD_tau=0 (hidden import). The surviving content is a real but two-domain duality (D4+D2 on one substrate), and even that is, per author's own admission (Cast line 261; No-Go 326/693), classical lumpability plus an elementary chain-rule identity -- recovery, not new content.",
+        "fatal_objections": [],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 2.5
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist / information theorist auditing whether bridge maps are explicit and observable-preserving.",
+        "main_objection": "The headline's load-bearing identifications are either an admitted relabeling (D4, line 261) or an absent bridge (D3, verified). The D3 bridge map is not writable and not observable-preserving; the sufficiency face is imported as a within-paper slogan. What survives is a real but modest TWO-domain (D4+D2) recovery: one scalar nonnegative obstruction carrying an exact noise split. Reorganization, not three-domain unification.",
+        "fatal_objections": [
+          "D3 bridging lemma VERIFIED ABSENT: Cast does not cite Holonomy; objects do not share a state space; Holonomy lines 115/767 decline causal-state identification. The crux observable-preserving bridge map for the third domain is missing.",
+          "The causal-state identification is not derived from CD_tau; CD_tau=0 is REDEFINED as single-lag sufficiency -- a hidden import on the only leg that would make this more than a two-domain story."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1.5
+      },
+      {
+        "skeptic_role": "Hostile cross-domain referee with joint standing in stat-mech coarse-graining (Mori-Zwanzig, lumpability) and computational mechanics (causal states, DPI).",
+        "main_objection": "The three-domain duality headline is false: a genuine TWO-domain recovery (D4+D2) glued to D3 only by a verified-absent bridging lemma. The two rigorous legs are one object only because CD_tau=0 is, by the author's own admission (line 261), classical Kemeny-Snell/Buchholz lumpability restated as a conditional MI. A computational-mechanics specialist would not accept the D3 map; the stat-mech specialist accepts only what was already lumpability. Joint specialist acceptance fails for the headline.",
+        "fatal_objections": [
+          "Headline three-domain unification rests on a VERIFIED-ABSENT bridging lemma; Cast's only 'holonomy' tokens are the P3 primitive label, not citations; Holonomy lines 115/767 decline subsumption; line 466/475 confirm signature-vector (not Markov-preservation) semantics. The crux D3 observable-preserving bridge map does not exist."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 2.5
+      }
+    ]
+  },
+
+  "repair_and_scoring": {
+    "id": "U019",
+    "repair_status": "repaired",
+    "repair_disposition": "REPAIRED BY NARROWING from a THREE-domain duality-unification to a defensible TWO-domain (D4 closure + D2 noise-split) RECOVERY + REORGANIZATION under one exact conditional-MI identity, with the D3 predictive-sufficiency leg explicitly DEMOTED to a flagged conjecture (the within-paper single-lag sufficiency slogan + explicit informal adjacency to Shalizi-Crutchfield, NOT an identification). This is the card's own scoped fallback, promoted to the headline. Rationale: the panel is decisive against the three-domain claim (is_real_unification 0/4; beats_deflation 1/4; a fatal objection present; D3 bridge VERIFIED ABSENT in source; bridge_map/hidden_import/elasticity/surprise controls fail for the headline). UNLIKE U018 (rejected, because there the shared mechanism did genuine COMPUTATIONAL work on exactly ONE substrate), here the shared scalar CD_tau does genuine, identical, non-imported work across the D4 closure reading AND the D2 intrinsic-vs-manufactured noise split on ONE finite stationary Markov substrate -- a real two-reading equivalence of one nontrivial information-geometric identity. Two of four skeptics (2.5) and the audit grant this two-domain core survives and beats the crude quotient-in-costume deflation. So the unification is not rejected outright; it is repaired into an honest two-domain recovery/diagnostic with a clearly-flagged open bridge. Caveat on counting: D2 is the SAME substrate as D4, so 'two domains' here means 'one substrate, two distinct established questions (closure-of-dynamics and the noise decomposition) read off one identity', which is the maximal honest claim.",
+    "allowed_repairs_applied": [
+      "NARROWED the unification: three-domain duality -> two-domain (D4+D2) recovery; the headline no longer asserts a third domain.",
+      "ADMITTED a domain is only sketched/absent: D3 is demoted from 'derived via a moderate bridging lemma' to a FLAGGED CONJECTURE (the bridging lemma is verified absent; the two formalisms do not share a state space; Holonomy explicitly declines causal-state identification).",
+      "CLARIFIED the bridge map: the D4 and D2 bridge maps ARE writable and observable-preserving (both readings agree on K*_y=Law(Y_{t+tau}|Y_t=y) and on every f-definable predictive statistic); the D3 bridge map is stated as MISSING, not informal-but-present.",
+      "REPLACED analogy with explicit relation where possible: the D4<->D2 link is stated as the exact algebraic identity H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau plus the Csiszar KL-projection variational identity, not as an analogy.",
+      "CONVERTED vague emergence into a precise limiting/coarse-graining statement: the D4 claim is restated as 'CD_tau=0 <=> lag-tau closedness, which is exact classical Kemeny-Snell/Buchholz lumpability ONLY at tau=1; for tau>1 it is the generally-weaker lag-tau closedness' (per Cast line 261).",
+      "Added the honest scoping of matched numbers: CD_1=4.34e-17 (residual<=2.87e-16) and r=0.959 are FROZEN CALIBRATION/REGRESSION CERTIFICATES of identities that must hold, NOT out-of-sample predictions; and r=0.959 uses the uniform lift, NOT the stationary lift for which Pinsker (prop:rm-lower-bound) is proved -- so it is a heuristic proxy outside the proved bound."
+    ],
+    "forbidden_repairs_checked": "No forbidden move used: no assumption added per domain (the repair REMOVES the third domain rather than propping it up); no terms redefined to force equivalence (the D3 redefinition-as-sufficiency was the original sin and is exactly what is demoted); no imported physics hidden (the Csiszar KL-projection and Kemeny-Snell/Buchholz lumpability imports are stated explicitly); no duality claimed without a map (the surviving D4/D2 duality has an explicit observable-preserving map on K*; D3 is openly mapless); no emergence claimed without a limit (the coarse-graining-without-RG-flow restriction is stated, NG_LADDER_IDEM honored).",
+    "revised_one_sentence_claim": "On one finite stationary Markov substrate, the closure deficit CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t) is a single nonnegative scalar conditional-MI obstruction that, via the exact split H(Y_{t+tau}|Y_t)=H(Y_{t+tau}|X_t)+CD_tau and the Csiszar best-macro-kernel variational identity, simultaneously IS the obstruction to a closed effective macro law (D4: CD_tau=0 <=> lag-tau closedness, = exact Kemeny-Snell/Buchholz lumpability only at tau=1) AND the exact decomposition of observed coarse-grained noise into irreducible substrate uncertainty plus lens-manufactured non-closure (D2), the two readings agreeing on the shared observable K*_y=Law(Y_{t+tau}|Y_t=y); the predictive-sufficiency / Shalizi-Crutchfield causal-state reading (D3) is an explicitly-flagged OPEN CONJECTURE pending a bridging lemma that is verified absent (Cast does not cite Holonomy and the two formalisms do not share a state space), so it is offered only as the within-paper single-lag sufficiency slogan plus informal adjacency.",
+    "new_minimum_viable_unification": "A short rigorous note proving (all already in the papers) that CD_tau(Pi)=I(X_t;Y_{t+tau}|Y_t) is THE exact observable-preserving obstruction to a closed effective macro law on a finite stationary Markov substrate, recovering Kemeny-Snell/Buchholz lumpability as CD_tau=0 at tau=1 (lag-tau closedness for tau>1; prop:cd-zero), with (i) the exact intrinsic-vs-manufactured noise split (D2; prop:cd-decomposition), (ii) the No-Go best-macro-kernel variational identity fixing the shared observable K* (acknowledged finite Csiszar-1975 KL-projection), (iii) the Pinsker route-mismatch bound CD_tau>=(1/2)(RM^stat)^2 (prop:rm-lower-bound; proved for the stationary lift, with the reported r=0.959 explicitly labeled a uniform-lift heuristic proxy outside the proved bound), (iv) the controlled Markov benchmark (CD_1=4.34e-17, residual<=2.87e-16, alpha-sweep 0.00827->0.0482) labeled a calibration certificate, and (v) the modest Lean KL-bridge module as the machine-checked anchor. MVU = two ESTABLISHED stat-mech/info facts (closure/lumpability and the noise decomposition) unified under one elementary exact conditional-MI identity on one substrate, with the D3 predictive-sufficiency / causal-state leg, the stochastic-lens extension (MISS_STOCH_LENS), and the full conditional-MI Lean mechanization listed as clearly-flagged open obligations.",
+    "changes_made": [
+      "Dropped the THREE-domain framing; headline is now a TWO-domain (D4+D2) recovery+reorganization on one substrate.",
+      "Demoted D3 from 'derived (sketched)' to FLAGGED OPEN CONJECTURE: the bridging lemma is verified absent; do not claim identification with the Holonomy PredictiveQ or with Shalizi-Crutchfield causal states.",
+      "Restated D4 precisely as lag-tau closedness, exact lumpability ONLY at tau=1 (per Cast line 261); removed the unqualified 'CD=0 IS lumpability'.",
+      "Labeled all matched numbers (CD_1=4.34e-17, residual<=2.87e-16, r=0.959) as frozen calibration/regression certificates of identities that must hold, not predictions.",
+      "Reconciled the lift: r=0.959 is the UNIFORM-lift proxy; the proved Pinsker bound is for the STATIONARY lift -- flagged as a heuristic outside the proved bound.",
+      "Stated the Csiszar-1975 KL-projection (No-Go 326/693) and Kemeny-Snell/Buchholz lumpability (Cast 261) imports explicitly; the contribution is the unifying exact-split reading + falsifiable diagnostic, not new information geometry.",
+      "Kept disclaimer 13 (CD>0 is NOT irreversibility/entropy production) traveling with every 'noise budget' phrasing, and NG_LADDER_IDEM (coarse-graining WITHOUT RG flow) explicit in the scope.",
+      "Noted the D2/D4 counting caveat: D2 is the same substrate as D4, so 'two domains' = one substrate, two distinct established questions read off one identity."
+    ],
+    "remaining_objections": [
+      "Even after repair, the surviving content is RECOVERY + REORGANIZATION, not a new unification: D4 is self-admitted lumpability rebranding and the variational identity is an admitted Csiszar KL-projection; the surprise control still fails (no constraint or forbidden case the separate textbook accounts did not entail).",
+      "Against B_EFT, SBT remains strictly weaker: NG_LADDER_IDEM forbids an RG semigroup, so coarse-graining without flow -- no universality, exponents, or running couplings.",
+      "Elasticity is inherited and not removable by repair: the lens Pi is a free input (MISS_LENS_SEL) and the rigorous legs are identities; the matched numbers are calibration/regression certificates, not predictions.",
+      "The D3 leg remains absent until the bridging lemma is proved in one shared finite-Markov formalism (and the all-lag causal-state identification is harder still; Holonomy explicitly declines it).",
+      "The two-domain claim is the weaker reading of a single stat-mech identity (D2 lives on the same substrate as D4), so 'breadth' is genuinely thin."
+    ],
+    "what_would_upgrade": "A written, checked proof of the single-lag bridging lemma on the SAME finite stationary Markov substrate carrying CD_tau -- showing CD_tau(Pi)=0 <=> Y_t is single-lag predictively sufficient (screening-off) in exactly the computational-mechanics sense, with an explicit observable-preserving bridge map -- would restore a genuine third domain and convert this from a two-domain recovery into a real three-domain duality. Lifting to all-lag sufficiency (identifying M with Shalizi-Crutchfield causal states), extending CD_tau to stochastic-kernel lenses (MISS_STOCH_LENS), and mechanizing the full conditional-MI decomposition in Lean would further strengthen it. Additionally, exhibiting ANY new constraint/forbidden case the separate accounts do not entail would move it past pure recovery.",
+    "scores": {
+      "impact": 2,
+      "execution_ease": 4,
+      "plausibility": 4,
+      "depth_of_unification": 2,
+      "breadth_of_unification": 1,
+      "non_ad_hocness": 2,
+      "bridge_explicitness": 2,
+      "derivational_strength": 3,
+      "compression_power": 2,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "robustness": 3,
+      "baseline_advantage": 1,
+      "adversarial_survival": 2,
+      "publication_potential": 3
+    },
+    "score_rationale": {
+      "impact": "2: a clean exact-decomposition diagnostic is genuinely useful to coarse-graining practitioners (intrinsic vs lens-manufactured noise), but it is a reframing/diagnostic, not a result that changes any field's understanding; deflation lands hardest in its home domain.",
+      "execution_ease": "4: the core theorems are ALREADY proved and partly Lean-checked, numerics frozen in the companion repo; assembling the two-domain note is days. (Not 5 because the bridging-lemma upgrade and Lean conditional-MI mechanization are real separate efforts, but those are out of the MVU.)",
+      "plausibility": "4: the surviving two-domain content is mathematically correct and verified against source; high confidence it holds. Not 5 because the framing/counting (treating D2 as separate from D4) invites overstatement.",
+      "depth_of_unification": "2: depth is capped by the analogical-only D3 bridge being removed and by D4 being a definitional restatement; the genuine depth is one exact identity with two readings on one substrate -- real but shallow (a chain-rule split + a KL-projection).",
+      "breadth_of_unification": "1: after honest repair this is effectively one finite stationary Markov substrate read two ways (closure + noise split); the third domain is absent. Genuinely narrow.",
+      "non_ad_hocness": "2: capped by failed hidden_import (D3 sufficiency redefined as CD=0) and the self-admitted lumpability/Csiszar imports; the surviving D4/D2 split is not ad hoc but is near-tautological.",
+      "bridge_explicitness": "2: capped because the bridge_map control FAILS for the headline (D3 map verified absent). The D4/D2 maps ARE explicit and observable-preserving (agree on K*), which keeps it off 1.",
+      "derivational_strength": "3: the D4/D2 identities are fully proved (prop:cd-decomposition, prop:cd-kl, prop:cd-zero, NG_MACRO_CLOSURE_DEFICIT, prop:rm-lower-bound) and one KL step is Lean-checked; but the proofs are elementary/standard and the D3 derivation is absent.",
+      "compression_power": "2: compression is of EXPOSITION, not of independent assumptions/parameters (free-param count barely moves); the compression anti-superficial control passes only marginally.",
+      "discriminative_power": "1: capped by merely_repackages=true and failed surprise/elasticity controls -- the rigorous legs are identities that forbid no outcome; matched numbers are certificates of must-hold identities, not predictions.",
+      "audience_legibility": "4: the closure-deficit / noise-budget story is clean, teachable, and exactly computable; stat-mech and info-theory readers parse it immediately.",
+      "robustness": "3: the two-domain core is robust (verified identities, Lean anchor, frozen benchmark), but the headline was fragile (three-domain claim collapsed) and lift/lag caveats temper it.",
+      "baseline_advantage": "1: capped by merely_repackages=true and beats_baseline 0/4; strictly weaker than B_EFT (no RG flow) and names rather than beats textbook info theory; the only edge is the diagnostic framing.",
+      "adversarial_survival": "2: panel mean 2.25, min 1.5, fatal present, is_real_unification 0/4, beats_deflation 1/4. The two-domain core survives (it beats the crude quotient-in-costume deflation in one checkable way) but the headline does not; score reflects honoring the panel verdict.",
+      "publication_potential": "3: the two-domain exact-decomposition diagnostic note IS publishable as a clean methods/diagnostics contribution (with the Lean anchor and reproducible benchmark), provided it is framed honestly as recovery+diagnostic and the D3 leg is a flagged conjecture; not higher because there is no new result and the home-domain deflation is strong."
+    }
+  },
+
+  "proposed_bin": "A",
+  "bin_rationale": "Bin A (immediate quick win) for the REPAIRED two-domain deliverable: the core theorems are already proved and partly Lean-checked, the numerics are frozen in github.com/ioannist/six-birds-randomness, and the honest exact-decomposition diagnostic note is days of assembly. It is NOT bin B (skeptic-resistant structural) because, as the panel unanimously found, the structural three-domain claim does not survive and the surviving content is recovery+reorganization, not a skeptic-resistant new unification. The moderate bridging-lemma research target (which WOULD make it B/structural) is a separate, optional, medium-cost effort.",
+  "recommended_priority": "Medium-Low. Ship the two-domain (D4+D2) exact-decomposition diagnostic note as a quick, honest, reproducible win (the genuine asset is the falsifiable intrinsic-vs-manufactured noise split with a Lean-checked KL anchor). Do NOT prioritize the three-domain framing. The single-lag bridging lemma is the one tractable upgrade worth a separate medium-effort attempt; everything else (all-lag causal-state identification, stochastic lenses, full Lean conditional-MI) is high-cost and lower-value given the home-domain deflation.",
+  "recommended_artifact": "A short rigorous note + reproducible numerical companion: (1) the exact-decomposition theorem and CD_tau=0 <=> lag-tau closedness (exact lumpability at tau=1, D4) plus the D2 intrinsic-vs-manufactured noise split, citing the No-Go best-macro-kernel variational identity (acknowledged Csiszar KL-projection) that fixes the shared observable K*; (2) the controlled Markov benchmark + Pinsker route-mismatch verification (CD_1=4.34e-17 calibration; r=0.959 labeled a uniform-lift heuristic proxy, with the stationary-lift correlation reported alongside); (3) the existing Lean KL-bridge module as the machine-checked anchor; (4) the single-lag bridging lemma and the stochastic-lens extension listed as clearly-flagged open obligations, with D3 stated as the within-paper single-lag sufficiency slogan plus explicit informal adjacency to Shalizi-Crutchfield. Figure-generation code already exists at github.com/ioannist/six-birds-randomness.",
+  "one_line_verdict": "A scrupulously honest TWO-domain (closure + noise-split) recovery+diagnostic under one exact conditional-MI identity that beats the crude quotient-in-costume deflation but NOT the three-domain headline -- the D3 causal-state leg is a verified-absent bridge, so this is repaired by narrowing, not a real three-domain unification.",
+  "mechanism_tag": "closure-deficit",
+  "target_audience": [
+    "Statistical mechanics / coarse-graining and effective-theory theorists (lumpability, Markov state models, Mori-Zwanzig closure)",
+    "Computational mechanics / information-theory community (causal states, predictive sufficiency, information bottleneck)",
+    "Researchers in foundations of randomness and emergence",
+    "Applied ML / representation-learning practitioners interested in predictive-budget and coarse-graining tradeoffs",
+    "Formal-methods / Lean-curious readers (the KL-bridge module as a machine-checked anchor)"
+  ]
+}

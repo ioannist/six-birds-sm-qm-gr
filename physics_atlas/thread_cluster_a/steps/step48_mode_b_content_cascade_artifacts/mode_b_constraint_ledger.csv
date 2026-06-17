@@ -1,0 +1,3 @@
+constraint_id,status,declared_at_step,role
+step38_clean_content_rosters,active_source,38,eight clean 2|3 rosters
+step48_integer_charge_shadow,tested_no_narrowing,48,neutral content-shadow test

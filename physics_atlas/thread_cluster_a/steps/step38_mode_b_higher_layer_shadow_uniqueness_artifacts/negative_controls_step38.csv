@@ -1,0 +1,5 @@
+control,passes,evidence
+base_requirement_keeps_small_family,True,2|3:8;4:4
+clean_shadow_rejects_exotic_broken_vectors,True,base=12 clean=8
+not_target_row_picker,True,clean survivors=8
+diagnostic_rejections_flagged,True,factor-local and scalar-stage currency are both diagnostic-only

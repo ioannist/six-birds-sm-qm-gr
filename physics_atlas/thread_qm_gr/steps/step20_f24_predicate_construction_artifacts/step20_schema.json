@@ -1,0 +1,57 @@
+{
+  "step": 20,
+  "orientation": "Mode B native F24 predicate construction",
+  "active_residual": "R_child_E018_after_F35_scale_descent_classification",
+  "carrier": {
+    "type": "finite 8-state role-split carrier",
+    "q": "q_QM=(d0,d1,d2)",
+    "s": "d3",
+    "role_obstruction_count": 3,
+    "families": [
+      "MemoryLayer",
+      "HiddenUpstreamRole",
+      "BridgeMediatedRole",
+      "BudgetedRole",
+      "ScopedRole",
+      "CoarsenedRole",
+      "OutsideRoleScope",
+      "BlockedNonClosure"
+    ]
+  },
+  "candidate_move": {
+    "id": "construct_F24_resolution_case_selectors",
+    "description": "Build computable predicates for the eight F24 resolution families and classify L by those predicates."
+  },
+  "final_verdict": {
+    "type": "native_F24_predicate_construction_complete",
+    "L_selected_family": "BridgeMediatedRole",
+    "L_unique": true,
+    "controls_discriminate": true,
+    "all_eight_families_covered": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "FIV_source_read": true,
+    "predicate_count": 8,
+    "discrimination_candidates": 8,
+    "mutually_exclusive_on_suite": true,
+    "exhaustive_on_suite": true,
+    "L_case_hardcoded": false,
+    "control_misclassified": false
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "Operational F24 selectors can discriminate all eight families on the finite suite."
+    ],
+    "analytical_structural": [
+      "L selects BridgeMediatedRole by predicate evaluation, not by assertion."
+    ],
+    "organizational_audit": [
+      "FIV source lines per family are recorded."
+    ],
+    "remaining_external_content": [
+      "Faithfulness of these constructed predicates beyond the toy remains external review."
+    ]
+  }
+}

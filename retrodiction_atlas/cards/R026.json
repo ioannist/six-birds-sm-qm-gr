@@ -1,0 +1,111 @@
+{
+  "id": "R026",
+  "title": "Time as a closure artifact: no global time coordinate as a non-exact protocol-graph 1-form, arrow as audited accounting (RECOVERY/REORGANIZATION of discrete-Hodge integrability)",
+  "scientific_domain": "Information physics / nonequilibrium statistical mechanics / applied algebraic topology (relativity-adjacent ONLY by disclaimed analogy)",
+  "argument_family": "parameter-compression",
+  "derivability_class": "C",
+
+  "original_card": {
+    "one_sentence_claim": "SBT proves that a single globally consistent time coordinate across closure protocols exists if and only if the discrete time-translation 1-form omega on the protocol graph is exact (every loop has zero holonomy), and shows this is the SAME closed-but-not-exact H^1 / telescoping criterion that governs the cycle-affinity arrow-of-time audit (P6) and the force-implies-cycles no-go, thereby compressing 'no global time,' 'thermodynamic arrow,' and 'force needs cycles' into one cohomological loop-integral mechanism.",
+    "target_known_fact": "The integrability/exactness criterion for a global time function: a discrete 1-form admits a global potential t with omega(u->v)=t(v)-t(u) iff every directed cycle sum vanishes; nonzero loop holonomy obstructs a global potential. Discrete analogue of the clock-synchronization gap / non-integrable simultaneity in rotating frames (Sagnac) and of spacetimes lacking a global time function; the thermodynamic arrow is the companion nonzero-cycle-affinity (Schnakenberg/Gaspard) instance.",
+    "minimum_viable_result": "In the finite protocol-graph laboratory, a global time potential exists iff omega is exact; the noncommuting protocol triangle exhibits nonzero holonomy (H approx 0.5) while the commuting control gives H=0, so no single global time coordinate exists in the noncommuting regime. Telescoping triviality once the 1-form model is granted.",
+    "baseline_comparison": "RECOVERY / REORGANIZATION, not improvement. Core is textbook discrete Hodge / integrability criterion plus Schnakenberg/Gaspard cycle affinity; the relativistic/Sagnac connection is analogy only.",
+    "theory_basis_papers": [
+      "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex (eq:omega, eq:potential, eq:holonomy, Theorem 'No Global Time from Holonomy' sec:no-global-time, Table tab:holonomy)",
+      "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex (thm:NG_FORCE_NULL, thm:NG_FORCE_FOREST, closed-walk-sum / cycle-rank defs)",
+      "Tsiokos_2026_The_Usefulness_of_Non_Descending_Objects...tex (thm:coh-periods-iff-exact, thm:coh-class-obstruction, thm:coh-dimension): the generic finite-graph H^1 exactness theorem object",
+      "lean/TimeWorld/HolonomyNoGlobalTime.lean (triangle_sum_of_potential, no_global_potential_of_nonzero_triangle_holonomy) in sibling repo six-birds-time"
+    ]
+  },
+
+  "audit_summary": {
+    "mechanism_tag": "route-mismatch (P3 noncommutation)",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 8,
+    "data_points_matched": 2,
+    "overfitting_risk": "high",
+    "opposite_world_could_explain_opposite": true,
+    "audit_verdict": "HIGH FLEXIBILITY / RECOVERY, NOT A CONSTRAINED RETRODICTION. Honest reframing of a textbook integrability criterion (a 1-form is exact iff every loop sum vanishes) plus order+measure+arrow taxonomy and Schnakenberg/Gaspard cycle affinity. ~8 tunable DOF vs 2 self-generated synthetic data points (H approx 0.5 noncommuting, H=0 control). Opposite-world test fails: the paper's own commuting control returns H=0 (global time exists), and the 0.5 magnitude is a built-in even/odd-representative artifact, so neither 'no global time' nor the value 0.5 is predicted. Genuine merit: order/measure/arrow separation and shared elementary-lemma reuse (route-mismatch recurs across LES subgrid stress, backreaction, contextuality, cycle-affinity arrow)."
+  },
+
+  "verification_findings_this_repair": {
+    "lean_source_present": "TRUE -- CONTRARY to the audit and three skeptics. File exists at /home/repos/six-birds-time/lean/TimeWorld/HolonomyNoGlobalTime.lean (sibling repo, not retro_atlas). Inspected: triangle_sum_of_potential is proved by 'ring' over Int; no_global_potential_of_nonzero_triangle_holonomy is the contrapositive via simpa. Certification is REAL but TRIVIAL (one-line telescoping over Int), exactly as the candidate's honest_status_note flagged.",
+    "holonomy_py_present": "TRUE. /home/repos/six-birds-time/python/src/time_world/holonomy.py exists with protocol_B_even / protocol_C_odd (n_phi-even projection + even/odd-representative lift). Confirms the 0.5 holonomy is a built-in artifact of choosing even vs odd half-phase representatives, NOT a prediction.",
+    "h1_theorem_object_present": "PARTIALLY TRUE -- CONTRARY to the candidate's own 'already_in_papers=false' and to two skeptics. The GENERIC finite-graph H^1 exactness theorem objects DO exist as written theorems in Tsiokos_2026_The_Usefulness_of_Non_Descending_Objects (thm:coh-periods-iff-exact: exact iff all cycle periods vanish; thm:coh-class-obstruction: [a]=0 in H^1 iff a=d_0 phi; thm:coh-dimension: dim H^1 = |E|-|V|+1). What is GENUINELY ABSENT is the simultaneous three-corollary instantiation tying omega (time), a_K (arrow), and beta_1 (force) to that one theorem in a single object.",
+    "cross_reference_absent": "CONFIRMED. The No-Go paper has ZERO occurrences of 'global time'/'time translation'/omega; Non-Descending Objects never instantiates the time/arrow/force triple. The 'compression into one mechanism' is a correct parallel-structure observation across THREE separate papers, not a single proved unifying object.",
+    "value_05_is_artifact": "CONFIRMED. eq:omega units remark (line 478) reconciles the R-valued measured value with the integer Lean lemma via 'measure in half-ticks'; protocol B/C even/odd half-bin lift produces the half-tick offset by construction. The trailing digits of 0.500005 (stderr 9.1e-4) are estimation noise on a hand-set 1/2.",
+    "relativistic_disclaimer_confirmed": "CONFIRMED. To_Notch line 466 explicitly: 'global time' here is a protocol-graph potential 'distinct from questions about global time functions or foliations in relativistic spacetime geometry'; line 71/83 'We do not derive physical spacetime here'; ledger lists 'No physical-time/spacetime interface' as MISSING."
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repairs_applied": [
+      "NARROWED the headline: from 'SBT proves ... the SAME H^1 criterion' to 'two parallel instances of one elementary, already-written finite-graph H^1 exactness theorem (thm:coh-class-obstruction) -- their SIMULTANEOUS three-corollary instantiation is a small NEW consolidation, not pre-existing SBT content.' This honors the genuine partial-existence finding while not overstating.",
+      "REPLACED exact with approximate: H=0.500005 -> H approx 0.5, explicitly labeled a built-in artifact of the even/odd half-phase representative choice (a different prototype gives 1/3, 2/3, ...); only the 5th-decimal is estimation noise.",
+      "QUARANTINED the relativistic/Sagnac/global-time-function reading as analogy-only via an explicit boundary box; demoted 'relativity-adjacent' from primary domain to a disclaimed analogy tag, honoring the MISSING physical-time/spacetime interface.",
+      "CONVERTED rhetoric to a lemma sequence: stated the unifying claim as L1 (generic H^1 exactness, EXISTS: thm:coh-class-obstruction) + three corollaries C1 (omega -> no global time, EXISTS as To_Notch informal thm + Lean anchor), C2 (a_K exact -> zero cycle affinity / detailed-balance, EXISTS: NG_FORCE_NULL), C3 (beta_1>0 needed for force, EXISTS: NG_FORCE_FOREST), with the SIMULTANEOUS instantiation flagged NEW.",
+      "REMOVED the un-derived load-bearing premise from the claim's scope: explicitly states the result is conditional on the imported modeling premise 'operational time-translation IS an additive scalar 1-form on a chosen protocol graph,' which SBT does not derive; beyond that premise the theorem is telescoping.",
+      "SPLIT the overbroad 'compresses no-global-time, thermodynamic arrow, and force-needs-cycles into one mechanism' into (a) a structural shared-lemma claim (defensible, elementary) and (b) a physical-unification claim (NOT made; P3 omega-holonomy is explicitly NOT a directionality certificate, so 'no global time' delivers no arrow by itself).",
+      "CORRECTED the certification status UP: the Lean source and holonomy.py DO exist in sibling repo six-birds-time and were inspected; downgraded only to 'certification real but vacuous (one-line ring telescoping over Int; R-valued case by additivity + units choice).'"
+    ],
+    "forbidden_repairs_avoided": "No new tuning introduced; imported physics (discrete Hodge integrability, Schnakenberg cycle affinity) kept explicit; no unproven uniqueness claimed (lens/lift/graph-topology selection remain MISSING per ledger); no 'naturally emerges' language; the 0.5 value's artifactual origin is disclosed rather than hidden.",
+    "revised_one_sentence_claim": "Granting the imported modeling premise that operational time-translation is an additive scalar 1-form omega on a chosen protocol graph, SBT re-presents the textbook discrete-Hodge fact that a global time potential exists iff omega is exact (all loop holonomies vanish) -- Lean-anchored as a one-line telescoping triviality and exhibited with H approx 0.5 in a hand-constructed noncommuting even/odd triangle vs H=0 in a commuting control -- and notes that this is the SAME already-written finite-graph H^1 exactness theorem (thm:coh-class-obstruction) whose other instantiations give detailed-balance zero-arrow (NG_FORCE_NULL) and force-needs-positive-cycle-rank (NG_FORCE_FOREST), so the three are parallel readings of one elementary cohomological lemma (their simultaneous instantiation being a small NEW consolidation, with the Sagnac/relativistic match analogy-only and P3 holonomy explicitly NOT an arrow certificate).",
+    "new_minimum_viable_result": "A short note stating one finite-graph H^1 exactness lemma (already proven generically in Non-Descending Objects as thm:coh-class-obstruction / thm:coh-periods-iff-exact) with three labelled corollaries -- C1 no-global-time (omega; To_Notch + Lean anchor triangle_sum_of_potential), C2 detailed-balance zero cycle-affinity (a_K; NG_FORCE_NULL), C3 force-needs-positive-cycle-rank (beta_1>0; NG_FORCE_FOREST) -- plus the reproduced controlled exhibit (H approx 0.5 noncommuting vs H=0 commuting) and an explicit 'analogy, not a Lorentzian/Sagnac computation' boundary box. Presented as RECOVERY/REORGANIZATION, not derivation; the only new mathematics is the one-paragraph simultaneous instantiation."
+  },
+
+  "skeptic_panel_digest": {
+    "min_survival": 1.0,
+    "mean_survival": 1.63,
+    "fatal_objections_present": true,
+    "fatal_objections_after_repair": [
+      "No physical-time/spacetime interface (ledger MISSING): the target_known_fact is the relativistic global-time-function / Sagnac criterion, but SBT computes only a protocol-graph potential. UNREPAIRABLE within SBT (would require machinery the theory disclaims). MITIGATED by demoting the relativity framing to analogy-only and refiling the domain; the relativity-adjacent target is NOT met, only an analogue is exhibited.",
+      "Opposite-world failure: the framework returns H=0 (global time exists) in its own commuting control and any offset value by representative choice, so neither 'no global time' nor 0.5 is predicted. UNREPAIRABLE -- this is intrinsic to a recovered integrability criterion with free knobs; ACKNOWLEDGED by reclassifying as RECOVERY, not a falsifiable retrodiction.",
+      "0.5 is a built-in arithmetic artifact, not a prediction; the two data points are self-generated synthetic-laboratory outputs. ACKNOWLEDGED and disclosed."
+    ],
+    "repairable_objections_addressed": [
+      "Lean source / holonomy.py 'absent' -> CORRECTED: both present in sibling repo six-birds-time and inspected; certification is real but trivial.",
+      "Unifying H^1 lemma 'not written anywhere' -> CORRECTED: the generic theorem object exists (thm:coh-class-obstruction); only the simultaneous time/arrow/force instantiation is new.",
+      "Integer-vs-R type gap -> repairable by stating the lemma over R (additivity suffices); flagged.",
+      "Overstated 'SBT proves the SAME criterion' -> downgraded to 'parallel instances of one elementary criterion.'"
+    ],
+    "what_would_change_minds": "A genuine Lorentzian interface computing protocol holonomy AS a real Sagnac synchronization gap (turning analogy into derivation), AND a within-calculus derivation that operational time-translation MUST be an additive scalar 1-form on a forced-topology graph (so nonzero holonomy could not have been evaded). Neither exists; both are MISSING/disclaimed."
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 5,
+    "plausibility": 5,
+    "non_ad_hocness": 2,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 2,
+    "robustness": 3,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "2 -- The order/measure/arrow taxonomy and the 'check the loop integral before assuming a potential' template are conceptually tidy and reusable, but the result is a recovery of textbook material; no new physical capability. Capped low because the relativity-adjacent target (the actually impactful one) is met only by disclaimed analogy.",
+    "execution_ease": "5 -- Core theorem, Lean anchor, and numerical exhibit all already exist and were verified present this session; the only new work is a one-paragraph simultaneous H^1 instantiation. Lowest possible cost.",
+    "plausibility": "5 -- The mathematics is correct and elementary (verified: Lean ring triviality; generic H^1 theorem objects exist). Discrete-Hodge integrability and Schnakenberg cycle affinity are standard and uncontested.",
+    "non_ad_hocness": "2 -- The load-bearing 'time-translation = additive scalar 1-form' premise is imported, not derived; the graph topology, lens, lift/even-odd representative, and units are all freely chosen to land on the known criterion (target_used_to_design_theory=true). Not 1 because the SHARED-lemma reuse across >=2 facts (omega/a_K/beta_1) is genuine and the guardrails (protocol-trap, arrow-DPI) are honestly retained.",
+    "discriminative_power": "1 -- Opposite-world test fails cleanly: the commuting control returns H=0 (global time exists) and any holonomy value is reachable by representative choice. The framework predicts neither the existence verdict nor the value; it cannot fail. Self-generated synthetic data only.",
+    "audience_legibility": "4 -- Very legible to nonequilibrium-statmech / discrete-geometry / quantum-foundations audiences; the H^1/loop-integral framing and the three-corollary structure are clean and Lean-anchored. Not 5 because the relativity-adjacent framing in the card overpromises relative to what is delivered, which can mislead the headline reader.",
+    "precision": "2 -- Capped by the MISSING physical-time/spacetime interface and the disclaimed Sagnac match: the 'precise' value 0.5 is a built-in artifact, not a quantitative prediction. The exact statement of the existence-iff-exactness lemma is precise, but it is definitional given the premise.",
+    "robustness": "3 -- The mathematical statement is fully robust (telescoping holds over R, Lean-checked over Int). Knocked down because every PHYSICAL reading is fragile to knob choice (commuting vs noncommuting, forest vs cycle, representative rule, units, lens partition) and the exhibit reproduced at H approx 0.496 under different seeds.",
+    "baseline_advantage": "1 -- Explicitly RECOVERY/REORGANIZATION; SBT does not beat the standard account of clock synchronization, the relativistic global-time-function question, or Schnakenberg affinities. Capped at 1 by the relativistic disclaimer it cannot cross. Not 0 because the order/measure/arrow separation is a modest, genuine reorganization with no standard single-paper analogue.",
+    "publication_potential": "2 -- Publishable only as a short expository/consolidation note or a section, honestly framed as recovery + a new elementary instantiation. Not a flagship; the headline 'unification' is parallel structure across three papers, and the relativity hook is analogy."
+  },
+
+  "proposed_bin": "E",
+  "recommended_priority": "low",
+  "recommended_artifact": "A short consolidation note (or a single section) stating the one finite-graph H^1 exactness lemma (cite the EXISTING thm:coh-class-obstruction / thm:coh-periods-iff-exact / thm:coh-dimension in Non-Descending Objects) with three labelled corollaries -- C1 no-global-time (omega; To_Notch sec:no-global-time + Lean triangle_sum_of_potential / no_global_potential_of_nonzero_triangle_holonomy in six-birds-time), C2 detailed-balance zero cycle-affinity (a_K; No-Go thm:NG_FORCE_NULL), C3 force-needs-positive-cycle-rank (No-Go thm:NG_FORCE_FOREST) -- the reproduced exhibit (H approx 0.5 noncommuting vs H=0 commuting control from holonomy.py), and a prominent 'analogy, not a relativistic/Sagnac derivation' boundary box plus the 'P3 holonomy is NOT an arrow certificate' guardrail. Label the simultaneous three-corollary instantiation as a small NEW consolidation, and state the lemma over R.",
+  "one_line_verdict": "Faithful but RECOVERED/REORGANIZED: a correct, Lean-anchored, telescoping-trivial re-presentation of textbook discrete-Hodge integrability plus an order/measure/arrow taxonomy, whose only novelty is a one-paragraph simultaneous H^1 instantiation of three ALREADY-WRITTEN theorems -- not the relativistic/Sagnac result the target advertises, and not a falsifiable retrodiction (its own commuting control returns the opposite).",
+  "mechanism_tag": "route-mismatch",
+  "target_audience": [
+    "Nonequilibrium statistical mechanics researchers (entropy production, cycle affinities, Schnakenberg networks)",
+    "Applied algebraic topology / discrete-Hodge and graph-cohomology researchers",
+    "Quantum foundations / philosophy-of-physics researchers on the nature of time and simultaneity",
+    "Complex-systems / multiscale-modeling theorists interested in layer-relative time and closure calculi"
+  ]
+}

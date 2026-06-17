@@ -1,0 +1,11 @@
+artifact,output,classification,grade,scope
+directed_reduction_nogo_step30.py,factorization audit and route computations,predictive structural,finite-carrier diagnostic,four-mode carrier plus Step 24 audit table
+factorization_defects_step30.csv,witness pairs for quotient non-factorization,analytical structural,native finite-map diagnostic,q_QM and q_GR access quotients
+factorization_summary_step30.csv,directed factorization verdicts and vertical-stack control,analytical structural,native finite-map diagnostic,q_QM q_GR and control stack
+audit_non_derivability_step30.csv,held-out audit residuals in both directions,analytical structural,toy-diagnostic,Step 24 field audit table
+route_mismatch_step30.csv,directed route mismatch and commuting control,analytical structural,finite-carrier diagnostic,canonical fiber-mean completions and vertical control
+directed_reduction_carrier_step30.json,carrier definitions completions and fit coefficients,organizational/audit,diagnostic-complete,Step 30 declared carrier
+lemma1_directed_reduction_statement_step30.tex,bounded Lemma 1 statement,analytical structural,bounded finite-carrier theorem statement,Step 30 diagnostic
+step30_results_summary.md,summary and verdict,organizational/audit,diagnostic-complete,Step 30 artifact contract
+run_step30.py,artifact and guard validator,organizational/audit,diagnostic-complete,Step 30 artifact contract
+external_review,bounded no-go scope and further lemmas,remaining external content,external review,beyond declared finite toy and grammar

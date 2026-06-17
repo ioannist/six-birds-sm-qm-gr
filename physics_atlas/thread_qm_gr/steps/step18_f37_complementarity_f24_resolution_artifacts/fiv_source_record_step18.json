@@ -1,0 +1,14 @@
+{
+  "file": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+  "F24_lines_read": "1418-1514",
+  "F37_lines_read": "6859-6898",
+  "F24_source_note": "The paper states the role obstruction, strict refinement, and mutually exclusive resolution families. It names the discipline families but does not give a more granular predicate list elsewhere in the repository search.",
+  "repository_search_terms": [
+    "MemoryLayer",
+    "HiddenUpstreamRole",
+    "BridgeMediatedRole",
+    "BudgetedRole",
+    "ScopedRole",
+    "CoarsenedRole"
+  ]
+}

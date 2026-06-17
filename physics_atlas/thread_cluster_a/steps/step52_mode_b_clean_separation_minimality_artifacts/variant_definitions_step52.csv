@@ -1,0 +1,6 @@
+predicate_id,description,uses_target_structure_literal,computed_quantity_basis
+base_shadow,"base shadow, no clean-separation condition",False,base_stable_composite_mass_requirement
+no_light_xy,allows confining-charged vectors when no light vector is forced,False,light_forced_broken_vector_count
+no_baryon_violating_xy,forbids baryon-orbit-enlarging broken vectors,False,baryon_orbit_enlarging_count
+bare_proton_stability,requires F27 baryon readout descent,False,baryon_descent_obstruction_count
+clean_separation,forbids all confining-charged broken vectors,False,broken_vector_exotic_count

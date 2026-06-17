@@ -1,0 +1,6 @@
+{
+  "most_promising_step15_consequence": "minimal irreducible anomaly-cancellation support",
+  "statement": "In a bounded real-rep enumeration, anomaly-free candidates with the SM chiral reps must correlate quark and lepton hypercharges by the solved relations; remaining non-reference survivors are vector-like/exotic refinements, sterile extensions, normalization equivalents, or label-swapped variants. Step 15 should test a minimality/irreducibility selector over a broader candidate set.",
+  "independent_check": "Enumerate chiral spectra over SU(3)xSU(2)xU(1) reps with bounded denominator hypercharges, compute the same anomalies, remove vector-like pairs, and check whether the reference one-generation support is minimal among non-equivalent anomaly-free chiral supports while vector-like exotics are non-minimal refinements.",
+  "not_claimed_here": "This step scopes the consequence; it does not certify it."
+}

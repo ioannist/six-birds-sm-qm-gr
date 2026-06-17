@@ -1,0 +1,5 @@
+predicate_component,primitive,role
+corrected_anomaly_bookkeeping,P2,Zero rank-one cubic anomaly; retain Witten parity and higher-rank cubic coefficients.
+atomic_rewrite_packaging,P5/P1/F27,"Atomic package, actual action, primitive charge orbit."
+closure_consistency_completeness,P3/P6,Action-faithful route incidence completeness.
+corrected_chirality_faithfulness,P3,Residual chirality must use a non-self-conjugate non-abelian action channel.

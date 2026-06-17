@@ -1,0 +1,34 @@
+\section*{Cluster A Step 23: Factor-Count Unsmuggling}
+
+\paragraph{Grade.}
+Finite GUT-exterior closure audit / recognition recovery. This step fixes the Step-22 two-factor-only charge solver and recomputes closure for every factor count in the bounded range, but the exterior-role content ansatz remains an input.
+
+\paragraph{Generated-vs-input.}
+Inputs are the finite range \(n=0,\ldots,4\), factor ranks \(1,\ldots,4\), the finite charge-search bound, chirality, anomaly and charge closure inside the declared exterior-role ansatz, Witten parity, and minimality. The generated-vs-input record now includes:
+\[
+\begin{array}{l|l}
+\mathrm{dual\_plus\_antisym\_plus\_mixed\_exterior\_role\_ansatz} & \mathrm{input}\\
+\mathrm{total\_slot\_five\_condition} & \mathrm{input\ derived\ from\ the\ exterior\ ansatz}
+\end{array}
+\]
+The five-slot condition follows because the complex-factor cubic expression reduces to \( \mathrm{total\_slots}=5 \) inside that ansatz. Outputs are the closure table and the minimal closing structure within that declared grammar.
+
+\paragraph{Per-factor-count closure.}
+\[
+\begin{array}{c|cc}
+n & \mathrm{candidates} & \mathrm{closers}\\
+\hline
+0 & 1 & 0\\
+1 & 4 & 0\\
+2 & 10 & 1\\
+3 & 20 & 0\\
+4 & 35 & 0
+\end{array}
+\]
+Every candidate receives a computed verdict.
+
+\paragraph{Minimal closure.}
+The unique minimal closer has factor count \(2\), ranks \(1|2\), dimensions \(2|3\), total rank \(3\), total slots \(5\), and selected charge vector \(3|-2\). It is an SM-like split generated INSIDE this declared exterior-algebra ansatz, not a neutral gauge-shape generation.
+
+\paragraph{Boundary.}
+The factor-count/shape result is not neutral under the exterior ansatz and slot-five condition. This is not physical E019 closure. The Step 28--39 record supersedes this positive landing with a scrutinized, qualified shadow-uniqueness result.

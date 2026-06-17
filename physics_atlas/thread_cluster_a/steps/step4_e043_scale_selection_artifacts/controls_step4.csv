@@ -1,0 +1,7 @@
+control_id,expected,passes_guard,computed_witness
+r_non_descending_positive,r_obstruction_gt_0,True,obstruction=3; witness=scale_SM-scale_same_EW_midcut;scale_SM-scale_same_EW_lowcut;scale_same_EW_midcut-scale_same_EW_lowcut
+derived_EW_observable_factors,derived_obstruction_0,True,obstruction=0; witness=none
+derivation_attractor_reaches_r_SM,final_residual_le_tol,True,final_r=0.0001; residual=6.64073830647e-19
+measure_peaks_at_r_SM,unique_measure_peak_at_target,True,selected=0.0001
+no_selection_control_unfixed,no_attractor_large_and_flat_measure_tie,True,no_attractor_final_residual=0.0199; flat_selected_count=0
+selection_carrier_not_field_pair,scale_configs_attractor_measure,True,carrier=EW_scale_configs; selectors=attractor_or_measure

@@ -1,0 +1,6 @@
+gate,passes,witness,evidence
+geometry_response_solved_not_assumed,True,numpy.linalg.lstsq,delta_c is solved from M.delta_c=delta_S for both RT-preserving and generic cases
+deltaS_from_contracted_state,True,region_delta_entropy_step45.csv,generic delta_S is computed by finite-differencing contracted-state entropies
+nontrivial_cokernel,True,rank 10 of 38 rows,P_perp constraints are present
+rt_preserving_satisfies,True,delta_S=M.delta_c,residual 9.2513644228e-17
+generic_violates,True,contracted-state perturbation,residual 0.0418931924111

@@ -1,0 +1,9 @@
+coarsening_modes,coarsening_dimension,is_full_qm_readout,obstruction_count,empties_obstruction,computed_reason
+terminal,0,False,27,False,d3 is not a function of this q_QM coarsening
+d0_density,1,False,3,False,d3 is not a function of this q_QM coarsening
+d1_phase,1,False,3,False,d3 is not a function of this q_QM coarsening
+d2_transport,1,False,3,False,d3 is not a function of this q_QM coarsening
+"d0_density,d1_phase",2,False,3,False,d3 is not a function of this q_QM coarsening
+"d0_density,d2_transport",2,False,3,False,d3 is not a function of this q_QM coarsening
+"d1_phase,d2_transport",2,False,3,False,d3 is not a function of this q_QM coarsening
+"d0_density,d1_phase,d2_transport",3,True,3,False,d3 is not a function of this q_QM coarsening

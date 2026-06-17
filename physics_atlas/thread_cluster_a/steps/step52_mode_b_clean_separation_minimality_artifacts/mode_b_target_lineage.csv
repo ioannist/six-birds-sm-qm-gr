@@ -1,0 +1,2 @@
+target_residual,parent_residual,relation_to_canonical_root,status,source_artifacts
+clean-separation-minimality,introduced clean-separation recognition source,sub_residual of the SM-gauge-structure-selection canonical root,MINIMALITY_MIXED,steps/step52_mode_b_clean_separation_minimality_artifacts/clean_separation_minimality_step52.py

@@ -1,0 +1,56 @@
+{
+  "step": 28,
+  "orientation": "Non-stationary relational history for the self-sourced field package",
+  "active_residual": "R_child_E018_after_problem_of_time_constraint",
+  "carrier": {
+    "type": "finite clock tensor finite complex field",
+    "clock_states": 16,
+    "field_dim": 8,
+    "initial_sample": 2,
+    "source": "step24_derived_physical_audits_artifacts/toy_field_samples_step24.json",
+    "constraint": "open-chain rows psi_{t+1} - U_t psi_t = 0"
+  },
+  "candidate_move": {
+    "id": "nonstationary_relational_history_constraint",
+    "description": "Generate a non-eigenstate self-sourced field history with changing potentials and build the discrete relational constraint map whose kernel contains that history."
+  },
+  "final_verdict": {
+    "type": "nonstationary_relational_history_constraint_consistent_on_toy",
+    "history_is_nonstationary": true,
+    "generated_constraint_passes": true,
+    "wrong_generator_control_passes": false,
+    "relational_readout_recovers_history": true,
+    "relational_potential_recovers_sourcing": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "non_eigenstate_checked": true,
+    "state_change_checked": true,
+    "potential_change_checked": true,
+    "constraint_residual_computed": true,
+    "generated_constraint_residual": 4.220196766037856e-16,
+    "generated_null_dim_tol_1e_minus_8": 8,
+    "control_constraint_residual": 0.0925307478333232,
+    "max_field_readout_residual": 2.2131155843786806e-16,
+    "max_relational_potential_residual": 9.205483015737869e-17,
+    "min_eigen_residual": 0.35409006012453015,
+    "max_state_change_phase_invariant": 0.18847313451682898,
+    "max_potential_change": 0.001673580612625418,
+    "constraint_scope": "history-adapted open-chain relational generator"
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A generated non-stationary self-sourced history can be encoded by a discrete relational constraint map on the toy carrier."
+    ],
+    "analytical_structural": [
+      "The generated history has near-zero constraint residual while the wrong-generator control remains positive."
+    ],
+    "organizational_audit": [
+      "History diagnostics, constraint singular values, residuals, readouts, and matrices are saved."
+    ],
+    "remaining_external_content": [
+      "A less history-adapted nonlinear constraint and physical frame transfer remain external-review tasks."
+    ]
+  }
+}

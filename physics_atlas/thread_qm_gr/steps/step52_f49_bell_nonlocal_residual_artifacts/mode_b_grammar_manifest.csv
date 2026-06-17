@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,objects,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_F49BellNonlocalResidual_v1,52,two-qubit Bell state; CHSH settings; 16 local strategies; F49 common-source status; F37 non-joint-access tie,Excludes treating the common carrier as an admissible hidden variable without a source/interface quotient.,Bell state violates the enumerated local bound while the classical control has an explicit LHV table.,embed Bell-test access constraints into the broader QM-GR frame-transfer falsification route

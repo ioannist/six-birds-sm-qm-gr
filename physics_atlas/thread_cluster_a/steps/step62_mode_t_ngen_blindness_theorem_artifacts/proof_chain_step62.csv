@@ -1,0 +1,5 @@
+step,claim,status,evidence
+1,local_anomaly_terms_linear_in_N,proved_from_frozen_closure_row,closure_row constructs scaled[k] = family_count * unit[k] for all local anomaly coefficients
+2,witten_parity_only_N_sensitive_gate,proved_from_frozen_closure_row,witten_even is (N * unit_su2_doublet_count) % 2 == 0; the odd-doublet control alternates
+3,remaining_gates_nonempty_gated,proved_from_frozen_closure_row,"packaging, chirality, clean_separation, and mass_closure are exactly nonempty=(N>=1)"
+4,anomaly_free_even_doublet_unit_passes_all_N_ge_1,proved_by_arithmetic,linear zero anomalies stay zero; even doublet count stays even; nonempty gates stay true

@@ -1,0 +1,2 @@
+declared_window,charge_units,structures_declared,structures_exact,structures_skipped,skipped_policy,honest_status
+factor counts 1..3; dimensions 2..6,-6..6,55,27,28,three-factor branches with field_type_count>90 are not exactly enumerated in Step 43,partial exact widening plus candidate bounds

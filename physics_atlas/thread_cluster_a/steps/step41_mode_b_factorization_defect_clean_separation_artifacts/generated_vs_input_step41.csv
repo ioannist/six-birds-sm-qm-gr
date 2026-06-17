@@ -1,0 +1,7 @@
+item,status,detail
+step38_shadow_carrier,input,12 Step-38 low-energy shadow supports
+clean_separation_condition,recognition_source_input,supplied non-interference condition expressed by the defect
+pi_conf_raw,computed_readout,boson representation under the surviving confining sector
+pi_mass,computed_readout,massless versus massive status after breaking
+pi_conf_interference,faithful_quotient,nontrivial confining charge kept together; trivial sector split by mass because it is allowed
+delta_fact_table,computed_output,defect pairs and witness vectors per support

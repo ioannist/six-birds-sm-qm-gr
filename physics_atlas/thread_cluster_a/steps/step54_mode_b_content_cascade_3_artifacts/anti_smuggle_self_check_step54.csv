@@ -1,0 +1,5 @@
+check,passes,evidence
+no_target_branch_in_shadow,True,rank scoring iterates all classes uniformly before target status is read for reporting
+distinct_from_step48,True,rank condition is not charge-integrality
+distinct_from_step49,True,rank condition is stricter than connectivity coverage
+rank_negative_control_has_teeth,True,deficiency=1

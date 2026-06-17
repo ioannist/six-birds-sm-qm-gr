@@ -1,0 +1,9 @@
+claim_id,claim,grade,source_artifacts
+S11-001,"Step 11 reuses the Step 8 token-blind structural survivor carrier.",organizational,"steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv; steps/step11_refinement_order_battery_artifacts/refinement_order_battery_step11.py"
+S11-002,"The genuine-selection case collapses in all 200 fixed-seed random orders.",finite-carrier-diagnostic,"steps/step11_refinement_order_battery_artifacts/random_order_distribution_step11.csv"
+S11-003,"The landscape case stays multiply supported in all 200 fixed-seed random orders.",finite-carrier-diagnostic,"steps/step11_refinement_order_battery_artifacts/random_order_distribution_step11.csv"
+S11-004,"The adversarial delay-genuine order still has genuine final degeneracy 1 and landscape final degeneracy 27.",finite-carrier-diagnostic,"steps/step11_refinement_order_battery_artifacts/adversarial_orders_step11.csv"
+S11-005,"The adversarial force-landscape order still has genuine final degeneracy 1 and landscape final degeneracy 6.",finite-carrier-diagnostic,"steps/step11_refinement_order_battery_artifacts/adversarial_orders_step11.csv"
+S11-006,"Across all 204 orders, the separation margin is 5 and the flipping order count is 0.",finite-carrier-diagnostic,"steps/step11_refinement_order_battery_artifacts/separation_step11.csv; steps/step11_refinement_order_battery_artifacts/refinement_order_battery_output_step11.json"
+S11-007,"The honest grade is finite order-invariance on the declared toy battery, not a parameter-free physical claim.",remaining-external,"steps/step11_refinement_order_battery_artifacts/results_summary.md; steps/step11_refinement_order_battery_artifacts/nonclaim_boundary.md"
+S11-008,"The validator rebuilds and checks Step 11 without recursive prior-step validation.",organizational,"steps/step11_refinement_order_battery_artifacts/run_step11.py"

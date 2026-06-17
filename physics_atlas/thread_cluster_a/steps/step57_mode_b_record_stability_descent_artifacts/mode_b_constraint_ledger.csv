@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step57_record_requirement_no_gauge_selector,active_anti_smuggle_constraint,57,"record requirement must be defined by records, not gauge-layer condition"
+step57_RS_proper_subset_CS,active_anti_circularity_constraint,57,LAND requires RS proper subset CS
+step57_no_tuned_capacity,active_anti_smuggle_constraint,57,record capacity threshold must be minimal nontrivial value

@@ -1,0 +1,65 @@
+candidate,family,fires,expected_family,reason
+L_candidate_package,MemoryLayer,False,BridgeMediatedRole,memory mechanism or residue-record criterion absent
+L_candidate_package,HiddenUpstreamRole,False,BridgeMediatedRole,hidden-upstream latent criterion absent
+L_candidate_package,BridgeMediatedRole,True,BridgeMediatedRole,explicit admissible mediation object carries q and the role with commuting projections
+L_candidate_package,BudgetedRole,False,BridgeMediatedRole,priced residual criterion absent
+L_candidate_package,ScopedRole,False,BridgeMediatedRole,scope restriction criterion absent or scoped obstruction count is 3
+L_candidate_package,CoarsenedRole,False,BridgeMediatedRole,coarsening criterion absent or coarsened obstruction count is 3
+L_candidate_package,OutsideRoleScope,False,BridgeMediatedRole,outside-scope criterion absent
+L_candidate_package,BlockedNonClosure,False,BridgeMediatedRole,blocked-nonclosure criterion absent
+memory_control,MemoryLayer,True,MemoryLayer,history-dependent route-residue record recovers the role
+memory_control,HiddenUpstreamRole,False,MemoryLayer,hidden-upstream latent criterion absent
+memory_control,BridgeMediatedRole,False,MemoryLayer,explicit admissible mediation criterion absent
+memory_control,BudgetedRole,False,MemoryLayer,priced residual criterion absent
+memory_control,ScopedRole,False,MemoryLayer,scope restriction criterion absent or scoped obstruction count is 3
+memory_control,CoarsenedRole,False,MemoryLayer,coarsening criterion absent or coarsened obstruction count is 3
+memory_control,OutsideRoleScope,False,MemoryLayer,outside-scope criterion absent
+memory_control,BlockedNonClosure,False,MemoryLayer,blocked-nonclosure criterion absent
+hidden_control,MemoryLayer,False,HiddenUpstreamRole,memory mechanism or residue-record criterion absent
+hidden_control,HiddenUpstreamRole,True,HiddenUpstreamRole,typed minimal upstream latent recovers the role but is not explicit admissible mediation
+hidden_control,BridgeMediatedRole,False,HiddenUpstreamRole,explicit admissible mediation criterion absent
+hidden_control,BudgetedRole,False,HiddenUpstreamRole,priced residual criterion absent
+hidden_control,ScopedRole,False,HiddenUpstreamRole,scope restriction criterion absent or scoped obstruction count is 3
+hidden_control,CoarsenedRole,False,HiddenUpstreamRole,coarsening criterion absent or coarsened obstruction count is 3
+hidden_control,OutsideRoleScope,False,HiddenUpstreamRole,outside-scope criterion absent
+hidden_control,BlockedNonClosure,False,HiddenUpstreamRole,blocked-nonclosure criterion absent
+budget_control,MemoryLayer,False,BudgetedRole,memory mechanism or residue-record criterion absent
+budget_control,HiddenUpstreamRole,False,BudgetedRole,hidden-upstream latent criterion absent
+budget_control,BridgeMediatedRole,False,BudgetedRole,explicit admissible mediation criterion absent
+budget_control,BudgetedRole,True,BudgetedRole,positive role residual is priced and adequately statused rather than exactly resolved
+budget_control,ScopedRole,False,BudgetedRole,scope restriction criterion absent or scoped obstruction count is 3
+budget_control,CoarsenedRole,False,BudgetedRole,coarsening criterion absent or coarsened obstruction count is 3
+budget_control,OutsideRoleScope,False,BudgetedRole,outside-scope criterion absent
+budget_control,BlockedNonClosure,False,BudgetedRole,blocked-nonclosure criterion absent
+scoped_control,MemoryLayer,False,ScopedRole,memory mechanism or residue-record criterion absent
+scoped_control,HiddenUpstreamRole,False,ScopedRole,hidden-upstream latent criterion absent
+scoped_control,BridgeMediatedRole,False,ScopedRole,explicit admissible mediation criterion absent
+scoped_control,BudgetedRole,False,ScopedRole,priced residual criterion absent
+scoped_control,ScopedRole,True,ScopedRole,proper declared carrier restriction removes the role obstruction
+scoped_control,CoarsenedRole,False,ScopedRole,coarsening criterion absent or coarsened obstruction count is 3
+scoped_control,OutsideRoleScope,False,ScopedRole,outside-scope criterion absent
+scoped_control,BlockedNonClosure,False,ScopedRole,blocked-nonclosure criterion absent
+coarsened_control,MemoryLayer,False,CoarsenedRole,memory mechanism or residue-record criterion absent
+coarsened_control,HiddenUpstreamRole,False,CoarsenedRole,hidden-upstream latent criterion absent
+coarsened_control,BridgeMediatedRole,False,CoarsenedRole,explicit admissible mediation criterion absent
+coarsened_control,BudgetedRole,False,CoarsenedRole,priced residual criterion absent
+coarsened_control,ScopedRole,False,CoarsenedRole,scope restriction criterion absent or scoped obstruction count is 3
+coarsened_control,CoarsenedRole,True,CoarsenedRole,declared target coarsening quotients away the role distinction
+coarsened_control,OutsideRoleScope,False,CoarsenedRole,outside-scope criterion absent
+coarsened_control,BlockedNonClosure,False,CoarsenedRole,blocked-nonclosure criterion absent
+outside_scope_control,MemoryLayer,False,OutsideRoleScope,memory mechanism or residue-record criterion absent
+outside_scope_control,HiddenUpstreamRole,False,OutsideRoleScope,hidden-upstream latent criterion absent
+outside_scope_control,BridgeMediatedRole,False,OutsideRoleScope,explicit admissible mediation criterion absent
+outside_scope_control,BudgetedRole,False,OutsideRoleScope,priced residual criterion absent
+outside_scope_control,ScopedRole,False,OutsideRoleScope,scope restriction criterion absent or scoped obstruction count is 3
+outside_scope_control,CoarsenedRole,False,OutsideRoleScope,coarsening criterion absent or coarsened obstruction count is 3
+outside_scope_control,OutsideRoleScope,True,OutsideRoleScope,role direction is explicitly named outside scope
+outside_scope_control,BlockedNonClosure,False,OutsideRoleScope,blocked-nonclosure criterion absent
+blocked_control,MemoryLayer,False,BlockedNonClosure,memory mechanism or residue-record criterion absent
+blocked_control,HiddenUpstreamRole,False,BlockedNonClosure,hidden-upstream latent criterion absent
+blocked_control,BridgeMediatedRole,False,BlockedNonClosure,explicit admissible mediation criterion absent
+blocked_control,BudgetedRole,False,BlockedNonClosure,priced residual criterion absent
+blocked_control,ScopedRole,False,BlockedNonClosure,scope restriction criterion absent or scoped obstruction count is 3
+blocked_control,CoarsenedRole,False,BlockedNonClosure,coarsening criterion absent or coarsened obstruction count is 3
+blocked_control,OutsideRoleScope,False,BlockedNonClosure,outside-scope criterion absent
+blocked_control,BlockedNonClosure,True,BlockedNonClosure,formed admissible closure is absent and no adequate residual status repairs it

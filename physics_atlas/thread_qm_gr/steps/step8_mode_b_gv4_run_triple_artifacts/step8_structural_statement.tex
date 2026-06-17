@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 8 Structural Statement: Run-Level Obstruction for \(G_{v4}\)}
+
+\begin{definition}[Bounded run grammar \(G_{v4}\)]
+The grammar \(G_{v4}\) permits a finite stochastic substrate whose sector
+readouts are measured after the run.  A candidate run must exhibit a common
+completion fixed point and an independent held-out witness.  The grammar
+excludes a triple objective in the update rule, the triple target row as an
+input, a pairwise-union witness, and post-run diagonal forcing.
+\end{definition}
+
+\begin{definition}[Substrate and readouts]
+The tested substrate is a binary periodic ring with a stochastic nearest-neighbor
+parallel update.  At refinements \(N=32\) and \(N=64\), the run-readouts are:
+\[
+  A=\text{boundary mutual-information proxy},\quad
+  G=\text{first Fourier-mode amplitude proxy},\quad
+  R=\text{coarse/evolve route-closure proxy}.
+\]
+The common fixed-point residual is the Schur residual of the measured plateau
+\((A,G,R)\) against the diagonal subspace
+\[
+  \{(x,x,x): x\in\mathbb{R}\}.
+\]
+The independent witness is the held-out \(R^2\) gain from adding an interaction
+term beyond pairwise predictors.
+\end{definition}
+
+\begin{proposition}[Run-level obstruction for the declared substrate]
+For the declared run, the normalized fixed-point residuals are
+\[
+  \Xi_{N=32}=0.4947207905172907,\qquad
+  \Xi_{N=64}=0.5371910513210945.
+\]
+The held-out interaction gains are
+\[
+  -0.02326224393247789,\qquad -0.08539192789918792.
+\]
+Thus neither refinement satisfies the declared candidate thresholds
+\[
+  \Xi \le 0.02,\qquad \Delta R^2_{\mathrm{interaction}}\ge 0.05.
+\]
+\end{proposition}
+
+\begin{proof}
+The values are computed directly by `simulate_step8_gv4_run.py` from trajectory
+windows after burn-in.  The update rule uses only local neighbor coupling and
+inertia.  The sector readouts, witness, and common-completion residual are not
+arguments of the update rule.  Both refinements have positive residuals far
+above the threshold and non-positive held-out witness gains.  The only
+near-zero control forces the measured plateau onto the diagonal after the run,
+which is excluded by \(G_{v4}\).
+\end{proof}
+
+\begin{remark}[Next grammar]
+A next attempt must change the substrate/dynamics class or import an external
+recognition source with independent records.  It cannot reuse pairwise-union or
+post-run diagonal forcing as the witness.
+\end{remark}
+
+\end{document}

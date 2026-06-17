@@ -1,0 +1,8 @@
+item,status,detail
+layered_two_node_bulk_graph_with_three_bridge_paths,input,finite graph carrier; min-cut computed by optimizer
+random_gaussian_tensor_seed_set,input,"fixed seeds [101, 202, 303, 404, 505]; tensors written in explicit_tensors_step42.json"
+contracted_boundary_state,generated,matrix product of left and right tensor maps
+rho_A_entropy,generated,computed from singular values of the contracted state matrix
+min_cut_area,generated,computed by max-flow/min-cut over graph capacities
+saturation_trend,generated,seed-averaged S/min-cut across bond dimensions
+RT_random_tensor_network_recognition,recognition_landing,named after bound/trend/gap are computed

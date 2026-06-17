@@ -1,0 +1,5 @@
+ablation_id,ablation,area_functional_available,entanglement_entropy_S,min_cut_area_dual,relation_holds,computed_gap,outcome
+baseline_holo_refinement_1,all_structure_present,True,1.79175946923,1.79175946923,True,0,relation holds
+remove_min_cut_optimization,min_cut_disabled,False,1.79175946923,undefined,False,undefined,no geometric dual output; relation cannot be computed
+swap_to_non_holographic_extra_entropy,state_has_extra_boundary_entanglement,True,3.40119738166,1.79175946923,False,-1.60943791243,relation fails
+decouple_boundary_state_from_bulk,state_does_not_saturate_bulk_capacity,True,1.79175946923,3.40119738166,False,1.60943791243,relation fails

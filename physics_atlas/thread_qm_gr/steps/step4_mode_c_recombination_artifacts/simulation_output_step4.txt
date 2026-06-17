@@ -1,0 +1,8 @@
+Step 4 finite-carrier compatibility recombination diagnostic
+levels=[2, 4]
+coupled_joint_normalized_residuals=[0.5714285714285714, 0.5714285714285714]
+coupled_joint_raw_residuals=[4.0, 4.0]
+compatibility_only_normalized_residuals=[1.0, 1.0]
+recognized_sector_only_control=zero but rejected as verdict
+overread_control=zero only if compatibility bridge rows are added to native lens
+typed_result=stable compatibility residual remains

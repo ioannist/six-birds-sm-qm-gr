@@ -1,0 +1,27 @@
+{
+  "step": 5,
+  "orientation": "E009 UV-completion fiber facet",
+  "active_residual": "R_cluster_a_after_step4_e043_scale_selection",
+  "candidate_move": "Compute UV-fiber non-factorization, derived IR control, P2 consistency pruning, P4 staging, and UV-fiber selection.",
+  "final_verdict": {
+    "type": "e009_uv_fiber_facet_constructed",
+    "realized_IR": "IR_SM_TOY",
+    "realized_fiber_size": 6,
+    "uv_non_descending_obstruction": 16,
+    "derived_IR_observable_obstruction": 0,
+    "admissible_fiber_size_before_selection": 3,
+    "selected_UV": "U_SM",
+    "nonselected_admissible_count": 2,
+    "many_to_one": true,
+    "selection_collapses": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "uv_fiber": "uv_fiber_step5.csv",
+    "nonfactorization": "uv_nonfactorization_step5.csv",
+    "consistency_selection": "consistency_selection_step5.csv",
+    "controls": "controls_step5.csv",
+    "next_live_option": "Step6_cluster_a_consolidation_or_manager_selected_followup"
+  }
+}

@@ -1,0 +1,10 @@
+gate,status,scope,evidence
+C1_fiv_source_read,pass,source,"F24 lines 1418-1514 and F37 lines 6859-6898 were read; source record saved."
+C2_f37_l_commutes,pass,F37,"L_joint has a∘j residual 0.0 and b∘j residual 0.0."
+C3_f37_l_admissible,pass,F37,"Step 17 status for B_QM_to_L is candidate, so L_joint is admissible on the toy."
+C4_product_control_nonadmissible,pass,F37 control,"Product control commutes but is not admissible because Step 17 status is failed_G_nosmuggle."
+C5_f24_role_obstruction,pass,F24,"O_s count is 3 for q_QM and role readout d3."
+C6_f24_unique_case,pass,F24,"Exactly one F24 case is selected."
+C7_f24_selected_bridge_mediated,pass,F24,"BridgeMediatedRole is selected; the other five requested cases fail their toy tests."
+C8_no_root_landing,pass,no-smuggling,"Schema root_landed is false and external review remains required."
+

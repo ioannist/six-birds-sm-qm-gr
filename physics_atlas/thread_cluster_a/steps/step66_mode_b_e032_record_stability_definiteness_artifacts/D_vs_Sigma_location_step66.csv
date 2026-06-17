@@ -1,0 +1,3 @@
+property,forces_definiteness,closure_slot,evidence
+nonselective_record_stability,False,Sigma_f,uses pointer record algebra and diagonal weights only; full branching and selected readouts both pass
+single_outcome_selection,True,D_or_Sigma_f depending on shape,branch pruning would touch D; indexical selection would enrich Sigma_f; not forced by record-stability

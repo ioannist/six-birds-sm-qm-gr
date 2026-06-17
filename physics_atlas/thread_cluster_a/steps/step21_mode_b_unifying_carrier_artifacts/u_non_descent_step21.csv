@@ -1,0 +1,2 @@
+target,state_i,state_j,same_q,same_target_readout,obstruction,witness
+U,U_a,U_b,True,False,True,"same sector lens, different promoted bridge"

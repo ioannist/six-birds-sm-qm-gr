@@ -1,0 +1,7 @@
+check,passes,evidence
+uses_slot_count_prior,False,"corrected carrier uses anomaly sums and self-conjugacy, not slot count"
+uses_exterior_only_prior,False,neutral representation set remains active
+uses_larger_group_prior,False,predicate depends only on each candidate support's own residual action
+reduces_to_minimality,False,no ordering or minimum score is used by the corrected predicate stack
+reduces_to_shape,False,final pool has 80 survivors
+uses_target_reference,False,reference key is used only for status reporting

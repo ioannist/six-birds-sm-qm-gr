@@ -1,0 +1,127 @@
+{
+  "id": "R012",
+  "schema_note": "Fully enriched retrodiction card for R012, merging the original CARD, the parameter/flexibility AUDIT, the four-member SKEPTIC PANEL, and the Repair-Agent + Fertility-Judge output (this object). All paper/line citations independently verified against the SBT corpus on 2026-06-02.",
+
+  "original_card": {
+    "one_sentence_claim": "From a single finite Markov substrate processed by one closure/audit pipeline (induced macro kernel Phat = U_f P^tau Q_f plus the PICA enable matrix), both a geometry-like regime (least-action/diffusion-consistent embedding, holonomy curvature, geometrizability R^2_geo) and a thermodynamics-like regime (path-reversal asymmetry Sigma_T / EPR cycle affinities) are simultaneously detectable and separate cleanly across a 2307-run campaign, with each regime traced to specific active closure cells.",
+    "target_known_fact": "Two structures normally derived with separate machinery: (a) diffusion-map / spectral-embedding recovery of an effective metric/Laplacian geometry from Markov dynamics (Coifman-Lafon), with least-action/shortest-path and curvature-as-holonomy reads; and (b) Schnakenberg cycle-affinity / Lebowitz-Spohn entropy-production / data-processing structure of time-asymmetry in nonequilibrium Markov chains.",
+    "scientific_domain": "Emergent geometry (spacetime-analogue, diffusion-geometry) co-located with stochastic thermodynamics; a within-physics cross-domain demonstration on finite Markov substrates.",
+    "argument_family": "cross-domain-unification (single-substrate, single-audit co-detection of two phenomenologies)",
+    "derivability_class": "C",
+    "minimum_viable_result": "A reproducible demonstration (already substantially present) that ONE finite Markov substrate processed by ONE Phat-based audit pipeline yields, on shared code, both (a) standard diffusion-geometry signatures and (b) standard nonequilibrium-thermo signatures, with at least two regions in the joint audit plane attributable to distinct PICA cells. A CO-DETECTION/recovery result in a single vocabulary, honestly labeled as audit-defined.",
+    "baseline_comparison": "SBT does NOT beat the standard accounts on either task individually: geometry side recovers Coifman-Lafon diffusion-map embedding and a curvature-as-holonomy proxy; thermo side recovers Schnakenberg/Lebowitz-Spohn entropy-production structure with the textbook DPI. The ONLY thing reorganized is the packaging: both phenomenologies co-detected from one object (Phat) under one audit vocabulary (PICA). Audit-defined, NOT a physical-law unification."
+  },
+
+  "verification_log": {
+    "checked_on": "2026-06-02",
+    "object_identity_splice_CONFIRMED": "grep of Tsiokos_2026_To_Create...tex returns ZERO hits for holonomy/Procrustes/sphere/S^2/MDS/curvature; grep of Tsiokos_2026_To_Plot...tex returns ZERO hits for EPR/Sigma_T/Schnakenberg/entropy-production. The curvature-as-holonomy evidence (plane median 0.0479 vs sphere 0.5980, ratio 12.49, To_Plot abstract + line 559) and the thermo arrow Sigma_10 (To_Create eq line 325) are computed in DIFFERENT papers on DIFFERENT substrates. Only the WEAK spectral geometry probes (R^2_geo line 380, KL*_diff line 389, PLA2 least-action) are genuinely co-located with Sigma_10 on one Phat inside To_Create.",
+    "R7_tau_overlap_FAIL_CONFIRMED": "To_Create line 490: 'R7 Tau overlap feasibility & FAIL ... n32:overlap=0,jacc=0.000; n64:overlap=0,jacc=0.000; n128:overlap=1,jacc=0.143; n256:overlap=0,jacc=0.000 ... FAIL implies direct tau-controlled comparisons are not feasible without additional matching.'",
+    "separation_is_visual_CONFIRMED": "To_Create line 558: full ablation suite 'occupies a broad region rather than collapsing to a one-dimensional tradeoff, and key conditions ... separate cleanly in this plane'. No silhouette / cluster-gap / two-sample / GMM / k-means statistic appears anywhere (grep negative). The regime plane is (x=R^2_geo, y=log10(1+Sigma_10)), Fig F5, line 570.",
+    "regimes_anti_colocated_CONFIRMED": "To_Create line 804: 'geometry/diffusion-like structure at fine resolution and thermodynamic/time-asymmetric structure in other parts of configuration space' -- i.e. the two regimes occupy DIFFERENT regions of the resolution/config scan, not one operating point. C1 (line 511) reports Full-Action SUPPRESSES Sigma_10 while raising R^2_geo: the two signatures trade off, they do not coincide.",
+    "falsifiers_open_CONFIRMED": "To_Create lines 781-784: C1 (tau-matching may erase Full-vs-Baseline separation), C2 (alternative lens/lift may show geometry is a lens property), C3 (scatter may collapse under T or m changes), C4 (two spectral-core cells excluded from LOO) -- all open.",
+    "disclaimer_CONFIRMED": "To_Create line 743: 'these are audit-defined regimes, not claims of literal spacetime geometry or physical thermodynamics in the microscopic substrate.' Ledger disclaimer line 147 and missing_interface line 107 (Sigma_T/EPR are informational proxies, NOT physical entropy production).",
+    "genuine_anti_flexibility_guards_CONFIRMED": "Protocol trap (thm:protocol_trap; ledger dynamical_rules) forces Sigma_T=0 for a reversible autonomous clock at every finite T (EPR ~ 5.6e-18 numerically); EPR_lifted = alpha*EPR_clock. DPI / T-AOT-01 (thm:dpi_path; NG_ARROW_DPI) forbids coarse-graining from CREATING asymmetry. These two are theorems and cannot be tuned to fit a fabricated arrow."
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repair_philosophy": "Only allowed repairs applied: (1) split the overbroad single-object headline into the parts that are literally true (weak spectral geometry + arrow co-located on one Phat in To_Create) vs the parts that are spliced across papers/substrates (holonomy curvature + arrow); (2) replaced the rhetorical 'separate cleanly across 2307 runs' with the honest weaker statement plus the missing-statistic and tau-confound flags; (3) replaced 'simultaneously detectable' with 'co-computable on shared code, occupying distinct (anti-correlated) regions of the same scan'; (4) clarified the mapping to audit-vocabulary co-detection, not physical unification, honoring ledger disclaimer line 147 / missing_interface line 107; (5) demoted the two genuine theorems (protocol trap, DPI) to their correct status as anti-flexibility guards on the thermo sub-claim, NOT as evidence for the separation headline. No new assumptions, no hidden tuning, no concealed imported physics, no claimed uniqueness, no undefined 'naturally emerges'.",
+    "what_was_removed": [
+      "'simultaneously detectable' -- the strong-form co-location is false for the GR-flavored curvature evidence: holonomy lives only in To_Plot (grid + sphere-kNN substrates, no arrow), the 2307-run arrow campaign lives only in To_Create (generic random substrate, no holonomy/curvature).",
+      "'separate cleanly across a 2307-run campaign' as a quantitative claim -- demoted to a visual/median scatter observation; no separation statistic exists and tau-matched comparison is infeasible in-dataset (R7 FAIL).",
+      "implicit physical-unification reading -- removed; the result is strictly audit-vocabulary co-detection of two RECOVERED standard phenomenologies.",
+      "'each regime traced to specific active closure cells' as unconditional -- demoted to conditional (LOO excludes two spectral-core cells, C4; tau-confound blocks causal attribution to cells vs a tau gradient)."
+    ],
+    "revised_one_sentence_claim": "A single finite Markov substrate processed by one Phat = U_f P^tau Q_f pipeline supports computing, on shared code, both standard diffusion-geometry diagnostics (reversible spectral embedding, geometrizability R^2_geo, diffusion misfit KL*_diff, least-action PLA2, the d_eta pseudometric, and -- on a separate controlled substrate -- a curvature-as-holonomy proxy) and the standard nonequilibrium-thermodynamics diagnostic (path-reversal asymmetry Sigma_T / Schnakenberg-Lebowitz-Spohn EPR, DPI-protected and protocol-trap-cleared); across a 2307-run PICA ablation campaign these two diagnostic families occupy distinct, largely anti-correlated regions of the (R^2_geo, log10(1+Sigma_10)) audit plane, an audit-vocabulary co-detection (recovering, not improving on or physically unifying, the two standard accounts), currently visual rather than statistically certified and with timescale tau uncontrolled across compared conditions (R7 FAIL).",
+    "new_minimum_viable_result": "On ONE finite Markov substrate and ONE Phat-based pipeline in To_Create, the same code path computes (a) the standard diffusion-map / spectral effective-geometry diagnostics (R^2_geo, KL*_diff, least-action PLA2, d_eta) and (b) the standard Schnakenberg / Lebowitz-Spohn entropy-production diagnostic Sigma_10, with the thermo side protected by two theorems (protocol trap: reversible autonomous clock => Sigma_T=0; DPI / T-AOT-01: coarse-graining cannot create asymmetry). Across the 2307-run PICA campaign these two diagnostic families occupy distinct, anti-correlated regions of the (R^2_geo, log Sigma_10) plane. This is honestly labeled an audit-defined co-detection on shared code -- NOT physical unification, NOT derived geometry, NOT physical entropy production -- with three explicit open caveats: (i) the region separation is reported visually with no cluster/two-sample statistic; (ii) tau is not matched across conditions (R7 tau-overlap FAIL, Jaccard ~0); (iii) the strong curvature-as-holonomy evidence (plane 0.0479 vs sphere 0.5980) is on a DIFFERENT substrate (To_Plot) where no arrow is computed, so it is co-detected only in the shared-vocabulary sense, not on one object at one operating point.",
+    "remaining_objections_after_repair": [
+      "Object-identity splice persists at the level of the strongest geometry evidence: even repaired, the GR-flavored curvature/holonomy is never co-computed with Sigma_T/EPR on the same micro substrate and same Phat at the same operating point; only the weaker spectral R^2_geo/KL*_diff is genuinely co-located. To make 'one object, two regimes' literally true for curvature, one must add the arrow audit to the sphere-kNN/torus substrate (or holonomy to the To_Create substrate). Not done.",
+      "tau confound is structural, not merely uncontrolled: R7 FAIL (Jaccard ~0) means a tau-driven continuum cannot be excluded as the source of the apparent two-region scatter using the current dataset; the region separation could be a one-parameter (tau) gradient. Requires fresh tau-matched reruns.",
+      "Separation statistic still absent: the headline word 'separate' rests on a scatter eyeball; no silhouette / cluster-gap / two-sample test. The card's own separation-statistic lemma is already_in_papers=false.",
+      "Geometry side remains lens-circular: the lens ladder is built from Coifman-Lafon diffusion/spectral coordinates of P, and the curved substrate (S^2) is coordinate-seeded; the curvature ordering plane<sphere is partly built in. Non-spectral-lens robustness lemma is NEEDED and absent (C2 open).",
+      "Both halves are admitted RECOVERIES of standard results (Coifman-Lafon; Schnakenberg/Lebowitz-Spohn + DPI). No improvement over either baseline; per ledger the unification is vocabulary-level only.",
+      "High flexibility persists at the headline: ~13 adjustable degrees of freedom against ~4 independent recovered facts; the regime-plane axes and the 'separating' anchor conditions are post-hoc selections from a 69-subalgebra scan, not pre-registered."
+    ],
+    "what_survives": "What survives is exactly the fallback-grade contribution: a single auditable object (Phat) and a single reproducible pipeline that SUPPORT computing both the standard diffusion-geometry diagnostics and the standard Schnakenberg/Lebowitz-Spohn entropy-production diagnostics on shared code, recovering each standard result, with the thermo side carrying two genuine anti-flexibility theorems (protocol trap, DPI). PICA is a reusable, implementation-independent closure-specification object. This is a methodological / vocabulary-level co-detection, honestly audit-defined, not new physics and not a statistically certified two-regime separation."
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 4,
+    "plausibility": 4,
+    "non_ad_hocness": 2,
+    "discriminative_power": 1,
+    "audience_legibility": 3,
+    "precision": 2,
+    "robustness": 2,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "2 -- A within-physics methodological co-detection is interesting to a niche, but it recovers (does not improve on or physically unify) two standard accounts, is explicitly audit-defined, and the headline 'unification' force evaporates once the curvature evidence is shown to be spliced across substrates. Real but modest.",
+    "execution_ease": "4 -- Substrate, Phat pipeline, both audit suites, the 2307-run campaign, the holonomy/EPR benchmarks, and the Lean metric anchors already exist. The genuinely new work (a separation statistic with tau matched; a non-spectral-lens rerun; tightening LOO to two cells; co-locating curvature with the arrow on one substrate) is low-to-moderate. Not capped lower only because the R7 FAIL means the tau-matched comparison needs fresh runs, not just re-analysis.",
+    "plausibility": "4 -- The constituent recoveries are real, reproducible, and partly Lean-anchored (d_eta triangle inequality/separation quotient; DPI TV version; protocol trap). The weak co-detection (spectral geometry + arrow on one Phat) is literally what To_Create does. High plausibility for the repaired, weakened claim.",
+    "non_ad_hocness": "2 -- ~13 degrees of freedom vs ~4 recovered facts; the regime-plane axes and separating anchors are post-hoc; tau uncontrolled; curved substrate coordinate-seeded; geometry lens-circular. Pulled up from 1 only because two sub-claims (protocol trap forcing EPR=0, DPI forbidding manufactured asymmetry) are genuine non-tunable theorems.",
+    "discriminative_power": "1 -- The headline cannot discriminate two regimes from a tau-driven continuum (R7 FAIL, no separation statistic; the paper's own C3 falsifier concedes the scatter may collapse). A no-separation / single-regime world is equally consistent. The opposite-world test fails on the headline. Only the guarded arrow sub-claim discriminates (and that is a recovered theorem, not the R012 novelty).",
+    "audience_legibility": "3 -- The shared-vocabulary framing and PICA are legible to the diffusion-maps and stochastic-thermo communities, and the Lean anchors help. Pulled down because the strongest selling point (curvature + thermo on one object) is not actually what the papers do, so a careful reader will feel oversold unless the repaired framing is adopted.",
+    "precision": "2 -- Component recoveries are quantitative and precise (holonomy 0.0479/0.5980 ratio 12.49; Pythagorean residual 33.19 -> 0.0586; EPR ~5.6e-18; CD_1 ~ machine zero). But the HEADLINE 'separate cleanly' is qualitative with no number, and SBT disclaimers cap precision: Sigma_T/EPR are informational proxies, d_eta/holonomy are graph/MDS proxies, no metric or curvature tensor, no continuum limit.",
+    "robustness": "2 -- Component theorems (protocol trap, DPI, triangle inequality, detailed-balance => EPR=0) are robust. The headline separation is fine-tuned-fragile by the authors' own admission: all four falsifiers (C1 tau, C2 lens, C3 T/m, C4 two cells) are open, and R7 FAIL blocks the one control the claim needs.",
+    "baseline_advantage": "1 -- Beats neither baseline on its own task: it recovers Coifman-Lafon and Schnakenberg/Lebowitz-Spohn, explicitly not improving on either. The only delta is shared bookkeeping. Ledger disclaimers forbid the physical-unification reading that would otherwise constitute an advantage.",
+    "publication_potential": "2 -- As an honest methodological note ('one object, two diagnostic families on shared code, with a reusable closure-specification object PICA') it is publishable in a methods/complex-systems venue IF reframed to the repaired claim and the curvature-splice and tau-FAIL are disclosed up front. As stated (simultaneous detection, clean separation, cross-domain unification) it would not survive a competent referee."
+  },
+
+  "proposed_bin": "E",
+  "bin_rationale": "E (conceptual reframing). The pieces are real and largely executed, but the headline as written overclaims in three independently confirmed ways (object-identity splice of the curvature evidence; visual-only separation with no statistic; tau uncontrolled with R7 FAIL). The single highest-value action is not new heavy computation but reframing the contribution to its defensible altitude -- audit-vocabulary co-detection / reusable PICA -- and then optionally discharging the modest A-grade upgrades (separation statistic with tau matched, non-spectral lens, co-locating curvature with the arrow). It is not a flagship (C) because it recovers rather than reorganizes physics; not a quick win (A) because the honest version requires reframing plus fresh tau-matched runs, not a one-afternoon statistic.",
+  "recommended_priority": "low",
+  "recommended_artifact": "A single honest methodological note titled to its repaired claim ('One Markov substrate, one Phat pipeline: co-computing diffusion-geometry and entropy-production diagnostics on shared code'). Deliverables, in order of value: (1) reframe the headline to audit-vocabulary co-detection and explicitly disclose the curvature-splice (holonomy is on a separate substrate) and the R7 tau-overlap FAIL; (2) compute a pre-registered separation statistic (silhouette / cluster-gap / two-sample) on the (R^2_geo, log Sigma_10) plane WITH tau matched across the compared PICA conditions, via fresh tau-controlled reruns (the R7 FAIL means this cannot be done in the current dataset); (3) a non-spectral-lens robustness control to defuse the acknowledged Coifman-Lafon circularity (C2); (4) optionally add the Sigma_T/EPR audit to the sphere-kNN/torus substrate so curvature and the arrow are literally co-computed on one Phat; (5) tighten LOO to the two excluded spectral-core cells (C4). Keep the protocol-trap and DPI guards front-and-centre as the non-tunable parts. Cite the Lean triangle-inequality/separation anchors (To_Plot App Lean) and the To_Create line 743 audit-defined disclaimer.",
+  "one_line_verdict": "Repairable to an honest, modest methodological co-detection (one object, two recovered diagnostic families on shared code), but the cross-domain-unification headline fails three confirmed checks -- the curvature evidence is spliced across substrates, the 'clean separation' is a visual scatter with no statistic, and tau is uncontrolled (R7 FAIL) -- so it is audit-vocabulary packaging, not new or physically unifying physics.",
+  "mechanism_tag": "idempotent-packaging",
+  "target_audience": [
+    "Nonequilibrium statistical mechanics / stochastic thermodynamics researchers (entropy production, coarse-graining, Schnakenberg theory)",
+    "Emergent-geometry / spectral-graph and diffusion-maps community (Coifman-Lafon embeddings, Laplacian learning)",
+    "Complex-systems / renormalization and effective-theory theorists interested in cross-domain emergence",
+    "Applied probabilists and computational scientists wanting reusable closure-audit / ablation tooling (PICA)"
+  ],
+
+  "merged_audit": {
+    "degrees_of_freedom_estimate": 13,
+    "data_points_matched": 4,
+    "overfitting_risk": "high",
+    "mechanism_tag": "idempotent-packaging",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "verdict": "FAILS on the regime-separation headline (a no-separation / single-regime / tau-gradient world is equally consistent given R7 FAIL and no separation statistic) and on the geometry/curvature ordering axis (coordinate-seeded S^2). PASSES on the guarded arrow sub-claim: protocol trap forces EPR=0 for a reversible autonomous clock and DPI forbids coarse-graining manufacturing asymmetry, so a fabricated arrow cannot be retrodicted once A_AUT is enforced."
+    },
+    "audit_verdict_summary": "HIGH FLEXIBILITY / overfitting-prone at the headline level, honestly self-labeled. Constituent recoveries are real and quantitative; the two thermo theorems are genuine anti-flexibility guards. The R012 headline (simultaneous detection + clean separation + cell attribution) is overfitting-prone and partly spliced across papers."
+  },
+
+  "merged_skeptic_panel": {
+    "min_survival": 2,
+    "mean_survival": 2.38,
+    "fatal_objections_present": false,
+    "consensus_serious_objections": [
+      "Object-identity splice: curvature/holonomy (To_Plot, grid+sphere-kNN, no arrow) and the 2307-run arrow campaign (To_Create, no holonomy/curvature) are on different substrates/papers; only weak spectral R^2_geo/KL*_diff is co-located with Sigma_10.",
+      "No separation statistic: 'separate cleanly' / 'broad region' (To_Create line 558) is a scatter eyeball; no silhouette/cluster-gap/two-sample test (separation-statistic lemma already_in_papers=false).",
+      "tau confound is structural: R7 tau-overlap FAIL (line 490, Jaccard ~0); tau-matched comparison infeasible in-dataset; a tau-driven continuum is not excluded (C1 falsifier live).",
+      "Geometry side admittedly lens-circular (Coifman-Lafon diffusion coordinates; S^2 coordinate-seeded generator); non-spectral-lens robustness lemma NEEDED/absent (C2 falsifier).",
+      "Regimes are anti-co-located: To_Create line 804 places geometry 'at fine resolution' and thermo 'in other parts of configuration space'; C1 shows Full-Action suppresses Sigma_10 while raising R^2_geo -- a tradeoff, not coexistence at one point.",
+      "Both halves import/recover standard physics (Coifman-Lafon; Schnakenberg/Lebowitz-Spohn + DPI); no improvement over either; per ledger the unification is vocabulary-level and audit-defined."
+    ],
+    "is_actually_new_votes": "1 false (GR skeptic, on strong form), 3 true (on the weak shared-vocabulary co-detection)",
+    "beats_baseline_votes": "0 of 4 (unanimous: does not beat either baseline)",
+    "per_skeptic_survival": [
+      {"role": "Skeptical general relativist", "score": 2, "headline": "strong-form 'single object simultaneously detectable' is a splice; GR content (metric/curvature tensor, diffeomorphism invariance, continuum limit) absent."},
+      {"role": "Mathematical physicist (nonequilibrium + diffusion-geometry)", "score": 2.5, "headline": "headline 'separate cleanly' asserted from a scatter, not derived; tau uncontrolled (R7 FAIL); novel only as weak co-detection."},
+      {"role": "EFT / known-physics-recovery skeptic", "score": 2.5, "headline": "two admitted recoveries co-located under one bookkeeping object; methodological/vocabulary co-detection, not physical unification."},
+      {"role": "Nonequilibrium-thermo + spectral-geometry hostile referee", "score": 2.5, "headline": "no separation statistic anywhere (grep negative); regime plane + anchors are post-hoc; defensible claim is honest recovery on shared code."}
+    ],
+    "what_would_change_minds": "Unanimous: (i) a pre-registered separation statistic (silhouette / cluster-gap / two-sample) on the (R^2_geo, log Sigma_10) plane with tau matched across compared PICA conditions (clearing R7 FAIL via fresh runs); (ii) a non-spectral-lens replication defusing the diffusion-embedding circularity; (iii) curvature/holonomy and Sigma_T/EPR co-computed on ONE substrate and ONE Phat at one operating point; and (iv) a lemma showing geometry-type vs thermo-type signatures are governed by disjoint identifiable closure-cell sets. With all four, 'co-detectable' becomes 'separable by closure mechanism' and scores rise toward 4; even then it remains methodological unification recovering Coifman-Lafon and Schnakenberg/Lebowitz-Spohn, never GR-grade geometry or a physical-law unification."
+  },
+
+  "ledger_disclaimer_compliance": {
+    "crosses_disclaimer": false,
+    "note": "The repaired claim honors every relevant disclaimer: no literal spacetime geometry / metric or curvature tensor / continuum limit (To_Create line 743; ledger disclaimer line 147; missing_interface lines 105-106); Sigma_T/EPR treated strictly as informational proxies, NOT physical entropy production (missing_interface line 107); P3 holonomy/route-mismatch NOT used as a directionality certificate (forbidden_moves; the arrow is certified by the P6 Sigma_T/EPR audit, guarded by DPI and the protocol trap); no pointer-basis/lens-selection principle claimed (lens is an acknowledged free input). Any version asserting cross-domain PHYSICAL unification, derived geometry, derived thermodynamics, or curvature in the GR sense would cross SBT's own disclaimers and is ad hoc."
+  }
+}

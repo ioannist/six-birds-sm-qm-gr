@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step61_single_factor_scope,active_scope_constraint,61,do not conflate single-factor theorem with multi-factor cap bound
+step61_frozen_substrate_defect,active_anti_smuggle_constraint,61,Step35 and Step41 machinery imported verbatim
+step61_no_target_assumption,active_anti_circularity_constraint,61,derive defect non-emptiness from substrate and single-factor restriction

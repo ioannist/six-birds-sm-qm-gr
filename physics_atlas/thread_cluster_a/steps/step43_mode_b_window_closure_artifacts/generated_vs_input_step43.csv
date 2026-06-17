@@ -1,0 +1,6 @@
+item,status,detail
+widened_window,declared_input,factor counts 1..3; dimensions 2..6; finite charge lattice inherited from corrected carrier
+exact_one_two_factor_chain,computed,all one/two-factor structures through dimension 6
+three_factor_dense_region,coverage_gap,only tractable high-dimension samples enumerated in Step 43
+clean_separation_condition,recognition_source_input,Delta_fact=empty condition from Step 41; not made fundamental here
+verdict,computed,WINDOW_STABLE_BOUND_CANDIDATE_PARTIAL

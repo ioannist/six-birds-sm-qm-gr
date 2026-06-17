@@ -1,0 +1,39 @@
+{
+  "step": 33,
+  "orientation": "Part B type-uniqueness by structural F24 predicates",
+  "active_residual": "R_child_E018_after_T_QG_NoGo_bounded_theorem",
+  "carrier": {
+    "states": 8,
+    "modes": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "q_QM": ["d0_density", "d1_phase", "d2_transport"],
+    "role_s": "d3_curvature",
+    "pi_L": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"]
+  },
+  "candidate_move": "Apply Step-21 structural F24 predicates to actual L maps; compute all family exclusions and a q_QM coarsening obstruction search.",
+  "computed_outputs": {
+    "predicate_table": "f24_predicates_on_L_step33.csv",
+    "excluded_family_rulings": "excluded_family_rulings_step33.csv",
+    "coarsening_search": "coarsening_obstruction_step33.csv",
+    "maps": "actual_L_maps_step33.json",
+    "output": "type_uniqueness_output_step33.json"
+  },
+  "final_verdict": {
+    "type": "type_uniqueness_bridge_mediated_role_on_L",
+    "selected_family": "BridgeMediatedRole",
+    "unique_type": true,
+    "fired_families": ["BridgeMediatedRole"],
+    "excluded_family_count": 7,
+    "coarsening_search_rows": 8,
+    "coarsening_min_obstruction_count": 3,
+    "instance_uniqueness_open": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "part": "B",
+    "program": "type uniqueness before instance uniqueness",
+    "source_steps": [17, 18, 20, 21, 32],
+    "nonclaim": "This proves only F24 resolution-family uniqueness on the declared finite carrier; it does not prove instance uniqueness or frame transfer."
+  }
+}

@@ -1,0 +1,8 @@
+Step 26 semiclassical dynamics
+Verdict: self_consistent_dynamics_converges_on_toy
+Consistent coupling converged: True
+Consistent fixed-point residual: 3.4936318023019015e-16
+Consistent eigen residual: 6.377748916558787e-16
+Runaway control converged: False
+Runaway fixed-point residual: 1.4285712942487314
+Runaway eigen residual: 0.6766429242147017

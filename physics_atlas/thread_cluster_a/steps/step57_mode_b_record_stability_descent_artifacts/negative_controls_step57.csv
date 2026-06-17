@@ -1,0 +1,6 @@
+control,passes,evidence
+degenerate_record_requirement_threshold_zero,True,"threshold-zero/no-persistence variant keeps all carrier rows, so it does not imply CS"
+non_record_layer_capacity_only,True,"capacity-only variant keeps all carrier rows, so it does not imply CS"
+target_passes_record_stability,True,support_05
+properness_witness_exists,True,support_03
+nonclean_failure_witness_exists,True,support_08

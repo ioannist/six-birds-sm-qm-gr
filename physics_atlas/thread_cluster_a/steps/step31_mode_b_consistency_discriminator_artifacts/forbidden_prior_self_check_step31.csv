@@ -1,0 +1,6 @@
+check,passes,evidence
+uses_slot_count_prior,False,"predicate uses action-faithful route incidence, not a slot-count rule"
+uses_exterior_only_prior,False,carrier is the Step-28 neutral rep enumeration
+uses_larger_group_prior,False,predicate depends only on each candidate support's own route/audit data
+reduces_to_minimality,False,Step-30 strict currency minimum is dropped and not used in the predicate
+reduces_to_target_reference,False,predicate leaves 513 survivors while keeping the target

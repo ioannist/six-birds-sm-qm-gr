@@ -1,0 +1,39 @@
+{
+  "step": 3,
+  "orientation": "P6 decaying-degeneracy audit",
+  "active_residual": "R_cluster_a_after_step2_p2_selection_constraint",
+  "candidate_move": "Compute selection-degeneracy decay under measure refinement and compare against an unselected landscape control.",
+  "final_verdict": {
+    "type": "p6_decaying_degeneracy_audit_constructed",
+    "initial_selection_degeneracy": 9,
+    "final_selection_degeneracy": 1,
+    "selection_sequence": [
+      9,
+      5,
+      4,
+      2,
+      1,
+      1
+    ],
+    "landscape_sequence": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "selection_decays_to_w_SM": true,
+    "landscape_nondecaying": true,
+    "monotone_selection": true,
+    "final_survivor": "w_SM",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "degeneracy_refinement": "degeneracy_refinement_step3.csv",
+    "p6_audit": "p6_audit_step3.csv",
+    "controls": "controls_step3.csv",
+    "next_live_option": "Step4_cluster_a_consolidation_or_manager_selected_followup"
+  }
+}

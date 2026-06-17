@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,objects,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_F50BackgroundModuliDemarcation_v1,54,Step26 fixed-point closure; background offset sweep; kappa control boundary; F50 classification,Excludes hardcoding moduli or retuning Step26 convergence thresholds.,Kappa is constrained by the same closure while background has multiple admissible values and no singleton selector.,dynamic landscape/vacuum-selection source if a singleton background value is to be selected

@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step62_no_N_target,active_anti_smuggle_constraint,62,"prove blindness, do not select N"
+step62_even_doublet_load_bearing,active_anti_circularity_constraint,62,odd-doublet control must be N-sensitive
+step62_frozen_closure_row,active_anti_smuggle_constraint,62,closure_row and unit helpers imported verbatim

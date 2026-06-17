@@ -1,0 +1,48 @@
+{
+  "c_u_descent": {
+    "charge_quantized": true,
+    "descends": true,
+    "normalization_ratio": "5/3",
+    "obstruction_count": 0,
+    "weak_mixing_relation": "3/8"
+  },
+  "finite_kernel": {
+    "balanced_integer_weights": {
+      "color": -2,
+      "weak": 3
+    },
+    "charge_unit": "1/6",
+    "sector_sizes": {
+      "color": 3,
+      "weak": 2
+    },
+    "slot_count": 5
+  },
+  "frame_transfer_certified": false,
+  "mode": "ModeB_generation",
+  "new_physics_claim": false,
+  "next_grammar_delta": "none for finite kernel; external review must test richer continuous carriers",
+  "recognition_landing": {
+    "lands_on_step20_relation": true,
+    "recognition_name_deferred_to_prose": true
+  },
+  "root_landed": false,
+  "six_gates_pass": true,
+  "stage_ii": {
+    "known_result": "per-generated-family anomaly balance",
+    "passes": true,
+    "sums": {
+      "charge_cubed": "0",
+      "charge_gravity": "0",
+      "mixed_color_color_charge": "0",
+      "mixed_weak_weak_charge": "0"
+    }
+  },
+  "typed_no_go": false,
+  "u_non_descent": {
+    "non_descending": true,
+    "obstruction_count": 1,
+    "witness": "U_a and U_b share q but differ in bridge readout"
+  },
+  "verdict": "PASS-with-recognition"
+}

@@ -1,0 +1,65 @@
+{
+  "enumeration": {
+    "closing_count": 1,
+    "max_factors": 4,
+    "max_rank": 4,
+    "structure_count": 70
+  },
+  "factor_count_closure": [
+    {
+      "candidate_count": 1,
+      "closing_count": 0,
+      "computed_verdicts": true,
+      "factor_count": 0,
+      "minimal_closing_dimensions": "none"
+    },
+    {
+      "candidate_count": 4,
+      "closing_count": 0,
+      "computed_verdicts": true,
+      "factor_count": 1,
+      "minimal_closing_dimensions": "none"
+    },
+    {
+      "candidate_count": 10,
+      "closing_count": 1,
+      "computed_verdicts": true,
+      "factor_count": 2,
+      "minimal_closing_dimensions": "2|3"
+    },
+    {
+      "candidate_count": 20,
+      "closing_count": 0,
+      "computed_verdicts": true,
+      "factor_count": 3,
+      "minimal_closing_dimensions": "none"
+    },
+    {
+      "candidate_count": 35,
+      "closing_count": 0,
+      "computed_verdicts": true,
+      "factor_count": 4,
+      "minimal_closing_dimensions": "none"
+    }
+  ],
+  "frame_transfer_certified": false,
+  "minimal_closures": [
+    {
+      "dimensions": "2|3",
+      "factor_count": 2,
+      "minimal_score": "3|5|2",
+      "ranks": "1|2",
+      "structure_id": "r1|2"
+    }
+  ],
+  "mode": "ModeB_generation",
+  "n_two_genuinely_emerges": true,
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "stress richer representations and closure measures",
+  "root_landed": false,
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "typed_no_go": false,
+  "verdict": "GENERATED"
+}

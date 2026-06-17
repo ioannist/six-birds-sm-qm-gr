@@ -1,0 +1,5 @@
+level_regions,carrier_dimension,sector,raw_trace_xi,trace_kdd,normalized_trace_xi,min_eigenvalue,max_eigenvalue,scope
+2,4,rt_area_sector,0.0,0.9999999999999998,0.0,0.0,0.0,E024-like area-from-entanglement child sector
+2,4,full_joint_target,2.09,3.1625,0.6608695652173913,0.0,1.34835622624235,R_root_E018 joint amplitude-geometry plus P3 diagnostic
+4,6,rt_area_sector,0.0,1.0,0.0,0.0,0.0,E024-like area-from-entanglement child sector
+4,6,full_joint_target,2.09,3.1625,0.6608695652173913,0.0,1.34835622624235,R_root_E018 joint amplitude-geometry plus P3 diagnostic

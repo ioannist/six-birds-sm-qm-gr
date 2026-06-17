@@ -1,0 +1,40 @@
+{
+  "RM_by_refinement": {
+    "R1_coarse": 0.25,
+    "R2_fine": 0.25
+  },
+  "RM_decay_ratio": 1.0,
+  "RM_nondecaying": true,
+  "active_residual": "E037 vacuum-selection foreclosure",
+  "card_convergent_with_standard_landscape": true,
+  "card_foreclosure_status": "E3_foreclosed",
+  "card_gap_edge": "string-theory -> standard_model",
+  "card_id": "E037",
+  "divergence_holds": false,
+  "divergence_is_casting_artifact": true,
+  "frame_transfer_certified": false,
+  "main_object": "two-vacuum landscape route-mismatch simulation",
+  "negative_control_RM_by_refinement": {
+    "R1_coarse": 0.13333333333333333,
+    "R2_fine": 0.014918414918414918
+  },
+  "negative_control_decay_ratio": 0.11188811188811189,
+  "negative_control_decays": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "a real measure/selection recognition source or physical run would be required; no closure-internal selector stabilizes this toy degeneracy",
+  "orientation": "ATTEMPT_finite_carrier_simulation",
+  "per_vacuum_descent_clean_on_toy": true,
+  "per_vacuum_xi_rel": {
+    "v_alpha": {
+      "R1_coarse": 0.125,
+      "R2_fine": 0.0
+    },
+    "v_beta": {
+      "R1_coarse": 0.125,
+      "R2_fine": 0.0
+    }
+  },
+  "root_landed": false,
+  "step": 56,
+  "verdict": "SELECTION_FORECLOSURE_EXHIBITED"
+}

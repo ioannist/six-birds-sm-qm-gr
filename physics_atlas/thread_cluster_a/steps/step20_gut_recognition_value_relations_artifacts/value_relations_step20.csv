@@ -1,0 +1,5 @@
+relation,value,derivation,status
+sin2_thetaW_GUT,0.375000000000,TrY2/TrT3sq=5/3 so gY^2/g2^2=3/5 and sin2=3/8,recognition_relation
+gauge_coupling_unification_condition,g1=g2=g3 with g1=sqrt(5/3) gY,single simple-group gauge coupling under SU5 recognition,recognition_relation_tested_by_rg
+bottom_tau_relation,m_b=m_tau at M_GUT in minimal SU5,down-quark and charged-lepton Yukawa terms share the 5bar matter placement in the minimal recognition,recognition_relation
+sin2_thetaW_MZ_from_best_fit_SM_running,0.214358251521,one-loop SM running from best-fit high-scale unification condition,near_miss_discrepancy

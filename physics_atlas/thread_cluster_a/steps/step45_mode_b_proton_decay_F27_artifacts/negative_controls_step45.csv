@@ -1,0 +1,3 @@
+control,reading_id,passes,evidence
+clean_shadow_reading_color_label_not_descended,clean_shadow_reading,True,color-label obstruction count=3
+dynamical_breaking_reading_color_label_not_descended,dynamical_breaking_reading,True,color-label obstruction count=3

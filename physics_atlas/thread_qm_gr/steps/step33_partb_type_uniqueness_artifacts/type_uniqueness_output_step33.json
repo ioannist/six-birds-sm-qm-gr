@@ -1,0 +1,46 @@
+{
+  "step": 33,
+  "orientation": "Part B type-uniqueness by structural F24 predicates",
+  "candidate": "L_actual_QM_GR_joint_quotient",
+  "selected_family": "BridgeMediatedRole",
+  "fired_families": [
+    "BridgeMediatedRole"
+  ],
+  "unique_type": true,
+  "role_obstruction_count_O_s": 3,
+  "joint_metrics": {
+    "present": true,
+    "q_residual": 0.0,
+    "role_residual": 0.0,
+    "strict": true,
+    "delta_fact_count": 3,
+    "visible_rank": 4,
+    "duplicate_defect": 0,
+    "gate_pass_count": 8,
+    "all_gates_pass": true,
+    "gates": {
+      "G_suff": true,
+      "G_desc": true,
+      "G_stab": true,
+      "G_ctrl": true,
+      "G_nosmuggle": true,
+      "G_vis": true,
+      "G_audit": true,
+      "G_strict": true
+    }
+  },
+  "coarsening_search": {
+    "rows_checked": 8,
+    "all_qm_coarsenings_leave_O_s_nonempty": true,
+    "minimum_obstruction_count": 3
+  },
+  "excluded_families_count": 7,
+  "guardrails": {
+    "computed_from_real_maps": true,
+    "case_selector_inputs_used": false,
+    "type_uniqueness_only": true,
+    "instance_uniqueness_open": true,
+    "root_landed": false
+  },
+  "verdict": "type_uniqueness_bridge_mediated_role_on_L"
+}

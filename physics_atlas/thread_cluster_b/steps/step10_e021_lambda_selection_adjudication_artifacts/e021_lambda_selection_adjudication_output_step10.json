@@ -1,0 +1,26 @@
+{
+  "step": 10,
+  "orientation": "Cluster B E021 Lambda-selection adjudication",
+  "carrier": "Lambda candidate grid plus relaxation/measure degeneracy audit",
+  "source_step": "steps/step8_e021_rg_measure_robustness_artifacts/rg_measure_vacua_step8.csv",
+  "verdict": {
+    "type": "e021_lambda_selection_adjudication_constructed",
+    "lambda_sm_toy_value": 0.003166268369340605,
+    "lambda_grid_size": 10,
+    "certified_horns": [
+      "relaxation_attractor",
+      "sharp_selecting_measure"
+    ],
+    "failed_horns": [
+      "broad_anthropic_landscape"
+    ],
+    "relaxation_sequence": "10->10->5->1->1->1",
+    "broad_landscape_sequence": "10->10->10->10->10->10",
+    "sharp_measure_sequence": "10->10->7->3->2->1",
+    "broad_landscape_final_degeneracy": 10,
+    "criterion": "P6_decaying_degeneracy_collapses_to_point",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite horn-adjudication shape only; no physical Lambda value or mechanism is determined."
+}

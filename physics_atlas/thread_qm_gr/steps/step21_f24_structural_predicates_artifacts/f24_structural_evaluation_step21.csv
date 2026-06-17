@@ -1,0 +1,65 @@
+candidate,family,fires,reason,witness_metric
+L_candidate_package,MemoryLayer,False,no history/record coordinate map is present,3.0
+L_candidate_package,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+L_candidate_package,BridgeMediatedRole,True,explicit joint quotient passes the eight native gates and carries q and s,0.0
+L_candidate_package,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=True,0.0
+L_candidate_package,ScopedRole,False,no sub-carrier restriction is declared,3.0
+L_candidate_package,CoarsenedRole,False,no coarsened role readout is present,3.0
+L_candidate_package,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+L_candidate_package,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+memory_control,MemoryLayer,True,s factors through the history coordinate and the history coordinate does not factor through q,3.0
+memory_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+memory_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+memory_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=True,0.0
+memory_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+memory_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+memory_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+memory_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+hidden_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+hidden_control,HiddenUpstreamRole,True,s factors through a latent coordinate outside q and no admissible explicit joint object carries it,3.0
+hidden_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+hidden_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=True,0.0
+hidden_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+hidden_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+hidden_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+hidden_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+budget_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+budget_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+budget_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+budget_control,BudgetedRole,True,positive residual is priced and adequately statused while no exact resolution exists,0.75
+budget_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+budget_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+budget_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+budget_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+scoped_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+scoped_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+scoped_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+scoped_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=False,0.0
+scoped_control,ScopedRole,True,proper sub-carrier restriction makes O_s empty,0.0
+scoped_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+scoped_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+scoped_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+coarsened_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+coarsened_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+coarsened_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+coarsened_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=False,0.0
+coarsened_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+coarsened_control,CoarsenedRole,True,target coarsening removes the split-pair obstruction by changing the role readout,0.0
+coarsened_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+coarsened_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+outside_scope_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+outside_scope_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+outside_scope_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+outside_scope_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=False,0.0
+outside_scope_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+outside_scope_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+outside_scope_control,OutsideRoleScope,True,role direction d3 is not in the declared access scope and is named outside,3.0
+outside_scope_control,BlockedNonClosure,False,split=True; closure_idempotence_residual=0; inadequately_statused=False; prior_family_fires=True,0.0
+blocked_control,MemoryLayer,False,no history/record coordinate map is present,3.0
+blocked_control,HiddenUpstreamRole,False,no latent coordinate map is present,3.0
+blocked_control,BridgeMediatedRole,False,split=True; explicit_present=False; q_residual=1; role_residual=1; gate_pass_count=0,2.0
+blocked_control,BudgetedRole,False,split=True; positive_priced_count=0; exact_resolution=False,0.0
+blocked_control,ScopedRole,False,no sub-carrier restriction is declared,3.0
+blocked_control,CoarsenedRole,False,no coarsened role readout is present,3.0
+blocked_control,OutsideRoleScope,False,split=True; in_scope=True; named_outside=False,3.0
+blocked_control,BlockedNonClosure,True,"closure formation fails or residual is inadequately statused, and no prior family resolves it",0.5773502691896258

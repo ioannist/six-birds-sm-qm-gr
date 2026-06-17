@@ -1,0 +1,4 @@
+false_target,target_value,computed_value,descends_to_false_target,reason
+nearby_higher_ratio,28/15,5/3,False,computed trace ratio differs
+nearby_lower_ratio,3/2,5/3,False,computed trace ratio differs
+non_grid_charge,13/42,1/6,False,target is outside primitive holonomy grid

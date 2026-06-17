@@ -1,0 +1,13 @@
+enrichment_id,enrichment_kind,target,uses_layer_content,flagged_smuggling,obstruction_count,makes_definable,witness
+genuine_base_modes_d0_d1_d2_d3,genuine_endpoint_internal,d4_subplanck,False,False,3,False,1-2;5-6;10-11
+genuine_base_modes_d0_d1_d2_d3,genuine_endpoint_internal,d5_vacuum,False,False,1,False,3-4
+genuine_base_poly_degree2,genuine_endpoint_internal,d4_subplanck,False,False,3,False,1-2;5-6;10-11
+genuine_base_poly_degree2,genuine_endpoint_internal,d5_vacuum,False,False,1,False,3-4
+genuine_base_mixed_linear,genuine_endpoint_internal,d4_subplanck,False,False,3,False,1-2;5-6;10-11
+genuine_base_mixed_linear,genuine_endpoint_internal,d5_vacuum,False,False,1,False,3-4
+smuggle_GR_plus_d4,smuggling_endpoint_plus_layer_content,d4_subplanck,True,True,0,True,none
+smuggle_GR_plus_d4,smuggling_endpoint_plus_layer_content,d5_vacuum,False,False,1,False,3-4
+smuggle_GR_plus_d5,smuggling_endpoint_plus_layer_content,d4_subplanck,False,False,3,False,1-2;5-6;10-11
+smuggle_GR_plus_d5,smuggling_endpoint_plus_layer_content,d5_vacuum,True,True,0,True,none
+smuggle_GR_plus_d4_d5,smuggling_endpoint_plus_layer_content,d4_subplanck,True,True,0,True,none
+smuggle_GR_plus_d4_d5,smuggling_endpoint_plus_layer_content,d5_vacuum,True,True,0,True,none

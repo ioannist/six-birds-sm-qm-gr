@@ -1,0 +1,29 @@
+{
+  "anti_circularity_pass": true,
+  "declared_recognition_source": "minimal simple single-irrep common-refinement closure: among REQ_U parents, prefer a simple parent with the smallest fundamental dimension and an exact one-generation complex package",
+  "delta_sm_to_parent_count": 15,
+  "derives_sm_couplings": false,
+  "exit_state": "GROUND_landing_conditional_on_named_source",
+  "forced_parent": "SU(5)-type minimal simple parent",
+  "frame_transfer_certified": false,
+  "hypercharge_kY": "5/3",
+  "hypercharge_norm_computed": true,
+  "new_physics_claim": false,
+  "no_hardcode_pass": true,
+  "orientation": "ModeB_F51_common_refinement_descent",
+  "parent_forced": true,
+  "recognition_requirement": "the two child gauge-route quotients compose through one common-refinement parent closure with commuting F51 projections and compatible claim statuses",
+  "root_landed": true,
+  "shadows_converted": [
+    "hypercharge_normalization",
+    "embedding_trace_ratio",
+    "xy_refinement_defect"
+  ],
+  "sin2thetaW_computed_value": "3/8",
+  "sin2thetaW_hardcoded": false,
+  "sin2thetaW_trace_q_sq": "16/3",
+  "sin2thetaW_trace_t3_sq": "2",
+  "step": 63,
+  "verdict": "COMMON_REFINEMENT_GROUND_CONDITIONAL_ON_MINIMAL_SIMPLE_SOURCE",
+  "xy_witness_identity": true
+}

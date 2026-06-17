@@ -1,0 +1,51 @@
+{
+  "step": 27,
+  "orientation": "Constraint and relational-time form for the co-sourcing semiclassical package",
+  "active_residual": "R_child_E018_after_semiclassical_dynamics",
+  "carrier": {
+    "type": "finite clock tensor finite complex field",
+    "clock_states": 16,
+    "field_dim": 8,
+    "constraint_dim": 128,
+    "source": "step26_semiclassical_dynamics_artifacts/fixed_point_states_step26.json",
+    "constraint": "C = P_clock tensor I_field + I_clock tensor H_field"
+  },
+  "candidate_move": {
+    "id": "finite_page_wootters_constraint",
+    "description": "Construct a Hermitian clock-field constraint with a nonempty kernel and verify that conditioning the physical history state on the internal clock recovers the Step 26 stationary unitary dynamics."
+  },
+  "final_verdict": {
+    "type": "timeless_relational_layer_exists_on_toy",
+    "physical_space_nonempty": true,
+    "empty_kernel_control_passes": false,
+    "relational_time_recovers_step26_stationary_dynamics": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "kernel_computed_by_spectrum": true,
+    "state_residual_computed": true,
+    "relational_readout_computed": true,
+    "constraint_residual": 8.547035876629756e-16,
+    "kernel_dim_tol_1e_minus_8": 1,
+    "control_min_abs_eigenvalue": 0.9868198124684662,
+    "control_state_constraint_residual": 0.9868198124684665,
+    "max_direct_relational_residual": 9.79195701998934e-16,
+    "max_sourced_potential_residual": 0.0,
+    "step26_scope": "stationary self-sourced fixed-potential dynamics, not the relaxation trajectory"
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A finite clock-field package can represent the Step 26 stationary dynamics by a constraint equation."
+    ],
+    "analytical_structural": [
+      "The compatible constraint has a one-dimensional numerical kernel while the positive-clock control has none."
+    ],
+    "organizational_audit": [
+      "Constraint matrices, spectra, residuals, and relational readouts are saved."
+    ],
+    "remaining_external_content": [
+      "Non-stationary relational sourcing and physical frame transfer remain external-review tasks."
+    ]
+  }
+}

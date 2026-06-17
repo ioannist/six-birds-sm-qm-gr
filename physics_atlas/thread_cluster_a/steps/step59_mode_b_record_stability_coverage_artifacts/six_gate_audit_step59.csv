@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,all three scoring machineries are imported frozen; no new target-structure selector
+dependency_trace,True,dependency_trace_step59.csv records frozen machinery and carrier
+ablation,True,frozen machinery and adversarial search are load-bearing
+negative_controls,True,broad non-CS and adversarial capacity regions are nonvacuous
+stage2,True,corrected carrier and adversarial regions reproduced
+no_single_axiom_equivalence,True,coverage verdict depends on all three frozen components plus the broad carrier

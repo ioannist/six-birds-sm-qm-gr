@@ -1,0 +1,7 @@
+$out_dir = 'build';
+$aux_dir = 'build';
+
+# After successful build, flatten .tex into a single self-contained file in
+# build/ (--expand-bbl inlines the resolved bibliography so the flattened file
+# carries its references without needing references.bib alongside it).
+$success_cmd = 'latexpand --expand-bbl %Y/%R.bbl %S -o %Y/%R_flat.tex';

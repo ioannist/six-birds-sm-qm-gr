@@ -1,0 +1,2 @@
+grammar_id,carrier,admitted_channel,forbidden_control,non_triviality_argument,next_grammar_delta
+G_E018_ForkMediationBMV_v1,two path qubits plus geometry-visible record mediator,classically indexed path-record channel,coherent conditional phase mediator,the forbidden control entangles while the admitted channel does not,frame-transfer to a physical BMV platform or rejection by BMV-positive observation

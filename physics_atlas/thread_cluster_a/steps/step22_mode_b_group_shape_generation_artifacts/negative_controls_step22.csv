@@ -1,0 +1,4 @@
+control,structure_id,should_close,closes,passes,reason
+abelian_only,rnone,False,False,True,no non-abelian complex representation
+real_rep_only,r1,False,False,True,real or pseudoreal-only structure lacks chirality
+single_complex_factor,r2,False,False,True,neutral charge readout is underdetermined or trivial

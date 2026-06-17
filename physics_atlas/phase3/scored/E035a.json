@@ -1,0 +1,58 @@
+{
+  "id": "E035a",
+  "source_theory_id": "lattice-gauge-theory",
+  "target_theory_id": "qcd",
+  "arrow": "down",
+  "scored_tier": "E1",
+  "scored_modality": "shadow-down",
+  "secondary_modalities": [],
+  "decision_path": "STEP 0 precondition PASS -> STEP 1 descent-test on declared finite toy model M -> form-leg xi_rel -> ~machine-zero STABLY at both refinements, no over-read -> SEAL E1 (edge's own closure = the continuum-limit STRUCTURE descent). The run-only spectrum VALUES are split off as a separate E0 value-leg (Run-Target ledger), never summed.",
+  "diagnostic": {
+    "toy_model_M": {
+      "description": "Finite linear-algebra stand-in for the lattice->continuum (a->0) descent along a line of constant physics. NOT an irreducible run.",
+      "carrier": "nobs=5 gauge-invariant structural observables (Wilson-loop / hadron-correlator structural quantities), with an optional 6th run-only absolute-scale axis (proton mass / Lambda_QCD) for the value-leg.",
+      "L0_native_target": "continuum QCD structural probe family (continuum 'truth' values of the gauge-invariant correlators); for the value-leg, native continuum exposes the physical scale as an accepted observable.",
+      "D0_dissolving_source": "lattice carrier readout = continuum operator deformed by an O(a^2) Symanzik discretization operator (I + a^2*G)B; for the value-leg, D0 additionally carries the run-generated absolute scale on an axis linearly INDEPENDENT of the structural directions (non-definable without running, per qcd card Sigma_f).",
+      "audit_energy_C0": "identity (PSD), declared before computation",
+      "refinement_chain": "h1 = coarse lattice a=0.20 ; h2 = fine lattice a=0.05 (a->0 along a line of constant physics)",
+      "Xi_definition": "Schur complement Xi = K_DD - K_DL K_LL^+ K_LD ; xi_rel = ||Xi||_2 / ||K_DD||_2"
+    },
+    "form_leg_structural_descent": {
+      "comment": "Edge's OWN closure: do the lattice carrier's gauge-invariant correlators descend to continuum QCD as a->0? probe family = STRUCTURE only.",
+      "h1_a0.20": {"raw_Xi": "2.934e-14", "xi_rel": "2.724e-15"},
+      "h2_a0.05": {"raw_Xi": "7.353e-13", "xi_rel": "3.265e-14"},
+      "verdict": "xi_rel -> ~machine-zero STABLY across h1 ⊏ h2 (both ~1e-14 or below) => clean computable descent (E1). Refinement-stable (gate E.9). No verdict flip."
+    },
+    "value_leg_run_scale": {
+      "comment": "SEPARATE E0 leg: include the run-generated absolute scale (proton mass / Lambda_QCD) in the source readout. probe family = structure + run-only scale axis.",
+      "h1_a0.20": {"raw_Xi": "1.000e+00", "xi_rel": "5.332e-02"},
+      "h2_a0.05": {"raw_Xi": "1.000e+00", "xi_rel": "6.775e-02"},
+      "verdict": "xi_rel stays bounded away from zero (~0.05-0.07) and does NOT fall to machine-zero under refinement => stable positive normalized residual = the blind-spot currency of the missing run. The absolute scale is non-definable from the lattice carrier's structural probe family without RUNNING the path integral (dimensional transmutation). This is the E0 value-leg (= E035b / E001)."
+    },
+    "gates": {
+      "E.0_casting_not_tuned": "PASS - frozen cards; lattice casting mandated by calibration; qcd casting frozen to physical-quark-mass lattice QCD.",
+      "E.1_M_declared_before_computation": "PASS - M (carrier, L0, D0, C0, refinement chain) declared before Xi computed.",
+      "E.3_no_over_read": "PASS for form-leg - recovered answer (gauge-invariant correlator STRUCTURE: Wilson loops / string-tension structure, hadron-correlator structure) lies in qcd.accepted_observables. The form-leg does NOT claim the spectrum VALUES; those are split off to the E0 leg, preventing over-read.",
+      "E.4_relabeling_is_not_a_connection": "PASS - the a->0 continuum limit is a GENUINE quotient, not a notation swap: the lattice carrier (finite a, finite V, O(a^n)-defect observables) and continuum QCD (cutoff-independent RG-equivalence class) have different Sigma_f. Removing the 'relabeling' leaves a residual relation: the O(a^2) Symanzik defect structure that genuinely decays along the line of constant physics. It is a real descent, not merely the definition of QCD.",
+      "E.6_tier_fragility": "PASS (not fragile in flattering direction) - per the lattice-gauge-theory card casting_alternatives, different fermion discretizations (Wilson/staggered/domain-wall) or a Hamiltonian formulation change the O(a^n) defect structure but NOT the tiers: form stays E1, spectrum values stay E0.",
+      "E.8_anti_emergence_derivation": "PASS - E1 is sealed by a DOWN descent (source = discrete lattice carrier -> target = continuum theory; Xi on D|L). No up-direction derivation; the run-only spectrum value is certified as a GAP (E0 leg), not derived.",
+      "E.9_refinement_stability": "PASS - form-leg verdict (xi_rel -> ~machine-zero) is stable across h1 ⊏ h2; value-leg verdict (xi_rel stable-positive) is also stable. No flip.",
+      "E.11_near_intra_layer": "N/A - near_intra=false; lattice carrier and continuum theory are distinct lawful layers (different lens / Sigma_f / quotient).",
+      "may_source_E1_rule_R6": "PASS - source 'lattice-gauge-theory' is established_status=experimentally_established (CONTRACT node_established_rule), so it MAY source an E1 computable-descent edge."
+    }
+  },
+  "named_import": null,
+  "value_split": {
+    "form_tier": "E1",
+    "value_tier": "E0",
+    "split_type": "form_value",
+    "value_node": "hadron-spectrum",
+    "reported_tier": "E0",
+    "edge_scored_tier": "E1",
+    "note": "split_type=form_value. The edge's OWN audited closure is the continuum-limit STRUCTURE descent (edge_scored_tier=E1): the a->0 limit of the lattice carrier's gauge-invariant correlators is a coarse-graining physics already accepts (xi_rel ~ machine-zero stably). Every PHYSICAL READOUT (the spectrum, Lambda_QCD) is generated by RUNNING the lattice path integral (value_tier=E0, the run-only blind-spot currency, = E035b / E001), carried SEPARATELY on the Run-Target ledger and NEVER summed into the E1 count. Per the form_value carve-out (rubric E.3 / CONTRACT value_split_schema): for E004/E008/E035a/E038 the edge's own closure IS the equation/structure descent E1 (the scored tier), distinct from E029 (form_value_imported) whose form-descent E1 leg is NOT the edge's closure."
+  },
+  "near_intra_layer_result": null,
+  "rationale": "E035a is the continuum-limit STRUCTURE side of the split E035 (lattice-gauge-theory -> qcd, down). DESCENT TEST (Step 1) on a declared finite toy model: the lattice carrier's gauge-invariant correlator STRUCTURE factors through the continuum theory as a->0 along a line of constant physics; the normalized residual xi_rel falls to ~machine-zero stably across two finite refinements (a=0.20 -> a=0.05), with no over-read (the recovered content is gauge-invariant correlator structure, in qcd.accepted_observables). This is a clean computable down-descent -> structural modality shadow-down is PRIMARY (B.7a precedence: a structural test passes), tier E1. The source node is experimentally_established (gate R6 satisfied). The run-only VALUES of the spectrum (proton mass, Lambda_QCD) are NOT a coarse-graining of the carrier's definition -- they are generated by the run (dimensional transmutation), giving a stable positive normalized residual when included; these are split off as the E0 value-leg (= E035b / E001) on the Run-Target ledger, never summed into the E1.",
+  "self_audit": "Section-9 trap checklist: (1) no unify-by-deriving-both-from-shared-math -- this is a single down-descent of one carrier to its continuum, not a join. (2) no emergent-constant derivation -- the spectrum VALUE is explicitly fenced to the E0 value-leg and NOT derived. (3) no shortcut of the run -- the run is treated as irreducible (the E0 leg's stable-positive xi_rel is the no-shortcut certificate). (4) not within-a-layer-relabeled -- gate E.4 PASS: lattice carrier and continuum theory have different Sigma_f; the O(a^2) Symanzik defect is the residual relation. (5) asymmetry kept -- the E1 seal is the DOWN arrow (descent runnable as a derivation); the UP content (run-generated scale) is certified as a gap (E0), never run as a derivation. (6) emergence held as fully-mechanical-yet-irreducible -- the value-leg is mechanical (lattice path integral) but non-definable from the carrier's structural Sigma_f. (7) scored on inter-layer structure, not within-layer derivation. (8) the E0 value-leg is not a failure -- it is the predicted run-only content. OVER-READ CHECK (gate E.3): the form-leg's small Xi is NOT an over-read because the recovered content is genuinely structural (gauge-invariant correlators) and lies in the target's accepted_observables; the spectrum VALUES (which a structure-only probe cannot express) are deliberately excluded from the form-leg probe and routed to the E0 leg -- this is the inverse of the E005 over-read (where a small Xi silently dropped imported thermal predicates). Here the imported/run-generated content is explicitly carried, so no silent drop.",
+  "drift_vs_provisional": "NO DRIFT. Fresh derivation matches the frozen provisional guess: provisional_modality_guess=shadow-down (matches scored shadow-down PRIMARY), provisional_tier_guess=E1 / headline_tier=E1 (matches edge_scored_tier=E1). The CONTRACT carries reported_tier=E0 as the generic value-split reported leg, but per the form_value carve-out (rubric E.3, CONTRACT value_split_schema) the EDGE'S OWN audited closure / scored tier is E1 (the structure descent), with E0 the separate never-summed value-leg. The derivation reproduces exactly this: edge_scored_tier=E1, value_tier=E0, both carried, never summed."
+}

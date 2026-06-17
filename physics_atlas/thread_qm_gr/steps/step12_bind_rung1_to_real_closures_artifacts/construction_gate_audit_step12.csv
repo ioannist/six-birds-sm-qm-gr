@@ -1,0 +1,9 @@
+gate,status,scope,reason
+C1_step10_closures_loaded,pass,bound construction,"The script reads Step-10 closure_packages_step10.json and builds f_QM/f_GR matrices from the Step-10 rule structure."
+C2_real_idempotent_operators,pass,operators,"f_QM, f_GR, bound closure, and generic control are represented as explicit matrices; matrix artifact saved."
+C3_bound_commutes_with_lift,pass,refinement,"Bound closure has commutator residual 0.0 on transitions 1->2 and 2->3."
+C4_placeholder_fails,pass,negative_control,"Placeholder adequacy residual is 1.6439075512412435 on both transitions."
+C5_generic_averaging_fails,pass,generic_control,"Generic averaging residuals are 1.608234098786012 and 1.6082340987860118."
+C6_two_sided_descent,pass,endpoint_descent,"Bound output descends to both f_QM and f_GR with residual 0.0."
+C7_nonfactorizing_extension,pass,emergence,"Endpoint-only residual minimum is 0.5711663892206134."
+C8_next_build_named,pass,frontier,"The next build is RUNG_2_NEUTRAL_CURRENCY."

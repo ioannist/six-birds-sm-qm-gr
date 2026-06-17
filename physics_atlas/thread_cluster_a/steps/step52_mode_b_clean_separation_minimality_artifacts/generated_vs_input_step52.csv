@@ -1,0 +1,6 @@
+item,status,detail
+carrier,read_from_step38_step35_survivors,12 rows: 8 in 2|3 and 4 in 4
+broken_vector_counts,imported_from_step38_low_energy_shadow,2|3 rows have 0; 4 rows have 6
+baryon_orbit_enlargers,computed_from_step45_F27,all 4-family Delta_fact witnesses enlarge baryon orbits on this carrier
+predicate_survivor_counts,computed,"{""bare_proton_stability"": {""2x3"": 8, ""su4"": 0, ""total"": 8}, ""base_shadow"": {""2x3"": 8, ""su4"": 4, ""total"": 12}, ""clean_separation"": {""2x3"": 8, ""su4"": 0, ""total"": 8}, ""no_baryon_violating_xy"": {""2x3"": 8, ""su4"": 0, ""total"": 8}, ""no_light_xy"": {""2x3"": 8, ""su4"": 4, ""total"": 12}}"
+verdict,computed,MINIMALITY_MIXED

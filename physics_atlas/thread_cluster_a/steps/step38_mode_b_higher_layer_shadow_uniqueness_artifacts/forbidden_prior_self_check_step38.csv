@@ -1,0 +1,6 @@
+check,passes,evidence
+uses_slot_count_prior,False,"predicate uses low-energy shadow counts, not slot count"
+uses_parent_or_larger_group_prior,False,no parent or larger-group data enter the predicate
+requires_fixed_route_number,False,single-factor rows receive computed low-energy shadows
+uses_size_ordering_selector,False,no ordering operation selects the clean shadow
+uses_reference_as_input,False,reference key is used only for status reporting

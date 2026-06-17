@@ -1,0 +1,7 @@
+Step 7 finite G_v3 Xi diagnostic
+Inherited native lens: u_i, v, w.
+Accepted G_v3 search result: no admissible independent triple atom.
+r=2: triple normalized Xi=1.0; coupled raw Xi=1.0; coupled normalized Xi=0.14285714285714285
+r=4: triple normalized Xi=1.0; coupled raw Xi=1.0; coupled normalized Xi=0.14285714285714285
+Rejected control 1: native triple row insertion gives zero residual but is not generation.
+Rejected control 2: pairwise u/v/w union leaves the triple residual and cannot be read as a triple package.

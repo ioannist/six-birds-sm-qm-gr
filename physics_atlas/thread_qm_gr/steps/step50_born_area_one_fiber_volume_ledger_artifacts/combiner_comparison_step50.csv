@@ -1,0 +1,3 @@
+case_id,combiner,I3_geom,I3_born,geom_satisfies_monogamy,born_satisfies_monogamy,same_combiner_class,numeric_i3_equality_claimed
+co_sourced_D3_seed101,MMI_monogamy_class,-8.881784197e-16,-0.0363459273725,True,True,True,False
+co_sourced_D3_seed101,chain_rule_form,,,,,True,False

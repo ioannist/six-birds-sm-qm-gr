@@ -1,0 +1,9 @@
+level_regions,carrier_dimension,sector,raw_trace_xi,trace_kdd,normalized_trace_xi,scope
+2,8,sector_only_rejected_control,0.0,,0.0,not a recombination verdict
+2,8,compatibility_constraints,4.0,4.0,1.0,pairwise and triple bridge rows
+2,8,coupled_joint_with_constraints,4.0,7.0,0.5714285714285714,Mode C recombination target
+2,8,target_equivalent_overread_control,0.0,,0.0,rejected bridge-row overread
+4,10,sector_only_rejected_control,0.0,,0.0,not a recombination verdict
+4,10,compatibility_constraints,4.0,4.0,1.0,pairwise and triple bridge rows
+4,10,coupled_joint_with_constraints,4.0,7.0,0.5714285714285714,Mode C recombination target
+4,10,target_equivalent_overread_control,0.0,,0.0,rejected bridge-row overread

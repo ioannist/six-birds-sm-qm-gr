@@ -1,0 +1,95 @@
+{
+  "step": 2,
+  "orientation": "Mode A complementary recognition-import search",
+  "active_residual": "R_child_E018_after_HED_full_joint_P3",
+  "carrier": {
+    "kind": "finite physics toy extending Step 1 carrier",
+    "audit_energy": "C = I on E_r = R^(r+2)",
+    "refinement_levels": [2, 4],
+    "basis": [
+      "boundary entanglement region coordinates",
+      "bulk_geometry_amplitude",
+      "p3_route_mismatch"
+    ],
+    "native_lens": "LQG-like spin-network geometry amplitude plus spin-foam/canonical route protocol",
+    "tested_sectors": [
+      "surviving amplitude(geometry)+P3 sector",
+      "RT-like area=shadow-price(entanglement) sector"
+    ],
+    "no_overread_controls": {
+      "boundary_entanglement_used_in_lqg_native_lens": false,
+      "combined_hed_lqg_lens_promoted_to_root": false,
+      "fixed_bulk_metric_inserted": false,
+      "planck_constant_inserted": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode A",
+    "selected_import": "Loop quantum gravity / canonical quantum geometry / spin-foam quantum geometry",
+    "primary_sources": [
+      {
+        "name": "Ashtekar 1986",
+        "url": "https://doi.org/10.1103/PhysRevLett.57.2244"
+      },
+      {
+        "name": "Rovelli-Smolin area-volume spectra",
+        "url": "https://arxiv.org/abs/gr-qc/9411005"
+      },
+      {
+        "name": "Rovelli-Smolin spin networks",
+        "url": "https://arxiv.org/abs/gr-qc/9505006"
+      },
+      {
+        "name": "Baez spin foam models",
+        "url": "https://arxiv.org/abs/gr-qc/9709052"
+      },
+      {
+        "name": "Ashtekar-Lewandowski status report",
+        "url": "https://arxiv.org/abs/gr-qc/0404018"
+      }
+    ],
+    "secondary_import": {
+      "name": "Asymptotic safety",
+      "source": "Reuter 1996",
+      "url": "https://arxiv.org/abs/hep-th/9605030",
+      "status": "P3-targeted secondary, not selected as lead"
+    },
+    "assumption": "The LQG quantum-geometry state space and an adequate spin-foam/canonical dynamics are valid in the audited regime.",
+    "candidate_strength": "strongest surveyed import for amplitude(geometry) and the direct quantize-geometry route"
+  },
+  "final_verdict": {
+    "type": "complementary_E2_conditional_recognition",
+    "summary": "LQG recognizes the amplitude(geometry)+P3 child sector under its assumptions, but loses the area-shadow sector recognized by Step 1 holography. The two imports are complementary partial profiles, not a coupled root landing.",
+    "grade": "finite-carrier diagnostic plus applied no-smuggling gate verdict",
+    "root_landed": false,
+    "partial_child_landed": true,
+    "complementarity_finding": true,
+    "child_residuals": [
+      "R_child_E018_LQG_amplitude_P3",
+      "R_child_E018_after_HED_LQG_coupling_gap"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "acceptable_landing_tested": "E2 recognition-conditional child source",
+    "xi_orientation": "adequacy-oriented diagnostic for declared finite carrier",
+    "xi_results": {
+      "lqg_surviving_amplitude_p3_normalized": {
+        "level_2": 1.5936215664475933e-16,
+        "level_4": 1.5936215664475933e-16
+      },
+      "lqg_area_shadow_price_normalized": {
+        "level_2": 1.0,
+        "level_4": 1.0
+      },
+      "refinement_stability_delta_surviving": 0.0,
+      "refinement_stability_delta_area": 0.0
+    },
+    "gate_status_file": "no_smuggling_gates_step2.csv",
+    "content_classification_file": "content_classification_step2.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step2.md",
+    "simulation_output": "simulation_output_step2.json",
+    "lineage_update": "../../mode_b_target_lineage.csv"
+  }
+}

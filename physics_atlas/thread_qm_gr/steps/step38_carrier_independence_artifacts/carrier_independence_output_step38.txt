@@ -1,0 +1,5 @@
+Step 38 carrier-independence / R2 resolution
+Verdict: carrier_independence_mode_grammar_stable_R2_resolved
+Complete-16 all four stable: True
+Nested-endpoints control flips no-go: True
+G* is recorded as a family of declared finite carriers over the four modes.

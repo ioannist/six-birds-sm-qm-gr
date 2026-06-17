@@ -1,0 +1,43 @@
+{
+  "step": 23,
+  "mode": "ModeB_generation",
+  "artifact_root": "steps/step23_mode_b_factor_count_unsmuggle_artifacts",
+  "audit_of_step22_smuggle": true,
+  "general_trace_zero_lattice": true,
+  "enumeration": {
+    "max_factors": 4,
+    "max_rank": 4,
+    "structure_count": 70,
+    "closing_count": 1
+  },
+  "factor_count_closure": {
+    "0": 0,
+    "1": 0,
+    "2": 1,
+    "3": 0,
+    "4": 0
+  },
+  "minimal_generated_structures": [
+    {
+      "structure_id": "r1|2",
+      "factor_count": 2,
+      "ranks": "1|2",
+      "dimensions": "2|3",
+      "total_rank": 3,
+      "total_slots": 5,
+      "selected_charge_vector": "3|-2",
+      "recognition_lands_on_sm_shape": true
+    }
+  ],
+  "structural_smuggle_gate_pass": true,
+  "primitive_exclusion_pass": true,
+  "negative_controls_pass": true,
+  "stage_ii_pass": true,
+  "six_gates_pass": true,
+  "verdict": "GENERATED",
+  "typed_no_go": false,
+  "next_grammar_delta": "stress richer representations, wider charge searches, and alternative closure measures",
+  "new_physics_claim": false,
+  "root_landed": false,
+  "frame_transfer_certified": false
+}

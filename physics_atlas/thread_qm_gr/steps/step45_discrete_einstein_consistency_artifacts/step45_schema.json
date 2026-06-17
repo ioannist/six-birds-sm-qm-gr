@@ -1,0 +1,20 @@
+{
+  "active_residual": "E018 dynamical geometric response / Door 1",
+  "cokernel_dim": 28,
+  "constraint_nontrivial": true,
+  "continuum_einstein_tensor_derived": false,
+  "deltaS_from_contracted_state": true,
+  "frame_transfer_certified": false,
+  "generic_violation_residual": 0.04189319241105151,
+  "geometry_response_solved": true,
+  "main_object": "linearized RT-consistency system M.delta_c=delta_S on a variable-capacity graph",
+  "new_physics_claim": false,
+  "num_edges": 14,
+  "num_regions": 38,
+  "orientation": "ModeB_E018_discrete_Einstein_consistency",
+  "rank_M": 10,
+  "root_landed": false,
+  "rt_preserving_residual": 9.25136442279574e-17,
+  "step": 45,
+  "verdict": "DISCRETE_RT_CONSISTENCY_CONSTRAINT_DERIVED"
+}

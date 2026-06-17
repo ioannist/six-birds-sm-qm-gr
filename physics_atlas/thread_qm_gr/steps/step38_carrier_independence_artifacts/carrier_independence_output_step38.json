@@ -1,0 +1,202 @@
+{
+  "step": 38,
+  "orientation": "carrier-independence rerun of decisive QM-GR mode-grammar lemmas",
+  "carriers": {
+    "first_reference": {
+      "id": "custom_8_first_reference",
+      "state_count": 8,
+      "role": "Step33/34 sparse carrier retained as first reference; not a complete pair-witness carrier for every missing mode."
+    },
+    "second_carrier": {
+      "id": "complete_16_second_carrier",
+      "state_count": 16,
+      "construction": "all sign combinations in {-1,+1}^4 over d0,d1,d2,d3"
+    }
+  },
+  "stable_verdicts": {
+    "complete_16_all_four_stable": true,
+    "custom_8_rowspan_mode_grammar_stable": true,
+    "custom_8_complete_pair_witness_both_directions_for_directed": false,
+    "nested_control_flips_no_go": true
+  },
+  "second_carrier_witnesses": {
+    "directed": {
+      "q_GR_through_q_QM_row_residual": 0.5773502691896258,
+      "q_QM_through_q_GR_row_residual": 0.5773502691896258,
+      "q_GR_through_q_QM_pair_defect_count": 8,
+      "q_QM_through_q_GR_pair_defect_count": 8,
+      "route_mismatch_normalized": 0.7071067811865476,
+      "route_commutes": false,
+      "directed_no_go_fires_by_rowspan": true,
+      "directed_no_go_has_pair_witnesses_both_ways": true
+    },
+    "fused": {
+      "union_rank": 4,
+      "union_dimension": 6,
+      "union_extra_coordinate_count": 2,
+      "union_passes_g_nosmuggle": false,
+      "fused_no_go_fires": true
+    },
+    "type": {
+      "role_obstruction_count_O_s": 8,
+      "coarsening_rows_checked": 8,
+      "coarsening_min_obstruction_count": 8,
+      "all_qm_coarsenings_leave_O_s_nonempty": true,
+      "gate_pass_count": 8,
+      "all_gates_pass": true,
+      "fired_families": [
+        "BridgeMediatedRole"
+      ],
+      "unique_type_bridge_mediated": true
+    },
+    "instance": {
+      "L_qm_residual": 0.0,
+      "L_gr_residual": 0.0,
+      "L_is_join": true,
+      "drop_one_mode_records": [
+        {
+          "candidate": "drop_d0_density",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 8,
+          "gr_pair_obstruction_count": 8,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d1_phase",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.0,
+          "qm_pair_obstruction_count": 8,
+          "gr_pair_obstruction_count": 0,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d2_transport",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 8,
+          "gr_pair_obstruction_count": 8,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d3_curvature",
+          "qm_residual": 0.0,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 0,
+          "gr_pair_obstruction_count": 8,
+          "both_endpoints_factor": false
+        }
+      ],
+      "all_drop_one_fail": true,
+      "drop_one_min_positive_linear_residual": 0.5773502691896258,
+      "union_rank": 4,
+      "union_dimension": 6,
+      "union_extra_coordinate_count": 2,
+      "union_nonadmissible": true,
+      "L_prime_iso_residual_forward": 0.0,
+      "L_prime_iso_residual_backward": 0.0,
+      "L_prime_iso": true
+    }
+  },
+  "first_reference_witnesses": {
+    "directed": {
+      "q_GR_through_q_QM_row_residual": 0.5773502691896258,
+      "q_QM_through_q_GR_row_residual": 0.5773502691896258,
+      "q_GR_through_q_QM_pair_defect_count": 3,
+      "q_QM_through_q_GR_pair_defect_count": 0,
+      "route_mismatch_normalized": 0.30934765345153453,
+      "route_commutes": false,
+      "directed_no_go_fires_by_rowspan": true,
+      "directed_no_go_has_pair_witnesses_both_ways": false
+    },
+    "fused": {
+      "union_rank": 4,
+      "union_dimension": 6,
+      "union_extra_coordinate_count": 2,
+      "union_passes_g_nosmuggle": false,
+      "fused_no_go_fires": true
+    },
+    "type": {
+      "role_obstruction_count_O_s": 3,
+      "coarsening_rows_checked": 8,
+      "coarsening_min_obstruction_count": 3,
+      "all_qm_coarsenings_leave_O_s_nonempty": true,
+      "gate_pass_count": 8,
+      "all_gates_pass": true,
+      "fired_families": [
+        "BridgeMediatedRole"
+      ],
+      "unique_type_bridge_mediated": true
+    },
+    "instance": {
+      "L_qm_residual": 0.0,
+      "L_gr_residual": 0.0,
+      "L_is_join": true,
+      "drop_one_mode_records": [
+        {
+          "candidate": "drop_d0_density",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 1,
+          "gr_pair_obstruction_count": 1,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d1_phase",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.0,
+          "qm_pair_obstruction_count": 0,
+          "gr_pair_obstruction_count": 0,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d2_transport",
+          "qm_residual": 0.5773502691896258,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 0,
+          "gr_pair_obstruction_count": 0,
+          "both_endpoints_factor": false
+        },
+        {
+          "candidate": "drop_d3_curvature",
+          "qm_residual": 0.0,
+          "gr_residual": 0.5773502691896258,
+          "qm_pair_obstruction_count": 0,
+          "gr_pair_obstruction_count": 3,
+          "both_endpoints_factor": false
+        }
+      ],
+      "all_drop_one_fail": true,
+      "drop_one_min_positive_linear_residual": 0.5773502691896258,
+      "union_rank": 4,
+      "union_dimension": 6,
+      "union_extra_coordinate_count": 2,
+      "union_nonadmissible": true,
+      "L_prime_iso_residual_forward": 0.0,
+      "L_prime_iso_residual_backward": 0.0,
+      "L_prime_iso": true
+    }
+  },
+  "nested_control": {
+    "control_name": "nested_endpoint_pair_d3_nested_equals_d1",
+    "carrier": "complete_16",
+    "q_GR_nested_through_q_QM_row_residual": 0.0,
+    "q_QM_through_q_GR_nested_row_residual": 0.0,
+    "q_GR_nested_through_q_QM_pair_defect_count": 0,
+    "q_QM_through_q_GR_nested_pair_defect_count": 0,
+    "route_mismatch_normalized": 0.0,
+    "O_s_count": 0,
+    "directed_no_go_fires": false,
+    "vertical_reduction_closes": true
+  },
+  "verdict": {
+    "type": "carrier_independence_mode_grammar_stable_R2_resolved",
+    "carrier_independence_scope": "declared finite carrier family over four modes",
+    "all_four_stable_on_complete_16": true,
+    "nested_control_has_teeth": true,
+    "R2_resolved": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Carrier-independence is shown across the declared finite carriers over the four-mode grammar; not all possible continuous, Lorentzian, gauge, or diffeomorphism carriers."
+}

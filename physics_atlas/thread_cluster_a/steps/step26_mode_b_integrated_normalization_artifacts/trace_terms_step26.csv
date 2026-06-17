@@ -1,0 +1,3 @@
+structure_id,sector_index,rank,dimension,integer_charge_weight,normalized_charge,trace_y2_contribution,rank_one_readout,trace_t3_2_contribution
+r1|2,0,1,2,3,1/2,1/2,True,1/2
+r1|2,1,2,3,-2,-1/3,1/3,False,0

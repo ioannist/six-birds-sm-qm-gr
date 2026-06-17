@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP24_WIDENED_RANGE,ModeB,step24_mode_b_robustness_stress,carrier,"Widened enumeration scans factor count 0..6, ranks 1..6, and U(1)-role count 0..3, with 3699 total candidates including known alternatives."
+C_CLUSTER_A_STEP24_KNOWN_ALTERNATIVES,ModeB,step24_mode_b_robustness_stress,can_fail,"Known chiral alternatives SU(5), SO(10), and SU(6)_chiral_example are admitted with computed non-minimal reasons."
+C_CLUSTER_A_STEP24_PRIMARY_WINNER,ModeB,step24_mode_b_robustness_stress,diagnostic,"Under total-rank-first minimality, r1|2_u1 with dimensions 2|3 remains the primary winner."
+C_CLUSTER_A_STEP24_CRITERIA_FLIP,ModeB,step24_mode_b_robustness_stress,typed_no_go,"Criteria variation is stable in 8/9 settings but factor-count-first flips the winner to SU(5), so uniqueness is criteria-dependent."
+C_CLUSTER_A_STEP24_CONTROLS,ModeB,step24_mode_b_robustness_stress,anti_smuggling,"Negative controls fail by computed verdict and all six gates pass."
+C_CLUSTER_A_STEP24_NONCLAIM_BOUNDARY,ModeB,step24_mode_b_robustness_stress,honesty,"Finite stress test only; not physical E019 closure and no frame-transfer status upgrade."

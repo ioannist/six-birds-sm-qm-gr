@@ -1,0 +1,4 @@
+ledger_row,sequence,starts_at,ends_at,last_increment,increments_trend,stabilizes,diverges,finite_limit,audit_verdict
+GR_K_defect,K_GR,0.81,13271.04,9953.28,growing,False,True,none,non_stabilizing_GR_defect
+L_R_resolved_defect,R_L,0.05833333333333335,0.749957784016927,0.0001266479492186834,shrinking,True,False,0.75,finite_refinement_stable_L_readout
+control_R_bad_no_resolution,R_bad_no_resolution,0.9,115.2,57.6,growing,False,True,none,control_fails_stabilization

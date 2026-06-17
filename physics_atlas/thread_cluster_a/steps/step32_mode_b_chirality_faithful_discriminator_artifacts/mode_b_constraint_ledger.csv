@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP32_REPRODUCE_STEP31,ModeB,step32_mode_b_chirality_faithful_discriminator,determinism,"Step 32 rederives the Step-31 consistency-complete atomic survivor count as 513."
+C_CLUSTER_A_STEP32_CHIRALITY_PREDICATE,ModeB,step32_mode_b_chirality_faithful_discriminator,chirality_faithfulness,"The third active predicate is chirality_faithfulness: residual chirality must be carried by a genuinely complex non-abelian action channel."
+C_CLUSTER_A_STEP32_CONJOINED_COUNT,ModeB,step32_mode_b_chirality_faithful_discriminator,diagnostic,"The conjoined predicate leaves 399 survivors from the 513 Step-31 survivors."
+C_CLUSTER_A_STEP32_DOMINANCE,ModeB,step32_mode_b_chirality_faithful_discriminator,diagnostic,"The predicate does not break the prior dominance pattern: the dominant structure remains 2|2 with 272 survivors."
+C_CLUSTER_A_STEP32_REFERENCE_STATUS,ModeB,step32_mode_b_chirality_faithful_discriminator,narrow,"The reference support passes the conjoined predicate but is not uniquely distinguished."
+C_CLUSTER_A_STEP32_GATES,ModeB,step32_mode_b_chirality_faithful_discriminator,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and no-single-axiom gates pass."
+C_CLUSTER_A_STEP32_VERDICT,ModeB,step32_mode_b_chirality_faithful_discriminator,verdict,"Verdict is NARROW: chirality-faithfulness supplies progress but not a unique landing."
+C_CLUSTER_A_STEP32_NONCLAIM_BOUNDARY,ModeB,step32_mode_b_chirality_faithful_discriminator,honesty,"Finite intrinsic-discriminator diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

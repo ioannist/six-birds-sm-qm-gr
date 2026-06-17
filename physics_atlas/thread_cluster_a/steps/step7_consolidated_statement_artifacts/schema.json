@@ -1,0 +1,25 @@
+{
+  "step": 7,
+  "name": "Cluster A consolidated statement v2 review response",
+  "thread": "thread_cluster_a",
+  "mode": "consolidation",
+  "new_computation": false,
+  "source_steps": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12],
+  "final_verdict": {
+    "type": "cluster_a_deliverable_v2_review_response_consolidated",
+    "finite_carrier_bounded_grade": true,
+    "claims_sourced": true,
+    "claims_graded": true,
+    "selection_construction": true,
+    "single_layer_claim_narrowed_to_block_structured_coupling": true,
+    "selection_type_adjudicated_where_applicable": true,
+    "token_blind_response_included": true,
+    "parameter_sweep_response_included": true,
+    "order_battery_response_included": true,
+    "validator_hardening_included": true,
+    "interpretation_flagged_nonresult": true,
+    "values_and_mechanisms_open": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  }
+}

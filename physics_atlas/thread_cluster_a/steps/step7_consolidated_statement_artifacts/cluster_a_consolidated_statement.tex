@@ -1,0 +1,161 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+\title{Cluster A v2 Review-Response Consolidation:\\SM Selection/Measure Layer for E009/E019/E020/E037/E043}
+\author{Six Birds Theory construction track}
+\date{2026-06-06}
+
+\begin{document}
+\maketitle
+
+\section{Grade}
+
+\textbf{Grade: finite-carrier bounded-grammar consolidation, v2 review-response packet.}
+This document consolidates Cluster A Steps 1--12. The construction is a selection/measure construction over a finite candidate space, not a field-readout pair. It states the \emph{shape} of the SM-selection-layer hole: a candidate space, a selection measure, P2 constraint-pruning, P6 decaying-degeneracy, five facet readouts, and review-response stress tests of circularity, factorization, parameter dependence, refinement order, and validator recursion.
+
+It does not derive the gauge group, the generation count, the Yukawa texture, the electroweak scale, the vacuum, or the UV completion. Those values are given toy attributes, not outputs of this construction. The selection-type adjudication is a finite collapse-vs-landscape criterion; it is not a physical rejection of anthropic reasoning and not a derivation of any SM value. No new physics is claimed, no cross-layer physical derivation is claimed, and no frame transfer is certified.
+
+\section{Review Map}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Review item & Response & Source \\
+\midrule
+R1 & Repackaging / manager-handled scope item & v2 framing \\
+R2 & MI artifact and one-layer over-grade tested & Steps 8--9 \\
+R3 & Circularity answered by token-blind neutral carrier & Step 8 \\
+R4 & Parameter-dependence mapped by robustness sweep & Step 10 \\
+R5 & Hand-aimed refinement order tested by order battery & Step 11 \\
+R6 & Validator recursion hardened & Step 12 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Baseline Frame}
+
+\textbf{Claim 1. Grade: frame-signature.}
+Step 1 constructs a finite candidate space \(W\) of \(9\) toy SM-structure worlds plus a measure \(\mu\). The realized token \(w_{\mathrm{SM}}\) is the genuine argmax, with score \(106.0\). The SM shadow is selection-forgetting: it reads the realized inputs as fixed values and carries no predicate over \(W\) and no measure over alternatives.
+
+The joint structure variable is non-descending from the SM shadow with obstruction \(36\). The facet obstructions are: E019 \(21\), E020 \(21\), E043 \(14\), E009 \(14\), and E037 \(14\). Selection-underdetermination has obstruction \(1\). A derived observable factors with obstruction \(0\), so the audit distinguishes selected inputs from derived observables.
+
+Honest note: the facet non-descendingness is structural-by-setup because the SM shadow has no predicate over the candidate space. The non-trivial controls are the selection-underdetermination witness and the derived-vs-selected contrast.
+
+Sources: \texttt{steps/step1\_shared\_selection\_layer\_frame\_artifacts/frame\_signatures\_step1.csv}, \texttt{steps/step1\_shared\_selection\_layer\_frame\_artifacts/controls\_step1.csv}.
+
+\section{P2 and P6 Mechanics}
+
+\textbf{Claim 2. Grade: finite-toy-diagnostic.}
+Step 2 extends the candidate space to \(13\) worlds by adding \(4\) anomalous tokens. The toy anomaly functional removes the \(4\) anomalous tokens and leaves \(9\) anomaly-free survivors. Anomaly-freedom is necessary but not sufficient: before selection, \(9\) survivors remain; after the selection rule, the survivor set collapses to \(w_{\mathrm{SM}}\). There are \(8\) anomaly-free but unselected survivors. Gauge and generation facets are co-determined with mutual information \(0.330856\) bits.
+
+Sources: \texttt{steps/step2\_p2\_selection\_constraint\_artifacts/anomaly\_pruning\_step2.csv}, \texttt{steps/step2\_p2\_selection\_constraint\_artifacts/selection\_collapse\_step2.csv}, \texttt{steps/step2\_p2\_selection\_constraint\_artifacts/joint\_codetermination\_step2.csv}.
+
+\textbf{Claim 3. Grade: finite-toy-diagnostic.}
+Step 3 builds the E037 distinguishing audit. The genuine selection's degeneracy over the Step-2 survivor set decays
+\[
+9\to5\to4\to2\to1\to1
+\]
+and lands on \(w_{\mathrm{SM}}\). The unselected landscape control remains
+\[
+9\to9\to9\to9\to9\to9.
+\]
+This is the P6 certificate for a genuine selection layer on the finite toy: selection collapses degeneracy to a point; an unselected landscape stays multiply degenerate.
+
+Sources: \texttt{steps/step3\_p6\_decaying\_degeneracy\_audit\_artifacts/degeneracy\_refinement\_step3.csv}, \texttt{steps/step3\_p6\_decaying\_degeneracy\_audit\_artifacts/p6\_audit\_step3.csv}, \texttt{steps/step3\_p6\_decaying\_degeneracy\_audit\_artifacts/controls\_step3.csv}.
+
+\section{Facet Constructions}
+
+\textbf{Claim 4. Grade: finite-toy-diagnostic.}
+Step 4 builds the E043 scale-selection facet. The scale ratio \(r=m_H^2/M_{\mathrm{cutoff}}^2\) is non-descending from the EW shadow with obstruction \(3\), while a derived EW observable factors with obstruction \(0\). The attractor horn reaches \(r_{\mathrm{SM}}=0.0001\); the peaked measure horn uniquely peaks at \(r_{\mathrm{SM}}\). Without either selection horn, the no-selection control remains unfixed.
+
+Sources: \texttt{steps/step4\_e043\_scale\_selection\_artifacts/scale\_nonfactorization\_step4.csv}, \texttt{steps/step4\_e043\_scale\_selection\_artifacts/two\_horns\_step4.csv}, \texttt{steps/step4\_e043\_scale\_selection\_artifacts/controls\_step4.csv}.
+
+\textbf{Claim 5. Grade: finite-toy-diagnostic.}
+Step 5 builds the E009 UV-completion fiber. The realized IR code has \(6\) UV candidates with distinct UV content. UV content is non-descending from the IR shadow with obstruction \(16\), while a derived IR observable factors with obstruction \(0\). The toy consistency constraint leaves \(3\) admissible candidates over the realized IR fiber, and the selector collapses that admissible fiber to one UV candidate.
+
+Sources: \texttt{steps/step5\_e009\_uv\_fiber\_artifacts/uv\_fiber\_step5.csv}, \texttt{steps/step5\_e009\_uv\_fiber\_artifacts/uv\_nonfactorization\_step5.csv}, \texttt{steps/step5\_e009\_uv\_fiber\_artifacts/consistency\_selection\_step5.csv}.
+
+\textbf{Claim 6. Grade: finite-toy-diagnostic / selection-adjudication.}
+Step 6 runs the E043 horns through the P6 criterion. The attractor collapses
+\[
+6\to5\to4\to2\to1\to1
+\]
+and is certified. The broad anthropic measure remains
+\[
+6\to6\to6\to6\to6\to6
+\]
+and is the non-closing landscape. The sharp selecting measure control collapses
+\[
+3\to2\to2\to1\to1
+\]
+and is certified. The framework is not agnostic on the finite toy's selection type: it certifies collapse-to-point and fails broad landscape behavior. This is not a physical rejection of anthropic reasoning. The criterion is collapse-not-label; a sharp measure passes because it collapses.
+
+Sources: \texttt{steps/step6\_e043\_horn\_adjudication\_artifacts/horn\_degeneracy\_step6.csv}, \texttt{steps/step6\_e043\_horn\_adjudication\_artifacts/adjudication\_step6.csv}, \texttt{steps/step6\_e043\_horn\_adjudication\_artifacts/controls\_step6.csv}.
+
+\section{Review-Response Strengthening}
+
+\textbf{Claim 7. Grade: finite-carrier-diagnostic.}
+Step 8 answers the circularity objection. A structural, SM-token-blind selection functional, mechanically guarded against SM tokens, \(n_{\mathrm{gen}}=3\) hardcoding, and realized-world bonuses, is run on an enlarged neutral candidate space of \(8640\) generic-coded worlds. It prunes to \(468\) structural survivors. The realized SM-analog point is among the survivors but not unique: structural rank \(2\), with a \(6\)-way max-score tie. Thus the selection-layer pruning is structural, not circular, and it does not derive the SM value.
+
+Sources: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/neutral\_candidate\_space\_step8.csv}, \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/structural\_survivors\_step8.csv}, \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/schema.json}.
+
+\textbf{Claim 8. Grade: finite-carrier-diagnostic.}
+Step 8 and Step 9 answer the MI-artifact objection. Gauge-generation mutual information is \(0.000\) bits on the neutral product and \(0.466\) bits on the structural survivors. The coupling is induced by structural constraints, not by a curated population.
+
+Sources: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/mi\_comparison\_step8.csv}, \texttt{steps/step9\_facet\_factorization\_test\_artifacts/results\_summary.md}.
+
+\textbf{Claim 9. Grade: finite-carrier-diagnostic.}
+Step 9 narrows the old one-layer claim. On the token-blind structural survivors, facet selection is strongly non-factorizing: total correlation is \(2.229304481463\) bits, versus \(0.000000000000\) on the neutral product. The five edge-facets are therefore not separable independent problems on this toy.
+
+But the coupling graph is block-structured, not a clean monolithic component: a strongly coupled six-variable block \(\{\text{gauge},\text{rep},n_{\mathrm{gen}},\text{texture},\text{uv},\text{vacuum}\}\) plus a weakly/borderline-coupled electroweak-scale facet. The inter-block residual is \(0.035998916880\) bits. A stricter naturalness cut fuses all seven variables into one component. Whether real SM selection is one physical layer or several remains open. The per-facet results above do not depend on the one-layer status.
+
+Sources: \texttt{steps/step9\_facet\_factorization\_test\_artifacts/total\_correlation\_step9.csv}, \texttt{steps/step9\_facet\_factorization\_test\_artifacts/block\_decomposition\_step9.csv}, \texttt{steps/step9\_facet\_factorization\_test\_artifacts/robustness\_step9.csv}.
+
+\textbf{Claim 10. Grade: finite-carrier-diagnostic.}
+Step 10 maps parameter dependence of the collapse-vs-landscape adjudication. In a \(9520\)-cell sweep over significance threshold, broad/sharp widths, grid size, and grid spacing, the qualitative verdict holds in \(4922\) cells and flips in \(4598\). The Step 6 operating point is classified \texttt{VERDICT\_HOLDS} and is interior to the hold region, with normalized margin \(0.306122448980\) to the nearest same-grid flip. Flips occur only in named degenerate regimes: \texttt{sharp\_noncollapse}, where the sharp family is no longer sharp enough or thresholding is too permissive, and \texttt{broad\_false\_collapse}, where threshold/grid/broad settings count a broad family as a singleton. These are explicit scope boundaries.
+
+Sources: \texttt{steps/step10\_adjudication\_robustness\_sweep\_artifacts/sweep\_cells\_step10.csv}, \texttt{steps/step10\_adjudication\_robustness\_sweep\_artifacts/flip\_boundaries\_step10.csv}, \texttt{steps/step10\_adjudication\_robustness\_sweep\_artifacts/operating\_point\_margin\_step10.csv}.
+
+\textbf{Claim 11. Grade: finite-carrier-diagnostic.}
+Step 11 answers the hand-aimed refinement-order objection. Across \(204\) refinement orders (canonical, reverse, two adversarial orders, and \(200\) fixed-seed random orders), the genuine selection collapses to a point in all orders, including the adversarial order designed to delay it. The broad landscape never collapses, including the adversarial order designed to force it. The separation margin is \(5\). Thus the verdict tracks the selection/measure structure, not a hand-aimed refinement path.
+
+Sources: \texttt{steps/step11\_refinement\_order\_battery\_artifacts/order\_results\_step11.csv}, \texttt{steps/step11\_refinement\_order\_battery\_artifacts/adversarial\_orders\_step11.csv}, \texttt{steps/step11\_refinement\_order\_battery\_artifacts/separation\_step11.csv}.
+
+\textbf{Claim 12. Grade: organizational.}
+Step 12 hardens the validator interface. Validators now default to non-recursive \texttt{--self} mode, expose explicit \texttt{--chain} mode, and the top-level \texttt{steps/run\_all\_selfcheck.py} runner reports PASS for Steps 1--11. This is organizational only; no scientific artifact, computed number, claim, or grade was changed.
+
+Sources: \texttt{steps/step12\_validator\_hardening\_note.md}, \texttt{steps/run\_all\_selfcheck.py}.
+
+\section{Unified Criterion}
+
+\textbf{Claim 13. Grade: finite-toy-diagnostic / selection-adjudication.}
+The decaying-degeneracy criterion adjudicates selection type consistently across E037 and E043 in Cluster A and E021 in Cluster B. Genuine selections that collapse degeneracy to a point are certified; broad landscapes that stay distributed are the un-closed defect. For E021, Cluster B Step 10 records relaxation \(10\to10\to5\to1\to1\to1\), sharp measure \(10\to10\to7\to3\to2\to1\), and broad landscape \(10\to10\to10\to10\to10\to10\). The framework is not agnostic on this finite collapse-vs-landscape selection type; this is not a physical rejection of anthropic reasoning and not a derivation of any SM value.
+
+Sources: \texttt{steps/step3\_p6\_decaying\_degeneracy\_audit\_artifacts/results\_summary.md}, \texttt{steps/step6\_e043\_horn\_adjudication\_artifacts/results\_summary.md}, \texttt{../thread\_cluster\_b/steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/results\_summary.md}.
+
+\section{Interpretation, Not a Result --- Toy-Internal and Scoped}
+
+The borderline facet in the Step 9 block decomposition is the electroweak scale facet E043. In the toy it couples weakly because it is governed by a naturalness/tuning cost rather than the hard consistency constraints, such as anomaly cancellation and gauge-representation compatibility, that bind the other facets. This was not imposed as a desired output; it followed from modeling the EW facet through naturalness, the physically faithful choice for that facet.
+
+This resonates with the fact that physics independently treats the hierarchy/naturalness problem as the odd one out among the SM's why-this puzzles. Read cautiously, this is a consistency check: the framework, fed faithful toy inputs, reproduces a known qualitative distinction it was not explicitly asked to output. Read interpretively, it hints that closing a discrete-structure selection hole and closing a continuous-scale/naturalness hole may be different types, with the latter needing its own closure.
+
+This paragraph is interpretation only. It is not a physics result, not a prediction, and not evidence about the real SM. It is partly a consequence of the faithful modeling choice.
+
+\section{Independently Checkable Content}
+
+\textbf{Grade: organizational.}
+The v2 packet is independently checkable by running:
+\[
+\texttt{python3 steps/run\_all\_selfcheck.py}
+\]
+from \texttt{physics\_atlas/thread\_cluster\_a}. Individual validators also support \texttt{--self} and \texttt{--chain}. The validators check source artifacts, controls, carrier guards, token-blindness guards, order and parameter sweeps, and overclaim boundaries.
+
+\section{Open Obligations}
+
+\textbf{Grade: organizational.}
+Open obligations remain: external frame-transfer review; richer carriers; the physical values and mechanisms for gauge group, generation count, Yukawa texture, electroweak scale, vacuum, and UV completion; and whether the real selection problem is one physical layer, several coupled blocks, or another richer structure. The finite toy specifies a shape and tests it under review-response stressors. It does not close the real physics question.
+
+\end{document}

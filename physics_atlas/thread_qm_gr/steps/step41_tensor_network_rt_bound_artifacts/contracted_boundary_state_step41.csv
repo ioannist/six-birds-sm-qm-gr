@@ -1,0 +1,10 @@
+case_id,basis_assignment,amplitude
+holo_refinement_D2,0000,0.707106781187
+holo_refinement_D2,1111,0.707106781187
+holo_refinement_D3,000000,0.57735026919
+holo_refinement_D3,111111,0.57735026919
+holo_refinement_D3,222222,0.57735026919
+product_control_D2,0000,1
+weighted_control_D3,000000,0.801783725737
+weighted_control_D3,111111,0.534522483825
+weighted_control_D3,222222,0.267261241912

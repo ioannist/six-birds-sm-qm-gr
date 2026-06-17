@@ -1,0 +1,3 @@
+stage_ii_check,tested_count,passes,evidence
+known_alternatives_have_computed_reasons,3,True,known chiral alternatives are admitted with explicit non-minimal reasons
+criteria_can_flip,9,True,factor-count-first ordering selects a known simple alternative

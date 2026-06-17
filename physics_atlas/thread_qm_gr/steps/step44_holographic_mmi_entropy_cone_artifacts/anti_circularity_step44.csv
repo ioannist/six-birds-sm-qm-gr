@@ -1,0 +1,6 @@
+gate,passes,witness,evidence
+contracted_state_entropies,True,Step42 boundary_state_matrix -> entropy_from_region,all holographic entropies are computed from contracted amplitudes
+holographic_mmi_satisfied_all_rows,True,"D2,D3,D4 seeds 101,202,303",max I3 -0.0255459067644
+mincut_mmi_satisfied,True,separate max-flow/min-cut entropies,max min-cut I3 -4.4408920985e-16
+ghz_control_violates,True,GHZ_4party_control,I3 0.69314718056
+sign_convention_resolves_prompt_mismatch,True,sign_convention_step44.csv,standard sign matches mutual-information equivalence and GHZ positive violation

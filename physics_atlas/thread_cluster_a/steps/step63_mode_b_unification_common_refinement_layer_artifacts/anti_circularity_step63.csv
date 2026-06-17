@@ -1,0 +1,5 @@
+check,passes,evidence
+requirement_answer_independent,True,the two child gauge-route quotients compose through one common-refinement parent closure with commuting F51 projections and compatible claim statuses
+declared_source_answer_independent,True,"minimal simple single-irrep common-refinement closure: among REQ_U parents, prefer a simple parent with the smallest fundamental dimension and an exact one-generation complex package"
+REQ_U_alone_not_enough,True,product control satisfies REQ_U but leaves abelian normalization free; scale-two example gives 3/23
+declared_source_load_bearing,True,selected_parent_count=1

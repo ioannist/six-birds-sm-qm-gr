@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Step 44: Holographic MMI Consequence}
+
+Using the standard sign convention
+\[
+I_3(A:B:C)=S(A)+S(B)+S(C)+S(ABC)-S(AB)-S(AC)-S(BC),
+\]
+the holographic monogamy inequality is \(I_3\le 0\). This is the sign
+convention equivalent to \(I(A:B)+I(A:C)\le I(A:BC)\).
+
+On the Step-42 contracted random tensor-network carrier with
+\(A=L0\), \(B=L1\), and \(C=R0\), all tested rows satisfy the inequality.
+The largest holographic value is
+\[
+\max I_3 = -0.0255459067644\le 0.
+\]
+The separate min-cut entropy computation also gives \(I_3\le 0\) at every
+tested bond dimension.
+
+The non-geometric four-party GHZ control has
+\[
+I_3^{\rm GHZ}=0.69314718056>0,
+\]
+so it violates MMI. Therefore MMI is not a universal quantum-state identity;
+it is a falsifiable forbidden-region signature of the geometric RT/min-cut
+structure on this finite carrier.
+
+\end{document}

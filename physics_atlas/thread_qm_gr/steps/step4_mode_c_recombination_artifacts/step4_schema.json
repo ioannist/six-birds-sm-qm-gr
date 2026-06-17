@@ -1,0 +1,86 @@
+{
+  "step": 4,
+  "orientation": "Mode C recombination compatibility audit",
+  "active_residual": "R_child_E018_after_HED_LQG_AS_coupled_joint_gap",
+  "carrier": {
+    "kind": "finite physics toy extending Step 1/2/3 carrier with compatibility bridge rows",
+    "audit_energy": "C = I on E_r = R^(r+6)",
+    "refinement_levels": [2, 4],
+    "recognized_source_rows": [
+      "HED entanglement-area rows",
+      "LQG geometry-amplitude row",
+      "AS P3 route row"
+    ],
+    "compatibility_bridge_rows": [
+      "bridge_HED_LQG_area_geometry",
+      "bridge_LQG_AS_discrete_continuum",
+      "bridge_HED_AS_boundary_continuum",
+      "bridge_triple_joint_package"
+    ],
+    "guard_controls": {
+      "sector_only_zero_residual_control_rejected": true,
+      "bridge_row_overread_control_rejected": true,
+      "compatibility_bridge_rows_used_as_native_probes": false,
+      "fixed_bulk_metric_inserted": false,
+      "planck_constant_inserted": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode C",
+    "attempt": "Recombine HED, LQG, and AS source profiles into one closure package",
+    "compatibility_assumptions_tested": [
+      "HED-LQG area/geometry bridge",
+      "LQG-AS discrete/continuum bridge",
+      "HED-AS boundary/continuum bridge",
+      "triple shared completion and audit"
+    ],
+    "source_records": [
+      "Step 1 HED area-shadow child",
+      "Step 2 LQG amplitude/P3 child",
+      "Step 3 AS P3 child"
+    ]
+  },
+  "final_verdict": {
+    "type": "bounded_grammar_no_go",
+    "summary": "Existing recognition imports do not lawfully recombine. The sector-only union is rejected; the compatibility-constrained target leaves four bridge rows as stable residual.",
+    "grade": "finite-carrier diagnostic no-go plus applied no-smuggling gate verdict",
+    "root_landed": false,
+    "lawful_recombination_landed": false,
+    "next_grammar_delta": "G_E018_CoupledQGBridge_v1",
+    "child_residuals": [
+      "R_child_E018_after_ModeC_no_go_bridge_delta"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "acceptable_landing_tested": "Mode C recombination",
+    "xi_orientation": "adequacy-oriented compatibility diagnostic for declared finite carrier",
+    "xi_results": {
+      "sector_only_control_normalized": {
+        "level_2": 0.0,
+        "level_4": 0.0,
+        "status": "rejected_control"
+      },
+      "compatibility_constraints_normalized": {
+        "level_2": 1.0,
+        "level_4": 1.0
+      },
+      "coupled_joint_with_constraints_normalized": {
+        "level_2": 0.5714285714285714,
+        "level_4": 0.5714285714285714
+      },
+      "coupled_joint_raw_trace": {
+        "level_2": 4.0,
+        "level_4": 4.0
+      },
+      "refinement_stability_delta": 0.0
+    },
+    "gate_status_file": "no_smuggling_gates_step4.csv",
+    "content_classification_file": "content_classification_step4.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step4.md",
+    "simulation_output": "simulation_output_step4.json",
+    "lineage_update": "../../mode_b_target_lineage.csv",
+    "grammar_manifest": "../../mode_b_grammar_manifest.csv"
+  }
+}

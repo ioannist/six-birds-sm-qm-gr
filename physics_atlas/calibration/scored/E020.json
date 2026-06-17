@@ -1,0 +1,91 @@
+{
+  "id": "E020",
+  "edge": "standard_model -> fermion-generations",
+  "arrow": "up",
+  "scored_tier": "E3",
+  "scored_modality": "emergence-up",
+  "decision_path": "foreclosed-gap-E3",
+  "endpoints": {
+    "source": {
+      "id": "standard_model",
+      "kind": "theory_card",
+      "resolves": true,
+      "note": "Frozen closure-package card. Sigma_f explicitly certifies that NOTHING in the SM lens expresses WHY there are three generations or the mass/mixing hierarchy -- these are MEASURED INPUTS, non-definable predicates."
+    },
+    "target": {
+      "id": "fermion-generations",
+      "kind": "open_question",
+      "resolves": true,
+      "note": "Registered open_question node (rubric A.7): 'why three fermion generations + their mass/mixing hierarchy'. node_kind forces the E0/E3 branch ONLY; can NEVER seal E1/E2 (no accepted_observables to descend into, no named principle imported into it). Inherits no fresh casting."
+    }
+  },
+  "precondition_step0": {
+    "both_endpoints_resolve": true,
+    "open_question_target_forces_E0_E3_only": true,
+    "faithful_finite_M_constructible": true,
+    "e3_subreason": "run_and_failed_descent_plus_no_recognition_plus_no_constructible_run",
+    "not_no_faithful_M": "A faithful finite flavor-space toy model WAS built (descent-test is built-and-failed, NOT vacuous); this is distinct from the QM<->GR no_faithful_M route."
+  },
+  "diagnostic": {
+    "descent": {
+      "ran": true,
+      "toy_model_M": {
+        "carrier": "Finite flavor space of dimension Ng=3 (three generations as a replication index).",
+        "L0_native_target_probe": "Generation-SYMMETRIC (generation-blind) functional(s): the open-question layer's own Sigma_f has NO predicate that distinguishes a generation or sets a scale; modeled as the all-ones probe (and a symmetric quadratic at finer resolution). This is what an 'explanation' layer can see PRIOR to importing the measured inputs.",
+        "D0_dissolving_source_probe": "SM generation-RESOLVED readout: hierarchical Yukawa-like diagonal entries yuk ~ (1e-5, 7e-3, 1.0) isolating each generation's mass scale; finer stage adds CKM-like off-diagonal mixing observables. This is the structure the target is asked to explain.",
+        "audit_energy_C0": "Identity (PSD legal-energy quotient).",
+        "readout_map_to_accepted_observables": "D0 rows map to SM accepted_observables (generation masses, CKM mixings); L0 maps to the (empty) generation-distinguishing predicate set of the open_question node."
+      },
+      "Xi_values": {
+        "h1_refinement": {
+          "Xi_frobenius": 0.666675,
+          "K_DD_norm": 1.0,
+          "fraction_source_currency_unexplained": 0.6667,
+          "ker_containment_leak": 0.816517,
+          "verdict": "Xi > 0"
+        },
+        "h2_refinement": {
+          "Xi_frobenius": 0.721090,
+          "K_DD_norm": 1.044520,
+          "fraction_source_currency_unexplained": 0.6904,
+          "ker_containment_leak": 0.878464,
+          "verdict": "Xi > 0"
+        }
+      },
+      "refinement_stable_E9": true,
+      "verdict_flip": false,
+      "robustness": "Tested: Xi=0 is reachable ONLY by handing the target a full generation-RESOLVING identity probe (Case C, Xi=0) -- i.e. by importing the measured Yukawas / generation count the question is asking to EXPLAIN. That is the forbidden over-read (gate E.3) and the reductionist relapse (gate E.0) the SM card explicitly warns against. With any HONEST generation-symmetric target vocabulary Xi stays stably ~0.67. Non-factorization (B.2) holds: ker L0 is NOT contained in ker D0.",
+      "result": "NO finite descent. Xi > 0 stably. Not E1. (Independently barred from E1 because the open_question target cannot seal E1.)"
+    },
+    "recognition": {
+      "ran": true,
+      "named_principle_found": false,
+      "searched": "Anomaly cancellation (constrains per-generation CONTENT, not the generation COUNT -- holds for any N); Z-invisible-width N_nu=3 (an EMPIRICAL input/measurement, not a closure principle that derives the count); GUT / family-symmetry / Froggatt-Nielsen / discrete-flavor-symmetry models and string-landscape arguments (all not_established and speculative -- adopting them is the GUT-casting smuggle the SM card explicitly REJECTS as wrongly flattering).",
+      "result": "No named, load-bearing, accepted external principle DERIVES the generation count or the mass/mixing hierarchy under a stated assumption. Recognition-search returns nothing named. Not E2. (Independently barred: open_question target cannot seal E2.)"
+    },
+    "emergence_run": {
+      "ran": true,
+      "constructible_run_object_exhibited": false,
+      "reason": "Unlike QCD->hadron-masses (E001), where lattice QCD is a constructible run METHOD that generates the spectrum from a FIXED substrate, there is NO existing substrate-run method whose execution yields '3 generations' or the Yukawa hierarchy as a non-descending readout. In the SM the generation count and the Yukawas are INPUTS put in by hand, not readouts of any run. No deeper fixed substrate + run produces them. E0 requires a POSITIVELY constructed run-object and a pre-frozen run_target_stub (gates E.7 / O4); none exists.",
+      "result": "No constructible run-only non-descending object. Not E0. (E0 is not a doubt-haven, gate E.5.)"
+    },
+    "gap": {
+      "sealed": true,
+      "tier": "E3",
+      "located_missing_predicate": "The SM lens Sigma_f contains NO predicate that distinguishes the generation count or fixes the Yukawa hierarchy; the generation-resolving information enters as an INPUT, not as a consequence. Factorization D0 = A L0 fails because the generation-symmetric source vocabulary cannot resolve the per-generation hierarchical scales.",
+      "where_factorization_fails": "ker L0 (generation-symmetric) is not contained in ker D0 (generation-resolved); the Schur-complement blind-spot currency Xi ~ 0.67 (~67-69% of source currency unexplained) is the located obstruction.",
+      "sharpened_restatement": "Why exactly three fermion generations, and what fixes their hierarchical mass/mixing pattern, is a typed OPEN GAP: no finite coarse-graining of the SM source layer produces it, no named external principle imports it under a stated assumption, and no constructible run generates it from a fixed deeper substrate."
+    }
+  },
+  "modality_tier_compat_B8": "emergence-up x E3 is an emittable pair (B.8 table: emergence-up may be E2/E0/E3, never E1).",
+  "anti_control": {
+    "is_calibration_expectation": "E3 anti-control; calibration_rule must_not_seal_E1_or_E2 (computed tier must be in {E3, E0}).",
+    "computed_tier_in_allowed_set": true,
+    "e7_e0_interlock_booleans": "N/A -- not sealed E0; no run-target stub claimed. (Bare E0 would have been demoted to E3 anyway per gate E.7/O4.)",
+    "satisfied": true,
+    "note": "Blind first-principles application of the decision-procedure independently lands E3. SBT does NOT secretly derive the generation count / mass hierarchy."
+  },
+  "rationale": "Source resolves to a frozen SM card whose Sigma_f explicitly marks the generation count and mass/mixing hierarchy as non-definable MEASURED INPUTS. Target is an open_question node that forces the E0/E3 branch. STEP 1 descent-test on a declared finite flavor-space toy model gives Xi ~ 0.67-0.72 (Frobenius) at two refinements -- stably > 0, no flip (gate E.9) -- so non-factorization holds and there is no clean E1 descent; a robustness check shows Xi=0 only by smuggling the generation-resolved inputs (forbidden over-read, gates E.0/E.3). STEP 2 recognition-search finds NO named external principle that derives the count or hierarchy (anomaly cancellation fixes content not count; GUT/flavor/landscape models are not_established and explicitly rejected by the card). STEP 3 run-search finds NO constructible run-object: the generations/Yukawas are inputs, not readouts of any fixed-substrate run (contrast E001 lattice QCD). STEP 4 forecloses: SEAL E3, sharpened gap, with the missing predicate located in Sigma_f.",
+  "confidence": "high",
+  "read_only_obeyed": true
+}

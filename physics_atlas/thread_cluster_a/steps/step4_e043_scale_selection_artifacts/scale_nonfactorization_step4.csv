@@ -1,0 +1,3 @@
+test_id,source,target,non_descending,obstruction_count,witness,interpretation
+r_scale_ratio_from_EW_Sigma,EW_Sigma,r=m_H2/M_cutoff2,True,3,scale_SM-scale_same_EW_midcut;scale_SM-scale_same_EW_lowcut;scale_same_EW_midcut-scale_same_EW_lowcut,same EW readout with different cutoff gives different scale ratio
+derived_EW_observable_from_EW_Sigma,EW_Sigma,derived_EW_observable,False,0,none,derived EW observable is a function of EW Sigma

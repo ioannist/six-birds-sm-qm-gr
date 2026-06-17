@@ -1,0 +1,3 @@
+state_id,q_sector_readout,promoted_bridge,U_readout
+U_a,color3|weak2|trace0,c0-w0,bridge_a
+U_b,color3|weak2|trace0,c1-w1,bridge_b

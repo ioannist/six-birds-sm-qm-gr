@@ -1,0 +1,10 @@
+artifact,output,classification,grade,scope
+constraint_problem_of_time_step27.py,clock-field constraint construction,predictive structural,finite-carrier diagnostic,finite clock M=16 and field N=8
+constraint_operators_step27.npz,finite P_clock H_field and C operators,organizational/audit,finite-carrier diagnostic,explicit matrices
+constraint_spectrum_step27.csv,kernel and control spectra,analytical structural,finite-carrier diagnostic,compatible constraint and positive-clock control
+physical_space_residuals_step27.csv,computed physical-space residuals,analytical structural,finite-carrier diagnostic,ker C and empty-kernel control
+relational_time_readout_step27.csv,conditioned clock readout residuals,analytical structural,finite-carrier diagnostic,Step 26 stationary dynamics recovery
+clock_extended_carrier_step27.json,declared clock-field carrier and constraint definitions,organizational/audit,finite-carrier diagnostic,carrier ledger
+constraint_problem_of_time_statement_step27.tex,typed constraint statement,analytical structural,finite-carrier diagnostic,scoped toy statement
+run_step27.py,artifact and guard validator,organizational/audit,diagnostic-complete,Step 27 artifact contract
+external_review,physical frame-transfer adequacy,remaining external content,external review,beyond declared finite toy

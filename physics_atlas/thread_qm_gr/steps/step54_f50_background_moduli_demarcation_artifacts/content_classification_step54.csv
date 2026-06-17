@@ -1,0 +1,8 @@
+artifact,classification,scope
+background_sweep_step54.csv,finite-carrier-diagnostic,Frozen Step26 background-offset sweep.
+kappa_sweep_step54.csv,finite-carrier-diagnostic,Frozen Step26 kappa control sweep.
+derived_classification_step54.csv,finite-carrier-diagnostic,Classification derived from sweep tables.
+structural_note_step54.csv,analytical-structural finite-carrier-diagnostic,Notes why full b-independence is not a theorem of the Step26 equation.
+f50_background_demarcation_statement_step54.tex,analytical-structural finite-carrier-diagnostic,F50 finite-sweep demarcation; not a physical Lambda theorem.
+step54_results_summary.md,organizational + structural-recognition,Summary and caveats.
+run_step54.py,organizational validator,Self/chain validation with verdict/table consistency checks.

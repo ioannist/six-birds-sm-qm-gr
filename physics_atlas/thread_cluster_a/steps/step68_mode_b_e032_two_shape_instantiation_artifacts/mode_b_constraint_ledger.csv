@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step68_two_distinct_shapes,active,68,build one D-touch and one Sigma_f-only exemplar
+C_step68_born_weight_preservation,active,68,both exemplars preserve Step66 Born weights
+C_step68_no_shape_selection,active_validator,68,do not assert either toy is physical

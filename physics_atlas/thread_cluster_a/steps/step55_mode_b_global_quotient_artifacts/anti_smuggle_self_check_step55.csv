@@ -1,0 +1,5 @@
+check,passes,evidence
+center_computed_not_posited,True,kernel elements solved from field congruences
+target_metadata_not_used_for_scoring,True,target flag read only after scoring for reporting
+uniform_two_class_scoring,True,both classes passed to same solver
+negative_control_has_teeth,True,group=Z1;order=1

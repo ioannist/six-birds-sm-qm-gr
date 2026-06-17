@@ -1,0 +1,4 @@
+signature_id,source_readout,target_readout,regime,obstruction_count,witness,nonfactorizing
+E042_d4_boundary_nonfactorization_high_locus,"GR_smooth_Sigma_f=(d0,d2,d3)",d4_subplanck,high_curvature,3,1-2;5-6;10-11,True
+E042_d4_boundary_nonfactorization_all_states,"GR_smooth_Sigma_f=(d0,d2,d3)",d4_subplanck,all_L_ext,3,1-2;5-6;10-11,True
+smooth_d4_factors_through_d3,d3_curvature,d4_subplanck,smooth+vacuum_smooth,0,none,False

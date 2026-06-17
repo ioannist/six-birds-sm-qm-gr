@@ -1,0 +1,34 @@
+{
+  "step": 30,
+  "verdict": {
+    "lemma_verdict": "lemma1_directed_reduction_blocked_in_bounded_grammar",
+    "q_GR_factors_through_q_QM": false,
+    "q_QM_factors_through_q_GR": false,
+    "control_factors": true,
+    "route_mismatch_positive": true,
+    "control_route_commutes": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "summary": {
+    "defect_count_q_GR_through_q_QM": 8,
+    "defect_count_q_QM_through_q_GR": 8,
+    "route_mismatch_raw": 2.8284271247461903,
+    "route_mismatch_normalized": 0.5,
+    "control_route_mismatch_normalized": 0.0,
+    "audit_T_from_Born_joint_heldout_residual": 0.5991748529352457,
+    "audit_Born_from_T_joint_heldout_residual": 0.5776762928080916,
+    "audit_T00_from_Born_heldout_residual": 0.40156890127173095,
+    "audit_T0i_from_Born_heldout_residual": 0.5443048422989993,
+    "audit_rho_from_T_heldout_residual": 0.33866060907950507,
+    "audit_current_from_T_heldout_residual": 0.6503906344364354
+  },
+  "guardrails": {
+    "factorization_defects_computed": true,
+    "audit_heldout_residuals_computed": true,
+    "route_mismatch_computed": true,
+    "genuine_reduction_control_passes": true,
+    "bounded_no_go_only": true
+  }
+}

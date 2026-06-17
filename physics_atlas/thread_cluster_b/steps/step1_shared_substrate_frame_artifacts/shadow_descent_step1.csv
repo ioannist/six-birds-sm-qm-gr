@@ -1,0 +1,4 @@
+test_id,regime,state_ids,descent_residual,obstruction_count,factors,interpretation
+GR_smooth_sigma_from_L_on_smooth_regime,smooth+vacuum_smooth,0;3;4;7;8;9,0.0,0,True,GR smooth geometry descends as the projection of L_ext on the smooth-regime domain.
+d4_through_d3_on_smooth_regime,smooth+vacuum_smooth,0;3;4;7;8;9,5.0148676901037195e-17,0,True,d4_subplanck is slaved to d3 in the smooth regime.
+singularity_locus_boundary,high_curvature,1;2;5;6;10;11,0.5983211225424633,3,False,"At the high-curvature boundary, states with the same GR smooth readout split by finite d4 content."

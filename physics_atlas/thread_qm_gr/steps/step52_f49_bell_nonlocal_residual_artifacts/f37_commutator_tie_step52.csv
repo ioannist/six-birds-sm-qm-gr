@@ -1,0 +1,4 @@
+party,setting_1,setting_2,commutator_frobenius_norm,normalized_commutator_residual,nonzero
+A,a0,a1,2.82842712475,0.707106781187,True
+B,b0,b1,2.82842712475,0.707106781187,True
+Step47_control,complementary_noncommuting_pair,admissible_joint_control,not_recomputed_here,0.707106781187,True

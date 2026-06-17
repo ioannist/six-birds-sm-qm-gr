@@ -1,0 +1,5 @@
+obligation,status,witness
+faithful_enrichment,light_scale_enrichment,"scale ratio, cutoff sensitivity, tuning cost, and relaxation trajectory are represented structurally"
+independently_checkable_consequence,advanced_as_architecture_split,content-scale independence plus gauge-generation coupling control supports two selection layers on the toy
+derived_formula,not_advanced_this_step,no new closed-form relation is claimed
+limit_recovery,hierarchy_structure_represented_only,quadratic cutoff sensitivity is represented as the scale facet's known structural pressure

@@ -1,0 +1,5 @@
+ablation,robustness_supported,evidence
+remove_convention_family,False,no robustness map can be computed
+remove_generated_structure,False,no structure to stress
+remove_controls,False,degeneracy guard unavailable
+remove_step25_rows,False,consequence consistency cannot be checked

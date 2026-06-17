@@ -1,0 +1,56 @@
+[
+  {
+    "id": "E001",
+    "source_theory_id": "qcd",
+    "target_theory_id": "hadron-spectrum",
+    "arrow_direction": "up"
+  },
+  {
+    "id": "E002",
+    "source_theory_id": "statistical_mechanics",
+    "target_theory_id": "thermodynamics",
+    "arrow_direction": "down"
+  },
+  {
+    "id": "E003",
+    "source_theory_id": "special_relativity",
+    "target_theory_id": "classical_mechanics",
+    "arrow_direction": "down"
+  },
+  {
+    "id": "E004",
+    "source_theory_id": "kinetic_theory",
+    "target_theory_id": "hydrodynamics",
+    "arrow_direction": "down"
+  },
+  {
+    "id": "E005",
+    "source_theory_id": "general_relativity",
+    "target_theory_id": "black_hole_thermodynamics",
+    "arrow_direction": "down"
+  },
+  {
+    "id": "E018",
+    "source_theory_id": "quantum_mechanics",
+    "target_theory_id": "general_relativity",
+    "arrow_direction": "bidirectional"
+  },
+  {
+    "id": "E019",
+    "source_theory_id": "standard_model",
+    "target_theory_id": "gauge-group-origin",
+    "arrow_direction": "up"
+  },
+  {
+    "id": "E020",
+    "source_theory_id": "standard_model",
+    "target_theory_id": "fermion-generations",
+    "arrow_direction": "up"
+  },
+  {
+    "id": "E021",
+    "source_theory_id": "general_relativity",
+    "target_theory_id": "cosmological-constant",
+    "arrow_direction": "up"
+  }
+]

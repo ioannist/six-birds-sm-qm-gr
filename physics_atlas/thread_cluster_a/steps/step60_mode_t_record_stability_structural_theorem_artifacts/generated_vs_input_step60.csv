@@ -1,0 +1,6 @@
+item,status,detail
+Step59_enumeration_result,input_evidence,carrier=11990; substrate_capacity_non_CS=0
+structural_reduction,verified,"given substrate, delta_nonempty iff transition_leak_count>0 iff scalar breaks dim>=3"
+converse_probe,computed,inside_counterexample=False; outside_counterexample=False
+structural_proof,not_constructed,missing bridge from big-factor scalar breaking to capacity<2
+exit_state,computed,sharpened_external

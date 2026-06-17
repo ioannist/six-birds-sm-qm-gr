@@ -1,0 +1,27 @@
+{
+  "artifact_root": "steps/step26_mode_b_integrated_normalization_artifacts",
+  "audit_target_relation_from_step21": "3/8",
+  "computed_normalization": {
+    "normalization_ratio": "5/3",
+    "sin2_theta_w": "3/8",
+    "trace_t3_2": "1/2",
+    "trace_y2": "5/6"
+  },
+  "frame_transfer_certified": false,
+  "generated_structure": {
+    "dimensions": "2|3",
+    "ranks": "1|2",
+    "selected_charge_vector": "3|-2",
+    "structure_id": "r1|2"
+  },
+  "mode": "ModeB_integrated_normalization",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "root_landed": false,
+  "six_gates_pass": true,
+  "source_step": "steps/step23_mode_b_factor_count_unsmuggle_artifacts",
+  "stage_ii_pass": true,
+  "step": 26,
+  "typed_no_go": false,
+  "verdict": "INTEGRATED"
+}

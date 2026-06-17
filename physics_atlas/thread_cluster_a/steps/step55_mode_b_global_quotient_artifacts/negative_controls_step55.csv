@@ -1,0 +1,4 @@
+control,passes,evidence
+incommensurate_charge_collapses_center,True,group=Z1;order=1
+both_classes_scored_uniformly,True,same congruence solver applied to both content classes
+nontrivial_selector_not_row_picker,True,nontrivial_survivors=2

@@ -1,0 +1,55 @@
+{
+  "step": 19,
+  "orientation": "Native F35 scale descent / renormalization test",
+  "active_residual": "R_child_E018_after_F37_F24_native_classification",
+  "carrier": {
+    "type": "finite 16-cell scale carrier",
+    "scale_quotients": ["Q1_fine16", "Q2_mid8", "Q3_coarse4"],
+    "scale_steps": ["Q1_fine16->Q2_mid8", "Q2_mid8->Q3_coarse4"],
+    "no_smuggling_controls": {
+      "non_descending_control_descends": false,
+      "O_n_computed_without_coarsening": false,
+      "f35_source_read": true,
+      "literature_program_terms_used": false,
+      "root_landed": false
+    }
+  },
+  "candidate_move": {
+    "id": "F35_scale_descent_joint_law",
+    "description": "Test whether the audited joint law descends and renormalizes across the finite scale tower."
+  },
+  "final_verdict": {
+    "type": "native_F35_classification_complete",
+    "root_landed": false,
+    "F35_verdict": "renormalizes_on_toy",
+    "external_review_required": true
+  },
+  "track_fields": {
+    "FIV_source_read": true,
+    "joint_law": {
+      "obstruction_counts": [0, 0],
+      "fiber_violation_counts": [0, 0],
+      "renormalizes_each_step": true
+    },
+    "non_descending_control": {
+      "obstruction_counts": [0, 8],
+      "fiber_violation_counts": [8, 0],
+      "renormalizes_each_step": false
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "On this finite toy, the audited joint law is scale-consistent under F35."
+    ],
+    "analytical_structural": [
+      "F35 diagnostic: joint law passes both steps; non-descending control fails."
+    ],
+    "organizational_audit": [
+      "FIV F35 source record is saved and validator checks source-read flag."
+    ],
+    "remaining_external_content": [
+      "Frame transfer beyond the finite toy remains external review."
+    ]
+  }
+}
+

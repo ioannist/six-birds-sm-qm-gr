@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 1 Structural Statement: Mode A Holographic Import Audit}
+
+\begin{definition}[Leading recognition source]
+For Step 1, the leading named recognition source is the holographic
+entanglement dictionary: the AdS/CFT dictionary together with the
+Ryu--Takayanagi / Hubeny--Rangamani--Takayanagi entropy-area rule.
+Its declared assumptions are: an applicable AdS/CFT dictionary, the relevant
+asymptotically AdS boundary class, and a state class where the RT/HRT
+semiclassical entropy-area prescription is valid.
+\end{definition}
+
+\begin{definition}[Finite diagnostic carrier]
+At refinement level \(r\in\{2,4\}\), let the finite carrier be
+\[
+  E_r=\mathbb{R}^{r+2}
+\]
+with audit energy \(C=I\).  The first \(r\) coordinates are boundary
+entanglement-ledger coordinates \(s_1,\ldots,s_r\).  The last two coordinates
+are \(g\), an independent bulk geometry-amplitude coordinate, and \(m\), an
+independent P3 route-mismatch coordinate.
+
+The native recognition lens \(L_r\) contains only the \(s_i\) rows.  The
+RT-like dissolving area rows are \(a_i=s_i/\sqrt r\).  The full E018 diagnostic
+dissolving family is
+\[
+  D_r=\{a_1,\ldots,a_r,\; g+0.25\,\bar s,\; m+0.30\,g+0.10\,\bar s\},
+  \qquad
+  \bar s=r^{-1/2}\sum_i s_i .
+\]
+\end{definition}
+
+\begin{proposition}[Finite-carrier Mode A obstruction]
+On the declared carrier,
+\[
+  \Xi_I(D_{\mathrm{area}}\mid L_r)=0
+\]
+for \(r=2,4\), while the full joint target has
+\[
+  \tr\,\Xi_I(D_r\mid L_r)=2.09,
+  \qquad
+  \frac{\tr\,\Xi_I(D_r\mid L_r)}{\tr K_{DD}}=0.6608695652173913
+\]
+at both refinement levels.
+\end{proposition}
+
+\begin{proof}
+The RT-like area rows lie in the span of the native entanglement-ledger rows,
+so exact adequacy holds for the area sector by factorization through \(L_r\).
+The bulk-amplitude coordinate \(g\) and the P3 coordinate \(m\) are orthogonal
+to the native span.  The Schur complement therefore removes only the
+entanglement-ledger components of the last two dissolving rows and leaves the
+positive residual carried by \(g\) and \(m\).  Direct computation in
+\texttt{simulate\_step1\_holographic\_xi.py} gives the trace and normalized
+values displayed above.
+\end{proof}
+
+\begin{remark}[Overread control]
+If \(g\) and \(m\) are added to the native lens, the full diagnostic residual
+vanishes.  Step 1 rejects that variant because it adds the target answer rows
+to the native recognition source.  The vanishing residual in that overread
+control is therefore not a closure witness.
+\end{remark}
+
+\begin{remark}[Recognition verdict]
+The leading import supplies a partial E2 recognition source for the
+AdS/RT-like area-shadow sector.  It does not land the canonical E018 root:
+the unrestricted amplitude-over-geometry object and the general P3
+route-mismatch remain outside the audited import.
+\end{remark}
+
+\end{document}

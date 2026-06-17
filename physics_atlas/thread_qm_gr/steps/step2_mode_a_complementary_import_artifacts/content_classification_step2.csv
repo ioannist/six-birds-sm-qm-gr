@@ -1,0 +1,12 @@
+artifact,output,category,grade,scope,nonclaim_reference
+step2_results_summary.md,"Complementary Mode A audit and verdict","organizational/audit",n/a,"R_child_E018_after_HED_full_joint_P3","NC1;NC2;NC3"
+candidate_imports_step2.csv,"Complementary import enumeration and ranking","organizational/audit",n/a,"LQG lead and asymptotic-safety secondary","NC1;NC6"
+recognition_audit_step2.csv,"Lead import closure, complementarity, and lineage audit","predictive structural","applied typed gate verdict","No-smuggling and complementarity status for LQG import","NC1;NC2;NC5"
+no_smuggling_gates_step2.csv,"Six gate statuses for LQG lead import","predictive structural","applied typed gate verdict","Recognition source audit","NC1;NC5"
+simulate_step2_lqg_xi.py,"Extended finite-carrier Schur complement diagnostic","analytical structural","finite-carrier diagnostic","Two refinement levels for LQG surviving sector and area-law cost","NC3;NC4"
+simulation_output_step2.json,"Raw Xi matrices, traces, normalized residuals, stability","analytical structural","finite-carrier diagnostic","Step 1 carrier reused with LQG-like lens","NC3;NC4"
+xi_diagnostic_step2.csv,"Tabulated Step 2 Xi diagnostics","analytical structural","finite-carrier diagnostic","Surviving amplitude/P3 sector versus area-shadow sector","NC3;NC4"
+step2_structural_statement.tex,"Typed structural statement of complementarity","analytical structural","finite-carrier diagnostic plus scoped proposition","LQG/HED complementarity on declared carrier","NC1;NC2;NC3;NC4"
+nonclaim_boundary_step2.md,"Mandatory nonclaim boundary","organizational/audit",n/a,"All Step 2 outputs","NC1-NC7"
+step2_schema.json,"Machine-readable Step 2 status record","organizational/audit",n/a,"Step 2 artifact contract","NC1-NC7"
+mode_b_target_lineage.csv,"Child residual rows appended","organizational/audit",n/a,"Target-lineage ledger","NC2;NC5"

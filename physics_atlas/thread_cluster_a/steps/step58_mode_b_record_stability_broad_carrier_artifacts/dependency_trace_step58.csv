@@ -1,0 +1,5 @@
+axiom,role,detail
+frozen_step57_record_requirement,RS scoring,imported Step57 record_layer_membership without redefinition
+broad_step35_carrier,stress carrier,"80 corrected higher-layer rows, not prefiltered to CS"
+shadow_transition_leak_diagnostic,CS scoring,computed from factor/scalar action and residual subgroups
+divergence_search,decisive test,search for RS true and CS false rows

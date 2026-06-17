@@ -1,0 +1,18 @@
+{
+  "step": 9,
+  "verdict": {
+    "type": "facet_factorization_test_constructed",
+    "threshold_bits": 0.01,
+    "neutral_total_correlation_bits": 0.0,
+    "survivor_total_correlation_bits": 2.229304481463,
+    "survivor_sum_marginal_entropy_bits": 11.099669201047,
+    "component_count": 2,
+    "block_partition": "gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code / ew_code",
+    "inter_block_residual_bits": 0.03599891688,
+    "separability_verdict": "block_structured_coupling",
+    "subsample_seed": 20260606,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite survivor-set information geometry only; no physical layer count or SM value is derived."
+}

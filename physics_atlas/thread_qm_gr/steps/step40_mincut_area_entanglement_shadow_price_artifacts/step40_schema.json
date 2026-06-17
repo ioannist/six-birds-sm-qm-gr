@@ -1,0 +1,19 @@
+{
+  "active_residual": "E018 positive relation sub-residual after Step39 rejection",
+  "anti_tautology_disagreement_witness": true,
+  "area_is_optimization_output": true,
+  "can_fail_gap": 1.60943791243,
+  "coefficient_refinement_abs_drift": 0.0,
+  "computed_coefficient_refinement_1": 1.0,
+  "computed_coefficient_refinement_2": 1.0,
+  "entanglement_area_independent_functionals": true,
+  "frame_transfer_certified": false,
+  "main_object": "finite bulk graph with independent min-cut area and boundary entropy functionals",
+  "new_physics_claim": false,
+  "orientation": "ModeB_E018_min_cut_area_entanglement_shadow_price",
+  "other_law_landing_legs_attempted": false,
+  "root_landed": false,
+  "rt_recognition_landed": true,
+  "step": 40,
+  "verdict": "SHADOW_PRICE_RELATION_DERIVED"
+}

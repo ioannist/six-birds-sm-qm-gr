@@ -1,0 +1,3 @@
+test_id,source,target,non_descending,obstruction_count,witness,interpretation
+UV_completion_from_IR_EFT,IR_EFT_code,UV_content,True,16,U_SM-U_alt_GUT;U_SM-U_alt_stringy;U_SM-U_bad_unitarity;U_SM-U_bad_positivity;U_SM-U_bad_anomaly;U_alt_GUT-U_alt_stringy;U_alt_GUT-U_bad_unitarity;U_alt_GUT-U_bad_positivity;U_alt_GUT-U_bad_anomaly;U_alt_stringy-U_bad_unitarity;U_alt_stringy-U_bad_positivity;U_alt_stringy-U_bad_anomaly;U_bad_unitarity-U_bad_positivity;U_bad_unitarity-U_bad_anomaly;U_bad_positivity-U_bad_anomaly;U_alt_IR_A-U_alt_IR_A_bad,multiple UV completions share an IR EFT but differ in UV content
+derived_IR_observable_from_IR_EFT,IR_EFT_code,derived_IR_observable,False,0,none,derived IR observable is fixed by the IR EFT code

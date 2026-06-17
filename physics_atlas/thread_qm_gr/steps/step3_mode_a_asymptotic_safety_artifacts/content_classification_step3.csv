@@ -1,0 +1,12 @@
+artifact,output,category,grade,scope,nonclaim_reference
+step3_results_summary.md,"P3 Mode A audit and verdict","organizational/audit",n/a,"P3 route-mismatch sub-sector of E018","NC1;NC2;NC3"
+candidate_imports_step3.csv,"Asymptotic-safety source enumeration and secondary context","organizational/audit",n/a,"P3 recognition lane","NC1;NC6"
+recognition_audit_step3.csv,"P3 closure, scope, and lineage audit","predictive structural","applied typed gate verdict","No-smuggling and P3-only status for AS import","NC1;NC2;NC5"
+no_smuggling_gates_step3.csv,"Six gate statuses for AS lead import","predictive structural","applied typed gate verdict","Recognition source audit","NC1;NC5"
+simulate_step3_asymptotic_safety_xi.py,"Extended finite-carrier Schur complement diagnostic","analytical structural","finite-carrier diagnostic","Two refinement levels for P3, amplitude, and area sectors","NC3;NC4"
+simulation_output_step3.json,"Raw Xi matrices, traces, normalized residuals, stability","analytical structural","finite-carrier diagnostic","Step 1/2 carrier reused with AS-like lens","NC3;NC4"
+xi_diagnostic_step3.csv,"Tabulated Step 3 Xi diagnostics","analytical structural","finite-carrier diagnostic","P3-only sector versus amplitude and area costs","NC3;NC4"
+step3_structural_statement.tex,"Typed structural statement of P3-only recognition","analytical structural","finite-carrier diagnostic plus scoped proposition","AS P3 lens on declared carrier","NC1;NC2;NC3;NC4"
+nonclaim_boundary_step3.md,"Mandatory nonclaim boundary","organizational/audit",n/a,"All Step 3 outputs","NC1-NC7"
+step3_schema.json,"Machine-readable Step 3 status record","organizational/audit",n/a,"Step 3 artifact contract","NC1-NC7"
+mode_b_target_lineage.csv,"Child residual rows appended","organizational/audit",n/a,"Target-lineage ledger","NC2;NC5"

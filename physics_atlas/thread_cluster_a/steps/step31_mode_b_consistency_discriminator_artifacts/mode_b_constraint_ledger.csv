@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP31_REPRODUCE_STEP29,ModeB,step31_mode_b_consistency_discriminator,determinism,"Step 31 rederives the Step-29 atomic rewrite-packaging survivor count as 1851."
+C_CLUSTER_A_STEP31_DROP_CURRENCY_MINIMUM,ModeB,step31_mode_b_consistency_discriminator,redirect,"The Step-30 strict closure-currency minimum is retained as diagnostic only because it excludes the reference support."
+C_CLUSTER_A_STEP31_CONSISTENCY_PREDICATE,ModeB,step31_mode_b_consistency_discriminator,closure_consistency,"The second active predicate is closure_consistency_completeness: an action-faithful route-incidence completeness test traced to P3/P6."
+C_CLUSTER_A_STEP31_CONJOINED_COUNT,ModeB,step31_mode_b_consistency_discriminator,diagnostic,"The conjoined predicate leaves 513 survivors from the 1851 Step-29 survivors."
+C_CLUSTER_A_STEP31_REFERENCE_STATUS,ModeB,step31_mode_b_consistency_discriminator,narrow,"The reference support passes the conjoined predicate but is not uniquely distinguished."
+C_CLUSTER_A_STEP31_GATES,ModeB,step31_mode_b_consistency_discriminator,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and no-single-axiom gates pass."
+C_CLUSTER_A_STEP31_VERDICT,ModeB,step31_mode_b_consistency_discriminator,verdict,"Verdict is NARROW: the consistency predicate supplies progress but not a unique landing."
+C_CLUSTER_A_STEP31_NONCLAIM_BOUNDARY,ModeB,step31_mode_b_consistency_discriminator,honesty,"Finite intrinsic-discriminator diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

@@ -1,0 +1,24 @@
+{
+  "step": 7,
+  "orientation": "E042 earned continuation",
+  "active_residual": "R_cluster_b_after_step6_shared_frame_robustness",
+  "candidate_move": "Stress E042 divergence/stabilization with a Lorentzian curvature toy and compute post-locus continuation by U_good.",
+  "final_verdict": {
+    "type": "E042_earned_continuation_constructed_finite_toy",
+    "lorentzian_K_diverges": true,
+    "L_R_stabilizes": true,
+    "GR_terminates": true,
+    "U_good_finite_post_locus": true,
+    "U_good_generated_by_rule": true,
+    "U_bad_fails": true,
+    "earned_continuation_grade": "finite-toy-diagnostic",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "curvature": "lorentzian_curvature_step7.csv",
+    "earned_continuation": "earned_continuation_step7.csv",
+    "controls": "controls_step7.csv",
+    "next_live_option": "Cluster_B_external_frame_transfer_review_or_R6_followup"
+  }
+}

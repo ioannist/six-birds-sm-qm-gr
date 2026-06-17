@@ -1,0 +1,2 @@
+reproduced_step35_survivors,precise_unbroken_survivors,single_factor_survives_precise_test,currency_minimum_survivors,selected_structure,target_passes_currency,target_passes_currency_diagnostic,target_distinguished,verdict,next_grammar_delta
+12,12,True,8,,False,True,False,SMALL_NEUTRAL_FAMILY_currency_rescue_REJECTED,"accept the small neutral family {2|3,4}; scalar-stage currency is diagnostic_only/rejected as shape-in-disguise and minimality-like, so continue to Step-38 clean-separation or the matter-content boundary"

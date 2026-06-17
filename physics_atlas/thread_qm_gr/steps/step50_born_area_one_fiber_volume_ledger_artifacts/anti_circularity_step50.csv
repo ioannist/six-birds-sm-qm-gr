@@ -1,0 +1,6 @@
+gate,passes,evidence
+f39_is_geometric_mincut_not_state_spectrum,True,F39 source is Step44 mincut_entropies; entropy_from_region is not used for the F39 ledger.
+strict_saturation_gap_not_identity,True,"A-region ratios 0.998569409268,0.997269198019,0.999458347329"
+seed_invariance,True,"area_A values [1.0986122886681098, 1.0986122886681098, 1.0986122886681098]; born_A values [1.0970406241100714, 1.095612196054406, 1.0980172223879503]"
+shared_monogamy_class,True,I3_geom=-8.881784197e-16; I3_born=-0.0363459273725
+ghz_breaks_combiner,True,GHZ I3=0.69314718056; mincut I3=-4.4408920985e-16

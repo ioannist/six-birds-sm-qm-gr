@@ -1,0 +1,7 @@
+{
+  "description": "paper/ LaTeX build package for the current physics paper.",
+  "source": "paper/source",
+  "entrypoint": "paper/main.tex",
+  "build_output": "paper/build/main.pdf",
+  "flat_output": "paper/build/main_flat.tex"
+}

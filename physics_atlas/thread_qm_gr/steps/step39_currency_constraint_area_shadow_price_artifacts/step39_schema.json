@@ -1,0 +1,16 @@
+{
+  "active_residual": "E018 positive relation sub-residual: area as shadow-price of entanglement",
+  "can_fail_control_result": "collapsed",
+  "computed_k_refinement_1": 1.44269504089,
+  "computed_k_refinement_2": 1.44269504089,
+  "final_verdict": "SHADOW_PRICE_RELATION_DERIVED",
+  "frame_transfer_certified": false,
+  "k_refinement_abs_drift": 0.0,
+  "main_object": "finite holographic boundary-Bell carrier extending the QM-GR co-sourcing layer L",
+  "new_physics_claim": false,
+  "orientation": "ModeB_E018_currency_constraint_area_shadow_price",
+  "other_law_landing_legs_attempted": false,
+  "root_landed": false,
+  "rt_recognition_landed": true,
+  "step": 39
+}

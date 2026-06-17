@@ -1,0 +1,3 @@
+order_id,order_type,order,partial_depth,selected_candidate_id,selected_structural_rank,selected_structural_score,revealed_facets,genuine_final_degeneracy,genuine_collapses,landscape_final_degeneracy,landscape_collapses,landscape_support_ids
+adversarial_delay_genuine,adversarial,uv_code+texture_code+rep_code+gauge_code+n_gen+ew_code+vacuum_code,4,n_00000,1,103.900000,uv_code+texture_code+rep_code+gauge_code,1,True,27,False,n_00000;n_00216;n_00432;n_00009;n_00225;n_00441;n_00018;n_00234;n_00450;n_00001;n_00217;n_00433
+adversarial_force_landscape,adversarial,vacuum_code+ew_code+texture_code+n_gen+gauge_code+rep_code+uv_code,4,n_00000,1,103.900000,vacuum_code+ew_code+texture_code+n_gen,1,True,6,False,n_00000;n_01620;n_06480;n_08100;n_00003;n_01623

@@ -1,0 +1,9 @@
+audit_item,status,scope,evidence,residual
+candidate_selected,selected,"Mode A P3 import","Asymptotic safety is the leading named source specifically targeting perturbative nonrenormalizability through a UV fixed point.","None at selection level."
+closure_p3_route_mismatch,pass_for_child,"P3 sub-sector","Under the non-Gaussian fixed-point and finite-critical-surface assumptions, the continuum limit supplies a recognition source for P3 route closure. The finite toy P3 Xi is zero at both levels.","Assumptions remain external."
+fixed_point_assumption,external_content,"recognition status","Existence of the required fixed point and finite-dimensional UV critical surface is not established by Step 3; functional-RG evidence is truncation-dependent.","External source obligation."
+scope_amplitude_geometry,fail,"amplitude sector","AS-like lens does not include a quantum-geometry state/discrete amplitude source in the declared toy; normalized Xi = 1.0.","Handled by LQG child if accepted."
+scope_area_shadow_price,fail,"area sector","AS-like lens does not include boundary entanglement or RT-like area-shadow ledger; normalized Xi = 1.0.","Handled by HED child if accepted."
+target_lineage_non_equivalence,pass_for_child,"no-smuggling","AS is narrower than the canonical E018 root and does not restate the whole closure.","Cannot be promoted beyond P3-only child."
+finite_xi_diagnostic,p3_only_closure,"declared finite toy","P3 normalized Xi = 0.0 at both levels; amplitude and area normalized Xi = 1.0 at both levels.","R_child_E018_after_HED_LQG_AS_coupled_joint_gap."
+recognition_lane_status,mapped,"Mode A sequence","Step 1 HED covers area, Step 2 LQG covers amplitude/P3 profile, Step 3 AS covers P3-only RG profile.","Next live target is the coupling audit."

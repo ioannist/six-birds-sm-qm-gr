@@ -1,0 +1,2 @@
+target,relation_to_canonical_root,parent_residual,status,source_artifacts
+global-quotient-recovery,sub_residual of the SM-gauge-structure-selection canonical root,"algebra-level su(3)+su(2)+u(1) selected structure, global quotient not certified",GLOBAL_QUOTIENT_RECOVERED_SELECTION_BLIND,steps/step55_mode_b_global_quotient_artifacts/global_quotient_step55.py

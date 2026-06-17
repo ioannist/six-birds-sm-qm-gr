@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step47_GUT_SM_nonfactorization,47,finite interaction/generator states from Step41 colored coset witnesses,Foundations III Delta_fact both directions,No physical channel is inferred from the structural readout comparison.,"The computation can distinguish refinement, equivalence, or incomparability; it returns one directional defect.",Physical two-stage status would need independent TopDownChannel evidence outside this finite readout comparison.

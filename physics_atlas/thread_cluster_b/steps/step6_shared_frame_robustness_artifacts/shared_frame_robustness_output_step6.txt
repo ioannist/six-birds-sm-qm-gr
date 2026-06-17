@@ -1,0 +1,8 @@
+Cluster B Step 6 shared-frame robustness
+Verdict: shared_frame_robustness_established
+readout min obstruction d4: 3
+readout min obstruction d5: 1
+genuine enrichment min obstruction d4: 3
+genuine enrichment min obstruction d5: 1
+positive detection controls: pass
+smuggling detection controls: pass

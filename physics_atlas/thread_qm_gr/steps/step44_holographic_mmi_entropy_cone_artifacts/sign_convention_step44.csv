@@ -1,0 +1,3 @@
+name,formula,holographic_condition,control_expected,reason
+standard_I3_used_for_verdict,S(A)+S(B)+S(C)+S(ABC)-S(AB)-S(AC)-S(BC),I3_standard <= 0,GHZ has I3_standard > 0,This matches I(A:B)+I(A:C)<=I(A:BC) and the GHZ violation described in the prompt.
+prompt_expanded_formula_recorded_as_negated,S(AB)+S(AC)+S(BC)-S(A)-S(B)-S(C)-S(ABC),negative of standard convention,GHZ has negative value under this sign,The prompt's expanded formula is the negative of its mutual-information equivalence.

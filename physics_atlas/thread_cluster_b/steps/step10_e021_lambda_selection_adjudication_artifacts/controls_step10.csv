@@ -1,0 +1,5 @@
+control_id,expected,passes_guard,computed_witness
+broad_landscape_fails_to_collapse,broad_final_degeneracy_gt_1,True,10->10->10->10->10->10
+relaxation_collapses,relaxation_final_degeneracy_1,True,10->10->5->1->1->1
+sharp_measure_collapses,sharp_measure_final_degeneracy_1,True,10->10->7->3->2->1
+selection_carrier_not_field_pair,Lambda_grid_plus_degeneracy_audit,True,carrier=Lambda_grid; audit=effective_support_under_refinement

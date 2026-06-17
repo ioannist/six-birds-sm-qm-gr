@@ -1,0 +1,7 @@
+item,status,detail,source_artifacts
+Step42_random_tensor_contraction,input,fixed Step42 random tensor machinery and seeds,steps/step42_faithful_holographic_rt_enrichment_artifacts/faithful_holographic_rt_enrichment_step42.py
+A_B_C_regions,input,"A=L0, B=L1, C=R0; D is remaining purifier/complement",steps/step44_holographic_mmi_entropy_cone_artifacts/sign_convention_step44.csv
+contracted_region_entropies,generated,partial traces from Step42 contracted boundary states,steps/step44_holographic_mmi_entropy_cone_artifacts/region_entropy_details_step44.csv
+mincut_region_entropies,generated,separate max-flow/min-cut over the Step42 bulk graph,steps/step44_holographic_mmi_entropy_cone_artifacts/mmi_mincut_step44.csv
+GHZ_control,input_control,explicit 4-party non-geometric state used as can-fail witness,steps/step44_holographic_mmi_entropy_cone_artifacts/mmi_control_step44.csv
+MMI_values,generated,computed from seven entropies per case,steps/step44_holographic_mmi_entropy_cone_artifacts/mmi_entropy_cone_sim_step44.csv

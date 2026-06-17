@@ -1,0 +1,9 @@
+gate,status,scope,evidence
+C1_f35_source_read,pass,source,"F35 lines 6470-6523 were read; source record saved."
+C2_scale_quotients_built,pass,scale tower,"Q1_fine16 Q2_mid8 Q3_coarse4 and coarsening matrices c1 c2 are saved."
+C3_joint_law_descends,pass,F35,"Joint law has O_n count 0 at both scale steps."
+C4_joint_law_renormalizes,pass,F35,"Joint law has c-fiber violation count 0 at both scale steps."
+C5_control_fails,pass,control,"Non-descending control fails F35; it has fiber violations at Q1->Q2 and O_n obstruction at Q2->Q3."
+C6_coarsening_used,pass,no-smuggling,"Every F35 row records coarsening_used=True."
+C7_no_root_landing,pass,no-smuggling,"Schema root_landed is false and external review remains required."
+

@@ -1,0 +1,7 @@
+item,status,detail
+selected_generation_content,read_from_step48,5 multiplets / 15 Weyl states
+N_carrier,input,Neutral range N=0..6; active nonempty values N=1..6; no target bonus.
+closure_chain_per_N,computed,blind=True
+minimality_selector,computed_negative_control,N=1
+cp_phase_formula,computed_recognition_bound,(N-1)(N-2)/2 for N>=1; lower_bound_N=3
+verdict,computed,N_GEN_BLIND_TYPE_LIMIT

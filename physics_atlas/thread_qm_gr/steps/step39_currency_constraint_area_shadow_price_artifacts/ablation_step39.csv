@@ -1,0 +1,6 @@
+ablation,replacement,result,evidence,load_bearing
+remove_A3_boundary_Bell_link_preparation,product_state_same_boundary,relation fails,product control has S=0 with nonzero area,True
+replace_A3_with_non_holographic_extra_entanglement,volume_law_extra_pairs,relation fails,volume-law controls have positive residual against computed k,True
+remove_A2_boundary_edge_lens,no geometric boundary measure,area readout undefined,no area variable remains to price,True
+remove_A5_budget_constraint,slack budget,shadow price collapses,slack control recovers zero MaxCal price,True
+keep_all_axioms,none,relation holds at both refinements,relation residuals are below tolerance,False

@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+C_STEP39_QM_GR_ANCHOR,active,39,"extend the QM-GR co-sourcing layer, not SM selection"
+C_STEP39_REAL_ENTANGLEMENT,active,39,S(A) computed as von Neumann entropy of rho_A
+C_STEP39_CAN_FAIL_CONTROLS,active_validator,39,product/volume/slack controls must collapse the relation or price
+C_STEP39_NO_CONTINUUM_CONSTANT_HARDCODE,active_validator,39,"exchange rate computed from carrier, not input"

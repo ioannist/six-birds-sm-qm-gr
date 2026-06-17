@@ -1,0 +1,18 @@
+{
+  "step": 49,
+  "orientation": "Batch_B_review_response_precision_scoping_fixes",
+  "active_residual": "qm_gr_common_carrier_v1 review packet R1/R2/R4",
+  "main_object": "relabel caveat warrant-extension and GROUND reframe only",
+  "verdict": "REVIEW_RESPONSE_FIXES_APPLIED",
+  "ground_landing_reframe": true,
+  "warrant_extended_via_step26": true,
+  "weak_rt_ladder_renamed": true,
+  "door_test_caveat_added": true,
+  "numbers_unchanged": true,
+  "validators_47_48_pass": true,
+  "new_computation": false,
+  "new_result": false,
+  "new_physics_claim": false,
+  "frame_transfer_certified": false,
+  "root_landed": false
+}

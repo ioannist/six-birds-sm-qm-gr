@@ -1,0 +1,6 @@
+check,passes,evidence
+uses_slot_count_prior,False,"standardness uses charged-matter type, not slot count"
+uses_parent_or_larger_group_prior,False,no parent or larger-group data enter the predicate
+requires_fixed_route_number,False,single-factor rows are evaluated and pass the relaxed base
+uses_size_ordering_selector,False,no size ordering is used
+hides_circularity,False,circularity is explicitly reported

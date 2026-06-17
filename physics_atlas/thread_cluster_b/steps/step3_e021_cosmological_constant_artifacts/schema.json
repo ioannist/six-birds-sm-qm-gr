@@ -1,0 +1,31 @@
+{
+  "step": 3,
+  "orientation": "E021 construction as audited P5/P6 vacuum readout of L",
+  "active_residual": "R_cluster_b_after_step2_E042_boundary_constructed -> E021_vacuum_budget",
+  "carrier": {
+    "source": "steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv",
+    "mode": "L_ext=(d0,d1,d2,d3,d4_subplanck,d5_vacuum)",
+    "vacuum_readout": "d5_vacuum"
+  },
+  "candidate_move": "Build P5 vacuum currency, P6 toy UV-to-IR ledger, P2 vacuum-selection ensemble, non-factorization against UV Sigma, and can-fail controls.",
+  "final_verdict": {
+    "type": "E021_audited_vacuum_readout_constructed_finite_toy",
+    "firm_part_selected_run_readout": true,
+    "firm_part_missing_audit_ledger": false,
+    "modeled_p6_ledger_illustrative": true,
+    "contested_distinct_audit_currency_reading": true,
+    "P5_currency_built": true,
+    "P6_ledger_booked": true,
+    "P2_selection_built": true,
+    "nonfactorization_signature_computed": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "toy_mismatch_ratio": 1000000000000.0,
+    "toy_ratio_status": "modeled_not_real_value",
+    "selected_candidate": "vac_A_selected",
+    "next_live_option": "Cluster_B_consolidation_or_manager_selected_followup"
+  }
+}

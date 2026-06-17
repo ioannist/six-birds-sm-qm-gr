@@ -1,0 +1,7 @@
+control_id,expected,obstruction_count,passes_guard,witness
+positive_detection_d3_from_GR_sigma,descendable,0,True,none
+positive_detection_d0_times_d2_from_poly_GR_sigma,descendable,0,True,none
+smuggling_detection_d4_definable_when_added,definable_but_flagged,0,True,none
+smuggling_detection_d5_definable_when_added,definable_but_flagged,0,True,none
+genuine_enrichment_d4_still_non_descending,non_descending,3,True,min over genuine enrichments
+genuine_enrichment_d5_still_non_descending,non_descending,1,True,min over genuine enrichments

@@ -1,0 +1,51 @@
+{
+  "step": 15,
+  "artifact_dir": "steps/step15_minimal_anomaly_support_artifacts",
+  "enumeration": {
+    "gauge_group_input": "SU(3)xSU(2)xU(1)",
+    "su3_reps": [
+      "1",
+      "3",
+      "3bar"
+    ],
+    "su2_reps": [
+      "1",
+      "2"
+    ],
+    "hypercharge_units": [
+      -6,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "hypercharge_unit_denominator": 6,
+    "max_distinct_weyl_multiplet_types": 5,
+    "raw_candidate_count": 9705619
+  },
+  "minimality_measure": {
+    "primary": "irreducible chiral multiplet count after vector-like/trivial quotient",
+    "tie_breaker_1": "total Weyl component count",
+    "tie_breaker_2": "lexicographic canonical support label for deterministic ordering only"
+  },
+  "final_verdict": {
+    "type": "honest_no_go_minimality_insufficient",
+    "raw_anomaly_free_count": 1161,
+    "irreducible_chiral_support_count": 28,
+    "non_sm_irreducible_support_count": 27,
+    "sm_present_and_anomaly_free": true,
+    "sm_rank": 28,
+    "sm_lands": "beaten",
+    "competitors_at_or_below_sm": 27,
+    "can_fail_control_non_sm_support_exists": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "next_principle": "minimality must be supplemented by an electroweak quark-lepton participation or observed-charge sector condition"
+}

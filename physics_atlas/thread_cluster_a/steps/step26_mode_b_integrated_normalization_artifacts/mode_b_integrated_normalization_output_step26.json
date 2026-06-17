@@ -1,0 +1,36 @@
+{
+  "audit_target_relation_from_step21": "3/8",
+  "frame_transfer_certified": false,
+  "generated_structure": {
+    "dimensions": "2|3",
+    "ranks": "1|2",
+    "selected_charge_vector": "3|-2",
+    "structure_id": "r1|2"
+  },
+  "mode": "ModeB_integrated_normalization",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "stress integrated normalization on Step-24 wider closers and richer parent-shadow grammars",
+  "normalization": {
+    "charge_unit": "1/6",
+    "dimensions": "2|3",
+    "normalization_ratio": "5/3",
+    "ranks": "1|2",
+    "selected_charge_vector": "3|-2",
+    "sin2_decimal": "0.375000000000",
+    "sin2_theta_w": "3/8",
+    "source": "step23_generated_minimal_closure",
+    "status": "COMPUTED",
+    "structure_id": "r1|2",
+    "trace_t3_2": "1/2",
+    "trace_y2": "5/6",
+    "verdict": "INTEGRATED"
+  },
+  "root_landed": false,
+  "six_gates_pass": true,
+  "source_step": "steps/step23_mode_b_factor_count_unsmuggle_artifacts",
+  "stage_ii_pass": true,
+  "step": 26,
+  "typed_no_go": false,
+  "verdict": "INTEGRATED"
+}

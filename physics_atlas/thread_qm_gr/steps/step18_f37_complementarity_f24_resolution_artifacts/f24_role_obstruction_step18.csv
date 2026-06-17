@@ -1,0 +1,4 @@
+state_i,state_j,q_QM_gap,role_readout_gap
+0,1,0.0,0.7999999999999999
+2,3,0.0,0.9
+6,7,0.0,0.8

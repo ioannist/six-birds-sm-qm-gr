@@ -1,0 +1,11 @@
+gate,status,scope,evidence
+C1_prior_rungs_loaded,pass,input,"Step 13, Step 14, and Step 15 verdict payloads are loaded and marked passing."
+C2_candidate_L_recovers_audited_shadows,pass,full ladder,"candidate_L adequacy residual is 0.0 at both levels."
+C3_qm_alone_control_fails,pass,control,"QM-alone adequacy residual minimum is 0.47143714685247295."
+C4_gr_alone_control_fails,pass,control,"GR-alone adequacy residual minimum is 0.44578629323337904."
+C5_union_control_fails,pass,anti-union,"Union adequacy residual is 1.4142135623730951 because compression and single-layer criteria fail."
+C6_compression_guard,pass,anti-union,"d_L=4 and d_union=6."
+C7_five_constraints_verified,pass,constraint checklist,"All five rows in five_constraint_checklist_step16.csv are verified."
+C8_no_circular_test,pass,no-smuggling,"The adequacy test combines endpoint recovery, audit recovery, refinement, compression, and controls, not distance to itself."
+C9_external_review_flag_named,pass,frontier,"External review flag is EXTERNAL_REVIEW_FRAME_TRANSFER_GATE."
+

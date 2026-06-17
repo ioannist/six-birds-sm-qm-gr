@@ -1,0 +1,27 @@
+{
+  "artifact_root": "steps/step27_mode_b_normalization_robustness_artifacts",
+  "audit_target_relation_from_step21": "3/8",
+  "consequence_consistency": true,
+  "convention_can_fail": true,
+  "convention_count": 6,
+  "flipping_conventions": 4,
+  "frame_transfer_certified": false,
+  "generated_structure": {
+    "dimensions": "2|3",
+    "ranks": "1|2",
+    "selected_charge_vector": "3|-2",
+    "structure_id": "r1|2"
+  },
+  "matching_conventions": 2,
+  "mode": "ModeB_normalization_robustness",
+  "natural_flip_count": 1,
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "root_landed": false,
+  "six_gates_pass": true,
+  "source_step": "steps/step23_mode_b_factor_count_unsmuggle_artifacts",
+  "stage_ii_pass": true,
+  "step": 27,
+  "typed_no_go": true,
+  "verdict": "FRAGILE_CONVENTION_DEPENDENT"
+}

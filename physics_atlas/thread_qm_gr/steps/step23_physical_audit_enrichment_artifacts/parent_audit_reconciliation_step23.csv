@@ -1,0 +1,3 @@
+case,shared_subblock_residual,parent_quadratic_audit_exists,parent_restricts_to_qm_residual,parent_restricts_to_gr_residual,qm_quadratic_value_residual,gr_quadratic_value_residual,f51_status_compatible
+L_physical_quadratic_audits,0.0,True,0.0,0.0,0.0,0.0,True
+incompatible_physical_control,0.22484880190683132,False,1.0,1.0,1.0,1.0,False

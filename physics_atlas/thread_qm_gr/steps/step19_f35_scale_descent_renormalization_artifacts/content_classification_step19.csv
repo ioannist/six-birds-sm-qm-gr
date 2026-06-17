@@ -1,0 +1,15 @@
+artifact,output,classification,grade,scope
+scale_descent_step19.py,"Finite F35 scale descent classifier","analytical structural","finite-carrier diagnostic","Step 19 carrier only"
+scale_structure_step19.json,"Scale quotients coarsening matrices joint states and law values","analytical structural","finite-carrier diagnostic","Q1/Q2/Q3 tower"
+f35_scale_descent_step19.csv,"F35 descent and c-fiber constancy rows for joint law and control","analytical structural","finite-carrier diagnostic","Two scale steps"
+obstruction_witnesses_step19.csv,"O_n and c-fiber obstruction witnesses for the control","analytical structural","finite-carrier diagnostic","Control law"
+fiv_f35_source_record_step19.json,"FIV file and F35 lines read","organizational/audit","diagnostic-complete","Step 19"
+fiv_f35_source_extract_step19.md,"Readable F35 source record","organizational/audit","diagnostic-complete","Step 19"
+scale_descent_output_step19.json,"Verdict payload and no-smuggling flags","organizational/audit","diagnostic-complete","Step 19"
+scale_descent_output_step19.txt,"Readable numerical summary","organizational/audit","diagnostic-complete","Step 19"
+step19_results_summary.md,"F35 orientation scale structure controls and verdict","organizational/audit","diagnostic-complete","Step 19"
+step19_schema.json,"Machine-readable schema and verdict","organizational/audit","diagnostic-complete","Step 19"
+nonclaim_boundary_step19.md,"Mandatory nonclaim boundary","organizational/audit","diagnostic-complete","Step 19"
+construction_gate_audit_step19.csv,"Gate and source-read audit","organizational/audit","diagnostic-complete","Step 19"
+run_step19.py,"Validation script for artifacts F35 rows control failure coarsening use and overclaim scan","organizational/audit","diagnostic-complete","Step 19"
+

@@ -1,0 +1,3 @@
+joint_name,a_after_j_residual,b_after_j_residual,commuting_conditions_hold,native_status,admissible_joint
+L_joint,0.0,0.0,True,candidate,True
+product_control,0.0,0.0,True,failed_G_nosmuggle,False

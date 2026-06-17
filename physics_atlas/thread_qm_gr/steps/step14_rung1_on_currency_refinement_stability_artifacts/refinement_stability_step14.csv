@@ -1,0 +1,5 @@
+transition,case,coarse_cells,fine_cells,lift_rows,lift_cols,qm_shadow_commutator_residual,gr_shadow_commutator_residual,combined_commutator_residual,d_qm,d_gr,d_u,d_union,compression_pass,distinctness_residual,distinctness_pass,shadow_structure_survives,status
+1->2,stable_lift,4,8,32,16,0.0,0.0,0.0,3,3,4,6,True,1.1547005383792517,True,True,passes_candidate
+1->2,mixing_control,4,8,32,16,0.3947573094109004,0.39895697345286085,0.5612486080160912,3,3,4,6,True,1.1547005383792517,True,False,fails_as_control_mixing
+2->3,stable_lift,8,16,64,32,0.0,0.0,0.0,3,3,4,6,True,1.1547005383792517,True,True,passes_candidate
+2->3,mixing_control,8,16,64,32,0.3947573094109004,0.3989569734528608,0.5612486080160912,3,3,4,6,True,1.1547005383792517,True,False,fails_as_control_mixing

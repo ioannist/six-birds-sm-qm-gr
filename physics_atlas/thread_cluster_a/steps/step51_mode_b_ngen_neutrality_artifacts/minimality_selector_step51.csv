@@ -1,0 +1,2 @@
+selector,computed_choice_N,selects_observed_value,classification,detail
+copy_count_minimality,1,False,negative_control_wrong_selector,Fewest nonempty passing copies selects the one-copy carrier.

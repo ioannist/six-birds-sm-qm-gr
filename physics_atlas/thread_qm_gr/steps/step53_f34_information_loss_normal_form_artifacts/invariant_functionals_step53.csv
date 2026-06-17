@@ -1,0 +1,4 @@
+seed,functional,definition_source,boundary_recovery,boundary_recovery_residual,gauge_invariant_checked
+101,spectrum((left.T@left)@(right.T@right)),"interior tensors left,right",nonzero singular values squared of left@right.T,1.91842185206e-15,True
+202,spectrum((left.T@left)@(right.T@right)),"interior tensors left,right",nonzero singular values squared of left@right.T,1.54647593836e-15,True
+303,spectrum((left.T@left)@(right.T@right)),"interior tensors left,right",nonzero singular values squared of left@right.T,2.08291906038e-15,True

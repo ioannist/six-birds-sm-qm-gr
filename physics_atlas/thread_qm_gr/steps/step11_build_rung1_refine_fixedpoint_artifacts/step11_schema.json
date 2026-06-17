@@ -1,0 +1,62 @@
+{
+  "step": 11,
+  "orientation": "Mode B build first framework rung",
+  "active_residual": "R_child_E018_framework_rung_map_v1",
+  "carrier": {
+    "kind": "refinement-indexed finite two-channel carriers",
+    "levels": [1, 2, 3],
+    "carrier_n": "R^(2 * 2^n), record channel plus locality channel",
+    "closure": "idempotent projection to shared record/locality fixed-point subspace",
+    "lift": "cell-duplication refinement matrix L_{n->n+1}",
+    "qm_side_coarsening": "record-channel projection",
+    "gr_side_coarsening": "locality-channel projection",
+    "negative_control": "identity placeholder closure with same lift",
+    "matrix_artifact": "structured_matrices_step11.json",
+    "no_smuggling_controls": {
+      "one_hot_set_cover_used": false,
+      "literature_program_terms_used": false,
+      "target_layer_inserted": false,
+      "endpoint_derivation_claimed": false,
+      "placeholder_passes": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode B",
+    "rung_id": "RUNG_1_REFINE_FIXEDPOINT",
+    "predicate_name": "refinement_carrier_fixed_point_lift",
+    "operational_content": "structured closure and lift matrices whose fixed points commute across refinement and support both side coarsenings",
+    "target_lineage_non_equivalence": "The rung builds only the first framework intermediate signature and does not claim endpoint closure."
+  },
+  "final_verdict": {
+    "type": "rung1_built_candidate_external_review_required",
+    "summary": "The structured refinement-lift layer passes the adequacy test while the placeholder fails; endpoint-only controls do not recover the rung fixed point.",
+    "grade": "finite-carrier diagnostic candidate build",
+    "root_landed": false,
+    "rung_built": true,
+    "external_review_required": true,
+    "next_build": "RUNG_2_NEUTRAL_CURRENCY",
+    "child_residuals": [
+      "R_child_E018_after_RUNG_1_REFINE_FIXEDPOINT_candidate"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "xi_orientation": "structured-map adequacy residual: commutator plus fixed-point and descent discrepancies",
+    "adequacy_results": {
+      "built_transition_1_to_2": 0.0,
+      "built_transition_2_to_3": 0.0,
+      "placeholder_transition_1_to_2": 0.8780420215921064,
+      "placeholder_transition_2_to_3": 1.2931288694246752,
+      "endpoint_nonfactorization_min": 0.7870061694592002
+    },
+    "construction_file": "rung1_construction_step11.json",
+    "matrix_file": "structured_matrices_step11.json",
+    "adequacy_output": "adequacy_output_step11.json",
+    "content_classification_file": "content_classification_step11.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step11.md",
+    "lineage_update": "../../mode_b_target_lineage.csv",
+    "grammar_manifest": "../../mode_b_grammar_manifest.csv",
+    "constraint_ledger": "../../mode_b_constraint_ledger.csv"
+  }
+}

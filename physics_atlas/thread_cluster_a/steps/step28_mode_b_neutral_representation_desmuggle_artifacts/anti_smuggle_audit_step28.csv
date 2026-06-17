@@ -1,0 +1,7 @@
+gate,passes,evidence
+no_slot_count_lock,True,no slot-count equality guard is used; cubic anomaly rows are representation sums
+neutral_rep_set,True,"fund, antifund, antisym2, sym2, adjoint, and singlet are declared"
+cubic_sum_self_check,True,cubic entries are sums of A(R) over enumerated TypeRow objects
+negative_controls,True,bad Step-14 candidates remain anomalous in their source calibration table
+stage_ii_calibration,True,Step-14 selected reference support is present among neutral closers
+no_physical_claim,True,finite neutral window only; no value or physical gauge derivation claimed

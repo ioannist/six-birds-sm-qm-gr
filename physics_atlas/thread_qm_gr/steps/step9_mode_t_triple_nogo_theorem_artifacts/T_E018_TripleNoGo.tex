@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\spanop}{span}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{T\_E018\_TripleNoGo: Bounded-Grammar Triple-Bridge No-Go}
+
+\subsection*{Status and Grade}
+
+This is a Mode T consolidation theorem for the E018 QM--GR construction thread.
+Its grade is:
+\[
+  \text{finite-carrier diagnostic theorem, bounded to }G^*.
+\]
+It is not an unconditional analytic theorem and not an absolute impossibility
+claim.  It records the construction-grade exit state of the bounded cascade.
+
+\begin{definition}[The bounded grammar \(G^*\)]
+Let \(G^*\) be the union of the following audited grammar fragments:
+\[
+G^*=G_{\mathrm{rec}}\cup G_{\mathrm{atom}}\cup G_{\mathrm{run}}.
+\]
+\begin{itemize}
+\item \(G_{\mathrm{rec}}\): the recognition imports tested in Steps 1--4:
+holography/AdS--CFT with RT/HRT, LQG/canonical quantum geometry, and
+asymptotic safety.
+\item \(G_{\mathrm{atom}}\): the posited-atom-shadow designs \(G_{v1}\)--\(G_{v3}\):
+shared currency \(u_i\), route-holonomy \(v\), holographic-RG flow \(w\), and
+the bounded triple-audit search over these rows.
+\item \(G_{\mathrm{run}}\): the Step 8 local stochastic binary-ring run grammar
+\(G_{v4}\), with sector readouts measured after the run and an out-of-sample
+interaction witness.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Triple shared-completion bridge]
+The triple bridge \(B_T\) is the demand for one completion \(E\) and one P6 audit
+\(D\) that jointly couple the three sector rows:
+\[
+  A=\text{area as entanglement shadow price},\quad
+  G=\text{amplitude over geometry},\quad
+  R=\text{P3 route closure}.
+\]
+In the finite-carrier diagnostics \(B_T\) is represented by the row \(t\), or
+in the run grammar by the demand that the measured sector plateau lies near a
+single diagonal fixed point with an independent held-out witness.
+\end{definition}
+
+\begin{definition}[Non-circular generation]
+A mechanism in \(G^*\) generates \(B_T\) non-circularly only if all of the
+following hold:
+\begin{enumerate}
+\item \(B_T\) is not inserted as a native source row or substrate input.
+\item \(B_T\) is not read off from the pairwise bridge union \(u_i,v,w\) alone.
+\item In a run grammar, the substrate is not post-processed or defined so that
+the three sector readouts are equal by construction.
+\item Any witness used for \(B_T\) has independently measured content not
+reducible to pairwise statistics and not equal to \(t\).
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Rejected smuggling routes]
+The three smuggling routes rejected in this thread are:
+\begin{enumerate}
+\item \emph{Insertion}: use \(t\) itself as a source row or input.
+\item \emph{Pairwise union}: treat \(\spanop(u_i,v,w)\) as a triple package.
+\item \emph{Rigging}: force the run-readout plateau onto the diagonal, or place
+an equivalent triple objective into the substrate.
+\end{enumerate}
+An orthogonal witness with no audited map to \(t\) is not a smuggling route, but
+it is insufficient.
+\end{definition}
+
+\begin{theorem}[Bounded triple-bridge no-go in \(G^*\)]
+Within \(G^*\), the triple shared-completion bridge \(B_T\) is not closable
+non-circularly.  More precisely, no audited mechanism in
+\[
+G_{\mathrm{rec}}\cup G_{\mathrm{atom}}\cup G_{\mathrm{run}}
+\]
+generates one shared completion fixed point plus one P6 audit across \(A,G,R\)
+without falling into insertion, pairwise-union overread, rigging, or
+insufficiency.
+\end{theorem}
+
+\begin{proof}
+The proof is by audited exhaustion of the bounded grammar \(G^*\).
+
+\paragraph{Recognition fragment \(G_{\mathrm{rec}}\).}
+Step 4 recombines the three recognized profiles from holography, LQG, and
+asymptotic safety.  The sector-only span has normalized residual \(0\), but this
+is the rejected sector-union control.  When compatibility rows are included,
+the four bridge rows have normalized residual \(1.0\) and the coupled target has
+raw residual \(4.0\), normalized residual \(4/7=0.5714285714285714\), at both
+refinement levels \(r=2,4\).  Thus the existing recognition imports do not
+supply the triple bridge inside \(G_{\mathrm{rec}}\).
+
+Artifact citation:
+\[
+\texttt{steps/step4\_mode\_c\_recombination\_artifacts/step4\_schema.json}.
+\]
+
+\paragraph{Posited-atom fragment \(G_{\mathrm{atom}}\).}
+Steps 5 and 6 generate the three pairwise bridges using \(u_i\), \(v\), and
+\(w\), leaving only \(B_T\).  Step 7 then exhausts the bounded \(G_{v3}\)
+triple-audit search:
+\[
+\Xi(B_T\mid \spanop(u_i,v,w))=1.0
+\]
+at \(r=2\) and \(r=4\), and the coupled residual remains \(1/7\).  Adding a
+decimal form, this is \(0.14285714285714285\).  Adding a
+dependent pairwise-union row leaves the same residual.  Adding an orthogonal
+witness row without an audited map to \(t\) also leaves the same residual.
+Adding \(t\) itself gives zero residual, but that is insertion and is excluded
+by non-circular generation.
+
+Artifact citations:
+\[
+\texttt{steps/step7\_mode\_b\_gv3\_triple\_artifacts/step7\_schema.json},
+\quad
+\texttt{steps/step7\_mode\_b\_gv3\_triple\_artifacts/triple\_audit\_search\_step7.csv}.
+\]
+
+\paragraph{Run fragment \(G_{\mathrm{run}}\).}
+Step 8 tests a structurally different finite stochastic substrate at \(N=32\)
+and \(N=64\).  The measured completion residuals against the diagonal
+fixed-point subspace are
+\[
+0.4947207905172907,\qquad 0.5371910513210945.
+\]
+The held-out interaction witness gains are
+\[
+-0.02326224393247789,\qquad -0.08539192789918792.
+\]
+Both refinements fail the declared run-candidate thresholds.  A forced diagonal
+completion has near-zero residual, but it is post-run rigging and is excluded.
+The pairwise-union statistic is measured only as a rejected control.
+
+Artifact citations:
+\[
+\texttt{steps/step8\_mode\_b\_gv4\_run\_triple\_artifacts/step8\_schema.json},
+\quad
+\texttt{steps/step8\_mode\_b\_gv4\_run\_triple\_artifacts/witness\_audit\_step8.csv}.
+\]
+
+The three fragments cover \(G^*\).  Each route either leaves a positive
+diagnostic residual or reaches zero only by a rejected smuggling route.  Hence
+\(B_T\) is not non-circularly closable within \(G^*\).
+\end{proof}
+
+\subsection*{Seven-Gate Audit Summary}
+
+\begin{enumerate}
+\item Bounded grammar declared: \(G^*\) is explicitly scoped.
+\item Typed target declared: \(B_T\) is the one shared completion and P6 audit.
+\item Non-circularity declared: insertion, pairwise union, and rigging are
+excluded.
+\item Finite-carrier evidence recorded: Steps 4, 7, and 8 provide the residuals.
+\item Target-lineage non-equivalence preserved: the theorem is a no-go scoped to
+\(G^*\), not a root closure claim.
+\item Nonclaim boundary explicit: no claim is made about mechanisms outside
+\(G^*\).
+\item Next grammar obligation declared: \(G_{v5}\) must supply independent
+triple records via a different dynamics class or a named recognition import.
+\end{enumerate}
+
+\begin{remark}[Next obligation]
+The surviving obligation is
+\[
+\texttt{G\_E018\_IndependentDynamicsOrRecognition\_v5}.
+\]
+Literal identifier: \verb|G_E018_IndependentDynamicsOrRecognition_v5|.
+
+It must provide independent triple witness records and pass the same no-smuggling
+checks.  Another native copy of \(t\), another pairwise-union statistic, or a
+post-run forced diagonal does not meet this obligation.
+\end{remark}
+
+\end{document}

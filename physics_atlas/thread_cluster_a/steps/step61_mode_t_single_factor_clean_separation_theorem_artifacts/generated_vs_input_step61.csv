@@ -1,0 +1,6 @@
+item,status,detail
+Step35_substrate_code,imported_frozen,6a378357c3dea96d4e7a51e54c8dbb94af9785d39cb9622c3469d2f6a6462c06
+Step41_defect_code,imported_frozen,ed5be4969244ae18279a9b6fc5ba73977fc9bc47fcec81ff3c25e8ad076e19c0
+single_factor_converse_probe,computed,substrate=12; clean=0
+proof_chain,constructed,substrate -> scalar acts -> residual>=2 -> charged coset vectors -> nonempty defect
+exit_state,computed,constructed_theorem

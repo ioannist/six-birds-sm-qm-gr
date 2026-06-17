@@ -1,0 +1,6 @@
+claim_id,claim,grade,classification,source_artifacts
+gut_trace_relation,The SU5 recognition trace gives hypercharge normalization 5/3 and sin2 theta_W=3/8 at the high scale.,recognition-import-derived-relation,ModeA_E2,steps/step20_gut_recognition_value_relations_artifacts/gut_trace_step20.csv;steps/step20_gut_recognition_value_relations_artifacts/value_relations_step20.csv
+gauge_running_test,One-loop non-SUSY SM running does not cleanly unify the three couplings.,finite-carrier-diagnostic,can-fail-rg-test,steps/step20_gut_recognition_value_relations_artifacts/unification_test_step20.csv;steps/step20_gut_recognition_value_relations_artifacts/rg_running_step20.csv
+sin2_running_comparison,"Running from the best-fit high scale predicts sin2 theta_W(MZ)=0.214358, differing from 0.23122.",finite-carrier-diagnostic,experimental-comparison,steps/step20_gut_recognition_value_relations_artifacts/sin2_running_comparison_step20.csv
+susy_comparison,The SUSY one-loop coefficient comparison gives a much tighter meeting than the non-SUSY SM coefficients.,organizational,comparison-note,steps/step20_gut_recognition_value_relations_artifacts/susy_comparison_step20.csv
+nonclaim_boundary,Value-relations use recognition import; absolute values remain residual.,organizational,scope-boundary,steps/step20_gut_recognition_value_relations_artifacts/nonclaim_boundary.md

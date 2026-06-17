@@ -1,0 +1,5 @@
+a_setting,b_setting,control_quantum_E,lhv_reproduced_E,abs_error,matches
+a0,b0,0.707106781187,0.707106781187,1.7763568394e-15,True
+a0,b1,0.707106781187,0.707106781187,1.7763568394e-15,True
+a1,b0,0,0,0,True
+a1,b1,0,0,0,True

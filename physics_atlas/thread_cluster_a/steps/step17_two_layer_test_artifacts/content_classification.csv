@@ -1,0 +1,6 @@
+claim_id,claim,grade,classification,source_artifacts
+scale_enrichment,"The E043 scale facet is represented by a ratio, quadratic cutoff sensitivity, tuning cost, and relaxation trajectory.",finite-carrier-diagnostic,light-scale-enrichment,steps/step17_two_layer_test_artifacts/scale_enrichment_step17.csv
+carrier_and_measure_kind,The content and scale carriers are disjoint and use distinct measure kinds.,finite-carrier-diagnostic,architecture-characterization,steps/step17_two_layer_test_artifacts/architecture_characterization_step17.csv
+coupling_test,"Scale versus content has zero product coupling and low inherited EW residual, while the gauge-generation control has substantial coupling.",finite-carrier-diagnostic,coupling-diagnostic,steps/step17_two_layer_test_artifacts/coupling_step17.csv;steps/step17_two_layer_test_artifacts/controls_step17.csv
+two_layer_verdict,The finite toy supports two selection layers: content/anomaly selection and scale/naturalness selection.,finite-carrier-diagnostic,architecture-verdict,steps/step17_two_layer_test_artifacts/overall_verdict_step17.json
+nonclaim_boundary,Toy-structural architecture only; no physical scale value or real mechanism is supplied.,organizational,scope-boundary,steps/step17_two_layer_test_artifacts/nonclaim_boundary.md

@@ -1,0 +1,3 @@
+constraint_id,status,detail
+C_STEP42_MULTIEDGE_HOLOGRAPHIC_ENRICHMENT,inherited,random tensor contraction and multi-edge minimal surface
+C_STEP44_MMI_FALSIFIABLE_NOT_UNIVERSAL,active,holographic rows satisfy standard MMI while GHZ violates it

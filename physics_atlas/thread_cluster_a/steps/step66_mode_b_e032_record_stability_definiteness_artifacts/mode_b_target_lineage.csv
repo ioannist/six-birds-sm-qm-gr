@@ -1,0 +1,2 @@
+target,parent_residual,relation_to_canonical_root,status,artifacts
+E032_record_stability_definiteness,E032 single-outcome selection,NEW residual on Cluster A track; record/measurement layer reached by Steps57-59; USER-AUTHORIZED 2026-06-10,NAIVE_RECORD_STABILITY_DOES_NOT_FORCE_SINGLE_OUTCOME,record_stability_scores_step66.csv;nonfactorization_witness_step66.csv

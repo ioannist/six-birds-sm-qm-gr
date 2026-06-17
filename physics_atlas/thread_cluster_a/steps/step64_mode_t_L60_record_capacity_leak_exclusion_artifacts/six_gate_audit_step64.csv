@@ -1,0 +1,9 @@
+gate,passes,evidence
+no_smuggling,True,hypotheses remain substrate and transition_leak_count>0; record cap is scored after
+target_invariance,True,statement is L60: substrate and leak imply fewer than two record tokens
+no_stipulated_descent,True,near-miss table computes tokens from frozen record machinery
+anti_tautology,True,"substrate, leak, and token count are distinct frozen predicates"
+anti_vacuity,True,60 leak-positive substrate rows are exhibited
+anti_circularity,True,anti_circularity_step64.csv exhibits independent witnesses
+uniform_parametric_bound,False,no window-independent charge-linking proof was constructed
+proof_constructed,False,exit is sharpened_external; enumeration is not proof

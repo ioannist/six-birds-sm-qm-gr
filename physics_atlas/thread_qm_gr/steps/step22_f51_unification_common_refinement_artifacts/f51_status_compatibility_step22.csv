@@ -1,0 +1,3 @@
+case,qm_admissible,gr_admissible,shared_overlap_audit_residual,status_compatible,f51_unification_pass
+L_common_refinement,True,True,0.0,True,True
+status_conflict_control,True,False,0.360555127546399,False,False

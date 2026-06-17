@@ -1,0 +1,5 @@
+check,passes,evidence
+uses_slot_count_prior,False,"currency is computed from anomaly-vector audit rows, not a slot-count rule"
+uses_exterior_only_prior,False,carrier is the Step-28 neutral rep enumeration
+uses_larger_group_prior,False,currency depends only on the candidate support's own audit vectors
+reduces_to_target_reference,False,currency minimum leaves 4 non-target supports and excludes the target

@@ -1,0 +1,6 @@
+item,status,detail
+three_factor_window,covered_structurally,all 35 structures with dimensions 2..6
+component_cap,inherited_input,6
+route_completeness_all_factor_row,framework_constraint,Step-31 P3/P6 route completeness requires all-factor incidence
+factor_count_bound,computed_structural_obstruction,structural-arguable-within-finite-component-cap
+verdict,computed,FACTOR_COUNT_CLOSED

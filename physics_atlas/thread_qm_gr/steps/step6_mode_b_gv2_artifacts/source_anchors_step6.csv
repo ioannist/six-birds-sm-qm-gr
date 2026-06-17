@@ -1,0 +1,5 @@
+source_label,named_principle,url,used_for,scope_limit
+Susskind_Witten_1998,AdS UV/IR relation,https://arxiv.org/abs/hep-th/9805114,"Supports treating the boundary cutoff and bulk radial/infrared scale as a named holographic-flow source atom.","AdS/CFT setting; not a general quantum-gravity closure."
+de_Boer_Verlinde_Verlinde_1999,holographic renormalization group,https://arxiv.org/abs/hep-th/9912012,"Supports the boundary-RG/radial-flow reading used for w.","Classical supergravity/large-N style regime; not a standalone triple package."
+Skenderis_2002,holographic renormalization,https://arxiv.org/abs/hep-th/0209067,"Supports the renormalized boundary data and counterterm framing for the boundary-flow atom.","Holographic renormalization framework; no LQG-AS triple audit supplied."
+Heemskerk_Polchinski_2010,holographic and Wilsonian RG,https://arxiv.org/abs/1010.1264,"Supports a Wilsonian RG interpretation of radial slicing and boundary effective descriptions.","AdS-like holographic RG; not equivalent to the canonical E018 target."

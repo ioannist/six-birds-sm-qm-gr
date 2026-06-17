@@ -1,0 +1,19 @@
+{
+  "step": 4,
+  "orientation": "Cluster A E043 scale-selection facet",
+  "carrier": "finite EW scale configurations plus attractor-or-measure selection slot",
+  "verdict": {
+    "type": "e043_scale_selection_facet_constructed",
+    "r_SM": 0.0001,
+    "r_non_descending_obstruction": 3,
+    "derived_observable_obstruction": 0,
+    "attractor_final_r": 0.0001,
+    "attractor_final_residual": 6.64073830647e-19,
+    "measure_selected_r": 0.0001,
+    "no_selection_unfixed": true,
+    "both_horns_select": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite scale-selection shape only; no physical mass value or mechanism is determined."
+}

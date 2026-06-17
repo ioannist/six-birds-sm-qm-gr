@@ -1,0 +1,14 @@
+{
+  "step": 41,
+  "artifact_root": "steps/step41_mode_b_factorization_defect_clean_separation_artifacts",
+  "source_step38": "steps/step38_mode_b_higher_layer_shadow_uniqueness_artifacts/low_energy_shadow_scores_step38.csv",
+  "pi0": "pi_conf_interference",
+  "pi1": "pi_mass",
+  "theorem_grade_statement": true,
+  "recognition_source": true,
+  "faithfulness_pass": true,
+  "delta_empty_clean_count": 8,
+  "delta_nonempty_contaminated_count": 4,
+  "new_physics_claim": false,
+  "frame_transfer_certified": false
+}

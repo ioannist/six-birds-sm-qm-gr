@@ -1,0 +1,18 @@
+{
+  "base_state_norm": 426.6414124591864,
+  "delta_left_norm": 46.89468473202549,
+  "epsilon": 0.0001,
+  "left_tensor_shape": [
+    81,
+    27
+  ],
+  "perturbed_state_norm": 426.6412035535732,
+  "right_tensor_shape": [
+    81,
+    27
+  ],
+  "state_matrix_shape": [
+    81,
+    81
+  ]
+}

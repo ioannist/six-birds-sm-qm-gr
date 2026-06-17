@@ -1,0 +1,8 @@
+factor_count,candidate_count,closing_count,closing_structures,computed_verdicts
+0,4,0,none,True
+1,27,3,SU(5);SO(10);SU(6)_chiral_example,True
+2,84,1,r1|2_u1,True
+3,224,0,none,True
+4,504,0,none,True
+5,1008,0,none,True
+6,1848,0,none,True

@@ -1,0 +1,4 @@
+check,passes,evidence
+even_doublet_hypothesis_load_bearing,True,odd control alternates Witten parity with N
+sm_unit_nonvacuous,True,multiplets=5; weyl=15
+N0_excluded_by_nonempty,True,N=0 fails nonempty packaging/chirality/clean/mass gates

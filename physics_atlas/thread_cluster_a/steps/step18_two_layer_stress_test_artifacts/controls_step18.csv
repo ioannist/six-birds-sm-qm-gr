@@ -1,0 +1,3 @@
+control,passes,witness
+coupling_strength_monotone,True,content-scale MI rises from strength 0 to strong injected channel
+gauge_generation_reference_detected,True,MI=0.466203233486 bits

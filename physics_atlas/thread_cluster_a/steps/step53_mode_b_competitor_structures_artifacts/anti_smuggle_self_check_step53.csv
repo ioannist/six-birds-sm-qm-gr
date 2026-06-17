@@ -1,0 +1,5 @@
+check,passes,evidence
+all_exclusions_cite_pre_existing_gate,True,competitor_table_step53.csv excluding_gate values are Step43/44 gates or future/out-of-window reasons
+no_step53_only_anti_competitor_rule,True,builder only maps competitors and reads Step43/44 filter outputs
+sm_control_survives_same_filter,True,corrected_carrier=2153;atomic_rewrite_packaging=29;consistency_completeness=15;corrected_chirality_faithful=15;higher_layer_mass_closure=8;clean_separation_delta_empty=8
+gate_not_exclude_everything,True,SU5_gate=mass-closure; SM_mass_closure=8

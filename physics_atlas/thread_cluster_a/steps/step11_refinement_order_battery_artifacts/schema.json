@@ -1,0 +1,35 @@
+{
+  "step": 11,
+  "artifact_type": "refinement_order_battery",
+  "thread": "thread_cluster_a",
+  "source_step": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv",
+  "parameters": {
+    "structural_survivor_count": 468,
+    "partial_depth": 4,
+    "significance_threshold": 0.25,
+    "sharp_rank_sigma": 0.55,
+    "random_order_count": 200,
+    "random_seed": 20260606,
+    "adversarial_order_count": 2
+  },
+  "results": {
+    "genuine_random_collapse_fraction": 1.0,
+    "landscape_random_noncollapse_fraction": 1.0,
+    "adversarial_delay_genuine_final": 1,
+    "adversarial_delay_landscape_final": 27,
+    "adversarial_force_genuine_final": 1,
+    "adversarial_force_landscape_final": 6,
+    "max_genuine_final_degeneracy": 1,
+    "min_landscape_final_degeneracy": 6,
+    "separation_margin": 5,
+    "flipping_order_count": 0
+  },
+  "verdict": {
+    "type": "order_invariant_separation",
+    "honest_grade": "finite-carrier-diagnostic",
+    "parameter_free": false,
+    "physical_values_inferred": false,
+    "physical_anthropic_verdict": false,
+    "external_review_required": true
+  }
+}

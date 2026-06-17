@@ -1,0 +1,5 @@
+gate,passes,evidence
+f48_gluing_obstruction_computed,True,obstruction zero only for clean/shadow
+coset_delta_witness_identity,True,dynamical coset generators equal Step41 witness rows
+negative_control,True,neutral and charged controls differ
+conditional_scope,True,typed fork only

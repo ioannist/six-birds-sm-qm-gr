@@ -1,0 +1,3 @@
+n_cells,completion_xi,completion_threshold,heldout_interaction_gain,witness_threshold,pairwise_union_corr2_control,rigged_diagonal_xi,candidate_pass,verdict
+32,0.4947207905172907,0.02,-0.02326224393247789,0.05,0.2514682187431358,1.8127167969206024e-16,false,run_level_obstruction
+64,0.5371910513210945,0.02,-0.08539192789918792,0.05,0.002666092280500349,0.0,false,run_level_obstruction

@@ -1,0 +1,6 @@
+principle,survivor_count,survivors_by_structure,target_passes,single_factor_survives,shape_flavored,note
+precise_unbroken_nonabelian_subgroup,12,2|3:8;4:4,True,True,False,allows partial breaking inside a single factor
+unbroken_low_energy_consistency,12,2|3:8;4:4,True,True,False,mass-completion plus unbroken subgroup; diagnostic only
+full_cascade_consistency,12,2|3:8;4:4,True,True,False,potential proxy plus mass-completion plus precise subgroup; diagnostic only
+scalar_stage_currency_minimum,8,2|3:8,True,False,True,diagnostic_only/REJECTED: manager override finds this reduces to smallest broken factor and is minimality-like
+step36_factor_local_breaking_diagnostic,8,2|3:8,True,False,True,diagnostic only: this old rule is unsatisfiable for single-factor structures by construction

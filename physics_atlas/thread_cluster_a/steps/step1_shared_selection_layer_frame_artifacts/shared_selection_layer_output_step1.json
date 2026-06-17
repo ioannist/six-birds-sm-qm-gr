@@ -1,0 +1,19 @@
+{
+  "step": 1,
+  "orientation": "Cluster A shared selection/measure layer frame",
+  "carrier": "finite candidate-space W plus measure mu",
+  "verdict": {
+    "type": "shared_selection_layer_frame_established",
+    "selected_world": "w_SM",
+    "candidate_count": 9,
+    "facet_count": 5,
+    "joint_obstruction_count": 36,
+    "selection_underdetermination_obstruction_count": 1,
+    "descending_observable_control_factors": true,
+    "w_SM_argmax": true,
+    "is_selection_measure_layer": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite selection-layer shape only; no SM value or mechanism is derived."
+}

@@ -1,0 +1,4 @@
+reading_id,support_id,component_id,states,readout_values,constant_on_orbit
+clean_shadow_reading,support_05,clean_shadow_reading_orbit_0,q_blue|q_green|q_red,1/3,True
+clean_shadow_reading,support_05,clean_shadow_reading_orbit_1,lepton,0,True
+dynamical_breaking_reading,support_08,dynamical_breaking_reading_orbit_0,lepton|q_blue|q_green|q_red,0|1/3,False

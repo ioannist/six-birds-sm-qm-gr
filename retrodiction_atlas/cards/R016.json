@@ -1,0 +1,198 @@
+{
+  "id": "R016",
+  "schema_note": "Enriched card merging the original retrodiction card + parameter audit + skeptic panel (4 reviewers, mean 2.88, no fatal objections) + repair-agent repairs and fertility scores. Repair status: repaired-with-narrowing. The core mathematics (NG_OBJECT_CONTRACTIVE + three lemmas) is a verified, fully-proven Class A recovery of classical Dobrushin/Seneta uniqueness; the repair strips the overclaimed diagnostic payload (spectral-gap/cycle/block rider, metastability-coexistence framing, executed-audit language) that the skeptic panel showed to be unjustified or unexecuted.",
+  "card": {
+    "one_sentence_claim": "Within the strict-Dobrushin-contraction regime, SBT's objecthood-as-fixed-points law (instantiated on the affine Markov packaging endomap E_{tau,f} or the macro kernel M_Pi, NEVER the bare micro kernel P) forces at most one nontrivial robust object, with the explicit eps-stable separation bound TV(nu,nu')<=2*eps/(1-lambda(E)); contrapositively, observed EXACT multiplicity of stable fixed points (separation surviving eps->0) certifies only that lambda(E)=1, i.e. failure of strict TV-contraction at that scale -- it does NOT by itself certify a closed spectral gap, reducibility, or cycle/block structure, and genuine finite-leak metastability sits INSIDE the contraction regime (lambda(E)<1) where the bound holds and the contrapositive does not fire.",
+    "target_known_fact": "The standard Dobrushin/Markov ergodic theorem: a finite-state row-stochastic kernel P with Dobrushin contraction coefficient lambda(P)<1 has a unique stationary distribution pi and geometric convergence d_TV(mu P^t, pi) <= lambda(P)^t d_TV(mu,pi); equivalently, at a strictly contractive scale there is exactly one long-time invariant macro-object (Dobrushin 1956; Seneta 2006).",
+    "scientific_domain": "Statistical mechanics / probability: finite Markov chains, relaxation, ergodicity, metastability and phase coexistence (and their SBT structural-law reorganization)",
+    "argument_family": "uniqueness-necessity (a contrapositive necessity/no-go: strict contraction => unique object, hence exact multiplicity => non-contraction)",
+    "derivability_class": "A",
+    "baseline_comparison": "SBT RECOVERS the standard result; it does not beat it. The mathematical content (Dobrushin contraction => unique stationary distribution + geometric convergence, and an eps-stable separation bound TV<=2eps/(1-lambda)) is entirely classical and the No-Go paper cites it as such (Dobrushin 1956; Seneta 2006, No-Go line 344). SBT's contribution is REORGANIZATION, not new physics or new mathematics: it reframes the ergodic theorem as an 'objecthood necessity law' inside the emergence calculus and packages the contrapositive as a finite pass/fail audit vocabulary. Versus the standard metastability literature (almost-invariant sets, Perron-cluster/PCCA, spectral-gap analyses) it adds NO predictive power and NO sharper bound; crucially it does NOT reproduce the standard 'metastability = small spectral gap = near-decomposability' picture, because the proven inequality only fires at exact multiplicity (reducibility), whereas genuine finite-leak metastability has lambda(E)<1 with the bound satisfied. SBT constrains rather than predicts: it cannot say WHERE coexistence occurs, only that EXACT multiplicity of stable objects must live outside the strict-contraction regime.",
+    "why_scientists_care": "It makes precise, inside one calculus, the limited but clean statement that 'a strictly contractive relaxation scale admits one stable macro-object', and supplies a quantitative finite separation bound TV<=2eps/(1-lambda(E)). For emergence theorists it cleanly separates 'stability' from 'multiplicity' (the constant-map / D-IC-02 guardrail) and shows that EXACT object multiplicity is a certificate of leaving strict contraction (reducibility / lambda(E)=1), not an SBT-object phenomenon. The honest payoff is conceptual hygiene, not a new metastability diagnostic: the result deliberately does NOT identify multiplicity with a small spectral gap, and flags that doing so would conflate reducibility with metastability.",
+    "target_audience": [
+      "Statistical-mechanics / Markov-chain theorists working on metastability, almost-invariant sets, and spectral-gap relaxation",
+      "Emergence / complexity-science researchers interested in when coarse macro-objects are well-defined",
+      "Applied-probability and Perron-cluster (PCCA) practitioners who quantify metastable-set counts",
+      "SBT-internal readers consuming the No-Go obstruction layer and the emergence phase-diagram (atlas) program"
+    ],
+    "recommended_artifact": "A short structural-law note (1-3 pp): the SBT objecthood corollary of NG_OBJECT_CONTRACTIVE stated strictly for ONE named operator (E_{tau,f} on Delta(Z) or the macro kernel M_Pi on Delta(X)) with its OWN coefficient lambda(E), the explicit D-IC-02 nontriviality guardrail (>=2 distinct well-separated stable prototypes), and an explicit reducibility-vs-metastability demarcation (eps=0 exact multiplicity => lambda(E)=1; eps>0 finite-leak metastability => lambda(E)<1, bound satisfied, contrapositive does not fire). Optionally a Lean stub extending the certified eps=0 uniqueness consequence to the eps-stable separation bound. NO claim of an executed lambda-vs-coexistence numerical audit unless one is actually run on a genuinely metastable (small-gap, slow-leak) kernel with lambda(E) computed explicitly.",
+    "execution_cost": "Low. All three core lemmas and the theorem are already fully proven in the No-Go paper (app:probkl); the empirical endomap and idempotence defect are defined in Foundations (sec:empirical-closure); the block benchmark exists in To_Chart_a_Stone. The corollary plus the reducibility/metastability demarcation is a trivial instantiation (days). An honest numerical audit -- computing lambda(E_{tau,f}) on a slow-leak metastable kernel and exhibiting the eps>0 within-contraction regime -- is a small script (days). A fully Lean-certified eps-stable bound is modest formalization effort.",
+    "honest_status_note": "Grounded Class A recovery, low overfitting risk, presentational novelty only. The core mathematics is verified present and fully proven in the No-Go paper: NG_OBJECT_CONTRACTIVE (line 74, 427) plus lem:objecthood_dobrushin/_unique_fixed/_approximate_separation (proven app:probkl) give exactly TV(nu,nu')<=2eps/(1-lambda) and eps=0 uniqueness. E_{tau,f} is confirmed an affine Markov endomap (Foundations line 561, verbatim). The D-IC-02 nontriviality guardrail is carried verbatim (Foundations line 578). No SBT disclaimer is crossed (pure TV-contraction statement; no continuum, no empirical realization, no thermodynamic-entropy/Sigma_T, no Born rule, no pointer-basis). FOUR honest caveats confirmed against the sources and preserved after repair: (1) only eps=0 uniqueness is Lean-certified; the eps-stable bound and the contrapositive are paper-level only (No-Go lines 895-896, verbatim 'not part of the formalized core'). (2) The lambda used MUST be lambda(E_{tau,f}) (or lambda(M_Pi)) of the SAME operator whose fixed points are counted, NEVER lambda(P) of the micro kernel; conflation is a genuine smuggle, and the benchmark's metastability TV (To_Chart line 315) is measured on packaged basis states under the induced MACRO kernel M_Pi -- a third operator -- so the operator must be pinned. (3) The conclusion the theorem licenses is ONLY lambda(E)=1 (failure of strict TV-contraction; No-Go escape route line 434 'noncontractive regimes'); the 'closing spectral gap / cycle / block structure' rider in the original card is NOT implied (lambda=1 holds for many irreducible fast-mixing chains) and has been REMOVED. (4) The result fires only at EXACT multiplicity (reducibility); genuine finite-leak metastability has lambda(E)<1 with the bound satisfied (numerically confirmed by skeptic 2: leak=0.001, tau=1, lambda(E)=0.998<1, two eps~0.001-stable prototypes at separation 0.998, bound 2eps/(1-lambda)=1.0>=0.998), so the original 'metastable basins / phase coexistence NECESSARILY certify departure from contraction' headline was FALSE for real metastability and has been narrowed. The proposed lambda(E)-vs-coexistence numerical audit is NOT executed anywhere in the corpus (To_Chart computes lumpability/retention/idempotence/metastability defects but NO Dobrushin coefficient, NO eigenvalues, NO spectral gap -- verified by grep), and delta in the block family is a lumpability axis, not a contraction axis, so the original 'lambda->1 exactly where two basins separate on the block family' correspondence is unexecuted and likely mis-instantiated; data_points_matched is therefore 0 executed correspondences (one provable theorem). The spectral-gap stronger_result is dropped as unproven (E is non-reversible/non-self-adjoint; Dobrushin lambda<1 is sufficient-not-equivalent to a spectral gap)."
+  },
+  "source_verification": {
+    "verified_against": [
+      "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex",
+      "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex",
+      "Tsiokos_2026_To_Chart_a_Stone_with_Six_Birds_Emergence_Phase_Diagrams_for_Effective_Theories_in_Control_Space.tex"
+    ],
+    "confirmed_facts": [
+      "NG_OBJECT_CONTRACTIVE (No-Go line 74, restated line 427): stated for T_P(nu)=nu P with a SINGLE stochastic matrix P; lambda(P)<1, eps-stability TV(nu,nuP)<=eps and TV(nu',nu'P)<=eps => TV(nu,nu')<=2eps/(1-lambda(P)); eps=0 => unique stationary distribution. Verbatim bound present.",
+      "Three lemmas proven in app:probkl: lem:objecthood_dobrushin (line 835, proof 1041), lem:objecthood_unique_fixed (line 846, proof 1072, Banach/Cauchy), lem:objecthood_approximate_separation (line 859, proof 1115, triangle inequality, bound 2eps/(1-lambda) at line 869).",
+      "Interpretation (No-Go line 432): 'multiple well-separated robust objects cannot coexist at that scale' -- within the admissible TV/Dobrushin hypotheses.",
+      "Escape route (No-Go line 434, verbatim): 'The obstruction is evaded by moving to noncontractive regimes or by using clustering heuristics that are outside theorem evidence.' NO mention of closed spectral gap / cycle / block structure -- confirming the original card's structural rider is an unjustified addition.",
+      "Formalization status (No-Go lines 895-896, verbatim): 'the formalized component is the uniqueness consequence of strict contraction for fixed distributions. The total-variation/Dobrushin framework and the eps-stability separation bound are used here at the level of the paper proof and are not part of the formalized core.'",
+      "Scope (No-Go lines 889-891): formulated in TV with Dobrushin coefficient; 'Other metrics, other contraction notions, or noncontractive operators lie outside the scope of this statement.'",
+      "E_{tau,f} definition (Foundations lines 550-552): E_{tau,f}(mu)=U_f(Q_f(mu P^tau)) on Delta(Z); line 561 verbatim 'The map E_{tau,f} is an affine endomap of Delta(Z) (indeed a Markov kernel on Z)'. Idempotence defect D-IC-02 line 568-576.",
+      "D-IC-02 guardrail (Foundations line 578, verbatim): 'a constant map has delta(E)=0 but only one fixed point. Any \"multiple objects\" conclusion therefore requires a separate nontriviality condition (for example: at least two distinct stable labels/prototypes at the chosen tolerance).'",
+      "To_Chart block-metastable-leak family (line 482): default partition 0,1|2,3; delta controls whether two micro states in each source block agree in block-level futures; at delta=0 EXACT closure (strong lumpability) at tau=1; off-locus positive strong-lumpability defect. delta is a LUMPABILITY axis.",
+      "To_Chart packaged macro kernel M_{Pi,u}^{(tau)} (line 259) and metastability slice (line 315): TV(p,q)=0.5||p-q||_1 measuring whether packaged basis states are metastable under the induced MACRO dynamics -- a distinct operator from both micro T_P and E_{tau,f} on Delta(Z).",
+      "To_Chart contains NO Dobrushin coefficient, NO spectral gap, NO eigenvalue, NO contraction-coefficient computation (verified by grep: zero matches). The proposed lambda(E)-vs-coexistence audit is entirely prospective.",
+      "Ledger: NG_OBJECT_CONTRACTIVE listed among the eight finite no-go audits (export_interfaces); free_parameters confirm lens f, tau, U_f, eps all adjustable/selected, 'no particular choice of lens f or timescale tau is preferred'."
+    ],
+    "discrepancies_found": "Three material discrepancies between the original card and the sources, all repaired: (1) The card's headline 'multiple well-separated robust objects (genuine metastable basins / phase coexistence) NECESSARILY certify departure from contraction (closing spectral gap, cycle/block structure)' OVERCLAIMS: the theorem licenses only lambda(E)=1, and the spectral-gap/cycle/block rider is absent from the escape route (No-Go line 434) and false in general. (2) The 'metastable basins / phase coexistence' framing conflates reducibility (eps=0 exact multiplicity, where the contrapositive fires) with finite-leak metastability (eps>0, lambda(E)<1, bound satisfied, contrapositive does NOT fire); skeptic 2 verified numerically that real metastability sits inside the contraction regime. (3) data_comparison_steps assert an executed lambda(E)-vs-delta correspondence on the block family; NO such computation exists in any paper, and delta is a lumpability axis not a contraction axis, so the correspondence is unexecuted and likely mis-mapped. Core theorem, lemmas, bound, E_{tau,f}-as-Markov-endomap, and D-IC-02 are all faithfully present."
+  },
+  "audit": {
+    "degrees_of_freedom_estimate": 7,
+    "data_points_matched": 1,
+    "data_points_matched_executed": 0,
+    "overfitting_risk": "low",
+    "mechanism_tag": "contraction-uniqueness",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "explicit_parameters": [
+      "Stability tolerance epsilon (idempotence-defect threshold defining approximate objecthood; scales the bound 2eps/(1-lambda) and the object count) -- adjustable",
+      "Dobrushin coefficient lambda(E_{tau,f}) of the completion operator (NOT lambda(P)); whole unique-vs-multiple verdict hinges on lambda<1 vs lambda=1 -- adjustable per instantiation/scale",
+      "Lens f (coarse-graining/record basis/partition) -- adjustable, explicitly non-canonical (ledger missing_interfaces)",
+      "Prototypes/completion lift U_f -- adjustable, SELECTED not unique",
+      "Timescale/staging tau (integer lag) -- adjustable, explicit confound",
+      "Nontriviality threshold (minimum TV separation / number of distinct stable prototypes) -- adjustable, mandatory D-IC-02 side condition",
+      "Choice of TV/Dobrushin contraction notion as operative metric -- fixed before comparison (other metrics out of scope, No-Go line 891)"
+    ],
+    "implicit_parameters_and_risks": [
+      "Identification of the SBT completion operator with the affine Markov endomap E_{tau,f}: literally valid (Foundations line 561) but lambda used MUST be lambda(E_{tau,f}) -- using lambda(P) silently changes the verdict (card-flagged smuggle).",
+      "WHICH operator the coexisting objects are simultaneously eps-stable fixed points of: micro T_P on Delta(Z), completion E_{tau,f} on Delta(Z), or macro M_Pi on Delta(X). To_Chart's metastability TV (line 315) is on M_Pi -- a third operator. The contrapositive applies only if lambda is reported for the SAME operator whose fixed points are counted; the original instantiation did not pin this.",
+      "Which control-space slice instantiates 'coexistence': delta in the block family is a LUMPABILITY axis, not a contraction axis; the family is engineered so delta=0 is exactly lumpable; coexistence location is selected, not predicted.",
+      "Mapping 'object' (eps-stable fixed point) to 'metastable basin / coexisting phase' is interpretive; under A_FIN there is no thermodynamic-limit phase coexistence, so the framing is analogical and (post-repair) restricted to exact multiplicity = reducibility.",
+      "Operationalization of 'separation survives eps->0' on a finite chain is near-tautological: on a fixed chain with lambda<1, eps->0 forces every eps-stable point to the unique stationary law, so the criterion reduces to the uniqueness lemma unless lambda=1.",
+      "Spectral-gap identification (lambda(E) vs second-eigenvalue modulus) for the stronger_result is NOT established: E is generically non-reversible/non-self-adjoint and Dobrushin lambda<1 is sufficient-not-equivalent to a spectral gap."
+    ],
+    "adjustable_choices": [
+      "Lens / coarse-graining partition f",
+      "Record basis (partition Pi_f as classical record-basis analogue; pointer-basis selection disclaimed)",
+      "Completion / prototype lift U_f (uniform-on-fiber, one-hot, Maxwellian, max-entropy)",
+      "Coarse-graining block structure (0,1|2,3 default vs other 14 partitions of a 4-state system)",
+      "Timescale tau",
+      "Stability tolerance epsilon",
+      "Nontriviality threshold (>=2 well-separated stable prototypes)",
+      "Which control-space slice (delta) is swept",
+      "Metric (TV) and contraction notion (Dobrushin lambda)",
+      "Whether lambda is taken of E_{tau,f} on Delta(Z) or the macro kernel M_Pi on Delta(X)"
+    ],
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "SBT accommodates BOTH a single-object world (assign lambda(E)<1, strict contraction => unique fixed distribution) and a multi-object world (assign lambda(E)=1). The theorem is a one-way necessity, not a prediction: it never forbids either observation, only the forbidden CONJUNCTION 'demonstrably strictly contractive scale (lambda<1) AND >=2 well-separated robust objects with separation surviving eps->0', which a proven inequality genuinely forbids. This is the standard texture of a no-go/necessity law: real but weak, constraining rather than predicting. The lens/tau/U_f freedom means for almost any observed multiplicity one can find a scale where lambda=1 'explains' it and for any single object a scale where lambda<1 'explains' it, so the which-scale verdict is post-hoc selectable. Redeeming feature: the result imports a classical theorem and makes NO sign/direction claim that could be flipped to fit; there is no fitted quantity. The opposite-world flexibility lives entirely in which-scale selection, not in tunable physics."
+    },
+    "audit_verdict": "GROUNDED RECOVERY (Class A), low overfitting risk, presentational novelty only. Core mathematics verified fully proven (No-Go lines 74, 427, 835-884, app:probkl). E_{tau,f} confirmed affine Markov endomap (Foundations 561); D-IC-02 guardrail carried verbatim (578). No SBT disclaimer crossed. You cannot tune parameters to fake a theorem, so high DOF does not create overfitting. The original card's headline (metastability/coexistence NECESSARILY certifies closing-gap/cycle/block) is partly false and was repaired: theorem yields only lambda(E)=1, and exact multiplicity = reducibility, not finite-leak metastability. The lambda(E)-vs-coexistence numerical audit is unexecuted; the block-family delta axis is lumpability not contraction. Retain as a Class A recovery with 'constrains-not-predicts', 'lambda(E) not lambda(P)', 'eps=0 reducibility not eps>0 metastability', and 'one named operator' framings preserved; do NOT upgrade to a predictive, spectral-gap, or metastability-diagnostic claim without (a) extending the Lean core and (b) running a real lambda-sweep on a genuinely metastable kernel."
+  },
+  "skeptic_panel": {
+    "min_survival": 2.5,
+    "mean_survival": 2.88,
+    "fatal_objections_present": false,
+    "reviewers": [
+      {
+        "role": "Nonequilibrium statistical physicist (metastability, near-decomposability)",
+        "survival": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The instantiated object is the textbook near-decomposability statement in disguise; the genuinely new content is a one-line contrapositive of an already-proven inequality, presentational not mathematical, adding no predictive power over almost-invariant-set / Perron-cluster methods.",
+        "key_serious_objections": [
+          "Headline numerical audit does not exist anywhere in the corpus; 'Dobrushin' appears only in No-Go and Foundations, NOT To_Chart; data_matched is aspirational.",
+          "Bridge from theorem (single kernel P) to E_{tau,f}=U_f Q_f(.P^tau) is more strained than 'minor packaging'; the relevant uniqueness question is about the macro kernel Phat=U_f P^tau Q_f, and lambda(E) is never computed.",
+          "Stronger two-sided spectral-gap result not established and partly not provable (E non-reversible; Dobrushin lambda<1 sufficient-not-equivalent to a gap).",
+          "Weak one-directional necessity with high which-scale flexibility; verdict post-hoc selectable via lens/tau/U_f."
+        ]
+      },
+      {
+        "role": "Mathematical physicist / probabilist (finite Markov chains, Dobrushin, metastability, Perron-cluster)",
+        "survival": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The headline conflates two distinct phenomena: the inequality forces lambda=1 only in the exact eps=0 limit, which is reducibility (block-diagonal chain, multiple stationary measures) -- a textbook triviality. Genuine metastability lives INSIDE the contraction regime: small positive spectral gap => lambda(E)<1, unique stationary law, yet two long-lived basins. Numerically verified: 4-state block chain, leak=0.001, tau=1, lambda(E_{tau,f})=0.998<1, two eps~0.001-stable prototypes at separation 0.998, bound 2eps/(1-lambda)=1.0>=0.998 satisfied -- contrapositive does NOT fire.",
+        "key_serious_objections": [
+          "Metastability vs reducibility conflation (numerically confirmed).",
+          "Near-tautology: 'separation survives eps->0 forces lambda=1' is an immediate restatement of the uniqueness lemma.",
+          "Zero new mathematics; only new item (contrapositive) is a logical restatement.",
+          "Stronger spectral-gap result uses a symmetrized operator (To_Create line 320), wrong object class for non-reversible E.",
+          "Confirmed lambda(E_{tau,f}) != lambda(P): leak=0.2, lambda(P)=0.6 constant in tau, lambda(E) drops 0.6->0.36->0.078->0 as tau grows."
+        ]
+      },
+      {
+        "role": "Finite-Markov / metastability theorist auditing relabeling and benchmark instantiation",
+        "survival": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The genuinely new content (contrapositive-as-non-contraction-certificate) is unexecuted in any paper AND mis-instantiated on the cited benchmark in a way that inverts the standard metastability picture: the card calls delta=0 (exact lumpability) the 'effectively contractive single-object locus', but exact lumpability is the clean two-block (two-basin) regime, not TV-contraction to a unique law; delta controls lumpability defect, not lambda. The standard literature equates metastability with small spectral gap / near-reducibility, NOT with lumpability defect.",
+        "key_serious_objections": [
+          "Benchmark direction inversion (delta = lumpability axis, not contraction axis).",
+          "Possible vacuity: with one-hot lifts the K prototypes are near-fixed by construction, so lambda(E_{tau,f})=1 trivially whenever the lens has >=2 blocks; non-vacuity of a strictly-contractive >=2-prototype instance not demonstrated.",
+          "Overstated data match (0 executed correspondences).",
+          "Non-unique theory->observation mapping (which-scale selectable)."
+        ]
+      },
+      {
+        "role": "Hostile referee (Dobrushin-coefficient and spectral-gap specialist)",
+        "survival": 2.5,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The contrapositive OVERCLAIMS the mathematics: the theorem only licenses lambda(P)=1 (the paper's own escape route 'noncontractive regimes', line 434). lambda(P)=1 implies NONE of 'closed spectral gap, reducibility, cycle/block structure' -- lambda=1 holds for vast classes of irreducible fast-mixing chains (any two rows at TV distance 1). The headline diagnostic 'multiplicity => closing gap / block structure' is false as a deduction from the cited theorem; the only honest conclusion is the near-vacuous lambda=1.",
+        "key_serious_objections": [
+          "Headline overclaim of the structural payload (spectral-gap/cycle/block rider unjustified).",
+          "Genuinely new step is trivial (one-line contrapositive; card says so).",
+          "Core numerical audit unexecuted (To_Chart tracks lumpability/mismatch/retention/idempotence only).",
+          "Which-operator equivocation beyond lambda(E) vs lambda(P): metastable basis states are eps-stable under the MACRO kernel M_Pi on Delta(X), a third operator."
+        ]
+      }
+    ]
+  },
+  "repair": {
+    "repair_status": "repaired-with-narrowing",
+    "allowed_repairs_applied": [
+      "Narrowed the claim: restricted the contrapositive conclusion to 'lambda(E)=1 (failure of strict TV-contraction at that scale)' and REMOVED the unjustified 'closing spectral gap, cycle/block structure' rider (No-Go escape route line 434 only says 'noncontractive regimes'; lambda=1 does not imply a closed gap, reducibility, or block/cycle structure in general).",
+      "Replaced exact-with-approximate / split overbroad claim: split 'multiplicity' into (a) EXACT multiplicity surviving eps->0 = reducibility, where the contrapositive fires and forces lambda(E)=1, versus (b) finite-leak metastability at fixed eps>0, which has lambda(E)<1 with the bound 2eps/(1-lambda) satisfied and where the contrapositive does NOT fire. Removed the false 'genuine metastable basins / phase coexistence NECESSARILY certify departure from contraction' headline.",
+      "Clarified the mapping: pinned the corollary to ONE named operator (E_{tau,f} on Delta(Z) or the macro kernel M_Pi on Delta(X)) and require lambda reported for the SAME operator whose fixed points are counted; explicitly forbade substituting lambda(P) of the micro kernel.",
+      "Removed an assumption / corrected an instantiation: dropped the asserted 'lambda->1 exactly where two basins separate on the block family' correspondence as unexecuted and mis-mapped (delta is a lumpability axis, not a contraction axis; To_Chart computes no Dobrushin coefficient). Reframed the block family as a candidate testbed, not a numerical instantiation; set data_points_matched_executed=0.",
+      "Turned rhetoric into a lemma sequence: stated the content as the proven chain lem:objecthood_dobrushin -> lem:objecthood_unique_fixed -> lem:objecthood_approximate_separation -> (eps=0 collapse) -> contrapositive, carrying the D-IC-02 nontriviality clause verbatim.",
+      "Dropped the unproven stronger_result: removed the two-sided spectral-gap / Perron-cluster 'k objects => quantitative gap deficit' diagnostic (E non-reversible/non-self-adjoint; Dobrushin lambda<1 sufficient-not-equivalent to a spectral gap), or marked it explicitly as unproven."
+    ],
+    "forbidden_repairs_avoided": "No arbitrary assumptions added; no hidden tuning; imported classical physics (Dobrushin/Seneta) kept explicit; uniqueness is the proven eps=0 consequence (not asserted); no undefined 'naturally emerges' language. The narrowing only weakens the claim toward what the in-paper lemmas actually license.",
+    "what_survives": "The minimum-viable corollary survives fully proven from the in-paper lemmas: 'within the strict-Dobrushin-contraction regime (lambda(E)<1) SBT admits at most one nontrivial robust object (with the D-IC-02 nontriviality clause), with explicit eps-stable separation TV(nu,nu')<=2eps/(1-lambda(E))', and its contrapositive 'EXACT multiplicity of stable objects (separation surviving eps->0) certifies lambda(E)=1, i.e. failure of strict TV-contraction'. This is an honest, exactly-evaluable structural recovery requiring no new mathematics. The metastability-diagnostic, spectral-gap, and executed-audit framings do not survive.",
+    "remaining_objections_unrepaired": [
+      "Pure recovery: zero new mathematics; the only new item (contrapositive) is a one-line logical restatement of an already-proven inequality. Novelty is presentational. (Not repairable -- it is the honest status.)",
+      "Weak one-directional necessity: the result constrains (forbids the contractive+exact-multiplicity conjunction) but does not predict; which-scale verdict is post-hoc selectable via the non-canonical lens/tau/U_f freedom.",
+      "Near-vacuity of the surviving contrapositive: lambda(E)=1 is a weak conclusion (holds for many ergodic chains), and on a fixed finite chain 'separation survives eps->0' reduces to the uniqueness lemma.",
+      "Non-vacuity of the dichotomy on E_{tau,f} not yet demonstrated: with one-hot lifts and >=2 blocks, lambda(E_{tau,f})=1 may be generic, so a strictly-contractive >=2-candidate-prototype instance exercising the unique-vs-multiple dichotomy must still be exhibited.",
+      "Only eps=0 uniqueness is Lean-certified; the eps-stable bound and contrapositive remain paper-level (No-Go lines 895-896). Repairable by extending the Lean core (low-risk, three-line triangle-inequality proof).",
+      "No executed lambda(E)-vs-coexistence audit on a genuinely metastable kernel exists; the diagnostic remains a proposal, not a demonstration."
+    ]
+  },
+  "scores": {
+    "impact": 2,
+    "execution_ease": 5,
+    "plausibility": 5,
+    "non_ad_hocness": 4,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 4,
+    "robustness": 3,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "2 -- A clean conceptual hygiene result (separates stability from multiplicity; locates EXACT multiplicity outside strict contraction) but it recovers a textbook theorem and adds no predictive power; matters mainly to SBT-internal readers and as a sanity anchor.",
+    "execution_ease": "5 -- Theorem and all three lemmas already fully proven (No-Go app:probkl); E_{tau,f} and D-IC-02 defined in Foundations; corollary plus reducibility/metastability demarcation is a days-scale instantiation.",
+    "plausibility": "5 -- The mathematics is classical Dobrushin/Seneta, fully proven and cited; nothing speculative remains after narrowing.",
+    "non_ad_hocness": "4 -- Imported physics is explicit, machinery is real and proven, D-IC-02 guardrail carried verbatim, uniqueness is proven not asserted; capped below 5 by the post-hoc which-scale/lens/tau/U_f selectability and the fact that the operative parameters are non-canonical.",
+    "discriminative_power": "1 -- One-directional necessity that accommodates both single-object and multi-object worlds; forbids only the contractive+exact-multiplicity conjunction; the surviving conclusion (lambda=1) is weak and the verdict is which-scale selectable. A pure recovery discriminates almost nothing new.",
+    "audience_legibility": "4 -- A crisp, finite, exactly-evaluable statement legible to Markov-chain and emergence audiences; the eps=0 piece is Lean-certified. Capped by the subtle reducibility-vs-metastability and lambda(E)-vs-lambda(P) distinctions that must be carried to avoid the original card's misreadings.",
+    "precision": "4 -- Sharp closed-form bound TV<=2eps/(1-lambda(E)) and an exact eps=0 collapse; precise once the operator is pinned. Not 5 because the diagnostic side depends on the non-canonical operator/scale choice and the eps->0 robustness threshold is informally specified.",
+    "robustness": "3 -- The proven inequality is rock-solid, but the DIAGNOSTIC reading is fragile: it inverts on the cited benchmark (delta = lumpability not contraction), fails for finite-leak metastability, and is sensitive to which operator's lambda is used. The narrowed claim is robust; the original application was not.",
+    "baseline_advantage": "1 -- Explicitly does not beat the baseline; recovers Dobrushin/Seneta and adds no predictive power or sharper bound over standard metastability / Perron-cluster / spectral-gap methods. The honest verdict (card, ledger, all four skeptics) is no advantage.",
+    "publication_potential": "2 -- Publishable only as a short SBT-internal structural-law note / corollary; not standalone-publishable in a probability or stat-mech venue because the mathematics is classical and the diagnostic, once corrected, conveys little beyond the uniqueness lemma. Modest internal-atlas value."
+  },
+  "triage": {
+    "proposed_bin": "B",
+    "bin_rationale": "B = foundational sanity check. This is a grounded Class A recovery of a textbook theorem, reorganized as an SBT objecthood-necessity corollary. Its proper role is a consistency/sanity anchor in the no-go obstruction layer (does the calculus correctly recover Dobrushin uniqueness as an objecthood law, with the D-IC-02 guardrail honored?), not a flagship (C), not a high-risk numerical bet (D), and not pure reframing-only (E) since real proven machinery is instantiated. It is close to an A (immediate quick win) because the corollary is days of work, but the honest narrowing strips most of its advertised payoff, so its value is sanity-check / hygiene rather than a standalone win.",
+    "recommended_priority": "Low-to-medium. Worth writing as a 1-3 pp corollary note for completeness of the no-go layer and to lock in the reducibility-vs-metastability and lambda(E)-not-lambda(P) hygiene, but not a priority over results with genuine discriminative power. If pursued, the highest-value add is (a) extending the Lean core to the eps-stable bound, and (b) a small honest numerical exhibit on a genuinely metastable slow-leak kernel showing lambda(E)<1 with the bound satisfied -- which would demonstrate the corrected (constrains-not-predicts) statement rather than the original overclaim.",
+    "one_line_verdict": "A correct, fully-proven Class A recovery of Dobrushin uniqueness repackaged as an SBT objecthood-necessity corollary; valuable as a foundational sanity check but presentational-only, weak, and stripped of its overclaimed metastability/spectral-gap diagnostic after narrowing."
+  }
+}

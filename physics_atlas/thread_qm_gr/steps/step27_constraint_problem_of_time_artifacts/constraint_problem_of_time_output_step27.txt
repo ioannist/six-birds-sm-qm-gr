@@ -1,0 +1,8 @@
+Step 27 constraint / problem-of-time toy
+Verdict: timeless_relational_layer_exists_on_toy
+Physical space nonempty: True
+Constraint residual: 8.547035876629756e-16
+Kernel dimension (tol 1e-8): 1
+Relational max residual: 9.79195701998934e-16
+Empty-kernel control physical: False
+Control min abs eigenvalue: 0.9868198124684662

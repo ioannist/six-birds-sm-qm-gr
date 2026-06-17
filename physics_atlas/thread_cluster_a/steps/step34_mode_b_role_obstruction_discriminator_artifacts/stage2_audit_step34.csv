@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+reproduces_corrected_final_carrier,True,80
+target_obstruction_computed,True,1
+f24_can_fail,True,"10 pass, 70 fail"

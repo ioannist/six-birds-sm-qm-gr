@@ -1,0 +1,8 @@
+artifact,classification,scope
+step69_results_summary.md,analytical-structural / finite-carrier-diagnostic,computed selection-carrier prediction and falsification condition
+step69_schema.json,organizational,machine-readable verdict and safeguards
+record_stability_prediction_statement_step69.tex,analytical-structural / finite-carrier-diagnostic,formal statement of enumeration-strength prediction
+record_stability_branch_table_step69.csv,analytical-structural / finite-carrier-diagnostic,2x2 record-stability by branch count
+anti_circularity_witnesses_step69.csv,analytical-structural / finite-carrier-diagnostic,single-conjunct breaking witnesses
+f27_f48_branch_confirmation_step69.csv,analytical-structural / finite-carrier-diagnostic,Step45 and Step46 branch readings
+nonclaim_boundary_step69.md,organizational,scope and overclaim limits

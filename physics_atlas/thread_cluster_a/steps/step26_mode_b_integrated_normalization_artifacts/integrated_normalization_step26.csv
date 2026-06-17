@@ -1,0 +1,2 @@
+source,structure_id,ranks,dimensions,selected_charge_vector,charge_unit,trace_y2,trace_t3_2,normalization_ratio,sin2_theta_w,sin2_decimal,status,verdict
+step23_generated_minimal_closure,r1|2,1|2,2|3,3|-2,1/6,5/6,1/2,5/3,3/8,0.375000000000,COMPUTED,INTEGRATED

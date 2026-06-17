@@ -1,0 +1,17 @@
+dimensions,type_id,reps,charge,cubic_from_type_row,cubic_recomputed_from_A_R,uses_slot_count_formula,passes
+2,0,adjoint,-6,0,0,False,True
+2,1,adjoint,-4,0,0,False,True
+2,2,adjoint,-3,0,0,False,True
+2,3,adjoint,-2,0,0,False,True
+3,0,antifund,-6,-1,-1,False,True
+3,1,antifund,-4,-1,-1,False,True
+3,2,antifund,-3,-1,-1,False,True
+3,3,antifund,-2,-1,-1,False,True
+4,0,antifund,-6,-1,-1,False,True
+4,1,antifund,-4,-1,-1,False,True
+4,2,antifund,-3,-1,-1,False,True
+4,3,antifund,-2,-1,-1,False,True
+2|2,0,adjointxsinglet,-6,0|0,0|0,False,True
+2|2,1,adjointxsinglet,-4,0|0,0|0,False,True
+2|2,2,adjointxsinglet,-3,0|0,0|0,False,True
+2|2,3,adjointxsinglet,-2,0|0,0|0,False,True

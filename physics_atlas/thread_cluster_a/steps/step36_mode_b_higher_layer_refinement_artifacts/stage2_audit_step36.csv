@@ -1,0 +1,5 @@
+stage_ii_check,passes,evidence
+step35_survivors_reproduced,True,12
+target_status_computed,True,2|3; witness=rank_one_fundxsinglet:-3; passes=True
+proper_breaking_requires_residual_route,True,refined_count=8
+compatibility_not_derivation,True,predicate types potential-layer compatibility only

@@ -1,0 +1,8 @@
+gate,status,evidence,defect_if_failed
+self_contained_definitions,pass,T_QG_NoGo.tex defines G* fused/derived object and lawful in G*,missing_definitions
+lemma_citations,pass,The proof cites Step 30 and Step 31 results summaries,uncited_lemma_claim
+per_route_audit,pass,Directed union and shared-audit routes are separately audited,route_failure_asserted
+control_teeth,pass,Vertical-stack nonduplicating-refinement and agreeing-audit controls are cited,control_gap
+bounded_scope,pass,The theorem is graded finite-carrier bounded-grammar,scope_overread
+no_smuggling_gate,pass,Union route explicitly applies G_nosmuggle,no_smuggling_gate_missing
+part_b_obligation,pass,Uniqueness/exhaustion is named as open Part B,uniqueness_overclaim

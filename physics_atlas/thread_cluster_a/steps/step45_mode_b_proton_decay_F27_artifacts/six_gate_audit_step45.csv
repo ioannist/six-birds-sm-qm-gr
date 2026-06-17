@@ -1,0 +1,5 @@
+gate,passes,evidence
+f27_orbit_descent_computed,True,B descends only in the clean/shadow reading
+delta_witness_identity,True,orbit-enlarging generators equal Step41 witness rows
+negative_control,True,color-label readout fails descent even in clean
+conditional_scope,True,typed fork only

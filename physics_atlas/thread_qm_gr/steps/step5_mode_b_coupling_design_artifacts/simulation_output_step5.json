@@ -1,0 +1,588 @@
+{
+  "step": 5,
+  "toy_name": "finite_pstar_bounded_coupling_design_xi_diagnostic",
+  "orientation": "Mode B bounded design diagnostic for P*",
+  "bounded_grammar": "G_E018_CoupledQGBridge_v1",
+  "pstar_design": {
+    "name": "shared_scale_currency_with_route_holonomy",
+    "native_rows": "shared area/geometry currency u_i plus route holonomy/RG row v",
+    "excluded_rows": [
+      "Bridge_HED_AS_boundary_continuum",
+      "Bridge_triple_joint_package"
+    ]
+  },
+  "results": [
+    {
+      "region_count": 2,
+      "carrier_dimension": 5,
+      "basis": [
+        "pstar_shared_area_geometry_currency_0",
+        "pstar_shared_area_geometry_currency_1",
+        "pstar_route_holonomy_rg_source",
+        "residual_HED_AS_boundary_continuum",
+        "residual_triple_joint_package"
+      ],
+      "pstar_native_probe_names": [
+        "Pstar_shared_currency_0",
+        "Pstar_shared_currency_1",
+        "Pstar_route_holonomy_rg"
+      ],
+      "generation_maps": {
+        "Bridge_HED_LQG_area_geometry": "generated_area_geometry_shadow = average(Pstar_shared_currency_i)",
+        "Bridge_LQG_AS_discrete_continuum": "generated_route_shadow = Pstar_route_holonomy_rg",
+        "Bridge_HED_AS_boundary_continuum": "not generated in G_v1",
+        "Bridge_triple_joint_package": "not generated in G_v1"
+      },
+      "sector_results": {
+        "area_shadow_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 0.9999999999999998,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "amplitude_geometry_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 0.9999999999999998,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "p3_route_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        }
+      },
+      "bridge_results": {
+        "Bridge_HED_LQG_area_geometry": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 0.9999999999999998,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_LQG_AS_discrete_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_HED_AS_boundary_continuum": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        },
+        "Bridge_triple_joint_package": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        }
+      },
+      "all_bridges": {
+        "raw_trace": 2.0,
+        "normalized_trace": 0.5,
+        "trace_K_DD": 4.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "coupled_joint": {
+        "raw_trace": 2.0,
+        "normalized_trace": 0.2857142857142857,
+        "trace_K_DD": 7.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding residual bridge rows to native lens"
+      },
+      "no_overread_check": {
+        "residual_bridge_rows_used_as_native_probes": false,
+        "bridge_rows_inserted_as_free_source_facts": false,
+        "closed_bridges_have_generation_maps": true,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "pstar_is_not_assume_compatibility": true
+      }
+    },
+    {
+      "region_count": 4,
+      "carrier_dimension": 7,
+      "basis": [
+        "pstar_shared_area_geometry_currency_0",
+        "pstar_shared_area_geometry_currency_1",
+        "pstar_shared_area_geometry_currency_2",
+        "pstar_shared_area_geometry_currency_3",
+        "pstar_route_holonomy_rg_source",
+        "residual_HED_AS_boundary_continuum",
+        "residual_triple_joint_package"
+      ],
+      "pstar_native_probe_names": [
+        "Pstar_shared_currency_0",
+        "Pstar_shared_currency_1",
+        "Pstar_shared_currency_2",
+        "Pstar_shared_currency_3",
+        "Pstar_route_holonomy_rg"
+      ],
+      "generation_maps": {
+        "Bridge_HED_LQG_area_geometry": "generated_area_geometry_shadow = average(Pstar_shared_currency_i)",
+        "Bridge_LQG_AS_discrete_continuum": "generated_route_shadow = Pstar_route_holonomy_rg",
+        "Bridge_HED_AS_boundary_continuum": "not generated in G_v1",
+        "Bridge_triple_joint_package": "not generated in G_v1"
+      },
+      "sector_results": {
+        "area_shadow_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "amplitude_geometry_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "p3_route_sector": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        }
+      },
+      "bridge_results": {
+        "Bridge_HED_LQG_area_geometry": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_LQG_AS_discrete_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_HED_AS_boundary_continuum": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        },
+        "Bridge_triple_joint_package": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        }
+      },
+      "all_bridges": {
+        "raw_trace": 2.0,
+        "normalized_trace": 0.5,
+        "trace_K_DD": 4.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "coupled_joint": {
+        "raw_trace": 2.0,
+        "normalized_trace": 0.2857142857142857,
+        "trace_K_DD": 7.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding residual bridge rows to native lens"
+      },
+      "no_overread_check": {
+        "residual_bridge_rows_used_as_native_probes": false,
+        "bridge_rows_inserted_as_free_source_facts": false,
+        "closed_bridges_have_generation_maps": true,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "pstar_is_not_assume_compatibility": true
+      }
+    }
+  ],
+  "refinement_stability": {
+    "coupled_normalized_level_2": 0.2857142857142857,
+    "coupled_normalized_level_4": 0.2857142857142857,
+    "coupled_raw_level_2": 2.0,
+    "coupled_raw_level_4": 2.0,
+    "all_bridges_normalized_level_2": 0.5,
+    "all_bridges_normalized_level_4": 0.5,
+    "coupled_absolute_delta": 0.0,
+    "all_bridges_absolute_delta": 0.0,
+    "interpretation": "P* closes HED-LQG and LQG-AS bridges, but leaves HED-AS and triple package residuals"
+  },
+  "verdict_from_toy": "partial Mode B design in G_v1; not a full landing"
+}

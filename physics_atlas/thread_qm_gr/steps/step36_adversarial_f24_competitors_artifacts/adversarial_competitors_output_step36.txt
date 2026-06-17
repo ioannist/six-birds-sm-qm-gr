@@ -1,0 +1,8 @@
+Step 36 adversarial F24 competitors
+Competitors built: 5
+All defining structures present: True
+All competitors defeated: True
+All controls pass: True
+d3 min heldout residual: 1.1220677985658054
+d2 control max heldout residual: 6.304854800243424e-16
+Verdict: type_uniqueness_by_adversarial_defeat

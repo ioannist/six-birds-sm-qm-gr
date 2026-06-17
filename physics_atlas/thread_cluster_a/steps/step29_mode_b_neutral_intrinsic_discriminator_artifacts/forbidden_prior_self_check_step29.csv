@@ -1,0 +1,5 @@
+check,passes,evidence
+uses_slot_count_prior,False,predicate does not inspect a slot-count equality
+uses_exterior_only_prior,False,predicate is evaluated after Step 28 neutral rep enumeration
+uses_larger_group_prior,False,predicate depends only on the candidate support itself
+reduces_to_target_reference,False,predicate leaves 1851 survivors

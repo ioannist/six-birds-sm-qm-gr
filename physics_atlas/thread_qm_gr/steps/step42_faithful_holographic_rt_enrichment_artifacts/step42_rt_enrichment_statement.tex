@@ -1,0 +1,18 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section*{Step 42 Faithful RT Enrichment}
+This statement is scoped to the declared finite random-tensor carrier.
+
+Let \(G\) be the finite bulk graph with three bridge paths connecting two bulk clusters. For the boundary region \(A\), the min-cut crosses three bulk edges and has strictly smaller capacity than the competing boundary cut. Thus the area is a genuine optimization output:
+\[
+  \operatorname{Area}(\gamma_A)=\min_{\gamma:A|\bar A}\sum_{e\in\gamma}\log D_e.
+\]
+
+At each bond dimension \(D\), random Gaussian tensors are placed at the two bulk clusters and contracted to a boundary state. The entropy
+\[
+  S(A)=-\operatorname{Tr}(\rho_A\log\rho_A)
+\]
+is computed from the singular values of this contracted state.
+
+For all tested random and control tensors, \(S(A)\le \operatorname{Area}(\gamma_A)\). For random tensors the seed-averaged saturation ratio \(S(A)/\operatorname{Area}(\gamma_A)\) increases with \(D\), while product and degenerate tensors on the same geometry have strict gaps. This is a finite recognition-landing on the random-tensor-network RT bound, not a continuum coefficient derivation.
+\end{document}

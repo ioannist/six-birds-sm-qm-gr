@@ -1,0 +1,19 @@
+{
+  "step": 2,
+  "orientation": "Cluster A P2 selection/constraint construction",
+  "carrier": "extended finite candidate-space plus anomaly constraint and selector",
+  "verdict": {
+    "type": "p2_selection_constraint_constructed",
+    "extended_candidate_count": 13,
+    "survivor_count_before_selection": 9,
+    "pruned_count": 4,
+    "selected_world": "w_SM",
+    "selection_collapses": true,
+    "further_step": true,
+    "mutual_information_bits": 0.330856,
+    "missing_gauge_n_gen_pair_count": 4,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite selection mechanics only; no physical SM value or mechanism is determined."
+}

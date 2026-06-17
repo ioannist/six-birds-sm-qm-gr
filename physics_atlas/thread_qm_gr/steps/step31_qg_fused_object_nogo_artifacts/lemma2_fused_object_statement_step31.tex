@@ -1,0 +1,37 @@
+\paragraph{Step 31 bounded Lemma 2.}
+Consider a fused endpoint package whose single audit is required to serve both
+the QM-side Born role and the GR-side stress-energy role on the declared finite
+carrier.
+
+\paragraph{Union route.}
+The direct-sum map is
+\[
+\pi_{union}=(d0,d1,d2,d0,d2,d3).
+\]
+It has target dimension \(6\), rank \(4\), extra coordinate count \(2\), and
+two duplicate column pairs \((0,3)\) and \((2,4)\).  Therefore it fails the
+native no-smuggling gate.  The nonduplicating refinement control has dimension
+\(4\), rank \(4\), extra coordinate count \(0\), and passes.
+
+\paragraph{Shared-audit route.}
+A single shared audit can restrict to both endpoint audits only if the derived
+Born and stress-energy readouts agree on the shared density/transport overlap.
+Using the Step 24 field-derived audits, the joint equal residual is
+\[
+0.9935981568901483.
+\]
+The density proportional residual is \(0.5207123913178113\), and the transport
+proportional residual is \(0.9994686548331937\).  The agreeing-audit control
+has residual \(0.0\) and admits a shared audit.
+
+\paragraph{Directed route.}
+The directed route is already blocked by Step 30 Lemma 1: both quotient
+factorization defects have count \(8\), and the directed route mismatch has
+normalized residual \(0.5\).
+
+\paragraph{Bounded verdict.}
+Within the declared grammar and finite carrier, the fused single-audit
+alternative is blocked: union fails no-smuggling, shared audit fails the
+overlap test, and directed reduction is already blocked.  The fusion controls
+pass.  This is a bounded finite-carrier lemma, not an absolute claim beyond
+the grammar.

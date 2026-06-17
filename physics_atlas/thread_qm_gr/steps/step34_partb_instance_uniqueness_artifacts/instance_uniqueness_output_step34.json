@@ -1,0 +1,35 @@
+{
+  "step": 34,
+  "orientation": "Part B instance-uniqueness by F51 common-refinement lattice join",
+  "join": {
+    "name": "L_join",
+    "modes": [
+      "d0_density",
+      "d1_phase",
+      "d2_transport",
+      "d3_curvature"
+    ],
+    "qm_factors_through_L": true,
+    "gr_factors_through_L": true,
+    "qm_residual": 0.0,
+    "gr_residual": 0.0
+  },
+  "controls": {
+    "all_subminimal_fail_by_linear_obstruction": true,
+    "subminimal_count": 4,
+    "superminimal_admissible": true,
+    "superminimal_minimal": false,
+    "union_admissible": false,
+    "lprime_iso_to_L": true
+  },
+  "verdict": {
+    "type": "instance_uniqueness_minimal_common_refinement_up_to_equivalence",
+    "L_unique_minimal": true,
+    "bounded_grammar_scope": true,
+    "up_to_equivalence": true,
+    "superminimal_admissible_refinements_exist": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "nonclaim": "Unique minimal admissible common refinement on the declared finite coordinate-lattice carrier; not the only admissible refinement and not an unrestricted physical uniqueness claim."
+}

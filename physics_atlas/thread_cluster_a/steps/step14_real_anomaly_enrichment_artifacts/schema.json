@@ -1,0 +1,26 @@
+{
+  "step": 14,
+  "artifact_dir": "steps/step14_real_anomaly_enrichment_artifacts",
+  "final_verdict": {
+    "type": "real_anomaly_enrichment_limit_recovery_constructed",
+    "candidate_count": 10,
+    "anomaly_free_survivor_count": 7,
+    "unselected_anomaly_free_survivor_count": 6,
+    "sm_coefficients_all_zero": true,
+    "necessary_not_sufficient": true,
+    "candidate_law_grade": "not_landed_obligations_advanced",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "anomaly_free_candidate_ids": [
+    "SM_one_generation",
+    "SM_plus_vectorlike_lepton",
+    "SM_plus_vectorlike_down",
+    "SM_plus_sterile_neutrino",
+    "hypercharge_label_swapped",
+    "scaled_hypercharge_x2",
+    "SU5_10_plus_5bar_decomposition"
+  ],
+  "known_physics_limit_recovery": true,
+  "new_consequence_only_scoped": true
+}

@@ -1,0 +1,23 @@
+{
+  "step": 8,
+  "orientation": "E021 RG/measure robustness",
+  "active_residual": "R_cluster_b_after_step7_E042_earned_continuation",
+  "candidate_move": "Build toy RG flow plus measure-selected moduli, test bare-UV and enriched-Sigma factorization, and run controls.",
+  "final_verdict": {
+    "type": "E021_rg_measure_robustness_established",
+    "Lambda_non_descending_from_bare_UV": true,
+    "Lambda_descends_when_selection_included": true,
+    "selection_non_descending_from_bare_UV": true,
+    "RG_control_descends": true,
+    "no_selection_control_descends": true,
+    "selection_relocation": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "vacua": "rg_measure_vacua_step8.csv",
+    "nonfactorization": "nonfactorization_step8.csv",
+    "controls": "controls_step8.csv",
+    "next_live_option": "Cluster_B_external_frame_transfer_review_or_manager_selected_followup"
+  }
+}

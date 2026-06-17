@@ -1,0 +1,9 @@
+level,cells,case,d_candidate,d_union,q_currency_recovery_residual,gr_currency_recovery_residual,combined_currency_recovery_residual,q_audit_recovery_residual,gr_audit_recovery_residual,combined_audit_recovery_residual,refinement_residual,audit_consistency_residual,compression_pass,single_layer_pass,assembled_adequacy_residual,status
+1,4,candidate_L,4,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,0.0,passes_candidate
+1,4,qm_alone,3,6,0.0,0.4107403836489229,0.4107403836489229,0.0,0.2313986185618569,0.2313986185618569,0.0,0.0,True,True,0.47143714685247295,fails_as_control_endpoint_missing_mode
+1,4,gr_alone,3,6,0.42208256190553023,0.0,0.42208256190553023,0.14342848451413145,0.0,0.14342848451413145,0.0,0.0,True,True,0.44578629323337904,fails_as_control_endpoint_missing_mode
+1,4,union_direct_sum,6,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,False,False,1.4142135623730951,fails_as_control_no_compression
+2,8,candidate_L,4,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,True,0.0,passes_candidate
+2,8,qm_alone,3,6,0.0,0.4136492843312609,0.4136492843312609,0.0,0.23037268325783533,0.23037268325783533,0.0,0.0,True,True,0.4734736567320079,fails_as_control_endpoint_missing_mode
+2,8,gr_alone,3,6,0.42699512967284675,0.0,0.42699512967284675,0.14391106153849545,0.0,0.14391106153849545,0.0,0.0,True,True,0.45059431243355463,fails_as_control_endpoint_missing_mode
+2,8,union_direct_sum,6,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,False,False,1.4142135623730951,fails_as_control_no_compression

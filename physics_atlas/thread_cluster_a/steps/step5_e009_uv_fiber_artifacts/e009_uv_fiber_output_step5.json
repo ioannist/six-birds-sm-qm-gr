@@ -1,0 +1,20 @@
+{
+  "step": 5,
+  "orientation": "Cluster A E009 UV-completion fiber facet",
+  "carrier": "finite UV-fiber plus IR shadow, consistency constraint, staging, and selector",
+  "verdict": {
+    "type": "e009_uv_fiber_facet_constructed",
+    "realized_IR": "IR_SM_TOY",
+    "realized_fiber_size": 6,
+    "uv_non_descending_obstruction": 16,
+    "derived_IR_observable_obstruction": 0,
+    "admissible_fiber_size_before_selection": 3,
+    "selected_UV": "U_SM",
+    "nonselected_admissible_count": 2,
+    "many_to_one": true,
+    "selection_collapses": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite UV-fiber selection shape only; no physical UV theory or constraint set is determined."
+}

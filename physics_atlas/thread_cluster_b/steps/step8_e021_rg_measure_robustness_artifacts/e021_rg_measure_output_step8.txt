@@ -1,0 +1,6 @@
+Cluster B Step 8 E021 RG/measure robustness
+Verdict: E021_rg_measure_robustness_established
+Lambda from bare UV obstruction: 4
+Lambda from UV+selected_phi obstruction: 0
+phi_star from bare UV obstruction: 4
+g_IR from bare UV obstruction: 0

@@ -1,0 +1,9 @@
+artifact,classification,scope
+step52_results_summary.md,organizational + structural-recognition,Summarizes Bell/F49 computation and caveats.
+bell_correlations_step52.csv,finite-carrier-diagnostic,Computed Bell and control correlation tables.
+lhv_strategy_enumeration_step52.csv,finite-carrier-diagnostic,Enumerates all 16 deterministic local strategies and local bound.
+classical_control_lhv_table_step52.csv,finite-carrier-diagnostic,Explicit local common-source mixture for control.
+delta_fact_witness_pair_step52.csv,finite-carrier-diagnostic,FIII witness-pair and Bell-facet records.
+f37_commutator_tie_step52.csv,finite-carrier-diagnostic,Computed setting commutators plus imported Step47 control.
+f49_bell_statement_step52.tex,analytical-structural finite-carrier-diagnostic,F49 normal-form statement; not new physics.
+run_step52.py,organizational validator,Self/chain validation with recomputation teeth.

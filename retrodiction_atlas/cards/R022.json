@@ -1,0 +1,153 @@
+{
+  "id": "R022",
+  "title": "Wick-Wightman-Wigner superselection as an F9 (No Unstatused Residual) + F4 (Local-Global Obstruction) co-instantiation: an honest structural classification, not a derivation",
+  "scientific_domain": "Foundational quantum field theory / algebraic quantum mechanics (superselection sectors)",
+  "argument_family": "structural",
+  "derivability_class": "C",
+
+  "card": {
+    "one_sentence_claim": "SBT recognizes the Wick-Wightman-Wigner superselection architecture (each admissible pure state in exactly one charge sector; no cross-sector coherence) as a co-instantiation of two Lean-certified layer-agnostic normal forms - F9 (No Unstatused Residual / single-valued typed-status classifier) for 'exactly one sector per state' and F4 (Local-Global Obstruction, compatible-non-global status) for 'locally consistent phases that fail to glue into a coherent cross-sector superposition' - but the physics (which observables superselect, that they commute with all observables, univalence/spin-statistics) is imported by declaration, so this is a structural relabeling, not a derivation.",
+    "target_known_fact": "Wick-Wightman-Wigner (1952) superselection rules: physically admissible pure states lie in a single joint eigenspace of the superselection observables (electric charge Q, baryon number B, lepton number L, univalence (-1)^{2J}); coherent superpositions across distinct charge sectors are excluded from the physical state space, reducing to sector-mixtures, because the relative cross-sector phase is unobservable.",
+    "theory_basis": [
+      {"component": "F9 No Unstatused Residual (thm:F9): given a residual type R, a formed stability package, and a declared typed-status classifier st_P:R->S that the package discipline makes single-valued, every residual receives exactly one typed status and no orphan/unstatused residual exists. Lean: Stability.NoUnstatusedResidual.no_unstatused_residual (statTheorem, faithful, in the 46 direct-theorem set).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (thm:F9 line 2080, layer-inst:F9 line 2140; WWW prose lines 2179-2190)", "role": "Supplies the 'exactly one sector per admissible pure state' skeleton: physical sector = F9 typed status; the WWW exclusion of orphan/multi-sector states = the single-value + coverage discipline. VERIFIED: theorem statement is content-free ('single-valued classifier + residual coverage => unique typed status'); WWW already appears verbatim as one of FIVE F9 layer instantiations alongside GHS chemical-hazard labels, Wright-Felleisen type soundness, the ribosomal genetic code, and Gale-Shapley matching."},
+      {"component": "F4 Local-Global Obstruction Normal Form (thm:F4): given local-family data F, a compatibility predicate Comp, and a restriction map R:G->F with Comp(R(g)) always, every a in F gets exactly one of four mutually exclusive statuses {overlap-inconsistent, compatible-non-global, globally-ambiguous, globally-exact}. Lean: Transport.LocalGlobalObstruction.local_global_obstruction_normal_form (statTheorem, faithful).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV...tex (thm:F4 line 2574, def:local-global-compat; layer-inst:F4 line 2645)", "role": "Supplies the 'why no coherent cross-sector superposition' skeleton: a would-be cross-sector pure state = locally compatible phase data not in the image of the restriction (compatible-non-global). VERIFIED CORRECTION: WWW superselection is NOT among the F4 layer instantiations in the corpus (which are Cech H^1 sheaf gluing, G/H topological defects, schema mapping, genome assembly, pose-graph SLAM). The F4 leg of this co-instantiation is the card's OWN PROPOSED instantiation, not existing certified prose. VERIFIED: F4 contains a built-in GloballyExact status (line 2604, 2638-2641) which is exactly the no-superselection (coherence-glues-to-global) world."},
+      {"component": "P4 staging / sectors / conserved sector labels (block structure, invariant labels)", "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (def P4)", "role": "Names the conserved-sector-label primitive that the charge superselection labels (Q,B,L) are mapped onto; provides SBT's vocabulary for 'sectors' but no Hilbert-space exclusion mechanism."},
+      {"component": "OI-EI principle (operationally indiscernible => identified) and the no-smuggling semantics", "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory...tex (Principle OI-EI); Tsiokos_2026_To_Lay_a_Stone...tex (def:no-smuggling)", "role": "Could in principle motivate 'unobservable relative phase => identify the would-be superposition with its mixture'; but applying it requires importing the physical claim that the superselection observables commute with every observable (the phase IS unobservable), which SBT does not derive."}
+    ],
+    "free_parameters": [
+      "Declared substrate data: which observables are the superselection observables (Q, B, L, univalence (-1)^{2J}) - supplied from outside the calculus.",
+      "The residual type R and the typed-status classifier st_P (the sector-eigenvalue map) declared per F9 instance.",
+      "The F4 patch system / local-family data, compatibility predicate Comp, and restriction map R:G->F - declared per quantum instance, not produced by SBT.",
+      "The lens / record basis identifying the charge eigenbasis as the packaging basis (pointer-basis selection, explicitly disclaimed; Quantum paper line 856: 'We do not derive pointer-basis selection... we treat record algebras as given interfaces')."
+    ],
+    "auxiliary_assumptions": [
+      "The set of superselection charges and the commutant structure (they commute with every physical observable) is supplied as the declared family, not derived within SBT.",
+      "Admissible pure states are sector-pure - this is the WWW content being 'recovered', assumed as the coverage/single-value input to F9 (Dictionary lemma A).",
+      "The relative cross-sector phase is operationally unobservable - imported; needed to place a would-be superposition in F4 compatible-non-global (Dictionary lemma B).",
+      "Univalence/(-1)^{2J} (spin-statistics) is imported as a given superselection observable; SBT has no exchange-statistics or spin-statistics machinery (confirmed by candidates.json R024 honest negative).",
+      "Mapping physical 'sector' to F9 'typed status' and 'cross-sector superposition' to F4 'compatible-non-global' is a declaration, not a forced identification.",
+      "The Lean certification covers only the layer-agnostic bookkeeping theorems (thm:F9, thm:F4); the quantum/superselection instantiation is prose (F9) or unwritten (F4), not mechanized."
+    ],
+    "minimum_viable_result": "A written F9+F4 co-instantiation of WWW superselection presented strictly as a derivability-class-C structural classification: state thm:F9 and thm:F4 (both Lean-certified, faithful, for the ABSTRACT statement only), supply the explicit physics-to-structure dictionary (sector = typed status; cross-sector superposition = compatible-non-global), label the F4 leg as a NEW proposed instantiation absent from the corpus, and honestly fence that (i) sector-purity of admissible states and (ii) phase-unobservability are imported declarations, with no Hilbert-space exclusion, no spin-statistics, and no derivation of the superselecting charge set.",
+    "stronger_result": "A finite SBT-internal demonstration that a charge-BLOCK dephasing closure Delta(rho)=sum_b Pi_b rho Pi_b (multidimensional sector projectors) has fixed points = exactly the sector-block-diagonal states. NOTE/CORRECTION: this is NOT covered by the certified dephase_idem / dephase_fixed_iff_exists_diagonal, which prove fixed points are FULLY diagonal (rho=diag(v)), killing intra-sector coherence too (Quantum paper thm:dephase line 406). The block-dephasing generalization needs SEPARATE Lean work. Even then it still imports the charge basis (pointer-basis disclaimed) and the charge set.",
+    "fallback_result": "Present R022 strictly as a classification entry - 'WWW superselection is co-statused by F9 (single-valuedness) and F4 (compatible-non-global)', with the F9 leg already in the corpus prose and the F4 leg flagged as a proposed (uncertified-for-this-instance) mapping, plus an explicit nonclaim block. Honest, low-cost, crosses no disclaimer.",
+    "data_matched": [],
+    "baseline_comparison": "Strictly a RECOVERY/RELABELING, not an improvement over the standard account, and weaker than it in predictive content. The standard WWW/DHR account derives WHICH charges superselect (from the observable algebra's commutant/representation theory) and produces the Hilbert-space sector decomposition. SBT does neither: no Hilbert space, no commutant, no Born rule, no spin-statistics. What SBT genuinely adds is unification of bookkeeping FORM: 'one sector per state' (F9) and 'no coherent gluing' (F4) under the same two layer-agnostic normal forms it uses for Cech H^1, G/H defects, schema mapping, genome assembly, and SLAM - a real organizational/compression insight about the SHAPE of the rule, but every load-bearing physical fact is imported by declaration.",
+    "why_scientists_care": "Superselection is one of the cleanest 'why-is-this-forbidden' rules in physics, sitting at the boundary of several SBT disclaimers (pointer-basis selection, single-outcome collapse, the Born rule). Showing 'one sector per state' and 'no cross-sector coherence' as two faces of the same layer-agnostic normal form that also governs sheaf-gluing failure and topological defects is conceptually attractive. It is a high-leverage test of whether the F-catalog's structural unification is illuminating or merely terminological - and the honest answer (illuminating in form, vacuous in physical content) is itself a useful calibration of the layer-agnostic program.",
+    "target_audience": [
+      "Algebraic / axiomatic QFT and superselection-theory researchers (DHR, Haag-Kastler tradition)",
+      "Quantum foundations and quantum-information theorists interested in structural/operational reconstructions",
+      "Category-theory and applied-sheaf-theory people working on local-to-global obstructions (Cech H^1, contextuality sheaves)",
+      "SBT-internal audience assessing the Foundations IV layer-agnostic catalog's reach and honesty"
+    ],
+    "recommended_artifact": "A 1-2 page note slotting WWW superselection into the existing F9 layer-instantiation section of Foundations IV and PROPOSING a new F4 instantiation, with: (a) the explicit physics-to-structure dictionary (sector = F9 typed status; cross-sector superposition = F4 compatible-non-global), (b) a clearly fenced nonclaim block (no Hilbert-space exclusion, no spin-statistics, no derivation of the superselecting charge set, pointer-basis disclaimed), (c) an explicit statement that the F4 leg is a new proposed mapping not in the corpus and that the Lean 'faithful' tag covers only the abstract F9/F4 theorems, and (d) an explicit flag that F4's GloballyExact branch is the no-superselection world. The optional dephasing toy must use block dephasing and be marked as requiring new Lean work, never as reusing dephase_idem.",
+    "execution_cost": "low",
+    "honest_status_note": "Derivability-class-C structural classification, NOT a derivation. The two leaned-on theorems (thm:F9, thm:F4) are real, elementary, Lean-certified (faithful) but content-free bookkeeping. Every physically load-bearing piece is imported by declaration: which observables superselect, that they commute with all observables (so phase is unobservable), sector-purity of admissible pure states, and univalence/spin-statistics (no SBT machinery). The Lean certification covers only the abstract theorems; the F9 superselection instantiation is prose and the F4 instantiation is NOT YET in the corpus at all. SBT cannot produce a Hilbert space, cannot exclude superpositions (no Born rule, no stochastic/quantum lens in certified core), and disclaims pointer-basis/lens selection. Verdict: honest, low-cost, conceptually tidy relabeling that recovers the statement and reorganizes the logical form of WWW; no better than - and in physical content strictly worse than - the standard account. No disclaimers crossed as long as the note refuses to claim derivation of the charge set, the exclusion mechanism, or spin-statistics."
+  },
+
+  "audit": {
+    "degrees_of_freedom_estimate": 6,
+    "data_points_matched": 0,
+    "overfitting_risk": "high",
+    "mechanism_tag": "local-global-obstruction",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "implicit_parameters_smuggled": [
+      "Sector-purity of admissible pure states (Dictionary lemma A) - IS the WWW content, smuggled as F9 coverage hypothesis; F9 conclusion 'one sector per state' is near-circular.",
+      "Phase-unobservability / commutant claim - decisive load-bearing import; SBT has no Hilbert-space/commutant machinery.",
+      "Univalence (-1)^{2J} as superselection observable (spin-statistics) - out of scope, no SBT machinery (R024).",
+      "Identification 'sector = F9 typed status', 'cross-sector superposition = F4 compatible-non-global' - declaration, not forced."
+    ],
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "VERIFIED against the F4 statement (lines 2604, 2638-2641): F4 has a built-in GloballyExact status (Comp(a), a in R(G), |R^{-1}(a)|=1) which is exactly the world where a would-be cross-sector superposition DOES glue into a global pure state (no superselection). A coherent-superposition universe is the GloballyExact branch; the WWW universe is the CompatibleNonGlobal branch. Which branch obtains is fixed entirely by the hand-declared restriction-map image (i.e. by importing phase-(un)observability), not by any SBT mechanism. Symmetrically, F9 is satisfied by any single-valued classifier including a trivial one-sector (no-superselection) world. The framework has a named slot for both outcomes, so the match carries no predictive content."
+    },
+    "audit_verdict": "FAIL as a derivation / PASS as an honest structural classification. The two leaned-on theorems do zero physical work. ~6 explicit free choices plus 3-4 smuggled physical imports versus 0 data points and exactly 1 qualitative textbook statement reproduced. Decisive failures as a derivation: (a) opposite-world test passes both ways (F4 GloballyExact = coherence-allowed world); (b) the same F9 normal form equally 'explains' GHS hazard labels, type-soundness, the genetic code, and Gale-Shapley matching (terminological); (c) exclusion mechanism, sector-purity, and spin-statistics all imported. The card's honest_status_note is accurate and crosses no disclaimer only because it refuses to claim derivation."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.5,
+    "fatal_objections_present": true,
+    "panel_summary": "Four skeptics (two particle/HEP-and-algebraic-QFT, two rigor-first axiomatic-QFT/EFT). Unanimous: NOT actually new, does NOT beat baseline. All fatal objections target the claim AS A DERIVATION; none survives if the claim is read as derivation. As an honest class-C classification the card already concedes every fatal point. Survival scores [1,2,1,2].",
+    "fatal_objections": [
+      "Opposite-world test passes both ways: F4's GloballyExact status (verified lines 2604, 2638-2641) is precisely the no-superselection world; which branch obtains is fixed by the hand-declared restriction map, i.e. by importing phase-(un)observability - not by any SBT mechanism.",
+      "No exclusion mechanism in SBT: no Hilbert space, no commutant, no Born rule, pointer-basis disclaimed. 'No coherent cross-sector superposition' cannot be derived; Dictionary lemma B IS the WWW content, assumed not proved.",
+      "Sector-purity of admissible pure states (Dictionary lemma A) is the WWW content smuggled as the F9 coverage/single-value hypothesis, making the first conjunct near-circular."
+    ],
+    "serious_objections": [
+      "Univalence (-1)^{2J} is spin-statistics in disguise; SBT has no exchange-statistics machinery (R024 honest negative). One of four named superselection observables is wholly external.",
+      "Same F9 normal form 'explains' GHS hazard labels, type-soundness, genetic code, Gale-Shapley matching (verified lines 2143-2200); same F4 covers Cech H^1, G/H defects, schema mapping, genome assembly, SLAM (verified lines 2648-2697). Structural match is terminological.",
+      "Only 1 qualitative textbook statement reproduced, 0 empirical data; DoF dwarf matched content; target-fitting total (WWW prose already in Foundations IV).",
+      "Strictly weaker than DHR/algebraic-QFT, which derives which charges superselect and produces the sector decomposition."
+    ],
+    "repairable_objections_addressed": [
+      "Lean 'faithful' over-read: REPAIRED - card now states Lean covers only abstract F9/F4 theorems; F9 superselection instantiation is prose, F4 instantiation is not in corpus.",
+      "F4 leg overstated as 'Lean-certified co-instantiation': REPAIRED - card now labels F4 leg as a NEW proposed mapping absent from the corpus (verified: WWW not among F4 layer instantiations).",
+      "Dephasing toy 'reuses already-certified dephase_idem': REPAIRED - card now states dephase_idem gives FULLY diagonal fixed points (verified line 406); block-dephasing toy needs separate Lean work and still imports the charge basis.",
+      "F9 and F4 conjuncts presented as independent: REPAIRED - card notes both rely on the same imported phase-unobservability/sector-purity fact (two views of one import, not two independent derivations)."
+    ],
+    "what_would_change_minds": "A within-SBT construction of Dictionary lemma B in which non-membership in the F4 restriction-map image is FORCED by a no-smuggling/OI-EI argument from independently-fixed SBT data (without importing the commutant/Hilbert-space structure SBT lacks), plus a within-SBT selection of the charge set as superselecting (the DHR achievement). Absent that, stays a relabeling.",
+    "is_actually_new": false,
+    "beats_baseline": false
+  },
+
+  "repair_and_scoring": {
+    "repair_status": "repaired",
+    "revised_one_sentence_claim": "Presented strictly as a derivability-class-C structural CLASSIFICATION (not a derivation): WWW superselection can be CO-STATUSED by two layer-agnostic SBT normal forms - F9 (No Unstatused Residual) gives the bookkeeping FORM of 'exactly one sector per admissible pure state' once sector-purity is imported as the F9 coverage hypothesis, and a NEWLY PROPOSED F4 (Local-Global Obstruction) instantiation gives the FORM of 'no coherent cross-sector superposition' as the compatible-non-global status once phase-unobservability is imported to fix the restriction-map image; both theorems are Lean-faithful for their ABSTRACT statements only, neither does any physical work, and SBT derives none of the load-bearing content (charge set, commutant/phase-unobservability, sector-purity, univalence/spin-statistics).",
+    "new_minimum_viable_result": "A 1-2 page Foundations-IV note that (i) records WWW under the existing F9 instantiation, (ii) PROPOSES a new F4 instantiation (flagged as not yet in the corpus and not Lean-certified for this instance), (iii) makes the physics-to-structure dictionary explicit, (iv) carries a fenced nonclaim block (no Hilbert-space exclusion; commutant/phase-unobservability, sector-purity, and univalence/spin-statistics all imported; superselecting charge set not derived; charge/record basis not selected, pointer-basis disclaimed; no stand on ontic-vs-epistemic mixture), and (v) explicitly notes F4's GloballyExact branch is the no-superselection world so the framework predicts neither branch. Any optional dephasing toy must use BLOCK dephasing, be marked as requiring new Lean work (the certified dephase_idem gives full, not block, diagonalization), and be presented as a demonstration GIVEN the charge basis.",
+    "changes_made": [
+      "Narrowed the claim from 'SBT recognizes ... a co-instantiation of two Lean-certified normal forms' to 'derivability-class-C structural classification co-statused by two normal forms whose Lean certification covers only the abstract statements'.",
+      "Corrected the factual overstatement that the F4 leg is an existing Lean-certified instantiation: verified WWW is NOT among the F4 layer instantiations in the corpus, so the F4 leg is flagged as a NEW proposed mapping.",
+      "Corrected the 'stronger result' claim that it reuses the already-certified dephase_idem: verified the certified theorem gives FULLY diagonal fixed points, not sector-block-diagonal; block dephasing needs separate Lean work.",
+      "Made explicit that F9's first conjunct ('one sector per state') is near-circular (sector-purity assumed as the coverage hypothesis) rather than derived - converted rhetoric to an honest lemma-dependency (Dictionary lemma A).",
+      "Made explicit that F9 and F4 are two views of ONE imported fact (phase-unobservability/sector-purity), not two independent structural derivations.",
+      "Added the opposite-world flag (F4 GloballyExact = no-superselection world) into the card body as a stated nonpredictivity, not a hidden caveat.",
+      "Stated baseline comparison up front: strictly weaker than DHR/algebraic-QFT (which derives which charges superselect).",
+      "Confirmed all required nonclaim fences keep R022 on the correct side of the Born-rule, pointer-basis, and single-outcome/collapse disclaimers."
+    ],
+    "remaining_objections": [
+      "Even fully repaired, this contributes zero physical content: it recovers the STATEMENT of WWW and reorganizes its logical FORM, importing every load-bearing fact (charge set, commutant/phase-unobservability, sector-purity, univalence/spin-statistics).",
+      "Opposite-world test still passes both ways - the framework has named slots (CompatibleNonGlobal vs GloballyExact) for both the superselection and no-superselection worlds; predictive content remains nil.",
+      "The structural match is terminological: the same F9/F4 normal forms equally 'explain' chemical-hazard labels, type-soundness, the genetic code, matching markets, sheaf gluing, defects, schema mapping, and SLAM.",
+      "Univalence/spin-statistics is wholly external (R024); one of four named superselection observables has no SBT machinery, so even the relabeling is incomplete on its own terms.",
+      "The F4 leg remains uncertified for the quantum instance and the proposed block-dephasing toy is conjecture-grade pending new Lean work."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 5,
+      "plausibility": 4,
+      "non_ad_hocness": 2,
+      "discriminative_power": 0,
+      "audience_legibility": 4,
+      "precision": 1,
+      "robustness": 3,
+      "baseline_advantage": 0,
+      "publication_potential": 2
+    },
+    "score_rationale": {
+      "impact": "2 - Conceptually tidy calibration of the F-catalog's reach (illuminating in form, vacuous in physics); no new physical content, no new prediction.",
+      "execution_ease": "5 - Both theorems already exist and are Lean-faithful; minimum-viable note is 1-2 pages of honest mapping and disclaimers. Lowest possible cost.",
+      "plausibility": "4 - The F9 mapping is real corpus prose; the F4 mapping is a plausible (if uncertified) structural fit. The claim, once narrowed to classification, is true.",
+      "non_ad_hocness": "2 - The normal forms are independently motivated and Lean-certified (raises this above floor), but the per-instance choices (classifier, Comp, restriction map, charge basis) are reverse-engineered to land the known answer, and the WWW prose was written into Foundations IV before any retrodiction.",
+      "discriminative_power": "0 - Opposite-world test passes both ways (F4 GloballyExact = no-superselection world); same normal forms 'explain' hazard labels, type-soundness, genetics, matching, sheaves, defects, SLAM. Discriminates nothing about physics.",
+      "audience_legibility": "4 - Lean-certified structural laws plus an explicit dictionary and nonclaim block are highly legible to QFT/foundations/sheaf audiences; the honest framing is easy to follow.",
+      "precision": "1 - Reproduces exactly one qualitative textbook statement; 0 empirical data, 0 quantitative content; capped low because SBT crosses no Hilbert-space/Born-rule machinery to make anything sharp.",
+      "robustness": "3 - The abstract theorems are robust and Lean-checked; the verdict (relabeling, no physics) is stable under scrutiny. But the F4 leg is corpus-uncertified and the toy needs new Lean, lowering robustness of the full co-instantiation claim.",
+      "baseline_advantage": "0 - Strictly weaker than the DHR/algebraic-QFT account, which derives which charges superselect and produces the sector decomposition. SBT adds only unification of bookkeeping form.",
+      "publication_potential": "2 - Viable only as a short honest classification note / calibration entry within the SBT program; no standalone venue in QFT or foundations would treat it as a result, given zero physical content and explicit relabeling status."
+    }
+  },
+
+  "proposed_bin": "E",
+  "recommended_priority": "low",
+  "recommended_artifact": "A 1-2 page Foundations-IV classification note: record WWW under the existing F9 instantiation, PROPOSE a new (flagged, uncertified-for-this-instance) F4 instantiation, give the explicit physics-to-structure dictionary, and carry a fenced nonclaim block (no Hilbert-space exclusion; commutant/phase-unobservability, sector-purity, univalence/spin-statistics all imported; charge set not derived; pointer/charge basis not selected; no stand on ontic-vs-epistemic mixture; F4 GloballyExact branch is the no-superselection world). Optional block-dephasing toy only if marked as needing new Lean work and presented as a demonstration GIVEN the charge basis. No new Lean theorem required for the minimum-viable version.",
+  "one_line_verdict": "Honest, low-cost class-C relabeling: it recovers the STATEMENT and reorganizes the logical FORM of WWW superselection via two Lean-faithful but content-free normal forms (F9 + a newly-proposed F4 mapping) while importing every physically load-bearing fact - useful only as a calibration entry, strictly weaker than DHR and predictively empty.",
+  "mechanism_tag": "local-global-obstruction",
+  "target_audience": [
+    "Algebraic / axiomatic QFT and superselection-theory researchers (DHR, Haag-Kastler tradition)",
+    "Quantum foundations and quantum-information theorists interested in structural/operational reconstructions",
+    "Category-theory and applied-sheaf-theory people working on local-to-global obstructions (Cech H^1, contextuality sheaves)",
+    "SBT-internal audience assessing the Foundations IV layer-agnostic catalog's reach and honesty"
+  ]
+}

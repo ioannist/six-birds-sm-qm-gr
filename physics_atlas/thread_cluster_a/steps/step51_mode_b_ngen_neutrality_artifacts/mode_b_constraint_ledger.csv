@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+ngen_copy_neutrality,active,51,N copies tested on equal footing
+closure_chain_per_N,blind,51,anomaly/Witten/packaging/chirality/clean/mass statuses
+minimality,diagnostic_negative_control,51,selects active minimum
+cp_phase_bound,recognition_source_bound,51,higher-layer observed-feature lower bound

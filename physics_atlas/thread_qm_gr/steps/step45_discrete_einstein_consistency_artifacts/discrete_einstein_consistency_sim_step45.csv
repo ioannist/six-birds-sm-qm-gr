@@ -1,0 +1,2 @@
+num_regions,num_edges,rank_M,cokernel_dim,rt_preserving_residual,generic_violation_residual,verdict
+38,14,10,28,9.2513644228e-17,0.0418931924111,DISCRETE_RT_CONSISTENCY_CONSTRAINT_DERIVED

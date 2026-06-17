@@ -1,0 +1,50 @@
+{
+  "id": "E004",
+  "edge": "kinetic_theory -> hydrodynamics",
+  "arrow": "down",
+  "scored_tier": "E1",
+  "scored_modality": "shadow-down",
+  "decision_path": "descent-E1",
+  "diagnostic": {
+    "descent": {
+      "toy_model_M": {
+        "description": "Faithful finite stand-in for the kinetic->hydro pair. Carrier Z = single-particle distribution f(v) on a FINITE 1D velocity grid in a single spatial cell (the standard local Chapman-Enskog cell); a state is a nonnegative weight vector over Nv discrete velocities. This is a minimal faithful finite stand-in, not reverse-engineered from a desired Xi.",
+        "lens_f_target_native_probe_L0": "Hydrodynamics keeps the low-order CONSERVED velocity moments: m0=sum_k f_k (mass/number density), m1=sum_k v_k f_k (momentum density), m2=sum_k v_k^2 f_k (energy density). L0 = the 3xNv matrix of these moment rows -- exactly the slow/conserved fields hydrodynamics carries.",
+        "dissolving_source_probe_D0": "Two declared orientations: (A) D0 = the conserved/Euler-level hydrodynamic readouts the hydro EQUATIONS are built from (mass, momentum, energy, and a conserved-flux combination), all in span{1,v,v^2}; (B) D0 ALSO includes genuinely kinetic non-slow readouts (v^3 heat-flux moment, v^4-1.5 v^2 stress/Burnett shape) NOT in span{1,v,v^2}, which carry the transport-coefficient VALUES.",
+        "audit_energy_C0": "Inverse-equilibrium (Maxwellian) diagonal weighting on the velocity-cell carrier -- the natural local-equilibrium/collision metric; strictly PSD.",
+        "refinement_chain": "Nv = 7 (h1) < 15 (h2) < 31 (h3): three declared finite refinements (gate E.9).",
+        "toy_to_accepted_observables_map": "Orientation-(A) descended content = density/velocity/pressure/temperature fields, sound speed, dispersion -- ALL in hydrodynamics.accepted_observables (no over-read, gate E.3). Orientation-(B) extra readouts = transport coefficients / mean free path / relaxation times / H-function = SOURCE-only kinetic observables, correctly NOT descended."
+      },
+      "Xi_values": {
+        "orientation_A_form_conserved_moments": {
+          "Nv_7": "||Xi||=1.515e-15 (machine zero)",
+          "Nv_15": "||Xi||=1.686e-15 (machine zero)",
+          "Nv_31": "||Xi||=3.049e-15 (machine zero)",
+          "interpretation": "Xi=0 stably across all three refinements => ker L0 subset ker D0 => exists A with D0 = A L0. Exact-adequacy theorem: the conserved-moment / constitutive FORM of hydrodynamics factors cleanly through the kinetic slow-moment lens. Refinement-stable (gate E.9 PASS: verdict does not flip)."
+        },
+        "orientation_B_with_nonslow_kinetic_moments": {
+          "Nv_7": "||Xi||=1.680e+01, max eig=1.596e+01 (positive obstruction)",
+          "Nv_15": "||Xi||=1.270e+01, max eig=1.188e+01 (positive obstruction)",
+          "Nv_31": "||Xi||=1.117e+01, max eig=1.036e+01 (positive obstruction)",
+          "interpretation": "Xi >> 0 stably: the genuinely kinetic non-slow readouts (higher velocity moments / off-equilibrium stress that carry the transport-coefficient VALUES) do NOT lie in the slow-moment span. This is the located blind-spot currency = the value_split obstruction. These are NOT claimed by the descent."
+        }
+      },
+      "no_over_read_E3": "PASS -- Orientation-(A) descended readouts (rho/u/p/T fields, sound speed, dispersion) all lie in hydrodynamics.accepted_observables; no source-only kinetic observable is claimed as descended.",
+      "refinement_stability_E9": "PASS -- the Xi=0 (form) and Xi>0 (values) verdicts are each stable across Nv=7,15,31; no flip.",
+      "verdict": "Step 1 resolves: form descends Xi=0 stably with no over-read => SEAL E1. STOP."
+    },
+    "recognition": null,
+    "emergence_run": null,
+    "gap": null
+  },
+  "value_split": {
+    "split_type": "form_value",
+    "form_tier": "E1",
+    "value_tier": "E0",
+    "value_node": "transport-coefficients (viscosity, thermal conductivity, diffusion)",
+    "note": "The EQUATIONS / constitutive STRUCTURE of hydrodynamics descend cleanly from kinetic theory (form_tier E1, Xi=0). The transport-coefficient VALUES are run-only: producing the numbers requires evaluating the Chapman-Enskog collision integral / running the kinetic substrate (Orientation-(B) Xi>0 obstruction). The value leg is carried to the Run-Target Manifest as an E0 sub-target and is NEVER summed with the E1 form leg. For split_type=form_value the reported (headline) leg is the edge's own closure = the EQUATION/STRUCTURE descent = value_split.reported_tier = E1."
+  },
+  "rationale": "Edge kinetic_theory -> hydrodynamics, arrow down: a descent/shadow (modality shadow-down, B.1). Both endpoints are frozen, experimentally_established theory cards with a genuine inter-layer quotient (lens f differs: full single-particle distribution f(x,v) vs. conserved slow-mode fields rho,u,p,T; distinct Sigma_f). A faithful finite toy model M is constructible (single-cell finite velocity grid -> conserved velocity moments). The deterministic decision-procedure resolves at STEP 1 (descent-test): the adequacy residual Xi_C(D|L) is machine-zero (~1e-15) stably at three declared refinements (Nv=7,15,31) for the conserved/Euler-level hydrodynamic form, satisfying the exact-adequacy theorem ker L0 subset ker D0 / D0 = A L0; the no-over-read gate (E.3) passes (descended content lies inside hydrodynamics.accepted_observables); refinement-stability (E.9) passes. Therefore SEAL E1 -- a computable descent (Chapman-Enskog / moment-closure coarse-graining physics already accepts). The transport-coefficient VALUES do NOT descend (Orientation-(B) Xi>0 stably) and are recorded as a value_split form_value E0 value-leg deferred to the Run-Target Manifest, never summed with the E1 form leg. No recognition import or constructible run-object is needed for the FORM, so Steps 2-4 are not reached. Computed blind to any calibration label; the test produced the verdict.",
+  "confidence": "high",
+  "read_only_obeyed": true
+}

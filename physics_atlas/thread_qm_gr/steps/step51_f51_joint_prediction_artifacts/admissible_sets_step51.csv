@@ -1,0 +1,4 @@
+set_id,construction_rule,candidate_count,I3_values,min_I3,max_I3,MMI_forced,computed_from_set
+with_geometric_dual_compatibility,admit candidates passing geometric_dual_mincut_vector_match,3,-0.03634592738;-0.04425173635;-0.03321027292,-0.04425173635,-0.03321027292,True,True
+without_geometric_dual_compatibility_GHZ_witness_set,drop geometric-dual filter; admit the explicit GHZ QM witness,1,0.69314718056,0.69314718056,0.69314718056,False,True
+without_geometric_dual_compatibility_broad_sample,drop geometric-dual filter; admit co-sourced samples plus the GHZ QM witness,4,-0.03634592738;-0.04425173635;-0.03321027292;0.69314718056,-0.04425173635,0.69314718056,False,True

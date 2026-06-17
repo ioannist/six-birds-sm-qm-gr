@@ -1,0 +1,23 @@
+{
+  "active_residual": "Step51 finite N=0..6 N_gen blindness",
+  "anti_circularity_pass": true,
+  "cp_bound_classification_unchanged": "recognition_source_lower_bound_not_selection",
+  "derives_n_equals_3": false,
+  "even_doublet_hypothesis_load_bearing": true,
+  "exit_state": "constructed_theorem",
+  "frame_transfer_certified": false,
+  "main_object": "all-N closure_row blindness for anomaly-free even-doublet units",
+  "new_physics_claim": false,
+  "odd_doublet_control_is_N_sensitive": true,
+  "orientation": "ModeT_ngen_blindness_theorem",
+  "root_landed": true,
+  "six_gates_pass": true,
+  "sm_unit_all_active_probe_passes": true,
+  "sm_unit_all_active_same_gate_status": true,
+  "step": 62,
+  "structural_proof_grade": "constructed",
+  "unit_anomaly_free": true,
+  "unit_su2_doublet_count": 4,
+  "verdict": "N_GEN_BLINDNESS_CONSTRUCTED_FOR_ALL_N_GE_1",
+  "window_independent": true
+}

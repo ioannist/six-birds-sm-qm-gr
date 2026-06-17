@@ -1,0 +1,7 @@
+item,status,detail
+slot_count_lock,removed,no slot-count equality guard
+exterior_only_content,removed,neutral rep set includes symmetric and adjoint reps
+rep_set,declared_neutral_input,singlet;fund;antifund;antisym2;sym2;adjoint
+charge_lattice,declared_finite_input,-6|-4|-3|-2|-1|0|1|2|3|4|6
+neutral_closer_count,computed,280983
+reference_distinguished,computed,False

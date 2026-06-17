@@ -1,0 +1,258 @@
+{
+  "id": "R031",
+  "card": {
+    "one_sentence_claim": "SBT reproduces the structural skeleton \"a classical symmetry can fail to survive quantization\" as a layer-agnostic, Lean-certified descent-obstruction normal form (F40): a would-be symmetry gate is anomalous iff it fails at least one of {SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved} on the formed-layer quotient — supplying the descent test, not the QFT anomaly content (triangle diagram, index theorem, cancellation condition).",
+    "target_known_fact": "In QFT a classical symmetry can fail to survive quantization (an anomaly), and gauge anomalies must cancel for consistency. The structural feature being targeted is specifically \"a classical symmetry fails to descend to the quantized/formed layer,\" together with the descent-equation/Wess-Zumino-consistency posture that anomalies are obstructions to a symmetry passing to a quotient. The quantitative content (anomaly coefficient from the triangle diagram, Atiyah-Singer index theorem, the SM/string cancellation conditions fixing matter content) is NOT targeted.",
+    "scientific_domain": "Quantum field theory / particle physics (anomalies, Wess-Zumino consistency conditions, anomaly cancellation, descent equations)",
+    "argument_family": "forced-target",
+    "derivability_class": "C",
+    "theory_basis": [
+      {
+        "component": "thm:F40 Anomaly / Symmetry Obstruction (Lean-verified, faithful): anomaly = failure of at least one of the four descent conditions {SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved} for a would-be symmetry gate g acting on history space H with quotient q:H->Q",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (sec:symmetry:anomaly, thm:F40, lines 3310-3376; Lean: Symmetry.Anomaly.anomaly_symmetry_obstruction; 'faithful' semantic-alignment per Sec. app:formalization, lines 9810-9823)",
+        "role": "Primary normal form. Provides the exact pass/fail descent test that an anomaly violates; states anomaly = nonempty obstruction set O_alpha or O_D, or group-law/readout failure.",
+        "verified": "CONFIRMED at thm:F40 (lines 3310-3342, proof 3345-3376). The statement and proof are EXACTLY the quotient universal property: bar-alpha(g,q(h)):=q(alpha(g,h)) is well-defined iff independent of representative iff O_alpha empty (line 3350-3354). 'An anomaly is precisely the failure of at least one of these four conditions' (line 3340-3341) is a STIPULATIVE definition. Paper concedes 'does not classify anomalies into carrier-specific forms' and routes all QFT content (Wess-Zumino, descent equations) to Bertlmann2000 (lines 3380-3385). 'faithful' confirmed to mean only 'base wording without qualification / no narrowing debt' (line 9810-9811), NOT physical fidelity to QFT anomalies."
+      },
+      {
+        "component": "thm:F2 Descent-Repair Normal Form (Lean-verified, faithful): r o F descends through q iff splitObs(q,F,r)=empty; canonical source-refinement and minimal target-coarsening repairs",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex (sec:transport:descent-repair, thm:F2, lines 2306-2317; Lean: Transport.DescentRepair.descent_repair_normal_form)",
+        "role": "Underlying engine. F40 is the symmetry-gate specialization of the F2 quotient-descent criterion; supplies the split-pair obstruction and the 'repair' (anomaly mitigation) half mapped to apparatus extensions.",
+        "verified": "CONFIRMED at thm:F2 (lines 2306-2318, proof 2323-2345). Proof explicitly invokes 'the quotient universal property' (line 2337). The repairs (source refinement / target coarsening, lines 2313-2317) are confirmed: these are the tunability levers the skeptics flag, since they can empty any nonempty obstruction. A pre-existing GAUGE instantiation already lives in F2 (lines 2383-2392: orbit quotient X/G, observable descends iff gauge-invariant, cites PeskinSchroeder1995), and a path-integral instantiation (lines 2776-2783, FeynmanHibbs1965) shows F2 localizes only CLASSICAL-action gauge-invariance failure — not the quantum-measure (Fujikawa) anomaly."
+      },
+      {
+        "component": "Quotient-descent criterion / definability algebra Sigma_f: a macro map F^sharp([p])=[F(p)] descends to the quotient iff (HL-META-1) holds; when it fails, P1 rewrite/refinement/abandonment is forced",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (lens/definability Sigma_f; quotient-descent criterion)",
+        "role": "Foundational substrate. The lens-induced definability structure and the 'descends iff well-defined on fibers' condition that the whole F40/F2 family generalizes; ties 'fails to descend' to the SBT P1 (operator rewrite when closure fails to descend) primitive.",
+        "verified": "Consistent with ledger primitives (Sigma_f = predicates constant on fibers; lem:count-definable) and missing_interfaces #1 (no canonical-lens / pointer-basis principle). Not re-read line-by-line here but corroborated by the F40/F2 proofs which are the same fiber-constancy argument."
+      }
+    ],
+    "proof_route": {
+      "required_definitions": [
+        "History/carrier space H with group action alpha:G x H -> H (the would-be classical symmetry)",
+        "Layer quotient q:H->Q (the 'formed'/'quantized' layer; in SBT a lens-induced definability quotient Sigma_f) -- externally declared, NO canonical-lens principle (ledger missing_interfaces #1)",
+        "Candidate descended action bar-alpha:G x Q -> Q, domain predicate D:G x H -> {0,1}, readout r:H->V with value action rho:G x V -> V",
+        "Obstruction sets O_alpha = {(g,h,h'): q(h)=q(h') and q(alpha(g,h)) != q(alpha(g,h'))} and O_D analogously",
+        "The four descent predicates SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved (Foundations IV thm:F40, lines 3326-3338); GroupLawPreserved is plain action-associativity (line 3330-3334), NOT the Wess-Zumino cocycle",
+        "splitObs(q,F,r) from F2 / def:split-pair and the canonical target-repair quotient R_F (def:target-repair, line 2290)"
+      ],
+      "required_lemmas": [
+        {
+          "statement": "F40: anomaly = failure of at least one of {SymmetryDescends iff O_alpha empty; DomainDescends iff O_D empty; GroupLawPreserved; ReadoutPreserved}",
+          "difficulty": "trivial",
+          "already_in_papers": true,
+          "paper": "Foundations IV thm:F40 (lines 3310-3376), Lean Symmetry.Anomaly.anomaly_symmetry_obstruction (faithful = base wording, no narrowing debt)"
+        },
+        {
+          "statement": "F2: r o F descends through q iff splitObs(q,F,r)=empty; target-repair quotient R_F is the minimal target coarsening restoring descent",
+          "difficulty": "trivial",
+          "already_in_papers": true,
+          "paper": "Foundations IV thm:F2 (lines 2306-2345), Lean Transport.DescentRepair.descent_repair_normal_form (faithful)"
+        },
+        {
+          "statement": "Quotient well-definedness: F^sharp([p])=[F(p)] descends iff constant on q-fibers (HL-META-1)",
+          "difficulty": "trivial",
+          "already_in_papers": true,
+          "paper": "Foundations of Emergence Calculus (definability/quotient-descent)"
+        },
+        {
+          "statement": "Bridge lemma (NEEDED, not in papers): the QFT path-integral measure / regulated effective action defines a genuine SBT lens-quotient q and value action rho such that gauge-non-invariance of the measure is exactly a failure of ReadoutPreserved/GroupLawPreserved for F40 — i.e. the anomalous Jacobian (Fujikawa) instantiates a nonempty obstruction set",
+          "difficulty": "hard",
+          "already_in_papers": false,
+          "paper": "NONE — would require a continuum/path-integral interface SBT explicitly disclaims (ledger missing_interfaces #4; no continuum interface, no QFT measure object). CRITICAL: the existing F2 path-integral instantiation (lines 2776-2783) localizes only CLASSICAL-action gauge non-invariance ('gauge-related paths with different action values'), which is ordinary classical symmetry breaking, NOT the distinctive anomaly case (classical action invariant, quantum measure not). So even the skeleton fails to capture the 'invariant-classically, broken-on-quantization' content."
+        },
+        {
+          "statement": "Cancellation lemma (NEEDED, NOT attempted, likely IMPOSSIBLE within F40): conditions under which the union of several nonempty O_alpha obstructions is empty (structural analogue of anomaly cancellation fixing matter content)",
+          "difficulty": "hard",
+          "already_in_papers": false,
+          "paper": "NONE — F40 explicitly 'does not classify anomalies into carrier-specific forms' (line 3380) and has NO additive/coefficient structure; the obstruction is a set with a yes/no nonemptiness verdict. Anomaly cancellation (sum of charges = 0 fixing matter content) is STRUCTURALLY INEXPRESSIBLE in F40, not merely unproved."
+        }
+      ],
+      "main_steps": [
+        "1. Instantiate F40 abstractly: pick a finite history space H, a group G, an action alpha, and a layer quotient q (a lens-induced Sigma_f partition). Already fully Lean-certified; no new work.",
+        "2. Demonstrate, on the three deliberately NON-QFT instantiations already in the paper (IEEE-754 non-associativity; gimbal lock = DomainDescends failure; lattice vs continuum translation), that 'classical symmetry fails to descend' is captured exactly by a nonempty obstruction set. This is the MINIMUM viable demonstration. NOTE: the IEEE-754 case is filed as 'GroupLawPreserved failure' (lines 3395-3396) but GroupLawPreserved as stated (line 3330) is associativity of the descended ACTION bar-alpha, not associativity of the addition OPERATION — so even the failure-mode labeling is an author-chosen, slightly loose identification.",
+        "3. State the abstract recovery claim: the QFT structural feature 'a classical symmetry is anomalous = it fails to pass to the quantized layer' is the F40 statement with q = (quantization map) read as a quotient. Flag explicitly that q is supplied by DECLARATION, not constructed (no canonical-lens principle).",
+        "4. (Stronger, gated by the hard bridge lemma) Attempt to realize the QFT measure-non-invariance (Fujikawa Jacobian) as an instance of ReadoutPreserved failure. SHELVED: outside current SBT scope (no continuum / no path-integral interface; crosses ledger missing_interfaces #4 and the pointer-basis disclaimer).",
+        "5. Map the F2 'repair' half to the standard apparatus repairs already cited (variational integrators for lattice, quaternions for gimbal lock) and note the QFT analogue (anomaly inflow / counterterms / restricting matter content) is NOT supplied by SBT."
+      ],
+      "data_comparison_steps": [
+        "No empirical data comparison is appropriate or possible: F40 is a purely algebraic/structural normal form with no quantitative content (data_points_matched = 0). The only 'comparison' is structural concordance: confirm that the textbook list of anomaly diagnoses each maps onto exactly one F40 failure mode — flagged as an author-chosen classification, not a constraint.",
+        "Sanity check against Bertlmann (Anomalies in QFT) that the Wess-Zumino consistency condition is a constraint on a candidate descended object, and record that F40 does NOT reproduce the cocycle/coefficient (GroupLawPreserved is bare associativity, not a 2-cocycle/coboundary condition).",
+        "Confirm against the SM/string literature that anomaly CANCELLATION (sum of charges = 0 fixing matter content) has NO counterpart in F40, since F40 has no additive obstruction structure."
+      ],
+      "minimum_viable_result": "A worked CLASSIFICATION demonstration that F40 (Lean-certified, faithful = no narrowing debt against the abstract proposition) records the bare structural feature 'a classical symmetry can fail to be well-defined on a coarser/formed layer' as the nonemptiness of an explicit obstruction set, exhibited on the paper's existing NON-QFT instantiations (IEEE-754, gimbal lock, lattice translation). The QFT case is entered ONLY as a declared placeholder (q = quantization quotient supplied externally), never as a worked instance. This recovers the SKELETON, claims nothing about anomaly content, crosses no disclaimer, and is presented as an expository reorganization of the F2/F40 descent family — NOT as a retrodiction, recovery, or derivation of anomaly physics.",
+      "stronger_result": "A genuine bridge: construct (within an extended, finite, regulated surrogate) a value action rho and quotient q such that loss of gauge invariance of a regulated effective action / measure is provably an instance of F40 ReadoutPreserved or GroupLawPreserved failure — i.e. SBT would localize the Fujikawa Jacobian as a descent obstruction, distinguishing the anomalous case (classically invariant, quantum-broken) from ordinary classical breaking. This requires a path-integral/continuum interface SBT does not have; even then it would not produce the anomaly coefficient or cancellation conditions. SHELVED as crossing disclaimed missing_interfaces #4.",
+      "estimated_bottlenecks": [
+        "No continuum / path-integral interface in SBT (explicitly disclaimed): no SBT object corresponds to the quantization map, the regulated measure, or the effective action, so the QFT quotient q must be hand-declared.",
+        "F40 has no additive/coefficient structure, so it structurally CANNOT express anomaly cancellation (the physically central content: sum of fermion charges = 0 fixing matter content). Hard, likely impossible, gap within F40's design.",
+        "The existing path-integral instantiation captures only classical-action gauge non-invariance, NOT the distinctive 'invariant classically but broken upon quantization' anomaly content — so even the targeted skeleton is not cleanly demonstrated on QFT.",
+        "The 'forced-target' nature: SBT supplies the test but the entire physical content (triangle diagram, index theorem, WZ functional, descent equations) is imported via the Bertlmann citation, not derived — risk of over-claiming recovery."
+      ],
+      "fallback_result": "Retain the minimum viable result purely as a CLASSIFICATION/skeleton: F40 is a Lean-certified, layer-agnostic statement of 'a map/action fails to be constant on a quotient's fibers,' relabeled 'anomaly,' of which the QFT anomaly is one declared instance. Present it honestly as a reorganization of the descent posture (shared with Noether-as-orbit-descent F27, SSB/F15, superselection/F9, and the pre-existing F2 gauge instantiation at lines 2383-2392), NOT as any new anomaly result. This is robust and already proved. THIS IS THE ADOPTED REPAIR TARGET."
+    },
+    "free_parameters": [
+      "The would-be symmetry gate g (its action alpha:G x H -> H), declared externally",
+      "The domain predicate D, the group G, and the group action structure, declared externally",
+      "The readout r:H->V and its value action rho:G x V -> V, declared externally",
+      "The layer quotient q:H->Q (the 'formed'/'quantized' layer at which descent is tested), declared externally — SBT has no rule selecting the quantization map / pointer basis (ledger missing_interfaces #1)",
+      "Which of the four failure modes is invoked per instance (author-assigned classification, not a constraint)",
+      "Choice to invoke source-refinement vs target-coarsening F2 'repair', which can flip any obstruction empty/nonempty"
+    ],
+    "auxiliary_assumptions": [
+      "The entire QFT anomaly content (triangle/box diagram, Fujikawa measure Jacobian, Atiyah-Singer index theorem, the Wess-Zumino consistency cocycle, the descent equations, and the cancellation conditions fixing matter content) is OUTSIDE SBT and is imported by citation (Bertlmann 2000, line 3385), not derived.",
+      "Mapping 'failure to descend' onto a physical anomaly requires DECLARING both the symmetry and the quantized layer as SBT objects; there is no canonical-lens / canonical-quantization principle (pointer-basis selection explicitly disclaimed).",
+      "The identification of the quantum-layer quotient q with an SBT lens-induced definability quotient Sigma_f is assumed faithful, but SBT provides no continuum/Hilbert-space-measure interface to justify it for genuine QFT.",
+      "Anomaly cancellation is assumed simply out of scope (F40 'does not classify anomalies into carrier-specific forms' and has no additive obstruction structure).",
+      "GroupLawPreserved is plain action-associativity, NOT a Wess-Zumino 2-cocycle/coboundary condition; equating the two would be an unsupported gloss."
+    ],
+    "data_matched": [],
+    "baseline_comparison": "SBT does strictly LESS than the standard account, and only RECOVERS (reorganizes) a structural posture rather than deriving any anomaly result. The standard QFT account both (a) explains why a symmetry fails to survive quantization via a concrete mechanism (non-invariant path-integral measure / triangle diagram / index theorem) AND (b) computes the anomaly coefficient and derives the cancellation conditions that fix matter content (SM hypercharges, Green-Schwarz). SBT's F40 reproduces ONLY the qualitative skeleton '(a) is a failure of a symmetry gate to descend through a quotient,' with the mechanism and ALL quantitative content (b) imported by declaration/citation. F40's genuine value-add over an ad hoc statement is that it is a single Lean-certified normal form unifying this descent failure across non-physics domains (IEEE-754, gimbal lock, lattice, arbitrage, Galilean vs relativistic addition). The descent/cohomological reading of anomalies (anomaly = obstruction to passing a symmetry to a quotient) is, however, ALREADY standard in the math-physics literature (descent equations, equivariant cohomology, BRST), so even the organizing lens is not novel to SBT. Net: recovers the structural feature, reorganizes it as one instance of the F2/F40 descent family; does not do better than, and does materially less than, the standard account on the physics.",
+    "why_scientists_care": "Anomalies sit at the heart of QFT consistency (gauge-anomaly cancellation fixes the SM matter content and underlies anomaly-inflow / 't Hooft matching). A claim that this is an instance of a generic, machine-checked 'descent obstruction' is conceptually appealing because it would unify it with coarse-graining failures elsewhere in physics and computation. The honest scientific interest is narrow but real: F40 cleanly SEPARATES the universal structural skeleton (a symmetry failing to pass to a quotient) from the domain-specific anomaly content, making explicit exactly which pieces (Jacobian, index theorem, cocycle, cancellation) are irreducibly QFT. It is a clarifying organizational lens, not a new physics result.",
+    "target_audience": [
+      "Mathematical/formal physicists interested in category-theoretic or descent-theoretic reformulations of anomalies",
+      "QFT and high-energy theorists studying anomaly inflow, Wess-Zumino consistency, and 't Hooft anomaly matching (as critics/validators of scope)",
+      "Researchers in applied formal methods / Lean-certified mathematics interested in layer-agnostic structural laws",
+      "SBT-internal audience evaluating the forced-target catalog and its disclaimers"
+    ],
+    "recommended_artifact": "A short structural note (3-5 pages) presenting F40 as the descent-obstruction normal form for 'a classical symmetry fails to be well-defined on a forming/quantization quotient,' with: (i) the F40/F2 statements and their faithful Lean handles cited verbatim, stating plainly that F40 IS the quotient universal property with 'anomaly' attached by stipulation and that GroupLawPreserved is mere associativity (not a WZ cocycle); (ii) the existing non-QFT instantiation table (with the IEEE-754 failure-mode caveat noted); (iii) one explicit table mapping each textbook anomaly diagnosis onto exactly one F40 failure mode, LABELED as an author-chosen classification not a constraint; (iv) a prominent, load-bearing scope box stating that the triangle diagram, index theorem, WZ cocycle, Fujikawa Jacobian, and — critically — anomaly cancellation are NOT recovered and that cancellation is structurally inexpressible; (v) explicit acknowledgment that q and r are externally declared (no canonical-lens principle), that F2 repairs make the verdict tunable, and hence F40 makes no prediction about whether any given symmetry is anomalous; (vi) cross-references to the pre-existing F2 gauge instantiation (lines 2383-2392) and F27 (conservation-as-orbit-descent), framing R031 as collation, not fresh recovery. No new Lean code is required.",
+    "execution_cost": "Low. F40 and F2 are already proved and Lean-certified (faithful = no narrowing debt); the minimum viable result is a worked exposition + a structural correspondence table, requiring no new theorems, no numerics, and no Lean development. Only literature cross-checking (Bertlmann; SM/string anomaly cancellation) and careful scope-writing are needed. The stronger (bridge) result is High-to-prohibitive cost and blocked by the disclaimed missing continuum/path-integral interface.",
+    "honest_status_note": "Grounded and faithful at the skeleton level; over-claimable at the physics level. F40 (Symmetry.Anomaly.anomaly_symmetry_obstruction) and its engine F2 (Transport.DescentRepair.descent_repair_normal_form) are genuinely Lean-certified with 'faithful' semantic alignment (no narrowing debt) — they are elementary, finite, true-by-quotient-universal-property statements (verified: F40 proof, lines 3345-3376, is the standard 'constant on fibers' argument; F2 proof, line 2337, explicitly cites 'the quotient universal property'). 'faithful' is a Lean-semantic grade (base wording, no narrowing debt; lines 9810-9811), NOT a claim of fidelity to QFT anomalies. The paper itself states F40 'does not classify anomalies into carrier-specific forms' (line 3380) and routes all QFT content to Bertlmann 2000 (line 3385). This card claims ONLY recovery of the structural feature 'a classical symmetry can fail to descend,' with the quantization quotient and symmetry gate supplied by declaration. The card crosses NO SBT disclaimer provided two boundaries are honored: (1) it does not claim to derive the anomaly (mechanism, coefficient, index theorem) and (2) it does not claim to explain anomaly CANCELLATION — which F40 structurally cannot express. Derivability class C (structural reorganization / forced-target), not a derivation. The only honest novelty is organizational unification of descent failure across domains, and even that organizing lens (anomaly = descent obstruction) pre-exists in the math-physics literature."
+  },
+  "audit": {
+    "explicit_parameters": [
+      {"name": "Would-be symmetry gate g and its action alpha: G x H -> H", "role": "The classical symmetry whose descent is tested; defines obstruction set O_alpha", "source": "Declared externally per F40 hypotheses (Foundations IV thm:F40, line 3311); card free_parameters #1", "fixed_before_comparison": false},
+      {"name": "Group G and group-law structure (multiplication)", "role": "Carrier of the symmetry; GroupLawPreserved is action-associativity on bar-alpha (NOT a WZ cocycle)", "source": "Declared externally (thm:F40, line 3330)", "fixed_before_comparison": false},
+      {"name": "Domain predicate D: G x H -> {0,1}", "role": "Defines O_D; DomainDescends failure mode (gimbal lock, Galilean addition instantiations)", "source": "Declared externally (thm:F40, line 3314)", "fixed_before_comparison": false},
+      {"name": "Readout r: H -> V and value action rho: G x V -> V", "role": "Defines ReadoutPreserved equivariance condition; the channel into which Fujikawa/measure non-invariance would be mapped", "source": "Declared externally (thm:F40, line 3315); card free_parameters #3", "fixed_before_comparison": false},
+      {"name": "Layer quotient q: H -> Q (the 'formed'/'quantized' layer = lens-induced Sigma_f)", "role": "THE coarse-graining at which descent is tested; equals the quantization map by declaration only", "source": "Declared externally; SBT has no canonical-lens/quantization-map principle (ledger missing_interfaces #1; card free_parameters #4)", "fixed_before_comparison": false},
+      {"name": "Candidate descended action bar-alpha: G x Q -> Q", "role": "The object whose well-definedness/group-law the anomaly obstructs", "source": "Declared externally (thm:F40, line 3313)", "fixed_before_comparison": false},
+      {"name": "Which of the four failure modes is invoked per instance", "role": "Diagnostic label (e.g. IEEE-754 = GroupLawPreserved; gimbal lock = DomainDescends; lattice = SymmetryDescends+DomainDescends+readout)", "source": "Assigned per instantiation by the author (Foundations IV layer-inst:F40, lines 3389-3445); the IEEE-754 = GroupLawPreserved label is a slightly loose identification (operation- vs action-associativity)", "fixed_before_comparison": false}
+    ],
+    "implicit_parameters": [
+      {"name": "Lens / record-basis choice defining the quotient q", "risk": "SBT explicitly disclaims a pointer-basis / canonical-lens principle (ledger missing_interfaces #1). The entire physical content of 'which symmetry, which quantized layer' enters through this undetermined choice; any anomaly or non-anomaly can be staged by choosing q."},
+      {"name": "Coarse-graining / partition granularity (Sigma_f)", "risk": "F2/F40 explicitly offer source-refinement and target-coarsening as 'repairs' (thm:F2, line 2313). The same freedom that repairs an obstruction can manufacture or erase one, so descent failure is tunable post hoc."},
+      {"name": "Identification q = quantization map (continuum/path-integral bridge)", "risk": "Hard, NOT-in-papers bridge lemma; SBT has no continuum/path-integral/Hilbert-measure interface (ledger missing_interfaces #4). The faithfulness of q ~ Sigma_f for genuine QFT is assumed, not justified. The only existing path-integral instantiation (lines 2776-2783) localizes only CLASSICAL-action gauge non-invariance, not the quantum-measure anomaly."},
+      {"name": "Imported QFT content (triangle diagram, index theorem, WZ cocycle, cancellation condition)", "risk": "Entirely external, supplied by Bertlmann 2000 citation (thm:F40 remark, lines 3382-3385). This is the actual explanatory and quantitative payload; F40 supplies none of it."}
+    ],
+    "adjustable_choices": [
+      "Choice of which would-be symmetry to test (and whether to test it at all)",
+      "Choice of the quotient q / formed layer (no canonical-lens principle)",
+      "Choice of domain predicate D and readout r (selects which of 4 failure modes fires)",
+      "Choice to invoke source-refinement vs target-coarsening 'repair' (F2), which can make any obstruction empty or nonempty",
+      "Choice of instantiation domain (IEEE-754, gimbal lock, lattice, arbitrage, Galilean addition) to exhibit each failure mode",
+      "Decision to declare a given case anomalous (nonempty O) vs non-anomalous (empty O) by adjusting q or r",
+      "Whether QFT enters as a 'declared instantiation' (q := quantization quotient) or is left abstract"
+    ],
+    "degrees_of_freedom_estimate": 7,
+    "data_points_matched": 0,
+    "overfitting_risk": "high",
+    "adhoc_test_answers": [
+      {"question": "1. Was the target fact known before the theory component was built?", "answer": "Yes. QFT anomalies, Wess-Zumino consistency, and anomaly cancellation are decades-old textbook facts (Bertlmann 2000 cited inside F40). The target is forced (argument_family = forced-target). F40 is a general quotient-descent statement written with the anomaly target in view."},
+      {"question": "2. Does the theory derive the fact, or only accommodate / re-describe it?", "answer": "Only re-describes (derivability_class C, structural reorganization). F40 is the quotient universal property (a map descends iff constant on fibers / obstruction set empty) reskinned as 'anomaly' (verified: lines 3345-3376). It derives NO anomaly content: not the triangle-diagram coefficient, not the index theorem, not the WZ cocycle, and structurally cannot express cancellation. The card concedes all of this."},
+      {"question": "3. How many free/adjustable parameters feed the match, and are any fixed only post hoc?", "answer": "At least 7 explicit declared objects (gate alpha, group G, domain D, readout r, value action rho, quotient q, candidate bar-alpha) plus the lens/basis implicit choice. ALL are fixed post hoc by declaration; none is derived or pinned before comparison. The QFT mapping is purely declarative."},
+      {"question": "4. Are the parameters physically motivated or curve-fitting knobs?", "answer": "They are structural slots, not curve-fit numerics (data_points_matched = 0). But for the QFT claim they are unconstrained declaration knobs: SBT supplies no principle selecting the quantization quotient or pointer basis (explicitly disclaimed), so the 'physical motivation' is imported from QFT, not provided by SBT."},
+      {"question": "5. Does the same mechanism explain multiple independent facts, or is it one-off?", "answer": "The mechanism (quotient-descent / split-pair obstruction) is heavily reused: F2 descent-repair, F10 quotientality, F18 lawhood descent, F27 conservation-as-orbit-descent, F15a selection obstruction, plus the five non-QFT instantiations. So the engine is general (a plus for non-adhocness of the ENGINE), but its application to the QFT anomaly is one declared instance with zero derived content. The descent-obstruction reading of anomalies pre-exists in the literature, so even the lens is not novel."},
+      {"question": "6. Would the opposite observation have been equally explainable?", "answer": "Yes, trivially. By choosing q, r, or D differently, the same machinery declares a symmetry anomalous (nonempty obstruction) OR non-anomalous (empty obstruction). F2 explicitly provides 'repairs' (source refinement / target coarsening, lines 2313-2317) that flip the verdict. F40 is a definitional iff with no predictive constraint."},
+      {"question": "7. Is the match quantitative and risky, or qualitative and safe?", "answer": "Qualitative and safe. No quantitative content whatsoever (data_points_matched = 0). It is a structural concordance table, so there is no risky numerical prediction that could have failed."},
+      {"question": "8. Does the match cross any SBT disclaimer (continuum, Born rule, pointer basis, etc.)?", "answer": "Not at the skeleton level, IF two boundaries are honored: (i) no claim to derive anomaly mechanism/coefficient/index theorem, (ii) no claim to explain cancellation. The stronger 'bridge' (Fujikawa Jacobian as ReadoutPreserved failure) WOULD cross the disclaimed no-continuum / no-path-integral interface (ledger missing_interfaces #4) and the pointer-basis disclaimer. The card correctly marks the bridge as out of scope, so the minimum-viable claim stays just inside the disclaimers but only because it asserts almost nothing physical."}
+    ],
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "In an opposite world where a classical symmetry DID survive quantization (no anomaly), F40 explains it equally well: the obstruction sets O_alpha, O_D are empty, GroupLawPreserved and ReadoutPreserved hold, so SymmetryDescends is true. F40 is a biconditional definition (anomaly iff at least one of four descent conditions fails), not a prediction, so BOTH the anomalous and non-anomalous worlds are 'retrodicted' with no change to the machinery. Worse, for any FIXED physical case the verdict is tunable: the quotient q and readout r are declared externally with no canonical-lens principle (disclaimed), and F2 explicitly supplies source-refinement / target-coarsening 'repairs' (thm:F2, line 2313) that turn a nonempty obstruction empty. So SBT could be made to declare a real anomaly absent, or a non-anomalous symmetry anomalous, purely by re-choosing q or r. The framework has zero risk: it cannot predict the sign/presence of an anomaly, the anomaly coefficient, or which matter content cancels (no additive structure). It only records, after the physics is supplied by declaration, which descent box was ticked."
+    },
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "audit_verdict": "HIGH FLEXIBILITY / LOW RISK, HONEST AT SKELETON LEVEL. R031 is a forced-target, derivability-class-C structural reorganization with 0 data points matched and ~7 freely-declared structural parameters plus an undetermined lens/quotient choice. F40 (Symmetry.Anomaly.anomaly_symmetry_obstruction) is genuinely Lean-certified 'faithful' (table line 10077; all 46 direct rows faithful, lines 9822-9823), but it is an elementary quotient-universal-property biconditional: a map/action/predicate descends through q iff its obstruction set is empty (thm:F40, lines 3310-3342; proof is the standard 'constant on fibers' argument, lines 3345-3376). The mechanism is the same orbit/quotient-descent engine reused across F2, F10, F18, F27, F15a -- a real organizational unification, so the ENGINE is not ad hoc. But the APPLICATION to QFT anomalies derives nothing: the triangle diagram, index theorem, Wess-Zumino cocycle, descent equations, and (critically) anomaly cancellation are all imported by the Bertlmann 2000 citation (line 3385), and F40 explicitly 'does not classify anomalies into carrier-specific forms' (line 3380) and has no additive structure to express cancellation. The opposite-world test FAILS: F40 'retrodicts' both anomalous and non-anomalous worlds, and the verdict on any fixed case is tunable via the externally declared quotient q / readout r and the F2 'repair' operations. imports_known_physics = true; target_used_to_design_theory = true. The minimum-viable claim crosses NO disclaimer ONLY because it asserts essentially no physics; the 'stronger' Fujikawa-bridge claim WOULD cross the disclaimed no-continuum / no-path-integral interface (missing_interfaces #4) and is correctly shelved. Verdict: accept as an HONEST expository skeleton/classification; REJECT any reading as a derivation, recovery of anomaly content, or prediction. Overfitting risk HIGH in the sense of unconstrained accommodating freedom, though there is no numerical curve-fitting (no data)."
+  },
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.5,
+    "fatal_objections_present": true,
+    "skeptics": [
+      {
+        "skeptic_role": "Particle phenomenologist / high-energy theorist (gauge structure, anomalies, EFT matching, anomaly cancellation, Wess-Zumino consistency, index theory)",
+        "adversarial_survival_score": 1,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "summary": "F40 is the quotient universal property relabeled 'anomaly' (verified, thm:F40 lines 3310-3376). FATAL: anomaly CANCELLATION (sum of charges = 0 fixing SM matter content) is the physically load-bearing content and is structurally inexpressible in F40 (no additive structure); the only mention of 'anomaly cancellation' in the paper is a hand-declared SM-moduli lawfulness predicate, not derived. FATAL: the biconditional retrodicts both anomalous and non-anomalous worlds, and the verdict is tunable via q, r, and F2 repairs. Would change mind only if F40 acquired a genuine additive/cocycle structure expressing real cancellation without importing charge assignments."
+      },
+      {
+        "skeptic_role": "Mathematical physicist: QFT anomalies, descent/cohomology methods (Wess-Zumino, Stora-Zumino descent equations), index-theoretic content; secondary expertise in formal-verification semantics",
+        "adversarial_survival_score": 2,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "summary": "Relabeling, not derivation: the Lean content is verbatim 'constant on fibers iff descends' (verified, proof says so at line 2337 for F2 and 3350-3354 for F40); 'anomaly' attached by stipulation. No fatal objection, but serious: all physical content declared/imported; opposite-world test fails; target forced and known decades before; internal mapping loose (IEEE-754 filed as GroupLawPreserved is operation-associativity not action-associativity). 'faithful' is a semantic-alignment grade, not QFT fidelity. Would change mind if an extended SBT produced the quantization quotient from an internal principle AND yielded an anomaly-specific invariant (coefficient or genuine additive cancellation structure)."
+      },
+      {
+        "skeptic_role": "Effective-field-theory / QFT-anomaly skeptic: tests whether F40 derives any anomaly physics or merely relabels the quotient universal property",
+        "adversarial_survival_score": 2,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "summary": "F40 is first-year quotient algebra relabeled; all physics imported via Bertlmann. KEY ADDED POINT (verified at lines 2776-2783): the only existing path-integral instantiation treats descent failure as 'gauge-related paths with different ACTION values' = failure of the CLASSICAL action's gauge invariance, which is ordinary classical breaking. A genuine anomaly is precisely the case where the classical action IS invariant but the quantum measure is not (Fujikawa). So F40/F2 as built do NOT cleanly capture the targeted 'survives classically, fails on quantization' feature. Zero risk, zero precision, no new unification over standard descent-cohomology viewpoint. Would change mind given a classically-invariant-yet-obstructed instance plus additive cancellation structure or a derived quotient selection."
+      },
+      {
+        "skeptic_role": "Mathematical/high-energy physicist: anomalies, anomaly inflow, 't Hooft anomaly matching, cross-checking against the actual Foundations IV text",
+        "adversarial_survival_score": 1,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "summary": "FATAL: opposite-world failure (biconditional ratifies any outcome; verdict tunable via q, r, F2 repairs). FATAL: no derivation of the physically central content and cancellation structurally inexpressible (verified: no summation over obstruction contributions anywhere in F40). Also serious: NOT new even within SBT -- F2 already contains a gauge-symmetry orbit-quotient instantiation (lines 2383-2392, cites Peskin-Schroeder) and F26 already lists 'gauge invariance, anomaly cancellation' as a built-in SM lawfulness predicate, so R031 reorganizes existing material. The 'WZ-consistency posture' framing is unsupported: GroupLawPreserved is bare associativity, not a cocycle. Would change mind given a derived quantitative anomaly invariant or a canonical-lens principle removing the opposite-world tunability."
+      }
+    ],
+    "consensus_minimum_acceptance_conditions": [
+      "Present F40 strictly as a Lean-certified, layer-agnostic descent-obstruction NORMAL FORM / classification (derivability class C), never as a derivation, recovery, or prediction of any anomaly content.",
+      "State explicitly that thm:F40 is the quotient universal property (constant-on-fibers iff descends) with 'anomaly' attached by stipulation, and that GroupLawPreserved is plain action-associativity, NOT a Wess-Zumino cocycle.",
+      "A prominent, load-bearing scope box stating that the triangle diagram, index theorem, WZ cocycle, Fujikawa Jacobian, and anomaly cancellation are NOT recovered, and that anomaly cancellation is structurally inexpressible in F40 (no additive obstruction structure).",
+      "Explicitly state that q, r, rho, and the symmetry gate are ALL externally declared (no canonical-lens/pointer-basis principle), and that F2 repairs make the verdict tunable -- i.e. F40 makes no prediction about whether any given symmetry is anomalous.",
+      "Keep the demonstration on the existing NON-QFT instances only; the QFT case may appear ONLY as a declared placeholder until the disclaimed continuum/path-integral interface exists.",
+      "Cite the 'faithful' Lean handle only as certifying the elementary quotient biconditional, NOT as evidence about QFT anomalies; clarify 'faithful' = no narrowing debt against the abstract proposition.",
+      "Cross-reference the pre-existing F2 gauge instantiation (lines 2383-2392) and F26 SM-predicate, framing R031 as collation/reorganization, not fresh recovery."
+    ],
+    "what_would_change_minds": "Unanimous: an extended SBT that (a) introduces a genuine ADDITIVE/cocycle structure on obstruction sets so a union of nonempty obstructions can be empty under a DERIVED (not declared) condition reproducing a real cancellation (e.g. U(1) cubic anomaly), OR (b) produces the quantization quotient q from an internal SBT principle (removing opposite-world tunability) AND yields an anomaly-specific quantitative invariant (a coefficient), OR (c) exhibits a classically-invariant-yet-quantum-obstructed instance distinguishing anomalies from ordinary classical breaking. Absent any of these, it remains a relabeling of the quotient universal property."
+  },
+  "repair": {
+    "repair_status": "repaired",
+    "repair_target": "fallback_result",
+    "revised_one_sentence_claim": "F40 (Lean-certified, 'faithful' = no narrowing debt) is the quotient universal property -- a map/action descends through a quotient q iff it is constant on q-fibers (obstruction set empty) -- with 'anomaly' attached by stipulation; presented strictly as a layer-agnostic descent-obstruction CLASSIFICATION, it organizes the bare structural skeleton 'a classical symmetry can fail to be well-defined on a formed/quantization quotient' as ONE declared instance alongside IEEE-754, gimbal lock, lattice translation, arbitrage, and Galilean addition, supplying the descent test but NONE of the QFT anomaly content (triangle coefficient, Fujikawa Jacobian, index theorem, Wess-Zumino cocycle) and structurally unable to express anomaly cancellation.",
+    "new_minimum_viable_result": "An expository structural note demonstrating that F40 records 'a classical symmetry fails to descend to a coarser/formed layer' as nonemptiness of an explicit obstruction set, worked ONLY on the paper's existing non-QFT instantiations, with the QFT case entered solely as a declared placeholder (q = quantization quotient supplied externally), a prominent load-bearing scope box disavowing all anomaly content and noting cancellation is structurally inexpressible, and explicit statements that q/r are declared (no canonical-lens principle) and that the verdict is tunable via F2 repairs hence carries no predictive risk. Framed as collation of the F2/F40/F27 descent family, not a fresh recovery.",
+    "changes_made": [
+      "NARROWED the claim from 'reproduces the structural skeleton' (active recovery framing) to the card's own fallback_result: a Lean-certified CLASSIFICATION/relabeling of the quotient universal property of which the QFT anomaly is one declared instance.",
+      "CONVERTED rhetoric to a lemma sequence: stated explicitly that F40 IS the quotient universal property (verified proof, lines 3345-3376) with 'anomaly' a stipulative label, and that F2's proof literally invokes 'the quotient universal property' (line 2337).",
+      "CLARIFIED THE MAPPING: GroupLawPreserved is plain action-associativity (line 3330-3334), NOT a Wess-Zumino 2-cocycle; the 'descent-equation/WZ-consistency posture' gloss in the original target framing is flagged as unsupported and removed from the operative claim.",
+      "SPLIT OVERBROAD CLAIM: separated the (acceptable) skeleton/classification from the (rejected) physics-recovery reading; the Fujikawa bridge and any anomaly-cancellation claim are explicitly shelved as crossing ledger missing_interfaces #4 and being structurally inexpressible.",
+      "REMOVED HIDDEN-IMPORT RISK: foregrounded that ALL QFT content is imported via Bertlmann 2000 (line 3385) and that 'faithful' is a semantic-alignment grade (no narrowing debt; lines 9810-9811), NOT QFT fidelity.",
+      "ADDED the EFT skeptic's verified caveat: the only existing path-integral instantiation (lines 2776-2783) localizes only CLASSICAL-action gauge non-invariance, so even the targeted 'invariant-classically, broken-on-quantization' feature is not cleanly captured.",
+      "ADDED the 't Hooft skeptic's redundancy note: a gauge orbit-quotient instantiation already exists in F2 (lines 2383-2392) and F26 already names anomaly cancellation as an SM lawfulness predicate; R031 is collation, not new content.",
+      "NOTED the loose IEEE-754 = GroupLawPreserved failure-mode label (operation- vs action-associativity) as an author-chosen classification."
+    ],
+    "remaining_objections": [
+      "Opposite-world test still fails: F40 is a biconditional definition that ratifies both anomalous and non-anomalous worlds, and the verdict on any fixed case remains tunable via the externally declared q/r and F2 repairs. This is intrinsic to the result and not repairable by presentation; it caps discriminative power at near-zero.",
+      "Anomaly cancellation -- the physically central content -- is structurally inexpressible in F40 (no additive obstruction structure). No allowed repair can add it; doing so would be a new theory.",
+      "Zero derived physics: triangle coefficient, Fujikawa Jacobian, index theorem, WZ cocycle all imported by citation. The result supplies the test, none of the content.",
+      "Not novel even within SBT (pre-existing F2 gauge instantiation, F26 SM predicate) nor in the literature (descent-cohomology reading of anomalies is standard). The only novelty is organizational unification across non-physics domains.",
+      "The QFT case is never worked even as a skeleton; the genuine 'invariant-classically-then-quantum-broken' content is not captured by the existing classical-action instantiation."
+    ]
+  },
+  "scores": {
+    "impact": 1.5,
+    "execution_ease": 5.0,
+    "plausibility": 4.5,
+    "non_ad_hocness": 2.5,
+    "discriminative_power": 0.5,
+    "audience_legibility": 3.5,
+    "precision": 1.0,
+    "robustness": 2.0,
+    "baseline_advantage": 0.5,
+    "publication_potential": 2.0
+  },
+  "proposed_bin": "F",
+  "recommended_priority": "low",
+  "recommended_artifact": "If pursued at all, a short (3-5 page) expository scope-controlled note framing F40 as a Lean-certified descent-obstruction CLASSIFICATION (the quotient universal property relabeled), worked only on the existing non-QFT instantiations, with a load-bearing scope box disavowing all anomaly content and noting cancellation is structurally inexpressible, and cross-referencing the pre-existing F2 gauge instantiation. No new Lean code. Lower priority than genuine SBT recoveries because it asserts essentially no physics.",
+  "one_line_verdict": "Honest at the skeleton level and trivially Lean-certified, but it is the quotient universal property relabeled 'anomaly' that retrodicts both worlds, derives zero anomaly physics, and cannot even express the one load-bearing fact (cancellation) -- accept only as a tightly scope-boxed expository classification, bin F.",
+  "mechanism_tag": "orbit-descent",
+  "target_audience": [
+    "Mathematical/formal physicists interested in category-theoretic or descent-theoretic reformulations of anomalies",
+    "QFT and high-energy theorists studying anomaly inflow, Wess-Zumino consistency, and 't Hooft anomaly matching (as critics/validators of scope)",
+    "Researchers in applied formal methods / Lean-certified mathematics interested in layer-agnostic structural laws",
+    "SBT-internal audience evaluating the forced-target catalog and its disclaimers"
+  ]
+}

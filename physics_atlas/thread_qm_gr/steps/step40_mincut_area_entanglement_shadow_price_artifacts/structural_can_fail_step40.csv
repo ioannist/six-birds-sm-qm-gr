@@ -1,0 +1,3 @@
+control_id,control_type,entanglement_entropy_S,min_cut_area_dual,computed_gap,relation_collapses,structural_reason
+control_extra_boundary_entanglement,non_holographic_extra_entropy,3.40119738166,1.79175946923,-1.60943791243,True,state entropy is not captured by the single bulk min-cut
+control_decoupled_bulk_capacity,decoupled_state_from_bulk,1.79175946923,3.40119738166,1.60943791243,True,bulk capacity is not saturated by the boundary state

@@ -1,0 +1,5 @@
+check,passes,evidence
+no_target_class_in_shadow,True,target flag used only after scoring
+distinct_from_integer_charge_shadow,True,"uses Yukawa graph connectivity, not charge-integrality"
+underconnected_control_fails,True,covered=0; edges=0
+both_residual_classes_pass,True,survivors=2

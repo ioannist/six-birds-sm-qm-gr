@@ -1,0 +1,23 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section*{Step 62 Statement}
+Let \(u\) be a content unit scored by the frozen Step-51 \(\mathrm{closure\_row}(N,u)\). Assume
+\[
+  u_{\mathrm{su3^3}}=u_{\mathrm{su3^2u1}}=u_{\mathrm{su2^2u1}}=u_{\mathrm{u1^3}}=u_{\mathrm{grav\,u1}}=0
+\]
+and assume \(u_{\mathrm{doublet}}\) is even.
+
+In the frozen code, all local anomaly gates use
+\[
+  \mathrm{scaled}_k(N)=N u_k,
+\]
+so they vanish for every \(N\ge 1\). The Witten gate is
+\[
+  (N u_{\mathrm{doublet}})\bmod 2 = 0
+\]
+for every \(N\ge 1\) because \(u_{\mathrm{doublet}}\) is even. The packaging, chirality, clean-separation, and mass-closure gates are all the nonempty condition \(N\ge 1\). Therefore every gate status is independent of \(N\) for \(N\ge 1\), and \(\mathrm{full\_chain\_passes}(N)=\mathrm{full\_chain\_passes}(1)\).
+
+The odd-doublet control shows the evenness hypothesis is load-bearing: with \(u_{\mathrm{doublet}}\) odd, the Witten gate alternates with \(N\).
+
+This proves \(N_{\rm gen}\)-blindness of the frozen closure chain; it does not select \(N=3\).
+\end{document}

@@ -1,0 +1,36 @@
+{
+  "step": 34,
+  "orientation": "Part B instance-uniqueness by F51 common-refinement lattice join",
+  "active_residual": "R_child_E018_after_partb_type_uniqueness",
+  "carrier": {
+    "states": 8,
+    "base_modes": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "q_QM": ["d0_density", "d1_phase", "d2_transport"],
+    "q_GR": ["d0_density", "d2_transport", "d3_curvature"],
+    "L": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"]
+  },
+  "candidate_move": "Exhaust mediator candidates around the common-refinement join: L, drop-one-mode subobjects, a five-mode super-refinement, direct-sum union, and a relabeled L prime.",
+  "computed_outputs": {
+    "mediator_candidates": "mediator_candidates_step34.csv",
+    "descent_residuals": "descent_residuals_step34.csv",
+    "isomorphism_check": "isomorphism_check_step34.csv",
+    "maps": "instance_uniqueness_maps_step34.json",
+    "output": "instance_uniqueness_output_step34.json"
+  },
+  "final_verdict": {
+    "type": "instance_uniqueness_minimal_common_refinement_up_to_equivalence",
+    "L_unique_minimal": true,
+    "up_to_equivalence": true,
+    "superminimal_admissible_refinements_exist": true,
+    "union_nonadmissible": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "part": "B",
+    "source_steps": [17, 18, 21, 33],
+    "uniqueness_notion": "unique minimal admissible common refinement up to isomorphism",
+    "nonclaim": "This does not assert that L is the only admissible refinement, only the unique minimal one on the declared finite coordinate-lattice carrier."
+  }
+}

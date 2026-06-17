@@ -1,0 +1,4 @@
+role_obstruction_pairs,survivor_count,target_has_this_obstruction
+0,10,False
+1,34,True
+2,36,False

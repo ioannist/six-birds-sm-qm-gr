@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,inherited_by_step,new_grammar_declared,carrier,active_constraints,excluded_designs_rationale
+G_step38_43_window_inherited,38/43/44,53,False,Step43 one/two-factor exact window plus Step44 three-factor route bound,No new grammar; named competitors are mapped into inherited filter rows.,No competitor-specific exclusion rule is introduced.

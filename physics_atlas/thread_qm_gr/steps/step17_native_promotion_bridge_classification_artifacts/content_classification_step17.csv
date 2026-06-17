@@ -1,0 +1,17 @@
+artifact,output,classification,grade,scope
+native_promotion_bridge_step17.py,"Native finite classifier for promotion bridges","analytical structural","finite-carrier diagnostic","Step 17 carrier only"
+object_maps_step17.json,"Finite carrier S and object maps pi_QM pi_GR pi_L pi_union","analytical structural","finite-carrier diagnostic","Step 17"
+promotion_bridge_tuples_step17.json,"Native promotion-bridge tuples for B_QM_to_L and B_QM_to_union","organizational/audit","diagnostic-complete","Step 17"
+eight_gate_classification_step17.csv,"Eight-gate pass/fail rows and defect records","analytical structural","finite-carrier diagnostic","Both promotion bridges"
+defect_records_step17.json,"Per-gate defect records delta","analytical structural","finite-carrier diagnostic","Both promotion bridges"
+delta_fact_step17.csv,"Delta_fact witnesses for strictness","analytical structural","finite-carrier diagnostic","Both promotion bridges"
+native_status_step17.csv,"Native status of each promotion bridge","organizational/audit","diagnostic-complete","Step 17"
+native_classification_output_step17.json,"Verdict payload and distinguishing gate","organizational/audit","diagnostic-complete","Step 17"
+native_classification_output_step17.txt,"Readable numerical summary","organizational/audit","diagnostic-complete","Step 17"
+distinguishing_gate_step17.md,"Native statement of G_nosmuggle distinction","predictive structural","finite-carrier diagnostic","Step 17"
+step17_results_summary.md,"Native orientation, strictness, eight gates, status, verdict","organizational/audit","diagnostic-complete","Step 17"
+step17_schema.json,"Machine-readable schema and verdict","organizational/audit","diagnostic-complete","Step 17"
+nonclaim_boundary_step17.md,"Mandatory nonclaim boundary","organizational/audit","diagnostic-complete","Step 17"
+construction_gate_audit_step17.csv,"Gate and control-status audit","organizational/audit","diagnostic-complete","Step 17"
+run_step17.py,"Validation script for artifacts, native vocabulary, controls, and overclaim scan","organizational/audit","diagnostic-complete","Step 17"
+

@@ -1,0 +1,7 @@
+seed,edge_index,edge,max_both_direction_residual
+101,6,L-M2,0.0
+101,7,M0-R,0.0
+202,6,L-M2,0.0
+202,7,M0-R,0.0
+303,5,L-M1,0.0
+303,9,M2-R,0.0

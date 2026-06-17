@@ -1,0 +1,3 @@
+constraint_id,status,declared_at_step,role
+step41_delta_fact_witnesses,active_source,41,breaking-coset witness set
+step46_f48_gluing_obstruction,candidate_test,46,type the shadow-vs-breaking monopole fork

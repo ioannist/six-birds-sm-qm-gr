@@ -1,0 +1,4 @@
+control_id,expected,obstruction_count,passes_guard,witness
+descending_observable_from_SM_inputs,factors,0,True,none
+w_SM_is_genuine_argmax_of_mu,selected_by_measure,,True,selected=w_SM; max_score=106.0
+selection_layer_not_field_readout_pair,candidate_space_plus_measure,,True,carrier=W_candidate_space; measure=mu_score; no field pair used

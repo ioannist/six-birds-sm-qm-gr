@@ -1,0 +1,335 @@
+[
+  {
+    "id": "E006",
+    "s": "quantum_mechanics",
+    "t": "classical_mechanics",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E007",
+    "s": "quantum_mechanics",
+    "t": "classical-probability",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E008",
+    "s": "relativistic_qft",
+    "t": "rg_eft",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E009",
+    "s": "rg_eft",
+    "t": "relativistic_qft",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E010",
+    "s": "general_relativity",
+    "t": "newtonian_gravity",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E011",
+    "s": "classical_electromagnetism",
+    "t": "geometrical_optics",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E012",
+    "s": "qed",
+    "t": "classical_electromagnetism",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E013",
+    "s": "statistical_mechanics",
+    "t": "brownian_langevin",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E014",
+    "s": "relativistic_qft",
+    "t": "quantum_mechanics",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E015",
+    "s": "electroweak_theory",
+    "t": "qed",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E016",
+    "s": "standard_model",
+    "t": "electroweak_theory",
+    "arrow": "down",
+    "near_intra": true,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E017",
+    "s": "standard_model",
+    "t": "qcd",
+    "arrow": "down",
+    "near_intra": true,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E022",
+    "s": "thermodynamics",
+    "t": "general_relativity",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E023",
+    "s": "conformal-field-theory",
+    "t": "general_relativity",
+    "arrow": "bidirectional",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E024",
+    "s": "conformal-field-theory",
+    "t": "entanglement-geometry",
+    "arrow": "bidirectional",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E025",
+    "s": "quantum_mechanics",
+    "t": "thermodynamics",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E026",
+    "s": "quantum_mechanics",
+    "t": "decoherence-pointer-basis",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E027a",
+    "s": "condensed_matter_spt",
+    "t": "spt-phases",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E027b",
+    "s": "condensed_matter_spt",
+    "t": "spt-phases",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E028a",
+    "s": "general_relativity",
+    "t": "lambda_cdm",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E028b",
+    "s": "general_relativity",
+    "t": "lambda_cdm",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E029",
+    "s": "qcd",
+    "t": "chiral-perturbation-theory",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E030",
+    "s": "thermodynamics",
+    "t": "arrow-of-time",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E031",
+    "s": "hydrodynamics",
+    "t": "turbulence",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E032",
+    "s": "quantum_mechanics",
+    "t": "measurement-outcome",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E033",
+    "s": "classical_mechanics",
+    "t": "thermodynamics",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": true
+  },
+  {
+    "id": "E034",
+    "s": "general_relativity",
+    "t": "quantum-field-theory-curved",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E035a",
+    "s": "lattice-gauge-theory",
+    "t": "qcd",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E035b",
+    "s": "lattice-gauge-theory",
+    "t": "qcd",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E036",
+    "s": "quantum_mechanics",
+    "t": "berry-phase-holonomy",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E037",
+    "s": "string-theory",
+    "t": "standard_model",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E038",
+    "s": "statistical_mechanics",
+    "t": "phase-transitions-universality",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E039",
+    "s": "special_relativity",
+    "t": "classical_electromagnetism",
+    "arrow": "bidirectional",
+    "near_intra": true,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E040",
+    "s": "many-body-quantum",
+    "t": "fermi-liquid-theory",
+    "arrow": "down",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E041",
+    "s": "qcd",
+    "t": "confinement",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E042",
+    "s": "general_relativity",
+    "t": "singularity-theorems",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  },
+  {
+    "id": "E043",
+    "s": "electroweak_theory",
+    "t": "electroweak-hierarchy",
+    "arrow": "up",
+    "near_intra": false,
+    "has_value_split": true,
+    "is_recognition": false
+  }
+]

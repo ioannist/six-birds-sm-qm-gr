@@ -1,0 +1,38 @@
+{
+  "step": 19,
+  "artifact_dir": "steps/step19_layer_multiplicity_F24_artifacts",
+  "source_carrier": "steps/step8_structural_token_blind_selection_artifacts/neutral_candidate_space_step8.csv",
+  "verdict": {
+    "step": 19,
+    "carrier_size": 8640,
+    "q_definition": [
+      "gauge_code",
+      "rep_code",
+      "n_gen",
+      "texture_code",
+      "uv_code",
+      "vacuum_code",
+      "anomaly_free",
+      "gauge_rep_consistent",
+      "generation_chirality_ok",
+      "texture_ok",
+      "uv_consistent"
+    ],
+    "s_definition": "F47 scale/naturalness readout from scale ratio plus radiative sensitivity",
+    "role_obstruction_pairs": 5760,
+    "descends": false,
+    "role_split": true,
+    "selected_f24_resolution": "BudgetedRole",
+    "memory_layer_forms": false,
+    "scale_only_independent_closure": false,
+    "budgeted_role": true,
+    "f47_selector_fraction": 0.03958333333333333,
+    "f47_small": true,
+    "f47_realized": true,
+    "descending_control_obstruction": 0,
+    "splitting_control_obstruction": 8640,
+    "structural_dependency_not_tdgate": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  }
+}

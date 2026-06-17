@@ -1,0 +1,22 @@
+{
+  "artifact_root": "steps/step31_mode_b_consistency_discriminator_artifacts",
+  "conjoined_survivor_count": 513,
+  "consistency_principle": "closure_consistency_completeness",
+  "dropped_diagnostic": "strict_closure_currency_minimum",
+  "first_principle": "atomic_rewrite_packaging",
+  "forbidden_prior_self_check_pass": true,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_consistency_discriminator",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "add a stronger P6 audit-completeness ledger or an F24 role-obstruction selector over the consistency-complete atomic packages",
+  "reproduced_step29_count": 1851,
+  "root_landed": false,
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "step": 31,
+  "target_distinguished": false,
+  "target_passes_conjunction": true,
+  "target_passes_step29": true,
+  "verdict": "NARROW"
+}

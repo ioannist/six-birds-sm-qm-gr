@@ -1,0 +1,4 @@
+control,passes,evidence
+gut_to_sm_can_be_empty,True,reverse defect is empty in the selected refinement readouts
+sm_to_gut_nonempty,True,count=15
+not_physical_status,True,status-family separation recorded

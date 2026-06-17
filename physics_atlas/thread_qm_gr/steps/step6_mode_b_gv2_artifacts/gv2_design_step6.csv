@@ -1,0 +1,10 @@
+field,value
+predicate_name,holographic_rg_boundary_flow_extension
+completion_E,"E_v2 projects the inherited u_i/v subpackage and the new holographic-RG row w onto target probes; it does not project the triple row unless a later grammar supplies a generated triple audit functional."
+audit_D,"D_v2 is a rowwise P6 bridge audit using the finite Schur residual Xi over sectors, inherited pairwise bridges, the generated HED-AS boundary/continuum bridge, and the triple residual row."
+design_assumption,"Within an AdS-like state class with a valid holographic RG/UV-IR map, a boundary cutoff or radial-flow coordinate w can be treated as an L-layer source atom whose shadow matches a continuum-RG scale probe."
+source_anchor,"Susskind-Witten UV/IR relation; de Boer-Verlinde-Verlinde holographic RG; Skenderis holographic renormalization; Heemskerk-Polchinski Wilsonian holographic RG."
+closed_by_generation,"Bridge_HED_AS_boundary_continuum from w; inherited Bridge_HED_LQG_area_geometry from average(u_i); inherited Bridge_LQG_AS_discrete_continuum from v."
+surviving_residual,Bridge_triple_joint_package
+target_lineage_non_equivalence,"The predicate is a bounded holographic-RG flow extension plus inherited G_v1 rows; because the triple package remains residual, it is strictly weaker than the canonical E018 target."
+no_overread,"The triple row is not native; adding it as native is recorded only as a rejected control."

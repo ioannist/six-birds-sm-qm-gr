@@ -1,0 +1,20 @@
+{
+  "active_residual": "global quotient blind spot over the two Step-48 content classes",
+  "anti_smuggle_self_check_pass": true,
+  "frame_transfer_certified": false,
+  "main_object": "trivially acting center of SU(3)xSU(2)xU(1) on each content class",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "orientation": "ATTEMPT_computation_plus_recognition_landing",
+  "per_class_trivially_acting_center": {
+    "class_00": "Z6",
+    "class_01": "Z6"
+  },
+  "root_landed": false,
+  "selection_result": "blind",
+  "six_gates_pass": true,
+  "sm_center_recovered_as": "Z6",
+  "sm_class_id": "class_01",
+  "step": 55,
+  "verdict": "GLOBAL_QUOTIENT_RECOVERED_SELECTION_BLIND"
+}

@@ -1,0 +1,3 @@
+comparison,definitionally_distinct,extensionally_coincides_on_carrier,evidence
+step48_integer_charge_shadow,True,True,Step48 checks integer charge units; Step54 checks charged mass rank; both classes pass.
+step49_connectivity_shadow,True,True,Step49 checks coverage/channel count; Step54 checks all charged components massed; both classes pass.

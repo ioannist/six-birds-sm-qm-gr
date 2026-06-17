@@ -1,0 +1,5 @@
+criterion,single_factor_unsatisfiable_by_construction,minimality_or_size_selector,flagged,evidence
+base_stable_composite_mass_requirement,False,False,False,single-factor rows pass when their low-energy subgroup and mass closure are computed
+clean_shadow_requirement,False,False,False,single-factor rows receive computed broken-vector exotic counts; they are not rejected by factor count
+step36_factor_local_breaking,True,False,True,diagnostic only: requires an untouched factor
+step37_scalar_stage_currency,False,True,True,diagnostic only: size/currency ordering is not allowed to carry Step 38

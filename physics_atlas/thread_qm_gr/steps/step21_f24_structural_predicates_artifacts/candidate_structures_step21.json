@@ -1,0 +1,543 @@
+[
+  {
+    "name": "L_candidate_package",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "joint_to_q": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "joint_to_role": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "joint_audit": [
+      [
+        0.7,
+        0.2,
+        -0.4,
+        0.35
+      ]
+    ],
+    "residuals": [],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "memory_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "hidden_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "budget_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [
+      {
+        "value": 0.375,
+        "price": 2.0,
+        "status": "adequate"
+      }
+    ],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "scoped_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [],
+    "scope_indices": [
+      0,
+      2,
+      4,
+      5,
+      6
+    ],
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "coarsened_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [],
+    "scope_indices": null,
+    "coarsened_role_readout": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": null
+  },
+  {
+    "name": "outside_scope_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2
+    ],
+    "named_outside_directions": [
+      3
+    ],
+    "closure_matrix": null
+  },
+  {
+    "name": "blocked_control",
+    "carrier_shape": [
+      8,
+      4
+    ],
+    "q_map": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "role_map": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "history_map": null,
+    "latent_map": null,
+    "joint_map": null,
+    "joint_to_q": null,
+    "joint_to_role": null,
+    "joint_audit": null,
+    "residuals": [
+      {
+        "value": 0.5,
+        "price": 1.0,
+        "status": "inadequate"
+      }
+    ],
+    "scope_indices": null,
+    "coarsened_role_readout": null,
+    "in_scope_directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "named_outside_directions": [],
+    "closure_matrix": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  }
+]

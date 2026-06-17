@@ -1,0 +1,2 @@
+IR_EFT_code,realized_fiber_size,admissible_fiber_size_before_selection,admissible_fiber,selected_count_after_selection,selected_UV,selected_score,nonselected_admissible_count,nonselected_admissible,pruned_in_realized_fiber
+IR_SM_TOY,6,3,U_SM;U_alt_GUT;U_alt_stringy,1,U_SM,108.0,2,U_alt_GUT;U_alt_stringy,U_bad_unitarity;U_bad_positivity;U_bad_anomaly

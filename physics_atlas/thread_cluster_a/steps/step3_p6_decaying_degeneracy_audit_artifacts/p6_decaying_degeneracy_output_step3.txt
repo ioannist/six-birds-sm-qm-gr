@@ -1,0 +1,5 @@
+Cluster A Step 3 P6 decaying-degeneracy audit
+Verdict: p6_decaying_degeneracy_audit_constructed
+selection sequence: 9->5->4->2->1->1
+landscape sequence: 9->9->9->9->9->9
+final survivor: w_SM

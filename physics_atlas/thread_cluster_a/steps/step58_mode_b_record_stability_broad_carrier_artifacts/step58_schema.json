@@ -1,0 +1,50 @@
+{
+  "CS_count": 8,
+  "MIN_RECORD_TOKENS": 2,
+  "RS_count": 4,
+  "RS_not_CS_count": 0,
+  "RS_subset_CS": true,
+  "active_residual": "record-stability to CS descent from Step57 downgraded as suggestive partial",
+  "by_structure": [
+    {
+      "CS_count": 8,
+      "RS_count": 4,
+      "RS_not_CS_count": 0,
+      "carrier_rows": 15,
+      "dimensions": "2|3"
+    },
+    {
+      "CS_count": 0,
+      "RS_count": 0,
+      "RS_not_CS_count": 0,
+      "carrier_rows": 49,
+      "dimensions": "3"
+    },
+    {
+      "CS_count": 0,
+      "RS_count": 0,
+      "RS_not_CS_count": 0,
+      "carrier_rows": 16,
+      "dimensions": "4"
+    }
+  ],
+  "carrier_rows": 80,
+  "carrier_source": "steps/step35_mode_b_higher_layer_descent_artifacts/higher_layer_scores_step35.csv",
+  "divergence_witness_exists": false,
+  "divergence_witness_ids": [],
+  "frame_transfer_certified": false,
+  "frozen_requirement_gate_pass": true,
+  "frozen_requirement_sha256": "8068ff17d5ca911ae12f09cc303c8e67ee47c8c92affd0fad9ca28b61fe2e75f",
+  "frozen_requirement_source": "steps/step57_mode_b_record_stability_descent_artifacts/record_stability_descent_step57.py",
+  "main_object": "frozen Step57 RS predicate on broad Step35 carrier",
+  "negative_controls_pass": true,
+  "neutral_carrier_gate_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "test independently checkable forbidden regions and stress the record source beyond this finite carrier",
+  "non_CS_count": 72,
+  "orientation": "ATTEMPT_broad_carrier_record_stability_stress",
+  "root_landed": false,
+  "six_gates_pass": true,
+  "step": 58,
+  "verdict": "ROBUST_DESCENT_FROZEN_RS_SUBSET_CS_ON_BROAD_CARRIER"
+}

@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"no target shape, total-slot, or GUT prior in the bound logic"
+dependency_trace,True,generated_vs_input_step44.csv records inputs and computed obstruction
+negative_controls,True,three-factor rows are nonempty but obstructed
+stage_ii,True,Step43 status and cap obstruction are checked
+honest_coverage,True,all three-factor branches in the Step43 window are covered
+conditional_scope,True,result remains conditional and finite

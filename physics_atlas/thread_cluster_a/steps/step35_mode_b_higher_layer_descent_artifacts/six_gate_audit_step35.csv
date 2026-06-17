@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"predicate excludes parent-group, shape, and observed-content primitives"
+dependency_trace,True,dependencies are listed in dependency_trace_step35.csv
+ablation,True,mass and breaking conditions are load-bearing
+negative_controls,True,some corrected carriers fail; not a target-row picker
+stage_ii,True,corrected 80 reproduced and scalar witnesses enumerated
+no_reductionism,True,predicate types compatibility; it does not derive matter content or values

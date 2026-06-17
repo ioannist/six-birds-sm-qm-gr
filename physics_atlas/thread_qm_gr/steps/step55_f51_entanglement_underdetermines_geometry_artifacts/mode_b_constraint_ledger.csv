@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP55_GENERIC_NONDEGENERATE,active,Uniform point rejected; generic seeded perturbations used.
+C_STEP55_CENTRAL_DIFFERENCE,active,Jacobian uses two-sided central differences.
+C_STEP55_BOTH_DIRECTION_SHADOW,active,Clean shadows require plus and minus finite perturbations to preserve the full fingerprint.

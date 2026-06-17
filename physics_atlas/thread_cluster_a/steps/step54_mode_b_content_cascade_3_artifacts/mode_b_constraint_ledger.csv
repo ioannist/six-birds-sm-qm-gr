@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+step48_integer_charge_shadow,inherited_blind,48,first content shadow
+step49_yukawa_connectivity_shadow,inherited_blind,49,second content shadow
+step54_full_mass_generation_rank,tested_blind,54,third content shadow
+step54_shadow_independence,active_anti_smuggle_constraint,54,third shadow must be SM-content-independent and distinct from Steps 48/49

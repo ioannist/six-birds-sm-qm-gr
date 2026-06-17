@@ -1,0 +1,8 @@
+item,status,detail,source_artifacts
+rho0_spectrum,input,"full-rank finite density matrix spectrum [0.4,0.3,0.2,0.1]",steps/step43_entanglement_first_law_area_energy_artifacts/density_matrices_step43.json
+delta_rho,input,traceless Hermitian perturbation; no geometric coupling inserted,steps/step43_entanglement_first_law_area_energy_artifacts/density_matrices_step43.json
+modular_hamiltonian,generated,H_mod = -log(rho0),steps/step43_entanglement_first_law_area_energy_artifacts/density_matrices_step43.json
+delta_S,generated,central finite difference of entropy of rho(t),steps/step43_entanglement_first_law_area_energy_artifacts/first_law_rows_step43.csv
+delta_H_mod,generated,trace computation -Tr(delta_rho log rho0),steps/step43_entanglement_first_law_area_energy_artifacts/first_law_rows_step43.csv
+relative_entropy,generated,computed as Tr rho(t)(log rho(t)-log rho0),steps/step43_entanglement_first_law_area_energy_artifacts/relative_entropy_step43.csv
+RT_coefficient_area_per_entropy,generated_from_prior_artifact,"computed from Step41 saturated rows holo_refinement_D2;holo_refinement_D3, not a continuum constant",steps/step41_tensor_network_rt_bound_artifacts/tensor_network_rt_bound_sim_step41.csv

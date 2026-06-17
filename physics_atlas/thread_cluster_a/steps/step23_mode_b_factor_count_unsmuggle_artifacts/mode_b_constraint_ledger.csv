@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP23_GENERAL_LATTICE,ModeB,step23_mode_b_factor_count_unsmuggle,carrier,"The Step-22 two-factor-only neutral-weight solver is replaced by a general trace-zero charge lattice over every factor count in 0..4."
+C_CLUSTER_A_STEP23_PER_FACTOR_RESULTS,ModeB,step23_mode_b_factor_count_unsmuggle,generated_output,"Per-factor-count closure results are n=0:0, n=1:0, n=2:1, n=3:0, n=4:0, with computed verdicts for all 70 candidates."
+C_CLUSTER_A_STEP23_MINIMAL_STRUCTURE,ModeB,step23_mode_b_factor_count_unsmuggle,generated_output,"The unique minimal generated closer has factor count 2, ranks 1|2, dimensions 2|3, and selected charge vector 3|-2."
+C_CLUSTER_A_STEP23_STRUCTURAL_GATE,ModeB,step23_mode_b_factor_count_unsmuggle,anti_smuggling,"The strengthened structural-smuggle gate scans for factor-count/rank short-circuits and passes."
+C_CLUSTER_A_STEP23_CONTROLS,ModeB,step23_mode_b_factor_count_unsmuggle,anti_smuggling,"Abelian-only, real-rep-only, and single-complex-factor controls fail by computed closure verdict; Stage II checks pass."
+C_CLUSTER_A_STEP23_NONCLAIM_BOUNDARY,ModeB,step23_mode_b_factor_count_unsmuggle,honesty,"Finite enumeration only; not physical E019 closure and no frame-transfer status upgrade."

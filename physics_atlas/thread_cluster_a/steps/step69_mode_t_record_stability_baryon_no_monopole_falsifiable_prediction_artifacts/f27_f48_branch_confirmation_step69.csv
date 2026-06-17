@@ -1,0 +1,3 @@
+branch,sample_carrier_id,sample_dimensions,f27_baryon_descends,f27_obstruction_count,f48_gluing_obstruction,f48_monopole_typed
+clean,carrier_00993,2|2,True,0,0,False
+breaking,carrier_00000,2,False,3,3,True

@@ -1,0 +1,3 @@
+claim,grade,evidence
+coverage_status,no_structural_proof_found,"No structural proof that confining-charged transition vectors necessarily destroy substrate, capacity, or distinguishability was found; coverage is enumeration-only."
+near_miss_pattern,empirical_on_carrier,non-CS capacity rows=311; non-CS substrate rows=60; non-CS substrate+capacity rows=0

@@ -1,0 +1,1342 @@
+{
+  "candidates": [
+    {
+      "id": "R001",
+      "title": "Quantum-to-classical limit and 'collapse' as an idempotent packaging closure with diagonal fixed points (dephasing = P5 endomap)",
+      "target_fact": "Dephasing/Lueders-pinching in a fixed pointer (record) basis Delta(rho)=sum_i Pi_i rho Pi_i is idempotent, and its fixed points are exactly the record-classical (diagonal) density operators; 'collapse' is the recovery of a classical mixture over pointer outcomes (einselection / nonselective Lueders update / quantum-to-classical record transition).",
+      "scientific_domain": "Quantum foundations / decoherence / quantum-to-classical limit / measurement",
+      "argument_family": "low-energy-limit",
+      "core_claim": "SBT reframes decoherence and measurement 'collapse' as a P5 packaging closure: the dephasing map Delta is the canonical idempotent completion endomap E whose fixed-point set Fix(E) is exactly the diagonal (record-classical) states. Given a record basis, the objecthood-as-fixed-points law forces a unique admissible stable record algebra (Fix(Delta) = diagonal states), and 'collapse' is the once-and-done action of an idempotent closure rather than a new causal law. Contextuality/complementarity become noncommuting closures (route mismatch); in the cat model the global state stays near-pure while the packaged record state is a classical mixture. The idempotence and diagonal-fixed-point characterization are PROVED and Lean-certified (dephase_idem, dephase_fixed_iff_exists_diagonal).",
+      "theory_components_used": [
+        {
+          "component": "P5 packaging/completion endomap E with Fix(E)=objects (idempotent closure)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "thm:dephase (idempotence + diagonal fixed-point characterization), Lean dephase_idem / dephase_fixed_iff_exists_diagonal",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Route mismatch RM(Delta_1,Delta_2;rho) as contextuality diagnostic (~0 for record-diagonal H, max ~0.350099 generic); cat global-purity vs packaged-mixture (EXP-CAT1)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Causal-vs-inferential role separation (substrate dynamics T vs packaging E); quantum dephasing instantiation",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        }
+      ],
+      "known_result_matched": "Environment-induced decoherence / einselection (Zurek 2003) and the Lueders nonselective projective measurement: dephasing in the pointer basis is an idempotent CPTP projector whose fixed points are the decohered diagonal states; the einselected pointer basis defines the emergent classical record layer (Nielsen-Chuang).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Lens f / record (pointer) basis (selected, not derived)",
+        "Completion/packaging map E (dephasing is canonical but not unique)",
+        "Timescale tau / dephasing strength lambda (lambda=1 full dephasing null-gate to lambda=0 trivial)"
+      ],
+      "auxiliary_assumptions": [
+        "The pointer/record basis is GIVEN as the lens interface (SBT supplies no canonical-lens rule selecting it)",
+        "Standard CPTP dephasing / unitary substrate dynamics and the Born statistics are consumed as input, not derived",
+        "Idempotence holds in the ideal repeatable-record regime; generic POVMs/instruments need not be idempotent"
+      ],
+      "why_fertile": "SBT's single strongest physics retrodiction: a load-bearing, PROVED, Lean-certified instance where 'objects = fixed points of an idempotent completion' coincides exactly with the textbook decohered classical states, cleanly separating causal evolution (substrate) from inferential packaging (closure). It compresses collapse, einselection, the classical/quantum cut, and the cat 'paradox' into one fixed-point statement, and the conditional-on-basis caveat is exactly the missing pointer-basis-selection interface, a sharp target for repair (a canonical-lens principle would upgrade it from A-given-basis toward a genuine selection law).",
+      "initial_risks": [
+        "Elementary linear algebra (Lueders pinching) relabeled; the paper explicitly DISCLAIMS uniqueness ('SBT allows other completion/packaging choices') and novelty",
+        "Pointer-basis selection, the Born rule, and single-outcome selection are all explicitly NOT derived",
+        "Idempotence-defect guardrail: small delta is a saturation diagnostic only (a constant map has delta=0), so idempotence alone does not certify nontrivial classicality"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper thm:dephase: 'Delta(rho)=rho iff rho is diagonal in that basis'; 'collapse ... is not a new causal law'; non-claims: 'No Born-rule derivation ... No selection rule derived. We do not derive pointer-basis selection or single-outcome selection.' Merged across low-energy-limit, uniqueness-necessity, structural, paradox-resolution, reinterpretation framings and forced targets #1, #2, #25."
+    },
+    {
+      "id": "R002",
+      "title": "Schroedinger's cat localized: macroscopic definiteness as layer-relative objecthood (global purity coexists with packaged classical mixture)",
+      "target_fact": "In a system-apparatus-environment measurement the global tripartite state can remain (near) pure and entangled while the reduced/packaged record-level description is a classical mixture over pointer outcomes; macroscopic 'alive vs dead' definiteness appears only at the record level, with no observable macroscopic superposition.",
+      "scientific_domain": "Quantum foundations / macroscopic superposition / quantum-to-classical transition",
+      "argument_family": "paradox-resolution",
+      "core_claim": "SBT dissolves the cat paradox by making objecthood layer-relative: 'alive vs dead' is an object-level distinction only once a stable record is packaged (P5). In an explicit S-A-E qubit model (EXP-CAT1) the global purity stays ~1 while the packaged (partial-trace + dephase) record state is, to numerical precision, a classical mixture in the pointer basis, and packaging remains idempotent (defect ~0). The paradox is diagnosed as a category mistake: treating macroscopic alternatives as object-level facts before the corresponding record distinctions are packaged.",
+      "theory_components_used": [
+        {
+          "component": "P5 packaging endomap + Fix(E); layer-relative objecthood / Leibniz quotient (OI-EI)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "S-A-E cat model: global purity vs packaged classical mixture, idempotence error ~0 (EXP-CAT1); discard Q_f = partial trace, diagonal completion U_f",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Route mismatch RM between unitary U_tau and dephasing Delta (commute iff record-diagonal H)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        }
+      ],
+      "known_result_matched": "Standard decoherence account of apparent collapse (Zurek; Joos-Zeh): tracing out / dephasing the environment yields a classical mixture at the apparatus level while the global state is unitary and near-pure.",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Lens f / pointer basis on apparatus register",
+        "S-A-E coupling Hamiltonian (CNOT-type) and record-interaction timescale"
+      ],
+      "auxiliary_assumptions": [
+        "Pointer basis and discard/dephase channel are supplied externally",
+        "Standard QM (unitary substrate + partial trace) and Born statistics are imported",
+        "Single-outcome definiteness (why we see one outcome) is NOT addressed"
+      ],
+      "why_fertile": "Turns the measurement problem into a statement about which layer carries objecthood, sharply separating the genuinely resolved part (no macroscopic superposition is an OBJECT until a record is packaged) from the open part (single-outcome selection, which basis). Reuses the same P5 closure primitive as collapse and decoherence, demonstrating cross-phenomenon compression.",
+      "initial_risks": [
+        "Largely standard decoherence reproduced numerically and relabeled; no new physics",
+        "Single-outcome selection and pointer-basis selection (einselection content) NOT derived; near-pure-global vs mixed-reduced is just the partial-trace identity",
+        "Numerical demonstration in a toy qubit model, not a general theorem"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper abstract (iv): 'the global state can remain near-pure while the packaged record state is a classical mixture, and packaging remains idempotent'; intro: 'alive vs dead becomes an object-level distinction only when a stable record is packaged.' Merged structural + paradox-resolution cat candidates."
+    },
+    {
+      "id": "R003",
+      "title": "Double-slit visibility and quantum eraser as repackaging/conditioning (Englert V^2+D^2<=1 reproduced; retrocausality dissolved)",
+      "target_fact": "Which-path distinguishability D suppresses double-slit fringe visibility V (Englert's V^2+D^2<=1 duality): full visibility when the which-path record is indistinguishable, zero when perfectly distinguishing; conditioning on an eraser-basis outcome restores complementary fringes, and delayed-choice versions require no retrocausal influence.",
+      "scientific_domain": "Quantum foundations / complementarity / which-path / eraser / delayed choice",
+      "argument_family": "paradox-resolution",
+      "core_claim": "SBT reframes complementarity and the eraser as objecthood budgeting: decreasing environment-record overlap |gamma| continuously suppresses visibility (visibility[0]=1, visibility_at_zero_gamma=0, tracking |gamma|), and the eraser is a selective inferential update (conditioning in the {+/-} basis) that restores complementary fringes (visibility_plus=1 while unconditional ~6.66e-16). On fixed support the marked-vs-erased contrast is captured by recombination-quotient strict refinement (eta_max>1): marked = factorized regime (R_i=K_i, no recovery), erased = strict-refinement regime (R_i!=K_i, recovery). The apparent retrocausality dissolves into which distinctions are packaged vs conditioned -- 'nothing needs to change the past.'",
+      "theory_components_used": [
+        {
+          "component": "Visibility-vs-record-overlap curve V(|gamma|); quantum eraser as conditional packaging (EXP-DS1/QE1); 'distinction becomes an object' criterion",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Recombination quotient R_i vs branchwise quotient K_i; forgetful map eta_i; strict refinement (eta_max>1); marked (R=K) vs erased (R!=K), Lean-anchored finite witnesses",
+          "paper": "Tsiokos_2026_Marking_Erasure_and_Recombination_on_Fixed_Support_Exact_Finite_Evidence_from_Six_Birds_Theory.tex"
+        },
+        {
+          "component": "Selective vs nonselective update distinction (conditioning is inferential refinement, not causal influence)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        }
+      ],
+      "known_result_matched": "Englert (1996) visibility-distinguishability duality V^2+D^2<=1; Scully-Druhl / Kim et al. quantum eraser; fringe restoration by conditioning without retrocausal signalling.",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Which-path record overlap gamma = <E_B|E_A> (swept; the controlling input)",
+        "Eraser conditioning basis ({Z} vs {+/-})",
+        "Recombination carrier params (branch number n, shift delta, weights) on fixed support; far-field geometry"
+      ],
+      "auxiliary_assumptions": [
+        "Born-rule statistics imported for the double-slit model; gamma inserted by hand",
+        "The fixed-support recombination model is an operational analogue, not a Hilbert-space derivation",
+        "No probability/Born valuation produced for branch assemblages; pointer/record basis externally chosen"
+      ],
+      "why_fertile": "Provides an exact finite (Lean-anchored) witness structure (recombination strict refinement eta_max>1) that operationally distinguishes marked from erased WITHOUT invoking retrocausality, giving a substrate-independent diagnostic for interference-like structure and a reusable template for delayed-choice/complementarity claims as packaging/conditioning rather than temporal influence.",
+      "initial_risks": [
+        "Operational analogue only: the Hilbert-space double-slit numbers are imported, not derived; the 'match' reproduces textbook phenomenology",
+        "gamma is a free input and no rule selects the record basis, so V(|gamma|) is parametric not predictive",
+        "Retrocausality dissolution is an interpretive claim riding on standard QM, not a new physical prediction"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper: 'interference visibility is controlled by the record overlap gamma ... [Englert1996Visibility]'; results: visibility[0]=1, visibility_at_zero_gamma=0, visibility_plus=1, visibility_unconditional=6.66134e-16; Marking-Erasure: marked R=K vs erased strict refinement. Merged numerical-match + paradox-resolution eraser candidates."
+    },
+    {
+      "id": "R004",
+      "title": "No-signalling as a data-processing / marginal-invariance theorem: EPR nonlocality is inferential conditioning, not a causal channel",
+      "target_fact": "A local measurement-basis choice at A leaves the reduced/marginal statistics at a spacelike-separated B invariant (no-signalling), while conditioning on A's announced outcome can change B's conditional state sharply; a classical XOR/one-time-pad constraint box yields strong conditional dependence but zero signalling (max-TV=0), a true channel yields maximal signalling (TV=1). Bell-nonlocal correlations are no-signalling.",
+      "scientific_domain": "Quantum foundations / relativity (operational locality) / quantum information",
+      "argument_family": "constraint-null-result",
+      "core_claim": "SBT separates 'constraint' (joint feasibility, P2 cone) from 'channel' (intervention-respecting causal mechanism) and shows no-signalling falls out as marginal invariance: Bob's unconditional reduced state is invariant under Alice's basis choice (EXP-NS1 no_signalling_dist ~2e-16) while conditioning changes his conditional state (dist=1) -- 'inference update is not influence.' The same separation is reproduced by a classical XOR constraint box (max-TV=0 vs signalling-box TV=1). The general guard is the deterministic data-processing inequality (finite TV-DPI, Lean tvdist_pushforward_le; CPTP-DPI cited): coarse access cannot manufacture distinguishability not present at the substrate, so a remote setting cannot create a detectable marginal change. Relativistic locality is recast as a declared P2 cone constraint, not a produced light cone.",
+      "theory_components_used": [
+        {
+          "component": "No-signalling vs conditioning demonstration (EXP-NS1): unconditional invariance ~2e-16 vs conditional change =1; 'inference update is not influence'",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Finite TV data-processing inequality (thm:tv-dpi, Lean tvdist_pushforward_le) + cited CPTP-DPI: coarse access cannot create distinguishability",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "P2 gating / constraint-vs-channel diagnosis; classical XOR constraint-box (max-TV=0) vs signalling-box (TV=1); relativistic locality as a P2 cone constraint",
+          "paper": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex"
+        }
+      ],
+      "known_result_matched": "No-signalling theorem in quantum theory (reduced state independent of remote measurement choice); operational locality / Eberhard-Ghirardi no-superluminal-signalling; PR-box / one-time-pad constraint structure (Shannon; Popescu-Rohrlich; Brunner et al.).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Choice of lens / record algebra deciding what is a 'marginal' vs a 'conditional'",
+        "Box function g(x,y) defining the constraint structure",
+        "Born-rule statistics consumed as input (SBT produces no probability valuation)"
+      ],
+      "auxiliary_assumptions": [
+        "Quantum no-signalling is imported via cited CPTP-DPI; only the finite TV version is Lean-certified",
+        "The classical XOR box is a deliberate toy, not a quantum reconstruction",
+        "Bell/hidden-variable content is only classified (F49), not predicted; the light cone is declared, not produced"
+      ],
+      "why_fertile": "Provides an audit-grade demarcation ('inference update is not influence') that dissolves a recurring category error (treating conditioning as superluminal influence) via SBT's own DPI 'no false positives' guard, with a reusable operational separator (max-TV remote-marginal test) applying uniformly to classical and quantum boxes. Cleanly maps the relativistic-cone-vs-quantum-correlations tension onto the P2 constraint-vs-channel distinction.",
+      "initial_risks": [
+        "Does NOT derive the quantum no-signalling theorem from deeper principles; imports CPTP-DPI and the marginal lemma (the deep content is the Born rule, disclaimed)",
+        "The classical XOR box shows the separation is not specifically quantum -- a structural diagnosis, not new physics",
+        "Does not solve Bell, derive the Born rule, or quantify CHSH; must not be read as deriving relativistic locality"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper: 'this invariance is the no-signalling constraint ... an inferential update ... not evidence of a new causal influence'; EXP-NS1 no_signalling_dist ~2e-16; thm:tv-dpi. To_Notch: constraint_box max-TV=0, signalling_box max-TV=1. Merged symmetry-emergence, constraint-null-result, and paradox-resolution no-signalling/locality framings."
+    },
+    {
+      "id": "R005",
+      "title": "Bipartite correlations forced into a trichotomy normal form: common-source, interface-factorizable, or flagged nonlocal residual (Reichenbach/Bell structure, NOT a Bell resolution)",
+      "target_fact": "Statistical correlations between two observers are either explained by a common cause (shared past), by a shared interface/factorization, or constitute a genuine nonlocal residual that no local-causal model captures (the Reichenbach common-cause principle and the residue Bell-violating correlations leave behind).",
+      "scientific_domain": "Quantum foundations / information physics (nonlocality, common-cause, EPR)",
+      "argument_family": "uniqueness-necessity",
+      "core_claim": "SBT forces every bipartite correlation into a unique structural normal form (F49): LocallyExplainable(kappa) iff CommonSource(sigma) OR InterfaceFactorization(iota) -- both local readouts descend through a shared source quotient or a shared interface -- and if neither holds the correlation is necessarily a statused nonlocal residual. Combined with the no-signalling/conditioning separation, SBT forces the admissible explanatory structures to exactly these three, locating where Bell-type tension must reside without positing influence.",
+      "theory_components_used": [
+        {
+          "component": "thm:F49 Common-Source / Nonlocal Correlation Normal Form (Lean common_source_nonlocal_correlation)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "No-signalling vs conditioning separation (no_signalling_dist ~2e-16); audit DPI 'coarse access cannot create distinguishability'",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Definability / strict-extension reading of contexts as incompatible (noncommuting) closures",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        }
+      ],
+      "known_result_matched": "Reichenbach common-cause principle; Bell's theorem structure (local-causal models = common-cause + factorization); no-signalling theorem; classification of correlations as common-cause / nonlocal.",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Source quotient sigma, shared interface iota, access quotients/readouts (declared per instance)",
+        "Correlation readout kappa"
+      ],
+      "auxiliary_assumptions": [
+        "History space, source quotient, and interface are declared inputs (physics supplied from outside)",
+        "The 'nonlocal residual' is only statused/flagged, not given a hidden-variable completion or a quantitative bound"
+      ],
+      "why_fertile": "A uniqueness-necessity statement about explanatory STRUCTURE: SBT forces correlations into exactly common-source / interface-factorizable / flagged-residual, compressing Reichenbach + the local-causal-model decomposition + no-signalling into one normal form and cleanly localizing Bell tension to the residual bucket. Fertile as a taxonomy any concrete correlation must fit, with an honest 'no hidden-variable completion' boundary inviting downstream quantification.",
+      "initial_risks": [
+        "EXPLICITLY not a Bell solution / no hidden-variable completion; the residual is only flagged, never quantified",
+        "A quotient-descent trichotomy parametric in declared substrate data; risk of being a definitional classification rather than a physical prediction (no nonlocal correlations PREDICTED, only classified)",
+        "Does not derive the Born rule or quantify CHSH; the three options are forced as logical structure, not a physical mechanism"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV thm:F49: 'LocallyExplainable(kappa) iff CommonSource(sigma) OR InterfaceFactorization(iota) ... If neither disjunct holds, the correlation is a statused nonlocal residual.' Quantum non-claim: 'Not a Bell solution. We do not provide a hidden-variable completion.'"
+    },
+    {
+      "id": "R006",
+      "title": "Quantum contextuality (Kochen-Specker / Peres-Mermin) and complementarity as noncommuting packaging closures (route mismatch)",
+      "target_fact": "Measurement contextuality -- the impossibility of a single context-independent value assignment to all observables (Kochen-Specker, Peres-Mermin square) -- and the complementarity of incompatible measurement contexts are real features of quantum theory.",
+      "scientific_domain": "Quantum foundations / information physics",
+      "argument_family": "parameter-compression",
+      "core_claim": "SBT reframes contextuality as the generic noncommutation of idempotent packaging maps (closures) associated with incompatible record algebras: two dephasing closures Delta_1, Delta_2 onto incompatible bases need not commute (RM_d = d(Delta_1 Delta_2 rho, Delta_2 Delta_1 rho)>0), and a single global value map across contexts is exactly the demand that all closures commute. The 'no global packaging' obstruction is a finite, Lean-certified structural possibility (noncommuting idempotents on Fin 4), localizing where a global-record premise enters KS/PM/Bell arguments and compressing contextuality, complementarity (visibility vs which-path), and the cat 'paradox' into one route-mismatch mechanism.",
+      "theory_components_used": [
+        {
+          "component": "Dephasing idempotent with diagonal fixed points (thm:dephase; Lean dephase_idem)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Route mismatch RM_d(E,F;rho)=d(EFrho,FErho); noncommuting idempotents witness (Lean mismatch_witness, not_commute_E_F)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "OI-EI principle + 'no single global record language commuting with every context' diagnosis of KS/PM/PBR premises",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        }
+      ],
+      "known_result_matched": "Kochen-Specker theorem and Peres-Mermin square (no noncontextual value assignment); Bohr complementarity / incompatibility of noncommuting observables.",
+      "derivability_class": "D",
+      "free_parameters_used": [
+        "Record basis / pointer algebra per context (selected, not derived)",
+        "Hamiltonian H (route mismatch ~0 for record-diagonal H, max ~0.350 generic)",
+        "Dephasing strength lambda"
+      ],
+      "auxiliary_assumptions": [
+        "Born-rule statistics and Hilbert-space substrate presupposed (consumed)",
+        "Record algebras / pointer bases are given interfaces (no canonical-lens selection)",
+        "Identifying contextuality with closure noncommutation is an interpretational mapping, not a theorem"
+      ],
+      "why_fertile": "Offers a single audited primitive (noncommuting idempotent closures = route mismatch) that absorbs contextuality, complementarity, double-slit/eraser visibility, and the cat paradox as one mechanism, and pinpoints the exact premise (global commuting record language) the standard no-go theorems smuggle in. Could become fertile if a record-algebra selection rule (a named missing interface) were added.",
+      "initial_risks": [
+        "Pure reframing: the heavy lifting (Born rule, Hilbert space, pointer basis) is imported; SBT adds bookkeeping discipline, not new predictive content",
+        "Missing interfaces: no pointer-basis selection, no Bell/hidden-variable interface (F49 only classifies), no probability valuation",
+        "The noncommuting-idempotents witness is generic linear algebra; it does not capture the specific algebraic constraints (e.g. PM-square anticommutation) that make contextuality sharp"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper abstract: 'contextuality ... incompatibility of measurement contexts manifests as noncommuting closures (route mismatch), not superluminal causation'; sec:no-go: 'a single global record language ... amounts to ... a single packaging/value map across contexts'; disclaimer 'We do not claim to derive the Born rule or resolve Bell's theorem.'"
+    },
+    {
+      "id": "R007",
+      "title": "Quantum/classical probability forced to the structural form of a stable unresolved fiber (F23): the slot for the Born measure, NOT the Born rule",
+      "target_fact": "Probabilistic descriptions arise wherever a coarse quotient leaves a fiber unresolved (distinct microhistories share a macro class) and a weight assignment on that fiber is stable under allowed perturbations -- the branch / decoherent-histories reading of where probability (and the Born |amplitude|^2 measure) lives.",
+      "scientific_domain": "Information physics / quantum foundations (probability, decoherent histories, Born rule)",
+      "argument_family": "uniqueness-necessity",
+      "core_claim": "SBT forces a unique STRUCTURAL form for any layer-level probability: F23 proves a StableProbability exists exactly when a readout r does NOT descend through the quotient q (Unresolved(q,r)) AND the induced fiber weight is stable. Probability is thereby classified as 'a stable weight on a fiber the lens fails to resolve' -- resolved fibers carry no probability, unresolved+stable fibers necessarily do. This is the closest structural reading of the decoherent-histories/branch picture: it pins WHERE the Born measure must live (the unresolved record fiber) while deliberately leaving the numerical weights undetermined.",
+      "theory_components_used": [
+        {
+          "component": "thm:F23 Probability as Stable Unresolved Fiber (Lean probability_as_stable_unresolved_fiber)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "Definability / quotient-descent criterion (readout descends iff constant on fibers)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "Closure deficit CD_tau (unresolved within-fiber predictive residue) as dynamical cousin; dephasing packaging fixing the outcome fibers",
+          "paper": "Tsiokos_2026_To_Cast_a_Stone_with_Six_Birds_A_Closure_Deficit_Account_of_Randomness_under_Packaging_and_Budget.tex"
+        }
+      ],
+      "known_result_matched": "Decoherent/consistent-histories interpretation of probability as living on branch fibers (Griffiths); Kolmogorov measure-theoretic probability and the Born rule as the value-assignment layer (cited as what F23 does NOT determine).",
+      "derivability_class": "D",
+      "free_parameters_used": [
+        "Weight assignment m / ledger lambda (the actual measure -- DECLARED, not produced)",
+        "Quotient q (the lens) and readout r",
+        "Stability predicate / allowed perturbations defining Stable(Pr); record basis"
+      ],
+      "auxiliary_assumptions": [
+        "A weight assignment m (the measure / Born weights) is supplied externally -- the load-bearing gap",
+        "Stability of the fiber weight under declared perturbations is assumed, not derived",
+        "Mapping to quantum outcomes requires the dephasing/record packaging and the standard operational predictions as given"
+      ],
+      "why_fertile": "The most honest uniqueness-necessity claim SBT can make about probability: it FORCES the structural form (unresolved-stable fiber) and forbids probability on resolved fibers, isolating the repair frontier precisely -- SBT supplies the fiber/slot and a stability condition but NOT the weights. A future SBT measure-selection principle (envariance- or Gleason-type) would slot directly into m and could move this from D toward a genuine partial Born-rule derivation.",
+      "initial_risks": [
+        "EXPLICITLY does not derive the Born rule or any numerical probability; the entire empirical content (the weights) is a free declared input m",
+        "The content is the quotient-descent dichotomy (resolved vs unresolved); risk of being a relabeled tautology",
+        "Identifying 'unresolved fiber' with a quantum outcome smuggles in the record basis and predictions SBT consumes"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV thm:F23: 'StableProbability(q,r,lambda,m) iff Unresolved(q,r) and Stable(Pr_{q,r})'; 'The theorem does not determine numerical probability values.' Quantum disclaimer: 'No Born-rule derivation ... We treat the standard operational predictions as given.' Merged uniqueness-necessity + reinterpretation F23 framings."
+    },
+    {
+      "id": "R008",
+      "title": "Kinetic-to-hydrodynamic limit: BGK moment closure with Maxwellian completion as an approximately-idempotent packaging layer",
+      "target_fact": "In the hydrodynamic (small-Knudsen) limit, BGK relaxation drives a kinetic distribution toward a local Maxwellian; retaining low-order moments with a local-equilibrium completion yields a closed fluid description that improves as collision frequency increases (Bhatnagar-Gross-Krook / Levermore moment closure; Chapman-Enskog).",
+      "scientific_domain": "Statistical mechanics / kinetic theory / hydrodynamics (low-Knudsen limit)",
+      "argument_family": "low-energy-limit",
+      "core_claim": "SBT reconstructs the kinetic->fluid reduction as a closure package: the moment lens f retains rho and u, the completion U_f reconstructs the max-entropy (Maxwellian-like) local equilibrium, and E_f = U_f o Q_f is the packaging map. The hydrodynamic limit is the regime where E_{tau,f} becomes approximately idempotent: the TV idempotence defect delta(mu) decreases as collision strength omega rises (delta 0.418 at omega=0 to 0.285 at omega=1, tau=10). Misspecified equilibrium family or a lens missing the energy slow-mode produce SBT-predicted systematic failure modes (energy error 0.262 collapsing to ~1.8e-17 after extending the lens).",
+      "theory_components_used": [
+        {
+          "component": "Packaging endomap E_{tau,f}=U_f Q_f T_tau and idempotence defect delta_{tau,f} as objecthood/closure certificate",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "Moment lens + local-equilibrium (Maxwellian/max-entropy) completion; idempotence defect vs collision frequency; failure modes FM1-FM3",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        },
+        {
+          "component": "Route mismatch (noncommutation of packaging with evolution) as the residual/correction-term diagnostic",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        }
+      ],
+      "known_result_matched": "BGK relaxation to local equilibrium and the Chapman-Enskog / moment-closure route from kinetic theory to fluid dynamics: as collision frequency rises (Knudsen number drops) the distribution relaxes to a Maxwellian and the retained-moment description becomes self-consistent (Bhatnagar-Gross-Krook 1954; Levermore 1996).",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Lens f (retained moments: baseline rho,u; energy added only in FM3)",
+        "Completion U_f (the discrete max-entropy / Maxwellian equilibrium family)",
+        "Timescale tau (BGK steps) and collision strength omega (omega=0 free-transport null-gate to omega=1 full projection)",
+        "Idempotence-defect tolerance epsilon"
+      ],
+      "auxiliary_assumptions": [
+        "The equilibrium completion family is correctly specified (wrong f_eq gives biased macro fields)",
+        "Retained moments include all relevant slow modes (omitting energy breaks closure)",
+        "Finite discrete-velocity substrate stands in for the continuum kinetic equation; no continuum limit is taken"
+      ],
+      "why_fertile": "SBT's idempotence-defect machinery cleanly recovers the qualitative content of the kinetic->hydrodynamic limit (closure quality controlled by a Knudsen-like parameter) AND predicts the precise ways moment closure fails. The failure-mode taxonomy (wrong equilibrium family vs missing slow mode) is genuinely diagnostic and reusable, turning a known limit into an auditable pass/fail certificate.",
+      "initial_risks": [
+        "Standard kinetic theory (BGK, Maxwellian, moment closure) is imported wholesale; SBT contributes a relabeling, not new physics",
+        "No canonical completion U_f / prototype selection rule: the Maxwellian is chosen by hand; explicitly NOT a derivation of Navier-Stokes",
+        "No continuum interface or convergence theorem; macro entropy/dissipation proxies are informational, not physical entropy production"
+      ],
+      "grounded": true,
+      "provenance": "To_Become_a_Stone: 'packaging coherence improves as collision strength increases ... delta decreases as omega increases'; 'FM3 missing-energy error 0.262 -> ~1.8e-17 after extending the lens'; disclaimer 'We do not derive continuum theories ... not Navier-Stokes.' Covers forced target #26."
+    },
+    {
+      "id": "R009",
+      "title": "Filtered Burgers yields the exact LES subgrid-stress identity tau_sgs = mean(u^2) - (mean u)^2 as the forced closure rewrite term",
+      "target_fact": "Filtering a nonlinear advection equation does not commute with the nonlinear flux, producing a subgrid stress term (Germano/Leonard decomposition); for filtered Burgers this is tau_sgs = filtered(u^2) - (filtered u)^2, identically zero for linear dynamics and growing with filter width.",
+      "scientific_domain": "Fluid dynamics / turbulence closure (statistical mechanics of coarse-graining)",
+      "argument_family": "numerical-match",
+      "core_claim": "SBT's route-mismatch primitive (P1 operator rewrite, lens-only commutator Q T_tau - T_tau Q) applied to 1D viscous Burgers with a translation-invariant filter produces EXACTLY the canonical LES subgrid stress tau_sgs = overline(u^2) - (bar u)^2 as the structured correction that makes the filtered macro evolution match the filtered micro image. It is identically zero for linear dynamics and grows with filter width sigma, matching the standard turbulence-modeling identity with no free fitting of the term itself.",
+      "theory_components_used": [
+        {
+          "component": "Route mismatch / non-commutation of packaging (filter) and evolution; subgrid term as P1 operator-rewrite",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        },
+        {
+          "component": "Lens-only setting (no canonical completion U_f for filtering; commutator-based rewrite)",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        }
+      ],
+      "known_result_matched": "Germano (1992) / Leonard (1974) / Smagorinsky (1963) LES subgrid stress: tau_sgs = filtered(u u) - (filtered u)(filtered u), the closure term from filter-nonlinearity noncommutation.",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Filter width sigma (controls tau_sgs magnitude)",
+        "Viscosity nu",
+        "Grid resolution / periodic-domain geometry; filter kernel shape (translation-invariant convolution)"
+      ],
+      "auxiliary_assumptions": [
+        "Translation-invariant convolution filter on a periodic domain (so filtering commutes with derivatives, isolating the nonlinear-flux term)",
+        "1D Burgers as the minimal nonlinear surrogate; no canonical completion needed (lens-only commutator)"
+      ],
+      "why_fertile": "A clean, exact instance where SBT's generic route-mismatch law specializes to a recognized physics closure term with no free fitting of the term itself (sigma only scales it). It shows the SBT claim 'E o T != T o E is the universal mechanism behind subgrid stress, backreaction, contextuality' is literally true here, and disciplines analogous closure-term derivations.",
+      "initial_risks": [
+        "A RECOVERY of a 1962-1992 known identity, not a prediction; the match is really 'exact algebraic-identity match', not a constant",
+        "The match is essentially the definition of the filtered nonlinear flux; SBT relabels it 'route mismatch / rewrite term' without new quantitative content",
+        "Explicitly not a Navier-Stokes derivation and no continuum convergence theorem"
+      ],
+      "grounded": true,
+      "provenance": "To_Become_a_Stone: 'tau_sgs := overline{u^2} - (bar u)^2 ... identically zero for linear dynamics ... a rewrite term'; cites germano1992, leonard1974, smagorinsky1963; 'we do not derive continuum theories.'"
+    },
+    {
+      "id": "R010",
+      "title": "Temperature (and chemical potential, price, rate-distortion multiplier, regularizer) as the shadow price of a maintenance budget: one closure object across layers",
+      "target_fact": "Inverse temperature in equilibrium statistical mechanics is the Lagrange multiplier (shadow price) of a mean-energy constraint in the MaxEnt/Jaynes program, returning zero when the constraint is slack and rising as it binds; the same dual-coordinate role is played by chemical potential, market price, rate-distortion multiplier, and learning-rate/regularization strength.",
+      "scientific_domain": "Thermodynamics / equilibrium statistical mechanics / information physics",
+      "argument_family": "parameter-compression",
+      "core_claim": "SBT's currency-constraint principle derives the recurrence of temperature-like dual variables structurally: a packaged macro object persists only under bounded lower-layer spending (E[u|Y]<=b, P5+P6), so by constrained MaxCal/MaxEnt closure q(lambda) ~ exp(-lambda u) the higher layer is organized by that budget and its native currency emerges as the shadow price lambda = dPhi*/db, which is exactly 0 in the slack regime and positive when binding. Inverse temperature and the rate-distortion multiplier become literally the same dual-of-a-budget object on different substrates. This goes beyond 'Lagrange multipliers exist' by explaining why the constrained program arises across layers (maintenance economics) and compresses temperature/chemical-potential/price/regularizer/attention into one mathematical kind, with monotone price emergence verified (Spearman rho_mean = -0.99923) and lambda=0 exactly on slack.",
+      "theory_components_used": [
+        {
+          "component": "Currency-constraint principle / shadow price lambda = dPhi*/db across closure layers; lambda=0 exactly on slack budget",
+          "paper": "Tsiokos_2026_To_Spend_a_Stone_with_Six_Birds_Currency_Constraint_Duality_and_Shadow_Prices_Across_Closure_Layers.tex"
+        },
+        {
+          "component": "Single-constraint MaxCal/conditional-logit closure q~exp(-lambda u); 1D root-finding recovers lambda; P5 packaging + P6 accounting maintenance spend",
+          "paper": "Tsiokos_2026_To_Spend_a_Stone_with_Six_Birds_Currency_Constraint_Duality_and_Shadow_Prices_Across_Closure_Layers.tex"
+        },
+        {
+          "component": "Deterministic-pushforward finite-KL monotonicity (Lean CurrencyMorphism.finiteKL_map_le) as audit anchor",
+          "paper": "Tsiokos_2026_To_Spend_a_Stone_with_Six_Birds_Currency_Constraint_Duality_and_Shadow_Prices_Across_Closure_Layers.tex"
+        },
+        {
+          "component": "Discrete max-entropy local-equilibrium (Maxwellian-like) completion as the canonical lift in BGK closure",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        }
+      ],
+      "known_result_matched": "Jaynes MaxEnt derivation of the Gibbs canonical ensemble exp(-beta E)/Z with beta the mean-energy multiplier and complementary slackness (zero multiplier on an inactive constraint); rate-distortion multiplier (Berger 1971; Cover-Thomas); unification of beta/chemical-potential/price as convex-duality dual variables (Boyd-Vandenberghe).",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Lens / layer choice (which lower-layer quantity is the 'energy' currency); cost matrix u_ij",
+        "Budget b (mean-energy/cost constraint level) swept to trace lambda(b)",
+        "MaxCal single-constraint family (selected closure form / Gibbs ansatz)",
+        "Resolution ladder (number of independent currency directions grows with loop/cycle rank)"
+      ],
+      "auxiliary_assumptions": [
+        "The Gibbs/Boltzmann exponential form is put in by hand (MaxCal ansatz), not derived from microdynamics",
+        "Persistence-under-bounded-spend is the operative objecthood criterion (P5+P6)",
+        "Demonstrated only in a finite Markov MaxCal laboratory; no claim every real system admits a one-dimensional price; no universal cross-domain cost unit"
+      ],
+      "why_fertile": "High compression: one budgeted-closure mechanism reproduces temperature, chemical potential, price, rate-distortion lambda and regularization strength as the SAME object, predicts the complementary-slackness law (price=0 when slack) and the growth of currency dimension with loop structure (Schnakenberg cycle rank), and reframes the Jaynes program as a special case of maintenance economics with a testable monotone price-emergence signature.",
+      "initial_risks": [
+        "Standard convex duality / Jaynes MaxEnt reframing; the multiplier-as-price content 'begins too late' and the Gibbs form is assumed -- not a from-first-principles derivation of temperature",
+        "Demonstrated only in a finite Markov toy; Lean proves only deterministic-pushforward finite-KL monotonicity",
+        "Sigma_T/EPR audits used as the lower-layer currency are informational proxies, not physical entropy production; currencies comparable only within a domain"
+      ],
+      "grounded": true,
+      "provenance": "To_Spend_a_Stone: 'inverse temperature appears as the corresponding dual currency; free energy packages the resulting tradeoff'; 'If the budget is slack ... the solver returns lambda=0 exactly'; 'why temperatures, prices, regularizers, and attention weights recur ... as the same mathematical kind of object.' Merged low-energy-limit Jaynes + parameter-compression shadow-price + cross-domain currency-temp-RD candidates; covers forced target #27."
+    },
+    {
+      "id": "R011",
+      "title": "Euclidean/Pythagorean metric as the CLT/heat-kernel limit of accounting cost under isotropic staged diffusion",
+      "target_fact": "Under repeated isotropic diffusion the CLT makes displacement distributions approximately Gaussian, so the negative-log transition probability (a natural cost/action) becomes approximately quadratic and separable -- the Pythagorean/Euclidean metric form emerges (the discrete shadow of Varadhan's -tau log p_tau -> d^2/2 and the Onsager-Machlup action), while an L1 (Manhattan) cost does not; curvature appears as loop holonomy.",
+      "scientific_domain": "Statistical mechanics / emergent geometry / information physics",
+      "argument_family": "low-energy-limit",
+      "core_claim": "SBT recasts the Euclidean metric as a stable accounting law (P6): defining distance as minimal protocol cost with edge cost = -log Phat, staged isotropic diffusion (large tau) plus P2 isotropy drives the per-step cost toward a separable quadratic form via the CLT, so the Pythagorean relation c(diagonal)^2 ~ c(axis1)^2 + c(axis2)^2 emerges as a closure fixed point. Empirically the median Pythagorean residual collapses from 33.19 at tau=4 to 0.0586 at tau=128 (quadratic-axis RMS 0.0177 vs linear 1.0536); an L1 control yields diamond contours and no collapse. The SAME isotropy+staging package simultaneously fixes why the metric is quadratic/Euclidean rather than L1 AND why curvature appears as loop holonomy (Procrustes residue: flat ~0.0479 vs sphere-like ~0.5980) -- two facts compressed into one diffusion-closure mechanism.",
+      "theory_components_used": [
+        {
+          "component": "Emergent (pseudo)metric d_eta = shortest path on -log(Phat+eta); 'distance is accounting' (P6); triangle inequality Lean-anchored",
+          "paper": "Tsiokos_2026_To_Plot_a_Stone_with_Six_Birds_Constructing_and_Auditing_Emergent_Geometry_from_Markov_Dynamics.tex"
+        },
+        {
+          "component": "P4 staging (tau sweep) + P2 isotropy; Pythagorean residual R_tau; curvature as loop holonomy (Procrustes residue)",
+          "paper": "Tsiokos_2026_To_Plot_a_Stone_with_Six_Birds_Constructing_and_Auditing_Emergent_Geometry_from_Markov_Dynamics.tex"
+        },
+        {
+          "component": "Induced macro kernel Phat = U_f P^tau Q_f as the object on which geometry audits are computed",
+          "paper": "Tsiokos_2026_To_Create_a_Stone_with_Six_Birds_Emergent_Geometric_and_Thermodynamic_Regimes_from_a_Minimal_Stochastic_Substrate.tex"
+        }
+      ],
+      "known_result_matched": "Varadhan's short-time heat-kernel asymptotics (-2t log p_t -> d^2) and the CLT/diffusion fact that diffusive transport cost is quadratic (Gaussian) in displacement, giving Euclidean L2 (not L1) geometry; this underlies diffusion-map geometry (Coifman-Lafon) and the Onsager-Machlup action.",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Lens / staging tau (limit is tau large; transition near tau~16)",
+        "Cost-to-distance convention (negative-log-probability cost; eta regularizer)",
+        "Substrate geometry / isotropy (torus random walk vs sphere-like vs Sierpinski) declared externally",
+        "Torus size N / displacement window (finite-size aliasing failure mode)"
+      ],
+      "auxiliary_assumptions": [
+        "Substrate diffusion is isotropic and homogeneous (anisotropy/constraints deform the metric)",
+        "Cost defined as -log transition probability (a specific accounting convention)",
+        "Staging pushes the substrate into a clean Gaussian/CLT diffusion regime; Gaussian heat kernel is borrowed, not produced",
+        "Finite-state substrate; quadratic/Pythagorean form is a finite-tau trend, not a proven continuum limit"
+      ],
+      "why_fertile": "Gives a concrete, auditable route by which the most iconic geometric fact (Pythagoras / Euclidean distance) emerges as a stable accounting law from staged isotropic stochastic dynamics, with a clean falsifier (L1 control fails) and a curvature companion (loop holonomy separating flat from curved). It reframes geometry as P6 accounting and connects to Varadhan's formula, suggesting a route to a genuine finite->continuum theorem.",
+      "initial_risks": [
+        "Deliberately stylized: measures displacement likelihood directly; Euclidean structure may be partly injected by the isotropic substrate and spectral/diffusion-map lens (acknowledged circularity)",
+        "No continuum interface or convergence theorem; 'metric tensor' / 'curvature' are diagnostic proxies, audit-defined regimes",
+        "The quadratic-cost step imports the CLT and Gaussian heat kernel; holonomy is explicitly NOT a directionality/physical-curvature certificate"
+      ],
+      "grounded": true,
+      "provenance": "To_Plot_a_Stone E5: 'the negative log probability becomes approximately quadratic in displacement ... median Pythagorean residual decreases from 33.19 to 0.0586'; disclaimer 'continuum-limit convergence to manifolds or exact curvature tensors are not established here.' Merged low-energy-limit CLT + parameter-compression Varadhan framings."
+    },
+    {
+      "id": "R012",
+      "title": "Geometry-like and thermodynamics-like macroscopic regimes co-emerge from a SINGLE finite Markov substrate under one closure/audit framework",
+      "target_fact": "Two kinds of emergent structure normally handled with separate machinery -- effective geometry (least-action/shortest-path, diffusion-consistent metric/Laplacian embeddings) and stochastic-thermodynamic structure (nonequilibrium time-asymmetry / entropy-production) -- arise, in standard physics, from Riemannian/GR-style tools and from stochastic thermodynamics respectively.",
+      "scientific_domain": "Emergent geometry (spacetime-analogue) + stochastic thermodynamics (cross-domain within physics)",
+      "argument_family": "cross-domain-unification",
+      "core_claim": "SBT shows both regime types are simultaneously detectable, as audit-defined regimes, from one finite stochastic substrate processed by one closure/audit pipeline: the induced macro kernel Phat = U_f P^tau Q_f feeds an emergent pseudometric d_eta, curvature (Procrustes loop holonomy), and geometrizability R^2_geo on the geometry side, and Sigma_T/EPR arrow fields on the thermodynamics side. Across 2307 runs over four micro sizes, at least two macroscopic regimes (geometry-like, thermodynamics-like) separate cleanly within the single substrate+audit framework, tracking specific closure mechanisms (PICA enable cells).",
+      "theory_components_used": [
+        {
+          "component": "Induced macro kernel Phat = U_f P^tau Q_f as the central object for all geometry/thermo audits",
+          "paper": "Tsiokos_2026_To_Create_a_Stone_with_Six_Birds_Emergent_Geometric_and_Thermodynamic_Regimes_from_a_Minimal_Stochastic_Substrate.tex"
+        },
+        {
+          "component": "Geometry/thermo audit suite: pseudometric d_eta, holonomy curvature, geometrizability R^2_geo, diffusion misfit, EPR/Sigma_T arrow fields; 2307-run campaign",
+          "paper": "Tsiokos_2026_To_Plot_a_Stone_with_Six_Birds_Constructing_and_Auditing_Emergent_Geometry_from_Markov_Dynamics.tex"
+        },
+        {
+          "component": "PICA enable matrix selecting active closure cells; Sigma_T path-space asymmetry / cycle affinities (P6)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Diffusion-map / spectral-embedding recovery of effective geometry from Markov dynamics (Coifman-Lafon); least-action/geodesic structure; Schnakenberg cycle-affinity / Lebowitz-Spohn entropy-production structure in nonequilibrium Markov chains.",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Lens f / resolution ladder k=|X|; timescale tau; prototype lift U_f; regularizer eta",
+        "PICA enable matrix E (which closure cells active); micro size n in {32,64,128,256}"
+      ],
+      "auxiliary_assumptions": [
+        "Geometry-like and thermo-like audit signatures count as instances of physical geometry/thermodynamics rather than generic spectral/statistical artifacts",
+        "Spectral-embedding/diffusion-map construction is not circular (acknowledged risk; some geometries seeded by physically-coordinated generators like S^2/torus)"
+      ],
+      "why_fertile": "A genuine within-physics cross-domain demonstration: two phenomenologies usually handled by completely separate mathematics (differential geometry vs nonequilibrium stat-mech) are shown co-detectable from one minimal substrate via one audit calculus, with a large reproducible campaign and clean regime separation tied to which closure primitives are active -- suggesting a shared 'closure-audit' substrate language.",
+      "initial_risks": [
+        "Strong disclaimer: 'audit-defined regimes, not claims of literal spacetime geometry or physical thermodynamics'; no continuum-limit, no metric/curvature tensor, no physical entropy",
+        "Acknowledged circularity: emergent geometry partly inherits the spectral-embedding inductive bias / physically-coordinated generators",
+        "Sigma_T is an informational proxy; unification is at the audit level, not the physical-law level"
+      ],
+      "grounded": true,
+      "provenance": "To_Create_a_Stone: 'at least two macroscopic regimes within a single substrate and audit framework'; disclaimer: 'these are audit-defined regimes, not claims of literal spacetime geometry or physical thermodynamics.'"
+    },
+    {
+      "id": "R013",
+      "title": "Arrow of time / Loschmidt resolved within scope: reversible micro-dynamics yields zero observed arrow; coarse-graining and hidden holonomy cannot fake one (DPI + protocol trap + record monotonicity)",
+      "target_fact": "A reversible (detailed-balance) dynamics at stationarity has time-symmetric path measures and zero entropy production at every horizon, even with hidden cyclic 'protocol/phase' coordinates whose update steps do not commute (nontrivial holonomy); and deterministic coarse-graining (data processing) cannot manufacture irreversibility -- the apparent arrow can only be hidden, never created, by observation. A sustained arrow requires a genuine detailed-balance-breaking affinity.",
+      "scientific_domain": "Thermodynamics / nonequilibrium statistical mechanics / information physics",
+      "argument_family": "paradox-resolution",
+      "core_claim": "SBT separates three certificates and proves: (i) the protocol-trap theorem -- a reversible lift Z=X x Phi at a detailed-balance stationary law has Sigma_T=0 for every horizon T even with noncommuting conditional kernels (||K0 K1 - K1 K0||>0), pinning that hidden holonomy alone is not an arrow (EPR_lifted = alpha*EPR_clock); (ii) the arrow-DPI theorem -- deterministic coarse observation cannot increase forward-reverse path KL (micro >= macro), so no 'fake arrow' arises from coarse-graining; (iii) F38 -- the arrow is the monotone direction of a descended record transport (Eddington reading). A genuine arrow therefore requires a real non-exact cycle affinity (P6_drive), with the driven-clock case giving the standard EPR = alpha*beta*b*log((1+b)/(1-b)). This dissolves Loschmidt within scope: irreversible appearance under reversible parts needs a real drive or external schedule, not coarse-graining or hidden clocks.",
+      "theory_components_used": [
+        {
+          "component": "NG_PROTOCOL_TRAP: detailed balance => Sigma_T=0 for all T even under hidden protocol lift; lem:detailed_balance_path; EPR_lifted=alpha*EPR_clock with explicit noncommuting K0,K1",
+          "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex"
+        },
+        {
+          "component": "NG_ARROW_DPI (deterministic specialization of relative-entropy DPI; equality at identity lens); Lean tvdist_pushforward_le",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "F38 Arrow from Record Monotonicity (Lean arrow_from_record_monotonicity, faithful); path-space KL Sigma_T as directionality certificate; P3 holonomy explicitly NOT a directionality certificate",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "P6 / P6_drive audit (non-exact log-ratio 1-form / cycle affinity required for a sustained arrow)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Equilibrium/reversible limit of stochastic thermodynamics: detailed-balance chains have time-symmetric trajectories and zero entropy production (Kelly 1979; Lebowitz-Spohn; Crooks; Seifert 2012); relative entropy is monotone under coarse-graining (data-processing inequality, Cover-Thomas; Esposito 2012); Loschmidt time-symmetry; entropy/record monotonicity as the thermodynamic arrow (Eddington).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Horizon T (every finite T>=1)",
+        "Drive/clock bias b (b=0 reversible null arrow; b>0 positive arrow); random-scan weight alpha; beta",
+        "Lens / observation map ell (identity gives equality; coarsening can only decrease Sigma_T)"
+      ],
+      "auxiliary_assumptions": [
+        "Initialized at a detailed-balance stationary distribution; conditional kernels share a common stationary pi (essential -- differing equilibria reopen positive EPR)",
+        "Observation is deterministic coarse-graining (certified DPI is the deterministic/TV case; stochastic-lens is future work); autonomy A_AUT (external schedule can fake an arrow)",
+        "Sigma_T/EPR are informational/audit proxies, NOT physical entropy production; no reservoir/local-detailed-balance interpretation; the low-entropy initial state / Past Hypothesis is an external input"
+      ],
+      "why_fertile": "Cleanly separates three things usually conflated in arrow-of-time debates -- record monotonicity (F38), no-fake-arrows under coarse-graining (DPI), and the need for genuine drive vs mere hidden holonomy (protocol trap) -- into distinct, finite, Lean-anchored certificates. This is the honest backbone making positive directionality claims credible, a falsification-first scaffold forbidding attribution of an arrow to coarse-graining or hidden protocol structure, and a reusable audit template for switching/Floquet/stroboscopic Markov models.",
+      "initial_risks": [
+        "Recoveries of standard theorems (Kelly time-reversal, DPI, Schnakenberg), explicitly NOT novel physics; does not derive the Second Law or the Past Hypothesis",
+        "Sigma_T/EPR are informational proxies; coarse-graining can hide real dissipation -- the recovery does not bridge to microphysical thermodynamics",
+        "Scope-limited: trap requires stationary-reversible initialization and common pi; finite-state discrete-time only; P3 holonomy must not be conflated with an arrow"
+      ],
+      "grounded": true,
+      "provenance": "No-Go: 'any reversible system started in stationarity has zero observed arrow'; 'deterministic observation cannot increase forward-reverse path-space KL.' Protocol Trap: 'the arrow audit collapses to EPR~0 ... despite noncommutativity'; 'P3 without P6 is not an arrow.' F38 Lean 'faithful'. Merged low-energy-limit, symmetry-emergence, constraint-null-result (x2), parameter-compression, paradox-resolution arrow framings; covers forced targets #15, #24."
+    },
+    {
+      "id": "R014",
+      "title": "Driven three-cycle entropy production matches the Schnakenberg current x affinity closed form EPR = beta*b*log((1+b)/(1-b))",
+      "target_fact": "For a biased nearest-neighbor cycle (driven ring), the steady-state entropy production rate equals the standard 'current times affinity' value, with the affinity of a biased two-rate cycle being log(p/q) and the EPR being (p-q)log(p/q); standard nonequilibrium Markov-network thermodynamics (Schnakenberg 1976).",
+      "scientific_domain": "Nonequilibrium statistical mechanics / stochastic thermodynamics",
+      "argument_family": "numerical-match",
+      "core_claim": "SBT's autonomous lifted-protocol benchmark produces a closed-form analytic value for the arrow audit of a biased three-state clock, EPR(S,s) = (p-q)log(p/q) = beta*b*log((1+b)/(1-b)) with p=beta(1+b)/2, q=beta(1-b)/2, and the full lifted-chain EPR = alpha*beta*b*log((1+b)/(1-b)). This is an exact match to the textbook current x affinity form, with every symbol fixed by the kernel construction (no free fitting); the numerical bias sweep coincides with the formula to numerical precision.",
+      "theory_components_used": [
+        {
+          "component": "Path-space KL asymmetry / EPR arrow audit Sigma_T; clock decomposition lemma EPR_lifted = alpha*EPR_clock",
+          "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex"
+        },
+        {
+          "component": "NG_FORCE_NULL / cycle affinity = closed-walk sum of log-ratio 1-form (force implies cycles)",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        }
+      ],
+      "known_result_matched": "Schnakenberg (1976) network thermodynamics: steady-state EPR of a driven cycle = sum over cycles of (cycle current) x (cycle affinity); affinity of a biased forward/backward pair = log(forward rate / backward rate).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Clock bias b (swept 0..0.90); clock weight beta (default 0.9); random-scan mixing weight alpha (default 0.5)",
+        "Lens/clock kernel construction K0,K1 on three states (chosen)"
+      ],
+      "auxiliary_assumptions": [
+        "The three conditional kernels K_phi are each reversible w.r.t. a common stationary pi (so EPR(K_phi,pi)=0 and the arrow is entirely clock-attributable)",
+        "Uniform stationary distribution on the phase ring; the biased clock is the sole drive (A_AUT autonomy)"
+      ],
+      "why_fertile": "The single most parameter-disciplined numerical match in the corpus: the value is an exact closed form with no fitted constants, the cleanest illustration of 'P3 holonomy without P6 drive is not an arrow' becoming quantitative. It can seed a template for mapping any SBT directionality audit onto a Schnakenberg affinity ledger and for stating exactly when an SBT arrow number is forced (drive present) vs an artifact (reversible clock => EPR=0).",
+      "initial_risks": [
+        "RECOVERY-NOT-PREDICTION: reproduces a standard 1976 formula; not a retrodiction of a new or measured natural constant",
+        "EPR/Sigma_T is an informational/audit proxy, explicitly NOT physical entropy production",
+        "All symbols are chosen inputs of a toy three-state benchmark; the match is a structural identity, not an independent computation converging on a known number"
+      ],
+      "grounded": true,
+      "provenance": "Protocol_Trap, 'Closed form': 'EPR(S,s)=(p-q)log(p/q)=beta b log((1+b)/(1-b)), which is the standard current x affinity form for a driven cycle [schnakenberg1976network]'; eq:epr_closed_form 'EPR_lifted(b)=alpha beta b log((1+b)/(1-b)).'"
+    },
+    {
+      "id": "R015",
+      "title": "No effective force without genuine cycles: only a non-exact (non-potential) log-ratio 1-form on positive cycle rank can sustain an arrow (Schnakenberg/Hodge necessity)",
+      "target_fact": "In Markov-network stochastic thermodynamics, nonequilibrium steady-state entropy production is supported entirely on graph cycles: a gradient (exact) affinity carries no circulation, tree/forest topologies carry no drive, and detailed-balance chains have zero entropy production. Force-like structure requires positive cycle rank (Betti number beta_1>0).",
+      "scientific_domain": "Thermodynamics / statistical mechanics (stochastic thermodynamics, nonequilibrium steady states)",
+      "argument_family": "uniqueness-necessity",
+      "core_claim": "SBT's directionality certificate forces the structural form of any admissible 'effective force': the audit affinity a(z,z')=log(P/P^T) certifies a sustained arrow ONLY when it is non-exact (nonzero cycle integral). NG_FORCE_FOREST proves every antisymmetric edge field on a finite forest is potential-generated (a=phi(v)-phi(u)); NG_FORCE_NULL proves an exact 1-form has all cycle sums zero; T-P2-01 adds that gating/edge-deletion cannot raise cycle rank. Hence SBT forces: no cycles => no drive; exactness => no arrow. The only admissible carrier of nonequilibrium directionality is a non-exact 1-form on positive-cycle-rank support, with explicit escape routes (break exactness, add cycle rank, external schedule).",
+      "theory_components_used": [
+        {
+          "component": "thm:NG_FORCE_FOREST (forest => potential/exact) and thm:NG_FORCE_NULL (exact 1-form => zero cycle affinities)",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "P6_drive audit: non-exact log-ratio 1-form / cycle affinity as the directionality certificate; P2 edge deletion cannot increase beta_1 (T-P2-01)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "Protocol trap: detailed balance => Sigma_T=0 at every finite T; driven 3-cycle EPR = beta*b*log((1+b)/(1-b)) as canonical current x affinity",
+          "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex"
+        }
+      ],
+      "known_result_matched": "Schnakenberg's cycle decomposition of entropy production / affinities of nonequilibrium steady states; discrete Hodge decomposition (exact = gradient = no circulation); Kelly's reversibility => time-symmetric path measure.",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Support graph topology / cycle basis (forest vs cycle-bearing)",
+        "Stationary distribution mu and kernel P (defining the log-ratio 1-form); drive/bias b",
+        "Horizon T (necessity holds for every finite T)"
+      ],
+      "auxiliary_assumptions": [
+        "AUT+REV+ACC autonomous regime; exact bidirected support and exact ratio-form data (theorem is about exact, not thresholded/regularized proxy, graphs)",
+        "Antisymmetry of the edge field",
+        "Sigma_T/EPR are informational audit proxies, NOT physical entropy production"
+      ],
+      "why_fertile": "A textbook uniqueness-necessity statement: SBT forces the only admissible structure for a sustained arrow to be a non-exact cycle affinity, ruling out tree/gradient drives and detailed-balance artifacts as 'fake arrows'. Its contrapositive is fertile -- observed multiplicity of currents/circulation NECESSARILY certifies positive cycle rank -- compressing Schnakenberg + discrete Hodge + reversibility into one audit-monotone necessity with crisp escape routes.",
+      "initial_risks": [
+        "Standard graph/affinity facts (Schnakenberg, Diestel, Hodge) recovered/reframed, not novel physics",
+        "About the audit 1-form / informational affinity, not literal physical force or entropy production; the exact-support assumption limits direct empirical bite (real support graphs are thresholded)",
+        "P3 holonomy alone does NOT certify an arrow, so 'effective force' from route mismatch is explicitly excluded as a directionality certificate"
+      ],
+      "grounded": true,
+      "provenance": "No-Go thm:NG_FORCE_FOREST: 'every antisymmetric edge field is potential-generated, so there is no cycle-supported drive'; thm:NG_FORCE_NULL: exact 1-form => closed-walk sum = 0. Merged uniqueness-necessity + constraint-null-result force-forest framings."
+    },
+    {
+      "id": "R016",
+      "title": "Strict (Dobrushin) contraction forces a unique stable object: well-separated metastable 'objects' cannot coexist in the contractive regime",
+      "target_fact": "A finite Markov chain with Dobrushin contraction coefficient lambda(P)<1 has a unique stationary distribution and converges geometrically; there is exactly one long-time invariant macro-object at that scale.",
+      "scientific_domain": "Statistical mechanics / probability (finite Markov chains, relaxation, metastability)",
+      "argument_family": "uniqueness-necessity",
+      "core_claim": "SBT's objecthood-as-fixed-points law, restricted to the strict-contraction regime, forces uniqueness: NG_OBJECT_CONTRACTIVE proves any two epsilon-stable packaged states satisfy TV(nu,nu') <= 2*epsilon/(1-lambda), collapsing to a unique stationary distribution at epsilon=0. Therefore SBT forbids multiple well-separated robust 'objects' (e.g. genuine metastable basins) wherever the dynamics is contractive at that scale -- multiplicity of objects NECESSARILY requires leaving the contraction regime (spectral gap closing / cycle structure).",
+      "theory_components_used": [
+        {
+          "component": "thm:NG_OBJECT_CONTRACTIVE (Dobrushin lambda<1 => TV<=2eps/(1-lambda); unique stationary at eps=0)",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "Objects = (approximate) fixed points of completion E; idempotence defect delta as stability certificate",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Standard Dobrushin/Markov-chain ergodic theorem: contraction in total variation implies a unique invariant measure with geometric convergence.",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Stability tolerance epsilon (defines approximate objecthood)",
+        "Kernel P and its Dobrushin coefficient lambda(P); scale tau at which contraction is evaluated"
+      ],
+      "auxiliary_assumptions": [
+        "The completion/packaging is identified with the linear chain operator T_P at the relevant scale",
+        "Objects are read as epsilon-stable distributions, with a separate nontriviality condition needed to claim multiplicity"
+      ],
+      "why_fertile": "A clean 'only one admissible object' necessity result whose contrapositive is fertile: observed multiplicity of stable phases/metastable basins NECESSARILY certifies non-contraction (spectral-gap closing, broken ergodicity, cycle structure). This connects SBT objecthood directly to phase coexistence and metastability, with a usable quantitative diagnostic.",
+      "initial_risks": [
+        "Standard contraction result recovered, not novel physics",
+        "Guardrail: small idempotence defect alone does NOT certify nontrivial emergence (a constant map has delta=0); object counting needs an extra nontriviality condition",
+        "Constrains rather than predicts: physical phase coexistence lives precisely in the NON-contractive regime"
+      ],
+      "grounded": true,
+      "provenance": "No-Go thm:NG_OBJECT_CONTRACTIVE: 'if epsilon=0, the stationary distribution is unique ... multiple well-separated robust objects cannot coexist at that scale in the contraction regime.'"
+    },
+    {
+      "id": "R017",
+      "title": "Multiplicity and sector separation of coexisting record-classical objects from a single substrate, bounded by strict contraction",
+      "target_fact": "Physical systems exhibit multiple long-lived, well-separated classical configurations (metastable phases, basins, quasi-conserved sectors) coexisting at intermediate timescales, which merge into a single equilibrium description at long times; coexistence requires absence of fast global mixing.",
+      "scientific_domain": "Statistical mechanics / metastability / sector structure",
+      "argument_family": "structural",
+      "core_claim": "SBT reproduces the architecture 'several distinct stable macro-objects coexist iff the dynamics is not globally contracting at that scale'. In a metastable-basin Markov model, basin prototypes are epsilon-stable fixed points of E_{tau,f} at intermediate tau (multiple coexisting record-classical objects), drift at leakage timescales, and collapse to one trivial object at long tau. The no-go NG_OBJECT_CONTRACTIVE makes this sharp (TV<=2eps/(1-lambda); unique object at eps=0), so multiplicity/sector-separation is possible ONLY outside the contraction regime.",
+      "theory_components_used": [
+        {
+          "component": "Empirical packaging E_{tau,f}=U_f Q_f P^tau; prototype stability; idempotence defect delta(tau)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "T-IC-01 'Refinement can help or hurt' (stable-prototype count changes with lens/tau)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "NG_OBJECT_CONTRACTIVE: TV(nu,nu')<=2eps/(1-lambda); unique object under strict contraction",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        }
+      ],
+      "known_result_matched": "Kemeny-Snell metastable lumping / Perron-cluster analysis: weakly coupled basins act as quasi-stationary sectors at intermediate times; Dobrushin uniqueness for strictly contracting chains.",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Lens f (basin partition); timescale tau (emergent-object vs collapse-to-constant regime)",
+        "Stability tolerance epsilon; inter-basin coupling p (substrate parameter)"
+      ],
+      "auxiliary_assumptions": [
+        "The basin partition is supplied as the lens; prototype distributions (uniform-on-basin) are selected",
+        "The substrate already has well-separated metastable basins (declared)"
+      ],
+      "why_fertile": "Anchors the 'sector separation / multiplicity' target with an actual SBT theorem (contraction bound) plus a guardrail preventing false multiplicity claims, and explains the universal physical pattern that coexisting phases require slow global mixing. The contraction inequality is a genuine, reusable necessary condition for any sector/generation-like multiplicity story.",
+      "initial_risks": [
+        "Number and identity of sectors are inputs (lens + substrate), not outputs; SBT counts stable prototypes but does not predict the count",
+        "Guardrail risk: delta(E) small does not certify multiplicity; needs >=2 distinct stable labels",
+        "T-IC-01 shows refinement can both reveal and destroy objects, so 'sectors' are lens-relative, weakening claims of objective physical sectors"
+      ],
+      "grounded": true,
+      "provenance": "No-Go NG_OBJECT_CONTRACTIVE 'TV(nu,nu') <= 2 eps/(1-lambda(P)) ... eps=0 unique'; Quantum paper 'Two regimes: emergent objects and collapse-to-constant.'"
+    },
+    {
+      "id": "R018",
+      "title": "Conservation laws (Noether-type) as orbit descent: a quantity is conserved iff it descends through the symmetry/orbit quotient (F27)",
+      "target_fact": "Noether's theorem / conservation laws: a quantity is conserved under a symmetry exactly when it is invariant along the symmetry/route orbits (momentum from translation invariance, charge from gauge invariance, energy from time-translation; also mass conservation, knot invariants under Reidemeister moves).",
+      "scientific_domain": "Classical/quantum field theory, statistical mechanics (symmetry & conservation)",
+      "argument_family": "symmetry-emergence",
+      "core_claim": "SBT reframes 'conserved quantity' as a definability/descent property: a readout C:X->V is conserved for a declared route or symmetry iff it is constant on declared orbits, i.e. iff it factors through the orbit quotient (C = barC o q_orb). The classical variational-symmetry instance of this orbit-descent reading is Noether's theorem. This is the same quotient-definability move SBT uses everywhere (a macro readout is admissible iff it descends through a lens partition), specialized so the lens is the orbit map of a declared group/route action. Thus conservation is recovered as a special case of SBT's quotient-definability machinery, unifying Noether/momentum, Lavoisier/mass, and topological invariants as one normal form (conserved = orbit-quotient-definable = closure invariant).",
+      "theory_components_used": [
+        {
+          "component": "F27 Conservation as Orbit Descent (thm:F27, Lean conservation_as_orbit_descent, 'faithful'): C conserved iff C descends through q_orb iff constant on orbits",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "Quotient-definability backbone / definability algebra Sigma_f (readout definable iff constant on fibers and factors through the quotient)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "P4 staging / sectors (conserved-block labels); HL-META-1 update-vs-quotient compatibility (macro update well-defined iff dynamics respects the quotient)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_II_Admissibility_Meta_Theory_and_the_Exact_Six_Program.tex"
+        }
+      ],
+      "known_result_matched": "Noether's theorem (Noether 1918): continuous symmetries of an action yield conserved currents; conservation laws as invariants of the symmetry orbit; conservation of mass (Lavoisier).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Declared orbit/route/symmetry structure (the group action and its orbit quotient supplied externally)",
+        "Carrier X and candidate readout C; lens f / which quotient q_orb is taken"
+      ],
+      "auxiliary_assumptions": [
+        "The physical symmetry group and its action are declared inputs (smuggled physics), not produced by SBT",
+        "Identifying SBT orbit descent with the physicist's conserved current requires the externally supplied Noether map symmetry->current; a continuum/Lagrangian bridge is needed for the differential current",
+        "Conservation is identified with exact orbit-constancy (no approximate/asymptotic conservation handled)"
+      ],
+      "why_fertile": "Compresses a heterogeneous list of conservation phenomena (momentum, mass, charge, knot invariants, type-system subject reduction, martingales) into one quotient-descent normal form, with Noether as the physics instance, tying conservation to the SAME definability/closure machinery that certifies macro-observable admissibility. Honest, Lean-anchored, explicitly scoped; the fertile open question is whether the SELECTION of the realized symmetry can be tied to a stability/closure criterion.",
+      "initial_risks": [
+        "Near-tautological iff (constant-on-orbits = descends-through-quotient); it captures only the easy direction, NOT the deep content of Noether (continuous symmetry => existence of a current via the action). Must not be presented as 'deriving Noether'",
+        "Imports the symmetry group as a declared input; does not enumerate or predict conserved quantities and does not produce the Noether current",
+        "No continuum / no Lagrangian interface, so field-theoretic currents are out of scope; Foundations IV explicitly 'is not a unification claim'"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV thm:F27: 'A quantity C:X->V is conserved ... if and only if it descends through the orbit quotient'; 'The classical variational-symmetry instance ... is Noether's theorem'; 'does not enumerate conserved quantities'; Lean status 'faithful'. Merged symmetry-emergence, parameter-compression, cross-domain, reinterpretation F27 framings; covers forced target #10."
+    },
+    {
+      "id": "R019",
+      "title": "Gauge redundancy as the Leibniz quotient of empirically indiscernible microstates (OI-EI), with gauge-fixing pathologies as a selection obstruction",
+      "target_fact": "Gauge invariance / gauge redundancy: physical observables are the gauge-invariant functions; gauge-equivalent field configurations are physically identical and must be quotiented (physical configuration space A/G); Wilson loops are the canonical gauge-invariant observables; Faddeev-Popov gauge fixing has the Gribov-Singer obstruction (no global gauge section).",
+      "scientific_domain": "Gauge theory / quantum theory (symmetry-emergence as redundancy elimination)",
+      "argument_family": "symmetry-emergence",
+      "core_claim": "SBT does not posit gauge redundancy; it derives 'redundancy must be quotiented' from a methodological principle (OI-EI: ontological identity of empirical indiscernibles) plus the Leibniz quotient factorization theorem. Given a layer specified by a family of lenses/experiments f_i:Z->X_i, define z~z' iff f_i(z)=f_i(z') for all i; then the layer's objects are exactly Z/~ and every layer-expressible quantity factors uniquely through this quotient. Gauge-equivalent configs are empirically indiscernible at the layer, hence the same object, and only gauge-invariant (quotient-definable) functions are observables (Wilson loops descend through the gauge-orbit projection). Gauge invariance appears as a forced consequence of refusing surplus structure; Faddeev-Popov/Gribov-Singer instantiate the F15a selection obstruction.",
+      "theory_components_used": [
+        {
+          "component": "OI-EI principle + Leibniz quotient factorization theorem (thm:leibniz-quotient, Lean quotient_lift_exists_unique, liftLens_comp_q)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Definability algebra Sigma_f / lens f:Z->X (observables = predicates constant on fibers = gauge-invariant functions)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        },
+        {
+          "component": "F2 canonical quotient (gauge-invariant observable algebra; Wilson loops) + F15a Selection Obstruction (Faddeev-Popov / Gribov-Singer: no equivariant global section)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        }
+      ],
+      "known_result_matched": "Gauge principle: physical state space is the quotient A/G; observables are gauge-invariant; Wilson loops as gauge-invariant observables; Faddeev-Popov + Gribov-Singer (no global gauge section).",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Lens / experiment family f_i (which empirical distinctions the layer can make) -- decides what counts as 'redundant'",
+        "The gauge group G is implicit in the choice of equivalence relation, supplied externally"
+      ],
+      "auxiliary_assumptions": [
+        "Identifying the SBT empirical-equivalence relation with a specific gauge orbit relation requires declaring the gauge group; SBT gives no canonical-lens principle",
+        "Treating gauge invariance as 'empirical indiscernibility' assumes gauge-equivalent configs produce identical statistics under all admissible experiments (true by construction in physical gauge theory, but assumed here)"
+      ],
+      "why_fertile": "Gives a principled, Lean-anchored reason WHY redundancy must be quotiented (refusal of empirically silent surplus structure) identical to the move used for coarse-graining, no-signalling, and contextuality, unifying gauge redundancy, decoherence pointer-quotients, and OI-EI under one universal property and suggesting Gribov gauge-fixing pathologies are instances of the F15a selection obstruction.",
+      "initial_risks": [
+        "The hard part of gauge theory (WHICH local symmetry group nature gauges, locality, connection/curvature structure, Yang-Mills dynamics) is exactly the missing lens-selection interface; this reframes, it does not predict the gauge group",
+        "Risk of circularity: declaring the gauge orbit relation as the empirical-equivalence relation presupposes the physics it claims to explain",
+        "'Analogous to quotienting gauge redundancy' is the paper's own hedge -- must not be upgraded to a derivation"
+      ],
+      "grounded": true,
+      "provenance": "Quantum paper: 'analogous to quotienting gauge redundancy ... OI-EI ... denies only that empirically silent distinctions are objects'; thm:leibniz-quotient mechanized; F15a Faddeev-Popov / Gribov-Singer 'no continuous global section'; Foundations IV F2 gauge-invariant observables / Wilson loops. Covers forced target #7."
+    },
+    {
+      "id": "R020",
+      "title": "Spontaneous symmetry breaking: an exact symmetry cannot select a vacuum without a declared breaker (F15a selection obstruction) + branch-selection formation normal form (F15b)",
+      "target_fact": "Spontaneous symmetry breaking: an exactly symmetric theory has a degenerate, symmetry-related family of ground states; nature selects one (a vacuum / order-parameter direction), and the symmetry is realized only by relating the degenerate options (Goldstone modes; BEC U(1) phase, ferromagnet magnetization, chiral selection).",
+      "scientific_domain": "Condensed matter / QFT / cosmology (symmetry-emergence and its breaking)",
+      "argument_family": "symmetry-emergence",
+      "core_claim": "SBT splits the SSB story into a no-go and a formation step. F15a (Selection Obstruction) proves that under an exact declared symmetry an equivariant selector can select only common fixed points of the G-action: a selectedness predicate descends to the orbit quotient iff the split-pair obstruction O_s is empty, so NO equivariant deterministic rule can pick one element of a nontrivial degenerate orbit ('under exact symmetry between equally optimal choices, no equivariant deterministic decision rule selects one option' -- Buridan's ass, Schelling focal points, Gribov-Singer, hairy-ball). Selection therefore REQUIRES a declared breaker. F15b then packages an actual broken branch as a typed formation record (F:C->B with Omega(c) and g.F(c)!=F(c)) given a declared future branch-selection formation source. The physics fact recovered: an exact symmetry cannot by itself choose a vacuum; a breaker/asymmetry source is structurally mandatory.",
+      "theory_components_used": [
+        {
+          "component": "F15a Selection Obstruction / Repair Normal Form (thm:F15a, Lean selection_obstruction): equivariant selector picks only common fixed points; s descends iff O_s empty",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "F15b SSB / Branch-Selection Formation (thm:F15b, obligation-guarded wrapper, Lean spontaneous_ssb_formation): typed branch-selection record from a declared future formation source",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "F40 Anomaly / Symmetry Obstruction (descent test: a would-be symmetry is a genuine layer symmetry iff it descends through the quotient); P4 staging/sectors",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Spontaneous symmetry breaking and vacuum selection (Goldstone, Nambu, Anderson; BEC U(1) phase selection); impossibility of selecting a vacuum by symmetric means alone; gauge-fixing obstructions (Gribov-Singer).",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Declared symmetry group G and its action / orbit quotient B=C/G",
+        "The declared breaker b (tie-breaker, memory, condition, randomization) -- what actually selects the branch",
+        "The future branch-selection formation source (opaque axiom discharge point for F15b)"
+      ],
+      "auxiliary_assumptions": [
+        "F15b's formation source is supplied externally and undischarged in-repo (opacity-guarded wrapper)",
+        "Mapping 'common fixed points' to the symmetric (unbroken) state and 'breaker' to the order parameter requires declaring the physical G-action",
+        "SBT does not produce the cosmological measure / which vacuum is realized (F50 vacuum selection is parametric)"
+      ],
+      "why_fertile": "The selection-obstruction half is a genuinely fertile, Lean-faithful structural law: it makes precise and domain-general that 'exact symmetry cannot break itself', unifying Buridan's ass, Schelling focal points, Gribov-Singer, and the hairy-ball theorem with vacuum selection, and tells you exactly what extra data (a declared breaker) any SSB account must smuggle in -- a sharp honesty audit. The F40 descent test additionally explains which symmetries survive to the macro layer vs become anomalous.",
+      "initial_risks": [
+        "F15b is an obligation wrapper conditional on an opaque, undischarged source -- the actual FORMATION of a broken vacuum is not derived, only typed once a source is declared",
+        "Does not produce Goldstone's theorem (massless modes), the effective potential, or order-parameter dynamics; the realized branch is non-canonical",
+        "Vacuum/measure selection (which vacuum nature picks) is explicitly NOT produced; the symmetry group is a declared input"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV thm:F15a: 'an equivariant selector can select only common fixed points unless a declared breaker b ... supplies additional data'; thm:F15b obligation-guarded wrapper, 'does not classify spontaneous symmetry breaking at a substrate level.' Merged symmetry-emergence F15a/F15b + structural SSB-F15b framings."
+    },
+    {
+      "id": "R021",
+      "title": "CPT / discrete self-duality symmetry as fixed-locus confinement under an involutive ledger (SDTC) -- structural prediction with localized repair gap",
+      "target_fact": "CPT symmetry (and related involutive symmetries: charge conjugation C, Hermiticity/self-adjointness, PT-symmetry): a CPT-genuine theory cannot carry observable CPT-odd content; physics is confined to the CPT-invariant sector.",
+      "scientific_domain": "Quantum field theory / particle physics (discrete symmetry as confinement to a duality fixed locus)",
+      "argument_family": "symmetry-emergence",
+      "core_claim": "SBT's Self-Dual Trace Confinement (SDTC) provides a candidate structural mechanism: for a formed closure carrying a genuine involutive self-duality J on its visible ledger, with a separating anti-invariant readout and a trace-vanishing domination sequence (AX <= B_n, trace B_n -> 0), the master theorem forces AX = 0 and confines visible mass to Fix(J) (mu(X \\ Fix(J)) = 0). Applied with J = the CPT operation, the structural PREDICTION is that 'a CPT-genuine formed layer cannot retain visible CPT-odd mass once the domination records are available'. The same template covers C, self-adjointness (J = Hermitian conjugation), and PT-symmetric confinement (Bender-Boettcher).",
+      "theory_components_used": [
+        {
+          "component": "Duality-confinement membrane (master) theorem (Lean MasterTheorem.masterTheorem): AX<=B_n with trace B_n->0 forces AX=0 and mu(X \\ Fix(J))=0",
+          "paper": "Tsiokos_2026_Self_Dual_Trace_Confinement_A_Six_Birds_Structural_Law_for_Formed_Closures_Under_Involutive_Self_Duality.tex"
+        },
+        {
+          "component": "Involutive object ledger + anti-invariant readout + qualitative/quantitative separation-confinement theorems",
+          "paper": "Tsiokos_2026_Self_Dual_Trace_Confinement_A_Six_Birds_Structural_Law_for_Formed_Closures_Under_Involutive_Self_Duality.tex"
+        },
+        {
+          "component": "F14 Duality Fixity / Self-Dual Trace Confinement structural law (partial wrapper) in the Foundations IV Symmetry axis",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        }
+      ],
+      "known_result_matched": "CPT theorem (Lueders-Pauli; Streater-Wightman): Lorentz-invariant local QFT is CPT-invariant; reality of self-adjoint spectra; PT-symmetric Hamiltonians with real spectra (Bender-Boettcher).",
+      "derivability_class": "D",
+      "free_parameters_used": [
+        "The involution J (must be DECLARED to be the CPT operation -- supplied externally)",
+        "The trace-vanishing domination sequence B_n (the 'recognition source'; opaque, undischarged for CPT)",
+        "The separating anti-invariant readout (must be proved separating for the CPT-odd component)"
+      ],
+      "auxiliary_assumptions": [
+        "A genuine involutive self-duality on the visible ledger must exist and be CPT (essentially the CPT theorem's content, assumed not derived)",
+        "The substrate-specific recognition source supplying trace-vanishing domination records is undischarged (no public constructor)",
+        "The Lueders-Pauli/Streater-Wightman hypotheses (Lorentz invariance, locality, spin-statistics) are nowhere in SBT"
+      ],
+      "why_fertile": "The proved master theorem is a genuine, reusable 'confinement to a fixed locus under involutive duality + vanishing anti-invariant budget' engine. If a substrate paper supplies the recognition source (domination records + separating readout) for CPT or C, SBT would give a uniform structural account of multiple discrete symmetries (CPT, C, self-adjointness, PT) as one fixed-locus confinement law -- high upside with a well-localized, explicit honest gap.",
+      "initial_risks": [
+        "NOT a theorem of SBT: the paper itself says CPT/gauge/C are 'structural predictions ... not theorems established here'; grounding is by analogy/template only",
+        "The hard physics (Lorentz invariance + locality => CPT) is entirely outside SBT; the master theorem only converts an ALREADY-assumed involutive self-duality + vanishing budget into confinement",
+        "The domination records (recognition source) are opaque and undischarged; risk of circularity (declaring J=CPT and assuming the anti-invariant budget vanishes is close to assuming CPT invariance)"
+      ],
+      "grounded": false,
+      "provenance": "SDTC: 'Cross-substrate examples such as CPT symmetry, gauge invariance, particle-antiparticle duality ... are structural predictions and validation targets for future work, not theorems established here'; 'a pointer toward the shape of a validation problem, not a derivation of CPT invariance.'"
+    },
+    {
+      "id": "R022",
+      "title": "Superselection sectors (Wick-Wightman-Wigner) as the single-valued, locally-consistent-globally-obstructed normal form (F9 + F4)",
+      "target_fact": "The WWW superselection rules: physically admissible pure states lie in a single joint eigenspace of superselection observables (electric charge Q, baryon number B, lepton number L, univalence (-1)^{2J}); coherent superpositions across distinct charge sectors are excluded, reducing to sector-mixtures.",
+      "scientific_domain": "Foundational quantum field theory / algebraic QM (superselection)",
+      "argument_family": "structural",
+      "core_claim": "SBT reframes superselection-sector architecture as an instance of two layer-agnostic structural normal forms: F9 (No-Unstatused-Residual / single-valuedness) forces each admissible pure state into exactly one sector (the joint eigenspace = the unique typed status), and F4 (Local-Global Obstruction) explains why locally consistent phase data fail to glue into a coherent cross-sector superposition. 'No cross-sector coherence' becomes 'compatible-non-global' / single-value discipline rather than a separately postulated rule, the same normal form as sheaf-gluing failure (Cech H^1) and topological defects in G/H media.",
+      "theory_components_used": [
+        {
+          "component": "F9 No Unstatused Residual (thm:F9): unique typed status per residual / single-valued classifier",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "F4 Local-Global Obstruction Normal Form (thm:F4): four statuses incl. compatible-non-global",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "P4 staging/sectors / conserved sector labels",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Wick-Wightman-Wigner 1952 superselection rules; sector decomposition of the physical state space under commuting superselection charges.",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Declared substrate data: which observables are superselection observables (Q,B,L,(-1)^{2J})",
+        "The residual type R and status classifier st_P (declared per F9 instance)"
+      ],
+      "auxiliary_assumptions": [
+        "The set of superselection charges and the commutant structure are supplied as the declared family, not derived",
+        "Univalence/(-1)^{2J} (the spin-statistics piece) is imported as a given superselection observable; SBT has no spin-statistics machinery",
+        "Mapping physical 'sector' to F9 'typed status' / F4 'compatible-non-global' is a declaration"
+      ],
+      "why_fertile": "Superselection is exactly the 'sector separation' target of the structural family, and F9/F4 give a layer-agnostic skeleton (single-valuedness + gluing obstruction) the same paper applies across math (Cech H^1), condensed matter (topological defects), and biology -- compressing 'why no cross-charge superposition' into the same normal form as sheaf-gluing failure.",
+      "initial_risks": [
+        "A classification/normal-form, not a prediction: the physics (which charges superselect) is smuggled in via declaration",
+        "Univalence is the spin-statistics theorem in disguise, which SBT does NOT derive (no exchange-statistics machinery)",
+        "No Hilbert-space / C*-algebraic content produced; SBT relabels the exclusion as a status discipline, it cannot say superpositions are excluded"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV thm:F9 layer instantiation: 'WWW superselection rules require that every physically admissible pure state lie in a unique joint eigenspace of the superselection observables --- electric charge Q, baryon number B, lepton number L, and univalence (-1)^{2J}.'"
+    },
+    {
+      "id": "R023",
+      "title": "A canonical small taxonomy of emergence/sector-birth classes from primitive activation, separated by entropy-production-like drive (equilibrium vs dissipative)",
+      "target_fact": "Across physics, qualitatively distinct kinds of 'new level' birth recur (equilibrium phase formation vs driven dissipative structures vs scale-anomalous/staged transitions), separable by whether directed circulation (entropy production) is present at the transition (Prigogine equilibrium vs nonequilibrium/dissipative structure).",
+      "scientific_domain": "Statistical mechanics / nonequilibrium physics / emergence taxonomy",
+      "argument_family": "structural",
+      "core_claim": "SBT reproduces 'emergence comes in a few primitive kinds, separable by an entropy-production-like channel' via a four-class layer-birth taxonomy built from activation of packaging (P5), directed circulation (P6_drive), and staging anomaly (P4). The strongest, most robust separation is Class-I (packaging without drive, affinity ~ machine zero) vs Class-II (packaging WITH drive, affinity ~3.45e-2), with explicit no-fake-arrow controls (DPI / protocol-trap) ruling out coarse-graining artifacts. This mirrors the physical distinction between equilibrium and driven/dissipative emergence.",
+      "theory_components_used": [
+        {
+          "component": "Primitives P5 (packaging), P6_drive (cycle affinity/EPR), P4 (staging/sectors) as class axes",
+          "paper": "Tsiokos_2026_To_Classify_a_Stone_with_Six_Birds_Primitive_Activation_and_Observable_Separation_of_Layer_Birth_Classes.tex"
+        },
+        {
+          "component": "Affinity / Sigma_T directionality certificate (P6_drive) with arrow-DPI no-fake-arrow control",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "Protocol trap (holonomy without entropy production) as the control against hidden-clock false positives",
+          "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex"
+        }
+      ],
+      "known_result_matched": "Phenomenological distinction between equilibrium phase transitions and nonequilibrium/dissipative structure formation (Prigogine), separated by entropy production / time-asymmetry.",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "PICA enable matrix E (which closure cells active); drive parameter b / lambda",
+        "Lens f and timescale tau; affinity onset thresholds (1e-3,1e-2,5e-2)"
+      ],
+      "auxiliary_assumptions": [
+        "Identification of the four toy classes with physical emergence kinds is by analogy",
+        "Substrate, lens, and drive are declared; the classes are constructed to instantiate the rubric",
+        "Exponent-level universality is explicitly out of scope (only a primitive taxonomy is claimed)"
+      ],
+      "why_fertile": "Targets 'sector separation / multiplicity' at the level of a principled, control-validated taxonomy, with the drive vs no-drive axis mapping onto the deep equilibrium/nonequilibrium divide. The no-fake-arrow discipline is exactly what an honest sector-classification needs and is reusable.",
+      "initial_risks": [
+        "The four classes are toy constructions; mapping to real physical sector types (let alone particle generations) is analogy, not derivation",
+        "Universality exponents -- the thing that would make 'classes' physically meaningful -- are explicitly disclaimed and unstable; Classes III/IV are fragile under lens changes",
+        "Affinity (Sigma_T) is an informational proxy, NOT physical entropy production"
+      ],
+      "grounded": true,
+      "provenance": "To_Classify_a_Stone abstract: 'Class-I activates packaging without drive; Class-II activates packaging together with directed circulation ... The strongest empirical separation is between Class-I and Class-II ... We do not claim stabilized universality exponents.'"
+    },
+    {
+      "id": "R024",
+      "title": "Exchange statistics (fermion/boson sectors), spin-statistics, and the three-generation pattern as architecture SBT does NOT reproduce (honest negative)",
+      "target_fact": "The fermion/boson dichotomy and the spin-statistics theorem (antisymmetric vs symmetric exchange; Pauli exclusion), and the observed three-generation replication of Standard-Model fermions.",
+      "scientific_domain": "Quantum field theory / Standard Model structure",
+      "argument_family": "constraint-null-result",
+      "core_claim": "SBT does NOT reproduce the fermion/boson exchange-statistics architecture or the generation count. The corpus contains no exchange-symmetry, antisymmetrization, Pauli-exclusion, or anyon machinery. The closest contact is (a) 'univalence (-1)^{2J}' appearing only as one declared superselection observable inside the F9/WWW instance (imported, not derived), and (b) the three-generation fermion content and 19+ SM parameters appearing in F26 (Moduli/Contingency) where three generations are built into the declared 'lawfulness predicate' and the parameters are explicitly the CONTINGENT moduli coordinates, i.e. inputs. Spin-statistics and generation multiplicity are smuggled in as declarations, not retrodicted.",
+      "theory_components_used": [
+        {
+          "component": "F26 Moduli/Contingency (thm:F26): SM Lagrangians with three-generation content in the lawfulness predicate; 19+ parameters as contingent moduli",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "F9/WWW instance: univalence (-1)^{2J} as a declared superselection observable",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "Missing interfaces: no probability/Born valuation, no continuum, no Hilbert-space/Lorentz derivation -- prerequisites for any spin-statistics result",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        }
+      ],
+      "known_result_matched": "Spin-statistics theorem (Pauli/Fierz); observed three-generation structure of quarks and leptons.",
+      "derivability_class": "E",
+      "free_parameters_used": [
+        "Declared lawfulness predicate (three-generation content, gauge group) in F26",
+        "Declared superselection observable univalence (-1)^{2J} in F9; all 19+ SM dimensionless parameters (contingent moduli)"
+      ],
+      "auxiliary_assumptions": [
+        "Any fermion/boson statement would require a relativistic QFT / Hilbert-space + Lorentz interface that SBT explicitly lacks (no continuum, no spacetime interface)",
+        "Generation count is an input to the lawfulness predicate, not an output of any closure construction"
+      ],
+      "why_fertile": "Honest negative result that sharply delimits the structural family: it prevents over-claiming ('SBT explains why there are three generations / fermions vs bosons') and identifies the precise missing interfaces (exchange symmetry, Lorentz/QFT, Born rule) whose repair would be needed. Fertile as a research-direction flag: a finite exchange-symmetry sector model could in principle be added, but is absent now.",
+      "initial_risks": [
+        "Tempting but false analogy: SBT's P4 sector labels could be mistaken for charge/statistics sectors; they are unrelated to exchange symmetry",
+        "F26 listing the SM as a moduli instance can be misread as 'SBT accommodates the SM'; in fact every physical feature (generations, parameters) is a declared input",
+        "No path to spin-statistics without importing Lorentz invariance and Hilbert-space structure, both outside SBT's finite-state scope"
+      ],
+      "grounded": true,
+      "provenance": "Foundations IV F26 instance: 'three-generation fermion content, and Higgs doublet built into the lawfulness predicate ... The 19+ dimensionless parameters ... are the contingent moduli coordinates'; no fermion/boson/exchange/Pauli machinery found anywhere in the physics-facing corpus."
+    },
+    {
+      "id": "R025",
+      "title": "Apparent cosmic acceleration as a closure/route-mismatch operator-rewrite term: dark energy reinterpreted as an audit artifact of coarse-graining (HONESTLY FLAGGED: synthetic only, degeneracy-limited on real data)",
+      "target_fact": "Late-time cosmic acceleration is fit by LambdaCDM with Omega_Lambda ~ 0.6-0.7; the Friedmann equation governs the homogeneous FLRW background; backreaction from inhomogeneity (Buchert averaging) is a candidate contributor, and LambdaCDM is phenomenologically successful for background geometry.",
+      "scientific_domain": "Cosmology / general relativity (weak-field / FLRW background; dark energy, backreaction)",
+      "argument_family": "reinterpretation",
+      "core_claim": "SBT treats cosmological modeling as a closure package (lens + completion + audits) and reframes 'dark energy' as the operator-rewrite term H^2 = H_m^2 + Delta_H (P1), with Delta_H = A(1+z)^{-m}, FORCED by route mismatch when a homogeneous FLRW completion fails to commute with nonlinear inhomogeneous evolution (E o T != T o E; Jensen/backreaction non-commutation). It is a uniqueness-necessity reframing: SOME rewrite must appear once packaging and nonlinear evolution fail to commute, turning an effective Lambda from a mystery into a structural inevitability of coarse-grained closure. Synthetic demonstration: a null-Lambda heterogeneous generator mis-fit by homogeneous LambdaCDM recovers Omega_Lambda ~ 0.602429 (Q_peak ~ 1.74, ddot-a_D>0 for ~99% of late-time samples). On public DES SN5YR + Y6 BAO the best-fit shape collapses to a constant (m ~ 0), matching LambdaCDM (Delta-AIC ~2 penalty) -- offered as 'why LambdaCDM works for geometry' (a constraint-null result on the redshift-shape of any departure from constancy).",
+      "theory_components_used": [
+        {
+          "component": "Cosmology closure package (lens + completion + audits); rewrite term Delta_H, acceleration proxy Q(t); commutation => zero-mismatch lemma",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Dark_Energy_Closure_Route_Mismatch_and_Audits_for_Apparent_Acceleration.tex"
+        },
+        {
+          "component": "P1 operator rewrite forced by route mismatch (E o T != T o E); closure deficit CD_tau as exact obstruction to a closed macro law (thm:NG_MACRO_CLOSURE_DEFICIT)",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "Nonlinear-averaging (Jensen/backreaction) noncommutation: evolve-then-average != average-then-evolve for heterogeneity s>0",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        }
+      ],
+      "known_result_matched": "LambdaCDM late-time acceleration (Omega_Lambda ~ 0.7; Riess 1998, Perlmutter 1999); the Buchert backreaction-averaging program for inhomogeneous cosmology (Rasanen; Wiltshire timescape); the Friedmann acceleration relation; the SN+BAO geometry degeneracy between constant and evolving dark energy.",
+      "derivability_class": "E",
+      "free_parameters_used": [
+        "Rewrite amplitude A and redshift shape m (Delta_H = A(1+z)^-m); m saturates ~0 on real data",
+        "Heterogeneity amplitude s / patch initial conditions (s=0 homogeneous control gives Q~0)",
+        "Lens (data product) and completion (homogeneous FLRW) declared; H_0 and r_d held fixed"
+      ],
+      "auxiliary_assumptions": [
+        "A Friedmann-like closure per patch is assumed (imported, not derived from GR within SBT); the averaging map and patch ensemble stand in for genuine GR backreaction (no metric, no Einstein equations solved)",
+        "The chosen heterogeneous toy generator is hand-built to exhibit the effect",
+        "Sigma/EPR/route-mismatch are audit proxies; the real-universe backreaction magnitude is not computed (Green-Wald debate sidestepped)"
+      ],
+      "why_fertile": "A fertile methodology even though SBT cannot derive GR or cosmic acceleration: it predicts that 'dark energy' as a closure artifact should leave audit signatures (probe-split / staging dependence) distinguishable from a fundamental component, quantifies the Jensen/backreaction non-commutation mechanism, and shares the P1 route-mismatch primitive with LES subgrid stress (R009) and the kinetic closure (R008). The explicit fit-degeneracy (m collapses to constant on real data) is itself a sharp, honest prediction; a spacetime/GR interface repair could turn it into a genuine effective-acceleration program.",
+      "initial_risks": [
+        "Omega_Lambda ~ 0.60 is a SYNTHETIC artifact from a hand-built generator, NOT a retrodiction from real data; presenting it as a recovery of observed acceleration would be dishonest",
+        "On real data the effect is degeneracy-limited (Lambda vs constant correction indistinguishable over sampled z); a fundamental cosmological constant is explicitly NOT ruled out",
+        "No spacetime/GR interface, no continuum limit, no cosmological measure; the Friedmann closure and averaging scheme are imported by hand, and the Jensen effect is NOT a GR backreaction calculation"
+      ],
+      "grounded": false,
+      "provenance": "Dark Energy paper: 'route mismatch is the mechanism that forces operator rewrite terms'; 'homogeneous LambdaCDM fitting recovers Omega_Lambda ~ 0.60' (Omega_L=0.602429, SYNTHETIC); 'best-fit shape parameter saturates at m ~ 0'; 'a fundamental cosmological constant is not ruled out here.' Merged across low-energy-limit, uniqueness-necessity, constraint-null-result, numerical-match, paradox-resolution, reinterpretation framings; covers forced targets #18, #19 (dark energy half)."
+    },
+    {
+      "id": "R026",
+      "title": "Time as a closure artifact: no global time coordinate as a non-exact protocol-graph 1-form (clock-synchronization holonomy), arrow as audited accounting",
+      "target_fact": "There need not exist a single globally consistent time coordinate when local time-translation increments fail to be the gradient of a potential; the obstruction is the holonomy (nonzero loop sum) of the time-translation 1-form -- the discrete analogue of the synchronization-gap / non-integrable simultaneity in rotating frames (Sagnac) and spacetimes with no global time function. Time itself decomposes into order, measure (ticks), and an irreversible arrow.",
+      "scientific_domain": "Relativity-adjacent / thermodynamics / information physics (time as a theory artifact)",
+      "argument_family": "parameter-compression",
+      "core_claim": "SBT models time-translation between closures as a 1-form omega on a protocol graph; a global time potential t with omega(u->v)=t(v)-t(u) exists iff omega is exact, i.e. iff every loop has zero holonomy. When closure/lift protocols do not commute (P3), holonomy != 0 and no global time exists -- exactly 'nonzero curvature implies the 1-form is not exact.' This is the SAME closed-but-not-exact 1-form / vanishing-loop-integral criterion the directionality audit uses for cycle affinities (P6), so SBT compresses 'arrow as nonexact log-ratio 1-form' and 'no global time as nonexact time 1-form' into one cohomological (H^1) mechanism. Time is reframed as a layer-relative closure artifact assembled from order, staged ticks (P4), and an irreversible accounting monotone (P6) protected by the arrow-DPI.",
+      "theory_components_used": [
+        {
+          "component": "Protocol-graph time 1-form omega; global time = potential; holonomy obstruction; Lean triangle_sum_of_potential, no_global_potential_of_nonzero_triangle_holonomy",
+          "paper": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex"
+        },
+        {
+          "component": "P3 protocol holonomy / route mismatch as the source of noncommuting time-translation; time = order + measure + arrow (P4 ticks + P6 arrow monotone)",
+          "paper": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex"
+        },
+        {
+          "component": "Shared cohomological structure with ACC: exact 1-form => zero cycle integral (force/null and arrow audits); arrow-DPI 'no fake arrows'",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        }
+      ],
+      "known_result_matched": "Integrability/exactness criterion for a global time function (a closed 1-form is locally a gradient; globally exact iff all loop integrals vanish); the clock-synchronization gap in rotating frames (Sagnac); thermodynamic arrow as entropy-production / detailed-balance breaking (Schnakenberg, Gaspard).",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Protocol/lift choices (which coarse-graining and section of the phase variable Phi defines each protocol)",
+        "Commuting vs noncommuting regime knob (control gives holonomy=0)",
+        "Lens f (which variables are records/clock/phase); drive/bias b, horizon T for the arrow part"
+      ],
+      "auxiliary_assumptions": [
+        "Time translation is modeled as additive increments on a protocol graph (the 1-form picture is an SBT modeling choice)",
+        "The protocol-graph 'global time' is distinct from a relativistic foliation; the Sagnac/global-time-function match is analogy, not a relativistic computation",
+        "Sigma_T/EPR is an informational arrow proxy, not physical entropy production; continuum spacetime is out of scope"
+      ],
+      "why_fertile": "Cohomological compression: the SAME exact-vs-nonexact 1-form criterion underlies (a) no global time, (b) the arrow-of-time cycle affinity (P6 drive), and (c) the force-implies-cycles no-go -- three otherwise-separate physics statements share one H^1/loop-integral mechanism. It reframes the absence of universal simultaneity as a generic protocol-holonomy fact, falsification-first (commuting control gives exactly zero), connectable to Sagnac-type synchronization gaps if a Lorentzian interface were added.",
+      "initial_risks": [
+        "No physical-time/spacetime interface: 'global time' here is a protocol-graph potential, explicitly NOT a relativistic foliation, so the Sagnac/global-time match is analogy, not derivation",
+        "The holonomy is between coarse-graining protocols, not physical reference frames; the bridge to relativity is interpretive",
+        "Result is a telescoping triviality once the 1-form picture is granted; the physics content is in the (un-derived) claim that physical time-translation is such a 1-form; P3 holonomy alone is NOT a directionality certificate"
+      ],
+      "grounded": true,
+      "provenance": "To_Notch_a_Stone: 'If there exists a directed cycle with nonzero holonomy ... then no global potential t ... discrete analogue of nonzero curvature implies the 1-form is not exact'; measured nonzero 0.500005 / control 0; 'time is a closure artifact assembled from ... order, ... ticks, and ... arrow'; 'distinct from ... relativistic spacetime geometry.' Merged parameter-compression no-global-time + reinterpretation time-artifact framings."
+    },
+    {
+      "id": "R027",
+      "title": "Route mismatch (packaging-evolution noncommutation) as ONE mechanism behind LES subgrid stress, cosmological backreaction, AND quantum measurement contextuality",
+      "target_fact": "Three independently established physics facts: (a) spatial filtering of the nonlinear Burgers/Navier-Stokes flux produces the subgrid stress tau_sgs = mean(u^2)-(mean u)^2 (Germano/Leonard, LES); (b) nonlinear evolution does not commute with spatial averaging of an inhomogeneous universe (Buchert backreaction / Jensen effect); (c) unitary evolution does not commute with dephasing/measurement-context closure unless H is diagonal in the record basis (quantum contextuality/measurement incompatibility).",
+      "scientific_domain": "Turbulence/fluid dynamics + cosmology (backreaction) + quantum measurement (cross-domain within physics)",
+      "argument_family": "cross-domain-unification",
+      "core_claim": "All three are the SAME structural object: route mismatch RM = the noncommutation E o T != T o E of a coarse-graining/packaging operator E=U_f Q_f with the micro time-evolution T. Whenever the lens discards structure the (nonlinear, or non-record-diagonal) dynamics couples to, 'evolve-then-package' differs from 'package-then-evolve', and the discrepancy is exactly the canonical correction term in each domain (subgrid stress / backreaction term / measurement-evolution incompatibility). The sufficient condition for it to vanish (factorization through the macro layer) is Lean-certified (commutes_of_factorsThrough); generic noncommutation is the default regime.",
+      "theory_components_used": [
+        {
+          "component": "Route mismatch RM_d(E,F;rho)=d(EFrho,FErho) as the universal mechanism behind subgrid stress, backreaction, and contextuality; Lean commutes_of_factorsThrough; exact PDE identity tau_sgs",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        },
+        {
+          "component": "Quantum route mismatch Delta(U rho U^dag) vs U Delta(rho) U^dag (~0 for record-diagonal H, max 0.350099 generic); thm:dephase",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "P1 operator-rewrite primitive: route mismatch forces an effective-operator rewrite term to restore macro closure",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Dark_Energy_Closure_Route_Mismatch_and_Audits_for_Apparent_Acceleration.tex"
+        }
+      ],
+      "known_result_matched": "LES subgrid stress (Germano 1992, Leonard 1975); Buchert averaging non-commutation / Jensen effect in cosmology; quantum measurement-evolution incompatibility (collapse vs unitary, [H,Delta]!=0).",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Lens f (filter width sigma; averaging window; record basis)",
+        "Completion U_f (uniform-on-fiber / Gaussian / local-equilibrium / lift); timescale tau",
+        "Null-gate knobs (sigma filter width, heterogeneity s, dephasing strength lambda)"
+      ],
+      "auxiliary_assumptions": [
+        "That the three domains' canonical correction terms are accepted as 'the same kind' of object rather than merely structurally analogous",
+        "Importing the domain dynamics (Burgers flux, FLRW averaging, unitary+dephasing) is acceptable since SBT supplies only the closure/audit layer"
+      ],
+      "why_fertile": "The single strongest genuine cross-domain claim in the corpus: ONE operator template (route mismatch) instantiated across four physics domains with a Lean-certified commutation criterion, compressing three separately-discovered 'correction term appears under coarse-graining' phenomena into one structural cause (nonlinearity/non-diagonality + information-losing lens => noncommutation), and yielding a portable diagnostic (RM>0) plus a falsifiable null (linear/diagonal => RM=0).",
+      "initial_risks": [
+        "Reframing, not prediction: every domain's correction term was known and is imported wholesale",
+        "'Same object' is structural analogy at the level of 'a commutator of a projection with a flow'; the physical content (turbulent cascade vs cosmic acceleration vs Born-rule statistics) is NOT unified",
+        "Lean certifies only the trivial sufficient direction (factorization=>commutation); SBT disclaims deriving Navier-Stokes, GR backreaction, or the Born rule"
+      ],
+      "grounded": true,
+      "provenance": "To_Become_a_Stone abstract: 'route mismatch (noncommutation of coarse-graining with dynamics)'; LES section: 'This is exactly the Six-Birds route mismatch at the PDE level'; structural law: route mismatch is 'the universal mechanism behind subgrid stress (LES), backreaction (Jensen), contextuality (noncommuting closures), and dark energy as rewrite.'"
+    },
+    {
+      "id": "R028",
+      "title": "Audit monotonicity (path-space DPI) forbids 'fake arrows of time' identically in classical finite-Markov thermodynamics and in quantum CPTP channels",
+      "target_fact": "Two established facts in distinct domains: (a) classical stochastic thermodynamics -- coarse-graining a Markov process can only reduce, never create, the forward/reverse path-measure asymmetry (Esposito 2012 coarse-graining bound); (b) quantum information -- relative entropy is monotone under any CPTP map (Lindblad/Uhlmann/Petz data-processing inequality).",
+      "scientific_domain": "Statistical mechanics / stochastic thermodynamics + quantum information (cross-domain within physics)",
+      "argument_family": "cross-domain-unification",
+      "core_claim": "SBT's audit functional A is coarsening-monotone in BOTH settings as a single principle: A(Q_f mu, Q_f mu') <= A(mu, mu'). The arrow certificate Sigma_T = D_KL(forward||reversed) obeys micro >= macro (NG_ARROW_DPI), the deterministic specialization of relative-entropy DPI at path-measure level; the SAME monotonicity as quantum relative entropy under CPTP maps gives the quantum audit. One audit-monotonicity law underwrites 'no false positives for the arrow of time' across classical thermodynamic coarse-graining and quantum channels (sampled CPTP channels: 0 violations across d in {2,3,4,6}).",
+      "theory_components_used": [
+        {
+          "component": "Arrow DPI / NG_ARROW_DPI: deterministic observation cannot increase path-space KL asymmetry (micro >= macro)",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "Audit monotonicity as cross-domain invariant; classical KL-DPI Lean-certified (tvdist_pushforward_le), quantum relative-entropy DPI as the same inequality for CPTP maps; quantum DPI regression suite (0 violations)",
+          "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex"
+        },
+        {
+          "component": "Sigma_T directionality certificate protected by DPI; coarse-graining reduces path asymmetry (micro >= macro)",
+          "paper": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex"
+        }
+      ],
+      "known_result_matched": "Esposito (2012) coarse-graining bound on entropy production; classical data-processing inequality (Cover-Thomas); quantum relative-entropy DPI (Lindblad/Uhlmann/Petz; Wilde; Nielsen-Chuang).",
+      "derivability_class": "A",
+      "free_parameters_used": [
+        "Lens f / deterministic coarse-graining ell:X->Y",
+        "Horizon T (any T>=1); audit choice (KL / TV / quantum relative entropy)"
+      ],
+      "auxiliary_assumptions": [
+        "Path-space KL asymmetry Sigma_T is accepted as a proxy for the thermodynamic arrow (formally pure relative entropy; reservoir/entropy-production interpretation disclaimed)",
+        "The classical and quantum DPI count as 'one law' rather than two parallel theorems proved by different machinery"
+      ],
+      "why_fertile": "A clean, honestly-labeled cross-domain compression: the 'observation can hide but not create irreversibility' fact in stochastic thermodynamics and the CPTP-DPI in quantum information become two faces of a single coarsening-monotone audit, with the finite classical case actually Lean-certified. It gives a uniform falsifiable guard (any claimed coarse-grained arrow exceeding the micro arrow is spurious) usable in both domains.",
+      "initial_risks": [
+        "DPI is a standard, well-known inequality in BOTH domains; SBT explicitly labels this a recovery, not novel physics",
+        "The quantum half is cited not proved; only the finite deterministic classical half is Lean-certified",
+        "Sigma_T is an informational proxy (not physical entropy production); calling classical-DPI + quantum-DPI 'one law' is a framing choice (different machinery)"
+      ],
+      "grounded": true,
+      "provenance": "No-Go: arrow DPI is 'the deterministic specialization of the standard data-processing inequality for relative entropy'; To_Become_a_Stone: 'audit monotonicity (data-processing inequality)' as a cross-domain certificate, 'sampled CPTP channels satisfy quantum relative-entropy DPI with no violations.'"
+    },
+    {
+      "id": "R029",
+      "title": "Layer-relative randomness as closure deficit CD_tau: one exact obstruction unifying effective-theory non-closure, predictive sufficiency, and feasible one-wayness (q/2^n)",
+      "target_fact": "Established facts: (a) finite Markov chains admit an exactly closed coarse-grained description iff the partition is lumpable (Kemeny-Snell); non-lumpable coarse-graining leaves a non-Markovian memory residue; (b) predictive sufficiency / causal-state theory -- a state is predictively sufficient iff it screens off past from future (Shalizi-Crutchfield); (c) random-oracle one-wayness: inversion success ~ q/2^n for q queries against an n-bit one-way function.",
+      "scientific_domain": "Statistical mechanics / coarse-grained effective dynamics + information physics (predictive sufficiency, feasible irreversibility)",
+      "argument_family": "cross-domain-unification",
+      "core_claim": "SBT defines an exact obstruction CD_tau(Pi) = I(X_t; Y_{t+tau} | Y_t) with the identity H(Y_{t+tau}|Y_t) = H(Y_{t+tau}|X_t) + CD_tau, separating intrinsic substrate noise from non-closure. CD_tau=0 iff the partition is tau-closed (=lumpability at tau=1), so the Markov-effective-theory closure condition, the predictive-sufficiency condition, and the 'random-looking because non-closed' phenomenon are the SAME conditional-MI vanishing; route mismatch tracks CD_tau (Pearson r=0.959, Pinsker bound). Empirically, truncated-hash inversion tracks the q/2^n line (MAD 3.70e-3 for q/2^n<=0.25; n=16,q=256 gives 6.67e-3 vs baseline 3.91e-3), with low-entropy dictionary inputs inverting with probability 1.00 -- a packaging+budget instance of the same non-closure logic. A macrostate 'looks random exactly to the extent it has failed to become a sufficient statistic for its own future.'",
+      "theory_components_used": [
+        {
+          "component": "Closure deficit CD_tau = I(X;Y_{t+tau}|Y_t); exact decomposition (prop:cd-decomposition); CD=0 iff tau-closed/lumpable; route mismatch tracks CD (r=0.959, Pinsker); q/2^n hashing instance",
+          "paper": "Tsiokos_2026_To_Cast_a_Stone_with_Six_Birds_A_Closure_Deficit_Account_of_Randomness_under_Packaging_and_Budget.tex"
+        },
+        {
+          "component": "NG_MACRO_CLOSURE_DEFICIT: CD_tau is the exact obstruction to any closed macro law at lag tau",
+          "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex"
+        },
+        {
+          "component": "Packaging as many-to-one map; one-wayness as feasible irreversibility relative to bounded observers",
+          "paper": "Tsiokos_2026_To_Cast_a_Stone_with_Six_Birds_A_Closure_Deficit_Account_of_Randomness_under_Packaging_and_Budget.tex"
+        }
+      ],
+      "known_result_matched": "Kemeny-Snell / Buchholz exact lumpability of finite Markov chains; Shalizi-Crutchfield computational-mechanics predictive sufficiency; random-oracle q/2^n inversion heuristic (Bellare-Rogaway).",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Packaging/partition Pi (the lens); staging scale tau",
+        "Memory order / predictor budget B; input entropy and query budget q (hashing); output truncation n"
+      ],
+      "auxiliary_assumptions": [
+        "That 'effective-theory non-closure', 'predictive insufficiency', and 'one-wayness' are accepted as one phenomenon (spans stat-mech and info-physics, not two continuum physics domains)",
+        "For a quantum reading one must identify Pi with a record packaging and import Born-rule weights (cleanest for classical Markov substrates)",
+        "Truncated hash behaves random-oracle-like at the tested toy sizes; success counted in the small-success region only"
+      ],
+      "why_fertile": "Compresses three superficially unrelated facts (lumpability/effective-theory closure, predictive sufficiency, one-way q/2^n scaling) into the vanishing of a single exact conditional-MI obstruction, with a Lean/numerically-anchored route-mismatch proxy tracking it. The exact decomposition cleanly separates 'intrinsic substrate noise' from 'randomness manufactured by the lens' -- a genuinely useful, falsifiable diagnostic for any coarse-grained effective theory.",
+      "initial_risks": [
+        "Largely info-physics + finite stat-mech rather than two distinct continuum physics domains; CD_tau=0 is lumpability rebranded and the decomposition is elementary",
+        "Explicit disclaimers: closure deficit is NOT irreversibility and NOT novelty; CD_tau>0 certifies no nonequilibrium drive",
+        "q/2^n is an externally-known heuristic confirmed in a toy (NOT a measured constant); hashing is security-disclaimed; the 'unification' risks being a definitional move"
+      ],
+      "grounded": true,
+      "provenance": "To_Cast_a_Stone abstract: 'a measurable account of randomness that unifies coarse-graining, limited prediction, and feasible one-wayness without treating randomness as primitive'; 'closure deficit vanishes on exactly lumpable partitions ... route mismatch tracks it'; q/2^n MAD 3.70e-3. Merged cross-domain-unification + reinterpretation randomness + numerical-match hash framings."
+    },
+    {
+      "id": "R030",
+      "title": "Null-gate machine-zeros (lumpable CD_1 ~ 4.34e-17, no-signalling ~2.22e-16, detailed-balance EPR=0) reproduce the exact-zero predictions of standard theory",
+      "target_fact": "Standard theory predicts EXACT zeros in identifiable limits: exactly lumpable Markov partitions have zero macro closure deficit (Kemeny-Snell); detailed-balance stationary chains have zero entropy production; a local measurement choice leaves the distant reduced state exactly invariant (no-signalling).",
+      "scientific_domain": "Statistical mechanics / quantum information (exact-zero consistency limits)",
+      "argument_family": "numerical-match",
+      "core_claim": "SBT's audit functionals return the theoretically mandated exact zeros at the null-gate values: closure deficit CD_1 ~ 4.34e-17 (machine zero) on exactly lumpable partitions, no-signalling distance ~2.22e-16 for Alice's basis swap on Bob's reduced state, dephasing idempotence error 0 / cat dist_pack_vs_mix ~1.11e-16, and detailed-balance EPR = 0 for all horizons. These ~1e-16 values are floating-point realizations of the exact-zero predictions of lumpability, no-signalling, and detailed-balance time-symmetry -- the indispensable null controls that make any nonzero SBT audit interpretable (no false positives).",
+      "theory_components_used": [
+        {
+          "component": "Closure deficit CD_tau; CD=0 iff tau-closed/lumpable",
+          "paper": "Tsiokos_2026_To_Cast_a_Stone_with_Six_Birds_A_Closure_Deficit_Account_of_Randomness_under_Packaging_and_Budget.tex"
+        },
+        {
+          "component": "No-signalling marginal lemmas (Bob's unconditional reduced state invariant under Alice's choice)",
+          "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory_Operational_Closure_Semantics_for_Measurement_Contextuality_and_Record_Stability.tex"
+        },
+        {
+          "component": "Protocol trap / detailed balance => Sigma_T=0 for all T (path-reversal symmetry)",
+          "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex"
+        }
+      ],
+      "known_result_matched": "Kemeny-Snell exact lumpability (CD=0); quantum/classical no-signalling (reduced state invariance); detailed-balance zero entropy production.",
+      "derivability_class": "B",
+      "free_parameters_used": [
+        "Null-gate parameter values (heterogeneity s=0, dephasing lambda=null, filter sigma=0, clock bias b=0)",
+        "Machine floating-point tolerance"
+      ],
+      "auxiliary_assumptions": [
+        "The constructed partition is exactly lumpable (chosen)",
+        "The EPR pair / measurement model is set up so no-signalling holds by construction; detailed balance holds at the tested stationary law"
+      ],
+      "why_fertile": "Limited but load-bearing fertility: these zeros are the indispensable NULL controls that make any nonzero SBT audit interpretable (no false positives) and anchor the falsification-first claim that SBT recovers the exact-zero limits of standard theory.",
+      "initial_risks": [
+        "NOT a numerical match to a measured natural constant: the matched value is exactly zero, realized as floating-point ~1e-16; presenting ~1e-16 as a 'retrodicted number' would be misleading",
+        "Each zero is a standard theorem (Kemeny-Snell, no-signalling, detailed balance) explicitly cited as recovery, not novelty",
+        "Saturation/idempotence-defect zeros are explicitly 'saturation diagnostics only, not certificates of nontrivial emergence' (a constant map has delta=0)"
+      ],
+      "grounded": true,
+      "provenance": "To_Cast_a_Stone 'CD_1 ~ 4.34e-17 machine zero' on lumpable partitions; Quantum paper table: no_signalling_dist_X=2.22045e-16, cat dist_pack_vs_mix=1.11022e-16; Protocol Trap: detailed balance => EPR=0 for all T."
+    },
+    {
+      "id": "R031",
+      "title": "Anomalies as a generic descent obstruction (F40): a classical symmetry is anomalous iff it fails to descend to the formed/quantized layer (forced-target, consistency-constraint skeleton only)",
+      "target_fact": "Anomaly / consistency constraints in QFT: a classical symmetry can fail to survive quantization (an anomaly), and gauge anomalies must cancel for consistency (Wess-Zumino consistency conditions; the structural feature 'a classical symmetry fails to descend to the quantized layer').",
+      "scientific_domain": "Quantum field theory / particle physics (anomalies, consistency constraints)",
+      "argument_family": "forced-target",
+      "core_claim": "SBT produces 'anomaly' as a generic descent-obstruction normal form: F40 (Anomaly / Symmetry Obstruction, Lean-verified faithful) defines an anomaly as the failure of at least one of {SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved} for a would-be symmetry gate on a quotient. This abstracts the structural feature 'a classical symmetry fails to descend to the formed/quantized layer', with deliberately non-QFT instantiations (IEEE-754 non-associativity, gimbal lock, lattice breaking continuous translation). It supplies the descent-test skeleton, not the QFT anomaly content.",
+      "theory_components_used": [
+        {
+          "component": "thm:F40 Anomaly / Symmetry Obstruction (Lean-verified faithful): anomaly = failure of the four descent conditions for a would-be symmetry gate",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+        },
+        {
+          "component": "Quotient-descent criterion / definability algebra Sigma_f (a symmetry is a genuine layer symmetry iff it descends through the quotient)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Anomaly inflow / Wess-Zumino consistency conditions and the structural fact that a classical symmetry may fail to survive quantization (Bertlmann cited); descent equations.",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Declared would-be symmetry gate, its domain, group law, and readout (the four descent ingredients, supplied externally)",
+        "The quotient / formed layer at which descent is tested"
+      ],
+      "auxiliary_assumptions": [
+        "The QFT anomaly content (triangle diagram, index theorem, the actual cancellation condition fixing matter content) is entirely outside SBT and supplied by declaration",
+        "Mapping 'failure to descend' to a physical anomaly requires declaring the symmetry and the quantized layer"
+      ],
+      "why_fertile": "Gives a uniform, Lean-faithful descent-test skeleton for 'a symmetry fails to survive coarse-graining/forming', applicable across IEEE-754, gimbal lock, and lattice symmetry breaking, and structurally adjacent to which symmetries survive to the macro layer (F40 complements the SSB/F15 and superselection/F9 laws). It localizes precisely what the QFT anomaly machinery would have to supply.",
+      "initial_risks": [
+        "Does NOT explain anomaly CANCELLATION (the SM/string consistency conditions that fix matter content); F40 'does not classify anomalies into carrier-specific forms'",
+        "The QFT treatment (triangle diagram, index theorem) is cited, not derived; no continuum/QFT interface",
+        "Risk of over-claiming: F40 is a generic descent obstruction, not a physical anomaly result"
+      ],
+      "grounded": true,
+      "provenance": "Forced-target #12 (can_produce partial). Foundations IV thm:F40 Anomaly / Symmetry Obstruction: anomaly = failure of {SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved}; instantiations IEEE-754, gimbal lock, lattice; 'does not classify anomalies into carrier-specific forms.'"
+    },
+    {
+      "id": "R032",
+      "title": "Neutrino-mass upper-bound instability under CMB-likelihood lens swap reproduced as a packaging-stability audit (forced-target; direction-only diagnostic, NOT a mass mechanism)",
+      "target_fact": "Reported cosmological neutrino-mass upper bounds tighten when the CMB likelihood is swapped (SPT-3G 2018 -> D1): SPT-only+DESI 0.194 -> 0.085 eV; baseline 0.080 -> 0.068 eV; the instability localizes to TT high-ell (~2000-3000).",
+      "scientific_domain": "Cosmology / particle physics (neutrino mass inference, CMB likelihoods)",
+      "argument_family": "forced-target",
+      "core_claim": "SBT does NOT explain neutrino mass or mixing physics; it provides a packaging/audit DIAGNOSTIC of a cosmological-inference instability. Treating each likelihood release as a distinct lens f, the neutrino paper reproduces the DIRECTION of the reported m_nu upper-bound tightening under the SPT-3G 2018 -> D1 swap, reframing it as a packaging-stability failure localized to TT high-ell, with large asymmetric cross-lens dchi (2222 vs 314). It is a forced-target instance: SBT can produce a lens-swap stability audit but no neutrino-sector physics.",
+      "theory_components_used": [
+        {
+          "component": "Lens-swap / packaging-stability audit: each likelihood release = a distinct lens f; cross-lens dchi asymmetry as a packaging-stability failure certificate",
+          "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex"
+        },
+        {
+          "component": "P5 packaging endomap + idempotence/stability certificate (object persists only under stable lens choice)",
+          "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex"
+        }
+      ],
+      "known_result_matched": "Reported tightening of cosmological m_nu upper bounds under the SPT-3G likelihood swap (direction-only replication of an already-reported empirical observation).",
+      "derivability_class": "C",
+      "free_parameters_used": [
+        "Choice of CMB likelihood lens f (SPT-3G 2018 vs D1)",
+        "Multipole window for the localization (TT high-ell ~2000-3000); external compressed-likelihood inputs"
+      ],
+      "auxiliary_assumptions": [
+        "The reported empirical m_nu bounds and likelihoods are imported; SBT consumes, does not produce, the cosmological inference",
+        "Each likelihood release is treated as a distinct packaging lens whose stability is audited"
+      ],
+      "why_fertile": "Demonstrates SBT's lens-swap stability audit on a live, contested empirical inference, localizing the instability to a specific multipole window and quantifying cross-lens asymmetry -- a reusable packaging-stability diagnostic for any inference whose conclusion depends on the chosen data product.",
+      "initial_risks": [
+        "Direction-only numerical replication of an already-reported observation, NOT an explanation of neutrino mass/mixing; magnitudes differ from the source paper",
+        "No mass-generation mechanism (seesaw/Dirac), no PMNS matrix, no oscillation physics",
+        "'We do not attempt to identify the physical or instrumental root cause ... nor that any particular m_nu bound is the correct answer'"
+      ],
+      "grounded": true,
+      "provenance": "Forced-target #22 (can_produce partial). Neutrino paper: SPT-only+DESI 0.194->0.085 eV, baseline 0.080->0.068 eV; instability localized to TT high-ell; cross-lens dchi 2222 vs 314; non-claims as quoted."
+    }
+  ],
+  "dropped": [
+    {
+      "title": "Weak-field GR / FLRW cosmology: late-time acceleration as a closure rewrite term (separate low-energy-limit framing)",
+      "reason": "Merged into R025 (dark energy as closure/route-mismatch rewrite). The low-energy-limit, uniqueness-necessity, constraint-null, numerical-match, paradox-resolution and reinterpretation versions of the dark-energy argument are the same retrodiction argument with different emphases; kept as one candidate (strongest = reinterpretation framing) with unioned components/assumptions and the honest 'synthetic only / degeneracy-limited' flags preserved."
+    },
+    {
+      "title": "Dark matter phenomenology (rotation curves / structure formation / MOND)",
+      "reason": "Pure absence with no SBT machinery and no repair path: the corpus contains no dark-matter account whatsoever (forced target #19 dark-matter half). Not a retrodiction argument; recorded as out-of-scope rather than as a candidate."
+    },
+    {
+      "title": "Recover classical mechanics phase-space / Hamiltonian flow (forced target #2 strong reading)",
+      "reason": "No SBT machinery produces phase space or Hamiltonian flow; the only viable content (classicality as record-stability) is already captured by R001/R002. Explicitly disclaimed ('not the quantum-to-classical limit'); the strong reading has no repair path within the frozen calculus."
+    },
+    {
+      "title": "Recover quantum mechanics from deeper principles (forced target #1 strong reading)",
+      "reason": "SBT consumes QM (Hilbert space, amplitudes, unitary dynamics, Born rule all imported) and cannot produce it; the genuine partial content (causal-vs-inferential / packaging reformulation) is already captured by R001, R004, R006, R007. The strong 'recover QM' reading is pure import with no machinery, no repair path."
+    },
+    {
+      "title": "Hash-inversion q/2^n numerical match as a standalone numerical-match candidate",
+      "reason": "Merged into R029 (closure-deficit unification). The q/2^n scaling is the one-wayness instance of the same closure-deficit obstruction; kept as one candidate with the numerical detail (MAD 3.70e-3) preserved rather than as a separate near-duplicate."
+    },
+    {
+      "title": "Standalone 'no global time' parameter-compression candidate vs 'time as artifact' reinterpretation candidate",
+      "reason": "Merged into R026. Both target the same holonomy-of-the-time-1-form mechanism plus the order/measure/arrow decomposition from the same paper; kept as one candidate (parameter-compression framing, since the H^1 cohomological compression is the load-bearing claim)."
+    }
+  ],
+  "coverage_notes": "32 consolidated candidates (R001-R032) spanning all 11 argument families. Final family counts: low-energy-limit 3 (R001 dephasing/quantum-to-classical, R008 BGK hydrodynamics, R011 Euclidean/CLT); symmetry-emergence 4 (R018 Noether/orbit-descent, R019 gauge/OI-EI, R020 SSB/F15, R021 CPT/SDTC); uniqueness-necessity 4 (R005 bipartite trichotomy, R007 probability-fiber, R015 cycle-drive necessity, R016 contraction-uniqueness); constraint-null-result 2 (R004 no-signalling/DPI, R024 exchange-stats honest negative); parameter-compression 3 (R006 contextuality/noncommuting closures, R010 temperature/shadow-price, R026 no-global-time/H^1); numerical-match 3 (R009 LES subgrid identity, R014 Schnakenberg EPR closed form, R030 null-gate machine-zeros); structural 3 (R017 multiplicity/sectors, R022 superselection/WWW, R023 layer-birth taxonomy); paradox-resolution 3 (R002 cat, R003 eraser, R013 Loschmidt/arrow); cross-domain-unification 4 (R012 geometry+thermo co-emergence, R027 route-mismatch 3-domain, R028 audit-DPI classical+quantum, R029 closure-deficit unification); reinterpretation 1 (R025 dark energy); forced-target 2 (R031 anomaly/F40, R032 neutrino lens-swap). Slightly fewer reinterpretation/structural/constraint-null than the raw split because the decoherence-as-reinterpretation, dephasing-as-structural, and several arrow framings were merged into their strongest single home; spread remains broad with no family empty. MAJOR MERGES (strongest framing kept, components + assumptions unioned, all provenance retained): decoherence/dephasing/collapse cluster (6 raw across low-energy-limit, uniqueness-necessity, structural, paradox-resolution, reinterpretation + forced #1,#2,#25) -> R001; Noether/F27 cluster (4 raw: symmetry-emergence, parameter-compression, cross-domain, reinterpretation) -> R018; dark-energy cluster (6 raw + forced #18,#19) -> R025; no-signalling/locality cluster (3 raw) -> R004; arrow/protocol-trap/DPI/Loschmidt cluster (6 raw + forced #15,#24) -> R013, with R014 (Schnakenberg numerical match), R015 (cycle-necessity law) and R028 (classical+quantum DPI unification) kept DISTINCT as genuinely different arguments; temperature/shadow-price cluster (3 raw + forced #27) -> R010; Euclidean/Pythagoras cluster (2 raw) -> R011; randomness/closure-deficit/hash cluster (3 raw) -> R029; time/no-global-time cluster (2 raw) -> R026; cat (2 raw) -> R002; eraser (2 raw) -> R003. FORCED-TARGET COVERAGE: #1,#2 (QM/classicality) covered by R001/R002/R004/R006/R007; #7 gauge by R019; #10 Noether by R018; #12 anomaly by new R031; #15,#24 arrow/second-law by R013; #18,#19 dark energy by R025 (dark matter is pure absence, dropped); #22 neutrino by new R032; #25 decoherence by R001; #26 hydrodynamics by R008; #27 equilibrium stat-mech by R010. Only #12, #22 needed brand-new forced-target candidates; the rest were already covered by merged candidates. GROUNDED=false kept (honestly flagged, plausible repair path): R021 (CPT/SDTC -- needs a recognition source / domination records) and R025 (dark energy -- needs a spacetime/GR continuum interface). All other 30 grounded=true. DERIVABILITY SPREAD: A=PROVED/Lean-anchored (R001,R004,R009,R013,R014,R015,R016,R018,R028); B (R002,R017,R019,R027,R029,R030); C (R008,R010,R011,R012,R020,R022,R023,R026,R031,R032); D (R005? no:B; R006,R007,R021); E (R024 negative, R025 dark energy). DROPPED: 6 entries -- 2 pure-absence/no-repair-path (dark matter; strong 'recover QM/classical mechanics' readings) and 4 near-duplicate framings folded into merged candidates (dark-energy low-energy-limit duplicate, hash standalone, no-global-time vs time-artifact, plus the classical-mechanics strong reading). No pure-analogy-with-no-machinery candidate survived as standalone."
+}

@@ -1,0 +1,7 @@
+artifact,claim,grade,source
+nonfactorization_witness_step66.csv,E032 B.2 witness reproduced on finite toy,finite-carrier-diagnostic,nonfactorization_witness_step66.csv
+record_stability_scores_step66.csv,record-stability blind to selection on both readouts,finite-carrier-diagnostic,record_stability_scores_step66.csv
+D_vs_Sigma_location_step66.csv,forcing definiteness would need D or Sigma_f enrichment; naive record property touches neither,analytical-structural,D_vs_Sigma_location_step66.csv
+step66_results_summary.md,summary and caveats,organizational,step66_results_summary.md
+step66_statement.tex,typed no-go statement for naive record stability,finite-carrier-diagnostic,step66_statement.tex
+run_step66.py,validator,organizational,run_step66.py

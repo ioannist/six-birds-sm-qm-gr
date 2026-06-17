@@ -1,0 +1,2 @@
+target,parent_residual,relation_to_canonical_root,status,source_artifacts
+single-factor-clean-separation-exclusion,Step43 structural-arguable single-factor bound,sub_residual of SM-gauge-structure-selection canonical root,constructed_theorem,steps/step61_mode_t_single_factor_clean_separation_theorem_artifacts/single_factor_clean_separation_theorem_step61.py

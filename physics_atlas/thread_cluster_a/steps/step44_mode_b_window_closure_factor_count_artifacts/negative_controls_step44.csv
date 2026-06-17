@@ -1,0 +1,4 @@
+control,passes,evidence
+all_three_factor_rows_inspected,True,35
+route_obstruction_nonvacuous,True,type rows exist but all-factor incidence rows do not
+no_clean_competitor,True,three-factor clean separator table is empty

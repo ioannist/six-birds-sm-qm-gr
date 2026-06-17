@@ -1,0 +1,91 @@
+{
+  "step": 3,
+  "orientation": "Mode A recognition-import search for P3 route-mismatch",
+  "active_residual": "P3 route-mismatch sub-sector of E018",
+  "carrier": {
+    "kind": "finite physics toy extending Step 1/2 carrier",
+    "audit_energy": "C = I on E_r = R^(r+2)",
+    "refinement_levels": [2, 4],
+    "basis": [
+      "boundary entanglement region coordinates",
+      "bulk_geometry_amplitude",
+      "p3_route_mismatch"
+    ],
+    "native_lens": "asymptotic-safety-like UV fixed point route closure probe",
+    "tested_sectors": [
+      "p3_route_mismatch",
+      "amplitude(geometry)",
+      "area=shadow-price(entanglement)"
+    ],
+    "no_overread_controls": {
+      "amplitude_geometry_used_in_as_native_lens": false,
+      "boundary_entanglement_used_in_as_native_lens": false,
+      "fixed_bulk_metric_inserted": false,
+      "planck_constant_inserted": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode A",
+    "selected_import": "Asymptotic safety: Weinberg fixed-point scenario plus Reuter gravitational RG flow",
+    "primary_sources": [
+      {
+        "name": "Weinberg 1979",
+        "url": "book chapter: General Relativity, An Einstein Centenary Survey"
+      },
+      {
+        "name": "Reuter 1996",
+        "url": "https://arxiv.org/abs/hep-th/9605030"
+      },
+      {
+        "name": "Niedermaier-Reuter 2006",
+        "url": "https://link.springer.com/article/10.12942/lrr-2006-5"
+      },
+      {
+        "name": "Percacci 2007",
+        "url": "https://arxiv.org/abs/0709.3851"
+      }
+    ],
+    "assumption": "A non-Gaussian UV fixed point with a finite-dimensional critical surface exists in the relevant gravitational theory space.",
+    "candidate_strength": "strongest surveyed import for the P3 nonrenormalizability route"
+  },
+  "final_verdict": {
+    "type": "P3_only_E2_conditional_recognition",
+    "summary": "Asymptotic safety recognizes the P3 route-mismatch child sector under fixed-point assumptions, while amplitude(geometry) and area=entanglement remain residual under this lens.",
+    "grade": "finite-carrier diagnostic plus applied no-smuggling gate verdict",
+    "root_landed": false,
+    "partial_child_landed": true,
+    "p3_only": true,
+    "child_residuals": [
+      "R_child_E018_AS_P3_fixed_point",
+      "R_child_E018_after_HED_LQG_AS_coupled_joint_gap"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "acceptable_landing_tested": "E2 recognition-conditional P3 child source",
+    "xi_orientation": "adequacy-oriented diagnostic for declared finite carrier",
+    "xi_results": {
+      "as_p3_route_mismatch_normalized": {
+        "level_2": 0.0,
+        "level_4": 0.0
+      },
+      "as_amplitude_geometry_normalized": {
+        "level_2": 1.0,
+        "level_4": 1.0
+      },
+      "as_area_shadow_price_normalized": {
+        "level_2": 1.0,
+        "level_4": 1.0
+      },
+      "refinement_stability_delta_p3": 0.0,
+      "refinement_stability_delta_amplitude": 0.0,
+      "refinement_stability_delta_area": 0.0
+    },
+    "gate_status_file": "no_smuggling_gates_step3.csv",
+    "content_classification_file": "content_classification_step3.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step3.md",
+    "simulation_output": "simulation_output_step3.json",
+    "lineage_update": "../../mode_b_target_lineage.csv"
+  }
+}

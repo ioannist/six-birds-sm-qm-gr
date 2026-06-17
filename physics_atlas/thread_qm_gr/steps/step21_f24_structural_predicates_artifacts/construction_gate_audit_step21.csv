@@ -1,0 +1,9 @@
+gate,status,scope,evidence
+C1_structural_inputs,pass,candidate suite,"Candidate structures contain maps, residual ledgers, scope data, coarsened readouts, or closure matrices."
+C2_no_selector_labels,pass,no-smuggling,"Classifier output records uses_input_case_names=false and uses_input_selector_bundle=false."
+C3_l_computed_family,pass,L classification,"L_candidate_package selects BridgeMediatedRole with selected_count=1."
+C4_mutual_exclusive,pass,discrimination suite,"Every candidate selects exactly one family."
+C5_exhaustive_on_suite,pass,discrimination suite,"All eight families appear in selected-family coverage."
+C6_controls_real_structures,pass,controls,"Memory hidden budget scoped coarsened outside and blocked controls classify from their own structural maps."
+C7_failure_reasons_recorded,pass,diagnostic,"Candidate-by-family CSV records the structural reason each non-selected predicate fails."
+C8_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

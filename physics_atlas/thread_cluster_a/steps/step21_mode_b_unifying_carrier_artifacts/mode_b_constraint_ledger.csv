@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP21_FINITE_KERNEL,ModeB,step21_mode_b_unifying_carrier,carrier,"Finite operational kernel declared: five slots, q lens, bridge operators, trace-neutral generator, trace metric, and dual/pair rewrites."
+C_CLUSTER_A_STEP21_U_NONDESCENT,ModeB,step21_mode_b_unifying_carrier,nonfactorization,"U is non-descending through q with obstruction count 1: U_a and U_b share q but differ in bridge readout."
+C_CLUSTER_A_STEP21_CU_DESCENT,ModeB,step21_mode_b_unifying_carrier,descent_audit,"C(U) descends through q with obstruction count 0 and generated normalization ratio 5/3."
+C_CLUSTER_A_STEP21_STAGEII,ModeB,step21_mode_b_unifying_carrier,stage_ii,"Generated dual/pair rewrite content reproduces zero mixed and cubic anomaly sums as an audited output."
+C_CLUSTER_A_STEP21_SIX_GATES,ModeB,step21_mode_b_unifying_carrier,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and no-single-axiom-equivalence gates pass."
+C_CLUSTER_A_STEP21_NONCLAIM_BOUNDARY,ModeB,step21_mode_b_unifying_carrier,honesty,"Finite Mode-B generation only; recognition after generation is not a physical unification solution and not frame-transfer certification."

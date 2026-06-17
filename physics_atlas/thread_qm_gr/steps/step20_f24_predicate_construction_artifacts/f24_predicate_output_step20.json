@@ -1,0 +1,43 @@
+{
+  "step": 20,
+  "FIV_source_read": true,
+  "families": [
+    "MemoryLayer",
+    "HiddenUpstreamRole",
+    "BridgeMediatedRole",
+    "BudgetedRole",
+    "ScopedRole",
+    "CoarsenedRole",
+    "OutsideRoleScope",
+    "BlockedNonClosure"
+  ],
+  "role_split": {
+    "role_obstruction_count": 3,
+    "role_obstruction_nonempty": true,
+    "q": "q_QM=(d0,d1,d2)",
+    "s": "d3"
+  },
+  "verdict": {
+    "L_selected_family": "BridgeMediatedRole",
+    "L_unique": true,
+    "all_controls_classify_as_expected": true,
+    "mutually_exclusive_on_suite": true,
+    "exhaustive_on_suite": true,
+    "family_coverage": [
+      "BlockedNonClosure",
+      "BridgeMediatedRole",
+      "BudgetedRole",
+      "CoarsenedRole",
+      "HiddenUpstreamRole",
+      "MemoryLayer",
+      "OutsideRoleScope",
+      "ScopedRole"
+    ]
+  },
+  "no_smuggling_check": {
+    "L_case_hardcoded": false,
+    "predicates_asserted_without_FIV_read": false,
+    "control_misclassified": false,
+    "root_landed": false
+  }
+}

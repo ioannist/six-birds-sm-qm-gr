@@ -1,0 +1,357 @@
+{
+  "id": "U016",
+  "schema_note": "Merged enriched unification card. Sections: original_card (the U016 candidate as supplied), audit (compression/baseline/anti-superficiality controls), skeptic_panel (4 adversarial referees), repair_and_scoring (this Test-Hardener+Fertility-Judge pass), then triage fields. Source claims independently verified against Foundations IV thm:F15a (lines 3038-3107), thm:F40 (lines 3310-3385), and the F15a gauge layer-instantiation (lines 3129-3139). Quotes <=25 words; disclaimers honored; gaps marked.",
+
+  "original_card": {
+    "id": "U016",
+    "one_sentence_claim": "A single orbit-descent obstruction normal form -- a selectedness/symmetry descends through an orbit quotient pi iff the split-pair set O_s = {(x,x'): pi(x)=pi(x'), s(x) != s(x')} is empty, and (under a trivial orbit action) any equivariant deterministic selector lands only in the common G-fixed locus -- recovers and uniformly audits three \"a symmetry cannot break/select/survive itself without a declared breaker\" facts (SSB/vacuum selection, Gribov gauge-fixing, the anomaly skeleton), with exactly one of the three legs (the F15a no-go) genuinely opposite-world-inelastic and the other two relabelings of the quotient universal property.",
+    "domains_unified": [
+      "QFT_SM (gauge-fixing / Gribov-Singer obstruction; anomaly skeleton)",
+      "D1 / SSB (spontaneous symmetry breaking, vacuum/order-parameter selection)",
+      "QM (measurement-record / pointer non-descent -- analogical only)"
+    ],
+    "argument_family": "symmetry-unification (obstruction/negative direction of orbit-descent)",
+    "shared_mechanism": "orbit-descent, obstruction direction: a selectedness predicate / symmetry action / readout descends through an orbit quotient pi:X->O iff its split-pair obstruction set is empty; nonemptiness structurally forces a declared \"breaker\" (an extra source-refining datum = the F2 minimal source-refinement). The single Lean-certified engine is the quotient universal property (constant-on-fibers iff descends), specialized as F15a (selection), F2 (descent-repair) and F40 (symmetry-gate / anomaly). The contentful rigid sub-claim is the equivariance corollary: an equivariant selector under a trivial orbit action can only return common G-fixed points, so no symmetric rule selects one element of a nontrivial degenerate orbit.",
+    "derivability_class": "C",
+    "theory_basis": [
+      {
+        "component": "F15a Selection Obstruction (thm:F15a, Lean Symmetry.SelectionObstruction.selection_obstruction, 'faithful'): EquivariantSelector AND TrivialOrbitAction => selector lands in common G-fixed locus; s descends through pi iff O_s empty; HasSelectionSplit iff O_s nonempty",
+        "paper": "Six_Birds_Foundations_IV (thm:F15a, lines 3038-3107)",
+        "role": "Primary engine: the one genuinely opposite-world-INELASTIC sub-result (the equivariance no-go) plus the descent biconditional; supplies the SSB and gauge-fixing legs"
+      },
+      {
+        "component": "F2 Descent-Repair Normal Form (thm:F2, Lean Transport.DescentRepair.descent_repair_normal_form, 'faithful'): r o F descends through q iff splitObs(q,F,r) empty; canonical repair = minimal source refinement <pi,b> = the declared breaker",
+        "paper": "Six_Birds_Foundations_IV (thm:F2)",
+        "role": "Upstream lemma: defines the split-pair/descent discipline F15a/F40 specialize and identifies the breaker as the minimal source-refining datum (note: b is UNUSED in the F15a descent proof, lines 3092-3106)"
+      },
+      {
+        "component": "F40 Anomaly / Symmetry Obstruction (thm:F40, Lean Symmetry.Anomaly.anomaly_symmetry_obstruction, 'faithful'): anomalous iff fails one of {SymmetryDescends (O_alpha empty), DomainDescends (O_D empty), GroupLawPreserved (action-associativity, NOT a Wess-Zumino cocycle), ReadoutPreserved}",
+        "paper": "Six_Birds_Foundations_IV (thm:F40, lines 3310-3376)",
+        "role": "Anomaly-skeleton leg: the quotient universal property relabeled 'anomaly'; has NO additive/cocycle structure, so anomaly CANCELLATION is structurally inexpressible (R031)"
+      },
+      {
+        "component": "F15a gauge instantiation: Singer's theorem (no continuous global section of A/G) as the declared-breaker case; Faddeev-Popov F(A)=0 + FP determinant + ghosts = the breaker",
+        "paper": "Six_Birds_Foundations_IV (F15a layer instantiation, lines 3129-3139)",
+        "role": "Gauge-fixing leg: the continuum/topological Gribov-Singer theorem is IMPORTED; SBT certifies only a finite-set analogue (an orbit with no equivariant section)"
+      },
+      {
+        "component": "F15b SSB formation wrapper (thm:F15b, obligation-guarded over opaque FutureBranchSelectionFormationSource, 'needs-strengthening')",
+        "paper": "Six_Birds_Foundations_IV (thm:F15b)",
+        "role": "FORMATION half: types a broken branch once a breaker source is declared but DERIVES no vacuum, Goldstone modes or effective potential; self-axiomatizing -- must be reported as conditional, never as 'SBT explains SSB formation'"
+      },
+      {
+        "component": "Quotient-descent / definability criterion Sigma_f: a readout descends through a lens quotient iff constant on fibers; Unresolved = two histories in a fiber with different readout (F23)",
+        "paper": "Six_Birds_Foundations_of_Emergence_Calculus; To_Cast_a_Stone (F23, R007)",
+        "role": "QM measurement leg substrate: supplies the same O_s-nonempty shape for a pointer readout failing to descend through the record quotient -- but the record/pointer basis is a disclaimed free input"
+      }
+    ],
+    "bridge_dictionary": [
+      {
+        "source_theory_component": "Equivariant-selector no-go: EquivariantSelector AND TrivialOrbitAction => sigma(o) in common G-fixed locus (F15a, lines 3052-3056, 3066)",
+        "target_domain_component": "SSB / vacuum selection: no symmetric (G-equivariant) deterministic rule picks one element of a degenerate ground-state orbit; selection requires an externally declared breaker (order parameter / boundary condition)",
+        "mapping_type": "direct",
+        "quality_level": 3,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "Split-pair descent biconditional: s descends through pi iff O_s empty (F15a, lines 3057-3061)",
+        "target_domain_component": "SSB order-parameter descent: a selectedness predicate on configurations is well-defined on the symmetry-quotient iff it does not distinguish symmetry-related vacua",
+        "mapping_type": "direct",
+        "quality_level": 3,
+        "invertible": true,
+        "lossy": false
+      },
+      {
+        "source_theory_component": "F2 minimal source-refinement <pi,b> = the declared breaker (thm:F2)",
+        "target_domain_component": "SSB: the physical order parameter / boundary term / external field that is structurally imported to break the degeneracy",
+        "mapping_type": "operational",
+        "quality_level": 3,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F15a obstruction = nonexistence of an equivariant section of an orbit projection (finite-set analogue)",
+        "target_domain_component": "Gauge-fixing: Gribov-Singer no-continuous-global-section of A/G; Faddeev-Popov F(A)=0 + FP determinant = the declared breaker",
+        "mapping_type": "analogical",
+        "quality_level": 2,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F40 descent test: anomalous iff one of {SymmetryDescends, DomainDescends, GroupLawPreserved, ReadoutPreserved} fails on the formed-layer quotient (thm:F40)",
+        "target_domain_component": "Anomaly: a classical symmetry fails to descend to the quantized layer (skeleton only -- no triangle coefficient, no Fujikawa Jacobian, no index theorem, no cancellation)",
+        "mapping_type": "analogical",
+        "quality_level": 1,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F2 union of obstruction sets (set-theoretic, no additive structure)",
+        "target_domain_component": "Anomaly CANCELLATION (sum of fermion charges = 0 fixing matter content)",
+        "mapping_type": "analogical",
+        "quality_level": 0,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "Quotient-descent / F23 Unresolved fiber: a readout fails to descend through the record quotient iff O_s nonempty",
+        "target_domain_component": "QM measurement: a fine outcome readout fails to descend through the pointer/record quotient (Born weights, single outcome, pointer basis all disclaimed free inputs)",
+        "mapping_type": "analogical",
+        "quality_level": 1,
+        "invertible": false,
+        "lossy": true
+      }
+    ],
+    "domain_derivations": [
+      {"domain": "D1 / SSB (vacuum selection no-go)", "target": "no equivariant selector picks a single vacuum; SSB must import a declared breaker (the F15a no-go half)", "status": "derived"},
+      {"domain": "D1 / SSB (vacuum FORMATION)", "target": "which vacuum forms, Goldstone modes, effective potential, order-parameter dynamics", "status": "assumed"},
+      {"domain": "QFT_SM (gauge-fixing / Gribov)", "target": "no global section of A/G; Faddeev-Popov as the breaker", "status": "sketched"},
+      {"domain": "QFT_SM (anomaly skeleton)", "target": "a classical symmetry fails to descend to the quantized layer (descent-obstruction shape only)", "status": "sketched"},
+      {"domain": "QFT_SM (anomaly cancellation)", "target": "sum of charges = 0 fixing matter content", "status": "assumed"},
+      {"domain": "QM (measurement-record non-descent)", "target": "pointer readout fails to descend through the record quotient", "status": "analogical"}
+    ],
+    "minimum_viable_unification": "A short note presenting the obstruction direction of orbit-descent as ONE no-go family -- O_s-emptiness as the universal descent test -- with three worked finite instances: (a) U(1) phase on a finite ring lattice (vacuum selection needs a declared breaker; the F15a equivariance no-go, opposite-world INELASTIC, the only genuinely load-bearing leg); (b) a finite Gribov-type obstruction (an orbit with no equivariant section, continuum Singer's theorem imported); (c) a NON-QFT F40 descent failure (IEEE-754 / gimbal-lock / lattice-translation) as the anomaly SKELETON, with the QFT case entered only as a declared placeholder; plus a load-bearing scope box per leg. Honestly: a single Lean-certified split-pair criterion that recovers and uniformly audits 'a symmetry cannot break/select/survive itself' folklore, naming exactly which extra datum each account imports -- a RECOVERY + cross-domain audit, not a derivation, with anomaly cancellation explicitly out of scope.",
+    "baseline_comparison": "Strictly weaker than every genuine symmetry-unification baseline on physics content, honestly so. The gold standard (B_EW, electroweak SU(2)xU(1) broken by the Higgs) is a single broken symmetry with predicted, measured consequences (W/Z masses, theta_W); U016 produces NO mass, NO force, cannot SELECT a gauge group, and cannot run couplings (B_GUT) -- the gauge leg (R019) is descent bookkeeping with the group imported, and the domain ledger files D_QFT as 'mostly honest-negative' with anomaly cancellation 'structurally inexpressible'. Against a real anomaly account (triangle diagram + index theorem + cancellation fixing SM matter content), F40 supplies only the descent skeleton and imports all content via Bertlmann. The ONE place U016 is not strictly dominated: the F15a equivariant-selector no-go is opposite-world-INELASTIC (SBT could not have retrodicted a symmetric rule cleanly selecting one vacuum), which the textbook 'a symmetry cannot select its own vacuum' folklore states but rarely isolates as a single domain-general Lean-certified criterion. So the contribution is organizational/audit value over a textbook fact, not a unification competitive with EW/GUT/string -- SBT is explicitly 'not in this category' (B_EW vs_sbt).",
+    "why_scientists_care": "It converts the folklore 'a symmetry cannot break/select/survive itself; something must choose' into one precise, Lean-certified, domain-general criterion (O_s empty?) with an explicit minimal repair (the declared breaker), making auditable exactly which extra datum any SSB / gauge-fixing / vacuum-measure account must import. The single rigid, opposite-world-inelastic spine (the F15a impossibility of symmetric self-selection) is shown to underlie vacuum selection, gauge-fixing, and the anomaly skeleton, and the analysis surfaces the one decisive upgrade path: an additive/cocycle structure on obstruction sets that would reproduce a real cancellation constraint. Value is to foundations/formal-methods/symmetry-as-redundancy audiences as a clarifying honesty audit, not to a phenomenologist as a prediction.",
+    "stronger_unification": "Add a genuine ADDITIVE/cocycle structure on obstruction sets so a union of nonempty obstructions becomes empty under a DERIVED (not declared) condition, reproducing a real anomaly-cancellation constraint (e.g. a U(1) cubic-anomaly cancellation), AND a within-SBT principle that PRODUCES the quotient q / the realized breaker b from substrate data (removing opposite-world tunability). Either would convert two of the three legs from relabeling into derivation; both cross SBT's disclaimed continuum and lens-selection interfaces and are research-grade.",
+    "bottlenecks": [
+      "TrivialOrbitAction does the real work in F15a: the contentful no-go is 'a nontrivial orbit has no equivariant section'; in the physically interesting regime where G relates the vacua non-trivially, the theorem only forbids a symmetric chooser -- which was never in doubt.",
+      "The breaker b is UNUSED in the F15a descent biconditional proof (lines 3092-3106); the 'must import a breaker' bite has to be grounded as the F2 source-refinement, otherwise the headline is asserted not demonstrated.",
+      "F40 has no additive structure, so anomaly CANCELLATION (the physically load-bearing content) is structurally inexpressible, not merely unproved (R031, bin F).",
+      "Continuum/topological gap: Gribov-Singer and the Fujikawa measure anomaly are imported; only finite analogues certified (no continuum / no path-integral interface).",
+      "Opposite-world elasticity on the breaker/quotient declarations for the gauge and anomaly legs: F40 ratifies anomalous and non-anomalous worlds equally; F2 repairs flip any obstruction empty/nonempty post hoc.",
+      "F15b formation half is self-axiomatizing (opaque FutureBranchSelectionFormationSource); any 'SBT explains SSB formation' reading is circular and fatal.",
+      "Cross-domain stitch risk: the three legs share the orbit-descent ENGINE but no ambient algebra at the per-domain content level -- pairing them is a tabulation unless the additive structure is built."
+    ],
+    "fallback": "Drop the gauge and anomaly legs to consistency-only INSTANTIATIONS and keep a single-leg deliverable: the F15a equivariant-selector no-go for SSB/vacuum selection (the one opposite-world-inelastic result) with one worked finite instance (U(1) on a ring) and a unification TABLE (not a unification claim) mapping the single O_s-emptiness criterion onto BEC U(1), ferromagnet O(3), Gribov-Singer, hairy-ball/Poincare-Hopf, Buridan, Schelling, Vitali/AC -- presented as a domain-general honesty AUDIT naming exactly which datum each account imports, with a prominent scope box: no formation, no Goldstone modes, no anomaly cancellation, no Born rule. This is R020's already-repaired bin-B deliverable.",
+    "builds_on_retro_cards": ["R020", "R019", "R031", "R007"],
+    "honest_status_note": "Derivability class C: a structural reorganization/recovery, NOT a derivation. Only one of the four legs carries genuine unification weight. (1) SSB no-go (R020/F15a): genuinely Lean-certified 'faithful' and the sole opposite-world-INELASTIC sub-result -- an equivariant deterministic selector under a trivial orbit action lands only in the common G-fixed locus, so no symmetric rule selects one vacuum; but G, the action, the degenerate orbit and the breaker b are all DECLARED, b is UNUSED in the descent proof (so the 'import a breaker' bite must be grounded as the F2 source-refinement), TrivialOrbitAction does the real work, and the F15b formation half is self-axiomatizing over an opaque source -- any 'SBT explains SSB formation' reading is circular and fatal. (2) Gauge-fixing (R019): class-B reorganization, bridge lemma circular as a derivation, opposite-world elastic, continuum Gribov-Singer imported (finite analogue only). (3) Anomaly (R031): bin F -- F40 is the quotient universal property relabeled 'anomaly', GroupLawPreserved is bare action-associativity (NOT a Wess-Zumino cocycle), it ratifies anomalous and non-anomalous worlds equally, and anomaly CANCELLATION is structurally inexpressible (no additive structure), so this leg is skeleton-only. (4) QM measurement (R007): bin E, analogical only, crossing the disclaimed pointer-basis, Born-rule and single-outcome interfaces. Honoring the deflation critique: only the F15a no-go beats it; the gauge and anomaly legs collapse to relabeled quotient-by-fibers and remain opposite-world-elastic. The bridge dictionary is therefore honestly mixed -- one quality-3 direct map (SSB descent), supporting quality-3 operational maps, and quality-0/1/2 analogical maps for the gauge, anomaly-cancellation and QM legs. The bundling of SSB + gauge-fixing + anomaly under one law is a TABULATION over a shared engine, not a per-domain shared ambient algebra; it scores well only on the F15a spine and as an honesty audit, not as a unification competitive with electroweak/GUT/string. All physics content (Singer's theorem, Goldstone/BEC phenomenology, triangle diagram / index theorem / Wess-Zumino cocycle, spin-statistics) is imported."
+  },
+
+  "source_verification": {
+    "verified_against": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+    "checks": [
+      {
+        "claim": "The breaker b is UNUSED in the F15a descent proof, so the headline 'SSB must import a breaker' is not demonstrated by F15a and must be grounded in the separate F2 source-refinement lemma.",
+        "status": "CONFIRMED",
+        "evidence": "thm:F15a (lines 3038-3107): b:X->B is declared in the hypotheses (line 3043) and appears only in prose conclusions (lines 3066-3068, 3104-3106). The fixed-locus derivation (3076-3090) uses only EquivariantSelector + TrivialOrbitAction; the descent biconditional (3092-3106) uses only O_s-emptiness. b enters no equation in the proof."
+      },
+      {
+        "claim": "F40's GroupLawPreserved is bare action-associativity, NOT a Wess-Zumino 2-cocycle; F40 has no additive/cocycle structure, so anomaly cancellation is structurally inexpressible.",
+        "status": "CONFIRMED",
+        "evidence": "thm:F40 (lines 3330-3334): GroupLawPreserved(bar_alpha) iff for all g,g',h: bar_alpha(gg',h)=bar_alpha(g,bar_alpha(g',h)) -- plain action-associativity. The anomaly is 'failure of at least one of these four' set-emptiness conditions (3340-3341); O_alpha, O_D carry no addition. Paper states (3380-3385) it 'does not classify anomalies into carrier-specific forms' and collects WZ + descent-equation classification in Bertlmann 2000."
+      },
+      {
+        "claim": "Gribov-Singer is imported as a continuum theorem; only a finite analogue is certified.",
+        "status": "CONFIRMED",
+        "evidence": "F15a gauge layer-instantiation (lines 3129-3139): 'Singer's theorem states that the gauge orbit space A/G ... admits no continuous global section.' Cited via FaddeevPopov1967; no continuum proof internal to SBT, finite-set analogue only."
+      }
+    ]
+  },
+
+  "audit": {
+    "mechanism_tag": "orbit-descent",
+    "compression": {
+      "assumptions_without": 9,
+      "assumptions_with": 7,
+      "params_without": 12,
+      "params_with": 9,
+      "compression_strength": "low",
+      "hidden_import_risk": "HIGH. The orbit-descent engine compresses only the DESCENT-BOOKKEEPING layer; every load-bearing piece of per-domain physics enters through declared inputs. SSB leg: G, the action, the degenerate orbit, and the breaker b are all declared; b is UNUSED in the F15a descent proof (lines 3092-3106), so the 'must import a breaker' bite is smuggled in as the F2 source-refinement, not read from F15a. Gauge leg: the gauge group G is 'given a priori', the BRIDGE LEMMA (gauge orbit = empirical equivalence) is asserted-not-derived and circular as a derivation, and continuum Gribov-Singer/Singer's theorem is imported (only a finite-set analogue is certified). Anomaly leg: triangle coefficient, Fujikawa Jacobian, index theorem, Wess-Zumino cocycle all imported via Bertlmann 2000; GroupLawPreserved is bare action-associativity, NOT a WZ 2-cocycle. QM leg: the binding 'unresolved record fiber = quantum branch' is in NO paper and crosses the disclaimed pointer-basis/Born/single-outcome interfaces. So the apparent assumption reduction (one descent criterion vs four ad hoc no-go statements) is real ONLY at the bookkeeping altitude; at the physical-content altitude almost nothing is compressed because each leg re-imports its own domain ledger."
+    },
+    "baseline": {
+      "how_baselines_handle": "The genuine symmetry-unification baselines handle these domains with PHYSICAL content U016 lacks. B_EW (Glashow-Weinberg-Salam): a single SU(2)_LxU(1)_Y gauge symmetry spontaneously broken by the Higgs to U(1)_em, PRODUCING W/Z masses, the photon, and theta_W as predicted, measured quantities -- i.e. it actually breaks a symmetry and selects a vacuum with consequences, exactly the SSB content U016 disclaims (it produces no vacuum, no Goldstone modes, no effective potential). B_GUT embeds the SM group in one simple group and PREDICTS coupling unification + proton decay; U016 cannot embed or select a gauge group (it 'derives' A/G' for any declared G') and NG_LADDER_IDEM forbids any RG-semigroup running of couplings. A real anomaly account (triangle diagram + Atiyah-Singer index theorem + cancellation fixing SM hypercharges / Green-Schwarz) computes the anomaly coefficient and the cancellation condition; F40 supplies only the descent skeleton and CANNOT express cancellation (no additive structure). B_DECOH (decoherence/einselection) DERIVES the pointer basis dynamically; U016's QM leg TAKES the record basis as a free input (MISS_LENS_SEL) -- strictly weaker on the very domain it touches. B_EFT is the natural comparison for the descent/quotient bookkeeping, and it already contains coarse-graining-as-quotient plus genuine RG flow.",
+      "theory_advantage": [
+        "The F15a equivariant-selector no-go (SSB leg) is isolated as a SINGLE Lean-certified, domain-general, opposite-world-INELASTIC criterion (O_s empty?) with an explicit named minimal repair (the declared breaker = F2 source-refinement). Textbook physics states 'a symmetry cannot select its own vacuum' as folklore (Goldstone/Anderson, Gribov-Singer) but rarely isolates it as one machine-checked structural theorem spanning SSB, gauge-fixing, Buridan, Schelling, hairy-ball, Vitali/AC.",
+        "Audit/honesty value: the framework makes EXPLICIT and auditable exactly which extra datum (the breaker / the quotient / the lens) each SSB / gauge-fixing / vacuum-measure / anomaly account must import -- a clarifying organizational lens for foundations / formal-methods audiences."
+      ],
+      "theory_disadvantage": [
+        "Produces NO mass, NO force, cannot SELECT a gauge group, cannot run couplings -- strictly dominated by B_EW and B_GUT on all physics content.",
+        "Anomaly cancellation (the physically load-bearing QFT content) is STRUCTURALLY INEXPRESSIBLE in F40, not merely unproved -- a real anomaly account beats it completely.",
+        "On the QM leg it is strictly WEAKER than decoherence: it imports the pointer basis that einselection derives.",
+        "Three of the four legs (gauge, anomaly, QM) are opposite-world-elastic and derive zero new content; only the SSB no-go beats the deflation critique.",
+        "The descent/cohomology reading of anomalies and the symmetry-as-redundancy (Leibniz-quotient) reading of gauge are ALREADY standard (BRST, descent equations, Earman/Healey/Rovelli), so even the organizing lens is not novel."
+      ],
+      "merely_repackages": false
+    },
+    "anti_superficial": {
+      "same_word": {
+        "pass": false,
+        "note": "FAIL (mixed, leans fail): 'descent/obstruction' is one genuine mathematical object (constant-on-fibers / O_s empty), so the WORD tracks one thing structurally. But 'breaker', 'anomaly', and 'symmetry' are stretched across heterogeneous physical referents -- 'breaker' is a real order parameter (SSB), a gauge-fixing section (Gribov), and a stipulated readout-refinement; 'anomaly' in F40 is the bare quotient universal property relabeled, with GroupLawPreserved = action-associativity, NOT a Wess-Zumino cocycle. The same word ('anomaly') names a costume, not the QFT object."
+      },
+      "shared_mechanism": {
+        "pass": false,
+        "note": "FAIL as a unification, PASS only as a shared ENGINE. One genuine engine (orbit-descent / quotient universal property) is reused across all legs, but it does real PHYSICAL work in only ONE domain (the F15a SSB no-go, opposite-world-inelastic). In gauge (R019, bin E), anomaly (R031, bin F), and QM (R007, bin D) it does only bookkeeping with all content imported -- N relabelings of one bookkeeping lemma, not one mechanism doing work in >=2 domains."
+      },
+      "bridge_map": {
+        "pass": false,
+        "note": "FAIL except on the SSB descent leg. The SSB order-parameter-descent bridge is observable-preserving and invertible (quality-3 direct map). But the gauge bridge (gauge orbit = empirical equivalence) is asserted-not-derived and circular; the anomaly bridge (Fujikawa Jacobian = ReadoutPreserved failure) is the hard, NOT-in-papers bridge lemma that crosses the disclaimed continuum/path-integral interface; the QM bridge (record fiber = quantum branch) is in no paper and crosses pointer-basis/Born. Three of four bridges are unwritten or lossy/analogical (quality 0-2)."
+      },
+      "hidden_import": {
+        "pass": false,
+        "note": "FAIL. The structure each leg 'derives' is imported: gauge group G a priori; Singer's theorem (continuum, finite analogue only); all anomaly content via Bertlmann; Born weights / pointer basis disclaimed in the QM leg. Critically, the breaker b is UNUSED in the F15a descent proof, so the headline 'SSB must import a breaker' is itself imported from the separate F2 lemma -- the bite is asserted by relabeling, not demonstrated by F15a."
+      },
+      "elasticity": {
+        "pass": false,
+        "note": "FAIL (inherited). elasticity_inherited=true. R019 opposite-world: 'derives' A/G' for any declared G'. R031 opposite-world: F40 ratifies anomalous AND non-anomalous worlds equally; F2 source-refine/target-coarsen repairs flip any obstruction empty/nonempty post hoc. R007 opposite-world fails (any non-Born m satisfies StableProbability). Only the F15a no-go sub-claim is rigid; the unification as a whole accommodates incompatible domain structures via free declarations of q, b, and the lens."
+      },
+      "compression": {
+        "pass": false,
+        "note": "FAIL at the physical-content altitude. Fewer independent assumptions than four separate no-go statements ONLY for the descent-bookkeeping layer (one O_s criterion vs four). At the content level there is no compression: each leg re-imports its full domain ledger, the legs share the engine but NO ambient per-domain algebra (anomaly cancellation is structurally inexpressible), so bundling SSB+gauge+anomaly+QM is a TABULATION over a shared engine, not a reduction in independent physical assumptions."
+      },
+      "surprise": {
+        "pass": true,
+        "note": "PASS, narrowly and only on one leg. The F15a equivariance corollary yields a genuine forbidden case: an equivariant deterministic selector under a trivial orbit action lands ONLY in the common G-fixed locus, so NO symmetric rule selects one element of a nontrivial degenerate orbit -- a rigid, falsifiable-in-principle no-go SBT could not have retrodicted the opposite of. The other three legs yield no new relation/constraint/forbidden case; they relabel inputs. So 'surprise' passes for the spine, not for the unification."
+      }
+    },
+    "audit_verdict": "CONDITIONAL-PASS AS A ONE-LEG RECOVERY + HONESTY AUDIT; FAIL AS A FOUR-DOMAIN UNIFICATION. U016 bundles SSB (R020/F15a), gauge-fixing (R019/bin E), the anomaly skeleton (R031/bin F), and QM measurement (R007/bin D) under ONE genuinely shared Lean-certified engine: the quotient universal property / orbit-descent criterion (a selectedness/symmetry descends iff its split-pair obstruction O_s is empty). The engine is real and genuinely reused -- this is honest structural economy at the bookkeeping altitude. But it does real PHYSICAL work in exactly ONE domain. The F15a equivariant-selector no-go (no symmetric deterministic rule selects one element of a nontrivial degenerate orbit; selection requires a declared breaker) is opposite-world-INELASTIC and is the sole sub-result that beats the deflation critique. The other three legs collapse to relabeled quotient-by-fibers and remain opposite-world-elastic: the gauge leg's bridge lemma (gauge orbit = empirical equivalence) is circular and imports G + Singer's theorem; F40 ratifies anomalous and non-anomalous worlds equally and CANNOT express anomaly cancellation (no additive structure -- structurally inexpressible, not merely unproved); the QM leg crosses the disclaimed pointer-basis/Born/single-outcome interfaces. COMPRESSION is LOW: real only for the descent-bookkeeping layer (one O_s test vs four ad hoc no-gos), absent at the physical-content level where each leg re-imports its full domain ledger and the legs share NO ambient per-domain algebra. HIDDEN-IMPORT risk is HIGH and includes a load-bearing internal one: the breaker b is UNUSED in the F15a descent proof, so the headline 'SSB must import a breaker' must be grounded in the separate F2 source-refinement, not read out of F15a. Against baselines it is strictly weaker than B_EW/B_GUT on all physics (no mass, no force, no group selection, no running couplings) and strictly weaker than decoherence on the QM leg (imports the pointer basis einselection derives). NET: 6 of 7 anti-superficiality controls FAIL; only 'surprise' passes, and only for the F15a spine. Accept ONLY as the R020-style deliverable -- the F15a no-go + one worked finite instance (U(1) on a ring) + a cross-domain unification TABLE with per-leg load-bearing scope boxes (F15b formation self-axiomatizing; Gribov-Singer/Fujikawa imported, finite analogues only; anomaly cancellation out of scope; no Born rule) -- a recovery + honesty audit, derivability class C, NOT a unification competitive with electroweak/GUT/string."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.38,
+    "fatal_present": true,
+    "is_real_unification": "0/4",
+    "beats_deflation": "0/4",
+    "skeptics": [
+      {
+        "skeptic_role": "Quantum-foundations skeptic (measurement, contextuality, Bell, the Born-rule gap)",
+        "main_objection": "U016 is a tabulation over a single bookkeeping lemma (the quotient universal property / 'descends iff constant on fibers'), not a four-domain unification. The shared engine does genuine PHYSICAL work in exactly one of the four legs (the F15a equivariant-selector no-go for SSB), and even that leg is a Lean-restatement of textbook Curie's principle, contentful only because TrivialOrbitAction is assumed and with the breaker b provably UNUSED in the descent proof. The other three legs import all their content and remain opposite-world-elastic.",
+        "fatal_objections": [
+          "FATAL AS A FOUR-DOMAIN UNIFICATION: the three non-SSB legs share an ENGINE but no per-domain content, so bundling SSB+gauge+anomaly+QM is a tabulation.",
+          "FATAL ON THE ANOMALY LEG: anomaly CANCELLATION is STRUCTURALLY INEXPRESSIBLE in F40 (no additive/cocycle structure); GroupLawPreserved is bare action-associativity; F40 ratifies anomalous and non-anomalous worlds equally.",
+          "FATAL ON THE QM LEG: the binding 'unresolved record fiber = quantum branch' appears in NO paper, the opposite-world test FAILS, and the pointer basis is a DISCLAIMED free input that einselection DERIVES; contextuality (Kochen-Specker) is a no-global-section phenomenon the engine names but cannot distinguish from trivial fiber-non-constancy.",
+          "FATAL CIRCULARITY ON THE GAUGE LEG: the bridge lemma (gauge orbit = empirical equivalence) is asserted-not-derived; G is given a priori; opposite-world passes trivially; Singer's theorem imported (finite analogue)."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1.5
+      },
+      {
+        "skeptic_role": "Skeptical high-energy / gauge theorist (anomalies, EFT matching, representation theory, BRST/descent cohomology)",
+        "main_objection": "As a four-domain unification it fails: the single shared object (quotient universal property / O_s-empty) does real physical work in only ONE domain (F15a SSB no-go). The anomaly leg is the smoking gun: F40 (lines 3310-3342) is the descent biconditional applied four times, GroupLawPreserved bare action-associativity (line 3330) NOT a WZ 2-cocycle (WZ only CITED via Bertlmann). Anomaly cancellation is STRUCTURALLY INEXPRESSIBLE -- unsayable, not unproved.",
+        "fatal_objections": [
+          "Anomaly cancellation structurally inexpressible: O_alpha/O_D combined only by 'at least one fails', no additive/cocycle structure (verified thm:F40 lines 3310-3342; carrier-specific forms disclaimed line 3380-3382).",
+          "GroupLawPreserved is bare action-associativity (3330-3334), NOT a Wess-Zumino consistency cocycle; WZ + descent classification only IMPORTED via Bertlmann (3383-3384). 'Anomaly' names a relabeled quotient lemma -- fails same-word control.",
+          "The SSB bite 'must import a breaker' is not demonstrated by F15a: b is UNUSED in the descent proof (lines 3092-3106 use only s, pi, O_s; b appears only in prose line 3105). The bite is re-grounded in F2 -- asserted by relabeling, a hidden internal import."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1.0
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist (gauge theory / SSB / QFT anomalies / quotient-descent foundations), cross-checking bridge maps against Foundations IV source.",
+        "main_objection": "U016 is a single shared ENGINE (the quotient universal property) wearing four domain costumes, not a unification of four domains. The engine does genuine PHYSICAL work in exactly one leg (the F15a SSB no-go), and even there the conclusion is gated by TrivialOrbitAction; in the physically interesting SSB regime where G relates the degenerate vacua NONTRIVIALLY the conclusion does not apply and the theorem only forbids a symmetric chooser, never in doubt.",
+        "fatal_objections": [
+          "Hidden-import, verified at source: the headline 'any SSB account must structurally import a declared breaker' is NOT a consequence of F15a -- b declared (line 3043) but provably UNUSED in the descent proof (lines 3073-3107); the 'unless a declared breaker b supplies additional data' clause is asserted prose. Smuggled from the separate F2 lemma.",
+          "Anomaly leg is not a unification at all: F40 has no additive/cocycle structure (GroupLawPreserved bare action-associativity line 3330), so anomaly CANCELLATION is structurally INEXPRESSIBLE (R031).",
+          "Three of four bridge maps are analogical/asserted maps crossing disclaimed interfaces: gauge (circular, Singer imported lines 3131-3133), anomaly Fujikawa (NOT-in-papers, crosses continuum/path-integral), QM record-fiber=quantum-branch (in NO paper, crosses pointer-basis/Born/single-outcome)."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1.5
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist + gauge/anomaly specialist + condensed-matter SSB theorist (joint cross-domain referee)",
+        "main_objection": "U016 is one bookkeeping lemma re-costumed four times. Verified at source: F15a (3038-3107) and F40 (3310-3376) are literally the same 'descends iff obstruction-set empty' biconditional, F40 GroupLawPreserved bare action-associativity not a WZ cocycle, paper itself stating F40 does not classify carrier-specific forms and importing all QFT anomaly content via Bertlmann 2000. Engine does genuine physical work in exactly ONE domain (F15a no-go, opposite-world-inelastic); the other three are relabelings with all content imported (gauge group a priori; Singer continuum, finite analogue only; pointer basis disclaimed).",
+        "fatal_objections": [
+          "Anomaly leg structurally fatal: F40 (verified 3310-3376) has no additive/summation structure, so anomaly CANCELLATION -- the entire load-bearing QFT content -- is INEXPRESSIBLE not unproved. GroupLawPreserved bare action-associativity, not a WZ 2-cocycle. A specialist rejects the map: 'anomaly' is a costume; the object (triangle coefficient, Fujikawa Jacobian, index theorem) imported by citation.",
+          "Headline 'SSB must import a breaker' not demonstrated by the cited theorem: confirmed in F15a proof (3066-3106) that b, though declared, is UNUSED; fixed-locus uses only EquivariantSelector + TrivialOrbitAction; descent uses only O_s=empty. The bite is smuggled from F2 -- asserted by relabeling, internally double-counted across two lemmas."
+        ],
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1.5
+      }
+    ],
+    "consolidated_minimum_acceptance_conditions": [
+      "State it strictly as a ONE-LEG recovery (the F15a equivariant-selector no-go for SSB/vacuum selection) plus a cross-domain honesty AUDIT/table -- explicitly NOT a four-domain unification and NOT a derivation.",
+      "Ground the headline 'must import a breaker' bite in the F2 source-refinement lemma, with an in-text statement that the breaker b is UNUSED in the F15a descent proof.",
+      "Per-leg load-bearing scope boxes: F15b formation self-axiomatizing conditional wrapper; Gribov-Singer and Fujikawa imported (finite analogues only); anomaly cancellation STRUCTURALLY INEXPRESSIBLE in F40 and out of scope; QM leg crosses disclaimed pointer-basis/Born/single-outcome and is analogical only.",
+      "Supply at least one worked finite SSB instance (U(1) on a ring) with TrivialOrbitAction/EquivariantSelector verified rather than assumed.",
+      "Explicit concession that it is strictly weaker than electroweak/GUT on all physics content and strictly weaker than decoherence on the QM leg.",
+      "Add a genuine ADDITIVE/cocycle structure on the F40 obstruction sets reproducing a real charge-sum cancellation constraint, OR retain elasticity disclaimers verbatim and drop any unification claim for the gauge/anomaly legs."
+    ],
+    "what_would_change_my_mind": "Two research-grade upgrades, both crossing SBT's disclaimed interfaces. (1) Build a genuine ADDITIVE/cocycle structure on obstruction sets so a union of nonempty obstructions becomes empty under a DERIVED (not declared) condition, reproducing a real anomaly-cancellation constraint (e.g. U(1) cubic-anomaly cancellation fixing charges) WITHOUT importing the charge assignments. (2) A within-SBT principle that PRODUCES the quotient q and the realized breaker b from substrate data (removing opposite-world tunability), and on the QM side a measure-selection principle (envariance/Gleason-type) deriving the Born |amplitude|^2 weights rather than declaring them. Either would make the same mechanism do genuine, rigid, non-imported PHYSICAL work in >=2 domains with observable-preserving derived bridge maps. Absent both, it remains one inelastic leg plus three elastic relabelings."
+  },
+
+  "repair_and_scoring": {
+    "id": "U016",
+    "repair_status": "repaired",
+    "repair_disposition": "REPAIRED BY SPLIT + DEMOTION + RECLASS. The four-domain unification claim does not survive (0/4 skeptics call it a real unification; 6/7 anti-superficiality controls fail). The allowed repairs applied: (i) SPLIT the overbroad four-domain unification into one load-bearing leg + three demoted instantiations; (ii) ADMIT the gauge and QM domains are only sketched/analogical and the anomaly leg is skeleton-only with its load-bearing content (cancellation) structurally inexpressible; (iii) CLARIFY THE BRIDGE by grounding the headline 'must import a breaker' bite in F2 (the source-refinement) and stating in-text that b is unused in the F15a proof; (iv) REPLACE the anomaly/QM analogies with explicit relation-or-scope-box statements naming each imported datum; (v) REMOVE the implicit assumption that the shared engine doing bookkeeping across four legs constitutes unification. What survives is NOT a unification: it is a derivability-class-C RECOVERY of one textbook no-go (F15a equivariant-selector obstruction = 'a symmetry cannot select its own vacuum') plus a cross-domain HONESTY AUDIT table. Because nothing survives AS A MULTI-DOMAIN UNIFICATION, the honest verdict is a downgrade to recovery/analogy: repair_status is 'repaired' only in the sense that a defensible, non-overclaiming deliverable exists (the R020 bin-B note), but is_real_unification stays false. No forbidden moves used: no per-domain assumption added, no terms redefined to force equivalence, no imported physics hidden (every import is named), no duality claimed without a map, no emergence claimed without a limit.",
+    "revised_one_sentence_claim": "One Lean-certified split-pair / orbit-descent criterion (a selectedness or symmetry descends through an orbit quotient iff its obstruction set O_s is empty) is the common bookkeeping NORMAL FORM behind several 'a symmetry cannot select/break/survive itself' facts, but it does genuine opposite-world-inelastic PHYSICAL work in exactly ONE leg -- the F15a equivariant-selector no-go (no G-equivariant deterministic rule under a trivial orbit action selects one element of a nontrivial degenerate orbit, so SSB/vacuum selection must import a declared breaker, the bite supplied by the SEPARATE F2 source-refinement since b is unused in the F15a descent proof) -- while the gauge-fixing leg is a circular-bridge instantiation that imports Gribov-Singer (finite analogue only), the anomaly leg is a skeleton in which anomaly CANCELLATION is structurally inexpressible (F40 has no additive structure), and the QM leg is analogical only and crosses the disclaimed pointer-basis/Born/single-outcome interfaces; the deliverable is a RECOVERY + cross-domain honesty audit, NOT a four-domain unification and NOT a derivation.",
+    "new_minimum_viable_unification": "NOT a unification -- a one-leg recovery + cross-domain audit. Deliver: (1) the F15a equivariant-selector no-go as the single load-bearing, opposite-world-inelastic result, with ONE worked finite instance (U(1) phase on a finite ring lattice, or a 2-state chiral Z2 toy) in the existing Symmetry.SelectionObstruction namespace, exhibiting Fix_G = the unbroken state, the nontrivial degenerate orbit, the declared breaker readout, and VERIFYING (not assuming) TrivialOrbitAction and EquivariantSelector; (2) the 'must import a breaker' bite grounded explicitly as the F2 minimal source-refinement <pi,b>, with an in-text note that b is unused in the F15a descent proof (lines 3092-3106); (3) a one-figure cross-domain TABLE mapping the single O_s-emptiness criterion onto BEC U(1), ferromagnet O(3), Gribov-Singer (finite analogue), an F40 anomaly skeleton on a NON-QFT instance (IEEE-754 / gimbal-lock / lattice-translation), Buridan, Schelling, hairy-ball/Poincare-Hopf, Vitali/AC -- presented as an honesty audit naming exactly which datum each account imports; (4) per-leg load-bearing scope boxes: F15b formation is a self-axiomatizing conditional wrapper over an undischarged opaque source (no vacuum, no Goldstone modes, no effective potential derived); Gribov-Singer and the Fujikawa measure anomaly are IMPORTED (finite analogues only); anomaly CANCELLATION is structurally inexpressible in F40 and out of scope; the QM leg is analogical only and crosses disclaimed pointer-basis/Born/single-outcome interfaces; no Born rule. No new Lean development strictly required beyond the one worked finite SSB instance.",
+    "changes_made": [
+      "SPLIT the four-domain unification into one load-bearing leg (F15a SSB no-go) + three demoted consistency-only instantiations (gauge, anomaly, QM); only the SSB leg is scored as carrying weight.",
+      "RECLASSIFIED the deliverable from 'unification' to 'recovery + cross-domain honesty audit' (derivability class C), honoring 0/4 is_real_unification and 0/4 beats_deflation from the panel.",
+      "GROUNDED the headline 'SSB must import a breaker' bite explicitly in the F2 source-refinement lemma, and added a source-verified in-text statement that the breaker b is UNUSED in the F15a descent proof (verified: lines 3092-3106 use only s, pi, O_s; b appears only in prose 3066-3068, 3104-3106).",
+      "REPLACED the analogical anomaly and QM 'unification' bridges with explicit scope-box relations: anomaly CANCELLATION is structurally inexpressible in F40 (verified: GroupLawPreserved = bare action-associativity, lines 3330-3334; no additive structure on O_alpha/O_D) and is declared out of scope; the QM record-fiber=quantum-branch map is in no paper and is flagged analogical-only across disclaimed pointer-basis/Born/single-outcome interfaces.",
+      "ADMITTED the gauge leg is only sketched: the bridge lemma (gauge orbit = empirical equivalence) is circular as a derivation, the gauge group is given a priori, and continuum Gribov-Singer is imported with only a finite-set analogue certified (verified: lines 3129-3139).",
+      "REMOVED the implicit assumption that a shared bookkeeping engine reused across four legs constitutes a unification; relabeled it a TABULATION over one quotient-universal-property lemma at the physical-content altitude.",
+      "MADE HYPOTHESES EXPLICIT: surfaced that the F15a fixed-locus conclusion is gated by TrivialOrbitAction (verified line 3053), which does the contentful work; in the physically interesting non-trivial-action regime the theorem only forbids a symmetric chooser, never in doubt.",
+      "REQUIRED a worked finite SSB instance (U(1) on a ring) with TrivialOrbitAction/EquivariantSelector verified rather than assumed, since R020 flags already_in_papers=false for the physics-faithful mapping lemma.",
+      "STATED the baseline honestly: strictly dominated by B_EW/B_GUT on all physics content (no mass, no force, no group selection, no running couplings) and by B_DECOH/einselection on the QM leg (imports the pointer basis decoherence derives)."
+    ],
+    "remaining_objections": [
+      "EVEN AFTER REPAIR IT IS NOT A UNIFICATION: only one of four legs (F15a SSB no-go) carries weight; the bundle is a tabulation over a shared bookkeeping engine, not one mechanism doing genuine physical work in >=2 domains. is_real_unification stays false; beats_deflation stays false except on the single F15a spine.",
+      "INTERNAL HIDDEN IMPORT (unrepairable without new math): the headline 'must import a breaker' is the F2 result, not the F15a result; b is unused in F15a's proof. The slogan is therefore double-counted across two lemmas; honest framing fixes the presentation but not the fact that F15a alone does not bite on physics.",
+      "ANOMALY LEG IS DEAD ON ARRIVAL FOR PHYSICS: anomaly cancellation is structurally inexpressible in F40 (no additive structure), not merely unproved -- so the leg can never recover the load-bearing QFT content (charge-sum = 0 fixing matter content) without research-grade new mathematics.",
+      "TrivialOrbitAction does the real work: the contentful no-go reduces to 'a nontrivial orbit has no equivariant section', elementary and never in physical doubt; the Lean certification dignifies a near-tautology.",
+      "OPPOSITE-WORLD ELASTICITY on 3 of 4 legs is inherited and structural: F40 ratifies anomalous and non-anomalous worlds equally; F2 repairs flip any obstruction empty/nonempty post hoc; the gauge machinery 'derives' A/G' for any declared G'.",
+      "THE ORGANIZING LENS IS NOT NOVEL: anomaly-as-descent-obstruction (BRST, Stora-Zumino descent equations) and gauge-as-Leibniz-quotient (Earman/Healey/Rovelli) are already standard; SBT supplies a machine-checked restatement, not a new unifying principle.",
+      "WORKED FINITE SSB INSTANCE STILL OWED: until it is delivered (R020 flags already_in_papers=false), the claim that the abstract O_s criterion bites on real order-parameter physics remains exhibited-by-promise."
+    ],
+    "scores": {
+      "impact": 1.5,
+      "execution_ease": 5.0,
+      "plausibility": 4.5,
+      "depth_of_unification": 1.0,
+      "breadth_of_unification": 1.5,
+      "non_ad_hocness": 2.0,
+      "bridge_explicitness": 1.5,
+      "derivational_strength": 1.0,
+      "compression_power": 1.0,
+      "discriminative_power": 1.0,
+      "audience_legibility": 3.5,
+      "robustness": 2.0,
+      "baseline_advantage": 0.5,
+      "adversarial_survival": 1.5,
+      "publication_potential": 2.0
+    },
+    "score_rationale": {
+      "impact": "1.5 -- The F15a spine genuinely isolates one folklore fact ('a symmetry cannot select its own vacuum') as a domain-general Lean-certified criterion; organizationally useful to foundations/formal-methods, but no new physics, no prediction, and three legs add no content. Audit value only.",
+      "execution_ease": "5.0 -- F15a, F2, F40 are already proved and Lean-certified 'faithful'; the only new work is one finite worked SSB instance plus careful scope-writing (days to a couple of weeks). The MVU is essentially assembled across existing papers.",
+      "plausibility": "4.5 -- The recovered facts (impossibility of symmetric vacuum selection, Gribov-Singer, A/G) are textbook-certain and the quotient universal property is standard mathematics; the assembly cannot be wrong about the structure it reproduces. Capped below 5 only by the unformalized worked instance and the disclaimed-interface touches.",
+      "depth_of_unification": "1.0 -- Depth is capped by analogical-only bridges on 3 of 4 legs and by the fact that the shared object does PHYSICAL work in exactly one domain. The legs share an engine but no ambient per-domain algebra; this is shallow tabulation, not deep mechanism-sharing.",
+      "breadth_of_unification": "1.5 -- Nominally spans SSB + gauge + anomaly + QM + many toy domains (Buridan/Schelling/hairy-ball/Vitali), but breadth is bookkeeping-only: every additional domain re-imports its full ledger. Genuine breadth is one leg; the table is honest cataloguing.",
+      "non_ad_hocness": "2.0 -- CAPPED by failed hidden-import and elasticity controls. The breaker b is unused in F15a's proof (load-bearing internal import); G, action, orbit, lens, breaker all declared; gauge/anomaly/QM content imported. The Lean-certified general universal property (not designed around any one domain) earns partial credit above floor.",
+      "bridge_explicitness": "1.5 -- CAPPED by failed bridge-map control. Exactly one observable-preserving invertible bridge (SSB order-parameter descent, quality 3); the gauge bridge is circular, the anomaly Fujikawa bridge is unwritten and crosses the disclaimed continuum/path-integral interface, the QM bridge is in no paper. 3 of 4 bridges quality 0-2.",
+      "derivational_strength": "1.0 -- Almost nothing is derived. The one rigid result (F15a equivariance corollary) is gated by TrivialOrbitAction and reduces to 'a nontrivial orbit has no equivariant section'; the headline breaker bite is the separate F2 lemma; formation, gauge content, anomaly cancellation, and Born weights are all assumed/imported.",
+      "compression_power": "1.0 -- LOW. Real only at the descent-bookkeeping altitude (one O_s test vs four ad hoc no-gos); at the physical-content altitude there is no compression because each leg re-imports its full domain ledger and the legs share no ambient algebra. Anomaly cancellation is structurally inexpressible, so the most load-bearing content cannot even enter the compression accounting.",
+      "discriminative_power": "1.0 -- Opposite-world elastic on 3 of 4 legs (F40 ratifies anomalous and non-anomalous worlds equally; F2 flips obstructions post hoc; gauge 'derives' A/G' for any G'). Only the F15a no-go is rigid/falsifiable-in-principle. Zero data points matched, no risky prediction.",
+      "audience_legibility": "3.5 -- Lean-mechanized criterion, clear chaining, explicit hypotheses, and honest disclaimers make it legible to foundations / formal-methods / SBT-internal audiences; the subtle points (b unused in F15a; cancellation inexpressible) require careful exposition, and a phenomenologist will see no payoff.",
+      "robustness": "2.0 -- Robust as a one-leg recovery + audit once scoped honestly (every cited lemma is Lean-certified at the abstract level), but fragile as anything stronger: the whole multi-domain reading hinges on undischarged/circular bridges and inherited elasticity. The repaired deliverable holds; the unification claim does not.",
+      "baseline_advantage": "0.5 -- Strictly dominated by B_EW/B_GUT on all physics content (no mass, no force, no gauge-group selection, no running couplings) and by B_DECOH/einselection on the QM leg (imports the pointer basis decoherence derives). The only non-dominated sliver is isolating the F15a no-go as a single machine-checked criterion -- organizational, not predictive. Capped near floor.",
+      "adversarial_survival": "1.5 -- Matches the panel (min 1, mean 1.38; is_real_unification 0/4; beats_deflation 0/4; fatal present). Survives ONLY as a one-leg recovery + honesty audit, with fatal objections on the four-domain unification, the anomaly leg (inexpressible cancellation), the QM leg (imports pointer basis), and the internal breaker double-count. The F15a spine alone clears the deflation critique.",
+      "publication_potential": "2.0 -- Publishable at most as a short foundations / formal-methods note or workshop exhibit on quotient-descent honesty auditing with an explicit hypotheses ledger; not a results paper for a physics or math venue given zero novel load-bearing content and substantial prior art (BRST descent, Leibniz-quotient gauge)."
+    }
+  },
+
+  "proposed_bin": "B",
+  "bin_rationale": "Bin B (skeptic-resistant structural), borderline B/E. Once the four-domain unification claim is dropped and the deliverable is restricted to the F15a equivariant-selector no-go + one worked finite instance + a cross-domain honesty-audit table with per-leg scope boxes, the result is robust against the adversarial panel: it is the R020 already-repaired bin-B deliverable, internally Lean-certified, and makes no claim a skeptic can demolish. It is NOT bin A (no novel win -- it recovers a textbook fact and imports the physics), NOT C (the abstract lemmas are already certified; this is outward-facing synthesis, not an SBT-internal sanity check), NOT D (no flagship physics), NOT E (it is concrete and shippable, not an open conceptual program). Avoid bin F only because the F15a spine is a genuine, honest, opposite-world-inelastic recovery worth cataloguing; the gauge/anomaly/QM legs, taken as unification claims, would individually be F.",
+  "recommended_priority": "LOW-TO-MEDIUM. Cheap and honest to ship as a one-leg recovery + audit (the load-bearing lemmas are already Lean-certified; only one finite worked SSB instance and careful scope-writing remain). No predictive payoff, no standing as a new physics or unification result, so it should not displace genuinely fertile candidates. Do it for the catalog value and as a clean demonstration of the orbit-descent honesty-audit method; do NOT pursue the stronger version (additive/cocycle obstruction structure for real anomaly cancellation; within-SBT quotient/breaker production) unless separately resourced, since it is research-grade and crosses SBT's disclaimed continuum and lens-selection interfaces.",
+  "recommended_artifact": "A short paper-section + Lean artifact: (1) restate F15a as the headline no-go with ONE worked finite instantiation (U(1) phase on a finite ring lattice, or a 2-state chiral Z2 toy) checked in the existing Symmetry.SelectionObstruction namespace, with Fix_G, the nontrivial orbit, the breaker readout, and TrivialOrbitAction/EquivariantSelector all explicit and verified -- grounding the 'must import a breaker' bite as the F2 source-refinement, with an in-text note that b is unused in the F15a descent proof; (2) a one-figure cross-domain TABLE mapping the single O_s-emptiness criterion onto BEC U(1), ferromagnet O(3), Gribov-Singer (finite analogue), an F40 anomaly skeleton on a NON-QFT instance, Buridan/Schelling, hairy-ball/Poincare-Hopf, and Vitali/AC; (3) per-leg load-bearing scope boxes: F15b formation is a conditional typing wrapper over an undischarged opaque source; Gribov-Singer and the Fujikawa measure anomaly are imported (finite analogues only); anomaly cancellation is structurally inexpressible in F40 and out of scope; the QM leg is analogical-only and crosses disclaimed pointer-basis/Born/single-outcome interfaces; no Born rule. No new Lean development strictly required beyond the one finite SSB instance; the stronger additive/cocycle stretch goal is explicitly out of scope, hard, anchor-less, and crosses disclaimed interfaces.",
+  "one_line_verdict": "A genuinely shared Lean-certified orbit-descent engine that does real opposite-world-inelastic physical work in exactly one leg (the F15a no-go recovering 'a symmetry cannot select its own vacuum'); as a four-domain unification it fails (0/4 skeptics, 6/7 anti-superficiality controls fail, anomaly cancellation structurally inexpressible), so the honest, shippable deliverable is a derivability-class-C recovery + cross-domain honesty audit, NOT a unification.",
+  "mechanism_tag": "orbit-descent",
+  "target_audience": [
+    "High-energy and condensed-matter theorists working on spontaneous symmetry breaking, vacuum/measure selection, and gauge-fixing (Gribov) obstructions",
+    "Mathematical physicists interested in descent/quotient obstructions, equivariant sections, and the descent-cohomology reading of anomalies",
+    "Philosophy-of-physics and foundations researchers on symmetry, gauge redundancy, and structural realism",
+    "Formal-methods / Lean-verification community interested in machine-checked structural no-go theorems",
+    "SBT-internal Foundations IV catalog maintainers"
+  ]
+}

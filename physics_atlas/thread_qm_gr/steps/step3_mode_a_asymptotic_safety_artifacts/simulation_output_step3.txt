@@ -1,0 +1,8 @@
+Step 3 finite-carrier Xi diagnostic
+levels=[2, 4]
+as_p3_normalized_residuals=[0.0, 0.0]
+as_amplitude_normalized_residuals=[1.0, 1.0]
+as_area_normalized_residuals=[1.0, 1.0]
+as_p3_sector_residuals=zero to numerical precision at both levels
+as_amplitude_sector_residuals=one at both levels
+as_area_sector_residuals=one at both levels

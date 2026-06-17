@@ -1,0 +1,28 @@
+{
+  "step": 13,
+  "rung_id": "RUNG_2_NEUTRAL_CURRENCY",
+  "orientation": "Mode B re-ordered currency construction",
+  "source_step10_file": "/home/repos/six-birds-papers/physics_atlas/thread_qm_gr/steps/step10_framework_driven_rung_map_artifacts/closure_packages_step10.json",
+  "step10_currency_mismatch_loaded": false,
+  "enrichment_policy": "Endpoint currencies are enriched as distinct three-mode dynamics before testing: QM-side modes are density, phase-order, and transport; GR-side modes are density, transport, and curvature-scale.",
+  "neutral_currency": {
+    "modes": [
+      "u_neutral_density",
+      "u_phase_order",
+      "u_transport_flux",
+      "u_curvature_scale"
+    ],
+    "dimension": 4,
+    "compression_statement": "d_qm <= d_u < d_qm + d_gr"
+  },
+  "shadow_maps": {
+    "S_QM": "projection of u to neutral-density, phase-order, transport",
+    "S_GR": "projection of u to neutral-density, transport, curvature-scale",
+    "distinct": true
+  },
+  "controls": {
+    "placeholder": "zero currency predicts zero endpoint shadows",
+    "union_direct_sum": "direct sum of the two endpoint currencies; recovers but has no compression",
+    "collapse_typed_seed": "one scalar seed with equal shadows; fails recovery and distinctness"
+  }
+}

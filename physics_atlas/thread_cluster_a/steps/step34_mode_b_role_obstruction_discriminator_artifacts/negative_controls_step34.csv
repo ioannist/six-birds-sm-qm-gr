@@ -1,0 +1,4 @@
+control,passes,evidence
+not_a_target_row_picker,True,F24-descending survivor count is 10; target passes F24=False
+fails_some_corrected_80_survivors,True,70 corrected final survivors fail F24 descent
+distribution_nontrivial,True,O_s values: 0;1;2

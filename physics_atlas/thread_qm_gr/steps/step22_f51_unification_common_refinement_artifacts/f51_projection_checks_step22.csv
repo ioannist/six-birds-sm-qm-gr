@@ -1,0 +1,5 @@
+case,child,projection_residual,strict_delta_count,audit_restriction_residual,admissible_descent_status
+L_common_refinement,QM,0.0,8,0.0,True
+L_common_refinement,GR,0.0,8,0.0,True
+status_conflict_control,QM,0.0,8,0.0,True
+status_conflict_control,GR,0.0,8,0.360555127546399,False

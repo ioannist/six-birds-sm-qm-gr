@@ -1,0 +1,3 @@
+control,passes,evidence
+fractional_color_singlet_fails,True,failure_examples=1
+shadow_computed_not_row_picker,True,distinct_classes=2; target_survives=True

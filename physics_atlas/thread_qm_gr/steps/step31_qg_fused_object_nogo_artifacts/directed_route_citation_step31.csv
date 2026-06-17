@@ -1,0 +1,2 @@
+source_step,lemma_verdict,q_GR_factors_through_q_QM,q_QM_factors_through_q_GR,defect_count_q_GR_through_q_QM,defect_count_q_QM_through_q_GR,route_mismatch_normalized,directed_route_blocked
+30,lemma1_directed_reduction_blocked_in_bounded_grammar,False,False,8,8,0.5,True

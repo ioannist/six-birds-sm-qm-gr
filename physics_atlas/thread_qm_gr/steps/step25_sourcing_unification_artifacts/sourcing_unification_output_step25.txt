@@ -1,0 +1,5 @@
+Step 25 co-sourcing unification
+Verdict: L_is_co_sourcing_unification
+L single psi sources both: True
+Non-co-sourced control pass: False
+Control max stress residual: 0.3806026603775931

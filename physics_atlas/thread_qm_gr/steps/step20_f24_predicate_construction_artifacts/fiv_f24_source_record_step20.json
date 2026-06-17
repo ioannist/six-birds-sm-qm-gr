@@ -1,0 +1,101 @@
+{
+  "file": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+  "families": {
+    "MemoryLayer": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F3 Holonomy-Memory Repair"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "2433-2495"
+      ],
+      "grounding": "F24 names memory as a distinct resolution state; F3 makes a recorded residue the canonical memory repair when current quotient data is insufficient for the declared future probe."
+    },
+    "HiddenUpstreamRole": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F13a Hiddenness Normal Form"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "1050-1162"
+      ],
+      "grounding": "F24 names hidden upstream role; F13a defines hiddenness by a predictive surplus inside a current fiber and a typed minimal upstream determining state."
+    },
+    "BridgeMediatedRole": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F22 Interface Mediation",
+        "F51 Unification as Common Refinement"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "4638-4678",
+        "8528-8582"
+      ],
+      "grounding": "F24 names mediation by declared bridge data; F22 gives the empty-obstruction criterion for an explicit mediation map; F51 gives the common-refinement form for one parent quotient projecting to child quotients and compatible statuses."
+    },
+    "BudgetedRole": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F6 No-Needles Stability",
+        "F9 No Unstatused Residual"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "1620-1718",
+        "2071-2140"
+      ],
+      "grounding": "F24 names budgeted residual status; F6 requires declared currency/residual budgets for accepted layer-boundary moves; F9 requires every native residual to carry a typed status."
+    },
+    "ScopedRole": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F52 Closure Completeness Boundary"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "8663-8712"
+      ],
+      "grounding": "F24 names scope as a resolution state; F52 treats declared scope and in-scope/named-outside direction coverage as part of closure completeness."
+    },
+    "CoarsenedRole": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F2 Descent-Repair Normal Form",
+        "F39 Entropy as Fiber Volume"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "2286-2378",
+        "7120-7225"
+      ],
+      "grounding": "F24 names coarsening as a resolution state; F2 identifies minimal target coarsening as a canonical descent repair; F39 records the fiber/target-obstruction behavior under coarsening."
+    },
+    "OutsideRoleScope": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F52 Closure Completeness Boundary"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "8663-8712"
+      ],
+      "grounding": "F24 names outside-scope exclusion; F52 requires claimed directions to be either in scope or named outside."
+    },
+    "BlockedNonClosure": {
+      "fiv_laws": [
+        "F24 Layer Multiplicity",
+        "F9 No Unstatused Residual",
+        "F52 Closure Completeness Boundary"
+      ],
+      "lines_read": [
+        "1418-1514",
+        "2071-2140",
+        "8663-8712"
+      ],
+      "grounding": "F24 names blocked nonclosure as the remaining status family; F9 and F52 make an unformed, inadequately statused residual a closure-boundary failure rather than an accepted resolution."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+artifact,output,classification,grade,scope
+nonstationary_relational_history_step28.py,non-stationary self-sourced history and constraint construction,predictive structural,finite-carrier diagnostic,finite clock M=16 and field N=8
+nonstationary_history_step28.json,field states and sourced potentials,organizational/audit,finite-carrier diagnostic,generated history
+constraint_operators_step28.npz,generated and control constraint maps,organizational/audit,finite-carrier diagnostic,open-chain matrices
+nonstationary_history_diagnostics_step28.csv,state-change potential-change and eigen residuals,analytical structural,finite-carrier diagnostic,all clock values
+constraint_residuals_step28.csv,generated versus wrong-generator residuals,analytical structural,finite-carrier diagnostic,history-state constraint test
+constraint_singular_values_step28.csv,singular values and null dimensions,analytical structural,finite-carrier diagnostic,generated and control maps
+relational_readout_step28.csv,conditioned field and potential recovery,analytical structural,finite-carrier diagnostic,clock-conditioned readout
+nonstationary_relational_history_statement_step28.tex,typed non-stationary relational statement,analytical structural,finite-carrier diagnostic,scoped toy statement
+run_step28.py,artifact and guard validator,organizational/audit,diagnostic-complete,Step 28 artifact contract
+external_review,physical frame-transfer adequacy,remaining external content,external review,beyond declared finite toy

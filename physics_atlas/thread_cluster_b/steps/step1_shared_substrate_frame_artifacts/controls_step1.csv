@@ -1,0 +1,4 @@
+control_id,expected,obstruction_count,least_squares_residual,passes,witness
+descending_readout_d3_from_GR_Sigma_f,factors,0,6.113096680751216e-16,True,none
+d4_factors_through_d3_on_smooth_regime,factors,0,5.0148676901037195e-17,True,none
+d4_nonfactorization_only_at_high_curvature_boundary,high_curvature_obstruction_nonempty,3,0.5983211225424633,True,1-2;5-6;10-11

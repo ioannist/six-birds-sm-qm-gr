@@ -1,0 +1,9 @@
+dimensions,support_key,support_score,witness_scalar_key,witness_scalar_component_dim,witness_scalar_charge_abs,scalar_active_factors,unbroken_nonabelian_subgroups,precise_unbroken_subgroup_survives,potential_proxy,unbroken_low_energy_consistency,full_cascade_consistency,scalar_stage_currency,scalar_stage_currency_minimum,is_target_reference
+2|3,rank_one_fundxantifund:-1 + rank_one_fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxantifund:1 + rank_one_fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,True
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,2,3,0,3,True,True,True,True,2|1|3,True,False

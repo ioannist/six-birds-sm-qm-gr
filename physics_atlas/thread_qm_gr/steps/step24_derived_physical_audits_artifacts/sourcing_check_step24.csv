@@ -1,0 +1,3 @@
+target,direct_sourcing_residual,shared_audit_linear_train_residual,shared_audit_linear_test_residual,computed_reconciliation
+T00_from_psi,0.0,0.4290163632115011,0.401568901271731,"T00 is a deterministic functional of psi, not the same audit as rho."
+T0i_from_psi,0.0,0.7149815154026363,0.5443048422989993,"T0i is a deterministic functional of psi, not the same audit as current_j."

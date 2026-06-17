@@ -1,0 +1,2 @@
+witness_id,seed,rho_partial,unitary_seed,reduced_state_residual,full_boundary_state_change_residual,gauge_invariant_observable,observable_value_original,observable_value_witness,observable_gap,observable_gauge_invariance_residual,partial_obstruction_nonempty,not_gauge_transform
+partial_readout_complement_unitary,101,left_boundary_reduced_density,7351,5.33021563527e-16,1.4167122627,"interior_complement_expectation(left,right,O_diag)",0.0177937036487,0.0275332295259,0.00973952587724,2.77555756156e-17,True,True

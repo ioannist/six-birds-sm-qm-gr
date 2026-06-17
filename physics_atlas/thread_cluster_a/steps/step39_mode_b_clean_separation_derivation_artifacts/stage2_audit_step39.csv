@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+step35_survivors_reproduced,True,12
+vector_content_computed,True,single-factor vector content is nonzero
+target_status_computed,True,target_passes=True

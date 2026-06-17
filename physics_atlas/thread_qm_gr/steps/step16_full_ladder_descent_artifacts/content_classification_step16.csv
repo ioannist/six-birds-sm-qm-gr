@@ -1,0 +1,13 @@
+artifact,output,classification,grade,scope
+assemble_full_ladder_step16.py,"Finite full-ladder assembly and controls","analytical structural","finite-carrier diagnostic","Step 16 carrier only"
+assembled_ladder_matrices_step16.json,"Assembled L matrices, shadows, audit, and prior rung inputs","analytical structural","finite-carrier diagnostic","Levels 1 and 2"
+full_ladder_descent_step16.csv,"Candidate L vs QM-alone vs GR-alone vs union adequacy rows","analytical structural","finite-carrier diagnostic","Two levels"
+five_constraint_checklist_step16.csv,"Five computed constraint checks","organizational/audit","diagnostic-complete","Step 16"
+full_ladder_output_step16.json,"Verdict payload and no-smuggling flags","organizational/audit","diagnostic-complete","Step 16"
+full_ladder_output_step16.txt,"Readable numerical summary","organizational/audit","diagnostic-complete","Step 16"
+step16_results_summary.md,"Orientation, active residual, verdict, controls, external-review flag","organizational/audit","diagnostic-complete","Step 16"
+step16_schema.json,"Machine-readable schema and verdict","organizational/audit","diagnostic-complete","Step 16"
+nonclaim_boundary_step16.md,"Mandatory nonclaim boundary","organizational/audit","diagnostic-complete","Step 16"
+construction_gate_audit_step16.csv,"Gate and control-status audit","organizational/audit","diagnostic-complete","Step 16"
+run_step16.py,"Validation script for artifacts, controls, and overclaim scan","organizational/audit","diagnostic-complete","Step 16"
+

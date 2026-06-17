@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"predicate excludes fixed route count, parent, target-content, and size-ordering primitives"
+dependency_trace,True,dependencies are listed in dependency_trace_step39.csv
+ablation,True,only the no-vector condition is load-bearing within Step 39 residual
+negative_controls,True,relaxation restores single-factor rows and circularity is reported
+stage_ii,True,Step-35 residual and vector content are computed
+circularity_self_check,True,"equivalence detected, so derivation is not overclaimed"

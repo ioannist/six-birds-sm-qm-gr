@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+reproduces_step31_survivor_count,True,rederived consistency-complete atomic count is 513
+complex_action_channel_detected,True,some consistency-complete atomic packages carry residual chirality through complex non-abelian action
+abelian_or_pseudoreal_carried_chirality_rejected,True,some consistency-complete atomic packages carry residual chirality without complex non-abelian action

@@ -1,0 +1,71 @@
+{
+  "step": 1,
+  "orientation": "Cluster B shared-substrate frame from E018 co-sourcing L",
+  "extended_modes": [
+    "d0_density",
+    "d1_phase",
+    "d2_transport",
+    "d3_curvature",
+    "d4_subplanck",
+    "d5_vacuum"
+  ],
+  "carrier_state_count": 12,
+  "smooth_state_count": 6,
+  "high_curvature_state_count": 6,
+  "frame_signatures": {
+    "E042_d4_subplanck": {
+      "object_id": "E042_d4_subplanck",
+      "target_edge": "E042",
+      "readout": "d4_subplanck",
+      "regime": "high_curvature/singularity",
+      "non_descending_in_GR_Sigma_f": true,
+      "obstruction_count_GR_Sigma_f": 3,
+      "non_descending_in_QM_Sigma_f": true,
+      "obstruction_count_QM_Sigma_f": 11,
+      "is_L_readout": true,
+      "witness": "1-2;5-6;10-11",
+      "computed_basis": "same GR smooth Sigma_f but different d4_subplanck"
+    },
+    "E021_d5_vacuum": {
+      "object_id": "E021_d5_vacuum",
+      "target_edge": "E021",
+      "readout": "d5_vacuum",
+      "regime": "vacuum-energy",
+      "non_descending_in_GR_Sigma_f": true,
+      "obstruction_count_GR_Sigma_f": 1,
+      "non_descending_in_QM_Sigma_f": true,
+      "obstruction_count_QM_Sigma_f": 3,
+      "is_L_readout": true,
+      "witness": "3-4",
+      "computed_basis": "same GR smooth Sigma_f but different d5_vacuum"
+    }
+  },
+  "shadow_descent": {
+    "smooth_descent_residual": 0.0,
+    "d4_smooth_obstruction_count": 0,
+    "d4_high_obstruction_count": 3,
+    "singularity_locus_state_ids": [
+      1,
+      2,
+      5,
+      6,
+      10,
+      11
+    ]
+  },
+  "controls": {
+    "descending_d3_factors": true,
+    "d4_factors_in_smooth_regime": true,
+    "d4_tears_at_high_curvature_boundary": true
+  },
+  "verdict": {
+    "type": "shared_substrate_frame_established",
+    "E021_non_descending_readout_of_L": true,
+    "E042_non_descending_readout_of_L": true,
+    "smooth_shadow_descent_holds": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite-carrier frame only: the construction specifies the structural slots for E021 and E042, not the value of Lambda and not a physical singularity-resolution substrate."
+}

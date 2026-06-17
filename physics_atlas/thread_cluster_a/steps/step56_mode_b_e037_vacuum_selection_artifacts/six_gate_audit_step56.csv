@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,no our-vacuum or SM selector in carrier primitives
+dependency_trace,True,dependency_trace_step56.csv lists RM assumptions
+ablation,True,ablation_step56.csv marks route-mismatch and proportional-refinement load-bearing
+negative_control,True,stabilizing-selector control decays
+stage2_before_closure,True,per-vacuum xi_rel reaches zero at fine refinement
+no_single_axiom_equivalence,True,"RM nondecay depends on route mismatch plus proportional refinement, not a single verdict axiom"

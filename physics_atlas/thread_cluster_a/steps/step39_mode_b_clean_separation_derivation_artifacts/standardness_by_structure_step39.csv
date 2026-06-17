@@ -1,0 +1,3 @@
+dimensions,carrier_count,standard_confining_sector_count,relaxed_count,typical_vector_count,target_passes
+2|3,8,8,8,0,True
+4,4,0,4,6,False

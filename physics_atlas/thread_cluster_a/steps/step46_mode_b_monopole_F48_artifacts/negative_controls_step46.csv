@@ -1,0 +1,3 @@
+control,passes,evidence
+neutral_breaking_coset_zero_obstruction,True,generators=2; obstruction=0
+charged_coset_nonzero_obstruction,True,obstruction=1

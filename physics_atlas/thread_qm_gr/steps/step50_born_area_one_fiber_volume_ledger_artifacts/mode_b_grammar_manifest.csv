@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,objects,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_BornAreaMonogamyCombiner_v2,50,Step44 geometric min-cut ledger; Step42 contracted Born entropy; seed-invariance; MMI/GHZ combiner control,Excludes using the Schmidt spectrum as both F39 and F23 input.,"Area is seed-invariant while Born entropy varies, and GHZ breaks the Born monogamy class.",stronger bulk-reconstruction and continuum frame-transfer carrier

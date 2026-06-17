@@ -1,0 +1,349 @@
+{
+  "_meta": {
+    "artifact": "domain_tension_ledger",
+    "produced_by": "WF1 rebuild (prior write failed; regenerated and cross-checked against frozen ledger.json + atlas.json + unif_candidates.json)",
+    "rebuilt": "2026-06-03",
+    "purpose": "Frozen reference map of physics DOMAINS to recover, cross-domain TENSIONS a unifier must address, and BASELINE unification frameworks SBT is scored against. Inputs: retrodiction_atlas/ledger.json (frozen SBT ledger) + retrodiction_atlas/atlas.json (32 retrodiction scoring) + unif_candidates.json.",
+    "grounding": "Six Birds Theory (SBT) is a FINITE closure/emergence calculus: theory T=(Z,f,Sigma_f,E,A); six closure roles P1-P6; three certificates (idempotence delta, audit/DPI monotonicity, route-mismatch RM); export interfaces + 13 MISSING interfaces. SBT DISCLAIMS: Born rule, continuum/Lorentz/Fock, cosmological measure, pointer-basis/lens selection (lens is a FREE input -> opposite-world ELASTIC), single-outcome collapse; its informational proxies (Sigma_T/EPR) are NOT physical entropy production. Quotes <=25 words, cited to paper+label. SBT content never invented; gaps marked honestly.",
+    "deflation_critique": "Central adversarial axis: a hostile reviewer argues SBT's 'six mechanisms' collapse to THREE textbook lemmas in costumes -- (i) linear-algebra noncommutation (route-mismatch RM, [A,B]), (ii) monotone divergences / data-processing inequality (audit-DPI), (iii) quotient-by-fibers (orbit-descent, lumpability, gauge). idempotent-packaging (Fix(E)) is arguably a genuine 4th structure. A real unification must BEAT this: ONE shared mechanism doing genuine work across >=2 domains with explicit observable-preserving bridge maps, not one story per domain.",
+    "sbt_interfaces_index": {
+      "exported": [
+        "IF_LENS: lens f:Z->X / definability algebra Sigma_f (FREE input)",
+        "IF_PACK: packaging endomap E and E_{tau,f}; idempotence defect delta_{tau,f} (objecthood test)",
+        "IF_PHAT: induced macro kernel Phat=U_f P^tau Q_f (carrier of all audits)",
+        "IF_AUDIT: audit functional A; path-space KL Sigma_T / ACC 1-form / cycle affinities (directionality test, DPI-protected)",
+        "IF_EXT: strict theory-extension via generic non-definable predicate (open-endedness/novelty test)",
+        "IF_CD: closure deficit CD_tau=I(X_t;Y_{t+tau}|Y_t) (exact macro-closure obstruction)",
+        "IF_METRIC: emergent pseudo-metric d_eta = shortest path on -log(Phat+eta) ('distance is accounting')",
+        "IF_P1P6: six closure roles P1-P6 + the six-birds loop",
+        "IF_FATCD: FATCD decomposition record (six channels x five statuses)",
+        "IF_NOGO: eight finite no-go audits (ARROW_DPI, PROTOCOL_TRAP, FORCE_FOREST, FORCE_NULL, MACRO_CLOSURE_DEFICIT, OBJECT_CONTRACTIVE, LADDER_IDEM, LADDER_BOUNDED_INTERFACE)",
+        "IF_RM: route-mismatch RM_d(E,T;rho)=d(E T rho, T E rho) (non-commutation diagnostic; NOT a directionality certificate)",
+        "IF_ORBIT: quotient/orbit-descent (readout descends iff constant on fibers; Leibniz quotient, F27 conservation, F2/F18)",
+        "IF_DUAL: currency-constraint duality / shadow price lambda=dPhi*/db across closure layers",
+        "IF_FIBER: probability as a stable unresolved fiber (F23; LOCATES, does not value)"
+      ],
+      "missing": [
+        "MISS_LENS_SEL: no rule selecting the lens f / pointer basis / record algebra (pointer-basis selection disclaimed)",
+        "MISS_COMPLETION: no rule producing the completion U_f / prototypes (lifts SELECTED, not unique; LES has NO canonical U)",
+        "MISS_BORN: no probability valuation / Born rule (consumes Born predictions; produces no weights/amplitudes)",
+        "MISS_CONTINUUM: no continuum / continuous-state interface (continuum emergence is only a structural normal form F43; no convergence theorem, no metric tensor)",
+        "MISS_SPACETIME: no physical-time / spacetime interface (time is a closure artifact; global time is a protocol-graph potential, distinct from relativistic foliations)",
+        "MISS_THERMO: no micro-thermodynamic interface (Sigma_T/EPR are informational proxies, NOT physical entropy production; no reservoir / local-detailed-balance)",
+        "MISS_COLLAPSE: no single-outcome selection / collapse-ontology interface",
+        "MISS_BELL: no Bell / hidden-variable interface (nonlocal correlations only classified, not predicted/quantified)",
+        "MISS_MEASURE: no cosmological measure / vacuum-selection interface (fine-tuning F47, vacuum F50 parametric in an externally declared measure)",
+        "MISS_STOCH_LENS: no stochastic-lens backbone in the certified core (Lean covers deterministic partition lenses only)",
+        "MISS_EVENT: no event-package above the protocol-indexed event level (strict-test-to-event ladder terminates in a non-definability verdict)",
+        "MISS_COST_UNIT: no universal cross-domain cost unit (budget/currency comparative within a domain only)",
+        "MISS_ASYMPTOTIC: no general/asymptotic versions of scoped results (no unrestricted exact-six, no general confluence, no asymptotic P!=NP, no universal SPT contraction)"
+      ]
+    }
+  },
+  "domains": [
+    {
+      "id": "D_QM",
+      "name": "Quantum mechanics",
+      "core_objects": ["state vectors / density operators rho on a Hilbert space", "observables = self-adjoint operators", "unitary group e^{-iHt}", "measurement outcomes / pointer states", "entanglement"],
+      "core_laws": ["Schrodinger / von Neumann unitary evolution", "Born rule (probabilities = |amplitude|^2)", "measurement update / collapse", "no-signalling", "complementarity (V^2+D^2<=1)"],
+      "core_symmetries": ["unitary U(H) invariance", "basis covariance", "time-reversal (antiunitary T)", "global phase U(1)"],
+      "empirical_anchors": ["double-slit interference + which-path suppression", "quantum eraser (Scully-Druhl/Kim)", "Bell/CHSH violation (~2.8 Tsirelson)", "EPR no-signalling", "decoherence / einselection timescales"],
+      "must_recover": ["interference-then-decoherence to classical records", "Born probabilities", "single definite outcome", "the pointer/record basis nature actually selects", "Tsirelson bound and no-signalling jointly"],
+      "sbt_interface_touch": ["IF_PACK + dephasing Delta: collapse = idempotent P5 packaging, Fix(Delta)=diagonal record states (R001, thm:dephase, Lean-certified at matrix level)", "IF_RM: dephasing-vs-unitary [Delta,U] = contextuality/incompatibility diagnostic (max 0.350099) (R027/R001)", "IF_AUDIT: no-signalling as marginal invariance / DPI analogue (R004)", "IF_FIBER: probability LOCATED on a stable unresolved fiber (F23, R007) but NOT valued"],
+      "missing_interface_block": ["MISS_BORN (no Born weights)", "MISS_LENS_SEL (pointer basis is a FREE input -> einselection not derived)", "MISS_COLLAPSE (no single-outcome selection)", "MISS_BELL (Tsirelson/CHSH only classified, not predicted)"],
+      "honest_status": "RECOVERY-given-basis only. The decoherence/idempotence story (R001) is the credible flagship but is Lueders pinching reskinned; everything empirically decisive (Born weights, single outcome, which basis) is imported or disclaimed. opposite_world_elastic for 28/32 cards because the lens is free."
+    },
+    {
+      "id": "D_SR",
+      "name": "Special relativity",
+      "core_objects": ["4-vectors / Minkowski spacetime", "worldlines", "light cones", "inertial frames"],
+      "core_laws": ["Lorentz invariance", "constancy of c / invariant interval", "relativity of simultaneity", "relativistic energy-momentum E^2=p^2c^2+m^2c^4"],
+      "core_symmetries": ["Lorentz group SO(1,3)", "Poincare group (Lorentz + translations)", "CPT"],
+      "empirical_anchors": ["time dilation / muon lifetime", "no superluminal signalling", "relativistic Doppler / aberration", "Sagnac effect (rotational holonomy)"],
+      "must_recover": ["Lorentz invariance as an emergent symmetry of the macro description", "light cone structure / causal order", "operational no-signalling consistent with a finite invariant speed"],
+      "sbt_interface_touch": ["IF_AUDIT/IF_LENS: no-signalling as marginal invariance, 'light-cone-as-P2-cone' constraint analogue (R004)", "IF_RM/IF_AUDIT: no-global-time as discrete-Hodge H^1 exactness; Sagnac as loop-holonomy analogy (R026)"],
+      "missing_interface_block": ["MISS_CONTINUUM (no continuum/Lorentz interface)", "MISS_SPACETIME (no relativistic foliation; global time is a protocol-graph potential, explicitly distinct)"],
+      "honest_status": "RELATIVITY-ADJACENT analogy only. SBT explicitly does NOT derive Lorentz invariance or physical spacetime; the no-signalling and Sagnac matches are honest relabelings with the deep physics imported. Hardest domain for SBT (no continuum, no Lorentz interface)."
+    },
+    {
+      "id": "D_CM",
+      "name": "Classical mechanics / classical statistical mechanics",
+      "core_objects": ["phase-space points / trajectories", "probability distributions on phase space", "macrostates / coarse cells", "finite Markov states (SBT surrogate)"],
+      "core_laws": ["Hamilton/Newton equations", "Liouville theorem / measure preservation", "deterministic time-evolution", "classical limit of QM"],
+      "core_symmetries": ["symplectic / canonical transformations", "time-translation (energy conservation)", "Galilean invariance", "phase-space volume preservation"],
+      "empirical_anchors": ["definite trajectories / no interference", "additivity of conserved quantities", "ergodic / mixing behaviour of chaotic systems"],
+      "must_recover": ["definite macroscopic objects (no superposition at the macro level)", "the classical limit as the RM->0 / record-diagonal regime", "conservation laws as orbit-descent invariants"],
+      "sbt_interface_touch": ["IF_PACK: classical objects = Fix(E) of a packaging map (R002 cat: layer-relative objecthood, global purity ~1)", "IF_RM: classical limit = RM->0 commuting record (U008)", "IF_ORBIT: conservation as orbit-descent (R018, F27)", "IF_AUDIT: classical path-KL DPI = commutative-subalgebra leg of the one audit (R028, U004)"],
+      "missing_interface_block": ["MISS_CONTINUUM (finite-state surrogate; no symplectic/Liouville interface)", "MISS_LENS_SEL (coarse cells declared)"],
+      "honest_status": "RECOVERY/REFRAMING. Classical definiteness as Fix(E) and conservation as orbit-descent are faithful but near-tautological; the classical-vs-quantum cut is a chosen-basis (RM->0) artifact, not a derived limit. Symplectic/Hamiltonian structure is entirely outside scope."
+    },
+    {
+      "id": "D_QFT",
+      "name": "QFT / Standard Model",
+      "core_objects": ["quantum fields / Fock space", "gauge fields A_mu", "particle multiplets / generations", "vacuum / condensates"],
+      "core_laws": ["gauge invariance (SU(3)xSU(2)xU(1))", "Noether conservation", "spin-statistics theorem", "anomaly cancellation", "renormalizability / running couplings"],
+      "core_symmetries": ["local gauge group SU(3)xSU(2)xU(1)", "Lorentz/Poincare", "CPT", "global/accidental symmetries (B, L)", "exchange statistics (Bose/Fermi)"],
+      "empirical_anchors": ["three fermion generations", "particle mass ratios / CKM-PMNS mixing", "coupling-constant running", "Higgs mechanism / electroweak symmetry breaking", "confinement"],
+      "must_recover": ["the specific gauge group and matter content", "anomaly cancellation (a CONSISTENCY requirement, not just descent)", "spin-statistics", "three generations"],
+      "sbt_interface_touch": ["IF_ORBIT: gauge redundancy A/G + Wilson loops + Gribov-Singer as finite F15a (R019); anomaly as descent-obstruction relabel (R031, CANNOT express cancellation)", "IF_FATCD/IF_NOGO: selection obstruction F15a (a symmetry cannot select its own vacuum) (R020)"],
+      "missing_interface_block": ["MISS_CONTINUUM (no Fock/field interface)", "MISS_LENS_SEL (gauge group G is a FREE declared input; opposite-world 'derives' A/G' for any G')", "MISS_MEASURE (vacuum selection external)", "honest-negative R024: ZERO spin-statistics / exchange / generation machinery in the corpus"],
+      "honest_status": "MOSTLY HONEST-NEGATIVE. R024 is a clean verbatim-verified silence: no statistics, no generations, no mass ratios. Gauge-as-orbit-descent (R019) is bookkeeping with the group imported; anomaly (R031) is structurally inexpressible. SBT cannot reach SM phenomenology."
+    },
+    {
+      "id": "D_GR",
+      "name": "General relativity",
+      "core_objects": ["spacetime metric g_mu_nu (pseudo-Riemannian manifold)", "stress-energy tensor T_mu_nu", "geodesics", "curvature (Riemann/Ricci)"],
+      "core_laws": ["Einstein field equations G_mu_nu = 8piG T_mu_nu", "general covariance / diffeomorphism invariance", "equivalence principle", "geodesic motion"],
+      "core_symmetries": ["diffeomorphism invariance", "local Lorentz invariance", "Bianchi identities (=> covariant conservation of T)"],
+      "empirical_anchors": ["perihelion precession", "light bending / lensing", "gravitational redshift", "gravitational waves (LIGO)", "frame dragging"],
+      "must_recover": ["a dynamical metric sourced by matter (matter-curvature coupling)", "diffeomorphism invariance", "the equivalence principle", "background independence"],
+      "sbt_interface_touch": ["IF_METRIC: emergent pseudo-metric d_eta = -log(Phat) shortest path, curvature as Procrustes loop-holonomy (R011) -- AUDIT-DEFINED, NOT a Lorentzian metric tensor", "IF_RM: backreaction Delta_H = route-mismatch of homogeneous averaging vs nonlinear evolution (scalar Jensen proxy, NOT tensorial Buchert) (R025/R027)"],
+      "missing_interface_block": ["MISS_SPACETIME ('we do not derive physical spacetime')", "MISS_CONTINUUM (no metric tensor, no curvature tensor, no convergence to manifolds)"],
+      "honest_status": "ANALOGICAL only. d_eta is an audit-defined finite pseudo-metric, frame-dependent, explicitly NOT a Lorentzian g_mu_nu; there is no field equation, no matter-curvature coupling derived, no diffeomorphism invariance. The 'matter curves the metric' lemma (U001) is a proposed finite cross-constraint, not an existing result."
+    },
+    {
+      "id": "D_BHQG",
+      "name": "Black holes / quantum gravity",
+      "core_objects": ["event horizons", "Hawking radiation", "black-hole entropy S=A/4 (Bekenstein-Hawking)", "holographic boundary degrees of freedom"],
+      "core_laws": ["black-hole thermodynamics (four laws)", "Hawking temperature T_H", "unitarity (information conservation)", "holographic bound / Bekenstein bound"],
+      "core_symmetries": ["horizon symmetries (near-horizon conformal)", "asymptotic symmetries (BMS)", "diffeomorphism + unitary"],
+      "empirical_anchors": ["black-hole shadow (EHT)", "merger ringdown (LIGO)", "no direct Hawking/Page-curve data (theory-driven)"],
+      "must_recover": ["unitary evaporation / Page curve (information not destroyed)", "S=A/4 area law", "holographic encoding (boundary <-> bulk)", "consistency of a quantum theory of the metric"],
+      "sbt_interface_touch": ["IF_ORBIT/IF_FATCD: F33 holographic compression as a structural normal form (declared, R-IV)", "IF_AUDIT/IF_FIBER: information-conservation framed via DPI/record monotonicity (no false arrow) but only as informational proxy"],
+      "missing_interface_block": ["MISS_SPACETIME (no horizon/metric)", "MISS_THERMO (Sigma_T/EPR are NOT physical entropy; S=A/4 is real thermodynamic entropy)", "MISS_CONTINUUM", "MISS_MEASURE"],
+      "honest_status": "OUT OF REACH. SBT has no horizon, no physical entropy (its EPR/Sigma_T are explicitly informational proxies), no quantum-gravity interface. Holographic compression (F33) is a declared normal form with no bulk-boundary dynamics. The black-hole information puzzle is structurally untouchable."
+    },
+    {
+      "id": "D_COSMO",
+      "name": "Cosmology",
+      "core_objects": ["FLRW scale factor a(t)", "matter/radiation/dark-energy densities", "horizon/initial-condition surface", "perturbation spectrum"],
+      "core_laws": ["Friedmann equations H^2 = (8piG/3)rho", "expansion history / late-time acceleration", "structure growth", "homogeneity-isotropy on large scales"],
+      "core_symmetries": ["homogeneity + isotropy (FLRW)", "time-translation broken by expansion", "diffeomorphism (inherited from GR)"],
+      "empirical_anchors": ["SN Ia accelerated expansion (Omega_Lambda~0.7)", "CMB acoustic peaks", "BAO scale r_d", "DES SN5YR + Y6 BAO compressed likelihoods", "structure-growth fsigma8"],
+      "must_recover": ["the inferred dark-energy density / acceleration", "why LambdaCDM works for the background", "the cosmological initial low-entropy boundary (arrow of time origin)"],
+      "sbt_interface_touch": ["IF_RM/IF_PHAT: dark energy reframed as operator-rewrite Delta_H in H^2=H_m^2+Delta_H; route-mismatch / patch-expansion proxy Q(t) (R025)", "IF_AUDIT: closure/route-mismatch audit pipeline on real DES SN5YR + Y6 BAO data"],
+      "missing_interface_block": ["MISS_MEASURE (cosmological measure / vacuum selection external; fine-tuning F47 parametric)", "MISS_CONTINUUM (FLRW physics imported)", "MISS_SPACETIME"],
+      "honest_status": "CONSTRAINT-NULL. SBT reframes Lambda as a closure-rewrite term but the synthetic Omega_Lambda~0.60 is hand-built with ~12 knobs; on REAL data the rewrite collapses to a constant (m~0, Delta-AIC ~2 WORSE). Explicitly DOES NOT refute a fundamental Lambda. The number must never be cited as a retrodiction (R025, atlas avoid-list)."
+    },
+    {
+      "id": "D_THERMO",
+      "name": "Thermodynamics",
+      "core_objects": ["equilibrium states", "temperature / entropy / free energy", "heat reservoirs", "thermodynamic ensembles"],
+      "core_laws": ["second law (dS>=0)", "first law (energy conservation)", "Clausius/Kelvin statements", "fluctuation-dissipation", "Landauer/Bennett (erasure cost kT ln2)"],
+      "core_symmetries": ["microscopic time-reversal (broken macroscopically)", "Gibbs measure form q ~ exp(-beta E)"],
+      "empirical_anchors": ["Carnot efficiency bound", "Landauer erasure heat", "approach to equilibrium / relaxation"],
+      "must_recover": ["the second law / arrow of time", "Gibbs/Boltzmann equilibrium form", "Landauer cost as genuine thermodynamic, not just informational"],
+      "sbt_interface_touch": ["IF_AUDIT: detailed-balance => zero arrow (protocol trap); arrow DPI 'no false positives' (R013/R028)", "IF_DUAL: temperature/price/regularization as shadow price of a budget (currency-constraint principle, To_Spend_a_Stone)", "IF_PACK: Landauer reframed as closure+information change (To_XOR_a_Stone)"],
+      "missing_interface_block": ["MISS_THERMO (Sigma_T/EPR are informational proxies, NOT physical entropy production; no reservoir / local-detailed-balance)", "MISS_COST_UNIT (no universal cross-domain cost unit)"],
+      "honest_status": "RECOVERY with a sharp disclaimer. SBT recovers detailed-balance-zero-EPR and DPI faithfully, but it explicitly states EPR/Sigma_T are NOT physical entropy production. The Gibbs form q ~ exp(-lambda u) is put in by hand (MaxCal). Landauer: 'apparent EPR of both macro views is 0', so the signal is informational, not thermodynamic."
+    },
+    {
+      "id": "D_NESM",
+      "name": "Nonequilibrium statistical mechanics",
+      "core_objects": ["driven Markov networks / master equations", "probability currents", "cycle affinities", "stochastic pumps"],
+      "core_laws": ["Schnakenberg cycle-affinity decomposition", "fluctuation theorems (Crooks/Jarzynski)", "local detailed balance", "entropy-production rate (EPR)"],
+      "core_symmetries": ["microreversibility on support (A_REV)", "Hodge/graph H^1 decomposition of the log-ratio 1-form"],
+      "empirical_anchors": ["nonequilibrium steady-state currents", "molecular-motor stepping", "Jarzynski work relation"],
+      "must_recover": ["nonequilibrium drive supported on graph cycles (beta_1>0)", "zero drive on forests / under exact 1-forms", "detailed-balance => zero entropy production"],
+      "sbt_interface_touch": ["IF_AUDIT/IF_NOGO: NG_FORCE_FOREST + NG_FORCE_NULL recover Schnakenberg cycle-affinity + discrete-Hodge necessity (R015)", "IF_AUDIT: driven 3-cycle EPR = beta*b*log((1+b)/(1-b)) (R014, recovery, 0 data points)", "IF_NOGO: protocol trap (holonomy without entropy production) (R013)"],
+      "missing_interface_block": ["MISS_THERMO (informational proxy only; no reservoir interpretation)", "MISS_CONTINUUM (no continuous-time stochastic thermodynamics)"],
+      "honest_status": "FAITHFUL RECOVERY (the most native domain). The cycle-affinity / discrete-Hodge results are constructive graph theory; the ACC 1-form IS Schnakenberg's thermodynamic force (imported meaning). All five reused cycle-affinity cards live HERE -- so 'reuse' is within one domain, not across. Closed forms have 0 independent data points."
+    },
+    {
+      "id": "D_INFO",
+      "name": "Information theory",
+      "core_objects": ["random variables / distributions", "channels (stochastic maps / CPTP)", "entropy / mutual information / KL divergence", "sufficient statistics / causal states"],
+      "core_laws": ["data-processing inequality (DPI)", "monotonicity of f-divergences under channels (Petz)", "Pinsker inequality", "predictive sufficiency / lumpability", "chain rule"],
+      "core_symmetries": ["invariance under sufficient statistics", "permutation invariance of alphabets", "monotonicity under coarsening"],
+      "empirical_anchors": ["channel-capacity limits", "compression bounds", "(theory-internal; the calculus's most rigorous home)"],
+      "must_recover": ["DPI (classical and quantum) as ONE monotonicity", "lumpability / predictive sufficiency as CD_tau=0", "the exact macro-closure obstruction CD_tau"],
+      "sbt_interface_touch": ["IF_AUDIT: one audit-monotonicity contract => classical path-KL DPI + quantum relative-entropy DPI (R028, U004) -- the most parameter-rigid mechanism, opposite-world INELASTIC", "IF_CD: closure deficit CD_tau = I(X;Y_{t+tau}|Y_t), exact decomposition, CD=0 iff lumpable (R029)", "IF_ORBIT: predictive quotient M as future-sufficient statistic (Holonomy_with_Memory)"],
+      "missing_interface_block": ["MISS_STOCH_LENS (certified core is deterministic-partition lenses only)", "MISS_ASYMPTOTIC (CD-vs-predictive-sufficiency bridge unproved)"],
+      "honest_status": "STRONGEST HOME. CD_tau decomposition and audit-DPI are genuine, sometimes Lean-anchored, parameter-rigid. BUT the deflation lands hardest here: monotone divergences and quotient-by-fibers ARE textbook; SBT NAMES rather than proves the unification (commutative-subalgebra corollary unwritten); quantum DPI imported wholesale."
+    },
+    {
+      "id": "D_RG",
+      "name": "Renormalization / coarse-graining",
+      "core_objects": ["effective theories at a scale", "RG flow / beta functions", "relevant/irrelevant operators", "fixed points (UV/IR)", "coarse-graining lens (SBT)"],
+      "core_laws": ["RG semigroup flow", "universality / critical exponents", "Wilsonian integrating-out", "Mori-Zwanzig closure / memory kernels"],
+      "core_symmetries": ["scale invariance at fixed points", "RG group (semigroup) structure"],
+      "empirical_anchors": ["critical exponents / universality classes", "running of coupling constants", "effective-field-theory matching"],
+      "must_recover": ["effective objects as scale-dependent fixed points", "an exact obstruction to a closed effective law (Mori-Zwanzig memory)", "a genuine RG SEMIGROUP flow (composition over scales)"],
+      "sbt_interface_touch": ["IF_PACK: effective objects = Fix(E) of a packaging endomap (U006)", "IF_CD: CD_tau as exact obstruction to a closed macro law (Mori-Zwanzig/EFT-closure analogue) (R029)", "IF_PHAT: Phat_{tau,f} as one-parameter parent kernel with reduction limits (U007)"],
+      "missing_interface_block": ["MISS_ASYMPTOTIC (NG_LADDER_IDEM: iterating a fixed completion stabilizes after ONE step -> NOT an RG semigroup)", "MISS_CONTINUUM (no continuum RG flow, no beta functions)"],
+      "honest_status": "ANALOGICAL with a HARD no-go. SBT's no-ladder theorem FORBIDS reading staging as RG flow: a fixed completion is idempotent (e^n=e), so there is no nontrivial semigroup. CD_tau is a genuine exact closure obstruction (the honest asset), but universality, critical exponents, and running couplings are entirely out of reach."
+    }
+  ],
+  "tensions": [
+    {
+      "id": "T_QM_GR",
+      "name": "Quantum mechanics vs general relativity",
+      "domains": ["D_QM", "D_GR", "D_BHQG"],
+      "statement": "QM is a unitary theory on a fixed background with superposition; GR is a deterministic theory of a dynamical metric. They use incompatible mathematics (operators on Hilbert space vs pseudo-Riemannian geometry) and disagree about background independence and the role of the observer. No accepted theory quantizes the metric or makes superpositions of geometries sense.",
+      "what_a_unifier_must_do": "Produce a single object whose two faces are (a) quantum/record structure and (b) a dynamical metric sourced by matter, with an observable-preserving bridge between superposition and geometry.",
+      "minimum_unification_requirement": "ONE substrate object yielding BOTH a quantum record sector AND a metric sector, with a DERIVED cross-constraint (e.g. matter content constrains local geometry), expressed via observable-preserving bridge maps -- not two parallel read-outs glued by a shared label. For SBT specifically: Fix(E) (matter-like records) must demonstrably CONSTRAIN d_eta curvature on the SAME Phat (U001 stronger lemma), or the tension is untouched.",
+      "sbt_relevant_interface": ["IF_PACK (Fix(E) matter-like)", "IF_METRIC (d_eta metric-like)", "IF_PHAT (single carrier)"],
+      "sbt_missing_interface_block": ["MISS_SPACETIME (no Lorentzian metric)", "MISS_CONTINUUM (no metric tensor / convergence)", "MISS_BORN", "MISS_COLLAPSE"],
+      "sbt_status": "BARELY TOUCHED. U001 proposes co-reading Fix(E) and d_eta off one Phat, but the GR leg is analogical (audit-defined pseudo-metric, not a tensor) and the cross-constraint lemma does not exist. Deflation: two costumes (idempotent fixed points + -log of an operator) on one mannequin unless the matter->curvature lemma is proved."
+    },
+    {
+      "id": "T_MEAS",
+      "name": "Measurement problem / emergence of classicality",
+      "domains": ["D_QM", "D_CM"],
+      "statement": "Unitary QM predicts persistent superpositions, yet measurements yield single definite outcomes in a definite (pointer) basis with Born-rule frequencies. Why a preferred basis, why single outcomes, why |amplitude|^2 -- and why classicality emerges at macro scales -- are unresolved.",
+      "what_a_unifier_must_do": "Derive (not assume) the pointer basis, single-outcome selection, and the Born measure from the dynamics, while recovering decoherence to classical records.",
+      "minimum_unification_requirement": "A DERIVATION of (i) the pointer/record basis (einselection from first principles), (ii) single-outcome selection, and (iii) the Born weights -- at least one of these non-trivially, with the emergent classical objects identified as a genuine consequence rather than a chosen input.",
+      "sbt_relevant_interface": ["IF_PACK + dephasing Delta (collapse = idempotent packaging, R001)", "IF_FIBER (probability LOCATED on unresolved fiber, F23, R007)", "IF_CD (CD_tau bifurcation: resolved=definite object vs unresolved=measure slot, U003)"],
+      "sbt_missing_interface_block": ["MISS_LENS_SEL (pointer basis is a FREE input -> einselection NOT derived)", "MISS_BORN (no weights)", "MISS_COLLAPSE (no single-outcome selection)"],
+      "sbt_status": "RECOVERY-GIVEN-BASIS; the three hard parts are exactly the three disclaimers. SBT's strongest honest result (R001 collapse-as-idempotent-closure) plus F23 (locates probability on unresolved fibers) sharply ISOLATES the Born-rule gap to the free weight m, but derives none of basis/outcome/measure. U003 proposes a CD_tau bifurcation + envariance attempt as the repair path."
+    },
+    {
+      "id": "T_ARROW",
+      "name": "Arrow of time vs cosmological boundary condition",
+      "domains": ["D_THERMO", "D_NESM", "D_COSMO"],
+      "statement": "Microscopic laws are (nearly) time-symmetric, yet the macro world has a definite thermodynamic arrow. The arrow appears to require a special low-entropy past (the cosmological initial condition / Past Hypothesis). Reconciling reversible micro-dynamics, the second law, and the cosmological boundary is open.",
+      "what_a_unifier_must_do": "Explain the macroscopic arrow as a consequence of dynamics + a boundary condition, distinguishing genuine drive from coarse-graining artifacts, and connect it to the cosmological initial state.",
+      "minimum_unification_requirement": "A demonstration that the arrow arises from a genuine affinity/drive (not from coarse-graining or an external schedule), PLUS a principled account of the low-entropy boundary -- with the informational proxy explicitly bridged to PHYSICAL entropy production (the missing thermo interface).",
+      "sbt_relevant_interface": ["IF_AUDIT (Sigma_T path-KL asymmetry, DPI-protected: no false arrows)", "IF_NOGO (protocol trap: holonomy without entropy; FORCE_FOREST/NULL: drive needs cycles)"],
+      "sbt_missing_interface_block": ["MISS_THERMO (Sigma_T/EPR are NOT physical entropy production)", "MISS_MEASURE (no cosmological measure / boundary)", "MISS_SPACETIME"],
+      "sbt_status": "DISCIPLINE, NOT RESOLUTION. SBT provides excellent NEGATIVE guards (no false arrow from coarse-graining; no drive on forests; detailed-balance=>zero EPR) and correctly insists drive must be a genuine affinity. But it disclaims physical entropy production and has NO cosmological-boundary interface, so it cannot connect the arrow to the Past Hypothesis."
+    },
+    {
+      "id": "T_HIER",
+      "name": "Hierarchy problem (scale separation / fine-tuning)",
+      "domains": ["D_QFT", "D_RG", "D_COSMO"],
+      "statement": "The vast separation between the electroweak/Higgs scale and the Planck scale (and the smallness of the cosmological constant) appears unnaturally fine-tuned: quantum corrections drag light scalar masses up to the cutoff absent protective symmetry or tuning.",
+      "what_a_unifier_must_do": "Provide a mechanism (symmetry, dynamics, or selection) that makes the scale separation natural or explains the tuned value.",
+      "minimum_unification_requirement": "Either a dynamical/symmetry mechanism stabilizing the hierarchy, OR a principled selector (measure) over the tuning, that PRODUCES the small region rather than declaring it. SBT would need a genuine RG-semigroup flow across scales AND a measure interface -- both currently missing.",
+      "sbt_relevant_interface": ["IF_FATCD (F47 fine-tuning as a small selector region -- DECLARED, parametric)", "IF_PHAT/IF_CD (scale-staging via tau)"],
+      "sbt_missing_interface_block": ["MISS_ASYMPTOTIC (NG_LADDER_IDEM forbids an RG semigroup)", "MISS_MEASURE (fine-tuning region F47 parametric in an external measure)", "MISS_CONTINUUM (no running couplings / beta functions)"],
+      "sbt_status": "UNTOUCHED. SBT has no running-coupling or RG-semigroup interface (no-ladder theorem actively forbids it), and F47 'fine-tuning as small selector region' is a declared normal form parametric in an externally supplied measure. The hierarchy/naturalness problem is outside the calculus's reach."
+    },
+    {
+      "id": "T_DE_VAC",
+      "name": "Dark energy / vacuum energy problem",
+      "domains": ["D_COSMO", "D_QFT", "D_GR"],
+      "statement": "The observed accelerated expansion (Omega_Lambda~0.7) implies a tiny positive vacuum energy, but QFT estimates of the vacuum energy density exceed it by up to ~120 orders of magnitude. Why the cosmological constant is so small (and nonzero) is unexplained.",
+      "what_a_unifier_must_do": "Either compute the small vacuum energy, or show the observed acceleration is an artifact (e.g. backreaction/averaging) rather than a fundamental Lambda, with a calibrated comparison to data.",
+      "minimum_unification_requirement": "A SIGNED, calibrated prediction of the acceleration magnitude (or a demonstrated artifact) that survives REAL data and is distinguishable from LambdaCDM -- not a sign-free, tunable synthetic match.",
+      "sbt_relevant_interface": ["IF_RM (dark energy as route-mismatch / operator-rewrite Delta_H, H^2=H_m^2+Delta_H, R025)", "IF_AUDIT (closure audit on DES SN5YR + Y6 BAO)"],
+      "sbt_missing_interface_block": ["MISS_MEASURE (vacuum selection F50 external)", "MISS_CONTINUUM (no tensorial Buchert; scalar Jensen proxy only)", "RM is SIGN-FREE -> cannot predict acceleration sign"],
+      "sbt_status": "CONSTRAINT-NULL / AVOID. The synthetic Omega_Lambda~0.60 is hand-built (~12 knobs); on real data the rewrite collapses to a constant (m~0) and is Delta-AIC~2 WORSE than LambdaCDM. SBT EXPLICITLY does not refute a fundamental Lambda. Sign-free RM cannot even predict the acceleration sign. Atlas: never cite as a retrodiction."
+    },
+    {
+      "id": "T_BH_INFO",
+      "name": "Black-hole information paradox",
+      "domains": ["D_BHQG", "D_QM", "D_THERMO"],
+      "statement": "Semiclassical Hawking radiation appears thermal and information-destroying, conflicting with quantum unitarity. The Page curve, S=A/4, and holography sharpen the puzzle: how is information preserved through evaporation while the horizon obeys thermodynamics?",
+      "what_a_unifier_must_do": "Reconcile unitary evolution with horizon thermodynamics, recovering the Page curve and the area law from a single consistent framework.",
+      "minimum_unification_requirement": "A derivation of unitary evaporation (Page curve) consistent with S=A/4 and a holographic encoding, from a framework with a genuine HORIZON and a genuine PHYSICAL entropy -- both of which SBT lacks.",
+      "sbt_relevant_interface": ["IF_AUDIT/IF_FIBER (information-conservation framed via DPI / record monotonicity -- informational proxy only)", "IF_FATCD (F33 holographic compression -- declared normal form)"],
+      "sbt_missing_interface_block": ["MISS_SPACETIME (no horizon)", "MISS_THERMO (no physical entropy; S=A/4 is real thermodynamic entropy)", "MISS_CONTINUUM", "MISS_COLLAPSE"],
+      "sbt_status": "STRUCTURALLY UNTOUCHABLE. SBT has no horizon, no physical entropy, no gravitational interface. Its DPI 'no-false-arrow' discipline is the only conceptual contact (information cannot be created by coarse-graining), but this is an informational proxy, not Hawking/Page physics. Should be scope-boxed, never claimed."
+    },
+    {
+      "id": "T_MATTER_SPACETIME",
+      "name": "Matter vs spacetime (substance dualism of the two sectors)",
+      "domains": ["D_QM", "D_GR", "D_CM"],
+      "statement": "Physics describes matter (fields, particles, records) and spacetime (the metric arena) as two distinct kinds of entity coupled by Einstein's equations. A unification would derive both from a common substrate rather than positing two ontologies.",
+      "what_a_unifier_must_do": "Exhibit matter and geometry as two read-outs / sectors of ONE underlying structure, with their coupling (matter sources curvature) as a derived relation.",
+      "minimum_unification_requirement": "A single substrate object from which BOTH a matter sector and a geometry sector are read off, PLUS a DERIVED coupling between them (the location/stability of matter constrains the geometry) -- via observable-preserving bridge maps. Parallel co-read-outs without a cross-constraint do NOT count.",
+      "sbt_relevant_interface": ["IF_PHAT (single induced macro kernel)", "IF_PACK (Fix(E) matter-like sector)", "IF_METRIC (d_eta metric-like sector)", "IF_RM (one defect -> stress face + geometry face, U002)"],
+      "sbt_missing_interface_block": ["MISS_SPACETIME", "MISS_CONTINUUM (d_eta not a tensor; backreaction scalar Jensen not tensorial Buchert)", "MISS_LENS_SEL"],
+      "sbt_status": "PROGRAM, NOT RESULT (the most SBT-native tension). U001 (Fix(E) + d_eta off one Phat) and U002 (one RM defect -> stress + geometry faces) are the candidate vehicles, but both currently glue two textbook lemmas with a shared object; the genuine cross-constraint ('matter curves the accounting metric', tensorial Buchert) is unproven. R012 confirmed the object-identity SPLICE (curvature and object content were computed on DIFFERENT substrates)."
+    },
+    {
+      "id": "T_FORCES_GRAV",
+      "name": "Forces vs gravity (gauge interactions vs spacetime curvature)",
+      "domains": ["D_QFT", "D_GR"],
+      "statement": "The three Standard-Model interactions are gauge forces (curvature in internal fibre bundles, quantized), while gravity is curvature of spacetime itself (geometric, not yet quantized). Unifying them requires treating internal gauge structure and external spacetime geometry on a common footing.",
+      "what_a_unifier_must_do": "Place internal gauge curvature and spacetime curvature under one geometric/algebraic principle (e.g. a unified connection / fibre-bundle structure) and quantize consistently.",
+      "minimum_unification_requirement": "One geometric or algebraic structure yielding BOTH internal gauge connections (with the correct group + matter content) AND spacetime curvature, consistently quantized, with anomaly cancellation expressible. SBT would need to express gauge GROUP SELECTION and anomaly CANCELLATION -- both currently impossible.",
+      "sbt_relevant_interface": ["IF_ORBIT (gauge redundancy A/G as quotient-descent, R019; curvature as loop-holonomy, R011/R026)"],
+      "sbt_missing_interface_block": ["MISS_LENS_SEL (gauge group G is a FREE declared input)", "MISS_CONTINUUM (no fibre bundles, no connection forms)", "R031: anomaly cancellation structurally INEXPRESSIBLE", "MISS_SPACETIME"],
+      "sbt_status": "OUT OF REACH. SBT can relabel both gauge redundancy and emergent curvature as quotient/holonomy bookkeeping, but cannot SELECT the gauge group (it 'derives' A/G' for any declared G'), cannot express anomaly cancellation (R031), and has no spacetime curvature tensor. The forces-vs-gravity unification requires content SBT structurally lacks."
+    }
+  ],
+  "baselines": [
+    {
+      "id": "B_EW",
+      "framework": "Electroweak unification (Glashow-Weinberg-Salam)",
+      "what_it_unifies": ["electromagnetism", "the weak nuclear force"],
+      "how_it_unifies": "A single SU(2)_L x U(1)_Y gauge symmetry spontaneously broken by the Higgs mechanism to U(1)_em; the photon and W/Z emerge as mixtures of the gauge bosons, related by the weak mixing angle theta_W.",
+      "scope": "Two of the four fundamental interactions, at the electroweak scale (~100 GeV).",
+      "empirical_status": "Experimentally confirmed: W/Z masses, neutral currents, the Higgs boson (2012). The gold standard for a SUCCESSFUL force unification.",
+      "limitations": ["does not include the strong force or gravity", "the Higgs mass / hierarchy is not explained", "many free parameters (masses, mixings) remain inputs", "theta_W and the gauge group are inputs, not derived"],
+      "vs_sbt": "The benchmark for what 'genuine force unification' means: a single broken symmetry with predicted, measured consequences (W/Z masses). SBT produces NO new force, NO mass prediction, and cannot even SELECT a gauge group (R024 honest-negative; R019/R020 only relabel descent). SBT is not in this category."
+    },
+    {
+      "id": "B_GUT",
+      "framework": "Grand Unified Theories (SU(5), SO(10), etc.)",
+      "what_it_unifies": ["the strong force", "the weak force", "electromagnetism (the three gauge interactions)"],
+      "how_it_unifies": "Embed SU(3)xSU(2)xU(1) in a single larger simple gauge group (e.g. SU(5), SO(10)) broken at a high scale (~10^16 GeV); coupling constants are predicted to unify at that scale, and matter fits into few representations.",
+      "scope": "The three Standard-Model gauge interactions; gravity excluded.",
+      "empirical_status": "NOT confirmed: minimal SU(5) is disfavoured by proton-decay non-observation and exact gauge-coupling unification. Remains a motivated but untested extrapolation.",
+      "limitations": ["predicts proton decay not yet observed", "gravity excluded", "the GUT-scale hierarchy and doublet-triplet splitting need tuning", "the choice of group and breaking pattern is not unique"],
+      "vs_sbt": "GUTs make SHARP falsifiable predictions (proton decay, coupling unification) from one group. SBT cannot embed groups or run couplings (MISS_CONTINUUM, NG_LADDER_IDEM forbids RG flow); its gauge story (R019) is descent bookkeeping with the group imported. SBT operates at a meta/structural altitude entirely below GUT content."
+    },
+    {
+      "id": "B_STRING",
+      "framework": "String theory / M-theory",
+      "what_it_unifies": ["all forces including gravity", "matter and gauge fields", "(aspirationally) the full Standard Model + quantum gravity"],
+      "how_it_unifies": "Replace point particles with 1D strings (and higher branes) in 10/11 dimensions; particle species and forces are vibrational modes; gravity arises automatically (the graviton is a closed-string mode); consistency requires supersymmetry and extra compactified dimensions.",
+      "scope": "Most ambitious: a candidate theory of everything including quantum gravity.",
+      "empirical_status": "No distinctive confirmed prediction at accessible energies; the landscape of ~10^500 vacua undermines uniqueness/predictivity. Mathematically rich, empirically unconfirmed.",
+      "limitations": ["enormous vacuum landscape => weak predictivity", "requires unobserved supersymmetry + extra dimensions", "no measured distinctive prediction", "background-dependence in most formulations", "the measure over vacua is unsolved"],
+      "vs_sbt": "String theory genuinely contains gravity + gauge + matter in one object (its real strength) but suffers a landscape/measure problem. SBT shares the measure problem in spirit (MISS_MEASURE) but at a vastly lower altitude: it has no graviton, no extra dimensions, no continuum, no dynamics-from-first-principles. SBT is a finite meta-calculus, not a TOE candidate."
+    },
+    {
+      "id": "B_LQG",
+      "framework": "Loop quantum gravity",
+      "what_it_unifies": ["quantum mechanics", "general relativity (quantizing the gravitational field itself)"],
+      "how_it_unifies": "Canonically quantize GR in a background-independent way using spin networks / spin foams; geometry (area, volume) becomes discrete with quantized spectra; spacetime is built from quantized loops of the gravitational field.",
+      "scope": "Quantum gravity specifically; does not aim to unify the other forces.",
+      "empirical_status": "No confirmed prediction; recovering smooth classical spacetime + the correct low-energy limit (and matter coupling) remains contentious. Background-independence is its principled selling point.",
+      "limitations": ["the semiclassical / continuum limit is not firmly established", "matter coupling and the full dynamics are incomplete", "no distinctive confirmed prediction", "does not unify the other interactions"],
+      "vs_sbt": "LQG shares SBT's DISCRETE, finite-combinatorial instinct (discrete geometry, no preferred continuum) and the hard 'recover the continuum' problem. But LQG genuinely quantizes the metric with a background-independent dynamics; SBT has no metric tensor, no diffeomorphism invariance, and explicitly disclaims deriving spacetime (MISS_SPACETIME). Closest in SPIRIT, far apart in content."
+    },
+    {
+      "id": "B_ADSCFT",
+      "framework": "AdS/CFT correspondence & holography",
+      "what_it_unifies": ["a gravitational (bulk) theory in d+1 dimensions", "a non-gravitational gauge/CFT (boundary) theory in d dimensions"],
+      "how_it_unifies": "A holographic duality: quantum gravity in an asymptotically Anti-de-Sitter bulk is EXACTLY equivalent to a conformal field theory on its boundary; bulk geometry/dynamics is encoded in boundary entanglement (Ryu-Takayanagi), realizing 'spacetime from entanglement'.",
+      "scope": "Quantum gravity <-> gauge theory in specific (AdS) backgrounds; the sharpest controlled instance of holography.",
+      "empirical_status": "A precise, much-tested DUALITY (theoretical evidence overwhelming) but for AdS, not our de-Sitter-like universe; no direct experimental test. The deepest concrete realization of the holographic principle.",
+      "limitations": ["requires AdS (negative curvature), not our universe", "the bulk dictionary in realistic backgrounds is incomplete", "no direct empirical test", "background-dependent (asymptotic AdS)"],
+      "vs_sbt": "AdS/CFT is the GOLD STANDARD for 'matter/geometry from a common object via an observable-preserving bridge' (RT formula = entanglement <-> area) -- exactly what SBT's T_MATTER_SPACETIME tension demands. SBT's F33 'holographic compression' (R-IV) is a declared normal form with NO bulk-boundary dictionary, no RT formula, no derived geometry. AdS/CFT shows what a REAL bridge map looks like; SBT has only the label."
+    },
+    {
+      "id": "B_ENTROPIC",
+      "framework": "Entropic / thermodynamic gravity (Jacobson, Verlinde, Padmanabhan)",
+      "what_it_unifies": ["gravity / spacetime dynamics", "thermodynamics / information (entropy on horizons)"],
+      "how_it_unifies": "Treat the Einstein equations as an equation of state: derive them from thermodynamic relations (dQ=TdS) applied to local Rindler horizons (Jacobson), or treat gravity as an entropic force from changes in information/entropy associated with holographic screens (Verlinde). Gravity is emergent, not fundamental.",
+      "scope": "Gravity as an emergent/thermodynamic phenomenon; aims to explain WHY the field equations hold.",
+      "empirical_status": "Reproduces Einstein's equations as a thermodynamic identity (a genuine result for Jacobson); Verlinde's entropic-force and emergent-dark-gravity versions are contested and have tension with data (e.g. lensing).",
+      "limitations": ["the microscopic degrees of freedom are unspecified", "entropic-force versions struggle with concrete predictions / data", "presupposes horizon thermodynamics (S=A/4) rather than deriving it", "quantum consistency unclear"],
+      "vs_sbt": "Closest in PHILOSOPHY to SBT's 'distance is accounting' (IF_METRIC) and 'gravity/geometry as bookkeeping' instinct. But entropic gravity uses PHYSICAL entropy and horizon thermodynamics to recover the actual Einstein equations; SBT's Sigma_T/EPR are explicitly NOT physical entropy (MISS_THERMO) and it recovers no field equation. SBT is the toy-altitude, information-proxy cousin -- same slogan, no physical S, no G_mu_nu."
+    },
+    {
+      "id": "B_EFT",
+      "framework": "Effective field theory / renormalization-group framework",
+      "what_it_unifies": ["physics across SCALES (UV <-> IR)", "disparate microphysics into universal low-energy descriptions"],
+      "how_it_unifies": "Organize theories by energy scale: integrate out high-energy modes to obtain a low-energy effective Lagrangian; the RG semigroup flows couplings between scales; universality means microscopically different systems share IR fixed points and critical exponents. Unification is across SCALES, not forces.",
+      "scope": "Cross-scale structure of essentially ALL of physics (condensed matter, particle physics, statistical mechanics).",
+      "empirical_status": "Spectacularly successful and confirmed: critical exponents, running couplings, the Standard Model as an EFT. The most pervasively validated 'unification' principle in physics.",
+      "limitations": ["does not fix the UV completion / fundamental theory", "non-perturbative regimes are hard", "Mori-Zwanzig memory makes exact closure generically impossible", "universality classes are descriptive, not derived from a deeper principle"],
+      "vs_sbt": "This is SBT's NATURAL comparison class and where the deflation bites: SBT's coarse-graining lens + Fix(E) + CD_tau ARE finite-state EFT/closure constructs. SBT's genuine contribution is the EXACT closure-deficit obstruction CD_tau (Mori-Zwanzig analogue, R029). BUT NG_LADDER_IDEM FORBIDS an RG SEMIGROUP (a fixed completion stabilizes in one step), so SBT has coarse-graining WITHOUT RG flow -- a strictly weaker structure than EFT."
+    },
+    {
+      "id": "B_DECOH",
+      "framework": "Decoherence program (Zurek, Joos-Zeh, einselection)",
+      "what_it_unifies": ["quantum dynamics", "the emergence of classicality (preferred basis, apparent collapse)"],
+      "how_it_unifies": "Environmental entanglement suppresses interference between pointer states; einselection dynamically singles out a robust preferred (pointer) basis (those states least disturbed by the environment); quantum-Darwinism explains objective classical records via redundant environmental imprints. Classicality EMERGES from unitary system+environment dynamics.",
+      "scope": "The quantum-to-classical transition / measurement problem (the basis and apparent-collapse parts).",
+      "empirical_status": "Decoherence timescales are measured and confirmed; einselection and quantum Darwinism are well-supported. WIDELY accepted as explaining apparent collapse and the preferred basis -- but acknowledged NOT to solve single-outcome selection or derive the Born rule by itself.",
+      "limitations": ["does not by itself select a single outcome (the 'and-or' / definite-outcome problem remains)", "does not derive the Born rule without additional assumptions", "the system-environment split is somewhat conventional"],
+      "vs_sbt": "The DIRECT comparison for SBT's flagship R001. Decoherence DERIVES the pointer basis dynamically (einselection); SBT TAKES the record basis as a FREE input (MISS_LENS_SEL) and only recovers idempotent dephasing GIVEN that basis. Both stop short of single-outcome and Born rule. So SBT is strictly WEAKER than decoherence on the very domain it most credibly engages: it reskins Lueders pinching but cannot derive einselection."
+    }
+  ]
+}

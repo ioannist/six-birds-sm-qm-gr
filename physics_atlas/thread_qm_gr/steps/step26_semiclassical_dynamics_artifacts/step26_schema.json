@@ -1,0 +1,53 @@
+{
+  "step": 26,
+  "orientation": "Semiclassical dynamics for the co-sourcing field package",
+  "active_residual": "R_child_E018_after_sourcing_unification",
+  "carrier": {
+    "type": "finite periodic complex field carrier",
+    "sites": 8,
+    "source": "step24_derived_physical_audits_artifacts/toy_field_samples_step24.json",
+    "parent_content": "psi",
+    "potential": "V[psi] = background + kappa*T00[psi]"
+  },
+  "candidate_move": {
+    "id": "semiclassical_back_reaction_loop",
+    "description": "Iterate a Hermitian finite Hamiltonian H[V] with V sourced by T00[psi] and test for a self-consistent stationary field-potential fixed point."
+  },
+  "final_verdict": {
+    "type": "self_consistent_dynamics_converges_on_toy",
+    "consistent_coupling_converged": true,
+    "runaway_control_converged": false,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "coupled_map_iterated": true,
+    "hamiltonian_hermitian": true,
+    "unitary_step_norm_preserving_checked": true,
+    "potential_sourced_from_T00": true,
+    "consistent_kappa": 0.3,
+    "consistent_mix": 0.5,
+    "consistent_final_update_residual": 8.165089184416358e-17,
+    "consistent_fixed_point_residual": 3.4936318023019015e-16,
+    "consistent_final_eigen_residual": 6.377748916558787e-16,
+    "runaway_kappa": 30.0,
+    "runaway_mix": 1.0,
+    "runaway_final_update_residual": 1.398997140116586,
+    "runaway_fixed_point_residual": 1.4285712942487314,
+    "runaway_final_eigen_residual": 0.6766429242147017
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A finite co-sourcing field package can be given a Hartree-like self-consistency map."
+    ],
+    "analytical_structural": [
+      "The moderate coupling converges on the declared toy while the over-strong control fails."
+    ],
+    "organizational_audit": [
+      "Convergence trace, fixed-point residuals, norm-preservation checks, and sourcing checks are saved."
+    ],
+    "remaining_external_content": [
+      "Physical frame transfer and richer dynamical carriers remain external-review tasks."
+    ]
+  }
+}

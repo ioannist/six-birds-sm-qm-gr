@@ -1,0 +1,6 @@
+slot,sector,balanced_integer_weight,generated_charge,t3_readout,q_readout
+c0,color,-2,-1/3,0,3 color slots | 2 weak slots
+c1,color,-2,-1/3,0,3 color slots | 2 weak slots
+c2,color,-2,-1/3,0,3 color slots | 2 weak slots
+w0,weak,3,1/2,1/2,3 color slots | 2 weak slots
+w1,weak,3,1/2,-1/2,3 color slots | 2 weak slots

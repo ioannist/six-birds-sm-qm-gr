@@ -1,0 +1,2 @@
+N,support_key,witness_scalar,transition_leak_count,delta_pair_count,delta_witness_count,scalar_acts,scalar_breaks_big_factor
+4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,antifund:1,6,48,6,True,True

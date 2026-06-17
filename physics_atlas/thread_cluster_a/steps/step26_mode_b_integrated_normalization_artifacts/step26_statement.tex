@@ -1,0 +1,24 @@
+\section{Step 26: Integrated Gauge-Shape and Normalization Audit}
+
+\paragraph{Generated-vs-input.}
+The sector shape is not introduced as a Step-26 primitive. The computation reads the Step-23 generated minimal closer \(r1|2\), with ranks \(1|2\), dimensions \(2|3\), and charge vector \(3|-2\), then applies the trace-zero balance and dimension-weighted trace rule.
+
+\paragraph{Computation.}
+On the generated structure, the charge unit is \(1/6\). The trace terms are
+\[
+\mathrm{Tr}(Y^2)=5/6,\qquad \mathrm{Tr}(T_3^2)=1/2.
+\]
+The generated normalization ratio is
+\[
+\frac{\mathrm{Tr}(Y^2)}{\mathrm{Tr}(T_3^2)}=5/3,
+\]
+and therefore
+\[
+\sin^2(\theta_W)=\frac{\mathrm{Tr}(T_3^2)}{\mathrm{Tr}(T_3^2)+\mathrm{Tr}(Y^2)}=3/8.
+\]
+
+\paragraph{Controls.}
+Non-generated structures do not reproduce this result: one computes \(8/11\), and two fail because the readout is obstructed. Stage II charge quantization is reproduced on the generated structure.
+
+\paragraph{Verdict.}
+The result is \texttt{INTEGRATED}: the gauge-sector shape and normalization are now computed in one finite un-smuggled construction. This remains finite-grammar evidence only, not a physical unification theorem or frame-transfer status upgrade.

@@ -1,0 +1,60 @@
+{
+  "step": 17,
+  "orientation": "Native Foundations-III promotion-bridge classification",
+  "active_residual": "R_child_E018_after_full_ladder_candidate_external_review",
+  "carrier": {
+    "type": "finite source carrier S",
+    "source_state_count": 8,
+    "object_maps": ["pi_QM", "pi_GR", "pi_L", "pi_union"],
+    "no_smuggling_controls": {
+      "package_promotion_bridge_confused": false,
+      "union_non_strict_asserted": false,
+      "literature_program_terms_used": false,
+      "root_landed": false
+    }
+  },
+  "candidate_move": {
+    "id": "native_promotion_bridge_classification",
+    "description": "Classify B_QM_to_L and B_QM_to_union through the eight native gates and compute Delta_fact."
+  },
+  "final_verdict": {
+    "type": "native_classification_complete",
+    "root_landed": false,
+    "L_status": "candidate",
+    "union_status": "failed_G_nosmuggle",
+    "distinguishing_gate": "G_nosmuggle",
+    "external_review_required": true
+  },
+  "track_fields": {
+    "strictness": {
+      "L_strict": true,
+      "L_Delta_fact_count": 3,
+      "union_strict": true,
+      "union_Delta_fact_count": 3,
+      "strictness_distinguishes": false
+    },
+    "gate_summary": {
+      "L_failed_gates": [],
+      "union_failed_gates": ["G_nosmuggle"]
+    },
+    "G_nosmuggle_defect": {
+      "L_extra_coordinate_count": 0,
+      "union_extra_coordinate_count": 2,
+      "union_duplicate_pair_count": 2
+    }
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A strict promotion bridge can still fail G_nosmuggle."
+    ],
+    "analytical_structural": [
+      "Finite-carrier diagnostic: both targets have non-empty Delta_fact; the direct-sum package fails G_nosmuggle by duplicated shared observables."
+    ],
+    "organizational_audit": [
+      "Native vocabulary replaces prior informal terminology."
+    ],
+    "remaining_external_content": [
+      "External review must assess whether the candidate status transfers beyond the finite toy."
+    ]
+  }
+}

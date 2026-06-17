@@ -1,0 +1,2 @@
+seed,edge_index,edge,delta,plus_residual,minus_residual,moved_geometric_quantity,moved_kind,witness_geometric_gap
+101,6,L-M2,0.15,0,0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15

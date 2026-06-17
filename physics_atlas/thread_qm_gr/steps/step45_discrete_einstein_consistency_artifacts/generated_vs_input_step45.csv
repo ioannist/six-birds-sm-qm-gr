@@ -1,0 +1,7 @@
+item,status,detail,source_artifacts
+Step42_graph_grammar,input,two-cluster graph with boundary and bridge edges,steps/step42_faithful_holographic_rt_enrichment_artifacts/faithful_holographic_rt_enrichment_step42.py
+boundary_region_set,input,"all singleton regions, all pairs, plus left-all/right-all",steps/step45_discrete_einstein_consistency_artifacts/region_delta_entropy_step45.csv
+cut_incidence_matrix_M,generated,row indicators of unperturbed min-cut edges,steps/step45_discrete_einstein_consistency_artifacts/cut_incidence_matrix_step45.csv
+generic_delta_S,generated,finite difference of entropies from a perturbed contracted Step42 state,steps/step45_discrete_einstein_consistency_artifacts/region_delta_entropy_step45.csv
+rt_preserving_delta_S,generated_control,M times an explicit capacity shift vector,steps/step45_discrete_einstein_consistency_artifacts/geometry_response_solve_step45.csv
+consistency_conditions,generated,left-nullspace rows of M,steps/step45_discrete_einstein_consistency_artifacts/consistency_conditions_step45.csv

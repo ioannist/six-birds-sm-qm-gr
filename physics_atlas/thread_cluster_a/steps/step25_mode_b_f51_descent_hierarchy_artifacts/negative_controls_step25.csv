@@ -1,0 +1,2 @@
+control,structure_id,should_pass_parent_test,passes_parent_test,computed_reason,passes
+non_parent_closer,SU(6)_chiral_example,False,False,content_pattern_has_no_parent_quotient_rewrite_in_declared_grammar,True

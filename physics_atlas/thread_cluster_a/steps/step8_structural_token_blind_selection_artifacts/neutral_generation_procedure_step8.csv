@@ -1,0 +1,8 @@
+facet,alphabet_size,codes,generation
+gauge_code,4,g0;g1;g2;g3,full independent product
+rep_code,4,r0;r1;r2;r3,full independent product
+n_gen,5,1;2;3;4;5,full independent product
+texture_code,4,t0;t1;t2;t3,full independent product
+ew_code,3,e0;e1;e2,full independent product
+uv_code,3,u0;u1;u2,full independent product
+vacuum_code,3,v0;v1;v2,full independent product

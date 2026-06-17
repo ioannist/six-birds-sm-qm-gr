@@ -1,0 +1,3 @@
+case,route1,route2,raw_route_mismatch,normalized_route_mismatch,commutes
+qm_gr_directed_completion,complete_from_q_QM_then_read_GR,complete_from_q_GR_then_read_QM,2.8284271247461903,0.5,False
+vertical_stack_control,direct_coarse_readout,coarse_readout_factored_through_fine,0.0,0.0,True

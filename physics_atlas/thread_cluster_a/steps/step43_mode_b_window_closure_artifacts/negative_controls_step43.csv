@@ -1,0 +1,4 @@
+control,passes,evidence
+single_factor_contaminated_negative,True,single-factor higher-layer rows do not clean-separate
+new_window_contains_non_target_structures,True,exact_structures=27
+not_target_row_picker,True,clean_survivors=8

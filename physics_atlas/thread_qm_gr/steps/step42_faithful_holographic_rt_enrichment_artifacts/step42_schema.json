@@ -1,0 +1,20 @@
+{
+  "active_residual": "E018 derived-formula faithful enrichment after Step41 accepted",
+  "bound_holds_all_tested": true,
+  "competing_cut_capacity": 5.54517744448,
+  "frame_transfer_certified": false,
+  "main_object": "random tensor network on a multi-edge finite bulk graph",
+  "min_cut_edge_count": 3,
+  "new_physics_claim": false,
+  "orientation": "ModeB_E018_faithful_holographic_RT_enrichment",
+  "other_law_landing_legs_attempted": false,
+  "root_landed": false,
+  "saturation_trend_D2": 0.729363692238,
+  "saturation_trend_D3": 0.903532922433,
+  "saturation_trend_D4": 0.940570240858,
+  "state_from_contraction": true,
+  "step": 42,
+  "strict_gap_value": 3.295836866,
+  "tensor_kind": "random",
+  "verdict": "RT_BOUND_SATURATED_MULTIEDGE_HOLOGRAPHIC"
+}

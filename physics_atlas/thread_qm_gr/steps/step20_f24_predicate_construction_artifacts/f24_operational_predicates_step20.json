@@ -1,0 +1,42 @@
+[
+  {
+    "family": "MemoryLayer",
+    "operational_predicate": "RoleSplit(q,s) and a unique memory mechanism: route residue is present; the memory record depends on history rather than q alone; the record recovers s exactly.",
+    "source_lines": "F24 1418-1514; F3 2433-2495"
+  },
+  {
+    "family": "HiddenUpstreamRole",
+    "operational_predicate": "RoleSplit(q,s) and a unique hidden mechanism: one q-fiber contains multiple predictive classes; a typed minimal upstream latent recovers s; the latent is not an explicit admissible mediation object.",
+    "source_lines": "F24 1418-1514; F13a 1050-1162"
+  },
+  {
+    "family": "BridgeMediatedRole",
+    "operational_predicate": "RoleSplit(q,s) and a unique mediation mechanism: an explicit admissible object carries q and s, passes the native gates, commutes with endpoint projections, and strictly refines q.",
+    "source_lines": "F24 1418-1514; F22 4638-4678; F51 8528-8582"
+  },
+  {
+    "family": "BudgetedRole",
+    "operational_predicate": "RoleSplit(q,s) and a unique budget mechanism: no exact resolution is claimed; the remaining positive residual is priced and has an adequate typed status.",
+    "source_lines": "F24 1418-1514; F6 1620-1718; F9 2071-2140"
+  },
+  {
+    "family": "ScopedRole",
+    "operational_predicate": "RoleSplit(q,s) and a unique scope mechanism: a proper declared carrier restriction makes the role obstruction empty on the restricted scope.",
+    "source_lines": "F24 1418-1514; F52 8663-8712"
+  },
+  {
+    "family": "CoarsenedRole",
+    "operational_predicate": "RoleSplit(q,s) and a unique coarsening mechanism: a declared target coarsening makes the split-pair obstruction empty by quotienting away the role distinction rather than carrying it.",
+    "source_lines": "F24 1418-1514; F2 2286-2378; F39 7120-7225"
+  },
+  {
+    "family": "OutsideRoleScope",
+    "operational_predicate": "RoleSplit(q,s) and a unique outside mechanism: the role direction is not in scope and is explicitly named outside the declared scope.",
+    "source_lines": "F24 1418-1514; F52 8663-8712"
+  },
+  {
+    "family": "BlockedNonClosure",
+    "operational_predicate": "RoleSplit(q,s) and a unique blocked mechanism: no formed admissible closure exists, or the attempted closure leaves an inadequately statused residual.",
+    "source_lines": "F24 1418-1514; F9 2071-2140; F52 8663-8712"
+  }
+]

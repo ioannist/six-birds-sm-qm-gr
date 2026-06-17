@@ -1,0 +1,4 @@
+check,passes,evidence
+step38_clean_iff_delta_empty,True,Delta_fact emptiness matches Step-38 clean-shadow verdict for every support
+witness_count_tracks_exotics,True,Delta witnesses are exactly the confining-charged massive vectors counted in Step 38
+reproduce_step38_counts,True,"carrier has 12 supports, 8 clean, 8 defect-empty"

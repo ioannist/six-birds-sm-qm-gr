@@ -1,0 +1,19 @@
+{
+  "rung_id": "RUNG_1_REFINE_FIXEDPOINT",
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "carrier": "two-channel finite carrier: record channel plus locality channel over 2^n cells",
+  "closure": "idempotent projection (record, locality) -> shared channel average",
+  "lift": "cell-duplication refinement lift applied to both channels",
+  "qm_side_coarsening": "record-channel projection",
+  "gr_side_coarsening": "locality-channel projection",
+  "idempotence_errors": {
+    "level_1": 0.0,
+    "level_2": 0.0,
+    "level_3": 0.0
+  },
+  "placeholder": "identity closure with same lift; tests whether commutation alone is toothless"
+}

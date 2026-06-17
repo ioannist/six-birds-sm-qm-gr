@@ -1,0 +1,158 @@
+{
+  "id": "R025",
+  "schema_note": "Enriched card merging the original retrodiction card, the parameter/ad-hoc audit, the adversarial skeptic panel, and the Repair-Agent + Fertility-Judge repair and scores. Source claims were verified against the frozen ledger and the primary SBT papers (citations below). This card supersedes the raw card for triage purposes.",
+  "card": {
+    "id": "R025",
+    "one_sentence_claim": "SBT reframes \"dark energy\" as a forced P1 operator-rewrite term Delta_H in H^2 = H_m^2 + Delta_H, structurally inevitable whenever a homogeneous FLRW completion fails to commute with nonlinear inhomogeneous evolution (route mismatch / closure deficit > 0), with a synthetic null-Lambda generator mis-fit by homogeneous LambdaCDM recovering Omega_Lambda ~ 0.602 and the real-data shape collapsing to a constant (m ~ 0), offered as a structural account of why a constant Lambda works for geometry rather than a refutation of it.",
+    "target_known_fact": "Late-time cosmic acceleration is phenomenologically fit by LambdaCDM with Omega_Lambda ~ 0.6-0.7 (Riess 1998, Perlmutter 1999); the Friedmann/FLRW background governs homogeneous expansion; the Buchert/Rasanen/Wiltshire backreaction-averaging program is a candidate inhomogeneity contributor; SN+BAO geometry exhibits a known degeneracy between a constant Lambda and a slowly-varying dark-energy component.",
+    "scientific_domain": "Cosmology / general relativity (FLRW background, dark energy, cosmological backreaction; weak-field / homogeneous-averaging regime)",
+    "argument_family": "reinterpretation",
+    "derivability_class": "E",
+    "primary_paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Dark_Energy_Closure_Route_Mismatch_and_Audits_for_Apparent_Acceleration.tex",
+    "minimum_viable_result": "A self-contained, reproducible structural + synthetic demonstration (NO new GR machinery): (i) a CONDITIONAL necessity statement (the paper's own line 799: an operator rewrite is forced IF one insists on a closed macro description under the given lens AND route mismatch is nonzero), motivated by analogy with the proved-but-not-here-invoked closure-deficit theorem; (ii) the synthetic null-Lambda generator that a homogeneous LambdaCDM fit reads as Omega_L ~ 0.60 in one selected heterogeneous regime; (iii) the public DES SN5YR + Y6 BAO result that the rewrite shape collapses to a constant (m ~ 0), Delta-AIC ~2 WORSE than LambdaCDM, a sharp constraint-null on the redshift-shape of any departure from constancy plus a (currently undemonstrated, surrogate-backend) staging/probe-split falsification handle.",
+    "free_parameters": [
+      "Rewrite amplitude A and redshift-shape exponent m in Delta_H = A(1+z)^-m (m saturates at ~0 on real DES SN5YR+Y6 BAO data => constant correction)",
+      "Heterogeneity amplitude s / patch initial-condition ensemble in the synthetic generator (s=0 homogeneous control gives Q~0, RM~0, Omega_L~0)",
+      "Lens (which data product is retained) and completion (homogeneous FLRW family) are DECLARED, not derived; choice fixes which correction is 'forced'",
+      "Timescale/lag tau for the route-mismatch and closure-deficit diagnostics",
+      "H_0 (absorbed into a profiled distance intercept) and BAO sound-horizon r_d held fixed (compressed-likelihood form; full r_d(theta) deferred)",
+      "Acceleration-proxy constant g_4pi and patch-expansion proxy definition Q(t) (functional form imported from the GR dust relation, not derived from GR)"
+    ],
+    "why_scientists_care": "Dark energy is the deepest open problem in cosmology, and 'is Lambda fundamental or an artifact of fitting a homogeneous model to an inhomogeneous universe?' (the backreaction/fitting problem) is genuinely live (Buchert, Rasanen, Wiltshire vs Green-Wald). R025's value is a clean structural reframing with one falsifiable handle, plus an honest m~0 constraint-null on real data; it is NOT a numerical retrodiction.",
+    "target_audience": [
+      "Theoretical cosmologists working on dark energy and the cosmological-constant problem",
+      "Researchers in cosmological backreaction / inhomogeneous averaging (Buchert, Rasanen, Wiltshire, Green-Wald lineages)",
+      "Observational cosmologists designing probe-split / staging consistency tests for SN+BAO+3x2pt (DES, DESI, Euclid, Rubin/LSST)",
+      "Foundations-of-physics and coarse-graining/effective-theory theorists interested in closure and model-comparison methodology"
+    ],
+    "recommended_artifact": "A reproducible computational note + short structural paper: (1) the CONDITIONAL necessity argument at the scope the paper actually proves (route mismatch nonzero + insistence on closure under a declared lens => some Delta_H correction term), explicitly flagged as the standard effective-theory/Buchert closure statement and as analogy-not-invocation of NG_MACRO_CLOSURE_DEFICIT; (2) the synthetic null-Lambda generator with the Omega_L~0.60 mis-fit, clearly flagged synthetic, regime-selected, and tunable, with the s=0 null gate; (3) the public-data audit on DES SN5YR + Y6 BAO showing m~0 / Delta-AIC ~2 worse with provenance-tracked bundles; (4) a falsifiable prediction TABLE for staging/probe-split audit signatures, explicitly marked as not-yet-demonstrated (surrogate-backend-only). Lean lemmas routeMismatch_of_commute, commutes_of_factorsThrough cited as the exact-commutation backbone.",
+    "execution_cost": "LOW-to-MEDIUM for the minimum-viable result (all three components already exist in the Dark Energy paper; the work is honest re-packaging plus correct attribution of the necessity argument and re-running the public DES fits with documented provenance). HIGH-to-prohibitive for the stronger result (requires a spacetime/GR interface, a backreaction-magnitude derivation, and a physical 3x2pt backend, all outside SBT's disclaimed scope).",
+    "honest_status_note": "NOT grounded as a retrodiction (grounded=false; derivability class E). The headline Omega_Lambda ~ 0.60 is a SYNTHETIC artifact of a generator hand-built to produce it, for ONE selected heterogeneous regime, tunable to any value by the heterogeneity knob s; it is NOT a recovery of observed acceleration from real data. On real DES SN5YR + Y6 BAO the effect is degeneracy-limited (m collapses to ~0, Delta-AIC ~2 WORSE than LambdaCDM), and SBT EXPLICITLY does not rule out a fundamental cosmological constant (ledger disclaimer). There is no spacetime/GR interface, no continuum limit, no cosmological measure; the Friedmann closure and patch-averaging are imported, and the 'backreaction' is the elementary Jensen effect, NOT a GR backreaction calculation. CRITICAL CORRECTION (verified by full citation scan): the Dark Energy paper does NOT cite the No-Go paper or NG_MACRO_CLOSURE_DEFICIT; its only SBT citations are Tsiokos2026SixBirds and Tsiokos2026WakeStone, its only formal lemma is the trivial routeMismatch_of_commute, and its forced-ness claim is one explicitly conditional sentence (line 799: 'an operator rewrite is forced if one insists on a closed macro description under the given lens'). The card's framing of NG_MACRO_CLOSURE_DEFICIT as the 'deployed rigorous backbone' is a cross-paper construction, not what the cosmology paper does. The defensible claim is a structural reinterpretation (the standard effective-theory/Buchert closure tautology in SBT vocabulary) plus an honest constraint-null plus one undemonstrated falsifiable audit-signature proposal; it does NOT derive cosmic acceleration and does NOT refute Lambda."
+  },
+  "source_verification": {
+    "verified_against": [
+      "/home/repos/six-birds-papers/Tsiokos_2026_A_Six_Birds_Eye_View_of_Dark_Energy_Closure_Route_Mismatch_and_Audits_for_Apparent_Acceleration.tex",
+      "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex",
+      "/home/repos/six-birds-papers/retro_atlas/ledger.json"
+    ],
+    "confirmed_findings": [
+      "CONFIRMED (load-bearing for the skeptics): the Dark Energy paper does NOT cite the No-Go paper nor NG_MACRO_CLOSURE_DEFICIT; its only SBT citations are \\cite{Tsiokos2026SixBirds,Tsiokos2026WakeStone} (lines 71, 93, 108, 175). The card's 'proved necessity backbone' is a cross-paper construction not deployed in the cosmology paper.",
+      "CONFIRMED: forced-ness is explicitly conditional. Line 799: 'an operator rewrite is forced if one insists on a closed macro description under the given lens.' Line 175 / 78: LambdaCDM is 'one widely successful rewrite family that repairs closure'.",
+      "CONFIRMED: Omega_Lambda ~ 0.60 is synthetic and regime-selected. Line 553: 'For one heterogeneous regime, a LambdaCDM background fit yields Omega_Lambda ~ 0.60 even though the data were generated from a null-Lambda heterogeneous toy universe.' Abstract (line 64) flags it as synthetic and states a fundamental Lambda is NOT ruled out.",
+      "CONFIRMED: Q_peak ~ 1.74, late-time positive fraction ~ 0.988 (line 521, 534); homogeneous control Q at machine precision; explicitly an 'illustration' of the mechanism (line 522).",
+      "CONFIRMED: real-data result. Table tab:background_fits (lines 687-688): SN+BAO lcdm chi2=1642.63 AIC=1648.63 vs rewrite chi2=1642.63 AIC=1650.63 (Delta-AIC ~2 WORSE). Line 672-673: rewrite matches LambdaCDM chi2 but pays ~2 AIC penalty; m saturates at ~0.",
+      "CONFIRMED: surrogate LSS backend and spurious staging. Limitation box (line 700-701); appendix line ~912-913: 'identical optima across models are plausibly an artifact of the surrogate degeneracy and should not be interpreted as a physical staging signature.'",
+      "CONFIRMED: imported physics. GR dust relation 3 ddot-a/a + g_4pi rho ~ 0 cited to Buchert/Clarkson (line 299); distances cite Hogg1999; r_d cites EisensteinHu1998; Green-Wald cited (line 86) but the perturbative smallness bound is acknowledged, not resolved (line 839).",
+      "CONFIRMED: NG_MACRO_CLOSURE_DEFICIT (No-Go line 71) is a FINITE Markov chain theorem with a deterministic partition Pi:X->Y; CD_tau>0 when one fiber pools two distinct positive-mass packaged future laws. Genuinely proved and elementary, but its hypotheses are not verified for cosmology (Identification lemma undischarged)."
+    ]
+  },
+  "audit": {
+    "mechanism_tag": "route-mismatch",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 12,
+    "data_points_matched": 3,
+    "overfitting_risk": "HIGH for the headline synthetic number (a hand-built generator with ~12 tunable knobs against one chosen target value, heterogeneity regime selected to land near 0.6, Spearman rho=1.0 true by construction); LOW/structural for the necessity core (which, however, only ever yields the FORM, never amplitude/shape/sign). The real-data piece is the OPPOSITE of overfitting: the extra parameter is penalized (Delta-AIC ~2 worse), an honest constraint-null.",
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "Setting s=0 (the declared null gate) collapses Q, RM, and fitted Omega_L to ~0; retuning s and the rewrite amplitude A reaches any Omega_L in (0,1) of either acceleration sign keeping H^2>0. The synthetic match has essentially zero constraining power. The ONLY thing not freely flippable is the structural existence-of-a-term claim, which is about the FORM of a correction, not its sign or size, so the opposite acceleration observation is not excluded."
+    },
+    "adhoc_summary": "Two halves with opposite audit characters: (1) a low-flexibility but FORM-only conditional necessity that imports its closure logic from the standard Buchert/effective-theory account; (2) a high-flexibility synthetic headline number with no constraining power. The mechanism (route-mismatch / non-commutation) is heavily reused across >=4 facts (LES R009, BGK R008, quantum dephasing, rewriting), so it is not bespoke. The paper and ledger honor every relevant disclaimer."
+  },
+  "skeptic_panel": {
+    "min_survival": 2,
+    "mean_survival": 2.25,
+    "fatal_objections_present": true,
+    "panel": [
+      {
+        "skeptic_role": "Observational cosmologist (SN+BAO data-fitting, dark-energy model degeneracies, held-out/probe-split model comparison)",
+        "adversarial_survival_score": 2.5,
+        "is_actually_new": true,
+        "beats_baseline": false,
+        "main_objection": "The headline Omega_Lambda ~ 0.602 is not a retrodiction: it is a hand-built null-Lambda generator with ~12 tunable knobs, regime explicitly selected near 0.6 (line 553). On real DES SN5YR+Y6 BAO the model collapses to LambdaCDM (m~0) and is AIC-penalized (~2 worse). The only proved thing (NG_MACRO_CLOSURE_DEFICIT) is a finite-Markov chain result transported to continuum GR only by an undischarged, out-of-scope Identification lemma. The FORM of a rewrite term is forced; its amplitude/sign/shape and any identification with observed acceleration are not derived.",
+        "fatal_objections": []
+      },
+      {
+        "skeptic_role": "Mathematical physicist / relativistic cosmologist (backreaction-averaging and finite-information-theory rigor)",
+        "adversarial_survival_score": 2.5,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The card's load-bearing 'necessity core' (a proved Lean-anchored theorem forces the FORM of Delta_H) is a construction assembled by the card, NOT what the Dark Energy paper does. The paper never cites NG_MACRO_CLOSURE_DEFICIT; its forced-ness language is explicitly conditional and heuristic (line 799). The genuine theorem is real but its application to cosmology rides entirely on the undischarged Identification lemma; structural inevitability is therefore analogy, not derivation.",
+        "fatal_objections": []
+      },
+      {
+        "skeptic_role": "Effective-field-theory / cosmology-backreaction skeptic (holds the bar that a proved theorem must actually be invoked in the paper it allegedly backs)",
+        "adversarial_survival_score": 2,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The sole advertised low-flexibility value -- a 'proved necessity backed by a theorem' -- is a cross-paper construction; the Dark Energy paper proves only the trivial converse lemma routeMismatch_of_commute and asserts forced-ness in one conditional sentence. Even granting the No-Go theorem, CD_tau>0 only states 'no closed macro kernel without loss' for a finite Markov chain under a partition lens; it does NOT yield 'an additive Friedmann term Delta_H=A(1+z)^-m is forced'. Three bridges are missing (Identification lemma; finite->continuum; some-rewrite->additive-H^2-term). The only SBT-native content is the elementary Jensen inequality dressed in closure vocabulary.",
+        "fatal_objections": []
+      },
+      {
+        "skeptic_role": "Theoretical/observational cosmologist (Buchert/Rasanen/Green-Wald lineage), cross-checking SBT's own papers against the card's claims",
+        "adversarial_survival_score": 2,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The card's selling point -- a fully proved Lean-anchored theorem supplying a rigorous 'SOME rewrite is forced' backbone -- is not realized in the primary paper (zero references to the closure-deficit theorem / conditional MI / the No-Go paper). The actual content is the standard effective-theory/Buchert closure tautology (the backreaction term is by definition the forced correction) in SBT vocabulary. The structural-necessity content is therefore largely a relabeling of a known fact. On real data the result loses to LambdaCDM by Occam (Delta-AIC ~2), and the one advertised fertile export (staging/probe-split signatures) is surrogate-backend-only with degeneracies the paper itself flags as plausibly spurious.",
+        "fatal_objections": [
+          "Headline Omega_Lambda=0.602 is not a retrodiction in any sense: output of a hand-built null-Lambda generator, regime SELECTED ('For one heterogeneous regime', line 553), amplitude continuously tunable by s (s=0 gives Omega_L~0). The opposite-world test passes trivially, so the number carries zero confirmatory power. (Fatal ONLY to any reading that treats 0.602 as a data match; the paper and card both correctly disclaim this, so it is NOT fatal to the honestly-scoped MVP.)"
+        ]
+      }
+    ],
+    "panel_synthesis": "All four skeptics converge: (a) the synthetic Omega_L~0.60 has no constraining power and must never be cited as a retrodiction (one labels this a conditionally-fatal objection, neutralized by honest scoping); (b) the necessity claim must be downgraded to the conditional/heuristic statement the paper actually makes, with NG_MACRO_CLOSURE_DEFICIT cited as analogy not backbone; (c) on real data the model is observationally equivalent-and-penalized vs LambdaCDM; (d) the staging/probe-split discriminator is undemonstrated (surrogate backend). Three skeptics judge is_actually_new=false because the structural backreaction statement pre-exists (Buchert). Unanimous beats_baseline=false. No objection is fatal to the honestly-scoped fallback deliverable, but the headline number is fatal to any over-claimed reading."
+  },
+  "repair": {
+    "repair_status": "repaired_with_caveats",
+    "revised_one_sentence_claim": "Under a DECLARED homogeneous FLRW lens with nonzero route mismatch, IF one insists on a closed macro description, then the standard effective-theory/Buchert closure logic forces SOME operator-rewrite correction term (writable as Delta_H in H^2 = H_m^2 + Delta_H); SBT reorganizes this as a P1-rewrite audit problem, shows a hand-built null-Lambda generator that a homogeneous LambdaCDM fit mis-reads as Omega_Lambda ~ 0.60 (synthetic, regime-selected, tunable to any value), and reports that on public DES SN5YR + Y6 BAO the rewrite shape collapses to a constant (m ~ 0, Delta-AIC ~2 WORSE than LambdaCDM) -- an honest constraint-null that recovers, and explicitly does NOT refute, a fundamental Lambda, plus one as-yet-undemonstrated staging/probe-split falsification handle.",
+    "new_minimum_viable_result": "(i) State the necessity at the EXACT scope the Dark Energy paper supports: route mismatch nonzero AND insistence on closure under a declared lens => some correction term appears (the standard Buchert/effective-theory closure statement, recast in SBT vocabulary), explicitly flagging that NG_MACRO_CLOSURE_DEFICIT is a finite-Markov sister-paper theorem invoked by ANALOGY (not cited in the cosmology paper) and gated by an undischarged Identification lemma; the only in-paper formal content is the trivial lemma routeMismatch_of_commute. (ii) Exhibit the synthetic null-Lambda generator with Omega_L ~ 0.60 for one selected regime, paired always with the s=0 null gate and the tunability caveat. (iii) Report the real-data outcome as m~0, Delta-AIC ~2 WORSE than LambdaCDM (constraint-null, Lambda not ruled out). (iv) Present the staging/probe-split discriminator as an undemonstrated proposal under a surrogate backend, with the identical-optima artifact disclosed.",
+    "changes_made": [
+      "SPLIT the overbroad claim into three logically independent pieces (conditional necessity / synthetic illustration / real-data null) so the high-flexibility synthetic number cannot lend credibility to the low-flexibility structural piece.",
+      "CORRECTED ATTRIBUTION (convert rhetoric to honest lemma sequence): replaced the card's 'proved necessity backbone (NG_MACRO_CLOSURE_DEFICIT)' framing with the verified fact that the Dark Energy paper does NOT cite that theorem and states forced-ness only conditionally (line 799). NG_MACRO_CLOSURE_DEFICIT is downgraded to analogy/motivation from a sister paper.",
+      "NARROWED the necessity to a CONDITIONAL implication (RM>0 + insistence-on-closure => some correction term), removing any unconditional 'structurally inevitable' reading and acknowledging it is the standard effective-theory/Buchert closure statement, not novel SBT physics.",
+      "REPLACED exact with approximate/qualified: 'Omega_Lambda = 0.602429' -> '~0.60 for one selected heterogeneous regime, synthetic, tunable to any value in (0,1) via s'.",
+      "REMOVED the unsupported magnitude implication that the forced Delta_H reaches Omega_Lambda ~ 0.7 from a realistic spectrum (Green-Wald obstruction unaddressed); flagged as a NEEDED, out-of-scope lemma.",
+      "DOWNGRADED the staging/probe-split 'fertile export' from a delivered falsification to an undemonstrated proposal (surrogate-backend-only; identical-optima artifact disclosed per the paper's own appendix).",
+      "FLAGGED the finite-Markov -> continuum-GR transport and the additive-on-H^2 form as imported (FLRW) rather than derived, honoring the SBT continuum and GR-backreaction disclaimers."
+    ],
+    "remaining_objections": [
+      "Identification lemma undischarged: no GR-derived inhomogeneity ensemble is shown to instantiate the closure-deficit hypotheses (two distinct positive-mass packaged patch future-laws in one FLRW fiber); asserted via a hand-built toy only. Hard, outside SBT's disclaimed scope (no metric, no Einstein solve).",
+      "Magnitude/sign gap: no computation that a forced Delta_H reaches Omega_Lambda ~ 0.7 from a realistic, Green-Wald-compatible matter spectrum; the perturbative smallness bound is sidestepped, not resolved.",
+      "Finite->continuum bridge missing: NG_MACRO_CLOSURE_DEFICIT is a finite-Markov conditional-MI identity; SBT has no continuum interface and no convergence theorem (ledger missing_interfaces; F43).",
+      "The additive-on-H^2 FORM (H^2 = H_m^2 + Delta_H) is imported from FLRW; nothing in SBT selects this repair form over others, and the lens that fixes 'which correction is forced' is declared, not derived (no lens-selection principle).",
+      "On real geometry data the proposal does NOT beat LambdaCDM (Delta-AIC ~2 worse); it recovers and reorganizes, it does not improve the fit, and a fundamental Lambda is explicitly not ruled out.",
+      "The single falsifiable export (staging/probe-split audit signatures) is undemonstrated: the only run produced identical cross-model optima the paper itself attributes to surrogate degeneracy.",
+      "Opposite-world test passes trivially: s=0 gives no acceleration, retuning gives any Omega_L of either sign; the synthetic match carries no confirmatory power."
+    ],
+    "repair_notes": "Nothing was added; the repair is entirely subtractive and re-scoping (split, narrow, replace-exact-with-approximate, correct attribution, downgrade rhetoric to the conditional statement actually in the paper). After repair the deliverable equals the card's own fallback_result and survives as an honest reinterpretation. The repair does NOT cross any SBT disclaimer (Lambda not refuted, no GR backreaction calc, no continuum derivation, synthetic flagged). It is repaired_with_caveats rather than fully repaired because the two load-bearing lemmas (Identification, magnitude) are NEEDED, hard, and explicitly outside SBT's scope, so the physical-alternative version remains unreachable within the framework."
+  },
+  "scores": {
+    "impact": 3,
+    "execution_ease": 4,
+    "plausibility": 3,
+    "non_ad_hocness": 2,
+    "discriminative_power": 1,
+    "audience_legibility": 3,
+    "precision": 1,
+    "robustness": 3,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "3 -- the conceptual question (is Lambda fundamental or a fitting artifact?) is high-impact and live, and an honest closure/audit reframing plus a sharp m~0 constraint-null is a genuine, if modest, contribution. Capped at 3 because it derives no new physics and recovers, rather than advances, the existing backreaction program.",
+    "execution_ease": "4 -- all three components already exist in the Dark Energy paper; the repair is honest re-packaging, correct attribution, and re-running public DES fits with provenance. Not 5 because the only path to the genuinely interesting version requires GR machinery SBT lacks.",
+    "plausibility": "3 -- the structural claim (a homogeneous lens over nonlinear inhomogeneous evolution carries a correction term) is correct and uncontroversial (it IS the Buchert statement). The synthetic mechanism is real but trivial (Jensen). Capped because the load-bearing Identification and magnitude lemmas are unproven.",
+    "non_ad_hocness": "2 -- the necessity core is low-flexibility (a conditional implication), but the headline Omega_L~0.60 is high-flexibility: ~12 knobs, regime selected to land near 0.6, Spearman rho=1.0 true by construction, opposite-world passes trivially. The card also over-attributed rigor (claimed a theorem the paper never invokes), which is itself an ad-hoc framing move. Net low.",
+    "discriminative_power": "1 -- on real data the model is observationally equivalent to LambdaCDM (m~0) and AIC-penalized; the synthetic number can be tuned to any Omega_L of either sign; the one discriminator (staging signatures) is undemonstrated and surrogate-only. Essentially no power to discriminate from a fundamental Lambda.",
+    "audience_legibility": "3 -- the closure/lens/route-mismatch framing is clear and the paper is unusually honest about its limits, but cosmologists will (correctly) read the synthetic Omega_L as engineered, and the cross-paper theorem attribution muddies the rigor story. Lean lemmas help but only the trivial commutation lemma is in-paper.",
+    "precision": "1 -- SBT explicitly disclaims a GR/spacetime interface, continuum limit, and ruling out Lambda; the forced term's amplitude/shape/sign are all free, and the additive-H^2 form is imported. The only sharp number on real data (m~0) is a null. Disclaimer-capped.",
+    "robustness": "3 -- the conditional necessity and the m~0 real-data null are robust and reproducible (deterministic seed, provenance bundles, null gate); but the headline and the staging handle are fragile (regime-selected, surrogate artifact). Mixed.",
+    "baseline_advantage": "1 -- explicitly RECOVERS / REORGANIZES and does NOT beat the baseline: Delta-AIC ~2 WORSE than LambdaCDM on geometry, and strictly weaker than the Buchert/Rasanen program on physics (no backreaction magnitude). The only new content is an audit/model-comparison layer plus an undemonstrated handle. Disclaimer- and recovery-capped.",
+    "publication_potential": "2 -- publishable as a methods/perspective note or a constraint-null in a cosmology-methods venue, contingent on the honest re-scoping above; not publishable as a dark-energy result. The synthetic-as-retrodiction risk and the corrected theorem attribution keep this low. A higher score would require discharging at least the Identification lemma."
+  },
+  "triage": {
+    "proposed_bin": "E",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short, honestly-scoped structural/methods note: (1) conditional necessity at the paper's actual scope (route mismatch + insistence on closure => some Delta_H term; standard Buchert logic in SBT vocabulary), with NG_MACRO_CLOSURE_DEFICIT cited as analogy and the Identification lemma flagged undischarged; (2) the synthetic null-Lambda generator with Omega_L~0.60 always paired with the s=0 null gate and tunability caveat; (3) the public DES SN5YR + Y6 BAO m~0 constraint-null (Delta-AIC ~2 worse, Lambda not ruled out) with provenance bundles; (4) a falsifiable staging/probe-split prediction table explicitly marked undemonstrated (surrogate backend). Lean lemmas routeMismatch_of_commute and commutes_of_factorsThrough cited as the only in-scope exact backbone.",
+    "one_line_verdict": "An honest, low-flexibility structural REINTERPRETATION (dark energy as a forced closure/rewrite term, recovering not beating LambdaCDM) wrapped around a high-flexibility synthetic number that must never be cited as a retrodiction; the card over-credited a sister-paper theorem the cosmology paper never invokes, so after correcting attribution and re-scoping it survives only as a class-E conceptual reframing plus one undemonstrated falsification handle."
+  }
+}

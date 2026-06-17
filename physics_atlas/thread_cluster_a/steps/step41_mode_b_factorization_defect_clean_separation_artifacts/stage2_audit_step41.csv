@@ -1,0 +1,3 @@
+check,passes,evidence
+raw_quotients_constructed,True,every boson receives confinement and mass readouts before the faithful pair is selected
+faithful_pair_selected,True,pi0=pi_conf_interference and pi1=pi_mass recover the Step-38 clean verdict

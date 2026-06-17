@@ -1,0 +1,27 @@
+{
+  "step": 5,
+  "orientation": "Cluster B honest regrade after external review",
+  "active_residual": "R_cluster_b_after_step4_consolidated_deliverable",
+  "candidate_move": "Apply accepted overgrade fixes R1/R2/R4 without new computation; strengthen validators to enforce the corrected grades.",
+  "applied_fixes": {
+    "R1_e042_continuation_modeled_shape": true,
+    "R2_e021_ledger_modeled_illustrative": true,
+    "R4_branch_split_transparency": true
+  },
+  "held_not_applied": {
+    "framework_premise_objection": true,
+    "interpretation_demoted": false,
+    "richer_carrier_battery_added": false
+  },
+  "final_verdict": {
+    "type": "honest_regrade_applied_validators_pass",
+    "no_new_computation": true,
+    "all_validators_pass": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "regrade_diff": "regrade_diff_step5.md",
+    "next_live_option": "external_frame_transfer_review_or_manager_selected_followup"
+  }
+}

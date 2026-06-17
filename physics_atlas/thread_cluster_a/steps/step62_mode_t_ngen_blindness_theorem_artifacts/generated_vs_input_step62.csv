@@ -1,0 +1,7 @@
+item,status,detail
+Step51_closure_row,imported_frozen,3e83c014915ff790e8c271cc5e01dd95f3b9ecde67cedc584f8d06dda5dc844d
+Step51_unit_builder_and_cp,imported_frozen,2b33cf5fc870971ac34c7ecaf6c786de63326ad23fa857b71495ba896a3733d0
+faithfulness_to_Step33_corrected,checked,True
+SM_unit_probe,computed,"N=0..8,20,1000; all active N pass"
+odd_doublet_control,computed,N_sensitive=True
+exit_state,computed,constructed_theorem

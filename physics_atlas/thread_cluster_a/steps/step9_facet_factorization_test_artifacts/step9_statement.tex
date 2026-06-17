@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\title{Cluster A Step 9: Facet Factorization Test}
+\author{Six Birds Physics Atlas}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Bounded Grade}
+
+This is a finite-carrier diagnostic on the Cluster-A selection toy. It tests whether the Step-8 structural survivor distribution over seven facets factorizes into independent per-facet selections, or whether it carries cross-facet coupling. It is not a claim about the real physical layer count or any physical value.
+
+\section*{Setup}
+
+The facets are
+\[
+X=(G,R,N,T,E,U,V),
+\]
+represented in the artifacts as \texttt{gauge\_code}, \texttt{rep\_code}, \texttt{n\_gen}, \texttt{texture\_code}, \texttt{ew\_code}, \texttt{uv\_code}, and \texttt{vacuum\_code}. The neutral input is the Step-8 product carrier of 8640 worlds. The tested distribution is the Step-8 structural survivor set of 468 worlds.
+
+The total correlation is
+\[
+C(X)=\sum_i H(X_i)-H(X_1,\ldots,X_7),
+\]
+computed empirically in bits. The neutral product is the can-fail control: it must give \(C \approx 0\).
+
+\section*{Computation}
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Population & Size & \(C\) bits & \(\sum_i H(X_i)\) & \(H(X)\) \\
+\midrule
+Neutral product & 8640 & 0.000000000000 & 13.076815597051 & 13.076815597053 \\
+Structural survivors & 468 & 2.229304481463 & 11.099669201047 & 8.870364719583 \\
+Strict naturalness & 341 & 2.053633293812 & 10.467261222836 & 8.413627929024 \\
+80 percent subsample & 374 & 2.512274397383 & 11.059168857271 & 8.546894459888 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The neutral product has zero total correlation at numerical precision. The structural survivors have positive total correlation, so the Step-8 structural constraints induce dependence across the facets.
+
+\section*{Block Decomposition}
+
+At the declared threshold of 0.01 bits, the main survivor coupling graph has two connected components:
+\[
+\{G,N,R,T,U,V\} \quad \text{and} \quad \{E\}.
+\]
+In artifact names, this is
+\[
+\texttt{gauge\_code+n\_gen+rep\_code+texture\_code+uv\_code+vacuum\_code}
+\quad / \quad
+\texttt{ew\_code}.
+\]
+The within-block correlation is 2.193305564583 bits. The residual coupling lost by the block-product approximation is 0.035998916880 bits.
+
+\section*{Verdict}
+
+The test does not support a fully separable set of independent per-facet selections: the survivor total correlation is positive. It also does not support a clean all-facet single component on the main survivor graph. The honest finite-toy verdict is block-structured coupling: a six-facet coupled block plus a weakly separate EW facet, with a small residual cross-block coupling.
+
+This narrows the one-layer reading. The toy gives internal support for coupled selection structure, but it does not prove a single physical selection layer.
+
+\end{document}

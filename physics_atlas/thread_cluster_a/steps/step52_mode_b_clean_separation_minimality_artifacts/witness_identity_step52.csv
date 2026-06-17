@@ -1,0 +1,13 @@
+support_id,dimensions,broken_vector_exotic_count,delta_fact_witness_count,baryon_orbit_enlarging_count,witness_count_matches_broken_vectors,orbit_enlargers_match_delta_witnesses,step45_dynamic_identity_asserted,witness_ids
+support_00,2|3,0,0,0,True,True,True,
+support_01,2|3,0,0,0,True,True,True,
+support_02,2|3,0,0,0,True,True,True,
+support_03,2|3,0,0,0,True,True,True,
+support_04,2|3,0,0,0,True,True,True,
+support_05,2|3,0,0,0,True,True,True,
+support_06,2|3,0,0,0,True,True,True,
+support_07,2|3,0,0,0,True,True,True,
+support_08,4,6,6,6,True,True,True,s08_broken_confining_charged_00|s08_broken_confining_charged_01|s08_broken_confining_charged_02|s08_broken_confining_charged_03|s08_broken_confining_charged_04|s08_broken_confining_charged_05
+support_09,4,6,6,6,True,True,True,s09_broken_confining_charged_00|s09_broken_confining_charged_01|s09_broken_confining_charged_02|s09_broken_confining_charged_03|s09_broken_confining_charged_04|s09_broken_confining_charged_05
+support_10,4,6,6,6,True,True,True,s10_broken_confining_charged_00|s10_broken_confining_charged_01|s10_broken_confining_charged_02|s10_broken_confining_charged_03|s10_broken_confining_charged_04|s10_broken_confining_charged_05
+support_11,4,6,6,6,True,True,True,s11_broken_confining_charged_00|s11_broken_confining_charged_01|s11_broken_confining_charged_02|s11_broken_confining_charged_03|s11_broken_confining_charged_04|s11_broken_confining_charged_05

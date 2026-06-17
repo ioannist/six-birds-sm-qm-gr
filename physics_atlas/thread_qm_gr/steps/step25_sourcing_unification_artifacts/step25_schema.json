@@ -1,0 +1,45 @@
+{
+  "step": 25,
+  "orientation": "Co-sourcing unification from a shared field carrier",
+  "active_residual": "R_child_E018_after_derived_physical_audit_sourcing",
+  "carrier": {
+    "type": "finite complex field carrier",
+    "sites": 8,
+    "samples": 26,
+    "parent_content": "psi"
+  },
+  "candidate_move": {
+    "id": "build_sourcing_unification_L",
+    "description": "Let L carry psi and verify Born[psi] and T[psi] descents are co-sourced by the same field."
+  },
+  "final_verdict": {
+    "type": "sourcing_unification_complete",
+    "co_sourcing_verdict": "L_is_co_sourcing_unification",
+    "L_single_psi_sources_both": true,
+    "non_co_sourced_control_pass": false,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "single_psi_consistency_computed": true,
+    "control_uses_independent_gr_field": true,
+    "L_max_born_residual": 0.0,
+    "L_max_stress_residual": 0.0,
+    "control_max_stress_residual": 0.3806026603775931,
+    "control_mean_stress_residual": 0.2469245783396815
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A single field carrier can co-source the Born and stress-energy descents on this toy."
+    ],
+    "analytical_structural": [
+      "The non-co-sourced control fails because T[L.psi] does not match its GR descent audit."
+    ],
+    "organizational_audit": [
+      "Field carrier, sourced descent audits, and consistency residuals are saved."
+    ],
+    "remaining_external_content": [
+      "Richer dynamics and frame transfer remain future construction and external review."
+    ]
+  }
+}

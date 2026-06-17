@@ -1,0 +1,4 @@
+control,passes,evidence
+rank_deficient_missing_charged_partner_fails,True,deficiency=1
+both_classes_scored_uniformly,True,same rank predicate applied to both classes
+target_flag_not_used_for_scoring,True,survivors=2

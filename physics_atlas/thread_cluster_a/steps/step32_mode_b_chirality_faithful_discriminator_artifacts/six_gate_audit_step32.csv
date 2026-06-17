@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,build script excludes forbidden prior literals and target-shape primitives
+dependency_trace,True,"components traced to P5/P1/F27, P3/P6, and P3"
+ablation,True,each active component changes the survivor count
+negative_controls,True,"predicate is not a row picker, fails some Step-31 survivors, and computes the dominance test"
+stage_ii,True,Step-31 count reproduced and pass/fail channels detected
+no_single_axiom_equivalence,True,predicate leaves multiple survivors

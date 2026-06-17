@@ -1,0 +1,2 @@
+control,passes,evidence,clean_survivor_count
+SM_2x3_survives_unmodified_filter,True,corrected_carrier=2153;atomic_rewrite_packaging=29;consistency_completeness=15;corrected_chirality_faithful=15;higher_layer_mass_closure=8;clean_separation_delta_empty=8,8

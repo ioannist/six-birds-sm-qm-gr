@@ -1,0 +1,10 @@
+output,classification,grade,scope,source_artifacts
+e009_uv_fiber_step5.py,analytical structural,finite-toy-diagnostic,"Builds UV fiber, IR shadow, consistency pruning, staging, selector, and controls.",steps/step5_e009_uv_fiber_artifacts/e009_uv_fiber_step5.py
+uv_fiber_step5.csv,analytical structural,finite-toy-diagnostic,"Per-UV candidate fiber, IR code, UV content, consistency status, staging, and selected row.",steps/step5_e009_uv_fiber_artifacts/uv_fiber_step5.csv
+uv_nonfactorization_step5.csv,analytical structural,finite-toy-diagnostic,UV non-descending from IR and derived-IR-observable control.,steps/step5_e009_uv_fiber_artifacts/uv_nonfactorization_step5.csv
+consistency_selection_step5.csv,analytical structural,finite-toy-diagnostic,"Admissible fiber size, selected UV, and non-selected admissible candidates.",steps/step5_e009_uv_fiber_artifacts/consistency_selection_step5.csv
+controls_step5.csv,analytical structural,finite-toy-diagnostic,"Many-to-one, non-descending, derived-observable, pruning, selection, and carrier controls.",steps/step5_e009_uv_fiber_artifacts/controls_step5.csv
+results_summary.md,organizational/audit,finite-toy-diagnostic,Human-readable E009 UV-fiber verdict and bounded scope.,steps/step5_e009_uv_fiber_artifacts/results_summary.md
+schema.json,organizational/audit,finite-toy-diagnostic,Per-step schema and final verdict.,steps/step5_e009_uv_fiber_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite E009 UV-fiber facet.,steps/step5_e009_uv_fiber_artifacts/nonclaim_boundary.md
+run_step5.py,organizational/audit,finite-toy-diagnostic,"Validator for computed fiber, pruning, selection, staging, controls, source paths, and overclaim guard.",steps/step5_e009_uv_fiber_artifacts/run_step5.py

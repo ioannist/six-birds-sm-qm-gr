@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step45_F27_orbit_descent,45,Step41 clean and contaminated supports plus finite baryon-number orbit graph,F27 orbit descent; Step41 Delta_fact witness identity,No physical reading is selected; no proton-decay solution is claimed.,"The same descent test preserves B in clean/shadow and violates B in dynamical-breaking, while a color-label control fails even in clean.",Apply the same witness/orbit typing to monopoles through the F48 track.

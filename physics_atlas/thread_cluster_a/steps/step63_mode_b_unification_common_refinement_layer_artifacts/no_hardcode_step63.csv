@@ -1,0 +1,4 @@
+check,passes,evidence
+build_source_has_no_target_fraction_literal,True,source scan for target fraction literal
+build_source_has_no_target_decimal_literal,True,source scan for target decimal literal
+trace_ratio_computed_from_rows,True,"ratio is Tr(T3^2)/Tr(Q^2) from state rows, not a target flag"

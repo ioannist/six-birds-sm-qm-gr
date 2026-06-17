@@ -1,0 +1,9 @@
+audit_item,status,scope,evidence,residual
+candidate_selected,selected,"Mode A import search","Holographic entanglement dictionary has the strongest overlap with both amplitude(geometry) and area=entanglement among surveyed candidates.","None at selection level."
+closure_area_shadow_price,partial_pass,"AdS/CFT semiclassical RT/HRT sector","RT/HRT supplies an entropy-area rule under holographic assumptions; finite toy area-sector Xi is zero to numerical precision.","R_root_E018 still includes amplitude and P3 rows."
+closure_amplitude_geometry,partial_only,"AdS/CFT sectors with bulk duals","AdS/CFT treats boundary states as encoding gravitational bulk states; semiclassical geometries appear as restricted bulk saddles.","No general amplitude over arbitrary GR geometries is supplied by this import alone."
+closure_p3_route_mismatch,fail_for_root,"canonical E018","The import bypasses perturbative metric quantization inside special AdS sectors but does not close the general quantize-then-curve versus curve-then-quantize mismatch.","R_child_E018_after_HED_full_joint_P3."
+assumption_declared,pass,"recognition status","Assume the relevant AdS/CFT dictionary holds, with RT/HRT valid for the state class and semiclassical/large-N bulk regime under consideration.","Assumption is external content."
+target_lineage_non_equivalence,pass_for_child,"no-smuggling","The import is a strict child because it is narrower than general QM-GR common refinement.","Cannot be promoted to R_root_E018."
+finite_xi_diagnostic,positive_obstruction,"declared finite toy","Full joint target normalized Xi is 0.6608695652173913 at both refinement levels; RT area sector Xi is zero.","Stable positive residual remains."
+overread_control,rejected,"declared finite toy","Adding bulk amplitude and P3 rows to the native lens makes Xi zero but imports the target rows.","Smuggling-reject for that overread variant."

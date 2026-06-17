@@ -1,0 +1,5 @@
+control,passes,evidence
+relaxation_brings_single_factor_back,True,relaxed_count=12
+condition_load_bearing,True,relaxed=12; standard=8
+not_target_row_picker,True,standard_count=8
+circularity_detected_not_hidden,True,equivalence is reported in implication_test_step39.csv

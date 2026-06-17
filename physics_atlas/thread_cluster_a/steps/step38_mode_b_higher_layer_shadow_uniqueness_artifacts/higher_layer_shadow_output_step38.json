@@ -1,0 +1,17 @@
+{
+  "base_shadow_survivors": 12,
+  "clean_shadow_structures": "2|3:8",
+  "clean_shadow_survivors": 8,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_higher_layer_shadow_uniqueness",
+  "new_physics_claim": false,
+  "next_grammar_delta": "content boundary remains: clean higher-layer shadow selects the structure family but leaves content orientation unresolved",
+  "reproduced_step35_survivors": 12,
+  "root_landed": false,
+  "single_factor_base_survives": true,
+  "single_factor_clean_survives": false,
+  "step": 38,
+  "target_distinguished": false,
+  "target_passes": true,
+  "verdict": "SHADOW_UNIQUENESS_WITH_CONTENT_LIMIT"
+}

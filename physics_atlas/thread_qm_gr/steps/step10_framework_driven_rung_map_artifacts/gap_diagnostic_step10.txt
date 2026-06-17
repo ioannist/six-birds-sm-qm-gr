@@ -1,0 +1,10 @@
+Step 10 framework-driven rung map
+QM closed atoms: ['composition_slot', 'q_amplitude_currency', 'q_probability_audit', 'q_record_branch', 'q_unitary_fixedpoint', 'typed_carrier']
+GR closed atoms: ['composition_slot', 'g_curvature_audit', 'g_event_locality', 'g_geodesic_fixedpoint', 'g_metric_currency', 'typed_carrier']
+Direct gap raw Xi=10.0, normalized Xi=0.8333333333333334
+Currency mismatch normalized Xi=1.0
+Rungs:
+RUNG_1_REFINE_FIXEDPOINT: contribution raw Xi=2.0; clean_emergence=yes; priority=1
+RUNG_2_NEUTRAL_CURRENCY: contribution raw Xi=2.0; clean_emergence=yes; priority=2
+RUNG_3_AUDIT_COMMUTATOR: contribution raw Xi=2.0; clean_emergence=yes; priority=3
+First rung to build: RUNG_1_REFINE_FIXEDPOINT

@@ -1,0 +1,29 @@
+support_id,support_label,is_reference_support,faithfulness,sector_diversity,weak_doublet_singlet_mixing,charge_integrality,residual_chiral_complexity,simple_group_embedding_pattern,minimality_control
+S01,"(3,1)_-1 + (3,1)_1 + (3bar,1)_-1/6 + (3bar,1)_1/6",False,False,False,False,True,True,False,True
+S02,"(3,1)_-4/6 + (3,1)_4/6 + (3bar,1)_-3/6 + (3bar,1)_3/6",False,False,False,False,True,True,False,True
+S03,"(3,1)_-4/6 + (3,1)_4/6 + (3bar,1)_-1/6 + (3bar,1)_1/6",False,False,False,False,True,True,False,True
+S04,"(3,1)_-3/6 + (3,1)_3/6 + (3bar,1)_-4/6 + (3bar,1)_4/6",False,False,False,False,True,True,False,True
+S05,"(3,1)_-3/6 + (3,1)_3/6 + (3bar,1)_-2/6 + (3bar,1)_2/6",False,False,False,False,True,True,False,True
+S06,"(3,1)_-3/6 + (3,1)_3/6 + (3bar,1)_-1/6 + (3bar,1)_1/6",False,False,False,False,True,True,False,True
+S07,"(3,1)_-2/6 + (3,1)_2/6 + (3bar,1)_-3/6 + (3bar,1)_3/6",False,False,False,False,True,True,False,True
+S08,"(3,1)_-2/6 + (3,1)_2/6 + (3bar,1)_-1/6 + (3bar,1)_1/6",False,False,False,False,True,True,False,True
+S09,"(3,1)_-1/6 + (3,1)_1/6 + (3bar,1)_-1 + (3bar,1)_1",False,False,False,False,True,True,False,True
+S10,"(3,1)_-1/6 + (3,1)_1/6 + (3bar,1)_-4/6 + (3bar,1)_4/6",False,False,False,False,True,True,False,True
+S11,"(3,1)_-1/6 + (3,1)_1/6 + (3bar,1)_-3/6 + (3bar,1)_3/6",False,False,False,False,True,True,False,True
+S12,"(3,1)_-1/6 + (3,1)_1/6 + (3bar,1)_-2/6 + (3bar,1)_2/6",False,False,False,False,True,True,False,True
+S13,"(1,2)_0 + (3,1)_-1/6 + (3,1)_1/6 + (3bar,2)_0",False,True,True,True,False,True,False,False
+S14,"(1,2)_0 + (3,2)_0 + (3bar,1)_-1/6 + (3bar,1)_1/6",False,True,True,True,False,True,False,False
+S15,"(3,2)_-1 + (3,2)_1 + (3bar,2)_-1/6 + (3bar,2)_1/6",False,True,False,False,True,True,False,False
+S16,"(3,2)_-4/6 + (3,2)_4/6 + (3bar,2)_-3/6 + (3bar,2)_3/6",False,True,False,False,True,True,False,False
+S17,"(3,2)_-4/6 + (3,2)_4/6 + (3bar,2)_-1/6 + (3bar,2)_1/6",False,True,False,False,True,True,False,False
+S18,"(3,2)_-3/6 + (3,2)_3/6 + (3bar,2)_-4/6 + (3bar,2)_4/6",False,True,False,False,True,True,False,False
+S19,"(3,2)_-3/6 + (3,2)_3/6 + (3bar,2)_-2/6 + (3bar,2)_2/6",False,True,False,False,True,True,False,False
+S20,"(3,2)_-3/6 + (3,2)_3/6 + (3bar,2)_-1/6 + (3bar,2)_1/6",False,True,False,False,True,True,False,False
+S21,"(3,2)_-2/6 + (3,2)_2/6 + (3bar,2)_-3/6 + (3bar,2)_3/6",False,True,False,False,True,True,False,False
+S22,"(3,2)_-2/6 + (3,2)_2/6 + (3bar,2)_-1/6 + (3bar,2)_1/6",False,True,False,False,True,True,False,False
+S23,"(3,2)_-1/6 + (3,2)_1/6 + (3bar,2)_-1 + (3bar,2)_1",False,True,False,False,True,True,False,False
+S24,"(3,2)_-1/6 + (3,2)_1/6 + (3bar,2)_-4/6 + (3bar,2)_4/6",False,True,False,False,True,True,False,False
+S25,"(3,2)_-1/6 + (3,2)_1/6 + (3bar,2)_-3/6 + (3bar,2)_3/6",False,True,False,False,True,True,False,False
+S26,"(3,2)_-1/6 + (3,2)_1/6 + (3bar,2)_-2/6 + (3bar,2)_2/6",False,True,False,False,True,True,False,False
+S27,"(1,1)_-1 + (1,2)_3/6 + (3,1)_-2/6 + (3,1)_4/6 + (3bar,2)_-1/6",False,True,True,True,True,True,True,False
+S28,"(1,1)_-1 + (1,2)_3/6 + (3,2)_-1/6 + (3bar,1)_-2/6 + (3bar,1)_4/6",True,True,True,True,True,True,True,False

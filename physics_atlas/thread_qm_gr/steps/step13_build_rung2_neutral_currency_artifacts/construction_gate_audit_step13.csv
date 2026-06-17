@@ -1,0 +1,12 @@
+gate,status,scope,evidence
+C1_step12_union_rejected,pass,step-transfer,"Step 13 treats the Step-12 rule-set union as a rejected control, not as inherited closure."
+C2_enriched_endpoint_currencies,pass,currency carrier,"Endpoint currencies are three-mode structured dynamics rather than typed-carrier collapse."
+C3_single_neutral_currency_declared,pass,currency carrier,"u has four source modes and two distinct shadow maps."
+C4_recovery_low_two_levels,pass,finite diagnostic,"neutral_u combined recovery residual max is 9.916641414829509e-17."
+C5_compression_guard,pass,anti-union,"d_qm=3 d_gr=3 d_u=4 d_union=6, so d_u < d_union."
+C6_union_control_rejected,pass,anti-union,"union_direct_sum recovers but fails compression because d_candidate=6."
+C7_placeholder_control_rejected,pass,negative control,"placeholder recovery residual is 1.4142135623730951 at both levels."
+C8_collapse_control_rejected,pass,negative control,"collapse_typed_seed fails recovery and has identical shadows."
+C9_nonfactorizing_extension,pass,emergence check,"endpoint-only reconstruction residual minimum is 0.37808491927495375."
+C10_next_move_named,pass,frontier,"Next move is RETEST_RUNG_1_REFINE_FIXEDPOINT_ON_NEUTRAL_CURRENCY."
+

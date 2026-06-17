@@ -1,0 +1,112 @@
+{
+  "id": "E001",
+  "edge": "qcd -> hadron-spectrum",
+  "arrow": "up",
+  "source": {
+    "id": "qcd",
+    "kind": "theory_card",
+    "role": "substrate (gauge-field path-integral configurations)"
+  },
+  "target": {
+    "id": "hadron-spectrum",
+    "kind": "observable_readout",
+    "role": "TARGET only; inherits qcd's frozen casting (no fresh casting); the measured hadron mass spectrum"
+  },
+  "scored_tier": "E0",
+  "scored_modality": "emergence-up",
+  "decision_path": "emergence-run-E0",
+  "decision_procedure_trace": {
+    "STEP_0_precondition": {
+      "endpoints_resolve": true,
+      "source_is_frozen_theory_card": true,
+      "target_is_frozen_observable_readout_node": true,
+      "target_inherits_source_casting": true,
+      "modality_tier_pair_emittable": "emergence-up x E0 = allowed (B.8 table: B.2 row, E0 column)",
+      "M_declared_before_computation": true,
+      "no_faithful_M_route": "N/A -- a faithful finite descent-test stand-in WAS constructible (computed below); this is a run-and-tested E0, not a vacuous one"
+    },
+    "STEP_1_descent_test": {
+      "ran": true,
+      "toy_model_M": "Finite 1-parameter family standing in for the lattice transfer-matrix generator. D0 (dissolving/source probe) = the PHYSICAL hadron mass m_phys(g0) = (1/a(g0)) * (O(1) dimensionless gap), with a(g0) ~ exp(-1/(2 b0 g0^2)) the dimensional-transmutation lattice spacing (b0 = 9/(16 pi^2), one-loop Nf=3, textbook & fixed). L0 (native/target probe) = the finite-order correlator currency [1, g0^2, ..., g0^{2(K-1)}] -- the analytic predicates Sigma_f expresses at a FIXED finite truncation WITHOUT running the coupling to the IR. Audit energy C0 = I (legal-energy quotient). Block currencies K_LL,K_DL,K_LD,K_DD and Schur complement Xi_C(D|L)=K_DD - K_DL K_LL^+ K_LD per digest D.1, MP-pseudoinverse.",
+      "refinement_h1": {
+        "stage": "6 g0-samples in [0.9,1.6], K=3 correlator moments",
+        "Xi_raw": 7.838650e8,
+        "K_DD": 3.969174e9,
+        "xi_rel_normalized": 0.197488,
+        "rel_residual_Xi_over_KDD": 0.197488,
+        "verdict": "xi_rel > 0 (raw Xi > 0)"
+      },
+      "refinement_h2": {
+        "stage": "12 g0-samples in [0.85,1.7], K=6 correlator moments",
+        "Xi_raw": 2.250145e9,
+        "K_DD": 5.337248e10,
+        "xi_rel_normalized": 0.042159,
+        "rel_residual_Xi_over_KDD": 0.042159,
+        "verdict": "xi_rel > 0 (raw Xi > 0)"
+      },
+      "report_both_raw_and_normalized": "PAUSE-2 (R-P2, CONTRACT.normalized_xi_criterion): BOTH currencies are reported at each refinement. RAW Xi GROWS (7.84e8 -> 2.25e9) under refinement, but the descent verdict is NOT taken from raw Xi. The NORMALIZED relative residual xi_rel := ||Xi|| / ||K_DD|| SHRINKS (0.197 -> 0.042) yet STAYS BOUNDED AWAY FROM ZERO at a stable positive floor; it does NOT reach the analytic control's machine-zero (~1e-14). The E0/E3 obstruction signal is the STABLE POSITIVE NORMALIZED residual WITH analytic control, NOT the monotone raw growth: a growing raw Xi is not disqualifying and a small raw Xi would not be sufficient for E1 (cf. E005's small-raw-Xi over-read). E0 here rests on the stable positive xi_rel floor + analytic control, not on raw Xi growth.",
+      "refinement_stability_E9": "STABLE on the NORMALIZED residual: xi_rel > 0 (no clean factorization) at BOTH refinements -- the qualitative verdict does not flip. The normalized residual shrinks (0.197 -> 0.042) only as finite polynomials better APPROXIMATE the essential singularity on a bounded grid, but never reaches the analytic-control's machine-zero (~1e-14): exp(-1/(2 b0 g0^2)) is non-analytic at g0=0 and is NOT in the span of any finite analytic correlator currency. (Refinement-stability per E.9 is checked on xi_rel, not on raw Xi; raw Xi growing 7.84e8 -> 2.25e9 is reported but is NOT the verdict.)",
+      "control": "ANALYTIC MACHINE-ZERO CONTROL: an ANALYTIC target (finite polynomial 2 + 1.5 g0^2 - 0.4 g0^4) descends cleanly to a NORMALIZED residual xi_rel = Xi/K_DD ~ 1e-14 (machine-zero) at both refinements -- proving the test is NOT rigged to always return a positive residual. The physical mass's xi_rel stays at a positive floor (0.197 -> 0.042) and FAILS the descent; the analytic target reaches machine-zero and PASSES it. This control is what makes the stable positive xi_rel an analytically-controlled obstruction (a known nonzero floor, not a numerical accident), the E0/E3 signature.",
+      "no_over_read_E3gate": "N/A for sealing here (the descent did not pass). The target's accepted_observables = the mass spectrum; there is no finite functional D0 = A.L0 to over-read.",
+      "result": "Xi > 0 STABLY across two refinements. NO finite linear descent (no D0 = A.L0). DOES NOT seal E1. Continue."
+    },
+    "STEP_2_recognition_search": {
+      "ran": true,
+      "logged_negative": true,
+      "finding": "No NAMED external principle (theorem / physical principle / accepted correspondence / stated ansatz) DERIVES the hadron mass value under a stated assumption. The chiral / dimensional-analysis principles (ChPT, asymptotic freedom) name the running and the symmetry skeleton but do NOT close the GeV-scale number: ChPT's own low-energy constants (f_pi, the chiral condensate) are themselves run-readouts of QCD, so importing ChPT would smuggle the run away (card casting_alternatives, Alt 2). A principle that NAMES the run (lattice QCD) is fine and expected, but it does not DERIVE the number. No recognition-landing. DOES NOT seal E2. Continue.",
+      "modality_recognition_landing_excluded": "recognition-landing (B.6a) requires a single named external principle whose import (under a stated assumption) is the ENTIRE content; here removing any candidate import leaves the run as the only route, so it is not a recognition-landing."
+    },
+    "STEP_3_run_search": {
+      "ran": true,
+      "constructible_non_descending_object": "YES. The hadron mass scale / Lambda_QCD generated by DIMENSIONAL TRANSMUTATION. Non-factorization (B.2) holds and is exhibited in STEP 1: the physical mass carries the essential singularity exp(-1/(2 b0 g0^2)), non-definable from any finite analytic (finite-truncation) shortcut -- a strict extension over the bare-coupling/finite-order layer. Two base descriptions identical in the finite-order correlator currency Sigma_f differ in the run-generated physical scale.",
+      "run_method_already_exists": "YES -- lattice QCD: the SU(3) gauge-field path integral sampled by Monte-Carlo importance sampling on a finite grid, continuum limit a->0 along a line of constant physics (the lattice-gauge-theory node is experimentally_established). This is a CONSTRUCTIBLE existing run METHOD, not a someday-run.",
+      "run_target": "the proton/pion/hadron mass spectrum (the GeV scale) as the exponential decay rate (transfer-matrix gap) of gauge-invariant interpolator correlators.",
+      "no_free_mass_parameter": "There is NO free proton/hadron MASS parameter: under physical-quark-mass lattice QCD the quark masses and the coupling/scale are fixed independently (scale set by ONE hadronic input, running by dimensional transmutation); the proton-mass / hadron-spectrum readout is OUT-OF-SAMPLE and NOT fitted.",
+      "result": "Constructible non-descending run-object positively exhibited. SEAL E0 (run-only). DEFER to Run-Target Manifest -- spec'd, NOT run, NOT derived."
+    },
+    "STEP_4_foreclosure": "not reached (sealed at STEP 3)."
+  },
+  "value_split": null,
+  "E0_basis_normalized_residual": {
+    "review_fix": "R-P2 (Pause-2: CONTRACT.normalized_xi_criterion / EXTERNAL_REVIEW_PAUSE2 OTHER FINDINGS E001)",
+    "statement": "E001's E0 seal rests on the STABLE POSITIVE NORMALIZED relative residual (xi_rel := ||Xi||/||K_DD||) PLUS the analytic machine-zero control -- NOT on the raw Xi norm or its growth.",
+    "raw_Xi": {"h1": 7.838650e8, "h2": 2.250145e9, "trend": "GROWS under refinement (reported, but NOT the verdict)"},
+    "normalized_xi_rel": {"h1": 0.197488, "h2": 0.042159, "trend": "SHRINKS toward a stable POSITIVE floor; stays bounded away from machine-zero", "floor_status": "positive (does not reach ~1e-14)"},
+    "analytic_machine_zero_control": {"target": "finite polynomial 2 + 1.5 g0^2 - 0.4 g0^4", "xi_rel": "~1e-14 at both refinements", "role": "certifies the test is not rigged; the positive xi_rel floor is an analytically-controlled obstruction, not a numerical accident"},
+    "verdict_basis": "E0/E3 obstruction = stable positive xi_rel + analytic control (CONTRACT.normalized_xi_criterion.E0_E3_criterion); raw Xi growth is neither necessary nor sufficient. A small raw Xi with imported predicates would be an OVER-READ (cf. E005), and a large/growing raw Xi is NOT disqualifying."
+  },
+  "run_target_stub": {
+    "substrate": "lattice QCD: SU(3) gauge-field path integral with physical-quark-mass lattice fermions on a finite Euclidean grid (spacing a, volume V), Monte-Carlo importance sampling of e^{-S_lattice}.",
+    "lens": "gauge-invariant hadron-interpolator two-point correlators C(t); the mass is the t->inf exponential decay rate (smallest transfer-matrix gap).",
+    "out_of_sample_validator": "predict the hadron mass spectrum (proton, pion, ...) after fixing quark masses + scale from ONE independent hadronic input; compare to measured masses NOT used in the fit (primer 8). The atlas STOPS here: we spec the run, we do NOT run it, we do NOT derive the constant.",
+    "frozen_pre_scoring": true
+  },
+  "rationale": "Edge qcd -> hadron-spectrum, arrow up. STEP 1 descent-test: built a declared finite toy M (transfer-matrix gap + textbook dimensional-transmutation running a(g0)~exp(-1/(2 b0 g0^2))) and computed the Schur-complement adequacy residual at two refinements, reporting BOTH currencies (R-P2). RAW Xi GROWS (7.84e8 -> 2.25e9), but the descent verdict is read from the NORMALIZED relative residual xi_rel = Xi/K_DD = 0.197 (h1) and 0.042 (h2): STABLY POSITIVE at a floor bounded away from zero, while an analytic control target descends to xi_rel ~ 1e-14 (machine-zero). The E0 seal rests on this stable positive NORMALIZED residual + the analytic machine-zero control, NOT on the raw Xi growth. The physical hadron mass carries the essential singularity of dimensional transmutation and does NOT factor as a finite linear functional of any finite-order correlator currency -- no clean finite descent, so NOT E1. STEP 2 recognition-search (logged negative): no named external principle DERIVES the GeV-scale number under a stated assumption (ChPT LECs are themselves run-readouts) -- NOT E2. STEP 3 run-search: a constructible non-descending run-object EXISTS (the hadron mass / Lambda_QCD by dimensional transmutation), generated only by RUNNING an already-existing method (lattice QCD Monte-Carlo path integral), with no free hadron-mass parameter and an out-of-sample readout. This positively seals E0 (run-only, deferred). The no-shortcut law: the absence of the finite descent IS the genuineness of the emergence. This is the canonical calibration anchor; typed from first principles via the procedure it comes out E0 as the procedure demands -- not read off any provisional guess.",
+  "modality_tier_compat_check": "emergence-up (B.2) x E0 is in the B.8 emittability table; shadow-down E0 and emergence-up E1 (the forbidden pairs) are not invoked.",
+  "no_smuggling_gates": {
+    "E.1_M_declared_before_computation": "pass (M declared in _E001_toy.py before any Xi computed)",
+    "E.3_no_over_read": "N/A (descent did not pass; nothing over-read)",
+    "E.5_conservative_default": "pass -- E0 reached by POSITIVE construction of a run-object (STEP 3), not as a doubt-haven; doubt would have demoted to E3, but the run-object is exhibited",
+    "E.7_double_run_interlock": {
+      "descent_test_logged_negative": true,
+      "recognition_search_logged_negative": true,
+      "non_descending_run_object_exhibited": true,
+      "run_target_stub_frozen_pre_scoring": true
+    },
+    "E.8_anti_emergence_derivation": "pass -- the up arrow is NOT run as a derivation; emergence certified as non-factorization (a gap), the run-object only spec'd not executed",
+    "E.9_refinement_stability": "pass -- Xi>0 verdict stable across h1,h2 (no flip)"
+  },
+  "confidence": "high",
+  "read_only_obeyed": true,
+  "files_read": [
+    "/home/repos/six-birds-papers/SIX_BIRDS_ANTI_REDUCTIONISM_PRIMER.md",
+    "/home/repos/six-birds-papers/physics_atlas/prereg/SCIENCE_DIGEST.md",
+    "/home/repos/six-birds-papers/physics_atlas/prereg/TYPING_RUBRIC.md",
+    "/home/repos/six-birds-papers/physics_atlas/prereg/closure_card_manifest.jsonl (grepped: qcd card; confirmed hadron-spectrum has no card -> observable_readout node)"
+  ],
+  "forbidden_files_not_read": [
+    "edge_manifest.jsonl", "edge_manifest_notes.md", "CONTRACT.json", "FREEZE_NOTES.md",
+    "theory_manifest_notes.md", "CHANGELOG*", "EXTERNAL_REVIEW*",
+    "provisional_tier_guess / calibration_known_tier (not looked up)"
+  ]
+}

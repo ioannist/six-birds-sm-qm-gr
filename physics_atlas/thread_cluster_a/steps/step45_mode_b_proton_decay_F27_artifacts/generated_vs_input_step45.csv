@@ -1,0 +1,6 @@
+item,status,detail
+clean_shadow_support,read_from_step41,target 2|3 support with Delta_fact empty
+dynamical_breaking_support,read_from_step41,contaminated single-factor support with Delta_fact witnesses
+baryon_readout,declared_f27_test_readout,"B(q)=1/3, B(lepton)=0"
+xy_generators,computed_from_step41_witnesses,orbit-enlarging edges are generated from Delta_fact witness rows
+verdict,computed,CANDIDATE_SHADOW_VS_BREAKING_FORK_TYPED

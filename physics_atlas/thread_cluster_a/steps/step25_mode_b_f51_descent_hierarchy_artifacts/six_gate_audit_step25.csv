@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,branch target is read from Step-24 generated rows; no carrier axiom fixes the branch answer
+dependency_trace,True,dependency_trace_step25.csv lists all axiom families used
+ablation,True,ablation_step25.csv shows no single answer-equivalent axiom
+negative_controls,True,a non-parent one-factor closer fails by computed obstruction
+stage_ii_earning,True,target branch roles reproduce charge-gravity and cubic-charge balance
+no_single_axiom_equivalence,True,removing each declared axiom blocks support rather than revealing a single encoded answer

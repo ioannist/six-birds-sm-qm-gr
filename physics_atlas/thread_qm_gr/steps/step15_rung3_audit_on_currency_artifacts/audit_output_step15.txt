@@ -1,0 +1,8 @@
+Step 15 RUNG_3 audit on refinement-stable currency
+Consistent shared-mode residual max: 0.0
+Consistent refinement commutator max: 0.0
+Route-mismatch shared-mode residual min: 0.4472135954999581
+Route-mismatch control passes: False
+Audit nontrivial: True
+Audit coheres: True
+Next move: STEP16_FULL_LADDER_DESCENT

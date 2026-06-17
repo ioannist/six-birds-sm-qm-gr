@@ -1,0 +1,6 @@
+Step 11 RUNG_1_REFINE_FIXEDPOINT construction
+Built adequacy max: 0.0
+Placeholder adequacy min: 0.8780420215921064
+Endpoint nonfactorization min: 0.7870061694592002
+Candidate built: True
+Next build: RUNG_2_NEUTRAL_CURRENCY

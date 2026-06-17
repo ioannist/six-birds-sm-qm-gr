@@ -1,0 +1,7 @@
+Cluster A Step 6 E043 horn adjudication
+Verdict: e043_horn_adjudication_constructed
+derivation sequence: 6->5->4->2->1->1
+broad measure sequence: 6->6->6->6->6->6
+sharp measure sequence: 3->2->2->1->1
+certified horns: derivation_attractor;sharp_selecting_measure
+failed horns: broad_anthropic_measure

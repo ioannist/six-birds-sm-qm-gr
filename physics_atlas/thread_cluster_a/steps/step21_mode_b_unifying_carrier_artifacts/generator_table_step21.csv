@@ -1,0 +1,8 @@
+operation,input,output,P_role
+sector_package,slots,two q-sector fibers,P5
+trace_balance,sector fiber sizes,primitive integer neutral generator,P2/P6
+bridge_move_a,"c0,w0",promoted bridge state U_a,P3
+bridge_move_b,"c1,w1",promoted bridge state U_b,P3
+dual,single slot,opposite charge role,P1
+pair,two slots,summed-charge pair role,P1
+trace_metric,charge generator and weak generator,normalization audit,P6

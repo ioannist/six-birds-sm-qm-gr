@@ -1,0 +1,53 @@
+{
+  "id": "E002",
+  "edge": "statistical_mechanics -> thermodynamics",
+  "arrow": "down",
+  "scored_tier": "E1",
+  "scored_modality": "shadow-down",
+  "decision_path": "descent-E1",
+  "diagnostic": {
+    "descent": {
+      "ran": true,
+      "result": "Xi = 0 (kernel-containment holds) stably at two refinements; clean computable descent",
+      "toy_model_M": {
+        "source_layer": "statistical_mechanics (Gibbs canonical ensemble of a finite N-unit two-level/Ising chain; microstates Omega_N with weight e^{-beta H}/Z)",
+        "target_layer": "thermodynamics (autonomous equilibrium macrostate state-space, Callen/Legendre casting)",
+        "macrostate_quotient_lens_f": "a microstate's thermo-relevant content is its total energy; the thermodynamic state is labelled by the control parameter beta, probed on a FINITE grid {beta_k} of macrostates (each grid point = one thermo macrostate)",
+        "carrier": "finite set of m macrostates (beta-grid points); probe families are finite-rank response vectors over this carrier (matrices L0, D0)",
+        "L0_native_target_thermo": "thermodynamic state functions on the quotient: internal energy U(beta), entropy S(beta), Helmholtz free energy F(beta)=U-S/beta, Massieu/Planck potential Phi=-beta F=lnZ, and the constant 1 (target.accepted_observables: temperature/pressure-analog, entropy, energy, free energies)",
+        "D0_dissolving_source_statmech": "stat-mech accepted readouts from the partition function: free energy F=-lnZ/beta, mean energy U=<H>, Gibbs entropy S=lnZ+beta U, Massieu lnZ",
+        "audit_energy_C0": "identity (uniform PSD audit) on the m-point macrostate carrier",
+        "refinement_chain": "h1 (N=4, m=6 beta-grid)  ⊏  h2 (N=16, m=24 beta-grid)"
+      },
+      "Xi_values": {
+        "h1_coarse_N4_m6": {"Xi_rel_norm": 3.78e-11, "kernel_containment": true, "rank_L0": 5, "rank_L0_D0_stacked": 5},
+        "h2_fine_N16_m24": {"Xi_rel_norm": 1.50e-11, "kernel_containment": true, "rank_L0": 5, "rank_L0_D0_stacked": 5},
+        "interpretation": "Xi -> 0 to machine precision and STABLE across both refinements (gate E.9 passes); the stat-mech accepted ensemble readouts {F,U,S,lnZ} factor exactly through the thermodynamic state functions {U,S,F,Phi,1}, i.e. D0 = A.L0 (exact-adequacy theorem, Boltzmann/Gibbs bridge: U_statmech=U_thermo, S_Gibbs=S_thermo, F=-lnZ/beta, Phi=lnZ a Massieu potential)"
+      },
+      "no_over_read_E3_check": {
+        "ran": true,
+        "probe": "appended the specific heat CV = beta^2 Var(E) -- a stat-mech FLUCTUATION/SUSCEPTIBILITY that is NOT a thermodynamic state-function primitive in the autonomous-thermo Sigma_f (the thermodynamics card explicitly lists fluctuation magnitudes as NOT in Sigma_f)",
+        "result_h1": {"Xi_rel_norm": 6.61e-07, "kernel_containment": false, "rank_jumps_to": 6},
+        "result_h2": {"Xi_rel_norm": 6.57e-06, "kernel_containment": false, "rank_jumps_to": 6},
+        "verdict": "over-read FAILS containment and produces a positive blind-spot residual -> confirms the E1 descent recovers ONLY target.accepted_observables and does NOT over-read a source-only observable; the fluctuation/susceptibility content is a located blind-spot that would push to a higher tier if claimed, exactly as gate E.3 requires"
+      }
+    },
+    "recognition": null,
+    "emergence_run": null,
+    "gap": null
+  },
+  "gates": {
+    "E.0_casting_not_tuned": "pass -- both cards cite standard independent constructions (Gibbs/Boltzmann for stat-mech; Callen/Legendre autonomous thermo); casting not chosen to hit a tier",
+    "E.1_M_declared_before_compute": "pass -- M (carrier, L0, D0, C0, refinement chain) declared before computing Xi",
+    "E.2_modality_test_passed": "pass -- DESCENT-LEGALITY (B.1) returned PASS: quotient exists, source readout pushed through it lands in target Sigma_f, Xi=0, no over-read",
+    "E.3_no_over_read": "pass -- recovered answers lie in target.accepted_observables; source-only CV correctly excluded (positive obstruction when over-read attempted)",
+    "E.4_relabeling_is_not_a_connection": "pass -- not a relabel: removing the Boltzmann/Gibbs ensemble->macrostate bridge leaves a genuine residual quotient relation; the macro layer has its own Sigma_f and accepted_observables distinct from the micro layer",
+    "E.5_conservative_default": "n/a -- no doubt at Step 1; Xi stably zero, verdict did not flip",
+    "E.9_refinement_stability": "pass -- Xi=0 verdict identical (kernel-containment True) at both h1 and h2; not tier-fragile",
+    "may_source_E1_rule": "pass -- statistical_mechanics card is experimentally_established (a full theory card), so it may source an E1 descent",
+    "B.8_modality_tier_emittable": "pass -- (shadow-down, E1) is an emittable pair"
+  },
+  "rationale": "Edge is a DOWN arrow (statistical_mechanics is the finer/source layer; thermodynamics the coarser/target). Decision-procedure Step 0: both endpoints are frozen full theory cards; a faithful finite toy model exists (canonical N-unit two-level Gibbs ensemble); source is experimentally_established so it may source E1; modality is Descent/Shadow (B.1). Step 1 DESCENT-TEST: on the declared finite M, the adequacy residual Xi (Schur complement K_DD - K_DL K_LL^+ K_LD) is 0 to machine precision (rel ~1e-11) and STABLE across two refinements h1 (N=4,m=6) and h2 (N=16,m=24), with kernel-containment ker L0 subset ker D0 confirmed (rank(L0)=rank([L0;D0])=5). The stat-mech accepted ensemble readouts factor exactly through the thermodynamic state functions (D0 = A.L0) -- the Boltzmann/Gibbs bridge as a clean computable descent. No-over-read (E.3) verified by an explicit guard: adding the stat-mech-only specific heat CV (a fluctuation/susceptibility absent from thermo's Sigma_f) breaks containment and yields a positive blind-spot residual, so the descent recovers only target.accepted_observables. All Step-1 conditions for E1 met -> SEAL E1, STOP. Steps 2-4 (recognition / run / gap) are not reached. This is a computable descent (the runnable shadow), not a derivation of stat-mech from thermo and not an empirical claim -- Xi=0 licenses the tier on the declared finite toy model only.",
+  "confidence": "high",
+  "read_only_obeyed": true
+}

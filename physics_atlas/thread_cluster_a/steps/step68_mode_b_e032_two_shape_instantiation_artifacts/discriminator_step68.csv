@@ -1,0 +1,4 @@
+shape_id,touches_D,touches_only_Sigma_f_readout,E_idempotent,new_dynamical_parameter,readout_enrichment_kind,born_weights_reproduced,discriminator_classification
+shape_A_collapse_D_touch,True,False,False,True,global_branch_pruning,True,D_touch_shape_A
+shape_B_MWI_indexical_Sigma_extension,False,True,True,False,per_copy_indexical,True,Sigma_f_only_shape_B
+falsifier,False,False,,,accepted selection theory touching neither D nor Sigma_f,,would_falsify_non_descending_object_claim

@@ -1,0 +1,7 @@
+level_regions,carrier_dimension,native_lens,sector,raw_trace_xi,trace_kdd,normalized_trace_xi,scope
+2,4,asymptotic_safety_like,p3_route_mismatch,0.0,1.0,0.0,P3 route-mismatch child sector
+2,4,asymptotic_safety_like,amplitude_geometry,1.0,1.0,1.0,Step 2 LQG amplitude sector retested under AS lens
+2,4,asymptotic_safety_like,area_shadow_price,0.9999999999999998,0.9999999999999998,1.0,Step 1 HED area sector retested under AS lens
+4,6,asymptotic_safety_like,p3_route_mismatch,0.0,1.0,0.0,P3 route-mismatch child sector
+4,6,asymptotic_safety_like,amplitude_geometry,1.0,1.0,1.0,Step 2 LQG amplitude sector retested under AS lens
+4,6,asymptotic_safety_like,area_shadow_price,1.0,1.0,1.0,Step 1 HED area sector retested under AS lens

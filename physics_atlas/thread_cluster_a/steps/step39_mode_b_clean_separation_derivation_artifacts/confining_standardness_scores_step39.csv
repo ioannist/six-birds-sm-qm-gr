@@ -1,0 +1,13 @@
+dimensions,support_key,support_score,witness_scalar_key,confining_subgroups,confining_charged_fermion_type_count,confining_charged_massive_vector_count,mass_completed,clean_separation,standard_confining_sector,relaxed_allows_vectors,is_target_reference
+2|3,rank_one_fundxantifund:-1 + rank_one_fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxantifund:1 + rank_one_fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,True
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True,True,True,False
+4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,4|15|3|1,antifund:-1,3,3,6,True,False,False,True,False
+4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,4|15|3|1,antifund:1,3,3,6,True,False,False,True,False
+4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,4|15|3|1,antifund:1,3,3,6,True,False,False,True,False
+4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,4|15|3|1,antifund:-1,3,3,6,True,False,False,True,False

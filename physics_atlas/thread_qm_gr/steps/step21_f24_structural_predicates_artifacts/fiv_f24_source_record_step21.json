@@ -1,0 +1,17 @@
+{
+  "source_basis": "Step 21 reuses the FIV grounding read in Step 20 and makes those predicates structural.",
+  "source_file": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+  "lines_read": {
+    "F24_LayerMultiplicity": "1418-1514",
+    "F3_Memory": "2433-2495",
+    "F13a_Hiddenness": "1050-1162",
+    "F22_InterfaceMediation": "4638-4678",
+    "F51_CommonRefinement": "8528-8582",
+    "F6_Budget": "1620-1718",
+    "F9_ResidualStatus": "2071-2140",
+    "F52_ScopeBoundary": "8663-8712",
+    "F2_CoarseningRepair": "2286-2378",
+    "F39_CoarseningFibers": "7120-7225"
+  },
+  "step20_source_record": "/home/repos/six-birds-papers/physics_atlas/thread_qm_gr/steps/step20_f24_predicate_construction_artifacts/fiv_f24_source_record_step20.json"
+}

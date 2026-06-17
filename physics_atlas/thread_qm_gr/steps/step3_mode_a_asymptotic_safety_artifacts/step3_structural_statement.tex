@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 3 Structural Statement: Asymptotic-Safety P3 Audit}
+
+\begin{definition}[Lead P3 recognition source]
+For Step 3, the lead named recognition source is asymptotic safety:
+Weinberg's fixed-point scenario together with Reuter's nonperturbative
+gravitational renormalization-group flow.  Its declared assumption is the
+existence of a non-Gaussian UV fixed point with a finite-dimensional critical
+surface in the relevant theory space.
+\end{definition}
+
+\begin{definition}[Reused finite carrier]
+At refinement level \(r\in\{2,4\}\), reuse the Step 1/2 carrier
+\[
+  E_r=\mathbb{R}^{r+2},\qquad C=I.
+\]
+The first \(r\) coordinates are boundary entanglement-ledger coordinates
+\(s_1,\ldots,s_r\).  The last two coordinates are \(g\), a
+geometry-amplitude coordinate, and \(m\), a P3 route-mismatch coordinate.
+
+The asymptotic-safety-like native lens is
+\[
+  L^{\mathrm{AS}}_r=\{m\}.
+\]
+The tested dissolving sectors are
+\[
+  D^{\mathrm{P3}}_r=\{m\},\qquad
+  D^{\mathrm{amp}}_r=\{g\},\qquad
+  D^{\mathrm{area}}_r=\{s_i/\sqrt r:1\le i\le r\}.
+\]
+\end{definition}
+
+\begin{proposition}[P3-only finite-carrier recognition]
+On the declared carrier,
+\[
+  \Xi_I(D^{\mathrm{P3}}_r\mid L^{\mathrm{AS}}_r)=0
+\]
+for \(r=2,4\).  At the same refinement levels,
+\[
+  \frac{\tr\,\Xi_I(D^{\mathrm{amp}}_r\mid L^{\mathrm{AS}}_r)}
+       {\tr K_{DD}^{\mathrm{amp}}}=1.0,
+  \qquad
+  \frac{\tr\,\Xi_I(D^{\mathrm{area}}_r\mid L^{\mathrm{AS}}_r)}
+       {\tr K_{DD}^{\mathrm{area}}}=1.0 .
+\]
+\end{proposition}
+
+\begin{proof}
+The P3 row is exactly in the span of the AS-like source row, so exact
+adequacy holds for that child sector.  The amplitude and area rows are
+orthogonal to the AS-like native span, so the Schur correction removes no
+currency from them.  The numerical values are computed in
+\texttt{simulate\_step3\_asymptotic\_safety\_xi.py}.
+\end{proof}
+
+\begin{remark}[Recognition-lane map]
+The finite diagnostics now separate three recognition profiles: HED closes
+the area-shadow sector, LQG closes the amplitude/geometry profile with a
+route-protocol component, and AS closes the P3 route-mismatch row.  Step 3
+does not couple these profiles; it only records the P3-only child source.
+\end{remark}
+
+\end{document}

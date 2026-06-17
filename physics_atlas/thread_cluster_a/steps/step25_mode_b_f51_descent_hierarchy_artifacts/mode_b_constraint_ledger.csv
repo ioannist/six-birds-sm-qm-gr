@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP25_INPUT_CLOSERS,ModeB,step25_mode_b_f51_descent_hierarchy,carrier,"Step 25 reuses the Step-24 generated closer set: the split-sector child r1|2_u1 and the one-factor closer rows."
+C_CLUSTER_A_STEP25_DESCENT_AUDIT,ModeB,step25_mode_b_f51_descent_hierarchy,descent_audit,"The F51 parent-shadow obstruction is computed by comparing generated parent images against child target roles."
+C_CLUSTER_A_STEP25_EXACT_PARENT,ModeB,step25_mode_b_f51_descent_hierarchy,diagnostic,"SU(5) has charged obstruction 0 and full obstruction 0 under the generic partition dual/pair rewrite."
+C_CLUSTER_A_STEP25_SCOPED_PARENT,ModeB,step25_mode_b_f51_descent_hierarchy,diagnostic,"SO(10) has charged obstruction 0 and full obstruction 1 because of one neutral residual."
+C_CLUSTER_A_STEP25_NEGATIVE_CONTROL,ModeB,step25_mode_b_f51_descent_hierarchy,can_fail,"SU(6)_chiral_example fails the parent test by computed obstruction and serves as the non-parent control."
+C_CLUSTER_A_STEP25_NONCLAIM_BOUNDARY,ModeB,step25_mode_b_f51_descent_hierarchy,honesty,"Finite parent-shadow hierarchy only; no theorem of physical unification and no frame-transfer status upgrade."

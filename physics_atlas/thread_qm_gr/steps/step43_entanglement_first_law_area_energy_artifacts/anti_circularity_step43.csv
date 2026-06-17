@@ -1,0 +1,7 @@
+gate,passes,witness,evidence
+separate_deltaS_and_deltaH_paths,True,central_difference_entropy_vs_modular_trace,residual -6.82183476375e-13
+second_order_relative_entropy_positive,True,t=0.1,Delta S_rel 4.261526688e-05
+not_all_orders_identity,True,finite_t_deviation,largest deviation 0.00416640347309
+large_perturbation_can_fail,True,deviation grows with t,1.06689471414e-05->0.00416640347309
+rt_coefficient_from_prior_artifact,True,holo_refinement_D2;holo_refinement_D3,coefficient computed from Step41 saturated RT rows
+relative_entropy_matches_deviation,True,all finite t rows,S(rho(t)||rho0)=t deltaH - deltaS(t)

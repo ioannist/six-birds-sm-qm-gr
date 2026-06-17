@@ -1,0 +1,55 @@
+{
+  "id": "E021",
+  "scored_tier": "E3",
+  "scored_modality": "emergence-up",
+  "decision_path": "foreclosed-gap-E3",
+  "diagnostic": {
+    "descent": {
+      "ran": true,
+      "node_kind_of_target": "open_question",
+      "node_kind_note": "Target cosmological-constant is an open_question node (the observed value/scale of Lambda / dark-energy density). STEP 0b forces the E0/E3 branch ONLY: an open_question target can NEVER seal E1 or E2 (no accepted_observables set to descend INTO, no named principle imported into it). Descent test was still run to LOCATE the obstruction.",
+      "toy_model_M": "Finite linear-algebra stand-in for 'does the VALUE of Lambda factor through GR's geometric lens?'. Carrier R^(k+1): k geometric DOFs that GR's lens RETAINS (curvature-invariant content) plus 1 explicit free coordinate lambda (the Einstein-equation input G_{mu nu}+Lambda g_{mu nu}=kappa T_{mu nu}; lambda trades against vacuum/matter energy -> the Lambda<->vacuum-energy degeneracy, so it is an INDEPENDENT coordinate, not a function of retained geometry). L0 (native/target probe) = GR accepted geometric observables = linear functionals of the k geometric DOFs only, BLIND to lambda (faithful to the GR card Sigma_f, which excludes 'the VALUE of Lambda from first principles'). D0 (dissolving/source probe) = readout of the lambda coordinate. Audit energy C0 = I.",
+      "refinements": {"h1_k": 3, "h2_k": 6},
+      "Xi_values": {"h1": 1.0, "h2": 1.0},
+      "ker_containment_check": {"max_abs_D0_on_kerL0": {"h1": 1.0, "h2": 1.0}, "ker_L0_subset_ker_D0": false},
+      "verdict": "Xi = 1.0 > 0 STABLE across both refinements; ker L0 NOT subset ker D0; no factorization D0 = A*L0 exists. The value/scale of Lambda is non-definable from GR's diffeomorphism-invariant curvature lens -- a positive blind-spot currency (Xi = 1.0). Descent FAILS. (E1 also independently foreclosed by open_question node-kind, STEP 0b.) No over-read possible (nothing descends).",
+      "e1_sealed": false
+    },
+    "recognition": {
+      "ran": true,
+      "logged_negative": true,
+      "searched": "A NAMED, citable external principle that CLOSES/derives the observed value of Lambda (~10^-122 in Planck units) under a stated closure assumption.",
+      "candidates_considered": [
+        "QFT vacuum-energy computation: gives a value ~120 orders of magnitude too large (the cosmological-constant problem) -- it does NOT close the observed value; it is the obstruction, not a closure.",
+        "Anthropic / multiverse measure selection: not a single named, accepted, load-bearing principle that DERIVES the value; a selection argument over an unconstructed ensemble, not a closure import.",
+        "Imported-Lambda content (E028b leg): that is Lambda imported INTO lambda_cdm AS a named input, not a principle that derives its VALUE from GR -- it presupposes the value rather than closing it."
+      ],
+      "found_named_principle": false,
+      "verdict": "No named external principle DERIVES the value under a stated assumption. Also foreclosed by node-kind: nothing can be imported INTO an open_question to seal E2 (STEP 0b). E2 NOT sealed."
+    },
+    "emergence_run": {
+      "ran": true,
+      "logged_negative": true,
+      "searched": "A CONSTRUCTIBLE non-descending run-object (B.2 non-factorization) whose generation PROVABLY REQUIRES a run that ALREADY EXISTS as a method, and whose readout is THE VALUE/scale of Lambda within the GR (or any accepted) substrate.",
+      "non_factorization_holds": true,
+      "constructible_run_object_exhibited": false,
+      "contrast_with_E0_anchor": "Unlike QCD -> proton mass (E001), where physical-quark-mass lattice QCD is a constructible, already-existing run that GENERATES the GeV scale by dimensional transmutation, there is NO constructible substrate run within GR whose readout is the value of Lambda. GR carries Lambda as a free LAYER PARAMETER / input (per the GR card: 'Lambda and G are layer parameters/inputs, flagged so no edge derives them'); there is no lattice/run that OUTPUTS ~10^-122. This is the C.7 E0/E3 split: generation-by-a-constructible-run would be E0, but here NO constructible run whose readout is that value exists -> the 'why this value / naturalness / selection' case is E3.",
+      "e0_sealed": false,
+      "e0_doubt_haven_check": "E.5/E.7: E0 is NOT a fallback. Sealing E0 needs the POSITIVE construction of a non-descending run-object; none exists. Conservative-default demotes to E3, not E0. No run_target_stub frozen; E.7 interlock not satisfiable (correctly).",
+      "descent_test_logged_negative": true,
+      "recognition_search_logged_negative": true,
+      "non_descending_run_object_exhibited": false,
+      "run_target_stub_frozen_pre_scoring": false
+    },
+    "gap": {
+      "sealed_tier": "E3",
+      "e3_subreason": "run_and_failed_no_constructible_run",
+      "not_no_faithful_M": "A faithful finite M WAS constructible (the Lambda-as-free-coordinate vs geometric-lens model); the descent test was BUILT and FAILED (Xi=1.0 stable), distinct from a vacuous no_faithful_M E3.",
+      "located_obstruction": "The value/scale of Lambda is NOT in GR's Sigma_f: GR's lens retains diffeomorphism-invariant curvature content and treats Lambda as an independent input (degenerate with vacuum energy). The missing predicate is 'the value of Lambda as a function of retained geometric content' -- factorization D0 = A*L0 provably fails (Xi = 1.0 > 0, ker L0 not subset ker D0, stable across refinements). No named principle derives the value; no constructible run within the substrate generates it. The 'why THIS value / naturalness' question is a sharpened cross-layer consistency gap (rubric C.7 E3 leg).",
+      "anti_control_consistency": "E021 is the Lambda E3 anti-control (must_not_seal_E1_or_E2). Computed tier E3 is in {E3, E0} and is NOT E1/E2 -> anti-control rule satisfied. No E0 seal (no pre-frozen run_target_stub, E.7 not logged), consistent with the expectation that this anti-control lands E3, not E0."
+    }
+  },
+  "rationale": "Arrow up (emergence). Target cosmological-constant is an open_question node, so STEP 0b forecloses E1/E2 by node-kind regardless of any number. The descent test was still run on a declared, refinement-stable finite toy model that faithfully encodes the GR card's own Sigma_f fact (Lambda is a free layer input, non-definable from the geometric lens): Xi = 1.0 > 0 STABLE at k=3 and k=6, ker L0 not subset ker D0 -> no factorization, descent FAILS (E1 out). Recognition-search logged negative: no named external principle derives the observed value (QFT vacuum energy is off by ~120 orders = the cosmological-constant problem; anthropic/multiverse is not a single accepted closure principle) (E2 out). Run-search logged negative: non-factorization holds, but there is NO constructible already-existing run whose readout is the value of Lambda within the GR substrate -- unlike lattice QCD for the proton mass, Lambda is an input, not a run-generated scale (E0 out; E0 is not a doubt-haven per E.5/E.7). Therefore foreclosure -> E3: a located, typed open gap (the C.7 'why this value / naturalness' leg). Modality emergence-up, tier E3, an emittable (modality,tier) pair (B.8).",
+  "confidence": "high",
+  "read_only_obeyed": true
+}

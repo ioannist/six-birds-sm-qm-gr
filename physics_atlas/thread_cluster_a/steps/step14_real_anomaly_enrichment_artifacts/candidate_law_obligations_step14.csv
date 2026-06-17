@@ -1,0 +1,5 @@
+obligation,status,witness
+faithful_enrichment,advanced,"real SU(3), SU(2), U(1), gravitational, Witten, and SU(5)-style anomaly coefficients computed exactly"
+independently_checkable_consequence,scoped_for_step15,minimal irreducible anomaly-cancellation support
+derived_formula,advanced,"closed-form anomaly-equation family Y_L=-3Y_Q, Y_e=6Y_Q, {Y_u,Y_d}={-4Y_Q,2Y_Q}"
+limit_recovery,advanced,SM one-generation anomaly coefficients all vanish; Q_proton=-Q_e recovered under Y_Q=1/6 normalization

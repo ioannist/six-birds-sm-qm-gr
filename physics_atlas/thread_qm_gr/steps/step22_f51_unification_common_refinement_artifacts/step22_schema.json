@@ -1,0 +1,50 @@
+{
+  "step": 22,
+  "orientation": "Native F51 unification as common refinement",
+  "active_residual": "R_child_E018_after_F24_structural_predicate_classification",
+  "carrier": {
+    "type": "complete finite 16-state mode carrier",
+    "parent": "pi_L=I4",
+    "children": ["q_QM=(d0,d1,d2)", "q_GR=(d0,d2,d3)"],
+    "control": "status_conflict_control"
+  },
+  "candidate_move": {
+    "id": "apply_F51_to_L",
+    "description": "Verify parent-to-children projection squares and status compatibility for L."
+  },
+  "final_verdict": {
+    "type": "native_F51_unification_complete",
+    "F51_verdict": "unification_holds_on_carrier",
+    "L_f51_unification_pass": true,
+    "status_conflict_control_pass": false,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "F51_source_read": true,
+    "projection_residuals": {
+      "QM": 0.0,
+      "GR": 0.0
+    },
+    "strict_delta_counts": {
+      "QM": 8,
+      "GR": 8
+    },
+    "shared_overlap_audit_residual": 0.0,
+    "status_compatibility_computed": true
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "L satisfies F51 common-refinement unification on the finite carrier."
+    ],
+    "analytical_structural": [
+      "Status compatibility is computed from child descent statuses and shared audit overlap."
+    ],
+    "organizational_audit": [
+      "F51 source record and status-conflict control are saved."
+    ],
+    "remaining_external_content": [
+      "Broader frame transfer remains external review."
+    ]
+  }
+}

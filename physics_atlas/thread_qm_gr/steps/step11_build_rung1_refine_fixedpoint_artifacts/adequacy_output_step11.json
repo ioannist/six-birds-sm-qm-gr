@@ -1,0 +1,117 @@
+{
+  "construction": {
+    "rung_id": "RUNG_1_REFINE_FIXEDPOINT",
+    "levels": [
+      1,
+      2,
+      3
+    ],
+    "carrier": "two-channel finite carrier: record channel plus locality channel over 2^n cells",
+    "closure": "idempotent projection (record, locality) -> shared channel average",
+    "lift": "cell-duplication refinement lift applied to both channels",
+    "qm_side_coarsening": "record-channel projection",
+    "gr_side_coarsening": "locality-channel projection",
+    "idempotence_errors": {
+      "level_1": 0.0,
+      "level_2": 0.0,
+      "level_3": 0.0
+    },
+    "placeholder": "identity closure with same lift; tests whether commutation alone is toothless"
+  },
+  "thresholds": {
+    "built_adequacy_max": 1e-10,
+    "placeholder_adequacy_min": 0.25,
+    "endpoint_nonfactorization_min": 0.25
+  },
+  "built_transition_diagnostics": [
+    {
+      "transition": "1->2",
+      "cells_n": 2,
+      "cells_np1": 4,
+      "commutator_residual": 0.0,
+      "fixedpoint_discrepancy_n": 0.0,
+      "fixedpoint_discrepancy_np1": 0.0,
+      "descent_discrepancy_n": 0.0,
+      "descent_discrepancy_np1": 0.0,
+      "adequacy_residual": 0.0
+    },
+    {
+      "transition": "2->3",
+      "cells_n": 4,
+      "cells_np1": 8,
+      "commutator_residual": 0.0,
+      "fixedpoint_discrepancy_n": 0.0,
+      "fixedpoint_discrepancy_np1": 0.0,
+      "descent_discrepancy_n": 0.0,
+      "descent_discrepancy_np1": 0.0,
+      "adequacy_residual": 0.0
+    }
+  ],
+  "placeholder_transition_diagnostics": [
+    {
+      "transition": "1->2",
+      "cells_n": 2,
+      "cells_np1": 4,
+      "commutator_residual": 0.0,
+      "fixedpoint_discrepancy_n": 0.6208694676345234,
+      "fixedpoint_discrepancy_np1": 0.6208694676345234,
+      "descent_discrepancy_n": 0.6208694676345234,
+      "descent_discrepancy_np1": 0.6208694676345234,
+      "adequacy_residual": 0.8780420215921064
+    },
+    {
+      "transition": "2->3",
+      "cells_n": 4,
+      "cells_np1": 8,
+      "commutator_residual": 0.0,
+      "fixedpoint_discrepancy_n": 0.9143801925182813,
+      "fixedpoint_discrepancy_np1": 0.9143801925182814,
+      "descent_discrepancy_n": 0.9143801925182813,
+      "descent_discrepancy_np1": 0.9143801925182814,
+      "adequacy_residual": 1.2931288694246752
+    }
+  ],
+  "emergence_nonfactorization": [
+    {
+      "level": 1,
+      "cells": 2,
+      "qm_only_to_rung_residual": 0.7870061694592002,
+      "gr_only_to_rung_residual": 0.7870061694592002,
+      "rung_work_norm": 0.4390210107960532
+    },
+    {
+      "level": 2,
+      "cells": 4,
+      "qm_only_to_rung_residual": 0.9269162847995492,
+      "gr_only_to_rung_residual": 0.9269162847995492,
+      "rung_work_norm": 0.6465644347123375
+    },
+    {
+      "level": 3,
+      "cells": 8,
+      "qm_only_to_rung_residual": 0.9860608921247331,
+      "gr_only_to_rung_residual": 0.9860608921247331,
+      "rung_work_norm": 0.6969676687950171
+    }
+  ],
+  "observed_residual_range": {
+    "built_min": 0.0,
+    "built_max": 0.0,
+    "placeholder_min": 0.8780420215921064,
+    "placeholder_max": 1.2931288694246752
+  },
+  "no_smuggling_check": {
+    "one_hot_set_cover_used": false,
+    "literature_program_terms_used": false,
+    "target_layer_inserted": false,
+    "endpoint_derivation_claimed": false,
+    "placeholder_passes": false
+  },
+  "verdict": {
+    "built_passes": true,
+    "placeholder_fails": true,
+    "nonfactorizing": true,
+    "candidate_built": true
+  },
+  "next_build": "RUNG_2_NEUTRAL_CURRENCY"
+}

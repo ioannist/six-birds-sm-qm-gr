@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section*{Step 60 Statement}
+Let \(C\) be a closer scored by the frozen Step-57 record predicate, frozen Step-35 substrate predicate, and frozen Step-41 factorization-defect predicate. The attempted theorem was
+\[
+  \mathrm{substrate}(C)\wedge \mathrm{capacity}(C) \Rightarrow \Delta_{\mathrm{fact}}(C)=\varnothing.
+\]
+The proof attempt verifies the reduction
+\[
+  \mathrm{substrate}(C)\wedge \Delta_{\mathrm{fact}}(C)\ne\varnothing
+  \Longleftrightarrow
+  \mathrm{substrate}(C)\wedge \mathrm{transition\_leak\_count}(C)>0,
+\]
+and, under the frozen scalar-action diagnostic, the positive leak occurs exactly when the Step-35 witness scalar breaks a factor of dimension at least \(3\).
+
+The established output is not a theorem. It is the sharpened external lemma:
+\[
+  L60:\quad
+  \mathrm{substrate}(C)\wedge \mathrm{transition\_leak\_count}(C)>0
+  \Rightarrow
+  \mathrm{neutral\_record\_token\_count}(C)<2.
+\]
+This lemma is verified by enumeration over the Step-33 corrected carrier and by bounded outside probes, but no structural proof is supplied here.
+\end{document}

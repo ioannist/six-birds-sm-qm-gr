@@ -1,0 +1,8 @@
+item,status,detail
+REQ_U,declared_recognition_requirement,the two child gauge-route quotients compose through one common-refinement parent closure with commuting F51 projections and compatible claim statuses
+minimal_simple_single_irrep_source,declared_recognition_source,"minimal simple single-irrep common-refinement closure: among REQ_U parents, prefer a simple parent with the smallest fundamental dimension and an exact one-generation complex package"
+candidate_parent_chain,declared_test_carrier,standard simple parent chain plus product control
+hypercharge_generator_normalization,computed,kY=5/3 from fundamental trace
+trace_ratio,computed,Tr(T3^2)=2;Tr(Q^2)=16/3;ratio=3/8
+xy_refinement_defect,read_and_checked_from_step47,delta=15;identity=True
+measured_low_energy_weak_angle,not_computed,requires running scale and experiment; outside this step

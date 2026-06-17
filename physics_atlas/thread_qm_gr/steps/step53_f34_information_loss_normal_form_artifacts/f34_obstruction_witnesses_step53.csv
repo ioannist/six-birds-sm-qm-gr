@@ -1,0 +1,4 @@
+case_id,rho,sigma,obstruction_empty,witness,same_rho_residual,sigma_difference,f34_verdict
+rho_full_sigma_raw,full normalized boundary state,"raw tensors left,right",False,"gauge pair (left,right) vs (left@G,right@G^{-T})",3.89086609047e-16,left_gap=0.257028702671;right_gap=0.261627820259,raw_loss_nonlegitimate_as_raw_but_gauge_redundant
+rho_full_sigma_phys,full normalized boundary state,gauge-invariant physical interior class,True,rank-full stratum: tau-preimage classes reconstructed as GL gauge orbits,rank_reconstruction_residuals_below_1e-8,none on checked gauge-invariant functionals,legitimate_loss_gauge_only
+rho_partial_sigma_phys,left reduced density only,gauge-invariant physical interior observable,False,right-complement unitary leaves rho_partial fixed but changes full physical observable,5.33021563527e-16,observable_gap=0.00973952587724,illegitimate_loss

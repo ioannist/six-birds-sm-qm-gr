@@ -1,0 +1,234 @@
+\section*{A Finite Toy Model of the QM--GR Missing Layer}
+
+\paragraph{Purpose.}
+This document consolidates the verified framework-driven construction of a
+finite toy model for the E018 QM--GR missing-layer residual.  It is a
+deliverable for external review, not a root-level completion claim.  Every
+claim below is sourced to a per-step artifact from the construction cascade.
+
+\subsection*{1. Setup}
+
+E018 asks for a lawful layer above the QM-side and GR-side access packages.
+The re-spined cascade after Step 10 stopped importing the literature's sector
+decomposition and instead ran the Six Birds framework on the endpoint access
+quotients.  The original obstruction has two relevant faces:
+
+\begin{itemize}
+\item P3: route mismatch / scale-descent obstruction, represented natively by
+  audit route-consistency and F35 scale descent.
+\item P2: problem of time, represented by replacing an external-time dynamic
+  with a constrained clock-field relational form.
+\end{itemize}
+
+The finite structural carrier used in the native classification is the mode
+carrier
+\[
+L=(d0,d1,d2,d3),
+\quad
+q_{QM}=(d0,d1,d2),
+\quad
+q_{GR}=(d0,d2,d3).
+\]
+The physical-content carrier used later is a finite periodic complex field
+\(\psi\) on \(N=8\) sites, plus finite clock registers for relational tests.
+
+\subsection*{2. Native Structural Classification}
+
+\paragraph{Promotion-bridge status.}
+Step 17 classified the package \(L\) and the direct-sum package natively in
+Foundations-III vocabulary.  \(B_{QM\to L}\) passes the eight gates and has
+status \(\texttt{candidate}\) on the toy.  The direct-sum package is also
+strict over QM, so strictness is not the discriminator.  It fails
+\(\texttt{G\_nosmuggle}\) because it duplicates the shared observables \(d0\)
+and \(d2\).  Source:
+\texttt{steps/step17\_native\_promotion\_bridge\_classification\_artifacts/step17\_results\_summary.md}.
+
+\paragraph{F37 joint quotient.}
+Step 18 applied F37.  With
+\[
+J=O_L,\quad j=\pi_L,\quad a:J\to O_{QM},\quad b:J\to O_{GR},
+\]
+the commuting residuals are \(a\circ j=q_{QM}\) and \(b\circ j=q_{GR}\), both
+with residual \(0.0\).  Since \(L\) is admissible while the product/direct-sum
+control is not, \(q_{QM}\) and \(q_{GR}\) are not complementary on the toy.
+Source:
+\texttt{steps/step18\_f37\_complementarity\_f24\_resolution\_artifacts/step18\_results\_summary.md}.
+
+\paragraph{F24 resolution family.}
+Step 20 built operational selectors for the F24 resolution families, and
+Step 21 rebuilt them structurally from actual maps rather than selector tags.
+The candidate package \(L\) recomputes uniquely as
+\(\texttt{BridgeMediatedRole}\).  The discrimination suite covers the eight
+families exactly once.  Sources:
+\texttt{steps/step20\_f24\_predicate\_construction\_artifacts/step20\_results\_summary.md}
+and
+\texttt{steps/step21\_f24\_structural\_predicates\_artifacts/step21\_results\_summary.md}.
+
+\paragraph{F35 scale descent.}
+Step 19 applied F35 to the audited joint law on \(L\).  The joint law descends
+and renormalizes across \(Q1\to Q2\) and \(Q2\to Q3\).  The non-descending
+control fails first by coarsening-fiber violation and then by a nonempty
+obstruction set.  Source:
+\texttt{steps/step19\_f35\_scale\_descent\_renormalization\_artifacts/step19\_results\_summary.md}.
+
+\paragraph{F51 common-refinement unification.}
+Step 22 applied F51.  \(L\) is a common-refinement unification of \(q_{QM}\)
+and \(q_{GR}\) on the finite carrier: the parent-to-child projection residuals
+are \(0.0\), \(L\) strictly refines both children, and child descent statuses
+are compatible.  The status-conflict control fails.  Source:
+\texttt{steps/step22\_f51\_unification\_common\_refinement\_artifacts/step22\_results\_summary.md}.
+
+\paragraph{Durable structural constraints.}
+The cascade also produced reusable constraints:
+
+\begin{itemize}
+\item A lawful package is not the direct-sum package; the native distinction is
+  \(\texttt{G\_nosmuggle}\), not strictness alone.  Source: Step 17.
+\item A shared currency must compress rather than staple endpoint currencies:
+  \(d_u=4<d_{union}=6\).  Source: Step 13.
+\item Refinement must be a morphism of the two-access diagram, commuting with
+  both endpoint readouts.  Source: Step 14.
+\item A single audit exists iff endpoint audits agree on shared modes; this
+  recovers P3 as route-consistency on the overlap.  Source: Step 15.
+\end{itemize}
+
+These are native/toy structural constraints.  They are not claims about all
+possible physical models.
+
+\subsection*{3. Physical Toy Content}
+
+\paragraph{Derived audits and sourcing.}
+Step 23 first tested compatible quadratic audit forms.  Step 24 then replaced
+chosen overlap agreement by derived field audits.  From the same finite field
+\(\psi\),
+\[
+\rho=|\psi|^2,\quad
+j=\operatorname{Im}(\overline{\psi}\nabla\psi),
+\]
+while
+\[
+T_{00}=|\nabla\psi|^2+V|\psi|^2,\quad
+T_{0i}=\operatorname{Re}(\overline{\nabla\psi}\,\Delta\psi).
+\]
+The Born and stress-energy audits do not cohere as one shared audit: the
+density proportional residual is \(0.5207123913178113\), and the transport
+proportional residual is \(0.9994686548331937\).  The positive relation is
+sourcing: \(T[\psi]\) is a deterministic functional of the shared field, with
+direct sourcing residual \(0.0\).  Sources: Steps 23 and 24.
+
+\paragraph{Co-sourcing package.}
+Step 25 built \(L\) as a field carrier.  The QM descent reads
+\(\text{Born}[\psi]\), while the GR descent reads \(T[\psi]\).  The co-sourced
+package has max Born residual \(0.0\) and max stress-energy residual \(0.0\);
+the non-co-sourced control fails with max stress-energy residual
+\(0.3806026603775931\).  Source:
+\texttt{steps/step25\_sourcing\_unification\_artifacts/step25\_results\_summary.md}.
+
+\paragraph{Semiclassical dynamics.}
+Step 26 added a finite self-sourced field-potential dynamic:
+\[
+V[\psi]=B+\kappa T_{00}[\psi],
+\qquad
+H[V]=\frac12\Delta_{per}+\operatorname{diag}(V).
+\]
+For moderate coupling \(\kappa=0.3\), the Hartree-like iteration converges to
+a self-consistent stationary field-potential point with fixed-point residual
+\(3.4936318023019015\cdot 10^{-16}\) and eigen residual
+\(6.377748916558787\cdot 10^{-16}\).  The over-strong control fails with
+fixed-point residual \(1.4285712942487314\).  Source:
+\texttt{steps/step26\_semiclassical\_dynamics\_artifacts/step26\_results\_summary.md}.
+
+\paragraph{Timeless and relational form.}
+Step 27 represented the stationary Step 26 dynamic as a constrained
+clock-field state.  The compatible constraint has kernel dimension \(1\) at
+tolerance \(10^{-8}\), \(\|C\Psi\|=8.547035876629756\cdot 10^{-16}\), and
+clock conditioning recovers the stationary dynamic with max residual
+\(9.79195701998934\cdot 10^{-16}\).  The empty-kernel control fails.  Source:
+\texttt{steps/step27\_constraint\_problem\_of\_time\_artifacts/step27\_results\_summary.md}.
+
+Step 28 extended this to one non-stationary history.  A non-eigenstate field
+evolves with max phase-invariant state change \(0.18847313451682898\), and
+the sourced potential changes with max norm \(0.001673580612625418\).  The
+generated relational constraint has \(\|C\Psi\|=4.220196766037856\cdot
+10^{-16}\), and the wrong-generator control fails with residual
+\(0.0925307478333232\).  Source:
+\texttt{steps/step28\_nonstationary\_relational\_histories\_artifacts/step28\_results\_summary.md}.
+
+\paragraph{Recovered known structure.}
+At toy fidelity, the physical content recovers two familiar structures:
+\begin{itemize}
+\item semiclassical sourcing, where a field determines stress-energy content;
+\item relational clock readout, where global clock-field states are constrained
+  and dynamics appears through conditioning.
+\end{itemize}
+This is a recovery of known structural patterns in a finite carrier, not an
+empirical novelty claim.
+
+\subsection*{4. Grade and Scope}
+
+\paragraph{Grade.}
+The native classifications are graded \(\texttt{native-law-verified}\) in the
+limited sense that the construction applies the framework laws and validators
+from the repository to finite carriers.  The physical content is graded
+\(\texttt{toy-diagnostic}\): finite fields, finite clocks, chosen couplings,
+and explicit controls.
+
+\paragraph{Can-fail controls.}
+The construction uses controls that fail: direct-sum package, route-mismatch
+audit, non-descending law, non-co-sourced field, over-strong dynamics, empty
+kernel, and wrong relational generator.
+
+\paragraph{Posited or adapted parts.}
+The following components are honest toy choices:
+\begin{itemize}
+\item Step 23 uses chosen quadratic audit forms before Step 24 derives audits
+  from a field.
+\item Step 26 uses a finite Hamiltonian and toy stress-energy density.
+\item Step 27 uses a compatible finite clock for the stationary history.
+\item Step 28 uses a history-adapted open-chain constraint after generating
+  the self-sourced sequence.
+\end{itemize}
+
+\paragraph{Scope boundary.}
+The consolidated result is a native-verified structural classification plus a
+toy-diagnostic recovery of semiclassical sourcing and relational time.  It is
+not a complete physical model, not an empirical prediction, and not a
+frame-transfer certificate.  Frame transfer beyond the finite carriers is an
+external-review task.
+
+\subsection*{5. Independently Checkable Content}
+
+An external reviewer can verify:
+\begin{itemize}
+\item native status and gate records by rerunning Step 17;
+\item F37/F24/F35/F51 computations by rerunning Steps 18, 19, 21, and 22;
+\item derived sourcing by rerunning Steps 24 and 25;
+\item finite self-consistency by rerunning Step 26;
+\item stationary and non-stationary relational constraints by rerunning Steps
+  27 and 28;
+\item Step 29's claim ledger in
+  \texttt{content\_classification\_step29.csv}.
+\end{itemize}
+
+\subsection*{6. Open Obligations}
+
+\begin{itemize}
+\item Replace the Step 28 history-adapted constraint with a less adapted
+  nonlinear constraint tested over broader history families.
+\item Enrich the field carrier toward more faithful QM content: Hilbert-space
+  observables, measurement records, and stability of record readouts.
+\item Enrich the geometric side toward more faithful GR content: Lorentzian
+  signature, diffeomorphism-style redundancy, and constraint algebra tests.
+\item Test robustness under different lattices, couplings, dimensions, and
+  clock constructions.
+\item Perform the real physics frame-transfer review.
+\end{itemize}
+
+\paragraph{Consolidated verdict.}
+Within the declared finite carriers and verified artifacts, \(L\) is a
+candidate common-refinement package that is native-classified as admissible,
+BridgeMediatedRole, scale-consistent, and F51-unifying on the toy.  With
+finite physical content, \(L\) carries a field whose Born and stress-energy
+descents are co-sourced; it admits self-consistent semiclassical dynamics and
+stationary plus non-stationary relational clock-field representations.  This
+is the construction product for external review.

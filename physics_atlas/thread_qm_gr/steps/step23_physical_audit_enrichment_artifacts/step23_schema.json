@@ -1,0 +1,46 @@
+{
+  "step": 23,
+  "orientation": "Physical-signature quadratic audit enrichment",
+  "active_residual": "R_child_E018_after_F51_unification_classification",
+  "carrier": {
+    "type": "finite mode carrier",
+    "modes": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "qm_modes": ["d0_density", "d1_phase", "d2_transport"],
+    "gr_modes": ["d0_density", "d2_transport", "d3_curvature"],
+    "shared_modes": ["d0_density", "d2_transport"]
+  },
+  "candidate_move": {
+    "id": "enrich_F51_status_audits_to_quadratic_forms",
+    "description": "Replace linear audit prices by Born-like and curvature-like quadratic forms and recompute parent-audit reconciliation."
+  },
+  "final_verdict": {
+    "type": "physical_audit_enrichment_complete",
+    "physical_audit_verdict": "survives_physical_signature_enrichment",
+    "L_physical_audits_compatible": true,
+    "incompatible_control_pass": false,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "quadratic_forms_used": true,
+    "qm_form_psd": true,
+    "shared_subblock_residual": 0.0,
+    "parent_quadratic_audit_exists": true,
+    "incompatible_control_shared_residual": 0.22484880190683132,
+    "subblock_residual_computed": true
+  },
+  "framework_outputs": {
+    "predictive_structural": [
+      "A parent quadratic audit exists exactly when child shared sub-blocks agree."
+    ],
+    "analytical_structural": [
+      "L remains F51 status-compatible under the declared quadratic audit enrichment on the finite carrier."
+    ],
+    "organizational_audit": [
+      "Matrix properties, parent reconciliation, and incompatible control are saved."
+    ],
+    "remaining_external_content": [
+      "Richer physical carriers and non-toy audit choices remain future construction and external review."
+    ]
+  }
+}

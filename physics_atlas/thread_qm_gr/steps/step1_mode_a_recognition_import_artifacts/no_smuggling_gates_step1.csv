@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_named_source_declared,pass,"leading import","The source is declared before the audit as the holographic entanglement dictionary: AdS/CFT with RT/HRT entropy-area rule.","Use only this declared import in Step 1."
+G2_target_lineage_non_equivalence,pass_for_child_fail_for_root,"lineage","The import is narrower than the canonical root because it is AdS/semiclassical/special-state conditional; it is not equivalent to the full E018 common-refinement target.","Record child residual and do not promote it to root closure."
+G3_typed_carrier_and_lens,pass,"finite toy","Carrier, C=I, native entanglement-ledger rows, and dissolving area/amplitude/P3 rows are declared before Xi is computed.","Keep carrier fixed for this diagnostic."
+G4_no_silent_status_upgrade,pass,"E2 status","The dictionary and RT/HRT rule remain E2-conditional; no E1 descent or root-level status upgrade is made.","Carry all assumptions in summaries and schema."
+G5_shadow_source_boundary,pass_with_warning,"RT sector","RT area rows are a shadow-price sector, not the source of the full amplitude(geometry) object.","Classify RT closure as child-sector only."
+G6_no_answer_row_overread,pass,"finite toy","The native recognition lens excludes bulk_geometry_amplitude and p3_route_mismatch rows; adding them is recorded only as a rejected overread control.","Do not use target-equivalent native probes in later construction."

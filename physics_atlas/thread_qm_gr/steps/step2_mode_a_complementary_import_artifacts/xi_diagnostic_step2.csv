@@ -1,0 +1,5 @@
+level_regions,carrier_dimension,native_lens,sector,raw_trace_xi,trace_kdd,normalized_trace_xi,scope
+2,4,lqg_like,surviving_amplitude_p3,3.3306690738754696e-16,2.09,1.5936215664475933e-16,R_child_E018_after_HED_full_joint_P3
+2,4,lqg_like,area_shadow_price,0.9999999999999998,0.9999999999999998,1.0,Step 1 holographic sector retested under LQG lens
+4,6,lqg_like,surviving_amplitude_p3,3.3306690738754696e-16,2.09,1.5936215664475933e-16,R_child_E018_after_HED_full_joint_P3
+4,6,lqg_like,area_shadow_price,1.0,1.0,1.0,Step 1 holographic sector retested under LQG lens

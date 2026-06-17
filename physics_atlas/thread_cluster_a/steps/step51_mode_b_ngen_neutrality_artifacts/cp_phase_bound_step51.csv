@@ -1,0 +1,8 @@
+N,cp_phase_count,cp_violation_supported,formula,classification
+0,0,False,(N-1)(N-2)/2 for N>=1,below_bound_or_inactive
+1,0,False,(N-1)(N-2)/2 for N>=1,below_bound_or_inactive
+2,0,False,(N-1)(N-2)/2 for N>=1,below_bound_or_inactive
+3,1,True,(N-1)(N-2)/2 for N>=1,recognition_source_bound_not_selection
+4,3,True,(N-1)(N-2)/2 for N>=1,recognition_source_bound_not_selection
+5,6,True,(N-1)(N-2)/2 for N>=1,recognition_source_bound_not_selection
+6,10,True,(N-1)(N-2)/2 for N>=1,recognition_source_bound_not_selection

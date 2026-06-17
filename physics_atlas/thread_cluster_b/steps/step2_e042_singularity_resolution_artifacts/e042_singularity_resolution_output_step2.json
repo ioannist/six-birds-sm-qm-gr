@@ -1,0 +1,54 @@
+{
+  "step": 2,
+  "orientation": "E042 construction as typed boundary of L geometry-readout",
+  "source_step1_carrier": "steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv",
+  "refinement_state_count": 8,
+  "high_curvature_state_ids": [
+    1,
+    2,
+    5,
+    6,
+    10,
+    11
+  ],
+  "predicates": {
+    "P6_defect_stabilization": {
+      "GR_K_diverges": true,
+      "L_R_stabilizes": true,
+      "R_bad_control_stabilizes": false,
+      "finite_limit_R_star": 0.75
+    },
+    "P4_planck_staging": {
+      "K_P": 16.0,
+      "n_star": 4,
+      "epsilon_star": 0.125,
+      "K_at_crossover": 51.84
+    },
+    "P2_geodesic_continuation": {
+      "GR_terminates": true,
+      "L_has_finite_post_locus_continuation": true
+    },
+    "nonfactorization_signature": {
+      "high_locus_obstruction_count": 3,
+      "smooth_obstruction_count": 0
+    }
+  },
+  "controls": {
+    "GR_K_genuinely_diverges": true,
+    "no_resolution_R_bad_fails_stabilization": true,
+    "L_R_resolved_stabilizes": true,
+    "smooth_regime_no_spurious_resolution": true
+  },
+  "verdict": {
+    "type": "E042_boundary_layer_constructed_finite_toy",
+    "GR_defect_nonstabilizing": true,
+    "L_readout_stabilizing": true,
+    "planck_crossover_computed": true,
+    "finite_continuation_computed": true,
+    "nonfactorization_signature_recomputed": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite-carrier E042 construction: defect stabilization, staging, continuation, and non-factorization shape only; no physical substrate or frame-transfer certificate."
+}

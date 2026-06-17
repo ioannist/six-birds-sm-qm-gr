@@ -1,0 +1,5 @@
+variation,population_size,total_correlation_bits,component_count,block_partition,inter_block_residual_bits,separability_verdict,seed
+neutral_product,8640,0.000000000000,7,ew_code / gauge_code / n_gen / rep_code / texture_code / uv_code / vacuum_code,0.000000000000,independent_neutral_control,
+structural_survivors,468,2.229304481463,2,gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code / ew_code,0.035998916880,block_structured_coupling,
+strict_naturalness_le_1,341,2.053633293812,1,ew_code+gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code,0.000000000000,coupled_single_component,
+subsample_80_seed_20260606,374,2.512274397383,2,gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code / ew_code,0.282325452588,block_structured_coupling,20260606

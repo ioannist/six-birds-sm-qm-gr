@@ -1,0 +1,9 @@
+item,status,detail
+bounded_rank_range,input,one through 6
+bounded_factor_count,input,zero through 6
+u1_role_range,input,zero through 3
+known_alternative_inclusion,input_can_fail,simple and chiral examples inserted as stress tests
+dual_plus_antisym_plus_mixed_exterior_role_ansatz,input,"the base closure uses dual, same-factor antisymmetric form, and mixed-pair roles; this is a GUT/exterior-inspired ansatz, not generated here"
+total_slot_five_condition,input_derived_from_declared_exterior_ansatz,the explicit slot obstruction and cubic expression enforce total_slots=5 inside the declared exterior role ansatz
+primary_minimal_shape,generated,2|3
+criteria_flips,generated_diagnostic,1

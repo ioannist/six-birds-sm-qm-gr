@@ -1,0 +1,7 @@
+axiom_id,role,used_by
+A1_finite_bipartite_Hilbert_carrier,provides a real density matrix and partial trace entropy,entanglement ledger S(A)
+A2_boundary_edge_lens,computes geometric area as a boundary-edge count,GR-side geometric readout
+A3_boundary_Bell_link_preparation,ties each maintained boundary cell to one entangled crossing channel,P5 packaged holographic object
+A4_von_Neumann_entropy_ledger,lower-layer P6 audit currency,budget b=S(A)
+A5_entanglement_budget_constraint,turns the ledger into a P2 feasibility constraint,area frontier A*(b)
+A6_shadow_price_dual,computes dA*/db and the MaxCal budget enforcer,exchange-rate k and Stage-II sweep

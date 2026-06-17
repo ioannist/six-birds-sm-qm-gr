@@ -1,0 +1,24 @@
+{
+  "step": 7,
+  "orientation": "E042 earned continuation and Lorentzian curvature stress test",
+  "toy_parameters": {
+    "M_TOY": 1.0,
+    "K_PLANCK_TOY": 16.0,
+    "R_STAR": 0.75,
+    "STEP_SIZE": 0.18,
+    "TERMINATION_BOUND": 1000000.0
+  },
+  "verdict": {
+    "type": "E042_earned_continuation_constructed_finite_toy",
+    "lorentzian_K_diverges": true,
+    "L_R_stabilizes": true,
+    "GR_terminates": true,
+    "U_good_finite_post_locus": true,
+    "U_good_generated_by_rule": true,
+    "U_bad_fails": true,
+    "earned_continuation_grade": "finite-toy-diagnostic",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite toy metric and finite recurrence only; no physical high-curvature substrate or frame-transfer certificate."
+}

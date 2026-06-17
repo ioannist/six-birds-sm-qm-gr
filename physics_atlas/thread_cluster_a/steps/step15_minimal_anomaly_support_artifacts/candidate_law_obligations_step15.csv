@@ -1,0 +1,5 @@
+obligation,status,witness
+faithful_enrichment,continued,bounded exhaustive SU3xSU2xU1 multiplet enumeration using Step 14 anomaly coefficients
+independently_checkable_consequence,advanced_as_typed_no_go,minimality alone is insufficient in the finite enumeration; non-SM irreducible supports beat the SM score
+derived_formula,inherited_from_step14,"anomaly vectors and quotient/minimality relation computed, no new closed-form law landed"
+limit_recovery,continued,SM support is present and anomaly-free but not minimal under the declared measure

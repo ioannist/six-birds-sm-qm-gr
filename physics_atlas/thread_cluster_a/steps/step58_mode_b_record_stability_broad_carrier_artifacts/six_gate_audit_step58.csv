@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,new record scoring uses imported Step57 requirement; no new target-structure selector
+dependency_trace,True,"dependency_trace_step58.csv lists imported requirement, carrier, CS scoring, divergence search"
+ablation,True,ablation_step58.csv lists load-bearing frozen import and broad-carrier checks
+negative_controls,True,broad carrier nonvacuous and frozen RS has teeth
+stage2,True,Step57 record fact is retained and broad-carrier nonvacuity is checked
+no_single_axiom_equivalence,True,verdict rests on frozen requirement plus broad neutral carrier plus divergence search

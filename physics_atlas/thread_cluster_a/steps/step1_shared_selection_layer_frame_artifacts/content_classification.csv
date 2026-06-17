@@ -1,0 +1,9 @@
+output,classification,grade,scope,source_artifacts
+shared_selection_layer_step1.py,analytical structural,finite-carrier diagnostic,"Builds candidate-space W, measure mu, SM shadow, non-factorizations, and controls.",steps/step1_shared_selection_layer_frame_artifacts/shared_selection_layer_step1.py
+candidate_space_step1.csv,analytical structural,finite-carrier diagnostic,"Finite toy worlds, attributes, measure score, and selected world.",steps/step1_shared_selection_layer_frame_artifacts/candidate_space_step1.csv
+frame_signatures_step1.csv,analytical structural,finite-carrier diagnostic,"Joint, facet, and selection-underdetermination non-descending signatures.",steps/step1_shared_selection_layer_frame_artifacts/frame_signatures_step1.csv
+controls_step1.csv,analytical structural,finite-carrier diagnostic,"Descending observable, argmax, and selection-layer carrier controls.",steps/step1_shared_selection_layer_frame_artifacts/controls_step1.csv
+results_summary.md,organizational/audit,finite-carrier diagnostic,Human-readable frame verdict and bounded scope.,steps/step1_shared_selection_layer_frame_artifacts/results_summary.md
+schema.json,organizational/audit,finite-carrier diagnostic,Per-step schema and final verdict.,steps/step1_shared_selection_layer_frame_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite selection-layer frame.,steps/step1_shared_selection_layer_frame_artifacts/nonclaim_boundary.md
+run_step1.py,organizational/audit,finite-carrier diagnostic,"Validator for computed non-factorizations, controls, source paths, ledgers, and overclaim guard.",steps/step1_shared_selection_layer_frame_artifacts/run_step1.py

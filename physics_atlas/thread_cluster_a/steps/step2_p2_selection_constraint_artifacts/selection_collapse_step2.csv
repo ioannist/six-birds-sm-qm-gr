@@ -1,0 +1,2 @@
+constraint,survivor_count_before_selection,survivors,selected_count_after_selection,selected_world,selected_score,non_selected_survivor_count,non_selected_survivors,pruned_count,pruned_candidates
+A_GR_equals_0,9,w_SM;w_alt_gauge;w_alt_rep;w_two_gen;w_four_gen;w_high_ew;w_alt_uv;w_alt_vacuum;w_joint_alt,1,w_SM,116.0,8,w_alt_gauge;w_alt_rep;w_two_gen;w_four_gen;w_high_ew;w_alt_uv;w_alt_vacuum;w_joint_alt,4,w_anom_u1;w_anom_rep;w_anom_mixed;w_anom_joint

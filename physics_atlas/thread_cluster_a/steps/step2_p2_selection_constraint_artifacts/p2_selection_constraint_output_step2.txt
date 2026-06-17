@@ -1,0 +1,8 @@
+Cluster A Step 2 P2 selection/constraint
+Verdict: p2_selection_constraint_constructed
+extended candidate count: 13
+pruned count: 4
+survivor count before selection: 9
+selected world: w_SM
+non-selected survivors: 8
+mutual information bits: 0.330856

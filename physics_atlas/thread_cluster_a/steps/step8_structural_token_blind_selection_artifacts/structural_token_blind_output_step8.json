@@ -1,0 +1,17 @@
+{
+  "step": 8,
+  "verdict": {
+    "type": "structural_token_blind_selection_constructed",
+    "neutral_space_size": 8640,
+    "structural_survivor_count": 468,
+    "realized_point_status": "among_structural_survivors_not_unique",
+    "realized_point_structural_rank": 2,
+    "max_score_tie_count": 6,
+    "mi_neutral_bits": 0.0,
+    "mi_survivors_bits": 0.466203233486,
+    "token_blind_structural_functional": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite token-blind pruning shape only; no physical SM value or mechanism is derived."
+}

@@ -1,0 +1,10 @@
+item,status,detail
+bounded_rank_range,input,one through 4
+bounded_factor_count,input,zero through 4
+chirality_requirement,input,nontrivial complex representation required
+general_trace_zero_lattice,generated_method,basis dimension computed as factor_count minus one when available
+anomaly_and_charge_tests,input,closure tests imposed by grammar
+dual_plus_antisym_plus_mixed_exterior_role_ansatz,input,"factorizations are evaluated using dual, same-factor antisymmetric form, and mixed-pair roles; this is a GUT/exterior-inspired ansatz, not generated here"
+total_slot_five_condition,input_derived_from_declared_exterior_ansatz,the complex-factor cubic expression reduces to total_slots=5 under the declared exterior role ansatz
+minimal_sector_structure,generated,2|3
+minimal_factor_count,generated,2

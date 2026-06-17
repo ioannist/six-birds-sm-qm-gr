@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+step38_baseline_recovered,True,2|3
+wider_single_factors_evaluated,True,single factors 2..6 exact
+three_factor_coverage_recorded,True,skipped=28

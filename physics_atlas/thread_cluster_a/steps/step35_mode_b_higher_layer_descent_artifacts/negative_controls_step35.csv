@@ -1,0 +1,5 @@
+control,passes,evidence
+fails_some_corrected_80,True,68 of 80 fail the higher-layer predicate
+not_a_target_row_picker,True,target passes=True; higher-layer survivor count=12
+scalar_witness_enumerated,True,rank_one_fundxsinglet:-3
+proper_failure_region_computed,True,3 has 0 of 49 passing

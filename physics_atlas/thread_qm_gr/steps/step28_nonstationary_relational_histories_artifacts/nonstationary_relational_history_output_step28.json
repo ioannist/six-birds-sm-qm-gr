@@ -1,0 +1,33 @@
+{
+  "step": 28,
+  "verdict": {
+    "nonstationary_relational_verdict": "nonstationary_relational_history_constraint_consistent_on_toy",
+    "history_is_nonstationary": true,
+    "generated_constraint_passes": true,
+    "wrong_generator_control_passes": false,
+    "relational_readout_recovers_history": true,
+    "relational_potential_recovers_sourcing": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "summary": {
+    "generated_constraint_residual": 4.220196766037856e-16,
+    "generated_null_dim_tol_1e_minus_8": 8,
+    "control_constraint_residual": 0.0925307478333232,
+    "max_field_readout_residual": 2.2131155843786806e-16,
+    "max_relational_potential_residual": 9.205483015737869e-17,
+    "min_eigen_residual": 0.35409006012453015,
+    "max_state_change_phase_invariant": 0.18847313451682898,
+    "mean_state_change_phase_invariant": 0.18844140735718687,
+    "max_potential_change": 0.001673580612625418,
+    "mean_potential_change": 0.00165803457343543,
+    "max_unitary_norm_error": 2.220446049250313e-16
+  },
+  "guardrails": {
+    "non_eigenstate_checked": true,
+    "state_change_checked": true,
+    "potential_change_checked": true,
+    "constraint_residual_computed": true,
+    "control_required_to_fail": true
+  }
+}

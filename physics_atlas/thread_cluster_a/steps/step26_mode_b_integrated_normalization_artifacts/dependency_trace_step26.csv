@@ -1,0 +1,5 @@
+axiom_id,axiom_family,used,source
+A1,generated_minimal_closer,True,Step-23 minimal_closures_step23.csv
+A2,trace_zero_balance_rule,True,computed charge unit and sector weights
+A3,rank_one_generator_readout,True,unique rank-one factor in generated closer
+A4,trace_metric,True,dimension-weighted trace computation

@@ -1,0 +1,7 @@
+content_class_id,edge_id,left_field_id,right_field_id,left_rep,right_rep,scalar_charge,scalar_orientation
+class_00,class_00_edge_0,f0,f3,singletxantifund:-2,weak_fundxfund:-1,3,conjugate
+class_00,class_00_edge_1,f1,f3,singletxantifund:4,weak_fundxfund:-1,-3,witness
+class_00,class_00_edge_2,f2,f4,singletxsinglet:-6,weak_fundxsinglet:3,3,conjugate
+class_01,class_01_edge_0,f0,f3,singletxantifund:-4,weak_fundxfund:1,3,conjugate
+class_01,class_01_edge_1,f1,f3,singletxantifund:2,weak_fundxfund:1,-3,witness
+class_01,class_01_edge_2,f2,f4,singletxsinglet:6,weak_fundxsinglet:-3,-3,witness

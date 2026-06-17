@@ -1,0 +1,4 @@
+structure_id,ranks,dimensions,content_pattern,computed_anomaly,admitted,closes,computed_reason,minimal_score,verdict_computed,recognition_control_note
+SU(5),4,5,antisym_plus_dual,0,True,True,admitted_but_nonminimal_under_rank_first,4|5|1|0,True,INSERTED_RECOGNITION_CONTROL: assigned content-pattern label and anomaly status; not computed by the base closure engine
+SO(10),5,10,single_spinor_pattern,0,True,True,admitted_but_nonminimal_under_rank_first,5|10|1|0,True,INSERTED_RECOGNITION_CONTROL: assigned content-pattern label and anomaly status; not computed by the base closure engine
+SU(6)_chiral_example,5,6,antisym_plus_antifundamentals,0,True,True,admitted_but_nonminimal_under_rank_first,5|6|1|0,True,INSERTED_RECOGNITION_CONTROL: assigned content-pattern label and anomaly status; not computed by the base closure engine

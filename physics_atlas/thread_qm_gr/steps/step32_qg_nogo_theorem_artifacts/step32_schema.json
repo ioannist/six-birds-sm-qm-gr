@@ -1,0 +1,45 @@
+{
+  "step": 32,
+  "orientation": "Mode T theorem writing: bounded no-go theorem from Lemmas 1 and 2",
+  "active_residual": "R_child_E018_after_fused_object_nogo_lemma2",
+  "carrier": {
+    "type": "theorem statement over bounded grammar G*",
+    "native_carrier": "L=(d0,d1,d2,d3)",
+    "physical_carrier": "finite field psi with Born and stress-energy readouts",
+    "source_lemmas": [30, 31]
+  },
+  "candidate_move": {
+    "id": "write_T_QG_NoGo",
+    "description": "Consolidate directed and fused route diagnostics into a bounded finite-carrier no-go theorem."
+  },
+  "final_verdict": {
+    "type": "T_QG_NoGo_bounded_theorem_written",
+    "directed_route_blocked": true,
+    "union_route_blocked": true,
+    "shared_audit_route_blocked": true,
+    "controls_pass": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "part_b_uniqueness_obligation_open": true,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "theorem_tex_written": true,
+    "seven_gate_audit_written": true,
+    "nonclaim_boundary_written": true,
+    "lemma1_cited": true,
+    "lemma2_cited": true,
+    "interpretation_docs_cited": true
+  },
+  "framework_outputs": {
+    "analytical_structural": [
+      "T_QG_NoGo is written as a finite-carrier bounded-grammar theorem."
+    ],
+    "organizational_audit": [
+      "Seven-gate audit, claim classification, schema, and validator are saved."
+    ],
+    "remaining_external_content": [
+      "Part B uniqueness/exhaustion remains open."
+    ]
+  }
+}

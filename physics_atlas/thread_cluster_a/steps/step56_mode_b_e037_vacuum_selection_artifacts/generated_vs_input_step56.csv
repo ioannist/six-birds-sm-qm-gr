@@ -1,0 +1,8 @@
+item,status,detail
+E037_card,read,missing_layers/cards/E037.json
+two_vacuum_carrier,declared_toy_input,v_alpha and v_beta abstract finite closure packages
+per_vacuum_descent,computed_on_toy,"{""v_alpha"": {""R1_coarse"": 0.125, ""R2_fine"": 0.0}, ""v_beta"": {""R1_coarse"": 0.125, ""R2_fine"": 0.0}}"
+cross_vacuum_RM,computed,"{""R1_coarse"": 0.25, ""R2_fine"": 0.25}"
+stabilizing_selector_control,computed_negative_control,"{""R1_coarse"": 0.13333333333333333, ""R2_fine"": 0.014918414918414918}"
+Step3_p6_decaying_degeneracy_audit,cited_and_chain_validated,steps/step3_p6_decaying_degeneracy_audit_artifacts/run_step3.py
+verdict,computed,SELECTION_FORECLOSURE_EXHIBITED

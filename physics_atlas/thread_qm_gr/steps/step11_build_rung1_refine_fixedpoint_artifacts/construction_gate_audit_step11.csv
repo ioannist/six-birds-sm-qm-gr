@@ -1,0 +1,9 @@
+gate,status,scope,reason
+B1_structured_maps_not_one_hot,pass,construction,"The carrier uses two-channel vector spaces; closures and lifts are explicit matrices saved in structured_matrices_step11.json."
+B2_idempotent_closures,pass,closure,"Rung closure idempotence errors are zero at levels 1, 2, and 3."
+B3_lift_commutes_with_closure,pass,refinement,"Built commutator residual is 0.0 on transitions 1->2 and 2->3."
+B4_placeholder_fails,pass,negative_control,"Placeholder adequacy residuals are 0.8780420215921064 and 1.2931288694246752."
+B5_two_sided_descent,pass,coarsenings,"Record-side and locality-side coarsenings agree after built closure and disagree for the placeholder."
+B6_nonfactorizing_extension,pass,emergence,"Endpoint-only residuals are at least 0.7870061694592002 across levels."
+B7_no_endpoint_or_target_insertion,pass,no_smuggling,"No endpoint derivation, target layer, or set-cover atom is used as the adequacy test."
+B8_next_build_named,pass,frontier,"The next build is RUNG_2_NEUTRAL_CURRENCY."

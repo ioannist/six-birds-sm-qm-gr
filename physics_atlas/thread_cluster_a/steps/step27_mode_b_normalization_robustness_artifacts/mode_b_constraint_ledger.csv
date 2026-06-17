@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP27_TOY_TRACE_BOUNDARY,ModeB,step27_mode_b_normalization_robustness,honesty,"The Step-26 normalization is stress-tested as a toy sector trace, not a physical chiral-fermion-multiplet trace."
+C_CLUSTER_A_STEP27_CONVENTION_SWEEP,ModeB,step27_mode_b_normalization_robustness,robustness,"Six trace/readout conventions are computed on the Step-23 generated row; two match the Step-21 target and four flip it."
+C_CLUSTER_A_STEP27_SMUGGLE_HUNT,ModeB,step27_mode_b_normalization_robustness,anti_smuggling,"Charge-unit denominator and rank-one readout selection are load-bearing; no all-structure forcing is found because controls do not reproduce the target."
+C_CLUSTER_A_STEP27_CONSEQUENCE_CONSISTENCY,ModeB,step27_mode_b_normalization_robustness,consistency,"The Step-25 F51 parent-shadow consequences remain on the same generated structure: SU(5) 0/0 and SO(10) 0/1."
+C_CLUSTER_A_STEP27_NEGATIVE_CONTROLS,ModeB,step27_mode_b_normalization_robustness,can_fail,"Non-generated Step-23 structures never reproduce the target under the convention family."
+C_CLUSTER_A_STEP27_VERDICT,ModeB,step27_mode_b_normalization_robustness,typed_no_go,"Verdict is FRAGILE_CONVENTION_DEPENDENT; next grammar delta is a physical chiral-multiplet trace or a principle selecting the trace convention."

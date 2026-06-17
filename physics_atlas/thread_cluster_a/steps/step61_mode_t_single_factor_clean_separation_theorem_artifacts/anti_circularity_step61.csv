@@ -1,0 +1,4 @@
+check,passes,evidence
+substrate_not_nonclean_in_disguise,True,Step59/60 lineage contains multi-factor substrate rows with clean separation; single-factor restriction is load-bearing
+single_factor_restriction_load_bearing,True,single_factor_substrate_count=12
+conclusion_derived_not_assumed,True,single_factor_clean_count=0

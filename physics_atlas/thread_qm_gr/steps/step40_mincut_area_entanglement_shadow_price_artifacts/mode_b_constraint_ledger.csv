@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+C_STEP40_QM_GR_ANCHOR,active,40,extend QM-GR co-sourcing layer only
+C_STEP40_AREA_OPTIMIZATION_OUTPUT,active_validator,40,"area must be min-cut output, not a posited boundary count"
+C_STEP40_INDEPENDENT_FUNCTIONALS,active_validator,40,area and entanglement must be different functionals with disagreement witness
+C_STEP40_COMPUTED_ABLATION,active_validator,40,"rerun altered carriers, no hand-authored pass rows"

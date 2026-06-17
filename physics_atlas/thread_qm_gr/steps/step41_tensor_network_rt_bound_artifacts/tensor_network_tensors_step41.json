@@ -1,0 +1,308 @@
+[
+  {
+    "boundary_legs": [
+      "p0",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "case_id": "holo_refinement_D2",
+    "dim": 2,
+    "internal_edges": [
+      "bridge",
+      "l_loop_1",
+      "l_loop_2",
+      "l_loop_3",
+      "r_loop_1",
+      "r_loop_2",
+      "r_loop_3"
+    ],
+    "left_boundary_region_A": [
+      "p0",
+      "p1"
+    ],
+    "note": "Each tensor is explicit: copy tensors have entries 1 when all incident indices are equal and 0 otherwise; weighted_copy uses weights dim-i on the L tensor only; fixed_zero has only the all-zero entry.",
+    "vertices": {
+      "L": {
+        "kind": "copy",
+        "legs": [
+          "p0",
+          "p1",
+          "bridge",
+          "l_loop_1",
+          "l_loop_3"
+        ]
+      },
+      "LU": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_1",
+          "l_loop_2"
+        ]
+      },
+      "LV": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_2",
+          "l_loop_3"
+        ]
+      },
+      "R": {
+        "kind": "copy",
+        "legs": [
+          "p2",
+          "p3",
+          "bridge",
+          "r_loop_1",
+          "r_loop_3"
+        ]
+      },
+      "RU": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_1",
+          "r_loop_2"
+        ]
+      },
+      "RV": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_2",
+          "r_loop_3"
+        ]
+      }
+    }
+  },
+  {
+    "boundary_legs": [
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "case_id": "holo_refinement_D3",
+    "dim": 3,
+    "internal_edges": [
+      "bridge",
+      "l_loop_1",
+      "l_loop_2",
+      "l_loop_3",
+      "r_loop_1",
+      "r_loop_2",
+      "r_loop_3"
+    ],
+    "left_boundary_region_A": [
+      "p0",
+      "p1",
+      "p2"
+    ],
+    "note": "Each tensor is explicit: copy tensors have entries 1 when all incident indices are equal and 0 otherwise; weighted_copy uses weights dim-i on the L tensor only; fixed_zero has only the all-zero entry.",
+    "vertices": {
+      "L": {
+        "kind": "copy",
+        "legs": [
+          "p0",
+          "p1",
+          "p2",
+          "bridge",
+          "l_loop_1",
+          "l_loop_3"
+        ]
+      },
+      "LU": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_1",
+          "l_loop_2"
+        ]
+      },
+      "LV": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_2",
+          "l_loop_3"
+        ]
+      },
+      "R": {
+        "kind": "copy",
+        "legs": [
+          "p3",
+          "p4",
+          "p5",
+          "bridge",
+          "r_loop_1",
+          "r_loop_3"
+        ]
+      },
+      "RU": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_1",
+          "r_loop_2"
+        ]
+      },
+      "RV": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_2",
+          "r_loop_3"
+        ]
+      }
+    }
+  },
+  {
+    "boundary_legs": [
+      "p0",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "case_id": "product_control_D2",
+    "dim": 2,
+    "internal_edges": [
+      "bridge",
+      "l_loop_1",
+      "l_loop_2",
+      "l_loop_3",
+      "r_loop_1",
+      "r_loop_2",
+      "r_loop_3"
+    ],
+    "left_boundary_region_A": [
+      "p0",
+      "p1"
+    ],
+    "note": "Each tensor is explicit: copy tensors have entries 1 when all incident indices are equal and 0 otherwise; weighted_copy uses weights dim-i on the L tensor only; fixed_zero has only the all-zero entry.",
+    "vertices": {
+      "L": {
+        "kind": "fixed_zero",
+        "legs": [
+          "p0",
+          "p1",
+          "bridge",
+          "l_loop_1",
+          "l_loop_3"
+        ]
+      },
+      "LU": {
+        "kind": "fixed_zero",
+        "legs": [
+          "l_loop_1",
+          "l_loop_2"
+        ]
+      },
+      "LV": {
+        "kind": "fixed_zero",
+        "legs": [
+          "l_loop_2",
+          "l_loop_3"
+        ]
+      },
+      "R": {
+        "kind": "fixed_zero",
+        "legs": [
+          "p2",
+          "p3",
+          "bridge",
+          "r_loop_1",
+          "r_loop_3"
+        ]
+      },
+      "RU": {
+        "kind": "fixed_zero",
+        "legs": [
+          "r_loop_1",
+          "r_loop_2"
+        ]
+      },
+      "RV": {
+        "kind": "fixed_zero",
+        "legs": [
+          "r_loop_2",
+          "r_loop_3"
+        ]
+      }
+    }
+  },
+  {
+    "boundary_legs": [
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "case_id": "weighted_control_D3",
+    "dim": 3,
+    "internal_edges": [
+      "bridge",
+      "l_loop_1",
+      "l_loop_2",
+      "l_loop_3",
+      "r_loop_1",
+      "r_loop_2",
+      "r_loop_3"
+    ],
+    "left_boundary_region_A": [
+      "p0",
+      "p1",
+      "p2"
+    ],
+    "note": "Each tensor is explicit: copy tensors have entries 1 when all incident indices are equal and 0 otherwise; weighted_copy uses weights dim-i on the L tensor only; fixed_zero has only the all-zero entry.",
+    "vertices": {
+      "L": {
+        "kind": "weighted_copy",
+        "legs": [
+          "p0",
+          "p1",
+          "p2",
+          "bridge",
+          "l_loop_1",
+          "l_loop_3"
+        ]
+      },
+      "LU": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_1",
+          "l_loop_2"
+        ]
+      },
+      "LV": {
+        "kind": "copy",
+        "legs": [
+          "l_loop_2",
+          "l_loop_3"
+        ]
+      },
+      "R": {
+        "kind": "copy",
+        "legs": [
+          "p3",
+          "p4",
+          "p5",
+          "bridge",
+          "r_loop_1",
+          "r_loop_3"
+        ]
+      },
+      "RU": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_1",
+          "r_loop_2"
+        ]
+      },
+      "RV": {
+        "kind": "copy",
+        "legs": [
+          "r_loop_2",
+          "r_loop_3"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+artifact,output,classification,grade,scope
+refine_neutral_currency_step14.py,"Finite refinement-lift construction and stability audit","analytical structural","finite-carrier diagnostic","Step 14 carrier only"
+refinement_lift_matrices_step14.json,"Stable and mixing lift matrices plus shadow maps","analytical structural","finite-carrier diagnostic","Transitions 1->2 and 2->3"
+refinement_stability_step14.csv,"Stable-lift versus mixing-control commutator residuals","analytical structural","finite-carrier diagnostic","Two transitions"
+lift_nontriviality_step14.csv,"Non-identity refinement shape and expansion audit","organizational/audit","finite-carrier diagnostic","Two transitions"
+refinement_stability_output_step14.json,"Verdict payload and no-smuggling flags","organizational/audit","diagnostic-complete","Step 14"
+refinement_stability_output_step14.txt,"Readable numerical summary","organizational/audit","diagnostic-complete","Step 14"
+structural_constraint_step14.md,"Extracted refinement compatibility constraint","predictive structural","finite-carrier diagnostic","Framework rung constraint"
+step14_results_summary.md,"Orientation, active residual, verdict, caveats, next move","organizational/audit","diagnostic-complete","Step 14"
+step14_schema.json,"Machine-readable schema and verdict","organizational/audit","diagnostic-complete","Step 14"
+nonclaim_boundary_step14.md,"Mandatory nonclaim boundary","organizational/audit","diagnostic-complete","Step 14"
+construction_gate_audit_step14.csv,"Gate and control-status audit","organizational/audit","diagnostic-complete","Step 14"
+run_step14.py,"Validation script for artifacts, controls, and overclaim scan","organizational/audit","diagnostic-complete","Step 14"
+

@@ -1,0 +1,7 @@
+item,status,detail
+carrier,read_from_step28,neutral P2-closer carrier
+intrinsic_principle,declared_mode_b_input,atomic rewrite-packaging = P5 atomic package + P1 no spectator action + F27 primitive charge orbit
+p2_closer_count,computed,280983
+predicate_survivor_count,computed,1851
+target_distinguished,computed,False
+next_grammar_delta,declared_after_result,conjoin the next neutral intrinsic predicate: a budgeted closure currency or F24/F47 role-obstruction audit on the atomic rewrite packages

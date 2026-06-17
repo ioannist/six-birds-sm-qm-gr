@@ -1,0 +1,5 @@
+control,passes,evidence
+null_predicate_keeps_all_12,True,base shadow has no clean-separation cut
+no_light_limit_keeps_all_12,True,no light vector is forced in this toy
+clean_separation_load_bearing,True,clean-separation cuts 12 to 8
+all_su4_vectors_are_baryon_orbit_enlargers,True,baryon_orbit_enlarging_count equals broken_vector_exotic_count for 4-family rows

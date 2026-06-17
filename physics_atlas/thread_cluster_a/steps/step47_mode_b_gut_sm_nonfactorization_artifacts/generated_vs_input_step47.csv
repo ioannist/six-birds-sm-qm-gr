@@ -1,0 +1,6 @@
+item,status,detail
+state_space,constructed_from_step41,shared SM generator states plus Step-41 colored coset witnesses
+pi_sm,declared_readout,SM interaction lens; colored coset not realized
+pi_gut,declared_readout,GUT interaction lens; colored coset generators distinguished
+delta_fact_both_directions,computed,15|0
+structural_verdict,computed,GENUINE_STRUCTURAL_REFINEMENT

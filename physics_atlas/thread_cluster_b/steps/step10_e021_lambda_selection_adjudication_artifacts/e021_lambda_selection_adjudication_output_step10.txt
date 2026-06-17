@@ -1,0 +1,9 @@
+Cluster B Step 10 E021 Lambda-selection adjudication
+Verdict: e021_lambda_selection_adjudication_constructed
+toy Lambda_SM from Step 8: 0.0031662683693406
+Lambda grid size: 10
+relaxation sequence: 10->10->5->1->1->1
+broad landscape sequence: 10->10->10->10->10->10
+sharp measure sequence: 10->10->7->3->2->1
+certified horns: relaxation_attractor;sharp_selecting_measure
+failed horns: broad_anthropic_landscape

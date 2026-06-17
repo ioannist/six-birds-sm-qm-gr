@@ -1,0 +1,2 @@
+multiplet_type_count,raw_candidate_count,raw_anomaly_free_count,irreducible_chiral_support_count,non_sm_irreducible_support_count,sm_rank,sm_multiplet_count,sm_weyl_component_count,minimal_multiplet_count,minimal_weyl_component_count,minimal_support_count,competitors_at_or_below_sm,verdict
+66,9705619,1161,28,27,28,5,15,4,12,12,27,honest_no_go_minimality_insufficient

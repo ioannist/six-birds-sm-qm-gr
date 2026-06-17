@@ -1,0 +1,8 @@
+Step 16 full-ladder descent
+Candidate L adequacy max: 0.0
+QM-alone adequacy min: 0.47143714685247295
+GR-alone adequacy min: 0.44578629323337904
+Union adequacy min: 1.4142135623730951
+Five constraints satisfied: True
+Candidate bridge structure: True
+External review flag: EXTERNAL_REVIEW_FRAME_TRANSFER_GATE

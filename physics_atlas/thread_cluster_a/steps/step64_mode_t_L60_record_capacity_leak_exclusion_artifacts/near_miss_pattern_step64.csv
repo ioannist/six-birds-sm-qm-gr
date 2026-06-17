@@ -1,0 +1,9 @@
+pattern,count,evidence
+token_count_0,28,near_miss_table_step64.csv
+token_count_1,32,near_miss_table_step64.csv
+dimensions_2|4,12,leak-positive substrate near-miss structure
+dimensions_3|4,12,leak-positive substrate near-miss structure
+dimensions_4,12,leak-positive substrate near-miss structure
+dimensions_4|4,24,leak-positive substrate near-miss structure
+no_zero_sum_line_dual_pair_or_like_orientation_triple,28,blocked second token classification
+only_one_zero_charge_like_orientation_triple;no_line_dual_mirror_pair_for_second_record,32,blocked second token classification

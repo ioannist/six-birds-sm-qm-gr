@@ -1,0 +1,2 @@
+reproduced_step35_survivors,standard_count,relaxed_count,standard_implies_clean,clean_implies_standard,circularity_detected,derived_fundamental,single_factor_returns_when_relaxed,target_passes,target_distinguished,verdict,next_grammar_delta
+12,8,12,True,True,True,False,True,True,False,INDEPENDENT_INTRODUCED_CIRCULAR,clean separation remains a qualified introduced standardness condition; continue to content cascade or seek a richer confining-layer grammar

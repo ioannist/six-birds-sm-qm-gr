@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step67_E032_record_property_class,67,Step66 two-readout nonfactorization witness,Sigma_f-internal record properties; anti-control for global exclusivity,"Uniqueness/exclusivity clauses are marked as smuggle controls, not record landings.","The class argument follows from identical Sigma_f plus selection split, and the battery exhibits the boundary.",Only D-ledger branch pruning or non-Sigma_f indexical extension remains as selection source.

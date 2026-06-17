@@ -1,0 +1,5 @@
+item,status,detail
+content_classes,read_from_step48,two quotient classes
+scalar_and_yukawa_invariants,imported_from_step49_step38,Step-38 scalar witness plus conjugate; Step-49 invariant edge machinery
+full_mass_generation_rank,computed,survivors=2
+verdict,computed,CONTENT_TYPE_LIMIT_3_SHADOWS_BLIND

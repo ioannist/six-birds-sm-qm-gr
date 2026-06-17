@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+reference_present_in_corrected_carrier,True,target dimensions 2|3
+corrected_chirality_pass_and_fail_channels,True,80 pass and 50 fail
+old_step32_dominant_region_broken,True,old dominant 2|2 final count is 0

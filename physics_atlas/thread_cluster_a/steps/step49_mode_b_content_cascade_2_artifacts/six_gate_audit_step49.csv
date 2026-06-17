@@ -1,0 +1,5 @@
+gate,passes,evidence
+primitive_exclusion,True,content shadow is defined without target roster literals
+dependency_trace,True,generated_vs_input_step49.csv records source and predicate
+negative_control,True,underconnected texture control fails
+honest_type_limit,True,second distinct shadow is blind

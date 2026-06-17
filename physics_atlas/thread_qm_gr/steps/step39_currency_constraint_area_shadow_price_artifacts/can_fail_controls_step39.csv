@@ -1,0 +1,5 @@
+control_id,boundary_cells,state_type,entanglement_entropy_S,geometric_area_A,predicted_area_using_holographic_k,control_residual,relation_collapses,reason
+product_state_same_boundary,2,product,-0,2,-0,2,True,area nonzero while entanglement ledger is zero
+volume_law_extra_pairs_boundary_2,2,non_holographic_extra_entanglement,2.77258872224,2,4,2,True,4 entangled pairs for 2 boundary cells; entropy is not boundary-local
+volume_law_extra_pairs_boundary_4,4,non_holographic_extra_entanglement,4.15888308336,4,6,2,True,6 entangled pairs for 4 boundary cells; entropy is not boundary-local
+slack_budget_reversible_price_tail,,slack_MaxCal_control,1.38629436112,,,,True,budget exceeds unconstrained expected cost; recovered lambda=0

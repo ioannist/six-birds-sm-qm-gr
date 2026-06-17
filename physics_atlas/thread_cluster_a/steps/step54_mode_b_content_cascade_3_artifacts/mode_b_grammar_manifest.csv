@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,inherited_by_step,new_grammar_declared,carrier,active_constraints,excluded_designs_rationale
+G_step48_49_content_cascade_inherited,48/49,54,False,two Step-48 quotient content classes plus Step-49 Yukawa edge machinery,No new grammar; Step54 adds a third shadow in the inherited content-cascade grammar.,"No target class, observed roster literal, generation count, or anomaly shadow is inserted."

@@ -1,0 +1,4 @@
+detector,flagged,evidence
+shape_flavored,False,single-factor rows receive computed standardness verdicts and pass the relaxed base requirement
+minimality_or_size_selector,False,no ordering over size or currency is used
+circularity,True,standardness and clean separation are extensionally equivalent on the carrier

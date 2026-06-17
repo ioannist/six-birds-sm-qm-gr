@@ -1,0 +1,28 @@
+{
+  "step": 27,
+  "verdict": {
+    "constraint_verdict": "timeless_relational_layer_exists_on_toy",
+    "physical_space_nonempty": true,
+    "empty_kernel_control_passes": false,
+    "relational_time_recovers_step26_stationary_dynamics": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "summary": {
+    "constraint_residual": 8.547035876629756e-16,
+    "kernel_dim_tol_1e_minus_8": 1,
+    "control_min_abs_eigenvalue": 0.9868198124684662,
+    "control_state_constraint_residual": 0.9868198124684665,
+    "max_direct_relational_residual": 9.79195701998934e-16,
+    "max_phase_aligned_relational_residual": 9.767340466842636e-16,
+    "max_sourced_potential_residual": 0.0,
+    "field_eigen_residual": 6.377748916558787e-16,
+    "energy": 0.2434099062342333
+  },
+  "guardrails": {
+    "kernel_computed_by_spectrum": true,
+    "state_residual_computed": true,
+    "relational_readout_computed": true,
+    "empty_kernel_control_required_to_fail": true
+  }
+}

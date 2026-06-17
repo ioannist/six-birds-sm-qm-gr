@@ -1,0 +1,5 @@
+bridge,source_in_step7,generation_map,normalized_xi_r2,normalized_xi_r4,status,target_equivalence_audit
+Bridge_HED_LQG_area_geometry,inherited_G_v1,average(u_i),0.0,0.0,closed_inherited,"strict pairwise bridge; not the triple package"
+Bridge_LQG_AS_discrete_continuum,inherited_G_v1,v,0.0,0.0,closed_inherited,"strict pairwise bridge; not the triple package"
+Bridge_HED_AS_boundary_continuum,inherited_G_v2,w,0.0,0.0,closed_inherited,"strict pairwise bridge; not the triple package"
+Bridge_triple_joint_package,none_admissible_in_G_v3,not_generated,1.0,1.0,survives_G_v3_no_go,"triple row cannot be generated non-circularly inside posited-atom-shadow G_v3"

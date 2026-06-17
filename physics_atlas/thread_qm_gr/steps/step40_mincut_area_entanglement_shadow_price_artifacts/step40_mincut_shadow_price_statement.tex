@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\begin{document}
+\section*{Step 40 Min-Cut Shadow-Price Statement}
+This statement is scoped to the declared finite bulk graph carrier.
+
+Let \(G\) be a finite capacitated bulk graph with boundary region \(A\) and complement \(\bar A\). The geometric area is computed as
+\[
+  \operatorname{Area}(A)=\min_{\gamma:A|\bar A}\sum_{e\in\gamma} c_e,
+\]
+the min-cut separating \(A\) from \(\bar A\). The entanglement-flow ledger is the primal max-flow from \(A\) to \(\bar A\),
+\[
+  S_{\rm flow}(A)=\max_f |f|,
+\]
+subject to the same edge-capacity constraints. Linear-program duality gives
+\[
+  S_{\rm flow}(A)=\operatorname{Area}(A)
+\]
+on the holographic graph. The boundary state used in the holographic carrier has reduced-density-matrix entropy equal to this flow capacity, so the computed coefficient
+\[
+  k = \operatorname{Area}(A)/S(A)
+\]
+is stable across the two refinements.
+
+The non-holographic controls alter either the boundary state or the bulk capacity while keeping the other side fixed, and the equality fails. Thus the agreement is not a tautological rescaling of one parameter; it is a finite-carrier optimization-dual relation that recognition-lands on the Ryu--Takayanagi/bit-thread structure.
+\end{document}

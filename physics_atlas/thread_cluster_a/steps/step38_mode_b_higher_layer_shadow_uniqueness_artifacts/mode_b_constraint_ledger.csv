@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP38_REPRODUCE_CARRIER,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,determinism,"Step 38 rederives the Step-35 higher-layer survivor count as 12."
+C_CLUSTER_A_STEP38_DIAGNOSTICS_REJECTED,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,correction,"Step-36 factor-local breaking and Step-37 scalar-stage currency are both marked diagnostic-only and rejected as verdict carriers."
+C_CLUSTER_A_STEP38_BASE_SHADOW,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,shadow,"The base stable-composite plus mass requirement leaves all 12 survivors, including the single-factor 4 family."
+C_CLUSTER_A_STEP38_CLEAN_SHADOW,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,shadow,"The clean shadow requirement leaves 8 survivors, all in structure 2|3."
+C_CLUSTER_A_STEP38_SINGLE_FACTOR_OBSTRUCTION,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,diagnostic,"The single-factor 4 family leaves a confining subgroup but also 6 confining-charged broken-vector exotics."
+C_CLUSTER_A_STEP38_CONTENT_LIMIT,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,residual,"The reference support passes the clean shadow but is not unique among the 8 selected-structure supports."
+C_CLUSTER_A_STEP38_VERDICT,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,verdict,"Verdict is SHADOW_UNIQUENESS_WITH_CONTENT_LIMIT."
+C_CLUSTER_A_STEP38_NONCLAIM_BOUNDARY,ModeB,step38_mode_b_higher_layer_shadow_uniqueness,honesty,"Finite structure-level shadow diagnostic only; no content derivation, value derivation, or external-transfer status upgrade is supplied."

@@ -1,0 +1,7 @@
+target_package,state_i,state_j,qm_gap,target_gap
+L,0,1,0.0,0.7999999999999999
+L,2,3,0.0,0.9
+L,6,7,0.0,0.8
+union,0,1,0.0,0.7999999999999999
+union,2,3,0.0,0.9
+union,6,7,0.0,0.8

@@ -1,0 +1,83 @@
+{
+  "step": 6,
+  "orientation": "Mode B top-down design grammar G_v2 for surviving bridges",
+  "active_residual": "R_child_E018_after_Pstar_v1_boundary_triple_residual",
+  "carrier": {
+    "kind": "finite physics toy for bounded G_v2 design",
+    "audit_energy": "C = I on E_r = R^(r+3)",
+    "refinement_levels": [2, 4],
+    "native_lens": "inherited G_v1 shared rows u_i and route row v plus G_v2 holographic-RG row w",
+    "completion": "E_v2 projects inherited u_i/v rows and generated w shadow onto target probes; it excludes the triple row",
+    "audit": "D_v2 is the rowwise Xi residual over sectors, inherited bridges, the HED-AS bridge, and the triple bridge",
+    "excluded_native_rows": [
+      "Bridge_triple_joint_package"
+    ],
+    "no_overread_controls": {
+      "step5_closed_pairwise_bridges_reopened": false,
+      "residual_bridge_rows_used_as_native_probes": false,
+      "bridge_rows_inserted_as_free_source_facts": false,
+      "triple_row_inserted_as_native_probe": false,
+      "fixed_bulk_metric_inserted": false,
+      "planck_constant_inserted": false
+    }
+  },
+  "candidate_move": {
+    "mode": "Mode B",
+    "grammar": "G_E018_BoundaryContinuumTripleBridge_v2",
+    "predicate_name": "holographic_rg_boundary_flow_extension",
+    "design_assumption": "Within an AdS-like holographic RG state class, a boundary cutoff/radial-flow coordinate w can act as an L-layer source atom whose shadow matches a continuum-RG scale probe.",
+    "target_lineage_non_equivalence": "The predicate is a specific boundary-flow extension and leaves the triple package residual open, so it is strictly weaker than the canonical E018 root."
+  },
+  "final_verdict": {
+    "type": "candidate_G_v2_design_partial",
+    "summary": "G_v2 closes the HED-AS boundary/continuum bridge by generated holographic-RG row w, preserves the two inherited G_v1 pairwise bridges, and leaves the triple shared-package bridge residual.",
+    "grade": "finite-carrier diagnostic partial design plus applied no-smuggling gate verdict",
+    "root_landed": false,
+    "bridges_closed": [
+      "Bridge_HED_LQG_area_geometry",
+      "Bridge_LQG_AS_discrete_continuum",
+      "Bridge_HED_AS_boundary_continuum"
+    ],
+    "bridges_survive": [
+      "Bridge_triple_joint_package"
+    ],
+    "next_grammar_delta": "G_E018_TriplePackageAudit_v3",
+    "child_residuals": [
+      "R_child_E018_after_Gv2_triple_package_residual"
+    ]
+  },
+  "track_fields": {
+    "physics_track": true,
+    "target_edge": "E018",
+    "acceptable_landing_tested": "Mode B finite boundary/continuum design extension",
+    "xi_orientation": "adequacy-oriented bridge diagnostic for declared finite carrier",
+    "xi_results": {
+      "coupled_joint_normalized": {
+        "level_2": 0.14285714285714285,
+        "level_4": 0.14285714285714285
+      },
+      "coupled_joint_raw_trace": {
+        "level_2": 1.0,
+        "level_4": 1.0
+      },
+      "all_bridges_normalized": {
+        "level_2": 0.25,
+        "level_4": 0.25
+      },
+      "step5_survivor_pair_normalized": {
+        "level_2": 0.5,
+        "level_4": 0.5
+      },
+      "closed_bridge_count": 3,
+      "surviving_bridge_count": 1,
+      "refinement_stability_delta": 0.0
+    },
+    "gate_status_file": "no_smuggling_gates_step6.csv",
+    "content_classification_file": "content_classification_step6.csv",
+    "nonclaim_boundary_file": "nonclaim_boundary_step6.md",
+    "simulation_output": "simulation_output_step6.json",
+    "lineage_update": "../../mode_b_target_lineage.csv",
+    "grammar_manifest": "../../mode_b_grammar_manifest.csv",
+    "constraint_ledger": "../../mode_b_constraint_ledger.csv"
+  }
+}

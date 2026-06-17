@@ -1,0 +1,34 @@
+{
+  "step": 46,
+  "orientation": "review_response_precision_scoping_fixes",
+  "active_residual": "qm_gr_area_entanglement_v1 review packet R1-R5",
+  "main_object": "label caveat validator response only",
+  "verdict": "REVIEW_RESPONSE_FIXES_APPLIED",
+  "R1": {
+    "applied": true,
+    "description": "Step45 verdict relabeled to DISCRETE_RT_CONSISTENCY_CONSTRAINT_DERIVED and prose scoped to recognition-level finite analogue"
+  },
+  "R2": {
+    "applied": true,
+    "description": "Step45 fixed-min-cut-chamber caveat added"
+  },
+  "R3": {
+    "applied": true,
+    "description": "Step44 finite-sample MMI caveat added"
+  },
+  "R4": {
+    "applied": true,
+    "description": "Step44 --quick reduced recompute mode added"
+  },
+  "R5": {
+    "applied": true,
+    "description": "Step41 and Step42 recognition-carrier first sentence added"
+  },
+  "numbers_unchanged": true,
+  "validators_41_42_44_45_pass": true,
+  "new_computation": false,
+  "new_result": false,
+  "new_physics_claim": false,
+  "root_landed": false,
+  "frame_transfer_certified": false
+}

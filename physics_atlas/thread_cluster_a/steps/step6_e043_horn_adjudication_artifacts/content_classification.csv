@@ -1,0 +1,9 @@
+output,classification,grade,scope,source_artifacts
+e043_horn_adjudication_step6.py,analytical structural,finite-toy-diagnostic,"Builds P6 degeneracy audits for derivation, broad measure, sharp measure, and controls.",steps/step6_e043_horn_adjudication_artifacts/e043_horn_adjudication_step6.py
+horn_degeneracy_step6.csv,analytical structural,finite-toy-diagnostic,Per-horn per-level effective degeneracy and increments.,steps/step6_e043_horn_adjudication_artifacts/horn_degeneracy_step6.csv
+adjudication_step6.csv,analytical structural,finite-toy-diagnostic,Per-horn collapse status and P6 certification.,steps/step6_e043_horn_adjudication_artifacts/adjudication_step6.csv
+controls_step6.csv,analytical structural,finite-toy-diagnostic,"Broad-measure, derivation, sharp-measure, and carrier controls.",steps/step6_e043_horn_adjudication_artifacts/controls_step6.csv
+results_summary.md,organizational/audit,finite-toy-diagnostic,Human-readable horn adjudication verdict and bounded scope.,steps/step6_e043_horn_adjudication_artifacts/results_summary.md
+schema.json,organizational/audit,finite-toy-diagnostic,Per-step schema and final verdict.,steps/step6_e043_horn_adjudication_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite horn adjudication.,steps/step6_e043_horn_adjudication_artifacts/nonclaim_boundary.md
+run_step6.py,organizational/audit,finite-toy-diagnostic,"Validator for horn degeneracy, controls, source paths, ledgers, and overclaim guard.",steps/step6_e043_horn_adjudication_artifacts/run_step6.py

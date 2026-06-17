@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+C_STEP41_QM_GR_ANCHOR,active,41,QM-GR E018 only
+C_STEP41_SATURABLE_BOUND_NOT_IDENTITY,active_validator,41,require S<=min-cut with saturation and strict gap
+C_STEP41_CONTRACTED_STATE_ENTROPY,active_validator,41,rho_A formed from contracted boundary amplitudes
+C_STEP41_NONTRIVIAL_MINCUT,active_validator,41,min-cut must be internal and not boundary-leg count

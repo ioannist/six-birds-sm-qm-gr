@@ -1,0 +1,5 @@
+item,status,detail
+clean_shadow_coset,read_from_step41,"Delta_fact empty, no realized coset"
+dynamical_breaking_coset,computed_from_step41_witnesses,six realized charged coset generators
+f48_gluing_invariant,computed,nontrivial charged coset pair count
+verdict,computed,CANDIDATE_SHADOW_VS_BREAKING_FORK_TYPED

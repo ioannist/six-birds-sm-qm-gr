@@ -1,0 +1,200 @@
+{
+  "step": 1,
+  "toy_name": "finite_holographic_rt_lens_diagnostic",
+  "orientation": "Mode A recognition-import diagnostic",
+  "carrier": {
+    "audit_energy": "identity on declared finite carrier",
+    "levels": [
+      2,
+      4
+    ],
+    "native_lens": "boundary entanglement ledger only",
+    "dissolving_target": "RT-like area rows plus independent amplitude(geometry) and P3 rows"
+  },
+  "results": [
+    {
+      "region_count": 2,
+      "carrier_dimension": 4,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch"
+      ],
+      "native_probe_names_used": [
+        "boundary_entanglement_S_0",
+        "boundary_entanglement_S_1"
+      ],
+      "dissolving_joint_probe_names": [
+        "rt_area_shadow_0",
+        "rt_area_shadow_1",
+        "amplitude_geometry_probe",
+        "p3_backreaction_probe"
+      ],
+      "rt_area_sector": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "trace_K_DD": 0.9999999999999998,
+        "max_abs_Xi": 0.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 0.0
+      },
+      "full_joint_target": {
+        "raw_trace": 2.09,
+        "normalized_trace": 0.6608695652173913,
+        "trace_K_DD": 3.1625,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.34835622624235,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.3
+          ],
+          [
+            0.0,
+            0.0,
+            0.3,
+            1.09
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding bulk amplitude and P3 answer rows to the native lens"
+      },
+      "no_overread_check": {
+        "bulk_geometry_amplitude_used_as_native_probe": false,
+        "p3_route_mismatch_used_as_native_probe": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "rt_area_rows_factor_through_entanglement_ledger": true
+      }
+    },
+    {
+      "region_count": 4,
+      "carrier_dimension": 6,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "entanglement_region_2",
+        "entanglement_region_3",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch"
+      ],
+      "native_probe_names_used": [
+        "boundary_entanglement_S_0",
+        "boundary_entanglement_S_1",
+        "boundary_entanglement_S_2",
+        "boundary_entanglement_S_3"
+      ],
+      "dissolving_joint_probe_names": [
+        "rt_area_shadow_0",
+        "rt_area_shadow_1",
+        "rt_area_shadow_2",
+        "rt_area_shadow_3",
+        "amplitude_geometry_probe",
+        "p3_backreaction_probe"
+      ],
+      "rt_area_sector": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "trace_K_DD": 1.0,
+        "max_abs_Xi": 0.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 0.0
+      },
+      "full_joint_target": {
+        "raw_trace": 2.09,
+        "normalized_trace": 0.6608695652173913,
+        "trace_K_DD": 3.1625,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.34835622624235,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.3
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.3,
+            1.09
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding bulk amplitude and P3 answer rows to the native lens"
+      },
+      "no_overread_check": {
+        "bulk_geometry_amplitude_used_as_native_probe": false,
+        "p3_route_mismatch_used_as_native_probe": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "rt_area_rows_factor_through_entanglement_ledger": true
+      }
+    }
+  ],
+  "refinement_stability": {
+    "normalized_residual_level_2": 0.6608695652173913,
+    "normalized_residual_level_4": 0.6608695652173913,
+    "absolute_delta": 0.0,
+    "ratio_level_4_over_level_2": 1.0,
+    "interpretation": "positive stable residual for full joint target; zero residual only for RT area sector"
+  },
+  "verdict_from_toy": "finite-carrier diagnostic obstruction for the root residual; partial closure for RT area sector only"
+}

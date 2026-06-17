@@ -1,0 +1,6 @@
+axiom,role,detail
+neutral_two_vacua,carrier,v_alpha and v_beta are abstract closure packages with no our-vacuum marker
+per_vacuum_descent_maps,stage2,each vacuum has an EFT vector approximated under refinement
+route_measure_mismatch,RM,landscape route counts vacua 1:1; EFT route counts low-energy multiplicities 3:1
+proportional_refinement,nondecay,"EFT multiplicities scale by the same factor, preserving 3:1"
+stabilizing_control,teeth,control route weights converge under supplied selector

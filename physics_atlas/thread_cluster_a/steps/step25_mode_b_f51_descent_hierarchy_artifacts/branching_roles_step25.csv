@@ -1,0 +1,17 @@
+source_id,role_key,role_family,sector_signature,dimension,charge,included_in_charged_image
+split_child_target,dual_block_0,dual,block:2,2,-3,True
+split_child_target,dual_block_1,dual,block:3,3,2,True
+split_child_target,mixed_block_0_1,pair_mixed,blocks:2x3,6,1,True
+split_child_target,antisym_block_0,pair_same,block:2,1,6,True
+split_child_target,antisym_block_1,pair_same,block:3,3,-4,True
+SU(5),dual_block_0,dual,block:2,2,-3,True
+SU(5),dual_block_1,dual,block:3,3,2,True
+SU(5),mixed_block_0_1,pair_mixed,blocks:2x3,6,1,True
+SU(5),antisym_block_0,pair_same,block:2,1,6,True
+SU(5),antisym_block_1,pair_same,block:3,3,-4,True
+SO(10),dual_block_0,dual,block:2,2,-3,True
+SO(10),dual_block_1,dual,block:3,3,2,True
+SO(10),mixed_block_0_1,pair_mixed,blocks:2x3,6,1,True
+SO(10),antisym_block_0,pair_same,block:2,1,6,True
+SO(10),antisym_block_1,pair_same,block:3,3,-4,True
+SO(10),neutral_unit_residual,unit,neutral,1,0,False

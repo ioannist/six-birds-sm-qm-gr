@@ -1,0 +1,3 @@
+fact,input_record_count,output_record_count,persistent_and_distinct
+identity_dynamics_preserves_two_records,2,2,True
+erasure_dynamics_collapses_records,2,1,False

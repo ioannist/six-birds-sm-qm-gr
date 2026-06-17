@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,no continuum Einstein tensor or metric-energy equation is a primitive
+dependency_trace,True,generated_vs_input_step45.csv lists inputs and generated quantities
+linear_system_solved,True,least-squares solve is recorded
+constraint_nontrivial,True,cokernel dimension is nonzero
+rt_control_passes,True,RT-preserving delta_S has zero residual
+generic_can_fail,True,generic contracted-state delta_S violates the constraint

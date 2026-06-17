@@ -1,0 +1,5 @@
+case,transition,commutator_residual,fixedpoint_discrepancy_np1,descent_discrepancy_np1,adequacy_residual,status
+built,1->2,0.0,0.0,0.0,0.0,passes
+built,2->3,0.0,0.0,0.0,0.0,passes
+placeholder,1->2,0.0,0.6208694676345234,0.6208694676345234,0.8780420215921064,fails_as_control
+placeholder,2->3,0.0,0.9143801925182814,0.9143801925182814,1.2931288694246752,fails_as_control

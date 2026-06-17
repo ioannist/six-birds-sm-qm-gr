@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,build script excludes forbidden prior literals and target-shape primitives
+dependency_trace,True,components traced to corrected prior stack and F24
+ablation,True,F24 predicate is load-bearing
+negative_controls,True,predicate is not a row picker and has a nontrivial distribution
+stage_ii,True,corrected 80 reproduced and target obstruction computed
+no_tuning,True,"criterion is O_s=0, not target-matched obstruction"

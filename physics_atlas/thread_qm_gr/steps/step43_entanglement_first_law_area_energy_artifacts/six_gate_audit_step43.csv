@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,no metric-energy coupling or continuum gravitational constant is a carrier primitive
+dependency_trace,True,generated_vs_input_step43.csv lists all inputs and generated quantities
+computed_first_law,True,delta S and delta H_mod are computed separately and compared
+computed_second_order_teeth,True,relative entropy is strictly positive at finite t
+can_fail_large_perturbation,True,finite-t deviation grows
+rt_coefficient_from_prior,True,area-energy coefficient is read from prior RT artifacts

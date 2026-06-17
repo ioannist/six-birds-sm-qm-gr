@@ -1,0 +1,4 @@
+control,structure_id,ranks,dimensions,selected_charge_vector,closes,normalization_status,sin2_theta_w,failure_reason,passes
+computed_anomaly_obstruction,r1|3,1|3,2|4,2|-1,False,COMPUTED,8/11,none,True
+no_complex_representation,r1|1,1|1,2|2,1|-1,False,FAILED,none,rank_one_readout_not_unique,True
+no_complex_representation,rnone,none,none,none,False,FAILED,none,missing_dimensions_or_charge_vector,True

@@ -1,0 +1,5 @@
+predicate_component,primitive,role
+corrected_80_carrier,P2/P5/P1/F27/P3/P6,Step-33 corrected intrinsic gauge-closure carrier.
+neutral_scalar_enumeration,higher-layer descent grammar,Enumerate scalar representatives from the same neutral rep alphabet and charge lattice.
+mass_completability,currency-constraint compatibility,Every chiral type has at least one gauge-invariant fermion-fermion-scalar closure witness.
+unbroken_u1_breaking,higher-layer role readout,"The scalar witness is charged and non-abelian-active, giving a finite proxy for proper breaking with an abelian remainder."

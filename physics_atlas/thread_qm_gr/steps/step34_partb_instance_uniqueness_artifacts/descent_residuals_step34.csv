@@ -1,0 +1,9 @@
+candidate,qm_factors,qm_linear_residual,qm_pair_obstruction_count,qm_pair_witnesses,gr_factors,gr_linear_residual,gr_pair_obstruction_count,gr_pair_witnesses,both_endpoints_factor,dimension,rank,extra_coordinate_count,passes_no_duplicate_gate,L_factors_through_candidate,L_from_candidate_residual,candidate_factors_through_L,candidate_from_L_residual,pair_obstruction_L_from_candidate,pair_obstruction_candidate_from_L,equivalent_to_L
+L_join,True,0.0,0,,True,0.0,0,,True,4,4,0,True,True,0.0,True,0.0,0,0,True
+drop_d0_density,False,0.5773502691896258,1,4-5,False,0.5773502691896258,1,4-5,False,3,3,0,True,False,0.5,True,0.0,1,0,False
+drop_d1_phase,False,0.5773502691896258,0,,True,0.0,0,,False,3,3,0,True,False,0.5,True,0.0,0,0,False
+drop_d2_transport,False,0.5773502691896258,0,,False,0.5773502691896258,0,,False,3,3,0,True,False,0.5,True,0.0,0,0,False
+drop_d3_curvature,True,0.0,0,,False,0.5773502691896258,3,0-1;2-3;6-7,False,3,3,0,True,False,0.5,True,0.0,3,0,False
+M_super_5mode,True,0.0,0,,True,0.0,0,,True,5,5,0,True,True,0.0,False,0.4472135954999579,0,0,False
+union_direct_sum,True,1.812986607347358e-16,0,,True,1.812986607347358e-16,0,,True,6,4,2,False,True,1.5700924586837752e-16,True,0.0,0,0,False
+L_prime_relabel,True,0.0,0,,True,0.0,0,,True,4,4,0,True,True,0.0,True,0.0,0,0,True

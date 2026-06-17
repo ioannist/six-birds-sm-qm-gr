@@ -1,0 +1,17 @@
+map_id,map_class,target,source_description,determinant,obstruction_count,non_descending,witness
+linear_identity_GR_sigma,linear,d4_subplanck,function_of_GR_smooth_Sigma_f,1.0,3,True,1-2;5-6;10-11
+linear_identity_GR_sigma,linear,d5_vacuum,function_of_GR_smooth_Sigma_f,1.0,1,True,3-4
+linear_shear_mix_GR_sigma,linear,d4_subplanck,function_of_GR_smooth_Sigma_f,0.8009999999999999,3,True,1-2;5-6;10-11
+linear_shear_mix_GR_sigma,linear,d5_vacuum,function_of_GR_smooth_Sigma_f,0.8009999999999999,1,True,3-4
+linear_random_invertible_A,linear,d4_subplanck,function_of_GR_smooth_Sigma_f,1.8050000000000006,3,True,1-2;5-6;10-11
+linear_random_invertible_A,linear,d5_vacuum,function_of_GR_smooth_Sigma_f,1.8050000000000006,1,True,3-4
+linear_random_invertible_B,linear,d4_subplanck,function_of_GR_smooth_Sigma_f,0.45099999999999996,3,True,1-2;5-6;10-11
+linear_random_invertible_B,linear,d5_vacuum,function_of_GR_smooth_Sigma_f,0.45099999999999996,1,True,3-4
+linear_scaled_non_axis,linear,d4_subplanck,function_of_GR_smooth_Sigma_f,-3.5469999999999997,3,True,1-2;5-6;10-11
+linear_scaled_non_axis,linear,d5_vacuum,function_of_GR_smooth_Sigma_f,-3.5469999999999997,1,True,3-4
+nonlinear_poly_degree2_GR_sigma,nonlinear,d4_subplanck,function_of_GR_smooth_Sigma_f,,3,True,1-2;5-6;10-11
+nonlinear_poly_degree2_GR_sigma,nonlinear,d5_vacuum,function_of_GR_smooth_Sigma_f,,1,True,3-4
+nonlinear_poly_degree3_GR_sigma,nonlinear,d4_subplanck,function_of_GR_smooth_Sigma_f,,3,True,1-2;5-6;10-11
+nonlinear_poly_degree3_GR_sigma,nonlinear,d5_vacuum,function_of_GR_smooth_Sigma_f,,1,True,3-4
+nonlinear_compressed_GR_sigma,nonlinear,d4_subplanck,function_of_GR_smooth_Sigma_f,,3,True,1-2;5-6;10-11
+nonlinear_compressed_GR_sigma,nonlinear,d5_vacuum,function_of_GR_smooth_Sigma_f,,1,True,3-4

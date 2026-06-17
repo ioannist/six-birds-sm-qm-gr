@@ -1,0 +1,1189 @@
+{
+  "step": 7,
+  "toy_name": "finite_gv3_triple_audit_saturation_xi_diagnostic",
+  "orientation": "Mode B bounded no-go diagnostic for G_v3",
+  "bounded_grammar": "G_E018_TriplePackageAudit_v3",
+  "gv3_search": {
+    "inherited_native_rows": "filtered u_i, v, w rows from G_v1+G_v2",
+    "admissible_new_atom_requirement": "independent witness predicate plus generated shadow to the triple row",
+    "result": "no admissible independent triple atom declared inside posited-atom-shadow grammar"
+  },
+  "results": [
+    {
+      "region_count": 2,
+      "carrier_dimension": 6,
+      "basis": [
+        "inherited_shared_area_geometry_currency_0",
+        "inherited_shared_area_geometry_currency_1",
+        "inherited_route_holonomy_rg_source",
+        "inherited_holographic_rg_boundary_continuum_flow",
+        "residual_triple_joint_package",
+        "independent_witness_without_bridge_map"
+      ],
+      "inherited_native_probe_names": [
+        "inherited_shared_currency_0",
+        "inherited_shared_currency_1",
+        "inherited_route_holonomy_rg",
+        "inherited_holographic_rg_flow"
+      ],
+      "candidate_tests": {
+        "pairwise_union_as_triple": "dependent row in span(u_i, v, w); no independent content",
+        "independent_witness_without_bridge_map": "independent s row with no audited map to t",
+        "native_triple_insertion": "t inserted directly; rejected control"
+      },
+      "bridge_results": {
+        "Bridge_HED_LQG_area_geometry": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 0.9999999999999998,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_LQG_AS_discrete_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_HED_AS_boundary_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_triple_joint_package": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        }
+      },
+      "accepted_G_v3_search_result": {
+        "candidate_type": "no_admissible_independent_triple_atom",
+        "triple_bridge": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        },
+        "coupled_joint": {
+          "raw_trace": 1.0,
+          "normalized_trace": 0.14285714285714285,
+          "trace_K_DD": 7.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "rejected_controls": {
+        "pairwise_union_as_triple_completion": {
+          "triple_bridge": {
+            "raw_trace": 1.0,
+            "normalized_trace": 1.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 1.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                1.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 0.9999999999999996,
+            "normalized_trace": 0.1428571428571428,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": -6.701998491767163e-16,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "flag": "no new span; not a triple package"
+        },
+        "independent_witness_without_bridge_map": {
+          "triple_bridge": {
+            "raw_trace": 1.0,
+            "normalized_trace": 1.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 1.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                1.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 1.0,
+            "normalized_trace": 0.14285714285714285,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "flag": "independent content without a map to t does not generate the bridge"
+        },
+        "native_triple_row_insertion": {
+          "triple_bridge": {
+            "raw_trace": 0.0,
+            "normalized_trace": 0.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 0.0,
+            "Xi_matrix": [
+              [
+                0.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 0.0,
+            "normalized_trace": 0.0,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 0.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "flag": "zero residual only after inserting t itself"
+        }
+      },
+      "no_overread_check": {
+        "pairwise_union_treated_as_triple_package": false,
+        "triple_row_inserted_as_native_probe": false,
+        "primitive_package_coherence_used": false,
+        "independent_witness_declared": false,
+        "triple_has_generation_map": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false
+      }
+    },
+    {
+      "region_count": 4,
+      "carrier_dimension": 8,
+      "basis": [
+        "inherited_shared_area_geometry_currency_0",
+        "inherited_shared_area_geometry_currency_1",
+        "inherited_shared_area_geometry_currency_2",
+        "inherited_shared_area_geometry_currency_3",
+        "inherited_route_holonomy_rg_source",
+        "inherited_holographic_rg_boundary_continuum_flow",
+        "residual_triple_joint_package",
+        "independent_witness_without_bridge_map"
+      ],
+      "inherited_native_probe_names": [
+        "inherited_shared_currency_0",
+        "inherited_shared_currency_1",
+        "inherited_shared_currency_2",
+        "inherited_shared_currency_3",
+        "inherited_route_holonomy_rg",
+        "inherited_holographic_rg_flow"
+      ],
+      "candidate_tests": {
+        "pairwise_union_as_triple": "dependent row in span(u_i, v, w); no independent content",
+        "independent_witness_without_bridge_map": "independent s row with no audited map to t",
+        "native_triple_insertion": "t inserted directly; rejected control"
+      },
+      "bridge_results": {
+        "Bridge_HED_LQG_area_geometry": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_LQG_AS_discrete_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_HED_AS_boundary_continuum": {
+          "raw_trace": 0.0,
+          "normalized_trace": 0.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "Xi_matrix": [
+            [
+              0.0
+            ]
+          ]
+        },
+        "Bridge_triple_joint_package": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        }
+      },
+      "accepted_G_v3_search_result": {
+        "candidate_type": "no_admissible_independent_triple_atom",
+        "triple_bridge": {
+          "raw_trace": 1.0,
+          "normalized_trace": 1.0,
+          "trace_K_DD": 1.0,
+          "min_eigenvalue": 1.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              1.0
+            ]
+          ]
+        },
+        "coupled_joint": {
+          "raw_trace": 1.0,
+          "normalized_trace": 0.14285714285714285,
+          "trace_K_DD": 7.0,
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 1.0,
+          "Xi_matrix": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "rejected_controls": {
+        "pairwise_union_as_triple_completion": {
+          "triple_bridge": {
+            "raw_trace": 1.0,
+            "normalized_trace": 1.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 1.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                1.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 0.9999999999999996,
+            "normalized_trace": 0.1428571428571428,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": -7.515308599176064e-16,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "flag": "no new span; not a triple package"
+        },
+        "independent_witness_without_bridge_map": {
+          "triple_bridge": {
+            "raw_trace": 1.0,
+            "normalized_trace": 1.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 1.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                1.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 1.0,
+            "normalized_trace": 0.14285714285714285,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 1.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "flag": "independent content without a map to t does not generate the bridge"
+        },
+        "native_triple_row_insertion": {
+          "triple_bridge": {
+            "raw_trace": 0.0,
+            "normalized_trace": 0.0,
+            "trace_K_DD": 1.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 0.0,
+            "Xi_matrix": [
+              [
+                0.0
+              ]
+            ]
+          },
+          "coupled_joint": {
+            "raw_trace": 0.0,
+            "normalized_trace": 0.0,
+            "trace_K_DD": 7.0,
+            "min_eigenvalue": 0.0,
+            "max_eigenvalue": 0.0,
+            "Xi_matrix": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "flag": "zero residual only after inserting t itself"
+        }
+      },
+      "no_overread_check": {
+        "pairwise_union_treated_as_triple_package": false,
+        "triple_row_inserted_as_native_probe": false,
+        "primitive_package_coherence_used": false,
+        "independent_witness_declared": false,
+        "triple_has_generation_map": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false
+      }
+    }
+  ],
+  "refinement_stability": {
+    "triple_normalized_level_2": 1.0,
+    "triple_normalized_level_4": 1.0,
+    "coupled_normalized_level_2": 0.14285714285714285,
+    "coupled_normalized_level_4": 0.14285714285714285,
+    "coupled_raw_level_2": 1.0,
+    "coupled_raw_level_4": 1.0,
+    "triple_absolute_delta": 0.0,
+    "coupled_absolute_delta": 0.0,
+    "interpretation": "Pairwise union leaves the triple bridge residual; direct triple insertion is rejected; no independent witness-generated atom is available in G_v3."
+  },
+  "verdict_from_toy": "bounded-grammar saturation no-go on G_v3"
+}

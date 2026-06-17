@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Step 43: Entanglement First Law And RT Area-Energy Consequence}
+
+Let $\rho_0$ be the declared full-rank reduced density matrix and let
+$\rho(t)=\rho_0+t\,\delta\rho$ with $\mathrm{{Tr}}\delta\rho=0$. Define
+$H_{{\rm mod}}=-\log\rho_0$. The entropy derivative is computed from
+$S(\rho(t))=-\mathrm{{Tr}}\rho(t)\log\rho(t)$, while the modular response is
+computed separately as $\mathrm{{Tr}}(\delta\rho H_{\rm mod})$.
+
+The finite carrier gives
+\[
+\left.\frac{{dS}}{{dt}}\right|_0 = 0.0366846845679,
+\qquad
+\delta\langle H_{{\rm mod}}\rangle = 0.0366846845685,
+\]
+with residual $-6.82183476375e-13$. Thus the first law is
+verified to first order on this carrier.
+
+At finite $t=0.1$,
+\[
+S(\rho(t)\Vert\rho_0)=4.261526688e-05>0,
+\]
+and
+\[
+S(\rho(t))-S(\rho_0)-t\,\delta\langle H_{{\rm mod}}\rangle
+=-4.261526688e-05.
+\]
+The first law is therefore a leading-order relation, not an all-orders
+identity.
+
+Using the Step-41/42 RT entropy-unit coefficient $k=1$, the
+RT image is
+\[
+\delta A = k\,\delta\langle H_{{\rm mod}}\rangle.
+\]
+This is the finite-toy Clausius/linearized-gravity equation-of-state
+recognition landing. It is not a continuum Einstein-tensor derivation.
+
+\end{document}

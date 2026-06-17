@@ -1,0 +1,7 @@
+direction,target_component,train_residual,heldout_residual,derivable_at_tol_1e_minus_8
+T_from_Born_rho_j,joint,0.5709707211619484,0.5991748529352457,False
+T_from_Born_rho_j,T00,0.4290163632115011,0.40156890127173095,False
+T_from_Born_rho_j,T0i,0.7149815154026364,0.5443048422989993,False
+Born_rho_j_from_T,joint,0.5852626595663039,0.5776762928080916,False
+Born_rho_j_from_T,rho,0.3799193453893121,0.33866060907950507,False
+Born_rho_j_from_T,current_j,0.8733335023608542,0.6503906344364354,False

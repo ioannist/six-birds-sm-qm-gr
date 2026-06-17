@@ -1,0 +1,11 @@
+gate,status,scope,evidence
+C1_step13_currency_loaded,pass,input,"The script reads Step-13 currency_test_output_step13.json and requires neutral_currency_built."
+C2_nontrivial_refinement_lift,pass,lift,"Stable lift maps 16->32 and 32->64 coordinates; identity shape is false."
+C3_shadow_commutation_stable,pass,stability,"Stable-lift commutator residual is 0.0 on both transitions."
+C4_compression_survives,pass,currency,"d_u=4 remains below d_union=6 at refined levels."
+C5_distinct_shadows_survive,pass,currency,"Shadow distinctness residual is 1.1547005383792517 at refined levels."
+C6_mixing_control_fails,pass,anti-tautology,"Mixing control commutator residual is 0.5612486080160912 and shadow structure does not survive."
+C7_no_circular_distance_test,pass,no-smuggling,"The diagnostic is a shadow-commutator matrix residual, not distance to u."
+C8_structural_constraint_extracted,pass,frontier,"Constraint recorded: refinement must commute with both shadows and preserve shared modes plus kernels."
+C9_next_move_named,pass,frontier,"Next move is RUNG_3_AUDIT_ON_REFINEMENT_STABLE_CURRENCY."
+

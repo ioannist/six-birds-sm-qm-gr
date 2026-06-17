@@ -1,0 +1,59 @@
+{
+  "active_residual": "E018 cosmological-constant analog demarcation",
+  "background_degeneracy": 15,
+  "background_fail_count": 3,
+  "background_fail_examples": [
+    -5.0,
+    -3.0,
+    10.0
+  ],
+  "background_pass_count": 15,
+  "background_pass_examples": [
+    -8.0,
+    -2.0,
+    -1.0,
+    -0.5,
+    -0.2,
+    -0.1
+  ],
+  "background_sweep_count": 18,
+  "background_window": {
+    "max_pass_offset": 8.0,
+    "min_pass_offset": -8.0,
+    "noncontiguous_finite_pass_set": true
+  },
+  "closure_blind_to_background_within_sweep": false,
+  "conditional_on_step47_for_carrier_reading": true,
+  "cross_track_demarcation_analog": "SM_F47_F26_no_value_law_on_contingent_selection",
+  "derives_lambda": false,
+  "enumeration_strength_not_theorem": true,
+  "f50_classification": "bounded_moduli",
+  "forbidden_rule": "no_inlayer_lambda_value_law",
+  "frame_transfer_certified": false,
+  "frozen_step26_convergence_tol": 1e-08,
+  "kappa_boundary_found": true,
+  "kappa_fail_examples": [
+    15.0,
+    20.0,
+    30.0
+  ],
+  "kappa_max_pass": 10.0,
+  "kappa_min_fail": 15.0,
+  "kappa_pass_examples": [
+    0.0,
+    0.1,
+    0.3,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "kappa_sweep_count": 12,
+  "main_object": "F50 classification of Step26 background term",
+  "new_measured_number": false,
+  "orientation": "ModeB_F50_background_moduli_demarcation",
+  "root_landed": false,
+  "solves_cc_problem": false,
+  "step": 54,
+  "structural_b_independence_note": "No full b-independence theorem: Step26 uses T00[psi]=|grad psi|^2 + background*|psi|^2 and V=background+kappa*T00.",
+  "verdict": "BACKGROUND_IS_F50_BOUNDED_MODULI_NO_INLAYER_VALUE_LAW"
+}

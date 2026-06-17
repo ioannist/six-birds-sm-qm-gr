@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_source_profiles_declared,pass,"Mode C inputs","The three source profiles are the Step 1 HED area sector, Step 2 LQG amplitude/P3 sector, and Step 3 AS P3 sector.","Use only these declared source rows."
+G2_union_control_rejected,pass,"span-overread guard","The sector-only control has Xi=0 but is explicitly rejected as a recombination verdict because it tests co-presence, not compatibility.","Validator must fail on union-closure wording."
+G3_constraint_rows_declared,pass,"finite toy","Compatibility bridge rows are declared before Xi is computed: HED-LQG, LQG-AS, HED-AS, and triple package rows.","Keep them out of the native lens unless Mode B designs them."
+G4_target_lineage_non_equivalence,pass_as_no_go,"lineage","The no-go is weaker than the canonical root: it only states that existing imports do not lawfully recombine in the current grammar.","Record remaining grammar delta."
+G5_no_unaudited_bridge,pass,"Mode C compatibility","Adding bridge rows to the native lens makes Xi zero but is rejected as target-equivalent unless supplied by a new audited grammar.","Start mode_b_grammar_manifest.csv."
+G6_no_silent_status_upgrade,pass,"status","No E2 child import is promoted to root status; the output is a bounded-grammar no-go with a next grammar delta.","Proceed only by manager-dispatched Mode C bridge audit or Mode B construction."

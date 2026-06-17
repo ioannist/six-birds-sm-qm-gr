@@ -1,0 +1,83 @@
+# 3. Method: finite audited carriers, adversarial self-correction
+
+Nothing in this paper is an estimate, a fit, or a numerical simulation in the usual sense. Every result is an **exact
+computation on a finite, frozen, reproducible carrier**, produced under a protocol designed to catch the framework —
+and its operators — cheating. This section states the protocol; Appendix C documents the occasions it fired.
+
+## 3.1 Finite frozen carriers
+
+Each construction declares a finite carrier (a candidate-structure space of $11{,}990$ gauge structures in Section 4;
+finite tensor-network/graph geometries and mode-grammars in Section 5), and all quantities — obstruction sets,
+factorization defects, entropies, min-cuts, kernels — are computed deterministically on it. Carriers and predicates,
+once built, are **frozen**: downstream steps import them verbatim under SHA-256 pins, and a validator fails if any
+imported predicate has been altered. This forbids the most common quiet failure of long programs: retuning an early
+definition until a late result comes out right.
+
+Every step ships with a **validator with teeth**: an independent script that *recomputes* the headline quantities from
+the frozen inputs and fails on mismatch, checks the anti-smuggling gates of §2.4, and greps the artifacts for an
+overclaim blocklist (phrases such as "derives the gauge group", "solves quantum gravity", "proves the proton is stable"
+fail the build). Validator pass is necessary, never sufficient: each accepted result was additionally re-derived
+independently of its own build script (Appendix B lists the re-derivations).
+
+## 3.2 Can-fail controls
+
+A claim with no way to come out false is not a result. Every positive claim in this paper is paired with an explicit
+**control on which it fails**, computed alongside it:
+
+- the SM selection's "collapse" verdict is paired with a broad-measure landscape control that must *not* collapse
+  (and an order-battery of 204 refinement orders, 0 flips);
+- the QM–GR directed no-go is paired with a *nested* readout for which the reduction must (and does) succeed;
+- the holographic monogamy results are paired with a GHZ state that must (and does) violate them;
+- the entanglement-kernel prediction of §6.1 is paired with a boundary-anchored tree geometry on which the kernel must
+  (and does) vanish;
+- the record-stability prediction of §6.3 is paired with single-conjunct controls proving the implication is not
+  definitional (60 and 311 explicit counterexample structures).
+
+## 3.3 Adversarial self-correction — in both directions
+
+Over the course of the program the audit gates rejected our own constructions repeatedly. Three classes of defect were
+caught and killed (full post-mortems in Appendix C):
+
+1. **Tautologies** — a "coincidence" that is an identity. *Example:* an early area–entropy "match" computed the von
+   Neumann entropy from the Schmidt spectrum on one side and the Shannon entropy of the squared singular values on the
+   other — the same number twice, machine-$\epsilon$ residual. Rejected; the accepted version (§5.4) uses the
+   *geometric* min-cut, which is provably independent of the state spectrum (it is invariant under reseeding the state
+   while the entropy moves).
+
+2. **Circularities / hardcoding** — a forcing whose load-bearing clause does no work. *Example:* a first version of the
+   monogamy-forcing result conjoined the constraint with a compatibility flag that was constantly true, and asserted
+   its control outcome as literals. Rejected; the accepted version (§5.5) defines compatibility as a computed,
+   monogamy-independent geometric-dual test, and the control is computed over constructed admissible sets.
+
+3. **Rigging toward a desired verdict — in either direction.** The decisive case is Prediction 1 (§6.1), which took
+   four attempts: one rigged *toward* the positive verdict (a bespoke graph with the invisible mode built in by hand);
+   one rigged *toward* the deflationary verdict (a hardcoded "genuine dimension $=0$" plus a scoring filter chosen to
+   dismiss the answer); one inflated by a **degeneracy artifact** (a one-sided finite-difference Jacobian taken at a
+   maximally tied uniform-weight point, where the apparent kernel is first-order visible — residuals scaling linearly
+   with step size betrayed it). All three were rejected. The accepted computation uses generic non-degenerate
+   geometries, two-sided central differences, and a both-direction finite-range invisibility test — and its numbers
+   were reproduced independently of the build before acceptance.
+
+We call the resulting discipline **symmetric scrutiny**: a result is attacked with equal force whether it flatters the
+framework, flatters the mainstream, or flatters the authors' expectations. The rejected-attempts record (Appendix C) is
+published deliberately: in our view it is the strongest single reason to take Section 6 seriously. The predictions are
+not the first thing the machinery emitted; they are what survived an honest attempt to break them — in both directions.
+
+## 3.4 Adversarial review and the anti-contamination guard
+
+Two construction results were stress-tested in adversarial review packets and **settled**: the ledger/shadow-price
+recognition of Ryu–Takayanagi (§5.4) and the grounding of the QM–GR common-carrier premise (§5.3); the SM construction
+core separately passed an adversarial review cycle (sound-with-fixes). Review packets and dispositions are in Appendix D.
+These cycles are part of the audit record, not peer review or independent replication.
+
+Finally, because the universality thesis (§8) requires that the two tracks not contaminate each other, the program ran
+under an explicit **anti-contamination guard**: the two substrates were declared structurally different at the outset
+(a selection/measure layer vs a co-sourcing common refinement), every SM-track step was validated against importing
+co-sourcing structure (build validators fail on field-carrier tokens), and steps that pattern-matched one substrate
+onto the other were rejected. Whatever machinery the two tracks share, they share because the *laws* are layer-agnostic
+— not because the constructions were allowed to copy each other.
+
+> **Audit pipeline (protocol).** *One-panel schematic: declare carrier $\to$ freeze (SHA-256) $\to$
+> construct $\to$ validator recomputes $\to$ can-fail control $\to$ independent re-derivation $\to$ (for reviewed
+> construction results) adversarial review. Side channel: the rejection loop, with the three defect classes of §3.3 feeding
+> back.*

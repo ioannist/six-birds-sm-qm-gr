@@ -1,0 +1,43 @@
+{
+  "step": 20,
+  "artifact_dir": "steps/step20_gut_recognition_value_relations_artifacts",
+  "route": "Mode A / E2 recognition import",
+  "imported_principle": "SU5 embedding of 10 plus 5bar matter; SO10 16 optional recognition envelope",
+  "trace_relation": {
+    "Tr_Y2": 3.333333333333333,
+    "Tr_T3_2": 2.0,
+    "hypercharge_normalization": 1.6666666666666665,
+    "gY2_over_g2_2": 0.6000000000000001,
+    "sin2_gut": 0.37500000000000006
+  },
+  "inputs_at_MZ": {
+    "MZ_GeV": 91.1876,
+    "alpha_em_inverse": 127.955,
+    "sin2_thetaW_measured": 0.23122,
+    "alpha_s": 0.1184
+  },
+  "sm_one_loop_unification": {
+    "pair_crossing_log10_scales": [
+      13.013559182688,
+      14.39311670039,
+      17.008277907861
+    ],
+    "pair_scale_spread_decades": 3.9947187251729996,
+    "best_fit_log10_scale_GeV": 14.21264043929154,
+    "spread_inverse_coupling": 3.9272925926954727,
+    "relative_spread": 0.09479045454733714,
+    "clean_unification": false,
+    "sin2_mz_pred": 0.2143582515211484,
+    "sin2_mz_measured": 0.23122,
+    "sin2_difference": -0.016861748478851607
+  },
+  "susy_one_loop_comparison": {
+    "best_fit_log10_scale_GeV": 16.333715785570025,
+    "spread_inverse_coupling": 0.06969904903299451,
+    "pair_scale_spread_decades": 0.07793560186500059
+  },
+  "sbt_value_derivation": false,
+  "absolute_values_residual": true,
+  "frame_transfer_certified": false,
+  "root_landed": false
+}

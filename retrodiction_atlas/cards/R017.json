@@ -1,0 +1,135 @@
+{
+  "id": "R017",
+  "schema_note": "Enriched retrodiction card: original candidate card + audit + skeptic panel + repair-agent output (narrowed claim, lemma sequence, scores, triage). Produced 2026-06-02 by the Repair Agent + Fertility Judge for R017. All paper citations verified against the frozen corpus at /home/repos/six-birds-papers.",
+
+  "original_card": {
+    "one_sentence_claim": "In a weakly-coupled metastable Markov substrate with a basin lens, SBT's empirical packaging operator E_{tau,f} exhibits a sharp three-regime structure -- multiple coexisting epsilon-stable basin-prototype objects at intermediate tau, drift at leakage timescales, and collapse to a single trivial object at long tau -- and the no-go NG_OBJECT_CONTRACTIVE proves that such multiplicity is possible ONLY outside the strict-contraction (fast-global-mixing) regime (TV<=2eps/(1-lambda); unique object at eps=0), recovering the standard Kemeny-Snell/Perron-cluster metastable-lumping and Dobrushin-uniqueness picture as an objecthood-stability statement.",
+    "target_known_fact": "Physical systems exhibit multiple long-lived, well-separated classical configurations (metastable phases, basins, quasi-conserved sectors) coexisting at intermediate timescales, which merge into a single equilibrium description at long times; coexistence requires absence of fast global mixing. Standard account: Kemeny-Snell exact/approximate lumpability, Perron-cluster (PCCA) metastable decomposition tied to the slow part of the spectrum, and Dobrushin uniqueness for strictly contracting chains.",
+    "scientific_domain": "Statistical mechanics / metastability / Markov-chain sector structure (finite-state)",
+    "argument_family": "structural",
+    "derivability_class": "B",
+    "minimum_viable_result": "A single worked finite example (extending EXP-MK1 to m>=2 basins) plus a short corollary chain: (i) T-IC-02 certifies >=2 epsilon-stable prototypes at intermediate tau (coexistence, satisfying the D-IC-02 nontriviality guardrail), (ii) NG_OBJECT_CONTRACTIVE certifies a unique object once lambda(Phat_tau) is small (collapse), and (iii) the contrapositive states that coexistence requires non-contraction.",
+    "stronger_result": "Add the spectral-gap <-> retention-error <-> lambda(Phat_tau) <-> Perron-cluster-count lemma to make the SBT epsilon-stable-prototype count provably coincide with the standard PCCA metastable-set count in the spectral-gap regime; optionally Lean-certify the full separation bound 2eps/(1-lambda).",
+    "fallback_result": "SBT reproduces the ARCHITECTURE 'several distinct stable macro-objects coexist iff the dynamics is not globally contracting at that scale' as an exact corollary of NG_OBJECT_CONTRACTIVE plus T-IC-02, in a single m>=2-basin numerical example, framed as a recovery/reorganization of Dobrushin uniqueness and metastable lumping.",
+    "honest_status_note": "Derivability class B (structural recovery/reorganization). Three honest gaps flagged by the original card: (1) no in-corpus worked example certifies >=2 distinct epsilon-stable prototypes as coexisting; (2) the spectral-gap<->lambda<->PCCA chain is UNPROVED; (3) the sector COUNT and identity are inputs, never SBT outputs (T-IC-01 makes the count lens/tau/epsilon-relative)."
+  },
+
+  "audit_summary": {
+    "mechanism_tag": "contraction-uniqueness",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 8,
+    "data_points_matched": 4,
+    "overfitting_risk": "high",
+    "opposite_world_could_explain_opposite": true,
+    "audit_verdict": "STRUCTURAL RECOVERY, NOT A PREDICTION -- honestly flagged, high flexibility on the non-load-bearing (sector-count) axis. The genuinely rigid, reusable content is NG_OBJECT_CONTRACTIVE (TV<=2eps/(1-lambda); unique at eps=0) plus its contrapositive 'coexisting well-separated objects force non-contraction', but this is logically equivalent to imported Dobrushin uniqueness (Dobrushin1956, Seneta2006) and Kemeny-Snell lumpability, NOT a novel prediction. SBT does NOT predict the number or identity of sectors (lens + declared-substrate inputs; T-IC-01 makes the count lens/tau/epsilon-relative). ~8 DoF vs ~4 qualitative/architectural data points. The contraction=>uniqueness direction is rigid and cannot be flipped; the sector count is fully tunable via lens/substrate. Mechanism reused with R016 (uniqueness-necessity) and R001/R029/R030 (idempotent packaging E_{tau,f}), mitigating one-off-fit concern. Recommend acceptance ONLY as class-B recovery with multiplicity-count demoted to lens-relative and the PCCA match labeled aspirational/unproved.",
+    "key_audit_findings": [
+      "Q1 (post-hoc construction): PARTLY. The core inequality is a general Dobrushin theorem proved independently; but the 'metastable substrate with basin lens' framing and the EXP-MK1 demonstration were explicitly constructed to land on known metastability phenomenology.",
+      "Q3 (imports vs derives): YES, heavily. Dobrushin contraction => unique stationary + geometric convergence is imported; Kemeny-Snell and PCCA imported wholesale. Ledger itself labels NG_OBJECT_CONTRACTIVE 'consistent recovery of a standard contraction result ... not a physics retrodiction.'",
+      "Q5 (predicts count?): NO. Sector count m and basin identity are inputs; T-IC-01 makes the count lens/tau/epsilon-relative. On the predictive axis SBT is strictly weaker than PCCA, which reads cluster count off the spectrum.",
+      "Q6 (disclaimers honored?): YES, and the card is unusually candid -- finite-state only, lens-relative, Phat_tau treated as diagnostic (CD_tau>0), prototype non-canonicity flagged. Any 'objective physical sectors' upgrade would cross the no-canonical-lens / no-pointer-selection disclaimers."
+    ]
+  },
+
+  "skeptic_panel_summary": {
+    "min_survival": 2,
+    "mean_survival": 2.13,
+    "fatal_objections_present": false,
+    "consensus_is_actually_new": false,
+    "consensus_beats_baseline": false,
+    "shared_main_objection": "All four skeptics independently identify the SAME load-bearing flaw: NG_OBJECT_CONTRACTIVE is stated for the one-step macro self-map nu->nuP on Delta(Y) with eps-stability TV(nu,nuP)<=eps, whereas the R1 'coexistence' objects are epsilon-stable prototypes of the DIFFERENT packaging endomap E_{tau,f} on Delta(Z) (s_{tau,f}(x)=TV(E_{tau,f}(u_x),u_x)), and the macro kernel Phat_tau=U_f P^tau Q_f is a THIRD object. Gluing the R1-coexistence half (T-IC-02) to the R3-collapse half (NG_OBJECT_CONTRACTIVE) requires the spectral-gap<->retention<->lambda(Phat_tau)<->PCCA-count bridge lemma, which the card itself flags as the only hard lemma and as UNPROVED. Without it, R017 is two separately-true facts spliced by an asserted, not derived, correspondence.",
+    "secondary_objections": [
+      "The in-corpus demonstration does NOT show coexistence: Quantum sec:markov is titled 'Two regimes', plots only the scalar delta(tau) for a SINGLE fixed partition, and reports MKFirstStableTau=1 (stable already at tau=1, no demonstrated intermediate window). D-IC-02 explicitly says small delta cannot certify multiplicity. No experiment in the corpus reports >=2 distinct epsilon-stable prototypes.",
+      "The PCCA / Kemeny-Snell quantitative match is vapor: corpus-wide grep finds PCCA/Perron-cluster exactly ONCE, as a literature citation (DeuflhardWeber2005) in the No-Go related-work, never as derived machinery. The 'data_matched' PCCA-count claim has zero supporting mechanism.",
+      "Applying a contraction theorem to Phat_tau, a kernel the theory itself says is NOT closed (CD_tau>0, NG_MACRO_CLOSURE_DEFICIT), is adjacent to the forbidden move 'claiming a closed macro law when CD_tau>0'; the R3 collapse must be stated conditionally.",
+      "The contrapositive 'coexistence forces non-contraction' is near-tautological: R1 coexistence requires basin mass to stay put, i.e. Phat_tau approximately equals identity, hence lambda approximately 1; this is definitional, not a physical prediction.",
+      "Sector count is an INPUT not a prediction; T-IC-01 makes it lens/tau/epsilon-relative (refinement reveals OR destroys objects). On the very axis where PCCA predicts, SBT only accommodates."
+    ],
+    "shared_minimum_acceptance_conditions": [
+      "Demote every multiplicity statement to explicitly lens/tau/epsilon-relative; never assert objective physical sector counts.",
+      "Label the quantitative PCCA / Kemeny-Snell match as ASPIRATIONAL and UNPROVED; ship only the structural recovery plus the one contrapositive inequality.",
+      "State and prove the E_{tau,f}-prototype-stability => macro-kernel-near-identity bridge, OR restate the whole claim purely on the macro self-map nu->nu Phat_tau so NG_OBJECT_CONTRACTIVE applies without an unproved correspondence.",
+      "Exhibit at least one worked finite m>=2-basin example certifying >=2 distinct epsilon-stable prototypes coexisting at an intermediate tau (tau_first_stable>1), reporting count(tau), delta(tau), and lambda(Phat_tau), per the D-IC-02 nontriviality guardrail.",
+      "Frame as class-B recovery/reorganization of Dobrushin uniqueness + metastable lumping; concede it does NOT beat or predict beyond the standard account and does NOT predict the number/identity of sectors.",
+      "Carry the CD_tau>0 caveat into every contraction verdict; state R3 collapse only conditionally."
+    ],
+    "per_skeptic_scores": [
+      {"role": "Nonequilibrium statistical physicist", "survival": 2, "is_new": false, "beats_baseline": false},
+      {"role": "Mathematical physicist (finite-state Markov / rigor boundary)", "survival": 2, "is_new": false, "beats_baseline": false},
+      {"role": "EFT / known-physics-recovery skeptic", "survival": 2.5, "is_new": false, "beats_baseline": false},
+      {"role": "Statistical-mechanics / metastability theorist", "survival": 2, "is_new": false, "beats_baseline": false}
+    ]
+  },
+
+  "repair": {
+    "repair_status": "repaired_narrowed",
+    "verified_against_corpus": [
+      {"claim": "NG_OBJECT_CONTRACTIVE is stated for the one-step macro self-map nu->nuP with eps-stability TV(nu,nuP)<=eps and lambda(P) the Dobrushin coefficient of that single matrix.", "evidence": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex line 74 (theorem statement) and lem:objecthood_approximate_separation line 859-871 (d_TV(muP,mu)<=eps). Confirmed: the theorem and its separation lemma live on the one-step map, NOT on E_{tau,f}."},
+      {"claim": "T-IC-02 certifies prototype stability under the packaging endomap E_{tau,f} via retention error TV(Q_f(u_x P^tau),delta_x); this is a different operator on a different space.", "evidence": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex thm:T-IC-02 lines 601-617, def:D-IC-01 lines 533-554, prototype stability lines 590-599. Confirmed operator mismatch with NG_OBJECT_CONTRACTIVE."},
+      {"claim": "The corpus demonstration is a single-partition delta(tau) curve titled 'Two regimes' with MKFirstStableTau=1; no >=2-prototype coexistence example exists.", "evidence": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory....tex sec:markov line 655, subsection 'Two regimes' line 708, single fixed chain EXP-MK1 line 710, MKFirstStableTau=1 line 35 / line 717."},
+      {"claim": "PCCA / Perron-cluster appears exactly once in the entire corpus, as a literature citation, never as derived machinery.", "evidence": "Corpus-wide grep: only Tsiokos_2026_To_Create_a_Stone....tex line 65 ('Spectral methods, including Perron cluster analysis ... motivate concrete procedures', cite DeuflhardWeber2005,VonLuxburg2007). No spectral-gap<->lambda<->cluster-count machinery anywhere."},
+      {"claim": "Kemeny-Snell lumpability is recovered only as the CD_1=0 special case; Dobrushin uniqueness is imported.", "evidence": "Foundations lines 166-173 (lumpability literature, KemenySnell1960); No-Go line 344 (Dobrushin coefficient 'standard in finite-state contraction theory; see Dobrushin1956,Seneta2006'); No-Go line 896 (separation bound 'used here at the level of the paper proof and are not part of the formalized core')."}
+    ],
+    "repairs_applied": [
+      "SPLIT the single 'sharp three-regime' claim into two honestly-labeled, operator-distinct statements: (A) a retention-error coexistence statement on E_{tau,f} at intermediate tau (T-IC-02 + D-IC-02 nontriviality clause requiring >=2 distinct stable labels), and (B) a contraction-uniqueness statement on the macro self-map nu->nu Phat_tau in the small-lambda regime (NG_OBJECT_CONTRACTIVE). The two halves are NOT claimed to share a single stability metric or a single curve; the correspondence between them is explicitly demoted to a conjectured bridge lemma.",
+      "NARROWED all multiplicity language to lens/tau/epsilon-relative coexistence at scale (f,tau,epsilon); removed every implication that SBT predicts the number or identity of physical sectors (honors A_LENS, no-canonical-lens, no-pointer-selection disclaimers).",
+      "REPLACED 'recovering the standard Kemeny-Snell/Perron-cluster picture' (exact match claim) with 'consistent with, and qualitatively recovering, the Dobrushin-uniqueness direction; the quantitative coincidence of the SBT epsilon-stable-prototype count with the PCCA metastable-set count is an UNPROVED conjecture (the missing bridge lemma).'",
+      "CONVERTED the rhetorical 'contrapositive necessary condition' into an explicit lemma sequence anchored to the proved objects, and flagged its near-tautological status (coexistence => Phat_tau approximately identity => lambda(Phat_tau) approximately 1) so it is presented as a clean restatement of Dobrushin uniqueness, not a stronger prediction.",
+      "STATED the R3 collapse only conditionally ('IF lambda(Phat_tau)<1 THEN the unique approximate macro fixed point') and carried the CD_tau>0 diagnostic-only caveat (NG_MACRO_CLOSURE_DEFICIT) into the verdict, removing any claim of deriving physical equilibrium or treating Phat_tau as a closed law.",
+      "DEMOTED the headline 'three regimes' to match the corpus ('two regimes plus an intermediate drift window'), since the in-corpus figure plots only delta(tau) on one partition and the subsection is titled 'Two regimes'.",
+      "REMOVED the implicit assumption that the in-corpus EXP-MK1 already substantiates coexistence; the >=2-stable-prototype worked example is reclassified from 'minimum viable' (assumed done) to a REQUIRED-BUT-UNFULFILLED deliverable."
+    ],
+    "repairs_forbidden_and_refused": [
+      "Did NOT add the spectral-gap<->retention<->lambda<->PCCA-count bridge lemma by fiat -- it is genuine unproven mathematics; manufacturing it would be a forbidden unproven-uniqueness/ad-hoc move.",
+      "Did NOT upgrade lens-relative coexistence to objective sector multiplicity -- that would cross the no-canonical-lens disclaimer and require a MISSING interface.",
+      "Did NOT claim the contrapositive is a novel prediction -- it is logically equivalent to imported Dobrushin uniqueness."
+    ],
+    "post_repair_logical_status": "After repair, R017 reduces to: (A) an elementary, true, lens-relative coexistence statement (T-IC-02 bounds prototype stability by retention error; in a leakage regime tau << tau_leak with retention error < epsilon for each basin, all m basin prototypes are epsilon-stable, giving >=2 distinct stable labels -- this assembly is new but trivial and is NOT yet exhibited in any worked m>=2 example in the corpus), and (B) the imported Dobrushin-uniqueness inequality NG_OBJECT_CONTRACTIVE on the macro self-map, with its contrapositive. The bridge tying (A) and (B) into one coherent 'three-regime' object is the conjectured, unproved hard lemma. The surviving rigid content is exactly one inequality (2eps/(1-lambda), paper-proof only, not formalized) that is logically equivalent to a 1956 result.",
+    "minimum_viable_result_after_repair": "A worked finite m>=2-basin chain with a genuine timescale gap (tau_first_stable>1) reporting, per tau, (i) the COUNT of epsilon-stable prototypes under E_{tau,f} (>=2 in the intermediate window, satisfying the D-IC-02 nontriviality clause), (ii) delta(tau), and (iii) lambda(Phat_tau) on the macro self-map -- presented as TWO separately-labeled statements (lens-relative coexistence; conditional contraction-uniqueness) explicitly framed as a class-B recovery of Dobrushin uniqueness + Kemeny-Snell lumpability, with the PCCA-count coincidence labeled an open conjecture. No new hard lemma; everything is reassembled already-proved SBT machinery, but the worked coexistence example (currently absent from the corpus) must actually be produced.",
+    "remaining_objections_after_repair": [
+      "Even after splitting, the two halves concern different operators (E_{tau,f} on Delta(Z) vs nu->nu Phat_tau on Delta(X)); without the proved bridge lemma the 'single sharp three-regime structure' headline cannot be honestly retained, only a two-statement pairing.",
+      "The one rigid inequality is logically equivalent to imported Dobrushin uniqueness; novelty is presentational, not predictive (is_actually_new = false; beats_baseline = false).",
+      "SBT still cannot predict the sector count -- the thing PCCA actually predicts -- so the 'recovery' is strictly partial on the predictive axis.",
+      "The headline coexistence worked example with tau_first_stable>1 and >=2 certified stable prototypes does not yet exist in the corpus; until produced, the central novel reassembly is aspirational.",
+      "The PCCA / spectral-gap quantitative match remains entirely unproved (zero corpus machinery); only a qualitative numerical overlay is achievable in the near term."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 4,
+    "plausibility": 4,
+    "non_ad_hocness": 3,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 2,
+    "robustness": 3,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+
+  "score_rationale": {
+    "impact": "2/5. The reusable inequality (contraction=>uniqueness with a 2eps/(1-lambda) addendum) is a clean finitely-checkable necessary condition, genuinely reusable across the SBT no-go layer (shared with R016). But it is logically equivalent to a 1956 textbook result and SBT cannot predict the sector count, so the marginal scientific impact over the standard Dobrushin/Kemeny-Snell/PCCA toolkit is low.",
+    "execution_ease": "4/5. All core lemmas (NG_OBJECT_CONTRACTIVE, T-IC-02, T-IC-01, D-IC-02) are already proved; the EXP-MK1 numerical harness exists and need only be extended to m>=2 basins; the new corollaries are elementary. The only hard piece (the spectral-gap<->PCCA bridge) is explicitly deferred to the stronger result. Minimum-viable artifact is low-cost.",
+    "plausibility": "4/5. The post-repair statements are almost certainly true: T-IC-02 prototype-stability bound is proved; Dobrushin uniqueness is a theorem; the lens-relative coexistence in a leakage regime follows from the 1-(1-p)^tau mechanism. The only plausibility risk is the unproved bridge lemma, which is excluded from the minimum-viable claim.",
+    "non_ad_hocness": "3/5. The underlying inequality is principled and was proved independently of metastability (not post-hoc). But the substrate+lens framing is engineered to land on known phenomenology, the sector structure is essentially declared (smuggling-adjacent per the card's own bottleneck), and ~8 DoF >> ~4 qualitative data points. Honest disclaimers and the D-IC-02 guardrail pull this up from a 2.",
+    "discriminative_power": "1/5. The opposite-world test is decisive: the contraction=>uniqueness direction is rigid and cannot be flipped (good), but the sector COUNT -- the empirically interesting quantity -- is fully tunable via lens/substrate choice, so SBT can accommodate essentially any observed count, including the opposite of what physics shows. It does not discriminate between worlds with different sector structure.",
+    "audience_legibility": "4/5. The framing (objecthood = fixed points of a packaging endomap; coexistence iff non-contraction) is clear and legible to Markov-chain/metastability theorists and coarse-graining modelers. The honest separation of theorem-content from input-content is exactly the kind of audit those audiences value. Docked one point because the operator mismatch (E_{tau,f} vs Phat_tau vs nu->nuP) is a genuine legibility trap that the original card obscured.",
+    "precision": "2/5. The single rigid quantitative statement (TV<=2eps/(1-lambda)) is precise, but it is only paper-proof (not formalized) and is a relabeled import. The headline 'three-regime' object lacks a precise unifying definition across the two operators. SBT's no-output-on-count and no-canonical-lens disclaimers cap precision: the theory produces no sharp numeric prediction of any observable here.",
+    "robustness": "3/5. The contraction-uniqueness direction is robust (a theorem). The coexistence side is robust qualitatively but the certified count shifts with epsilon and lens (T-IC-01), and lambda(Phat_tau) is prototype-dependent on a non-closed (CD_tau>0) macro kernel. Robust as an architecture, fragile as a count.",
+    "baseline_advantage": "1/5. The card itself concedes 'SBT does NOT beat the standard account; it RECOVERS and reorganizes it.' On the predictive axis (sector count from spectrum) it is strictly weaker than PCCA. The only edge is conceptual organization / honesty audit, not predictive advantage.",
+    "publication_potential": "2/5. Publishable only as an honest class-B recovery / conceptual-reframing note within the SBT program or a methods-oriented venue, contingent on producing the missing m>=2 worked example and demoting the PCCA claim to a conjecture. Not publishable as a novel metastability result to a stat-mech audience, since it imports and relabels rather than derives. The unproved bridge lemma is the only path to higher potential and is genuine new mathematics."
+  },
+
+  "proposed_bin": "E",
+  "recommended_priority": "low",
+  "recommended_artifact": "A short worked-example note plus a reproducible numerical experiment: extend EXP-MK1 to an m>=2-basin chain with a genuine timescale gap (tau_first_stable>1); report, per tau, the COUNT of epsilon-stable E_{tau,f}-prototypes (>=2 in the intermediate window, honoring the D-IC-02 nontriviality clause), delta(tau), and lambda(Phat_tau) on the macro self-map nu->nu Phat_tau; overlay against a PCCA/spectral-gap decomposition of the same kernel as a QUALITATIVE comparison only. Accompany with two separately-labeled corollaries (lens-relative coexistence via T-IC-02; conditional contraction-uniqueness via NG_OBJECT_CONTRACTIVE) and an explicit statement of the open bridge lemma. Frame strictly as a class-B recovery of Dobrushin uniqueness + Kemeny-Snell lumpability. Lean adds value only for the 2eps/(1-lambda) separation bound and is optional.",
+  "one_line_verdict": "Honest class-B structural recovery of Dobrushin uniqueness + metastable lumping carrying exactly one reusable (but imported-equivalent) inequality; the 'sharp three-regime' headline splices two different operators across an unproved bridge, SBT cannot predict the sector count, and the coexistence worked example does not yet exist -- repairable to a clean conceptual-reframing note, but not a novel prediction.",
+  "mechanism_tag": "contraction-uniqueness",
+  "target_audience": [
+    "Statistical-mechanics and Markov-chain theorists (metastability, lumpability, Perron-cluster/PCCA)",
+    "Coarse-graining / effective-theory and renormalization-minded modelers",
+    "Foundations-of-emergence and complexity-science researchers interested in audited objecthood criteria",
+    "SBT internal program (consumers of the no-go obstruction layer)"
+  ]
+}

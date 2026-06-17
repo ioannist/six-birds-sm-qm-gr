@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step64_L60_charge_orientation_proof_attempt,64,Step59 scored Step33 corrected closer carrier plus Step60 outside probes,frozen substrate; frozen record token capacity; frozen Delta_fact/leak bridge,No clean-separation or record-capacity failure is assumed as a hypothesis.,The data separates 0-token and 1-token near-misses and exposes a sharper charge-orientation cap.,Add a structural anomaly/mass-closure proof rule for the charge-orientation cap.

@@ -1,0 +1,7 @@
+artifact,claim,grade,source
+near_miss_table_step64.csv,near-miss data pattern,finite-carrier-diagnostic,near_miss_table_step64.csv
+converse_probe_step64.csv,inside/outside counterexample probe,finite-carrier-diagnostic,converse_probe_step64.csv
+sharpened_external_lemma_step64.csv,open charge-orientation cap lemma,remaining-external,sharpened_external_lemma_step64.csv
+step64_statement.tex,sharpened external statement,remaining-external,step64_statement.tex
+step64_results_summary.md,summary and caveats,organizational,step64_results_summary.md
+run_step64.py,validator,organizational,run_step64.py

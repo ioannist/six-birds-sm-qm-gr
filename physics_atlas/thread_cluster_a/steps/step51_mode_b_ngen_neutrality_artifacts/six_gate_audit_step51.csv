@@ -1,0 +1,6 @@
+gate,passes,evidence
+primitive_exclusion,True,No target bonus or observed-count branch is used.
+dependency_trace,True,"generated_vs_input_step51.csv records carrier, content source, selectors, and verdict."
+negative_control,True,minimality returns a non-observed active minimum
+recognition_source_classification,True,recognition_source_lower_bound
+honest_type_limit,True,closure blindness plus bound-not-selection recorded

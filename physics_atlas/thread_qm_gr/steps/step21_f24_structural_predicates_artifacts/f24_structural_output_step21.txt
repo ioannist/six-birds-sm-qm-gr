@@ -1,0 +1,5 @@
+Step 21 F24 structural predicates
+L computed family: BridgeMediatedRole
+L unique: True
+All candidates unique: True
+Family coverage: BlockedNonClosure, BridgeMediatedRole, BudgetedRole, CoarsenedRole, HiddenUpstreamRole, MemoryLayer, OutsideRoleScope, ScopedRole

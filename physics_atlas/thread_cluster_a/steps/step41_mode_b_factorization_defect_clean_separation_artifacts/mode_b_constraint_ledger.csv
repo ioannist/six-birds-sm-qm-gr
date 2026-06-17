@@ -1,0 +1,6 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP41_REPRODUCE_CARRIER,ModeB,step41_factorization_defect_clean_separation,determinism,Step 41 reproduces the Step-38 twelve-support carrier.
+C_CLUSTER_A_STEP41_DELTA_PAIR,ModeB,step41_factorization_defect_clean_separation,calculus,The faithful pair is pi0=pi_conf_interference and pi1=pi_mass.
+C_CLUSTER_A_STEP41_FAITHFULNESS,ModeB,step41_factorization_defect_clean_separation,faithfulness,Delta_fact emptiness matches the Step-38 clean-shadow verdict on every support.
+C_CLUSTER_A_STEP41_WITNESSES,ModeB,step41_factorization_defect_clean_separation,witnesses,Nonempty defects expose the confining-charged massive vector witnesses.
+C_CLUSTER_A_STEP41_BOUNDARY,ModeB,step41_factorization_defect_clean_separation,honesty,Clean separation remains a supplied recognition-source condition.

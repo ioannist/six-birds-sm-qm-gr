@@ -1,0 +1,14 @@
+{
+  "step": 22,
+  "F51_source_read": true,
+  "verdict": {
+    "F51_verdict": "unification_holds_on_carrier",
+    "L_f51_unification_pass": true,
+    "status_conflict_control_pass": false
+  },
+  "guardrails": {
+    "status_compatibility_computed": true,
+    "F51_source_read": true,
+    "root_landed": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "step": 16,
+  "source_supports": "steps/step15_minimal_anomaly_support_artifacts/irreducible_chiral_supports_step15.csv",
+  "support_count": 28,
+  "reference_support_label": "(1,1)_-1 + (1,2)_3/6 + (3,2)_-1/6 + (3bar,1)_-2/6 + (3bar,1)_4/6",
+  "principle_count": 7,
+  "structural_principle_count": 6,
+  "any_non_circular_unique_principle": false,
+  "any_non_circular_unique_conjunction": false,
+  "best_reference_conjunction": "charge_integrality+simple_group_embedding_pattern",
+  "best_reference_conjunction_survivor_count": 2,
+  "minimality_control_fails_to_select_reference": true,
+  "verdict": "rigorous_type_limit_negative",
+  "obligation_2_status": "advanced_as_type_limit_negative",
+  "observed_input_required": true,
+  "next_required_input": "an observed orientation/content input or an additional independent structural principle beyond the declared set",
+  "root_landed": false,
+  "frame_transfer_certified": false
+}

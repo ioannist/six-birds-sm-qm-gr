@@ -1,0 +1,33 @@
+{
+  "step": 31,
+  "verdict": {
+    "lemma_verdict": "lemma2_fused_object_blocked_in_bounded_grammar",
+    "union_route_passes": false,
+    "shared_audit_route_passes": false,
+    "directed_route_passes": false,
+    "nonduplicating_refinement_control_passes": true,
+    "agreeing_audit_control_passes": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "summary": {
+    "union_extra_coordinate_count": 2,
+    "union_duplicate_pair_count": 2,
+    "union_row_rank": 4,
+    "union_target_dimension": 6,
+    "shared_audit_joint_equal_residual": 0.9935981568901483,
+    "shared_audit_density_proportional_residual": 0.5207123913178113,
+    "shared_audit_transport_proportional_residual": 0.9994686548331937,
+    "directed_route_mismatch_normalized_from_step30": 0.5,
+    "control_refinement_extra_coordinate_count": 0,
+    "control_audit_equal_residual": 0.0
+  },
+  "guardrails": {
+    "union_route_computed": true,
+    "shared_audit_overlap_computed": true,
+    "directed_route_cited_from_lemma1": true,
+    "genuine_fusion_control_passes": true,
+    "bounded_no_go_only": true
+  }
+}

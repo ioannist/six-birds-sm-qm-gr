@@ -1,0 +1,12 @@
+artifact,output,category,grade,scope,nonclaim_reference
+step1_results_summary.md,"Mode A recognition audit and verdict","organizational/audit",n/a,"R_root_E018 and child holographic sector","NC1;NC2;NC3"
+candidate_imports_step1.csv,"Enumerated named external principles and ranking","organizational/audit",n/a,"Mode A literature-anchored search","NC1"
+recognition_audit_step1.csv,"Leading import closure, lineage, and residual audit","predictive structural","applied typed gate verdict","No-smuggling and recognition status for leading import","NC1;NC2"
+no_smuggling_gates_step1.csv,"Six gate statuses for leading import","predictive structural","applied typed gate verdict","Recognition source audit","NC2;NC5"
+simulate_step1_holographic_xi.py,"Declared finite-carrier Schur complement diagnostic","analytical structural","finite-carrier diagnostic","Two refinement levels for RT sector and full E018 target","NC3;NC4"
+simulation_output_step1.json,"Raw Xi matrices, traces, normalized residuals, stability","analytical structural","finite-carrier diagnostic","C=I finite toy, levels 2 and 4","NC3;NC4"
+xi_diagnostic_step1.csv,"Tabulated Xi diagnostics","analytical structural","finite-carrier diagnostic","RT child sector versus full joint target","NC3;NC4"
+step1_structural_statement.tex,"Typed structural statement of partial recognition and obstruction","analytical structural","finite-carrier diagnostic plus scoped proposition","Mode A leading import","NC1;NC2;NC3;NC4"
+nonclaim_boundary_step1.md,"Mandatory nonclaim boundary","organizational/audit",n/a,"All Step 1 outputs","NC1-NC7"
+step1_schema.json,"Machine-readable Step 1 status record","organizational/audit",n/a,"Step 1 artifact contract","NC1-NC7"
+mode_b_target_lineage.csv,"Child residual rows appended","organizational/audit",n/a,"Target-lineage ledger","NC2;NC5"

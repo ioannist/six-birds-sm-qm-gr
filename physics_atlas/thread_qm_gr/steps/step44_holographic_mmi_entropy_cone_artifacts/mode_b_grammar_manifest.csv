@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_HolographicEntropyCone_v1,44,Step42 contracted random tensor-network states plus GHZ non-geometric control,partial-trace entropies; standard MMI sign; separate min-cut entropies; control violation,Step43 standalone density matrix did not provide a geometric falsifiable consequence,"GHZ violates MMI, so the inequality is not imposed universally",dynamical-geometry carrier for area response and full Einstein-equation frontier

@@ -1,0 +1,5 @@
+gate,passes,witness_case,evidence
+different_functionals,True,,area is min-cut over graph capacities; entanglement is rho_A entropy and max-flow capacity check
+disagreement_witness_extra_entropy,True,control_extra_boundary_entanglement,same geometry min-cut 1.79175946923 but state entropy 3.40119738166
+disagreement_witness_decoupled_bulk,True,control_decoupled_bulk_capacity,bulk min-cut 3.40119738166 but state entropy 1.79175946923
+holographic_agreement_not_universal,True,holo_refinements_vs_controls,agreement occurs on the holographic saturating class and fails on non-holographic controls

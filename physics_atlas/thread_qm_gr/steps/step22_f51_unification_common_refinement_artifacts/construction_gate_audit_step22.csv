@@ -1,0 +1,8 @@
+gate,status,scope,evidence
+C1_f51_source_read,pass,source,"F51 lines 8528-8582 were read and recorded."
+C2_projection_squares,pass,parent-child maps,"Projection residuals for QM and GR are both 0.0."
+C3_strict_refines_children,pass,Delta_fact,"Strict-refinement witness counts are 8 for QM and 8 for GR."
+C4_status_compatibility_computed,pass,status,"Child descent statuses and shared-overlap audit residual are computed."
+C5_l_f51_passes,pass,F51,"L_common_refinement has status_compatible=true and f51_unification_pass=true."
+C6_conflict_control_fails,pass,control,"status_conflict_control has shared-overlap residual 0.360555127546399 and f51_unification_pass=false."
+C7_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

@@ -1,0 +1,16 @@
+{
+  "sm_support_label": "(1,1)_-1 + (1,2)_3/6 + (3,2)_-1/6 + (3bar,1)_-2/6 + (3bar,1)_4/6",
+  "sm_rank": 28,
+  "sm_score": {
+    "multiplet_count": 5,
+    "weyl_component_count": 15
+  },
+  "minimal_score": {
+    "multiplet_count": 4,
+    "weyl_component_count": 12
+  },
+  "lands": "beaten",
+  "competitors_at_or_below_sm": 27,
+  "verdict": "honest_no_go_minimality_insufficient",
+  "next_principle": "minimality must be supplemented by an electroweak quark-lepton participation or observed-charge sector condition"
+}

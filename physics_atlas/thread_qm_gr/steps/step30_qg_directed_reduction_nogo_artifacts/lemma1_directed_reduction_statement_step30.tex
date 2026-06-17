@@ -1,0 +1,58 @@
+\paragraph{Step 30 bounded Lemma 1.}
+Let the finite native carrier be
+\[
+L=(d0,d1,d2,d3),
+\quad q_{QM}=(d0,d1,d2),
+\quad q_{GR}=(d0,d2,d3).
+\]
+Define the factorization defect
+\[
+\Delta(q_T \mid q_S)
+  =
+  \{(h,h') : q_S(h)=q_S(h')\ \mathrm{and}\ q_T(h)\neq q_T(h')\}.
+\]
+The computed defects are
+\[
+|\Delta(q_{GR}\mid q_{QM})|=8,
+\qquad
+|\Delta(q_{QM}\mid q_{GR})|=8.
+\]
+Thus neither endpoint quotient factors through the other on the declared
+finite carrier.
+
+\paragraph{Audit direction test.}
+Using the Step 24 finite field audit table, held-out linear diagnostics give
+\[
+\mathrm{res}(T[\psi]\leftarrow(\rho,j))=0.5991748529352457,
+\]
+and
+\[
+\mathrm{res}((\rho,j)\leftarrow T[\psi])=0.5776762928080916.
+\]
+The component residuals are also positive:
+\[
+T00:0.40156890127173095,\quad T0i:0.5443048422989993,
+\]
+\[
+\rho:0.33866060907950507,\quad j:0.6503906344364354.
+\]
+
+\paragraph{Route mismatch.}
+The route diagnostic compares canonical fiber-mean completions of \(L\) from
+the two endpoint quotients.  The normalized mismatch is
+\[
+0.5,
+\]
+so the directed completions do not commute.  In the vertical-stack control
+\[
+fine=(x0,x1,x2),\quad coarse=(x0,x2),
+\]
+the coarse quotient factors through the fine quotient and the route mismatch
+is \(0.0\).
+
+\paragraph{Bounded verdict.}
+Within the declared grammar and finite carrier, directed endpoint reduction is
+blocked: neither quotient factors through the other, neither audit is
+recovered from the other by the held-out diagnostic, and the directed route
+orders fail to commute while the genuine-reduction control passes.  This is a
+bounded finite-carrier lemma, not an absolute claim beyond the grammar.

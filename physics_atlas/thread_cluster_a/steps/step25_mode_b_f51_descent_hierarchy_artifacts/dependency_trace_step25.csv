@@ -1,0 +1,7 @@
+axiom_id,axiom_family,used,source
+A1,generated_child_closer,True,Step-24 primary minimal closer dimensions and charge vector
+A2,generated_parent_catalog,True,Step-24 known one-factor closer rows
+A3,dimension_partition,True,computed parent slot decomposition
+A4,dual_pair_rewrite,True,generic exterior-pair image rule
+A5,even_envelope_rewrite,True,generic even-envelope image rule with neutral residual
+A6,charge_preservation,True,child trace-zero charge vector from Step 24

@@ -1,0 +1,4 @@
+parent_id,charged_missing,charged_extra,full_missing,full_extra,charged_obstruction,full_obstruction,computed
+SU(5),0,0,0,0,0,0,True
+SO(10),0,0,0,1,0,1,True
+SU(6)_chiral_example,5,0,5,0,5,5,True

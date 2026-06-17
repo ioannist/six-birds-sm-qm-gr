@@ -1,0 +1,145 @@
+{
+  "L": {
+    "G_suff": {
+      "pass": true,
+      "defect": {
+        "to_qm_residual": 0.0
+      }
+    },
+    "G_desc": {
+      "pass": true,
+      "defect": {
+        "to_qm_residual": 0.0,
+        "to_gr_residual": 0.0
+      }
+    },
+    "G_stab": {
+      "pass": true,
+      "defect": {
+        "stability_residual": 0.0
+      }
+    },
+    "G_ctrl": {
+      "pass": true,
+      "defect": {
+        "controls_recorded": [
+          "qm_alone",
+          "gr_alone",
+          "direct_sum_package"
+        ]
+      }
+    },
+    "G_nosmuggle": {
+      "pass": true,
+      "defect": {
+        "duplicate_row_pairs": [],
+        "duplicate_pair_count": 0,
+        "target_dimension": 4,
+        "row_rank": 4,
+        "extra_coordinate_count": 0
+      }
+    },
+    "G_vis": {
+      "pass": true,
+      "defect": {
+        "visible_rank": 4,
+        "target_dimension": 4
+      }
+    },
+    "G_audit": {
+      "pass": true,
+      "defect": {
+        "audit_residual": 0.0
+      }
+    },
+    "G_strict": {
+      "pass": true,
+      "defect": {
+        "Delta_fact_count": 3,
+        "Delta_fact_nonempty": true
+      }
+    }
+  },
+  "union": {
+    "G_suff": {
+      "pass": true,
+      "defect": {
+        "to_qm_residual": 0.0
+      }
+    },
+    "G_desc": {
+      "pass": true,
+      "defect": {
+        "to_qm_residual": 0.0,
+        "to_gr_residual": 0.0
+      }
+    },
+    "G_stab": {
+      "pass": true,
+      "defect": {
+        "stability_residual": 0.0
+      }
+    },
+    "G_ctrl": {
+      "pass": true,
+      "defect": {
+        "controls_recorded": [
+          "qm_alone",
+          "gr_alone",
+          "direct_sum_package"
+        ]
+      }
+    },
+    "G_nosmuggle": {
+      "pass": false,
+      "defect": {
+        "duplicate_row_pairs": [
+          {
+            "row_i": 0,
+            "row_j": 3,
+            "row": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "row_i": 2,
+            "row_j": 4,
+            "row": [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "duplicate_pair_count": 2,
+        "target_dimension": 6,
+        "row_rank": 4,
+        "extra_coordinate_count": 2
+      }
+    },
+    "G_vis": {
+      "pass": true,
+      "defect": {
+        "visible_rank": 4,
+        "target_dimension": 6
+      }
+    },
+    "G_audit": {
+      "pass": true,
+      "defect": {
+        "audit_residual": 0.0
+      }
+    },
+    "G_strict": {
+      "pass": true,
+      "defect": {
+        "Delta_fact_count": 3,
+        "Delta_fact_nonempty": true
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+artifact,classification,scope
+step55_results_summary.md,analytical-structural / finite-carrier-diagnostic,generic frozen-carrier kernel verdict
+step55_schema.json,organizational,machine-readable verdict fields
+generic_seed_summary_step55.csv,analytical-structural / finite-carrier-diagnostic,central-difference nullity per generic seed
+clean_shadow_edges_step55.csv,analytical-structural / finite-carrier-diagnostic,both-direction clean-shadow finite test
+witness_pair_step55.csv,analytical-structural / finite-carrier-diagnostic,same-fingerprint different-geometry witness
+control_injectivity_step55.csv,analytical-structural / finite-carrier-diagnostic,can-fail injective control
+nonclaim_boundary_step55.md,organizational,scope and overclaim boundary

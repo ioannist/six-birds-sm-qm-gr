@@ -1,0 +1,140 @@
+{
+  "id": "R028",
+  "card": {
+    "id": "R028",
+    "one_sentence_claim": "SBT's coarsening-monotone audit functional A unifies, as one \"no-false-arrows\" data-processing principle, the classical fact that deterministic coarse-graining cannot increase the forward/reverse path-space KL asymmetry (micro >= macro) and the quantum fact that relative entropy is monotone under CPTP maps — with the finite deterministic classical case mechanically anchored and the quantum case imported as a cited standard theorem plus a 0-violation regression suite.",
+    "target_known_fact": "Two established facts presented as faces of one monotone-divergence principle: (a) classical stochastic thermodynamics / information theory — coarse-graining (a deterministic or stochastic map) cannot increase forward-vs-reverse path-measure KL asymmetry, the deterministic specialization of the data-processing inequality (Cover-Thomas 2006; Esposito 2012 coarse-graining bound on entropy production); (b) quantum information — relative entropy S(rho||sigma) is non-increasing under any CPTP map Phi (Lindblad 1975 / Uhlmann / Petz 1986 monotonicity; Wilde; Nielsen-Chuang).",
+    "scientific_domain": "Statistical mechanics / stochastic thermodynamics + quantum information (cross-domain within physics; underlying object is information theory / monotone divergences)",
+    "argument_family": "cross-domain-unification (recovery + reorganization of two standard data-processing inequalities under a single audit-monotonicity certificate)",
+    "derivability_class": "B",
+    "theory_basis": [
+      {
+        "component": "NG_ARROW_DPI / T-AOT-01: path-space arrow DPI. Theorem statement: KL((ell^(T))_# P^(T) || (rev_T)_#(ell^(T))_# P^(T)) <= KL(P^(T) || (rev_T)_# P^(T)). Proved from lem:deterministic_dpi_kl (deterministic KL-DPI via the log-sum inequality) plus lem:rev_pushforward_commute (reversal commutes with pointwise observation). This is the classical half of the claimed 'one law'.",
+        "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex (thm:NG_ARROW_DPI, lem:deterministic_dpi_kl, lem:rev_pushforward_commute, app:probkl)",
+        "role": "central-classical-lemma"
+      },
+      {
+        "component": "Audit functional A with coarsening-monotonicity axiom A(Q_f mu, Q_f mu') <= A(mu, mu'); 'three-certificate loop' that names audit monotonicity (data processing) as one of the three cross-domain certificates; quantum instance: audit = quantum relative entropy, S(rho||sigma) >= S(Phi(rho)||Phi(sigma)) for CPTP Phi, cited to Lindblad/Petz/Wilde and tested by a regression suite reporting 0 violations beyond tolerance across d in {2,3,4,6}; classical Lean anchor EmergenceCalc.TV_Q_f_le (total-variation contraction under deterministic pushforward).",
+        "paper": "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex (sec audit monotonicity; eq quantum DPI; Table tab:quantum-dpi-summary; app:lean TV_Q_f_le)",
+        "role": "cross-domain-framing + quantum-half (cited, not proved) + classical TV Lean anchor"
+      },
+      {
+        "component": "Sigma_T = D_KL(forward || reversed) path-reversal KL as the directionality audit, with the explicit 'no fake arrows under coarse-graining' DPI-safe comparison D_KL(macro) <= Sigma_T (micro) under a lens; EP/Sigma_T stated as informational arrow proxies, reservoir/physical-entropy-production interpretation disclaimed.",
+        "paper": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex (Audit 2: path-reversal KL, eq:dpi-kl; Audit 1: EP as informational proxy)",
+        "role": "directionality-certificate-definition + proxy-disclaimer"
+      },
+      {
+        "component": "D-AOT-01 (Sigma_T definition), thm:dpi_path (micro >= macro arrow DPI in Foundations), and three-certificate spine listing directionality = positive path-space KL protected by DPI.",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (D-AOT-01, thm:dpi_path, sec:six-birds-loop)",
+        "role": "foundational-definition-and-DPI"
+      }
+    ],
+    "minimum_viable_result": "A single short note that (i) re-proves NG_ARROW_DPI (classical path-space arrow KL micro >= macro) from the two elementary lemmas, (ii) records the quantum relative-entropy DPI as the cited monotone-divergence theorem for CPTP maps with the 0-violation regression table, and (iii) presents both as the same audit-monotonicity contract A(Q mu, Q mu') <= A(mu, mu') — i.e. a clean cross-domain RECOVERY with a uniform 'no false positives for the arrow' guard.",
+    "free_parameters": [
+      "Lens / deterministic coarse-graining ell:X->Y (classical) or CPTP channel Phi (quantum) — adjustable, no canonical-lens / pointer-basis selection principle (explicitly disclaimed)",
+      "Horizon T (any T>=1; DPI holds for every finite T)",
+      "Audit choice A (path-reversal KL / total variation / quantum relative entropy) — which divergence is used is selected, not derived",
+      "Numerical-suite parameters: DPI tolerance (tol=1e-8), dimensions sampled d in {2,3,4,6}, 300 trials/d, random channel families (dephasing/depolarizing/random-Kraus mixtures), deterministic seed; classical Dirichlet smoothing pseudocount for empirical Sigma_T"
+    ]
+  },
+  "audit": {
+    "mechanism_tag": "audit-DPI",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 3,
+    "data_points_matched": 4,
+    "overfitting_risk": "low",
+    "opposite_world_test": {
+      "could_explain_opposite": false,
+      "explanation": "The classical half is a deductive theorem (log-sum inequality): for any deterministic lens, any kernel, any horizon, D_KL(macro) <= D_KL(micro) is forced; SBT cannot derive macro > micro without a mathematical error. The quantum half is a cited theorem with the same rigidity. The only flexibility is presentational (whether to name the two DPIs 'one law'; whether to attach the thermodynamic-arrow reading to Sigma_T; which lens to pick). A different lens gives a different macro value but ALWAYS still <= micro. The inequality-direction claim survives; only naming/interpretation is flexible. Because the result is unfalsifiable-by-construction (a proved inequality), 'could not produce the opposite' is a statement about mathematical rigidity, not empirical risk-taking."
+    },
+    "audit_verdict": "FAITHFUL-RECOVERY, LOW OVERFITTING RISK, HONEST FRAMING WITH ONE NAMING-LEVEL STRETCH. The classical half (NG_ARROW_DPI / thm:dpi_path) is a genuine deductive proof from the log-sum inequality plus reversal-observation commutation (verified No_Go lines 367-527, esp. proof lines 476-527), holding for every lens, kernel, and horizon, so no parameter can tune it and none could produce the opposite. The quantum half is honestly IMPORTED (Lindblad/Petz/Wilde) and only regression-tested (0 violations, d in {2,3,4,6}, 300 trials, tol=1e-8; To_Become_a_Stone Table tab:quantum-dpi-summary verified lines 367-381), with the paper itself stating 'DPI itself is a standard theorem; our numerical suite is a regression test' (line 326). ~3 presentational degrees of freedom (divergence choice, lens/channel choice, one-law-vs-two framing) are NOT fitting knobs because the inequality is universal over all of them; 4 data points matched (classical KL-DPI exact, quantum relative-entropy DPI by citation+regression, Esposito coarse-graining bound STRUCTURE ONLY with magnitude explicitly NOT reproduced, detailed-balance Sigma_T=0 control). AD-HOC FLAGS: (1) 'one law' carried by NAMING not a unifying proof — two halves proved by different machinery, SBT proves only the classical half; (2) the 'thermodynamics'/'arrow of time' label on Sigma_T leans toward the disclaimed physical-entropy-production reading (ledger: 'Sigma_T/EPR are informational/audit proxies, NOT physical entropy'), kept honest only by explicit proxy disclaimers; (3) only TV-under-deterministic-pushforward is Lean-certified (EmergenceCalc.TV_Q_f_le, verified lines 942-944) — the KL/Sigma_T arrow is paper-proved-not-mechanized and the stochastic-lens backbone is acknowledged-missing. Crosses NO SBT disclaimer when the proxy caveats are honored."
+  },
+  "skeptic_panel": {
+    "min_survival": 3,
+    "mean_survival": 3,
+    "fatal_objections_present": false,
+    "skeptics": [
+      {
+        "skeptic_role": "Quantum-foundations skeptic",
+        "adversarial_survival_score": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The 'one no-false-arrows principle unifying classical coarse-graining and quantum CPTP monotonicity' is not a derived theorem in SBT; it is carried entirely by shared naming. SBT proves ONLY the classical deterministic finite path-space KL-DPI; the quantum relative-entropy DPI is purely imported and only regression-tested; the unifying lemma appears in no paper."
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist (monotone divergences / stochastic thermodynamics)",
+        "adversarial_survival_score": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "The 'one law' is shared naming plus a shared citation, not a unifying theorem. Worse, the abstraction that does unify both (f-divergence / Petz monotonicity under a channel) is itself standard textbook material, so even as a reorganization SBT contributes nothing a specialist did not already possess. Faithful but non-novel RECOVERY with an inflated wrapper."
+      },
+      {
+        "skeptic_role": "EFT / known-physics-recovery skeptic",
+        "adversarial_survival_score": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "RECOVERY with zero new content: classical half is the textbook log-sum proof relabeled 'audit monotonicity'; quantum half is purely imported and regression-tested. The 'thermodynamics'/'arrow of time' label crosses toward the disclaimed physical-entropy-production reading; Lean anchor is on TV not KL, a different and more elementary statement than the load-bearing claim."
+      },
+      {
+        "skeptic_role": "Quantum information theorist / stochastic-thermodynamics specialist (hostile referee)",
+        "adversarial_survival_score": 3,
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "main_objection": "'Unifies as ONE principle' is carried entirely by shared naming. The two halves are proved by genuinely different machinery, SBT proves only the classical half and imports the quantum half verbatim. The unifying observation (monotone f-divergence under a channel) is decades-old prior art; a specialist learns nothing new. Asymmetric epistemic status (proved vs external) masquerades as symmetry."
+      }
+    ],
+    "common_minimum_acceptance_conditions": [
+      "Present strictly as a RECOVERY of two standard, separately-proved DPIs packaged under one NAMED audit-monotonicity contract — not a single proved cross-domain theorem — unless the unification lemma is actually proved.",
+      "Explicitly separate proved+Lean-anchored (classical TV), proved-not-mechanized (classical KL/Sigma_T), and cited+regression-tested (quantum).",
+      "Keep the Sigma_T-is-an-informational-proxy disclaimer; do not claim physical entropy production or reproduction of Esposito's thermodynamic magnitude.",
+      "Acknowledge the quantum DPI presupposes the standard Born-rule/CPTP operational substrate SBT consumes and disclaims deriving.",
+      "Label derivability-class B with the honest 'recovers, does not outperform' baseline note."
+    ],
+    "what_would_change_minds": "A written, checked proof of the unification lemma — deriving the finite classical path-space KL-DPI as a strict corollary of CPTP relative-entropy monotonicity via restriction to a commutative diagonal subalgebra with a measurement-coarsening channel — together with extending the Lean certification from the TV audit to the KL/Sigma_T audit and from deterministic lenses to stochastic kernels. That would convert 'two parallel theorems sharing a label' into 'one mechanized theorem with a classical and a quantum specialization'."
+  },
+  "repair_and_scores": {
+    "repair_status": "repaired",
+    "revised_one_sentence_claim": "SBT exhibits the classical finite deterministic path-space arrow inequality (forward-vs-reversed KL: macro <= micro, NG_ARROW_DPI / thm:dpi_path, elementarily proved from the log-sum inequality and reversal-observation commutation) and the quantum relative-entropy data-processing inequality under CPTP maps (cited to Lindblad/Petz/Wilde and exercised by a 0-violation regression suite, d in {2,3,4,6}) as two instances of one NAMED coarsening-monotone audit contract A(Q mu, Q mu') <= A(mu, mu'), giving a uniform falsifiable sanity guard 'a coarse-grained/channel-output arrow exceeding the micro arrow is spurious' — explicitly a RECOVERY (no new bound), with the classical half proved and TV-Lean-anchored, the classical KL/Sigma_T half proved-but-not-mechanized, the quantum half imported-not-derived, and Sigma_T an informational proxy (no physical-entropy-production claim).",
+    "new_minimum_viable_result": "A 5-8 page recovery note that (i) re-proves NG_ARROW_DPI from lem:deterministic_dpi_kl + lem:rev_pushforward_commute, (ii) records the quantum relative-entropy DPI as a cited theorem plus the reproducible 0-violation regression table, (iii) states both as instances of one named audit-monotonicity contract WITHOUT asserting a single proved cross-domain theorem, and (iv) carries an explicit honesty box separating proved+Lean-anchored (classical TV), proved-not-mechanized (classical KL/Sigma_T), and cited+regression-tested (quantum), plus the Sigma_T-is-an-informational-proxy disclaimer and the Esposito-structural-skeleton-only caveat.",
+    "changes_made": [
+      "Narrowed the headline: removed the assertion that the two DPIs are unified 'as ONE principle' by a theorem; the unification is now stated as a shared NAMED contract / framing convenience, not a proved cross-domain theorem (addresses the unanimous primary objection).",
+      "Split the overbroad single claim into three epistemically distinct components with explicit status tags: classical proved+Lean(TV)-anchored, classical KL/Sigma_T proved-not-mechanized, quantum imported+regression-tested.",
+      "Replaced 'exact' thermodynamic matching with 'structural/informational-proxy' matching: the Esposito (2012) coarse-graining bound is matched at the information-theoretic skeleton only; the thermodynamic entropy-production magnitude is explicitly NOT reproduced; Sigma_T flagged as informational proxy.",
+      "Clarified the mapping: the Lean anchor (TV_Q_f_le) certifies a different and more elementary statement (total-variation contraction under deterministic pushforward) than the load-bearing KL/Sigma_T arrow; this asymmetry is stated rather than smoothed over.",
+      "Converted the 'unifies' rhetoric into the precise lemma-sequence it actually rests on (lem:deterministic_dpi_kl -> lem:rev_pushforward_commute -> NG_ARROW_DPI for the classical half; cited Lindblad/Petz + regression for the quantum half) and named the missing unification lemma as the explicit gap.",
+      "Made imported physics explicit and non-hidden: quantum relative-entropy DPI is imported wholesale; the unifying monotone-f-divergence abstraction is itself standard prior art; SBT's contribution is the cross-domain naming + elementary self-contained classical write-up + TV Lean anchor."
+    ],
+    "remaining_objections": [
+      "The 'one law' / cross-domain unification remains carried by NAMING, not by a proved unification lemma; until the commutative-subalgebra corollary is written, the headline is a framing convenience and the contribution is reorganization, not new mathematics.",
+      "Zero new quantitative content: no new bound, no tighter constant, no new physics in either domain (conceded RECOVERY). The unifying abstraction (f-divergence / Petz monotonicity) is standard textbook prior art, so even the reorganization is not novel to a specialist.",
+      "The quantum half is imported wholesale and presupposes the Born-rule/CPTP operational substrate SBT explicitly disclaims deriving; the regression suite is a software-correctness check that can only return 0 violations for a proved inequality, not evidence about quantum mechanics.",
+      "Mechanization asymmetry persists: only the TV audit under deterministic partition lenses is Lean-certified; the KL/Sigma_T arrow and the stochastic-lens backbone are acknowledged-missing future work.",
+      "The 'thermodynamics' / 'arrow of time' framing on Sigma_T remains a proxy stretch toward the disclaimed physical-entropy-production reading; honest only while the informational-proxy disclaimer travels with the claim."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 5,
+      "plausibility": 5,
+      "non_ad_hocness": 4,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "precision": 3,
+      "robustness": 5,
+      "baseline_advantage": 1,
+      "publication_potential": 2
+    },
+    "proposed_bin": "B",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short expository/recovery note (5-8 pages) 'One audit-monotonicity contract: no false arrows in classical coarse-graining and quantum channels', with the self-contained classical NG_ARROW_DPI proof, the cited quantum relative-entropy DPI plus the reproducible 0-violation regression table (d in {2,3,4,6}), the shared-contract statement labeled as naming-level (optional appendix proving the commutative-subalgebra unification lemma to upgrade it to a theorem), and an explicit honesty box separating proved+Lean(TV)-anchored, proved-not-mechanized (KL/Sigma_T), and cited+regression-tested (quantum), plus the Sigma_T-informational-proxy disclaimer.",
+    "one_line_verdict": "Honest, parameter-rigid, low-overfitting RECOVERY of two standard data-processing inequalities under one named audit-monotonicity contract; survives all skeptics at 3 (no fatal objections) but adds no new bound, no new physics, and the 'one law' is naming not theorem — a clean foundational sanity check, not a flagship.",
+    "mechanism_tag": "audit-DPI",
+    "target_audience": [
+      "Stochastic-thermodynamics / nonequilibrium statistical mechanics researchers (coarse-graining and entropy-production bounds)",
+      "Quantum information theorists (data-processing, relative entropy, recoverability)",
+      "Information theorists working on monotone divergences / f-divergence monotonicity",
+      "Formal-methods / Lean community interested in mechanized information-theoretic inequalities",
+      "SBT-adjacent foundations-of-physics readers evaluating cross-domain 'closure/audit' framings"
+    ]
+  }
+}

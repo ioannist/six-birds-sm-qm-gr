@@ -1,0 +1,40 @@
+{
+  "step": 11,
+  "artifact_type": "refinement_order_battery",
+  "source_step": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv",
+  "parameters": {
+    "facets": [
+      "gauge_code",
+      "rep_code",
+      "n_gen",
+      "texture_code",
+      "ew_code",
+      "uv_code",
+      "vacuum_code"
+    ],
+    "partial_depth": 4,
+    "significance_threshold": 0.25,
+    "sharp_rank_sigma": 0.55,
+    "random_order_count": 200,
+    "random_seed": 20260606
+  },
+  "selected_point": {
+    "candidate_id": "n_00000",
+    "structural_rank": 1,
+    "structural_score": 103.9,
+    "selection_rule": "max structural_score, then structural_rank, then candidate_id"
+  },
+  "verdict": {
+    "type": "refinement_order_battery_constructed",
+    "genuine_random_collapse_fraction": 1.0,
+    "landscape_random_noncollapse_fraction": 1.0,
+    "min_landscape_final_degeneracy": 6,
+    "max_genuine_final_degeneracy": 1,
+    "separation_margin": 5,
+    "flipping_order_count": 0,
+    "adversarial_order_count": 2,
+    "order_invariant_on_declared_battery": true,
+    "finite_grammar_only": true
+  },
+  "nonclaim": "Finite token-blind order battery only; no physical value or physical mechanism is determined."
+}

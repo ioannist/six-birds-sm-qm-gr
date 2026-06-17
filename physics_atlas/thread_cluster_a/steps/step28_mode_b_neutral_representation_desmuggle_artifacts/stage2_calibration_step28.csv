@@ -1,0 +1,2 @@
+stage_ii_check,passes,matching_dimensions,calibration_source
+reference_support_present_in_neutral_window,True,2|3,steps/step14_real_anomaly_enrichment_artifacts/fermion_content_step14.csv

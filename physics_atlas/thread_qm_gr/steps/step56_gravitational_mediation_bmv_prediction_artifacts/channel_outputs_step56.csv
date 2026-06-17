@@ -1,0 +1,4 @@
+case_id,channel_class,negativity,optimized_CHSH,enumerated_local_bound,CHSH_violates_local_bound,local_coherence_A_abs,local_coherence_B_abs,mean_local_coherence_abs,coherence_damping_fraction,purity,entangles
+initial_product,none,6.23792327213405e-18,2,2,False,0.5,0.5,0.5,0,0.999999999999999,False
+fork_admissible_record_channel,geometry_visible_record_dephasing,0,0,2,False,0,0,0,1,0.25,False
+forbidden_fused_control,coherent_phase_no_record,0.353553390593274,2.44948974278318,2,True,0.353553390593274,0.353553390593274,0.353553390593274,0.292893218813452,0.999999999999999,True

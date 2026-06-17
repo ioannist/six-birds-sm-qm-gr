@@ -1,0 +1,34 @@
+{
+  "step": 38,
+  "orientation": "carrier-independence rerun of decisive QM-GR mode-grammar lemmas",
+  "active_residual": "R2_carrier_consistency_for_QM_GR_no_go_and_uniqueness",
+  "carrier": {
+    "first_reference": "custom_8_first_reference from Steps 33-34",
+    "second_carrier": "complete_16_second_carrier over {-1,+1}^4",
+    "nested_control": "complete_16 with q_GR_nested=(d0,d2,d1)"
+  },
+  "candidate_move": "Rerun Lemma 1 directed no-go, Lemma 2 fused no-go, Lemma 3 type-uniqueness, and Lemma 4 instance-uniqueness on a second carrier; require nested-endpoints flip control.",
+  "final_verdict": {
+    "type": "carrier_independence_mode_grammar_stable_R2_resolved",
+    "complete_16_all_four_stable": true,
+    "nested_control_flips_no_go": true,
+    "R2_resolved": true,
+    "bounded_scope": "declared finite carriers over the four-mode grammar",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "mode_grammar": {
+      "q_QM": ["d0_density", "d1_phase", "d2_transport"],
+      "q_GR": ["d0_density", "d2_transport", "d3_curvature"],
+      "L": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"]
+    },
+    "stable_lemmas": [
+      "Lemma1_directed_no_go",
+      "Lemma2_fused_no_go",
+      "Lemma3_type_uniqueness",
+      "Lemma4_instance_uniqueness"
+    ],
+    "validation_script": "run_step38.py"
+  }
+}

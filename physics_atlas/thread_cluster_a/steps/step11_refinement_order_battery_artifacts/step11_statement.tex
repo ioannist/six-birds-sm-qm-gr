@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+
+\title{Cluster A Step 11: Refinement-Order Battery}
+\author{Six Birds Physics Atlas}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Bounded Grade}
+
+This is a finite-grammar order battery for the Cluster-A selection toy. It tests whether the collapse-vs-landscape distinction depends on a hand-aimed refinement order, using the Step-8 token-blind structural survivor carrier.
+
+\section*{Carrier and Measures}
+
+The carrier is the 468-world structural survivor set from Step 8. The seven facets are \texttt{gauge\_code}, \texttt{rep\_code}, \texttt{n\_gen}, \texttt{texture\_code}, \texttt{ew\_code}, \texttt{uv\_code}, and \texttt{vacuum\_code}.
+
+The genuine-selection case is a sharp structural measure centered on the structural argmax, selected without token names. The landscape case is a broad flat support over the same partial-refinement cylinder. Each order reveals four facets, not all seven.
+
+\section*{Order Ensemble}
+
+The order ensemble contains:
+
+\begin{itemize}
+\item the canonical order,
+\item the reverse order,
+\item 200 fixed-seed random orders with seed 20260606,
+\item an adversarial order chosen to delay genuine collapse,
+\item an adversarial order chosen to force landscape collapse.
+\end{itemize}
+
+\section*{Results}
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Case & Random Orders & Collapse Fraction & Non-collapse Fraction & Final Range \\
+\midrule
+Genuine selection & 200 & 1.000000000000 & 0.000000000000 & 1--1 \\
+Landscape measure & 200 & 0.000000000000 & 1.000000000000 & 6--27 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The adversarial delay-genuine order gives genuine final degeneracy 1 and landscape final degeneracy 27. The adversarial force-landscape order gives genuine final degeneracy 1 and landscape final degeneracy 6.
+
+Across all 204 orders, the max genuine final degeneracy is 1 and the min landscape final degeneracy is 6, giving separation margin 5. No tested order flips either verdict.
+
+\section*{Verdict}
+
+On this declared finite battery, the collapse-vs-landscape distinction is order-invariant. The result answers the hand-aimed-refinement concern at toy fidelity: the verdict is driven by the measure structure, not by the chosen order.
+
+This remains a bounded toy result. It does not compute physical values or settle real mechanisms.
+
+\end{document}

@@ -1,0 +1,9 @@
+output,classification,grade,scope,source_artifacts
+p6_decaying_degeneracy_step3.py,analytical structural,finite-toy-diagnostic,"Builds degeneracy refinement, landscape control, P6 audit, and controls.",steps/step3_p6_decaying_degeneracy_audit_artifacts/p6_decaying_degeneracy_step3.py
+degeneracy_refinement_step3.csv,analytical structural,finite-toy-diagnostic,Per-level genuine-selection and landscape degeneracy sequences.,steps/step3_p6_decaying_degeneracy_audit_artifacts/degeneracy_refinement_step3.csv
+p6_audit_step3.csv,analytical structural,finite-toy-diagnostic,Selection stabilizing audit versus non-decaying landscape audit.,steps/step3_p6_decaying_degeneracy_audit_artifacts/p6_audit_step3.csv
+controls_step3.csv,analytical structural,finite-toy-diagnostic,"Decays-vs-not, monotone, lands-on-selected-point, and carrier controls.",steps/step3_p6_decaying_degeneracy_audit_artifacts/controls_step3.csv
+results_summary.md,organizational/audit,finite-toy-diagnostic,Human-readable P6 audit verdict and bounded scope.,steps/step3_p6_decaying_degeneracy_audit_artifacts/results_summary.md
+schema.json,organizational/audit,finite-toy-diagnostic,Per-step schema and final verdict.,steps/step3_p6_decaying_degeneracy_audit_artifacts/schema.json
+nonclaim_boundary.md,organizational/audit,organizational,Scope boundary for finite P6 decaying-degeneracy audit.,steps/step3_p6_decaying_degeneracy_audit_artifacts/nonclaim_boundary.md
+run_step3.py,organizational/audit,finite-toy-diagnostic,"Validator for computed sequences, controls, source paths, ledgers, and overclaim guard.",steps/step3_p6_decaying_degeneracy_audit_artifacts/run_step3.py

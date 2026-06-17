@@ -1,0 +1,10 @@
+gate,status,evidence,defect_if_failed
+field_carrier_reused,pass,dynamics_parameters_step26.json records the Step 24 field source,missing_field_carrier
+T00_derived_from_psi,pass,stress_energy_density computes gradient energy plus background density,stress_asserted_not_computed
+potential_sourced_from_T00,pass,potential_sourcing_residual is 0.0 in both summaries,potential_not_sourced
+hamiltonian_hermitian,pass,H[V] is real symmetric finite kinetic plus real diagonal potential,nonhermitian_H
+unitary_norm_checked,pass,max unitary norm errors are below 1.5e-15,unitary_norm_not_checked
+coupled_map_iterated,pass,convergence_trace_step26.csv has 60 iterations per case,convergence_asserted_without_iteration
+consistent_case_converges,pass,moderate coupling residuals are below tolerance,moderate_case_not_self_consistent
+runaway_control_fails,pass,over-strong control residuals remain positive,toothless_control
+external_review_scope,open,toy finite dynamics only; broader adequacy remains external review,self_certified_overread

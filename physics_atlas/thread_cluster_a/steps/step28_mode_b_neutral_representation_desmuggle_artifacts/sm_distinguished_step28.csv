@@ -1,0 +1,2 @@
+reference_present,reference_match_count,reference_minimal,minimal_score,minimal_closer_count,distinguished_without_prior,verdict
+True,1,False,1|4|2|2,4,False,CONFIRM_SMUGGLE

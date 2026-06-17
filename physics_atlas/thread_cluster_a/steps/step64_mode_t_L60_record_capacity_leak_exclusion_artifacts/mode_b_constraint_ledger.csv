@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+C_step64_frozen_predicates,active,64,Step57/35/41 machinery imported verbatim
+C_step64_no_enumeration_as_proof,active,64,exit must stay sharpened unless a structural bridge is written
+C_step64_L64_open_sublemma,open,64,charge-orientation cap remains to prove

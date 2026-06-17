@@ -1,0 +1,23 @@
+\section{Step 27: Normalization Robustness Stress}
+
+\paragraph{Deflationary premise.}
+The Step-26 value \(3/8\) is a toy sector-trace result, not a physical chiral-fermion trace. This step varies the trace and readout definitions on the same generated structure and checks whether the value survives.
+
+\paragraph{Convention sweep.}
+The generated structure is read from Step 23: \(r1|2\), ranks \(1|2\), dimensions \(2|3\), and charge vector \(3|-2\). The convention family gives:
+\[
+\begin{array}{lll}
+\text{product charge, rank-one readout} &\to& 3/8,\\
+\text{lcm charge, rank-one readout} &\to& 3/8,\\
+\text{total-slot charge, rank-one readout} &\to& 5/17,\\
+\text{integer-weight charge, rank-one readout} &\to& 1/61,\\
+\text{product charge, alternate readout} &\to& 9/19,\\
+\text{product charge, all-factor readout} &\to& 3/5.
+\end{array}
+\]
+
+\paragraph{Consequence consistency.}
+The Step-25 F51 consequences remain on the same generated child: the \(SU(5)\) row has obstruction \(0/0\), and the \(SO(10)\) row has charged/full obstruction \(0/1\) because of one neutral residual.
+
+\paragraph{Verdict.}
+The verdict is \texttt{FRAGILE\_CONVENTION\_DEPENDENT}. The finite sector-trace convention is load-bearing: the value is not robust across the declared convention family. The next grammar delta is a physical chiral-multiplet trace or a principled convention-selection rule.

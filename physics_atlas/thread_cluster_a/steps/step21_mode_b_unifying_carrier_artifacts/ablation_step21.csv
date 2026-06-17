@@ -1,0 +1,8 @@
+removed_axiom,descent_supported,failure_mode,single_axiom_equivalent_to_target
+A1,False,q lens undefined,False
+A2,False,sector charge not well defined,False
+A3,False,neutral generator underdetermined,False
+A4,False,charge grid not quantized,False
+A5,False,normalization audit unavailable,False
+A6,False,promoted U no longer has non-descent witness,False
+A7,False,Stage II anomaly audit unavailable,False

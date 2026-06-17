@@ -1,0 +1,2 @@
+expression,state_i,state_j,same_q,same_expression,normalization_ratio_i,normalization_ratio_j,obstruction_count,verdict
+C(U),U_a,U_b,True,True,5/3,5/3,0,C(U) descends through q

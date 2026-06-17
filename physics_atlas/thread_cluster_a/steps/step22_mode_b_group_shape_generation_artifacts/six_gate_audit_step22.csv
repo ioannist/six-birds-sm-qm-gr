@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,target sector names and recognition literals absent from carrier primitives
+dependency_trace,True,"closure uses enumerated ranks, chirality, anomaly, quantization, and minimality tests"
+ablation,True,"removing chirality, anomaly, charge-grid, or minimality changes the closure set"
+negative_controls,True,should-not-close controls fail closure
+stage_ii_earning,True,complex-rep and single-factor checks reproduce known structural facts
+no_single_axiom_equivalence,True,no axiom names or fixes the target sector pattern

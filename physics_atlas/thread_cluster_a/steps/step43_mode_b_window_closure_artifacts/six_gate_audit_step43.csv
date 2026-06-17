@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"no target-shape, total-slot, or GUT prior used in filter logic"
+dependency_trace,True,filter chain and coverage are listed in generated_vs_input_step43.csv
+negative_controls,True,non-target and contaminated rows remain present
+stage_ii,True,baseline and widened rows are checked
+honest_coverage,True,exact and skipped regions are both explicit
+conditional_scope,True,result remains conditional and finite

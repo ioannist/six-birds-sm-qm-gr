@@ -1,0 +1,2 @@
+control_name,carrier,q_GR_nested_through_q_QM_row_residual,q_QM_through_q_GR_nested_row_residual,q_GR_nested_through_q_QM_pair_defect_count,q_QM_through_q_GR_nested_pair_defect_count,route_mismatch_normalized,O_s_count,directed_no_go_fires,vertical_reduction_closes
+nested_endpoint_pair_d3_nested_equals_d1,complete_16,0.0,0.0,0,0,0.0,0,False,True

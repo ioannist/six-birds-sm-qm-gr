@@ -1,0 +1,71 @@
+case_id,source,bond_dim,seed,region,region_legs,entropy,entropy_code_path
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,A,L0,0.678607293604,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,B,L1,0.676963972453,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,C,R0,0.590405610668,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,AB,L0|L1,1.26376033255,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,AC,L0|R0,1.25647833587,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,BC,L1|R0,1.25204445985,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed101,contracted_step42_random_tensor,2,101,ABC,L0|L1|R0,1.76162140325,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,A,L0,0.633292565869,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,B,L1,0.66253385538,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,C,R0,0.691847655274,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,AB,L0|L1,1.2833414561,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,AC,L0|R0,1.29688181462,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,BC,L1|R0,1.31885116135,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed202,contracted_step42_random_tensor,2,202,ABC,L0|L1|R0,1.83347409543,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,A,L0,0.658233692755,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,B,L1,0.678817758309,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,C,R0,0.685150198977,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,AB,L0|L1,1.30662072158,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,AC,L0|R0,1.3245361403,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,BC,L1|R0,1.33578967139,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D2_seed303,contracted_step42_random_tensor,2,303,ABC,L0|L1|R0,1.8616021484,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,A,L0,1.09704062411,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,B,L1,1.09509168024,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,C,R0,1.09312173895,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,AB,L0|L1,2.16454821864,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,AC,L0|R0,2.18481586134,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,BC,L1|R0,2.18180147477,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed101,contracted_step42_random_tensor,3,101,ABC,L0|L1|R0,3.20956558407,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,A,L0,1.09561219605,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,B,L1,1.09575173089,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,C,R0,1.09687968894,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,AB,L0|L1,2.17277855024,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,AC,L0|R0,2.18860982613,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,BC,L1|R0,2.18820539758,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed202,contracted_step42_random_tensor,3,202,ABC,L0|L1|R0,3.21709842172,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,A,L0,1.09801722239,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,B,L1,1.09589613757,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,C,R0,1.09464803757,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,AB,L0|L1,2.17801854121,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,AC,L0|R0,2.18594406801,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,BC,L1|R0,2.18454730196,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D3_seed303,contracted_step42_random_tensor,3,303,ABC,L0|L1|R0,3.22673824073,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,A,L0,1.38568759754,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,B,L1,1.3849541703,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,C,R0,1.38529520115,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,AB,L0|L1,2.76299048439,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,AC,L0|R0,2.76924316383,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,BC,L1|R0,2.76856007473,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed101,contracted_step42_random_tensor,4,101,ABC,L0|L1|R0,4.11886759439,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,A,L0,1.38569868589,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,B,L1,1.38556051059,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,C,R0,1.38529787622,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,AB,L0|L1,2.76276026134,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,AC,L0|R0,2.76900243239,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,BC,L1|R0,2.76866577467,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed202,contracted_step42_random_tensor,4,202,ABC,L0|L1|R0,4.11832548894,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,A,L0,1.38558249531,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,B,L1,1.38516417744,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,C,R0,1.38545418275,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,AB,L0|L1,2.76012588104,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,AC,L0|R0,2.76909013247,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,BC,L1|R0,2.76882675645,Step42 boundary_state_matrix -> entropy_from_region
+holographic_D4_seed303,contracted_step42_random_tensor,4,303,ABC,L0|L1|R0,4.11540517321,Step42 boundary_state_matrix -> entropy_from_region
+GHZ_4party_control,explicit_GHZ_state,2,,A,A,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,B,B,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,C,C,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,AB,A|B,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,AC,A|C,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,BC,B|C,0.69314718056,explicit GHZ state vector -> partial trace
+GHZ_4party_control,explicit_GHZ_state,2,,ABC,A|B|C,0.69314718056,explicit GHZ state vector -> partial trace

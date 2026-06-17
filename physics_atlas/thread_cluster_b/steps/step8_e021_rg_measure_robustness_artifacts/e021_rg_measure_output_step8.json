@@ -1,0 +1,32 @@
+{
+  "step": 8,
+  "orientation": "E021 RG/measure robustness",
+  "toy_fields": {
+    "moduli_grid": [
+      -2.0,
+      -1.0,
+      0.0,
+      1.0,
+      2.0
+    ],
+    "config_count": 5,
+    "bare_UV_sigma": [
+      "cutoff",
+      "spectrum_code",
+      "g_uv",
+      "beta0"
+    ]
+  },
+  "verdict": {
+    "type": "E021_rg_measure_robustness_established",
+    "Lambda_non_descending_from_bare_UV": true,
+    "Lambda_descends_when_selection_included": true,
+    "selection_non_descending_from_bare_UV": true,
+    "RG_control_descends": true,
+    "no_selection_control_descends": true,
+    "selection_relocation": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite toy RG/measure/moduli construction only; no Lambda value or real selection mechanism."
+}

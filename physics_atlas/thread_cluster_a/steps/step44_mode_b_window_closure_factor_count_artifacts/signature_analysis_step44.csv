@@ -1,0 +1,2 @@
+signature,three_factor_clean_separator_count,competitor_present,basis
+5|15,0,False,No three-factor branch reaches route completeness; therefore no clean signature rows are present.

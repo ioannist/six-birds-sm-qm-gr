@@ -1,0 +1,2 @@
+verdict,full_chain_blind_for_all_active_N,minimality_choice_N,cp_lower_bound_N,cp_bound_classification,content_type_limit,observed_input_required,next_grammar_delta
+N_GEN_BLIND_TYPE_LIMIT,True,1,3,recognition_source_lower_bound,True,True,recognition-source relation such as CP bound or external index; not an SBT-only selector

@@ -1,0 +1,9 @@
+family,source_lines,structural_use
+MemoryLayer,"F24 1418-1514; F3 2433-2495","Finite factorization of s through a history coordinate and non-factorization of that coordinate through q."
+HiddenUpstreamRole,"F24 1418-1514; F13a 1050-1162","Finite factorization of s through a latent coordinate outside q, with no passing explicit joint object."
+BridgeMediatedRole,"F24 1418-1514; F22 4638-4678; F51 8528-8582","Explicit joint maps j,a,b with a∘j=q, role∘j=s, native gate checks, and strict refinement."
+BudgetedRole,"F24 1418-1514; F6 1620-1718; F9 2071-2140","Positive priced adequate residual with no exact resolution."
+ScopedRole,"F24 1418-1514; F52 8663-8712","Proper sub-carrier whose restricted role obstruction is empty."
+CoarsenedRole,"F24 1418-1514; F2 2286-2378; F39 7120-7225","Changed target readout whose coarsened role obstruction is empty."
+OutsideRoleScope,"F24 1418-1514; F52 8663-8712","Role direction absent from in-scope directions and present in named-outside directions."
+BlockedNonClosure,"F24 1418-1514; F9 2071-2140; F52 8663-8712","Non-idempotent closure or inadequately statused residual after other structural predicates fail."

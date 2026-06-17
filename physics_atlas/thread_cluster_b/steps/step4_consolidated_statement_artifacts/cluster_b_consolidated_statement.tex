@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+\title{GR Upper-Boundary Consolidated Statement: E021 (cosmological constant) + E042 (singularities) as Regime Readouts of \(L_{\mathrm{ext}}\)\\ {\small (session working label ``Cluster B'' = part of atlas ``Cluster A''; identify by edge list --- see NAMING.md)}}
+\author{Six Birds Theory construction track}
+\date{2026-06-05}
+
+\begin{document}
+\maketitle
+
+\section{Grade}
+
+\textbf{Grade: finite-carrier bounded-grammar consolidation.}
+This document consolidates verified Cluster B Steps 1--3. It reuses the E018 co-sourcing field-layer \(L\) and its finite extension
+\[
+L_{\mathrm{ext}}=(d0_{\mathrm{density}},d1_{\mathrm{phase}},d2_{\mathrm{transport}},d3_{\mathrm{curvature}},d4_{\mathrm{subplanck}},d5_{\mathrm{vacuum}}).
+\]
+It states the \emph{shape} of the E021 and E042 holes on the declared toy carrier, not their physical content. It gives no value of \(\Lambda\), no physical high-curvature substrate, no unconditional atlas closure, and no frame-transfer certificate. External frame-transfer review remains the standing gate.
+Sources: \texttt{steps/step1\_shared\_substrate\_frame\_artifacts/results\_summary.md}, \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/results\_summary.md}, \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/results\_summary.md}, \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/results\_summary.md}.
+
+\section{Shared-Substrate Frame}
+
+\textbf{Claim 1. Grade: frame-signature.}
+Step 1 constructs \(L_{\mathrm{ext}}\) as a 12-state lifted carrier over the prior E018 toy. E042's \(d4_{\mathrm{subplanck}}\) and E021's \(d5_{\mathrm{vacuum}}\) are non-descending readouts of \(L_{\mathrm{ext}}\): they are not determined by GR's smooth access \((d0,d2,d3)\), nor by \(q_{\mathrm{QM}}=(d0,d1,d2)\). The computed obstruction counts are:
+\[
+d4: 3 \text{ in GR access, } 11 \text{ in } q_{\mathrm{QM}},
+\quad
+d5: 1 \text{ in GR access, } 3 \text{ in } q_{\mathrm{QM}}.
+\]
+Witnesses are \(1\!-\!2;5\!-\!6;10\!-\!11\) for \(d4\) and \(3\!-\!4\) for \(d5\).
+The non-descending \(d4_{\mathrm{subplanck}}\) / \(d5_{\mathrm{vacuum}}\) readouts are deliberately INSTANTIATED by branch splits in the toy carrier (high-curvature bases split in \(d4\); one vacuum base splits in \(d5\)); the controls (\(d3\) factors; \(d4\) factors through \(d3\) in the smooth regime) show the finite test DISCRIMINATES, but do NOT certify physical frame transfer.
+Sources: \texttt{steps/step1\_shared\_substrate\_frame\_artifacts/frame\_signatures\_step1.csv}.
+
+\textbf{Claim 2. Grade: frame-signature.}
+GR geometry is the smooth-regime shadow of \(L_{\mathrm{ext}}\). Step 1 computes smooth descent residual \(0.0\). The descending-readout control also has teeth: \(d3\) factors through GR's smooth access with obstruction count \(0\), and \(d4\) factors through \(d3\) in the smooth regime with obstruction count \(0\). At the high-curvature boundary, \(d4\) becomes non-factorizing with obstruction count \(3\).
+Sources: \texttt{steps/step1\_shared\_substrate\_frame\_artifacts/shadow\_descent\_step1.csv}, \texttt{steps/step1\_shared\_substrate\_frame\_artifacts/controls\_step1.csv}.
+
+\section{E042: Typed Boundary of the Geometry Readout}
+
+\textbf{Claim 3. Grade: finite-toy-diagnostic.}
+Step 2 builds the E042 P6 defect-stabilization predicate. Along the toy refinement sequence, GR's curvature diagnostic \(K_{\mathrm{GR}}\) grows from \(0.81\) to \(13271.04\), with last increment \(9953.28\). This is recorded as a non-stabilizing GR defect. The \(L\)-readout \(R_L\), built from \(d4_{\mathrm{subplanck}}\), approaches the finite toy value \(R^\ast=0.75\), with last increment \(0.0001266479492186834\). The no-resolution control \(R_{\mathrm{bad}}\) grows from \(0.9\) to \(115.2\) and does not stabilize.
+Sources: \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/refinement\_sequence\_step2.csv}, \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/p6\_ledger\_step2.csv}, \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/controls\_step2.csv}.
+
+\textbf{Claim 4. Grade: finite-toy-diagnostic.}
+Step 2 builds the P4 staging predicate. The toy Planck threshold is \(K_P=16.0\). The computed crossover is \(n^\ast=4\), \(\epsilon^\ast=0.125\), \(K(\epsilon^\ast)=51.84\), and \(K/K_P=3.24\). The \(\hbar\)-bearing staging marker is carried by the \(L\)-stage description, not by GR's smooth access.
+Sources: \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/planck\_staging\_step2.csv}.
+
+\textbf{Claim 5. Grade: modeled-shape.}
+Step 2 builds the P2 continuation predicate. The toy GR side terminates at \(\epsilon=0\). The \(L\)-side continuation remains finite at the locus and in post-locus rows, with finite \(L_R\) values \(0.7475\), \(0.745\), and \(0.74\) after the locus.
+The continuation is ASSIGNED by the toy (\(\mathrm{GR\_defined}=\epsilon>0\), \(\mathrm{L\_defined}=\mathrm{True}\), hand-set post-locus values), NOT derived from a constraint or evolution law; only the finite divergence/stabilization table (Claim 3) is computed.
+Sources: \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/geodesic\_continuation\_step2.csv}.
+
+\textbf{Claim 6. Grade: modeled-shape.}
+The E042 construction matches the conventional high-curvature-repair candidate structurally: the smooth GR readout reaches a boundary, while the richer layer carries finite content through that boundary. This is an honest structural match, not a derivation of a substrate. The saturating form \(R_L \to 0.75\) is a modeled shape used to test the SBT predicate, not a physical high-curvature mechanism.
+Sources: \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/results\_summary.md}, \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/nonclaim\_boundary.md}.
+
+\section{E021: Audited Selected/Run Vacuum Readout}
+
+\textbf{Claim 7. Grade: finite-toy-diagnostic.}
+Step 3 builds the P5 vacuum currency. \(L_{\mathrm{ext}}\) carries \(d5_{\mathrm{vacuum}}\) as an audited readout. The selected toy IR readout is \(\rho_{\mathrm{IR}}=0.0010400000000000001\), with \( \psi \)-stress proxy \(0.25\) and budget weight \(0.0041600000000000005\). GR is recorded as receiving this as an input parameter rather than generating it.
+Sources: \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/vacuum\_currency\_step3.csv}.
+
+\textbf{Claim 8. Grade: modeled-shape.}
+Step 3 builds the P6 UV-to-IR ledger. The toy UV budget is \(1040000000.0000001\), the toy IR readout is \(0.0010400000000000001\), and the modeled mismatch ratio is \(10^{12}\), with \(\log_{10}\) ratio \(12.0\). This is explicitly marked as a toy ratio, not the physical 120-order number. The unaudited cancellation row has counterterm \(1039999999.9989601\), \(\mathrm{tracked}=\mathrm{False}\), and \(\mathrm{unaudited\_cancellation}=\mathrm{True}\). The booked ledger tracks the remaining log mismatch as \(12.0 \to 8.0 \to 4.0 \to 0.0\).
+The booked UV-to-IR ledger is MODELED/illustrative P6 bookkeeping, NOT a firm audit computed from a coarse map / RG / package dynamics; its monotone is hand-specified.
+Sources: \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/uv\_ir\_ledger\_step3.csv}.
+
+\textbf{Claim 9. Grade: finite-toy-diagnostic.}
+Step 3 builds the P2 vacuum-selection predicate. The toy ensemble contains five candidates and selects \texttt{vac\_A\_selected} by \texttt{minimum\_selection\_score}. The selected/run readout is not a clean function of UV \(\Sigma_f\): \(\mathrm{UV\_Sigma}\to\rho_\Lambda\) has obstruction count \(4\), with witnesses \(0\!-\!1;0\!-\!2;1\!-\!2;3\!-\!4\). The descending control \(\mathrm{UV\_Sigma}\to\mathrm{uv\_determined\_coupling}\) factors with obstruction count \(0\).
+Sources: \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/vacuum\_selection\_step3.csv}, \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/nonfactorization\_step3.csv}, \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/controls\_step3.csv}.
+
+\textbf{Claim 10. Grade: contested-reading.}
+The firm E021 result is narrow: \(\Lambda\) is represented as a selected/run toy readout with computed non-factorization obstruction \(4\) and a descending-control contrast with obstruction \(0\). The booked UV-to-IR ledger is MODELED/illustrative P6 bookkeeping, NOT a firm audit computed from a coarse map / RG / package dynamics. The stronger reading that this is a distinct audited vacuum currency is contested and casting-dependent. It rides on the conservative classical-GR casting and remains a flagged hypothesis, not a field-redirecting result.
+Sources: \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/results\_summary.md}, \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/nonclaim\_boundary.md}.
+
+\textbf{Claim 10a. Grade: finite-toy-diagnostic / selection-adjudication.}
+Step 10 updates the prior E021 mechanism punt. The framework's P6 decaying-degeneracy criterion certifies the collapsing \(\Lambda\)-selection type on the toy: the relaxation horn has sequence \(10\to10\to5\to1\to1\to1\), and the sharp-measure control has sequence \(10\to10\to7\to3\to2\to1\). The broad anthropic landscape has sequence \(10\to10\to10\to10\to10\to10\), stays multiply supported, and is recorded as the un-closed defect. Thus the framework is not agnostic on E021's selection type: a selection that collapses the degeneracy is certified, while a broad landscape that remains distributed is not. The criterion is collapse-not-label: the sharp measure passes because it collapses. The value of \(\Lambda\) and the real physical mechanism remain genuine limits; this is the framework's criterion on a finite toy, not a physical disproof of anthropic reasoning.
+Sources: \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/lambda\_degeneracy\_step10.csv}, \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/adjudication\_step10.csv}, \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/controls\_step10.csv}, \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/nonclaim\_boundary.md}.
+
+\section{Unifying Dissolution}
+
+\textbf{Claim 11. Grade: modeled-shape.}
+Cluster B extends the E018 pattern. In the QM-GR construction, the lawful object is a co-sourcing common refinement rather than a fused or directed clean descent. In Cluster B, E042 and E021 are down-readouts or regime restrictions of the same finite \(L_{\mathrm{ext}}\): high-curvature \(d4\) for E042 and vacuum \(d5\) for E021. The repeated framework reading is: a famous wall appears when a clean cross-layer descent is demanded; the lawful move is instead a typed readout/audit on \(L\). The analogy is:
+\[
+\text{route mismatch in E018} \quad
+\text{curvature divergence in E042} \quad
+\text{UV-to-IR fine-tuning in E021}.
+\]
+This is a framework reading on a finite toy, not a physical theory.
+Sources: \texttt{../thread\_qm\_gr/interpretation/ladder\_vs\_fork.md}, \texttt{../thread\_qm\_gr/interpretation/quantum\_gravity\_is\_illegal.md}, and the Step 1--3 artifacts cited above.
+
+\textbf{Claim 12. Grade: finite-toy-diagnostic / selection-adjudication.}
+The same decaying-degeneracy criterion is now used consistently across the selection edges: E037 vacuum selection, E043 scale selection, and E021 \(\Lambda\)-selection. In each case, a genuine selection is certified when degeneracy collapses to a point, while a broad landscape that stays distributed remains the un-closed defect. For E021, this is the Step 10 result above; for E043, Cluster A Step 6 is the parallel horn adjudication. This is a finite-toy criterion comparison, not a physical mechanism claim.
+Sources: \texttt{steps/step10\_e021\_lambda\_selection\_adjudication\_artifacts/results\_summary.md}, \texttt{../thread\_cluster\_a/steps/step6\_e043\_horn\_adjudication\_artifacts/results\_summary.md}.
+
+\section{Independently Checkable Content}
+
+\textbf{Grade: organizational.}
+An external reviewer can rerun:
+\begin{itemize}
+  \item \texttt{steps/step1\_shared\_substrate\_frame\_artifacts/run\_step1.py}
+  \item \texttt{steps/step2\_e042\_singularity\_resolution\_artifacts/run\_step2.py}
+  \item \texttt{steps/step3\_e021\_cosmological\_constant\_artifacts/run\_step3.py}
+\end{itemize}
+These validators check the non-factorization signatures, the E042 stabilization and controls, the E021 selection/ledger controls, relative source paths, and overclaim guards.
+
+\section{Open Obligations}
+
+\textbf{Grade: organizational.}
+Open obligations are: external frame-transfer review; richer continuous/Lorentzian/gauge/diffeomorphism carriers; the actual E042 substrate identity, if any; the physical value of \(\Lambda\) and the real physical mechanism implementing the certified selection type; and the contested E021 distinct-currency reading. The prior "selection mechanism unknown" punt is narrowed: the selection type is adjudicated by Step 10, while the value and real mechanism remain open. None is physically settled by this finite-carrier consolidation.
+
+\end{document}

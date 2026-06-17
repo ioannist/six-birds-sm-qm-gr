@@ -1,0 +1,43 @@
+\paragraph{Step 28 finite non-stationary relational statement.}
+Let \(\mathcal{H}_c\cong\mathbb{C}^{16}\) be a finite clock register and
+let \(\mathcal{H}_f\cong\mathbb{C}^{8}\) be the finite field space.  Starting
+from Step 24 sample \(2\), define a self-sourced finite history by
+\[
+V_t = B+\kappa T_{00}(\psi_t),
+\qquad
+U_t=\exp(-iH[V_t]dt),
+\qquad
+\psi_{t+1}=U_t\psi_t.
+\]
+The field is non-stationary in the diagnostic sense: the minimum eigen
+residual is \(0.35409006012453015\), the maximum phase-invariant state
+change is \(0.18847313451682898\), and the maximum sourced-potential change
+is \(0.001673580612625418\).
+
+\paragraph{Relational constraint map.}
+Define the open-chain relational constraint map \(C\) by rows
+\[
+(C\Psi)_t = \psi_{t+1}-U_t\psi_t,
+\qquad 0\leq t<15.
+\]
+For the history state
+\[
+\Psi=16^{-1/2}\sum_{t=0}^{15}|t\rangle\otimes \psi_t,
+\]
+the computed residual is
+\[
+\|C\Psi\|=4.220196766037856\cdot 10^{-16}.
+\]
+Conditioning on clock value \(t\) recovers \(\psi_t\) with maximum field
+readout residual \(2.2131155843786806\cdot 10^{-16}\), and recomputing
+\(V_t=B+\kappa T_{00}(\psi_t)\) from the conditioned field has maximum
+potential residual \(9.205483015737869\cdot 10^{-17}\).
+
+\paragraph{Control.}
+The wrong-generator control replaces every \(U_t\) by identity in the same
+open-chain rows.  On the same non-stationary history, its residual is
+\(0.0925307478333232\), so the control fails.
+
+\paragraph{Scope.}
+The statement is a finite-carrier diagnostic result for a history-adapted
+relational generator.  It is not a broad physical adequacy claim.

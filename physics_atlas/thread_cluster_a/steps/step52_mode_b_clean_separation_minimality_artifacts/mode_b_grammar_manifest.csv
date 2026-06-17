@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,inherited_by_step,new_grammar_declared,carrier,active_constraints,excluded_designs_rationale
+G_step38_higher_layer_shadow_inherited,38,52,False,Step-35/38 mass-closure family with clean-separation residual,No new grammar; Step 52 tests predicate strength variants on inherited carrier.,No target-family selector or new shape grammar is introduced.

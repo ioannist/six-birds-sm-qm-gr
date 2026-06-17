@@ -1,0 +1,6 @@
+check,passes,evidence
+frozen_requirement_imported,True,8068ff17d5ca911ae12f09cc303c8e67ee47c8c92affd0fad9ca28b61fe2e75f
+no_record_requirement_reimplementation,True,build calls Step57 record_layer_membership
+neutral_carrier_not_prefiltered,True,non_CS_rows=72
+teeth_divergence_search_nonvacuous,True,rows=80
+no_requirement_retuning,True,MIN_RECORD_TOKENS=2

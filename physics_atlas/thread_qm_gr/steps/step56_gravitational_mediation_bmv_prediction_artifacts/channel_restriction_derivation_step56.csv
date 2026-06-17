@@ -1,0 +1,5 @@
+source,frozen_path,used_fact,computed_status,channel_consequence
+Step48_access_tuple,steps/step48_ladder_vs_fork_resolution_artifacts/step48_schema.json,"L=(d0,d1,d2,d3); q_QM=(d0,d1,d2); q_GR=(d0,d2,d3)",fork_closes=True; weak_rt_ladder_defect=8.0,geometry arm cannot access the d1 phase mode of either path qubit; q_GR excluding d1 is load-bearing
+Step31_fused_object_no_go,steps/step31_qg_fused_object_nogo_artifacts/step31_schema.json,"union, shared-audit, and directed fused routes fail",union_route_passes=False; shared_audit_route_passes=False,coherent amplitude-over-geometry mediator is not fork-admissible
+Step32_T_QG_NoGo,steps/step32_qg_nogo_theorem_artifacts/step32_schema.json,directed and fused routes blocked in bounded grammar,directed_route_blocked=True; union_route_blocked=True,the allowed mediator is classically indexed by geometry-visible records
+Step52_entanglement_certificate,steps/step52_f49_bell_nonlocal_residual_artifacts/step52_schema.json,local bound enumerated over 16 deterministic strategies,local_bound=2.0; Bell_CHSH=2.8284271247461894,output CHSH is compared to the same finite local certificate

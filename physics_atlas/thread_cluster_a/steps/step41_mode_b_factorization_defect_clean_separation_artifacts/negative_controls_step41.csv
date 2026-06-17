@@ -1,0 +1,3 @@
+control,support_id,should_have_delta,passes,evidence
+contaminated_single_factor_support,support_08,True,True,a single-factor residual has confining-charged massive vector witnesses
+clean_split_support,support_00,False,True,a clean split support has no defect witnesses

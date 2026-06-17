@@ -1,0 +1,24 @@
+{
+  "active_residual": "conditional 2|3 selection in covered window",
+  "anti_smuggle_self_check_pass": true,
+  "artifact_root": "steps/step53_mode_b_competitor_structures_artifacts",
+  "competitor_buckets": {
+    "E6": "OUT_OF_ALPHABET_OR_WINDOW",
+    "Pati-Salam SU(4)xSU(2)xSU(2)": "CAP_EXCLUDED",
+    "SO(10)": "OUT_OF_ALPHABET_OR_WINDOW",
+    "SU(5)": "IN_WINDOW_FILTER_EXCLUDED",
+    "flipped SU(5)": "IN_WINDOW_FILTER_EXCLUDED",
+    "left-right SU(3)xSU(2)xSU(2)xU(1)": "CAP_EXCLUDED",
+    "trinification SU(3)xSU(3)xSU(3)": "CAP_EXCLUDED"
+  },
+  "frame_transfer_certified": false,
+  "main_object": "named competitor table against existing Step43/44 filter gates",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "orientation": "ATTEMPT_named_competitor_computation",
+  "root_landed": false,
+  "six_gates_pass": true,
+  "sm_control_clean_survivors": 8,
+  "step": 53,
+  "verdict": "COMPETITORS_TABULATED_SM_SELECTED_IN_COVERED_WINDOW"
+}

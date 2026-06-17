@@ -1,0 +1,215 @@
+{
+  "id": "R024",
+  "schema_note": "Enriched retrodiction card: original CARD + parameter AUDIT + four-skeptic adversarial PANEL + Repair-Agent/Fertility-Judge REPAIR and 0-5 SCORES, merged into one object with provenance retained. This is an honest-negative (derivability class E) scope-boundary card. Repair applied only allowed moves: corrected a false grep certificate, fixed the file count, completed the import contact-point enumeration, sharpened the univalence-vs-spin-statistics distinction, demoted the optional in-scope no-go to a flagged 'not-expressible' remark. No new assumptions, no hidden tuning, no hidden imports.",
+
+  "title": "Exchange statistics, spin-statistics, and three-generation multiplicity are outside SBT scope: a verified honest negative (the only SM/spin contact points -- F26 generations+parameters, F9 univalence, plus Hund/BEC/Higgs -- are imported declarations, not retrodictions)",
+
+  "repair_status": "repaired",
+  "argument_family": "constraint-null-result (honest negative / scope-delimiting demonstration)",
+  "derivability_class": "E",
+  "mechanism_tag": "orbit-descent",
+
+  "original_card": {
+    "id": "R024",
+    "one_sentence_claim": "SBT does NOT reproduce the fermion/boson exchange-statistics dichotomy, the spin-statistics theorem, or the three-generation Standard-Model pattern; the corpus contains zero exchange-symmetry / antisymmetrization / Pauli / anyon machinery, and the only contact points (univalence (-1)^{2J} as one declared WWW superselection observable in F9, and the three-generation content + 19+ parameters in the F26 moduli instantiation) are imported declarations, not retrodictions.",
+    "target_known_fact": "The spin-statistics theorem (Pauli/Fierz): integer-spin fields commute (Bose symmetry), half-integer-spin fields anticommute (Fermi antisymmetry, Pauli exclusion); plus the observed replication of Standard-Model quarks and leptons into exactly three generations.",
+    "scientific_domain": "Quantum field theory / Standard Model structure (exchange statistics, spin-statistics, generation multiplicity)",
+    "derivability_class": "E",
+    "argument_family": "constraint-null-result (honest negative / scope-delimiting demonstration)",
+    "minimum_viable_result": "A one-page, fully grounded 'scope-boundary note': (1) an exhaustive-search certificate that the SBT corpus contains no exchange-statistics / spin-statistics / Pauli / anyon / generation-derivation machinery; (2) the two import-not-derivation readings of F9 (univalence) and F26 (three generations + 19+ parameters); (3) the explicit list of missing interfaces (exchange/permutation-symmetry sector, Lorentz/relativistic causality, multiparticle Hilbert space + Born valuation) required before any positive claim.",
+    "stronger_result": "A no-go-style impossibility statement WITHIN SBT's declared scope: prove that no construction expressible in the frozen primitive vocabulary (finite Markov substrate Z, deterministic lens f, idempotent packaging E, monotone audit A, P1-P6) can yield a permutation-group representation distinguishing symmetric from antisymmetric multiparticle sectors. (FLAGGED VACUITY-PRONE: SBT cannot even express a multiparticle/tensor/Fock factorization, so the honest framing is 'not expressible', strictly weaker than a contentful no-go.)",
+    "fallback_result": "The minimum-viable scope-boundary note as the sole deliverable: an honest, fully-cited negative that (i) blocks the over-claim 'SBT explains why there are three generations / why fermions vs bosons', and (ii) names the exact interfaces whose repair would be needed, analogous to the ledger's other documented negatives (no Born rule, no continuum).",
+    "baseline_comparison": "SBT does strictly WORSE than the standard account here, and that is the point. Relativistic QFT + the spin-statistics theorem explain the fermion/boson dichotomy and Pauli exclusion from Lorentz invariance + microcausality + positive energy; the three-generation pattern is an accepted (if itself unexplained) empirical input. SBT recovers NEITHER and merely re-hosts the SM's already-declared structure as inputs to an abstract moduli/contingency theorem (F26). No recovery, no genuine reorganization; the value is in marking that silence honestly.",
+    "why_scientists_care": "A sharp, defensible negative forecloses the most seductive over-claims a casual reader might infer from F26 listing the SM and F9 listing univalence. It names the interfaces (exchange/permutation-symmetry sector, relativistic causality, multiparticle Hilbert space + Born valuation) whose absence is the real obstruction, and inoculates against the P4-sector-as-statistics-sector false analogy.",
+    "target_audience": [
+      "High-energy theorists / Standard Model phenomenologists evaluating whether SBT says anything about generations or statistics",
+      "Quantum-foundations researchers checking SBT's relationship to superselection and spin-statistics",
+      "SBT-internal authors and reviewers policing scope and preventing over-claims",
+      "Philosophers of physics assessing emergence/closure frameworks against established no-go and structure-explaining results"
+    ],
+    "recommended_artifact": "A short scope-boundary note (2-4 pages) titled e.g. 'Exchange statistics and generation multiplicity are outside SBT scope: an honest negative', containing: (1) the exhaustive corpus-search certificate (reproducible grep manifest over all .tex files), (2) the import-not-derivation readings with exact quotes, (3) the P4 disanalogy paragraph, (4) the missing-interface table, (5) optionally a stated-but-flagged 'not-expressible' lemma.",
+    "execution_cost": "Low. No new theorem-proving, no Lean, no numerics, no data fitting. Assembled from a reproducible grep certificate plus close reading of pre-existing instantiations and the ledger's missing_interfaces list. A few days of writing and verification.",
+    "honest_status_note": "Verified honest negative, derivability class E. The 'stronger result' is at risk of vacuity because SBT cannot express multiparticle exchange symmetry, so the recommended framing is 'not expressible / outside scope' rather than 'provably impossible'."
+  },
+
+  "theory_basis": [
+    {"component": "F26 Moduli/Contingency theorem (thm:F26): closure space + lawfulness predicate, moduli quotient p:C->M, readout r; quotient-stability split distinguishes necessary (descends through M) from contingent (varies across moduli) readouts. 'The theorem does not enumerate a carrier's moduli' (verbatim, F-IV line 5180).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "Sole formal contact with SM structure; the ONLY place generations/parameters appear -- as a DECLARED lawfulness predicate + contingent moduli coordinates (inputs)."},
+    {"component": "F26 SM layer-instantiation (lines 5218-5236): carrier = SM Lagrangians with 'fixed gauge group SU(3)xSU(2)xU(1), three-generation fermion content, and Higgs doublet built into the lawfulness predicate'; the '19+ dimensionless parameters ... are the contingent moduli coordinates' (cite Workman2022Review).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "Direct evidence that generation count and gauge group are smuggled in as declarations and the parameters are explicitly inputs, not outputs."},
+    {"component": "F9 No-Unstatused-Residual WWW layer-instantiation (lines 2179-2190): univalence (-1)^{2J} listed as one of four declared superselection observables (with Q, B, L), imported with citation WickWightmanWigner1952.", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "The single appearance of any spin-related quantity ((-1)^{2J}); a declared/cited superselection LABEL inside an unrelated status-coverage theorem, NOT a derivation of exchange statistics, and logically distinct from the spin-statistics (anti)commutation correspondence."},
+    {"component": "F26 Hund's-rules instantiation (lines 8500-8512): moduli quotient sends 'Pauli-allowed configurations' to their (S,L,J) term-symbol class; vacuum predicate = Hund-selected ground term (cite Hund1925).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "ADDITIONAL import-not-derivation contact point (flagged by audit + all four skeptics). 'Pauli' appears here only as a declared INPUT label, never as a derived exclusion principle -- strengthens the negative."},
+    {"component": "F15b BEC instantiation (lines 3248-3258): a dilute gas of bosons condensing; macroscopic U(1) phase selection = F15b formation operator (cite AndersonEnsherMatthewsWiemanCornell1995BEC).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "ADDITIONAL contact point: 'bosons' appear only as the substrate of a U(1) symmetry-breaking instantiation, NOT as Bose exchange symmetry; forecloses a 'but SBT discusses bosons' near-miss."},
+    {"component": "LHC Higgs-boson instantiation (lines 1403-1415): Higgs discovery as resonance detection / event-yield excess (cite ATLAS2012HiggsObservation).", "paper": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex", "role": "ADDITIONAL contact point: a 'boson' is cited as a detection import, never as derived statistics."},
+    {"component": "P4 = conserved sector label (Foundations I def:P4, lines 1196-1197): 'the support decomposes into disconnected components (block structure), or equivalently P is block diagonal up to permutation'.", "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex", "role": "Names the precise false-analogy trap: SBT 'sectors' are unsigned Markov support blocks, structurally unrelated to charge/univalence superselection sectors or permutation-group exchange representations."},
+    {"component": "Missing interfaces: no probability/Born valuation (ledger missing_interfaces[2]), no continuum ([3]), no physical-time/spacetime/Lorentz interface ([4]; time 'distinct from ... foliations in relativistic spacetime geometry', To_Notch line 466), no multiparticle Hilbert/Fock factorization of Z.", "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory...tex; Tsiokos_2026_To_Notch_a_Stone...tex", "role": "Identifies the prerequisites any spin-statistics result needs (relativistic causality + multiparticle Hilbert space + Born valuation) that SBT explicitly lacks; grounds WHY the negative is structural, not an oversight."}
+  ],
+
+  "required_lemmas": [
+    {"statement": "Corpus-coverage lemma (CORRECTED): an exhaustive grep of all 50 physics-facing .tex files returns ZERO occurrences of 'spin-statistics', 'Fierz', 'symmetrization/symmetrisation postulate', 'anticommutation', 'Fock', 'second quantization', 'tensor product', 'permutation group', 'symmetric group', and no anyon/braiding machinery (the two 'anyon' hits are false positives, 'anyone'). 'Pauli' appears ONCE ('Pauli-allowed configurations', Hund's-rules instantiation, F-IV line 8503, cite Hund1925) -- only as a declared INPUT label, never as a derived exclusion principle. 'exclusion' as a physics term appears only as the NS 'wavepacket-exclusion principle' (No-Zeno paper, unrelated to exchange). The only 'antisymmetric' hits (30) are ACC/force-graph 1-forms (discrete cohomology, NG_FORCE_FOREST) or poset/Galois antisymmetry, never exchange antisymmetrization. 'three-generation' occurs once, in the F26 SM instantiation.", "difficulty": "trivial", "already_in_papers": true, "repair_note": "The original card asserted ZERO 'Pauli exclusion' occurrences; that is FALSE (one Hund hit). Corrected per audit + unanimous skeptic flag. The correction STRENGTHENS the negative."},
+    {"statement": "Import-not-derivation lemma for F9: univalence (-1)^{2J} appears solely as one of four DECLARED WWW superselection observables (with Q, B, L), imported with citation WickWightmanWigner1952; F9 (No Unstatused Residual) is a status-coverage theorem with no exchange-symmetry content. Moreover a WWW univalence superselection LABEL is logically distinct from the spin-statistics correspondence (Lorentz spin <-> field (anti)commutation): F9 touches neither field (anti)commutation nor exchange antisymmetry, so it gives SBT no spin-statistics foothold whatsoever.", "difficulty": "trivial", "already_in_papers": true},
+    {"statement": "Input-not-output lemma for F26: in the SM instantiation the three-generation fermion content and gauge group are 'built into the lawfulness predicate' and the 19+ dimensionless parameters are 'the contingent moduli coordinates' (inputs, cite Workman2022Review); F26 explicitly 'does not enumerate a carrier's moduli'. Hence generation count and parameters are declared, not retrodicted.", "difficulty": "trivial", "already_in_papers": true},
+    {"statement": "Import-not-derivation lemma for Hund/BEC/Higgs (ADDED in repair): Pauli-allowed configurations (Hund, cite Hund1925), the condensing bosons (BEC, cite AndersonEnsherMatthewsWiemanCornell1995BEC, treated purely as U(1) SSB via F15b), and the SM Higgs boson (LHC, cite ATLAS2012HiggsObservation, treated as resonance detection) are all DECLARED inputs to moduli/formation/event instantiations; none is a derivation of statistics or exclusion.", "difficulty": "trivial", "already_in_papers": true},
+    {"statement": "Disanalogy lemma: SBT's P4 sector labels are conserved Markov-support blocks (graph connectivity / block-diagonal-up-to-permutation invariants, def:P4 lines 1196-1197), categorically distinct from charge/univalence superselection sectors and from exchange-symmetry representations of the permutation group; no functorial map between them is PRESENT in the corpus (an absence-in-corpus statement, NOT a claimed impossibility).", "difficulty": "easy", "already_in_papers": false},
+    {"statement": "Prerequisite-gap lemma: a genuine spin-statistics statement requires (i) a relativistic / Lorentz-invariant causality structure and (ii) a multiparticle (Fock/Hilbert) space with a defined Born valuation; SBT explicitly lacks all of these (no continuum, no spacetime/Lorentz interface -- time 'distinct from relativistic foliations', no Born rule, no multiparticle factorization). The negative is forced by the ledger's missing_interfaces inventory, stated AGAINST that list and not by silently assuming the very interfaces it says are missing.", "difficulty": "easy", "already_in_papers": true}
+  ],
+
+  "main_steps": [
+    "State the two target facts precisely: fermion/boson dichotomy + spin-statistics theorem, and the empirical three-generation pattern.",
+    "Catalog every corpus contact point via the CORRECTED coverage lemma: exhaustive grep over all 50 .tex files establishes NO exchange-symmetry, antisymmetrization, spin-statistics, anyon, Fock/tensor, or generation-derivation machinery; 'Pauli' appears only as the Hund input label.",
+    "For each near-miss show by close reading that it is an imported declaration: F9 univalence (-1)^{2J} (cited WWW superselection label, distinct from the (anti)commutation theorem); F26 three generations + 19+ parameters (declared lawfulness predicate + contingent moduli); plus Hund Pauli-allowed, BEC bosons, LHC Higgs.",
+    "Close the false-analogy gap with the disanalogy lemma: P4 sectors are unsigned Markov support blocks, not statistics/charge sectors.",
+    "Invoke the prerequisite-gap lemma against the ledger missing_interfaces list (no Born rule, no continuum, no Lorentz/Hilbert/Fock interface) to show the negative is structural and forced, not accidental.",
+    "Conclude the honest negative: SBT neither retrodicts nor reorganizes spin-statistics or generation multiplicity; both are smuggled in as declarations. Record the interface set whose addition is a prerequisite for any future positive result, and add an entry to the ledger's disclaimer/missing-interface list."
+  ],
+
+  "free_parameters": [
+    "Declared lawfulness predicate in F26 (three-generation fermion content, gauge group SU(3)xSU(2)xU(1), Higgs doublet, renormalisability, anomaly cancellation) -- a pure input",
+    "All 19+ SM dimensionless parameters as F26 contingent moduli coordinates (three gauge couplings, nine charged-fermion masses, four CKM entries, neutrino-sector parameters, Higgs mass + self-coupling, QCD vacuum angle theta) -- inputs cited to Workman2022Review",
+    "Declared superselection observable univalence (-1)^{2J} (with Q, B, L) in the F9/WWW instantiation -- imported with citation WickWightmanWigner1952",
+    "Pauli-allowed configurations (Hund instantiation, cite Hund1925); condensing bosons (BEC, cite AndersonEnsherMatthewsWiemanCornell1995BEC); SM Higgs boson (LHC, cite ATLAS2012HiggsObservation) -- all declared inputs",
+    "Generic SBT package choices (lens f, timescale tau, prototypes U_f, completion E) -- irrelevant to the target since no construction even reaches exchange statistics"
+  ],
+
+  "auxiliary_assumptions": [
+    "Any fermion/boson or spin-statistics statement requires a relativistic QFT / Lorentz-invariant causality structure that SBT explicitly lacks (time is a closure artifact, explicitly distinct from relativistic foliations; no spacetime interface).",
+    "It also requires a multiparticle Hilbert/Fock space with a Born valuation; SBT consumes Born predictions and produces no measure or amplitudes (Born rule explicitly disclaimed), and has no tensor/multiparticle factorization of the finite carrier Z.",
+    "Generation count is an INPUT to the F26 lawfulness predicate, not an output of any closure construction (F26 'does not enumerate a carrier's moduli').",
+    "SBT 'sectors' (P4) are conserved Markov support blocks (block-diagonal-up-to-permutation invariants), structurally unrelated to charge/univalence superselection sectors or permutation-group exchange representations."
+  ],
+
+  "data_matched": [
+    "NONE matched as a prediction. The three-generation pattern and 19+ SM parameters are cited (Workman2022Review) only as declared inputs/moduli coordinates in F26; no SM observable is predicted.",
+    "The univalence superselection label (-1)^{2J} is cited (WickWightmanWigner1952) as an imported declaration in F9, not matched to data.",
+    "Pauli-allowed configurations (Hund1925), condensing bosons (BEC1995), and the SM Higgs boson (ATLAS2012) are cited as imported inputs, not predicted.",
+    "Spin-statistics theorem (Pauli/Fierz): not addressed anywhere in the corpus (zero occurrences); no contact with data."
+  ],
+
+  "estimated_bottlenecks": [
+    "Formalizing the stronger no-go cleanly: SBT has no tensor-product / Fock structure, so a 'cannot distinguish symmetric from antisymmetric multiparticle sectors' statement risks vacuity (you cannot fail to do what you cannot express). Honest framing is 'not expressible', strictly weaker than a contentful no-go. RESOLVED IN REPAIR: keep only the 'not expressible / outside scope' remark; reject the 'provably impossible' framing.",
+    "Resisting the tempting P4-as-statistics-sector analogy in exposition; the disanalogy lemma (def:P4 = Markov support blocks) must stay front and centre.",
+    "Avoiding over-claiming the F9 univalence contact: (-1)^{2J} is half-integer-spin bookkeeping but is DECLARED as a superselection observable, and is logically distinct from the spin-statistics (anti)commutation theorem; it must not be read as 'SBT has a spin sector'.",
+    "Ensuring the negative does not silently assume the very interfaces it says are missing (no Born rule, no Lorentz) -- the prerequisite-gap lemma is stated against the ledger missing_interfaces list, not asserted."
+  ],
+
+  "audit": {
+    "explicit_parameters": [
+      {"name": "F26 declared lawfulness predicate (gauge group SU(3)xSU(2)xU(1), three-generation fermion content, Higgs doublet, renormalisability, anomaly cancellation)", "role": "Input declaration consumed by the F26 moduli quotient; defines the lawful locus, not derived", "source": "Foundations IV layer-inst:F26, lines 5218-5236", "fixed_before_comparison": true},
+      {"name": "19+ SM dimensionless parameters", "role": "Contingent moduli coordinates = explicit inputs cited to Workman2022Review; zero predicted", "source": "Foundations IV layer-inst:F26, lines 5229-5236", "fixed_before_comparison": true},
+      {"name": "Univalence (-1)^{2J} (with Q, B, L) superselection observable", "role": "One of four declared/cited WWW superselection labels in the F9 instantiation; imported, not a derived spin quantity", "source": "Foundations IV layer-inst:F9, lines 2179-2190 (cite WickWightmanWigner1952)", "fixed_before_comparison": true},
+      {"name": "Pauli-allowed configurations (Hund's-rules instantiation)", "role": "Declared INPUT to a separate F26 moduli quotient (atomic ground states); an additional import-not-derivation contact point", "source": "Foundations IV, lines 8500-8512 (cite Hund1925)", "fixed_before_comparison": true},
+      {"name": "Generic SBT package choices (lens f, timescale tau, prototypes U_f, completion E)", "role": "Standard adjustable package knobs; IRRELEVANT here because no construction reaches exchange statistics at all", "source": "Ledger free_parameters; Foundations I disclaimer 'no particular lens f or tau preferred'", "fixed_before_comparison": false}
+    ],
+    "implicit_parameters": [
+      {"name": "Record/pointer basis (which superselection / sector basis nature picks)", "risk": "Disclaimed missing interface; if invoked to manufacture a 'spin sector' it would be smuggling. The card correctly does NOT invoke it."},
+      {"name": "Multiparticle factorization / tensor-product structure of carrier Z", "risk": "Absent in corpus (zero hits). The 'stronger no-go' risks vacuity precisely because this is not expressible; card honestly downgrades to 'not expressible / outside scope'."},
+      {"name": "Born valuation / probability weights", "risk": "Disclaimed missing interface (F23 only structural). Any genuine spin-statistics statement presupposes it; the negative must not silently assume it (prerequisite-gap lemma is stated against the ledger missing_interfaces list)."},
+      {"name": "Choice of which 'contact points' count as near-misses", "risk": "Selection/framing freedom: a sympathetic reader could over-read F9 univalence or F26 generations as a positive. The card pre-empts this with the import-not-derivation and disanalogy lemmas."}
+    ],
+    "degrees_of_freedom_estimate": 0,
+    "data_points_matched": 0,
+    "overfitting_risk": "none",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": false,
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "In the predictive sense SBT explains NOTHING here, so trivially it could also 'fail to explain' the opposite. More sharply: the F26 moduli quotient is a content-free quotient-stability split that would equally host a two-generation, four-generation, all-boson, or fermion/boson-swapped Standard Model, because the fermion content and generation count enter purely as a DECLARED lawfulness predicate (input). F26 has zero machinery preferring three generations or fermion antisymmetry. This is exactly why these are imports, not retrodictions, and why the card forecloses 'SBT explains why fermions vs bosons / why three generations.' For the genuine exchange-statistics target there is no opposite-world issue because SBT cannot even express a symmetric-vs-antisymmetric multiparticle sector (no Fock/tensor structure)."
+    },
+    "audit_verdict": "PASS as an honest negative (derivability class E), with the textual corrections now applied. Verified directly in the corpus: zero occurrences of spin-statistics/Fierz/symmetrization-postulate/anticommutation/second-quantization/Fock/tensor-product/permutation-or-symmetric-group; F26 (thm:F26) is a content-free quotient-stability split with 'The theorem does not enumerate a carrier's moduli' (line 5180) and three generations 'built into the lawfulness predicate' / 19+ params 'the contingent moduli coordinates' (lines 5222-5236, cite Workman2022Review); univalence (-1)^{2J} appears once as one of four cited WWW superselection observables (line 2184, cite WickWightmanWigner1952); P4 is 'a conserved sector label... support decomposes into disconnected components' (lines 1196-1197). CORRECTION (now applied): the original card's 'zero Pauli exclusion occurrences' is false -- there is one hit, 'Pauli-allowed configurations' at line 8503 (Hund, cite Hund1925), a declared INPUT, which strengthens the negative. Overfitting risk none (predictive DoF 0, data points matched 0). Real and correctly-managed risk is over-claiming; the opposite-world test passes affirmatively and the card pre-empts the P4-as-statistics-sector and F9-univalence-as-spin-sector over-reads. Recommend accepting the minimum-viable scope-boundary note and rejecting the 'stronger' in-scope no-go as vacuity-prone."
+  },
+
+  "skeptic_panel": {
+    "min_survival": 4,
+    "mean_survival": 4,
+    "fatal_objections_present": false,
+    "skeptics": [
+      {"skeptic_role": "Skeptical particle phenomenologist / HEP theorist", "adversarial_survival_score": 4, "is_actually_new": false, "beats_baseline": false, "main_objection": "Central claim is textually accurate and verified, but the coverage lemma falsely asserts ZERO 'Pauli exclusion' occurrences when there are real hits (Pauli-allowed at F-IV line 8503; wavepacket-exclusion in the NS No-Zeno paper), both themselves imports that STRENGTHEN the negative while invalidating the literal grep certificate as worded.", "key_repairable": ["Re-run grep and reframe the Pauli-allowed/Hund and NS wavepacket-exclusion hits as imported declarations.", "Explicitly separate WWW univalence superselection from the spin-statistics (anti)commutation theorem.", "Drop or flag the 'stronger' no-go as 'not-expressible'."]},
+      {"skeptic_role": "Skeptical mathematical physicist (QFT / SM structure)", "adversarial_survival_score": 4, "is_actually_new": true, "beats_baseline": false, "main_objection": "For a class-E null card the usual axes invert; the only live objection is accuracy/completeness of the absence certificate, and the contact-point catalog is INCOMPLETE: it misses the Pauli-allowed/Hund import (line 8503) and the BEC instantiation (line 3249, U(1) SSB), both additional imports that strengthen the negative. Logical core verbatim-confirmed.", "key_repairable": ["Add the Hund and BEC imports to the certificate.", "Fix the 49-vs-50 file-count discrepancy with a stated exclusion criterion.", "Keep the negative stated against the ledger missing_interfaces list."]},
+      {"skeptic_role": "Effective-field-theory / known-physics-recovery skeptic (inverted for a negative)", "adversarial_survival_score": 4, "is_actually_new": true, "beats_baseline": false, "main_objection": "The card's thesis is that SBT imports all relevant content and derives none, which is what an EFT-skeptic concludes. Strongest objection: the optional 'stronger no-go' is vacuity-prone (SBT cannot express a symmetric-vs-antisymmetric multiparticle sector). Pre-empted by the card's own downgrade.", "key_repairable": ["Deliver only the minimum-viable note; reject the strong no-go.", "Correct the Pauli wording and add BEC (line 3249) and Higgs (line 1403) imports.", "Frame 'no functorial map' as corpus-absence, not impossibility."]},
+      {"skeptic_role": "HEP theorist + SBT-internal scope referee", "adversarial_survival_score": 4, "is_actually_new": true, "beats_baseline": false, "main_objection": "This is a verified non-result, not a result: you cannot 'fail' a test a framework never attempts. The deliverable is bookkeeping (grep + close readings + missing-interface table), not derivation; scientific payload is near-vacuous and largely a corollary of already-listed missing interfaces. Honest-negative framing correct but interest is capped.", "key_repairable": ["Frame as a scope-boundary note / disclaimer addendum, not a 'retrodiction'.", "Correct the Pauli wording.", "Restrict the strong claim to 'not expressible / outside scope'."]}
+    ],
+    "consensus": "No fatal objections. All four skeptics independently verified the corpus and converged on score 4. The unanimous required repairs are textual/completeness fixes (Pauli wording, file count, add Hund/BEC/Higgs imports, sharpen univalence-vs-spin-statistics distinction, demote the stronger no-go) -- all of which strengthen rather than weaken the negative. Two of four judge the boundary itself genuinely new (not separately itemized among the ledger's 23 disclaimers / 13 missing interfaces); none claims it beats baseline (it explicitly underperforms QFT, by design)."
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "allowed_repairs_applied": [
+      "CLARIFY THE MAPPING / CORRECT A FALSE CERTIFICATE: amended the coverage lemma from 'zero Pauli exclusion occurrences' to the verified statement -- 'Pauli' appears once ('Pauli-allowed configurations', Hund instantiation, F-IV line 8503, cite Hund1925) only as a declared input label, never as a derived exclusion principle; the only other 'exclusion' physics hit is the NS 'wavepacket-exclusion principle' (No-Zeno paper), also not exchange statistics.",
+      "REMOVE AN INACCURATE ASSUMPTION / FIX A COUNT: corrected '49 physics-facing .tex files' to the verified 50 .tex files in the corpus (no exclusion needed; all 50 are physics-facing manuscripts).",
+      "SPLIT / COMPLETE THE ENUMERATION: added three additional import-not-derivation contact points -- Hund Pauli-allowed (line 8503, Hund1925), BEC condensing bosons treated as U(1) SSB via F15b (line 3249, AndersonEnsherMatthewsWiemanCornell1995BEC), LHC Higgs boson as resonance detection (line 1403, ATLAS2012HiggsObservation) -- all of which reinforce the negative.",
+      "NARROW / SHARPEN THE CLAIM: added an explicit distinction between (i) WWW univalence as a charge-superselection-style label and (ii) the spin-statistics correspondence (Lorentz spin <-> field (anti)commutation), so the F9 contact is not over-read as any spin-statistics foothold.",
+      "CONVERT RHETORIC TO A LEMMA SEQUENCE / DEMOTE THE OVER-CLAIM: kept the optional 'stronger' in-scope no-go only as an explicitly-flagged 'not expressible / outside scope' remark, never as 'provably impossible' (rejected by all four skeptics as vacuity-prone), and re-stated the disanalogy 'no functorial map' as a corpus-absence claim, not an impossibility theorem.",
+      "GROUND THE NEGATIVE AGAINST THE LEDGER: confirmed the prerequisite-gap lemma is stated against the ledger's explicit missing_interfaces list (no Born valuation [missing_interfaces index 2], no continuum [3], no spacetime/Lorentz [4] -- To_Notch line 466 'distinct from ... foliations in relativistic spacetime geometry', no multiparticle Hilbert/Fock), never by silently assuming those interfaces."
+    ],
+    "forbidden_repairs_avoided": [
+      "No arbitrary assumptions added.",
+      "No hidden tuning (predictive DoF remain 0; nothing fitted).",
+      "No imported physics hidden -- on the contrary, MORE imports were surfaced (Hund/BEC/Higgs) to make the import provenance exhaustive.",
+      "No unproven uniqueness asserted.",
+      "No undefined 'naturally emerges' language; the result is explicitly a documented absence + named missing interfaces."
+    ],
+    "corpus_verification": {
+      "file_count": "50 .tex files (verified by find); card text corrected from 49.",
+      "zero_occurrence_terms_confirmed": ["spin-statistics", "Fierz", "symmetrisation/symmetrization postulate", "anticommutation", "Fock", "second quantization", "tensor product", "permutation group", "symmetric group", "braiding"],
+      "anyon": "two hits, both false positives ('anyone').",
+      "pauli": "one hit, 'Pauli-allowed configurations', F-IV line 8503 (Hund1925) -- declared input.",
+      "exclusion_physics": "only NS 'wavepacket-exclusion principle' (No-Zeno paper); all other 'exclusion' hits are SBT bookkeeping (protocol-trap exclusion, status exclusions).",
+      "antisymmetric": "30 hits, all graph 1-forms (discrete cohomology / NG_FORCE_FOREST) or poset/Galois antisymmetry; none is exchange antisymmetrization.",
+      "f26_verbatim": ["'three-generation fermion content ... built into the lawfulness predicate' (lines 5222-5223)", "'19+ dimensionless parameters ... are the contingent moduli coordinates' (lines 5229-5233)", "'The theorem does not enumerate a carrier's moduli' (line 5180)"],
+      "f9_verbatim": "univalence (-1)^{2J} as one of four superselection observables with Q, B, L (line 2184, cite WickWightmanWigner1952).",
+      "p4_verbatim": "'P4 is a conserved sector label: the support decomposes into disconnected components (block structure), or equivalently P is block diagonal up to permutation' (Foundations I lines 1196-1197).",
+      "notch_verbatim": "global time 'distinct from questions about global time functions or foliations in relativistic spacetime geometry' (line 466)."
+    },
+    "revised_one_sentence_claim": "SBT does NOT reproduce the fermion/boson exchange-statistics dichotomy, the spin-statistics theorem, or the three-generation Standard-Model pattern: an exhaustive search of all 50 corpus .tex files finds zero exchange-symmetry / antisymmetrization / spin-statistics / Fock / permutation-group / anyon machinery, and every contact point (F26 three generations + 19+ parameters, F9 univalence (-1)^{2J}, plus the Hund Pauli-allowed, BEC boson, and LHC Higgs instantiations) is an imported declaration cited to the standard literature, not a retrodiction; the negative is forced by the ledger's missing-interface inventory (no Born valuation, no continuum, no Lorentz/spacetime, no multiparticle Hilbert/Fock), and the optional in-scope no-go is honestly downgraded to 'not expressible / outside scope'.",
+    "new_minimum_viable_result": "A 2-4 page scope-boundary note / ledger disclaimer addendum: (1) a reproducible grep manifest over all 50 .tex files certifying the absence of exchange-statistics/spin-statistics/Pauli-exclusion-derivation/anyon/Fock/permutation-group machinery (with the corrected reading that 'Pauli' and the SM 'bosons' appear only as declared imports); (2) five import-not-derivation readings with exact quotes (F26 generations+parameters, F9 univalence, Hund Pauli-allowed, BEC bosons, LHC Higgs); (3) the P4 disanalogy paragraph (P4 = unsigned Markov support blocks); (4) the missing-interface table (exchange/permutation-symmetry sector, relativistic/Lorentz causality, multiparticle Hilbert/Fock + Born valuation) stated against the ledger; (5) an explicitly-flagged 'not-expressible / outside scope' remark in lieu of a contentful no-go. Requires no new mathematics.",
+    "remaining_objections": [
+      "Near-vacuity / category stretch: the target has zero machinery contact, so 'SBT does not retrodict it' is closer to a scope disclaimer than a retrodiction; calling documented silence a 'result' is generous (conceded -- this is a class-E honest negative, framed as a disclaimer addendum, not a positive).",
+      "Modest newness: the exchange-statistics/generations boundary is a direct corollary of already-listed missing interfaces (no Born, no continuum, no Lorentz, no multiparticle factorization), so it adds a new disclaimer entry, not new mathematics or a new mechanism.",
+      "Explicitly underperforms the standard account (QFT derives the dichotomy + Pauli exclusion from Lorentz invariance + microcausality + positive energy; SBT recovers neither) -- by design, this is the point of the honest negative.",
+      "The stronger in-scope no-go remains genuinely vacuity-prone (SBT cannot express a multiparticle exchange sector) and is therefore NOT delivered as a contentful theorem; only the 'not-expressible' framing survives."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 5,
+    "plausibility": 5,
+    "non_ad_hocness": 5,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 4,
+    "robustness": 5,
+    "baseline_advantage": 0,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "2 -- Forecloses two seductive over-claims ('SBT explains three generations', 'SBT derives fermions vs bosons / Pauli exclusion') and names the prerequisite interfaces, which is genuinely useful for scope hygiene. But the payload is a documented absence largely corollary to already-listed missing interfaces; a specialist learns little new physics.",
+    "execution_ease": "5 -- No theorem-proving, no Lean, no numerics, no fitting. A reproducible grep manifest plus close reading of pre-existing instantiations and the ledger; a few days of writing. Already essentially verified here.",
+    "plausibility": "5 -- Every claim is verbatim-confirmed in the corpus; the (corrected) negative is incontrovertible. The absence is real and exhaustively documented.",
+    "non_ad_hocness": "5 -- Zero predictive degrees of freedom; nothing tuned; imports are surfaced rather than hidden. The result is structurally forced by SBT's frozen scope, not adjusted to fit.",
+    "discriminative_power": "1 -- A null result that explains nothing and would 'host' the opposite world equally (F26 accepts any generation count / a fermion-boson swap). It cannot discriminate between competing hypotheses; its only discriminating content is 'SBT is silent here', shared by essentially any non-QFT framework.",
+    "audience_legibility": "4 -- The grep certificate + exact-quote import readings + disanalogy + missing-interface table are clear and reproducible for HEP/foundations readers. Not 5 because the value proposition ('a documented silence is a result') requires the reader to accept the scope-hygiene framing.",
+    "precision": "4 -- The claim is sharply and correctly delimited (exact files, lines, citations, the WWW-univalence-vs-spin-statistics distinction). Capped below 5 because the strongest version ('provably impossible within SBT') is honestly unavailable -- only the weaker 'not expressible' holds, and SBT's disclaimers (no Born, no Lorentz) cap how precise any statistics statement can be.",
+    "robustness": "5 -- Vacuously robust: no choice of lens, tau, prototype, or threshold can make SBT express a symmetric/antisymmetric multiparticle sector, since Z has no tensor/Fock factorization and P4 sectors are unsigned. Conclusion holds across the entire package space and survived four independent adversarial corpus re-checks.",
+    "baseline_advantage": "0 -- SBT does strictly worse than the standard account: it recovers neither spin-statistics nor the generation pattern and only re-hosts the SM's declared structure as inputs. By construction there is no advantage over the QFT baseline; the card itself concedes this.",
+    "publication_potential": "2 -- Suitable as a scope-boundary note / disclaimer addendum cross-listed with the ledger's existing negatives and eight no-go theorems, or as an appendix to a foundations paper. Not a standalone publishable result for an external venue; its home is internal SBT scope documentation."
+  },
+
+  "proposed_bin": "B",
+  "recommended_priority": "Low-to-medium. A quick, cheap, fully-verified scope-hygiene deliverable: do it as a short ledger addendum / appendix when consolidating SBT's documented negatives, not as a standalone effort. Bundle with the existing no-Born-rule and no-continuum disclaimers and the eight no-go theorems.",
+  "recommended_artifact": "A 2-4 page scope-boundary note / ledger disclaimer addendum: (1) reproducible grep manifest over all 50 .tex files; (2) five import-not-derivation readings with <=25-word exact quotes (F26 generations+parameters, F9 univalence, Hund Pauli-allowed, BEC bosons, LHC Higgs); (3) the P4 disanalogy paragraph; (4) the missing-interface table stated against the ledger; (5) an explicitly-flagged 'not-expressible / outside scope' remark. Cross-listable alongside the ledger's existing disclaimers and the eight no-go theorems.",
+  "one_line_verdict": "A clean, verbatim-verified honest negative (class E): SBT contains zero exchange-statistics/spin-statistics/Pauli/anyon machinery and merely imports the SM's generations, parameters, univalence, Pauli-allowed, bosons, and Higgs as declarations -- valuable scope hygiene (Bin B), but a documented silence that explains nothing and underperforms the QFT baseline by design.",
+  "target_audience": [
+    "High-energy theorists / Standard Model phenomenologists evaluating whether SBT says anything about generations or statistics",
+    "Quantum-foundations researchers checking SBT's relationship to superselection and spin-statistics",
+    "SBT-internal authors and reviewers policing scope and preventing over-claims",
+    "Philosophers of physics assessing emergence/closure frameworks against established no-go and structure-explaining results"
+  ],
+  "changes_made": [
+    "Corrected the false coverage-lemma claim of 'zero Pauli exclusion occurrences' to the verified reading: 'Pauli' appears once (Hund 'Pauli-allowed configurations', F-IV line 8503, cite Hund1925) as a declared input label; the only other physics 'exclusion' is the NS 'wavepacket-exclusion principle'. This strengthens the negative.",
+    "Fixed the file count from 49 to the verified 50 physics-facing .tex files.",
+    "Completed the import contact-point enumeration: added Hund Pauli-allowed (line 8503), BEC condensing bosons as U(1) SSB via F15b (line 3249, AndersonEnsherMatthewsWiemanCornell1995BEC), and LHC Higgs boson as resonance detection (line 1403, ATLAS2012HiggsObservation).",
+    "Added an explicit lemma distinguishing WWW univalence superselection from the spin-statistics (anti)commutation correspondence, so the F9 contact is not over-read as a spin foothold.",
+    "Demoted the optional 'stronger' in-scope no-go to an explicitly-flagged 'not expressible / outside scope' remark; reframed the disanalogy 'no functorial map' as corpus-absence rather than impossibility.",
+    "Confirmed the prerequisite-gap lemma is stated against the ledger's missing_interfaces list (no Born valuation, no continuum, no Lorentz/spacetime, no multiparticle Hilbert/Fock) and does not silently assume those interfaces.",
+    "Verified every load-bearing quote verbatim in the corpus (F26 lines 5180/5222-5236, F9 line 2184, P4 lines 1196-1197, Notch line 466, antisymmetric=graph-1-forms)."
+  ]
+}

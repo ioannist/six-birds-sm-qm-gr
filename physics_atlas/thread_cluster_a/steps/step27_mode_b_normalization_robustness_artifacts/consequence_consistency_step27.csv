@@ -1,0 +1,3 @@
+consequence,source,parent_id,charged_obstruction,full_obstruction,same_child_structure,consistent
+step25_exact_parent,steps/step25_mode_b_f51_descent_hierarchy_artifacts/f51_descent_step25.csv,SU(5),0,0,True,True
+step25_scoped_parent,steps/step25_mode_b_f51_descent_hierarchy_artifacts/f51_descent_step25.csv,SO(10),0,1,True,True

@@ -1,0 +1,4 @@
+control,passes,evidence
+minimality_can_return_non_target_value,True,computed_choice_N=1
+cp_formula_bound_not_exact_selection,True,lower_bound_N=3
+inactive_zero_copy_not_full_chain,True,N=0 is anomaly-trivial but not active content closure

@@ -1,0 +1,8 @@
+Cluster A Step 4 E043 scale-selection facet
+Verdict: e043_scale_selection_facet_constructed
+r_SM: 0.0001
+r obstruction: 3
+derived observable obstruction: 0
+attractor final residual: 6.64073830647e-19
+measure selected r: 0.0001
+no selection unfixed: True

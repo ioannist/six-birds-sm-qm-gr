@@ -1,0 +1,8 @@
+Step 30 directed-reduction bounded no-go diagnostic
+Verdict: lemma1_directed_reduction_blocked_in_bounded_grammar
+q_GR through q_QM defect count: 8
+q_QM through q_GR defect count: 8
+route mismatch normalized: 0.5
+control route mismatch normalized: 0.0
+T from Born joint heldout residual: 0.5991748529352457
+Born from T joint heldout residual: 0.5776762928080916

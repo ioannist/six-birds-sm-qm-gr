@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_bounded_grammar_declared_first,pass,"G_v1","mode_b_grammar_manifest.csv was updated with the bounded G_v1 search class before the P* toy was written.","Keep design inside declared atoms."
+G2_no_bridge_smuggling,pass,"bridge rows","P* closes two bridges through generation maps from u_i and v; residual bridge rows are not native probes and overread control is rejected.","Carry surviving bridges to G_v2."
+G3_target_lineage_non_equivalence,pass,"P* predicate","P* is a specific shared scale-currency plus route-holonomy predicate, not a restatement of the full E018 target.","Record as partial Mode B candidate only."
+G4_typed_carrier_completion_audit,pass,"finite toy","Carrier, native source rows, generated target shadows, completion E_v1, and audit D_v1 are declared before Xi computation.","Preserve row-level bridge audit."
+G5_no_silent_full_landing,pass,"verdict","Two bridge residuals survive, so Step 5 does not self-certify a root landing.","Issue G_v2."
+G6_no_overread_controls,pass,"validation","Adding residual bridge rows to native lens makes Xi zero but is recorded only as target-equivalent overread control.","run_step5.py checks this."

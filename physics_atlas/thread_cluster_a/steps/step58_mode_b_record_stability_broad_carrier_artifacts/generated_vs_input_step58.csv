@@ -1,0 +1,7 @@
+item,status,detail
+Step57_record_requirement,imported_frozen,8068ff17d5ca911ae12f09cc303c8e67ee47c8c92affd0fad9ca28b61fe2e75f
+Step35_broad_carrier,read,rows=80
+CS_extension,computed,CS=8 non_CS=72
+RS_extension,computed_with_imported_requirement,RS=4
+divergence_witness_search,computed,RS_not_CS=0
+verdict,computed,ROBUST_DESCENT_FROZEN_RS_SUBSET_CS_ON_BROAD_CARRIER

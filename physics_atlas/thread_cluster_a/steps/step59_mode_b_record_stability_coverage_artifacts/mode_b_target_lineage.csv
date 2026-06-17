@@ -1,0 +1,2 @@
+target,parent_residual,relation_to_canonical_root,status,source_artifacts
+record-stability-coverage-beyond-step58,record-stability grounding of CS requires coverage beyond 80-row carrier,"super_residual / parent layer (record/measurement, E032-adjacent), USER-AUTHORIZED 2026-06-09",ROBUST_COVERAGE_ENUMERATION_ONLY,steps/step59_mode_b_record_stability_coverage_artifacts/record_stability_coverage_step59.py

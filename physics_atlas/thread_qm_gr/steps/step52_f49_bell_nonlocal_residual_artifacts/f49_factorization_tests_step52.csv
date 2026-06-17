@@ -1,0 +1,3 @@
+case_id,common_source_factors,interface_factorization_factors,locally_explainable,f49_status,evidence
+Bell_phi_plus,False,False,False,statused_nonlocal_residual,CHSH=2.82842712475 exceeds enumerated local bound 2
+classical_correlated_mixture,True,True,True,common_source_success,explicit LHV table reproduces all four control correlations

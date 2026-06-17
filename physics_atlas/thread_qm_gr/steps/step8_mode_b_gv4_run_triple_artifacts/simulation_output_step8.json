@@ -1,0 +1,157 @@
+{
+  "step": 8,
+  "toy_name": "finite_stochastic_run_generated_triple_mechanism_audit",
+  "orientation": "Mode B G_v4 run-generated triple mechanism",
+  "bounded_grammar": "G_E018_RunGeneratedTripleMechanism_v4",
+  "run_design": {
+    "substrate": "local stochastic binary ring",
+    "sector_readouts": [
+      "boundary mutual-information area proxy",
+      "first Fourier-mode amplitude geometry proxy",
+      "coarse-grain/evolve route-closure proxy"
+    ],
+    "independent_witness": "held-out interaction gain beyond pairwise readouts",
+    "candidate_rule": "requires low common-fixed-point Xi and positive held-out interaction gain at both refinements"
+  },
+  "results": [
+    {
+      "n_cells": 32,
+      "seed": 18031,
+      "substrate": {
+        "state_space": "binary ring with 32 cells",
+        "dynamics": "parallel stochastic nearest-neighbor update",
+        "inputs": {
+          "beta": 1.15,
+          "coupling": 0.72,
+          "inertia": 0.18,
+          "steps": 720,
+          "burn_in": 120,
+          "replicas": 64
+        }
+      },
+      "readout_windows": 25,
+      "sector_plateau": {
+        "area_entanglement": 0.005884674481646024,
+        "amplitude_geometry": 0.2003430051672411,
+        "p3_route_closure": 0.75225830078125
+      },
+      "completion_fixed_point_xi": {
+        "plateau": [
+          0.005884674481646024,
+          0.2003430051672411,
+          0.75225830078125
+        ],
+        "raw_trace": 0.299832708647116,
+        "trace_K_DD": 0.6060645002074897,
+        "normalized_trace": 0.4947207905172907,
+        "common_value": 0.3194953268100457
+      },
+      "independent_witness": {
+        "heldout_r2_pairwise": -0.4611202811996209,
+        "heldout_r2_with_interaction": -0.4843825251320988,
+        "heldout_interaction_gain": -0.02326224393247789,
+        "positive_gain_certificate": 0.0,
+        "pairwise_union_corr2_control": 0.2514682187431358,
+        "test_window_count": 10
+      },
+      "thresholds": {
+        "completion_normalized_xi_max": 0.02,
+        "heldout_interaction_gain_min": 0.05
+      },
+      "candidate_pass": false,
+      "no_rigging_check": {
+        "triple_objective_in_substrate": false,
+        "triple_target_row_input": false,
+        "pairwise_union_used_as_witness": false,
+        "witness_measured_after_run": true,
+        "witness_heldout": true,
+        "sector_readouts_used_in_update_rule": false
+      },
+      "rejected_controls": {
+        "rigged_diagonal_completion": {
+          "normalized_trace": 1.8127167969206024e-16,
+          "flag": "forces equal sector plateaus after the run; not a substrate result"
+        },
+        "pairwise_union_witness": {
+          "corr2": 0.2514682187431358,
+          "flag": "pairwise statistic only; not accepted as independent triple witness"
+        }
+      }
+    },
+    {
+      "n_cells": 64,
+      "seed": 18063,
+      "substrate": {
+        "state_space": "binary ring with 64 cells",
+        "dynamics": "parallel stochastic nearest-neighbor update",
+        "inputs": {
+          "beta": 1.15,
+          "coupling": 0.72,
+          "inertia": 0.18,
+          "steps": 720,
+          "burn_in": 120,
+          "replicas": 64
+        }
+      },
+      "readout_windows": 25,
+      "sector_plateau": {
+        "area_entanglement": 0.008000208387875768,
+        "amplitude_geometry": 0.14305034895521493,
+        "p3_route_closure": 0.7584601508246528
+      },
+      "completion_fixed_point_xi": {
+        "plateau": [
+          0.008000208387875768,
+          0.14305034895521493,
+          0.7584601508246528
+        ],
+        "raw_trace": 0.3200526299688164,
+        "trace_K_DD": 0.5957892060594132,
+        "normalized_trace": 0.5371910513210945,
+        "common_value": 0.3031702360559145
+      },
+      "independent_witness": {
+        "heldout_r2_pairwise": -0.2809713420666238,
+        "heldout_r2_with_interaction": -0.3663632699658117,
+        "heldout_interaction_gain": -0.08539192789918792,
+        "positive_gain_certificate": 0.0,
+        "pairwise_union_corr2_control": 0.002666092280500349,
+        "test_window_count": 10
+      },
+      "thresholds": {
+        "completion_normalized_xi_max": 0.02,
+        "heldout_interaction_gain_min": 0.05
+      },
+      "candidate_pass": false,
+      "no_rigging_check": {
+        "triple_objective_in_substrate": false,
+        "triple_target_row_input": false,
+        "pairwise_union_used_as_witness": false,
+        "witness_measured_after_run": true,
+        "witness_heldout": true,
+        "sector_readouts_used_in_update_rule": false
+      },
+      "rejected_controls": {
+        "rigged_diagonal_completion": {
+          "normalized_trace": 0.0,
+          "flag": "forces equal sector plateaus after the run; not a substrate result"
+        },
+        "pairwise_union_witness": {
+          "corr2": 0.002666092280500349,
+          "flag": "pairwise statistic only; not accepted as independent triple witness"
+        }
+      }
+    }
+  ],
+  "refinement_stability": {
+    "completion_xi_level_32": 0.4947207905172907,
+    "completion_xi_level_64": 0.5371910513210945,
+    "completion_xi_absolute_delta": 0.04247026080380378,
+    "heldout_interaction_gain_level_32": -0.02326224393247789,
+    "heldout_interaction_gain_level_64": -0.08539192789918792,
+    "heldout_interaction_gain_absolute_delta": 0.062129683966710036,
+    "candidate_pass_all_levels": false,
+    "interpretation": "The run does not exhibit a non-rigged shared triple completion: the common-fixed-point residual stays positive and the held-out interaction witness is not a stable positive certificate."
+  },
+  "verdict_from_run": "run-level obstruction"
+}

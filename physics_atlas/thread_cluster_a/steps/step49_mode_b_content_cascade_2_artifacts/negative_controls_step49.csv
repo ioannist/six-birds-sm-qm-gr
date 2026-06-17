@@ -1,0 +1,3 @@
+control,passes,evidence
+underconnected_texture_fails,True,covered=0; edges=0
+target_flag_not_used_for_scoring,True,survivors=2; classes=2

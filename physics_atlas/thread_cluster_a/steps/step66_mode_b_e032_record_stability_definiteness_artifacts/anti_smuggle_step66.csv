@@ -1,0 +1,5 @@
+gate,passes,evidence
+record_requirement_has_no_uniqueness_clause,True,record predicate checks persistence/distinguishability/capacity only
+diagonal_ensemble_evaluable,True,full branching state has persistent distinguishable pointer records
+component_conditions_satisfied_by_multibranch,True,"persistence, distinguishability, and capacity all pass before selecting one outcome"
+single_outcome_not_presupposed,True,multi-branch readout passes the record requirement

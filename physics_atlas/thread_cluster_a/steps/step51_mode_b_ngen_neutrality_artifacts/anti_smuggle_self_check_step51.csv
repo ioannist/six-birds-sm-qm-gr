@@ -1,0 +1,5 @@
+check,passes,evidence
+no_privileged_N_selector,True,Scoring iterates over N=0..6 and does not branch on the observed value.
+cp_bound_general_formula,True,(N-1)(N-2)/2 for N>=1
+minimality_negative_control_present,True,computed_choice_N=1
+bound_not_selection_flagged,True,recognition_source_lower_bound

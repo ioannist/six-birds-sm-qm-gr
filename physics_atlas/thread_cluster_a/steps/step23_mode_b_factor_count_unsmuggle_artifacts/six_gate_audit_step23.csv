@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,target sector names and target literals absent from carrier primitives
+structural_unsmuggle,True,trace-zero charge lattice is built for every factor count
+dependency_trace,True,"closure uses enumerated ranks, lattice charge vectors, anomaly equations, quantization, and minimality"
+negative_controls,True,should-not-close controls fail by computed verdict
+stage_ii_earning,True,known structural checks pass
+no_single_axiom_equivalence,True,no axiom fixes factor count or rank pattern

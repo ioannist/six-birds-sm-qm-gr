@@ -1,0 +1,6 @@
+check,passes,evidence
+record_requirement_primitive_exclusion,True,record requirement scans clean of gauge-layer selector tokens
+no_shelf_shortcut,True,"requirement generated from persistence, distinguishability, capacity"
+anti_circularity_proper_subset,True,support_03
+no_tuning,True,threshold 2 is minimal nontrivial record alphabet
+negative_controls_have_teeth,True,degenerate and non-record controls do not imply CS

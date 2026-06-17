@@ -1,0 +1,7 @@
+case,source_criterion,toy_test,satisfies
+MemoryLayer,formed memory status: role split is resolved by a memory record already carried by the current access discipline,GR-distinct d3 is not carried by q_QM; role obstruction is nonempty,False
+HiddenUpstreamRole,hidden status: role is assigned to an upstream hidden source rather than an explicit admissible joint quotient,L_joint is explicit and admissible on the toy,False
+BridgeMediatedRole,mediated status: role split is resolved by a declared admissible mediation object satisfying the native gates,"L_joint commutes with q_QM and q_GR, and B_QM_to_L has status candidate",True
+BudgetedRole,budget status: role split is retained as a priced residual rather than exactly resolved,"F37 residuals for L_joint are zero, not budgeted positive residuals",False
+ScopedRole,scoped status: role is resolved only after restricting the carrier or access scope,all 8 source states are used; no carrier restriction is applied,False
+CoarsenedRole,coarsened status: role split is resolved by quotienting away the splitting distinction,L_joint preserves d3 and strictly refines q_QM rather than quotienting it away,False

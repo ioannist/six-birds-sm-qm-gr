@@ -1,0 +1,21 @@
+{
+  "step": 9,
+  "orientation": "R6 robustness battery consolidation",
+  "active_residual": "R_cluster_b_after_step8_E021_rg_measure_robustness",
+  "candidate_move": "Consolidate verified Steps 6-8 into a sourced and graded R6 robustness section; introduce no new computation.",
+  "final_verdict": {
+    "type": "R6_robustness_battery_consolidated",
+    "no_new_computation": true,
+    "claims_sourced": true,
+    "claims_graded": true,
+    "structural_claims_robust_under_declared_battery": true,
+    "modeled_forms_bounded": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "tex_section": "cluster_b_robustness_r6.tex",
+    "findings_synthesis": "findings_r6_clusterb.md",
+    "next_live_option": "Cluster_B_v2_repackage_or_external_frame_transfer_review"
+  }
+}

@@ -1,0 +1,6 @@
+gate,passes,witness,evidence
+entropy_from_contracted_state,True,contract_boundary_state -> entropy_for_region,rho_A eigenvalues are computed from contracted boundary amplitudes
+strict_gap_exists,True,product_control_D2,gap=0.69314718056
+holographic_saturation_exists,True,holo_refinement_D2|holo_refinement_D3,copy tensors saturate the min-cut at two bond dimensions without region-specific tensor definitions
+min_cut_nontrivial,True,holo_refinement_D2,cut crosses the internal bridge and uses fewer cut edges than the number of boundary region legs
+not_identity_all_rows,True,product_control_D2,S=min-cut does not hold for every contracted state

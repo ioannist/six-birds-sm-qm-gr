@@ -1,0 +1,9 @@
+diagnostic,item,result,status
+role_difference,P1_carrier,"GR closes g_event_locality while QM closes no event-locality atom; framework gap adds r_refinement_index",changed_nonfactoring
+role_difference,P2_composition,"both endpoints share composition_slot; framework gap adds r_fixedpoint_lift for refinement-sensitive composition",changed_nonfactoring
+role_difference,P3_route,"QM route fixed point and GR route fixed point are disjoint; framework gap adds r_audit_commutator",changed_nonfactoring
+role_difference,P4_records,"QM closes q_record_branch; GR closes g_event_locality; framework gap adds r_refinement_index",changed_nonfactoring
+role_difference,P5_currency,"QM currency q_amplitude_currency does not factor GR currency g_metric_currency; normalized Xi 1.0",new_currency_required
+role_difference,P6_audit,"QM closes q_probability_audit; GR closes g_curvature_audit; framework gap adds r_audit_commutator and r_descent_budget",changed_nonfactoring
+fixed_point_gap,direct_QM_to_GR_plus_framework_witness_gap,"raw Xi 10.0; normalized Xi 0.8333333333333334",structured_gap_detected
+fixed_point_gap,all_framework_rungs_inserted_gap,"raw Xi 4.0; normalized Xi 0.3333333333333333",endpoint_rows_still_not_constructed

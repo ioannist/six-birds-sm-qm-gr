@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\DeclareMathOperator{\tr}{tr}
+\begin{document}
+
+\section*{Step 4 Structural Statement: Mode C Compatibility No-Go}
+
+\begin{definition}[Current recognition grammar \(G_0\)]
+Let \(G_0\) contain exactly the source rows recognized in Steps 1--3:
+HED entanglement-area rows, LQG geometry-amplitude rows, and AS P3 route rows.
+It contains no bridge row coupling these source records into one completion
+operator and one audit.
+\end{definition}
+
+\begin{definition}[Constrained finite carrier]
+At refinement level \(r\in\{2,4\}\), let
+\[
+  E_r=\mathbb{R}^{r+6},\qquad C=I.
+\]
+The first \(r\) coordinates are boundary entanglement-ledger coordinates, the
+next two coordinates are geometry-amplitude and P3 route coordinates, and the
+last four coordinates are compatibility bridge coordinates:
+\[
+  b_{HL},\quad b_{LA},\quad b_{HA},\quad b_{HLA}.
+\]
+These represent, respectively, HED--LQG area/geometry compatibility,
+LQG--AS discrete/continuum compatibility, HED--AS boundary/continuum
+compatibility, and the triple joint-package bridge.
+\end{definition}
+
+\begin{proposition}[Bounded-grammar no-go on \(G_0\)]
+For the recombined native lens containing only the recognized sector rows, the
+sector-only target has zero residual.  However, the coupled target with the
+four compatibility bridge rows has
+\[
+  \tr\,\Xi_I=4.0,\qquad
+  \frac{\tr\,\Xi_I}{\tr K_{DD}}=\frac{4}{7}=0.5714285714285714
+\]
+at both refinement levels.  Therefore \(G_0\) cannot close the Mode C coupled
+joint target.
+\end{proposition}
+
+\begin{proof}
+The recognized source rows span the area, amplitude, and P3 sector rows, so
+the sector-only control has zero residual.  The compatibility bridge rows are
+orthogonal to that native span and are not supplied by any of the three
+imports.  The Schur correction therefore removes no bridge currency.  Four
+unit bridge rows remain, giving raw trace \(4.0\).  The coupled target has
+unit trace from the area sector, unit trace from amplitude, unit trace from
+P3, and four units from bridge rows, so the normalized residual is \(4/7\).
+\end{proof}
+
+\begin{remark}[Next grammar delta]
+Closing this residual requires a new grammar atom, not another sector union.
+The mandatory next grammar delta is a coupled quantum-geometry bridge that
+simultaneously relates entanglement-area currency, quantum-geometry amplitude,
+and the route-closure audit.
+\end{remark}
+
+\end{document}

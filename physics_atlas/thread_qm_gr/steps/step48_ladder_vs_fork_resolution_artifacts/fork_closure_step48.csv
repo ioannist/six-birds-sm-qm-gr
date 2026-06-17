@@ -1,0 +1,3 @@
+case_id,qm_descent_residual,gr_descent_residual,fork_closes,description
+fork_L_to_QM_and_GR,0,0,True,Both endpoint readouts descend legally from L.
+nested_control_ladder,0,0,True,"Control where q_GR_nested=(d0,d2,d1) is genuinely nested in q_QM, so the ladder closes."

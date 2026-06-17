@@ -1,0 +1,349 @@
+{
+  "id": "U014",
+  "title": "Split-pair-emptiness as the one consistency FORM behind four selection rules; the F15a no-go as the sole rigid leg",
+  "card": {
+    "id": "U014",
+    "one_sentence_claim": "A single consistency test -- a readout or selection predicate s descends through a declared quotient q iff its split-pair obstruction O={(x,x'): q(x)=q(x'), s(x)!=s(x')} is empty -- is the one closure/audit constraint behind conservation (constant on symmetry orbits), gauge-invariant observables (descent through A/G), no-symmetric-vacuum-selection (a nonempty obstruction forces an imported breaker), and one-sector-per-state superselection; but only the impossibility direction (the F15a no-go that an equivariant deterministic selector under a trivial orbit action lands solely in the common fixed locus) carries rigid physics, while every other leg imports its empirical content (the orbit, the unobservability bridge, sector-purity) and is opposite-world elastic.",
+    "domains_unified": [
+      "CM (classical/quantum mechanics: conservation / Noether easy direction)",
+      "QFT_SM (gauge theory: gauge-invariant observables / Wilson loops / Gribov-Singer; spontaneous symmetry breaking no-go)",
+      "QM (quantum foundations: superselection / charge sectors)",
+      "GR-GRAV (diffeomorphism invariance as orbit-quotient relabeling)"
+    ],
+    "argument_family": "constraint-unification (specialization of one universal-algebra descent biconditional -- split-pair-obstruction emptiness -- to four declared group/route orbit quotients)",
+    "shared_mechanism": "Orbit-descent / split-pair-obstruction emptiness: the universal-algebra biconditional 'a function (or predicate) on the quotient = a function constant on fibers' specialized to a DECLARED group/route orbit quotient q. Formally (F2 def:split-pair; F15a def:selection-obstruction): rF descends through q iff splitObs(q,F,r)={(x,x'): q(x)=q(x'), rF(x)!=rF(x')}=empty, equivalently iff there exists barF with barF o q = rF. A selection rule (conserved / physical-observable / selected-vacuum / single-sector) holds iff the obstruction is empty; when nonempty the only F2 repairs are source refinement (declare a finer quotient / import a breaker b) or minimal target coarsening. The genuinely rigid corollary (F15a): if a selector sigma:O->X is equivariant and the G-action on the orbit set O is trivial, then for all g, rho_X(g,sigma(o))=sigma(o), so sigma(o) lies in the common G-fixed locus -- an equivariant deterministic chooser can only return symmetric points, never break a degenerate orbit.",
+    "derivability_class": "D",
+    "theory_basis": [
+      {
+        "component": "F2 Descent-Repair Normal Form (def:split-pair, thm:F2): rF descends through q iff splitObs(q,F,r)=empty; repairs = source refinement or minimal target coarsening; Lean descent_repair_normal_form. This is the single mechanism, stated once.",
+        "paper": "Six_Birds_Foundations_IV (def:split-pair lines 552-557; thm:F2)",
+        "role": "the shared mechanism (the split-pair emptiness biconditional itself)"
+      },
+      {
+        "component": "F27 Conservation as Orbit Descent (thm:F27): a quantity C is conserved for a declared route/symmetry iff C=barC o q_orb, i.e. constant on declared orbits; Lean conservation_as_orbit_descent (faithful); Noether NAMED as the variational instance, not derived.",
+        "paper": "Six_Birds_Foundations_IV (thm:F27 lines 5280-5297)",
+        "role": "instantiates the mechanism on the symmetry-orbit quotient for the CM/conservation leg"
+      },
+      {
+        "component": "OI-EI methodological principle + Leibniz quotient factorization (thm:leibniz-quotient): empirically indiscernible microstates are identified; physical space = Z/~ = A/G; observables = quotient-definable = gauge-invariant; universal property is 'standard quotient mathematics'; Lean quotient_lift_exists_unique.",
+        "paper": "A_Six_Birds_Eye_View_of_Quantum_Theory (Principle OI-EI line 123; thm:leibniz-quotient lines 149-159)",
+        "role": "supplies the gauge-observables leg via the imported bridge identifying gauge-orbit equivalence with empirical indiscernibility"
+      },
+      {
+        "component": "F18 Lawhood Descent (thm:F18): a candidate law P is lawful at a layer iff it factors through the access quotient q_I; Wilson loops NAMED as descending through A/G; F2 gauge instantiation states the gauge group G is 'given a priori' (verified verbatim, Foundations IV line 2383).",
+        "paper": "Six_Birds_Foundations_IV (thm:F18 lines 3892-3924; F2 gauge instantiation lines 2381-2391)",
+        "role": "specializes descent to admissible gauge-invariant observables; Wilson loops as named instance"
+      },
+      {
+        "component": "F15a Selection Obstruction / Repair Normal Form (thm:F15a): equivariant selector under TRIVIAL orbit action lands only in the common G-fixed locus; vacuum selection requires a declared breaker b; Lean selection_obstruction (faithful). The ONE rigid, opposite-world-inelastic leg. VERIFIED: the breaker b is declared in the statement but UNUSED in the proof (lines 3073-3097); the fixed-locus conclusion requires TrivialOrbitAction(rho_O) (line 3053).",
+        "paper": "Six_Birds_Foundations_IV (thm:F15a lines 3038-3115)",
+        "role": "the genuine no-go that partially beats deflation: a symmetry cannot break itself"
+      },
+      {
+        "component": "F9 No Unstatused Residual (thm:F9) + F4 Local-Global Obstruction co-instantiation of Wick-Wightman-Wigner superselection. VERIFIED: the WWW passage (lines 2179-2190) is a layer instantiation of F9, NOT F4; the F4 layer instantiations (lines 2645+) are Cech cohomology, topological defects, schema mapping -- WWW is ABSENT from F4. F9 gives single-valued typed status (one sector per state); the F4 superselection mapping is a NEW proposed (uncertified-for-this-instance) mapping.",
+        "paper": "Six_Birds_Foundations_IV (thm:F9 lines 2080-2110; WWW-as-F9 instantiation lines 2179-2190; thm:F4 lines 2574+; F4 layer instantiations lines 2645+)",
+        "role": "instantiates descent/typed-status bookkeeping on the charge-sector quotient for the superselection leg"
+      }
+    ],
+    "bridge_dictionary": [
+      {
+        "source_theory_component": "Split-pair obstruction O=splitObs(q,F,r) (F2 def:split-pair) and its emptiness test O=empty <=> exists barF, barF o q = rF -- the mechanism itself, faithful and Lean-anchored but ANALYTIC (true in every world for any declared q), so it carries bookkeeping form not physics",
+        "target_domain_component": "The general consistency condition asserted to underlie all four selection rules: 'a layer-expressible quantity / selection rule descends through the declared orbit quotient iff no fiber is split'",
+        "mapping_type": "direct",
+        "quality_level": 3,
+        "invertible": true,
+        "lossy": false
+      },
+      {
+        "source_theory_component": "F27 orbit-descent biconditional C=barC o q_orb on the declared symmetry-orbit quotient q_orb; observable-preserving and Lean-certified, but 'conserved' is DEFINED as orbit-constancy (near-tautology) and the symmetry group is imported",
+        "target_domain_component": "CM conserved quantity = function constant on the symmetry orbit (the easy 'conserved iff invariant' half of Noether; momentum/charge/energy as instances); deep direction action-symmetry=>current J^mu and enumeration of conserved quantities OUT OF SCOPE",
+        "mapping_type": "direct",
+        "quality_level": 2,
+        "invertible": true,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "OI-EI + Leibniz quotient (thm:leibniz-quotient): physical space = Z/~, observables = quotient-definable functions; forced GIVEN an IMPORTED bridge lemma (gauge-orbit equiv = empirical indiscernibility) that is circular as a derivation; G declared a priori (verified line 2383: 'the gauge group G is given a priori')",
+        "target_domain_component": "QFT gauge principle: physical configuration space = A/G; admissible observables = gauge-invariant functions; Wilson loops (F18) as the canonical descending observable; does NOT produce connection/curvature/Yang-Mills dynamics or predict G; continuum A/G imported",
+        "mapping_type": "operational",
+        "quality_level": 2,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F15a: equivariant selector under TRIVIAL orbit action => sigma(o) in common G-fixed locus; selection split O_s!=empty => must import declared breaker b. The STRONGEST bridge: formal, observable-respecting, Lean-certified, opposite-world INELASTIC on the impossibility direction; continuum Gribov-Singer/Singer imported (only finite analogue certified). SCOPE-CORRECTION (post-repair): the rigid conclusion is now restated as 'no equivariant deterministic section picks one element of a nontrivial orbit'; the literal common-fixed-locus phrasing leans on TrivialOrbitAction(rho_O).",
+        "target_domain_component": "QFT spontaneous symmetry breaking no-go: no symmetric (equivariant deterministic) procedure can pick one vacuum from a nontrivial degenerate orbit; SSB must import a breaker; Gribov-Singer (no continuous global equivariant section of A->A/G); yields no Goldstone modes / effective potential / prediction of which vacuum",
+        "mapping_type": "direct",
+        "quality_level": 4,
+        "invertible": true,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F9 single-valued typed-status classifier st_P (No Unstatused Residual); sector=typed status is a DECLARATION not a forced identification; sector-purity of admissible states is the imported WWW content fed in as the coverage/single-value input. VERIFIED: WWW is an F9 layer instantiation (lines 2179-2190)",
+        "target_domain_component": "WWW superselection: each admissible pure state lies in exactly one charge sector (one typed status per state); no Hilbert space, no commutant, no derivation of the superselecting charge set",
+        "mapping_type": "analogical",
+        "quality_level": 1,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F4 Local-Global Obstruction (compatible-non-global status); this WWW instantiation is a NEW proposed mapping ABSENT from the corpus and uncertified for this instance (VERIFIED: F4 layer instantiations are Cech/topological-defects/schema-mapping, not WWW); F4's GloballyExact branch is the no-superselection (elastic) world; phase-unobservability imported; spin-statistics has no SBT machinery (R024 negative)",
+        "target_domain_component": "WWW superselection: locally consistent relative phases that fail to glue into a coherent cross-sector superposition (no cross-sector coherence)",
+        "mapping_type": "analogical",
+        "quality_level": 1,
+        "invertible": false,
+        "lossy": true
+      },
+      {
+        "source_theory_component": "F2 orbit quotient q:X->X/G applied to field-configuration relabelings; the WEAKEST leg -- diffeomorphism group and its infinite-dimensional continuum orbit structure are wholly imported, only finite analogues certified; no constraint algebra / Hamiltonian constraint / problem of time touched",
+        "target_domain_component": "GR diffeomorphism invariance: physical content = orbit quotient under relabeling diffeomorphisms; only diff-invariant quantities descend (pure relabeling analogy)",
+        "mapping_type": "analogical",
+        "quality_level": 1,
+        "invertible": false,
+        "lossy": true
+      }
+    ],
+    "domain_derivations": [
+      {
+        "domain": "CM (conservation / Noether)",
+        "target": "Conserved quantity = orbit-constant readout; C=barC o q_orb (easy 'conserved iff invariant' direction)",
+        "status": "derived-trivially"
+      },
+      {
+        "domain": "QFT_SM (gauge-invariant observables)",
+        "target": "Physical observables = gauge-invariant functions on A/G; Wilson loops descend; Gribov-Singer = nonempty selection obstruction",
+        "status": "sketched"
+      },
+      {
+        "domain": "QFT_SM (spontaneous symmetry breaking)",
+        "target": "No equivariant deterministic selector (section) can pick one element of a nontrivial degenerate vacuum orbit; SSB must import a declared breaker",
+        "status": "derived"
+      },
+      {
+        "domain": "QM / QFT_SM (superselection)",
+        "target": "Each admissible pure state in exactly one charge sector; no coherent cross-sector superposition",
+        "status": "analogical"
+      },
+      {
+        "domain": "GR-GRAV (diffeomorphism invariance)",
+        "target": "Physical content = orbit quotient under relabeling; only diff-invariant quantities are observables",
+        "status": "analogical"
+      }
+    ],
+    "minimum_viable_unification": "A single Lean-anchored note that states the split-pair-emptiness consistency condition ONCE (F2 def:split-pair / F15a def:selection-obstruction), then exhibits four selection rules as instances on four declared quotients -- conservation (F27, q_orb), gauge-invariant observables (F18/F2 + OI-EI/Leibniz, A->A/G), the SSB no-go (F15a, vacuum orbit), and superselection (F9 + proposed-and-flagged F4, charge sectors) -- with ONE worked FINITE example per leg and a prominent scope fence declaring that (i) the group/quotient/bridge/sector-purity are imported, (ii) only the easy descent direction is captured for conservation/gauge/superselection, and (iii) the sole rigid, opposite-world-inelastic content is the F15a no-go that a symmetry cannot break itself.",
+    "why_scientists_care": "It is a precise AUDIT of where the physics enters every selection rule: it separates, across four rules at once, the trivial descent bookkeeping (the same split-pair biconditional everywhere) from the exact imported datum each rule actually needs -- the orbit for conservation, the unobservability/OI-EI bridge for gauge, sector-purity for superselection, the declared breaker for SSB. For a methodologist or a foundations-of-physics reader this is a clean, Lean-anchored diagnostic of 'which textbook lemma is doing the work and what is being smuggled', and it isolates the single high-value open problem -- a DERIVED orbit/sector-selection principle plus an additive/cocycle obstruction structure -- whose solution would turn declarations into predictions. It must never be sold as deriving Noether, the gauge principle, or superselection, all of whose content is imported.",
+    "baseline_comparison": "Strictly weaker than the standard accounts on physics content; at best a genuine but modest cross-domain REORGANIZATION/COMPRESSION, not a derivation, and it MOSTLY DOES NOT beat the deflation critique. The domain_tension_ledger names 'quotient-by-fibers (orbit-descent, lumpability, gauge)' as exactly one of the three textbook lemmas SBT's mechanisms allegedly collapse to -- and U014's mechanism IS that lemma. Per-leg: (CM) recovers only the easy 'conserved iff invariant' half of Noether (R018 class A), not the deep symmetry-of-action => current direction, no J^mu, no enumeration; the group is imported. (Gauge) equal predictive content to the textbook gauge principle, strictly weaker on the substantive part (no prediction of G, locality, connection/curvature, Yang-Mills dynamics); the motivating bridge is circular (R019 class B). (Superselection) strictly weaker than WWW/DHR, which DERIVE which charges superselect from the commutant and produce the Hilbert-space sector decomposition; SBT does neither and has no spin-statistics (R022 class C). (SSB) mixed: the F15a no-go RECOVERS the long-known impossibility of symmetric vacuum selection (already in Goldstone/Anderson and Gribov-Singer) but is genuinely more general and Lean-audited (R020 class C). The ONE place U014 partially beats deflation is this F15a no-go: 'an equivariant deterministic selector under a nontrivial degenerate orbit lands only in the common fixed locus' is rigid, Lean-certified, and opposite-world INELASTIC. So the compression is real and broad (one criterion across >=4 selection rules) but as physics it is a relabel everywhere except that narrow already-known no-go.",
+    "target_audience": [
+      "Foundations-of-physics and philosophy-of-physics researchers (gauge redundancy, superselection, the meaning of 'physical observable')",
+      "Mathematical physicists working on symmetry, orbit quotients, and Gribov-Singer / gauge-fixing obstructions",
+      "Applied-category-theory / universal-algebra audiences interested in descent and quotient universal properties as a unifying language",
+      "Formal-methods / Lean community (the certified biconditionals F2, F15a, F27, F18, F9)",
+      "Adversarial reviewers stress-testing whether 'unification' frameworks beat the deflation-to-textbook-lemmas critique"
+    ],
+    "recommended_artifact": "A single self-contained Lean-anchored note (~one section) titled around 'split-pair-emptiness as the one consistency condition behind four selection rules': (1) the F2/F15a biconditional stated once with the splitObs definition; (2) a four-row table mapping each domain to its declared quotient q, its imported datum, and its derivability status; (3) one worked FINITE example per leg (permutation-orbit-constant readout for conservation; finite gauge analogue with Wilson-loop-style invariant; U(1)-phase-on-a-discrete-ring no-go for SSB; block-diagonal toy for superselection); (4) a prominent NONCLAIM / scope-fence block flagging imports, the circular gauge bridge, the uncertified F4 mapping, and the continuum overreach; (5) the F15a no-go highlighted as the sole rigid result, shown subsuming vacuum selection, Gribov-Singer, Buridan, Schelling, and hairy-ball.",
+    "execution_cost": "Low for the MVU/fallback: F2, F15a, F27, F18, F9 are already proved and Lean-certified (faithful), and the OI-EI/Leibniz quotient is mechanized; the conservation, gauge, SSB legs are essentially assembled across Foundations IV and the Quantum paper, so the work is a one-section synthesis plus four finite worked examples and a scope fence (days, not weeks). MEDIUM-to-HIGH for anything stronger: the F4 superselection leg needs NEW Lean work (block-dephasing fixed-point characterization, since the certified dephasing theorem proves fully-diagonal fixed points and kills intra-sector coherence), and the genuinely valuable stronger version (a derived orbit/sector-selection principle + additive/cocycle obstruction structure) is an open research problem that collides with SBT's own free-lens disclaimer and the missing lens-selection interface.",
+    "builds_on_retro_cards": ["R018", "R019", "R020", "R022"],
+    "stronger_unification": "A genuine SELECTION result: tie WHICH orbit/sector is realized (the breaker b, the pointer/charge basis, the vacuum direction) to an INTERNAL SBT stability/closure criterion (e.g. idempotence-defect minimization or closure-deficit), rather than declaring it -- this would convert the elastic legs into predictions. Plus an ADDITIVE/COCYCLE obstruction structure on the split-pair obstruction (a graded/H^1-style refinement of splitObs) letting superselection-style sector rules and anomaly-cancellation-style conditions be PREDICTED, not declared. This is the single high-value open problem; it currently requires the MISSING lens-selection interface and would have to break SBT's own self-disclaimer that the lens is a free input.",
+    "bottlenecks": [
+      "The mechanism is the analytic biconditional: 'conserved'/'physical'/'selected'/'single-sector' are DEFINED as orbit-constancy/descent, so the statement is true in every world for any declared q and is unfalsifiable as physics -- this is exactly the deflation critique's 'quotient-by-fibers in a costume'.",
+      "The symmetry group / orbit quotient is a DECLARED input; SBT has no orbit- or lens-selection principle (the lens is a free input -> opposite-world elastic on the conservation/gauge/superselection legs).",
+      "The gauge bridge lemma (orbit-equivalence = empirical indiscernibility) is circular as a derivation of the gauge principle.",
+      "The F4 superselection instantiation does not exist in the corpus and is uncertified (VERIFIED: WWW is an F9, not F4, instantiation); the natural Lean candidate (dephasing idempotence) proves FULLY-diagonal fixed points, which kills intra-sector coherence too, so block-dephasing needs fresh Lean work and still imports the charge basis (pointer-basis disclaimed).",
+      "Continuum content (continuum A/G, Singer's theorem, the diffeomorphism group, Fock/Lorentz) is imported; equating the finite split-pair obstruction with Gribov-Singer is a category-level overreach unless explicitly scoped to the finite analogue.",
+      "Univalence/spin-statistics underpinning superselection has no SBT machinery (R024 honest negative)."
+    ],
+    "fallback": "Present U014 strictly as a derivability-class-D AUDIT/COMPRESSION note, not a derivation: one Lean-anchored statement of the split-pair-emptiness condition, then conservation (F27), gauge observables (F18/F2+OI-EI, with the bridge flagged as an imported hypothesis), the SSB no-go (F15a), and superselection (F9 + proposed F4) exhibited as instances on declared quotients, each with one worked FINITE example and an explicit nonclaim block. The single defensible scientific output is the F15a no-go cleanly stated once and shown to subsume vacuum selection, Gribov-Singer gauge-fixing pathology, Buridan's ass, Schelling focal points, and the hairy-ball theorem under one split-pair criterion. Crosses no disclaimer; honest, low-cost.",
+    "honest_status_note": "This is a derivability-class-D bookkeeping/compression unification, not a physics derivation, and it largely does NOT beat the deflation critique -- the deflation ledger names 'quotient-by-fibers' as one of the three textbook lemmas SBT allegedly relabels, and this candidate's shared mechanism IS that lemma. The certified content is the analytic split-pair biconditional (true in every world for any declared quotient, hence unfalsifiable as physics) plus the F15a no-go. The bridge dictionary is honest about quality: only the F15a SSB no-go is a genuinely rigid, observable-respecting, opposite-world-INELASTIC map (quality 4); the mechanism statement itself is faithful but analytic (quality 3); the conservation and gauge legs are direct/operational but import the group and (for gauge) a circular bridge lemma (quality 2); the superselection and GR legs are analogies that import sector-purity / the diffeomorphism group (quality 1), and the F4 superselection instantiation does NOT exist in the corpus and is uncertified for this instance. So the bridges are NOT all analogies (the F15a leg and the mechanism itself are formal), but three of seven are quality<=1, which caps the unification's score. It must never be presented as deriving Noether, the gauge principle, superselection, or diffeomorphism invariance; every deep datum is imported by declaration, and the candidate's value is as an audit of exactly where, plus the isolation of one real open problem (a derived selection principle with an additive obstruction structure)."
+  },
+  "audit": {
+    "compression": {
+      "assumptions_without": 8,
+      "assumptions_with": 6,
+      "params_without": 9,
+      "params_with": 7,
+      "compression_strength": "low",
+      "hidden_import_risk": "SEVERE. The mechanism (split-pair emptiness) is analytic and content-free; ALL empirical content enters through hidden imports carried across the bridge maps. Specifically: (1) the symmetry/gauge group G and its orbit action are declared a priori (Foundations IV line 2383 verbatim: 'the gauge group G is given a priori', VERIFIED), never produced -- so the orbit quotient q itself is a smuggled physics input on every leg; (2) the gauge leg imports the OI-EI bridge lemma 'gauge-orbit equivalence = empirical indiscernibility', which is circular as a derivation (it presupposes gauge transforms are unobservable, the very explanandum); (3) the superselection leg imports sector-purity of admissible states -- which IS the WWW content -- smuggled in as the F9 coverage hypothesis (near-circular), plus phase-unobservability (no Hilbert space / commutant in SBT); (4) the continuum A/G, Singer's theorem, the diffeomorphism group, and univalence/spin-statistics ((-1)^2J, zero SBT machinery per R024) are all imported. The net: the 'compression' from N selection rules to 1 mechanism is real ONLY at the bookkeeping/form level; the physics-bearing data (which orbit, which group, sector-purity, the breaker) are N separate imports, one per domain, so there is essentially NO compression of empirical assumptions -- only of the descent formalism."
+    },
+    "baseline": {
+      "how_baselines_handle": "These domains are handled by the standard physics accounts the domain_tension_ledger lists, not by the cosmology/QG baselines (string/LQG/AdS-CFT/thermo-gravity/decoherence), which mostly target other tensions. (CM/conservation) The textbook account is Noether's theorem: a continuous variational symmetry of an action yields a conserved current J^mu with d_mu J^mu=0 on-shell -- it PRODUCES the current and enumerates conserved quantities. (Gauge observables) The Dirac/Weyl gauge principle plus constrained-Hamiltonian / Faddeev-Popov machinery already states physical space = A/G and observables = gauge-invariant, and lattice/continuum Yang-Mills supply the connection, curvature, and dynamics. (SSB) Goldstone/Anderson and the effective-potential formalism give the degenerate vacuum manifold, Goldstone modes, and order-parameter dynamics; Gribov-Singer gives the genuine infinite-dimensional no-global-section theorem. (Superselection) Wick-Wightman-Wigner and especially DHR/algebraic-QFT DERIVE which charges superselect from the observable algebra's commutant and PRODUCE the Hilbert-space sector decomposition. The EFT/RG baseline (B_EFT) is the natural comparison class for 'cross-domain structural unification', and decoherence (B_DECOH) is the comparison for any selection/einselection claim.",
+      "theory_advantage": [
+        "Cross-domain organizational compression: ONE Lean-anchored split-pair-emptiness criterion (O empty?) is exhibited as the common form behind >=4 selection rules plus Buridan, Schelling, hairy-ball/Poincare-Hopf, and Vitali/AC -- a genuine, machine-checked unification of bookkeeping FORM that the separate textbook accounts do not state as one object.",
+        "An explicit honesty audit: it names exactly which datum each rule must import (the orbit for conservation, the OI-EI bridge for gauge, sector-purity for superselection, the declared breaker for SSB), cleanly separating trivial descent from substantive content -- a diagnostic the textbook accounts do not foreground.",
+        "The F15a no-go is Lean-certified and stated at a higher level of generality than any single domain account (it subsumes Gribov-Singer's finite analogue, Buridan, Schelling, hairy-ball under one finite criterion)."
+      ],
+      "theory_disadvantage": [
+        "Strictly weaker physics on every leg: recovers only the easy 'conserved iff invariant' half of Noether (no J^mu, no enumeration -- R018 class A); equal-or-weaker than the gauge principle with the motivating bridge circular (R019 class B); strictly weaker than DHR, which derives which charges superselect and the sector decomposition (R022 class C); recovers only the long-known impossibility of symmetric vacuum selection with no Goldstone modes / effective potential / which-vacuum (R020 class C).",
+        "The shared mechanism IS one of the three textbook lemmas the deflation ledger names ('quotient-by-fibers / orbit-descent / lumpability / gauge'), so as physics it largely fails to beat deflation -- it relabels everywhere except the F15a no-go.",
+        "vs EFT (B_EFT): EFT genuinely flows couplings across scales with a semigroup and predicts universality/critical exponents; U014 is pure static descent with no dynamics and no selection.",
+        "vs decoherence (B_DECOH): decoherence DERIVES the pointer basis (einselection); U014 takes the orbit/lens/breaker as FREE inputs (MISS_LENS_SEL) and predicts which vacuum/sector NOTHING.",
+        "The F4 superselection leg does not exist in the corpus and is uncertified (VERIFIED: WWW is an F9 instantiation, F4's instantiations are Cech/topological-defects/schema-mapping); the natural Lean candidate (dephase_idem) proves FULLY-diagonal fixed points, killing intra-sector coherence, so block-dephasing needs fresh Lean work and still imports the charge basis."
+      ],
+      "merely_repackages": true
+    },
+    "anti_superficial": {
+      "same_word": {
+        "pass": true,
+        "note": "The word doing the work -- 'descends through the quotient' / 'constant on fibers' / 'split-pair obstruction empty' -- denotes the SAME universal-algebra relation (a function on X/~ = a function constant on ~-classes) in every leg; it is not an equivocation across domains. Pass: one genuine concept, not one word for different things."
+      },
+      "shared_mechanism": {
+        "pass": false,
+        "note": "FAIL as physics: the split-pair biconditional is analytic (true in every world for any declared q), so it is one FORM applied to N separately-imported physics inputs, not one mechanism doing physical work in N domains. The conservation/gauge/superselection legs do no work the textbook lemmas don't already do; only the F15a no-go (1 leg) is a non-trivial mechanism. So it is N patches (orbit, OI-EI bridge, sector-purity, breaker, diffeo group) under one label, except for the single rigid F15a corollary."
+      },
+      "bridge_map": {
+        "pass": true,
+        "note": "Partial-pass: observable-preserving maps ARE writable and Lean-anchored for the formal legs (F2/F15a/F27/F18 are 'faithful'; quotient_lift_exists_unique mechanized). But 3 of 7 bridges are quality<=1 analogies (superselection F9+F4, GR diffeo) that are NOT observable-preserving derivations -- the F4 leg is absent from the corpus and uncertified, and the GR leg imports the entire infinite-dim diffeo orbit structure. Pass only because the load-bearing F15a/F2 maps are genuinely explicit and invertible."
+      },
+      "hidden_import": {
+        "pass": false,
+        "note": "FAIL decisively. The candidate assumes the structure it claims to organize: the orbit quotient q (hence the group G) is declared a priori on every leg; the gauge leg imports the circular OI-EI bridge; the superselection leg imports sector-purity (the WWW content itself) as the F9 coverage hypothesis and phase-unobservability (no Hilbert space/commutant in SBT); continuum A/G, Singer's theorem, the diffeo group, and univalence/spin-statistics (R024 zero machinery) are all imported. The mechanism supplies only descent bookkeeping atop wholly imported physics."
+      },
+      "elasticity": {
+        "pass": false,
+        "note": "FAIL by inheritance. Opposite-world elasticity is imported from the source cards: R018 opposite-world FAILS (can equally 'explain' non-conservation by declaring an orbit on which C does not descend), R019 FAILS (derives A/G' for any declared G', or no quotient for the trivial relation), R022 FAILS BOTH WAYS (F4's GloballyExact branch is literally the no-superselection world). The framework has a named slot for both outcomes on 3 of 4 legs. The ONLY inelastic content is the F15a impossibility direction (an equivariant deterministic selector under a nontrivial orbit cannot return a single broken vacuum) -- rigid and opposite-world-INELASTIC, but the selection/formation side (which vacuum, the breaker b) is fully post-hoc."
+      },
+      "compression_control": {
+        "pass": false,
+        "note": "FAIL as the audit defines it. Independent EMPIRICAL assumptions are NOT reduced: each leg imports its own orbit/group/bridge/sector-purity/breaker, so there are as many physics imports as domains. Only the descent FORMALISM is compressed (one biconditional restated, not four). assumptions 8->6 and params 9->7 is a marginal formal saving entirely offset by per-leg imports; net empirical compression is essentially nil. The deflation ledger names this exact mechanism ('quotient-by-fibers') as a textbook lemma being relabeled."
+      },
+      "surprise": {
+        "pass": true,
+        "note": "Partial-pass on a single leg. Six of seven legs relabel inputs and yield NO new forbidden case. But the F15a no-go is a genuine surprise/constraint at its level of generality: 'an equivariant deterministic selector under a trivial orbit action lands ONLY in the common G-fixed locus' is a Lean-certified forbidden case that subsumes vacuum selection, the finite Gribov-Singer analogue, Buridan, Schelling, and hairy-ball under ONE criterion -- a real cross-domain constraint, not just a relabel. Pass solely on this leg; the candidate's net novelty is this one no-go, nothing more."
+      }
+    },
+    "mechanism_tag": "orbit-descent (split-pair-obstruction emptiness); the F15a selection-obstruction no-go is the one rigid sub-mechanism",
+    "audit_verdict": "MERELY-REPACKAGES with ONE genuine rigid corollary. U014's shared mechanism -- the split-pair-emptiness biconditional (F2/F15a) -- IS precisely 'quotient-by-fibers / orbit-descent', which the frozen domain_tension_ledger names as one of the three textbook lemmas SBT's six mechanisms allegedly collapse to. So by construction it largely does NOT beat the deflation critique: it is the lemma in costume. COMPRESSION audit: LOW. The biconditional is analytic (true in every world for any declared q), so it carries bookkeeping form, not physics; empirical assumptions are not compressed because each of the four-plus legs imports its own physics datum (the orbit/group for conservation, the circular OI-EI bridge for gauge, sector-purity + phase-unobservability for superselection, the declared breaker for SSB, the diffeo group for GR). Formal saving is marginal (assumptions ~8->6, params ~9->7) and offset by N per-leg hidden imports. BASELINE comparison: strictly weaker on physics than every standard account (Noether produces J^mu; Dirac/Weyl + Faddeev-Popov give A/G with dynamics; DHR derives which charges superselect and the sector decomposition; Goldstone/Anderson give the modes and effective potential), and weaker than EFT (no RG semigroup, no scales) and decoherence (no einselection; orbit/lens/breaker are FREE inputs, MISS_LENS_SEL). The genuine, non-vacuous value is twofold and modest: (i) a Lean-anchored cross-domain ORGANIZATIONAL compression of the descent FORM across >=4 selection rules plus Buridan/Schelling/hairy-ball, and (ii) a precise honesty AUDIT naming exactly which datum each rule smuggles. ANTI-SUPERFICIAL controls: 3 pass (same_word, bridge_map partial, surprise on one leg), 4 fail (shared_mechanism, hidden_import, elasticity, compression). The elasticity failure is INHERITED -- R018/R019 opposite-world fail and R022 fails both ways (F4 GloballyExact = no-superselection world). The single result that survives every control is the F15a no-go: 'an equivariant deterministic selector under a nontrivial degenerate orbit lands only in the common G-fixed locus' is rigid, Lean-certified (faithful), opposite-world INELASTIC on the impossibility direction, and a genuine cross-domain forbidden case. RECOMMENDATION: keep U014 strictly as a derivability-class-D AUDIT/COMPRESSION note (the card's own MVU/fallback), headlined by the F15a no-go cleanly stated once and shown to subsume vacuum selection, the finite Gribov-Singer analogue, Buridan, Schelling, and hairy-ball; flag the F4 superselection leg as absent-from-corpus and uncertified (dephase_idem gives FULLY-diagonal, not block-diagonal, fixed points); scope the continuum (A/G, Singer, diffeo group) as imported. It must NEVER be sold as deriving Noether, the gauge principle, superselection, or diffeomorphism invariance -- every deep datum is imported by declaration, and the candidate's defensible output is the audit plus the one no-go, not a unification of physics."
+  },
+  "skeptic_panel": {
+    "min_survival": 1.5,
+    "mean_survival": 1.5,
+    "fatal_objections_present": true,
+    "is_real_unification_count": "0/4",
+    "beats_deflation_count": "0/4",
+    "consolidated_verdict": "All four skeptics converge: NOT a real unification, does NOT beat deflation, does NOT beat baseline. The shared mechanism (split-pair-emptiness) IS verbatim the deflation ledger's third textbook lemma ('quotient-by-fibers / orbit-descent'), confirmed in domain_tension_ledger._meta.deflation_critique. The biconditional is analytic (true in every world for any declared q), so it carries bookkeeping FORM, not physics; all empirical content enters through N independent per-leg imports (orbit/group for conservation, circular OI-EI bridge for gauge, sector-purity + phase-unobservability for superselection, declared breaker for SSB, diffeomorphism group for GR). Three of four physics legs are opposite-world ELASTIC by inheritance (R018/R019 fail; R022 fails both ways). The F4 superselection leg is absent from the corpus and uncertified. The ONLY result surviving every control is the F15a no-go, and even that is a recovery (already in Goldstone/Anderson/Gribov-Singer) whose rigid conclusion requires TrivialOrbitAction. Minimum acceptance: state strictly as derivability-class-D AUDIT/COMPRESSION note; headline only the F15a no-go (with TrivialOrbitAction explicit); tag every per-leg datum as imported; flag F4 as absent-from-corpus; scope continuum as imported. What would change minds (all four): a DERIVED orbit/sector/vacuum-selection principle tying WHICH orbit is realized to an internal SBT stability/closure criterion (idempotence-defect / closure-deficit), converting >=2 elastic legs into predictions, PLUS an additive/cocycle (H^1-style) obstruction structure on splitObs predicting sector rules / anomaly cancellation -- requiring the MISSING lens-selection interface and breaking SBT's own free-lens self-disclaimer.",
+    "skeptics": [
+      {
+        "skeptic_role": "Quantum-foundations skeptic (measurement, contextuality, Bell, the Born-rule gap; algebraic-QFT superselection / DHR; gauge redundancy and Gribov-Singer)",
+        "adversarial_survival_score": 1.5,
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "main_objection": "U014's 'single shared mechanism' -- split-pair-obstruction emptiness -- IS verbatim the deflation critique's third textbook lemma ('quotient-by-fibers'). The biconditional is analytic (true in every world for any declared q), so it transports bookkeeping FORM, never physics; all empirical content enters through N separate per-leg imports. That is one import per domain -- the antithesis of unification.",
+        "fatal_objections": [
+          "The shared mechanism is provably the deflation lemma itself (domain_tension_ledger._meta.deflation_critique names 'quotient-by-fibers (orbit-descent, lumpability, gauge)' as lemma (iii)); a candidate whose load-bearing mechanism is definitionally identical to the predicted costume cannot beat the deflation reading as physics.",
+          "The biconditional is analytic and unfalsifiable as physics: 'X holds iff splitObs empty' is true in every world for any declared q (R018 opposite-world FAILS); an analytic identity restated four times is not a cross-domain physical mechanism.",
+          "Three of four physics legs are opposite-world ELASTIC by inheritance: R018 and R019 fail, R022 fails BOTH ways (F4's GloballyExact branch is the no-superselection world); those legs carry zero predictive weight."
+        ]
+      },
+      {
+        "skeptic_role": "Skeptical particle/high-energy theorist (gauge structure, anomalies, EFT matching, representations)",
+        "adversarial_survival_score": 1.5,
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "main_objection": "The 'single mechanism' is the analytic split-pair-emptiness biconditional, one of the three deflation-target lemmas. It carries no physics: conserved/physical/selected/single-sector are each DEFINED as orbit-descent. The candidate applies one content-free FORM to N separately-imported physics data -- precisely the deflation reading, not a refutation.",
+        "fatal_objections": [
+          "FATAL to 'unification of physics': the shared mechanism is analytic (every selection rule is DEFINED as orbit-descent), so it does no physical work; it is the textbook 'function on quotient = function constant on fibers' in costume.",
+          "FATAL to 'one mechanism across >=2 domains': empirical content is N independent imports (gauge group 'given a priori' line 2383; circular gauge bridge; sector-purity as F9 coverage; breaker b). No DERIVED cross-constraint links any two domains.",
+          "FATAL to the strongest leg as a unifier: even the rigid F15a no-go does NOT bridge two domains via an observable-preserving map; it is a single domain-general impossibility theorem that RECOVERS Goldstone/Anderson and Gribov-Singer, and its rigid conclusion requires TrivialOrbitAction(rho_O) (lines 3052-3056) -- the regime where there is nothing to break."
+        ]
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist (gauge theory / QFT foundations / symmetry and orbit-quotient geometry; Gribov-Singer, superselection/DHR, Noether)",
+        "adversarial_survival_score": 1.5,
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "main_objection": "The 'single shared mechanism' is exactly the textbook lemma the frozen ledger names ('quotient-by-fibers'). It is ANALYTIC: the biconditional is true in every world for any declared quotient q, so it carries bookkeeping FORM, not physics, and does no physical work in 6 of 7 legs; each leg's physics is a SEPARATE imported datum. That is N patches under one label, not one mechanism doing cross-domain work.",
+        "fatal_objections": [
+          "The shared mechanism is the named deflation target ('quotient-by-fibers') -- it instantiates rather than beats the deflation axis.",
+          "The mechanism is analytic and unfalsifiable as physics (R018 opposite-world FAILS; the free orbit declaration absorbs both conservation and non-conservation); it does rigid work in only ONE leg (F15a), not the >=2 a real unification requires.",
+          "Per-leg physics is imported, not derived: the group/orbit, the circular gauge bridge (presupposes the explanandum), sector-purity (which IS the WWW content) as the F9 coverage hypothesis, the breaker b, the diffeo group. Net empirical-assumption compression is essentially nil."
+        ]
+      },
+      {
+        "skeptic_role": "Mathematical physicist (gauge theory / algebraic QFT) cross-examined with a universal-algebra / descent specialist, as hostile cross-domain referee on whether U014 is real unification or quotient-by-fibers in N costumes",
+        "adversarial_survival_score": 1.5,
+        "is_real_unification": false,
+        "beats_deflation": false,
+        "beats_baseline": false,
+        "main_objection": "The 'single mechanism' is the analytic universal-algebra biconditional 'a function descends through a quotient iff constant on fibers', which the frozen ledger names verbatim as one of the three lemmas SBT relabels. True in EVERY world for ANY declared q -> bookkeeping FORM, not physics. Each leg imports its own mutually independent physics datum. One label over N separately-imported patches; the compression is of the descent formalism only.",
+        "fatal_objections": [
+          "FATAL to 'real unification': the shared mechanism is analytic and is the deflation ledger's named 'quotient-by-fibers' lemma (confirmed verbatim) -- one form, N imported physics inputs, the textbook signature of fake unification.",
+          "FATAL to 3 of 4 legs as DERIVATIONS: conservation recovers only the easy half of Noether (R018 class A); gauge imports a CIRCULAR bridge and 'gauge group given a priori' (line 2383, class B); superselection imports sector-purity (the WWW content) as the F9 coverage hypothesis (near-circular).",
+          "FATAL to the superselection leg specifically: the F4 instantiation does NOT exist in the corpus and is uncertified (VERIFIED: WWW is an F9 instantiation; F4's are Cech/topological-defects/schema-mapping); the only certified candidate (dephase_idem) proves FULLY-diagonal fixed points, so it cannot certify block-diagonal sector structure.",
+          "FATAL to opposite-world rigidity on 3 of 4 legs: R018 FAILS, R019 FAILS, R022 FAILS BOTH WAYS (F4's GloballyExact branch is literally the no-superselection world). The framework has a named slot for both outcomes."
+        ]
+      }
+    ]
+  },
+  "repair_and_scores": {
+    "id": "U014",
+    "repair_status": "repaired-as-audit",
+    "revised_one_sentence_claim": "Split-pair-obstruction emptiness -- 'a readout/predicate s descends through a declared orbit quotient q iff O={(x,x'): q(x)=q(x'), s(x)!=s(x')}=empty' (F2/F15a, Lean-faithful) -- is exhibited (NOT derived) as the single bookkeeping FORM common to four declared-quotient selection rules: conservation (F27, q_orb), gauge-invariant observables (F18/F2 + an explicitly IMPORTED, circular OI-EI bridge, A->A/G), the SSB no-go (F15a), and superselection (F9, with an absent-from-corpus uncertified F4 mapping flagged as a conjecture); the biconditional is analytic (true in every world for any declared q, hence unfalsifiable as physics and identical to the deflation ledger's 'quotient-by-fibers' lemma), every leg's empirical content (orbit/group, the OI-EI bridge, sector-purity, the breaker, the diffeo group) is imported by declaration, and the SOLE rigid, opposite-world-inelastic result is the narrowed F15a no-go: no equivariant deterministic section picks one element of a nontrivial degenerate orbit (so any SSB / gauge-fixing / vacuum-measure account must import a declared breaker), shown to subsume vacuum selection, the FINITE Gribov-Singer analogue, Buridan, Schelling, and hairy-ball under one finite criterion.",
+    "new_minimum_viable_unification": "A single Lean-anchored derivability-class-D AUDIT/COMPRESSION note: (1) state the split-pair-emptiness biconditional ONCE (F2 def:split-pair / F15a def:selection-obstruction), explicitly labeled analytic / true-in-every-world / content-free, and concede it is the deflation ledger's 'quotient-by-fibers' lemma; (2) a four-row table mapping each domain to its DECLARED quotient q, its IMPORTED datum (orbit/group; circular OI-EI bridge; sector-purity + phase-unobservability; declared breaker), and its honest derivability status (derived-trivially / sketched / derived / analogical); (3) ONE worked FINITE example per retained leg (permutation-orbit-constant readout for conservation; finite gauge analogue with a Wilson-loop-style invariant for gauge; U(1)-phase-on-a-discrete-ring no-go for SSB; an explicitly-conjectural block-diagonal toy for superselection flagged as needing fresh Lean work); (4) headline the NARROWED F15a no-go -- 'no equivariant deterministic section picks one element of a nontrivial orbit', with TrivialOrbitAction(rho_O) made explicit -- as the one rigid, opposite-world-inelastic result, shown subsuming vacuum selection, the FINITE Gribov-Singer analogue, Buridan, Schelling, hairy-ball; (5) a prominent NONCLAIM box stating net empirical-assumption compression is nil (N per-leg imports), the gauge bridge is circular, the F4 superselection mapping is absent-from-corpus and uncertified (dephase_idem gives fully-diagonal not block-diagonal fixed points), and all continuum content (A/G, Singer, diffeo group, Fock/Lorentz) is imported with only finite analogues certified.",
+    "changes_made": [
+      "REPAIR TYPE = narrow + split + replace-analogy-with-explicit-relation + admit-domains-sketched. Demoted from 'unification' to a derivability-class-D AUDIT/COMPRESSION note, honoring the unanimous skeptic verdict (0/4 real unification, 0/4 beats deflation) and the audit's MERELY-REPACKAGES finding. The note's load-bearing output is now the honesty audit plus the one rigid no-go, not a claim of physics unification.",
+      "NARROWED the F15a no-go: replaced the literal 'lands solely in the common G-fixed locus' headline with 'no equivariant deterministic section picks one element of a nontrivial orbit', and made the TrivialOrbitAction(rho_O) hypothesis EXPLICIT (verified at Foundations IV line 3053). VERIFIED that in the proof (lines 3073-3097) the breaker b is declared but never used, so 'SSB must import a breaker' is grounded as the F2 repair normal form, not as a free-standing F15a consequence.",
+      "SPLIT the overbroad four-domain unification into (i) one analytic mechanism (the biconditional, scored as form-compression only), (ii) one rigid leg (F15a no-go, the sole scored physics contribution), and (iii) three elastic/analogical legs (conservation easy-half, gauge with circular bridge, superselection/GR) demoted to instances-on-declared-quotients with imported data.",
+      "REPLACED-ANALOGY-WITH-EXPLICIT-RELATION where possible: the gauge leg's 'derives gauge invariance' framing is replaced by 'observables = gauge-invariant GIVEN the explicitly imported, circular OI-EI bridge lemma (orbit-equivalence = empirical indiscernibility)', carried as a flagged HYPOTHESIS (verified: 'the gauge group G is given a priori', line 2383). No duality/emergence claimed without a map.",
+      "ADMITTED SKETCHED/ABSENT domains honestly: VERIFIED the WWW superselection passage (lines 2179-2190) is a layer instantiation of F9, NOT F4; the F4 layer instantiations (lines 2645+) are Cech cohomology, topological defects, and schema mapping. The F4-superselection mapping is therefore flagged as ABSENT-FROM-CORPUS and uncertified (a conjecture, not a bridge), with the dephase_idem-gives-fully-diagonal obstruction noted; the GR leg is marked a pure finite-analogue analogy.",
+      "REMOVED hidden-import cover: every per-leg datum is now stamped IMPORTED in the four-row table (orbit/group; OI-EI bridge; sector-purity + phase-unobservability; breaker; diffeo group), and the note states net empirical-assumption compression is essentially nil -- the compression is of the descent FORMALISM only.",
+      "SCOPE-FENCED the continuum: equating the finite split-pair obstruction with the infinite-dimensional topological Gribov-Singer/Singer theorem and the diffeomorphism group is explicitly confined to the FINITE analogue; continuum A/G, Singer, diffeo group, Fock/Lorentz stamped imported, honoring MISS_CONTINUUM / MISS_LENS_SEL / MISS_MEASURE and the spin-statistics honest-negative R024.",
+      "CONCEDED the deflation axis: the note states up front that the shared mechanism IS the deflation ledger's third lemma ('quotient-by-fibers / orbit-descent'), so as physics it does NOT beat deflation; the defensible value is the audit + the one no-go."
+    ],
+    "remaining_objections": [
+      "Even after repair, the mechanism remains ANALYTIC and identical to the deflation ledger's 'quotient-by-fibers' lemma; the note cannot beat deflation as physics by construction. It survives only as an audit/compression of FORM, not a unification.",
+      "The F15a no-go is a RECOVERY, not a new result: it is already explicit in Gribov-Singer and implicit in Goldstone/Anderson; its rigid bite requires TrivialOrbitAction, i.e. exactly the regime with nothing to break -- in the physically interesting non-trivial-action SSB regime it only forbids a symmetric chooser of a fixed point, which was never in doubt. Net novelty is the level of generality and the Lean certification, not the physics.",
+      "Net empirical-assumption compression is essentially nil: N legs => N independent physics imports (orbit/group, OI-EI bridge, sector-purity, breaker, diffeo group). The formal saving (assumptions ~8->6, params ~9->7) is offset by per-leg hidden imports.",
+      "Three of four physics legs remain opposite-world ELASTIC by inheritance (R018/R019 fail; R022 fails both ways via F4's GloballyExact branch); the note predicts neither which vacuum, which charge set, nor which gauge group.",
+      "The superselection leg is structurally incomplete: the F4 mapping is absent from the corpus and uncertified, the only Lean candidate (dephase_idem) gives fully-diagonal not block-diagonal fixed points (so it would kill intra-sector coherence), and any toy still imports the charge basis (pointer-basis disclaimed, MISS_LENS_SEL). Spin-statistics/univalence has zero SBT machinery (R024).",
+      "Strictly weaker than every baseline on physics content (Noether produces J^mu; Faddeev-Popov gives A/G with dynamics; DHR derives which charges superselect; Goldstone/Anderson give the modes); weaker than EFT (no RG semigroup) and decoherence (no einselection -- orbit/lens/breaker are FREE inputs)."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 5,
+      "plausibility": 5,
+      "depth_of_unification": 1,
+      "breadth_of_unification": 3,
+      "non_ad_hocness": 2,
+      "bridge_explicitness": 2,
+      "derivational_strength": 1,
+      "compression_power": 1,
+      "discriminative_power": 1,
+      "audience_legibility": 4,
+      "robustness": 3,
+      "baseline_advantage": 1,
+      "adversarial_survival": 1.5,
+      "publication_potential": 2
+    },
+    "score_rationale": {
+      "impact": "2 -- a clean cross-domain honesty audit + one Lean-certified no-go is useful to foundations/methodology readers, but no new physics, no prediction, no resolved tension.",
+      "execution_ease": "5 -- F2/F15a/F27/F18/F9 are already proved and Lean-faithful; the MVU is a one-section synthesis plus four finite worked examples and a scope fence (days, not weeks).",
+      "plausibility": "5 -- the analytic biconditional and the F15a no-go are mathematically incontestable; the only contestable parts (F4 mapping, gauge bridge) are explicitly flagged as conjecture/imported.",
+      "depth_of_unification": "1 -- capped by analogical-only superselection/GR legs and by shared_mechanism control FAILING as physics; the unifying object is an analytic identity, not a deep shared structure.",
+      "breadth_of_unification": "3 -- genuinely broad in FORM (>=4 selection rules + Buridan/Schelling/hairy-ball/Vitali under one criterion), but breadth of FORM not of physics; one notch above middling for the reach of the no-go subsumption.",
+      "non_ad_hocness": "2 -- capped by FAILED hidden_import and elasticity controls; every leg imports its own datum and 3/4 legs have a named slot for the opposite outcome.",
+      "bridge_explicitness": "2 -- capped by FAILED hidden_import and 3/7 quality<=1 analogical bridges (incl. the absent-from-corpus F4 leg); only the F2/F15a maps are genuinely explicit and invertible.",
+      "derivational_strength": "1 -- nothing of physics is derived; conservation is derived-trivially, gauge is sketched-on-a-circular-bridge, superselection/GR are analogical, and the one rigid result is a recovery.",
+      "compression_power": "1 -- FAILED compression control: net empirical-assumption compression is nil (N per-leg imports); only the descent formalism is compressed.",
+      "discriminative_power": "1 -- merely_repackages=true and 3/4 legs opposite-world elastic; predicts no forbidden case beyond the single F15a no-go (and that is a recovery).",
+      "audience_legibility": "4 -- the four-row imported-datum table + one-criterion-subsumes-many framing is exceptionally legible to foundations, math-physics, and ACT/Lean audiences.",
+      "robustness": "3 -- the analytic core and F15a are robust under stress; capped because the F4 leg is absent-from-corpus and the gauge bridge is circular, so parts of the structure do not survive scrutiny.",
+      "baseline_advantage": "1 -- merely_repackages caps this; strictly weaker than Noether/Faddeev-Popov/DHR/Goldstone and than EFT/decoherence on every substantive axis.",
+      "adversarial_survival": "1.5 -- honoring the panel: min=mean=1.5, fatal present, 0/4 real unification, 0/4 beats deflation; the shared mechanism IS the named deflation lemma.",
+      "publication_potential": "2 -- publishable only as a methodology/foundations audit note or a Lean-formalization short paper headlined by the F15a no-go; not as a physics unification result."
+    },
+    "proposed_bin": "C",
+    "recommended_priority": "low-to-medium: a cheap, honest, Lean-anchored foundational sanity-check / audit worth writing for the F15a no-go + the cross-domain imported-datum table, but with no predictive payoff and no standing as a new physics result; never to be sold as a unification.",
+    "recommended_artifact": "A single self-contained derivability-class-D Lean-anchored note (~one section): (1) the F2/F15a split-pair-emptiness biconditional stated ONCE, explicitly labeled analytic and conceded to be the deflation ledger's 'quotient-by-fibers' lemma; (2) a four-row table (domain -> declared quotient q -> imported datum -> derivability status) for conservation/gauge/SSB/superselection; (3) one worked FINITE example per retained leg (permutation-orbit-constant readout; finite gauge analogue with a Wilson-loop-style invariant; U(1)-phase-on-a-discrete-ring no-go; an explicitly-conjectural block-diagonal superselection toy); (4) the NARROWED F15a no-go (TrivialOrbitAction explicit; 'no equivariant deterministic section picks one element of a nontrivial orbit') headlined as the sole rigid, opposite-world-inelastic result, shown subsuming vacuum selection, the FINITE Gribov-Singer analogue, Buridan, Schelling, hairy-ball; (5) a prominent NONCLAIM/scope-fence box (N per-leg imports => nil empirical compression; circular gauge bridge; F4 absent-from-corpus and uncertified with the dephase_idem fully-diagonal obstruction noted; continuum A/G/Singer/diffeo-group imported). Optional stretch (separate, hard, no anchor; collides with MISS_LENS_SEL and the free-lens self-disclaimer): a DERIVED orbit/sector-selection principle tying which orbit/vacuum/charge-basis is realized to an internal stability/closure criterion, plus an additive/cocycle refinement of splitObs.",
+    "one_line_verdict": "Not a unification: the shared mechanism IS the deflation ledger's 'quotient-by-fibers' lemma in costume; repaired down to a derivability-class-D AUDIT/COMPRESSION note whose sole defensible outputs are a precise cross-domain imported-datum table and the one rigid, Lean-certified F15a no-go (a symmetry cannot select its own vacuum) -- everything else is imported by declaration and opposite-world elastic.",
+    "mechanism_tag": "orbit-descent (split-pair-obstruction emptiness); the F15a selection-obstruction no-go is the one rigid sub-mechanism",
+    "target_audience": [
+      "Foundations-of-physics and philosophy-of-physics researchers (gauge redundancy, superselection, the meaning of 'physical observable')",
+      "Mathematical physicists working on symmetry, orbit quotients, and Gribov-Singer / gauge-fixing obstructions",
+      "Applied-category-theory / universal-algebra audiences interested in descent and quotient universal properties as a unifying language",
+      "Formal-methods / Lean community (the certified biconditionals F2, F15a, F27, F18, F9)",
+      "Adversarial reviewers stress-testing whether 'unification' frameworks beat the deflation-to-textbook-lemmas critique"
+    ]
+  }
+}

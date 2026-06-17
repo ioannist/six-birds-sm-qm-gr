@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Step 45: Discrete RT-Consistency Constraint}
+
+Let \(c_e\) be the variable capacities of the finite Step-42 graph. For each
+boundary region \(A_i\), linearizing the unperturbed min-cut gives
+\[
+\delta \mathrm{Area}(A_i)=\sum_e M_{ie}\delta c_e.
+\]
+RT consistency under perturbation requires
+\[
+M\,\delta c = \delta S.
+\]
+In this carrier, \(M\) has 38 rows and 14
+columns, with rank 10. Hence the cokernel dimension is
+28, so \(P_\perp\delta S=0\) is a nontrivial
+consistency condition.
+
+The RT-preserving control \(\delta S=M\delta c\) has residual
+9.2513644228e-17. The generic contracted-state
+perturbation has residual 0.0418931924111, so it
+does not admit an RT-consistent capacity response on this fixed graph.
+
+This is a recognition-level finite analogue of the linearized-Einstein
+consistency condition, not a dynamical equation, not a continuum tensor
+equation, and not a local bulk equation of motion.
+
+The matrix \(M\) is built from the unperturbed min-cut edge incidence. This is
+a fixed-cut-chamber linearization: it is valid only while the active minimal
+surface does not change. If a perturbation changes the active min-cut pattern,
+\(M\) must be recomputed.
+
+\end{document}

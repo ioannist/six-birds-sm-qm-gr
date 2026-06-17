@@ -1,0 +1,144 @@
+{
+  "id": "R014",
+  "title": "Driven three-cycle path-space KL audit recovers the Schnakenberg current x affinity closed form EPR = beta*b*log((1+b)/(1-b))",
+  "scientific_domain": "Nonequilibrium statistical mechanics / stochastic thermodynamics (finite-state discrete-time Markov chains)",
+  "argument_family": "closed-form-derivation-plus-numerical-match (a finite-state algebraic identity, cross-checked numerically against a bias sweep)",
+  "derivability_class": "A",
+
+  "repair_status": "repaired",
+  "revised_one_sentence_claim": "On SBT's autonomous lifted-protocol benchmark, the steady-state path-space KL (time-reversal-asymmetry) audit of the biased three-cycle clock has the closed form EPR(S,s) = (p-q)log(p/q) = beta*b*log((1+b)/(1-b)), and the full lifted-chain audit equals alpha*beta*b*log((1+b)/(1-b)) by the decomposition lemma; this has the same algebraic form as Schnakenberg's (1976) cycle current x affinity (with cycle-basis affinity A_cycle = 3log(p/q) and cycle current J_cycle = (1/3)(p-q)), is a RECOVERY of a 1976 identity on a hand-chosen kernel where every symbol is an input, with no fitted constants and zero independent data points, and EPR is an informational path-space KL proxy, NOT physical entropy production.",
+
+  "new_minimum_viable_result": "A self-contained one-page note that (1) states the autonomous lifted kernel (eq:lifted_kernel) and the biased three-cycle clock (p=beta(1+b)/2, q=beta(1-b)/2, stay=1-beta), (2) fills in the explicit 6-directed-edge EPR sum behind the paper's 'a direct calculation gives' (Protocol_Trap line 274), yielding (p-q)log(p/q)=beta*b*log((1+b)/(1-b)) [verified here: edge-sum vs closed form diff ~1e-17 at b in {0.3,0.5,0.9}], (3) applies the decomposition lemma (eq:epr_clock_only) so EPR_lifted = alpha*EPR_clock [verified: full 9-state kernel EPR = alpha*EPR_clock to ~1e-16], (4) identifies the result with Schnakenberg current x affinity using the CYCLE-BASIS objects A_cycle = 3log(p/q) (closed-walk sum, No_Go def:closed-walk-sum line 591-599) and J_cycle = (1/3)(p-q), with the factors of 3 cancelling to (p-q)log(p/q) [verified: J_cycle*A_cycle = 0.49437553 = EPR at beta=0.9,b=0.5], and (5) states the b=0 null (protocol trap => EPR=0; verified machine-zero). Framed up front as RECOVERY of Schnakenberg (1976), already present in the corpus (ledger row 159; Protocol_Trap eq:epr_closed_form), with the informational-proxy caveat in the headline.",
+
+  "changes_made": [
+    "NARROWED CLAIM: dropped 'steady-state entropy-production audit ... equals the textbook Schnakenberg current-times-affinity VALUE' (which reads as asserting equality with PHYSICAL entropy production, crossing ledger line 107 'no micro-thermodynamic interface') and replaced with 'path-space KL / time-reversal-asymmetry audit ... has the same algebraic form as Schnakenberg current x affinity', matching the source paper's own informational-proxy language (Protocol_Trap line 119).",
+    "CLARIFIED THE MAPPING (corrected a verified mislabeling): the card asserted J=(p-q) is 'the steady-state cycle current' and A=log(p/q) is 'the cycle affinity'. By No_Go def:closed-walk-sum (lines 591-599, citing Schnakenberg1976) the 3-cycle affinity is the closed-walk sum A_cycle=3log(p/q) and the stationary cycle current at uniform occupation is J_cycle=(1/3)(p-q). The factors of 3 cancel so EPR=J_cycle*A_cycle=(p-q)log(p/q) is correct, but log(p/q) is a PER-EDGE log-ratio, not the cycle affinity. Verified numerically: J_cycle*A_cycle = 0.4943755299006494 = (p-q)log(p/q).",
+    "CONVERTED RHETORIC TO A LEMMA: the unstated 'a direct calculation gives' (Protocol_Trap line 274) is made an explicit 6-edge-sum lemma; verified that the edge-sum reproduces the closed form to ~1e-17.",
+    "RECLASSIFIED CONTRIBUTION AS EXPOSITORY: the formula is already claimed in the corpus (ledger already_claimed_retrodictions row 159; Protocol_Trap eq:epr_closed_form line 281). Reframed the deliverable's only new content as the explicit edge-sum (expository transparency), not a scientific result.",
+    "REMOVED OVERSELL: dropped 'the single most parameter-disciplined quantitative anchor in the SBT corpus' framing in favor of 'RECOVERY, not prediction', since the 'match' is the formula evaluated against its own evaluation (data_points_matched=0).",
+    "FLAGGED LIFT- AND COMMON-PI-DEPENDENCE AS CHOSEN: the additive split EPR_lifted=alpha*EPR_clock is specific to the random-scan lift's disjoint phase/state edge supports (paper: 'not the only possible lift') and to the hand-imposed common-pi reversibility that zeroes the (1-alpha) term (paper: 'The assumption of a common stationary pi is essential'); these are inputs, not derived.",
+    "RESTRICTED VALUE-ADD TO REORGANIZATIONAL CONTENT: the genuine contribution is the lifted-protocol decomposition EPR_lifted=alpha*EPR_clock plus the b=0 protocol-trap null, operationalizing 'P3 holonomy without P6 drive is not an arrow', protected by DPI (no false positives) -- not any improvement over the standard account."
+  ],
+
+  "remaining_objections": [
+    "ZERO PREDICTIVE CONTENT (not repairable; intrinsic): every symbol (alpha, beta, b, K0, K1, pi, s, lens, lift) is a modeler input; data_points_matched=0; the 'numerical match' is the closed form evaluated against its own evaluation. As a retrodiction/prediction it is empty -- it is a recovery of a 1976 identity.",
+    "ALREADY IN THE CORPUS (not repairable): ledger row 159 explicitly states 'driven 3-cycle EPR = beta*b*log((1+b)/(1-b)) is the standard current-times-affinity form', and Protocol_Trap states eq:epr_closed_form. The marginal contribution is a homework-grade edge-sum lemma; nothing scientifically new.",
+    "IMPORTS KNOWN PHYSICS WHOLESALE (not repairable): the EPR/affinity object IS Schnakenberg's Markov-network thermodynamic force (ledger hidden_physics_dependence line 195); SBT supplies only finite-KL bookkeeping. The 'match' is true by construction because the same object is relabeled on both sides.",
+    "NO BASELINE ADVANTAGE (not repairable): the standard derivation (write cycle current and affinity, multiply) reaches the identical number with no SBT machinery (no lens, no completion endomap, no P1-P6). SBT recovers and re-frames, it does not beat the standard account.",
+    "DISCLAIMER PROXIMITY (repaired but must be honored): admissible ONLY under the strict informational/path-space-KL reading; any claim that the recovered number is PHYSICAL entropy production crosses the ledger 'no micro-thermodynamic interface' disclaimer (line 107).",
+    "NO LEAN CERTIFICATION (out of scope): the certified core covers deterministic partition lenses only (ledger line 111); the stochastic-kernel EPR identity and decomposition lemma are not machine-checked. The 'stronger_result' Lean lemma does not exist."
+  ],
+
+  "scores": {
+    "impact": 1.5,
+    "execution_ease": 5.0,
+    "plausibility": 5.0,
+    "non_ad_hocness": 2.5,
+    "discriminative_power": 0.5,
+    "audience_legibility": 4.0,
+    "precision": 4.5,
+    "robustness": 4.0,
+    "baseline_advantage": 0.5,
+    "publication_potential": 1.5
+  },
+
+  "score_rationale": {
+    "impact": "1.5 -- recovers a 1976 textbook identity on a toy kernel; the only audience value is a clean worked dictionary entry (SBT arrow audit <-> Schnakenberg affinity) and the b=0 null discipline. No new knowledge for a stat-mech specialist.",
+    "execution_ease": "5.0 -- Class A, essentially already proved; the only new step is a few-line edge-sum; numerical verification is a sub-second script (run and confirmed here to ~1e-16).",
+    "plausibility": "5.0 -- the identity is trivially true and was verified three ways (edge-sum, factored form, full 9-state kernel) plus the cycle-basis bookkeeping; no doubt it holds.",
+    "non_ad_hocness": "2.5 -- the cycle-affinity mechanism is genuinely reused (NG_FORCE_FOREST, NG_FORCE_NULL, protocol-trap null, A_ACC), so not a one-off; but the construction was reverse-engineered to land on Schnakenberg's form (p,q parameterized so p-q and p/q give the clean factors; K_phi chosen common-pi-reversible to zero the (1-alpha) term), capping this below 'forced'.",
+    "discriminative_power": "0.5 -- opposite-world fully passes: the single knob b dials magnitude (and, via the signed current J=p-q, sign) continuously; b=0 gives machine zero. No observation could falsify an algebraic identity in modeler-controlled inputs. (Note: the EPR scalar itself is non-negative; only J and A flip sign, so the opposite-world claim is correctly stated in terms of the signed current.)",
+    "audience_legibility": "4.0 -- crisp, fully explicit, reproducible, and speaks the stat-mech community's exact language (current x affinity, cycle basis); the cycle-basis correction makes it textbook-legible.",
+    "precision": "4.5 -- a sharp closed form with no fitted constants, verified to ~1e-16; capped just below 5 because precision is over the theory's OWN inputs and EPR is an informational proxy (disclaimer-bounded), not a physical dissipation rate.",
+    "robustness": "4.0 -- holds for all alpha in [0,1], all beta in (0,1], all b in [0,1); decomposition verified on the full kernel; but it is robust ONLY within the chosen random-scan lift and common-pi reversible kernels (a different lift need not split additively), so not unconditionally robust.",
+    "baseline_advantage": "0.5 -- none; the standard textbook derivation reaches the same number with zero SBT machinery. SBT does not beat the baseline.",
+    "publication_potential": "1.5 -- as a standalone result, unpublishable (already known, no new content). Its only home is as a worked appendix/note in Protocol_Trap filling the 'direct calculation' gap and supplying the cycle-basis identification; the reorganizational P3-without-P6 framing is the publishable kernel, not the number."
+  },
+
+  "proposed_bin": "B",
+  "bin_rationale": "B (foundational sanity check). This is a correct-but-already-known RECOVERY whose value is as an internal consistency anchor and a Rosetta-stone dictionary entry (SBT path-space KL audit <-> Schnakenberg current x affinity), with a clean null-vs-driven discipline (b=0 => EPR=0 by the protocol trap, DPI => no false positives). It is NOT a flagship (C), NOT a quick novel win (A: nothing new to win), NOT high-risk numerical (D: the numerics are trivially exact), and NOT primarily a conceptual reframing (E: the reframing P3-without-P6 already exists in the corpus). It belongs in B as a low-cost sanity-check/expository deliverable that tightens the corpus.",
+
+  "recommended_priority": "low",
+  "priority_rationale": "Low: zero predictive content, already in the corpus, imports the physics it 'recovers', and no baseline advantage. The only justified work is the trivial edge-sum fill-in plus the cycle-basis correction of the (currently mislabeled) Schnakenberg identification -- worth doing for correctness/transparency but not a research priority. Would only rise if accompanied by a genuine generalization (m-cycle / multi-cycle beta_1>1 with a derived cycle basis, or a lift-independent decomposition) or a Lean certification of the stochastic-kernel EPR identity.",
+
+  "recommended_artifact": "A short self-contained note extending Protocol_Trap sec:driven that (1) writes out the explicit 6-edge EPR sum behind 'a direct calculation gives' (verified here), (2) re-derives EPR_lifted=alpha*beta*b*log((1+b)/(1-b)) via the decomposition lemma, (3) makes the Schnakenberg identification line-by-line using the CYCLE-BASIS objects A_cycle=3log(p/q), J_cycle=(1/3)(p-q) (No_Go def:closed-walk-sum), explicitly NOT J=(p-q),A=log(p/q), and (4) ships a tiny reproducibility script recomputing the closed form and the full 9-state lifted-kernel EPR over the bias grid to ~1e-12 agreement. Framed throughout as RECOVERY of Schnakenberg (1976), EPR as an informational path-space KL proxy. Optional stretch (would change the verdict): a Lean lemma certifying the single-cycle EPR identity and the decomposition, extending beyond the deterministic-partition-lens certified core.",
+
+  "one_line_verdict": "Correct, trivially exact, and honestly a RECOVERY of Schnakenberg's 1976 current x affinity identity on a hand-built toy kernel -- already in the corpus, imports its own physics, zero predictive content; repaired to informational-proxy language with the cycle-basis (factor-of-3) mislabeling fixed; keep as a B-bin sanity-check/dictionary note, low priority.",
+
+  "mechanism_tag": "cycle-affinity",
+
+  "target_audience": [
+    "Nonequilibrium statistical mechanics / stochastic thermodynamics researchers (Markov-network thermodynamics, Schnakenberg cycle affinities, stochastic pumps)",
+    "Coarse-graining / information-theoretic arrow-of-time and entropy-production-estimation community (path-space KL, fluctuation relations)",
+    "Six Birds Theory readers seeking a concrete directionality-audit-to-thermodynamic-affinity dictionary and the P3-without-P6 null discipline",
+    "Formal-methods / Lean verification audience interested in machine-checking finite Markov EPR identities (only if the stretch Lean artifact is pursued)"
+  ],
+
+  "verification_performed": {
+    "closed_form_vs_paper_constants": "VERIFIED: alpha=0.5, beta=0.9 give EPR_lifted(b=0.5)=0.24718776495032474 and EPR_lifted(b=0.9)=1.1924977865624085, matching Protocol_Trap printed constants 0.2471877649503247 and 1.1924977865624082 to all printed digits; EPR_clock(0.5)=0.4943755299006495, EPR_clock(0.9)=2.384995573124817.",
+    "explicit_6_edge_sum": "VERIFIED: expanding eq:epr over the 3 forward (p), 3 backward (q) edges and self-loops with uniform s=1/3 reproduces (p-q)log(p/q)=beta*b*log((1+b)/(1-b)) to machine precision (diff ~2.8e-17 at b=0.3, ~5.6e-17 at b=0.5, 0.0 at b=0.9). This is the one lemma the card flagged as not-in-papers; it is correct.",
+    "full_9_state_lifted_kernel": "VERIFIED: building the 9x9 random-scan kernel with (K_phi)=(K0,K1,K0) from the paper's matrices and computing EPR directly from eq:epr against uniform mu gives EPR_full = alpha*EPR_clock to ~1e-16 (diff -8.3e-17 at b=0.5, -2.2e-16 at b=0.9); row-sum deviation <=1.1e-16, stationarity residual <=1.4e-17.",
+    "null_control": "VERIFIED: b=0 gives EPR exactly 0.0 (machine zero) on the full kernel, consistent with the protocol-trap exact-zero prediction (paper reports ~5.55e-18).",
+    "cycle_basis_correction": "VERIFIED (confirms skeptic's repairable objection): cycle affinity A_cycle = 3*log(p/q) = 3.2958..., cycle current J_cycle = (p-q)/3 = 0.15, and J_cycle*A_cycle = 0.4943755299006494 = (p-q)log(p/q) = EPR_clock at beta=0.9,b=0.5. The card's J=(p-q), A=log(p/q) labels the per-edge log-ratio, not the Schnakenberg cycle objects; corrected in the revised claim."
+  },
+
+  "provenance": {
+    "card_one_sentence_claim": "The steady-state entropy-production audit of SBT's autonomous biased-three-cycle clock equals the textbook Schnakenberg current-times-affinity value EPR(S,s)=(p-q)log(p/q)=beta*b*log((1+b)/(1-b)), and the full lifted-protocol audit equals alpha*beta*b*log((1+b)/(1-b)), with every symbol fixed by the kernel construction and no fitted constants.",
+    "target_known_fact": "Schnakenberg (1976) network thermodynamics: the steady-state entropy production rate of a driven Markov cycle equals the sum over cycles of (cycle current) x (cycle affinity); for a single biased pair EPR = (current)*(affinity) = (p-q)*log(p/q).",
+    "theory_basis": [
+      {"component": "EPR / path-space KL arrow audit Sigma_T = T*EPR, EPR(P,mu)=sum mu(x)P(x,y) log[mu(x)P(x,y)/(mu(y)P(y,x))] (eq:epr, eq:sigmaT_epr)", "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex", "role": "Defines the directionality certificate (informational, NOT physical EPR -- Protocol_Trap line 119) whose closed form is computed."},
+      {"component": "Autonomous lifted-protocol kernel on Z=X x Phi (eq:lifted_kernel): random-scan with weight alpha", "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex", "role": "Supplies the autonomous (A_AUT) generator so the arrow is intrinsic; carrier of the closed form."},
+      {"component": "Decomposition lemma EPR(P, pi x s) = alpha*EPR(S,s) + (1-alpha)*sum_phi s(phi) EPR(K_phi,pi) (eq:epr_clock_only)", "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex", "role": "Reduces the lifted-chain audit to alpha*EPR_clock (each EPR(K_phi,pi)=0); lift-specific (disjoint phase/state edge supports)."},
+      {"component": "Biased three-cycle clock S on Phi={0,1,2}: forward p=beta(1+b)/2, backward q=beta(1-b)/2, stay 1-beta, uniform stationary s (sec:driven)", "paper": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex", "role": "The driven cycle whose EPR is the Schnakenberg object; p,q fixed by (beta,b)."},
+      {"component": "Cycle affinity = closed-walk sum of log-ratio 1-form a(x,x')=log(K(x,x')/K(x',x)); exactness => zero cycle sum (NG_FORCE_NULL); forests carry no affinity (NG_FORCE_FOREST); No_Go def:closed-walk-sum / sec:graph-affinity", "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex", "role": "Identifies the SBT affinity object with Schnakenberg's; supplies the cycle-basis affinity A_cycle=3log(p/q)."},
+      {"component": "Protocol trap: reversible clock (b=0) + common-pi-reversible conditional kernels => Sigma_T=0 at every finite T (thm:protocol_trap; NG_PROTOCOL_TRAP)", "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex", "role": "Establishes the null baseline (b=0) for a clean null-vs-driven separation."}
+    ],
+    "minimum_viable_result_original": "A self-contained one-page note: state the lifted kernel + biased three-cycle clock, give the explicit 6-edge EPR computation yielding (p-q)log(p/q)=beta*b*log((1+b)/(1-b)), apply the decomposition lemma for EPR_lifted=alpha*beta*b*log((1+b)/(1-b)), identify it as Schnakenberg current x affinity, and reproduce the paper's b=0.5 and b=0.9 numbers exactly. Essentially already present in Protocol_Trap; the only genuinely new content is making the 'direct calculation' edge-sum explicit. Honestly framed as a RECOVERY of Schnakenberg (1976), not a prediction.",
+    "stronger_result": "Generalize from the single biased 3-cycle to an arbitrary autonomous clock on an m-cycle (m>=3) with per-edge rates, deriving EPR_clock = sum over the cycle of J_cycle*A_cycle, and prove EPR_lifted = alpha*EPR_clock whenever the conditional kernels are reversible w.r.t. a common pi; formalize the single-cycle and decomposition lemmas in Lean against SBT's finite-EPR / TV-DPI scaffolding (currently only deterministic-pushforward KL monotonicity is certified). A still-stronger (disclaimed) version connects to multi-cycle Schnakenberg with a chosen cycle basis (beta_1>1).",
+    "fallback_result": "A fully explicit, independently re-derived and numerically re-verified statement of the existing Protocol_Trap closed form EPR_lifted=alpha*beta*b*log((1+b)/(1-b)), with the missing edge-sum filled in and the Schnakenberg current x affinity identification made line-by-line (using the cycle-basis objects), packaged honestly as 'SBT's directionality audit recovers the standard driven-cycle EPR on this benchmark', informational-proxy and recovery-not-prediction caveats up front.",
+    "free_parameters": [
+      "Clock bias b in [0,1) (swept 0..0.90); the single drive parameter; b=0 the reversible null control.",
+      "Clock weight beta in (0,1] (default 0.9): overall forward/backward move probability (1-beta is the self-loop).",
+      "Random-scan mixing weight alpha in [0,1] (default 0.5): convex weight; overall prefactor in EPR_lifted=alpha*EPR_clock.",
+      "Conditional kernels (K_phi)=(K0,K1,K0) and the two reversible 3x3 kernels K0,K1 (chosen so each EPR(K_phi,pi)=0); inputs, not derived."
+    ],
+    "auxiliary_assumptions": [
+      "Each conditional kernel K_phi is reversible w.r.t. a common stationary pi on X, so EPR(K_phi,pi)=0 and the arrow is entirely clock-attributable (hand-imposed; paper: 'essential').",
+      "The phase ring has uniform stationary distribution s.",
+      "A_AUT autonomy: the clock/phase is part of the state with time-homogeneous dynamics; the biased clock is the sole drive (no external schedule).",
+      "Finite-state discrete-time (A_FIN); EPR treated as a pure path-space KL rate with NO physical local-detailed-balance / reservoir interpretation.",
+      "At least three states (2x2 doubly-stochastic kernels commute), so |X|=|Phi|=3 is the minimal nontrivial benchmark."
+    ],
+    "data_matched": [
+      "Closed form EPR_lifted(b=0.5)=0.2471877649503247 (verified to all printed digits).",
+      "Closed form EPR_lifted(b=0.9)=1.1924977865624082 (verified).",
+      "Single-cycle clock EPR(S,s) at b=0.5: 0.4943755299006495, b=0.9: 2.3849955731248169 (verified; = EPR_lifted/alpha).",
+      "Null control b=0: EPR_lifted ~ 5.55e-18 / machine zero (verified exact 0.0 on full kernel).",
+      "Schnakenberg (1976) current x affinity form EPR=J*A (structural identity, NOT an external dataset)."
+    ]
+  },
+
+  "audit_summary": {
+    "mechanism_tag": "cycle-affinity",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "degrees_of_freedom_estimate": 7,
+    "data_points_matched": 0,
+    "overfitting_risk": "none (nothing to overfit to; equivalently no predictive content)",
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "The single drive knob b dials the arrow continuously: b=0 gives a NULL world (EPR=0, verified machine zero); the signed cycle current J=p-q flips sign for b<0 or a forward/backward label swap (the EPR scalar itself is non-negative, so only J and A flip sign while EPR stays >=0 -- a correction to the card's phrasing); any non-negative magnitude in range is reachable. Because EPR=J*A is an algebraic identity in modeler-controlled inputs, no observation could falsify it. The protective discipline (protocol trap b=0 => DB => 0; DPI => no false positives from coarse-graining) prevents FALSE POSITIVES but does not give the result predictive content."
+    },
+    "audit_verdict": "RECOVERY, not prediction; honestly labeled. A Class-A finite algebraic identity reproducing Schnakenberg's 1976 current x affinity closed form on a hand-chosen toy kernel where every symbol is an input. All numerics independently verified here (closed form to printed digits; full 9-state EPR = alpha*EPR_clock to ~1e-16; b=0 null = 0.0; the unstated 6-edge sum reproduces the closed form; the cycle-basis correction A_cycle=3log(p/q), J_cycle=(1/3)(p-q) holds). ~7 DoF vs 0 independent data points. Opposite-world passes. Mechanism cycle-affinity reused across >=2 facts (NG_FORCE_FOREST/NULL, protocol-trap null, A_ACC). Imports known physics wholesale. Admissible only under the informational path-space-KL reading; the card's 'entropy-production' phrasing approached the disclaimed micro-thermodynamic interface and was repaired. Genuine value-add is reorganizational (EPR_lifted=alpha*EPR_clock decomposition + b=0 null operationalizing 'P3 without P6 is not an arrow'). SBT recovers and re-frames; it does not beat the standard account."
+  },
+
+  "skeptic_panel_summary": {
+    "min_survival": 2,
+    "mean_survival": 2.5,
+    "fatal_objections_present": false,
+    "scores": [3, 3, 2, 2],
+    "consensus": "All four skeptics agree: is_actually_new=false, beats_baseline=false. Unanimous that this is a correct, trivially-true RECOVERY of a 1976 identity, already present in the corpus (ledger row 159; Protocol_Trap eq:epr_closed_form), with zero predictive content and no baseline advantage. No fatal objections -- the result is CORRECT, just not novel. Repairable items converged on: (a) drop 'entropy-production' headline for informational/path-space-KL language; (b) correct the Schnakenberg identification to the cycle-basis objects A_cycle=3log(p/q), J_cycle=(1/3)(p-q) instead of J=(p-q),A=log(p/q); (c) fill the explicit 6-edge sum as expository transparency; (d) flag lift- and common-pi-dependence as chosen. Would change minds only with a genuine generalization (m-cycle / multi-cycle beta_1>1 with a derived cycle basis, or lift-independent decomposition) or a Lean-certified stochastic-kernel EPR identity. All repairable items have been applied in this card."
+  },
+
+  "honest_status_note": "RECOVERY, not retrodiction or prediction: reproduces Schnakenberg's 1976 current x affinity closed form on a chosen finite toy kernel where every symbol is an input, so the 'numerical match' is a structural identity verified against the formula's own evaluation (0 independent data points, no fitted constant, no new natural number). Already proved in Protocol_Trap and already claimed in ledger row 159; the only mathematical gap is the unstated single-cycle 6-edge sum ('a direct calculation gives'), trivial to fill and verified here. EPR is an informational/audit proxy with NO physical entropy-production / reservoir / local-detailed-balance meaning (ledger line 107); any thermodynamic-EPR reading crosses an SBT disclaimer. The card's original Schnakenberg identification (J=p-q, A=log(p/q)) was a verified mislabeling, corrected here to the cycle-basis objects. Genuine value-add is reorganizational: the lifted-protocol decomposition EPR_lifted=alpha*EPR_clock and the b=0 protocol-trap null make precise that P3 holonomy without P6 drive is not an arrow. SBT does not beat the standard account; it recovers and re-frames it."
+}

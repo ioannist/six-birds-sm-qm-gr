@@ -1,0 +1,23 @@
+{
+  "all_factor_incidence_obstructed_count": 35,
+  "artifact_root": "steps/step44_mode_b_window_closure_factor_count_artifacts",
+  "combined_window_status": "substantially_complete_conditional_window",
+  "conditional_on_clean_separation": true,
+  "coverage_mode": "structural_exact_route_obstruction",
+  "declared_three_factor_window": "dimensions 2..6",
+  "factor_count_bound_status": "structural-arguable-within-finite-component-cap",
+  "frame_transfer_certified": false,
+  "honest_coverage_pass": true,
+  "mode": "ModeB_window_closure_factor_count",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "reference_signature": "5|15",
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "step": 44,
+  "three_factor_clean_separator_count": 0,
+  "three_factor_sm_signature_clean_separator_count": 0,
+  "three_factor_structures": 35,
+  "three_factor_structures_covered": 35,
+  "verdict": "FACTOR_COUNT_CLOSED"
+}

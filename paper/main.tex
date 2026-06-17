@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+\input{includes/paper_macros.tex}
+
+\DeclareUnicodeCharacter{00A7}{\S}
+\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{2013}{--}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\to}}
+\DeclareUnicodeCharacter{2194}{\ensuremath{\leftrightarrow}}
+\DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[figure]{skip=6pt}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0 \quad \doi{10.5281/zenodo.20713213}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{To Kill Three Stones with Six Birds:\\ A Common Grammar for the SM, QM, and GR}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{\today}
+\hypersetup{
+  pdftitle={To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR},
+  pdfauthor={Ioannis Tsiokos},
+  pdfkeywords={Six Birds Theory; emergence calculus; layer-agnostic structural laws; foundations of physics; Standard Model gauge selection; quantum gravity; holographic entanglement; gravitationally-induced entanglement; grand unification; falsifiable predictions},
+  hidelinks
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+A standing question in foundations is whether the deep problems of distinct domains --- \emph{why} the Standard Model has
+the structure it does, and \emph{why} quantum mechanics and general relativity fail to combine --- share any common
+explanatory machinery. We report that one frozen, \textbf{layer-agnostic structural calculus} (the Six Birds emergence
+calculus) --- a catalog of substrate-independent laws governing how one theory emerges as a quotient/closure of another
+--- produces foundational-grade results on both, and yields \textbf{three forced, falsifiable, mainstream-contradicting
+predictions}.
+
+Applied under an anti-contamination guard on finite, audited, reproducible toy carriers, the calculus gives the two
+opposite result-genres its own laws anticipate. For the Standard Model, a \emph{demarcation} separating the structurally
+forced from the irreducibly observed-input, recovering non-circularly the grand-unified embedding ratios
+\(\sin^2\theta_W = 3/8\) and \(k_Y = 5/3\) and unifying proton stability, monopole absence, and color separation as one
+object. For QM--GR, a \emph{unification} that recognizes Ryu--Takayanagi holographic entanglement as a case of one
+ledger/shadow-price duality.
+
+The three predictions each contradict a prevailing program. \textbf{(i)} Boundary entanglement does \emph{not} determine
+bulk geometry: the entanglement\(\to\)geometry map carries a robust kernel, so strong ``it-from-qubit'' fails.
+\textbf{(ii)} Gravity does \emph{not} mediate entanglement: its channel is forced to be classically-indexed, so BMV-class
+experiments are predicted \textbf{null}, testable on tabletop timescales within the decade. \textbf{(iii)} Record-stability
+forbids proton decay and magnetic monopoles, against grand unification. A single record/memory layer ties the predictions
+at the grammar level without identifying the two physical tracks.
+
+Every result is computed under adversarial self-correction against explicit can-fail controls, and two construction results
+were stress-tested in adversarial review cycles and settled. We claim \textbf{no frame-transfer}: the results are conditional, toy-level structural facts
+(\(n=2\) on universality), offered as a proof of principle and placed before the community to test.
+\end{abstract}
+
+\noindent\textbf{Keywords.} Six Birds Theory; emergence calculus; layer-agnostic structural laws; foundations of physics; Standard Model gauge selection; quantum gravity; holographic entanglement; gravitationally-induced entanglement; grand unification; falsifiable predictions.
+
+\input{sections/sec_01_introduction}
+\input{sections/sec_02_the_calculus}
+\input{sections/sec_03_method}
+\input{sections/sec_04_result_sm}
+\input{sections/sec_05_result_qmgr}
+\input{sections/sec_06_predictions}
+\input{sections/sec_07_breadth}
+\input{sections/sec_08_one_grammar}
+\input{sections/sec_09_scope_falsifiability}
+\input{sections/sec_10_discussion}
+\input{sections/sec_11_conclusion}
+
+\appendix
+\input{appendices/app_a_formal_calculus}
+\input{appendices/app_b_reproducibility}
+\input{appendices/app_c_audit_trail}
+\input{appendices/app_d_adversarial_review}
+\input{appendices/app_e_notation}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

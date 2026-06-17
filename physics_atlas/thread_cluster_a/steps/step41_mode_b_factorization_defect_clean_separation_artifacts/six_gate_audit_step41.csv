@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,carrier is read from Step-38 rows; no group prior is introduced
+faithfulness,True,defect-empty matches clean-shadow and witnesses track exotics
+negative_controls,True,clean and contaminated controls separate
+stage_ii,True,raw quotients and faithful pair are both recorded
+recognition_source_boundary,True,the condition is recorded as supplied; the calculus decides emptiness only
+no_unconditional_physics_claim,True,finite carrier only

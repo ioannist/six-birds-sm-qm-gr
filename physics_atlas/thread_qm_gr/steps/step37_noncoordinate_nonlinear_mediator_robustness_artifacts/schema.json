@@ -1,0 +1,36 @@
+{
+  "step": 37,
+  "orientation": "carrier robustness under non-coordinate linear and nonlinear mediators",
+  "active_residual": "R_child_E018_after_adversarial_F24_defeat",
+  "carrier": {
+    "states": 8,
+    "ambient": "R^4",
+    "q_QM": ["d0", "d1", "d2"],
+    "q_GR": ["d0", "d2", "d3"],
+    "L": "identity readout"
+  },
+  "candidate_move": "Sample and construct general-linear and nonlinear polynomial mediators; compute endpoint carrying, admissibility, minimality, relation to L, and planted positive-detection control.",
+  "computed_outputs": {
+    "script": "noncoordinate_nonlinear_mediator_step37.py",
+    "linear_mediators": "linear_mediators_step37.csv",
+    "nonlinear_mediators": "nonlinear_mediators_step37.csv",
+    "positive_detection_control": "positive_detection_control_step37.csv",
+    "output": "mediator_robustness_output_step37.json"
+  },
+  "final_verdict": {
+    "type": "instance_uniqueness_robust_general_linear_nonlinear_tested",
+    "linear_sample_count": 14,
+    "nonlinear_sample_count": 6,
+    "all_actual_admissible_minimal_iso_to_L": true,
+    "actual_inequivalent_minimal_count": 0,
+    "positive_detection_detected": true,
+    "bounded_grammar_scope": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "reviewer_objection": "Step 34 might be coordinate-row-span-only.",
+    "response": "Widen to general-linear readouts and nonlinear polynomial readouts on the declared finite carrier.",
+    "nonclaim": "Robustness is finite-carrier and sampled/constructed; continuous, Lorentzian, gauge, and diffeomorphism carriers remain external review."
+  }
+}

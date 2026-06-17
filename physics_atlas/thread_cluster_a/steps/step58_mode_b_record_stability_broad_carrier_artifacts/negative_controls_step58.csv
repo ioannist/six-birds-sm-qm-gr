@@ -1,0 +1,5 @@
+control,passes,evidence
+neutral_carrier_has_non_CS_rows,True,non_CS_rows=72
+carrier_is_broader_than_step57,True,carrier_rows=80
+frozen_requirement_has_teeth,True,RS=4 carrier=80
+non_record_degenerate_requirement_not_directional,True,"a threshold-zero/no-persistence variant would keep all broad rows, including non-CS rows"

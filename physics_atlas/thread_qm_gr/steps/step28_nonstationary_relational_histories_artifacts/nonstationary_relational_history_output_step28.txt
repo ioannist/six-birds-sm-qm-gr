@@ -1,0 +1,9 @@
+Step 28 non-stationary relational history
+Verdict: nonstationary_relational_history_constraint_consistent_on_toy
+History is non-stationary: True
+Generated constraint residual: 4.220196766037856e-16
+Control constraint residual: 0.0925307478333232
+Max field readout residual: 2.2131155843786806e-16
+Max potential residual: 9.205483015737869e-17
+Max state change: 0.18847313451682898
+Max potential change: 0.001673580612625418

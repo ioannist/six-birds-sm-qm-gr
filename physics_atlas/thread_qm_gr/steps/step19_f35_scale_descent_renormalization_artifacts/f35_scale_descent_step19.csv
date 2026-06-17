@@ -1,0 +1,5 @@
+law,scale_step,obstruction_count,descends_to_Qn,fiber_violation_count,renormalizes_to_next,coarsening_used,f35_pass
+joint_law,Q1_fine16->Q2_mid8,0,True,0,True,True,True
+joint_law,Q2_mid8->Q3_coarse4,0,True,0,True,True,True
+non_descending_control,Q1_fine16->Q2_mid8,0,True,8,False,True,False
+non_descending_control,Q2_mid8->Q3_coarse4,8,False,0,False,True,False

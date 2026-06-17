@@ -1,0 +1,3 @@
+currency_id,source_state,rho_Lambda_readout,psi_stress_proxy,budget_weight,audited_in_L,GR_status,L_status,is_free_additive_constant
+P5_L_vacuum_currency,3,0.0010400000000000001,0.25,0.0041600000000000005,True,input_parameter_untracked_by_GR,first_class_budget_readout,False
+P5_alternate_vacuum_branch,4,0.00604,0.25,0.02416,True,same_GR_smooth_readout_as_selected_branch,selection-distinguished_budget_readout,False

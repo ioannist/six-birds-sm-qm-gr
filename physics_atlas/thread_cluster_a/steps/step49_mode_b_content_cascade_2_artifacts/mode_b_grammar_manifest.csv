@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step49_content_shadow_2,49,two Step-48 quotient content classes,generic Yukawa texture connectivity on Step-38 scalar witness,"No target class, target charges, generation count, or observed texture data is inserted.",The texture shadow fails an underconnected control while both residual classes pass.,"Conclude TODO #2 for this branch as F26/observed-input, unless a later project authorizes another distinct content shadow."

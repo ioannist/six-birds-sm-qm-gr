@@ -1,0 +1,11 @@
+field,value
+substrate_name,local_stochastic_binary_ring
+state_space,"N binary spins on a periodic ring; refinements N=32 and N=64"
+dynamics,"parallel stochastic nearest-neighbor update with beta=1.15, coupling=0.72, inertia=0.18"
+run_parameters,"steps=720; burn_in=120; replicas=64; deterministic seeds 18031 and 18063"
+area_entanglement_readout,"boundary mutual information averaged over two ring cuts"
+amplitude_geometry_readout,"mean magnitude of the first Fourier mode after per-sample centering"
+p3_route_readout,"1 minus route mismatch between coarse-grain-after-evolve and evolve-after-coarse-grain"
+completion_residual,"Schur residual of the final sector plateau against the diagonal common fixed-point subspace"
+independent_witness,"held-out R2 gain from adding an interaction term beyond pairwise amplitude and route predictors"
+not_substrate_inputs,"sector readouts; witness; triple objective; target row"

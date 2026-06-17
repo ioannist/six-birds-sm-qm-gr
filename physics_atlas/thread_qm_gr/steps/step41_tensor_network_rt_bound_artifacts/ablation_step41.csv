@@ -1,0 +1,5 @@
+ablation_id,ablation,bond_dim,tensor_kind,entropy_S_A,min_cut_area,area_minus_entropy_gap,bound_holds,saturates,outcome
+baseline_holo_D3,all_structure_present,3,copy,1.09861228867,1.09861228867,2.22044604925e-16,True,True,saturates
+remove_contraction_product_state,remove_contraction_use_product_state,3,fixed_zero,-0,1.09861228867,1.09861228867,True,False,strict gap
+use_degenerate_weighted_tensor,use_nonperfect_weighted_tensor,3,weighted_copy,0.830471712436,1.09861228867,0.268140576232,True,False,strict gap
+shrink_bond_dimension,shrink_bond_dimension_from_3_to_2,2,copy,0.69314718056,0.69314718056,-1.11022302463e-16,True,True,saturates

@@ -1,0 +1,36 @@
+{
+  "step": 41,
+  "mode": "ModeB_factorization_defect_restatement",
+  "pi0": "pi_conf_interference",
+  "pi1": "pi_mass",
+  "reproduced_step38_supports": 12,
+  "delta_empty_count": 8,
+  "delta_nonempty_count": 4,
+  "faithfulness_pass": true,
+  "structure_rows": [
+    {
+      "dimensions": "2|3",
+      "supports": 8,
+      "step38_clean_count": 8,
+      "delta_empty_count": 8,
+      "delta_nonempty_count": 0,
+      "total_witness_count": 0,
+      "typical_witness_count": 0,
+      "faithful": true
+    },
+    {
+      "dimensions": "4",
+      "supports": 4,
+      "step38_clean_count": 0,
+      "delta_empty_count": 0,
+      "delta_nonempty_count": 4,
+      "total_witness_count": 24,
+      "typical_witness_count": 6,
+      "faithful": true
+    }
+  ],
+  "verdict": "RECOGNITION_SOURCE_RESTATEMENT",
+  "recognition_source": true,
+  "new_physics_claim": false,
+  "frame_transfer_certified": false
+}

@@ -1,0 +1,2 @@
+grammar_id,carrier,predicate_basis,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_SM_RecordStabilityBaryonMonopolePrediction_v1,Frozen Step59 SM candidate-structure carrier,RS_member and CS_member plus Step45/46 branch readings,No QM-GR common-carrier objects; no retuned predicates.,Single-conjunct breaking witnesses show record-stability is not clean branch by definition.,Upgrade L60/L64 from enumeration to theorem if possible.

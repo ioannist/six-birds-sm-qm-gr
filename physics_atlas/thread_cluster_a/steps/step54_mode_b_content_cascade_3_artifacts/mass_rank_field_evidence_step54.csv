@@ -1,0 +1,11 @@
+content_class_id,field_id,field_rep,charged_component_count,charged_component_units,massed_charged_component_count,massed_charged_component_units,missing_charged_component_units,rank_full_for_field
+class_00,f0,singletxantifund:-2,1,-2,1,-2,,True
+class_00,f1,singletxantifund:4,1,4,1,4,,True
+class_00,f2,singletxsinglet:-6,1,-6,1,-6,,True
+class_00,f3,weak_fundxfund:-1,2,-4|2,2,-4|2,,True
+class_00,f4,weak_fundxsinglet:3,1,6,1,6,,True
+class_01,f0,singletxantifund:-4,1,-4,1,-4,,True
+class_01,f1,singletxantifund:2,1,2,1,2,,True
+class_01,f2,singletxsinglet:6,1,6,1,6,,True
+class_01,f3,weak_fundxfund:1,2,-2|4,2,-2|4,,True
+class_01,f4,weak_fundxsinglet:-3,1,-6,1,-6,,True

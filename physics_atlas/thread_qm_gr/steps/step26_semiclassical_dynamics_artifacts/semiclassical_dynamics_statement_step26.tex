@@ -1,0 +1,52 @@
+\paragraph{Step 26 finite semiclassical dynamics statement.}
+Let \(Z\) be the periodic \(N=8\) lattice carrying a complex field
+\(\psi \in \mathbb{C}^{8}\) with \(\|\psi\|_2=1\).  Let
+\[
+T_{00}(\psi)_i
+  =
+  |(\nabla_{\mathrm{per}}\psi)_i|^2
+  +
+  B_i |\psi_i|^2
+\]
+for the fixed background \(B\) inherited from the Step 24 finite field
+carrier.  For a coupling \(\kappa\), define the sourced potential
+\[
+V_\kappa(\psi)=B+\kappa T_{00}(\psi)
+\]
+and the Hermitian finite Hamiltonian
+\[
+H[V] = \frac12 \Delta_{\mathrm{per}} + \mathrm{diag}(V).
+\]
+The Schrödinger readout \(U[V]\psi=\exp(-iH[V]dt)\psi\) is norm
+preserving because \(H[V]\) is Hermitian.
+
+\paragraph{Diagnostic criterion.}
+A toy semiclassical self-consistency point is a pair
+\((\psi_\ast,V_\ast)\) such that
+\[
+V_\ast = V_\kappa(\psi_\ast)
+\quad\text{and}\quad
+H[V_\ast]\psi_\ast = E_\ast\psi_\ast
+\]
+up to the declared numerical tolerance.  The Step 26 diagnostic iterates
+the map
+\[
+\psi_{m+1}
+  =
+  \mathrm{norm}\!\left((1-\alpha)\psi_m
+    + \alpha\,\phi_0(H[V_\kappa(\psi_m)])\right),
+\]
+where \(\phi_0\) is the lowest stationary vector of the current Hamiltonian.
+
+\paragraph{Observed finite-carrier result.}
+For \(\kappa=0.3,\alpha=0.5\), the fixed-point residual is
+\(3.4936318023019015\cdot 10^{-16}\) and the eigen residual is
+\(6.377748916558787\cdot 10^{-16}\).  For the over-strong control
+\(\kappa=30.0,\alpha=1.0\), the fixed-point residual is
+\(1.4285712942487314\) and the eigen residual is \(0.6766429242147017\).
+Thus the moderate toy coupling is dynamically self-consistent on this
+finite carrier, while the control fails the same test.
+
+\paragraph{Scope.}
+The statement is a finite-carrier diagnostic result for the declared toy
+dynamics.  It is not a broad physical adequacy result.

@@ -1,0 +1,5 @@
+check,passes,evidence
+variant_predicates_are_quantity_based,True,variant_definitions_step52.csv lists only computed quantity bases
+no_target_structure_selector,True,predicate functions do not branch on dimensions or target-reference rows
+baryon_variants_classified_as_recognition_relocation,True,summary and nonclaim boundary state baryon number remains observed-input
+clean_cut_load_bearing,True,clean-separation cuts 12 to 8

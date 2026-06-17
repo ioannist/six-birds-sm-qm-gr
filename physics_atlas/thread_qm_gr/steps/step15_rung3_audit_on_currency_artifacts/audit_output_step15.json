@@ -1,0 +1,30 @@
+{
+  "step": 15,
+  "rung_id": "RUNG_3_AUDIT_ON_REFINEMENT_STABLE_CURRENCY",
+  "observed_residuals": {
+    "consistent_shared_mode_residual_max": 0.0,
+    "consistent_audit_refinement_commutator_max": 0.0,
+    "route_mismatch_shared_mode_residual_min": 0.4472135954999581
+  },
+  "verdict": {
+    "audit_coheres": true,
+    "consistent_audit_passes": true,
+    "route_mismatch_control_fails": true,
+    "audit_commutes_with_refinement": true,
+    "audit_nontrivial": true,
+    "rungs_cohere": true
+  },
+  "no_smuggling_check": {
+    "route_mismatch_control_passes": false,
+    "audit_trivial_zero": false,
+    "audit_trivial_constant": false,
+    "circular_test_used": false,
+    "one_hot_set_cover_used": false,
+    "target_layer_inserted": false,
+    "endpoint_derivation_claimed": false,
+    "literature_program_terms_used": false,
+    "step14_refinement_loaded": true
+  },
+  "structural_constraint": "A single bridge audit on u exists iff the two endpoint audits agree on the shared currency modes {d0,d2}; this is the route-consistency condition on the overlap.",
+  "next_move": "STEP16_FULL_LADDER_DESCENT"
+}

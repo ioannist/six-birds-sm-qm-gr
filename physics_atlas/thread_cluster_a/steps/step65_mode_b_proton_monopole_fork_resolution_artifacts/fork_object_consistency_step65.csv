@@ -1,0 +1,5 @@
+object,defect_kind,support_id,witness_count,identity_holds,used_for_resolution,note
+Step45_proton_fork,gauge_layer_breaking_coset,support_08,6,True,True,same Step41 defect object as the realized breaking reading
+Step46_monopole_fork,gauge_layer_breaking_coset,support_08,6,True,True,same Step41 defect object as the realized breaking reading
+Step63_common_refinement,inter_layer_structural_refinement,SM_to_common_refinement,15,True,False,structural parent-shadow defect; not the realized gauge-layer breaking coset selected against here
+Step59_memory_mapping,evaluated_gauge_layer_nonempty_defects,Step59_scored_carrier,60,True,True,all evaluated nonempty Step41 defects are record-incapable

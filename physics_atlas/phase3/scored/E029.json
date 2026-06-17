@@ -1,0 +1,53 @@
+{
+  "id": "E029",
+  "source": "qcd",
+  "target": "chiral-perturbation-theory",
+  "arrow": "down",
+  "scored_tier": "E2",
+  "scored_modality": "shadow-down",
+  "secondary_modalities": [
+    "recognition-conditional"
+  ],
+  "named_import": "the run-generated low-energy constants (f_pi, the chiral condensate, the LECs) imported from lattice QCD, under the stated chiral-EFT matching/closure assumption (the EFT's predictive content is fixed by matching its LEC values to a lattice-QCD run)",
+  "value_split": {
+    "form_tier": "E1",
+    "value_tier": "E2",
+    "split_type": "form_value_imported",
+    "value_node": "chiral-low-energy-constants",
+    "reported_tier": "E2",
+    "note": "The chiral-Lagrangian SYMMETRY SKELETON (pions as pseudo-Goldstone bosons of spontaneous chiral symmetry breaking, the symmetry organization) DESCENDS from QCD's chiral symmetry -- a clean form-descent leg (form_tier E1, FORM leg xi_rel ~ 1e-15 stable across both refinements). The PREDICTIVE CONTENT (f_pi, the chiral condensate, the LECs) is NOT a closed-form predicate in QCD's Sigma_f: it is run-generated and must be IMPORTED from lattice QCD under a stated closure assumption (value_tier E2, recognition-conditional; VALUE leg xi_rel = 0.121 -> 0.509, stable positive). Per reported_tier_by_split_type[form_value_imported] = value_tier, reported_tier = value_tier = E2. The form-descends-E1 leg is RECORDED but NOT counted in the E1 null; the E2 imported-value leg is the headline, carried on the conditional ledger. The two legs are NEVER summed."
+  },
+  "near_intra_layer_result": null,
+  "decision_path": "STEP0 preconditions PASS (qcd = frozen theory card; chiral-perturbation-theory = frozen candidate_substructure node, experimentally_established, here only a TARGET; faithful finite M exists; (shadow-down,E2) emittable). NEAR-INTRA gate not applicable (near_intra=false; genuinely distinct layers -- different lens f, different Sigma_f, a real chiral-symmetry-breaking quotient). STEP1 DESCENT-TEST on M, two refinements, verdict read off normalized xi_rel: FORM leg xi_rel -> ~machine-zero stably (clean descent, form_tier E1); VALUE leg xi_rel stays stable-positive with analytic control (LEC magnitude lives on a block orthogonal to the symmetry span -> non-definable from QCD's Sigma_f skeleton) -> E1 BLOCKED for the predictive edge (claiming E1 would OVER-READ QCD's Sigma_f, gate E.3 fail: f_pi/condensate are not closed-form QCD predicates). STEP2 RECOGNITION-SEARCH for the value leg: a NAMED principle closes it -- the run-generated LECs (f_pi, chiral condensate) imported from lattice QCD under the chiral-EFT matching assumption; smuggle-audit E.4 PASS (remove the imported LEC values and no PREDICTIVE relation remains; the bare symmetry skeleton gives only functional low-energy theorems like GMOR, no numbers); no-over-read E.3 PASS (landed as a conditional import, not a derivation). => value leg SEALS E2. reported_tier = value_tier = E2. MODALITY by precedence (B.7a): a STRUCTURAL test passes (DESCENT B.1 -- the chiral FORM descends), so primary_modality = shadow-down; because the E2 headline leans on a named import, recognition-conditional is recorded as a SECONDARY flag (NOT a primary recognition-landing -- a structural test DID pass, and E029 is explicitly outside recognition_resolution.affected_edges).",
+  "diagnostic": {
+    "toy_model": "Declared finite carrier of the QCD->ChPT pair at refinement level. Carrier splits into a symmetry-skeleton block (dim s=3*level, the chiral coset / Goldstone structure) and a run-generated LEC-value block (dim v=2*level, the f_pi/condensate magnitudes). Native/target probe L0 (ChPT) spans ONLY the symmetry-skeleton block (the chiral EFT's symmetry-organized basis covers the Goldstone/coset directions). Source/dissolving probe D split into two legs: (FORM) D0_form = A_form*L0 lies in span(L0) (QCD's chiral symmetry acts on the same coset block); (VALUE) D0_val has load-bearing support on the run-value block ORTHOGONAL to span(L0) (the LEC magnitudes are dimensional-transmutation outputs, non-definable from the symmetry rep). Audit energy C0 = M M^T + I (PSD, well-conditioned). Adequacy residual Xi = Schur complement K_DD - K_DL K_LL^+ K_LD; verdict read off xi_rel = ||Xi||/||K_DD||. Pure finite linear algebra, declared before computation; NOT an irreducible run.",
+    "refinements": {
+      "h1_level1": {
+        "carrier_dim_n": 5,
+        "skeleton_s": 3,
+        "run_value_block_v": 2,
+        "form_leg": {"raw_Xi": 2.569e-15, "xi_rel": 6.926e-16},
+        "value_leg": {"raw_Xi": 3.813e-01, "xi_rel": 1.214e-01}
+      },
+      "h2_level2": {
+        "carrier_dim_n": 10,
+        "skeleton_s": 6,
+        "run_value_block_v": 4,
+        "form_leg": {"raw_Xi": 1.398e-13, "xi_rel": 2.161e-15},
+        "value_leg": {"raw_Xi": 1.745e+00, "xi_rel": 5.091e-01}
+      }
+    },
+    "form_leg_verdict": "xi_rel -> ~machine-zero STABLY across h1,h2 (6.9e-16, 2.2e-15) => clean computable descent => form_tier E1 (the chiral symmetry skeleton descends from QCD's chiral symmetry).",
+    "value_leg_verdict": "xi_rel STABLE POSITIVE across h1,h2 (0.121, 0.509) with analytic control (LEC magnitude on a block outside the symmetry span) => NOT a clean descent; the predictive LEC values are run-generated, non-definable from QCD's Sigma_f, and must be IMPORTED => value_tier E2 (recognition-conditional). [Note the raw Xi grows 0.38->1.7 under refinement while the VERDICT is read off xi_rel; raw growth is not disqualifying, mirroring the E001 anchor lesson.]",
+    "gates": {
+      "E.3_no_over_read": "value leg: claiming E1 would over-read QCD's Sigma_f (f_pi/condensate not closed-form QCD predicates) -> E1 blocked; form leg: recovered symmetry structure lies in ChPT's accepted observables (functional low-energy theorems) -> form-descent ok.",
+      "E.4_relabeling": "PASS -- removing the imported LEC values leaves no PREDICTIVE relation (only functional skeleton); genuine import, not a relabel.",
+      "E.9_refinement_stability": "PASS -- both verdicts (form ~0, value stable-positive) hold at h1 and h2; neither flips.",
+      "E.8_anti_emergence_derivation": "n/a-respected -- no UP-direction E1 claimed; arrow is DOWN.",
+      "modality_tier_compat": "PASS -- (shadow-down, E2) is emittable (descent fails on value content -> closes by named import)."
+    }
+  },
+  "rationale": "E029 is the canonical form_value_imported value-split edge (R3). On a declared finite toy model run at two refinements, the chiral-Lagrangian SYMMETRY SKELETON (pions as Goldstone bosons of spontaneous chiral symmetry breaking) descends cleanly from QCD's chiral symmetry: the FORM leg's normalized residual xi_rel falls to machine-zero and stays there (form_tier E1, a coarse-graining physics already accepts -- this is also the is_rg_eft_descent textbook chiral-EFT move). But the edge's PRIMARY claim is the PREDICTIVE inter-layer connection, and that is incomplete without the low-energy constants (f_pi, the chiral condensate): these are run-generated numbers, non-definable from QCD's symmetry skeleton (the VALUE leg's xi_rel stays stably positive with analytic control), so claiming them as a descent would over-read QCD's Sigma_f (gate E.3). They close only by IMPORTING the lattice-QCD-run-generated LECs under the chiral-EFT matching assumption -- a named external principle (Step 2 recognition-search, smuggle-audit E.4 passing). Hence value_tier = E2, and per the R3 reported-tier rule for form_value_imported the reported (headline) tier IS the value_tier: scored_tier = E2. The primary modality is shadow-down (a structural descent test DID pass on the form leg, so by the B.7a precedence rule the structural modality is primary); recognition-conditional is a SECONDARY flag because the E2 headline leans on the named import. E029 is explicitly NOT a primary recognition-landing (it is outside recognition_resolution.affected_edges; C11 does not apply). The form-descends-E1 leg is recorded but NOT counted in the E1 null; the two legs are never summed.",
+  "self_audit": "PRIMER-§9 CHECKLIST: (1) no unify-by-deriving -- this is a descent of FORM plus a recognized IMPORT of values, not a factorization of QCD into ChPT. (2) no derive-the-emergent-constant -- f_pi/condensate are explicitly NOT derived; they are imported as run-generated LECs (the run lives upstream in QCD). (3) no shortcut of a run -- the value leg's content is precisely the un-shortcuttable run-generated LECs. (4) not just-relabeling -- E.4 passes: removing the import kills the predictive relation; QCD and ChPT are distinct layers (different f, Sigma_f, a real symmetry-breaking quotient), not within-a-layer. (5) asymmetry kept -- arrow is DOWN (shadow); the FORM descends (runnable), and where the run-content surfaces it is IMPORTED, not run UP as a derivation. (6) emergence neither over-deflated nor over-inflated -- the LEC values are genuinely non-definable from QCD's skeleton (positive xi_rel), but here they are handled by a NAMED import, so the edge is E2, not E0. (7) scored on INTER-layer structure (descent legality of the form + recognition of the import), not intra-layer prediction. (8) E2 is an honest conditional landing, not a failure. OVER-READ CHECK: the decisive guard -- a naive small raw Xi on the form leg must NOT be read as E1 for the whole edge; the predictive content (the imported LECs, with hbar-scale/dimensional-transmutation magnitude NOT in QCD's Sigma_f closed-form predicates) is precisely what would be over-read if the edge were called E1. Reading xi_rel against the FULL target readout map (including the predictive LEC values, gate E.3) correctly blocks E1 and routes the headline to E2 via the import -- exactly the E005-style over-read lesson, applied here to the imported run-constants. DOUBT DIRECTION: no doubt-promotion; the E2 headline is the conservative reading of the predictive edge (E1 for the whole edge would be the flattering over-read, refused).",
+  "drift_vs_provisional": "NO DRIFT. Fresh derivation reproduces the frozen guess exactly: provisional_tier_guess=E2 and provisional_modality_guess=shadow-down both confirmed independently via the descent test (form xi_rel ~0, value xi_rel stable-positive), the recognition-search (named import = run-generated LECs from lattice QCD), and the B.7a precedence rule (structural descent passes on the form -> shadow-down primary; recognition-conditional secondary). value_split (form_tier E1 / value_tier E2 / split_type form_value_imported / reported_tier E2) and headline E2 also match the frozen edge row. Independent rederivation, same verdict -- consistent with E029 being the calibrated canonical R3 row."
+}

@@ -1,0 +1,5 @@
+gate,passes,evidence
+noncontrol_properties_have_no_uniqueness_clause,True,all non-control properties are branchwise or Sigma_f-record properties
+noncontrol_properties_evaluable_on_multibranch,True,every non-control property was scored on the full branching readout
+noncontrol_forcing_absent,True,no non-control property passes selected while failing full branching
+anti_control_flagged_as_smuggle_line,True,global exclusivity forces selection only by requiring uniqueness

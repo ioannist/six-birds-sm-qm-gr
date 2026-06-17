@@ -1,0 +1,22 @@
+{
+  "source_step": "/home/repos/six-birds-papers/physics_atlas/thread_qm_gr/steps/step24_derived_physical_audits_artifacts/toy_field_samples_step24.json",
+  "n_samples": 26,
+  "n_sites": 8,
+  "potential": [
+    0.35,
+    0.3207106781186548,
+    0.25,
+    0.17928932188134525,
+    0.15,
+    0.17928932188134522,
+    0.24999999999999997,
+    0.3207106781186547
+  ],
+  "control": "non_co_sourced_control uses GR audit T[psi_{sample+1}] while L field is psi_sample.",
+  "derivations": {
+    "rho": "|psi|^2",
+    "current_j": "Im(conj(psi) * central_difference(psi))",
+    "T00": "|central_difference(psi)|^2 + V * |psi|^2",
+    "T0i": "Re(conj(central_difference(psi)) * forward_shift_difference(psi))"
+  }
+}

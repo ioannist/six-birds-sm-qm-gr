@@ -1,0 +1,2 @@
+target,parent_residual,relation_to_canonical_root,status,source_artifacts
+N-gen-blindness-structural-theorem,Step51 finite N=0..6 N_gen blindness,sub_residual of SM-gauge-structure-selection canonical root,constructed_theorem,steps/step62_mode_t_ngen_blindness_theorem_artifacts/ngen_blindness_theorem_step62.py

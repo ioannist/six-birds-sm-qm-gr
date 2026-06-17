@@ -1,0 +1,11 @@
+gate,status,scope,evidence
+C1_native_vocabulary,pass,vocabulary,"Artifacts use package and promotion bridge vocabulary."
+C2_object_maps_built,pass,finite carrier,"pi_QM pi_GR pi_L pi_union are real finite maps from S."
+C3_L_strict_computed,pass,strictness,"B_QM_to_L has Delta_fact count 3."
+C4_union_strict_computed,pass,strictness,"B_QM_to_union has Delta_fact count 3, so union is not marked non_strict."
+C5_L_eight_gates_pass,pass,eight gates,"B_QM_to_L passes all eight gates on the finite toy."
+C6_union_g_nosmuggle_fails,pass,eight gates,"B_QM_to_union fails G_nosmuggle with extra_coordinate_count 2."
+C7_distinguishing_gate_identified,pass,verdict,"Distinguishing gate is G_nosmuggle."
+C8_status_assigned,pass,status,"L status candidate; union status failed_G_nosmuggle."
+C9_no_root_landing,pass,no-smuggling,"Schema root_landed is false and external review remains required."
+

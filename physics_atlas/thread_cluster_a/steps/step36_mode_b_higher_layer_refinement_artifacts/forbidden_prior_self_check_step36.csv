@@ -1,0 +1,7 @@
+check,passes,evidence
+uses_slot_count_prior,False,"predicate reads active-factor incidence, not slot count"
+uses_parent_or_larger_group_prior,False,no parent or larger-group data enter the predicate
+uses_empirical_potential_parameters,False,bounded proxy is an invariant-existence test
+uses_fixed_generation_count,False,no replication number is used
+reduces_to_target_shape,False,predicate definition does not mention dimensions; refined survivors=8
+uses_target_reference,False,reference key is used only for status reporting

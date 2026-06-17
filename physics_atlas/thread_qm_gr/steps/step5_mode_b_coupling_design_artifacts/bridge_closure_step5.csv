@@ -1,0 +1,5 @@
+bridge,status,raw_xi_level_2,normalized_xi_level_2,raw_xi_level_4,normalized_xi_level_4,generation_map,next_obligation
+Bridge_HED_LQG_area_geometry,closed_by_Pstar_v1,0.0,0.0,0.0,0.0,"average(Pstar_shared_currency_i)","none inside G_v1"
+Bridge_LQG_AS_discrete_continuum,closed_by_Pstar_v1,0.0,0.0,0.0,0.0,"Pstar_route_holonomy_rg","none inside G_v1"
+Bridge_HED_AS_boundary_continuum,survives_G_v1,1.0,1.0,1.0,1.0,"not generated","G_E018_BoundaryContinuumTripleBridge_v2"
+Bridge_triple_joint_package,survives_G_v1,1.0,1.0,1.0,1.0,"not generated","G_E018_BoundaryContinuumTripleBridge_v2"

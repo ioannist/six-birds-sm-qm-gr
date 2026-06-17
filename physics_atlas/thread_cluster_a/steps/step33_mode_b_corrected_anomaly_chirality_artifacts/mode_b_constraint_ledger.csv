@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP33_CORRECTNESS_FIX,ModeB,step33_mode_b_corrected_anomaly_chirality,correctness,"Step 33 corrects the rank-one cubic-anomaly bug: rank-one cubic coefficients are zero and Witten parity is retained."
+C_CLUSTER_A_STEP33_CORRECTED_CARRIER,ModeB,step33_mode_b_corrected_anomaly_chirality,diagnostic,"The corrected neutral carrier has 11990 closers versus the old 280983."
+C_CLUSTER_A_STEP33_TRAJECTORY,ModeB,step33_mode_b_corrected_anomaly_chirality,diagnostic,"The corrected predicate trajectory is 11990 -> 156 -> 130 -> 80, with the reference support passing all stages."
+C_CLUSTER_A_STEP33_DOMINANCE,ModeB,step33_mode_b_corrected_anomaly_chirality,diagnostic,"The old Step-32 dominant structure is eliminated from the corrected final pool, but the target structure is not final-dominant."
+C_CLUSTER_A_STEP33_REFERENCE_STATUS,ModeB,step33_mode_b_corrected_anomaly_chirality,narrow,"The reference support passes the corrected final predicate but is not uniquely distinguished."
+C_CLUSTER_A_STEP33_GATES,ModeB,step33_mode_b_corrected_anomaly_chirality,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and correctness self-check gates pass."
+C_CLUSTER_A_STEP33_VERDICT,ModeB,step33_mode_b_corrected_anomaly_chirality,verdict,"Verdict is NARROW: corrected anomaly/chirality bookkeeping supplies progress but not a unique landing."
+C_CLUSTER_A_STEP33_NONCLAIM_BOUNDARY,ModeB,step33_mode_b_corrected_anomaly_chirality,honesty,"Finite correctness re-derivation only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

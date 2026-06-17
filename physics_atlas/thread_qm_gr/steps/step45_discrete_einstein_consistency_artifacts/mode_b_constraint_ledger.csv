@@ -1,0 +1,4 @@
+constraint_id,status,detail
+C_STEP42_RT_BOUND_AND_MULTIEDGE_GRAPH,inherited,Step42 graph and RT/min-cut machinery
+C_STEP44_MMI_FALSIFIABLE_NOT_UNIVERSAL,inherited,holographic entropy cone consequence
+C_STEP45_DISCRETE_CONSTRAINT_NONTRIVIAL_AND_CANFAIL,active,cokernel nonzero; RT-preserving passes; generic contracted perturbation fails

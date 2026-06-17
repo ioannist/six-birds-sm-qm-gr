@@ -1,0 +1,514 @@
+dimensions,support_key,support_score,action_faithful,route_incidence_complete,globally_chiral_after_rank_one_identification,consistency_completeness_passes,is_target_reference
+2,antifund:-1 + antifund:1,2|4|1|1,True,True,False,True,False
+2,fund:-1 + fund:1,2|4|1|1,True,True,False,True,False
+2,adjoint:-1 + sym2:1,2|6|1|1,True,True,True,True,False
+2,adjoint:1 + sym2:-1,2|6|1|1,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:1 + antifundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:1 + antifundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:3 + fundxsinglet:1 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + antifundxsinglet:3 + fundxsinglet:1 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-1 + antifundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-1 + antifundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-3 + fundxsinglet:-1 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + antifundxsinglet:-3 + fundxsinglet:-1 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:1 + antifundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:1 + antifundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:3 + fundxsinglet:1 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + antifundxsinglet:3 + fundxsinglet:1 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-1 + antifundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-1 + antifundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-3 + fundxsinglet:-1 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + antifundxsinglet:-3 + fundxsinglet:-1 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + antifundxsinglet:-3 + fundxantifund:2 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + antifundxsinglet:-3 + fundxantifund:2 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + antifundxsinglet:-3 + fundxfund:2 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + antifundxsinglet:-3 + fundxfund:2 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + fundxantifund:2 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + fundxantifund:2 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + fundxfund:2 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-1 + fundxfund:2 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-3 + fundxantifund:2 + fundxsinglet:-1 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-3 + fundxantifund:2 + fundxsinglet:-1 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-3 + fundxfund:2 + fundxsinglet:-1 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:-3 + fundxfund:2 + fundxsinglet:-1 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + antifundxsinglet:3 + fundxantifund:-2 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + antifundxsinglet:3 + fundxantifund:-2 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + antifundxsinglet:3 + fundxfund:-2 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + antifundxsinglet:3 + fundxfund:-2 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + fundxantifund:-2 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + fundxantifund:-2 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + fundxfund:-2 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:1 + fundxfund:-2 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:3 + fundxantifund:-2 + fundxsinglet:1 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:3 + fundxantifund:-2 + fundxsinglet:1 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:3 + fundxfund:-2 + fundxsinglet:1 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,antifundxsinglet:3 + fundxfund:-2 + fundxsinglet:1 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxadjoint:1 + singletxsinglet:-3,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + fundxsinglet:1 + fundxsinglet:3 + singletxsinglet:-3 + singletxsym2:1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxantifund:1 + singletxantifund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxantifund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxantifund:3 + singletxfund:1 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxfund:1 + singletxfund:3 + singletxsinglet:-3 + sym2xsinglet:1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxadjoint:-1 + singletxsinglet:3,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + fundxsinglet:-1 + fundxsinglet:-3 + singletxsinglet:3 + singletxsym2:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxantifund:-1 + singletxantifund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxantifund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxantifund:-3 + singletxfund:-1 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxfund:-1 + singletxfund:-3 + singletxsinglet:3 + sym2xsinglet:-1,5|12|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + antifundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + antifundxfund:-2 + singletxadjoint:1 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + antifundxfund:-2 + singletxsinglet:2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + fundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + fundxantifund:-2 + singletxsinglet:2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + fundxfund:-2 + singletxadjoint:1 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + adjointxsinglet:2 + fundxfund:-2 + singletxsinglet:2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-1 + fundxfund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + antifundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + antifundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + fundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + fundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + adjointxsinglet:1 + fundxfund:2 + singletxsinglet:-2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:1 + fundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxantifund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,antifundxfund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxantifund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxadjoint:-1 + singletxadjoint:2 + singletxsinglet:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxadjoint:-1 + singletxsinglet:2 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxadjoint:1 + singletxsinglet:2 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxadjoint:2 + singletxsinglet:2 + singletxsym2:-1 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxsinglet:2 + singletxsym2:-1 + singletxsym2:2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:-2 + singletxsinglet:2 + singletxsym2:1 + sym2xsinglet:-1 + sym2xsinglet:2,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxadjoint:-1 + singletxsinglet:-2 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxadjoint:-2 + singletxadjoint:1 + singletxsinglet:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxadjoint:-2 + singletxsinglet:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxadjoint:1 + singletxsinglet:-2 + singletxsym2:-2 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxsinglet:-2 + singletxsym2:-1 + sym2xsinglet:-2 + sym2xsinglet:1,5|14|2|2,True,True,True,True,False
+2|2,fundxfund:2 + singletxsinglet:-2 + singletxsym2:-2 + singletxsym2:1 + sym2xsinglet:-1,5|14|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + antifundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + antifundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + antifundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + antifundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + antifundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + antifundxfund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + fundxantifund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + fundxantifund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxantifund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + antifundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + antifundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:3 + fundxantifund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:3 + fundxantifund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + antifundxfund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxantifund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxfund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:-2 + fundxfund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + antifundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + antifundxantifund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + antifundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + antifundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + antifundxfund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + antifundxfund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + fundxantifund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + fundxantifund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxantifund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + antifundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + antifundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-3 + fundxantifund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-3 + fundxantifund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + antifundxfund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxantifund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxfund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4,5|15|2|2,True,True,True,True,False
+2|2,adjointxsinglet:2 + fundxfund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + antifundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + antifundxantifund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + antifundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + antifundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + antifundxfund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + antifundxfund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + fundxantifund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + fundxantifund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + antifundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + antifundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + antifundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + antifundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + antifundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + antifundxfund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + fundxantifund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + fundxantifund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxantifund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + antifundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + antifundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-3 + fundxantifund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-3 + fundxantifund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + antifundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + antifundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:3 + fundxantifund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:3 + fundxantifund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,antifundxfund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-1 + fundxantifund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-1 + fundxantifund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-3 + fundxfund:-1 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:-3 + fundxfund:-1 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:1 + fundxantifund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:1 + fundxantifund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:3 + fundxfund:1 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxantifund:3 + fundxfund:1 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxfund:-1 + fundxfund:-3 + singletxadjoint:2 + singletxsinglet:4 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxfund:-1 + fundxfund:-3 + singletxsinglet:4 + singletxsym2:2 + sym2xsinglet:2,5|15|2|2,True,True,True,True,False
+2|2,fundxfund:1 + fundxfund:3 + singletxadjoint:-2 + singletxsinglet:-4 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|2,fundxfund:1 + fundxfund:3 + singletxsinglet:-4 + singletxsym2:-2 + sym2xsinglet:-2,5|15|2|2,True,True,True,True,False
+2|3,antifundxantifund:0 + antifundxsinglet:0 + singletxfund:-1 + singletxfund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + antifundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + antifundxsinglet:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + antifundxsinglet:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + antifundxsinglet:0 + singletxantisym2:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + fundxsinglet:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,True,True,True,True,False
+2|3,antifundxfund:0 + fundxsinglet:0 + singletxantisym2:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxsinglet:0 + fundxantifund:0 + singletxfund:-1 + singletxfund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxsinglet:0 + fundxfund:0 + singletxantifund:-1 + singletxantifund:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxsinglet:0 + fundxfund:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxsinglet:0 + fundxfund:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,True,True,True,True,False
+2|3,antifundxsinglet:0 + fundxfund:0 + singletxantisym2:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,4|14|3|2,True,True,True,True,False
+2|3,fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,4|14|3|2,True,True,True,True,False
+2|3,fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,fundxfund:0 + fundxsinglet:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,True,True,True,True,False
+2|3,fundxfund:0 + fundxsinglet:0 + singletxantisym2:-1 + singletxantisym2:1,4|14|3|2,True,True,True,True,False
+2|3,antifundxantifund:-1 + antifundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxantifund:1 + antifundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + antifundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + antifundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + antifundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + antifundxsinglet:3 + singletxantisym2:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:-1 + fundxsinglet:3 + singletxantisym2:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + antifundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + antifundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + antifundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + antifundxsinglet:-3 + singletxantisym2:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxfund:1 + fundxsinglet:-3 + singletxantisym2:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:-3 + fundxantifund:1 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:-3 + fundxfund:1 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:-3 + fundxfund:1 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:-3 + fundxfund:1 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:-3 + fundxfund:1 + singletxantisym2:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:3 + fundxantifund:-1 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:3 + fundxfund:-1 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:3 + fundxfund:-1 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:3 + fundxfund:-1 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,antifundxsinglet:3 + fundxfund:-1 + singletxantisym2:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:-1 + fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:-1 + fundxsinglet:3 + singletxantisym2:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,True
+2|3,fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:1 + fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+2|3,fundxfund:1 + fundxsinglet:-3 + singletxantisym2:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,True,True,True,False
+3,antifund:-1 + antifund:1 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antifund:1 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antifund:1 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antifund:1 + fund:-6 + fund:6,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antisym2:1 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antisym2:1 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antisym2:1 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:-1 + antisym2:1 + fund:-6 + fund:6,4|12|2|1,True,True,True,True,False
+3,antifund:-2 + antifund:2 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-2 + antifund:2 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-2 + antisym2:2 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-2 + antisym2:2 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antifund:3 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antifund:3 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antifund:3 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antisym2:3 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antisym2:3 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:-3 + antisym2:3 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:-4 + antifund:4 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-4 + antifund:4 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-4 + antisym2:4 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-4 + antisym2:4 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:-6 + antifund:6 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:-6 + antisym2:6 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:0 + antisym2:0 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:1 + antisym2:-1 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:1 + antisym2:-1 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:1 + antisym2:-1 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:1 + antisym2:-1 + fund:-6 + fund:6,4|12|2|1,True,True,True,True,False
+3,antifund:2 + antisym2:-2 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:2 + antisym2:-2 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:3 + antisym2:-3 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:3 + antisym2:-3 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antifund:3 + antisym2:-3 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antifund:4 + antisym2:-4 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antifund:4 + antisym2:-4 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antifund:6 + antisym2:-6 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antisym2:-1 + antisym2:1 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antisym2:-1 + antisym2:1 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antisym2:-1 + antisym2:1 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antisym2:-1 + antisym2:1 + fund:-6 + fund:6,4|12|2|1,True,True,True,True,False
+3,antisym2:-2 + antisym2:2 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antisym2:-2 + antisym2:2 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antisym2:-3 + antisym2:3 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antisym2:-3 + antisym2:3 + fund:-2 + fund:2,4|12|2|1,True,True,True,True,False
+3,antisym2:-3 + antisym2:3 + fund:-4 + fund:4,4|12|2|1,True,True,True,True,False
+3,antisym2:-4 + antisym2:4 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+3,antisym2:-4 + antisym2:4 + fund:-3 + fund:3,4|12|2|1,True,True,True,True,False
+3,antisym2:-6 + antisym2:6 + fund:-1 + fund:1,4|12|2|1,True,True,True,True,False
+4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,4|15|3|1,True,True,True,True,False
+4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,4|15|3|1,True,True,True,True,False
+4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,4|15|3|1,True,True,True,True,False
+4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,4|15|3|1,True,True,True,True,False
+4,antifund:-1 + antifund:1 + fund:-2 + fund:2,4|16|3|1,True,True,True,True,False
+4,antifund:-1 + antifund:1 + fund:-3 + fund:3,4|16|3|1,True,True,True,True,False
+4,antifund:-1 + antifund:1 + fund:-4 + fund:4,4|16|3|1,True,True,True,True,False
+4,antifund:-1 + antifund:1 + fund:-6 + fund:6,4|16|3|1,True,True,True,True,False
+4,antifund:-2 + antifund:2 + fund:-1 + fund:1,4|16|3|1,True,True,True,True,False
+4,antifund:-2 + antifund:2 + fund:-3 + fund:3,4|16|3|1,True,True,True,True,False
+4,antifund:-3 + antifund:3 + fund:-1 + fund:1,4|16|3|1,True,True,True,True,False
+4,antifund:-3 + antifund:3 + fund:-2 + fund:2,4|16|3|1,True,True,True,True,False
+4,antifund:-3 + antifund:3 + fund:-4 + fund:4,4|16|3|1,True,True,True,True,False
+4,antifund:-4 + antifund:4 + fund:-1 + fund:1,4|16|3|1,True,True,True,True,False
+4,antifund:-4 + antifund:4 + fund:-3 + fund:3,4|16|3|1,True,True,True,True,False
+4,antifund:-6 + antifund:6 + fund:-1 + fund:1,4|16|3|1,True,True,True,True,False

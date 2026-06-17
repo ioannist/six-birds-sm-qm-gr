@@ -1,0 +1,3 @@
+level,cells,qm_only_to_u_residual,gr_only_to_u_residual,shared_compression_fraction,status
+1,4,0.37808491927495375,0.39075176108115167,0.3333333333333333,strict_nonfactorizing
+2,8,0.38001864288127984,0.3949614543328492,0.3333333333333333,strict_nonfactorizing

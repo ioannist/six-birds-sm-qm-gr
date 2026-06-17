@@ -1,0 +1,8 @@
+item,status,detail
+bounded_rank_range,input,one through 4
+bounded_factor_count,input,zero through 3
+chirality_requirement,input,nontrivial complex representation required
+anomaly_and_charge_tests,input,closure tests imposed by grammar
+minimal_sector_structure,generated,2|3
+minimal_ranks,generated,1|2
+recognition_landing,generated_then_named,deferred to prose after generation

@@ -1,0 +1,20 @@
+{
+  "RT_coefficient_source": "steps/step41_tensor_network_rt_bound_artifacts/tensor_network_rt_bound_sim_step41.csv",
+  "RT_coefficient_used": 1.0,
+  "active_residual": "E018 area-shadow-price independently-checkable consequence leg",
+  "area_energy_relation": "delta_A = 1 * delta_H_mod",
+  "delta_H_mod": 0.03668468456853808,
+  "delta_S": 0.036684684567855896,
+  "first_law_first_order_residual": -6.821834763748313e-13,
+  "frame_transfer_certified": false,
+  "full_continuum_einstein_tensor_derived": false,
+  "large_perturbation_deviation": 0.00416640347309,
+  "main_object": "finite density-matrix entanglement first law and RT area-energy response",
+  "new_physics_claim": false,
+  "orientation": "ModeB_E018_entanglement_first_law_area_energy",
+  "other_law_landing_legs_attempted": false,
+  "relative_entropy_second_order": 4.261526688e-05,
+  "root_landed": false,
+  "step": 43,
+  "verdict": "FIRST_LAW_AND_AREA_ENERGY_DERIVED"
+}

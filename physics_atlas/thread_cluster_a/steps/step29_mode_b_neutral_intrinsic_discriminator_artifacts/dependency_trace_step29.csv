@@ -1,0 +1,4 @@
+predicate_component,primitive,role
+atomic_package,P5,No proper non-empty closed chiral subpackage.
+no_spectator_action,P1,Every declared gauge action participates in the package.
+primitive_charge_orbit,F27,Charge orbit has both signs and primitive integer gcd one.

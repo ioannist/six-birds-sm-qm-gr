@@ -1,0 +1,5 @@
+obligation,status,witness
+faithful_enrichment,continued_from_step15,principles evaluated on the 28 Step 15 irreducible real-anomaly supports
+independently_checkable_consequence,advanced_as_type_limit_negative,declared non-circular principles and conjunctions do not uniquely select the reference support
+derived_formula,not_advanced_this_step,no new closed-form relation beyond the Step 14 anomaly relations
+limit_recovery,bounded_by_step15_support_set,reference support is present in the real-anomaly support set but remains one of two after the strongest structural conjunction

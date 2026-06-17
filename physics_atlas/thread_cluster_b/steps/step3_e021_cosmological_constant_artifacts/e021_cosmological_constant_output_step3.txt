@@ -1,0 +1,7 @@
+Cluster B Step 3 E021 finite vacuum-readout construction
+Verdict: E021_audited_vacuum_readout_constructed_finite_toy
+rho_IR selected toy readout: 0.0010400000000000001
+rho_UV toy budget: 1040000000.0000001
+toy mismatch ratio: 1000000000000.0
+UV-to-Lambda obstruction count: 4
+descending control obstruction count: 0

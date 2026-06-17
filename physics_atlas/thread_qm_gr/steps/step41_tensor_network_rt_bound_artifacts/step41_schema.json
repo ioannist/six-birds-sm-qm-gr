@@ -1,0 +1,18 @@
+{
+  "active_residual": "E018 derived-formula leg after Step39/40 circularity rejects",
+  "bound_holds_all_tested": true,
+  "entropy_computed_from_contracted_state": true,
+  "frame_transfer_certified": false,
+  "main_object": "explicit finite tensor-network contraction with min-cut area",
+  "min_cut_nontrivial_witness": "holo_refinement_D2",
+  "new_physics_claim": false,
+  "orientation": "ModeB_E018_tensor_network_RT_bound",
+  "other_law_landing_legs_attempted": false,
+  "root_landed": false,
+  "saturation_ratio_refinement_1": 1.0,
+  "saturation_ratio_refinement_2": 1.0,
+  "step": 41,
+  "strict_gap_exists": true,
+  "strict_gap_witness_value": 0.69314718056,
+  "verdict": "RT_BOUND_SATURATED_STRUCTURALLY"
+}

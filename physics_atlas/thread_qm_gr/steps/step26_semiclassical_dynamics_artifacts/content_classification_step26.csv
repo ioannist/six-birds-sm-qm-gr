@@ -1,0 +1,9 @@
+artifact,output,classification,grade,scope
+semiclassical_dynamics_step26.py,coupled field-potential iteration,predictive structural,finite-carrier diagnostic,finite periodic N=8 field carrier
+convergence_trace_step26.csv,per-iteration convergence and norm-preservation records,analytical structural,finite-carrier diagnostic,consistent coupling and over-strong control
+fixed_point_summary_step26.csv,final fixed-point and eigen residuals,analytical structural,finite-carrier diagnostic,moderate coupling versus control
+dynamics_parameters_step26.json,declared Hamiltonian potential and stress-energy definitions,organizational/audit,finite-carrier diagnostic,Step 24/25 carrier reuse
+fixed_point_states_step26.json,final fields and sourced potentials,organizational/audit,finite-carrier diagnostic,computed state records
+semiclassical_dynamics_statement_step26.tex,typed construction statement,analytical structural,finite-carrier diagnostic,scoped toy theorem statement
+run_step26.py,artifact and guard validator,organizational/audit,diagnostic-complete,Step 26 artifact contract
+external_review,physical frame-transfer adequacy,remaining external content,external review,beyond declared finite toy

@@ -1,0 +1,3 @@
+content_class_id,content_class_key,member_rosters,member_count,target_class,elementary_color_singlet_charge_units,composite_color_singlet_charge_units,elementary_failure_count,composite_failure_count,integer_charge_shadow_passes,failure_examples
+class_00,singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6 + weak_fundxfund:-1 + weak_fundxsinglet:3,roster_01|roster_02|roster_03|roster_04,4,False,-6|0|6,-12|-6|0|6|12,0,0,True,
+class_01,singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6 + weak_fundxfund:1 + weak_fundxsinglet:-3,roster_00|roster_05|roster_06|roster_07,4,True,-6|0|6,-12|-6|0|6|12,0,0,True,

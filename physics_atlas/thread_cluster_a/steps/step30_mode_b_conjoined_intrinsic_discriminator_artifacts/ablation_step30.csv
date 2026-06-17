@@ -1,0 +1,5 @@
+pool,pool_size,minimum_currency,minimum_survivor_count,changes_final_count_or_identity,target_in_minimum
+all_components,1851,2|4|4|2,4,False,False
+without_atomic_package,124751,2|4|4|2,1414,True,False
+without_no_spectator_action,2151,2|4|4|2,12,True,False
+without_primitive_charge_orbit,3705,0|0|0|0,4,True,False

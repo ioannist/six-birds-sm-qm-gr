@@ -1,0 +1,3 @@
+relaxation,survivor_count,survivors_by_structure,single_factor_returns,condition_load_bearing
+allow_confining_charged_massive_vectors,12,2|3:8;4:4,True,True
+enforce_standardness,8,2|3:8;4:0,False,True

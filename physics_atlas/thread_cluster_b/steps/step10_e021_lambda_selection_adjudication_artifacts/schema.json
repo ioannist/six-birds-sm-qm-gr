@@ -1,0 +1,44 @@
+{
+  "step": 10,
+  "name": "E021 Lambda-selection adjudication",
+  "thread": "thread_cluster_b",
+  "source_input": "steps/step8_e021_rg_measure_robustness_artifacts/rg_measure_vacua_step8.csv",
+  "artifacts": {
+    "lambda_degeneracy": "lambda_degeneracy_step10.csv",
+    "adjudication": "adjudication_step10.csv",
+    "controls": "controls_step10.csv"
+  },
+  "required_controls": {
+    "broad_landscape_fails_to_collapse": true,
+    "relaxation_collapses": true,
+    "sharp_measure_collapses": true,
+    "selection_carrier_not_field_pair": true
+  },
+  "final_verdict": {
+    "type": "e021_lambda_selection_adjudication_constructed",
+    "lambda_sm_toy_value": 0.003166268369340605,
+    "lambda_grid_size": 10,
+    "certified_horns": [
+      "relaxation_attractor",
+      "sharp_selecting_measure"
+    ],
+    "failed_horns": [
+      "broad_anthropic_landscape"
+    ],
+    "relaxation_sequence": "10->10->5->1->1->1",
+    "broad_landscape_sequence": "10->10->10->10->10->10",
+    "sharp_measure_sequence": "10->10->7->3->2->1",
+    "broad_landscape_final_degeneracy": 10,
+    "criterion": "P6_decaying_degeneracy_collapses_to_point",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "honest_grade": "finite-toy-diagnostic",
+  "nonclaim": {
+    "selection_type_adjudicated_on_toy": true,
+    "computes_lambda_value": false,
+    "physical_anthropic_disproof": false,
+    "solves_cosmological_constant_problem": false,
+    "frame_transfer_certified": false
+  }
+}

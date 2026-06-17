@@ -1,0 +1,5 @@
+axiom,role,detail
+persistence,record stability,stable substrate under descended dynamics
+distinguishability,record stability,record tokens must not be ambiguous under the action quotient
+capacity,record stability,at least two distinct persistent tokens
+descent_evaluation,map,evaluate the record requirement on each low-energy composite spectrum

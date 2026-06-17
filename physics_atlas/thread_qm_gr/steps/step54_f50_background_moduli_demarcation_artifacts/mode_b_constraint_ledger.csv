@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP54_VERDICT_DERIVED_FROM_SWEEPS,active,F50 classification must be recomputed from sweep tables.
+C_STEP54_KAPPA_CONTROL_BOUNDARY,active,Kappa sweep must show a genuine pass/fail boundary.
+C_STEP54_NO_INLAYER_VALUE_LAW,active,Multiple admissible backgrounds forbid a singleton value law in the frozen layer.

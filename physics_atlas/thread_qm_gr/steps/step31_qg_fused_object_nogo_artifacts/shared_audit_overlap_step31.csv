@@ -1,0 +1,5 @@
+case,mode,equal_residual,proportional_alpha,proportional_residual,shared_audit_exists
+derived_physical_audits,joint_density_transport,0.9935981568901483,,,False
+derived_physical_audits,density_d0,0.6944644768578695,0.6501003453650172,0.5207123913178113,False
+derived_physical_audits,transport_d2,1.2894307568321801,0.038470199857882525,0.9994686548331937,False
+agreeing_audit_control,joint_density_transport,0.0,1.0,0.0,True

@@ -1,0 +1,9 @@
+dimensions,support_key,support_score,witness_scalar,unbroken_nonabelian_subgroups,confining_subgroups,broken_vector_exotic_count,clean_separation_delta_empty,is_target_reference
+2|3,rank_one_fundxantifund:-1 + rank_one_fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxantifund:1 + rank_one_fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,True
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,rank_one_fundxsinglet:-3,3,3,0,True,False

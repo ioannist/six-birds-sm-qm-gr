@@ -1,0 +1,8 @@
+gate,passes,evidence
+no_smuggling_of_target,True,no proof hypothesis assumes delta_empty or no transition leaks; exit is not theorem
+target_invariance_lineage,True,statement remains substrate and capacity imply CS
+no_stipulated_descent,True,reduction map is checked against frozen Step41 defect computation
+anti_tautology_operational_predicates,True,"substrate, capacity, and defect are frozen computable predicates"
+anti_vacuity,True,CS=316; non_CS_substrate=60
+anti_circularity,True,substrate and capacity each have non-CS witnesses
+uniform_parametric_bound,False,no uniform dim/charge/factor-count bound was proved; exit is sharpened_external

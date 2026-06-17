@@ -1,0 +1,6 @@
+artifact,claim,grade,source
+mapping_table_step65.csv,breaking-reading rows are record-incapable,finite-carrier-diagnostic,mapping_table_step65.csv
+fork_object_consistency_step65.csv,"fork object is Step41 gauge-layer defect, not Step63 inter-layer defect",analytical-structural,fork_object_consistency_step65.csv
+step65_statement.tex,conditional memory-stability fork resolution,analytical-structural / finite-carrier-diagnostic,step65_statement.tex
+step65_results_summary.md,summary and caveats,organizational,step65_results_summary.md
+run_step65.py,validator,organizational,run_step65.py

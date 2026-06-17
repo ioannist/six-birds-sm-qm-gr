@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+step59_frozen_record_requirement,active_anti_smuggle_constraint,59,Step57 record requirement must be imported verbatim
+step59_frozen_base_substrate,active_anti_smuggle_constraint,59,Step35 substrate/base logic must be imported verbatim
+step59_frozen_defect,active_anti_smuggle_constraint,59,Step41 factorization-defect computation must be imported verbatim
+step59_adversarial_capacity_nonvacuity,active_teeth_constraint,59,non-CS rows with capacity must exist in the carrier

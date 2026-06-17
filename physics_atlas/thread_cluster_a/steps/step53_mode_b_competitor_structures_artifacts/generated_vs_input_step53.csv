@@ -1,0 +1,6 @@
+item,status,detail
+competitor_list,declared_named_inputs,seven named competitors mapped to toy structures
+step43_exact_filter_rows,read,one/two-factor exact window rows
+step44_factor_count_bound,read,three-factor component-cap route-completeness bound
+competitor_buckets,computed,"{""E6"": ""OUT_OF_ALPHABET_OR_WINDOW"", ""Pati-Salam SU(4)xSU(2)xSU(2)"": ""CAP_EXCLUDED"", ""SO(10)"": ""OUT_OF_ALPHABET_OR_WINDOW"", ""SU(5)"": ""IN_WINDOW_FILTER_EXCLUDED"", ""flipped SU(5)"": ""IN_WINDOW_FILTER_EXCLUDED"", ""left-right SU(3)xSU(2)xSU(2)xU(1)"": ""CAP_EXCLUDED"", ""trinification SU(3)xSU(3)xSU(3)"": ""CAP_EXCLUDED""}"
+verdict,computed,COMPETITORS_TABULATED_SM_SELECTED_IN_COVERED_WINDOW

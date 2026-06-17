@@ -1,0 +1,7 @@
+gate,passes,evidence
+primitive_exclusion,True,"MMI is computed from entropies, not asserted as a primitive"
+dependency_trace,True,generated_vs_input_step44.csv lists graph/tensor/control inputs and generated quantities
+contracted_entropy,True,holographic entropies come from contracted states
+holographic_satisfies,True,contracted holographic random states satisfy standard MMI
+control_violates,True,GHZ control violates standard MMI
+mincut_separate,True,min-cut MMI is computed separately

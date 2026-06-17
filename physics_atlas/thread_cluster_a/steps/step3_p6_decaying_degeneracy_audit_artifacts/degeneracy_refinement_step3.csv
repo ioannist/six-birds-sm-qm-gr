@@ -1,0 +1,7 @@
+level,refinement_name,selection_survivors,g_selection,g_increment,candidates_removed,g_landscape,landscape_increment,landscape_removed,regime
+0,level_0_post_anomaly_survivors,w_SM;w_alt_gauge;w_alt_rep;w_two_gen;w_four_gen;w_high_ew;w_alt_uv;w_alt_vacuum;w_joint_alt,9,0,none,9,0,none,selection_refinement
+1,level_1_gauge_generation_resolution,w_SM;w_alt_rep;w_high_ew;w_alt_uv;w_alt_vacuum,5,-4,w_alt_gauge;w_two_gen;w_four_gen;w_joint_alt,9,0,none,selection_refinement
+2,level_2_rep_texture_resolution,w_SM;w_high_ew;w_alt_uv;w_alt_vacuum,4,-1,w_alt_rep,9,0,none,selection_refinement
+3,level_3_scale_uv_resolution,w_SM;w_alt_vacuum,2,-2,w_high_ew;w_alt_uv,9,0,none,selection_refinement
+4,level_4_vacuum_resolution,w_SM,1,-1,w_alt_vacuum,9,0,none,selection_refinement
+5,level_5_stabilized_selected_point,w_SM,1,0,none,9,0,none,stabilized

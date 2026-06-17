@@ -1,0 +1,51 @@
+{
+  "step": 31,
+  "orientation": "Bounded no-go Lemma 2: fused single-audit object test",
+  "active_residual": "R_child_E018_after_directed_reduction_nogo_lemma1",
+  "carrier": {
+    "type": "finite four-mode native carrier plus Step 24 field-audit table",
+    "union_map": ["d0", "d1", "d2", "d0", "d2", "d3"],
+    "shared_overlap": ["d0_density", "d2_transport"]
+  },
+  "candidate_move": {
+    "id": "fused_object_three_route_test",
+    "description": "Test union fusion, shared-audit fusion, and directed fusion, with nonduplicating and agreeing-audit controls."
+  },
+  "final_verdict": {
+    "type": "lemma2_fused_object_blocked_in_bounded_grammar",
+    "union_route_passes": false,
+    "shared_audit_route_passes": false,
+    "directed_route_passes": false,
+    "nonduplicating_refinement_control_passes": true,
+    "agreeing_audit_control_passes": true,
+    "root_landed": false,
+    "bounded_grammar_scope": true,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "union_extra_coordinate_count": 2,
+    "union_duplicate_pair_count": 2,
+    "union_row_rank": 4,
+    "union_target_dimension": 6,
+    "shared_audit_joint_equal_residual": 0.9935981568901483,
+    "shared_audit_density_proportional_residual": 0.5207123913178113,
+    "shared_audit_transport_proportional_residual": 0.9994686548331937,
+    "directed_route_mismatch_normalized_from_step30": 0.5,
+    "control_refinement_extra_coordinate_count": 0,
+    "control_audit_equal_residual": 0.0
+  },
+  "framework_outputs": {
+    "native_law_verified": [
+      "The union route is rejected by a computed G_nosmuggle rank/duplication diagnostic."
+    ],
+    "toy_diagnostic": [
+      "The shared-audit route is rejected by positive Step 24 overlap residuals."
+    ],
+    "organizational_audit": [
+      "The directed route cites the validated Step 30 Lemma 1 artifact."
+    ],
+    "remaining_external_content": [
+      "The no-go remains bounded and awaits uniqueness/exhaustion."
+    ]
+  }
+}

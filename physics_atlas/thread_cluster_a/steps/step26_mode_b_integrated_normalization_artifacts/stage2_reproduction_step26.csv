@@ -1,0 +1,2 @@
+stage_ii_check,charge_unit,role_charge_weights,all_integer_weights,passes
+charge_quantization_from_generated_structure,1/6,-3|2|6|1|-4,True,True

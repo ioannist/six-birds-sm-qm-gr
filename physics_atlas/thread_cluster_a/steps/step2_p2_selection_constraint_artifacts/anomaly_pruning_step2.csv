@@ -1,0 +1,14 @@
+record_id,world_id,source,gauge_code,rep_code,n_gen,texture_code,ew_code,uv_code,vacuum_code,A_GR,anomaly_free_computed,constraint_action,selection_score_after_constraint,selected_after_constraint
+w_SM,w_SM,step1_candidate,G_SM,R_SM_CHIRAL,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,116.0,True
+w_alt_gauge,w_alt_gauge,step1_candidate,G_PS_TOY,R_SM_CHIRAL,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,91.0,False
+w_alt_rep,w_alt_rep,step1_candidate,G_SM,R_VECTORLIKE_TOY,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,98.0,False
+w_two_gen,w_two_gen,step1_candidate,G_SM,R_SM_CHIRAL,2,Y_TWO_GEN_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,86.0,False
+w_four_gen,w_four_gen,step1_candidate,G_SM,R_SM_CHIRAL,4,Y_FOUR_GEN_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,86.0,False
+w_high_ew,w_high_ew,step1_candidate,G_SM,R_SM_CHIRAL,3,Y_SM_TOY,EW_HIGH_TOY,UV_SM_TOY,VAC_SM_TOY,0,True,survives,102.0,False
+w_alt_uv,w_alt_uv,step1_candidate,G_SM,R_SM_CHIRAL,3,Y_SM_TOY,EW_LOW_TOY,UV_ALT_COMPLETION_TOY,VAC_SM_TOY,0,True,survives,104.0,False
+w_alt_vacuum,w_alt_vacuum,step1_candidate,G_SM,R_SM_CHIRAL,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_ALT_TOY,0,True,survives,104.0,False
+w_joint_alt,w_joint_alt,step1_candidate,G_TOY_E6,R_ALT_CHIRAL_TOY,4,Y_ANARCHY_TOY,EW_HIGH_TOY,UV_ALT_COMPLETION_TOY,VAC_ALT_TOY,0,True,survives,39.0,False
+w_anom_u1,w_anom_u1,step2_anomalous_extension,G_BAD_U1,R_CHIRAL_UNBALANCED,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_SM_TOY,3,False,pruned,,False
+w_anom_rep,w_anom_rep,step2_anomalous_extension,G_SM,R_ANOM_CHIRAL,3,Y_SM_TOY,EW_LOW_TOY,UV_SM_TOY,VAC_ALT_TOY,2,False,pruned,,False
+w_anom_mixed,w_anom_mixed,step2_anomalous_extension,G_PS_TOY,R_ANOM_MIXED,4,Y_FOUR_GEN_TOY,EW_LOW_TOY,UV_ALT_COMPLETION_TOY,VAC_SM_TOY,-4,False,pruned,,False
+w_anom_joint,w_anom_joint,step2_anomalous_extension,G_BAD_PRODUCT,R_BAD_FAMILY,2,Y_TWO_GEN_TOY,EW_HIGH_TOY,UV_ALT_COMPLETION_TOY,VAC_ALT_TOY,2,False,pruned,,False

@@ -1,0 +1,53 @@
+candidate_id,field,su3_rep,su2_rep,hypercharge,su3_dim,su2_dim,note
+SM_one_generation,Q,3,2,1/6,3,2,left quark doublet
+SM_one_generation,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+SM_one_generation,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+SM_one_generation,L,1,2,-1/2,1,2,left lepton doublet
+SM_one_generation,e_c,1,1,1,1,1,left conjugate electron singlet
+bad_u_hypercharge,Q,3,2,1/6,3,2,
+bad_u_hypercharge,u_c_bad,3bar,1,-1/3,3,1,
+bad_u_hypercharge,d_c,3bar,1,1/3,3,1,
+bad_u_hypercharge,L,1,2,-1/2,1,2,
+bad_u_hypercharge,e_c,1,1,1,1,1,
+quark_sector_only,Q,3,2,1/6,3,2,left quark doublet
+quark_sector_only,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+quark_sector_only,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+missing_e_c,Q,3,2,1/6,3,2,left quark doublet
+missing_e_c,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+missing_e_c,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+missing_e_c,L,1,2,-1/2,1,2,left lepton doublet
+SM_plus_vectorlike_lepton,Q,3,2,1/6,3,2,left quark doublet
+SM_plus_vectorlike_lepton,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+SM_plus_vectorlike_lepton,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+SM_plus_vectorlike_lepton,L,1,2,-1/2,1,2,left lepton doublet
+SM_plus_vectorlike_lepton,e_c,1,1,1,1,1,left conjugate electron singlet
+SM_plus_vectorlike_lepton,X_L,1,2,-1/2,1,2,extra vector-like doublet
+SM_plus_vectorlike_lepton,X_L_c,1,2,1/2,1,2,extra vector-like doublet conjugate
+SM_plus_vectorlike_down,Q,3,2,1/6,3,2,left quark doublet
+SM_plus_vectorlike_down,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+SM_plus_vectorlike_down,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+SM_plus_vectorlike_down,L,1,2,-1/2,1,2,left lepton doublet
+SM_plus_vectorlike_down,e_c,1,1,1,1,1,left conjugate electron singlet
+SM_plus_vectorlike_down,D,3,1,-1/3,3,1,extra vector-like color triplet
+SM_plus_vectorlike_down,D_c,3bar,1,1/3,3,1,extra vector-like conjugate
+SM_plus_sterile_neutrino,Q,3,2,1/6,3,2,left quark doublet
+SM_plus_sterile_neutrino,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+SM_plus_sterile_neutrino,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+SM_plus_sterile_neutrino,L,1,2,-1/2,1,2,left lepton doublet
+SM_plus_sterile_neutrino,e_c,1,1,1,1,1,left conjugate electron singlet
+SM_plus_sterile_neutrino,N_c,1,1,0,1,1,sterile singlet
+hypercharge_label_swapped,Q,3,2,1/6,3,2,left quark doublet
+hypercharge_label_swapped,u_c_swapped,3bar,1,1/3,3,1,label-swapped singlet
+hypercharge_label_swapped,d_c_swapped,3bar,1,-2/3,3,1,label-swapped singlet
+hypercharge_label_swapped,L,1,2,-1/2,1,2,left lepton doublet
+hypercharge_label_swapped,e_c,1,1,1,1,1,left conjugate electron singlet
+scaled_hypercharge_x2,Q,3,2,1/3,3,2,left quark doublet
+scaled_hypercharge_x2,u_c,3bar,1,-4/3,3,1,left conjugate up singlet
+scaled_hypercharge_x2,d_c,3bar,1,2/3,3,1,left conjugate down singlet
+scaled_hypercharge_x2,L,1,2,-1,1,2,left lepton doublet
+scaled_hypercharge_x2,e_c,1,1,2,1,1,left conjugate electron singlet
+SU5_10_plus_5bar_decomposition,Q,3,2,1/6,3,2,left quark doublet
+SU5_10_plus_5bar_decomposition,u_c,3bar,1,-2/3,3,1,left conjugate up singlet
+SU5_10_plus_5bar_decomposition,d_c,3bar,1,1/3,3,1,left conjugate down singlet
+SU5_10_plus_5bar_decomposition,L,1,2,-1/2,1,2,left lepton doublet
+SU5_10_plus_5bar_decomposition,e_c,1,1,1,1,1,left conjugate electron singlet

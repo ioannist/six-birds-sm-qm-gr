@@ -1,0 +1,43 @@
+{
+  "step": 47,
+  "orientation": "Batch_B_common_carrier_door_test",
+  "active_residual": "E018 common-carrier premise grounding objection",
+  "main_object": "forces-vs-form test for the common-carrier premise",
+  "verdict": "COMMON_CARRIER_IS_RECOGNITION_SOURCE_WARRANTED",
+  "per_law": {
+    "F37_complementarity_non_joint_access": {
+      "gives_form": true,
+      "forces_existence": false,
+      "door_test_result": "FORM_NOT_EXISTENCE"
+    },
+    "F51_unification_common_refinement": {
+      "gives_form": true,
+      "forces_existence": false,
+      "door_test_result": "FORM_NOT_EXISTENCE"
+    },
+    "FoEC_universal_quotient_calculus": {
+      "gives_form": true,
+      "forces_existence": false,
+      "door_test_result": "FORM_NOT_EXISTENCE"
+    },
+    "SAU_non_descending_object_discipline": {
+      "gives_form": true,
+      "forces_existence": false,
+      "door_test_result": "LICENSE_NOT_DERIVATION"
+    }
+  },
+  "warrant": "semiclassical co-sourcing: one psi gives Born[psi] and stress-energy T[psi] descents with zero residual on Step25",
+  "recognition_source": "COMMON_CARRIER_PREMISE_WARRANTED_BY_SEMICLASSICAL_CO_SOURCING",
+  "landing_mode": "LANDED_GROUND_CONDITIONAL",
+  "premise_ground_landed": true,
+  "grounding_source": "semiclassical co-sourcing layer with Step25 Born/stress descents and Step26 matter-sourced geometry back-reaction",
+  "warrant_extended_via_step26": true,
+  "complementary_pair_no_carrier": true,
+  "non_cosourcing_no_warrant": true,
+  "source_warrant_caveat": "semiclassical co-sourcing is the named recognition source",
+  "theorem_strength_caveat": "recognition-source GROUND landing, not an SBT-internal proof",
+  "frame_transfer_residual": "free gravitational degrees of freedom, the full quantum-gravity sector, and trans-semiclassical survival of the common carrier",
+  "new_physics_claim": false,
+  "frame_transfer_certified": false,
+  "root_landed": false
+}

@@ -1,0 +1,7 @@
+Step 37 non-coordinate/nonlinear mediator robustness
+linear_sample_count: 14
+nonlinear_sample_count: 6
+all_actual_admissible_minimal_iso_to_L: True
+actual_inequivalent_minimal_count: 0
+positive_detection_detected: True
+verdict: instance_uniqueness_robust_general_linear_nonlinear_tested

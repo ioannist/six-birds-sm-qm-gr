@@ -1,0 +1,9 @@
+gate,status,scope,evidence
+C1_fiv_source_read,pass,source,"FIV source lines per family are recorded in CSV and JSON."
+C2_eight_predicates,pass,predicate suite,"All eight F24 family predicates are present."
+C3_l_selected_by_predicate,pass,L classification,"L_candidate_package selects BridgeMediatedRole with selected_count=1."
+C4_mutual_exclusive,pass,discrimination suite,"Every candidate selects exactly one family."
+C5_exhaustive_on_suite,pass,discrimination suite,"All eight families appear in the selected-family coverage."
+C6_controls_discriminate,pass,controls,"Memory hidden budget scoped coarsened outside and blocked controls classify as expected."
+C7_no_hardcoding,pass,no-smuggling,"Verdict payload records L_case_hardcoded=false."
+C8_no_root_landing,pass,no-smuggling,"Schema root_landed=false and external review remains required."

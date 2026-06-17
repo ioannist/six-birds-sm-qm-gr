@@ -1,0 +1,44 @@
+\paragraph{Step 27 finite constraint statement.}
+Let \(\mathcal{H}_c \cong \mathbb{C}^{16}\) be a finite clock register and
+let \(\mathcal{H}_f \cong \mathbb{C}^{8}\) be the Step 26 field space at the
+self-sourced stationary fixed potential \(V_\ast\).  Let
+\[
+H_f = \frac12 \Delta_{\mathrm{per}} + \mathrm{diag}(V_\ast)
+\]
+be the finite Hermitian field Hamiltonian and let \(\psi_\ast\) be the Step
+26 stationary field with energy \(E_\ast\).
+
+Choose a finite Hermitian clock generator \(P_c\) with a distinguished clock
+history vector
+\[
+c_t = 16^{-1/2}\exp(-iE_\ast t\,dt)
+\]
+as an eigenvector of eigenvalue \(-E_\ast\).  Define the clock-field
+constraint
+\[
+C = P_c \otimes I_f + I_c \otimes H_f.
+\]
+The finite history state
+\[
+\Psi = \sum_t c_t |t\rangle \otimes \psi_\ast
+\]
+satisfies \(C\Psi=0\) up to numerical tolerance because
+\(P_c c=-E_\ast c\) and \(H_f\psi_\ast=E_\ast\psi_\ast\).
+
+\paragraph{Observed finite-carrier result.}
+The compatible constraint has kernel dimension \(1\) at tolerance \(10^{-8}\)
+and \(\|C\Psi\|=8.547035876629756\cdot 10^{-16}\).  Conditioning \(\Psi\)
+on clock value \(t\) recovers the Step 26 stationary unitary field
+\(\exp(-iH_f t\,dt)\psi_\ast\) with maximum direct residual
+\(9.79195701998934\cdot 10^{-16}\).
+
+\paragraph{Control.}
+Replacing \(P_c\) by the positive clock generator
+\((|E_\ast|+0.5)I_c\) gives a constraint with no numerical kernel; its
+minimum absolute eigenvalue is \(0.9868198124684662\).  Thus the
+empty-kernel control fails the same physical-space test.
+
+\paragraph{Scope.}
+The statement is a finite-carrier diagnostic constraint representation of
+the Step 26 stationary toy dynamics.  It is not a broad physical adequacy
+claim.

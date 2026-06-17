@@ -1,0 +1,4 @@
+test,result,witness,detail
+carrier_disjointness,True,content columns and scale columns have empty intersection,none
+measure_kind,True,content uses discrete anomaly/structural constraints; scale uses continuous tuning cost plus relaxation,distinct_measure_kind
+content_selection_status,rigorous_type_limit_negative,Step 16 closes content-selection as a type-limit negative,charge_integrality+simple_group_embedding_pattern

@@ -1,0 +1,4 @@
+control,passes,evidence
+not_a_target_row_picker,True,currency minimum leaves 4 non-target supports
+fails_many_step29_survivors,True,1847 Step-29 survivors fail strict currency minimum
+target_not_forced,True,target reference fails strict currency minimum

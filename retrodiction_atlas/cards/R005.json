@@ -1,0 +1,128 @@
+{
+  "id": "R005",
+  "schema_note": "Enriched card: original card + audit + skeptic panel + repair+scores merged into one object. Repair narrows the claim to honest scope, converts rhetoric to a lemma sequence, splits the certified deterministic skeleton from the (out-of-band/uncertified) probabilistic Bell connection, and discloses declaration-driven bucket occupancy. No new assumptions, no hidden tuning, no concealed imports.",
+
+  "original_card": {
+    "one_sentence_claim": "SBT forces every bipartite correlation into a unique structural trichotomy normal form (F49) -- common-source-descended, interface-factorizable, or a flagged nonlocal residual -- recovering the Reichenbach/Bell local-causal-model decomposition as a quotient-descent classification, but it does NOT solve Bell, quantify the residual, or supply a hidden-variable completion.",
+    "target_known_fact": "The Reichenbach common-cause principle plus Bell's local-causal-model structure: bipartite correlations are either explained by a common cause that screens off the two wings (shared past), by a shared interface/local factorization, or constitute a genuine nonlocal residual that no local-causal (local hidden-variable) model reproduces -- the residue left by Bell-inequality violation -- together with the no-signalling constraint that distinguishes conditioning from influence.",
+    "scientific_domain": "Quantum foundations / information physics (nonlocality, common-cause inference, EPR/Bell structure)",
+    "argument_family": "uniqueness-necessity",
+    "derivability_class": "B",
+    "theory_basis_summary": "F49 (thm:F49, Foundations IV lines 8278-8322; faithful Lean common_source_nonlocal_correlation) defines LocallyExplainable := CommonSource OR InterfaceFactorization as quotient-descent (constant-on-fibers) conditions, residual = complement; supported by definable_iff_constantOnFibers (Definability.lean), the no-signalling/conditioning separation (Quantum paper EXP-NS1 ~2.22e-16, thm:tv-dpi tvdist_pushforward_le), and contextuality-as-noncommuting-closures.",
+    "minimum_viable_result": "A clean expository theorem-plus-demonstration: take thm:F49 verbatim (already faithful-Lean-certified), instantiate it on one finite bipartite scenario, and SHOW that (a) classically-correlated tables fall into CommonSource/InterfaceFactorization and (b) a CHSH-violating table lands in the flagged residual bucket, with the no-signalling/conditioning separation reproduced numerically (EXP-NS1 mirror).",
+    "honest_status_note": "F49 is a genuine faithful direct Lean theorem but its proof is essentially DEFINITIONAL; the trichotomy and 'forced residual' are near-tautological at the deterministic level. SBT explicitly disclaims a Bell solution and hidden-variable completion. The result RECOVERS/reorganizes the standard structure; it does not beat it. Derivability class B."
+  },
+
+  "verification_notes": {
+    "checked_against_source": true,
+    "findings": [
+      "CONFIRMED: thm:F49 at Tsiokos_2026_Six_Birds_Foundations_IV...tex lines 8278-8299; proof lines 8303-8322 only unfolds 'readout descends through a quotient iff constant on its fibers' and DEFINES LocallyExplainable := CommonSource OR InterfaceFactorization, residual = complement (line 8321). Definitional, as the skeptics state.",
+      "CONFIRMED: line 8274-8276 'the layer-agnostic statement below records the descent-to-common-source obstruction abstracted from that substrate' (the EPR/Bell situation) -- target-used-to-design confirmed.",
+      "CONFIRMED: all five F49 layer instantiations (lines 8324-8405) are CLASSICAL -- MISTRA twin studies/Falconer h^2, Doolittle lateral gene transfer, plagiarism fingerprinting, Mosteller-Wallace stylometry, fault-tree common-cause. NO CHSH/Bell-violating worked example exists in the corpus (grep: 1 hit for CHSH/Bell-inequality/hidden-variable family terms in Foundations IV, that being the motivating EPR citation).",
+      "CONFIRMED: no-signalling material lives in the SEPARATE Quantum paper. NSDistX = 2.22045e-16 (line 37), EXP-NS1 (lines 789, 984, 1016), thm:tv-dpi (line 805) mechanized as tvdist_pushforward_le (line 814).",
+      "CONFIRMED: disclaimers respected verbatim. Abstract line 64: 'We do not claim to derive the Born rule or resolve Bell's theorem.' Line 856: 'No selection rule derived ... we do not derive pointer-basis selection or single-outcome selection.' Line 889 flags a 'taxonomy of where specific no-go statements bite' as future work, explicitly 'without presenting it as a single grand resolution' -- exactly the card's organizational-value framing.",
+      "CONFIRMED: ledger line 111 'No stochastic-lens backbone in the certified core: Lean covers deterministic partition lenses only' -- the deterministic F49 cannot, as proved, distinguish a CHSH-violating probabilistic table from a classically-correlated one. The faithful-correspondence lemma (card required_lemmas, already_in_papers=false) is the entire missing physics bridge.",
+      "CONFIRMED: ledger line 109 'No Bell / hidden-variable interface ... nonlocal correlations only classified (common-source/interface/nonlocal-residual, F49), not predicted or quantified.'"
+    ]
+  },
+
+  "audit": {
+    "degrees_of_freedom_estimate": 6,
+    "data_points_matched": 2,
+    "overfitting_risk": "HIGH (for any claim beyond pure bookkeeping); moot for the honestly-scoped classification normal form because nothing is predicted.",
+    "mechanism_tag": "orbit-descent",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_could_explain_opposite": true,
+    "audit_verdict": "HIGH FLEXIBILITY / NEAR-DEFINITIONAL CLASSIFICATION -- not a prediction. F49 is a genuine faithful Lean theorem whose proof only unfolds constant-on-fibers and DEFINES LocallyExplainable as a disjunction; the residual is the declaration-controlled logical complement. >=6 declared structural maps vs ~2 qualitative consistency checks that reproduce imported textbook facts. Opposite-world fails decisively: SBT could 'recover' a local-causal, an actual Bell-violating, or a signalling world with equal ease. Disclaimers respected as written; class B appropriate.",
+    "key_adjustable_choices": [
+      "Source quotient sigma granularity (sets whether CommonSource holds; monotone in fiber fineness)",
+      "Interface iota (sets InterfaceFactorization)",
+      "Local readouts r_A,r_B relative to sigma/iota",
+      "Choice of demonstration correlation table (separable vs CHSH-violating, hand-picked)",
+      "Reichenbach/Bell dictionary mapping (which quotient = 'common cause')",
+      "Whether to invoke the assumed recognition hypothesis for true exhaustiveness",
+      "Whether to bridge to probabilistic screening-off (missing stochastic-lens) or stay deterministic"
+    ]
+  },
+
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.75,
+    "fatal_objections_present": true,
+    "summary_of_objections": [
+      "FATAL (mathematical-physicist skeptic, score 1): No CHSH/Bell worked example exists anywhere in the corpus (verified by grep); all five F49 instantiations are classical, EPR/Bell is only the motivating citation. The card's 'requires NO new lemmas -- only instantiation' is false: the CHSH demo is new work AND cannot be done with the certified deterministic machinery.",
+      "FATAL (same skeptic): The deterministic F49 theorem CANNOT distinguish a CHSH-violating table from a classical one. Reichenbach screening-off / Bell local-causality are irreducibly probabilistic; the stochastic-lens backbone is explicitly MISSING from the certified core (ledger line 111). The central claimed deliverable is not supported by the Lean theorem.",
+      "SERIOUS (all four skeptics): The headline 'forces ... unique trichotomy' is a definitional disjunction dressed as structural necessity; bucket occupancy is fixed by declared granularity of sigma/iota, so the classification cannot be wrong and predicts nothing (opposite-world failure).",
+      "SERIOUS: genuine exhaustiveness (no fourth structure) leans on the recognition hypothesis, which the ledger marks ASSUMED not derived.",
+      "SERIOUS: known physics imported wholesale (no-signalling, Born-rule statistics, the DPI as 'deterministic specialization of the standard data-processing inequality', the entire Reichenbach/Bell vocabulary); nothing about nonlocality is derived.",
+      "SERIOUS: the no-signalling/conditioning 'guardrail' is cross-paper stitching -- F49 (Foundations IV) never mentions no-signalling; EXP-NS1/tv-dpi live in the Quantum paper and were not asserted jointly with F49 in either paper."
+    ],
+    "what_would_change_minds": "A Lean-certified probabilistic faithful-correspondence theorem (CommonSource descent <=> Reichenbach screening-off on a stochastic-lens backbone) PLUS a recognition-style exhaustiveness lemma and a canonical-granularity rule that fixes sigma/iota BEFORE seeing the table, so descent genuinely FAILS for a CHSH-violating table under the physically-natural quotient rather than by hand-chosen coarsening. Even then it would only be a faithful recovery, not a stronger theory; a quantitative residual/CHSH bound crosses the explicit no-Bell-solution disclaimer."
+  },
+
+  "repair": {
+    "repair_status": "repaired",
+    "repair_strategy": "Allowed repairs only: (1) DEMOTE 'forces ... unique trichotomy ... recovering' to an explicitly DEFINITIONAL classification/bookkeeping normal form that re-expresses, not derives or resolves, the local-causal-model decomposition (narrow the claim; convert the rhetorical 'forces' to a stated definitional-exhaustiveness lemma). (2) SPLIT the certified deterministic quotient-descent skeleton from the probabilistic Bell/Reichenbach connection, marking the latter out-of-band and uncertified (uses the MISSING stochastic-lens interface). (3) CLARIFY THE MAPPING: state that bucket occupancy is set by the declarer's chosen granularity of sigma/iota and that the Reichenbach/Bell dictionary is an imposed labeling, so no bucket occupancy is predicted (discloses the opposite-world point rather than hiding it). (4) Relabel the worked CHSH item as an out-of-band ILLUSTRATION done informally, not a near-free Lean-certified deliverable, and label EXP-NS1/tv-dpi as IMPORTED operational input from a separate paper. (5) REMOVE the unproven exhaustiveness claim from the headline (it is definitional at the certified level; non-trivial version is conditional on the assumed recognition hypothesis). No new assumptions added, no tuning hidden, no imports concealed, no undefined 'emerges'.",
+    "revised_one_sentence_claim": "F49 is a deterministic quotient-descent CLASSIFICATION normal form (faithful-Lean-certified as common_source_nonlocal_correlation) that re-expresses the Reichenbach/Bell local-causal-model trichotomy -- common-source-descended, interface-factorizable, or a definitional residual complement -- as 'a readout descends through a shared quotient iff it is constant on its fibers'; it RECOVERS but does not derive, quantify, or resolve Bell, bucket occupancy is fixed by the declarer's chosen granularity of sigma/iota (not predicted), and connecting it to actual probabilistic screening-off requires the stochastic-lens backbone that the certified core lacks.",
+    "new_minimum_viable_result": "Restate thm:F49 with the Reichenbach/Bell dictionary explicitly flagged as an imposed labeling, present the existing faithful Lean theorem (deterministic quotient-descent skeleton) as the certified core, give ONE deterministic worked bipartite example showing which bucket fires under a chosen sigma/iota WITH an explicit statement that membership is granularity-dependent and no CHSH magnitude is computed, and cite EXP-NS1 (~2.22e-16) / thm:tv-dpi from the Quantum paper as IMPORTED operational no-signalling/conditioning input (Born-rule statistics given). No new lemmas; crosses no disclaimer. The probabilistic CHSH-table demonstration is explicitly marked as out-of-band future work requiring the missing stochastic-lens interface.",
+    "lemma_sequence_replacing_rhetoric": [
+      "L1 (certified, trivial): definable_iff_constantOnFibers -- a readout factors through a deterministic quotient iff constant on its fibers.",
+      "L2 (certified, trivial): CommonSource(sigma) and InterfaceFactorization(iota) are L1 instances; LocallyExplainable := their disjunction; residual := complement (thm:F49). This is a DEFINITION-unfolding, not a structural-necessity theorem.",
+      "L3 (imported, separate paper): no-signalling/conditioning separation (EXP-NS1, thm:tv-dpi) -- standard, Born-rule-presupposing; localizes the residual as an explanatory-structure fact, kept logically separate from L2.",
+      "L4 (MISSING, uncertified): probabilistic faithful-correspondence CommonSource descent <=> Reichenbach screening-off on a stochastic-lens backbone -- required for any genuine Bell/Reichenbach contact; absent from the core.",
+      "L5 (ASSUMED, not derived): recognition-style exhaustiveness (no fourth local-explanatory structure) -- needed to upgrade the definitional disjunction to a forced partition; conditional on the recognition hypothesis."
+    ],
+    "changes_made": [
+      "Demoted 'forces every bipartite correlation into a unique trichotomy / recovering the Reichenbach/Bell decomposition' to an explicitly DEFINITIONAL classification normal form; 'forced' qualified as definitional-exhaustive only.",
+      "Split certified deterministic skeleton (L1-L2) from the uncertified probabilistic Bell bridge (L4); stated the latter uses the MISSING stochastic-lens interface and is not done by the Lean theorem.",
+      "Disclosed that bucket occupancy is declaration/granularity-controlled and therefore NOT a prediction (the opposite-world point moved into the claim itself).",
+      "Relabeled the CHSH worked example as out-of-band illustration / future work, not a near-free certified deliverable; relabeled EXP-NS1/tv-dpi as imported operational input from a separate paper.",
+      "Removed the headline exhaustiveness claim; demoted it to a conditional (recognition-hypothesis-dependent) lemma L5.",
+      "Preserved all disclaimers verbatim: no Bell solution, no hidden-variable completion, no Born rule, residual unquantified, no lens/pointer-basis selection."
+    ],
+    "remaining_objections": [
+      "FATAL-RESIDUAL: even repaired, the certified content is a definition-unfolding (L1-L2); it is a faithful re-description plus a tidy axis-separation discipline, NOT a prediction and NOT a stronger-than-textbook theory. The repair cannot create content the calculus does not have.",
+      "The probabilistic Bell/Reichenbach correspondence (L4) and genuine exhaustiveness (L5) remain absent/assumed; the Bell connection stays verbal until the missing stochastic-lens backbone and a recognition-style lemma are proved.",
+      "Bucket occupancy remains declaration-controlled; no canonical-granularity rule exists (ledger: no lens/pointer-basis selection), so the classification still cannot be empirically wrong.",
+      "No CHSH/Bell-violating worked example exists in the corpus; producing even a deterministic illustration is new (if cheap) work, and a probabilistic one cannot be certified."
+    ]
+  },
+
+  "scores": {
+    "impact": 2,
+    "execution_ease": 4,
+    "plausibility": 5,
+    "non_ad_hocness": 3,
+    "discriminative_power": 0,
+    "audience_legibility": 4,
+    "precision": 1,
+    "robustness": 2,
+    "baseline_advantage": 1,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "2 -- a clean axis-separation (no-signalling vs explanatory-structure) and a named residual bucket are genuinely useful organizational moves for foundations/causal-inference readers, but no new prediction, no quantified residual, no Bell resolution. Modest.",
+    "execution_ease": "4 -- the honestly-scoped MVR is restating a faithful Lean theorem + one deterministic worked example + citing an existing EXP-NS1 demo from another paper. Cheap. Not 5 because even the deterministic illustration plus the dictionary write-up is new (not in corpus) work, and the tempting probabilistic CHSH demo is high-cost/uncertifiable.",
+    "plausibility": "5 -- the certified content (constant-on-fibers descent; no-signalling reproduction; TV-DPI) is elementary, true, and Lean-anchored. Nothing dubious once the claim is scoped to classification.",
+    "non_ad_hocness": "3 -- the orbit/quotient-descent mechanism is genuinely reused across F27/F51 and 5+ classical layer instantiations, and the Lean theorem is real; but the reuse is of a near-universal trivial algebraic fact, the target was admittedly 'abstracted from' the EPR/Bell substrate (designed to mirror the known classification), and the dictionary mapping is imposed from outside. Middling.",
+    "discriminative_power": "0 -- decisive opposite-world failure: bucket occupancy is fixed by declared granularity of sigma/iota, so SBT could 'recover' a local-causal, the actual Bell-violating, or a signalling world with equal ease. The classification cannot be wrong and predicts no bucket occupancy. Matches no quantitative target.",
+    "audience_legibility": "4 -- a Lean-certified structural normal form with a crisp dictionary is highly legible to formal-methods and foundations audiences; the axis-separation framing is clear. Capped below 5 because the 'forces/recovers' framing actively misleads unless the definitional caveat is read.",
+    "precision": "1 -- no number is predicted; the residual is only flagged, never quantified (no CHSH bound, no measure). The only numbers (~2.22e-16, dist=1) are imported reproductions of textbook facts. SBT's explicit no-Bell/no-Born disclaimers cap precision near the floor.",
+    "robustness": "2 -- the certified deterministic skeleton is robust as far as it goes, but the headline claim collapses under granularity choice and the probabilistic-vs-deterministic gap; the Bell connection is not robust to the missing stochastic-lens interface.",
+    "baseline_advantage": "1 -- explicitly RECOVERS/reorganizes; does not beat the textbook Reichenbach + Bell local-causal-model + no-signalling account. The only edge is organizational (axis separation, named residual, locating the global-packaging premise). Disclaimers cap any quantitative advantage. Not 0 because the clean separation of conditioning-from-influence and the auditable normal form have real (if marginal) bookkeeping value.",
+    "publication_potential": "2 -- already published as one of Foundations IV's 52 laws; a short expository note recovering the dictionary is plausibly publishable in a formal-methods/foundations venue as bookkeeping, but it makes no new claim and a standalone framing risks reviewers reading it as relabeling. Low-to-moderate."
+  },
+
+  "proposed_bin": "E",
+  "recommended_priority": "low",
+  "recommended_artifact": "A short expository note (NOT a physics-prediction paper): (1) restate thm:F49 with an explicitly-flagged-as-imposed Reichenbach/Bell dictionary, the lemma sequence L1-L5, and a prominent non-claims box (no Bell solution, no hidden-variable completion, no Born rule, residual unquantified, no lens/pointer-basis selection); (2) one DETERMINISTIC worked bipartite example showing which bucket fires under a chosen sigma/iota, with an explicit granularity-dependence disclaimer; (3) cite EXP-NS1 (~2.22e-16) and thm:tv-dpi as IMPORTED operational no-signalling/conditioning input from the Quantum paper, clearly labeled cross-paper; (4) the existing faithful Lean common_source_nonlocal_correlation as the certified deterministic core; (5) state plainly that the probabilistic CHSH/Bell demonstration and genuine exhaustiveness are open work needing the MISSING stochastic-lens backbone and the assumed recognition hypothesis.",
+  "one_line_verdict": "A faithful but near-definitional deterministic quotient-descent classification that honestly RECOVERS (does not derive, quantify, or resolve) the Reichenbach/Bell/no-signalling trichotomy; repairable only by demotion to a bookkeeping normal form -- valuable as conceptual axis-separation, worthless as prediction.",
+  "mechanism_tag": "orbit-descent",
+  "target_audience": [
+    "Quantum foundations researchers (Bell/Reichenbach common-cause, operational/causal-inference programs)",
+    "Causal-inference and graphical-models theorists (common-cause structure, screening-off)",
+    "Formal-methods / interactive-theorem-proving community (Lean-certified structural normal forms)",
+    "Philosophers of physics working on nonlocality and the measurement problem"
+  ]
+}

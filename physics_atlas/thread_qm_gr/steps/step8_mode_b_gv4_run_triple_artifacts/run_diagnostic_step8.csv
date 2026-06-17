@@ -1,0 +1,9 @@
+n_cells,metric,value,threshold,status
+32,completion_fixed_point_normalized_xi,0.4947207905172907,0.02,fails_candidate_threshold
+32,heldout_interaction_gain,-0.02326224393247789,0.05,fails_candidate_threshold
+32,pairwise_union_corr2_control,0.2514682187431358,not accepted as witness,rejected_control
+32,rigged_diagonal_completion_control_xi,1.8127167969206024e-16,rejected even if zero,rejected_control
+64,completion_fixed_point_normalized_xi,0.5371910513210945,0.02,fails_candidate_threshold
+64,heldout_interaction_gain,-0.08539192789918792,0.05,fails_candidate_threshold
+64,pairwise_union_corr2_control,0.002666092280500349,not accepted as witness,rejected_control
+64,rigged_diagonal_completion_control_xi,0.0,rejected even if zero,rejected_control

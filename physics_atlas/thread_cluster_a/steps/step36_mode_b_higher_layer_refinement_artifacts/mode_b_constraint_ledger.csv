@@ -1,0 +1,9 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP36_REPRODUCE_CARRIER,ModeB,step36_mode_b_higher_layer_refinement,determinism,"Step 36 rederives the Step-35 higher-layer survivor count as 12."
+C_CLUSTER_A_STEP36_STAGED_POTENTIAL,ModeB,step36_mode_b_higher_layer_refinement,higher_layer_refinement,"The predicate requires an invariant scalar potential proxy and a staged residual non-abelian route after scalar-active breaking."
+C_CLUSTER_A_STEP36_CUT,ModeB,step36_mode_b_higher_layer_refinement,narrow,"The predicate leaves 8 of 12 survivors and retains the reference support."
+C_CLUSTER_A_STEP36_STRUCTURE_BOUNDARY,ModeB,step36_mode_b_higher_layer_refinement,diagnostic,"The single-factor 4 family is eliminated; all 8 refined survivors are in structure 2|3."
+C_CLUSTER_A_STEP36_NOT_UNIQUE,ModeB,step36_mode_b_higher_layer_refinement,residual,"The reference passes with witness rank_one_fundxsinglet:-3 but is not uniquely distinguished among the 8 refined supports."
+C_CLUSTER_A_STEP36_GATES,ModeB,step36_mode_b_higher_layer_refinement,anti_smuggling,"Primitive exclusion, dependency trace, ablation, negative controls, Stage II, and anti-reductionism gates pass."
+C_CLUSTER_A_STEP36_VERDICT,ModeB,step36_mode_b_higher_layer_refinement,verdict,"Verdict is CONTENT_TYPE_LIMIT: residual selection is content orientation inside the selected structure family."
+C_CLUSTER_A_STEP36_NONCLAIM_BOUNDARY,ModeB,step36_mode_b_higher_layer_refinement,honesty,"Finite compatibility diagnostic only; no content derivation, value derivation, or external-transfer status upgrade is supplied."

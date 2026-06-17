@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,objects,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_E018_LadderVsForkResolution_v1,48,four-mode access quotients; source-derived RT shadow; common-carrier fork closure; nested endpoint control,Excludes ladder claims that do not compute endpoint factorization or that read RT as full-GR quotient by assumption.,The nested control flips the verdict when endpoints are actually nested.,trans-semiclassical frame-transfer test for the common carrier

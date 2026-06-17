@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+\title{Cluster A Step 8: Structural Token-Blind Selection}
+\author{Six Birds Theory construction track}
+\date{2026-06-06}
+
+\begin{document}
+\maketitle
+
+\section{Grade}
+
+\textbf{Grade: finite-carrier diagnostic.}
+This construction answers the circularity objection to the earlier curated selection measure by building a neutral product carrier and a token-blind structural admissibility functional. It specifies a structural pruning shape, not a physical Standard Model value or mechanism.
+
+\section{Neutral Carrier}
+
+The candidate space is the full independent product of seven facet alphabets:
+\[
+4 \times 4 \times 5 \times 4 \times 3 \times 3 \times 3 = 8640.
+\]
+The prior realized point is represented as one ordinary coordinate in the product. It is not over-represented.
+
+Sources: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/neutral\_generation\_procedure\_step8.csv}, \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/neutral\_candidate\_space\_step8.csv}.
+
+\section{Structural Functional}
+
+The functional applies structural predicates only: anomaly cancellation, gauge-representation compatibility, generation/chirality cancellation, texture compatibility, UV capacity/consistency, and naturalness cost. The anti-circularity guard validates that the build script contains no literal SM-token strings, no explicit special case for generation count \(3\), and no realized-point score adjustment.
+
+Sources: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/structural\_token\_blind\_selection\_step8.py}, \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/run\_step8.py}.
+
+\section{Pruning Result}
+
+The structural sequence prunes:
+\[
+8640 \to 3240 \to 3240 \to 1836 \to 1134 \to 549 \to 468.
+\]
+The final survivor set has \(468\) candidates, or \(0.05416667\) of the neutral product.
+
+Sources: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/admissibility\_breakdown\_step8.csv}, \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/structural\_survivors\_step8.csv}.
+
+\section{Location of the Realized Point}
+
+The realized prior-step point is among the structural survivors but is not unique. It has structural rank \(2\), structural score \(103.900000\), and belongs to a max-score tier of \(6\) candidates. This confirms the honest grade: structure prunes the space and keeps the realized point admissible, but does not derive the realized value.
+
+Source: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/structural\_summary\_step8.csv}.
+
+\section{Gauge-Generation Coupling}
+
+The gauge-generation mutual information is \(0.000000000000\) bits on the neutral product and \(0.466203233486\) bits on the structural survivors. The coupling is absent from the neutral product and induced by the structural constraints.
+
+Source: \texttt{steps/step8\_structural\_token\_blind\_selection\_artifacts/mi\_comparison\_step8.csv}.
+
+\section{Verdict}
+
+The verdict is \texttt{structural\_token\_blind\_selection\_constructed}. This step removes the token-circularity defect from the finite toy: structural pruning survives, the realized point is admissible but not singled out, and the gauge-generation coupling is constraint-induced rather than a product-population artifact. The construction remains finite and toy-level.
+
+\end{document}

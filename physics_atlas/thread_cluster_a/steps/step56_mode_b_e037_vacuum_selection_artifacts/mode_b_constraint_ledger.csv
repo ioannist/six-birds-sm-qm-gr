@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step56_neutral_two_vacuum_carrier,active_anti_smuggle_constraint,56,two-vacuum carrier must not encode our vacuum or SM selector
+step56_RM_computed_not_assumed,active_anti_smuggle_constraint,56,route mismatch computed from route compositions
+step56_stabilizing_selector_control,active_negative_control,56,shows RM can decay when selector stabilizes

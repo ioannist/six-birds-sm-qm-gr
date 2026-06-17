@@ -1,0 +1,7 @@
+Step 17 native promotion-bridge classification
+L status: candidate
+L strict: True with Delta_fact 3
+direct-sum package status: failed_G_nosmuggle
+direct-sum package strict: True with Delta_fact 3
+Distinguishing gate: G_nosmuggle
+Reason: duplicated shared observable rows in direct-sum package

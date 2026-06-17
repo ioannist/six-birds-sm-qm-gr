@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP52_LOCAL_BOUND_ENUMERATED,active,The local CHSH bound must come from all 16 deterministic strategies.
+C_STEP52_CONTROL_LHV_EXPLICIT,active,The classical control must have a checked explicit LHV table.
+C_STEP52_CARRIER_NOT_HIDDEN_VARIABLE,active,The F37 non-joint-access tie must block reading L as a local hidden variable.

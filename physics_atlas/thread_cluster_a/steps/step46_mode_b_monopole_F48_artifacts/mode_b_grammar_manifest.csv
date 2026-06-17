@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,carrier,active_constraints,excluded_designs_rationale,non_triviality_argument,next_grammar_delta
+G_step46_F48_gluing,46,Step41 clean and contaminated supports plus finite charged breaking-coset pairs,F48 gluing obstruction; Step41/45 witness identity,No physical reading is selected; no monopole-problem resolution is claimed.,The same invariant is zero for a neutral breaking control and nonzero for a charged coset control.,TODO #4 proton/monopole candidate track closed; later work must address physical recognition if pursued.

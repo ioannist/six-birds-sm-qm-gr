@@ -1,0 +1,8 @@
+gate,passes,evidence
+no_smuggling,True,hypothesis is substrate only; defect non-emptiness is derived
+target_invariance_lineage,True,statement is the single-factor exclusion target from Step43
+no_stipulated_descent,True,defect non-emptiness is exhibited via Step41 boson/delta computation
+anti_tautology_operational_predicate,True,substrate and defect remain frozen computable predicates
+anti_vacuity,True,single_factor_substrate_count=12
+anti_circularity,True,substrate can be clean in multi-factor rows; single-factor restriction drives conclusion
+uniform_parametric_bound,True,"proof uses symbolic residual=N-1 and 2*(N-1), independent of dimension cap; N>=7 is vacuous only because frozen scalar alphabet has no active substrate"

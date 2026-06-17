@@ -1,0 +1,7 @@
+check,passes,evidence
+uses_slot_count_prior,False,"higher-layer predicate uses scalar witness existence over corrected 80, not slot count"
+uses_parent_group_prior,False,no larger-group or parent descent data enter the predicate
+uses_empirical_scalar,False,scalar witnesses are enumerated from the neutral representation alphabet
+uses_empirical_mass_or_coupling_values,False,predicate tests invariant existence only
+reduces_to_shape,False,survivors are distributed across 2 structures
+uses_target_reference,False,reference key is used only for status reporting

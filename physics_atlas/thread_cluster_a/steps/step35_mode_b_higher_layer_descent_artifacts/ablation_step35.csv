@@ -1,0 +1,4 @@
+removed_component,survivors_without_component,load_bearing
+mass_completability,80,True
+breaks_to_unbroken_u1,65,True
+corrected_prior_stack,12,True

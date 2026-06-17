@@ -1,0 +1,5 @@
+check,passes,evidence
+RS_subset_CS,True,RS=4 CS=8
+proper_subset,True,support_03
+not_extensionally_equal,True,equal=False
+no_descent_absent,True,no_descent=False

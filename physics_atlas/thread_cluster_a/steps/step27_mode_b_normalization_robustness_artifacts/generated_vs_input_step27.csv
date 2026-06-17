@@ -1,0 +1,6 @@
+item,status,detail
+step23_generated_closer,generated_input_from_prior_step,r1|2
+convention_family,declared_stress_input,6 trace/readout conventions
+baseline_target_match,computed,True
+natural_convention_flip,computed,True
+f51_consequence_consistency,computed,True

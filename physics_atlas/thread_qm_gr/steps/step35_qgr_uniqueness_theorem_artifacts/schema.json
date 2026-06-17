@@ -1,0 +1,42 @@
+{
+  "step": 35,
+  "orientation": "Mode T theorem-writing: bounded QM-GR uniqueness theorem",
+  "active_residual": "R_child_E018_after_partb_instance_uniqueness",
+  "carrier": {
+    "grammar": "G*",
+    "q_QM": ["d0_density", "d1_phase", "d2_transport"],
+    "q_GR": ["d0_density", "d2_transport", "d3_curvature"],
+    "L": ["d0_density", "d1_phase", "d2_transport", "d3_curvature"],
+    "scope": "declared finite coordinate-lattice carrier"
+  },
+  "candidate_move": "Consolidate Step 33 type-uniqueness and Step 34 instance-uniqueness into T_QGR_Unique.",
+  "computed_outputs": {
+    "theorem": "T_QGR_Unique.tex",
+    "seven_gate_audit": "seven_gate_audit_step35.csv",
+    "results_summary": "results_summary.md",
+    "content_classification": "content_classification.csv",
+    "nonclaim_boundary": "nonclaim_boundary.md"
+  },
+  "final_verdict": {
+    "type": "T_QGR_Unique_bounded_theorem_written",
+    "mode_t_exit_state": "theorem_written",
+    "part_b_complete": true,
+    "program_complete_in_bounded_grammar": true,
+    "unique_resolution_family": "BridgeMediatedRole",
+    "unique_minimal_instance_up_to_iso": true,
+    "only_admissible_object_claimed": false,
+    "bounded_grammar_scope": true,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "track_fields": {
+    "theorem_name": "T_QGR_Unique",
+    "lemma_sources": {
+      "Lemma 3": "Step 33 type-uniqueness",
+      "Lemma 4": "Step 34 instance-uniqueness"
+    },
+    "twin_theorem": "T_QG_NoGo from Step 32",
+    "next_obligation": "G_E018_FRAME_TRANSFER_EXTERNAL_REVIEW_STEP35",
+    "nonclaim": "Finite-carrier bounded-grammar uniqueness up to equivalence; not absolute physical uniqueness and not a frame-transfer certificate."
+  }
+}

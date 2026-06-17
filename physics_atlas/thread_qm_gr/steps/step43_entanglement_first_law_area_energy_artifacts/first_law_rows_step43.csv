@@ -1,0 +1,6 @@
+quantity,value,code_path,detail
+S0,1.27985422583,entropy(rho0),unperturbed entropy
+delta_S_from_entropy_path,0.0366846845679,central_difference_entropy,eps=1e-05
+delta_H_mod_from_trace_path,0.0366846845685,-Tr(delta_rho log rho0),modular Hamiltonian expectation variation
+first_order_residual,-6.82183476375e-13,delta_S_minus_delta_H_mod,separate paths compared
+delta_area_per_unit_t,0.0366846845685,RT_coefficient_from_step41_times_delta_H_mod,linearized area-energy/Clausius response

@@ -1,0 +1,18 @@
+{
+  "active_residual": "E032 single-outcome selection",
+  "anti_smuggle_pass": true,
+  "derives_collapse": false,
+  "exit_state": "RECORD_STABILITY_BLIND_TO_SELECTION",
+  "forcing_touches_D_or_Sigma_f": "none",
+  "frame_transfer_certified": false,
+  "new_physics_claim": false,
+  "nonfactorization_witness_reproduced": true,
+  "orientation": "ModeB_E032_record_stability_definiteness",
+  "picks_a_shape": false,
+  "record_stability_on_diagonal_ensemble": true,
+  "record_stability_on_selected_only": false,
+  "root_landed": false,
+  "solves_measurement_problem": false,
+  "step": 66,
+  "verdict": "NAIVE_RECORD_STABILITY_DOES_NOT_FORCE_SINGLE_OUTCOME"
+}

@@ -1,0 +1,2 @@
+grammar_id,declared_at_step,mode,proof_grammar,exit_state,window_independent,non_triviality_argument,excluded_designs_rationale
+G_step62_closure_row_arithmetic_proof,62,ModeT,"symbolic linear anomaly scaling, Witten parity, nonempty-gated predicates",constructed_theorem,True,"odd-doublet control makes Witten gate N-sensitive, so evenness is load-bearing","no N=3 target, no CP-bound-as-selector, no observed generation count input"

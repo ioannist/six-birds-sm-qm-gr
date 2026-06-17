@@ -1,0 +1,28 @@
+{
+  "step": 26,
+  "verdict": {
+    "semiclassical_dynamics_verdict": "self_consistent_dynamics_converges_on_toy",
+    "consistent_coupling_converged": true,
+    "runaway_control_converged": false,
+    "root_landed": false,
+    "external_review_required": true
+  },
+  "guardrails": {
+    "coupled_map_iterated": true,
+    "hamiltonian_hermitian": true,
+    "unitary_step_norm_preserving_checked": true,
+    "potential_sourced_from_T00": true,
+    "runaway_control_required_to_fail": true
+  },
+  "summary": {
+    "consistent_final_update_residual": 8.165089184416358e-17,
+    "consistent_fixed_point_residual": 3.4936318023019015e-16,
+    "consistent_final_eigen_residual": 6.377748916558787e-16,
+    "consistent_potential_sourcing_residual": 0.0,
+    "consistent_max_unitary_norm_error": 1.4432899320127035e-15,
+    "runaway_final_update_residual": 1.398997140116586,
+    "runaway_fixed_point_residual": 1.4285712942487314,
+    "runaway_final_eigen_residual": 0.6766429242147017,
+    "runaway_max_unitary_norm_error": 1.2212453270876722e-15
+  }
+}

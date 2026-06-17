@@ -1,0 +1,7 @@
+structure_id,convention_id,charge_unit_rule,t3_readout_rule,natural_status,charge_denominator,charge_unit,t3_indices,trace_y2,trace_t3_2,normalization_ratio,sin2_theta_w,sin2_decimal,matches_step21_target,status,failure_reason
+r1|2,product_charge__rank_one_t3,product_dimensions,unique_rank_one,baseline_natural,6,1/6,0,5/6,1/2,5/3,3/8,0.375000000000,True,COMPUTED,none
+r1|2,lattice_lcm_charge__rank_one_t3,lcm_dimensions,unique_rank_one,natural_same_on_coprime_generated_row,6,1/6,0,5/6,1/2,5/3,3/8,0.375000000000,True,COMPUTED,none
+r1|2,total_slots_charge__rank_one_t3,total_slots,unique_rank_one,natural_alternative_can_flip,5,1/5,0,6/5,1/2,12/5,5/17,0.294117647059,False,COMPUTED,none
+r1|2,integer_weight_charge__rank_one_t3,integer_weights,unique_rank_one,stress_can_flip,1,1,0,30,1/2,60,1/61,0.016393442623,False,COMPUTED,none
+r1|2,product_charge__alternate_t3,product_dimensions,first_non_rank_one,readout_stress_can_flip,6,1/6,1,5/6,3/4,10/9,9/19,0.473684210526,False,COMPUTED,none
+r1|2,product_charge__all_factor_t3,product_dimensions,all_factors,readout_stress_can_flip,6,1/6,0|1,5/6,5/4,2/3,3/5,0.600000000000,False,COMPUTED,none

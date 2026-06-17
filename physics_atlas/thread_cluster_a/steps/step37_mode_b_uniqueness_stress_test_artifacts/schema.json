@@ -1,0 +1,23 @@
+{
+  "artifact_root": "steps/step37_mode_b_uniqueness_stress_test_artifacts",
+  "currency_minimum_survivors": 8,
+  "forbidden_prior_self_check_pass": true,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_uniqueness_stress_test",
+  "negative_controls_pass": true,
+  "new_physics_claim": false,
+  "next_grammar_delta": "accept the small neutral family {2|3,4}; scalar-stage currency is diagnostic_only/rejected as shape-in-disguise and minimality-like, so continue to Step-38 clean-separation or the matter-content boundary",
+  "precise_unbroken_survivors": 12,
+  "reproduced_step35_survivors": 12,
+  "root_landed": false,
+  "selected_structure": "",
+  "shape_detector_pass": true,
+  "single_factor_survives_precise_test": true,
+  "six_gates_pass": true,
+  "stage_ii_pass": true,
+  "step": 37,
+  "target_distinguished": false,
+  "target_passes_currency": false,
+  "target_passes_currency_diagnostic": true,
+  "verdict": "SMALL_NEUTRAL_FAMILY_currency_rescue_REJECTED"
+}

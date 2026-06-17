@@ -1,0 +1,8 @@
+N,multiplet_count,weyl_count,su3_cubic,su3_sq_u1,su2_sq_u1,u1_cubic,grav_u1,su2_doublet_count,witten_even,local_anomaly_free,packaging_passes,chirality_passes,clean_separation_passes,mass_closure_passes,full_chain_passes,same_as_one_unit,cp_phase_count,cp_violation_supported
+0,0,0,0,0,0,0,0,0,True,True,False,False,False,False,False,False,0,False
+1,5,15,0,0,0,0,0,4,True,True,True,True,True,True,True,True,0,False
+2,10,30,0,0,0,0,0,8,True,True,True,True,True,True,True,True,0,False
+3,15,45,0,0,0,0,0,12,True,True,True,True,True,True,True,True,1,True
+4,20,60,0,0,0,0,0,16,True,True,True,True,True,True,True,True,3,True
+5,25,75,0,0,0,0,0,20,True,True,True,True,True,True,True,True,6,True
+6,30,90,0,0,0,0,0,24,True,True,True,True,True,True,True,True,10,True

@@ -1,0 +1,7 @@
+seed,edge_index,edge,finite_delta,fingerprint_residual_plus,top_moved_quantity,top_moved_kind,top_moved_gap,moved_quantity_count,moved_quantities
+101,6,L-M2,0.15,0.0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15,5,bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_L_M2:0.15;edge_capacity_6_L_M2:0.15;bulk_volume_total_all_edge_weight:0.15;bulk_geodesic_M0_M2:0.0955352523778
+101,7,M0-R,0.15,0.0,bulk_geodesic_M0_R,bulk_geodesic,0.15,5,bulk_geodesic_M0_R:0.15;edge_capacity_7_M0_R:0.15;bulk_volume_total_all_edge_weight:0.15;bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_L_R:0.0889462198724
+202,6,L-M2,0.15,0.0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15,5,bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_L_M2:0.15;edge_capacity_6_L_M2:0.15;bulk_volume_total_all_edge_weight:0.15;bulk_geodesic_M0_M2:0.0848645068816
+202,7,M0-R,0.15,0.0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15,5,bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_M0_R:0.15;edge_capacity_7_M0_R:0.15;bulk_geodesic_L_R:0.15;bulk_volume_total_all_edge_weight:0.15
+303,5,L-M1,0.15,0.0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15,4,bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_L_M1:0.15;edge_capacity_5_L_M1:0.15;bulk_volume_total_all_edge_weight:0.15
+303,9,M2-R,0.15,0.0,bulk_volume_total_interior_edge_weight,bulk_volume,0.15,5,bulk_volume_total_interior_edge_weight:0.15;bulk_geodesic_M1_M2:0.15;bulk_geodesic_M2_R:0.15;edge_capacity_9_M2_R:0.15;bulk_volume_total_all_edge_weight:0.15

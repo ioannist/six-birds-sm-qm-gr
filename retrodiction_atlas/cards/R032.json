@@ -1,0 +1,313 @@
+{
+  "id": "R032",
+  "card": {
+    "id": "R032",
+    "one_sentence_claim": "Treating each SPT-3G likelihood release as a distinct SBT lens f and the LambdaCDM+Sigma m_nu posterior as a packaged object E=U.f, the directional held-out cross-lens audit Delta-chi^2_{B|A} reproduces the DIRECTION of the reported neutrino-mass upper-bound tightening under the SPT2018->D1 swap and recasts it as a localizable, staging-controllable packaging-stability failure (large asymmetric mismatch ~2222 vs ~314, concentrated in TT high-ell ~2000-3000) -- with NO neutrino-sector physics produced.",
+    "target_known_fact": "Reported tightening of cosmological summed-neutrino-mass 95% upper bounds when the CMB likelihood is swapped from SPT-3G 2018 TT/TE/EE to the later SPT-3G D1 release on essentially the same sky (SPT-only+DESI DR2: 0.194->0.085 eV; Planck-subset baseline+DESI: 0.080->0.068 eV), with the cross-lens disagreement localizing to TT high-ell (~2000-3000), as originally observed in arXiv:2601.16277.",
+    "scientific_domain": "Cosmology / particle physics: cosmological inference of the summed neutrino mass from CMB+BAO likelihoods (SPT-3G, Planck, DESI DR2); pipeline/likelihood-stability diagnostics.",
+    "argument_family": "forced-target",
+    "derivability_class": "C",
+    "theory_basis": [
+      {
+        "component": "Lens f:X->L as a data-processing/compression map producing a likelihood object; each SPT-3G likelihood release (2018 vs D1) is a distinct lens (explicitly NOT gravitational lensing)",
+        "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex (sec:sbt-framework, eq:lens_map)",
+        "role": "Defines the object of the audit: the two likelihood releases as two lenses on the same sky; supplies the export interface 'Lens f:Z->X' instantiated for compressed CMB likelihoods"
+      },
+      {
+        "component": "Packaging E=U.f and the packaging-stability requirement: a coherent package should be stable under benign lens variation; instability = a packaging-stability failure (P5)",
+        "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex (eq:packaging_def, Table tab:sixbirds_primitives P5)",
+        "role": "Frames the m_nu posterior/best-fit as a packaged macro object whose instability under the lens swap is the diagnostic verdict"
+      },
+      {
+        "component": "Directional held-out cross-route audit statistic chi^2_{B|A} (fit theta on lens A, evaluate on lens B; report both directions; A<->B asymmetry = route mismatch P3)",
+        "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Dark_Energy_Closure_Route_Mismatch_and_Audits_for_Apparent_Acceleration.tex (eq:theta_hat_train, eq:chi2_test, sec:methods:ppd lines 371-396)",
+        "role": "Direct ancestor of the neutrino paper's Delta-chi^2_{B|A}=-2[logL_B(theta_A)-logL_B(theta_B)]; supplies the train-on-A/test-on-B held-out audit template and its directional (non-symmetric) reading"
+      },
+      {
+        "component": "Blockwise additive decomposition / localization of the held-out statistic into per-spectrum, per-multipole contributions (P6 accounting/audit)",
+        "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex (eq:block_decomp, eq:block_dchi sum rule)",
+        "role": "Turns the global mismatch into a 'where to look' map; produces the TT high-ell ~2000-3000 localization inside the overlap region"
+      },
+      {
+        "component": "Staging / common-support control (P4): restrict the broader-support lens to the narrower support and re-audit to separate intrinsic mismatch from support/cut artifacts",
+        "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex (sec:common-staging)",
+        "role": "Shows mismatch persists (few-percent change) under common staging, arguing against a pure support/cut explanation"
+      },
+      {
+        "component": "Idempotence / approximate-closure certificate: TV idempotence defect delta_{tau,f}; small retention error => approximate idempotence (stable packaged objects)",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (def:D-IC-02, thm:T-IC-02)",
+        "role": "Provides the abstract packaging-stability certificate that the audit operationalizes; the m_nu instability is read as a failure of cross-lens packaging coherence"
+      },
+      {
+        "component": "Boundary-mode toy mechanism + Lean-certified monotonicity: truncated Gaussian under gate m>=0 has mode max(0,mu_*); for mu<=0 the unnormalized density is antitone on [0,inf) (mechanically verified in Lean4)",
+        "paper": "Tsiokos_2026_Six_Birds_for_Neutrino_Mass_Lens_Swap_Stability_and_Packaging_Audits.tex (sec:boundary-mode, eq:toy_trunc_mode; lemmas TruncGaussProof.unnorm_antitoneOn_Ici, unnorm_le_at_zero)",
+        "role": "Explains generically why tightening + a hard physical gate (P2: m_nu>=0) can push a posterior to the boundary; the only Lean-certified piece, and it is explicitly inessential to the cosmological argument (paper line 512)"
+      },
+      {
+        "component": "Six primitive closure roles P1-P6 as named moves onto which the domain phenomena are mapped",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (sec:primitives, thm:meta-prim)",
+        "role": "Organizes the audit: P2 gate m_nu>=0, P3 directional mismatch, P4 staging, P5 packaging, P6 accounting/localization, P1 (toy-only) rewrite"
+      }
+    ],
+    "free_parameters": [
+      "Choice of CMB likelihood lens f (SPT-3G 2018 TT/TE/EE vs SPT-3G D1 TnE) -- the swap variable; selected, not derived (the lens is an explicitly undetermined SBT input)",
+      "Completion U: LambdaCDM+Sigma m_nu macro-model class with three degenerate massive species and per-release nuisance/foreground parameterization (selected, not unique)",
+      "Multipole window for localization (TT high-ell ~2000-3000) and the spectrum/ell block grouping for the decomposition",
+      "Profiled nuisance subset (runtime-capped to 12 calibration/CIB/cirrus parameters per direction) -- which nuisances are 'profiled away' vs held fixed",
+      "Common-staging support mask (TT ell>=750, TE/EE ell>=300, ell<=3000)",
+      "Flat m_nu prior upper bound (5 eV, reported as inactive) and the physical gate m_nu>=0 (P2)",
+      "External imported inputs: DESI DR2 BAO compressed likelihood, Planck PR3 subset + PR4 lensing baseline composition, Boltzmann backend (CAMB for SPT-only, CLASS for baseline)"
+    ],
+    "honest_status_note": "FORCED-TARGET, derivability class C: SBT produces an audit FORM, not neutrino physics. (1) Direction-only: the reproduction matches the SIGN of the m_nu tightening but NOT the source magnitudes (reproduced SPT2018 baseline 0.080 eV vs source ~0.11 eV, line 463), and the two baselines disagree in shift size (0.109 eV vs 0.012 eV, lines 423/428); this is explicitly a directional replication of an already-reported empirical observation, not an explanation. (2) NO mass mechanism: no seesaw/Dirac, no PMNS matrix, no oscillation physics, no derivation of any m_nu value. (3) The empirical observation is imported from arXiv:2601.16277 (including the localization and the reprocessing diagnostic, which the paper explicitly disclaims as not novel, line 238). (4) The packaging-stability certificate (Foundations I D-IC-02/T-IC-02) is for deterministic partition lenses; its use on a stochastic compressed-likelihood lens is by analogy, not a discharged theorem (a MISSING-interface: no stochastic-lens backbone in the certified core, ledger line 111). (5) The only Lean-certified piece is the elementary truncated-Gaussian boundary lemma, which the paper itself calls inessential to the cosmological argument (line 512). (6) The genuinely new content -- directional Delta-chi^2 + localization + staging contract -- is reused from the dark-energy paper, not original to the neutrino setting. Honoring SBT disclaimer [153]: 'does not identify the pipeline root cause or establish a definitive m_nu value; dchi is a comparative diagnostic, not a calibrated p-value; P1 rewrite-mode is toy-only.'"
+  },
+  "audit": {
+    "explicit_parameters": [
+      {"name": "Lens choice f (SPT-3G 2018 TT/TE/EE vs SPT-3G D1 TnE candl likelihood)", "role": "The swap variable; the pair of objects audited", "source": "card free_parameters + neutrino paper eq:lens_map; ledger missing_interfaces 'No rule selecting the lens f'", "fixed_before_comparison": false},
+      {"name": "Completion U (LambdaCDM+Sigma m_nu, three degenerate species, per-release nuisance/foreground model, gate m_nu>=0)", "role": "Packaging completion E=U.f", "source": "neutrino paper eq:packaging_def; card 'selected, not unique'", "fixed_before_comparison": false},
+      {"name": "Profiled nuisance subset (runtime-capped 12 calibration/CIB/cirrus params, internal TT_cal_beta)", "role": "Which nuisances are profiled away vs held fixed in the directional audit", "source": "neutrino paper sec:profiled-audit lines 275-289", "fixed_before_comparison": false},
+      {"name": "Common-staging support mask (TT ell>=750, TE/EE ell>=300, all ell<=3000)", "role": "P4 staging control restricting D1 to SPT2018 support", "source": "neutrino paper sec:common-staging line 324", "fixed_before_comparison": false},
+      {"name": "Multipole/spectrum block grouping for localization (TT high-ell ~2000-3000 window)", "role": "Defines the 'where to look' decomposition that yields the TT high-ell finding", "source": "neutrino paper sec localization line 382; card free_parameters", "fixed_before_comparison": false},
+      {"name": "Flat m_nu prior upper bound (5 eV, reported inactive) and physical gate m_nu>=0 (P2)", "role": "Imported particle-physics constraint defining admissible completion", "source": "neutrino paper Table tab:sixbirds_primitives P2; ledger hidden_physics_dependence", "fixed_before_comparison": true},
+      {"name": "Imported external data inputs: DESI DR2 BAO, Planck PR3 subset + PR4 lensing, EE_sroll2 low-ell variant, Boltzmann backend (CAMB SPT-only / CLASS baseline)", "role": "Consumed cosmology; SBT produces none of it", "source": "neutrino paper sec:baselines/sec:planck-subset; ledger hidden_physics_dependence (neutrino)", "fixed_before_comparison": true},
+      {"name": "Timescale/staging tau", "role": "SBT export interface parameter; here tau is degenerate (single likelihood evaluation, not a tau-step Markov kernel) so not actively swept", "source": "ledger primitive P4/tau; not instantiated as a free knob in neutrino paper", "fixed_before_comparison": true}
+    ],
+    "implicit_parameters": [
+      {"name": "Sign-blindness of the audit statistic", "risk": "Delta-chi^2_{B|A} = -2[logL_B(theta_A)-logL_B(theta_B)] is non-negative BY CONSTRUCTION (paper line 136: 'dchi >= 0 when theta_B is the maximizer'). It measures only THAT two packages disagree, never WHICH WAY the m_nu bound moves. The headline 'direction of tightening' is read entirely from the external MCMC, not from any SBT quantity."},
+      {"name": "Choice of which release is 'A' (train) vs 'B' (test)", "risk": "The celebrated asymmetry (2222 vs 314) is just the two orderings of a guaranteed-positive quantity; either ordering is available, and 'large asymmetry' is generic whenever two fits differ. No prediction of which direction is larger is made in advance."},
+      {"name": "Definition of 'benign lens variation' / 'nearly the same sky'", "risk": "The audit is only informative under the auxiliary assumption that a coherent package SHOULD be stable across the swap (card auxiliary_assumptions). This 'should' is asserted, not derived; the two releases differ in seasons/pipeline/binning/multipole support, so instability is unsurprising and the verdict is post-hoc."},
+      {"name": "Identification of the compressed-likelihood map as an SBT 'lens'", "risk": "The certified core (Lean) covers only DETERMINISTIC partition lenses (ledger missing_interfaces line 111: 'No stochastic-lens backbone'). A candl likelihood object is a stochastic/compressed map; the packaging-stability certificate D-IC-02/T-IC-02 is applied BY ANALOGY, not by a discharged theorem."},
+      {"name": "Threshold for 'large' / 'mismatch persists' / 'few-percent'", "risk": "Delta-chi^2 is explicitly NOT a calibrated p-value (paper line 263); 'large', 'survives staging', and 'few-percent change' are qualitative reads with no null distribution. Any nonzero asymmetry could be narrated as a packaging-stability failure."},
+      {"name": "Block-additivity / localization framing", "risk": "The TT high-ell ~2000-3000 localization is imported as already-reported by arXiv:2601.16277 (paper line 385 reads localization THROUGH the source); the decomposition merely re-displays an external observation."}
+    ],
+    "adjustable_choices": [
+      "Which likelihood release is declared lens A vs lens B (train/test ordering)",
+      "Whether to report unprofiled (~2222 vs ~314) or profiled (~860 vs ~370) Delta-chi^2 -- both are presented; either supports the narrative",
+      "How many and which nuisance parameters to profile (runtime-capped to 12; choice of TT_cal_beta subset)",
+      "Multipole window declared as the localization signal (TT ~2000-3000)",
+      "Common-staging mask cut points (TT ell>=750, TE/EE ell>=300, ell<=3000)",
+      "Completion class and per-release nuisance/foreground parameterization",
+      "Which external baseline (SPT-only+DESI vs Planck-subset+PR4-lensing+DESI) to feature; the two give different shift magnitudes (0.194->0.085 vs 0.080->0.068)",
+      "Boltzmann backend (CAMB vs CLASS) and low-ell EE variant (EE_sroll2)",
+      "Whether to invoke the optional toy truncated-Gaussian boundary mechanism (explicitly 'not essential', P1 toy-only)"
+    ],
+    "degrees_of_freedom_estimate": 9,
+    "data_points_matched": 1,
+    "overfitting_risk": "high",
+    "mechanism_tag": "route-mismatch",
+    "imports_known_physics": true,
+    "target_used_to_design_theory": true,
+    "opposite_world_test": {
+      "could_explain_opposite": true,
+      "explanation": "SBT could 'retrodict' the opposite observation with identical machinery. (1) Direction of m_nu shift: the audit statistic Delta-chi^2_{B|A} = -2[logL_B(theta_A)-logL_B(theta_B)] is NON-NEGATIVE by construction (paper line 136) and completely sign-blind to whether the bound tightens or loosens. The 'direction of tightening' is read off the external Cobaya+CLASS/CAMB MCMC, to which SBT contributes nothing; had the D1 swap LOOSENED the 95% upper bound, the audit would report the same kind of large asymmetric mismatch and SBT would frame it identically as a packaging-stability failure. (2) Asymmetry: the celebrated 2222-vs-314 gap is just the two orderings of a guaranteed-positive quantity; a flipped asymmetry (314 vs 2222) is equally 'predicted'. (3) Localization: had the dominant block been TE/EE or low-ell rather than TT high-ell, the same per-block sum-rule decomposition would have flagged that region as the 'where to look' -- the localization simply re-displays whichever blocks the external likelihoods happen to disagree on (and it is itself imported from arXiv:2601.16277). (4) Staging: 'mismatch survives common-staging at the few-percent level' is a post-hoc qualitative read with no pre-registered threshold; any outcome (survives / is removed) is narratable. The mechanism cannot fail to fire whenever two releases differ at all, so it has essentially zero risk of being contradicted by data -- the hallmark of an unfalsifiable, flexibility-saturated retrodiction. SBT honestly labels this direction-only and forced-target, which is the correct verdict."
+    },
+    "audit_verdict": "FORCED-TARGET / FLEXIBILITY-SATURATED (derivability class C), but HONESTLY SELF-LABELED. SBT produces an audit FORM (directional held-out Delta-chi^2 + per-block localization + common-staging control, reused from the dark-energy route-mismatch machinery), NOT neutrino physics. Estimated ~9 adjustable choices against ~1 genuinely matched data point: the SIGN of the m_nu tightening -- and even that sign comes from the imported external MCMC, not from any SBT quantity. Magnitudes are explicitly NOT matched (reproduced 0.080 eV vs source 0.11 eV; the two baselines disagree on shift size). The empirical observation, including the TT high-ell localization, is imported from arXiv:2601.16277 with disclaimed novelty. The packaging-stability certificate (D-IC-02/T-IC-02) is for deterministic partition lenses and is applied to a stochastic compressed-likelihood lens BY ANALOGY (ledger MISSING-interface: no stochastic-lens backbone); the only Lean-certified piece is an elementary truncated-Gaussian boundary lemma the paper itself calls inessential. OPPOSITE-WORLD TEST FAILS DECISIVELY: the audit statistic is non-negative by construction and sign-blind, so a loosened bound, a flipped asymmetry, or a TE/EE localization would all be 'retrodicted' identically as a packaging-stability failure. Overfitting/flexibility risk: HIGH. The one mitigating fact is genuine cross-fact mechanism reuse (mechanism_tag=route-mismatch, shared with the dark-energy apparent-acceleration retrodiction and a named SBT primitive), so the audit FORM is generic rather than bespoke -- but reuse of an audit form is not a predictive mechanism, and it forecasts nothing about m_nu. Net: a legitimate, non-trivial methodological repackaging with no cosmological information gain and no falsifiable content about the neutrino mass."
+  },
+  "skeptic_panel": {
+    "min_survival": 1,
+    "mean_survival": 1.25,
+    "fatal_objections_present": true,
+    "skeptics": [
+      {
+        "skeptic_role": "Observational cosmologist (CMB+BAO parameter inference, likelihood/pipeline stability, model comparison, held-out predictive checks)",
+        "main_objection": "The single matched fact -- the DIRECTION of the m_nu upper-bound tightening under SPT2018->D1 -- is produced entirely by an imported Cobaya+CLASS/CAMB MCMC, not by any SBT quantity. The SBT audit statistic Delta-chi^2_{B|A} = -2[logL_B(theta_A)-logL_B(theta_B)] is NON-NEGATIVE by construction (neutrino paper line 136) and therefore completely sign-blind: it can never tell you which way the bound moves. SBT thus contributes zero information to the one fact it claims to retrodict, and the audit cannot fail to fire whenever two releases differ at all.",
+        "fatal_objections": [
+          "Opposite-world failure: the audit statistic is non-negative by construction and sign-blind (line 136), so a LOOSENED bound, a flipped asymmetry (314 vs 2222), or a TE/EE-localized mismatch would all be 'retrodicted' identically as a packaging-stability failure. The mechanism has essentially zero risk of being contradicted by data -- it is unfalsifiable as a statement about neutrino mass.",
+          "The only matched data point (sign of the m_nu shift) is read off an external MCMC to which SBT contributes nothing; ledger hidden_physics_dependence states the neutrino paper 'depends entirely on external Boltzmann/likelihood physics... SBT supplies only the audit/stability layer.' No neutrino-sector content (no seesaw, PMNS, oscillation physics, no derived m_nu) is produced.",
+          "The target -- including the TT high-ell localization -- is imported from arXiv:2601.16277 with novelty explicitly disclaimed (paper lines 238, 385, 553). This is a forced-target built onto a pre-existing result; the localization 'merely re-displays an external observation.'"
+        ],
+        "serious_objections": [
+          "No quantitative recovery: reproduction matches DIRECTION only, not magnitude (reproduced SPT2018 baseline 0.080 eV vs source ~0.11 eV, line 463; the two baselines even disagree on shift size, 0.109 eV vs 0.012 eV). It does not even fully recover the standard numerical result it cites.",
+          "The celebrated asymmetry (2222 vs 314, Table tab:audit-summary lines 372-375) is just the two orderings of a guaranteed-non-negative quantity; 'large asymmetry' is generic whenever two fits differ and no ordering is predicted in advance.",
+          "The packaging-stability certificate (Foundations I D-IC-02/T-IC-02, idempotence defect) is proven only for DETERMINISTIC partition lenses; a candl compressed-likelihood object is a stochastic map outside the certified core (ledger missing_interfaces). The certificate is invoked by analogy, not discharged.",
+          "Delta-chi^2 is explicitly not a calibrated significance (line 263); 'large', 'survives staging', 'few-percent' are qualitative reads with no null distribution.",
+          "About 9 adjustable choices against ~1 matched fact -- a flexibility-saturated fit."
+        ],
+        "repairable_objections": [
+          "Magnitude mismatch with arXiv:2601.16277 is in principle closable by including the omitted SPT lensing component and broader nuisance sampling -- moderate-to-high compute, but mechanical, not conceptual.",
+          "Calibration gap: replace point-estimate Delta-chi^2 with a posterior-predictive cross-lens audit with a constructed null distribution to upgrade from a raw diagnostic to a calibrated test. Acknowledged out of scope but achievable.",
+          "The audit-only fallback (directional Delta-chi^2 + localization heatmap + common-staging on the two released likelihoods, no full MCMC) is cheap and independently runnable, which would make the methodological contribution verifiable on its own terms."
+        ],
+        "missing_derivations": [
+          "A stochastic/compressed-likelihood lens backbone so the packaging-stability certificate is discharged rather than applied by analogy (ledger lists this as a missing interface).",
+          "A rule selecting which lens/completion is canonical (ledger: 'No rule selecting the lens f').",
+          "A null distribution / calibration for Delta-chi^2 so 'large', 'asymmetric', and 'survives staging' become quantitative pass/fail rather than narrative.",
+          "A demonstration that the optional P1 rewrite-mode surrogate actually stabilizes m_nu on the REAL lens swap (not just the toy).",
+          "Any derivation that connects an SBT quantity to the SIGN of the m_nu shift; presently the sign is wholly external."
+        ],
+        "minimum_acceptance_conditions": [
+          "Accept ONLY as a domain-general methodological diagnostic (report bounds alongside directional Delta-chi^2 + localization map + common-staging control), explicitly NOT as a retrodiction of neutrino physics or of the m_nu value.",
+          "Maintain all disclaimers: direction-only, comparative-not-calibrated, P1 rewrite toy-only, packaging certificate applied by analogy, target imported from arXiv:2601.16277 with no novelty claim.",
+          "Independent re-execution of at least the cheap audit-only fallback (two candl likelihoods + best fits) reproducing the large asymmetric Delta-chi^2 and TT high-ell localization.",
+          "No representation that the asymmetry magnitude, the localization, or the boundary-mode toy adds cosmological information beyond what arXiv:2601.16277 already reported."
+        ],
+        "what_would_change_my_mind": "A construction in which an SBT-internal quantity (not an external MCMC) predicts the SIGN/direction of the m_nu shift in advance, OR a pre-registered calibrated cross-lens test with a null distribution that would have flagged a STABLE package (loosening or no shift) as passing -- i.e. a version of the audit that can actually fail. Additionally, discharging the packaging-stability certificate for stochastic compressed-likelihood lenses. Absent either, the result remains an unfalsifiable, externally-driven relabeling.",
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1
+      },
+      {
+        "skeptic_role": "Skeptical mathematical physicist / cosmologist auditing whether SBT's 'packaging-stability audit' derives or merely relabels the reported m_nu lens-swap instability.",
+        "main_objection": "The retrodiction derives nothing: the entire empirical content (the m_nu upper-bound tightening under SPT2018->D1 AND the TT high-ell localization) is imported verbatim from arXiv:2601.16277, while SBT contributes only an audit FORM lifted from the dark-energy paper's eq:theta_hat_train/eq:chi2_test. The headline 'direction of tightening' is read off an external Cobaya+CLASS/CAMB MCMC; no SBT quantity supplies it. The audit statistic is non-negative by construction (line 136) and sign-blind, so it cannot distinguish tightening from loosening and 'fires' whenever any two releases differ at all -- an unfalsifiable, flexibility-saturated retrodiction.",
+        "fatal_objections": [
+          "Opposite-world test fails decisively: the audit statistic is non-negative by construction and sign-blind (eq:dchi_def, line 136), so a loosened m_nu bound, a flipped 314-vs-2222 asymmetry, or a TE/EE-localized mismatch would ALL be 'retrodicted' identically as a packaging-stability failure. No falsifiable content about the neutrino mass.",
+          "The one matched 'fact' (sign of the shift) is not produced by SBT at all -- it is read off the imported external MCMC. SBT's own Delta-chi^2 quantities (2222, 314, 860, 370) are internal artifacts that say nothing about which way the bound moves."
+        ],
+        "serious_objections": [
+          "Known physics imported almost wholesale (ledger hidden_physics_dependence): CLASS/CAMB Boltzmann, LambdaCDM, candl SPT-3G likelihoods, DESI DR2 BAO, Planck PR3/PR4 lensing, and the m_nu>=0 gate. SBT supplies only a bookkeeping/audit layer.",
+          "~9 adjustable choices against ~1 matched fact (the sign). DoF >> matched facts; overfitting/flexibility risk high.",
+          "The packaging-stability CERTIFICATE (D-IC-02/T-IC-02, idempotence defect) is proven only for DETERMINISTIC partition lenses; a candl compressed/stochastic likelihood lens lies outside the certified core (ledger missing_interfaces line 111). The certificate is applied by analogy, NOT discharged.",
+          "The diagnostic is not new even within statistics: 'lens-swap stability audit' is held-out cross-validation / posterior-predictive checking under SBT vocabulary. The block-additive 'localization sum rule' is a trivial algebraic identity, and the TT high-ell window is imported.",
+          "Does not beat OR fully recover the standard account: reproduction matches direction only (0.080 eV vs source 0.11 eV) and the two baselines disagree on shift magnitude.",
+          "Delta-chi^2 is explicitly NOT a calibrated p-value (line 263, native -2 dlogL units, no null distribution)."
+        ],
+        "repairable_objections": [
+          "The 'magnitude not matched' gap could in principle be closed by including the omitted SPT lensing component and broader nuisance sampling -- but this is external cosmology effort, not SBT content.",
+          "The lack of calibration could be repaired by promoting point-estimate Delta-chi^2 to a full posterior-predictive cross-lens audit with a null distribution.",
+          "The by-analogy use of D-IC-02/T-IC-02 could be made rigorous IF SBT supplied the missing stochastic-lens backbone in its certified core."
+        ],
+        "missing_derivations": [
+          "A discharged packaging-stability certificate for stochastic/compressed-likelihood lenses.",
+          "Any derivation that the audit statistic should be sign-informative about the bound direction -- currently the direction is 100% external and the SBT statistic is sign-blind.",
+          "A null distribution / calibration making 2222-vs-314 a hypothesis test rather than a raw -2 dlogL number.",
+          "Any neutrino-sector physics (no seesaw/Dirac, no PMNS, no oscillation physics, no derived m_nu value) -- explicitly absent and explicitly not claimed."
+        ],
+        "minimum_acceptance_conditions": [
+          "Accept ONLY as a methodological repackaging, NOT as a retrodiction, explanation, or recovery of any neutrino-mass fact.",
+          "The claim stays within SBT disclaimer [153]: direction-only, no pipeline root cause, no definitive m_nu, Delta-chi^2 comparative-not-calibrated, P1 rewrite-mode toy-only.",
+          "The packaging-stability 'certificate' is presented as applied-by-analogy, with the stochastic-lens gap explicitly flagged, not as a discharged theorem.",
+          "No implied cosmological-information gain over arXiv:2601.16277 is claimed."
+        ],
+        "what_would_change_my_mind": "Demonstrating that the optional P1 'rewrite-mode' surrogate ACTUALLY stabilizes m_nu on the REAL SPT lens swap (not the toy) -- a small disciplined correction that measurably improves cross-lens predictivity AND moves the m_nu bound in a pre-registered, falsifiable way -- would upgrade this from a sign-blind diagnostic to a falsifiable stabilization claim. Equally, a calibrated cross-lens PPD audit with a genuine null distribution combined with an SBT-internal quantity that predicts the SIGN of the shift in advance. Neither is currently done.",
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1
+      },
+      {
+        "skeptic_role": "Effective-field-theory / known-physics-recovery skeptic: asks whether this is EFT/standard-pipeline diagnostics relabeled in SBT vocabulary, and what (if anything) is forced by the theory rather than inserted by hand from external cosmology.",
+        "main_objection": "The entire physical content is imported and the single matched fact (the SIGN of the m_nu tightening) is read off an external Cobaya+CLASS/CAMB MCMC, not from any SBT quantity. The SBT audit statistic Delta-chi^2_{B|A} is NON-NEGATIVE by construction (line 136) and therefore sign-blind: it can only report THAT two likelihood releases disagree, never WHICH WAY the bound moves. SBT thus supplies a generic 'two-things-differ' bookkeeping form (reused verbatim from the dark-energy route-mismatch machinery) and zero neutrino physics. It is EFT/pipeline-diagnostics relabeled, not derived.",
+        "fatal_objections": [
+          "Opposite-world test fails decisively: because Delta-chi^2_{B|A} >= 0 by construction the audit fires for ANY pair of differing releases, and a LOOSENED bound, a flipped 2222/314 asymmetry, or a TE/EE (rather than TT high-ell) localization would all be narrated identically as a 'packaging-stability failure'. The mechanism cannot be contradicted by data, so it has no falsifiable content about m_nu.",
+          "The one 'matched' data point -- the direction of tightening -- is produced entirely by the imported external Boltzmann/likelihood stack (ledger hidden_physics_dependence), not by any SBT object; SBT contributes no quantity from which the sign could be predicted."
+        ],
+        "serious_objections": [
+          "No neutrino-sector physics is produced: no seesaw/Dirac, no PMNS, no oscillation physics, no derived m_nu value. This is a forced-target, derivability class C result.",
+          "The packaging-stability certificate D-IC-02/T-IC-02 is proven for DETERMINISTIC partition lenses; a candl compressed stochastic likelihood lens lies outside the certified core. The certificate is applied BY ANALOGY, not by a discharged theorem.",
+          "The empirical observation itself -- both the tightening AND the TT high-ell localization -- is imported from arXiv:2601.16277, whose novelty the paper explicitly disclaims (lines 238, 385, 553).",
+          "Magnitudes are NOT recovered: reproduced SPT2018 baseline 0.080 eV vs source ~0.11 eV (line 463); the two baselines even disagree on shift size (0.109 vs 0.012 eV).",
+          "Reported Delta-chi^2 numbers (~2222, ~314, ~860, ~370) are raw -2 dlogL diagnostics, explicitly 'not a calibrated hypothesis-test p-value' (line 263).",
+          "~9 adjustable choices against ~1 matched sign -- overfitting/flexibility risk is high."
+        ],
+        "repairable_objections": [
+          "Calibration gap: replacing point-estimate Delta-chi^2 with a posterior-predictive (PPD) cross-lens audit with a null distribution would turn the comparative diagnostic into a calibrated test.",
+          "Magnitude mismatch could in principle be narrowed by faithfully matching baseline components (SPT lensing), broader nuisance sampling, and prior choices -- but this is external pipeline effort, not SBT machinery.",
+          "The stochastic-lens-by-analogy gap could be closed if SBT delivered the acknowledged-future-work stochastic-kernel Q_f backbone in the certified core."
+        ],
+        "missing_derivations": [
+          "No derivation of the DIRECTION of the m_nu shift from any SBT quantity -- the sign is read from the external MCMC; the SBT statistic is provably sign-blind.",
+          "No discharged stochastic-lens packaging-stability theorem covering compressed candl likelihood objects.",
+          "No derivation that 'a coherent package SHOULD be stable under this lens swap' -- the benign-variation assumption is asserted, not derived.",
+          "No predicted ordering of the asymmetry (which of 2222 vs 314 is larger) made in advance.",
+          "No null-distribution / calibration for the 'large', 'survives staging', 'few-percent' qualitative thresholds."
+        ],
+        "minimum_acceptance_conditions": [
+          "Accept ONLY as a domain-general methodological diagnostic, NOT as any statement about the neutrino mass or its tightening.",
+          "All physics must be flagged as imported, and the direction of tightening attributed to the external MCMC, not to SBT -- which the paper does.",
+          "Delta-chi^2 must be reported strictly as a native -2 dlogL comparative diagnostic with no significance reading (paper complies, line 263).",
+          "The stochastic-lens packaging-stability certificate must be stated as applied by analogy, not discharged.",
+          "P1 rewrite-mode must remain toy-only and the reprocessing diagnostic credited to arXiv:2601.16277 (paper complies, lines 157/238/512)."
+        ],
+        "what_would_change_my_mind": "I would raise the score if SBT produced an SBT-internal quantity that PREDICTS the direction (sign) of the bound shift in advance (not a sign-blind non-negative mismatch), and if that prediction had been pre-registered before seeing arXiv:2601.16277 and could be contradicted by an opposite outcome. Additionally, discharging the stochastic-lens packaging-stability theorem and matching the source magnitudes within stated tolerance. None of these is currently done.",
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 2
+      },
+      {
+        "skeptic_role": "CMB cosmologist working on neutrino-mass inference (SPT-3G/Planck/DESI likelihood pipelines), doubling as a statistician familiar with held-out/cross-validation diagnostics -- exactly the specialist this card targets and the one most able to catch a relabeling dressed up as a result.",
+        "main_objection": "The single 'matched' fact (the SIGN of the m_nu tightening under SPT2018->D1) is produced entirely by the imported external Cobaya+CLASS/CAMB MCMC, not by any SBT quantity. The SBT audit statistic Delta-chi^2_{B|A} is NON-NEGATIVE BY CONSTRUCTION (verified, line 136: 'dchi >= 0 when theta_B is the maximizer') and is completely sign-blind: it fires identically whether the bound tightens or loosens, and whenever any two releases disagree at all. So SBT contributes nothing to the only fact that could count as a retrodiction; everything SBT adds (asymmetry, localization, staging) is a re-display of an observation already reported in arXiv:2601.16277, whose novelty the paper itself disclaims (line 238, 553).",
+        "fatal_objections": [
+          "The retrodicted fact (direction of m_nu tightening) comes from the imported MCMC, not from SBT. The SBT statistic is non-negative-by-construction and sign-blind (verified eq:dchi_def line 136), so it cannot in principle predict or even encode the direction. There is no theory->observation mapping for the headline fact at all.",
+          "Opposite-world test fails decisively: a loosened bound, a flipped asymmetry (314 vs 2222), or a TE/EE-localized mismatch would each be narrated identically as a 'packaging-stability failure'. The mechanism cannot fail to fire whenever two releases differ. Zero falsifiable content about the neutrino mass.",
+          "The empirical content actually attributed to SBT-flavored novelty (TT high-ell ~2000-3000 localization, the reprocessing diagnostic) is explicitly imported from arXiv:2601.16277 with disclaimed novelty (line 238: 'we do not claim novelty'; line 385 reads the localization THROUGH the source). Target was fully known before the machinery was applied."
+        ],
+        "serious_objections": [
+          "Magnitudes are not recovered: reproduced SPT2018 baseline 0.080 eV vs source ~0.11 eV (verified line 463), and the two baselines disagree on shift size (0.109 eV vs 0.012 eV in Table tab:mnu-shift, lines 423/428). So it does not even fully RECOVER the standard numerical result, only its sign.",
+          "The packaging-stability certificate (D-IC-02/T-IC-02) is proven only for DETERMINISTIC partition lenses; the candl compressed-likelihood object is a stochastic/compressed map. The ledger confirms 'No stochastic-lens backbone in the certified core'. The central 'certificate' is therefore applied by analogy, not discharged.",
+          "The reported Delta-chi^2 numbers (2222, 314, 860, 370) are raw -2 dlogL diagnostics, explicitly NOT calibrated p-values (verified line 263) and have no null distribution. The few-percent staging reductions (Table: -0.00%, -0.48%, 2.26%, -0.25%) are presented without an error model, so 'mismatch persists' is unfalsifiable as stated.",
+          "High degrees of freedom (~9 adjustable choices) against essentially ONE matched fact (a sign). Overfitting/flexibility-saturation risk is high; nothing was pre-registered.",
+          "The crucial auxiliary assumption -- that a coherent package SHOULD be stable under the swap because it is 'nearly the same sky' -- is asserted, not derived. The two releases differ in seasons, pipeline, binning, and multipole support (TT 750-3000 vs 400-3000; TE/EE 300-3000 vs 400-4000, verified lines 222-223), so cross-lens disagreement is unsurprising and the 'failure' verdict is post-hoc."
+        ],
+        "repairable_objections": [
+          "Direction-only -> calibrated: replace point-estimate Delta-chi^2 with full posterior-predictive cross-lens audits with a null distribution (the paper's own 'stronger_result' (i) and Discussion item 1).",
+          "Magnitude gap: include the omitted SPT lensing component and broader nuisance sampling so the recovered SPT2018 bound approaches ~0.11 eV. Honestly flagged as not done and as substantial compute.",
+          "Stochastic-lens gap: discharge a packaging-stability certificate for stochastic/compressed-likelihood lenses (the named MISSING interface), so the verdict rests on a theorem rather than analogy."
+        ],
+        "missing_derivations": [
+          "No derivation of the DIRECTION of the m_nu shift from any SBT quantity -- it is read off the external MCMC; the SBT statistic is sign-blind by construction.",
+          "No discharged packaging-stability theorem for a stochastic/compressed-likelihood lens (only the deterministic-partition certificate exists; applied by analogy).",
+          "No null distribution / calibration for Delta-chi^2, so no derivation of what counts as a 'large' or 'persistent' mismatch.",
+          "No derivation of the 'a coherent package SHOULD be stable under the swap' premise -- asserted as an auxiliary assumption given two pipelines that differ in season, binning, and multipole support.",
+          "No neutrino-sector physics of any kind -- and none claimed."
+        ],
+        "minimum_acceptance_conditions": [
+          "State plainly (already done in honest_status_note and ledger disclaimer [153]) that the m_nu direction is supplied by the imported MCMC and that SBT contributes only a sign-blind, uncalibrated comparative diagnostic -- so this is NOT a retrodiction of the m_nu fact but a methodological repackaging.",
+          "Provide a null/calibration for Delta-chi^2 (e.g., posterior-predictive cross-lens audit) before any 'large/persistent/localized failure' language is treated as evidentiary rather than descriptive.",
+          "Either discharge a stochastic-lens packaging-stability certificate, or explicitly cap the claim at 'by analogy to the deterministic-partition result' (the paper does the latter; acceptable only as a methodological note).",
+          "Keep the toy truncated-Gaussian boundary lemma flagged as inessential and toy-only (paper does this, line 512); it must not be presented as bearing on the real lens swap.",
+          "Do not upgrade the reusable-audit contract into any claim of cosmological information gain, root-cause identification, or a definitive m_nu."
+        ],
+        "what_would_change_my_mind": "Show that an SBT quantity -- not the imported MCMC -- predicts the SIGN/direction of the parameter shift in advance, AND that the audit can be CONTRADICTED by data (e.g., a calibrated cross-lens PPD with a null under which the SPT2018<->D1 pair could have passed). If, in addition, the optional rewrite-mode surrogate were shown to actually STABILIZE m_nu under staging on the REAL lens swap, that would convert a sign-blind descriptor into a falsifiable stabilization claim. None of this is currently done.",
+        "is_actually_new": false,
+        "beats_baseline": false,
+        "adversarial_survival_score": 1
+      }
+    ],
+    "what_would_change_minds": "Across all four skeptics the unanimous condition is: produce an SBT-INTERNAL quantity that predicts the SIGN/direction of the m_nu shift in advance (the current statistic is non-negative by construction and sign-blind, line 136), AND a pre-registered calibrated cross-lens test with a null distribution under which a STABLE package would PASS -- i.e. an audit that can actually fail. Secondarily, discharge the packaging-stability certificate for stochastic/compressed-likelihood lenses (close the ledger's missing stochastic-lens backbone) so the verdict rests on a theorem rather than analogy, and demonstrate the optional P1 rewrite-mode surrogate stabilizes m_nu on the REAL lens swap (not just the toy). Absent these, the result is correctly read as an honest, externally-driven methodological relabeling with no falsifiable content about the neutrino mass."
+  },
+  "repair_and_scores": {
+    "id": "R032",
+    "repair_status": "repaired",
+    "revised_one_sentence_claim": "Treating each SPT-3G likelihood release (2018 TT/TE/EE vs D1 TnE) as a distinct SBT lens f and the LambdaCDM+Sigma m_nu best fit as a packaged object E=U.f, the directional held-out cross-lens audit Delta-chi^2_{B|A} (a NON-NEGATIVE, sign-blind comparative -2 dlogL diagnostic, NOT a calibrated significance) is large and strongly asymmetric (unprofiled 2222 vs 314; profiled 860 vs 370), localizes to TT high-ell ~2000-3000 inside the lens overlap, and changes only at the few-percent level under a common-staging control -- so SBT supplies a reusable lens-swap PACKAGING-STABILITY AUDIT FORM (P3 mismatch + P6 localization + P4 staging) that re-organizes, without explaining or adding to, the already-reported m_nu instability of arXiv:2601.16277; the DIRECTION of the tightening is read entirely from an imported Cobaya+CLASS/CAMB MCMC, no neutrino-sector physics is produced, the packaging-stability certificate (D-IC-02/T-IC-02) is applied BY ANALOGY to a stochastic lens outside the certified core, and source magnitudes are explicitly NOT matched.",
+    "new_minimum_viable_result": "The cheap, independently re-runnable audit-only fallback: load the two SPT-3G candl likelihoods and their best-fit points (no full Boltzmann MCMC), compute directional and profiled Delta-chi^2_{B|A}/Delta-chi^2_{A|B}, exhibit the large directional asymmetry, decompose it by the exact per-block sum rule into a spectrum x multipole localization heatmap (verifying TT high-ell ~2000-3000 dominance inside the overlap), and run the common-staging control (restrict D1 to SPT2018 support) showing the profiled mismatch changes by O(few percent). This delivers a domain-general, provenance-tracked packaging-stability report card for any inference whose conclusion depends on a chosen data product -- with EXPLICIT scope caps: the statistic is sign-blind (cannot and does not predict the m_nu direction, which is imported), it is an uncalibrated comparative -2 dlogL number (no null distribution), the packaging certificate is applied by analogy to a stochastic compressed-likelihood lens, source magnitudes (0.11 eV) are NOT matched, and the localization/tightening observation is credited to arXiv:2601.16277.",
+    "changes_made": [
+      "NARROWED the claim from 'reproduces the DIRECTION of the tightening' (which falsely implies SBT predicts the sign) to 'the DIRECTION is read entirely from an imported MCMC; the SBT statistic is non-negative by construction and sign-blind' -- making explicit that the one matched fact is external, not theory-produced (addresses the unanimous fatal opposite-world objection without hiding imported physics).",
+      "SPLIT the overbroad single claim into its two logically distinct parts: (a) a verifiable, cheap, falsifiable-at-the-arithmetic-level cross-lens AUDIT FORM (the surviving methodological core, demoted to the minimum-viable result), and (b) an UNFALSIFIABLE narration ('packaging-stability failure', 'direction reproduced') that crosses into retrodiction -- and discarded (b) as the load-bearing claim.",
+      "DEMOTED the m_nu inference / direction-reproduction from a headline result to imported context, consistent with ledger hidden_physics_dependence ('SBT supplies only the audit/stability layer') and disclaimer [153].",
+      "CONVERTED qualitative rhetoric to bounded/quantitative form: 'large asymmetry' -> stated magnitudes (2222 vs 314 unprofiled; 860 vs 370 profiled, native -2 dlogL units); 'survives staging' -> 'changes by O(few percent)' with the actual table deltas (-0.00%, -0.48%, 2.26%, -0.25%); 'comparative diagnostic, not a calibrated p-value' stated as an explicit cap (line 263).",
+      "CLARIFIED the certificate mapping: the packaging-stability certificate (D-IC-02/T-IC-02) is for DETERMINISTIC partition lenses and is applied BY ANALOGY to a stochastic compressed-likelihood lens -- marked as a MISSING-interface gap (ledger line 111), not a discharged theorem (no uniqueness or coverage claimed).",
+      "REMOVED the implicit 'benign lens variation => should be stable' assumption from doing evidentiary work: flagged it as asserted-not-derived, given the releases differ in seasons/pipeline/binning/multipole support (lines 222-223), so the 'failure' verdict is descriptive not inferential.",
+      "RESTRICTED the Lean truncated-Gaussian boundary lemma to its honest role: an elementary, mechanized, but inessential documentary fact (paper line 512), explicitly NOT applied to the real lens swap and NOT contributing to the m_nu verdict.",
+      "RETAINED the honest novelty disclaimer for the tightening + localization + reprocessing diagnostic (imported from arXiv:2601.16277, line 238) and the explicit non-match of source magnitudes (0.080 eV vs 0.11 eV, line 463)."
+    ],
+    "remaining_objections": [
+      "FATAL-RESIDUAL (unrepairable within scope): the audit statistic is non-negative by construction and sign-blind, so it has zero falsifiable content about the neutrino mass and the opposite-world test still fails -- a loosened bound, flipped asymmetry, or TE/EE localization would all be narrated identically. Repair can only relabel this honestly, not fix it; the headline fact (the sign) remains 100% external.",
+      "The packaging-stability certificate remains applied BY ANALOGY; no stochastic-lens backbone exists in the certified core (ledger missing_interfaces), so the 'packaging-stability failure' verdict rests on no discharged theorem in this setting.",
+      "Even after narrowing, SBT neither beats nor fully recovers the standard account: the observation (incl. TT high-ell localization) was already reported by arXiv:2601.16277, and magnitudes are not matched (direction-only, baselines disagree on shift size).",
+      "No neutrino-sector physics is produced (no seesaw/Dirac, no PMNS, no oscillation physics, no derived m_nu) -- and none is claimed; this caps impact and discriminative power.",
+      "Delta-chi^2 remains uncalibrated (no null distribution); 'large'/'persistent'/'few-percent' are descriptive, so the audit's verdict is not a hypothesis test even after quantification.",
+      "~9 adjustable choices against ~1 matched (external) fact: the methodological core is generic and reusable, but the specific neutrino instantiation remains flexibility-saturated."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 4,
+      "plausibility": 4,
+      "non_ad_hocness": 2,
+      "discriminative_power": 1,
+      "audience_legibility": 3,
+      "precision": 1,
+      "robustness": 2,
+      "baseline_advantage": 1,
+      "publication_potential": 2
+    },
+    "proposed_bin": "F",
+    "recommended_priority": "low",
+    "recommended_artifact": "A standalone, cheap-to-run lens-swap stability audit notebook/script (the minimum-viable / fallback path): load the two SPT-3G candl likelihoods + their best-fit points, compute directional and profiled Delta-chi^2_{B|A}/Delta-chi^2_{A|B}, produce the spectrum x multipole localization heatmap via the exact per-block sum rule, and run the common-staging control -- emitting a one-page 'packaging-stability report card' (asymmetry magnitudes + localization + staging delta) with all scope caps printed on the card (sign-blind, uncalibrated, certificate-by-analogy, magnitudes-not-matched, observation-credited-to-arXiv:2601.16277). This is the reusable, transferable, independently verifiable contribution and does not require re-running the full Boltzmann MCMC.",
+    "one_line_verdict": "An honestly self-labeled, sign-blind, uncalibrated cross-lens AUDIT FORM (route-mismatch, reused from the dark-energy paper) that re-displays -- but does not predict, explain, or add to -- an m_nu instability already reported in arXiv:2601.16277; repair narrows it to a reusable methodological report card, but the headline 'direction' is wholly external and the result has no falsifiable content about neutrino mass.",
+    "mechanism_tag": "route-mismatch",
+    "target_audience": [
+      "Cosmologists doing CMB+BAO parameter inference (neutrino mass, H0/S8 tensions)",
+      "CMB likelihood/pipeline developers (SPT-3G, Planck, ACT) concerned with release-to-release stability",
+      "Statisticians / ML researchers working on cross-validation, held-out predictive checks, and model-misspecification diagnostics",
+      "SBT/closure-calculus researchers seeking a real-data instantiation of the lens-swap packaging-stability audit"
+    ]
+  }
+}

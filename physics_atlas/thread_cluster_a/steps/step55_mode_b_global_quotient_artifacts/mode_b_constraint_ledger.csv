@@ -1,0 +1,5 @@
+constraint_id,status,declared_at_step,role
+step48_integer_charge_shadow,inherited_blind,48,content shadow
+step49_yukawa_connectivity_shadow,inherited_blind,49,content shadow
+step54_full_mass_generation_rank,inherited_blind,54,content shadow
+step55_center_computed_not_posited,active_anti_smuggle_constraint,55,"global center must be computed uniformly, not supplied as a quotient"

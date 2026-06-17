@@ -1,0 +1,407 @@
+{
+  "step": 4,
+  "toy_name": "finite_mode_c_compatibility_recombination_xi_diagnostic",
+  "orientation": "Mode C compatibility audit, not sector-span audit",
+  "carrier": {
+    "audit_energy": "identity on extended finite carrier",
+    "levels": [
+      2,
+      4
+    ],
+    "recognized_import_rows": "HED entanglement rows + LQG amplitude row + AS P3 row",
+    "compatibility_rows": [
+      "HED_LQG area/geometry bridge",
+      "LQG_AS discrete/continuum bridge",
+      "HED_AS boundary/continuum bridge",
+      "triple joint package bridge"
+    ]
+  },
+  "results": [
+    {
+      "region_count": 2,
+      "carrier_dimension": 8,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch",
+        "bridge_HED_LQG_area_geometry",
+        "bridge_LQG_AS_discrete_continuum",
+        "bridge_HED_AS_boundary_continuum",
+        "bridge_triple_joint_package"
+      ],
+      "recombined_native_probe_names": [
+        "HED_boundary_entanglement_S_0",
+        "HED_boundary_entanglement_S_1",
+        "LQG_geometry_amplitude",
+        "AS_p3_route_closure"
+      ],
+      "compatibility_bridge_rows": [
+        "bridge_HED_LQG_area_geometry",
+        "bridge_LQG_AS_discrete_continuum",
+        "bridge_HED_AS_boundary_continuum",
+        "bridge_triple_joint_package"
+      ],
+      "sector_only_control_rejected": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "note": "recognized sector rows only; rejected as a recombination verdict"
+      },
+      "compatibility_constraints": {
+        "raw_trace": 4.0,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 4.0,
+        "min_eigenvalue": 1.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "coupled_joint_with_constraints": {
+        "raw_trace": 4.0,
+        "normalized_trace": 0.5714285714285714,
+        "trace_K_DD": 7.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding compatibility bridge rows to the native lens"
+      },
+      "no_overread_check": {
+        "sector_only_control_used_as_verdict": false,
+        "compatibility_bridge_rows_used_as_native_probes": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "constraint_rows_declared_before_xi": true
+      }
+    },
+    {
+      "region_count": 4,
+      "carrier_dimension": 10,
+      "basis": [
+        "entanglement_region_0",
+        "entanglement_region_1",
+        "entanglement_region_2",
+        "entanglement_region_3",
+        "bulk_geometry_amplitude",
+        "p3_route_mismatch",
+        "bridge_HED_LQG_area_geometry",
+        "bridge_LQG_AS_discrete_continuum",
+        "bridge_HED_AS_boundary_continuum",
+        "bridge_triple_joint_package"
+      ],
+      "recombined_native_probe_names": [
+        "HED_boundary_entanglement_S_0",
+        "HED_boundary_entanglement_S_1",
+        "HED_boundary_entanglement_S_2",
+        "HED_boundary_entanglement_S_3",
+        "LQG_geometry_amplitude",
+        "AS_p3_route_closure"
+      ],
+      "compatibility_bridge_rows": [
+        "bridge_HED_LQG_area_geometry",
+        "bridge_LQG_AS_discrete_continuum",
+        "bridge_HED_AS_boundary_continuum",
+        "bridge_triple_joint_package"
+      ],
+      "sector_only_control_rejected": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "note": "recognized sector rows only; rejected as a recombination verdict"
+      },
+      "compatibility_constraints": {
+        "raw_trace": 4.0,
+        "normalized_trace": 1.0,
+        "trace_K_DD": 4.0,
+        "min_eigenvalue": 1.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "coupled_joint_with_constraints": {
+        "raw_trace": 4.0,
+        "normalized_trace": 0.5714285714285714,
+        "trace_K_DD": 7.0,
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 1.0,
+        "Xi_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "target_equivalent_overread_control": {
+        "raw_trace": 0.0,
+        "normalized_trace": 0.0,
+        "flag": "zero only after adding compatibility bridge rows to the native lens"
+      },
+      "no_overread_check": {
+        "sector_only_control_used_as_verdict": false,
+        "compatibility_bridge_rows_used_as_native_probes": false,
+        "fixed_bulk_metric_inserted": false,
+        "planck_constant_inserted": false,
+        "constraint_rows_declared_before_xi": true
+      }
+    }
+  ],
+  "refinement_stability": {
+    "coupled_normalized_level_2": 0.5714285714285714,
+    "coupled_normalized_level_4": 0.5714285714285714,
+    "coupled_raw_level_2": 4.0,
+    "coupled_raw_level_4": 4.0,
+    "compatibility_normalized_level_2": 1.0,
+    "compatibility_normalized_level_4": 1.0,
+    "coupled_absolute_delta": 0.0,
+    "compatibility_absolute_delta": 0.0,
+    "interpretation": "recognized sector rows close, but compatibility bridge rows remain as stable residual"
+  },
+  "verdict_from_toy": "bounded-grammar no-go for recombination without a new compatibility bridge"
+}

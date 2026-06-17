@@ -1,0 +1,3 @@
+check,passes,evidence
+no_literal_continuum_normalization_in_computation_path,True,"the exchange rate is computed from rho_A entropy and boundary area, not from a named continuum coefficient"
+exchange_rate_computed_not_input,True,k is computed as dA*/dS using the density-matrix unit entropy

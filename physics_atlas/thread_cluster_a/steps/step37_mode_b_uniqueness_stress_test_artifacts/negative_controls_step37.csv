@@ -1,0 +1,5 @@
+control,passes,evidence
+precise_test_admits_single_factor_partial_breaking,True,single-factor 4 survivors leave a dimension-3 subgroup under the precise test
+currency_minimum_not_row_picker,True,currency-minimum survivors=8
+currency_minimum_fails_some_precise_survivors,True,4 precise survivors are more expensive
+shape_detector_flags_old_rule,True,old factor-local rule is diagnostic-only

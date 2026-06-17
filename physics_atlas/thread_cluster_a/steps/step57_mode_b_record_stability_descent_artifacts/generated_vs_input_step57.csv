@@ -1,0 +1,7 @@
+item,status,detail
+Step38_carrier,read,twelve higher-layer shadow rows
+Step41_CS,read_and_computed_extension,CS=8
+record_stability_requirement,generated,persistence + distinguishability + capacity
+RS_extension,computed,RS=4
+anti_circularity,computed,proper_subset=True
+verdict,computed,LAND_RECORD_STABILITY_PROPER_SUBSET

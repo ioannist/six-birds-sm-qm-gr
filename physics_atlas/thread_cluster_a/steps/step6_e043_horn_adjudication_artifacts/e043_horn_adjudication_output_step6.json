@@ -1,0 +1,23 @@
+{
+  "step": 6,
+  "orientation": "Cluster A E043 horn adjudication",
+  "carrier": "scale-ratio grid plus P6 degeneracy audit",
+  "verdict": {
+    "type": "e043_horn_adjudication_constructed",
+    "certified_horns": [
+      "derivation_attractor",
+      "sharp_selecting_measure"
+    ],
+    "failed_horns": [
+      "broad_anthropic_measure"
+    ],
+    "derivation_sequence": "6->5->4->2->1->1",
+    "broad_measure_sequence": "6->6->6->6->6->6",
+    "sharp_measure_sequence": "3->2->2->1->1",
+    "broad_measure_final_degeneracy": 6,
+    "criterion": "P6_decaying_degeneracy_collapses_to_point",
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "nonclaim": "Finite horn-adjudication shape only; no physical mass value or mechanism is determined."
+}

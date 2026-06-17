@@ -1,0 +1,81 @@
+dimensions,support_key,support_score,higher_layer_passes,witness_scalar_key,witness_scalar_reps,witness_scalar_charge,witness_scalar_component_dim,covered_count,fermion_count,breaks_to_unbroken_u1,coupling_witnesses,uncovered_type_ids,is_target_reference
+2|3,rank_one_fundxantifund:0 + rank_one_fundxsinglet:0 + singletxfund:-1 + singletxfund:1,4|14|3|2,False,singletxantifund:0,singletxantifund,0,3,4,4,False,16-38@singletxfund:0;38-16@singletxfund:0;113-115@singletxfund:0;115-113@singletxfund:0,,False
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,4|14|3|2,False,singletxantifund:0,singletxantifund,0,3,4,4,False,27-38@singletxantifund:0;38-27@singletxantifund:0;91-93@singletxantifund:0;93-91@singletxantifund:0,,False
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,False,singletxantifund:0,singletxantifund,0,3,4,4,False,27-38@singletxantifund:0;38-27@singletxantifund:0;91-104@singletxantifund:0;104-91@singletxantifund:0,,False
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,False,singletxantifund:0,singletxantifund,0,3,4,4,False,27-38@singletxantifund:0;38-27@singletxantifund:0;93-102@singletxantifund:0;102-93@singletxantifund:0,,False
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantisym2:-1 + singletxantisym2:1,4|14|3|2,False,rank_one_fundxsinglet:-1,rank_one_fundxsinglet,-1,2,2,4,True,102-27@rank_one_fundxsinglet:1;104-27@rank_one_fundxsinglet:-1,27;38,False
+2|3,rank_one_fundxantifund:-1 + rank_one_fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,15-112@rank_one_fundxsinglet:3;41-44@rank_one_fundxsinglet:3;44-41@rank_one_fundxsinglet:3;112-15@rank_one_fundxsinglet:3;118-15@rank_one_fundxsinglet:-3,,False
+2|3,rank_one_fundxantifund:1 + rank_one_fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,17-110@rank_one_fundxsinglet:3;35-53@rank_one_fundxsinglet:-3;53-35@rank_one_fundxsinglet:-3;110-17@rank_one_fundxsinglet:3;116-17@rank_one_fundxsinglet:-3,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,26-90@rank_one_fundxsinglet:3;41-44@rank_one_fundxsinglet:3;44-41@rank_one_fundxsinglet:3;90-26@rank_one_fundxsinglet:3;96-26@rank_one_fundxsinglet:-3,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,26-90@rank_one_fundxsinglet:3;41-44@rank_one_fundxsinglet:3;44-41@rank_one_fundxsinglet:3;90-26@rank_one_fundxsinglet:3;107-26@rank_one_fundxsinglet:-3,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,26-96@rank_one_fundxsinglet:-3;41-44@rank_one_fundxsinglet:3;44-41@rank_one_fundxsinglet:3;96-26@rank_one_fundxsinglet:-3;101-26@rank_one_fundxsinglet:3,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantisym2:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,False,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,4,5,True,41-44@rank_one_fundxsinglet:3;44-41@rank_one_fundxsinglet:3;101-26@rank_one_fundxsinglet:3;107-26@rank_one_fundxsinglet:-3,26,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,28-88@rank_one_fundxsinglet:3;35-53@rank_one_fundxsinglet:-3;53-35@rank_one_fundxsinglet:-3;88-28@rank_one_fundxsinglet:3;94-28@rank_one_fundxsinglet:-3,,True
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,28-88@rank_one_fundxsinglet:3;35-53@rank_one_fundxsinglet:-3;53-35@rank_one_fundxsinglet:-3;88-28@rank_one_fundxsinglet:3;105-28@rank_one_fundxsinglet:-3,,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,True,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,5,5,True,28-94@rank_one_fundxsinglet:-3;35-53@rank_one_fundxsinglet:-3;53-35@rank_one_fundxsinglet:-3;94-28@rank_one_fundxsinglet:-3;99-28@rank_one_fundxsinglet:3,,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantisym2:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,False,rank_one_fundxsinglet:-3,rank_one_fundxsinglet,-3,2,4,5,True,35-53@rank_one_fundxsinglet:-3;53-35@rank_one_fundxsinglet:-3;99-28@rank_one_fundxsinglet:3;105-28@rank_one_fundxsinglet:-3,28,False
+3,antifund:-1 + antifund:1 + fund:-2 + fund:2,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,4-29@singlet:-1;6-25@singlet:1;25-6@singlet:1;29-4@singlet:-1,,False
+3,antifund:-1 + antifund:1 + fund:-3 + fund:3,4|12|2|1,False,singlet:-2,singlet,-2,1,4,4,False,4-30@singlet:-2;6-24@singlet:2;24-6@singlet:2;30-4@singlet:-2,,False
+3,antifund:-1 + antifund:1 + fund:-4 + fund:4,4|12|2|1,False,singlet:-3,singlet,-3,1,4,4,False,4-31@singlet:-3;6-23@singlet:3;23-6@singlet:3;31-4@singlet:-3,,False
+3,antifund:-1 + antifund:1 + fund:-6 + fund:6,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,4-6@antifund:0;6-4@antifund:0;22-32@fund:0;32-22@fund:0,,False
+3,antifund:-1 + antisym2:1 + fund:-2 + fund:2,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,4-17@antifund:0;17-4@antifund:0;25-29@fund:0;29-25@fund:0,,False
+3,antifund:-1 + antisym2:1 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,4-17@antifund:0;17-4@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:-1 + antisym2:1 + fund:-4 + fund:4,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,4-17@antifund:0;17-4@antifund:0;23-31@fund:0;31-23@fund:0,,False
+3,antifund:-1 + antisym2:1 + fund:-6 + fund:6,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,4-17@antifund:0;17-4@antifund:0;22-32@fund:0;32-22@fund:0,,False
+3,antifund:-2 + antifund:2 + fund:-1 + fund:1,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,3-28@singlet:1;7-26@singlet:-1;26-7@singlet:-1;28-3@singlet:1,,False
+3,antifund:-2 + antifund:2 + fund:-3 + fund:3,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,3-30@singlet:-1;7-24@singlet:1;24-7@singlet:1;30-3@singlet:-1,,False
+3,antifund:-2 + antisym2:2 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,3-18@antifund:0;18-3@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:-2 + antisym2:2 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,3-18@antifund:0;18-3@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:-3 + antifund:3 + fund:-1 + fund:1,4|12|2|1,False,singlet:-2,singlet,-2,1,4,4,False,2-28@singlet:2;8-26@singlet:-2;26-8@singlet:-2;28-2@singlet:2,,False
+3,antifund:-3 + antifund:3 + fund:-2 + fund:2,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,2-29@singlet:1;8-25@singlet:-1;25-8@singlet:-1;29-2@singlet:1,,False
+3,antifund:-3 + antifund:3 + fund:-4 + fund:4,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,2-31@singlet:-1;8-23@singlet:1;23-8@singlet:1;31-2@singlet:-1,,False
+3,antifund:-3 + antisym2:3 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,2-19@antifund:0;19-2@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:-3 + antisym2:3 + fund:-2 + fund:2,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,2-19@antifund:0;19-2@antifund:0;25-29@fund:0;29-25@fund:0,,False
+3,antifund:-3 + antisym2:3 + fund:-4 + fund:4,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,2-19@antifund:0;19-2@antifund:0;23-31@fund:0;31-23@fund:0,,False
+3,antifund:-4 + antifund:4 + fund:-1 + fund:1,4|12|2|1,False,singlet:-3,singlet,-3,1,4,4,False,1-28@singlet:3;9-26@singlet:-3;26-9@singlet:-3;28-1@singlet:3,,False
+3,antifund:-4 + antifund:4 + fund:-3 + fund:3,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,1-30@singlet:1;9-24@singlet:-1;24-9@singlet:-1;30-1@singlet:1,,False
+3,antifund:-4 + antisym2:4 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,1-20@antifund:0;20-1@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:-4 + antisym2:4 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,1-20@antifund:0;20-1@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:-6 + antifund:6 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,0-10@antifund:0;10-0@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:-6 + antisym2:6 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,0-21@antifund:0;21-0@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:0 + antisym2:0 + fund:-1 + fund:1,4|12|2|1,False,singlet:-1,singlet,-1,1,4,4,False,5-26@singlet:1;16-26@singlet:1;26-5@singlet:1;28-5@singlet:-1,,False
+3,antifund:1 + antisym2:-1 + fund:-2 + fund:2,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,6-15@antifund:0;15-6@antifund:0;25-29@fund:0;29-25@fund:0,,False
+3,antifund:1 + antisym2:-1 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,6-15@antifund:0;15-6@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:1 + antisym2:-1 + fund:-4 + fund:4,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,6-15@antifund:0;15-6@antifund:0;23-31@fund:0;31-23@fund:0,,False
+3,antifund:1 + antisym2:-1 + fund:-6 + fund:6,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,6-15@antifund:0;15-6@antifund:0;22-32@fund:0;32-22@fund:0,,False
+3,antifund:2 + antisym2:-2 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,7-14@antifund:0;14-7@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:2 + antisym2:-2 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,7-14@antifund:0;14-7@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:3 + antisym2:-3 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,8-13@antifund:0;13-8@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:3 + antisym2:-3 + fund:-2 + fund:2,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,8-13@antifund:0;13-8@antifund:0;25-29@fund:0;29-25@fund:0,,False
+3,antifund:3 + antisym2:-3 + fund:-4 + fund:4,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,8-13@antifund:0;13-8@antifund:0;23-31@fund:0;31-23@fund:0,,False
+3,antifund:4 + antisym2:-4 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,9-12@antifund:0;12-9@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antifund:4 + antisym2:-4 + fund:-3 + fund:3,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,9-12@antifund:0;12-9@antifund:0;24-30@fund:0;30-24@fund:0,,False
+3,antifund:6 + antisym2:-6 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,4,4,False,10-11@antifund:0;11-10@antifund:0;26-28@fund:0;28-26@fund:0,,False
+3,antisym2:-1 + antisym2:1 + fund:-2 + fund:2,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,15-29@singlet:-1;17-25@singlet:1,25;29,False
+3,antisym2:-1 + antisym2:1 + fund:-3 + fund:3,4|12|2|1,False,singlet:-2,singlet,-2,1,2,4,False,15-30@singlet:-2;17-24@singlet:2,24;30,False
+3,antisym2:-1 + antisym2:1 + fund:-4 + fund:4,4|12|2|1,False,singlet:-3,singlet,-3,1,2,4,False,15-31@singlet:-3;17-23@singlet:3,23;31,False
+3,antisym2:-1 + antisym2:1 + fund:-6 + fund:6,4|12|2|1,False,antifund:0,antifund,0,3,2,4,False,22-32@fund:0;32-22@fund:0,15;17,False
+3,antisym2:-2 + antisym2:2 + fund:-1 + fund:1,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,14-28@singlet:1;18-26@singlet:-1,26;28,False
+3,antisym2:-2 + antisym2:2 + fund:-3 + fund:3,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,14-30@singlet:-1;18-24@singlet:1,24;30,False
+3,antisym2:-3 + antisym2:3 + fund:-1 + fund:1,4|12|2|1,False,singlet:-2,singlet,-2,1,2,4,False,13-28@singlet:2;19-26@singlet:-2,26;28,False
+3,antisym2:-3 + antisym2:3 + fund:-2 + fund:2,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,13-29@singlet:1;19-25@singlet:-1,25;29,False
+3,antisym2:-3 + antisym2:3 + fund:-4 + fund:4,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,13-31@singlet:-1;19-23@singlet:1,23;31,False
+3,antisym2:-4 + antisym2:4 + fund:-1 + fund:1,4|12|2|1,False,singlet:-3,singlet,-3,1,2,4,False,12-28@singlet:3;20-26@singlet:-3,26;28,False
+3,antisym2:-4 + antisym2:4 + fund:-3 + fund:3,4|12|2|1,False,singlet:-1,singlet,-1,1,2,4,False,12-30@singlet:1;20-24@singlet:-1,24;30,False
+3,antisym2:-6 + antisym2:6 + fund:-1 + fund:1,4|12|2|1,False,antifund:0,antifund,0,3,2,4,False,26-28@fund:0;28-26@fund:0,11;21,False
+4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,4|15|3|1,True,antifund:-1,antifund,-1,4,4,4,True,4-18@antifund:-1;18-4@antifund:-1;24-18@fund:1;41-24@antifund:-1,,False
+4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,4|15|3|1,True,antifund:1,antifund,1,4,4,4,True,2-18@antifund:1;18-2@antifund:1;26-18@fund:-1;41-2@fund:-1,,False
+4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,4|15|3|1,True,antifund:1,antifund,1,4,4,4,True,6-14@antifund:1;14-6@antifund:1;30-14@fund:-1;34-30@antifund:1,,False
+4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,4|15|3|1,True,antifund:-1,antifund,-1,4,4,4,True,8-14@antifund:-1;14-8@antifund:-1;28-14@fund:1;34-8@fund:1,,False
+4,antifund:-1 + antifund:1 + fund:-2 + fund:2,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,4-29@singlet:-1;6-25@singlet:1;25-6@singlet:1;29-4@singlet:-1,,False
+4,antifund:-1 + antifund:1 + fund:-3 + fund:3,4|16|3|1,False,singlet:-2,singlet,-2,1,4,4,False,4-30@singlet:-2;6-24@singlet:2;24-6@singlet:2;30-4@singlet:-2,,False
+4,antifund:-1 + antifund:1 + fund:-4 + fund:4,4|16|3|1,False,singlet:-3,singlet,-3,1,4,4,False,4-31@singlet:-3;6-23@singlet:3;23-6@singlet:3;31-4@singlet:-3,,False
+4,antifund:-1 + antifund:1 + fund:-6 + fund:6,4|16|3|1,False,antisym2:0,antisym2,0,6,4,4,False,4-6@antisym2:0;6-4@antisym2:0;22-32@antisym2:0;32-22@antisym2:0,,False
+4,antifund:-2 + antifund:2 + fund:-1 + fund:1,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,3-28@singlet:1;7-26@singlet:-1;26-7@singlet:-1;28-3@singlet:1,,False
+4,antifund:-2 + antifund:2 + fund:-3 + fund:3,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,3-30@singlet:-1;7-24@singlet:1;24-7@singlet:1;30-3@singlet:-1,,False
+4,antifund:-3 + antifund:3 + fund:-1 + fund:1,4|16|3|1,False,singlet:-2,singlet,-2,1,4,4,False,2-28@singlet:2;8-26@singlet:-2;26-8@singlet:-2;28-2@singlet:2,,False
+4,antifund:-3 + antifund:3 + fund:-2 + fund:2,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,2-29@singlet:1;8-25@singlet:-1;25-8@singlet:-1;29-2@singlet:1,,False
+4,antifund:-3 + antifund:3 + fund:-4 + fund:4,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,2-31@singlet:-1;8-23@singlet:1;23-8@singlet:1;31-2@singlet:-1,,False
+4,antifund:-4 + antifund:4 + fund:-1 + fund:1,4|16|3|1,False,singlet:-3,singlet,-3,1,4,4,False,1-28@singlet:3;9-26@singlet:-3;26-9@singlet:-3;28-1@singlet:3,,False
+4,antifund:-4 + antifund:4 + fund:-3 + fund:3,4|16|3|1,False,singlet:-1,singlet,-1,1,4,4,False,1-30@singlet:1;9-24@singlet:-1;24-9@singlet:-1;30-1@singlet:1,,False
+4,antifund:-6 + antifund:6 + fund:-1 + fund:1,4|16|3|1,False,antisym2:0,antisym2,0,6,4,4,False,0-10@antisym2:0;10-0@antisym2:0;26-28@antisym2:0;28-26@antisym2:0,,False

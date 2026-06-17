@@ -1,0 +1,4 @@
+check,passes,evidence
+no_continuum_gravitational_constant_literal,True,RT coefficient comes from Step41 saturated finite rows
+separate_entropy_and_modular_trace_code_paths,True,first law comparison uses distinct entropy and trace computations
+relative_entropy_not_set_by_residual,True,relative entropy is computed by matrix logs and then compared to the deviation

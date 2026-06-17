@@ -1,0 +1,3 @@
+audit_id,initial_degeneracy,final_degeneracy,final_survivors,monotone_nonincreasing,stabilizes_to_selected_point,final_increment,defect_status,computed_sequence
+genuine_selection,9,1,w_SM,True,True,0,stabilizing_to_w_SM,9->5->4->2->1->1
+unselected_landscape,9,9,w_SM;w_alt_gauge;w_alt_rep;w_two_gen;w_four_gen;w_high_ew;w_alt_uv;w_alt_vacuum;w_joint_alt,True,False,0,nondecaying_degeneracy,9->9->9->9->9->9

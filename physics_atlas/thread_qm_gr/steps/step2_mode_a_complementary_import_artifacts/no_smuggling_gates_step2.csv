@@ -1,0 +1,7 @@
+gate,status,scope,reason,next_action
+G1_named_source_declared,pass,"lead import","The lead is declared before the audit as LQG/canonical quantum geometry/spin-foam, with source atoms from Ashtekar variables, spin networks, area-volume spectra, and spin-foam amplitudes.","Use only declared LQG-like source rows for Step 2."
+G2_target_lineage_non_equivalence,pass_for_child_fail_for_root,"lineage","LQG is a specific background-independent quantization program, not the canonical E018 root. It is narrower and has known caveats, so it is a strict child source.","Record child recognition and leave coupled root for Mode C/B."
+G3_typed_carrier_and_lens,pass,"finite toy","The Step 1 carrier is reused; the LQG-like native lens spans geometry-amplitude and route-protocol rows, while boundary entanglement rows are excluded.","Keep area-shadow-price test separate."
+G4_no_silent_status_upgrade,pass,"recognition status","The LQG source remains E2-conditional and caveated; no accepted root status is assigned.","Carry semiclassical-limit and dynamics caveats."
+G5_complementarity_cost_recorded,pass,"area-law sector","The LQG-like lens loses the RT-like area-shadow closure: normalized Xi is 1.0 at both refinement levels.","Record complementarity rather than merge silently."
+G6_no_answer_row_overread,pass_with_warning,"finite toy","The LQG source rows span the surviving child sector only. They are not used to include the boundary entanglement ledger or the full root coupled dictionary.","Combined HED+LQG lens is recorded only as Mode C setup."

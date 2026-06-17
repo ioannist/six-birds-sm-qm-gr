@@ -1,0 +1,6 @@
+control,passes,evidence
+carrier_bigger_than_step58,True,rows=11990
+non_CS_more_than_step58,True,non_CS=11674
+adversarial_capacity_nonvacuous,True,non_CS_capacity=311
+substrate_non_CS_nonvacuous,True,non_CS_substrate=60
+frozen_RS_has_teeth,True,RS=24

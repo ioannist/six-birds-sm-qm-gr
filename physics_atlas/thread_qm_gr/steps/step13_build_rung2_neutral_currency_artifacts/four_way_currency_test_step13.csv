@@ -1,0 +1,9 @@
+level,cells,case,d_qm,d_gr,d_union,d_candidate,q_recovery_residual,gr_recovery_residual,combined_recovery_residual,compression_pass,distinctness_residual,distinctness_pass,overall_pass,status
+1,4,neutral_u,3,3,6,4,6.646948835503032e-17,7.359201595860565e-17,9.916641414829509e-17,True,1.1547005383792517,True,True,passes_candidate
+1,4,placeholder,3,3,6,0,1.0,1.0,1.4142135623730951,False,0.0,False,False,fails_as_control_recovery
+1,4,union_direct_sum,3,3,6,6,6.646948835503032e-17,7.359201595860565e-17,9.916641414829509e-17,False,1.414213562373095,True,False,fails_as_control_no_compression
+1,4,collapse_typed_seed,3,3,6,1,1.3941865174694712,1.345554365615098,1.93759453867921,False,0.0,False,False,fails_as_control_collapse
+2,8,neutral_u,3,3,6,4,0.0,0.0,0.0,True,1.1547005383792517,True,True,passes_candidate
+2,8,placeholder,3,3,6,0,1.0,1.0,1.4142135623730951,False,0.0,False,False,fails_as_control_recovery
+2,8,union_direct_sum,3,3,6,6,0.0,0.0,0.0,False,1.4142135623730951,True,False,fails_as_control_no_compression
+2,8,collapse_typed_seed,3,3,6,1,1.352602823404264,1.3068774173443691,1.8808144464156678,False,0.0,False,False,fails_as_control_collapse

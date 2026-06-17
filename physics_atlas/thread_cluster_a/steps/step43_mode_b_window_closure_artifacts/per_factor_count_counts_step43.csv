@@ -1,0 +1,4 @@
+factor_count,structures_total,structures_exact,structures_skipped,corrected_carrier,atomic_rewrite_packaging,consistency_completeness,corrected_chirality_faithful,higher_layer_mass_closure,clean_separation_delta_empty
+1,5,5,0,911,95,91,89,4,0
+2,15,15,0,13881,85,63,15,8,8
+3,35,7,28,648,0,0,0,0,0

@@ -1,0 +1,29 @@
+{
+  "description": "Submission readiness checklist.",
+  "items": [
+    {
+      "item": "paper/ LaTeX build passes with latexmk",
+      "status": "passed"
+    },
+    {
+      "item": "LaTeX build target and mirrored Markdown source use the same title and three-prediction architecture",
+      "status": "passed"
+    },
+    {
+      "item": "Bibliography is active and citation metadata has been audited",
+      "status": "passed"
+    },
+    {
+      "item": "Stale title, two-prediction, and §6.2/§6.3 cross-reference searches pass",
+      "status": "passed"
+    },
+    {
+      "item": "Figures F0-F4 are image-backed in paper/figures",
+      "status": "passed"
+    },
+    {
+      "item": "Adversarial-review wording distinguishes audit checks from peer review and unreviewed §6 predictions",
+      "status": "passed"
+    }
+  ]
+}

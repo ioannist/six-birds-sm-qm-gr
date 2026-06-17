@@ -1,0 +1,5 @@
+control_id,expected,obstruction_count,passes_guard,witness
+RG_derived_g_IR_descends,descendable,0,True,none
+no_selection_Lambda_descends,descendable,0,True,none
+selection_relocation,Lambda_descends_with_phi_but_phi_not_from_bare_UV,4,True,A_left-A_right;A_left-A_far_right;A_right-A_far_right;B_center-B_left
+realized_Lambda_not_RG_derived_from_bare_UV,selection_residue,4,True,A_left-A_right;A_left-A_far_right;A_right-A_far_right;B_center-B_left

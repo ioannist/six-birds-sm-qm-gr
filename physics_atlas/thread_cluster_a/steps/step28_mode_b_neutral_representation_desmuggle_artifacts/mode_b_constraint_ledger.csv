@@ -1,0 +1,7 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP28_NEUTRAL_REP_ENUMERATION,ModeB,step28_mode_b_neutral_representation_desmuggle,carrier,"Neutral representation enumeration replaces exterior-only content with singlet, fund, antifund, antisym2, sym2, and adjoint over the declared finite window."
+C_CLUSTER_A_STEP28_NO_SLOT_LOCK,ModeB,step28_mode_b_neutral_representation_desmuggle,anti_smuggling,"The build script contains no slot-count equality guard; cubic anomaly entries are computed as sums over A(R) for enumerated representation rows."
+C_CLUSTER_A_STEP28_NEUTRAL_COUNTS,ModeB,step28_mode_b_neutral_representation_desmuggle,diagnostic,"The neutral window computes 280983 anomaly-free chiral closers across 9 structures."
+C_CLUSTER_A_STEP28_REFERENCE_NOT_DISTINGUISHED,ModeB,step28_mode_b_neutral_representation_desmuggle,typed_no_go,"The Step-14 reference support is present once but is not minimal and is not uniquely distinguished without the removed prior."
+C_CLUSTER_A_STEP28_STAGEII,ModeB,step28_mode_b_neutral_representation_desmuggle,calibration,"The Step-14 reference support appears in the neutral window as a calibration, not as the selection result."
+C_CLUSTER_A_STEP28_NONCLAIM_BOUNDARY,ModeB,step28_mode_b_neutral_representation_desmuggle,honesty,"Finite neutral de-smuggling diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

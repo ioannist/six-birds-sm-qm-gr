@@ -1,0 +1,459 @@
+{
+  "direct_qm_to_gr_plus_framework_witness_gap": {
+    "raw_trace": 10.0,
+    "trace_K_DD": 12.0,
+    "normalized_trace": 0.8333333333333334,
+    "min_eigenvalue": 0.0,
+    "max_eigenvalue": 1.0,
+    "Xi_matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "gap_target_atoms": [
+    "composition_slot",
+    "g_curvature_audit",
+    "g_event_locality",
+    "g_geodesic_fixedpoint",
+    "g_metric_currency",
+    "r_audit_commutator",
+    "r_currency_exchange",
+    "r_descent_budget",
+    "r_fixedpoint_lift",
+    "r_refinement_index",
+    "r_shadow_price_neutral",
+    "typed_carrier"
+  ],
+  "currency_mismatch": {
+    "qm_currency": "q_amplitude_currency",
+    "gr_currency": "g_metric_currency",
+    "gr_currency_factors_through_qm": false,
+    "normalized_xi": 1.0,
+    "new_currency_required": true
+  },
+  "role_difference": {
+    "P1_carrier": {
+      "qm_only": [],
+      "gr_only": [
+        "g_event_locality"
+      ],
+      "shared": [
+        "typed_carrier"
+      ],
+      "changed": [
+        "g_event_locality"
+      ]
+    },
+    "P2_composition": {
+      "qm_only": [],
+      "gr_only": [],
+      "shared": [
+        "composition_slot"
+      ],
+      "changed": []
+    },
+    "P3_route": {
+      "qm_only": [
+        "q_unitary_fixedpoint"
+      ],
+      "gr_only": [
+        "g_geodesic_fixedpoint"
+      ],
+      "shared": [],
+      "changed": [
+        "g_geodesic_fixedpoint",
+        "q_unitary_fixedpoint"
+      ]
+    },
+    "P4_records": {
+      "qm_only": [
+        "q_record_branch"
+      ],
+      "gr_only": [
+        "g_event_locality"
+      ],
+      "shared": [],
+      "changed": [
+        "g_event_locality",
+        "q_record_branch"
+      ]
+    },
+    "P5_currency": {
+      "qm_only": [
+        "q_amplitude_currency"
+      ],
+      "gr_only": [
+        "g_metric_currency"
+      ],
+      "shared": [],
+      "changed": [
+        "g_metric_currency",
+        "q_amplitude_currency"
+      ]
+    },
+    "P6_audit": {
+      "qm_only": [
+        "q_probability_audit"
+      ],
+      "gr_only": [
+        "g_curvature_audit"
+      ],
+      "shared": [],
+      "changed": [
+        "g_curvature_audit",
+        "q_probability_audit"
+      ]
+    }
+  },
+  "all_rungs_inserted_gap": {
+    "raw_trace": 4.0,
+    "trace_K_DD": 12.0,
+    "normalized_trace": 0.3333333333333333,
+    "min_eigenvalue": 0.0,
+    "max_eigenvalue": 1.0,
+    "Xi_matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "no_rigging_check": {
+    "literature_decomposition_imported": false,
+    "target_layer_inserted_as_source": false,
+    "qm_to_gr_descent_inserted_as_source": false,
+    "single_rung_closes_full_gap": false,
+    "rungs_generated_from_residual_blocks": true
+  },
+  "first_rung_to_build": "RUNG_1_REFINE_FIXEDPOINT"
+}

@@ -1,0 +1,27 @@
+{
+  "step": 18,
+  "artifact_dir": "steps/step18_two_layer_stress_test_artifacts",
+  "source_steps": {
+    "step8_survivors": "steps/step8_structural_token_blind_selection_artifacts/structural_survivors_step8.csv",
+    "step17_verdict": "steps/step17_two_layer_test_artifacts/overall_verdict_step17.json"
+  },
+  "verdict": {
+    "step": 18,
+    "active_channel_strength": 1.0,
+    "active_content_scale_coupling_bits": 0.3912435636292555,
+    "step17_inherited_residual_bits": 0.035998916879877996,
+    "gauge_generation_reference_bits": 0.4662032334857935,
+    "coupling_strength_monotone": true,
+    "two_layer_fraction": 0.3333333333333333,
+    "coupled_but_distinct_fraction": 0.6666666666666666,
+    "one_layer_break_fraction": 0.0,
+    "flip_boundary": "two_layer only when threshold exceeds the active coupling; no one-layer break at active strength",
+    "verdict": "coupled_but_distinct",
+    "revised_architecture": "coupled_layers_with_distinct_measure_kind",
+    "hierarchy_resolved": false,
+    "physical_mass_value_supplied": false,
+    "dominant_yukawa_value_derived": false,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  }
+}

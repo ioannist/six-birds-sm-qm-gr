@@ -1,0 +1,23 @@
+{
+  "step": 11,
+  "name": "E021 adjudication update",
+  "thread": "thread_cluster_b",
+  "mode": "targeted_update_regrade",
+  "new_computation": false,
+  "edited_artifacts": [
+    "steps/step4_consolidated_statement_artifacts/cluster_b_consolidated_statement.tex",
+    "steps/step4_consolidated_statement_artifacts/content_classification.csv"
+  ],
+  "source_adjudication": "steps/step10_e021_lambda_selection_adjudication_artifacts/results_summary.md",
+  "final_verdict": {
+    "type": "e021_adjudication_update_applied",
+    "selection_type_adjudicated": true,
+    "lambda_value_remains_open": true,
+    "real_physical_mechanism_remains_open": true,
+    "collapse_not_label_precision_present": true,
+    "unified_decaying_degeneracy_note_present": true,
+    "no_new_computation": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  }
+}

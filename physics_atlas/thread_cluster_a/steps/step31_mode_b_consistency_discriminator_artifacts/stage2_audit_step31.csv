@@ -1,0 +1,4 @@
+stage_ii_check,passes,evidence
+reproduces_step29_survivor_count,True,rederived atomic rewrite-packaging count is 1851
+phantom_action_labels_detected,True,some Step-29 survivors use labels with zero actual action and are rejected
+global_rank_one_pair_artifacts_detected,True,some Step-29 survivors become vectorlike after rank-one conjugacy is identified

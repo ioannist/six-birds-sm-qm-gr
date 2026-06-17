@@ -1,0 +1,26 @@
+{
+  "step": 2,
+  "orientation": "P2 selection/constraint construction",
+  "active_residual": "R_cluster_a_after_step1_shared_selection_frame",
+  "candidate_move": "Extend W with anomalous tokens, compute toy anomaly functional, prune by A=0, select w_SM from survivors, and compute E019/E020 co-determination.",
+  "final_verdict": {
+    "type": "p2_selection_constraint_constructed",
+    "extended_candidate_count": 13,
+    "survivor_count_before_selection": 9,
+    "pruned_count": 4,
+    "selected_world": "w_SM",
+    "selection_collapses": true,
+    "further_step": true,
+    "mutual_information_bits": 0.330856,
+    "missing_gauge_n_gen_pair_count": 4,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "anomaly_pruning": "anomaly_pruning_step2.csv",
+    "selection_collapse": "selection_collapse_step2.csv",
+    "joint_codetermination": "joint_codetermination_step2.csv",
+    "controls": "controls_step2.csv",
+    "next_live_option": "Step3_P6_selection_audit_or_manager_selected_followup"
+  }
+}

@@ -1,0 +1,4 @@
+constraint_id,status,description
+C_STEP56_FORK_CHANNEL_FROM_ACCESS_TUPLE,active,mediator access restricted by Step48 q_GR excluding d1
+C_STEP56_FUSED_CONTROL_CANFAIL,active,forbidden coherent control must entangle or the discriminator fails
+C_STEP56_NO_MEAN_FIELD_BAKEIN,active,mediation channel is not the Step26 update channel

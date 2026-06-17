@@ -1,0 +1,10 @@
+ordering,coeff_limit,use_witten,chirality_mode,quantization_mode,closing_count,winner_ids,winner_dimensions,sm_shape_wins,flips_from_primary
+total_rank_first,2,True,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+total_slots_first,2,True,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+factor_count_first,2,True,complex_required,primitive_grid,4,SU(5),5,False,True
+total_rank_first,1,True,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+total_rank_first,2,True,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+total_rank_first,3,True,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+total_rank_first,2,False,complex_required,primitive_grid,4,r1|2_u1,2|3,True,False
+total_rank_first,2,True,charge_or_complex,primitive_grid,4,r1|2_u1,2|3,True,False
+total_rank_first,2,True,complex_required,any_integer_grid,4,r1|2_u1,2|3,True,False

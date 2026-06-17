@@ -1,0 +1,38 @@
+{
+  "step": 10,
+  "artifact_type": "adjudication_robustness_sweep",
+  "thread": "thread_cluster_a",
+  "source_step": "steps/step6_e043_horn_adjudication_artifacts/e043_horn_adjudication_step6.py",
+  "sweep": {
+    "total_cells": 9520,
+    "hold_cells": 4922,
+    "flip_cells": 4598,
+    "hold_fraction": 0.5170168067226891,
+    "threshold_count": 10,
+    "broad_final_sigma_count": 7,
+    "sharp_final_sigma_count": 8,
+    "grid_config_count": 17
+  },
+  "step6_operating_point": {
+    "grid_config": "step6_exact",
+    "threshold": 0.25,
+    "broad_final_sigma": 2.0,
+    "sharp_final_sigma": 0.1,
+    "cell_class": "VERDICT_HOLDS",
+    "broad_sequence": "6->6->6->6->6->6",
+    "sharp_sequence": "3->2->2->1->1",
+    "nearest_flip_kind": "sharp_noncollapse",
+    "nearest_flip_normalized_margin": 0.30612244898
+  },
+  "flip_boundaries": {
+    "sharp_noncollapse_cells": 3990,
+    "broad_false_collapse_cells": 608
+  },
+  "verdict": {
+    "honest_grade": "finite-carrier-diagnostic",
+    "parameter_free": false,
+    "physical_value_computed": false,
+    "physical_anthropic_verdict": false,
+    "external_review_required": true
+  }
+}

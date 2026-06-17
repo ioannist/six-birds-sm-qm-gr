@@ -1,0 +1,16 @@
+{
+  "clean_shadow_coset_count": 0,
+  "clean_shadow_gluing_obstruction": 0,
+  "clean_shadow_monopole_typed": false,
+  "conditional_on_clean_separation": true,
+  "coset_delta_witness_identity": true,
+  "dynamical_breaking_coset_count": 6,
+  "dynamical_breaking_gluing_obstruction": 3,
+  "dynamical_breaking_monopole_typed": true,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_F48_monopole_candidate",
+  "new_physics_claim": false,
+  "physical_reading_resolved": false,
+  "step": 46,
+  "verdict": "CANDIDATE_SHADOW_VS_BREAKING_FORK_TYPED"
+}

@@ -1,0 +1,4 @@
+constraint_id,status,declared_at_step,role
+step41_delta_fact_clean_separation,active_conditional,41,recognition-source clean-separation condition
+step43_window_closure,partial_window_stress_test,43,single/two-factor exact widening and sampled three-factor rows
+step44_factor_count_bound,structural_arguable_inside_component_cap,44,closes the three-factor route-incidence coverage gap

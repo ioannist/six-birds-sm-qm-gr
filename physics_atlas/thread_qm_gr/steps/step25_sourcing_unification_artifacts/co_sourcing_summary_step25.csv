@@ -1,0 +1,3 @@
+case,max_born_descent_residual,max_stress_energy_descent_residual,mean_stress_energy_descent_residual,all_samples_single_psi_sources_both
+L_co_sourced,0.0,0.0,0.0,True
+non_co_sourced_control,0.0,0.3806026603775931,0.2469245783396815,False

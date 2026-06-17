@@ -1,0 +1,13 @@
+artifact,output_or_claim,classification,grade,scope
+bounded_grammar_step7.csv,"G_v3 bounded triple-audit search declaration",predictive structural,theorem-grade audit form,"Constrains the search before computation."
+triple_audit_search_step7.csv,"target-equivalence audit of accepted search and rejected controls",predictive structural,diagnostic-complete,"Separates no-go from smuggling controls."
+simulate_step7_gv3_xi.py,"finite carrier and Schur residual computation at r=2 and r=4",analytical structural,finite-carrier diagnostic,"Diagnostic completeness on the declared toy."
+simulation_output_step7.json,"triple residual remains; native insertion zeros only as rejected control",analytical structural,finite-carrier diagnostic,"Two-refinement no-go result for G_v3."
+bridge_closure_step7.csv,"per-bridge closure and surviving triple status",analytical structural,finite-carrier diagnostic,"Bridge-level audit for inherited and triple rows."
+target_equivalence_audit_step7.csv,"explicit target-equivalence decisions",organizational/audit,diagnostic-complete,"No-smuggling audit for triple controls."
+no_smuggling_gates_step7.csv,"six gate statuses",organizational/audit,diagnostic-complete,"Gate ledger for Step 7."
+nonclaim_boundary_step7.md,"explicit nonclaims",organizational/audit,diagnostic-complete,"Prevents overreading the no-go or controls."
+step7_structural_statement.tex,"formal bounded no-go statement",analytical structural,finite-carrier diagnostic,"Linear-algebra proposition for the toy carrier."
+mode_b_target_lineage.csv,"new child residual after G_v3 no-go",organizational/audit,diagnostic-complete,"Track lineage only."
+mode_b_grammar_manifest.csv,"G_v3 declaration and structurally different next obligation",organizational/audit,diagnostic-complete,"Grammar tracking only."
+mode_b_constraint_ledger.csv,"G_v3 saturation prohibitions",organizational/audit,diagnostic-complete,"Constraint tracking only."

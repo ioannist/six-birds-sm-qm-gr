@@ -1,0 +1,3 @@
+check,passes,evidence
+no_continuum_constant_literal_in_computation_path,True,coefficient is computed from min-cut and entropy rows
+no_target_ratio_selector,True,the build computes and then scores the ratio; it does not branch on a target value

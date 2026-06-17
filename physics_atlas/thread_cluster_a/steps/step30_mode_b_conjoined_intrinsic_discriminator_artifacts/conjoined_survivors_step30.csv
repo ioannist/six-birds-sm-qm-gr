@@ -1,0 +1,5 @@
+dimensions,support_key,currency_score,audit_axis_count,l1_shadow_price,nonzero_audit_terms,charge_span,is_target_reference,support_score
+2,antisym2:-1 + singlet:1,2|4|4|2,2,4,4,2,False,2|2|1|1
+2,antisym2:1 + singlet:-1,2|4|4|2,2,4,4,2,False,2|2|1|1
+2|2,antisym2xsinglet:-1 + singletxantisym2:1,2|4|4|2,2,4,4,2,False,2|2|2|2
+2|2,antisym2xsinglet:1 + singletxantisym2:-1,2|4|4|2,2,4,4,2,False,2|2|2|2

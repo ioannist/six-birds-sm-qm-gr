@@ -1,0 +1,116 @@
+{
+  "id": "R009",
+  "title": "Filtered Burgers yields the exact LES subgrid-stress identity tau_sgs = mean(u^2) - (mean u)^2 as the forced closure rewrite term",
+  "one_sentence_claim_original": "SBT's route-mismatch primitive (lens-only commutator of a translation-invariant filter with the Burgers nonlinear flux) reproduces, as an exact algebraic identity, the canonical LES subgrid-stress term tau_sgs = bar(u^2) - (bar u)^2, which vanishes for linear dynamics and grows with filter width sigma.",
+  "target_known_fact": "Filtering a nonlinear advection equation does not commute with the nonlinear flux: for filtered Burgers the closed filtered equation acquires the subgrid-stress term tau_sgs = bar(u^2) - (bar u)^2 (Leonard 1974 / Germano 1992 decomposition; eddy-viscosity closure tradition of Smagorinsky 1963). It is identically zero for linear dynamics and grows with filter width.",
+  "scientific_domain": "Fluid dynamics / turbulence closure (statistical mechanics of coarse-graining)",
+  "argument_family": "numerical-match",
+  "derivability_class": "A (in the narrow sense 'exact algebraic-identity match', NOT mechanized theorem and NOT derivation of a nontrivial physical fact)",
+  "mechanism_tag": "route-mismatch",
+
+  "repair": {
+    "repair_status": "repaired",
+    "summary": "Survives as an honestly-scoped RECOVERY / dictionary cross-walk. Repairs applied are all allowed (narrow claim, split 'exact' from approximate, clarify P3->P1 mapping, restrict to 1D scalar, add scope caveats already present in the source papers). No forbidden moves were needed; the candidate already conceded its limits in honest_status_note. Independent verification reproduced the load-bearing facts.",
+    "allowed_repairs_applied": [
+      "REPLACE EXACT WITH SCOPED-EXACT: The word 'exact algebraic identity' is restricted to the CONTINUOUS PDE identity tau_sgs = bar(u^2)-(bar u)^2 (verified residual ~1e-14, independent of sigma/nu/kernel/field). The finite-RK4 'route mismatch' table (RMS of bar(T_tau u) - T_tau(bar u), paper Fig/Table 1, line 616) is reported SEPARATELY as an O(dt)-approximate stepper-dependent diagnostic. Independently verified: at dt=0.002 the one-step route mismatch matches dt*d_x(tau_sgs/2) only to leading order, with a ~2x higher-order residual (/tmp/route_vs_sgs.py: mismatch 2.01e-4, leading prediction 2.01e-4, residual 4.03e-4). The original one_sentence_claim folded the stepper-commutator sigma-growth into 'exact algebraic identity', mildly overselling; this is now split.",
+      "CLARIFY MAPPING (P3->P1): State plainly that the lens/dynamics noncommutation is the P3 route-mismatch DIAGNOSTIC, which DIAGNOSES (motivates) the P1 operator-rewrite term tau_sgs. This is exactly the paper's own linkage: To_Become_a_Stone line 132 'P1 (operator rewrite). When a macro evolution is not closed, route mismatch diagnoses the needed rewrite/correction term (e.g. LES subgrid term).' The forbidden move (treating P3 as a directionality/arrow certificate) is NOT made and must never be made.",
+      "NARROW CLAIM (dimension): Restrict the quantitative claim to the 1D scalar viscous Burgers case. The identification of the 1D scalar tau_sgs with the 3D tensor Germano/Leonard stress tau_ij = L_ij + C_ij + R_ij is an analogy of one component (cited at line ~516/839, NOT re-derived). Do not advertise reproduction of the full tensor L+C+R decomposition.",
+      "REMOVE/EXPOSE IMPLICIT ASSUMPTION (lens choice): State that the translation-invariant convolution filter is a CHOSEN lens (SBT has no canonical-lens principle; ledger missing_interfaces 'No rule selecting the lens f'). It is selected precisely so the filter commutes with derivatives and the viscous term, localizing the obstruction onto the single term tau_sgs. Variable-width LES filters do NOT commute with derivatives (Ghosal-Moin 1995, Vasilyev 2000) and add a commutation-error term not captured here. This is the standard LES filter assumption, not SBT-specific tuning, but it is an input matched to the known answer.",
+      "ADD SCOPE CAVEATS (honoring disclaimers): (i) NOT Lean-certified for the PDE -- To_Become_a_Stone app:lean line 923 verbatim 'These Lean results are not intended to formalize the quantum or PDE examples'; the backbone (commutes_of_factorsThrough, section_uniform, TV_Q_f_le) covers only the equal-fiber partition lens Prod.fst on finite PMFs. 'Class A' = exact-identity match only. (ii) SBT supplies NO closure model, NO Smagorinsky/eddy-viscosity coefficient, NO continuum/Navier-Stokes derivation (abstract line 62: 'We do not derive continuum theories'). (iii) Lens-only regime: there is NO completion U_f (line 524). (iv) The sigma=0 / linear-dynamics null gate is a code REGRESSION certificate (line 856), not new empirical evidence."
+    ],
+    "forbidden_repairs_avoided": [
+      "Did NOT add arbitrary assumptions or hidden tuning: the identity holds for ANY field/sigma/nu/kernel (verified), zero parameters affect it.",
+      "Did NOT hide imported physics: explicitly flags Leonard 1974 / Germano 1992 / Smagorinsky 1963 as the source; imports_known_physics = true.",
+      "Did NOT claim unproven uniqueness, derivation, prediction, new physics, or Lean certification of the PDE.",
+      "Did NOT treat route mismatch (P3) as a directionality certificate (forbidden_moves ledger line 70; disclaimer line 136).",
+      "Did NOT use 'naturally emerges' language; the term is an algebraic add-and-subtract definition."
+    ],
+    "independent_verification": {
+      "exact_identity": "Reproduced /tmp/sgs_check.py and /tmp/sgs_verify.py: d_x(0.5 bar(u^2)) == d_x(0.5 (bar u)^2) + d_x(0.5 tau_sgs) to machine precision; max identity residual ~1.1e-14 to 1.97e-14 across sigma in {0.05,0.1,0.2,0.4}; sigma=0 residual exactly 0.0.",
+      "null_gate": "sigma=0 gives max|tau_sgs| = 0.0 (sgs_check.py) / ~1.8e-15 (sgs_verify.py); linear-flux null bar(c*u)-c*bar(u) = 1.11e-15 to 1.33e-15. Genuine and verified.",
+      "monotone_sigma_scaling": "max|tau_sgs| increases monotonically with sigma (e.g. 0.0535 -> 0.150 -> 0.263 -> 0.399 over sigma 0.05..0.4). Confirmed.",
+      "route_mismatch_vs_identity_separation": "/tmp/route_vs_sgs.py: the finite-RK4 one-step route mismatch (2.01e-4) equals the leading algebraic prediction dt*d_x(tau_sgs/2) (2.01e-4) only to O(dt); the residual is 4.03e-4 (ratio ~2.0 to the mismatch). Confirms the two objects are NOT identical; 'exact' applies to the continuous identity, not the stepper table. This is the load-bearing repair.",
+      "paper_citations_confirmed": "To_Become_a_Stone lines 524 (lens-only, no U_f), 535-540 (exact filtered equation + tau_sgs definition), 542 ('exactly the Six-Birds route mismatch at the PDE level'), 569 ('induces an exact algebraic correction term'), 132 (P1 rewrite diagnosed by route mismatch), 923 (Lean NOT for PDE), 856 (null gates = regression certificates), 1020 (defaults N=128, nu=0.1, dt=0.002, t_max=1.0). All verbatim-confirmed."
+    }
+  },
+
+  "revised_one_sentence_claim": "Applying SBT's P3 route-mismatch diagnostic (the lens-only commutator of a translation-invariant spatial filter with the Burgers nonlinear flux) to 1D viscous Burgers recovers, as an exact CONTINUOUS algebraic identity (verified residual ~1e-14), the canonical LES subgrid-stress term tau_sgs = bar(u^2) - (bar u)^2 -- the P1 operator-rewrite term it motivates -- which is identically zero for linear dynamics and grows monotonically with filter width sigma; this is a recovery of Leonard 1974 / Germano 1992 by definition, not a derivation, prediction, or Lean-certified theorem.",
+
+  "new_minimum_viable_result": "A short reproducibility note (2-3 pages) plus one deterministic Python script that (i) instantiates filtered 1D viscous Burgers as an SBT lens-only package (filter = lens Q_f, no completion U_f, Burgers stepper = dynamics), (ii) verifies the CONTINUOUS exact identity tau_sgs = bar(u^2)-(bar u)^2 to machine precision (~1e-14) for arbitrary field/sigma/nu/kernel, (iii) reproduces the monotone sigma-scaling with the genuine sigma=0 / linear-dynamics null gate (=0), and (iv) reports the finite-RK4 route-mismatch table SEPARATELY as an O(dt)-approximate diagnostic that agrees with the algebraic term only to leading order. Framed and titled explicitly as a RECOVERY / dictionary cross-walk of Leonard 1974 / Germano 1992, with in-line glosses that (a) the SBT content is the relabeling 'P3 noncommutation diagnoses a P1 rewrite term', (b) it is NOT Lean-certified for the PDE (cite line 923), and (c) SBT supplies no closure model, coefficient, or continuum theorem.",
+
+  "changes_made": [
+    "Split the headline: 'exact algebraic identity' now attaches only to the continuous PDE identity (verified ~1e-14); the finite-stepper route-mismatch table is reported separately as an O(dt)-approximate, stepper-dependent diagnostic (independently verified ~2x higher-order residual).",
+    "Reclassified the role labels: the commutator is the P3 route-mismatch DIAGNOSTIC that MOTIVATES the P1 operator-rewrite term tau_sgs (per paper line 132), never a directionality certificate.",
+    "Restricted the quantitative claim to 1D scalar Burgers; demoted the 1D-scalar-to-3D-tensor Germano L+C+R identification to an explicitly-labeled analogy (cited, not re-derived).",
+    "Exposed the chosen-lens assumption (translation-invariant filter selected to localize the obstruction onto one term; no canonical-lens principle; variable-width filters add an uncaptured commutation-error term).",
+    "Added the four scope caveats verbatim from the source: NOT Lean-certified for PDE (line 923); no closure model/coefficient/continuum derivation (abstract line 62); lens-only, no completion U_f (line 524); null gate is a code regression certificate (line 856).",
+    "Re-titled the deliverable as a RECOVERY / dictionary entry, with the verb 'reproduces' glossed in-line as 'recovers by definition (Leonard 1974 / Germano 1992)'.",
+    "Independently re-ran all four /tmp verification scripts to confirm the exact identity, null gate, monotone scaling, and the route-mismatch-vs-identity separation."
+  ],
+
+  "remaining_objections": [
+    "FATAL-TO-DERIVATION-READING (but not to the recovery): The 'derivation' is a tautology -- tau_sgs = bar(u^2)-(bar u)^2 is the DEFINITION of the filtered nonlinear-flux residual, obtained by a single add-and-subtract of d_x(0.5 (bar u)^2). SBT contributes only the words 'route mismatch / P1 operator rewrite'. No new quantitative content. All four skeptics agree: is_actually_new = false.",
+    "BEATS NO BASELINE: SBT does strictly worse than the standard LES account on every contentful axis -- no closure model for tau_sgs, no Smagorinsky/dynamic-Smagorinsky coefficient, no L+C+R substress re-derivation, no continuum/Navier-Stokes convergence. beats_baseline = false. Strictly a RECOVERY of a 1963-1992 result.",
+    "TARGET LEAKAGE AT FRAMING LEVEL: the translation-invariant filter and the 1D Burgers surrogate were chosen precisely to land on the pre-known term; SBT has no canonical-lens principle and no completion U_f. target_used_to_design_theory = true (the theory framing imports the answer). Conceded, not hidden.",
+    "NOT LEAN-CERTIFIED FOR THE PDE: the existing finite-PMF backbone (commutes_of_factorsThrough, equal-fiber Prod.fst lens) explicitly does not cover the PDE (line 923). 'Class A' overstates verification status unless read narrowly as 'exact-identity match'.",
+    "INTERPRETIVE NARRATIVE IS POST-HOC-FLEXIBLE: the slogan 'noncommutation of coarse-graining with dynamics is THE universal source of effective correction terms' is reused across LES, gravitational backreaction (R025), and quantum route mismatch (R027); on its own it has high post-hoc applicability and predicts neither which term appears nor its coefficient. (The specific identity here is rigid; the surrounding story is not.)",
+    "OMITTED COMMUTATION-ERROR TERM: the construction silently assumes the filter commutes with derivatives; for general (variable-width / non-spectral) filters the actual LES literature carries a separate commutation-error term, which is not treated here."
+  ],
+
+  "scores": {
+    "impact": 1,
+    "execution_ease": 5,
+    "plausibility": 5,
+    "non_ad_hocness": 4,
+    "discriminative_power": 1,
+    "audience_legibility": 4,
+    "precision": 2,
+    "robustness": 5,
+    "baseline_advantage": 0,
+    "publication_potential": 2
+  },
+  "score_rationale": {
+    "impact": "1 -- recovers a 1963-1992 textbook identity by definition; supplies no model, coefficient, or continuum result. Zero new physics; a calibration/dictionary exhibit only.",
+    "execution_ease": "5 -- single afternoon; few hundred lines of numpy/FFT already prototyped (/tmp/sgs_check.py, residual ~1e-14). No new theory required.",
+    "plausibility": "5 -- the identity is true and machine-precision-verified; independently reproduced. Not in doubt.",
+    "non_ad_hocness": "4 -- the LOAD-BEARING identity is algebraically rigid (zero free parameters affect it; could not have yielded the opposite null-gate or sign), and SBT packaging freedom is REDUCED here (no completion U_f). Docked from 5 because the lens and surrogate were chosen to match the known answer (target_used_to_design_theory = true) and the surrounding unifying narrative is post-hoc-flexible across >=2 facts.",
+    "discriminative_power": "1 -- the identity is forced by elementary algebra and holds independent of all SBT structure; it cannot distinguish SBT from textbook LES. A different (non-translation-invariant) lens would not give tau_sgs, so the 'success' is by construction. No non-definitional prediction the identity forbids.",
+    "audience_legibility": "4 -- turbulence/LES modelers and coarse-graining mathematicians will instantly recognize the Germano/Leonard term and the clean null gate; the cross-walk is clear. Docked because the SBT relabeling adds little they value and the P3/P1 labeling needs careful exposition.",
+    "precision": "2 -- the identity itself is sharp, but as a TEST of SBT it is near-vacuous (definitional); SBT's no-continuum / no-closure-model disclaimers cap the precision of any physical claim. The original 'exact' headline conflated the rigid continuous identity with the O(dt) stepper table.",
+    "robustness": "5 -- verified across sigma, kernels, fields, and grid; null gates pass exactly; identity residual ~1e-14 everywhere. Maximally robust as an algebraic fact.",
+    "baseline_advantage": "0 -- strictly a recovery; beats no baseline on any predictive axis; SBT supplies nothing the standard Leonard/Germano account does not already give for free.",
+    "publication_potential": "2 -- publishable only as a short pedagogical reproducibility note / dictionary entry, or as one worked example inside the existing physics paper (where it already appears). Not a standalone research contribution; a Lean finite-difference certification (see stronger_result) would lift this."
+  },
+
+  "proposed_bin": "B",
+  "bin_rationale": "B (foundational sanity check). This is the single cleanest, most honest exhibit of what SBT's central noncommutation slogan delivers when pinned to a recognized physics result: a machine-precision-verifiable EXACT algebraic identity with a genuine null gate, zero free parameters in the identity, and reduced packaging freedom. It is the right calibration anchor for the whole route-mismatch family (R025 backreaction, R027 quantum) -- it shows the mechanism is literally true HERE while sharply delimiting that it is a definition, not a prediction. Not bin A (the MVR is already in the paper, so it is not a fresh quick win that adds content), not C/D/E (no flagship claim, no risky numerics, no new reframing), not F (it is verified, honest, and useful as a discipline on the other route-mismatch cards). The one upgrade path that would move it toward C is the Lean finite-difference certification (recommended_artifact).",
+  "recommended_priority": "Medium-low. Do it as a short reproducibility note + script (one afternoon), primarily to anchor and discipline the more aggressive route-mismatch cards (R025, R027). The genuine value-add -- a Lean-certified circulant-filter / polynomial-stepper finite-difference commutator equal to the discrete tau_sgs, bringing the case under commutes_of_factorsThrough -- is a days-to-weeks moderate add and is the only thing that would raise it above recovery grade. Do NOT pursue the 3D Navier-Stokes / closure-coefficient extension (crosses SBT's disclaimed continuum boundary).",
+  "recommended_artifact": "A short reproducibility note (2-3 pages) plus one deterministic Python script (already prototyped, /tmp/sgs_check.py) that (i) instantiates filtered 1D viscous Burgers as an SBT lens-only package, (ii) verifies the continuous exact identity to ~1e-14 and reproduces the monotone sigma table with the sigma=0 / linear-dynamics null gate, (iii) reports the finite-stepper route-mismatch table separately as an O(dt) diagnostic, and (iv) optionally a Lean stub certifying the discrete circulant-filter / polynomial-stepper commutator equals the discrete subgrid term (extending commutes_of_factorsThrough to the finite-difference Burgers case). Framed explicitly as a recovery / dictionary entry, never as a prediction.",
+
+  "one_line_verdict": "A true, machine-precision-verified, honestly-scoped RECOVERY of the Leonard 1974 / Germano 1992 LES subgrid-stress identity, relabeled as an SBT P3-diagnosed P1 rewrite term -- rigid and non-ad-hoc as an identity, but definitional, parameter-free, Lean-uncertified for the PDE, and beating no baseline; best used as a calibration anchor (bin B) for the route-mismatch family.",
+
+  "target_audience": [
+    "Turbulence / LES modelers (Germano-decomposition, subgrid-stress closure community)",
+    "Applied mathematicians working on coarse-graining / Mori-Zwanzig / model reduction",
+    "SBT / closure-calculus proponents seeking grounded physics instantiations",
+    "Philosophers of physics / emergence studying coarse-graining and effective theories"
+  ],
+
+  "provenance": {
+    "card": "R009 original fertility card (numerical-match, derivability class A, mechanism route-mismatch)",
+    "audit": "PASS-AS-RECOVERY; degrees_of_freedom_estimate=1, data_points_matched=1, overfitting_risk=low, imports_known_physics=true, target_used_to_design_theory=true, could_explain_opposite=false (for the rigid identity), mechanism_tag=route-mismatch.",
+    "skeptic_panel": "4 skeptics, scores 3.5 / 3 / 3 / 2.5; min survival 2.5 (meets gate), mean 3.0 (meets gate), fatal_objections_present=false. Unanimous: is_actually_new=false, beats_baseline=false. All accept the honestly-scoped recovery framing and confirm no forbidden move (P3 not treated as directionality certificate).",
+    "key_papers": [
+      "Tsiokos_2026_To_Become_a_Stone_with_Six_Birds_A_Physics_is_A_Theory.tex (sec:les, lines 513-571; P1/P3 roles line 132; lens-only line 524; exact identity lines 535-540; line 542; line 569; Lean-not-for-PDE line 923; null-gate-as-regression line 856; defaults line 1020; tables tab:les-route-mismatch / tab:les-subgrid-term)",
+      "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus.tex (P3 route mismatch eq:tk-rm; disclaimer P3-not-directionality line 136)",
+      "ledger.json (export interface 'Subgrid closure rewrite term tau_sgs'; missing_interfaces 'no canonical U for LES', 'no continuum interface', 'No rule selecting the lens f'; forbidden_moves line 70; disclaimers; already_claimed_retrodictions LES entry)",
+      "External (cited, not re-derived): Leonard 1974, Germano 1992, Smagorinsky 1963; Pope 2000; Sagaut 2006; Ghosal-Moin 1995 / Vasilyev 2000 (commutation-error literature, for the omitted variable-width term)"
+    ],
+    "verification_scripts": [
+      "/tmp/sgs_check.py (continuous exact identity + null gate; residual 0 to 1.97e-14)",
+      "/tmp/sgs_verify.py (identity + linear-flux null 1.11e-15)",
+      "/tmp/sgs_check_audit.py (identity across paper's sigma grid + linear null 1.33e-15)",
+      "/tmp/route_vs_sgs.py (route mismatch != exact identity: O(dt) agreement only, ~2x higher-order residual)"
+    ]
+  }
+}

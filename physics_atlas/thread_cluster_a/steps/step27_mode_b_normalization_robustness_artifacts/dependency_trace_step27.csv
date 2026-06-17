@@ -1,0 +1,5 @@
+axiom_id,axiom_family,used,source
+A1,step23_generated_closer,True,Step-23 minimal_closures_step23.csv
+A2,convention_family,True,declared trace convention family
+A3,step21_audit_target,True,Step-21 generated_normalization_step21.csv
+A4,step25_parent_shadow_rows,True,Step-25 f51_descent_step25.csv

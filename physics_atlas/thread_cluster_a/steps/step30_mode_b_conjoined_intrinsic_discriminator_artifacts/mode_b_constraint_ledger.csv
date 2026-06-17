@@ -1,0 +1,8 @@
+constraint_id,phase,step_ref,category,statement
+C_CLUSTER_A_STEP30_REPRODUCE_STEP29,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,determinism,"Step 30 rederives the Step-29 atomic rewrite-packaging survivor count as 1851."
+C_CLUSTER_A_STEP30_CURRENCY_PREDICATE,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,closure_currency,"The second intrinsic predicate is strict_closure_currency_minimum, a C1/C4 audit shadow-price tuple of active axes, L1 price, nonzero audit terms, and charge span."
+C_CLUSTER_A_STEP30_CONJOINED_COUNT,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,diagnostic,"The conjoined predicate leaves 4 minimum-currency survivors."
+C_CLUSTER_A_STEP30_REFERENCE_STATUS,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,typed_no_go,"The Step-14 reference support has currency 6|546|20|10 and fails the strict minimum 2|4|4|2."
+C_CLUSTER_A_STEP30_ABLATION,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,anti_smuggling,"Ablations change final count or identity, and removing F27 primitive charge orbit exposes zero-currency neutral packages."
+C_CLUSTER_A_STEP30_VERDICT,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,verdict,"Verdict is TYPED_NO_GO: strict closure-currency minimum over-rewards tiny low-price packages and excludes the reference support."
+C_CLUSTER_A_STEP30_NONCLAIM_BOUNDARY,ModeB,step30_mode_b_conjoined_intrinsic_discriminator,honesty,"Finite conjoined-discriminator diagnostic only; no physical gauge-structure theorem, value derivation, or frame-transfer status upgrade is supplied."

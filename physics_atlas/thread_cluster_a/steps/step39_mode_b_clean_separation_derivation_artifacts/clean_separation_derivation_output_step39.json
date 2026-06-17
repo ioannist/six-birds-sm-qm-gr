@@ -1,0 +1,19 @@
+{
+  "circularity_detected": true,
+  "clean_implies_standard": true,
+  "derived_fundamental": false,
+  "frame_transfer_certified": false,
+  "mode": "ModeB_clean_separation_derivation",
+  "new_physics_claim": false,
+  "next_grammar_delta": "clean separation remains a qualified introduced standardness condition; continue to content cascade or seek a richer confining-layer grammar",
+  "relaxed_count": 12,
+  "reproduced_step35_survivors": 12,
+  "root_landed": false,
+  "single_factor_returns_when_relaxed": true,
+  "standard_count": 8,
+  "standard_implies_clean": true,
+  "step": 39,
+  "target_distinguished": false,
+  "target_passes": true,
+  "verdict": "INDEPENDENT_INTRODUCED_CIRCULAR"
+}

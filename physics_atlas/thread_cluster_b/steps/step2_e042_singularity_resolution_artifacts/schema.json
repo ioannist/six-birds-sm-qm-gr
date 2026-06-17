@@ -1,0 +1,26 @@
+{
+  "step": 2,
+  "orientation": "E042 construction as the typed boundary of L geometry-readout",
+  "active_residual": "R_cluster_b_after_step1_shared_substrate_frame -> E042_high_curvature_boundary",
+  "carrier": {
+    "source": "steps/step1_shared_substrate_frame_artifacts/extended_carrier_step1.csv",
+    "mode": "L_ext=(d0,d1,d2,d3,d4_subplanck,d5_vacuum)",
+    "high_curvature_state_ids": [1, 2, 5, 6, 10, 11]
+  },
+  "candidate_move": "Build a refinement sequence where GR K diverges, L R stabilizes, Planck crossover is computed, geodesic continuation is finite on L, and d4 non-factorization is recomputed.",
+  "final_verdict": {
+    "type": "E042_boundary_layer_constructed_finite_toy",
+    "GR_defect_nonstabilizing": true,
+    "L_readout_stabilizing": true,
+    "planck_crossover_computed": true,
+    "finite_continuation_computed": true,
+    "nonfactorization_signature_recomputed": true,
+    "controls_have_teeth": true,
+    "root_landed": false,
+    "frame_transfer_certified": false
+  },
+  "track_fields": {
+    "predicates_built": ["P6_defect_stabilization", "P4_planck_staging", "P2_geodesic_continuation", "boundary_nonfactorization"],
+    "next_live_option": "E021_vacuum_budget_regime_build"
+  }
+}

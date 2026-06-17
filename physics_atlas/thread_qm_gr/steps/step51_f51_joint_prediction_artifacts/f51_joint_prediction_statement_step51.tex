@@ -1,0 +1,46 @@
+\section*{Step 51: F51 Joint Prediction from a Geometric-Dual Test}
+
+\paragraph{Compatibility predicate.}
+Let \(v_{\rm QM}\) be the seven-region Born entropy vector
+\((S_A,S_B,S_C,S_{AB},S_{AC},S_{BC},S_{ABC})\), and let
+\(v_{\rm geom}\) be the corresponding Step42/44 min-cut area vector.
+The F51 parent admits the QM readout only if
+\[
+  \max_R {|S_R-A_R|\over A_R} \le 0.03,
+\]
+with \(S_R\le A_R\) for every listed region.  This predicate is independent
+of the monogamy functional \(I_3\).
+
+\paragraph{Consequence.}
+For the admitted co-sourced rows, the largest computed value of
+\[
+I_3=S_A+S_B+S_C+S_{ABC}-S_{AB}-S_{AC}-S_{BC}
+\]
+is
+\[
+  I_3^{\max}=-0.03321027292 \le 0.
+\]
+Thus MMI is inherited as a consequence of the geometric-dual parent
+compatibility on this finite carrier.
+
+\paragraph{Free child witness.}
+The four-party GHZ state is QM-admissible, but its entropy vector fails the
+geometric-dual test with maximum relative gap
+\[
+0.789690082143.
+\]
+It has
+\[
+I_3^{\rm GHZ}=0.69314718056 >0,
+\]
+so QM alone does not force the parent constraint.
+
+\paragraph{Broken compatibility.}
+If the geometric-dual compatibility filter is removed, the GHZ witness is
+admitted and the sampled no-compatibility set has a positive-I3 member.
+Therefore the MMI constraint is not forced without the common-refinement
+compatibility.
+
+\paragraph{Scope.}
+This is a finite-carrier structural-recognition recovery of holographic MMI,
+not a derivation of holography or a frame-transfer result.

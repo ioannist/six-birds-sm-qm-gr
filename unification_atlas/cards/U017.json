@@ -1,0 +1,143 @@
+{
+  "id": "U017",
+  "title": "Two faces of one quotient: orbit-descent (kernel) and audit-DPI (monotonicity) on a single finite deterministic coarse-graining map",
+  "card": {
+    "id": "U017",
+    "one_sentence_claim": "A single finite deterministic coarse-graining/quotient map q induces two linked, certified constraints on its definability algebra Sigma_q -- orbit-descent (an observable survives q iff it is fiber-constant/q-invariant: gauge/superselection/conserved quantities) and audit-DPI monotonicity (q cannot increase the KL/TV/relative-entropy audit: A(q_# mu, q_# mu') <= A(mu, mu')) -- so \"redundancy elimination by quotient\" and \"no false arrows / no signalling under coarse-graining\" are the kernel and the monotonicity of the SAME map; one leg (classical KL-DPI) is a rigid deductive theorem, but the \"two faces of one q\" link is currently NAMING until the commutative-subalgebra corollary is written.",
+    "domains_unified": [
+      "QM (gauge/superselection invariance + quantum relative-entropy DPI + no-signalling as marginal invariance)",
+      "Thermodynamics/NESM (no-false-arrow under coarse-graining: macro path-KL arrow <= micro arrow)",
+      "Information theory (classical deterministic finite path-space KL/TV data-processing inequality)"
+    ],
+    "argument_family": "symmetry-unification (orbit-descent kernel + audit-DPI monotonicity as two structures on one quotient map)",
+    "shared_mechanism": "One finite deterministic surjective lens/quotient q:Z->X carries TWO certified structures simultaneously on its definability algebra Sigma_q: (a) its KERNEL = the descent biconditional (a readout h survives/descends through q iff h is constant on the fibers of q iff h = h_bar o q), which is exactly the q-invariant subalgebra (gauge/superselection/conserved observables); and (b) its MONOTONICITY = the audit contract (the pushforward q_# is a deterministic channel, so any monotone divergence A satisfies A(q_# mu, q_# mu') <= A(mu, mu') by the log-sum/DPI argument). Invariance is 'what lies in ker-direction of q (descends)'; DPI-monotonicity is 'what cannot grow along q'. The same partition Pi_q that defines fiber-constancy (the kernel) is the partition along which the divergence contracts (the monotone). The proposed unifying object is q itself: descent governs WHICH functions are observable post-q, audit-DPI governs that q cannot CREATE distinguishability/arrow. The quantum face (relative-entropy DPI under CPTP via diagonal-subalgebra restriction) and the no-signalling face (marginal invariance under a remote setting) are the operator-algebra and tensor-marginal specializations of the same q-monotonicity-plus-q-invariance pair.",
+    "derivability_class": "B",
+    "theory_basis": [
+      {
+        "component": "Leibniz quotient factorization (thm:leibniz-quotient): for a lens family {f_i:Z->X}, z~z' iff all f_i agree; q:Z->Z/~ exists; any g constant on ~-classes factors uniquely as g = g_bar o q (universal property). The DESCENT/KERNEL face.",
+        "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory (thm:leibniz-quotient, lines 149-159)",
+        "role": "Supplies the descent biconditional: survivors of q = q-invariant (fiber-constant) functions. Asserted Lean-mechanized (line 93) but 'standard quotient mathematics' by the paper's own admission (line 159)."
+      },
+      {
+        "component": "Definability = fiber-constancy: a predicate h is definable from lens f iff h is constant on the fibers of f iff h = h_tilde o f (THM-DEF1).",
+        "paper": "Tsiokos_2026_Six_Birds_Foundations_of_Emergence_Calculus (def lines 999-1005); Quantum paper line 751",
+        "role": "Identifies 'observable at the layer' with 'function constant on partition cells' = exactly the invariance condition; the definability-algebra Sigma_q on which both faces live."
+      },
+      {
+        "component": "NG_ARROW_DPI / thm:dpi_path: deterministic path-space KL DPI. KL((f^(T))_# P || rev_#(f^(T))_# P) <= KL(P || rev_# P), proved from lem:deterministic_dpi_kl (log-sum inequality) + lem:rev_pushforward_commute (reversal commutes with pointwise observation).",
+        "paper": "Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence (thm:NG_ARROW_DPI lines 367-527; lem:deterministic_dpi_kl line 476; lem:rev_pushforward_commute line 496; proof lines 516-527; proofs lines 980-1010)",
+        "role": "The MONOTONICITY face, classical leg. A genuine deductive theorem (opposite-world INELASTIC, R028 could_explain_opposite=false): macro arrow <= micro arrow is FORCED for every lens/kernel/horizon. The paper itself (line 273) calls it 'the deterministic specialization of the standard data-processing inequality'."
+      },
+      {
+        "component": "Audit functional A with coarsening-monotonicity A(Q_f mu, Q_f mu') <= A(mu, mu'); quantum instance = quantum relative-entropy DPI S(rho||sigma) >= S(Phi(rho)||Phi(sigma)) for CPTP Phi, cited Lindblad/Petz/Wilde, 0-violation regression d in {2,3,4,6}.",
+        "paper": "Tsiokos_2026_To_Become_a_Stone (line 326 verbatim: 'DPI itself is a standard theorem; our numerical suite is a regression test'; line 779: certificates 'not as proofs')",
+        "role": "The MONOTONICITY face, quantum leg. IMPORTED, not derived; regression-tested only; presupposes the Born/CPTP substrate SBT disclaims."
+      },
+      {
+        "component": "No-signalling as marginal invariance / DPI analogue: constraint (P2 cone) vs channel max-TV separator (XOR box max-TV=0, EPR ~2.22e-16; signalling box max-TV=1); finite TV-DPI thm:tv-dpi as classical 'no false positives' analogue; quantum no-signalling = partial-trace/CPTP marginal invariance, IMPORTED.",
+        "paper": "Tsiokos_2026_A_Six_Birds_Eye_View_of_Quantum_Theory (thm:tv-dpi, EXP-NS1); To_Notch (constraint-vs-channel); R004",
+        "role": "The QM-side specialization of the monotonicity face (marginal invariance reading); deep content (CPTP partial-trace invariance) imported; opposite-world ELASTIC (R004 could_explain_opposite=true: signalling box equally representable at max-TV=1)."
+      }
+    ],
+    "honest_status_note": "Class-B unification, partially honest-beats-deflation. Beats the ELASTICITY charge on ONE leg: the classical KL/TV-DPI (R028) is a deductive theorem (log-sum + reversal commutation, No_Go lines 476-527), so macro<=micro is FORCED -- opposite-world INELASTIC. But it only PARTIALLY beats the 'three lemmas in costumes' charge: the 'two faces of one q' link is currently NAMING -- the commutative-subalgebra corollary is UNWRITTEN (VERIFIED ABSENT: grep for commutative.subalgebra / fixed-point algebra / diagonal subalgebra / measurement-coarsening / 'two faces' returns empty across all 50 .tex). The quantum relative-entropy DPI is IMPORTED wholesale (To_Become line 326) and presupposes the Born/CPTP substrate SBT disclaims. The QM kernel (gauge) leg is opposite-world ELASTIC (G a priori, Foundations IV line 2383; only 'analogous to quotienting gauge redundancy', Quantum line 126; R019); no-signalling marginal invariance is recovery-only (R004). VERIFIED: no .lean files exist anywhere in the corpus, AND the cited identifiers (TV_Q_f_le, tvdist_pushforward_le, quotient_lift_exists_unique, definable_iff_constantOnFibers) do not appear in ANY .tex file -- so 'Lean-certified' is not even traceable to a named prose lemma; the Quantum paper (line 93) merely lists mechanized topics. Sigma_T/EPR are informational proxies, NOT physical entropy production; the lens q is a FREE input. Must be stated as 'recovers and partially unifies', never 'derives'."
+  },
+  "audit": {
+    "mechanism_tag": "quotient-by-fibers (descent/kernel) + monotone-divergence-under-channel (DPI) co-located on one finite deterministic coarse-graining map; link is NAMING pending the unwritten commutative-subalgebra corollary",
+    "merely_repackages": true,
+    "compression": {
+      "assumptions_without": 6,
+      "assumptions_with": 5,
+      "params_without": 0,
+      "params_with": 0,
+      "compression_strength": "low",
+      "note": "Single-q packaging removes one 'separate-domain' bookkeeping axiom (6->5) but adds NO derived cross-constraint and shares/predicts NO parameter across domains; organizational, not structural."
+    },
+    "baseline": {
+      "merely_repackages": true,
+      "baseline_advantage": "LOW on every predictive/quantitative axis (mirrors R028=1, R004=1, R019=1). EFT/RG already owns coarse-graining/monotonicity-under-coarsening (deflation bites hardest on D_INFO); decoherence DERIVES the pointer basis SBT takes as a free lens; AdS/CFT-RT and entropic gravity are the gold standard for genuine 'two-faces-of-one-object' on PHYSICAL entropy, a bar this card's informational-proxy 'arrow' does not meet."
+    },
+    "anti_superficial_controls": {
+      "same_word": {"pass": false, "note": "'audit-monotonicity' stretched over a proved classical KL/TV-DPI AND an imported quantum relative-entropy DPI of incompatible provenance; 'arrow' reused for informational proxy and (by association) physical entropy production."},
+      "shared_mechanism": {"pass": false, "note": "The 'two faces of one q' shared mechanism is NAMING: the commutative-subalgebra corollary (Inv(q)=Sigma_q=Fix(U_q o q_#), audit monotone onto it) is VERIFIED ABSENT; today it is two separate lemmas (one proved-classical, one imported-quantum) co-located under one map."},
+      "bridge_map": {"pass": true, "note": "Observable-preserving bridges ARE writable on the rigid legs: pushforward q_# with D_KL(q_# P||q_# Q)<=D_KL(P||Q) and TV contraction (quality 5), descent h=h_bar o q (quality 4); but gauge/no-signalling/quantum-DPI bridges are analogical/lossy (quality 1-2) and import structure inward."},
+      "hidden_import": {"pass": false, "note": "Quantum monotonicity leg imports the entire CPTP/Born/Hilbert substrate (To_Become 326, 779); gauge kernel leg imports the symmetry group G a priori (Foundations IV 2383) plus the 'gauge orbit = empirical equivalence' bridge (Quantum 126)."},
+      "elasticity": {"pass": false, "note": "MIXED: classical KL/TV-DPI INELASTIC (R028); QM legs ELASTIC (R019 any G' gives A/G'; R004 signalling box at max-TV=1). The UNIFYING claim spans QM, so the cross-domain link inherits the elastic legs."},
+      "compression": {"pass": false, "note": "6->5 assumptions, 0 free params either way; eliminates no independent textbook assumption."},
+      "surprise": {"pass": false, "note": "No new bound, tighter constant, or forbidden case beyond textbook DPI/quotient facts; the only genuinely-new deliverable (commutative-subalgebra corollary) is unwritten and would itself be known-mathematics consolidation."}
+    },
+    "audit_verdict": "RECOVERY + organizational repackaging, NOT a beat-the-baseline unification (Class B, partially honest-beats-deflation). VERIFIED against sources: (1) classical KL/TV-DPI monotonicity leg is a genuine self-contained deductive theorem (No_Go 476-527) and opposite-world INELASTIC (R028) -- DOES beat elasticity on that one leg, but the paper calls it 'the deterministic specialization of the standard data-processing inequality' (line 273). (2) Quantum monotonicity leg IMPORTED wholesale (To_Become 326, 779) and presupposes the Born/CPTP substrate SBT disclaims. (3) Kernel/descent leg rests on the Leibniz quotient, conceded 'standard quotient mathematics' (Quantum 159), gauge instance imports G a priori (Foundations IV 2383), only 'analogous to quotienting gauge redundancy' (Quantum 126) -> ELASTIC (R019). (4) The load-bearing 'two faces of one q' UNIFICATION LEMMA is VERIFIED ABSENT (grep empty) -> link is NAMING, does NOT beat the 'three lemmas in costumes' charge. (5) No .lean files exist; cited identifiers absent from all .tex -> 'Lean-certified' is an unverifiable assertion. ANTI-SUPERFICIAL: 6/7 controls FAIL (only bridge_map passes, and only on the rigid classical legs). The single high-leverage well-posed deliverable that would convert this from naming into mathematics is the commutative-subalgebra corollary -- elementary, days-to-weeks, mechanizable -- but it is unwritten."
+  },
+  "skeptic_panel": {
+    "min_survival": 1.5,
+    "mean_survival": 1.75,
+    "fatal_present": true,
+    "is_real_unification": "0/4",
+    "beats_deflation": "0/4",
+    "scores": [2, 2, 1.5, 1.5],
+    "consensus_fatal_objections": [
+      "The load-bearing unification lemma (commutative-subalgebra corollary; Inv(q)=Sigma_q=Fix(U_q o q_#) with audit monotone onto it) is verified ABSENT from the corpus -- the cross-domain link is the author's own conceded NAMING, not a theorem; fails shared_mechanism and surprise.",
+      "It imports the very structures it claims to unify on the QM side: quantum monotonicity leg imports the entire CPTP/Born/Hilbert substrate (To_Become 326: 'DPI itself is a standard theorem; our numerical suite is a regression test'), gauge kernel leg imports G a priori (Foundations IV 2383) plus the 'analogous to quotienting gauge redundancy' bridge (Quantum 126); fails hidden_import.",
+      "The cross-domain claim MUST span QM to be a unification, but the QM endpoints are opposite-world ELASTIC (R019: any declared G' yields A/G'; R004: signalling box equally representable at max-TV=1) -- a unification whose QM faces can be dialed to opposite-world values is not constraining QM.",
+      "Zero .lean files exist; cited identifiers (TV_Q_f_le, tvdist_pushforward_le, quotient_lift_exists_unique, definable_iff_constantOnFibers) are not independently checkable and the card's 'TV_Q_f_le' does not even match the paper's 'tvdist_pushforward_le' -- mechanization is asserted, not demonstrated."
+    ],
+    "consensus_serious_objections": [
+      "Asymmetric epistemic status: a proved finite inequality (classical DPI) and an imported operator-algebra theorem (quantum DPI) are put under one word 'audit-monotonicity' -- single label over uneven content (fails same_word).",
+      "Even fully proved, the unifying abstraction (monotone f-divergence / Petz monotonicity under a channel; functions-on-a-quotient = fiber-constant) is standard textbook prior art -- a quantum-information or gauge-theory specialist learns nothing new.",
+      "No compression and no surprise: 6->5 assumptions, 0 free params, no new bound/constant/forbidden case; baseline_advantage LOW on every axis.",
+      "Even the rigid leg (classical DPI) connects information theory only to its OWN thermodynamic PROXY (Sigma_T), explicitly NOT physical entropy production -- so the inelastic leg does not actually cross a physics-meaningful domain boundary; it matches only the informational skeleton of the Esposito coarse-graining bound, never the thermodynamic magnitude."
+    ],
+    "what_would_change_minds": "A written, machine-checked commutative-subalgebra corollary (SAME q fixes the invariant descent subalgebra AND contracts the audit onto it, Sigma_q=Fix(U_q o q_#)) PLUS the quantum-specialization lemma (classical path-KL-DPI as a corollary of CPTP relative-entropy monotonicity via diagonal-subalgebra restriction), with shipped checkable .lean extended from TV to KL and from deterministic to stochastic kernels, AND a QM-side statement that is no longer opposite-world elastic (a derived rather than declared selection of G or marginal) -- only then a genuine, modest, finite-case unification; a 4-5 would additionally require a new bound/forbidden case/prediction no baseline already produces."
+  },
+  "repair_and_scores": {
+    "id": "U017",
+    "repair_status": "repaired-narrowed-to-recovery-plus-one-named-conjecture",
+    "revised_one_sentence_claim": "On a SINGLE finite deterministic partition lens q:Z->X, two distinct structures co-exist -- (kernel) the Leibniz/definability descent biconditional 'a readout descends through q iff it is fiber-constant/q-invariant' (asserted-Lean, conceded standard quotient mathematics), and (monotonicity) the rigid, opposite-world-INELASTIC classical path-space KL/TV data-processing inequality A(q_# mu, q_# mu') <= A(mu, mu') (No_Go thm:NG_ARROW_DPI, log-sum + reversal-commutation), whose only contentful cross-domain consequence is forced: the coarse-grained informational arrow Sigma_T(macro) <= Sigma_T(micro) for EVERY lens/kernel/horizon; the three QM faces (gauge orbit-descent, quantum relative-entropy DPI under CPTP, no-signalling marginal invariance) are explicitly IMPORTED specializations (Born/CPTP substrate and symmetry group G declared a priori), and the proposed law that the kernel and the monotonicity are 'two faces of one q' is downgraded from a claimed result to a single NAMED OPEN CONJECTURE -- the commutative-subalgebra corollary (Inv(q)=Sigma_q=Fix(U_q o q_#), audit monotone onto it) -- VERIFIED ABSENT from the corpus, hence not yet mathematics; honest status: recovers and PARTIALLY unifies (info-theory <-> proxy-thermo monotonicity of one map), never derives.",
+    "new_minimum_viable_unification": "A short foundations/formal-methods note that ships exactly three honest moves on ONE finite deterministic partition lens q: (i) re-prove NG_ARROW_DPI self-contained (classical path-space KL/TV-DPI, macro arrow <= micro arrow) as the rigid monotonicity leg, flagged as the deterministic specialization of the standard DPI (No_Go line 273) -- this leg genuinely spans information theory and the SBT proxy-thermo arrow Sigma_T with a FORCED, opposite-world-INELASTIC inequality (the one real cross-domain consequence); (ii) state the descent biconditional (survivors of q = q-invariant/fiber-constant functions) as the kernel leg, flagged 'standard quotient mathematics' and only asserted-Lean (no .lean in corpus); (iii) state the commutative-subalgebra corollary (Inv(q)=Sigma_q=Fix(U_q o q_#) AND the KL/TV audit monotone onto it, same partition Pi_q) explicitly as a CONJECTURE / open deliverable, NOT a theorem -- because it is verified absent -- with the elementary universal-algebra+DPI proof sketch as future work; and record the QM faces (CPTP relative-entropy DPI, gauge orbit-descent, no-signalling marginal invariance) in an appendix as IMPORTED, with an honesty box separating proved (classical KL/TV-DPI), asserted-Lean-but-unshipped, and imported (quantum/gauge), and the Sigma_T-is-an-informational-proxy and lens-q-is-a-free-input disclaimers traveling with every claim. The MVU is the HONEST PAIRING under one map, NOT the cross-domain theorem; the theorem (step iii) remains a conjecture until written.",
+    "changes_made": [
+      "NARROWED the unification to the single rigid segment that actually crosses a boundary: classical info-theory KL/TV-DPI <-> SBT proxy-thermo arrow (Sigma_T macro <= micro), both as the monotonicity of one deterministic q; this is the only opposite-world-INELASTIC, parameter-free content (R028).",
+      "DOWNGRADED 'two faces of one q' from a claimed shared mechanism to a single NAMED OPEN CONJECTURE (the commutative-subalgebra corollary), since grep verified it is absent from all 50 .tex -- removing the over-claim that a cross-domain theorem exists.",
+      "SPLIT OFF the three QM faces (gauge orbit-descent, quantum relative-entropy DPI, no-signalling marginal invariance) as explicitly IMPORTED specializations, not derived legs -- honoring To_Become line 326 ('regression test'), Foundations IV line 2383 (G a priori), Quantum line 126 ('analogous to quotienting').",
+      "ADDED a concrete cross-domain consequence that is genuinely rigid: the FORCED inequality Sigma_T(macro) <= Sigma_T(micro) for every lens/kernel/horizon, which SBT cannot reverse (the one falsifiable-in-principle content).",
+      "ADMITTED the kernel leg is only 'standard quotient mathematics' (Quantum line 159) and that all 'Lean-certified' claims are unverifiable: no .lean files exist and the cited identifiers (TV_Q_f_le, tvdist_pushforward_le, quotient_lift_exists_unique, definable_iff_constantOnFibers) appear in NO .tex file.",
+      "CONVERTED the vague 'physical-content filter' emergence language into the limited, disclaimer-bearing statement: q is a coarse-graining map whose monotonicity is an INFORMATIONAL coarse-graining bound (Esposito skeleton only), NOT physical entropy production.",
+      "Did NOT add an assumption per domain, did NOT redefine terms to force equivalence, did NOT hide the imported physics, did NOT claim duality without a map, did NOT claim emergence without a limit."
+    ],
+    "remaining_objections": [
+      "Even after narrowing, the cross-domain link is NAMING until the commutative-subalgebra corollary is written; the repaired card promotes it to an explicit conjecture but cannot manufacture the theorem, so as it stands U017 is recovery + one open problem, not a unification.",
+      "The single rigid leg (classical DPI) crosses only into SBT's OWN proxy-thermo arrow Sigma_T, explicitly NOT physical entropy production -- so even the inelastic leg does not cross a physics-meaningful boundary; the genuine cross-domain reach (QM) is entirely on the imported/elastic side.",
+      "The unifying abstraction (Petz monotonicity under a channel + functions-on-a-quotient) is standard textbook prior art; even the conjecture, if proved, is a known-mathematics consolidation, not new mathematics for a specialist.",
+      "All mechanization is unverifiable: no .lean files, cited identifiers absent from prose; the formal-methods selling point cannot be confirmed in this corpus.",
+      "The QM faces remain opposite-world elastic (R019 gauge-G, R004 signalling box) and import the Born/CPTP substrate SBT disclaims -- the repair quarantines them as imported but cannot de-elasticize them."
+    ],
+    "scores": {
+      "impact": 2,
+      "execution_ease": 4,
+      "plausibility": 4,
+      "depth_of_unification": 1,
+      "breadth_of_unification": 1,
+      "non_ad_hocness": 2,
+      "bridge_explicitness": 2,
+      "derivational_strength": 2,
+      "compression_power": 1,
+      "discriminative_power": 1,
+      "audience_legibility": 3,
+      "robustness": 2,
+      "baseline_advantage": 1,
+      "adversarial_survival": 2,
+      "publication_potential": 2
+    },
+    "score_rationale": "impact=2: would produce no new physics/math; at best a tidy foundations note plus one open conjecture; the corollary, if proved, is a known-mathematics consolidation. execution_ease=4: the MVU is mostly assembly of already-proved material (NG_ARROW_DPI exists, No_Go 476-527) plus stating one elementary conjecture; days-to-weeks for a careful writer (the proof of the conjecture, if attempted, is the only real work). plausibility=4: the classical DPI leg is genuinely proved and the descent biconditional is standard; the components are real, only the LINK is unproved. depth_of_unification=1: the shared mechanism is NAMING -- the joining theorem is verified absent; the only rigid leg connects info-theory to its own proxy, and the QM depth is imported/analogical (bridges quality 1-2); shared_mechanism control FAILS so depth is capped at the floor. breadth_of_unification=1: genuine reach is one rigid leg into a self-internal proxy; the three further 'domains' are imported specializations, not derived from q. non_ad_hocness=2: hidden_import FAILS (CPTP/Born/Hilbert and G imported) and elasticity FAILS on the QM legs, capping non_ad_hocness; the classical leg alone is non-ad-hoc but does not carry the cross-domain claim. bridge_explicitness=2: bridge_map passes ONLY on the rigid classical legs (q_# pushforward, descent, quality 4-5); the gauge/no-signalling/quantum-DPI bridges are analogical-lossy (quality 1-2) and import structure inward, capping bridge_explicitness. derivational_strength=2: one leg is a genuine deductive theorem (classical DPI), but the cross-domain derivation and the quantum leg are imported/unwritten. compression_power=1: 6->5 assumptions, 0 free params, no shared/predicted parameter, no eliminated independent assumption; compression control FAILS. discriminative_power=1: no new bound/constant/forbidden case; merely_repackages=true caps this at the floor; the only forced content (macro<=micro) is the textbook DPI. audience_legibility=3: the narrowed claim is clear and the honesty box is legible, but the asymmetric proved/imported/conjectured structure requires care to state without overclaim. robustness=2: the classical leg is robust (INELASTIC), but the unifying claim collapses to naming under scrutiny and the QM legs are elastic. baseline_advantage=1: LOW on every predictive/quantitative axis; EFT/RG owns coarse-graining monotonicity, decoherence derives what SBT imports, AdS/CFT-RT/entropic gravity are the real two-faces bar; merely_repackages caps this at 1. adversarial_survival=2: panel is 0/4 is_real_unification, 0/4 beats_deflation, fatal_present=true, mean 1.75 -- the repair quarantines the imports and downgrades the link to a conjecture (honest), which is why it lands at 2 not lower, but it does not survive as a unification. publication_potential=2: publishable ONLY as a short honest foundations/formal-methods recovery note with the conjecture flagged as open and Lean shipped; not publishable as a unification claim.",
+    "proposed_bin": "C",
+    "recommended_priority": "low",
+    "recommended_artifact": "A short (8-12 page) honest foundations/formal-methods note: 'One finite quotient, two structures: orbit-descent (kernel) and the data-processing inequality (monotonicity)'. Structure: (1) the finite deterministic partition lens q with Sigma_q, q_#, U_q; (2) the descent/kernel face (Leibniz biconditional), flagged 'standard quotient mathematics' and asserted-Lean-but-unshipped; (3) the monotonicity face -- a self-contained NG_ARROW_DPI proof from log-sum + reversal commutation (No_Go 476-527), with the single FORCED cross-domain consequence Sigma_T(macro) <= Sigma_T(micro) for every lens/kernel/horizon, flagged as the deterministic specialization of the standard DPI; (4) the commutative-subalgebra corollary stated EXPLICITLY AS A CONJECTURE / open deliverable (Inv(q)=Sigma_q=Fix(U_q o q_#), audit monotone onto it), NOT a theorem, with the elementary proof sketch as future work; (5) an appendix recording the QM faces (CPTP relative-entropy DPI, gauge orbit-descent, no-signalling marginal invariance) as IMPORTED; (6) an honesty box separating proved (classical KL/TV-DPI), asserted-Lean-but-unshipped, conjectured (the corollary), and imported (quantum/gauge), plus the lens-is-a-free-input and Sigma_T-informational-proxy disclaimers. PREREQUISITE for any upgrade beyond bin C: actually write and ship the corollary and the .lean files; absent that, this stays a low-priority sanity note.",
+    "one_line_verdict": "Honest recovery of three textbook facts under one named single-q contract with one well-posed open conjecture (the commutative-subalgebra corollary, verified absent) -- not a unification: the link is naming, the QM legs are imported and elastic, and no Lean is shippable; bin C, low priority.",
+    "mechanism_tag": "quotient-by-fibers (descent/kernel) + monotone-divergence-under-channel (DPI) co-located on one finite deterministic coarse-graining map; link downgraded to a named open conjecture pending the unwritten commutative-subalgebra corollary",
+    "target_audience": [
+      "Information theorists / quantum-information theorists working on monotone divergences, f-divergence and Petz monotonicity, data-processing and recoverability",
+      "Stochastic-thermodynamics / nonequilibrium statistical mechanics researchers (coarse-graining and entropy-production bounds, with the informational-proxy caveat)",
+      "Foundations-of-physics / philosophy-of-physics researchers (symmetry-as-redundancy, Leibniz/Spekkens, gauge-invariance and superselection)",
+      "Formal-methods / Lean-verification community interested in mechanized information-theoretic inequalities and quotient/descent universal properties (prerequisite: ship the .lean)",
+      "SBT-adjacent readers evaluating cross-domain closure/audit framings and the deflation critique"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+scenario,refinement_level,grid_denominator,vacuum_id,closure_package,eft_exact,eft_approx,xi_rel,xi_rel_float,select_then_descend_weight,descend_then_select_weight,RM_total_variation,RM_float,negative_control_RM,negative_control_RM_float
+main_foreclosure_toy,R1_coarse,8,v_alpha,"(Z_alpha,f_alpha,Sigma_alpha,E_alpha,D_alpha)",3/16|5/16,1/8|1/4,1/8,0.125,1/2,3/4,1/4,0.25,2/15,0.13333333333333333
+stabilizing_selector_control,R1_coarse,8,v_alpha,"(Z_alpha,f_alpha,Sigma_alpha,E_alpha,D_alpha)",3/16|5/16,1/8|1/4,1/8,0.125,4/5,2/3,2/15,0.13333333333333333,2/15,0.13333333333333333
+main_foreclosure_toy,R1_coarse,8,v_beta,"(Z_beta,f_beta,Sigma_beta,E_beta,D_beta)",7/16|1/16,3/8|0,1/8,0.125,1/2,1/4,1/4,0.25,2/15,0.13333333333333333
+stabilizing_selector_control,R1_coarse,8,v_beta,"(Z_beta,f_beta,Sigma_beta,E_beta,D_beta)",7/16|1/16,3/8|0,1/8,0.125,1/5,1/3,2/15,0.13333333333333333,2/15,0.13333333333333333
+main_foreclosure_toy,R2_fine,16,v_alpha,"(Z_alpha,f_alpha,Sigma_alpha,E_alpha,D_alpha)",3/16|5/16,3/16|5/16,0,0.0,1/2,3/4,1/4,0.25,32/2145,0.014918414918414918
+stabilizing_selector_control,R2_fine,16,v_alpha,"(Z_alpha,f_alpha,Sigma_alpha,E_alpha,D_alpha)",3/16|5/16,3/16|5/16,0,0.0,64/65,32/33,32/2145,0.014918414918414918,32/2145,0.014918414918414918
+main_foreclosure_toy,R2_fine,16,v_beta,"(Z_beta,f_beta,Sigma_beta,E_beta,D_beta)",7/16|1/16,7/16|1/16,0,0.0,1/2,1/4,1/4,0.25,32/2145,0.014918414918414918
+stabilizing_selector_control,R2_fine,16,v_beta,"(Z_beta,f_beta,Sigma_beta,E_beta,D_beta)",7/16|1/16,7/16|1/16,0,0.0,1/65,1/33,32/2145,0.014918414918414918,32/2145,0.014918414918414918

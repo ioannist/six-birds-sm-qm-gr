@@ -1,0 +1,13 @@
+variation,component_id,component_size,facets
+neutral_product,1,1,ew_code
+neutral_product,2,1,gauge_code
+neutral_product,3,1,n_gen
+neutral_product,4,1,rep_code
+neutral_product,5,1,texture_code
+neutral_product,6,1,uv_code
+neutral_product,7,1,vacuum_code
+structural_survivors,1,6,gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code
+structural_survivors,2,1,ew_code
+strict_naturalness_le_1,1,7,ew_code+gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code
+subsample_80_seed_20260606,1,6,gauge_code+n_gen+rep_code+texture_code+uv_code+vacuum_code
+subsample_80_seed_20260606,2,1,ew_code

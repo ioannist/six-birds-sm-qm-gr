@@ -1,0 +1,7 @@
+Cluster B Step 2 E042 finite boundary construction
+Verdict: E042_boundary_layer_constructed_finite_toy
+GR K diverges: True
+L R stabilizes: True
+Planck crossover n*: 4, epsilon*: 0.125
+Finite post-locus continuation: True
+High-locus nonfactorization count: 3

@@ -1,0 +1,5 @@
+stage_ii_check,passes,evidence
+step35_survivors_reproduced,True,12
+base_shadow_computed_for_all,True,12
+single_factor_exotic_difference_computed,True,structure-4 rows have confining-charged broken vector counts
+target_status_computed,True,2|3; target_passes=True

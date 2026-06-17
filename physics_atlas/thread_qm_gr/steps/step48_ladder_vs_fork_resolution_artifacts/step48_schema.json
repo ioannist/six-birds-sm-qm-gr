@@ -1,0 +1,22 @@
+{
+  "step": 48,
+  "orientation": "Batch_B_ladder_vs_fork_resolution",
+  "active_residual": "E018 ladder-vs-fork decision given common-carrier premise",
+  "main_object": "directed quotient no-go vs co-sourcing fork closure",
+  "verdict": "FORK_SELECTED_OVER_LADDER",
+  "strongest_ladder_factorization_defect": 8.0,
+  "strongest_ladder_row_residual": 0.57735026919,
+  "strongest_ladder_route_mismatch": 0.5,
+  "weak_rt_ladder_defect": 8.0,
+  "weak_rt_row_residual": 0.57735026919,
+  "fork_closes": true,
+  "nested_control_flips": true,
+  "nested_control_defect": 0.0,
+  "rt_is_fork_relation": true,
+  "strong_bulk_reconstruction_residual": "strong bulk reconstruction not tested here; named residual",
+  "conditional_on_step47_premise": true,
+  "step47_premise_verdict": "COMMON_CARRIER_IS_RECOGNITION_SOURCE_WARRANTED",
+  "new_physics_claim": false,
+  "frame_transfer_certified": false,
+  "root_landed": false
+}

@@ -1,0 +1,3 @@
+stage_ii_check,passes,evidence
+reproduces_step29_survivor_count,True,rederived atomic rewrite-packaging count is 1851
+zero_price_degeneracy_detected_when_charge_orbit_removed,True,removing F27 primitive-charge orbit exposes zero-currency neutral packages

@@ -1,0 +1,2 @@
+control_id,description,compatibility_predicate_removed,with_compat_max_I3,with_compat_MMI_forced,no_compat_witness_min_I3,no_compat_broad_max_I3,violator_survives,F_forced_without_compatibility,computed_from_admissible_sets
+computed_no_geometric_dual_filter,Remove the geometric-dual compatibility predicate and construct an admitted QM witness set containing GHZ.,True,-0.03321027292,True,0.69314718056,0.69314718056,True,False,True

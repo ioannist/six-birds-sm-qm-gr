@@ -1,0 +1,20 @@
+{
+  "active_residual": "E032 single-outcome selection after record-irreducibility",
+  "base_nonfactorization_witness_reused": true,
+  "both_reproduce_born_weights": true,
+  "discriminator_cleanly_separates": true,
+  "exit_state": "BOTH_SHAPES_INSTANTIATED_DISCRIMINATOR_CLEAN",
+  "frame_transfer_certified": false,
+  "new_physics_claim": false,
+  "orientation": "ModeB_E032_two_shape_instantiation",
+  "picks_a_shape": false,
+  "root_landed": true,
+  "shapeA_E_idempotent": false,
+  "shapeA_touches_D": true,
+  "shapeB_E_idempotent": true,
+  "shapeB_touches_D": false,
+  "shapes_genuinely_distinct": true,
+  "solves_measurement_problem": false,
+  "step": 68,
+  "verdict": "D_VS_SIGMA_F_DISCRIMINATOR_CONCRETELY_SEPARATES_THE_TWO_SHAPES"
+}

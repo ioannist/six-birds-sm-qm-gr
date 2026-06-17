@@ -1,0 +1,11 @@
+dimensions,support_key,support_score,role_obstruction_pairs,q_fiber_count,max_q_fiber_size,f24_descends,witnesses,is_target_reference
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantifund:-1 + singletxantisym2:1,4|14|3|2,0,4,1,True,,False
+2|3,rank_one_fundxfund:0 + rank_one_fundxsinglet:0 + singletxantifund:1 + singletxantisym2:-1,4|14|3|2,0,4,1,True,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:-2 + singletxantisym2:4 + singletxsinglet:-6,5|15|3|2,0,5,1,True,,False
+2|3,rank_one_fundxfund:-1 + rank_one_fundxsinglet:3 + singletxantifund:4 + singletxantisym2:-2 + singletxsinglet:-6,5|15|3|2,0,5,1,True,,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:-4 + singletxantisym2:2 + singletxsinglet:6,5|15|3|2,0,5,1,True,,False
+2|3,rank_one_fundxfund:1 + rank_one_fundxsinglet:-3 + singletxantifund:2 + singletxantisym2:-4 + singletxsinglet:6,5|15|3|2,0,5,1,True,,False
+4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,4|15|3|1,0,4,1,True,,False
+4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,4|15|3|1,0,4,1,True,,False
+4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,4|15|3|1,0,4,1,True,,False
+4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,4|15|3|1,0,4,1,True,,False

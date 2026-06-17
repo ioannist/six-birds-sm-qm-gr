@@ -1,0 +1,6 @@
+artifact,classification,grade,scope
+step46_results_summary.md,organizational,review-response,"Documents R1-R5 relabel/caveat/validator fixes; no new computation"
+step46_schema.json,organizational,review-response,"Machine-readable review-response status"
+content_classification_step46.csv,organizational,review-response,"Classifies this response bundle"
+nonclaim_boundary_step46.md,organizational,review-response,"States that this step adds no new result or physical claim"
+run_step46.py,organizational,validator,"Validates R1-R5 text, unchanged pinned values, and Step41/42/44/45 self validators"
