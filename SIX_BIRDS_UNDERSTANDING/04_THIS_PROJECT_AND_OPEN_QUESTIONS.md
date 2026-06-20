@@ -1,5 +1,7 @@
 # This project (lattice / proton) ↔ Six Birds strict extension — connection + open questions
 
+> ⛔ **DO NOT BUILD ON THE MID-FILE ROUND HISTORY (2026-06-20, post external audit).** This file contains RETRACTED toy-drift above its later contamination marker (§8: the 1/√π-via-bosonization landing, the intertwiner cascade — all retracted). A fresh reader absorbs it before reaching the warning, so: the CURRENT state is `project_live_state_lattice_mass` (memory) + `../CLAUDE.md`; §9's "strict extension *here means* the event-package obstruction" is SUPERSEDED (the project later established the predictive/macro-admissibility register too — it is ONE register, see CLAUDE.md §3); the L0–L3 layer stack is a `[PROJECT HYP]` architecture, not a corpus theorem. Read §1 for the goal; treat §§5–9 as ARCHIVE. (Thesis NOT in doubt — SBT is map AND engine; universality holds.)
+
 Honest status: this connects the grounded synthesis (`02` Parts 1–3) to the project's goal. It **does not**
 resolve the central tension — it states it precisely and records what the corpus does/doesn't support, so no
 session repeats the reductionist error. `EXPERIMENT_PROPOSAL.md` governs the project and is READ-ONLY.

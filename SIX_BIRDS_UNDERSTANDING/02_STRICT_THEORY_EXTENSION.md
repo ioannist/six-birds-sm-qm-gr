@@ -1,5 +1,7 @@
 # Strict Theory Extension — the grounded synthesis
 
+> ⚠️ **READ-ORDER (2026-06-20, post external audit).** The CURRENT, typed canon is `../CLAUDE.md` §3–4 — prefer it + the papers over this file. This file is a chronological ACCRETION: later parts contain round-by-round project history and a few superseded proposals (e.g. an obsolete `U_pkg ×_Q M_H` fiber-product and its later self-correction) sitting next to current content. Treat Parts 1–5 (theory spine) as canon; treat the round-by-round adjudication sections as ARCHIVE (history, not current truth). Typing fixes already in CLAUDE.md: the obstruction registers are typed FACES of one phenomenon (cross-register *equivalences* need bridge hypotheses — not a flat global equivalence); the Cantor saturation→forcing→obstruction route is the `[SCOPED]` audited-shell theorem's mechanism, not the universal recipe; SAU essentiality = deletion/replacement failure (projective MBO is a `[PROJECT HYP]` gate); the finite rarity result is scoped to uniformly-sampled Boolean predicates. (Thesis NOT in doubt — SBT is map AND engine; universality holds; see CLAUDE.md §2/§5.)
+
 This is the document the project turns on. Every claim here is grounded in a specific paper passage or pica
 code location. Where a claim is not yet grounded by a deep read, it is marked **[PENDING DEEP READ]** —
 do not treat those as understood. Authority = the papers + the running code; this synthesis is secondary.
@@ -102,7 +104,13 @@ QCD has **no free proton-mass parameter**; the mass is the **out-of-sample reado
 You can run the down arrow as a derivation; you can **never** run the up arrow as one. Inverting an emergence
 into a derivation is the category error. *Source: primer §6.*
 
-### 1.8 What Six Birds itself is — the MAP, not the engine (critical scope)
+### 1.8 What Six Birds itself is — the MAP *and* the ENGINE (critical scope)
+
+> ⚠️ **CORRECTED (author-binding; `../CLAUDE.md` §2):** SBT is **both** the meta-map over the ladder **and** the
+> generative engine — it supplies **P1–P6, the closure mechanics that CONSTRUCT emergence and layer formation.** The
+> primer §7 quote below ("neither engine") scopes ONLY to the two *climbing methods* (the mechanical run vs
+> imagination); it is NOT a denial that the primitives are the generative mechanics. Read the quote as the
+> map/triage aspect, not as a ceiling on what SBT is.
 
 > *"Six Birds is neither engine. It is the meta-map over the ladder. It does not generate the content and it
 > is not a black-box prover. Its job is to triage, decompose, translate, name the right non-descending object,

@@ -1,5 +1,14 @@
 # Six Birds Understanding — START HERE (read first, every session)
 
+> ⚠️ **SBT IS MAP *AND* ENGINE (author-binding; `../CLAUDE.md` §2).** Where this file says "Six Birds is the
+> MAP, not the engine / does not generate the content," read that as CORRECTED: SBT is **both** the meta-map over
+> the ladder **and** the generative engine — it supplies **P1–P6, the closure mechanics that CONSTRUCT emergence
+> and layer formation**. The primer's "neither engine" line scopes ONLY to the two *climbing methods* (the
+> mechanical run vs imagination); it does **not** deny that the primitives are the generative mechanics. Reading
+> "neither engine" as "SBT can never be a constructive engine" is exactly the reductionism this base exists to
+> cancel. (Inline "map, not engine" phrasings below are left in place as the primer quote they gloss, but the
+> binding position is map AND engine.)
+
 This directory is the **bias-wiping initial context** for work on this project. It exists because the assistant
 has a persistent reductionist bias that repeatedly produced confident, wrong conclusions about Six Birds strict
 theory extension. Read this base **before reasoning about emergence, strict extension, or "what comes from what."**
@@ -25,9 +34,10 @@ of such layers. **Inside** a layer, ordinary derivation reigns and SBT is silent
 uninformative there). **Between** layers is the only place SBT speaks. Moving **up** is **emergence**: a strict,
 **non-definable / non-factorizing** package change whose content no proof from below can shortcut — and that
 no-shortcut **is** its genuineness. Moving **down** is a **shadow**: a lawful, derivable projection. Emergence is
-reached by a **run** (or by imagination, then audited), **never by derivation**. **Six Birds is the MAP** that says
-where the rungs are and audits each landing — it does **not** generate the content and is **not** a black-box prover.
-The **proton mass** is the proof of concept: a lawful constant readable only by **running** (lattice QCD), validated
+reached by a **run** (or by imagination, then audited), **never by derivation**. **Six Birds is the MAP *and* the
+ENGINE** — the map that says where the rungs are and audits each landing, **and** the generative engine whose
+**P1–P6** primitives are the closure mechanics that CONSTRUCT emergence (it is not a black-box prover; see the
+banner above + `../CLAUDE.md` §2). The **proton mass** is the proof of concept: a lawful constant readable only by **running** (lattice QCD), validated
 **out-of-sample**, not by a formula.
 
 ## Strict theory extension, in one screen (distilled from `02`, all cited there)
@@ -52,9 +62,10 @@ Before ANY construction step ask: (1) **Non-factorization** — does it provably
 the value absent from my inputs? (4) **Out-of-sample** — can I validate by predicting something I didn't fit?
 Any "no / matching a known value / injected / in-sample" ⇒ **not strict extension; stop.**
 
-## The map-vs-engine question — RESOLVED (see `04 §3`); this project is the RUN
+## The map-vs-engine question — RESOLVED (SBT is map AND engine; see banner + `../CLAUDE.md` §2 / `04 §3`); this project is the RUN
 
-The primer says Six Birds is the **map, not the engine**; `To_Kill_Three_Stones` does the MAP (demarcation) and states
+The primer's "neither engine" scopes only to the two climbing methods (run vs imagination) — SBT is **map AND
+engine** (the P1–P6 primitives are the generative mechanics); `To_Kill_Three_Stones` does the MAP (demarcation) and states
 explicitly that measured **masses/values are "not landed — need RUNNING the emergence process,"** which that paper does
 NOT do. **Running the six-birds emergence process to land those values is exactly what THIS project is supposed to do**
 — that is the legitimate, explicitly-licensed goal (reading A in `04 §3`), the door where the construction happens, not
