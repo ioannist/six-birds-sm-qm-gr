@@ -34,3 +34,8 @@ ChatGPT Image *.png
 *.npy
 *.npz
 *.pstats
+
+# Generated handoff/advice bundles (not tracked).
+six_birds_lattice_handoff*.zip
+*_handoff.zip
+*handoff*.zip

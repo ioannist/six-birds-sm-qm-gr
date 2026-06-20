@@ -1,0 +1,265 @@
+{
+  "finite_cell": {
+    "geometry": "compact spatial circle; gauge-reduced one-slab current cell",
+    "boundary_conditions": "antiperiodic massless Dirac fermion",
+    "fermion_content": "one Dirac fermion = one R and one L chiral CAR copy",
+    "modes_per_chirality": 8,
+    "momentum_lattice": [
+      "-7/2",
+      "-5/2",
+      "-3/2",
+      "-1/2",
+      "1/2",
+      "3/2",
+      "5/2",
+      "7/2"
+    ],
+    "sea_R": "p<0 occupied",
+    "sea_L": "p>0 occupied",
+    "seam": "zero-energy Fermi seam between -1/2 and +1/2",
+    "gauge_sector": "zero global electric charge/flux sector; compact holonomy windings probe closure",
+    "U1_group_period": "2*pi",
+    "training": {
+      "current_mode": 1,
+      "holonomy_winding": 1
+    },
+    "held_out": {
+      "current_mode": 2,
+      "holonomy_winding": 2
+    }
+  },
+  "K_branchwise": {
+    "definition": "unextended independent-current package with the complete ordered route word and its net current displacement",
+    "protocol_order_internalized": true,
+    "training_R_route_A": [
+      "R:J_plus:1",
+      "R:J_minus:1"
+    ],
+    "training_R_route_B": [
+      "R:J_minus:1",
+      "R:J_plus:1"
+    ],
+    "training_L_route_A": [
+      "L:J_plus:1",
+      "L:J_minus:1"
+    ],
+    "training_L_route_B": [
+      "L:J_minus:1",
+      "L:J_plus:1"
+    ],
+    "base_composites_equal_each_chirality": true,
+    "unextended_base_curvature": 0,
+    "note": "K equality is algebraic (same closed current displacement), not caused by dropping the route order."
+  },
+  "obstruction_current_routes": {
+    "training_mode": 1,
+    "R_chirality": {
+      "forward_order": "J_minus o J_plus",
+      "reverse_order": "J_plus o J_minus",
+      "ordered_route_A": [
+        "R:J_plus:1",
+        "R:J_minus:1"
+      ],
+      "ordered_route_B": [
+        "R:J_minus:1",
+        "R:J_plus:1"
+      ],
+      "protocol_order_recorded": true,
+      "K_base_composite_A": "zero net current displacement",
+      "K_base_composite_B": "zero net current displacement",
+      "K_equal": true,
+      "K_identification_reason": "same closed composite in the unextended abelian current package; order is not hidden",
+      "R_forward": 1,
+      "R_reverse": 0,
+      "route_obstruction": 1,
+      "central_on_vacuum": true,
+      "central_on_first_excitation": true,
+      "J_plus_vacuum_norm_squared": 1
+    },
+    "L_chirality": {
+      "forward_order": "J_minus o J_plus",
+      "reverse_order": "J_plus o J_minus",
+      "ordered_route_A": [
+        "L:J_plus:1",
+        "L:J_minus:1"
+      ],
+      "ordered_route_B": [
+        "L:J_minus:1",
+        "L:J_plus:1"
+      ],
+      "protocol_order_recorded": true,
+      "K_base_composite_A": "zero net current displacement",
+      "K_base_composite_B": "zero net current displacement",
+      "K_equal": true,
+      "K_identification_reason": "same closed composite in the unextended abelian current package; order is not hidden",
+      "R_forward": 1,
+      "R_reverse": 0,
+      "route_obstruction": 1,
+      "central_on_vacuum": true,
+      "central_on_first_excitation": true,
+      "J_plus_vacuum_norm_squared": 1
+    },
+    "vector_axial_route_obstruction": 2,
+    "normalized_level_each_chirality": 1
+  },
+  "obstruction_spectral_flow": {
+    "training_winding": 1,
+    "delta_N_R": 1,
+    "delta_N_L": -1,
+    "delta_Q_vector": 0,
+    "delta_Q_axial": 2,
+    "integrated_compact_flux_phase": "2*pi"
+  },
+  "closure_fixed_point": {
+    "current_route_value": "1/pi",
+    "spectral_flow_value": "1/pi",
+    "endomap_E(alpha)": "1/pi",
+    "E(E(alpha))": "1/pi",
+    "idempotent": true,
+    "current_residual_at_fixed_point": "0",
+    "flow_residual_at_fixed_point": "0",
+    "alpha_star_exact": "1/pi",
+    "alpha_star_numeric": "0.318309886183791"
+  },
+  "R_collective_recombination": {
+    "operation": "central current cocycle + compact-holonomy spectral flow + Maxwell/Gauss recombination",
+    "bosonization_normalization_beta_exact": "1/sqrt(pi)",
+    "relations": [
+      "j^mu = beta * epsilon^(mu nu) * d_nu(phi)",
+      "E = -g * beta * phi (nonzero modes)",
+      "axial_divergence = g * alpha_star * E"
+    ]
+  },
+  "U_phi_promoted_carrier": {
+    "native_equation": "(box + g^2*alpha_star) phi = 0",
+    "mass_squared_exact": "g**2/pi",
+    "C_U_mass_over_g_exact": "1/sqrt(pi)",
+    "C_U_mass_over_g_numeric": "0.564189583547756"
+  },
+  "held_out_checks": {
+    "mode_2": {
+      "exact_CAR_obstruction": 4,
+      "carrier_prediction": "4",
+      "branchwise_prediction": 0,
+      "R_chirality": {
+        "forward_order": "J_minus o J_plus",
+        "reverse_order": "J_plus o J_minus",
+        "ordered_route_A": [
+          "R:J_plus:2",
+          "R:J_minus:2"
+        ],
+        "ordered_route_B": [
+          "R:J_minus:2",
+          "R:J_plus:2"
+        ],
+        "protocol_order_recorded": true,
+        "K_base_composite_A": "zero net current displacement",
+        "K_base_composite_B": "zero net current displacement",
+        "K_equal": true,
+        "K_identification_reason": "same closed composite in the unextended abelian current package; order is not hidden",
+        "R_forward": 2,
+        "R_reverse": 0,
+        "route_obstruction": 2,
+        "central_on_vacuum": true,
+        "central_on_first_excitation": true,
+        "J_plus_vacuum_norm_squared": 2
+      },
+      "L_chirality": {
+        "forward_order": "J_minus o J_plus",
+        "reverse_order": "J_plus o J_minus",
+        "ordered_route_A": [
+          "L:J_plus:2",
+          "L:J_minus:2"
+        ],
+        "ordered_route_B": [
+          "L:J_minus:2",
+          "L:J_plus:2"
+        ],
+        "protocol_order_recorded": true,
+        "K_base_composite_A": "zero net current displacement",
+        "K_base_composite_B": "zero net current displacement",
+        "K_equal": true,
+        "K_identification_reason": "same closed composite in the unextended abelian current package; order is not hidden",
+        "R_forward": 2,
+        "R_reverse": 0,
+        "route_obstruction": 2,
+        "central_on_vacuum": true,
+        "central_on_first_excitation": true,
+        "J_plus_vacuum_norm_squared": 2
+      }
+    },
+    "winding_2": {
+      "delta_N_R": 2,
+      "delta_N_L": -2,
+      "delta_Q_vector": 0,
+      "delta_Q_axial": 4,
+      "carrier_prediction_delta_Q_axial": "4",
+      "branchwise_closed_prediction": 0
+    },
+    "euclidean_transport": {
+      "evaluation": "L=U(1) period, g=1, tau=1, n=2",
+      "q_2": "2",
+      "omega_2_exact": "sqrt(1/pi + 4)",
+      "omega_2_numeric": "2.07805435111399",
+      "promoted_transfer_exact": "exp(-sqrt(1 + 4*pi)/sqrt(pi))",
+      "promoted_transfer_numeric": "0.125173519144966",
+      "branchwise_transfer_exact": "exp(-2)",
+      "branchwise_transfer_numeric": "0.135335283236613",
+      "difference_numeric": "-0.0101617640916469"
+    }
+  },
+  "essentiality_knockout": {
+    "intervention": "erase the filled Dirac sea but retain the same U(1) period and current-route grammar",
+    "route_obstruction": 0,
+    "closure_coefficient": "0",
+    "mass_over_g": "0",
+    "held_out_transport": "exp(-2)"
+  },
+  "cutoff_refinement_control": {
+    "8": {
+      "1": 2,
+      "2": 4
+    },
+    "10": {
+      "1": 2,
+      "2": 4
+    },
+    "12": {
+      "1": 2,
+      "2": 4
+    }
+  },
+  "minimality_control": {
+    "criterion": "held-out n=2 cocycle central on vacuum and first excitation for both chiralities",
+    "candidate_even_mode_counts": {
+      "4": {
+        "heldout_mode": 2,
+        "vector_axial_obstruction": 4,
+        "central_on_vacuum_both": true,
+        "central_on_first_excitation_both": false
+      },
+      "6": {
+        "heldout_mode": 2,
+        "vector_axial_obstruction": 4,
+        "central_on_vacuum_both": true,
+        "central_on_first_excitation_both": false
+      },
+      "8": {
+        "heldout_mode": 2,
+        "vector_axial_obstruction": 4,
+        "central_on_vacuum_both": true,
+        "central_on_first_excitation_both": true
+      }
+    },
+    "minimum_passing_modes_per_chirality": 8
+  },
+  "forbidden_input_audit": {
+    "vacuum_polarization_computed": false,
+    "Dirac_determinant_computed": false,
+    "full_transfer_matrix_diagonalized": false,
+    "correlator_tail_fitted": false,
+    "benchmark_mass_used": false,
+    "only_transcendental_base_datum": "compact U(1) circumference from integral_0^(2*pi) dtheta"
+  },
+  "source_sha256": "a5d43026392e735176944b4b21980df74703bf15bb7d502b06e49f7a594874be"
+}

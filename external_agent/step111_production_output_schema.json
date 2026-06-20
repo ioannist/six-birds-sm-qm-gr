@@ -1,0 +1,40 @@
+{
+  "step": "step111d_blind_R_N_landing",
+  "theory": {
+    "gauge_group": "SU(3)",
+    "flavors": "N_f=2+1, m_u=m_d, QED_off",
+    "calibration_channels": ["m_pi/m_Omega", "m_K/m_Omega"],
+    "held_out_channel": "m_N/m_Omega"
+  },
+  "local_cell": {
+    "geometry": "2x2x2x2",
+    "global_transfer_matrix_supplied": false,
+    "full_volume_ensemble_sampled": false
+  },
+  "cross_scale": {
+    "R_spacing_residuals": [],
+    "V_volume_residuals": [],
+    "F_cutoff_residuals": [],
+    "certified_contraction_q": null,
+    "hidden_coordinate_seed_runs": [],
+    "invariant_graph_converged": false
+  },
+  "roots": {
+    "z_N_by_rung": [],
+    "z_Omega_by_rung": [],
+    "mN_over_mOmega_by_rung": [],
+    "landed_mN_over_mOmega": null,
+    "certified_interval": null
+  },
+  "held_out": {
+    "next_scale_transport": null,
+    "next_volume": null,
+    "next_cutoff": null,
+    "knockouts": []
+  },
+  "audit": {
+    "comparator_opened_after_commit": false,
+    "target_present_in_construction": false,
+    "status": "UNRUN_TEMPLATE"
+  }
+}
