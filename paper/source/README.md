@@ -1,7 +1,9 @@
 # Paper — file index and reading order
 
-Draft of the arXiv paper. One file per section; LaTeX math inline; the LaTeX build target includes image-backed floats
-under `paper/figures/`. `ABSTRACT.md` and `OUTLINE.md` are the working scaffolding that produced this draft.
+Version-2 semantic mirrors of the authoritative LaTeX paper. One file mirrors each section or appendix; LaTeX math is
+retained inline and figures point to `paper/figures/`. Regenerate the mirrors with
+`python3 scripts/regenerate_paper_source.py`. `ABSTRACT.md` mirrors the corrected abstract; `OUTLINE.md` records the
+corrected section architecture.
 
 | order | file | section |
 |---|---|---|
@@ -11,7 +13,7 @@ under `paper/figures/`. `ABSTRACT.md` and `OUTLINE.md` are the working scaffoldi
 | 3 | `03_method.md` | §3 Method: finite audited carriers, adversarial self-correction |
 | 4 | `04_result_sm.md` | §4 Result I — the Standard Model as a selection layer |
 | 5 | `05_result_qmgr.md` | §5 Result II — QM↔GR as a common refinement |
-| 6 | `06_predictions.md` | §6 The three falsifiable predictions |
+| 6 | `06_predictions.md` | §6 Three former predictions: corrected status and open programs |
 | 7 | `07_breadth.md` | §7 Breadth: Bell, black-hole information, Λ |
 | 8 | `08_one_grammar.md` | §8 Cross-track ties, and the one-grammar thesis |
 | 9 | `09_scope_falsifiability.md` | §9 Scope, limits, and falsifiability |
@@ -23,5 +25,6 @@ under `paper/figures/`. `ABSTRACT.md` and `OUTLINE.md` are the working scaffoldi
 | D | `appendix_D_adversarial_review.md` | App. D — adversarial review record |
 | E | `appendix_E_notation.md` | App. E — notation & the six primitives at a glance |
 
-Source-of-truth for every number: the track artifacts under `physics_atlas/thread_cluster_a/` and
-`physics_atlas/thread_qm_gr/` (deterministic build scripts + validators; see Appendix B).
+The source of truth for Version-2 claim strength is `review_2026/CLAIMS_MAP.md`, revision 3. Numerical support is in the
+frozen `physics_atlas/` artifacts and the versioned repairs/probes under `review_2026/`; Appendix B records validator
+coverage and its exceptions.

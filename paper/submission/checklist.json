@@ -1,28 +1,67 @@
 {
-  "description": "Submission readiness checklist.",
+  "description": "Version-2 submission readiness checklist against review_2026/CLAIMS_MAP.md revision 3.",
+  "claims_map": {
+    "path": "review_2026/CLAIMS_MAP.md",
+    "revision": 3,
+    "status": "CERTIFIED"
+  },
+  "section_6": {
+    "former_prediction_count": 3,
+    "forcing_status": "retracted",
+    "cases": [
+      {
+        "id": "P1",
+        "surviving_status": "open_program",
+        "statement": "Exact-quotient irreducibility and the contracted-state underdetermination question remain open."
+      },
+      {
+        "id": "P2",
+        "surviving_status": "conditional_statement_plus_open_program",
+        "statement": "An assumed perfect-record channel is LOCC and BMV-null; its gravitational derivation is open."
+      },
+      {
+        "id": "P3",
+        "surviving_status": "open_program",
+        "statement": "The bounded algebraic census is token-definition-sensitive; dynamical record persistence is open."
+      }
+    ]
+  },
   "items": [
     {
-      "item": "paper/ LaTeX build passes with latexmk",
+      "item": "Main LaTeX build passes",
       "status": "passed"
     },
     {
-      "item": "LaTeX build target and mirrored Markdown source use the same title and three-prediction architecture",
+      "item": "Markdown section and appendix mirrors are regenerated from Version-2 LaTeX",
+      "status": "passed",
+      "command": "python3 scripts/regenerate_paper_source.py"
+    },
+    {
+      "item": "Former forcing claims are presented only as retractions, conditional statements, or open programs",
       "status": "passed"
     },
     {
-      "item": "Bibliography is active and citation metadata has been audited",
+      "item": "Carrier denominators, branch caps, sample bounds, token sensitivity, and depth-bounded quotient search are stated at claim sites",
       "status": "passed"
     },
     {
-      "item": "Stale title, two-prediction, and §6.2/§6.3 cross-reference searches pass",
+      "item": "Qeios notes and source bundle use the Version-2 abstract and claims architecture",
       "status": "passed"
     },
     {
-      "item": "Figures F0-F4 are image-backed in paper/figures",
+      "item": "Main and Qeios logs contain no undefined references or citations",
       "status": "passed"
     },
     {
-      "item": "Adversarial-review wording distinguishes audit checks from peer review and unreviewed §6 predictions",
+      "item": "Tracked root flattened TeX is byte-identical to paper/build/main_flat.tex",
+      "status": "passed"
+    },
+    {
+      "item": "Figures F0-F4 remain image-backed",
+      "status": "passed"
+    },
+    {
+      "item": "Appendix D records the incomplete external gate and the completed 27-round/20-repair-or-probe campaign",
       "status": "passed"
     }
   ]

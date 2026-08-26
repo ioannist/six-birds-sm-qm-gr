@@ -8,11 +8,12 @@ This repository contains the public support surface for the paper:
 >
 > Archived at: https://zenodo.org/records/20713213
 
-The paper applies the Six Birds emergence calculus to two physics tracks:
-Standard Model structural selection and the QM-GR interface. It reports two
-finite-carrier construction results and three falsifiable predictions, while
-keeping the stated scope at toy-level structural evidence rather than
-frame-transfer to nature-level derivations.
+Version 2 applies the Six Birds emergence calculus to two finite physics tracks:
+Standard Model structural selection and the QM-GR interface. Post-publication
+verification retained several conditional constructions and two toy theorems,
+materially corrected or retracted stronger claims, and replaced the former
+prediction-forcing claims with three sharply typed open programs. No
+foundational grade, universality, or frame-transfer claim is made.
 
 ## What this repository provides
 
@@ -23,8 +24,11 @@ frame-transfer to nature-level derivations.
 - Mirrored Markdown source under `paper/source/` for review and editing.
 - Physics-track construction artifacts and validator outputs under
   `physics_atlas/`.
-- Re-derivation pointers for the three Section 6 predictions in
-  `physics_atlas/INDEPENDENT_REDERIVATIONS.md`.
+- The certified Version-2 claims map and machine-verifiable repairs/probes under
+  `review_2026/`.
+- Historical re-derivation pointers under
+  `physics_atlas/INDEPENDENT_REDERIVATIONS.md`; superseded headline claims there
+  do not override `review_2026/CLAIMS_MAP.md`.
 - Retrodiction and unification card atlases under `retrodiction_atlas/` and
   `unification_atlas/`.
 
@@ -79,21 +83,23 @@ This writes:
 
 The submission-notes and README templates live under `scripts/templates/`.
 
-## Re-Derivation Checks
+## Certified Re-Derivation Checks
 
-The main prediction checks are documented in
-`physics_atlas/INDEPENDENT_REDERIVATIONS.md`. The principal entry points are:
+The Version-2 entry points include:
 
 ```bash
-cd physics_atlas/thread_qm_gr/steps/step55_f51_entanglement_underdetermines_geometry_artifacts
-python3 run_step55.py --self
+cd review_2026/repairs/s1_carrier_reconstruction
+python3 run_s1_carrier_reconstruction_v3.py --self
 
-cd ../step56_gravitational_mediation_bmv_prediction_artifacts
-python3 run_step56.py --self
+cd ../../probes/p1_kernel_quotient
+python3 run_active_cut_quotient_v3.py --self
 
-cd ../../../thread_cluster_a/steps/step69_mode_t_record_stability_baryon_no_monopole_falsifiable_prediction_artifacts
-python3 run_step69.py --self
+cd ../../repairs/q5_lp_duality
+python3 run_q5.py --self
 ```
+
+See `review_2026/CLAIMS_MAP.md` for the complete certified disposition and the
+artifact directory attached to each repaired statement.
 
 ## Repository Layout
 
@@ -112,9 +118,19 @@ python3 run_step69.py --self
 
 - The construction artifacts are finite-carrier and toy-level unless the paper
   explicitly says otherwise.
-- The adversarial review record is part of the audit trail; it is not journal
-  peer review or independent replication.
-- The three predictions are intended as falsifiable outputs of the stated
-  grammar-level program, not as established experimental facts.
+- The 27-round adversarial campaign and 20 repairs/probes are an audit trail,
+  not journal peer review or independent replication. The earlier external gate
+  never issued final approval.
+- The former three forcing predictions are retracted or reduced: P1 is a
+  depth-bounded exact-quotient search with 13 unclassified residual carriers;
+  BMV-null is conditional on an assumed perfect-record channel; record-stability
+  is token-definition-sensitive. Their physical versions are open programs.
+- The repository is not uniformly self-verifying: some historical validators
+  regenerate artifacts or validate stored summaries, and the preregistration
+  freeze is a consistency gate rather than tamper-evident evidence. Run broad
+  historical sweeps in scratch copies.
+- Rebuilding the corpus-hash rows in QM-GR steps 51--54 requires
+  `SIX_BIRDS_PAPERS_ROOT` to point to the external Foundations corpus; ordinary
+  validation of the published artifacts does not.
 - Citation metadata and paper claims are tracked in `paper/submission/`, but
   the LaTeX source remains the build authority.

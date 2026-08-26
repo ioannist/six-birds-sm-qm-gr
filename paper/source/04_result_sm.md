@@ -1,128 +1,138 @@
-# 4. Result I — the Standard Model as a selection layer (a demarcation)
+# Result I --- a finite Standard-Model selection construction
 
-## 4.1 The problem, restated structurally
+## The selection layer and its grade
 
-The Standard Model poses five "why **this**?" questions — gauge group and representations, generation count and
-textures, the electroweak scale, the vacuum, the UV completion. The calculus types all five as facets of **one
-selection/measure layer** $L^\*$ sitting above the SM: a candidate-structure space $W$ together with constraints and a
-selection, of which the realized SM is a single point. The structural finding that frames everything else is that the
-selection is **non-descending**: no function of the realized SM's own values determines the selection (computed
-obstruction witnesses; a derived observable control *does* descend, so the test discriminates).
+The L* construction places a finite candidate space, constraints, and a selector one layer above a realized candidate.
+Its non-descent and RoleSplit diagnostics remain a **COHERENT-FINITE-CONSTRUCTION**, not a nature-level derivation.
+The one-layer hypothesis is load-bearing: the original step9 evidence supports block structure only within the declared
+layer and does not exclude hidden or multi-layer selectors. The repaired F24 competitor construction leaves the
+architecture **undetermined**: the published BudgetedRole verdict was encoded by booleans, while the constructed
+MemoryLayer alternative has an experimental and insufficient closure gate. See
+`review_2026/repairs/s5_f24_f47/`.
 
-This reframes the question. One does not *derive* a selection from inside its own layer; one asks **which features of
-the selected point are forced by structure, and which are irreducibly contingent** — and proves the split. The honest
-answer to "why this whole SM?" is a *factorization*:
+## A sound carrier and convention-dependent exclusion
 
-$$
-\text{SM} \;=\; \underbrace{\text{[features closure forces or grounds]}}_{\text{few, listed below}}
-\;\oplus\;
-\underbrace{\text{[features provably invisible to closure]}}_{\text{observed-input, \emph{proved} so}} .
-$$
+The published $11{,}990$-structure denominator is withdrawn: its representation alphabet was not conjugation-closed
+and it contained $9{,}126$ alias duplicates. The repaired model implements conjugation as an involution, including
+the pseudoreal/real $SU(2)$ special cases, and checks dimensions, Dynkin indices, and cubic anomalies against an
+independent golden table. Within the published windows—one or two nonabelian factors of dimensions $2$ through
+$4$, field cap five, component cap six, and the published charge alphabet—the genuinely-chiral carrier contains
+$1{,}066$ labelled structures.
 
-This is the Galois genre of result: the achievement is the sharp, non-circular line, in both directions.
-
-## 4.2 Unconditional exclusion: $\sim 99.3\%$ of chiral gauge structures
-
-On a neutral carrier of $11{,}990$ genuinely-chiral gauge structures (built token-blind: no SM labels appear in any
-predicate; the realized SM-analog is report-only), the closure chain — anomaly freedom, descent, corrected chirality,
-mass-closure — **excludes all but a small family**, leaving essentially the two-factor $2|3$ class and a single-factor
-$SU(4)$ class. No condition is imposed beyond neutrality of the machinery; the exclusion is unconditional
-(**COMPUTE**). Named competitors run through the same filter: $SU(5)$ and flipped $SU(5)$ fail at mass-closure;
-Pati–Salam, left–right, and trinification are excluded by route-completeness within the declared component cap
-(cap-conditional, stated as such); $SO(10)$/$E_6$ are outside the declared alphabet (not refuted).
-
-## 4.3 Conditional selection of $\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus\mathfrak{u}(1)$
-
-One declared condition separates the survivors: **clean separation** — the absence of confining-charged broken vectors.
-In calculus terms it is the emptiness of a factorization defect: writing $\pi_0$ for the confining readout and $\pi_1$
-for the mass/breaking readout on the gauge bosons of a candidate structure,
+Freely adjoined fully neutral singlets are deleted. The declared orbit convention also quotients equal-dimension factor
+exchange, simultaneous nonabelian conjugation, and global $U(1)$ sign inversion; it does not quotient charge rescaling
+or field-by-field conjugation. This gives $419$ declared orbits. A separate primitive-charge normalization gives
+$195$ orbits and is an alternative convention, not a convention-independent physical denominator. Cumulative
+exclusion through chirality-faithfulness is therefore
 
 $$
-\text{clean separation} \iff \Delta_{\mathrm{fact}} = \varnothing ,
+1{,}066\to52\;(95.12\%),\qquad
+419\to24\;(94.27\%),\qquad
+195\to24\;(87.69\%).
 $$
 
-and the witnesses of $\Delta_{\mathrm{fact}}\neq\varnothing$ are exactly the $X/Y$-type colored coset bosons. Demanding
-clean separation selects $SU(2)\times SU(3)\times U(1)$ over the single-factor alternative (**SELECT**, on one named
-condition). The single-factor side has since been upgraded to a constructed theorem: *a single $SU(N)$ with a stable
-confining substrate has $\Delta_{\mathrm{fact}}\neq\varnothing$ for all $N$* (symbolic three-step proof from the frozen
-machinery; non-vacuous at $N=4$).
+The representation model, quotient mutations, and independent scalar gate are rebuilt under literal pins in
+`review_2026/repairs/s1_carrier_reconstruction/`. These percentages attach to their exact denominators and
+must not be read as an unconditional measure on gauge theories.
 
-## 4.4 The $X/Y$-coset spine and the recovered unification ratios
+## Branch-typed clean-separation selection
 
-The same defect object organizes a cluster of phenomena usually treated separately:
-
-> **One object, four roles.** The $X/Y$ colored coset is simultaneously (i) the clean-separation violator, (ii) the
-> proton-decay mediator (its absence makes baryon number an F27 orbit-descent invariant: $\mathcal O = 0$), (iii) the
-> monopole source (its absence zeroes the F48 gluing obstruction), and (iv) the witness that a grand-unified parent is
-> a genuine refinement of the SM rather than a relabeling: $\Delta_{\mathrm{fact}}(\mathrm{SM},\mathrm{GUT}) = 15$,
-> $\Delta_{\mathrm{fact}}(\mathrm{GUT},\mathrm{SM}) = 0$.
-
-> **$X/Y$-coset spine.** *One central node ($\Delta_{\mathrm{fact}}$ witnesses) with four arrows —
-> clean-separation, proton stability (F27), no monopole (F48), GUT non-relabeling — annotated "absence of one object
-> $\Rightarrow$ all four at once."*
-
-Constructing the F51 common-refinement parent over the SM's two routes lands the embedding numbers **as computations,
-not inputs**. Over one SM generation,
-
+For each chirality-faithful structure, the repair enumerates every admissible *singleton complex scalar* in the
+inherited alphabet and cap, rather than choosing the first witness. It separately enumerates scalar pairs with joint
+Yukawa coverage and joint breaking. On each $(C,\phi)$ or $(C,\phi_1,\phi_2)$ branch it computes the active factor,
+residual structure, coset count, and the factorization defect
 $$
-\sin^2\theta_W \;=\; \frac{\operatorname{Tr} T_3^2}{\operatorname{Tr} Q^2}
-\;=\; \frac{2}{16/3} \;=\; \frac{3}{8},
-\qquad
-k_Y \;=\; \frac{5}{3} \ \ \text{(from } \operatorname{Tr} Y^2 = \tfrac{5}{6}\text{)} ,
+\text{clean separation}\iff\Delta_{\mathrm{fact}}=\varnothing.
 $$
 
-with the traces computed from the SM charge table (declared input) and the *minimal-simple* parent class (declared
-source). Non-circularity has a computed control: a product parent satisfying the same bare requirement yields $3/23$,
-so the value $3/8$ genuinely depends on the declared source rather than being baked in (**GROUND**, conditional on that
-source). Scope is strict: these are the *embedding* ratios; the measured low-energy $\sin^2\theta_W$ requires
-renormalization-group running to a physical scale, which the toy does not contain — and the flagship unification test
-honestly **fails** for minimal non-supersymmetric $SU(5)$, consistent with experiment.
+Within these declared singleton/two-scalar branch caps, $2|3$ is the unique structure that admits a clean branch;
+every clean branch is $SU(2)$-active, and every $SU(4)$ branch is breaking. The quantifiers matter:
 
-## 4.5 Grounding the condition: record-stability
+- **universal over branches: false for $2|3$.** Every $2|3$ structure also has a breaking branch, so clean
+   separation is not a property of the bare structure alone;
+- **existential over branches: true in the repaired carrier.** Clean separation selects the
+   $(2|3,\text{SU(2)-active breaking orientation})$ branch class.
 
-Clean separation itself is not toy-derivable (the only internal grounding is circular — caught and rejected). It is
-**grounded one layer up** (**GROUND**): requiring a *memory/record-stability* layer — a stable confining substrate, the
-capacity for at least two neutral records, and distinguishability — **forces** clean separation. On the full carrier:
+The two-scalar appendix produces no clean branch outside that typed class. This is a stronger branch-level uniqueness
+result than the published statement, but on a different and explicitly finite domain. Separately, step61 remains a
+genuine witness-independent theorem: in its stated toy grammar a stable confining single-factor $SU(N)$ has a nonempty
+defect for every $N$. Step44 remains cap-conditional. A repaired-engine probe supports step43's $N\le6$ family
+conclusion, but its published counts are stale and a final-carrier rebuild remains open; steps 43, 44, and 61 also retain
+the summary-reading validator weakness F-008.
 
+## Constructed $SU(5)$ frame, coset roles, and ratios
+
+The repaired construction starts from exact $5\times5$ traceless Hermitian generators. For the regular embedding of
+$SU(3)\times SU(2)$, its full commutant inside $\mathfrak{su}(5)$ has rank $23$ and nullity one. Tracelessness and
+commutation therefore force the hypercharge direction, up to scale and sign, to the pattern proportional to
+$(-1/3,-1/3,-1/3,1/2,1/2)$. The twelve coset generators transform as
+$(\mathbf3,\mathbf2)_{-5/6}\oplus(\overline{\mathbf3},\mathbf2)_{+5/6}$.
+
+Decomposing a constructed $\overline{\mathbf5}+\mathbf{10}$ package and adopting the named weak-pair convention gives
+exactly
 $$
-\#\{\,\text{record-stable} \wedge \Delta_{\mathrm{fact}}\neq\varnothing\,\} \;=\; 0
-\quad\text{out of } 11{,}990 .
+\sin^2\theta_W=\frac{\operatorname{Tr}T_3^2}{\operatorname{Tr}Q^2}=\frac38,
+\qquad k_Y=\frac53.
 $$
+These are **LANDED-BY-CONSTRUCTION given the regular embedding, fermion package, and convention**; they do not
+select that parent and are not low-energy predictions. Pati–Salam gives the same $3/8$, and the published product-parent
+$3/23$ control has no well-posed constructed realization and is withdrawn. Running to a measured scale is absent.
 
-Anti-circularity is computed, not asserted: the substrate conjunct alone admits $60$ decaying structures, the capacity
-conjunct alone admits $311$; only the conjunction lands in the clean class, and record-stability is *not* extensionally
-clean-separation ($24$ record-stable structures versus $316$ clean — a strict directional implication). The
-all-structures theorem upgrade (lemma L60$\to$L64) remains open and is tracked as such.
+Generator action, rather than role labels, identifies the coset transitions with $\Delta B\ne0$; the extracted
+cocharacter lattice gives the standard $\pi_2(SU(5)/[SU(3)\times SU(2)\times U(1)]/\mathbb Z_6)\cong\mathbb Z$
+monopole class under the stated connectedness and homotopy inputs. Thus the proton-decay, monopole, and clean-separation
+roles are computed for one object *inside this constructed $SU(5)$ frame*. The historical step41 six-generator
+$SU(4)\to SU(3)$ object is not identical to the twelve-generator $SU(5)$ $X/Y$ coset: the identity is
+**REFUTED-BY-CONSTRUCTION**. A fixed six-generator slice is a structural analogue, and a computed $SU(2)$
+commutator shows that slice is not invariant. Full artifacts are in
+`review_2026/repairs/s3_generator_construction/`.
 
-## 4.6 The blindness theorems: what is *proved* observed-input
+## Record stability: grounding withdrawn, dynamics open
 
-The demarcation's other half is proof-grade negatives (**PROVE-BLIND**):
+The published claim that record-stability forces clean separation is withdrawn. Its table first counted undefined
+defects as breaking; a full-carrier repair then found an implication under a restricted token grammar. A subsequent
+branch-specific residual-group census showed that the result depends on which invariant operators count as records.
+Under the declared bounded broader census—fermion arity two through four, at most two scalar insertions, and at most
+six total constituents—scalar-dressed residual singlets produce counterexamples to every pointwise, universal, and
+existential reading. The counts are candidate monomials, not certified dimensions of a physical invariant algebra:
+Grassmann relations, equations of motion, syzygies, and the rank of the UV-to-residual restriction map were not built.
 
-- **Generation count.** For an anomaly-free content unit with an even per-unit $SU(2)$-doublet count (the SM unit
-  qualifies), every gate of the frozen closure chain is invariant in $N_{\mathrm{gen}}$: anomaly coefficients scale
-  linearly ($N\cdot u$), the Witten parity gate depends only on $(N\cdot d)\bmod 2$, and the remaining gates are
-  nonempty-gated. Hence the chain passes identically for **all** $N \ge 1$ (constructed theorem; an odd-doublet control
-  *is* $N$-sensitive, so the hypothesis is load-bearing). The calculus cannot see $N_{\mathrm{gen}}=3$; the only handle
-  is the recognition-source bound $(N-1)(N-2)/2 > 0 \iff N \ge 3$ from CP violation — observed-input.
-- **Content.** Within the selected gauge structure, three definitionally distinct neutral shadows (integer charge
-  quantization of the color-singlet spectrum; Yukawa-texture connectivity; mass-matrix rank) are all blind to the
-  SM-vs-alternative content classes: the detailed matter content is a contingency-class residual (F26).
-- **Scales and values.** The electroweak scale is reframed (not solved) as an F47 small-selector region ($\approx
-  3.96\%$); no measured low-energy observable is derived anywhere in the track.
+Accordingly, “gauge shadow of a memory layer” is narrative over a same-row correlation, not a computed cross-layer
+projection. The certified statement is **token-definition-sensitive**. Determining which invariant candidates
+persist under the branch's actual dynamics is an open program. See
+`review_2026/repairs/p3_full_carrier_delta/` and
+`review_2026/repairs/s6_record_grammar_ablation/`.
 
-## 4.7 Summary table
+## Content, generations, mass rank, and scales
 
-| question | verdict (grade) | basis |
-|---|---|---|
-| exclude $\sim99.3\%$ of chiral gauge structures | **COMPUTE**, unconditional | closure chain on $11{,}990$ structures |
-| select $\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ | **SELECT**, on clean separation | $\Delta_{\mathrm{fact}}=\varnothing$ |
-| proton stability $+$ no monopole $+$ color separation | **COMPUTE** | one object: the $X/Y$ coset, absent |
-| $\sin^2\theta_W = 3/8$, $k_Y = 5/3$ | **GROUND** (minimal-simple parent) | trace ratios; product control $3/23$ |
-| clean separation itself | **GROUND** (record-stability) | $0/11{,}990$ counterexamples; non-circular |
-| single-factor exclusion, all $N$ | **COMPUTE** (constructed theorem) | symbolic proof |
-| $N_{\mathrm{gen}}$, content, measured values | **PROVE-BLIND** / observed-input | all-$N$ theorem; three blind shadows |
-| measured $\sin^2\theta_W$, couplings, masses, EW scale | **not landed** (out of scope) | need running/scale = experiment |
+The published content-blindness comparison identified two descriptions of one physical orbit. Under global color
+conjugation, global $U(1)$ sign, factor exchange, and inert-singlet deletion, the 28 labelled anomaly-free supports
+form 14 orbits, and the strongest conjunction selects one content orbit inside the declared template. The honest result
+is **unique recognition-under-template**; the minimality no-go survives with rank $14/14$.
 
-The Standard Model, on this evidence, is not one derivable object. It is a *selection* with a thin forced skeleton —
-and the calculus proves both the skeleton and the thinness. Section 6.3 turns the spine of this analysis into a
-falsifiable prediction.
+The $N_{\mathrm{gen}}$-blindness theorem is formally withdrawn because its structural gates were hardcoded to
+“family count at least one.” A materialized $N=1,\ldots,4$ probe finds anomaly, parity, chirality, branch, and mass
+predicates invariant under replication, while atomicity and route-incidence fail for every tested $N\ge2$ for typed
+grammar reasons. The grammar neither remains blind to $N$ nor selects $N=3$.
+
+The published “mass-matrix rank” was edge coverage. With independent symbolic coefficients and multiplicities retained,
+the renormalizable one-scalar grammar gives charged generic ranks $14,28,42,56$ for $N=1,2,3,4$, with total
+deficiencies $1,2,3,4$ from one unpaired left-handed neutrino per generation. No masses, textures, or measured values
+are derived. These repairs are under `review_2026/repairs/s4_content_quotient/`.
+
+Finally, the F47 naturalness number is a denominator- and threshold-sensitive surface, not a stable $3.96%$ selector.
+One declared weighted-admissible/upstream-threshold cell is $2.247%$, but is not uniquely privileged; the sweep spans
+$0$ to $40.6%$, and the realized point is excluded by the strict threshold at $2.75$.
+
+## Certified summary
+
+| question | status | certified scope |
+| --- | --- | --- |
+| gauge-structure exclusion | corrected finite census | $1{,}066\to52$, $419\to24$, or $195\to24$, with the named quotient conventions |
+| clean-separation selection | branch-level finite selection | unique clean $2\|3$, $SU(2)$-active branch class; no bare-structure selection |
+| single-factor exclusion | genuine toy theorem | witness-independent in the stated grammar; historical validators retain F-008 |
+| hypercharge and ratios | conditional exact construction | regular $SU(5)$ embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair convention |
+| content | unique orbit in template | recognition-under-template; minimality rank $14/14$ |
+| generations | theorem withdrawn | mixed $N$-dependence on materialized $N=1,\ldots,4$; no selection of three |
+| record-stability grounding | retracted/open | bounded token census is definition-sensitive; physical persistence is dynamical and unbuilt |
+| architecture and scale | undetermined; sensitive | F24 open; F47 surface $0$–$40.6%$, declared cell $2.247%$ |

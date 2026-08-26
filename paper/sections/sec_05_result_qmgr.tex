@@ -1,183 +1,114 @@
 \hypertarget{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification}{%
-\section{Result II --- quantum mechanics ↔ general relativity as a common refinement (a unification)}\label{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification}}
+\section{Result II --- conditional QM--GR access structures and graph duality}\label{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification}}
 
 \hypertarget{locating-the-obstruction-the-route-mismatch}{%
-\subsection{Locating the obstruction: the route mismatch}\label{locating-the-obstruction-the-route-mismatch}}
+\subsection{Route-mismatch correction}\label{locating-the-obstruction-the-route-mismatch}}
 
-Why do QM and GR not compose? The calculus's answer is structural and exact. Call \(E_1\) the completion ``quantize'' and
-\(E_2\) the completion ``curve''. Each is individually consistent --- idempotent on the carrier:
-
+For idempotent endomorphisms \(E_1,E_2\), the finite defect
 \[
-E_1^2 = E_1,\qquad E_2^2 = E_2,\qquad\text{but}\qquad E_1 E_2 \neq E_2 E_1 .
+\Delta_3^{\mathrm{comp}}(E_1,E_2)=\{c:E_1E_2(c)\ne E_2E_1(c)\}
 \]
+is a legitimate mathematical measure of non-commutation. Non-commuting examples exist. They are not, however, what the
+published QM--GR computation constructed. On its 16-state Boolean carrier, the two conditional-mean completions are
+idempotent and \textbf{commute exactly}: \(E_{\rm QM}E_{\rm GR}=E_{\rm GR}E_{\rm QM}\), so the defect set is empty. The
+reported \(0.5\) is the normalized distance between two encoded tables; under \(0/1\to\pm1\) recoding it becomes
+\(1/\sqrt2\). It is not a conjugacy-invariant commutator magnitude.
 
-A theorem-grade result of the calculus (Foundations III~\citep{Tsiokos_FoundationsIII}, Thms. 9--10) shows this situation is well-posed and finitely
-witnessed: the \textbf{route-mismatch defect}
-
-\[
-\Delta_3^{\mathrm{comp}}(E_1,E_2) \;=\; \{\,c : E_1E_2(c) \neq E_2E_1(c)\,\}
-\]
-
-is non-empty iff the completions fail to commute, \emph{even though each is exact alone} --- i.e., route mismatch is a real,
-typed, finite defect, not a symptom of sloppiness in either route. The explicit minimal witness is elementary: on
-\(C=\mathcal P(\{a,b,c\})\) with \(E_1(S)=S\cup\{b\}\) iff \(a\in S\) and \(E_2(S)=S\cup\{c\}\) iff \(b\in S\), one has
-\(E_1E_2(\{a\})=\{a,b\}\) but \(E_2E_1(\{a\})=\{a,b,c\}\). On the QM--GR carrier below, the directed route mismatch computes
-to \(0.5\) (normalized). This is the calculus's typing of \emph{why quantizing gravity fails}~\citep{tHooftVeltman1974,GoroffSagnotti1985}: quantize-then-curve and
-curve-then-quantize are different objects, and no amount of skill in either route removes the defect of composing them.
+Coordinate conditional means commute here because the Boolean-cube overlap factorizes. The repair constructs
+non-commuting idempotent pairs from non-factorizing partitions and constrained projections as mathematical controls,
+but none is derived from the frozen ``quantize'' and ``curve'' routes. The paper's claim that those routes explain why
+quantizing gravity fails is therefore retracted. Exact matrices and recoding controls are in
+\nolinkurl{review_2026/repairs/q2_route_mismatch/}.
 
 \hypertarget{the-resolution-a-fork-not-a-ladder}{%
-\subsection{The resolution: a fork, not a ladder}\label{the-resolution-a-fork-not-a-ladder}}
+\subsection{Fork-over-ladder, with finite provenance}\label{the-resolution-a-fork-not-a-ladder}}
 
-The construction models the two theories as \textbf{access quotients of one carrier}. The minimal mode-grammar has four
-modes \((d_0,d_1,d_2,d_3)\) with
-
+The separate access-factorization result survives narrowly. On the abstract four-coordinate carrier
 \[
-q_{\mathrm{QM}} = (d_0,d_1,d_2), \qquad q_{\mathrm{GR}} = (d_0,d_2,d_3), \qquad L = (d_0,d_1,d_2,d_3),
+q_{\rm QM}=(d_0,d_1,d_2),\qquad q_{\rm GR}=(d_0,d_2,d_3),\qquad L=(d_0,d_1,d_2,d_3),
 \]
+\(q_{\rm GR}\) is not a deterministic quotient of \(q_{\rm QM}\): the two directed defects each have eight witnesses.
+The nested coordinate control factors, while both readouts factor through \(L\) by definition. Exhausting all 16
+coordinate-subset partitions gives 55 incomparable pairs among the 120 unordered distinct pairs. This is an exact toy
+theorem conditional on the abstract carrier and its access interpretation; it is not evidence that the published
+conditional-mean completions fail to commute.
 
-i.e., the theories share modes \((d_0,d_2)\), while \(d_1\) (phase/superposition data) is QM-only and \(d_3\) (curvature
-readout) is GR-only. Two architectures compete:
+Post-publication work supplies a finite provenance construction rather than the previously declared mode labels. On 54
+constructed \((\psi,V_0)\) records, coarse field functionals and explicit phase-only and potential controls realize
+mutually non-factorizing QM and GR readouts. Its conditions are material: the forward witness changes \(V_0\), the QM
+audit includes density and current rather than Born density alone, \(d_0\) is constant, and the realized coordinate
+image is \(1\times2\times8\times3\), not the published \(2^4\) carrier. Nine hand-instantiated F24 representatives were
+tested; two reconcile but are partition-equivalent to \(L\). Thus this is \textbf{conditional finite provenance}, not
+family, type, or instance uniqueness. See \nolinkurl{review_2026/repairs/q1_access_provenance/}.
 
-\begin{itemize}
-\tightlist
-\item
-  the \textbf{ladder} (the emergent-spacetime direction~\citep{VanRaamsdonk2010}): GR is a lawful quotient of QM, \(q_{\mathrm{GR}} = \phi \circ q_{\mathrm{QM}}\) for some \(\phi\);
-\item
-  the \textbf{fork}: both are quotients of the common refinement \(L\).
-\end{itemize}
-
-The computation is decisive on the carrier. The directed ladder \textbf{fails}: \(\Delta_{\mathrm{fact}}(q_{\mathrm{QM}}, q_{\mathrm{GR}})\) has \(8\) witness pairs (row residual \(0.577\), route mismatch \(0.5\)) --- and the \emph{strongest} ladder, which
-adjoins to QM an RT-shadow functional \(A_{\mathrm{RT}} = d_0 + 2d_2\) of its accessible modes, fails identically (defect
-\(8\)): a function of QM-visible modes cannot recover \(d_3\). The \textbf{fork closes}: \(L \to q_{\mathrm{QM}}\) and \(L \to q_{\mathrm{GR}}\) both factor exactly (residuals \(0\)). The can-fail control flips: replacing GR by a readout genuinely
-nested in QM, \(q_{\mathrm{GR}}^{\mathrm{nested}} = (d_0,d_2,d_1)\), the ladder defect drops to \(0\) --- the no-go tracks
-real structure, not the test apparatus. Supporting theorems sharpen this into a program-level statement: a directed
-reduction \emph{and} a fused ``quantum-gravity object'' both fail in the grammar (\(T_{\mathrm{QG\text{-}NoGo}}\)), while \(L\) is
-the \textbf{unique minimal admissible common refinement} (\(T_{\mathrm{QGR\text{-}Unique}}\), type- and instance-uniqueness by
-adversarial defeat, basis-independent, stable across carriers).
-
-Scope, stated plainly: the ladder no-go covers the \textbf{weak-RT} direction (area-type functionals of accessible
-entanglement data); \emph{strong} bulk reconstruction --- \(d_3\) recoverable from richer quantum data --- is not refuted here and
-is exactly what Section 6.1 turns into a falsifiable test.
+The theorem named \(T_{\mathrm{QG\text{-}NoGo}}\) is also narrower than its original prose: it tests two special fused or
+stapled routes and does not quantify over general fused objects, coherent mediators, or operator algebras. It cannot
+support the statement that quantum gravity is ``illegal'' in the grammar.
 
 \begin{figure}[tbp]
   \centering
   \includegraphics[width=\linewidth]{figures/fig_f3_fork_rt.png}
-  \caption{\textbf{Fork resolution and RT ledger recognition.} \emph{Left: the failed ladder (QM \(\to\) GR arrow struck through, defect 8) vs the closed fork (\(L\) above, two clean arrows down, residuals 0; nested control shown flipping). Right: panel for §5.4 --- a boundary-anchored flow network with the minimal cut highlighted; caption ``area \(=\) shadow price of the entanglement flow (max-flow/min-cut \(=\) LP duality).''}}
+  \caption{\textbf{Finite fork and graph-duality constructions.} Left: the declared abstract access fork, for which the
+  directed quotient fails and the common refinement closes. Right: a boundary-anchored flow network; in Version 2 the
+  corrected identity distinguishes the dual optimum from its per-edge shadow prices.}
   \label{fig:f3}
 \end{figure}
 
 \hypertarget{grounding-the-premise}{%
-\subsection{Grounding the premise}\label{grounding-the-premise}}
+\subsection{The common carrier is a hypothesis}\label{grounding-the-premise}}
 
-The fork is conditional on the \textbf{common-carrier premise} --- that QM and GR may be modeled as access quotients of one
-carrier at all. The calculus does not let that premise pass silently. A door-test against the framework's own laws
-(F37, F51, FoEC, SAU) shows each supplies the \emph{form} of a shared carrier but none \emph{forces} its existence
-(form-not-existence in every case). The premise is therefore landed in \textbf{GROUND} mode: supplied as the down-shadow of
-a named physical source --- \textbf{semiclassical co-sourcing}: one field \(\psi\) carries both the Born readout
-\(\rho = |\psi|^2\) and the stress-energy \(T[\psi]\) that sources geometry, extended through a computed self-consistent
-back-reaction \(V[\psi] = V_0 + \kappa\, T_{00}[\psi]\) (fixed-point residual \(3.5\times 10^{-16}\) at \(\kappa=0.3\); a
-runaway control at \(\kappa=30\) fails, so the consistency is not automatic). Two can-fail controls give the landing
-teeth: a complementary (non-commuting) access pair admits \textbf{no} joint quotient (commutator residual \(0.707\)), so the
-laws do not manufacture carriers; and removing co-sourcing removes the warrant (stress residual \(0.381\)). This grounding
-was stress-tested in an adversarial review cycle and \textbf{settled} as an honest recognition-source landing (Appendix D). The
-named residual is real: the warrant reaches matter-sourced geometry, not the free gravitational sector or the deep
-quantum-gravity regime.
+The common-carrier premise is not computationally grounded by the published tests. Semiclassical co-sourcing---one field
+\(\psi\) supplying a Born-type readout and stress-energy for a potential---remains a plausible named recognition source,
+but the existing controls test different predicates and the ``door test'' is prose. The GROUND landing is therefore
+withdrawn and replaced by a declared hypothesis. The 54-record construction above shows that a finite realization can
+be built under explicit choices; it does not establish that nature, the free gravitational sector, or a deep
+quantum-gravity regime shares such a carrier.
 
 \hypertarget{recognition-ryutakayanagi-as-ledgershadow-price-duality}{%
-\subsection{Recognition: Ryu--Takayanagi as ledger/shadow-price duality}\label{recognition-ryutakayanagi-as-ledgershadow-price-duality}}
+\subsection{Finite-graph min-cut/LP-duality recognition}\label{recognition-ryutakayanagi-as-ledgershadow-price-duality}}
 
-Within the fork, the calculus \emph{recognizes} the central result of holographic entanglement --- non-circularly. The claim
-(a \textbf{RECOGNITION} landing, adversarially reviewed and settled): the Ryu--Takayanagi relation is a special case of the
-calculus's currency--constraint law --- \emph{a conserved ledger quantity in one layer reappears as the shadow price of its
-constraint in the layer above}. Concretely, on tensor-network carriers the entanglement entropy obeys the saturable
-bound
-
+The graph-level core survives after correcting the flagship equation. At nondegenerate seeded capacities, every tested
+boundary region has a unique minimum cut with an exported margin. The max-flow primal and cut dual are exported as
+matrices, and exact certificates verify strong duality and complementary slackness. If \(y_e\) denotes the dual
+variable associated with edge capacity \(c_e\), then the correct identity is
 \[
-S(A) \;\le\; \mathrm{mincut}(A),
+\operatorname{Area}(\operatorname{mincut}A)
+=\operatorname{OPT}_{\rm dual}(A)
+=\sum_e c_e y_e,
 \]
+where the \(y_e\)---not the dual optimum---are per-edge shadow prices. In the unique-cut chamber they are the \(0/1\)
+cut-incidence variables and satisfy \(y_e=\partial F^*/\partial c_e\), verified by two-sided perturbations.
 
-and max-flow/min-cut~\citep{FordFulkerson1956,FreedmanHeadrick2017} \textbf{is} linear-programming duality: the minimal cut (the ``area'') is the optimal dual variable --- the
-shadow price --- of the boundary entanglement flow. The construction earns the recognition rather than assuming it:
-\(S(A)\) is computed from contracted random-tensor states (not defined as a cut), saturation \emph{emerges} with bond
-dimension (\(S/\mathrm{mincut} = 0.729 \to 0.904 \to 0.941\) for \(D=2,3,4\), never exact at finite \(D\) --- exactness would
-be the tautology signature and fails the validator), strict-gap controls exist, and the geometric side is
-seed-invariant while the entropic side moves (\(\mathrm{area} = \log 3\) constant across states; \(S_{\mathrm{Born}} = 1.0970, 1.0956, 1.0980\)). Two independently checkable consequences computed on the same carrier: the holographic
-entropy cone's monogamy facet~\citep{HaydenHeadrickMaloney2013},
+Independently contracted random-tensor states obey \(S(A)\le\operatorname{mincut}(A)\) on the sampled carrier. The ratios
+\(S/\operatorname{mincut}=0.729,0.904,0.941\) for bond dimensions \(D=2,3,4\) are a \emph{finite sampled saturation
+trend}, not convergence or equality; sampled contracted-state entropies remain below the cuts. The min-cut entropy
+vectors satisfy monogamy, and a fairly compared GHZ control violates it. These results support a
+\textbf{finite-graph recognition} of RT-related structure, conditional on the graph/tensor-network model; they do not
+derive holography~\citep{RyuTakayanagi2006,Maldacena1998}, \(1/4G\), or a continuum law.
 
-\[
-I_3(A{:}B{:}C) = S_A + S_B + S_C + S_{ABC} - S_{AB} - S_{AC} - S_{BC} \;\le\; 0
-\]
-
-for min-cut-realizable states, with the GHZ control~\citep{GHZ1989} violating it (\(I_3 = +\log 2\)); and a discrete linearized-Einstein~\citep{Faulkner2014}
-\textbf{consistency condition} --- demanding RT-consistency of a perturbed geometry across all \(38\) regions of a \(14\)-edge
-carrier overdetermines the response (rank \(10\), cokernel \(28\)): a geometric perturbation satisfies it (residual
-\(9\times10^{-17}\)), a generic state perturbation violates it (\(0.042\)). Two unification-grade refinements complete the
-picture: the quantum (Born/F23) and gravitational (area/F39) ledgers carry \textbf{one composition law} (the monogamy
-combiner --- shared on co-sourced carriers, broken by GHZ), and the F51 parent \emph{forces} that combiner on admissible
-co-readouts while QM alone does not (a computed geometric-dual compatibility test; the forcing disappears under a
-broken-compatibility control).
-
-We emphasize the grade: this \textbf{recovers and organizes} known holographic structure under one law --- it does not derive
-holography~\citep{Maldacena1998}, the \(1/4G\) coefficient~\citep{Bekenstein1973}, or the continuum Einstein equation (the discrete condition above is the extent
-of the claim; the continuum limit is an open, precisely-typed upgrade).
+Two published extensions are withdrawn. First, the linearized-Einstein pass was true by construction at a degenerate
+point. At the honest nondegenerate base point, an independently specified geometry deformation does not match the
+contracted-state \(\delta S\) under the declared pairing; uniqueness margins and a can-fail deformation are exported.
+Second, Born and area do not carry one universal composition law: area follows min-plus composition on all four tested
+gluing probes, while Born fails all four. The surviving cross-ledger statement is only that the two sampled ledgers
+obey the same monogamy inequality class, with different dependencies. See
+\nolinkurl{review_2026/repairs/q5_lp_duality/}.
 
 \hypertarget{result-qmgr-summary-table}{%
-\subsection{Summary table}\label{result-qmgr-summary-table}}
+\subsection{Certified summary}\label{result-qmgr-summary-table}}
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}p{0.28\linewidth}p{0.22\linewidth}p{0.42\linewidth}@{}}
 \toprule
-\begin{minipage}[b]{0.29\columnwidth}\raggedright
-question\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
-verdict (grade)\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
-basis\strut
-\end{minipage}\tabularnewline
+question & status & certified scope\\
 \midrule
 \endhead
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-why QM and GR don't compose\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{COMPUTE} --- route mismatch \(\Delta_3^{\mathrm{comp}}\neq\varnothing\)\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-non-commuting completions; directed mismatch \(0.5\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-GR a quotient of QM (emergent spacetime, weak form)?\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{COMPUTE} --- no (defect \(8\); control flips)\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-ladder vs fork\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-QM, GR siblings under one parent?\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{COMPUTE}, conditional --- fork closes (\(0/0\)); parent unique\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\(T_{\mathrm{QGR\text{-}Unique}}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-the common-carrier premise\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{GROUND} --- semiclassical co-sourcing (review-settled)\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-door-test + two controls\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-Ryu--Takayanagi\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{RECOGNITION} --- ledger/shadow-price duality (review-settled)\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-LP duality; emergent saturation; MMI; discrete Einstein\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-quantum gravity solved / continuum Einstein derived\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-\textbf{not landed}\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-named open upgrades\strut
-\end{minipage}\tabularnewline
+published route mismatch & retracted & completions commute; \(0.5\) is encoding-dependent table distance\\
+fork-over-ladder & keep narrowly & exact coordinate-partition non-factorization on the declared Boolean carrier\\
+field provenance & conditional finite construction & 54 records with named coarse functionals and stated limitations\\
+common-carrier GROUND & retracted/hypothesis & semiclassical co-sourcing is a named physical motivation, not a landing\\
+\(T_{\mathrm{QG\text{-}NoGo}}\) & narrowed & two special fused/stapled routes only\\
+RT/LP relation & corrected recognition & exact dual certificate and sensitivities on finite nondegenerate graph cuts\\
+linearized Einstein & retracted & honest tested response does not match under the declared deformation pairing\\
+one Born--area ledger & retracted & area passes four min-plus gluings; Born fails all four\\
 \bottomrule
 \end{longtable}
-
-Section 6.1 pushes the fork to its sharpest consequence --- and stakes the falsification.

@@ -1,58 +1,43 @@
-# 10. Discussion and outlook
+# Discussion and outlook
 
-## 10.1 If the predictions hold; if they fail
+## What the corrections change
 
-**Prediction 1.** If entanglement-invisible geometry is confirmed in richer settings — higher-rank tensor networks,
-genuine AdS/CFT setups, eventually any operational probe of bulk reconstruction — the consequence is architectural:
-reconstruction programs need a second boundary currency beyond entanglement, and "geometry from entanglement" becomes
-"geometry from entanglement *plus an irreducible remainder*", with the fork supplying the structural reason. If instead
-someone exhibits a non-trivial geometry with an injective fingerprint map, the fork's sharp form fails: the calculus
-would have over-claimed the independence of the gravitational mode, and §5.2's architecture — the paper's center —
-would need revision. The prediction is deliberately cheap to attack: it requires no experiment, only a construction.
+The strongest lesson of the verification campaign is methodological. A finite computation can be exact and still answer
+the wrong typed question: aliases can corrupt a denominator; a branch witness can be mistaken for a structure property;
+a distance can be called a commutator; a null direction can be quotient gauge; or a solver budget can masquerade as an
+existence boundary. Version 2 retains results only after those distinctions are made explicit.
 
-**Prediction 2 (BMV).** This is the nearest-term test. If a BMV-class experiment detects gravitationally-induced
-entanglement between masses, the fork's reading of gravity as a classically-indexed record channel is refuted directly —
-gravity carries quantum phase coherently after all, and §5.2's architecture would need revision. If instead such
-experiments find decoherence without entanglement, the prediction holds and the inference "BMV-positive $\Rightarrow$
-quantized mediator" is, at minimum, shown to be premise-dependent. Because the experiments are funded and advancing, the
-framework's exposure here is on a decade rather than a cosmological timescale; we regard this as the single most useful
-near-term consequence of the work.
+The positive inventory remains useful. The repaired gauge carrier yields a branch-level selection under declared caps;
+the regular $SU(5)$ frame and its coset are explicit exact objects; the content quotient produces one selected orbit;
+the $N$-copy probe computes real generic ranks; the Boolean access lattice supplies an exact incomparability theorem;
+and the min-cut carrier supplies an exact LP dual certificate plus independent contracted-state evidence. None alone is
+a theory of nature, but each is a reproducible construction with a clear failure condition.
 
-**Prediction 3.** If proton decay is observed at Hyper-Kamiokande or a monopole is confirmed, the record-stability link
-is severed and the grounding of §4.5 collapses — taking with it the conditional selection of the SM gauge structure as
-this paper grounds it. That is the intended exposure: the framework's deepest SM result is hostage to a running
-experiment. Conversely, every year of proton-decay null results is consistent with a framework that — uniquely, to our
-knowledge — predicts *exact* stability for a structural reason tied to the existence of records.
+## Nearest upgrades
 
-## 10.2 Nearest upgrades (precisely-typed open problems)
+Three upgrades now dominate. First, the 13 residual P1 carriers need either a further exact reduction beyond the five named classes
+or a completeness theorem for an exact quotient class; independently, a contracted-state underdetermination
+example must be built if the question is to move beyond cuts. Second, BMV relevance requires a dynamical model deriving
+record formation, rather than stipulating a measure-and-record channel. Third, the record-stability program requires the
+physical invariant algebra and dynamics: UV-to-residual restriction ranks, Grassmann/EOM/syzygy relations, and a
+persistence criterion for candidate records.
 
-The program's open problems are not vague: each is a named lemma or audit with a stated success criterion. (i) The
-**L60$\to$L64** lemma — mass-closure charge-linking forbids a second neutral record channel — upgrades Prediction 3 to
-an all-structures law. (ii) The **F43 continuum audit** — tower-coherence, cofinality, residual-vanishing, completion —
-either licenses the continuum Einstein limit of the discrete consistency condition or names the exact obstruction.
-(iii) **Exact RT saturation** in the large-bond limit (the $0.729\to0.904\to0.941$ trend made a theorem with a rate).
-(iv) **Uniqueness of the grounding**: whether semiclassical co-sourcing is the only admissible warrant for the common
-carrier (warranted $\to$ forced). (v) A **third substrate** for the universality thesis — the atlas's remaining
-foreclosure edges (black-hole thermodynamics and singularities are the natural candidates) — turning $n=2$ into $n=3$
-with the genre-expectation again stated in advance.
+Other bounded upgrades remain worthwhile: repair the step43 final-carrier counts; replace F-008 summary-reading
+validators; establish or refute large-bond RT saturation with a rate; widen the representation and scalar windows; and
+generate a physically motivated class of measurement models rather than a two-exemplar taxonomy. A third substrate
+could test whether the vocabulary remains useful, but would not by itself prove universality.
 
-## 10.3 What kind of theory is this?
+## What kind of framework is this?
 
-It is worth being precise about the genre, because misreading it produces both over- and under-claims. The calculus is
-not a dynamical theory and competes with none: it has no Lagrangian, predicts no cross-sections, and cannot replace
-quantum field theory or general relativity. It is a **meta-theory of inter-layer structure** — of what can and cannot
-descend, compose, refine, and close between descriptions. Its natural outputs are demarcations ("this is observed-input,
-provably"), unifications ("these known results are one law"), forbidden rules ("this configuration cannot occur"), and
-— as Section 6 shows — falsifiable predictions where its structural laws collide with the commitments of dynamical
-programs. The three collisions exhibited here (with it-from-qubit, with the BMV-positive expectation, and with grand unification) are, we suggest, the
-beginning of a useful division of labor: dynamical theories propose mechanisms; a structural calculus rules on which
-mechanisms are architecturally possible — and is refutable when its rulings are wrong.
+The calculus is not dynamical: it has no Lagrangian, cross-sections, or continuum limit. Its present evidential role is a
+finite structural language for asking whether one readout factors through another, whether a candidate set closes, and
+which assumptions a recognition imports. The campaign shows both the value and the limit of that language. It can make
+hidden quotients and quantifiers visible; it cannot turn an unbuilt physical bridge into a prediction.
 
-## 10.4 An invitation
+## An invitation
 
-Appendix B contains everything needed to re-run every number in this paper deterministically, and Table T1 names what
-kills each claim. The fastest meaningful attacks: construct the injective-fingerprint geometry (defeats Prediction 1);
-exhibit a record-stable breaking structure in any lawful extension of the carrier (defeats Prediction 3 at
-enumeration level); prove or refute L60$\to$L64 (settles Prediction 3's theorem status); or run the grammar on a third
-substrate and watch whether its genre-expectation fails (attacks the thesis of §8). We would consider any of these
-outcomes — confirmation or refutation — a success of the method.
+The most useful independent attacks are now concrete: regenerate the repaired carrier under a different declared
+quotient; search the 13 P1 residuals for a sixth exact reduction; construct state-level equal-entanglement examples after
+physical quotienting; derive a gravitational record channel from dynamics; or compute the restriction and relation
+structure of the record invariant ring. A disagreement with any exported finite table is a direct reproducibility
+failure. A physical result addresses the open program only when the missing carrier-to-physics map is supplied.

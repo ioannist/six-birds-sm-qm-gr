@@ -1,80 +1,55 @@
-# 1. Introduction
+# Introduction
 
-Physics carries two foreclosures that have resisted a century of attack from within their own domains.
+This paper asks whether two structurally different problems—selection of Standard-Model structure and the relation
+between quantum and gravitational descriptions—can be studied with one finite grammar of quotients, closures,
+obstructions, and common refinements. The first problem includes the gauge algebra
+$\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus\mathfrak{u}(1)$, representations, generations, scales, and vacuum
+data [@Weinberg1967]. The second includes perturbative non-renormalizability and the absence of an experimentally
+confirmed quantum theory of gravity [@tHooftVeltman1974; @GoroffSagnotti1985]. A shared vocabulary is not itself a
+solution; it earns evidential weight only where explicit finite constructions and can-fail controls survive review.
 
-The first is *selection*: why **this** Standard Model? The gauge algebra $\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus
-\mathfrak{u}(1)$, the hypercharge pattern, three generations, the electroweak scale, this vacuum — none of it is forced
-by the internal consistency of quantum field theory, and the program that tried to derive it from above (grand
-unification, then the landscape) has not converged. The second is *composition*: why do quantum mechanics and general
-relativity — each spectacularly confirmed in its own regime — fail to combine? Quantizing gravity perturbatively fails
-(non-renormalizability); fifty years of candidate completions have produced no confirmed quantum theory of gravity.
+The Six Birds calculus is used here as such a vocabulary. It is a fixed catalog of structural operations describing
+one finite carrier through several readouts. Version 1 reported stronger conclusions. The post-publication campaign
+summarized in Appendix D found both genuine constructions and decisive
+defects. The certified Version-2 inventory is:
 
-These two problems are, on their face, structurally unrelated. One asks why a *contingent-looking* structure was
-selected; the other asks why two *law-like* structures do not compose. They are studied by different communities with
-different tools, and no standard framework treats them as instances of anything common.
+1. **A repaired Standard-Model selection construction** (Section 4). The published $11{,}990$-row carrier was
+   unsound. A conjugation-consistent replacement contains $1{,}066$ labelled genuinely-chiral structures, $419$
+   declared quotient orbits, or $195$ primitive-normalized orbits. Under the declared representation, charge, field,
+   and scalar caps, clean separation uniquely selects a *breaking-orientation branch class*: $2|3$ alone admits
+   clean branches, all of them $SU(2)$-active, while every $SU(4)$ branch is breaking. This is not bare-structure
+   uniqueness because every $2|3$ structure also has a breaking branch. A separate witness-independent theorem excludes
+   stable single-factor $SU(N)$ candidates in its stated toy grammar.
+1. **Constructed unification objects and a content-orbit result** (Section 4). Given the regular $SU(5)$ embedding,
+   the $\overline{\mathbf5}+\mathbf{10}$ package, and a weak-pair convention, exact matrices force a one-dimensional
+   hypercharge direction and yield $\sin^2\theta_W=3/8$ and $k_Y=5/3$. Generator action computes the $X/Y$
+   roles inside that frame. The ratios do not select the parent: Pati–Salam also gives $3/8$, and the published
+   product-parent $3/23$ control is withdrawn. Under the declared content quotient, the purported SM/alternative pair
+   is one orbit; content is unique only in this recognition template.
+1. **A conditional QM–GR access construction and finite-graph LP recognition** (Section 5). On an abstract Boolean
+   carrier, the declared QM and GR coordinate partitions are mutually non-factorizing. A separate 54-record
+   field-plus-background population realizes conditional, coarse readouts with explicit phase and potential controls;
+   this is finite provenance, not type or instance uniqueness. On a graph carrier, independently contracted-state
+   entropies, exact cuts, a fair GHZ control, and exported LP certificates support the corrected identity
+   $\operatorname{Area}(\mathrm{mincut})=\sum_e c_e y_e$, with $y_e$ edge shadow prices. The published claim that the
+   quantize/curve completions themselves do not commute is retracted.
+1. **Three open research programs** (Section 6). The published forcing claims for the three predictions do not survive. The open
+   questions are whether a cut-fingerprint kernel survives all exact graph quotients or occurs at state level; whether
+   a perfect-record gravitational channel is dynamically derived; and which bounded scalar-dressed invariant candidates
+   persist as physical records. Each section distinguishes a finite falsifiable statement, where one remains, from the
+   unsupported universal claim.
+1. **Narrow breadth results and two toy theorems** (Sections 4 and 7). The L* layer remains a coherent finite
+   construction with a one-layer and block-structure caveat. The single-factor result and the exact abstract
+   coordinate-partition incomparability result are genuine toy theorems. Other breadth claims retain only their stated
+   finite or contested grades; none establishes universality.
 
-**The claim of this paper** is that they *are* instances of something common, and that the common machinery is not a
-new dynamical theory but a **layer-agnostic structural calculus**: a fixed, finite catalog of laws about how one
-description of the world emerges from another — as a quotient that forgets detail, audited so that nothing is smuggled.
-Pointed at the two problems under an explicit anti-contamination protocol (Section 3), the same frozen calculus
-produces, on finite reproducible carriers:
+**Scope.** Nothing here derives nature-level Standard-Model parameters, solves quantum gravity, proves a
+universal composition law, or transfers from these carriers to physical systems. “Recognition” means that an exact
+known structure is instantiated after all named imports are declared. “Open program” means precisely that a former
+claim was not established and that the repository now isolates the missing construction.
 
-1. **For the Standard Model — a demarcation** (Section 4). A proof-grade separation of the structurally forced from the
-   irreducibly contingent: an unconditional exclusion of $\sim 99.3\%$ of genuinely-chiral gauge structures; a
-   conditional selection of $\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ on one declared, independently
-   grounded condition; non-circular recovery of the grand-unified embedding ratios $\sin^2\theta_W=3/8$ and $k_Y=5/3$;
-   and theorems proving the calculus is *blind* to the generation count and the detailed matter content — i.e., a proof
-   that those are observed-input, not derivable.
-
-2. **For QM–GR — a unification** (Section 5). The non-composition is located as a *route-mismatch* (two idempotent
-   completions, "quantize" and "curve", that provably fail to commute), and resolved by a *fork*: QM and GR are sibling
-   read-outs of one common refinement — the directed reduction of either to the other provably fails, while the
-   symmetric parent closes. Within this structure, the Ryu–Takayanagi relation between boundary entanglement and bulk
-   area is *recognized* — not assumed — as a special case of a single ledger/shadow-price duality (max-flow/min-cut as
-   linear-programming duality), a recovery confirmed by a separate adversarial review pass.
-
-3. **Three falsifiable, mainstream-contradicting predictions** (Section 6) — the paper's principal results:
-
-   > **Prediction 1 (contra strong it-from-qubit).** *Boundary entanglement does not determine bulk geometry.* The
-   > map from the complete boundary-entanglement fingerprint to the bulk geometry has a robust, finite-dimensional
-   > kernel: physically distinct geometries share identical entanglement data. Complete entanglement-based bulk
-   > reconstruction is therefore impossible. **Falsifier:** a non-trivial holographic/tensor-network geometry whose
-   > entanglement$\to$geometry map is injective.
-
-   > **Prediction 2 (contra quantized-mediator gravity; near-term).** *Gravity does not mediate entanglement.* The
-   > same fork forces the gravitational channel to be a classically-indexed *record* channel — it reads and records the
-   > geometry-visible configuration rather than coupling coherently to the phase mode. Two masses coupled through it
-   > **decohere without becoming entangled**. **Falsifier:** a confirmed BMV-type observation of gravitationally-induced
-   > entanglement between masses (tabletop, plausibly within the decade) — the most experimentally imminent of the three.
-
-   > **Prediction 3 (contra grand unification).** *Record-stability forbids proton decay and magnetic monopoles.* The
-   > capacity of a universe to bear stable records is structurally tied to baryon-number conservation: any
-   > record-bearing structure lies in the "clean" branch in which the $X/Y$-type coset that would mediate proton decay
-   > and monopoles is absent. **Falsifier:** an observed proton-decay event (e.g., at Hyper-Kamiokande) or a confirmed
-   > magnetic monopole — our universe manifestly bears records, so either observation breaks the predicted link.
-
-   In each case the *distinctive* content is structural and contrarian: prevailing programs assert, respectively, that
-   entanglement *builds* geometry, that gravity *will* entangle (BMV-positive), and that protons *do* decay. The
-   calculus, run honestly, forces the opposite in all three — and stakes a falsification condition on each. The three
-   are not independent stipulations: a single record/memory layer ties them at the grammar level (it grounds the gauge selection,
-   forbids the decay, and classicalizes the gravitational channel) — the kind of cross-domain structural tie the
-   calculus is distinctively able to expose (Section 8).
-
-4. **A universality datum** (Sections 7–8). The same defect/obstruction machinery also classifies Bell nonlocality,
-   black-hole information loss, and the cosmological constant — three further deep puzzles — each as a computed
-   forbidden-rule or demarcation. And across the two headline problems, the calculus produced *opposite genres of
-   result* (a demarcation; a unification) exactly where its own laws said it would, with that differential expectation
-   on record before the constructions were run.
-
-**What this paper is not.** We do not solve quantum gravity; we do not derive any measured low-energy constant; we make
-no claim of frame-transfer from the finite carriers to nature. Every landing in this paper carries an explicit grade
-(Section 2.3) and an explicit falsification condition (Section 9, Table T1). The honest statement of the contribution
-is: *a single frozen structural grammar, applied across physics' two deepest and most unrelated problems, produces
-foundational-grade structure on both and yields three falsifiable predictions* — and the place to attack it is Section 6.
-
-**Reader's map.** Section 2 is a self-contained primer on the calculus (no prior knowledge assumed). Section 3 states
-the construction-and-audit protocol — including the adversarial self-correction record that is, we argue, the reason
-the predictions deserve attention. Sections 4–5 present the two track results; Section 6 the predictions; Section 7 the
-breadth results; Section 8 the cross-track thesis; Section 9 the consolidated scope/limits and the claim-by-claim
-falsifiability table. Appendices give the formal calculus (A), full reproducibility data (B), the rejected-attempts
-audit trail (C), the adversarial-review record (D), and notation (E).
+**Reader's map.** Section 2 gives the calculus vocabulary; Section 3 the corrected audit method; Sections 4–5 the
+repaired track results; Section 6
+the three open programs; Section 7 the bounded breadth constructions; Section 8 the cross-cutting statement; and Section
+9 the consolidated scope table. Appendices contain formal definitions, reproducibility pointers and caveats, the audit
+trail, the Version-2 note and full review history, and notation.

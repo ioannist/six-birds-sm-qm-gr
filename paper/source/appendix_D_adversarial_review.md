@@ -1,61 +1,56 @@
-# Appendix D — adversarial review record
+# Adversarial review record
 
-Two QM–GR construction results were stress-tested in adversarial review packets (cover letters
-posing the sharpest objections we could state against ourselves; full artifacts; `SHA256SUMS`; offline re-run
-instructions), and both were **settled**. The SM construction core separately passed an adversarial review cycle. These
-cycles are part of the audit record; they are not journal peer review or independent replication. This
-appendix records the questions asked, the verdicts, and the one methodological exchange of independent interest.
+**Note on Version 2.** This version follows a systematic post-publication verification comprising 27
+adversarial review rounds and 20 repair or probe constructions, with machine-verifiable records under
+`review_2026/` in the repository. The review retracts the published route-mismatch non-commutation claim, the
+forcing claims behind all three predictions, the $N_{\rm gen}$-blindness theorem, the universal Born–area
+“one-ledger” claim, the product-parent $3/23$ control, and the linearized-Einstein leg; it also replaces the apparent
+$\Lambda$ background/$\kappa$ boundary with the finding that the boundary was a fixed-iteration solver artifact.
+The unsound $11{,}990$-row gauge carrier is replaced by convention-declared counts of $1{,}066$ labelled,
+$419$ declared-orbit, or $195$ primitive-normalized genuinely-chiral structures, and clean separation is restated
+as selection of a finite $(\text{structure},\text{breaking orientation})$ branch class rather than a bare structure.
+Several results are strengthened by explicit repair, including the branch-complete selection, exact $SU(5)$ generator
+construction, unique content orbit under the declared quotient, materialized mass-rank probe, conditional field-to-mode
+provenance, and corrected min-cut LP duality. The complete claim-by-claim mapping from Version 1 to the certified
+Version-2 status is `review_2026/CLAIMS_MAP.md`.
 
-## D.1 Bundle 1 — the ledger/shadow-price recognition of Ryu–Takayanagi (§5.4)
+The review history has two distinct phases. Neither is journal peer review or independent replication.
 
-**Question put to the review pass.** Is `area = shadow-price(entanglement)` a genuine, non-circular recognition landing —
-or a relabeling? Adversarial checklist included: is the saturable bound an identity in disguise; is the geometric side
-secretly a function of the state; is the claimed subsumption of RT under the currency/constraint law fair to the
-source material?
+## Earlier external missing-layer gate
 
-**Disposition.** Settled, two rounds. Round 1 returned required fixes (packaging defects; one scope-tightening of the
-first-law step — accepted and applied by reconstruction, not by prose). Round 2: **SETTLED — genuine recognition
-landing**; the review pass checked the framework source text and confirmed the subsumption claim is fair
-("saying max-flow/min-cut/bit-thread RT instantiates the currency-constraint/shadow-price schema is fair"), with the
-stated non-claim boundary (recognizes/organizes RT; does not derive holography, $1/4G$, Einstein equations, or
-frame-transfer) endorsed as accurate.
+Version 1 described the external gate as settled. That was incorrect. The surviving record is:
 
-## D.2 Bundle 2 — the common-carrier premise and the fork (§5.2–5.3)
+| round | recorded disposition | consequence |
+| --- | --- | --- |
+| v7 | approve with changes | approval was conditional; specified changes remained |
+| v8 | still needs work | the gate explicitly remained open |
+| v9 | unanswered/blank | no final approval was issued |
 
-**Question put to the review pass.** Do Steps 47–48 *answer* the common-carrier objection or merely relocate it? Is the
-co-sourcing warrant load-bearing or circular? Is the access structure of the ladder test fair to emergent-spacetime
-positions, or baked in?
+Accordingly, the missing-layer atlas is unfit as independent preregistration or blinding evidence. Its cards preserve a
+historical research record, but their grades must not be used to override the certified claims map.
 
-**Disposition.** Two rounds. Round 1: the fork graded *genuine-conditional* (with a scope-naming request we adopted —
-the test covers weak-RT ladders, not strong reconstruction); the premise graded "honest but insufficient — it
-relocates the objection." Round 2 (after a reconstruction pass that applied every precision fix while **declining** the
-criterion shift — see D.3): **SETTLED — honest recognition source**; the review pass withdrew "insufficient"
-when the result is scored by the framework's own landing taxonomy, writing that demanding an internal derivation of an
-inter-layer premise "would indeed apply the wrong criterion," and confirmed: no number moved, the warrant extension is
-genuine, conditionality consistently held.
+## The 2026 post-publication campaign
 
-## D.3 The methodological exchange: is a GROUND landing a landing?
+The present correction follows 27 adversarial review rounds and 20 repair or probe constructions completed on
+2026-08-26. A manager reproduced review findings; a separate read-only reviewer assessed repairs; implementation was
+kept commit-gated. The campaign inspected every load-bearing paper claim, then required repairs to construct missing
+objects rather than merely relabel outcomes. Artifacts under `review_2026/` contain literal dependency pins,
+schemas, tables, findings notes, and validators where feasible.
 
-The substantive disagreement was about the *grading criterion*, not the construction. The initial review position
-— a premise not derived is a premise not settled — is the default of reductionist practice. The program's position,
-which the review ultimately accepted: for an *inter-layer* premise, the internal-derivation route is foreclosed in
-principle (that is what makes it inter-layer); the honest landing mode is **GROUND** — relocation up the tower to a
-*named, warranted, independently-checkable* source, carried with explicit source-warrant and theorem-strength caveats.
-The criterion was applied consistently across both bundles (the same mode grounds the SM's clean-separation condition,
-§4.5), and consistency — not rhetoric — is what settled the exchange. We record this because referees of this paper
-will face the same choice of criterion, and the review record shows it can be resolved by inspection of the taxonomy
-rather than by sympathy with the framework.
+The campaign produced favorable strengthened results as well as retractions. Examples of strengthened constructions are
+the conjugation-consistent branch carrier, exact $SU(5)$ generator action, unique content orbit, real generic mass
+ranks, field-to-mode provenance, and explicit min-cut LP duality. Examples of decisive negative findings are the commuting
+published route pair, quotient-gauge P1 kernel, token-sensitive record implication, failed honest linear response,
+non-shared Born/area composition, and solver-artifact F50 boundary.
 
-## D.4 The SM track review
+The final authority for Version 2 is `review_2026/CLAIMS_MAP.md`, revision 3, marked CERTIFIED after rounds 26
+and 27. It distinguishes KEEP, RESTATE, RETRACT, and OPEN-PROGRAM claims and names every load-bearing condition. This
+paper applies that map at each claim site. The campaign is a completed adversarial pass for this release; it is not a
+claim that the framework or paper has been independently validated.
 
-The SM selection-layer core (the neutral carrier, the token-blind selection, the closure chain) passed adversarial review
-with verdict *coherent finite construction* (sound-with-fixes; all fixes applied by reconstruction and re-validated).
-The review confirmed: the can-fail controls have teeth, the adjudication is not label-rigged, and no hidden
-cross-layer derivation is present. Notably, an early "candidate-law generation" claim was demoted *during* this cycle
-(a smuggled prior — Appendix C.2), which we count as the review system working as intended.
+## Audit interpretation
 
-## D.5 Status of the present paper's predictions
-
-The three §6 predictions postdate the reviewed bundles and have **not** yet received independent review; they have passed
-the internal protocol of §3 (including independent re-derivation) and are published here precisely to invite that
-review. The falsifiers in Table T1 are the review questions we would pose.
+The honest methodological conclusion is mixed. The repository contains a real self-correction trail and several
+machine-verifiable repairs. It also contains historical validators that regenerate in place, validate stored summaries,
+or used a tautological pin. Passing the repository's validators is therefore necessary evidence of consistency, not a
+tamper-evident freeze or a substitute for semantic review. Appendix B states the operational caveats for reruns.

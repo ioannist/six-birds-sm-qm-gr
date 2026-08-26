@@ -1,53 +1,61 @@
-# 9. Scope, limits, and falsifiability
+# Scope, limits, and testability
 
-This section collects every bound in one place, then gives the claim-by-claim falsifiability table. These are scope
-statements, stated flat; none retracts a result.
+The repaired results are finite and conditional. A validator can falsify a reported table or exact identity; that does
+not make a carrier-to-nature extrapolation valid. Conversely, a physical observation does not falsify a forcing theorem
+that has been withdrawn. Table \ref{tab:certified-scope} collects the certified statements and their sharpest bounds.
 
-## 9.1 The bounds
+| statement | grade | bound or direct falsifier |
+| --- | --- | --- |
+| L* selection layer | coherent finite construction | one-layer hypothesis and step9 block-structure caveat; a constructed admissible selector outside the typed layer tests it |
+| repaired gauge census | finite enumeration | exact alphabets/caps and quotient convention; independent regeneration can falsify counts $1{,}066/419/195$ and survivor counts $52/24/24$ |
+| branch selection | conditional finite selection | singleton/two-scalar caps; universal-over-branches fails, existential clean branch class is unique to $2\|3$ and $SU(2)$-active |
+| single-factor result | genuine toy theorem | stated grammar only; witness-independent, but historical step61 validator retains F-008 weakness |
+| $SU(5)$ ratios and coset | exact conditional construction | regular embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair convention; not a parent selector or low-energy prediction |
+| content orbit and mass shadow | recognition-under-template | declared quotient and renormalizable one-scalar grammar; $N=1,\ldots,4$ only |
+| coordinate incomparability | exact abstract-carrier theorem | 16 coordinate-subset partitions, 55/120 incomparable pairs; physical provenance is a separate 54-record conditional construction |
+| min-cut LP identity | finite-graph recognition | unique-cut chambers, exported primal/dual matrices, exact slackness and sensitivity checks |
+| contracted-state RT evidence | finite sample | bound, $D=2,3,4$ trend, and MMI/GHZ control; no convergence or equality |
+| F50 backgrounds | sample-bounded numerics | every sampled background/$\kappa$ has a fixed point; stability boundary is criterion-dependent |
+| P1 quotient search | open program | 378 weighted carriers, five exact classes, declared three-round presentation search; 13 residuals are not certified non-gauge |
+| BMV result | conditional LOCC statement | null only for an assumed perfect-record channel; record formation unbuilt |
+| record stability | open program | bounded monomial census is token-definition-sensitive; physical invariant algebra and dynamics unbuilt |
+| G2 singularity row | contested finite-toy grade | existential regularized example; finiteness comes from the saturating rule, not physical singularity resolution |
 
-1. **Finite toys; no frame-transfer.** Every computation lives on a declared finite carrier. The carriers *predict*
-   and are *falsifiable*, but nothing here is proven about nature. The three predictions of §6 are exactly that —
-   predictions; their status in nature is for experiment and for richer constructions to decide.
-2. **Conditional landings are conditional.** Every GROUND/SELECT result rests on a named source: clean-separation on
-   record-stability ("why must a universe bear records?" is the review-judged top of that tower); the QM–GR fork on
-   the co-sourcing warrant (which reaches matter-sourced geometry, not the free gravitational sector). The conditions
-   are declared, audited, and carried with the results.
-3. **Enumeration-strength where stated.** The record-stability implication is $0/11{,}990$ with bounded outside probes
-   — not yet an all-structures theorem; the open lemma (L60$\to$L64: mass-closure charge-linking forbids a second
-   neutral record channel in leak-positive substrate closers) is precisely specified and would upgrade Prediction 3
-   from enumeration-strength to a structural law. Similar precisely-typed upgrades are open for: exact RT saturation in
-   the large-bond limit; the continuum (F43) limit of the discrete Einstein condition; uniqueness of the co-sourcing
-   grounding; the all-co-readout form of the monogamy forcing.
-4. **$n=2$ on universality.** Section 8's thesis has exactly two substrates behind it.
-5. **Adversarially reviewed, not independently replicated.** Two results settled under adversarial review cycles; no
-   independent group has yet re-run the constructions (Appendix B is written to make that easy).
-6. **What is *not* claimed anywhere:** a derivation of any measured constant; a solution of quantum gravity; a proof of
-   physical proton stability; a universal exact-six reduction; frame-transfer.
+## Withdrawn statements
 
-## 9.2 Table T1 — every headline claim, its grade, and what kills it
+The following are not retained as claims: route non-commutation for the published completions; an exact explanation of
+why quantizing gravity fails; universal or adversarial uniqueness of the QM–GR parent; the computational GROUND landing
+of a common carrier; a discrete linearized-Einstein match; a universal shared Born–area composition law; unconditional
+$99.3%$ exclusion; bare-structure clean selection; record-stability grounding; the $N_{\rm gen}$-blindness theorem;
+the content-blindness comparison; the F24 architecture verdict; a stable $3.96%$ naturalness fraction; the
+product-parent $3/23$ control; the three forcing predictions; the F50 $15/18$ split and $\kappa$ existence boundary;
+and E032 as an extension-of-QM theorem. Cluster-b's E021 $\lambda$ “adjudication” is archived exploration: its
+contraction target and measure center are imported, so it is not load-bearing evidence.
 
-| # | claim | grade | what would falsify / defeat it |
-|---|---|---|---|
-| 1 | $\sim99.3\%$ chiral-gauge exclusion → $\{2|3,\ SU(4)\}$ | COMPUTE (unconditional, in-carrier) | a neutral-closure error: a structure passing all gates outside the family (re-run Appendix B.1) |
-| 2 | SM gauge algebra selected on clean-separation | SELECT (conditional) | a clean-separated competitor in-window; or the grounding (row 3) failing |
-| 3 | clean-separation grounded in record-stability | GROUND, enumeration-strength | **one** record-stable structure with $\Delta_{\mathrm{fact}}\neq\varnothing$ (in-carrier or in any lawful extension); refutation of L60→L64 closes the door the other way |
-| 4 | $\sin^2\theta_W=3/8$, $k_Y=5/3$ as forced embedding ratios | GROUND (minimal-simple source) | showing the trace ratios depend on an undeclared input; the product control ($3/23$) failing to discriminate |
-| 5 | $N_{\mathrm{gen}}$-blindness, all $N$ | PROVE-BLIND (theorem) | an $N$-sensitive gate in the frozen chain for an even-doublet anomaly-free unit |
-| 6 | QM–GR fork (no weak-RT ladder) | COMPUTE (conditional on premise) | a lawful factorization $q_{\mathrm{GR}}=\phi\circ q_{\mathrm{QM}}$ on the carrier; the nested control failing to flip |
-| 7 | common-carrier premise grounded in co-sourcing | GROUND (review-settled) | the warrant shown circular (co-sourcing presupposing the carrier); a complementary pair admitting a joint quotient |
-| 8 | RT = ledger/shadow-price duality | RECOGNITION (review-settled) | exact (machine-$\epsilon$) saturation at finite $D$ — the tautology signature; or geometric side tracking the state spectrum under reseeding |
-| 9 | **Prediction 1: entanglement $\nRightarrow$ geometry** | FORBIDDEN-RULE (toy) | a non-trivial holographic geometry with injective fingerprint map (zero kernel, no two-sided invisible deformation) |
-| 10 | **Prediction 2: gravity does not entangle (BMV-null)** | FORBIDDEN-RULE (toy; analytically verified) | a confirmed BMV-type detection of gravitationally-induced entanglement; or the coherent-mediator control failing to entangle |
-| 11 | **Prediction 3: records forbid proton decay & monopoles** | FORBIDDEN-RULE / DEMARCATION (enumeration-strength) | an observed proton decay or magnetic monopole; or one record-stable breaking structure |
-| 12 | Bell: carrier $\neq$ local hidden variable | FORBIDDEN-RULE (recovered Bell + reconciliation) | an admissible joint quotient for complementary accesses; an LHV table reproducing the quantum CHSH |
-| 13 | BH information: loss is readout-relative | FORBIDDEN-RULE (static toy) | a gauge-invariant interior observable unrecoverable from the full boundary on the full-rank stratum |
-| 14 | $\Lambda$: no in-layer value-law | DEMARCATION (F50 bounded-moduli) | the frozen closure chain selecting a singleton background |
-| 15 | one-grammar thesis | meta-claim, $n=2$ | a third substrate where the grammar's own genre-expectation fails; or evidence of cross-track contamination |
-| 16 | measurement: $D$-vs-$\Sigma_f$ discriminator | structural prediction | a community-accepted single-outcome theory touching neither $D$ nor $\Sigma_f$ |
+## Repository and atlas qualifications
 
-## 9.3 Why the honesty is load-bearing
+The repository is not uniformly self-verifying. The post-publication repairs generally use literal pins and in-memory
+byte comparisons, but historical limitations remain:
 
-A framework this general invites the Pauli verdict ("not even wrong"). The table above is the rebuttal format: each
-claim is either graded as conditional/toy (and says what discharges the condition), or stakes an observation that kills
-it. Rows 9, 10, and 11 are the paper's exposure to experiment — with row 10 (BMV) the nearest-term; rows 3, 6, 7, 8 are
-its exposure to construction; row 15 is its exposure to its own program. We have tried to make every row attackable.
+- the step69 historical data pin was tautological; a byte-identical rebuild mitigates but does not replace a literal
+   historical pin;
+- some `--self` validators regenerate artifacts in place, so complete sweeps must run in scratch copies; one
+   parallel-pool race was observed;
+- steps 43, 44, and 61 and analogues validate stored audit summaries rather than rebuilding all load-bearing work;
+   step61's audit gates include literal booleans;
+- P1 v3 has an in-memory byte-comparing validator, but its irreducibility statement is explicitly relative to five
+   named exact reductions and the declared three-round $\Delta$–Y/Y–$\Delta$ search.
+
+The missing-layer atlas is **unfit** as independent preregistration or blinding evidence: card grades exceed the
+certified claims and the external gate never gave final approval. The retrodiction atlas is
+**fit-with-findings**: its recovery/reframe grades are honest and it makes no new-retrodiction claim. The unification
+atlas is **scientifically fit-with-findings but mechanically incomplete**; its tension ledger is useful, while 19
+of 34 candidates have only explicitly typed missing-card coverage and require completed cards before public-support use.
+
+## What can be tested now
+
+The most direct tests are computational: regenerate the repaired carrier and branch table; reconstruct the exact
+$SU(5)$ commutant and coset action; materialize the $N$-copy mass matrices; verify the coordinate-partition lattice;
+re-solve the min-cut primal and dual; repeat the adaptive F50 grid; and re-enumerate the P1 five-class search. The three
+physical questions in Section 6 remain research programs rather than predictions of this paper. Their eventual answers
+may disagree with the conjectural motivations here without contradicting any certified Version-2 theorem.

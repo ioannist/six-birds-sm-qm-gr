@@ -27,8 +27,9 @@ For maps \(\pi_0:S\to O_0\), \(\pi_1:S\to O_1\) on a finite carrier:
 \Delta_{\mathrm{fact}}\neq\varnothing \iff \nexists\,\phi:\ \pi_1 = \phi\circ\pi_0 .
 \]
 
-Used as: the \(X/Y\) coset (§4: witnesses of the clean-separation defect); GUT\(\leftrightarrow\)SM non-relabeling
-(\(\Delta_{\mathrm{fact}}(\mathrm{SM},\mathrm{GUT})=15\), reverse \(=0\)); the QM--GR ladder defect (\(8\) witnesses).
+Used as: branch-specific clean-separation classification in §4 and the abstract QM--GR coordinate-partition defect
+(eight witnesses) in §5. Generator action separately establishes the \(X/Y\) roles inside the constructed \(SU(5)\)
+frame; these applications are not one physical object.
 
 \hypertarget{non-commuting-completions-fiii-thms-910}{%
 \subsection{Non-commuting completions (FIII Thms 9--10)}\label{non-commuting-completions-fiii-thms-910}}
@@ -36,8 +37,8 @@ Used as: the \(X/Y\) coset (§4: witnesses of the clean-separation defect); GUT\
 There exist idempotents \(E_1,E_2\) on a finite carrier with \(E_1E_2\neq E_2E_1\); the route-mismatch defect
 \(\Delta_3^{\mathrm{comp}}(E_1,E_2)=\{c: E_1E_2(c)\neq E_2E_1(c)\}\) is non-empty iff they fail to commute. Minimal
 witness: \(C=\mathcal P(\{a,b,c\})\), \(E_1(S)=S\cup\{b\}\) if \(a\in S\) else \(S\); \(E_2(S)=S\cup\{c\}\) if \(b\in S\) else \(S\);
-then \(E_1E_2(\{a\})=\{a,b\}\neq\{a,b,c\}=E_2E_1(\{a\})\). Reading: route mismatch is a real typed defect even when each
-completion is individually exact --- the calculus's typing of non-renormalizability (§5.1).
+then \(E_1E_2(\{a\})=\{a,b\}\neq\{a,b,c\}=E_2E_1(\{a\})\). This is a mathematical example only. The two
+conditional-mean completions published for QM--GR commute exactly, so no link to non-renormalizability is established.
 
 \hypertarget{the-six-primitives-and-the-no-algebra-theorem}{%
 \subsection{The six primitives and the no-algebra theorem}\label{the-six-primitives-and-the-no-algebra-theorem}}
@@ -142,7 +143,8 @@ parent \(Q_U\) with commuting squares \(\pi_A\circ q_U = q_A\circ\iota_A\), \(\p
 source-warrant + theorem-strength caveats); RECOGNITION (known result reproduced as a law-instance, non-circularly);
 FORBIDDEN-RULE/DEMARCATION (computed exclusion/classification with can-fail control).
 
-\textbf{Gates} (all mechanical; validators enforce): \emph{anti-tautology} --- target not definitionally equal to its evidence;
+Intended audit gates; mechanical where implemented. Validator coverage is heterogeneous and carries the exceptions in Appendix B.
+\emph{Anti-tautology} --- target not definitionally equal to its evidence;
 \emph{anti-circularity} --- each hypothesis independently satisfiable by a conclusion-violating structure (exhibited);
 \emph{frozen-machinery} --- imports SHA-256-pinned, no retuning; \emph{can-fail control} --- a configuration on which the claim fails;
 \emph{no-overclaim} --- artifact text checked against a blocklist; \emph{anti-contamination} (cross-track) --- substrate-foreign
@@ -154,21 +156,21 @@ tokens fail the build.
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Embedding ratios} (§4.4): over one SM generation,
-  \(\operatorname{Tr}T_3^2 = 3\!\cdot\!2\!\cdot\!\tfrac14 + 2\!\cdot\!\tfrac14\!\cdot\!2 = 2\) (quark + lepton doublets),
-  \(\operatorname{Tr}Q^2 = \tfrac83 + \tfrac23 + 2 = \tfrac{16}{3}\), hence \(\sin^2\theta_W = 3/8\); hypercharge
-  normalization \(k_Y = 5/3\) from \(\operatorname{Tr}Y^2 = 5/6\). Control: a non-simple product parent yields \(3/23\).
+  \textbf{Embedding ratios} (§4.4): the exact regular-\(SU(5)\) construction derives the one-dimensional hypercharge
+  direction and decomposes \(\overline{\mathbf5}+\mathbf{10}\). Under the weak-pair convention it gives
+  \(\operatorname{Tr}T_3^2=2\), \(\operatorname{Tr}Q^2=16/3\), hence \(\sin^2\theta_W=3/8\), and \(k_Y=5/3\).
+  Pati--Salam also gives \(3/8\); the published product-parent \(3/23\) control is unsupported and withdrawn.
 \item
-  \textbf{RT/shadow price} (§5.4): for entanglement flow with capacities \(b\), strong duality gives
-  \(\max(\text{flow}) = \min(\text{cut})\) and the cut value is the dual optimum --- the shadow price
-  \(\lambda = \partial \Phi^*/\partial b\) of the capacity constraints; ``area'' is that price.
+  \textbf{RT/LP duality} (§5.4): for capacities \(c_e\), exact strong duality gives
+  \(\operatorname{Area}(\min\mathrm{cut})=\operatorname{OPT}_{\rm dual}=\sum_e c_e y_e\). The \(y_e\), not the
+  optimum, are the per-edge shadow prices \(\partial F^*/\partial c_e\) in a unique-cut chamber.
 \item
   \textbf{Monogamy} (§5.4, §6.1): \(I_3 \le 0\) for min-cut-realizable entropy vectors; GHZ\(_4\) has \(I_3 = +\log 2\).
 \item
   \textbf{CHSH} (§7.1): local bound \(\max_{\lambda\in\{\pm1\}^4} |E_{00}+E_{01}+E_{10}-E_{11}| = 2\) (16-strategy
   enumeration); Bell state with \(a_0=Z, a_1=X, b_{0,1}=(Z\pm X)/\sqrt2\) gives \(2\sqrt2\).
 \item
-  \textbf{Prediction kernels} (§6): \(J = \partial\mathcal E/\partial w\) (central differences, non-degenerate base);
-  \(\dim\ker J = 5\); clean-shadow edges = \(\{e: \mathcal E(w \pm \delta\,\hat e) = \mathcal E(w)\ \text{exactly},\
-  \delta \in [0.05, 0.15]\}\), count \(2\) per seed.
+  \textbf{Active-cut quotient search} (§6): exact \(0/1\) active-cut incidence matrices replace the published Jacobian
+  claim. After five named reduction classes and a declared three-round presentation search, 365/378 weighted carriers
+  reach full rank and 13 remain unclassified (deficiencies \(1^8,2^4,3^1\)).
 \end{itemize}
