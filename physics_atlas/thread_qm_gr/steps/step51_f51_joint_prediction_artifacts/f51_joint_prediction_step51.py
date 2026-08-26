@@ -13,6 +13,7 @@ import csv
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -20,14 +21,15 @@ import numpy as np
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = Path("/home/repos/six-birds-papers")
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 THREAD_ROOT = ARTIFACT_DIR.parents[1]
 STEP42_DIR = THREAD_ROOT / "steps" / "step42_faithful_holographic_rt_enrichment_artifacts"
 STEP44_DIR = THREAD_ROOT / "steps" / "step44_holographic_mmi_entropy_cone_artifacts"
 STEP47_DIR = THREAD_ROOT / "steps" / "step47_common_carrier_door_test_artifacts"
 STEP48_DIR = THREAD_ROOT / "steps" / "step48_ladder_vs_fork_resolution_artifacts"
 STEP50_DIR = THREAD_ROOT / "steps" / "step50_born_area_one_fiber_volume_ledger_artifacts"
-FOUNDATIONS_IV = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+CORPUS_ROOT_ENV = "SIX_BIRDS_PAPERS_ROOT"
+FOUNDATIONS_IV_NAME = "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
 TOL = 1e-10
 GEOMETRIC_DUAL_REL_TOL = 0.03
 GEOMETRY_BOND_DIM = 3
@@ -365,7 +367,19 @@ def anti_circularity_rows(schema: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
-def frozen_machinery_rows() -> list[dict[str, Any]]:
+def require_corpus_files(names: list[str]) -> list[Path]:
+    root_value = os.environ.get(CORPUS_ROOT_ENV)
+    if not root_value:
+        raise SystemExit(f"{CORPUS_ROOT_ENV} is required; missing corpus file(s): {', '.join(names)}")
+    root = Path(root_value).expanduser().resolve()
+    paths = [root / name for name in names]
+    for path in paths:
+        if not path.is_file():
+            raise SystemExit(f"{CORPUS_ROOT_ENV} missing required corpus file: {path}")
+    return paths
+
+
+def frozen_machinery_rows(foundations_iv: Path) -> list[dict[str, Any]]:
     sources = [
         STEP42_DIR / "faithful_holographic_rt_enrichment_step42.py",
         STEP44_DIR / "holographic_mmi_entropy_cone_step44.py",
@@ -375,9 +389,8 @@ def frozen_machinery_rows() -> list[dict[str, Any]]:
         STEP48_DIR / "step48_schema.json",
         STEP50_DIR / "born_area_one_ledger_step50.py",
         STEP50_DIR / "step50_schema.json",
-        FOUNDATIONS_IV,
     ]
-    return [
+    rows = [
         {
             "source": repo_rel(path),
             "sha256": sha256(path),
@@ -385,6 +398,14 @@ def frozen_machinery_rows() -> list[dict[str, Any]]:
         }
         for path in sources
     ]
+    rows.append(
+        {
+            "source": foundations_iv.name,
+            "sha256": sha256(foundations_iv),
+            "imported_or_read_verbatim": True,
+        }
+    )
+    return rows
 
 
 def write_summary(schema: dict[str, Any], f51_rows: list[dict[str, Any]], compatibility: list[dict[str, Any]], sets: list[dict[str, Any]]) -> None:
@@ -568,6 +589,7 @@ def write_mode_packet() -> None:
 
 
 def write_outputs() -> None:
+    foundations_iv = require_corpus_files([FOUNDATIONS_IV_NAME])[0]
     step44 = import_step44()
     step48 = import_step48()
     step47_schema = load_json(STEP47_DIR / "step47_schema.json")
@@ -632,7 +654,7 @@ def write_outputs() -> None:
     write_csv(ARTIFACT_DIR / "child_free_witnesses_step51.csv", child_rows)
     write_csv(ARTIFACT_DIR / "broken_compatibility_control_step51.csv", broken_rows)
     write_csv(ARTIFACT_DIR / "anti_circularity_step51.csv", anti_circularity_rows(schema))
-    write_csv(ARTIFACT_DIR / "frozen_machinery_step51.csv", frozen_machinery_rows())
+    write_csv(ARTIFACT_DIR / "frozen_machinery_step51.csv", frozen_machinery_rows(foundations_iv))
     (ARTIFACT_DIR / "step51_schema.json").write_text(json.dumps(schema, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     write_summary(schema, f51_rows, compatibility, admissible_sets)
     write_nonclaim()

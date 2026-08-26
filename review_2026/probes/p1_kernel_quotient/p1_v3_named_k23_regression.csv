@@ -1,0 +1,6 @@
+carrier,seed,move_index,move,object,region_count,all_region_values_preserved,unique_before,unique_after_move,minimum_margin_after_move,rank_recomputed_after_move,residual_deficiency_after_move
+K23_bipartite__b6__leaf_offset0,31,0,inseparable_vertex_contraction_parallel_sum,I1+I2,62,True,True,True,0.0399999676074367,8,3
+K23_bipartite__b6__leaf_offset0,31,1,y_delta,I4,62,True,True,True,0.0399999676074367,8,2
+K23_bipartite__b6__leaf_offset0,31,2,delta_y,<I1+I2>+I0+I3,62,True,True,True,0.0399999676074367,8,2
+K23_bipartite__b6__leaf_offset0,31,3,series_bivalent,I3,62,True,True,True,0.0399999676074367,8,1
+K23_bipartite__b6__leaf_offset0,31,final,closure_result,named_regression,62,True,True,True,0.0399999676074367,8,1

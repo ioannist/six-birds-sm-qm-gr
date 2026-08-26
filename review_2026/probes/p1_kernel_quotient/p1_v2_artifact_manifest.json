@@ -1,0 +1,15 @@
+{
+  "DESIGN_v2.md": "90694df007e3d2819bf2e2c30aae8a31bc5ef97d665e41179fe56b5c63caa5e8",
+  "FINDINGS_v2.md": "c29dad9a4e14c2999da3d231d55023f20c6ca8a242538a985c0ffec96beda42a",
+  "p1_v2_candidate_active_cuts.csv": "948e02c7d851fda994467e4ac75029906c7e3ec701547eb95587c15d6a8fb5e6",
+  "p1_v2_candidate_dependencies.csv": "b67e09e4e1ad67a6dd6e0fa7421759fa3b560eae29ea93746f9c24ea398ffbe6",
+  "p1_v2_candidate_edges.csv": "bf7eb68f62eab9f3304e342a1d59018a7ee65b7db88f148821e647f0bff3ce11",
+  "p1_v2_candidate_finite_checks.csv": "c778679d17e553c41d0fb01b770c0ee501441b0197b42fe92fdaaf89a0df40a8",
+  "p1_v2_candidate_irreducibility.csv": "229ff52ab58521b7bd96daec910f34119620099ac260147d53b4b062edd8ee87",
+  "p1_v2_candidate_summary.csv": "2fcb8e84e2f4b17ff81a43477576a3347254792b90b819597290b8619b36b6a2",
+  "p1_v2_dependency_pin.csv": "daf41c38d2eebd804cde4caddce43ccf1173bbb17e35e092dc10557ef96c08da",
+  "p1_v2_machinery_regressions.csv": "f587504303e7ae2ef0a77dc79e5eb947f1032475c57b0a346de19375209e6439",
+  "p1_v2_schema.json": "3f2858a01052a92cd5802200035d561352310f7c39cf89c5769bf2f01bb2c7be",
+  "p1_v2_search_cases.csv": "e503cea0f9e3a7e85ea08f446ffb47d57cc6be6199ee245925c34e372cb64258",
+  "p1_v2_search_census.csv": "2cd3c2f4c95c7e077ed9c8a16c960be3c6220c301b017e50e0e6b6e3f708685d"
+}

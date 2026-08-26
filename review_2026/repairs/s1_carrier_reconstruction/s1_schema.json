@@ -1,0 +1,199 @@
+{
+  "artifact_sha256": {
+    "s1_final_family.csv": "14e213d4e1f47b520107843d0c2a04535d4f87af6fc6eb4fdc4602419be7cc73",
+    "s1_old_vs_new.csv": "15d85174a6754ef94f29264805574fbba1dc78916c4164981036ea1ebaa30d8e",
+    "s1_representation_self_test.csv": "29c52a83b3e46345aedeacf86defe5a269aa8b16ce819ad325c9ea574df56206",
+    "s1_stage_flow.csv": "0c2de3537ddb67cf0380e2b42fb2fcbfbf72c6b62de12bfad5bed3853bb7151c",
+    "s1_survivor_families.csv": "0bb3be56b60be603e449146317b8c3c325943a621b0946ecf3158568d0c18d9b"
+  },
+  "canonical_representations": {
+    "2": [
+      "singlet",
+      "fund",
+      "sym2"
+    ],
+    "3": [
+      "singlet",
+      "fund",
+      "antifund",
+      "sym2",
+      "conj_sym2"
+    ],
+    "4": [
+      "singlet",
+      "fund",
+      "antifund",
+      "sym2",
+      "conj_sym2",
+      "antisym2"
+    ]
+  },
+  "conclusion": {
+    "clean_separation_families": [
+      "2|3"
+    ],
+    "coset_counts_by_structure": {
+      "2|3": [
+        0
+      ],
+      "4": [
+        6
+      ]
+    },
+    "higher_layer_families": [
+      "2|3",
+      "4"
+    ],
+    "six_vs_zero_survives": true,
+    "step38_step41_faithful": true,
+    "target_passes_by_stage": {
+      "atomic_packaging": true,
+      "chirality_faithfulness": true,
+      "clean_separation": true,
+      "closure_consistency": true,
+      "genuinely_chiral": true,
+      "higher_layer_mass_closure_proxy": true
+    },
+    "target_passes_clean_separation": true,
+    "two_three_and_su4_to_clean_two_three_survives": true
+  },
+  "enumeration_diagnostics": {
+    "2": {
+      "anomaly_closed_multisets": 341,
+      "genuinely_chiral": 0,
+      "vectorlike_excluded": 341
+    },
+    "2|2": {
+      "anomaly_closed_multisets": 2833,
+      "genuinely_chiral": 26,
+      "vectorlike_excluded": 2807
+    },
+    "2|3": {
+      "anomaly_closed_multisets": 2859,
+      "genuinely_chiral": 208,
+      "vectorlike_excluded": 2651
+    },
+    "2|4": {
+      "anomaly_closed_multisets": 2044,
+      "genuinely_chiral": 120,
+      "vectorlike_excluded": 1924
+    },
+    "3": {
+      "anomaly_closed_multisets": 465,
+      "genuinely_chiral": 60,
+      "vectorlike_excluded": 405
+    },
+    "3|3": {
+      "anomaly_closed_multisets": 1394,
+      "genuinely_chiral": 120,
+      "vectorlike_excluded": 1274
+    },
+    "3|4": {
+      "anomaly_closed_multisets": 2275,
+      "genuinely_chiral": 206,
+      "vectorlike_excluded": 2069
+    },
+    "4": {
+      "anomaly_closed_multisets": 637,
+      "genuinely_chiral": 86,
+      "vectorlike_excluded": 551
+    },
+    "4|4": {
+      "anomaly_closed_multisets": 2739,
+      "genuinely_chiral": 240,
+      "vectorlike_excluded": 2499
+    }
+  },
+  "experiment": "S1-REPAIR-1 sound carrier reconstruction",
+  "headline": {
+    "published_chirality_faithful": 80,
+    "published_corrected_chiral_carrier": 11990,
+    "reconstructed_chirality_faithful": 52,
+    "reconstructed_genuinely_chiral_carrier": 1066,
+    "sound_chiral_to_faithful_exclusion_percent": "95.121951"
+  },
+  "implementation_sha256": {
+    "DESIGN.md": "9b18a197683d07be4f83da13641e339f600f625d76ac5fc411843e90fc7bcfc4",
+    "carrier_chain.py": "ab7a07cd82d8aa82c19476177ed3b99f9ca6d8af315f25f3616e646012d23586",
+    "representation_model.py": "3a22babf413c0175a52763d67f1b7deb02e9694bc58769fa0356250b1f9beb75"
+  },
+  "published_sources": {
+    "step28": "physics_atlas/thread_cluster_a/steps/step28_mode_b_neutral_representation_desmuggle_artifacts/mode_b_neutral_representation_desmuggle_step28.py",
+    "step33": "physics_atlas/thread_cluster_a/steps/step33_mode_b_corrected_anomaly_chirality_artifacts/corrected_anomaly_chirality_step33.py",
+    "step35": "physics_atlas/thread_cluster_a/steps/step35_mode_b_higher_layer_descent_artifacts/higher_layer_descent_step35.py",
+    "step38": "physics_atlas/thread_cluster_a/steps/step38_mode_b_higher_layer_shadow_uniqueness_artifacts/higher_layer_shadow_step38.py",
+    "step41": "physics_atlas/thread_cluster_a/steps/step41_mode_b_factorization_defect_clean_separation_artifacts/factorization_defect_clean_separation_step41.py"
+  },
+  "representation_alphabet": [
+    "singlet",
+    "fund",
+    "antifund",
+    "sym2",
+    "conj_sym2",
+    "antisym2",
+    "conj_antisym2"
+  ],
+  "representation_self_test": {
+    "canonical_rep_instances": 14,
+    "check_count": 140,
+    "declared_rep_instances": 21,
+    "failed_checks": [],
+    "passes": true
+  },
+  "schema_version": 1,
+  "stage_counts": {
+    "atomic_packaging": 84,
+    "chirality_faithfulness": 52,
+    "clean_separation": 4,
+    "closure_consistency": 62,
+    "genuinely_chiral": 1066,
+    "higher_layer_mass_closure_proxy": 8,
+    "neutral_carrier": 281241820
+  },
+  "stage_hash_kinds": {
+    "atomic_packaging": "materialized_membership",
+    "chirality_faithfulness": "materialized_membership",
+    "clean_separation": "materialized_membership",
+    "closure_consistency": "materialized_membership",
+    "genuinely_chiral": "materialized_membership",
+    "higher_layer_mass_closure_proxy": "materialized_membership",
+    "neutral_carrier": "canonical_generating_specification"
+  },
+  "stage_hashes": {
+    "atomic_packaging": "e9627525d5dfb4f8f0d5f55448da8a113f416065e03e77857c69d0222fa1879a",
+    "chirality_faithfulness": "ae12cca88f1fb934b83a261b3a85d119d83957ed214421a0700f42c54acaa174",
+    "clean_separation": "ac4f357dd922187b76e74efe99ccff5c6524655c61ff6c7692ac3bf17f13129f",
+    "closure_consistency": "103aae521857f44995b3cce11b36a4462568c329ebe22b3f35ee3f89b318e860",
+    "genuinely_chiral": "2e7ab781893289705920d3dc3cd26bc2ca774f36a729abf2d55152ffa18b0a79",
+    "higher_layer_mass_closure_proxy": "8b3928472c159009f0bec7fa527f67d8b125d2bb3be51e73dec5300b24b64b57",
+    "neutral_carrier": "1000920b7bb227f42cdade7aacbdf4e94fe270abcca1b2e5715907ef0dbbeb46"
+  },
+  "window": {
+    "charge_units": [
+      -6,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "component_cap": 6,
+    "content_semantics": "multisets of canonical (rep-tuple, charge) field types",
+    "dimension_window": [
+      2,
+      3,
+      4
+    ],
+    "factor_counts": [
+      1,
+      2
+    ],
+    "field_cap": 5,
+    "truncated": false
+  }
+}

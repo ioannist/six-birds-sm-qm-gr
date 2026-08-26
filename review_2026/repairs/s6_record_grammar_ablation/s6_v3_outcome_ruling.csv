@@ -1,0 +1,4 @@
+token_definition,scalar_dressed_records_included,rs_branch_count,rs_clean_count,rs_breaking_count,counterexample_count,pointwise_implication_passes,ruling
+v2_restricted_UV_meson_epsilon_generators,False,4,4,0,0,True,HOLDS_NONVACUOUSLY_FOR_RESTRICTED_GENERATOR_GRAMMAR
+v3_complete_bounded_undressed_only,False,12,4,8,8,False,COUNTEREXAMPLES_PERSIST
+v3_complete_bounded_dressed_inclusive,True,12,4,8,8,False,COUNTEREXAMPLES_PERSIST

@@ -1,0 +1,147 @@
+{
+  "experiment": "S3-REPAIR-1b verification closure",
+  "headline": {
+    "centralizer_dimension": 1,
+    "f48_pi2": "Z",
+    "full_commutant_nullity": 1,
+    "full_commutant_rank": 23,
+    "mutation_pass_count": 7,
+    "mutation_test_count": 7,
+    "pati_salam_ratio": "3/8",
+    "su4_slice_verdict": "ANALOGUE_AS_FIXED_WEAK_INDEX_SLICE_NOT_IDENTITY"
+  },
+  "historical_v1_artifacts_preserved": true,
+  "implementation_sha256": {
+    "DESIGN.md": "222eed71c7c5f1594119c3ca408ed7d18f31297bd5a67360f6b2731ef6945168",
+    "build_s3_generator_construction_v2.py": "f6d10e02a27251b791ca732a551a91c2520b9d5b6618ac327ecba2a0347a3c5f",
+    "exact_lie.py": "d4b485bb21d595a4b4681cf42a48e99aefd4180b69896f62f9c9168587f3b76e",
+    "run_s3_generator_construction_v2.py": "8a40f0122124e1c0f3950c2b018a1466e4ccfae3b75646e8bf33409aca9c60db",
+    "s3_construction.py": "62918297b97e8efd78e98a97c29dbd2248ea6849fa7fcd86dfdbfa3dbf7b2a99",
+    "s3_construction_v2.py": "75120206f2c17aa3acf55d0c96e753f99cffef188eb397f4f0e0004c5ee21bdc"
+  },
+  "schema_version": 2,
+  "tables": {
+    "claim_status_v2.csv": {
+      "columns": [
+        "claim",
+        "status",
+        "computed_result",
+        "residual_assumption_or_convention"
+      ],
+      "row_count": 9
+    },
+    "f48_extracted_coroots_v2.csv": {
+      "columns": [
+        "coroot_id",
+        "extraction",
+        "cocharacter_coordinates",
+        "matrix"
+      ],
+      "row_count": 3
+    },
+    "f48_extracted_lattice_v2.csv": {
+      "columns": [
+        "extracted_columns",
+        "derived_coroot_rank",
+        "smith_invariants",
+        "annihilator",
+        "free_rank_pi1_H",
+        "centralizer_primitive",
+        "central_u1_loop_index",
+        "H_connected",
+        "pi1_SU5",
+        "pi2_SU5",
+        "kernel_free_rank",
+        "pi2_SU5_over_H"
+      ],
+      "row_count": 1
+    },
+    "full_commutant_coefficients_v2.csv": {
+      "columns": [
+        "basis_generator",
+        "kernel_coefficient"
+      ],
+      "row_count": 24
+    },
+    "full_commutant_v2.csv": {
+      "columns": [
+        "ambient_coefficient_count",
+        "commutator_equation_count",
+        "constraint_rank",
+        "commutant_nullity",
+        "centralizer_dimension",
+        "off_diagonal_entries_zero_in_regular_frame",
+        "primitive_diagonal"
+      ],
+      "row_count": 1
+    },
+    "mutation_tests_v2.csv": {
+      "columns": [
+        "mutation",
+        "expected",
+        "result",
+        "evidence"
+      ],
+      "row_count": 7
+    },
+    "pati_salam_weights_v2.csv": {
+      "columns": [
+        "state_id",
+        "parent_rep",
+        "su4_weight",
+        "doublet_weight",
+        "B_minus_L",
+        "T3_L",
+        "T3_R",
+        "Y",
+        "Q"
+      ],
+      "row_count": 16
+    },
+    "product_parent_controls_v2.csv": {
+      "columns": [
+        "control_id",
+        "parent",
+        "semisimple",
+        "embedding",
+        "representation",
+        "trace_state_count",
+        "computed_ratio",
+        "well_posed",
+        "trace_inputs",
+        "outcome",
+        "diagnosis"
+      ],
+      "row_count": 2
+    },
+    "su4_slice_map_v2.csv": {
+      "columns": [
+        "su4_root",
+        "su5_root",
+        "su4_charge",
+        "su5_charge",
+        "computed_charge_rescale",
+        "su4_matrix",
+        "su5_matrix"
+      ],
+      "row_count": 6
+    },
+    "su4_slice_witness_v2.csv": {
+      "columns": [
+        "weak_operator",
+        "source_slice_element",
+        "commutator",
+        "commutator_target",
+        "target_relation_exact",
+        "target_outside_slice",
+        "verdict"
+      ],
+      "row_count": 1
+    }
+  },
+  "topology_inputs": {
+    "H_connected": true,
+    "pi1_SU5": "0",
+    "pi2_SU5": "0"
+  }
+}

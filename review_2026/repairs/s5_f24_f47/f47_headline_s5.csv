@@ -1,0 +1,2 @@
+denominator,support_row_count,denominator_mass,radiative_threshold_strict_gt,target_ratio_max_inclusive,small_theta,selector_mass,selector_fraction,positive_measure,small,realized_score,realized_in_selector,realized_f47,headline,headline_reason
+admissible_step8_measure_weighted,468,534,2.75,0.0001,0.050000,12,0.022471910112,True,True,2.750000,False,False,True,"conditions on declared admissibility, honors Step-8 measure_weight, and uses the upstream Step-18 channel threshold rather than the downstream target-inclusive 2.70 threshold"

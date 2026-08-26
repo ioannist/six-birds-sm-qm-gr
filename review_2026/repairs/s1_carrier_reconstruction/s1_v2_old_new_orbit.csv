@@ -1,0 +1,11 @@
+stage,published_labelled,repair1_labelled,repair2_labelled,repair2_orbit_quotiented,published_stage_exclusion_percent,repair1_stage_exclusion_percent,repair2_labelled_exclusion_percent,repair2_orbit_exclusion_percent,comparison_note
+neutral_carrier,not_like_for_like,281241820,281241820,57109009,,0.000000,0.000000,0.000000,"published 280,983 was already anomaly-filtered set carrier"
+genuinely_chiral,11990,1066,1066,419,,99.999621,99.999621,99.999266,same labelled repaired carrier; repair-2 adds declared orbit quotient
+atomic_packaging,156,84,84,37,98.698916,92.120075,92.120075,91.169451,same labelled repaired carrier; repair-2 adds declared orbit quotient
+closure_consistency,130,62,62,27,16.666667,26.190476,26.190476,27.027027,same labelled repaired carrier; repair-2 adds declared orbit quotient
+chirality_faithfulness,80,52,52,24,38.461538,16.129032,16.129032,11.111111,same labelled repaired carrier; repair-2 adds declared orbit quotient
+higher_layer_mass_closure_proxy,12,8,8,2,85.000000,84.615385,84.615385,91.666667,same labelled repaired carrier; repair-2 adds declared orbit quotient
+clean_separation_first_scalar,8,4,retired,retired,33.333333,50.000000,retired,,not branch-complete; retained only as historical repair-1 output
+clean_scalar_branches,not_evaluated,not_evaluated,4,1,,,66.666667,66.666667,branch-level result; denominator is all admissible scalar branches
+clean_separation_existential,not_evaluated,not_evaluated,4,1,,,50.000000,50.000000,exists admissible scalar branch with clean separation
+clean_separation_universal,not_evaluated,not_evaluated,0,0,,,100.000000,100.000000,all admissible scalar branches must be clean

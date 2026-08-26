@@ -1,0 +1,45 @@
+{
+  "artifact": "P1-REPAIR-2 active-cut quotient",
+  "outcome": "RESIDUAL_ACTIVE_CUT_DEFICIENCY_SURVIVES_FOUR_NAMED_REDUCTIONS",
+  "rank": "exact rational rank of all-region 0/1 active-cut incidence matrix",
+  "reductions": [
+    "saturated_terminal_zero_column",
+    "inseparable_vertex_parallel_sum",
+    "series_bivalent",
+    "exact_two_terminal_module"
+  ],
+  "row_counts": {
+    "candidate_active_cuts": 62,
+    "candidate_edges": 9,
+    "dependencies": 1,
+    "finite_checks": 2,
+    "regressions": 12,
+    "search": 378
+  },
+  "schema_version": 2,
+  "search_definition": {
+    "attachment_schemes": [
+      "leaf_offset0",
+      "leaf_offset1",
+      "dual_gateway"
+    ],
+    "boundary_counts": [
+      6,
+      7,
+      8
+    ],
+    "evaluated_weighted_carrier_count": 378,
+    "interior_node_range": [
+      3,
+      6
+    ],
+    "seed_count": 3,
+    "tie_breaker": "exact binary edge perturbations",
+    "topology_template_count": 14,
+    "unweighted_carrier_count": 126,
+    "weight_range": [
+      0.85,
+      1.15
+    ]
+  }
+}

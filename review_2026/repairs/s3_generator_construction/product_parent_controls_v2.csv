@@ -1,0 +1,3 @@
+control_id,parent,semisimple,embedding,representation,trace_state_count,computed_ratio,well_posed,trace_inputs,outcome,diagnosis
+pati_salam_semisimple,SU(4)xSU(2)_LxSU(2)_R,True,Y=T3_R+(B-L)/2,"(4,2,1)+(4bar,1,2)",16,3/8,True,TrT3^2=2;TrY^2=10/3;TrT3Y=0,BUILT_RATIO_3/8_NOT_3/23,product factors have independent couplings unless equality is separately imposed
+direct_sm_reductive_scale_free,SU(3)xSU(2)xU(1),False,Y_lambda=lambda*Y_SM,derived SM generation,15,3/23,False,lambda=2;TrT3^2=2;TrY^2=10/3;TrT3Y=0,3/23_REQUIRES_ARBITRARY_SCALE_INSERTION,"the U(1) normalization is free and the parent is reductive, not semisimple"

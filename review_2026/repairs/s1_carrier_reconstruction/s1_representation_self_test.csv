@@ -1,0 +1,141 @@
+check,dimension,rep,passes,evidence
+conjugate_in_canonical_set,2,singlet,True,singlet
+conjugate_in_canonical_set,2,fund,True,fund
+conjugate_in_canonical_set,2,sym2,True,sym2
+canonicalization_idempotent,2,singlet,True,canonical=singlet
+conjugation_involution_on_exact_class,2,singlet,True,bar(bar(singlet))=singlet; canonical=singlet
+conjugate_dimension_equal,2,singlet,True,1=1
+conjugate_dynkin_equal,2,singlet,True,0=0
+conjugate_cubic_negated,2,singlet,True,0->0
+self_conjugate_cubic_zero,2,singlet,True,canonical=singlet conjugate=singlet A=0
+canonicalization_idempotent,2,fund,True,canonical=fund
+conjugation_involution_on_exact_class,2,fund,True,bar(bar(fund))=fund; canonical=fund
+conjugate_dimension_equal,2,fund,True,2=2
+conjugate_dynkin_equal,2,fund,True,1=1
+conjugate_cubic_negated,2,fund,True,0->0
+self_conjugate_cubic_zero,2,fund,True,canonical=fund conjugate=fund A=0
+canonicalization_idempotent,2,antifund,True,canonical=fund
+conjugation_involution_on_exact_class,2,antifund,True,bar(bar(antifund))=fund; canonical=fund
+conjugate_dimension_equal,2,antifund,True,2=2
+conjugate_dynkin_equal,2,antifund,True,1=1
+conjugate_cubic_negated,2,antifund,True,0->0
+self_conjugate_cubic_zero,2,antifund,True,canonical=fund conjugate=fund A=0
+canonicalization_idempotent,2,sym2,True,canonical=sym2
+conjugation_involution_on_exact_class,2,sym2,True,bar(bar(sym2))=sym2; canonical=sym2
+conjugate_dimension_equal,2,sym2,True,3=3
+conjugate_dynkin_equal,2,sym2,True,4=4
+conjugate_cubic_negated,2,sym2,True,0->0
+self_conjugate_cubic_zero,2,sym2,True,canonical=sym2 conjugate=sym2 A=0
+canonicalization_idempotent,2,conj_sym2,True,canonical=sym2
+conjugation_involution_on_exact_class,2,conj_sym2,True,bar(bar(conj_sym2))=sym2; canonical=sym2
+conjugate_dimension_equal,2,conj_sym2,True,3=3
+conjugate_dynkin_equal,2,conj_sym2,True,4=4
+conjugate_cubic_negated,2,conj_sym2,True,0->0
+self_conjugate_cubic_zero,2,conj_sym2,True,canonical=sym2 conjugate=sym2 A=0
+canonicalization_idempotent,2,antisym2,True,canonical=singlet
+conjugation_involution_on_exact_class,2,antisym2,True,bar(bar(antisym2))=singlet; canonical=singlet
+conjugate_dimension_equal,2,antisym2,True,1=1
+conjugate_dynkin_equal,2,antisym2,True,0=0
+conjugate_cubic_negated,2,antisym2,True,0->0
+self_conjugate_cubic_zero,2,antisym2,True,canonical=singlet conjugate=singlet A=0
+canonicalization_idempotent,2,conj_antisym2,True,canonical=singlet
+conjugation_involution_on_exact_class,2,conj_antisym2,True,bar(bar(conj_antisym2))=singlet; canonical=singlet
+conjugate_dimension_equal,2,conj_antisym2,True,1=1
+conjugate_dynkin_equal,2,conj_antisym2,True,0=0
+conjugate_cubic_negated,2,conj_antisym2,True,0->0
+self_conjugate_cubic_zero,2,conj_antisym2,True,canonical=singlet conjugate=singlet A=0
+conjugate_in_canonical_set,3,singlet,True,singlet
+conjugate_in_canonical_set,3,fund,True,antifund
+conjugate_in_canonical_set,3,antifund,True,fund
+conjugate_in_canonical_set,3,sym2,True,conj_sym2
+conjugate_in_canonical_set,3,conj_sym2,True,sym2
+canonicalization_idempotent,3,singlet,True,canonical=singlet
+conjugation_involution_on_exact_class,3,singlet,True,bar(bar(singlet))=singlet; canonical=singlet
+conjugate_dimension_equal,3,singlet,True,1=1
+conjugate_dynkin_equal,3,singlet,True,0=0
+conjugate_cubic_negated,3,singlet,True,0->0
+self_conjugate_cubic_zero,3,singlet,True,canonical=singlet conjugate=singlet A=0
+canonicalization_idempotent,3,fund,True,canonical=fund
+conjugation_involution_on_exact_class,3,fund,True,bar(bar(fund))=fund; canonical=fund
+conjugate_dimension_equal,3,fund,True,3=3
+conjugate_dynkin_equal,3,fund,True,1=1
+conjugate_cubic_negated,3,fund,True,1->-1
+self_conjugate_cubic_zero,3,fund,True,canonical=fund conjugate=antifund A=1
+canonicalization_idempotent,3,antifund,True,canonical=antifund
+conjugation_involution_on_exact_class,3,antifund,True,bar(bar(antifund))=antifund; canonical=antifund
+conjugate_dimension_equal,3,antifund,True,3=3
+conjugate_dynkin_equal,3,antifund,True,1=1
+conjugate_cubic_negated,3,antifund,True,-1->1
+self_conjugate_cubic_zero,3,antifund,True,canonical=antifund conjugate=fund A=-1
+canonicalization_idempotent,3,sym2,True,canonical=sym2
+conjugation_involution_on_exact_class,3,sym2,True,bar(bar(sym2))=sym2; canonical=sym2
+conjugate_dimension_equal,3,sym2,True,6=6
+conjugate_dynkin_equal,3,sym2,True,5=5
+conjugate_cubic_negated,3,sym2,True,7->-7
+self_conjugate_cubic_zero,3,sym2,True,canonical=sym2 conjugate=conj_sym2 A=7
+canonicalization_idempotent,3,conj_sym2,True,canonical=conj_sym2
+conjugation_involution_on_exact_class,3,conj_sym2,True,bar(bar(conj_sym2))=conj_sym2; canonical=conj_sym2
+conjugate_dimension_equal,3,conj_sym2,True,6=6
+conjugate_dynkin_equal,3,conj_sym2,True,5=5
+conjugate_cubic_negated,3,conj_sym2,True,-7->7
+self_conjugate_cubic_zero,3,conj_sym2,True,canonical=conj_sym2 conjugate=sym2 A=-7
+canonicalization_idempotent,3,antisym2,True,canonical=antifund
+conjugation_involution_on_exact_class,3,antisym2,True,bar(bar(antisym2))=antifund; canonical=antifund
+conjugate_dimension_equal,3,antisym2,True,3=3
+conjugate_dynkin_equal,3,antisym2,True,1=1
+conjugate_cubic_negated,3,antisym2,True,-1->1
+self_conjugate_cubic_zero,3,antisym2,True,canonical=antifund conjugate=fund A=-1
+canonicalization_idempotent,3,conj_antisym2,True,canonical=fund
+conjugation_involution_on_exact_class,3,conj_antisym2,True,bar(bar(conj_antisym2))=fund; canonical=fund
+conjugate_dimension_equal,3,conj_antisym2,True,3=3
+conjugate_dynkin_equal,3,conj_antisym2,True,1=1
+conjugate_cubic_negated,3,conj_antisym2,True,1->-1
+self_conjugate_cubic_zero,3,conj_antisym2,True,canonical=fund conjugate=antifund A=1
+conjugate_in_canonical_set,4,singlet,True,singlet
+conjugate_in_canonical_set,4,fund,True,antifund
+conjugate_in_canonical_set,4,antifund,True,fund
+conjugate_in_canonical_set,4,sym2,True,conj_sym2
+conjugate_in_canonical_set,4,conj_sym2,True,sym2
+conjugate_in_canonical_set,4,antisym2,True,antisym2
+canonicalization_idempotent,4,singlet,True,canonical=singlet
+conjugation_involution_on_exact_class,4,singlet,True,bar(bar(singlet))=singlet; canonical=singlet
+conjugate_dimension_equal,4,singlet,True,1=1
+conjugate_dynkin_equal,4,singlet,True,0=0
+conjugate_cubic_negated,4,singlet,True,0->0
+self_conjugate_cubic_zero,4,singlet,True,canonical=singlet conjugate=singlet A=0
+canonicalization_idempotent,4,fund,True,canonical=fund
+conjugation_involution_on_exact_class,4,fund,True,bar(bar(fund))=fund; canonical=fund
+conjugate_dimension_equal,4,fund,True,4=4
+conjugate_dynkin_equal,4,fund,True,1=1
+conjugate_cubic_negated,4,fund,True,1->-1
+self_conjugate_cubic_zero,4,fund,True,canonical=fund conjugate=antifund A=1
+canonicalization_idempotent,4,antifund,True,canonical=antifund
+conjugation_involution_on_exact_class,4,antifund,True,bar(bar(antifund))=antifund; canonical=antifund
+conjugate_dimension_equal,4,antifund,True,4=4
+conjugate_dynkin_equal,4,antifund,True,1=1
+conjugate_cubic_negated,4,antifund,True,-1->1
+self_conjugate_cubic_zero,4,antifund,True,canonical=antifund conjugate=fund A=-1
+canonicalization_idempotent,4,sym2,True,canonical=sym2
+conjugation_involution_on_exact_class,4,sym2,True,bar(bar(sym2))=sym2; canonical=sym2
+conjugate_dimension_equal,4,sym2,True,10=10
+conjugate_dynkin_equal,4,sym2,True,6=6
+conjugate_cubic_negated,4,sym2,True,8->-8
+self_conjugate_cubic_zero,4,sym2,True,canonical=sym2 conjugate=conj_sym2 A=8
+canonicalization_idempotent,4,conj_sym2,True,canonical=conj_sym2
+conjugation_involution_on_exact_class,4,conj_sym2,True,bar(bar(conj_sym2))=conj_sym2; canonical=conj_sym2
+conjugate_dimension_equal,4,conj_sym2,True,10=10
+conjugate_dynkin_equal,4,conj_sym2,True,6=6
+conjugate_cubic_negated,4,conj_sym2,True,-8->8
+self_conjugate_cubic_zero,4,conj_sym2,True,canonical=conj_sym2 conjugate=sym2 A=-8
+canonicalization_idempotent,4,antisym2,True,canonical=antisym2
+conjugation_involution_on_exact_class,4,antisym2,True,bar(bar(antisym2))=antisym2; canonical=antisym2
+conjugate_dimension_equal,4,antisym2,True,6=6
+conjugate_dynkin_equal,4,antisym2,True,2=2
+conjugate_cubic_negated,4,antisym2,True,0->0
+self_conjugate_cubic_zero,4,antisym2,True,canonical=antisym2 conjugate=antisym2 A=0
+canonicalization_idempotent,4,conj_antisym2,True,canonical=antisym2
+conjugation_involution_on_exact_class,4,conj_antisym2,True,bar(bar(conj_antisym2))=antisym2; canonical=antisym2
+conjugate_dimension_equal,4,conj_antisym2,True,6=6
+conjugate_dynkin_equal,4,conj_antisym2,True,2=2
+conjugate_cubic_negated,4,conj_antisym2,True,0->0
+self_conjugate_cubic_zero,4,conj_antisym2,True,canonical=antisym2 conjugate=antisym2 A=0

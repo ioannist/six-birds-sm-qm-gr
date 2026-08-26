@@ -1,0 +1,13 @@
+evaluation_id,dimensions,branch_scope,scalar_branch,active_factor_index,scalar_rep,scalar_charge,vev_cartan_weight,u1_coefficient,broken_cartan_coefficient,neutrality_equation,neutrality_lhs,residual_group,spectator_cartans_in_u1
+eval_034,4,singleton_active_SU(4),antifund:1 <> fund:-1,0,antifund,1,3,3,-1,(3)*(1) + (-1)*(3) = 0,0,SU(3)[reduced_f0] x U(1)_res,0
+eval_042,4,singleton_active_SU(4),antifund:-1 <> fund:1,0,antifund,-1,3,3,1,(3)*(-1) + (1)*(3) = 0,0,SU(3)[reduced_f0] x U(1)_res,0
+eval_044,4,singleton_active_SU(4),antifund:1 <> fund:-1,0,antifund,1,3,3,-1,(3)*(1) + (-1)*(3) = 0,0,SU(3)[reduced_f0] x U(1)_res,0
+eval_045,4,singleton_active_SU(4),antifund:-1 <> fund:1,0,antifund,-1,3,3,1,(3)*(-1) + (1)*(3) = 0,0,SU(3)[reduced_f0] x U(1)_res,0
+eval_048,2|3,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,0,fund,-3,-1,1,-3,(1)*(-3) + (-3)*(-1) = 0,0,SU(3)[spectator_f1] x U(1)_res,0
+eval_049,2|3,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,1,antifund,2,2,1,-1,(1)*(2) + (-1)*(2) = 0,0,SU(2)[spectator_f0] x SU(2)[reduced_f1] x U(1)_res,0
+eval_050,2|3,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,0,fund,-3,-1,1,-3,(1)*(-3) + (-3)*(-1) = 0,0,SU(3)[spectator_f1] x U(1)_res,0
+eval_051,2|3,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,1,antifund,-2,2,1,1,(1)*(-2) + (1)*(2) = 0,0,SU(2)[spectator_f0] x SU(2)[reduced_f1] x U(1)_res,0
+eval_052,2|3,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,0,fund,-3,-1,1,-3,(1)*(-3) + (-3)*(-1) = 0,0,SU(3)[spectator_f1] x U(1)_res,0
+eval_053,2|3,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,1,antifund,-2,2,1,1,(1)*(-2) + (1)*(2) = 0,0,SU(2)[spectator_f0] x SU(2)[reduced_f1] x U(1)_res,0
+eval_054,2|3,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,0,fund,-3,-1,1,-3,(1)*(-3) + (-3)*(-1) = 0,0,SU(3)[spectator_f1] x U(1)_res,0
+eval_055,2|3,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,1,antifund,2,2,1,-1,(1)*(2) + (-1)*(2) = 0,0,SU(2)[spectator_f0] x SU(2)[reduced_f1] x U(1)_res,0

@@ -1,0 +1,12 @@
+check,factors,defect_pair_count,first_witness,control,same_density_mode,same_geometry_mode,phase_mode_differs,same_q_GR_fiber,witness,same_q_QM_fiber,geometry_mode_differs
+born_audit_determines_d1,True,0,,,,,,,,,
+born_audit_determines_d3,False,1,control_potential_base|control_potential_perturbed,,,,,,,,
+q_QM_determines_d1,True,0,,,,,,,,,
+q_QM_determines_d3,False,5,step25_004|control_potential_perturbed,,,,,,,,
+geometry_readout_determines_d3,True,0,,,,,,,,,
+q_GR_determines_d3,True,0,,,,,,,,,
+q_GR_determines_d1,False,32,step25_004|step25_016,,,,,,,,
+q_QM_determines_q_GR,False,5,step25_004|control_potential_perturbed,,,,,,,,
+q_GR_determines_q_QM,False,32,step25_004|step25_016,,,,,,,,
+,,,,complex_conjugate_phase_only,True,True,True,True,control_phase_original|control_phase_conjugate,,
+,,,,potential_only,True,False,False,False,control_potential_base|control_potential_perturbed,True,True

@@ -1,0 +1,28 @@
+{
+  "artifact": "Q2-REPAIR-1 route-mismatch repair",
+  "carrier": {
+    "coordinates": [
+      "d0_density",
+      "d1_phase",
+      "d2_transport",
+      "d3_curvature"
+    ],
+    "encoding": "operator algebra independent of labels",
+    "states": 16
+  },
+  "completion": "rational row-stochastic endomorphism E acting by T -> E T",
+  "defect": "exact nonzero rows of E1E2-E2E1",
+  "hashes": {
+    "candidates": "a27e8e706c1b7a78f6018b237b87e7dd9156b7a6474f52751d4a6ea49d48ea2c",
+    "defects": "7102ab9212de979b488bef74211b74aa1aa15a159a727f34d47ea8928c404b7e"
+  },
+  "invariant_magnitude": "spectral norm of commutator; normalized Hilbert-Schmidt also reported",
+  "outcome": "GENUINE_NONCOMMUTING_FINITE_CANDIDATES_EXIST_MOTIVATION_SUBJECT_TO_REVIEW",
+  "row_counts": {
+    "candidate_pairs": 4,
+    "defect_rows": 28,
+    "invariance_rows": 4,
+    "matrix_rows": 128
+  },
+  "schema_version": 1
+}

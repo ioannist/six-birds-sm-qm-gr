@@ -1,0 +1,4 @@
+mutation,expected,result,rejection
+perturb_hypercharge_eigenvalue,rejected,PASS,perturbed eigenvalue left the centralizer
+swap_quark_lepton_role,rejected,PASS,role mismatch at fermion state 0
+break_generator_tracelessness,rejected,PASS,basis contains a non-traceless matrix

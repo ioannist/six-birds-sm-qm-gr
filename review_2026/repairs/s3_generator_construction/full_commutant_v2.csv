@@ -1,0 +1,2 @@
+ambient_coefficient_count,commutator_equation_count,constraint_rank,commutant_nullity,centralizer_dimension,off_diagonal_entries_zero_in_regular_frame,primitive_diagonal
+24,312,23,1,1,True,"(-2, -2, -2, 3, 3)"

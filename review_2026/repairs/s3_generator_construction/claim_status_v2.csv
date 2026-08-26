@@ -1,0 +1,10 @@
+claim,status,computed_result,residual_assumption_or_convention
+SU5 hypercharge direction,LANDED-BY-CONSTRUCTION,"full commutant rank=23 nullity=1; primitive (-2, -2, -2, 3, 3)",regular 3+2 embedding; overall sign and charge unit
+k_Y and weak-angle ratio,LANDED-BY-CONSTRUCTION,k_Y=5/3; sin2(theta_W)=3/8,weak-pair unit; Q=T3+Y
+SU5 X/Y coset,LANDED-BY-CONSTRUCTION,"12 roots: (3,2,-5/6)+(3bar,2,5/6)",regular block embedding
+step41 six-generator identity,REFUTED-BY-CONSTRUCTION,six-root slice is not SU2-invariant and is not the 12-root X/Y coset,none within constructed embeddings
+step41 fixed-slice analogue relation,LANDED-BY-CONSTRUCTION,"6/6 roots mapped; charge rescale=5/8; [E_34,E_03]=-E_04 outside slice",chosen fixed weak index
+F27 baryon descent,LANDED-BY-CONSTRUCTION,12/12 coset actions change B; SM subalgebra preserves B,left-chiral baryon assignment from color type
+F48 monopole,LANDED-BY-CONSTRUCTION,extracted coroot rank=3; free rank=1; index=6; pi2=Z,H connected; pi1(SU5)=0; pi2(SU5)=0
+product parent yields 3/23,REMAINING-IMPORT,constructed Pati-Salam trace ratio=3/8; 3/23 only from arbitrary Y->2Y,no well-posed 3/23 parent found; exotic product embeddings not exhausted
+unique parent,REMAINING-IMPORT,SU(5) selected only in bounded regular-SU diagnostic,"SO(10), E6, and arbitrary embeddings not exhausted"

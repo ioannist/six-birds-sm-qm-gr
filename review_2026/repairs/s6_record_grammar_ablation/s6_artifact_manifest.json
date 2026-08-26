@@ -1,0 +1,15 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "RESULTS.md": "140ae55b87735d640c6343c64d9ccbf7a371cb8100a885bbe912abd593ae8d6d",
+    "s6_branch_scores.csv": "ff271974ed803b4aa190ef08f25b2bcc3ca67ee924f257b83dac06b5cf325c71",
+    "s6_counterexamples.csv": "ef4c8f042ca33db1e208e9b872d6b48b1b245e2efdcb551fdbc4a4bdd5a70e99",
+    "s6_dependency_pins.csv": "354478a5682bd5379fbeea9d295b6bf89102e007ef45ff96ae42c8f104f91848",
+    "s6_generic_grammar_table.csv": "d73ec5067fbc4bbecc56c66f0ffda9eef25e4e96930b9d9bf906ae32d1c88130",
+    "s6_neutral_record_tokens.csv": "2d5407f47cb02b3d8f1b713b17ba15470a3fe1fe8de0c796a86f24cacee0cbd5",
+    "s6_schema.json": "9c426b605512c158f2ee4d2a5f0e66902defc73a2852357f7afa320a511cb136",
+    "s6_structure_quantifiers.csv": "98026e68a4b420128dda3ec175861ef03486e4ddb89e11644b9a9b9ca5da53cb",
+    "s6_threshold_quantifiers.csv": "a466aa034c5aa09f8e2eb86e918058c123214418090eee824e92364bee97c94c",
+    "s6_threshold_sensitivity.csv": "9d58ccf6f8c784e6088d86d2b23395762f41594f35e46c570b0c85707154f642"
+  }
+}

@@ -1,0 +1,8 @@
+stage,published_count,reconstructed_count,count_change,published_exclusion_percent,reconstructed_exclusion_percent,published_families,reconstructed_families,comparison_note
+neutral_carrier,,281241820,,,0.000000,not_available_like_for_like,2:435896;2|2:12103013;2|3:87541244;2|4:12103013;3:5006385;3|3:87541244;3|4:49177127;4:1712303;4|4:25621595,"published 280983 was already anomaly-filtered and used set semantics, so it is not a neutral-multiset denominator"
+genuinely_chiral,11990,1066,-10924,,99.999621,2:730;2|2:6656;2|3:2153;2|4:1754;3:85;3|3:170;3|4:226;4:56;4|4:160,2|2:26;2|3:208;2|4:120;3:60;3|3:120;3|4:206;4:86;4|4:240,like-named selection stage; representation and set/multiset carrier semantics differ
+atomic_packaging,156,84,-72,98.698916,92.120075,2:2;2|2:56;2|3:29;2|4:0;3:49;3|3:0;3|4:0;4:20;4|4:0,2|2:12;2|3:20;3:28;4:24,like-named selection stage; representation and set/multiset carrier semantics differ
+closure_consistency,130,62,-68,16.666667,26.190476,2:2;2|2:48;2|3:15;2|4:0;3:49;3|3:0;3|4:0;4:16;4|4:0,2|2:10;2|3:6;3:28;4:18,like-named selection stage; representation and set/multiset carrier semantics differ
+chirality_faithfulness,80,52,-28,38.461538,16.129032,2:0;2|2:0;2|3:15;2|4:0;3:49;3|3:0;3|4:0;4:16;4|4:0,2|3:6;3:28;4:18,like-named selection stage; representation and set/multiset carrier semantics differ
+higher_layer_mass_closure_proxy,12,8,-4,85.000000,84.615385,2|3:8;4:4,2|3:4;4:4,like-named selection stage; representation and set/multiset carrier semantics differ
+clean_separation,8,4,-4,33.333333,50.000000,2|3:8,2|3:4,like-named selection stage; representation and set/multiset carrier semantics differ

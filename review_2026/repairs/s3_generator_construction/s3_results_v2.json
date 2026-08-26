@@ -1,0 +1,228 @@
+{
+  "claim_status": [
+    {
+      "claim": "SU5 hypercharge direction",
+      "computed_result": "full commutant rank=23 nullity=1; primitive (-2, -2, -2, 3, 3)",
+      "residual_assumption_or_convention": "regular 3+2 embedding; overall sign and charge unit",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "k_Y and weak-angle ratio",
+      "computed_result": "k_Y=5/3; sin2(theta_W)=3/8",
+      "residual_assumption_or_convention": "weak-pair unit; Q=T3+Y",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "SU5 X/Y coset",
+      "computed_result": "12 roots: (3,2,-5/6)+(3bar,2,5/6)",
+      "residual_assumption_or_convention": "regular block embedding",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "step41 six-generator identity",
+      "computed_result": "six-root slice is not SU2-invariant and is not the 12-root X/Y coset",
+      "residual_assumption_or_convention": "none within constructed embeddings",
+      "status": "REFUTED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "step41 fixed-slice analogue relation",
+      "computed_result": "6/6 roots mapped; charge rescale=5/8; [E_34,E_03]=-E_04 outside slice",
+      "residual_assumption_or_convention": "chosen fixed weak index",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "F27 baryon descent",
+      "computed_result": "12/12 coset actions change B; SM subalgebra preserves B",
+      "residual_assumption_or_convention": "left-chiral baryon assignment from color type",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "F48 monopole",
+      "computed_result": "extracted coroot rank=3; free rank=1; index=6; pi2=Z",
+      "residual_assumption_or_convention": "H connected; pi1(SU5)=0; pi2(SU5)=0",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "product parent yields 3/23",
+      "computed_result": "constructed Pati-Salam trace ratio=3/8; 3/23 only from arbitrary Y->2Y",
+      "residual_assumption_or_convention": "no well-posed 3/23 parent found; exotic product embeddings not exhausted",
+      "status": "REMAINING-IMPORT"
+    },
+    {
+      "claim": "unique parent",
+      "computed_result": "SU(5) selected only in bounded regular-SU diagnostic",
+      "residual_assumption_or_convention": "SO(10), E6, and arbitrary embeddings not exhausted",
+      "status": "REMAINING-IMPORT"
+    }
+  ],
+  "f48": {
+    "H_connected": true,
+    "annihilator": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "central_u1_loop_index": 6,
+    "centralizer_primitive": [
+      -2,
+      -2,
+      -2,
+      3,
+      3
+    ],
+    "columns": [
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "derived_coroot_rank": 3,
+    "free_rank_pi1_h": 1,
+    "kernel_free_rank": 1,
+    "pi1_SU5": "0",
+    "pi2_SU5": "0",
+    "pi2_SU5_over_H": "Z",
+    "smith_invariants": [
+      1,
+      1,
+      1
+    ]
+  },
+  "full_commutant": {
+    "coefficient_count": 24,
+    "equation_count": 312,
+    "kernel_coefficients": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "5/3",
+      "1"
+    ],
+    "nullity": 1,
+    "off_diagonal_zero": true,
+    "primitive_diagonal": [
+      -2,
+      -2,
+      -2,
+      3,
+      3
+    ],
+    "rank": 23
+  },
+  "mutation_tests": [
+    {
+      "evidence": "perturbed eigenvalue left the centralizer",
+      "expected": "rejected",
+      "mutation": "perturb_hypercharge_eigenvalue",
+      "result": "PASS"
+    },
+    {
+      "evidence": "role mismatch at fermion state 0",
+      "expected": "rejected",
+      "mutation": "swap_quark_lepton_role",
+      "result": "PASS"
+    },
+    {
+      "evidence": "basis contains a non-traceless matrix",
+      "expected": "rejected",
+      "mutation": "break_generator_tracelessness",
+      "result": "PASS"
+    },
+    {
+      "evidence": "commutant/coset/fermion ratios/F27/F48 invariant",
+      "expected": "all invariants unchanged",
+      "mutation": "generic_SO5_conjugated_embedding",
+      "result": "PASS"
+    },
+    {
+      "evidence": "F48 Smith invariants changed",
+      "expected": "rejected",
+      "mutation": "corrupt_extracted_coroot",
+      "result": "PASS"
+    },
+    {
+      "evidence": "not every SU(5) coset generator mediates Delta B",
+      "expected": "rejected",
+      "mutation": "zero_one_coset_action",
+      "result": "PASS"
+    },
+    {
+      "evidence": "SU2 action no longer proves fixed-slice non-invariance",
+      "expected": "rejected",
+      "mutation": "enlarge_SU4_fixed_slice_with_E04",
+      "result": "PASS"
+    }
+  ],
+  "product_parent_attempts": [
+    {
+      "computed_ratio": "3/8",
+      "control_id": "pati_salam_semisimple",
+      "diagnosis": "product factors have independent couplings unless equality is separately imposed",
+      "embedding": "Y=T3_R+(B-L)/2",
+      "outcome": "BUILT_RATIO_3/8_NOT_3/23",
+      "parent": "SU(4)xSU(2)_LxSU(2)_R",
+      "representation": "(4,2,1)+(4bar,1,2)",
+      "semisimple": true,
+      "trace_inputs": "TrT3^2=2;TrY^2=10/3;TrT3Y=0",
+      "trace_state_count": 16,
+      "well_posed": true
+    },
+    {
+      "computed_ratio": "3/23",
+      "control_id": "direct_sm_reductive_scale_free",
+      "diagnosis": "the U(1) normalization is free and the parent is reductive, not semisimple",
+      "embedding": "Y_lambda=lambda*Y_SM",
+      "outcome": "3/23_REQUIRES_ARBITRARY_SCALE_INSERTION",
+      "parent": "SU(3)xSU(2)xU(1)",
+      "representation": "derived SM generation",
+      "semisimple": false,
+      "trace_inputs": "lambda=2;TrT3^2=2;TrY^2=10/3;TrT3Y=0",
+      "trace_state_count": 15,
+      "well_posed": false
+    }
+  ],
+  "su4_slice": {
+    "charge_rescale": "5/8",
+    "commutator_coefficient": "-1",
+    "commutator_target": "E_04",
+    "source_slice_element": "E_03",
+    "target_outside_slice": true,
+    "target_relation_exact": true,
+    "verdict": "ANALOGUE_AS_FIXED_WEAK_INDEX_SLICE_NOT_IDENTITY",
+    "weak_operator": "E_34"
+  }
+}

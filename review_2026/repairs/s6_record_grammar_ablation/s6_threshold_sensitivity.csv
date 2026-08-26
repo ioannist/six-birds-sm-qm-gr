@@ -1,0 +1,5 @@
+threshold,branch_domain_count,rs_branch_count,rs_clean_count,rs_breaking_count,counterexample_count,rs_family_membership,rs_branch_scope_membership,two_by_three_su2_active_rs,su4_rs,implication_passes,vacuous
+1,12,12,4,8,8,2|3:8;4:4,singleton_active_SU(2):4;singleton_active_SU(3):4;singleton_active_SU(4):4,4,4,False,False
+2,12,8,4,4,4,2|3:8,singleton_active_SU(2):4;singleton_active_SU(3):4,4,0,False,False
+3,12,0,0,0,0,,,0,0,True,True
+4,12,0,0,0,0,,,0,0,True,True

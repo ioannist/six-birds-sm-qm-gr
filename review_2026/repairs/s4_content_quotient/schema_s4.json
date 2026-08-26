@@ -1,0 +1,73 @@
+{
+  "genuinely_inequivalent_second_content_orbit": false,
+  "grade": "FINITE_CARRIER_COMPUTATIONAL_REPAIR",
+  "mass_rank_method": "explicit component matrix with independent generation Yukawa symbols; exact identity-generation specialization saturates the nonzero-row upper bound",
+  "minimality_counterpoint": "selected orbit ranks 14/14; minimality alone still fails",
+  "n_copy_scope": "materialized N=1..4 multisets; N>1 lies outside the five-field enumeration cap but is evaluated by the actual v2 predicates",
+  "n_dependent_predicates": [
+    "atomic_proper_submultiset and atomic_rewrite_packaging fail for N>=2",
+    "closure_route_incidence_complete fails for N>=2",
+    "full_actual_chain_with_existential_branch therefore passes only N=1"
+  ],
+  "n_invariant_predicates": [
+    "local_anomaly_free",
+    "witten_even",
+    "genuinely_chiral",
+    "no_spectator_action",
+    "primitive_charge_orbit",
+    "chirality_faithfulness",
+    "admissible/clean scalar branch counts",
+    "existential and universal branch-typed clean separation",
+    "production occurrence mass completion",
+    "real charged-sector generic mass closure"
+  ],
+  "output_files": [
+    "quotient_census_s4.csv",
+    "strongest_conjunction_orbits_s4.csv",
+    "selected_content_orbits_s4.csv",
+    "mass_rank_shadow_s4.csv",
+    "mass_matrix_channels_s4.csv",
+    "mass_matrix_entries_s4.csv",
+    "n_copy_probe_s4.csv",
+    "controls_s4.csv",
+    "schema_s4.json",
+    "results_s4.md"
+  ],
+  "packet": "S4-REPAIR-1",
+  "quotient_mutation_controls": [
+    {
+      "control": "quotient_mutation_identity_or_sign_only",
+      "evidence": "identity/global-sign-only classes=28 (expected 28)",
+      "passes": true
+    },
+    {
+      "control": "quotient_mutation_declared_global_action",
+      "evidence": "global color conjugation plus global U(1) sign classes=14 (expected 14)",
+      "passes": true
+    },
+    {
+      "control": "quotient_mutation_forbidden_per_field_conjugation_rejected",
+      "evidence": "mutated_classes=14; invalid_source_mappings=28/28; witness=(3,1)_-1 + (3,1)_1 + (3bar,1)_-1/6 + (3bar,1)_1/6 -> (3,1)_-1 + (3,1)_-1/6 + (3,1)_1/6 + (3,1)_1",
+      "passes": true
+    }
+  ],
+  "quotient_policy": {
+    "equal_dimension_factor_exchange": true,
+    "global_nonabelian_conjugation": true,
+    "independent_u1_sign_inversion": true,
+    "inert_neutral_singlets_deleted": true,
+    "note": "factor exchange is inactive for the selected unequal 2|3 structure"
+  },
+  "selected_content_physical_orbits": 1,
+  "selection_verdict": "UNIQUE_CONTENT_ORBIT_SELECTION",
+  "source_pins": {
+    "carrier_chain.py": "ab7a07cd82d8aa82c19476177ed3b99f9ca6d8af315f25f3616e646012d23586",
+    "carrier_chain_v2.py": "ba3d227e8dbaf4a64465146d3e073bec957857b2a41749addf7d786b4de5e209",
+    "representation_model.py": "3a22babf413c0175a52763d67f1b7deb02e9694bc58769fa0356250b1f9beb75"
+  },
+  "step15_labelled_supports": 28,
+  "step15_physical_orbits": 14,
+  "strongest_conjunction_labelled_survivors": 2,
+  "strongest_conjunction_physical_orbits": 1,
+  "three_shadow_pair_test_status": "NOT_APPLICABLE_IDENTICAL_QUOTIENT_IMAGES"
+}

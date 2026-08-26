@@ -1,0 +1,14 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "RESULTS_v2.md": "630e70ba2485c9853cab9a4e8baf3bd67544dda1c77e721c8a10ae50e310acac",
+    "s1_v2_golden_formula_check.csv": "d73e1ec7ea7cc6256d7f589a5da0bb9df8660a62821f6f5b17816911ae1eb18a",
+    "s1_v2_inert_singlet_check.csv": "80d069121989110cfe4f735f6913d419189f1ea51b169d0aca8bdc38acaf66ea",
+    "s1_v2_old_new_orbit.csv": "d4dd2bdb272aec7895fb0ab9ed72944d5cbff9ccc25943e7724e973e2791c751",
+    "s1_v2_orbit_families.csv": "ac2839c642ef4fa035562dc6b5183d76bbbc130deea394b4d9928de3cc5bdd19",
+    "s1_v2_scalar_branch_coverage.csv": "602784e7bf449324d2aa96ebe85c0a9905349c48dbb59c2aabd55ab94cea6305",
+    "s1_v2_scalar_branches.csv": "e1910a025c82ac5bbcc2a5b3e38f874d63666544561fa42a1b472803538540c5",
+    "s1_v2_schema.json": "93683718a802869edf547edee19ee9a1bf078a53005c40993ac071d072476954",
+    "s1_v2_stage_flow.csv": "6a3ae5ce22504d8fabcdccdbb1d5cfec37cc8f0c26b2661abf56b2d9d3f5ef88"
+  }
+}

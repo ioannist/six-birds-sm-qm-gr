@@ -1,0 +1,125 @@
+{
+  "carrier": {
+    "evaluation_rows": 56,
+    "no_singleton_rows": 44,
+    "singleton_branch_rows": 12
+  },
+  "counts": {
+    "components": 88,
+    "stabilizers": 12,
+    "token_classes": [
+      "baryonic",
+      "mesonic",
+      "mixed"
+    ],
+    "tokens": 24
+  },
+  "experiment": "S6-ABLATION-2 full-residual-neutral record grammar",
+  "files": {
+    "s6_v2_branch_residual_groups.csv": {
+      "row_count": 12,
+      "sha256": "367ab4704721f572c71fbf275586b50946860ceb3fda217efa4de85e6de5347d"
+    },
+    "s6_v2_branch_scores.csv": {
+      "row_count": 56,
+      "sha256": "d05643ed19ccb3221d07b67a8487ca6089d8ee852c6d0113ff24246d80056b97"
+    },
+    "s6_v2_collision_control.csv": {
+      "row_count": 1,
+      "sha256": "f52fed488605e1ef86ad2eb196982f4dc2bb727862c064285b2c424a594b0817"
+    },
+    "s6_v2_dependency_pins.csv": {
+      "row_count": 5,
+      "sha256": "47f1ca22683e96fa2e7b2bce0345c7bc57bad1667f9d0109ae44986b2d753c15"
+    },
+    "s6_v2_eval_049_trace.csv": {
+      "row_count": 1,
+      "sha256": "6d9cf17e1622770d31a084b33046ebf95eb7b7f8884c31dd01e389e742984c24"
+    },
+    "s6_v2_quantifier_summary.csv": {
+      "row_count": 12,
+      "sha256": "0823e4114e753f8dfda8ecbf84bc6251f4cbea08f85e8a78fb62546312c2b702"
+    },
+    "s6_v2_record_tokens.csv": {
+      "row_count": 24,
+      "sha256": "20607f4d5b52f2774b3da1572497cf73e4b2e08cc50e193e0d01e5d33e831b2a"
+    },
+    "s6_v2_residual_components.csv": {
+      "row_count": 88,
+      "sha256": "5b850dcf149b099b3fa2abf921256c13a8ce2e3a55c8fce8b15f400c17011d16"
+    },
+    "s6_v2_structure_quantifiers.csv": {
+      "row_count": 52,
+      "sha256": "03b597c0f805f71474926c19ce1f8937f4cee2206c9a55cdbc91f8216476a14e"
+    },
+    "s6_v2_threshold_sensitivity.csv": {
+      "row_count": 4,
+      "sha256": "5e0e6f0d73b25902532e5bb9fbb88eccafef0b7cf88937a252418c544cae9ec0"
+    },
+    "s6_v2_token_census.csv": {
+      "row_count": 3,
+      "sha256": "54301f8c9438757d42d9424238af8c1d8b27e4f224dab802fb1a026aa5ef5113"
+    }
+  },
+  "grammar": {
+    "distinguishability": "canonical Fock content plus orthogonal invariant-channel index",
+    "record_basis": "UV mesonic/conjugate pairs, N-fold epsilon baryons, and mixed epsilon invariants restricted to exact full-residual singlets",
+    "residual_u1_cartans": "broken factors only; spectator Cartan coefficient identically zero",
+    "singlet_engine": "pinned S1-v3 Littlewood-Richardson singlet multiplicities",
+    "stabilizer": "scalar VEV stabilizer; primitive a*q_phi+b*h_phi=0",
+    "thresholds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "hashes": {
+    "scores": "08e82c41788129f7cc84552a15eeeb4f8c5979790b509d6616a3b0dc87f9fa8f",
+    "stabilizers": "ed66282e7feeecd3a4e40aa7bb30c746e903bfa6d3660a8d60a7a3af8b2a508d",
+    "tokens": "0a6a00a8871eab1151039b76642f6b04b5673d475ab4257532ed3bb1c1ec5410"
+  },
+  "outcome": "IMPLICATION_RESTORED_POINTWISE_FULL_RESIDUAL_NEUTRAL_GRAMMAR",
+  "quantifiers_threshold_2": {
+    "branch_pointwise": {
+      "antecedent_count": 4,
+      "counterexample_count": 0,
+      "domain_count": 12,
+      "implication_passes": true,
+      "quantifier_reading": "branch_pointwise",
+      "threshold": 2,
+      "vacuous": false
+    },
+    "structure_existential": {
+      "antecedent_count": 4,
+      "counterexample_count": 0,
+      "domain_count": 8,
+      "implication_passes": true,
+      "quantifier_reading": "structure_existential",
+      "threshold": 2,
+      "vacuous": false
+    },
+    "structure_universal": {
+      "antecedent_count": 0,
+      "counterexample_count": 0,
+      "domain_count": 8,
+      "implication_passes": true,
+      "quantifier_reading": "structure_universal",
+      "threshold": 2,
+      "vacuous": true
+    }
+  },
+  "reference_threshold": {
+    "branch_domain_count": 12,
+    "counterexample_count": 0,
+    "implication_passes": true,
+    "rs_branch_count": 4,
+    "rs_branch_scope_membership": "singleton_active_SU(2):4",
+    "rs_breaking_count": 0,
+    "rs_clean_count": 4,
+    "rs_family_membership": "2|3:4",
+    "threshold": 2,
+    "vacuous": false
+  },
+  "schema_version": 2
+}

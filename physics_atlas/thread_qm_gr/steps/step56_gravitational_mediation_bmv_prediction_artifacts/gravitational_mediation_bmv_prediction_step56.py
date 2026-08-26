@@ -20,7 +20,6 @@ import numpy as np
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = Path("/home/repos/six-birds-papers")
 THREAD_ROOT = ARTIFACT_DIR.parents[1]
 STEPS_DIR = THREAD_ROOT / "steps"
 
@@ -42,6 +41,14 @@ EXPECTED_HASHES = {
     "step31_script": "5b2ba3addad33d077a4c89eaa8fd60c3e69d1646f947ad2da7526dfee100a7bd",
     "step32_tex": "f2324e4c568e25e3f37fab9b8437c5e5fe37a3c002720f3bc6ad8fa12a5e8bd3",
     "step52_script": "60c36c517d7bd10306f7059ebfb43ac69083f32cc1dcaf7a7dc3dea9ad8a5bc9",
+}
+# F-001 provenance: the published Step 56 artifacts derive from the historical
+# hashes above.  On 2026-08-26, step52_script received a path-portability-only
+# edit with no behavioral change to any computed number.  Rebuilt ledgers keep
+# that historical pin while separately recording and checking the current file.
+CURRENT_HASHES = {
+    **EXPECTED_HASHES,
+    "step52_script": "aa0dfaf495883891eee2db013e88e8937deeff522e0399ccddfd28bb6ce1baad",
 }
 
 TOL = 1e-10
@@ -276,9 +283,9 @@ def frozen_rows() -> list[dict[str, Any]]:
             {
                 "frozen_input": key,
                 "thread_relative_path": rel(path),
-                "expected_sha256": EXPECTED_HASHES[key],
-                "actual_sha256": actual,
-                "matches": actual == EXPECTED_HASHES[key],
+                "historical_sha256": EXPECTED_HASHES[key],
+                "current_sha256": actual,
+                "matches": actual == CURRENT_HASHES[key],
             }
         )
     return rows

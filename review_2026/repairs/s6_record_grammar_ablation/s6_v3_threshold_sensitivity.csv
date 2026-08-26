@@ -1,0 +1,9 @@
+counting_convention,threshold,branch_domain_count,rs_branch_count,rs_clean_count,rs_breaking_count,counterexample_count,counterexample_ids,implication_passes,vacuous
+undressed_only,1,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+undressed_only,2,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+undressed_only,3,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+undressed_only,4,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+dressed_inclusive,1,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+dressed_inclusive,2,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+dressed_inclusive,3,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False
+dressed_inclusive,4,12,12,4,8,8,eval_034|eval_042|eval_044|eval_045|eval_049|eval_051|eval_053|eval_055,False,False

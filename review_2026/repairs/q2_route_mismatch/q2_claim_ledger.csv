@@ -1,0 +1,5 @@
+claim,status,evidence
+published E_QM and E_GR do not commute,REFUTED_ON_PUBLISHED_CARRIER,exact commutator zero; defect set empty; 0.5 is table distance
+nonlinear source-projection repair candidate,COMPUTED_NONCOMMUTING_MOTIVATION_SUBJECT_TO_EDDY,defects=16; spectral_norm=1.0
+nonfactorizing-access repair candidate,COMPUTED_NONCOMMUTING_COARSE_GRAINING_IMPORTED,defects=12; spectral_norm=0.4330127018922193
+completion algebra can detect commuting cases,LANDED_BY_CONTROL,nested coordinate control exact commutator zero

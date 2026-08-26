@@ -1,0 +1,16 @@
+{
+  "artifact": "Q7-REPAIR-1",
+  "classification": "relaxed-map dynamics, separately from iteration cap",
+  "fixed_point_stability": "spectral radius of the undamped projective fixed-point map",
+  "row_counts": {
+    "budget_checks": 360,
+    "cases": 360,
+    "continuation": 12,
+    "fixed_point_branches": 32,
+    "grid": 120,
+    "legacy_budget": 36,
+    "stability": 30
+  },
+  "schema_version": 1,
+  "verdict_derivation": "computed from existence and spectral-radius predicates; no assigned verdict flags"
+}

@@ -15,6 +15,7 @@ import csv
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 from typing import Any
 
@@ -22,11 +23,12 @@ import numpy as np
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = Path("/home/repos/six-birds-papers")
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 THREAD_ROOT = ARTIFACT_DIR.parents[1]
 STEP47_DIR = THREAD_ROOT / "steps" / "step47_common_carrier_door_test_artifacts"
-FOUNDATIONS_IV = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
-FOUNDATIONS_III = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex"
+CORPUS_ROOT_ENV = "SIX_BIRDS_PAPERS_ROOT"
+FOUNDATIONS_IV_NAME = "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+FOUNDATIONS_III_NAME = "Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex"
 TOL = 1e-10
 
 
@@ -275,18 +277,33 @@ def f49_status_rows(quantum_chsh: float, control_chsh: float, local_bound: float
     ]
 
 
-def frozen_machinery_rows() -> list[dict[str, Any]]:
+def require_corpus_files(names: list[str]) -> list[Path]:
+    root_value = os.environ.get(CORPUS_ROOT_ENV)
+    if not root_value:
+        raise SystemExit(f"{CORPUS_ROOT_ENV} is required; missing corpus file(s): {', '.join(names)}")
+    root = Path(root_value).expanduser().resolve()
+    paths = [root / name for name in names]
+    for path in paths:
+        if not path.is_file():
+            raise SystemExit(f"{CORPUS_ROOT_ENV} missing required corpus file: {path}")
+    return paths
+
+
+def frozen_machinery_rows(foundations: list[Path]) -> list[dict[str, Any]]:
     sources = [
-        FOUNDATIONS_IV,
-        FOUNDATIONS_III,
         STEP47_DIR / "step47_schema.json",
         STEP47_DIR / "common_carrier_controls_step47.csv",
         STEP47_DIR / "common_carrier_door_test_step47.py",
     ]
-    return [
+    rows = [
+        {"source": path.name, "sha256": sha256(path), "imported_or_read_verbatim": True}
+        for path in foundations
+    ]
+    rows.extend(
         {"source": repo_rel(path), "sha256": sha256(path), "imported_or_read_verbatim": True}
         for path in sources
-    ]
+    )
+    return rows
 
 
 def write_summary(schema: dict[str, Any]) -> None:
@@ -433,6 +450,7 @@ def write_mode_packet() -> None:
 
 
 def write_outputs() -> None:
+    foundations = require_corpus_files([FOUNDATIONS_IV_NAME, FOUNDATIONS_III_NAME])
     step47_schema = load_json(STEP47_DIR / "step47_schema.json")
     step47_controls = {row["control"]: row for row in load_csv(STEP47_DIR / "common_carrier_controls_step47.csv")}
     bell_rows, bell_values = correlation_table(bell_phi_plus_density(), "Bell_phi_plus")
@@ -497,7 +515,7 @@ def write_outputs() -> None:
             "nonzero": step47_comm > TOL,
         }
     ])
-    write_csv(ARTIFACT_DIR / "frozen_machinery_step52.csv", frozen_machinery_rows())
+    write_csv(ARTIFACT_DIR / "frozen_machinery_step52.csv", frozen_machinery_rows(foundations))
     (ARTIFACT_DIR / "step52_schema.json").write_text(json.dumps(schema, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     write_summary(schema)
     write_nonclaim()

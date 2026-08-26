@@ -1,0 +1,9 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "p3_full_carrier_delta_findings_v2.md": "d83c54f7f6c70d36084f5d88c2b05c306b771c752367c957559bff72197828e2",
+    "p3_full_carrier_delta_multiconfinement_factors_v2.csv": "fff0b0a1ab57f755255a069136ce3c405f8d4f62771480899835a37bed846067",
+    "p3_full_carrier_delta_schema_v2.json": "f7d015899c99126f53d03b14b3cc42bdd88bda31f362da73f3a425d7d7876476",
+    "p3_full_carrier_delta_scores_v2.csv": "788eaf7796ad9bb6bdafc2a7244cb0e1032063ce679e0c33346315085506528b"
+  }
+}

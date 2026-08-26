@@ -2,7 +2,7 @@
 
 *A skeptic-calibrated map of what Six Birds Theory (SBT) can and cannot honestly retrodict in physics.*
 
-Author: Fertility Judge / Atlas stage. Date: 2026-06-02. Frozen ledger: `retro_atlas/ledger.json`. Candidate cards: `retro_atlas/cards/<id>.json`.
+Author: Fertility Judge / Atlas stage. Date: 2026-06-02. Frozen ledger: `retrodiction_atlas/ledger.json`. Candidate cards: `retrodiction_atlas/cards/<id>.json`.
 
 ---
 

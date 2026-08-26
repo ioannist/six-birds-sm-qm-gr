@@ -7,6 +7,7 @@ import csv
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -14,13 +15,14 @@ import numpy as np
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = Path("/home/repos/six-birds-papers")
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 THREAD_ROOT = ARTIFACT_DIR.parents[1]
 STEP25_DIR = THREAD_ROOT / "steps" / "step25_sourcing_unification_artifacts"
 STEP26_DIR = THREAD_ROOT / "steps" / "step26_semiclassical_dynamics_artifacts"
 STEP26_SCRIPT = STEP26_DIR / "semiclassical_dynamics_step26.py"
 STEP25_CARRIER = STEP25_DIR / "field_carrier_step25.json"
-FOUNDATIONS_IV = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+CORPUS_ROOT_ENV = "SIX_BIRDS_PAPERS_ROOT"
+FOUNDATIONS_IV_NAME = "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
 EXPECTED_STEP26_SHA256 = "391907fae6fdee8c4e4de1c12ee67d72fdfea4928cad1f148cc30e31584898fd"
 
 BACKGROUND_OFFSETS = [-8.0, -5.0, -3.0, -2.0, -1.0, -0.5, -0.2, -0.1, 0.0, 0.1, 0.2, 0.5, 1.0, 2.0, 3.0, 5.0, 8.0, 10.0]
@@ -206,16 +208,27 @@ def structural_note_rows() -> list[dict[str, Any]]:
     ]
 
 
-def frozen_rows() -> list[dict[str, Any]]:
+def require_corpus_files(names: list[str]) -> list[Path]:
+    root_value = os.environ.get(CORPUS_ROOT_ENV)
+    if not root_value:
+        raise SystemExit(f"{CORPUS_ROOT_ENV} is required; missing corpus file(s): {', '.join(names)}")
+    root = Path(root_value).expanduser().resolve()
+    paths = [root / name for name in names]
+    for path in paths:
+        if not path.is_file():
+            raise SystemExit(f"{CORPUS_ROOT_ENV} missing required corpus file: {path}")
+    return paths
+
+
+def frozen_rows(foundations_iv: Path) -> list[dict[str, Any]]:
     sources = [
         STEP26_SCRIPT,
         STEP26_DIR / "step26_schema.json",
         STEP26_DIR / "dynamics_parameters_step26.json",
         STEP25_CARRIER,
         STEP25_DIR / "step25_schema.json",
-        FOUNDATIONS_IV,
     ]
-    return [
+    rows = [
         {
             "source": repo_rel(path),
             "sha256": sha256(path),
@@ -224,6 +237,15 @@ def frozen_rows() -> list[dict[str, Any]]:
         }
         for path in sources
     ]
+    rows.append(
+        {
+            "source": foundations_iv.name,
+            "sha256": sha256(foundations_iv),
+            "expected_sha256": "",
+            "imported_or_read_verbatim": True,
+        }
+    )
+    return rows
 
 
 def write_summary(schema: dict[str, Any]) -> None:
@@ -365,6 +387,7 @@ def write_mode_packet() -> None:
 
 
 def write_outputs() -> None:
+    foundations_iv = require_corpus_files([FOUNDATIONS_IV_NAME])[0]
     if sha256(STEP26_SCRIPT) != EXPECTED_STEP26_SHA256:
         raise RuntimeError("Step26 sha256 mismatch")
     _step25 = load_json(STEP25_DIR / "step25_schema.json")
@@ -440,7 +463,7 @@ def write_outputs() -> None:
         ],
     )
     write_csv(ARTIFACT_DIR / "structural_note_step54.csv", structural_note)
-    write_csv(ARTIFACT_DIR / "frozen_machinery_step54.csv", frozen_rows())
+    write_csv(ARTIFACT_DIR / "frozen_machinery_step54.csv", frozen_rows(foundations_iv))
     (ARTIFACT_DIR / "step54_schema.json").write_text(json.dumps(schema, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     write_summary(schema)
     write_nonclaim()

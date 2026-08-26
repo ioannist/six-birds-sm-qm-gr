@@ -1,0 +1,10 @@
+dimensions,labelled_with_inert_padding,modulo_inert_singlets,unpadded_reference_count,normalized_sets_equal
+2,0,0,0,True
+3,120,60,60,True
+4,120,86,86,True
+2|2,26,26,26,True
+2|3,310,208,208,True
+2|4,154,120,120,True
+3|3,240,120,120,True
+3|4,300,206,206,True
+4|4,308,240,240,True

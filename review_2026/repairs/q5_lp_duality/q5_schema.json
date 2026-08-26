@@ -1,0 +1,11 @@
+{
+  "artifact": "Q5-REPAIR-1",
+  "exact_fields": "capacities, optima, margins, and sensitivities are reduced rational strings",
+  "row_counts": {
+    "composition": 4,
+    "edge_shadow_prices": 3556,
+    "linear_response": 254,
+    "regions": 254
+  },
+  "verdict_fields": "all booleans and verdict strings are derived in build()"
+}

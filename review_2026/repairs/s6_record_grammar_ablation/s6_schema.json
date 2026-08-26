@@ -1,0 +1,93 @@
+{
+  "carrier": {
+    "admissible_singleton_branch_rows": 12,
+    "chirality_faithful_structures": 52,
+    "evaluation_rows": 56,
+    "no_singleton_substrate_fail_rows": 44
+  },
+  "experiment": "S6 dimension-generic record grammar ablation",
+  "files": {
+    "s6_branch_scores.csv": {
+      "row_count": 56,
+      "sha256": "ff271974ed803b4aa190ef08f25b2bcc3ca67ee924f257b83dac06b5cf325c71"
+    },
+    "s6_counterexamples.csv": {
+      "row_count": 4,
+      "sha256": "ef4c8f042ca33db1e208e9b872d6b48b1b245e2efdcb551fdbc4a4bdd5a70e99"
+    },
+    "s6_dependency_pins.csv": {
+      "row_count": 3,
+      "sha256": "354478a5682bd5379fbeea9d295b6bf89102e007ef45ff96ae42c8f104f91848"
+    },
+    "s6_generic_grammar_table.csv": {
+      "row_count": 6,
+      "sha256": "d73ec5067fbc4bbecc56c66f0ffda9eef25e4e96930b9d9bf906ae32d1c88130"
+    },
+    "s6_neutral_record_tokens.csv": {
+      "row_count": 68,
+      "sha256": "2d5407f47cb02b3d8f1b713b17ba15470a3fe1fe8de0c796a86f24cacee0cbd5"
+    },
+    "s6_structure_quantifiers.csv": {
+      "row_count": 52,
+      "sha256": "98026e68a4b420128dda3ec175861ef03486e4ddb89e11644b9a9b9ca5da53cb"
+    },
+    "s6_threshold_quantifiers.csv": {
+      "row_count": 12,
+      "sha256": "a466aa034c5aa09f8e2eb86e918058c123214418090eee824e92364bee97c94c"
+    },
+    "s6_threshold_sensitivity.csv": {
+      "row_count": 4,
+      "sha256": "9d58ccf6f8c784e6088d86d2b23395762f41594f35e46c570b0c85707154f642"
+    }
+  },
+  "generic_grammar": {
+    "component_splitting": "weights under diag(N-1,N-3,...,-N+1)",
+    "duality": "actual S1-v2 conjugate_rep",
+    "epsilon_arity": "original substrate factor dimension N",
+    "reference_capacity_threshold": 2,
+    "sensitivity_thresholds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "token_classes": [
+      "mesonic",
+      "baryonic",
+      "mixed"
+    ]
+  },
+  "hashes": {
+    "scores": "699ef037373157c8a12e020518aef5911fe521722078787880dd8708ac24a9a4",
+    "tokens": "a679c2ac15dba5e2077e5366902f6b20c338320bd9b4411ab91dee57fc6cfc88"
+  },
+  "implementation_sha256": {
+    "DESIGN.md": "89b7af1ab271c24f6511ad25c8cdc9e379278ca509ed07b1ccdab07dbefb20a2",
+    "build_s6_record_grammar_ablation.py": "4816588446cf923613051584ba6c1e80f59352276c6a45816533440c85797324",
+    "record_grammar_ablation.py": "bce7eeba263e7a4df60e7c38e52a94e0171eefebe60158e4462df12bee73b2f3",
+    "run_s6_record_grammar_ablation.py": "c729f0485dbde45be8b9c6b30b2611d387f3875d9e73d127a8b7b74bfcb28628"
+  },
+  "pinned_s1_dependencies": {
+    "carrier_chain.py": "ab7a07cd82d8aa82c19476177ed3b99f9ca6d8af315f25f3616e646012d23586",
+    "carrier_chain_v2.py": "ba3d227e8dbaf4a64465146d3e073bec957857b2a41749addf7d786b4de5e209",
+    "representation_model.py": "3a22babf413c0175a52763d67f1b7deb02e9694bc58769fa0356250b1f9beb75"
+  },
+  "reference_threshold_result": {
+    "RS_branches": 8,
+    "RS_breaking": 4,
+    "RS_clean": 4,
+    "SU4_RS": 0,
+    "counterexamples": 4,
+    "existential_implication": true,
+    "pointwise_implication": false,
+    "two_by_three_SU2_active_RS": 4,
+    "universal_implication": false
+  },
+  "schema_version": 1,
+  "threshold_one_result": {
+    "RS_branches": 12,
+    "RS_breaking": 8,
+    "SU4_RS_breaking_counterexamples": 4
+  },
+  "verdict": "GRAMMAR_ARTIFACT_POINTWISE_AND_UNIVERSAL_COUNTEREXAMPLES"
+}

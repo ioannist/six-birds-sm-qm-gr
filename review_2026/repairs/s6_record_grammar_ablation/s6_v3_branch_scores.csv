@@ -1,0 +1,449 @@
+counting_convention,threshold,evaluation_id,dimensions,structure_id,branch_scope,scalar_branch,clean_classification,stable_substrate,record_token_count,capacity_passes,distinguishability_passes,record_stability_passes,rs_implies_clean_counterexample
+undressed_only,1,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,1,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,1,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,1,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,1,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,1,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,1,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,1,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,1,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,1,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,1,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,1,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,1,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,2,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,2,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,2,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,2,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,2,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,2,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,2,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,2,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,2,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,2,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,2,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,2,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,2,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,3,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,3,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,3,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,3,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,3,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,3,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,3,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,3,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,3,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,3,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,3,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,3,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,3,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,4,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,4,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,4,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,4,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,11,True,True,True,True
+undressed_only,4,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+undressed_only,4,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,4,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,4,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,4,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,4,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,4,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,16,True,True,True,True
+undressed_only,4,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,11,True,True,True,False
+undressed_only,4,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,16,True,True,True,True
+dressed_inclusive,1,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,1,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,1,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,1,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,1,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,1,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,1,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,1,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,1,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,1,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,1,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,1,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,1,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,2,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,2,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,2,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,2,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,2,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,2,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,2,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,2,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,2,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,2,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,2,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,2,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,2,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,3,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,3,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,3,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,3,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,3,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,3,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,3,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,3,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,3,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,3,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,3,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,3,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,3,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,4,eval_000,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_001,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_002,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_003,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_004,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_005,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_006,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_007,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_008,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_009,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_010,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_011,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_012,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_013,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_014,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_015,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_016,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_017,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_018,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_019,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_020,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_021,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_022,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_023,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_024,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_025,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_026,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_027,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_028,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_029,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_030,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_031,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_032,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_033,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_034,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,4,eval_035,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_036,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_037,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_038,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_039,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_040,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_041,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_042,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,4,eval_043,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_044,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,singleton_active_SU(4),antifund:1 <> fund:-1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,4,eval_045,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,singleton_active_SU(4),antifund:-1 <> fund:1,breaking_evaluated,True,29,True,True,True,True
+dressed_inclusive,4,eval_046,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_047,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,no_singleton_branch,NO_SINGLETON_BRANCH,undefined_no_singleton_branch,False,0,False,False,False,False
+dressed_inclusive,4,eval_048,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,4,eval_049,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,4,eval_050,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,4,eval_051,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,4,eval_052,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,4,eval_053,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,singleton_active_SU(3),singletxantifund:-2 <> singletxfund:2,breaking_evaluated,True,43,True,True,True,True
+dressed_inclusive,4,eval_054,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(2),fundxsinglet:-3 <> fundxsinglet:3,clean_evaluated,True,29,True,True,True,False
+dressed_inclusive,4,eval_055,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,singleton_active_SU(3),singletxantifund:2 <> singletxfund:-2,breaking_evaluated,True,43,True,True,True,True

@@ -1,0 +1,53 @@
+dimensions,structure_id,support_key,carrier_orbit_id,admissible_scalar_branch_count,has_admissible_scalar_branch
+2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,True
+2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,0,False
+2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,True
+2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,True
+2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,0,False
+2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,True
+3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,antifund:-1 + antifund:1 + fund:-2 + fund:2,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,False
+3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,antifund:-1 + antifund:1 + fund:-3 + fund:3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,False
+3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,antifund:-1 + antifund:1 + fund:-4 + fund:4,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,False
+3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,antifund:-1 + antifund:1 + fund:-6 + fund:6,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,False
+3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,antifund:-1 + antifund:1 + fund:0 + fund:0,3::antifund:-1 + antifund:1 + fund:0 + fund:0,0,False
+3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,antifund:-2 + antifund:2 + fund:-1 + fund:1,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,False
+3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,antifund:-2 + antifund:2 + fund:-3 + fund:3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,False
+3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,antifund:-3 + antifund:3 + fund:-1 + fund:1,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,False
+3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,antifund:-3 + antifund:3 + fund:-2 + fund:2,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,False
+3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,antifund:-3 + antifund:3 + fund:-4 + fund:4,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,False
+3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,antifund:-4 + antifund:4 + fund:-1 + fund:1,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,False
+3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,antifund:-4 + antifund:4 + fund:-3 + fund:3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,False
+3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,antifund:-6 + antifund:6 + fund:-1 + fund:1,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,False
+3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,antifund:0 + antifund:0 + fund:-1 + fund:1,3::antifund:-1 + antifund:1 + fund:0 + fund:0,0,False
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,0,False
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,0,False
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,0,False
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,0,False
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,0,False
+3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,0,False
+3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,0,False
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,0,False
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,0,False
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,0,False
+3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,0,False
+3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,0,False
+3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,0,False
+3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,0,False
+4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,antifund:-1 + antifund:1 + fund:-2 + fund:2,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,False
+4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,antifund:-1 + antifund:1 + fund:-3 + fund:3,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,False
+4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,antifund:-1 + antifund:1 + fund:-4 + fund:4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,False
+4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,antifund:-1 + antifund:1 + fund:-6 + fund:6,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,False
+4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,antifund:-1 + antifund:1 + fund:0 + fund:0,4::antifund:-1 + antifund:1 + fund:0 + fund:0,0,False
+4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,True
+4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,antifund:-2 + antifund:2 + fund:-1 + fund:1,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,False
+4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,antifund:-2 + antifund:2 + fund:-3 + fund:3,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,False
+4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,antifund:-3 + antifund:3 + fund:-1 + fund:1,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,False
+4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,antifund:-3 + antifund:3 + fund:-2 + fund:2,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,False
+4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,antifund:-3 + antifund:3 + fund:-4 + fund:4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,False
+4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,True
+4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,antifund:-4 + antifund:4 + fund:-1 + fund:1,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,False
+4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,antifund:-4 + antifund:4 + fund:-3 + fund:3,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,False
+4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,antifund:-6 + antifund:6 + fund:-1 + fund:1,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,False
+4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,antifund:0 + antifund:0 + fund:-1 + fund:1,4::antifund:-1 + antifund:1 + fund:0 + fund:0,0,False
+4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,True
+4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,True

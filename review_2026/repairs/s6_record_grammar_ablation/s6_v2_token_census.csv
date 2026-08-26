@@ -1,0 +1,4 @@
+dimensions,branch_scope,clean_classification,branch_count,mesonic_count_set,baryonic_count_set,mixed_count_set,total_count_set,rs_at_threshold_2,counterexamples_at_threshold_2
+2|3,singleton_active_SU(2),clean_evaluated,4,2,2,0,4,4,0
+2|3,singleton_active_SU(3),breaking_evaluated,4,0,1,0,1,0,0
+4,singleton_active_SU(4),breaking_evaluated,4,0,0,1,1,0,0

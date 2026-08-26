@@ -1,0 +1,13 @@
+{
+  "DESIGN_v3.md": "f19afe9da1af1465d32454f76dcbdd4df0603d718423424ab6d6b9a2a9099d78",
+  "FINDINGS_v3.md": "9bae4db647eca35c3e76250cf07b119305cc51055e33cc61bb016c1f0ab0ef8a",
+  "p1_v3_dependency_pin.csv": "a41dfe317ef1287820254baffb028b6fc2f605917d84a49dc0f96bfc9c75c257",
+  "p1_v3_experimental_directions.csv": "a3a6c0483feb0d6dcef51e3e8435a6eb67ef07566eef262425e0da42938d3c49",
+  "p1_v3_experimental_sixth_moves.csv": "6e68e5ef9c417ba698cc0d20a01d7e28d53ad8d2fbd34603201e4bc54b8f73d8",
+  "p1_v3_machinery_regressions.csv": "cec0c01f7390f4d402b73cf34e009253c09b748733303e02d8a9fb91989507e9",
+  "p1_v3_named_k23_regression.csv": "0ebb89d50acc5518ebf0395ee1b5752c8258c534d60555d86b89da39efef6cd4",
+  "p1_v3_schema.json": "274ae191dac8ec600721fb7b7a17e7e2de5514ab1e197a368fea4b8dd664e7fd",
+  "p1_v3_search_cases.csv": "c0950d5fc613a694d1cef58daf9201e58c0b2f82df86a1c4908ef24b915c0973",
+  "p1_v3_search_census.csv": "4f192fbfb1c38803a4a050a924a92f9106b1dbe3b6d74160f5c31240a64b1c2b",
+  "p1_v3_survivors.csv": "a0adf2a6dfc97aafdc385beed4ff63d9e90f4f38bcd95e861c25d3097525df07"
+}

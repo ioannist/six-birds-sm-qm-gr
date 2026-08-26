@@ -1,0 +1,5 @@
+pair_id,zero_one_spectral_norm,plus_minus_one_spectral_norm,recoding_rebuilt_matrices_equal,recoding_defect_cardinality_equal,recoding_norm_invariant,coordinate_permutations_checked,coordinate_permutation_defect_cardinality_set,coordinate_permutation_max_norm_delta,all_conjugated_completions_idempotent,conjugacy_invariance_passes
+published_coordinate_pair,0.0,0.0,True,True,True,24,0,0.0,True,True
+conditional_mean_vs_nonlinear_source_projection,1.0,1.0,True,True,True,24,16,2.220446049250313e-16,True,True
+nonfactorizing_conditional_means,0.4330127018922193,0.4330127018922193,True,True,True,24,12,1.6653345369377348e-16,True,True
+nested_coordinate_control,0.0,0.0,True,True,True,24,0,0.0,True,True

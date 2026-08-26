@@ -1,0 +1,7 @@
+root_generator,su3_rep,u1_charge,su5_fixed_weak_index_map,charge_rescaling_su4_to_su5
+E_03,3,-4/3,SU4:E_03->SU5:E_03,5/8
+E_30,3bar,4/3,SU4:E_30->SU5:E_30,5/8
+E_13,3,-4/3,SU4:E_13->SU5:E_13,5/8
+E_31,3bar,4/3,SU4:E_31->SU5:E_31,5/8
+E_23,3,-4/3,SU4:E_23->SU5:E_23,5/8
+E_32,3bar,4/3,SU4:E_32->SU5:E_32,5/8

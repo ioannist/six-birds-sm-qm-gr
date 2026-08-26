@@ -1,0 +1,80 @@
+{
+  "artifact": "Q1-REPAIR-1 field-to-mode access provenance",
+  "competitor_reconciliation": "G_stability and G_control_QM and G_control_GR and G_audit and G_nosmuggle",
+  "computed_summaries": {
+    "competitors": {
+      "distinct_reconciling_families": [],
+      "fused_duplicate_detected": true,
+      "generated_map_count": 9,
+      "official_family_count": 8,
+      "official_names_match_source": true,
+      "reconciling_families": [
+        "MemoryLayer",
+        "BridgeMediatedRole"
+      ]
+    },
+    "partitions": {
+      "carrier_state_count": 16,
+      "distinct_unordered_pair_count": 120,
+      "incomparable_pair_count": 55,
+      "meet_join_closure_count": 16,
+      "nested_pair_count": 65,
+      "partition_count": 16,
+      "q_GR_partition": "P_d0_d2_d3",
+      "q_QM_partition": "P_d0_d1_d2",
+      "q_QM_q_GR_directed_defects": [
+        8,
+        8
+      ],
+      "q_QM_q_GR_relation": "incomparable"
+    },
+    "provenance": {
+      "access_split_realized": true,
+      "born_determines_d1": true,
+      "born_determines_d3": false,
+      "d0_observed_values": [
+        1
+      ],
+      "geometry_determines_d1": false,
+      "geometry_determines_d3": true,
+      "population_size": 54,
+      "q_GR_fiber_count": 10,
+      "q_QM_fiber_count": 14,
+      "source_class_counts": {
+        "fresh_seeded": 8,
+        "phase_only_control": 2,
+        "potential_only_control": 2,
+        "step25_field_sample": 26,
+        "step28_history_state": 16
+      },
+      "step28_potential_recompute_max_residual": 8.777083671441753e-17
+    }
+  },
+  "declared_partition_class": "partitions induced by all 16 subsets of four coordinates, closed under meet/join",
+  "factorization": "target is constant on every source fiber",
+  "field_modes": {
+    "d0": "round(sum |psi|^2)",
+    "d1": "indicator(sum Step25 current >= 0)",
+    "d2": "argmax Step25 density",
+    "d3": "argmax(background + 0.3*Step26 T00)",
+    "q_GR": [
+      "d0",
+      "d2",
+      "d3"
+    ],
+    "q_QM": [
+      "d0",
+      "d1",
+      "d2"
+    ]
+  },
+  "row_counts": {
+    "competitor_values": 144,
+    "competitors": 9,
+    "fibers": 24,
+    "field_modes": 54,
+    "partition_catalog": 16,
+    "partition_pairs": 120
+  },
+  "schema_version": 1
+}

@@ -11,6 +11,7 @@ from pathlib import Path
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
 THREAD_DIR = ARTIFACT_DIR.parents[1]
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 STEP33_DIR = THREAD_DIR / "steps" / "step33_partb_type_uniqueness_artifacts"
 STEP34_DIR = THREAD_DIR / "steps" / "step34_partb_instance_uniqueness_artifacts"
 
@@ -71,6 +72,16 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def source_path(source: str) -> Path:
+    path = Path(source.strip())
+    if path.is_absolute() and "physics_atlas" in path.parts:
+        atlas_index = path.parts.index("physics_atlas")
+        return REPO_ROOT.joinpath(*path.parts[atlas_index:])
+    if not path.is_absolute():
+        return THREAD_DIR / path
+    return path
+
+
 def scan_forbidden() -> None:
     for path in ARTIFACT_DIR.iterdir():
         if (
@@ -89,7 +100,7 @@ def check_source_paths(rows: list[dict[str, str]], column: str = "source_artifac
         if not row.get(column):
             fail(f"row missing {column}: {row}")
         for source in row[column].split(";"):
-            if not (THREAD_DIR / source).exists():
+            if not source_path(source).exists():
                 fail(f"missing cited source artifact: {source}")
 
 

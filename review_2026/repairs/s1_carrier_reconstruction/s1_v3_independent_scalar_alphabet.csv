@@ -1,0 +1,10 @@
+dimensions,declared_rep_assignment_count,cap_filtered_scalar_count,scalar_conjugacy_branch_count,component_cap_per_scalar,charge_count,conjugation_closed
+2,3,32,17,6,11,True
+3,5,54,27,6,11,True
+4,6,43,22,6,11,True
+2|2,6,65,35,6,11,True
+2|3,9,98,50,6,11,True
+2|4,10,65,34,6,11,True
+3|3,13,98,49,6,11,True
+3|4,14,87,44,6,11,True
+4|4,15,76,39,6,11,True

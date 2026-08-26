@@ -1,0 +1,13 @@
+{
+  "DESIGN.md": "6c0a9f2ead2bbfe1e841e65ddfdda5501e1ac6df898fe3f686438339c8e18f27",
+  "RESULTS.md": "40b8e9f530f6818bbef091fa3148d19e62c89674ae93402b8331112cead5ee0d",
+  "q2_candidate_pairs.csv": "262f41dabbb492b4a713639d51f338b12e0c0970b35d64e62e2ece2a3e5eaa92",
+  "q2_claim_ledger.csv": "54df76b0523fc4476060ab73adec07910c69de01e56c883f5c3410ba6c83f154",
+  "q2_completion_matrices.csv": "09824a55b801a14c54e751c19cb506766befe6c3175a9670bff7d74c6e4e6078",
+  "q2_dependency_pins.csv": "f020e02eb98e050a2624cc2b2f77151b996717332a4c4b8952aa9a8fdd0eae9c",
+  "q2_exact_defect_set.csv": "7358f705c7b1de17b5385db4b42e5efa79484f39946a704f974535ec96cbde5e",
+  "q2_invariance_checks.csv": "1065358b338543a32f5f5e04d4bdd90dc6ce39d975ba59fc8c9f3c513a50b833",
+  "q2_published_reproduction.csv": "c8ef290917e3cd28bc8f74027fe7e6e1a6c451bc586e4fc2a94d4da61d5485df",
+  "q2_schema.json": "4888250d9ad0cb9af6f585f4826573a4ac3b53bb3ff0f2e4f2b77667f317fc12",
+  "q2_step26_source_evidence.csv": "f34be863bfb4fc970bb9cce62c6b2b5945baac9449f151053c6a8288c83f79c6"
+}

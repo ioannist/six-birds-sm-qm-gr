@@ -1,0 +1,274 @@
+{
+  "carrier_definition": "all Step 33 corrected chiral closer rows in Step 59 order",
+  "carrier_rows": 11990,
+  "columns": {
+    "capacity_passes": "Step 57 capacity conjunct",
+    "carrier_id": "unique Step 59-order row identifier",
+    "confining_subgroups": "JSON array of confinement factors inferred by Step 59's adapter",
+    "delta_empty": "true exactly for clean_evaluated; blank when undefined",
+    "delta_evaluated": "true exactly for clean_evaluated or breaking_evaluated",
+    "delta_pair_count": "Step 41 defect-pair cardinality; blank when undefined",
+    "delta_status": "one of delta_status_values",
+    "delta_witness_count": "Step 41 defect-witness cardinality; blank when undefined",
+    "dimensions": "pipe-delimited factor dimensions",
+    "distinguishability_passes": "Step 57 distinguishability conjunct",
+    "max_confining_subgroup": "factor supplied to Step 41; blank when Delta is undefined",
+    "prediction_counterexample": "RS and breaking_evaluated",
+    "record_stability_passes": "conjunction of substrate, capacity, and distinguishability",
+    "substrate_passes": "Step 59 substrate conjunct",
+    "support_key": "Step 33 support key",
+    "transition_leak_count": "Step 59 broken-vector input to Step 41"
+  },
+  "conjunct_breaking_witnesses": {
+    "capacity": {
+      "exclusive_only_breaking_count": 8,
+      "exclusive_only_witnesses": [
+        {
+          "carrier_id": "carrier_08167",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_08172",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_08175",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_09178",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_09186",
+          "delta_pair_count": 12
+        }
+      ],
+      "satisfying_and_breaking_count": 106,
+      "witnesses": [
+        {
+          "carrier_id": "carrier_07580",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_07586",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_07646",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_07648",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_07650",
+          "delta_pair_count": 12
+        }
+      ]
+    },
+    "distinguishability": {
+      "exclusive_only_breaking_count": 528,
+      "exclusive_only_witnesses": [
+        {
+          "carrier_id": "carrier_00733",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00762",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00798",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00811",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00818",
+          "delta_pair_count": 48
+        }
+      ],
+      "satisfying_and_breaking_count": 686,
+      "witnesses": [
+        {
+          "carrier_id": "carrier_00733",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00762",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00798",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00811",
+          "delta_pair_count": 12
+        },
+        {
+          "carrier_id": "carrier_00818",
+          "delta_pair_count": 48
+        }
+      ]
+    },
+    "substrate": {
+      "exclusive_only_breaking_count": 0,
+      "exclusive_only_witnesses": [],
+      "satisfying_and_breaking_count": 60,
+      "witnesses": [
+        {
+          "carrier_id": "carrier_00827",
+          "delta_pair_count": 48
+        },
+        {
+          "carrier_id": "carrier_00836",
+          "delta_pair_count": 48
+        },
+        {
+          "carrier_id": "carrier_00837",
+          "delta_pair_count": 48
+        },
+        {
+          "carrier_id": "carrier_00838",
+          "delta_pair_count": 48
+        },
+        {
+          "carrier_id": "carrier_00847",
+          "delta_pair_count": 48
+        }
+      ]
+    }
+  },
+  "corrected_table": {
+    "RS_false": {
+      "breaking_evaluated": 918,
+      "clean_evaluated": 9222,
+      "delta_undefined_no_confinement": 1826,
+      "total": 11966
+    },
+    "RS_true": {
+      "breaking_evaluated": 0,
+      "clean_evaluated": 24,
+      "delta_undefined_no_confinement": 0,
+      "total": 24
+    }
+  },
+  "delta_status_values": [
+    "clean_evaluated",
+    "breaking_evaluated",
+    "delta_undefined_no_confinement"
+  ],
+  "experiment": "P3-REPAIR-1 full-carrier Delta_fact evaluation",
+  "headline": {
+    "RS_and_breaking_count": 0,
+    "RS_count": 24,
+    "breaking_total": 918,
+    "clean_total": 9246,
+    "delta_undefined_total": 1826,
+    "prediction_fails": false
+  },
+  "imported_build_scripts": [
+    {
+      "path": "physics_atlas/thread_cluster_a/steps/step28_mode_b_neutral_representation_desmuggle_artifacts/mode_b_neutral_representation_desmuggle_step28.py",
+      "role": "transitive Step 33 representation machinery",
+      "sha256": "3dea42ae8232b3f3653391bab28766b609e9cd5fd89f0d30c1ffd1ad353ee780"
+    },
+    {
+      "path": "physics_atlas/thread_cluster_a/steps/step33_mode_b_corrected_anomaly_chirality_artifacts/corrected_anomaly_chirality_step33.py",
+      "role": "corrected closer carrier",
+      "sha256": "75fff25f5820a7bc62e8fbfe0b62a7f14dd76531b3d3094be9bfcb2e380a990f"
+    },
+    {
+      "path": "physics_atlas/thread_cluster_a/steps/step35_mode_b_higher_layer_descent_artifacts/higher_layer_descent_step35.py",
+      "role": "higher-layer substrate and scalar machinery",
+      "sha256": "dad4c8793a8c32d47cc4d29cebfe2425f7821e61044024f7be22a33bcf21222d"
+    },
+    {
+      "path": "physics_atlas/thread_cluster_a/steps/step41_mode_b_factorization_defect_clean_separation_artifacts/factorization_defect_clean_separation_step41.py",
+      "role": "build_bosons and compute_delta",
+      "sha256": "cadc5bf72d100accd4c2cd687373edf4592c19f89c34aaa3c8838ae976d0fdee"
+    },
+    {
+      "path": "physics_atlas/thread_cluster_a/steps/step57_mode_b_record_stability_descent_artifacts/record_stability_descent_step57.py",
+      "role": "record-stability conjuncts",
+      "sha256": "f6ca35d7c3eaccad3a8f6cc42bd311818bf171da150e7e3384f980863addb2a2"
+    }
+  ],
+  "schema_version": 1,
+  "score_column_types": {
+    "alias_ambiguity_count": "integer",
+    "alias_ambiguity_witnesses": "string",
+    "base_higher_layer_passes": "boolean",
+    "breaks_to_unbroken_u1": "boolean",
+    "capacity_passes": "boolean",
+    "carrier_id": "string",
+    "component_dim_sum": "integer",
+    "confining_subgroups": "array[integer]",
+    "covered_count": "integer",
+    "delta_empty": "boolean|null",
+    "delta_evaluated": "boolean",
+    "delta_pair_count": "integer|null",
+    "delta_status": "string",
+    "delta_witness_count": "integer|null",
+    "dimensions": "string",
+    "distinguishability_passes": "boolean",
+    "fermion_count": "integer",
+    "field_count": "integer",
+    "is_reference_content": "boolean",
+    "max_confining_subgroup": "integer|null",
+    "neutral_record_token_count": "integer",
+    "prediction_counterexample": "boolean",
+    "record_stability_passes": "boolean",
+    "shadow_notes": "string",
+    "substrate_passes": "boolean",
+    "support_key": "string",
+    "support_score": "string",
+    "transition_leak_count": "integer",
+    "witness_scalar_charge": "integer",
+    "witness_scalar_key": "string",
+    "witness_scalar_reps": "string"
+  },
+  "scores_csv": "p3_full_carrier_delta_scores.csv",
+  "scores_csv_columns": [
+    "carrier_id",
+    "dimensions",
+    "support_key",
+    "support_score",
+    "field_count",
+    "component_dim_sum",
+    "base_higher_layer_passes",
+    "witness_scalar_key",
+    "witness_scalar_reps",
+    "witness_scalar_charge",
+    "covered_count",
+    "fermion_count",
+    "breaks_to_unbroken_u1",
+    "confining_subgroups",
+    "max_confining_subgroup",
+    "transition_leak_count",
+    "shadow_notes",
+    "substrate_passes",
+    "capacity_passes",
+    "distinguishability_passes",
+    "neutral_record_token_count",
+    "alias_ambiguity_count",
+    "alias_ambiguity_witnesses",
+    "record_stability_passes",
+    "delta_status",
+    "delta_evaluated",
+    "delta_pair_count",
+    "delta_witness_count",
+    "delta_empty",
+    "prediction_counterexample",
+    "is_reference_content"
+  ],
+  "scores_csv_sha256": "c202e246841a9d4bb03bda9f23f3a90a2b862200d5747c9a8cfcc9fd548e907b",
+  "undefined_semantics": "delta_undefined_no_confinement is neither clean nor breaking",
+  "validation_sample_seed": 20260826,
+  "validation_sample_size": 32
+}

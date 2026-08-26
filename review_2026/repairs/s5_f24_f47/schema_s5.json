@@ -1,0 +1,79 @@
+{
+  "carrier": {
+    "admissible_step8_measure_mass": 534,
+    "admissible_support_rows": 468,
+    "full_product": 8640
+  },
+  "f24_real_firing_families": [
+    "MemoryLayer",
+    "BudgetedRole"
+  ],
+  "f24_verdict": "ARCHITECTURE_UNDERDETERMINED_MEMORY_LAYER_AND_BUDGETED_ROLE_BOTH_CLOSE",
+  "f47_full_sensitivity_fraction_range": [
+    "0.000000000000",
+    "0.405982905983"
+  ],
+  "f47_headline": {
+    "denominator": "admissible_step8_measure_weighted",
+    "denominator_mass": 534,
+    "headline": true,
+    "headline_reason": "conditions on declared admissibility, honors Step-8 measure_weight, and uses the upstream Step-18 channel threshold rather than the downstream target-inclusive 2.70 threshold",
+    "positive_measure": true,
+    "radiative_threshold_strict_gt": "2.75",
+    "realized_f47": false,
+    "realized_in_selector": false,
+    "realized_score": "2.750000",
+    "selector_fraction": "0.022471910112",
+    "selector_mass": 12,
+    "small": true,
+    "small_theta": "0.050000",
+    "support_row_count": 468,
+    "target_ratio_max_inclusive": "0.0001"
+  },
+  "f47_legacy_fraction": "0.039583333333",
+  "f47_primary_fraction_range": [
+    "0.000000000000",
+    "0.136752136752"
+  ],
+  "grade": "FINITE_TOY_ARCHITECTURE_AND_MEASURE_ABLATION",
+  "memory_layer_closure_gate": {
+    "effect_on_verdict": "MemoryLayer FIRES remains a computed finite-toy diagnostic and is not foundation-grade architecture evidence",
+    "limitation": "finite alternating content/scale reachability reaches a graph fixed point, but does not establish a physically sufficient independent scale-layer closure",
+    "ruling": "round-23 verification",
+    "status": "EXPERIMENTAL_INSUFFICIENT"
+  },
+  "mutation_firing_families": {
+    "mutation_budget_decoupled": [
+      "MemoryLayer"
+    ],
+    "mutation_sealed_e0_scope": [
+      "ScopedRole"
+    ]
+  },
+  "naturalness_verdict": "MEASURE_AND_THRESHOLD_SENSITIVE_FINITE_TOY_REFRAME_NOT_A_STABLE_3_96_PERCENT_NUMBER",
+  "output_files": [
+    "source_pins_s5.csv",
+    "f24_family_objects_s5.csv",
+    "f24_mutation_flips_s5.csv",
+    "f47_surface_s5.csv",
+    "f47_sensitivity_s5.csv",
+    "f47_key_cells_s5.csv",
+    "f47_headline_s5.csv",
+    "controls_s5.csv",
+    "schema_s5.json",
+    "results_s5.md"
+  ],
+  "packet": "S5-REPAIR-1",
+  "realized_inclusion_rule": "strict radiative_score > threshold; realized score is exactly 2.75, hence included iff threshold < 2.75",
+  "role_obstruction_pairs": {
+    "admissible_carrier": 307,
+    "full_product": 5760
+  },
+  "source_pins": {
+    "step17": "b797626946e731a4df47bcb31351484ea8e838c190eae62964955cb3ae9671e0",
+    "step18": "a61e37694aed689b67fb2336c8c84d437ad2c567b272e6bac4cb2f0b3fa6cdfa",
+    "step19": "bc230981dd3cdcc7ba39fdd309c451e2559a2e6070c7d0a24be2b066a5a78afc",
+    "step8": "ff1605aa8f12c8793916923a0d54ed4835cb93fec7195487b5947e65ad6ce0a7",
+    "step9": "bb60decaf6d2961bd9ec7a094daa7097c6880d036c193878ef3b1ffacfe72de0"
+  }
+}

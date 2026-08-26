@@ -1,0 +1,42 @@
+{
+  "all_min_cuts_unique": true,
+  "backlog": "Step44-style GENERIC_VIOLATES verdict naming is noted for a separate hygiene fix and is not changed here.",
+  "complementary_slackness_all_regions": true,
+  "composition": {
+    "area_i3": -4.440892098500626e-16,
+    "area_min_plus_rule_all_probes": true,
+    "born_and_area_in_same_mmi_inequality_class": true,
+    "born_i3": -0.036345927372539055,
+    "born_same_min_plus_rule_all_probes": false,
+    "operation": "contract boundary R3 of copy A with boundary L3 of copy B",
+    "shared_composition_rule_constructed": false,
+    "verdict": "DOWNGRADED_SHARED_MMI_CLASS_DIFFERENT_DEPENDENCIES"
+  },
+  "corrected_identity": "Area(min cut) = dual optimum = sum_e c_e y_e; y_e is the per-edge shadow price (the 0/1 cut-incidence variable in this chamber).",
+  "dual_feasible_all_regions": true,
+  "edge_count": 14,
+  "global_minimum_cut_margin": "87921164864559/1250000000000000",
+  "linear_response": {
+    "can_fail_control_nonmatch": true,
+    "geometry_direction_source": "fixed rational bridge direction declared before entropy evaluation",
+    "match": false,
+    "max_absolute_error": 0.018286104381589327,
+    "minimum_directional_stability_radius": "1155027166312429/35000000000000",
+    "state_deformation_source": "fixed virtual-bond diagonal filter declared before entropy evaluation",
+    "tolerance": 5e-05,
+    "verdict": "HONEST_NON_MATCH"
+  },
+  "pins": {
+    "step42": "4e204c0eae2df9a88b426c07e4bcf04ad308a3b1d18e05eac769bb64594b2d08",
+    "step44": "61f28d10e8170a9f37ac71a711b6d30c3dac9b4f014b8e634c70ba2166a47052",
+    "step45": "2348078115c839d2e4ee1fb66a99e620cb3644181befd5374a2f532cc83a4f35",
+    "step50": "ddaa2709c08c2e07835b126a2e3778f5ca2738720c6661a8c6127503df6b83d7",
+    "step55": "a21740d3f8266c1213bf46f1e1a4a37367b6cb3f2d61b742301539a626d760aa"
+  },
+  "primal_feasible_all_regions": true,
+  "region_count": 254,
+  "seed": 101,
+  "sensitivity_epsilon": "87921164864559/5000000000000000",
+  "sensitivity_equals_shadow_price_all_region_edges": true,
+  "strong_duality_all_regions": true
+}

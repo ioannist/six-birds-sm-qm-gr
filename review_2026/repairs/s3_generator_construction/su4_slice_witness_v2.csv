@@ -1,0 +1,2 @@
+weak_operator,source_slice_element,commutator,commutator_target,target_relation_exact,target_outside_slice,verdict
+E_34,E_03,-1*E_04,E_04,True,True,ANALOGUE_AS_FIXED_WEAK_INDEX_SLICE_NOT_IDENTITY

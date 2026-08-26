@@ -5,6 +5,12 @@ binding non-claims, how the elasticity firewall works, the numbered list of Laye
 and the predicted shadow-heavy / emergence-sparse shape as the **registered null**. It is the assembler's
 freeze record for the Phase-0 bundle produced by `wf_phase0_freeze.mjs`.
 
+> **REVIEW CAMPAIGN ADDENDUM (2026-08-26; round-19 ruling).** The `SHA256SUMS` entry for
+> `SIX_BIRDS_ANTI_REDUCTIONISM_PRIMER.md` references a file that is absent from this public release.
+> Accordingly, the freeze gate is a consistency validator for the files and policy it can inspect, not a
+> tamper-evident freeze: the checksum list and validator are co-located with the checked material and have
+> no externally anchored or signed digest. This note does not alter `SHA256SUMS` or the gate script.
+
 > **PAUSE 1 v2 update (2026-06-04, external-review remediation).** The external review
 > (`EXTERNAL_REVIEW_v1.md`, APPROVE-WITH-REQUIRED-CHANGES) required R1–R8; the per-item disposition is in
 > **`CHANGELOG_PAUSE1_v2.md`**. The two material additions to the frozen bundle are the **full closure-card

@@ -1,0 +1,13 @@
+control,passes,evidence
+pinned_v2_sources,True,three imported S1 scripts match real SHA-256 pins
+step15_exact_reproduction,True,raw=1161; irreducible=28
+quotient_orbits_close,True,28 labelled supports form 14 two-member orbits
+strongest_conjunction_unique_orbit,True,two labelled descriptions collapse to one physical orbit
+minimality_no_go_retained,True,selected orbit has minimality rank 14/14
+v2_clean_content_unique,True,labelled_clean_rosters=4; physical_orbits=1
+symbolic_mass_rank_has_teeth,True,one-copy rank 14 -> 8 after deleting the down-type channel
+n_copy_atomic_failure_is_computed,True,N>=2 contains a proper one-generation closed chiral submultiset
+n_copy_closure_failure_is_computed,True,inherited route predicate permits at most one fully gauge-singlet occurrence
+quotient_mutation_identity_or_sign_only,True,identity/global-sign-only classes=28 (expected 28)
+quotient_mutation_declared_global_action,True,global color conjugation plus global U(1) sign classes=14 (expected 14)
+quotient_mutation_forbidden_per_field_conjugation_rejected,True,"mutated_classes=14; invalid_source_mappings=28/28; witness=(3,1)_-1 + (3,1)_1 + (3bar,1)_-1/6 + (3bar,1)_1/6 -> (3,1)_-1 + (3,1)_-1/6 + (3,1)_1/6 + (3,1)_1"

@@ -1,0 +1,13 @@
+carrier,seed,unique_all_regions,minimum_unique_cut_margin,raw_edges,raw_exact_rank,raw_deficiency,reduction_moves,reduced_edges,reduced_exact_rank,residual_deficiency,all_region_values_preserved
+published_step42_raw,101,True,0.0703369318916472,14,9,5,series_bivalent|series_bivalent|series_bivalent,9,9,0,True
+crosslinked_three_path,101,True,0.023052055936339,17,9,8,exact_two_terminal_module,9,9,0,True
+grid_2x3_multiterminal,101,True,0.0414599076815266,13,10,3,saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction,10,10,0,True
+k4_well_connected_stiff_chord,101,True,0.0018497737835559,14,11,3,inseparable_vertex_contraction_parallel_sum,11,11,0,True
+published_step42_raw,202,True,0.0169535785752149,14,9,5,series_bivalent|series_bivalent|series_bivalent,9,9,0,True
+crosslinked_three_path,202,True,0.1205884255077398,17,9,8,exact_two_terminal_module,9,9,0,True
+grid_2x3_multiterminal,202,True,0.0381552817009243,13,10,3,saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction,10,10,0,True
+k4_well_connected_stiff_chord,202,True,0.1137409356233693,14,11,3,inseparable_vertex_contraction_parallel_sum,11,11,0,True
+published_step42_raw,303,True,0.0133806640533423,14,9,5,series_bivalent|series_bivalent|series_bivalent,9,9,0,True
+crosslinked_three_path,303,True,0.1980133921900823,17,9,8,exact_two_terminal_module,9,9,0,True
+grid_2x3_multiterminal,303,True,0.2437421936128706,13,9,4,saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction|saturated_terminal_zero_column_contraction,9,9,0,True
+k4_well_connected_stiff_chord,303,True,0.0228664557187925,14,11,3,inseparable_vertex_contraction_parallel_sum,11,11,0,True

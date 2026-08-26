@@ -1,0 +1,263 @@
+{
+  "artifact_sha256": {
+    "p3_full_carrier_delta_multiconfinement_factors_v2.csv": "fff0b0a1ab57f755255a069136ce3c405f8d4f62771480899835a37bed846067",
+    "p3_full_carrier_delta_scores_v2.csv": "788eaf7796ad9bb6bdafc2a7244cb0e1032063ce679e0c33346315085506528b"
+  },
+  "binary_stability": {
+    "moved_carrier_ids": [],
+    "moved_count": 0,
+    "stable": true
+  },
+  "carrier_rows": 11990,
+  "columns": {
+    "multi_confinement_factors": [
+      "carrier_id",
+      "dimensions",
+      "factor_label",
+      "factor_index",
+      "original_dimension",
+      "scalar_rep",
+      "factor_state",
+      "residual_dimension",
+      "massless_generator_count",
+      "transition_vector_count",
+      "interference_projection",
+      "delta_pair_count",
+      "delta_witness_count"
+    ],
+    "scores": [
+      "carrier_id",
+      "dimensions",
+      "support_key",
+      "record_stability_passes",
+      "confining_subgroups",
+      "transition_leak_count",
+      "legacy_delta_status",
+      "legacy_delta_pair_count",
+      "product_delta_status",
+      "product_delta_evaluated",
+      "product_delta_pair_count",
+      "product_delta_witness_count",
+      "product_delta_empty",
+      "pair_count_change",
+      "binary_moved",
+      "residual_factor_count",
+      "multi_confinement",
+      "factor_projection_summary"
+    ]
+  },
+  "corrected_table": {
+    "RS_false": {
+      "breaking_evaluated": 918,
+      "clean_evaluated": 9222,
+      "delta_undefined_no_confinement": 1826,
+      "total": 11966
+    },
+    "RS_true": {
+      "breaking_evaluated": 0,
+      "clean_evaluated": 24,
+      "delta_undefined_no_confinement": 0,
+      "total": 24
+    }
+  },
+  "delta_defined_rows": 10164,
+  "experiment": "P3-REPAIR-1b factor-labelled product-confinement refinement",
+  "historical_outputs_preserved": true,
+  "implementation_sha256": {
+    "build_p3_full_carrier_delta_v2.py": "9b253d0ea92d4bdf48fcaf3cf8d8d8bad49490283843b7964413d7a46ef742fe"
+  },
+  "input_pins": {
+    "p3_full_carrier_delta_schema.json": "5c41a8c37c47c6339056096f87923100887cbcf3037458f630817ccf314f5d5b",
+    "p3_full_carrier_delta_scores.csv": "c202e246841a9d4bb03bda9f23f3a90a2b862200d5747c9a8cfcc9fd548e907b",
+    "physics_atlas/thread_cluster_a/steps/step35_mode_b_higher_layer_descent_artifacts/higher_layer_descent_step35.py": "dad4c8793a8c32d47cc4d29cebfe2425f7821e61044024f7be22a33bcf21222d"
+  },
+  "multi_confinement_factor_rows": 2406,
+  "multi_confinement_rows": 1203,
+  "pair_count_change_summary": [
+    {
+      "legacy_pair_count": 0,
+      "product_pair_count": 0,
+      "row_count": 553
+    },
+    {
+      "legacy_pair_count": 12,
+      "product_pair_count": 12,
+      "row_count": 200
+    },
+    {
+      "legacy_pair_count": 32,
+      "product_pair_count": 12,
+      "row_count": 88
+    },
+    {
+      "legacy_pair_count": 48,
+      "product_pair_count": 48,
+      "row_count": 222
+    },
+    {
+      "legacy_pair_count": 60,
+      "product_pair_count": 12,
+      "row_count": 88
+    },
+    {
+      "legacy_pair_count": 90,
+      "product_pair_count": 48,
+      "row_count": 52
+    }
+  ],
+  "per_factor_summary": [
+    {
+      "delta_pairs_total": 0,
+      "delta_witnesses_total": 0,
+      "factor_label": "factor0",
+      "factor_state": "untouched",
+      "massless_generators_total": 1941,
+      "original_dimension": 2,
+      "residual_dimension": 2,
+      "row_count": 647,
+      "scalar_rep": "singlet",
+      "transition_vectors_total": 0
+    },
+    {
+      "delta_pairs_total": 1584,
+      "delta_witnesses_total": 528,
+      "factor_label": "factor0",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 396,
+      "original_dimension": 3,
+      "residual_dimension": 2,
+      "row_count": 132,
+      "scalar_rep": "antifund",
+      "transition_vectors_total": 528
+    },
+    {
+      "delta_pairs_total": 0,
+      "delta_witnesses_total": 0,
+      "factor_label": "factor0",
+      "factor_state": "untouched",
+      "massless_generators_total": 2112,
+      "original_dimension": 3,
+      "residual_dimension": 3,
+      "row_count": 264,
+      "scalar_rep": "singlet",
+      "transition_vectors_total": 0
+    },
+    {
+      "delta_pairs_total": 960,
+      "delta_witnesses_total": 120,
+      "factor_label": "factor0",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 160,
+      "original_dimension": 4,
+      "residual_dimension": 3,
+      "row_count": 20,
+      "scalar_rep": "antifund",
+      "transition_vectors_total": 120
+    },
+    {
+      "delta_pairs_total": 288,
+      "delta_witnesses_total": 36,
+      "factor_label": "factor0",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 48,
+      "original_dimension": 4,
+      "residual_dimension": 3,
+      "row_count": 6,
+      "scalar_rep": "antisym2",
+      "transition_vectors_total": 36
+    },
+    {
+      "delta_pairs_total": 0,
+      "delta_witnesses_total": 0,
+      "factor_label": "factor0",
+      "factor_state": "untouched",
+      "massless_generators_total": 2010,
+      "original_dimension": 4,
+      "residual_dimension": 4,
+      "row_count": 134,
+      "scalar_rep": "singlet",
+      "transition_vectors_total": 0
+    },
+    {
+      "delta_pairs_total": 2928,
+      "delta_witnesses_total": 976,
+      "factor_label": "factor1",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 732,
+      "original_dimension": 3,
+      "residual_dimension": 2,
+      "row_count": 244,
+      "scalar_rep": "antifund",
+      "transition_vectors_total": 976
+    },
+    {
+      "delta_pairs_total": 0,
+      "delta_witnesses_total": 0,
+      "factor_label": "factor1",
+      "factor_state": "untouched",
+      "massless_generators_total": 1992,
+      "original_dimension": 3,
+      "residual_dimension": 3,
+      "row_count": 249,
+      "scalar_rep": "singlet",
+      "transition_vectors_total": 0
+    },
+    {
+      "delta_pairs_total": 8640,
+      "delta_witnesses_total": 1080,
+      "factor_label": "factor1",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 1440,
+      "original_dimension": 4,
+      "residual_dimension": 3,
+      "row_count": 180,
+      "scalar_rep": "antifund",
+      "transition_vectors_total": 1080
+    },
+    {
+      "delta_pairs_total": 3264,
+      "delta_witnesses_total": 408,
+      "factor_label": "factor1",
+      "factor_state": "active_broken_to_residual",
+      "massless_generators_total": 544,
+      "original_dimension": 4,
+      "residual_dimension": 3,
+      "row_count": 68,
+      "scalar_rep": "antisym2",
+      "transition_vectors_total": 408
+    },
+    {
+      "delta_pairs_total": 0,
+      "delta_witnesses_total": 0,
+      "factor_label": "factor1",
+      "factor_state": "untouched",
+      "massless_generators_total": 6930,
+      "original_dimension": 4,
+      "residual_dimension": 4,
+      "row_count": 462,
+      "scalar_rep": "singlet",
+      "transition_vectors_total": 0
+    }
+  ],
+  "projection_definition": "ordered tuple over every residual factor; nontrivial only at source factor",
+  "schema_version": 2,
+  "typed_claim": {
+    "caveats": [
+      "proxy breaking/scalar choice",
+      "inherited carrier",
+      "record-grammar shape"
+    ],
+    "evidence_grade": "CONDITIONAL FINITE-TOY PROXY ENUMERATION DIAGNOSTIC",
+    "statement": "RS(C) => C in Dom(Delta_fact) AND Delta_fact(C) = empty",
+    "survives": true
+  },
+  "validator_coverage": {
+    "RS_rows": 24,
+    "breaking_rows": 918,
+    "carrier_rows": 11990,
+    "delta_defined_rows": 10164,
+    "multi_confinement_rows": 1203,
+    "no_confinement_negative_controls": 1826,
+    "strategy": "exhaustive all Delta-defined rows plus all no-confinement negative controls"
+  }
+}

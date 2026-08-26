@@ -1,0 +1,13 @@
+generator_id,nonzero_transition_entries,mediates_delta_b,delta_b_values,transition_types
+X_S_03,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_03,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_S_04,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_04,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_S_13,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_13,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_S_14,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_14,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_S_23,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_23,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_S_24,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark
+X_A_24,8,True,-2/3|-1/3|1/3|2/3,lepton->quark|quark->lepton|quark->quark

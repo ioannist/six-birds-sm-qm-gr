@@ -1,0 +1,7 @@
+threshold_provenance,denominator,support_row_count,denominator_mass,radiative_threshold_strict_gt,target_ratio_max_inclusive,small_theta,selector_mass,selector_fraction,positive_measure,small,realized_score,realized_in_selector,realized_f47
+step19_legacy,full_product_unweighted,8640,8640,2.70,0.0001,0.050000,342,0.039583333333,True,True,2.750000,True,True
+step19_legacy,admissible_unweighted,468,468,2.70,0.0001,0.050000,24,0.051282051282,True,False,2.750000,True,False
+step19_legacy,admissible_step8_measure_weighted,468,534,2.70,0.0001,0.050000,24,0.044943820225,True,True,2.750000,True,True
+step18_upstream,full_product_unweighted,8640,8640,2.75,0.0001,0.050000,234,0.027083333333,True,True,2.750000,False,False
+step18_upstream,admissible_unweighted,468,468,2.75,0.0001,0.050000,12,0.025641025641,True,True,2.750000,False,False
+step18_upstream,admissible_step8_measure_weighted,468,534,2.75,0.0001,0.050000,12,0.022471910112,True,True,2.750000,False,False

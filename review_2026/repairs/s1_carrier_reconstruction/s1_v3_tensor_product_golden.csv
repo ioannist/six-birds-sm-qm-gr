@@ -1,0 +1,15 @@
+dimension,rep_a,rep_b,rep_c,expected_singlet_multiplicity,actual_singlet_multiplicity,passes
+2,fund,fund,singlet,1,1,True
+2,fund,fund,sym2,1,1,True
+2,sym2,sym2,sym2,1,1,True
+2,fund,sym2,singlet,0,0,True
+3,fund,antifund,singlet,1,1,True
+3,fund,fund,fund,1,1,True
+3,antifund,antifund,antifund,1,1,True
+3,sym2,antifund,antifund,1,1,True
+3,sym2,sym2,sym2,1,1,True
+4,fund,antifund,singlet,1,1,True
+4,fund,fund,conj_sym2,1,1,True
+4,fund,fund,antisym2,1,1,True
+4,antisym2,antisym2,singlet,1,1,True
+4,sym2,sym2,sym2,0,0,True

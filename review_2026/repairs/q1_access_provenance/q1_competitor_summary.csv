@@ -1,0 +1,10 @@
+family,declared_f24_family,map_definition,output_arity,image_size,G_stability,G_control_QM,G_control_GR,G_control,G_audit,G_nosmuggle,duplicate_column_pairs,QM_obstruction_pairs,GR_obstruction_pairs,partition_equivalent_to_L,reconciles,computed_status
+MemoryLayer,True,"(d0,d1,d2,m=d1 XOR d3); exposed reversible memory code",4,16,True,True,True,True,True,True,,0,0,True,True,reconciles_but_partition_equivalent_to_L
+HiddenUpstreamRole,True,"(d0,d1,d2); d3 remains latent",3,8,True,True,False,False,True,True,,0,8,False,False,fails_endpoint_control
+BridgeMediatedRole,True,"(d0,d1,d2,d3); explicit common refinement L",4,16,True,True,True,True,True,True,,0,0,True,True,reconciles_but_partition_equivalent_to_L
+BudgetedRole,True,"(d0,d1,d2,d3_hat=d0 XOR d2); no independent d3 budget",4,8,True,True,False,False,True,True,,0,8,False,False,fails_endpoint_control
+ScopedRole,True,"(d0,d1,d2,d3 if d0=0 else OUT); resolves a proper scope",4,12,True,True,False,False,True,True,,0,4,False,False,fails_endpoint_control
+CoarsenedRole,True,"(d0,d2,d1 XOR d3); quotient merges endpoint distinctions",3,8,True,False,False,False,True,True,,8,8,False,False,fails_endpoint_control
+OutsideRoleScope,True,"(d0,d1,d2,d3) on d0=0 and OUT on d1,d3 otherwise",4,10,True,False,False,False,True,True,,8,8,False,False,fails_endpoint_control
+BlockedNonClosure,True,"(d0,d1,d2,BLOCKED); unresolved coordinate is unformed",4,8,True,True,False,False,False,True,,0,8,False,False,blocked_nonclosure
+FusedDuplicateControl,False,"(d0,d1,d2,d0,d2,d3); direct-sum duplicate",6,16,True,True,True,True,True,False,0-3;2-4,0,0,True,False,fails_no_smuggle

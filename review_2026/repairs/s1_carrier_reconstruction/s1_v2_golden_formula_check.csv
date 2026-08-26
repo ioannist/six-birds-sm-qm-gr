@@ -1,0 +1,14 @@
+dimension,rep,expected_dim,actual_dim,expected_2T,actual_2T,expected_A,actual_A,passes
+2,singlet,1,1,0,0,0,0,True
+2,fund,2,2,1,1,0,0,True
+2,sym2,3,3,4,4,0,0,True
+3,fund,3,3,1,1,1,1,True
+3,antifund,3,3,1,1,-1,-1,True
+3,sym2,6,6,5,5,7,7,True
+3,conj_sym2,6,6,5,5,-7,-7,True
+3,antisym2,3,3,1,1,-1,-1,True
+4,fund,4,4,1,1,1,1,True
+4,antifund,4,4,1,1,-1,-1,True
+4,sym2,10,10,6,6,8,8,True
+4,conj_sym2,10,10,6,6,-8,-8,True
+4,antisym2,6,6,2,2,0,0,True

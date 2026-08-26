@@ -1,0 +1,13 @@
+threshold,quantifier_reading,domain_count,antecedent_count,counterexample_count,implication_passes,vacuous
+1,branch_pointwise,12,12,8,False,False
+1,structure_universal,8,8,8,False,False
+1,structure_existential,8,8,4,False,False
+2,branch_pointwise,12,4,0,True,False
+2,structure_universal,8,0,0,True,True
+2,structure_existential,8,4,0,True,False
+3,branch_pointwise,12,4,0,True,False
+3,structure_universal,8,0,0,True,True
+3,structure_existential,8,4,0,True,False
+4,branch_pointwise,12,4,0,True,False
+4,structure_universal,8,0,0,True,True
+4,structure_existential,8,4,0,True,False

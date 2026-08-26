@@ -1,0 +1,18 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "RESULTS_v2.md": "00bf2c5a01662ed9f82deae3b80f9508dc6bc882f325f123a0b256215ebdcdd8",
+    "claim_status_v2.csv": "45acf1c0076c76b612a2fdfdc05c90a8c82d7695164c5268924776e8463f80ae",
+    "f48_extracted_coroots_v2.csv": "148c31d20920f338cf199f40cafd078668ecdd64c6b6372840bdd1d7ad8afd88",
+    "f48_extracted_lattice_v2.csv": "eb07d82c62668a9d2460637055f5763693e707f07d1012dc25ca8a85d11babf3",
+    "full_commutant_coefficients_v2.csv": "22f4558cb5039a8e266684e258641cbc15d165e129a4c0a4a6561a07e4b6ddbc",
+    "full_commutant_v2.csv": "caea1d378e2a70b50a5852afc38b3d54093a6639b5c1b9390080e9364c5de982",
+    "mutation_tests_v2.csv": "e47ea9dd7f5948ec82af5809a5d6c6ea385939c96da0d4095fb4cbd6169b68a7",
+    "pati_salam_weights_v2.csv": "39bb312ef473cd6577b85a0f57f82927f41bea92a485f3f4815404d1763bd3e5",
+    "product_parent_controls_v2.csv": "1388eb683b34b37b888a8b53c59599cc6ffa35729e0ea94b0e16e48178b35d69",
+    "s3_results_v2.json": "73368332af732ac7519daa8c70537a731d3cda5347f3352a9ce01ca2e901ae59",
+    "schema_v2.json": "9a853c119b6ec41ce3147b195cb7e92b413fcedf26bbeb1f1e6bedb0c44f2d8e",
+    "su4_slice_map_v2.csv": "6d1027d45593272eadb490233c161919f13367cf0369b62ba8910028d151e26a",
+    "su4_slice_witness_v2.csv": "fc32cd5de87698fcda77e73e50eed859901cc96c78ca9895571b1052e6ac9915"
+  }
+}

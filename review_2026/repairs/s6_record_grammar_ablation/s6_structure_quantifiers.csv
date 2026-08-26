@@ -1,0 +1,53 @@
+threshold,dimensions,structure_id,branch_domain_size,quantifier_domain,rs_branch_count,clean_branch_count,pointwise_all_rs_imply_clean,universal_rs_antecedent,universal_clean_consequent,universal_implication,existential_rs_antecedent,existential_clean_consequent,existential_implication
+2,2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,evaluated_singleton_branches,2,1,False,True,False,False,True,True,True
+2,2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,2,evaluated_singleton_branches,2,1,False,True,False,False,True,True,True
+2,2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,2,evaluated_singleton_branches,2,1,False,True,False,False,True,True,True
+2,2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,2,evaluated_singleton_branches,2,1,False,True,False,False,True,True,True
+2,3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,evaluated_singleton_branches,0,0,True,False,False,True,False,False,True
+2,4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,1,evaluated_singleton_branches,0,0,True,False,False,True,False,False,True
+2,4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,0,undefined_no_singleton_branch,0,0,undefined,undefined,undefined,undefined,undefined,undefined,undefined
+2,4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,1,evaluated_singleton_branches,0,0,True,False,False,True,False,False,True
+2,4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,1,evaluated_singleton_branches,0,0,True,False,False,True,False,False,True

@@ -1,0 +1,435 @@
+{
+  "construction_mode": "from-first-principles exact Gaussian-rational matrices and integer lattices",
+  "external_file_dependencies": [],
+  "packet": "S3-REPAIR-1",
+  "physics_atlas_imports": [],
+  "schema_version": "1.0",
+  "summary_file": "s3_results.json",
+  "tables": {
+    "claim_status.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "claim",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "status",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": false,
+          "name": "computed_result",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": false,
+          "name": "residual_assumption_or_convention",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "claim"
+      ],
+      "row_count": 7
+    },
+    "f27_generator_actions.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "generator_id",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "nonzero_transition_entries",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "mediates_delta_b",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "delta_b_values",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "transition_types",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "generator_id"
+      ],
+      "row_count": 12
+    },
+    "f48_lattice.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "cocharacter_rank",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "derived_coroot_rank",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "smith_invariants",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "free_rank_pi1_h",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "torsion_pi1_h",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "primitive_loop_character",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "central_u1_loop_index",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "global_form",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su5_pi2_g_over_h",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "sm_alone_pi2_g_over_h",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "global_form"
+      ],
+      "row_count": 1
+    },
+    "fermion_decomposition.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "state",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "component_id",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "irrep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "multiplet",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su3_rep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su2_rep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "hypercharge",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "t3",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "electric_charge",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "baryon_number",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "role",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "state"
+      ],
+      "row_count": 15
+    },
+    "mutation_tests.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "mutation",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "expected",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "result",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": false,
+          "name": "rejection",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "mutation"
+      ],
+      "row_count": 3
+    },
+    "parent_candidates.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "candidate",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "parent_dimension",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "centralizer_dimension",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "coset_dimension",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "extra_fundamental_singlets",
+          "type": "integer"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "simple_su_parent",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "exact_single_u1_centralizer",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "exact_xy_coset_dimension_12",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "no_extra_fundamental_singlets",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "wedge2_plus_antifund_dimension_15",
+          "type": "boolean"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "selected",
+          "type": "boolean"
+        }
+      ],
+      "primary_key": [
+        "candidate"
+      ],
+      "row_count": 4
+    },
+    "ratio_conventions.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "convention",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "y_scale_vs_standard",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "fundamental_tr_y2",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "fundamental_tr_t3_squared",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "k_y",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "generation_tr_q2",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "generation_tr_t3_squared",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "sin2_theta_w",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "convention"
+      ],
+      "row_count": 2
+    },
+    "su4_analogue.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "root_generator",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su3_rep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "u1_charge",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su5_fixed_weak_index_map",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "charge_rescaling_su4_to_su5",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "root_generator"
+      ],
+      "row_count": 6
+    },
+    "su5_coset_quantum_numbers.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "root_generator",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su3_rep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su2_rep",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "hypercharge",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "su3_cartan_weight",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "t3",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "complex_multiplet",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "root_generator"
+      ],
+      "row_count": 12
+    },
+    "su5_generators.csv": {
+      "columns": [
+        {
+          "exact_arithmetic": true,
+          "name": "generator_id",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "sector",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": true,
+          "name": "trace",
+          "type": "string"
+        },
+        {
+          "exact_arithmetic": false,
+          "name": "matrix",
+          "type": "string"
+        }
+      ],
+      "primary_key": [
+        "generator_id"
+      ],
+      "row_count": 24
+    }
+  }
+}

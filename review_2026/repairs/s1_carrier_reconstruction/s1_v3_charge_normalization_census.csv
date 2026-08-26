@@ -1,0 +1,5 @@
+stage,labelled_count,declared_orbit_count,primitive_normalized_orbit_count,labelled_stage_exclusion_percent,declared_orbit_stage_exclusion_percent,primitive_stage_exclusion_percent,labelled_cumulative_exclusion_percent,declared_orbit_cumulative_exclusion_percent,primitive_cumulative_exclusion_percent
+genuinely_chiral,1066,419,195,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000
+atomic_packaging,84,37,37,92.120075,91.169451,81.025641,92.120075,91.169451,81.025641
+closure_consistency,62,27,27,26.190476,27.027027,27.027027,94.183865,93.556086,86.153846
+chirality_faithfulness,52,24,24,16.129032,11.111111,11.111111,95.121951,94.272076,87.692308

@@ -1,0 +1,2 @@
+dependency,expected_sha256,actual_sha256,passes
+active_cut_quotient_v2.py,adcfa43bf35fc2994c9f46fa57d9f9d380e86d6a5eac92a55c7e036a9fea9cc2,adcfa43bf35fc2994c9f46fa57d9f9d380e86d6a5eac92a55c7e036a9fea9cc2,True

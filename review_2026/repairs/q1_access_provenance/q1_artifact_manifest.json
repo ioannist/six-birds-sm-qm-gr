@@ -1,0 +1,13 @@
+{
+  "DESIGN.md": "1ea6a39dae70e492bd5837ba339395ec055190dafa5f1f3c6dbc3d15d32be65d",
+  "RESULTS.md": "a3894d136f77f1415a34c32c2dec52024b81236c9f4790fb07177ef3ec7af054",
+  "q1_competitor_maps.csv": "9545cf2f4db97c46ddd5f9d097f497580764707480b36253fd17cab05222dcd8",
+  "q1_competitor_summary.csv": "0d79aad60b74156b263b4a944f7b30236dc0d96e0cf568ce842c2eea301e8d22",
+  "q1_dependency_pins.csv": "53cd2a15d441abe94c9a1adf1e7d134d9b7f91a8c42fc1f71d2717b526967e85",
+  "q1_field_modes.csv": "ec8d5ba95c88d6d040b8ed01f552f85004d9db4a794c4e84ff923a63e5f3c32c",
+  "q1_partition_catalog.csv": "24dacfe6ea2a02ee058091b78c8a7518a1fa3be2e9189599b1271c644ed6360b",
+  "q1_partition_pair_exhaustion.csv": "1fe0200f13cec608ad46390a66d3149172635bbfafe7447d3b02c49f22bf6dfd",
+  "q1_provenance_checks.csv": "fecf32f1757d2a53052c48f862b025483b47077b818a81da61af57ae66ca82d3",
+  "q1_provenance_fibers.csv": "3cba521d0ee55d30bcda89de567f4d8841df6fbd64771c69f775fbc7d15a4923",
+  "q1_schema.json": "2c265a395e56f6322aea6b43a4a368bf7418bf45f6547f27477f7c287246c2fa"
+}

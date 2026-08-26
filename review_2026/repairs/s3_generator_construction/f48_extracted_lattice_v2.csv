@@ -1,0 +1,2 @@
+extracted_columns,derived_coroot_rank,smith_invariants,annihilator,free_rank_pi1_H,centralizer_primitive,central_u1_loop_index,H_connected,pi1_SU5,pi2_SU5,kernel_free_rank,pi2_SU5_over_H
+"[(1, -1, 0, 0), (0, 1, -1, 0), (0, 0, 0, 1)]",3,"(1, 1, 1)","(1, 1, 1, 0)",1,"(-2, -2, -2, 3, 3)",6,True,0,0,1,Z

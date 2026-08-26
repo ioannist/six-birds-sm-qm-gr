@@ -1,0 +1,5 @@
+gate,independent_count,comparison_count,passes,evidence
+independent_scalar_alphabet_conjugation_closure,618,618,True,independent declared table; per-scalar component cap=6
+explicit_tensor_product_singlet_multiplicity,368,368,True,all ordered triples decomposed; permutation symmetry exact
+tensor_product_golden_values,14,14,True,"known SU(2), SU(3), and SU(4) decompositions"
+independent_singleton_branch_keys_equal_primary,12,12,True,no production neutral-assignment or Yukawa helper called on gate path

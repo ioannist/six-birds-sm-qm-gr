@@ -1,0 +1,16 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "RESULTS_v3.md": "11bc9fa359ee34751dcb6c2abe84723c9053249fd08b315639cf37bab8699011",
+    "s1_v3_charge_normalization_census.csv": "5718a267be0def913267665fa49db8edd616ece74f5e2db39d427a07ea7dab11",
+    "s1_v3_independent_gate.csv": "e6037713febc77fd22a29eef78200870cb0497df3140d168157915794596618b",
+    "s1_v3_independent_scalar_alphabet.csv": "031d7bfb9a83fc7a2e1ccc1f138ef0511a5d78b59aecdd309efadb184cdf70f2",
+    "s1_v3_schema.json": "0c7c5a6bab3f5a0923350b527975a5084a31be0deb1a940e7eb7240fcaf15999",
+    "s1_v3_singleton_scalar_branches.csv": "6a7173a4ef7be6f5e246dbf380388462f4f0559b44152b3e79c96d9367c09855",
+    "s1_v3_singleton_scalar_coverage.csv": "eb6e0fa00ff307a673aa1f8ff37160f75258544ee42d04674af032fe3b7495c4",
+    "s1_v3_tensor_product_golden.csv": "e5c3213f9b4084ce392201c685155aa3ec3c7e6dc342b57778f0c7dda42936fd",
+    "s1_v3_tensor_product_singlets.csv": "04820a211fe8e96f55bd43a44b33f26007a0d6f2d3a47793941c5fd5f0d82033",
+    "s1_v3_two_scalar_pair_branches.csv": "7c17c28253356ab327074977b3076be1b6dc1ecacf752325384bb1b27ba08d1c",
+    "s1_v3_two_scalar_pair_coverage.csv": "d285bc450646fe8c9b2aa4cc751a96926a731e9b73d81c7523b5f895b077bb20"
+  }
+}

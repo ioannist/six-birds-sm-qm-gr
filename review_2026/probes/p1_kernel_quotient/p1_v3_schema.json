@@ -1,0 +1,39 @@
+{
+  "acceptance": "exact equality of all boundary cut values plus unique minimizers after full re-enumeration",
+  "artifact": "P1-HYGIENE five-move active-cut quotient",
+  "certified_reductions": [
+    "saturated_terminal_or_zero_column_contraction",
+    "inseparable_vertex_contraction_parallel_sum",
+    "series_bivalent_reduction",
+    "exact_two_terminal_module_replacement",
+    "exact_delta_y_y_delta_replacement"
+  ],
+  "delta_y_star_legs": [
+    "w01+w02",
+    "w01+w12",
+    "w02+w12"
+  ],
+  "experimental_not_certified": [
+    "EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT",
+    "EXPERIMENTAL_K4_OPPOSITE_PERFECT_MATCHING"
+  ],
+  "outcome": "FIVE_MOVE_CLOSURE_LEAVES_13_RESIDUAL_SURVIVORS_EXPERIMENTAL_SIXTH_MOVES_EXPLAIN_NONE",
+  "row_counts": {
+    "experimental_direction_tests": 28,
+    "experimental_summaries": 26,
+    "named_regression_audits": 5,
+    "regressions": 12,
+    "search": 378,
+    "survivors": 13
+  },
+  "schema_version": 3,
+  "summary": {
+    "evaluated_weighted_carriers": 378,
+    "experimental_k23_fully_explained": 0,
+    "experimental_k4_fully_explained": 0,
+    "explained_by_fifth_move": 22,
+    "five_move_survivors": 13,
+    "four_move_survivors": 35,
+    "residual_deficiency_histogram": "1:8|2:4|3:1"
+  }
+}

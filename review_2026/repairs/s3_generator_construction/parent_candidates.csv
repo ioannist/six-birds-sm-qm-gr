@@ -1,0 +1,5 @@
+candidate,parent_dimension,centralizer_dimension,coset_dimension,extra_fundamental_singlets,simple_su_parent,exact_single_u1_centralizer,exact_xy_coset_dimension_12,no_extra_fundamental_singlets,wedge2_plus_antifund_dimension_15,selected
+SU(5),24,1,12,0,True,True,True,True,True,True
+SU(6),35,2,23,1,True,False,False,False,False,False
+SU(7),48,3,36,2,True,False,False,False,False,False
+SU(8),63,4,51,3,True,False,False,False,False,False

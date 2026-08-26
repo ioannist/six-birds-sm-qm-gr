@@ -1,0 +1,369 @@
+dimension,rep_a,rep_b,rep_c,conjugate_c_partition,determinant_column_shift,lr_target_partition,singlet_multiplicity
+2,singlet,singlet,singlet,(),0,(),1
+2,singlet,singlet,fund,"(1,)",-1,(),0
+2,singlet,singlet,sym2,"(2,)",-1,(),0
+2,singlet,fund,singlet,(),-1,(),0
+2,singlet,fund,fund,"(1,)",0,"(1,)",1
+2,singlet,fund,sym2,"(2,)",-1,(),0
+2,singlet,sym2,singlet,(),1,"(1, 1)",0
+2,singlet,sym2,fund,"(1,)",-1,(),0
+2,singlet,sym2,sym2,"(2,)",0,"(2,)",1
+2,fund,singlet,singlet,(),-1,(),0
+2,fund,singlet,fund,"(1,)",0,"(1,)",1
+2,fund,singlet,sym2,"(2,)",-1,(),0
+2,fund,fund,singlet,(),1,"(1, 1)",1
+2,fund,fund,fund,"(1,)",-1,(),0
+2,fund,fund,sym2,"(2,)",0,"(2,)",1
+2,fund,sym2,singlet,(),-1,(),0
+2,fund,sym2,fund,"(1,)",1,"(2, 1)",1
+2,fund,sym2,sym2,"(2,)",-1,(),0
+2,sym2,singlet,singlet,(),1,"(1, 1)",0
+2,sym2,singlet,fund,"(1,)",-1,(),0
+2,sym2,singlet,sym2,"(2,)",0,"(2,)",1
+2,sym2,fund,singlet,(),-1,(),0
+2,sym2,fund,fund,"(1,)",1,"(2, 1)",1
+2,sym2,fund,sym2,"(2,)",-1,(),0
+2,sym2,sym2,singlet,(),2,"(2, 2)",1
+2,sym2,sym2,fund,"(1,)",-1,(),0
+2,sym2,sym2,sym2,"(2,)",1,"(3, 1)",1
+3,singlet,singlet,singlet,(),0,(),1
+3,singlet,singlet,fund,"(1, 1)",-1,(),0
+3,singlet,singlet,antifund,"(1,)",-1,(),0
+3,singlet,singlet,sym2,"(2, 2)",-1,(),0
+3,singlet,singlet,conj_sym2,"(2,)",-1,(),0
+3,singlet,fund,singlet,(),-1,(),0
+3,singlet,fund,fund,"(1, 1)",-1,(),0
+3,singlet,fund,antifund,"(1,)",0,"(1,)",1
+3,singlet,fund,sym2,"(2, 2)",-1,(),0
+3,singlet,fund,conj_sym2,"(2,)",-1,(),0
+3,singlet,antifund,singlet,(),-1,(),0
+3,singlet,antifund,fund,"(1, 1)",0,"(1, 1)",1
+3,singlet,antifund,antifund,"(1,)",-1,(),0
+3,singlet,antifund,sym2,"(2, 2)",-1,(),0
+3,singlet,antifund,conj_sym2,"(2,)",0,"(2,)",0
+3,singlet,sym2,singlet,(),-1,(),0
+3,singlet,sym2,fund,"(1, 1)",0,"(1, 1)",0
+3,singlet,sym2,antifund,"(1,)",-1,(),0
+3,singlet,sym2,sym2,"(2, 2)",-1,(),0
+3,singlet,sym2,conj_sym2,"(2,)",0,"(2,)",1
+3,singlet,conj_sym2,singlet,(),-1,(),0
+3,singlet,conj_sym2,fund,"(1, 1)",-1,(),0
+3,singlet,conj_sym2,antifund,"(1,)",1,"(2, 1, 1)",0
+3,singlet,conj_sym2,sym2,"(2, 2)",0,"(2, 2)",1
+3,singlet,conj_sym2,conj_sym2,"(2,)",-1,(),0
+3,fund,singlet,singlet,(),-1,(),0
+3,fund,singlet,fund,"(1, 1)",-1,(),0
+3,fund,singlet,antifund,"(1,)",0,"(1,)",1
+3,fund,singlet,sym2,"(2, 2)",-1,(),0
+3,fund,singlet,conj_sym2,"(2,)",-1,(),0
+3,fund,fund,singlet,(),-1,(),0
+3,fund,fund,fund,"(1, 1)",0,"(1, 1)",1
+3,fund,fund,antifund,"(1,)",-1,(),0
+3,fund,fund,sym2,"(2, 2)",-1,(),0
+3,fund,fund,conj_sym2,"(2,)",0,"(2,)",1
+3,fund,antifund,singlet,(),1,"(1, 1, 1)",1
+3,fund,antifund,fund,"(1, 1)",-1,(),0
+3,fund,antifund,antifund,"(1,)",-1,(),0
+3,fund,antifund,sym2,"(2, 2)",-1,(),0
+3,fund,antifund,conj_sym2,"(2,)",-1,(),0
+3,fund,sym2,singlet,(),1,"(1, 1, 1)",0
+3,fund,sym2,fund,"(1, 1)",-1,(),0
+3,fund,sym2,antifund,"(1,)",-1,(),0
+3,fund,sym2,sym2,"(2, 2)",-1,(),0
+3,fund,sym2,conj_sym2,"(2,)",-1,(),0
+3,fund,conj_sym2,singlet,(),-1,(),0
+3,fund,conj_sym2,fund,"(1, 1)",1,"(2, 2, 1)",1
+3,fund,conj_sym2,antifund,"(1,)",-1,(),0
+3,fund,conj_sym2,sym2,"(2, 2)",-1,(),0
+3,fund,conj_sym2,conj_sym2,"(2,)",1,"(3, 1, 1)",0
+3,antifund,singlet,singlet,(),-1,(),0
+3,antifund,singlet,fund,"(1, 1)",0,"(1, 1)",1
+3,antifund,singlet,antifund,"(1,)",-1,(),0
+3,antifund,singlet,sym2,"(2, 2)",-1,(),0
+3,antifund,singlet,conj_sym2,"(2,)",0,"(2,)",0
+3,antifund,fund,singlet,(),1,"(1, 1, 1)",1
+3,antifund,fund,fund,"(1, 1)",-1,(),0
+3,antifund,fund,antifund,"(1,)",-1,(),0
+3,antifund,fund,sym2,"(2, 2)",-1,(),0
+3,antifund,fund,conj_sym2,"(2,)",-1,(),0
+3,antifund,antifund,singlet,(),-1,(),0
+3,antifund,antifund,fund,"(1, 1)",-1,(),0
+3,antifund,antifund,antifund,"(1,)",1,"(2, 1, 1)",1
+3,antifund,antifund,sym2,"(2, 2)",0,"(2, 2)",1
+3,antifund,antifund,conj_sym2,"(2,)",-1,(),0
+3,antifund,sym2,singlet,(),-1,(),0
+3,antifund,sym2,fund,"(1, 1)",-1,(),0
+3,antifund,sym2,antifund,"(1,)",1,"(2, 1, 1)",1
+3,antifund,sym2,sym2,"(2, 2)",0,"(2, 2)",0
+3,antifund,sym2,conj_sym2,"(2,)",-1,(),0
+3,antifund,conj_sym2,singlet,(),2,"(2, 2, 2)",0
+3,antifund,conj_sym2,fund,"(1, 1)",-1,(),0
+3,antifund,conj_sym2,antifund,"(1,)",-1,(),0
+3,antifund,conj_sym2,sym2,"(2, 2)",-1,(),0
+3,antifund,conj_sym2,conj_sym2,"(2,)",-1,(),0
+3,sym2,singlet,singlet,(),-1,(),0
+3,sym2,singlet,fund,"(1, 1)",0,"(1, 1)",0
+3,sym2,singlet,antifund,"(1,)",-1,(),0
+3,sym2,singlet,sym2,"(2, 2)",-1,(),0
+3,sym2,singlet,conj_sym2,"(2,)",0,"(2,)",1
+3,sym2,fund,singlet,(),1,"(1, 1, 1)",0
+3,sym2,fund,fund,"(1, 1)",-1,(),0
+3,sym2,fund,antifund,"(1,)",-1,(),0
+3,sym2,fund,sym2,"(2, 2)",-1,(),0
+3,sym2,fund,conj_sym2,"(2,)",-1,(),0
+3,sym2,antifund,singlet,(),-1,(),0
+3,sym2,antifund,fund,"(1, 1)",-1,(),0
+3,sym2,antifund,antifund,"(1,)",1,"(2, 1, 1)",1
+3,sym2,antifund,sym2,"(2, 2)",0,"(2, 2)",0
+3,sym2,antifund,conj_sym2,"(2,)",-1,(),0
+3,sym2,sym2,singlet,(),-1,(),0
+3,sym2,sym2,fund,"(1, 1)",-1,(),0
+3,sym2,sym2,antifund,"(1,)",1,"(2, 1, 1)",0
+3,sym2,sym2,sym2,"(2, 2)",0,"(2, 2)",1
+3,sym2,sym2,conj_sym2,"(2,)",-1,(),0
+3,sym2,conj_sym2,singlet,(),2,"(2, 2, 2)",1
+3,sym2,conj_sym2,fund,"(1, 1)",-1,(),0
+3,sym2,conj_sym2,antifund,"(1,)",-1,(),0
+3,sym2,conj_sym2,sym2,"(2, 2)",-1,(),0
+3,sym2,conj_sym2,conj_sym2,"(2,)",-1,(),0
+3,conj_sym2,singlet,singlet,(),-1,(),0
+3,conj_sym2,singlet,fund,"(1, 1)",-1,(),0
+3,conj_sym2,singlet,antifund,"(1,)",1,"(2, 1, 1)",0
+3,conj_sym2,singlet,sym2,"(2, 2)",0,"(2, 2)",1
+3,conj_sym2,singlet,conj_sym2,"(2,)",-1,(),0
+3,conj_sym2,fund,singlet,(),-1,(),0
+3,conj_sym2,fund,fund,"(1, 1)",1,"(2, 2, 1)",1
+3,conj_sym2,fund,antifund,"(1,)",-1,(),0
+3,conj_sym2,fund,sym2,"(2, 2)",-1,(),0
+3,conj_sym2,fund,conj_sym2,"(2,)",1,"(3, 1, 1)",0
+3,conj_sym2,antifund,singlet,(),2,"(2, 2, 2)",0
+3,conj_sym2,antifund,fund,"(1, 1)",-1,(),0
+3,conj_sym2,antifund,antifund,"(1,)",-1,(),0
+3,conj_sym2,antifund,sym2,"(2, 2)",-1,(),0
+3,conj_sym2,antifund,conj_sym2,"(2,)",-1,(),0
+3,conj_sym2,sym2,singlet,(),2,"(2, 2, 2)",1
+3,conj_sym2,sym2,fund,"(1, 1)",-1,(),0
+3,conj_sym2,sym2,antifund,"(1,)",-1,(),0
+3,conj_sym2,sym2,sym2,"(2, 2)",-1,(),0
+3,conj_sym2,sym2,conj_sym2,"(2,)",-1,(),0
+3,conj_sym2,conj_sym2,singlet,(),-1,(),0
+3,conj_sym2,conj_sym2,fund,"(1, 1)",2,"(3, 3, 2)",0
+3,conj_sym2,conj_sym2,antifund,"(1,)",-1,(),0
+3,conj_sym2,conj_sym2,sym2,"(2, 2)",-1,(),0
+3,conj_sym2,conj_sym2,conj_sym2,"(2,)",2,"(4, 2, 2)",1
+4,singlet,singlet,singlet,(),0,(),1
+4,singlet,singlet,fund,"(1, 1, 1)",-1,(),0
+4,singlet,singlet,antifund,"(1,)",-1,(),0
+4,singlet,singlet,sym2,"(2, 2, 2)",-1,(),0
+4,singlet,singlet,conj_sym2,"(2,)",-1,(),0
+4,singlet,singlet,antisym2,"(1, 1)",-1,(),0
+4,singlet,fund,singlet,(),-1,(),0
+4,singlet,fund,fund,"(1, 1, 1)",-1,(),0
+4,singlet,fund,antifund,"(1,)",0,"(1,)",1
+4,singlet,fund,sym2,"(2, 2, 2)",-1,(),0
+4,singlet,fund,conj_sym2,"(2,)",-1,(),0
+4,singlet,fund,antisym2,"(1, 1)",-1,(),0
+4,singlet,antifund,singlet,(),-1,(),0
+4,singlet,antifund,fund,"(1, 1, 1)",0,"(1, 1, 1)",1
+4,singlet,antifund,antifund,"(1,)",-1,(),0
+4,singlet,antifund,sym2,"(2, 2, 2)",-1,(),0
+4,singlet,antifund,conj_sym2,"(2,)",-1,(),0
+4,singlet,antifund,antisym2,"(1, 1)",-1,(),0
+4,singlet,sym2,singlet,(),-1,(),0
+4,singlet,sym2,fund,"(1, 1, 1)",-1,(),0
+4,singlet,sym2,antifund,"(1,)",-1,(),0
+4,singlet,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,singlet,sym2,conj_sym2,"(2,)",0,"(2,)",1
+4,singlet,sym2,antisym2,"(1, 1)",0,"(1, 1)",0
+4,singlet,conj_sym2,singlet,(),-1,(),0
+4,singlet,conj_sym2,fund,"(1, 1, 1)",-1,(),0
+4,singlet,conj_sym2,antifund,"(1,)",-1,(),0
+4,singlet,conj_sym2,sym2,"(2, 2, 2)",0,"(2, 2, 2)",1
+4,singlet,conj_sym2,conj_sym2,"(2,)",1,"(3, 1, 1, 1)",0
+4,singlet,conj_sym2,antisym2,"(1, 1)",1,"(2, 2, 1, 1)",0
+4,singlet,antisym2,singlet,(),-1,(),0
+4,singlet,antisym2,fund,"(1, 1, 1)",-1,(),0
+4,singlet,antisym2,antifund,"(1,)",-1,(),0
+4,singlet,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,singlet,antisym2,conj_sym2,"(2,)",0,"(2,)",0
+4,singlet,antisym2,antisym2,"(1, 1)",0,"(1, 1)",1
+4,fund,singlet,singlet,(),-1,(),0
+4,fund,singlet,fund,"(1, 1, 1)",-1,(),0
+4,fund,singlet,antifund,"(1,)",0,"(1,)",1
+4,fund,singlet,sym2,"(2, 2, 2)",-1,(),0
+4,fund,singlet,conj_sym2,"(2,)",-1,(),0
+4,fund,singlet,antisym2,"(1, 1)",-1,(),0
+4,fund,fund,singlet,(),-1,(),0
+4,fund,fund,fund,"(1, 1, 1)",-1,(),0
+4,fund,fund,antifund,"(1,)",-1,(),0
+4,fund,fund,sym2,"(2, 2, 2)",-1,(),0
+4,fund,fund,conj_sym2,"(2,)",0,"(2,)",1
+4,fund,fund,antisym2,"(1, 1)",0,"(1, 1)",1
+4,fund,antifund,singlet,(),1,"(1, 1, 1, 1)",1
+4,fund,antifund,fund,"(1, 1, 1)",-1,(),0
+4,fund,antifund,antifund,"(1,)",-1,(),0
+4,fund,antifund,sym2,"(2, 2, 2)",-1,(),0
+4,fund,antifund,conj_sym2,"(2,)",-1,(),0
+4,fund,antifund,antisym2,"(1, 1)",-1,(),0
+4,fund,sym2,singlet,(),-1,(),0
+4,fund,sym2,fund,"(1, 1, 1)",0,"(1, 1, 1)",0
+4,fund,sym2,antifund,"(1,)",-1,(),0
+4,fund,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,fund,sym2,conj_sym2,"(2,)",-1,(),0
+4,fund,sym2,antisym2,"(1, 1)",-1,(),0
+4,fund,conj_sym2,singlet,(),-1,(),0
+4,fund,conj_sym2,fund,"(1, 1, 1)",1,"(2, 2, 2, 1)",1
+4,fund,conj_sym2,antifund,"(1,)",-1,(),0
+4,fund,conj_sym2,sym2,"(2, 2, 2)",-1,(),0
+4,fund,conj_sym2,conj_sym2,"(2,)",-1,(),0
+4,fund,conj_sym2,antisym2,"(1, 1)",-1,(),0
+4,fund,antisym2,singlet,(),-1,(),0
+4,fund,antisym2,fund,"(1, 1, 1)",0,"(1, 1, 1)",1
+4,fund,antisym2,antifund,"(1,)",-1,(),0
+4,fund,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,fund,antisym2,conj_sym2,"(2,)",-1,(),0
+4,fund,antisym2,antisym2,"(1, 1)",-1,(),0
+4,antifund,singlet,singlet,(),-1,(),0
+4,antifund,singlet,fund,"(1, 1, 1)",0,"(1, 1, 1)",1
+4,antifund,singlet,antifund,"(1,)",-1,(),0
+4,antifund,singlet,sym2,"(2, 2, 2)",-1,(),0
+4,antifund,singlet,conj_sym2,"(2,)",-1,(),0
+4,antifund,singlet,antisym2,"(1, 1)",-1,(),0
+4,antifund,fund,singlet,(),1,"(1, 1, 1, 1)",1
+4,antifund,fund,fund,"(1, 1, 1)",-1,(),0
+4,antifund,fund,antifund,"(1,)",-1,(),0
+4,antifund,fund,sym2,"(2, 2, 2)",-1,(),0
+4,antifund,fund,conj_sym2,"(2,)",-1,(),0
+4,antifund,fund,antisym2,"(1, 1)",-1,(),0
+4,antifund,antifund,singlet,(),-1,(),0
+4,antifund,antifund,fund,"(1, 1, 1)",-1,(),0
+4,antifund,antifund,antifund,"(1,)",-1,(),0
+4,antifund,antifund,sym2,"(2, 2, 2)",0,"(2, 2, 2)",1
+4,antifund,antifund,conj_sym2,"(2,)",1,"(3, 1, 1, 1)",0
+4,antifund,antifund,antisym2,"(1, 1)",1,"(2, 2, 1, 1)",1
+4,antifund,sym2,singlet,(),-1,(),0
+4,antifund,sym2,fund,"(1, 1, 1)",-1,(),0
+4,antifund,sym2,antifund,"(1,)",1,"(2, 1, 1, 1)",1
+4,antifund,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,antifund,sym2,conj_sym2,"(2,)",-1,(),0
+4,antifund,sym2,antisym2,"(1, 1)",-1,(),0
+4,antifund,conj_sym2,singlet,(),-1,(),0
+4,antifund,conj_sym2,fund,"(1, 1, 1)",-1,(),0
+4,antifund,conj_sym2,antifund,"(1,)",2,"(3, 2, 2, 2)",0
+4,antifund,conj_sym2,sym2,"(2, 2, 2)",-1,(),0
+4,antifund,conj_sym2,conj_sym2,"(2,)",-1,(),0
+4,antifund,conj_sym2,antisym2,"(1, 1)",-1,(),0
+4,antifund,antisym2,singlet,(),-1,(),0
+4,antifund,antisym2,fund,"(1, 1, 1)",-1,(),0
+4,antifund,antisym2,antifund,"(1,)",1,"(2, 1, 1, 1)",1
+4,antifund,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,antifund,antisym2,conj_sym2,"(2,)",-1,(),0
+4,antifund,antisym2,antisym2,"(1, 1)",-1,(),0
+4,sym2,singlet,singlet,(),-1,(),0
+4,sym2,singlet,fund,"(1, 1, 1)",-1,(),0
+4,sym2,singlet,antifund,"(1,)",-1,(),0
+4,sym2,singlet,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,singlet,conj_sym2,"(2,)",0,"(2,)",1
+4,sym2,singlet,antisym2,"(1, 1)",0,"(1, 1)",0
+4,sym2,fund,singlet,(),-1,(),0
+4,sym2,fund,fund,"(1, 1, 1)",0,"(1, 1, 1)",0
+4,sym2,fund,antifund,"(1,)",-1,(),0
+4,sym2,fund,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,fund,conj_sym2,"(2,)",-1,(),0
+4,sym2,fund,antisym2,"(1, 1)",-1,(),0
+4,sym2,antifund,singlet,(),-1,(),0
+4,sym2,antifund,fund,"(1, 1, 1)",-1,(),0
+4,sym2,antifund,antifund,"(1,)",1,"(2, 1, 1, 1)",1
+4,sym2,antifund,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,antifund,conj_sym2,"(2,)",-1,(),0
+4,sym2,antifund,antisym2,"(1, 1)",-1,(),0
+4,sym2,sym2,singlet,(),1,"(1, 1, 1, 1)",0
+4,sym2,sym2,fund,"(1, 1, 1)",-1,(),0
+4,sym2,sym2,antifund,"(1,)",-1,(),0
+4,sym2,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,sym2,conj_sym2,"(2,)",-1,(),0
+4,sym2,sym2,antisym2,"(1, 1)",-1,(),0
+4,sym2,conj_sym2,singlet,(),2,"(2, 2, 2, 2)",1
+4,sym2,conj_sym2,fund,"(1, 1, 1)",-1,(),0
+4,sym2,conj_sym2,antifund,"(1,)",-1,(),0
+4,sym2,conj_sym2,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,conj_sym2,conj_sym2,"(2,)",-1,(),0
+4,sym2,conj_sym2,antisym2,"(1, 1)",-1,(),0
+4,sym2,antisym2,singlet,(),1,"(1, 1, 1, 1)",0
+4,sym2,antisym2,fund,"(1, 1, 1)",-1,(),0
+4,sym2,antisym2,antifund,"(1,)",-1,(),0
+4,sym2,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,sym2,antisym2,conj_sym2,"(2,)",-1,(),0
+4,sym2,antisym2,antisym2,"(1, 1)",-1,(),0
+4,conj_sym2,singlet,singlet,(),-1,(),0
+4,conj_sym2,singlet,fund,"(1, 1, 1)",-1,(),0
+4,conj_sym2,singlet,antifund,"(1,)",-1,(),0
+4,conj_sym2,singlet,sym2,"(2, 2, 2)",0,"(2, 2, 2)",1
+4,conj_sym2,singlet,conj_sym2,"(2,)",1,"(3, 1, 1, 1)",0
+4,conj_sym2,singlet,antisym2,"(1, 1)",1,"(2, 2, 1, 1)",0
+4,conj_sym2,fund,singlet,(),-1,(),0
+4,conj_sym2,fund,fund,"(1, 1, 1)",1,"(2, 2, 2, 1)",1
+4,conj_sym2,fund,antifund,"(1,)",-1,(),0
+4,conj_sym2,fund,sym2,"(2, 2, 2)",-1,(),0
+4,conj_sym2,fund,conj_sym2,"(2,)",-1,(),0
+4,conj_sym2,fund,antisym2,"(1, 1)",-1,(),0
+4,conj_sym2,antifund,singlet,(),-1,(),0
+4,conj_sym2,antifund,fund,"(1, 1, 1)",-1,(),0
+4,conj_sym2,antifund,antifund,"(1,)",2,"(3, 2, 2, 2)",0
+4,conj_sym2,antifund,sym2,"(2, 2, 2)",-1,(),0
+4,conj_sym2,antifund,conj_sym2,"(2,)",-1,(),0
+4,conj_sym2,antifund,antisym2,"(1, 1)",-1,(),0
+4,conj_sym2,sym2,singlet,(),2,"(2, 2, 2, 2)",1
+4,conj_sym2,sym2,fund,"(1, 1, 1)",-1,(),0
+4,conj_sym2,sym2,antifund,"(1,)",-1,(),0
+4,conj_sym2,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,conj_sym2,sym2,conj_sym2,"(2,)",-1,(),0
+4,conj_sym2,sym2,antisym2,"(1, 1)",-1,(),0
+4,conj_sym2,conj_sym2,singlet,(),3,"(3, 3, 3, 3)",0
+4,conj_sym2,conj_sym2,fund,"(1, 1, 1)",-1,(),0
+4,conj_sym2,conj_sym2,antifund,"(1,)",-1,(),0
+4,conj_sym2,conj_sym2,sym2,"(2, 2, 2)",-1,(),0
+4,conj_sym2,conj_sym2,conj_sym2,"(2,)",-1,(),0
+4,conj_sym2,conj_sym2,antisym2,"(1, 1)",-1,(),0
+4,conj_sym2,antisym2,singlet,(),2,"(2, 2, 2, 2)",0
+4,conj_sym2,antisym2,fund,"(1, 1, 1)",-1,(),0
+4,conj_sym2,antisym2,antifund,"(1,)",-1,(),0
+4,conj_sym2,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,conj_sym2,antisym2,conj_sym2,"(2,)",-1,(),0
+4,conj_sym2,antisym2,antisym2,"(1, 1)",-1,(),0
+4,antisym2,singlet,singlet,(),-1,(),0
+4,antisym2,singlet,fund,"(1, 1, 1)",-1,(),0
+4,antisym2,singlet,antifund,"(1,)",-1,(),0
+4,antisym2,singlet,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,singlet,conj_sym2,"(2,)",0,"(2,)",0
+4,antisym2,singlet,antisym2,"(1, 1)",0,"(1, 1)",1
+4,antisym2,fund,singlet,(),-1,(),0
+4,antisym2,fund,fund,"(1, 1, 1)",0,"(1, 1, 1)",1
+4,antisym2,fund,antifund,"(1,)",-1,(),0
+4,antisym2,fund,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,fund,conj_sym2,"(2,)",-1,(),0
+4,antisym2,fund,antisym2,"(1, 1)",-1,(),0
+4,antisym2,antifund,singlet,(),-1,(),0
+4,antisym2,antifund,fund,"(1, 1, 1)",-1,(),0
+4,antisym2,antifund,antifund,"(1,)",1,"(2, 1, 1, 1)",1
+4,antisym2,antifund,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,antifund,conj_sym2,"(2,)",-1,(),0
+4,antisym2,antifund,antisym2,"(1, 1)",-1,(),0
+4,antisym2,sym2,singlet,(),1,"(1, 1, 1, 1)",0
+4,antisym2,sym2,fund,"(1, 1, 1)",-1,(),0
+4,antisym2,sym2,antifund,"(1,)",-1,(),0
+4,antisym2,sym2,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,sym2,conj_sym2,"(2,)",-1,(),0
+4,antisym2,sym2,antisym2,"(1, 1)",-1,(),0
+4,antisym2,conj_sym2,singlet,(),2,"(2, 2, 2, 2)",0
+4,antisym2,conj_sym2,fund,"(1, 1, 1)",-1,(),0
+4,antisym2,conj_sym2,antifund,"(1,)",-1,(),0
+4,antisym2,conj_sym2,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,conj_sym2,conj_sym2,"(2,)",-1,(),0
+4,antisym2,conj_sym2,antisym2,"(1, 1)",-1,(),0
+4,antisym2,antisym2,singlet,(),1,"(1, 1, 1, 1)",1
+4,antisym2,antisym2,fund,"(1, 1, 1)",-1,(),0
+4,antisym2,antisym2,antifund,"(1,)",-1,(),0
+4,antisym2,antisym2,sym2,"(2, 2, 2)",-1,(),0
+4,antisym2,antisym2,conj_sym2,"(2,)",-1,(),0
+4,antisym2,antisym2,antisym2,"(1, 1)",-1,(),0

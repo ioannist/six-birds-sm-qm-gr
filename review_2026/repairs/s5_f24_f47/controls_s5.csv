@@ -1,0 +1,13 @@
+control,passes,evidence
+source_hash_pins,True,five frozen build scripts match literal SHA-256 pins
+step8_carrier_reproduction,True,full=8640; admissible=468
+step8_measure_used,True,468 admissible support rows have total declared measure mass 534
+role_obstruction_reproduced,True,full=5760; admissible=307
+all_eight_families_constructed,True,each row reports forms/admissible/closes/status from a materialized object
+real_verdict_computed,True,"firing=MemoryLayer,BudgetedRole"
+budget_decoupling_flip,True,firing=MemoryLayer
+sealed_scope_flip,True,firing=ScopedRole
+legacy_3_96_reproduced,True,fraction=0.039583333333
+realized_strict_boundary,True,"score=2.750000; included at threshold 2.70, excluded at strict >2.75"
+ablation_surface_complete,True,primary=93; sensitivity=1395
+headline_cell_exact,True,fraction=0.022471910112; realized_f47=False

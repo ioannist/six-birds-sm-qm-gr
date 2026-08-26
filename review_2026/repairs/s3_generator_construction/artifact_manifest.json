@@ -1,0 +1,18 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "RESULTS.md": "b86ce9f4849042e289e4fb920c816a0f8207e38bb6744eaf81944d2075fc0ab5",
+    "claim_status.csv": "1f5025747076e14853bbf7ddcb517f93eb76deedb0d9950c2ccc54e2e207050b",
+    "f27_generator_actions.csv": "a389b771925d6aaa229e74c71e59c884ef11c0c360320b48e557cd0a51203c4d",
+    "f48_lattice.csv": "cebddab2ab93fc814ca6ae0ce7e99ce7561f67280da56d0b10cfd2eccf7957c8",
+    "fermion_decomposition.csv": "3e16fbec23486fbcba8c15994b29b1459da2cc7dafcfd0b68057674033a28d7d",
+    "mutation_tests.csv": "212cd8cc09fc41b14e9dffab27eff2ad41ba5d90a69278620acc30bcfa93b540",
+    "parent_candidates.csv": "5d33e140f2d82e95dd9eea766f0b05c02a9e4d962bac67a63eb54f0d688574cb",
+    "ratio_conventions.csv": "ead9714915b4d611c98fb9cbe010a2887e53d2cbf98556dc796a5af2262f0837",
+    "s3_results.json": "00ae66e53adcb98083992773a539c0c894318d479d9153aecfc2f6e8ede2b899",
+    "schema.json": "5ce83d56837f229d8574d5741a0c253c42fb7c0b7819e6ff73994ebdc26b6b31",
+    "su4_analogue.csv": "fde61afbbd7fd8cf9ca464ad5cf99637159844d3e362a2288bb353a4bb3a89df",
+    "su5_coset_quantum_numbers.csv": "5c9ba2e1cae3b82e6ea90ab3d9f90b1401e5f92602ac412fe3b7c34cc9927347",
+    "su5_generators.csv": "9c7491b4ba7218ec574ed11e82ee3951beef06bc8569c4c9fcf7431ebab1b577"
+  }
+}

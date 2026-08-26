@@ -1,0 +1,31 @@
+{
+  "artifact": "S6-ABLATION-3 token-completeness probe",
+  "bounds": {
+    "fermion_arity_max": 4,
+    "fermion_arity_min": 2,
+    "scalar_insertion_max": 2,
+    "total_constituent_cap": 6
+  },
+  "counting_conventions": [
+    "undressed_only",
+    "dressed_inclusive"
+  ],
+  "hashes": {
+    "lifts": "f95e23bd37cb0b1f33c108399d583be3ceb53e7dd4dcbb275cb4792534a25c2c",
+    "operators": "357c1f0d8bb4ca6e84448f477909df5eb3007c132bd800d1809afff51a73c153",
+    "scores": "c2ad5593f3ff8647003ea5b0df168986a3283f1fbdd36b9c806a1a8c88256567"
+  },
+  "outcome": "COUNTEREXAMPLES_PERSIST_SCALAR_DRESSED_COMPLETE_BOUNDED_CENSUS",
+  "residual_gate": "exact LR singlet under every residual factor and computed residual-U(1) neutral",
+  "row_counts": {
+    "branch_census": 12,
+    "lifts": 556,
+    "operators": 404,
+    "quantifiers": 24,
+    "scores": 448,
+    "thresholds": 8
+  },
+  "schema_version": 3,
+  "uv_lift_gate": "UV gauge invariant under every factor and original U(1)",
+  "vev_quotient": "same residual component multiset and invariant channel modulo insertions of the same branch VEV"
+}

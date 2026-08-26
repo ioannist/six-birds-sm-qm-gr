@@ -1,0 +1,29 @@
+carrier,seed,experimental_rule,experimental_not_in_certified_closure,structure,direction,exact_incidence_kernel,finite_two_sided_invariance,delta
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I1 | I2+I3,+1*I0-I2 -1*I0-I3 -1*I1-I2 +1*I1-I3,False,False,0.0
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I2 | I1+I3,+1*I0-I1 -1*I0-I3 -1*I1-I2 +1*I2-I3,False,False,0.0
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I3 | I1+I2,+1*I0-I1 -1*I0-I2 -1*I1-I3 +1*I2-I3,False,False,0.0
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K4_OPPOSITE_PERFECT_MATCHING,True,K4=I0+I1+I2+I3;M0-M1,+1*I0-I1 -1*I0-I2 -1*I1-I3 +1*I2-I3,False,False,0.0
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K4_OPPOSITE_PERFECT_MATCHING,True,K4=I0+I1+I2+I3;M0-M2,+1*I0-I1 -1*I0-I3 -1*I1-I2 +1*I2-I3,False,False,0.0
+wheel_W4__b8__leaf_offset0,47,EXPERIMENTAL_K4_OPPOSITE_PERFECT_MATCHING,True,K4=I0+I1+I2+I3;M1-M2,+1*I0-I2 -1*I0-I3 -1*I1-I2 +1*I1-I3,False,False,0.0
+wheel_W4__b8__leaf_offset1,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:<<Y:I0+I1+I2>+I1>+I0+I3>+I0>+I2 | <<Y:I0+I1+I2>+I1>+I3,+1*<<Y:<<Y:I0+I1+I2>+I1>+I0+I3>+I0>-<<Y:I0+I1+I2>+I1> -1*<<Y:<<Y:I0+I1+I2>+I1>+I0+I3>+I0>-I3 -1*<<Y:I0+I1+I2>+I1>-I2 +1*I2-I3,False,False,0.0
+wheel_W4__b8__leaf_offset1,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:<<Y:I0+I1+I2>+I2>+I0+I3>+I0>+I1 | <<Y:I0+I1+I2>+I2>+I3,+1*<<Y:<<Y:I0+I1+I2>+I2>+I0+I3>+I0>-<<Y:I0+I1+I2>+I2> -1*<<Y:<<Y:I0+I1+I2>+I2>+I0+I3>+I0>-I3 -1*<<Y:I0+I1+I2>+I2>-I1 +1*I1-I3,False,False,0.0
+K23_bipartite__b6__leaf_offset0,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<I1+I2>+I0 | <Y:<I1+I2>+I0+I3>+B4,+1*<I1+I2>-<Y:<I1+I2>+I0+I3> -1*<I1+I2>-B4 -1*<Y:<I1+I2>+I0+I3>-I0 +1*B4-I0,False,False,0.0
+K23_bipartite__b6__dual_gateway,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<I0+I4>+I1 | <Y:<I0+I4>+I1+I2>+B2,+1*<I0+I4>-<Y:<I0+I4>+I1+I2> -1*<I0+I4>-B2 -1*<Y:<I0+I4>+I1+I2>-I1 +1*B2-I1,False,False,0.0
+K23_bipartite__b7__leaf_offset1,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:<I0+I3>+I1+I2>+I2>+B3 | <I0+I3>+I1,+1*<<Y:<I0+I3>+I1+I2>+I2>-<I0+I3> -1*<<Y:<I0+I3>+I1+I2>+I2>-I1 -1*<I0+I3>-B3 +1*B3-I1,False,False,0.0
+K23_bipartite__b8__leaf_offset0,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<Y:I0+I1+I3>+B4 | I0+I1,+1*<Y:I0+I1+I3>-I0 -1*<Y:I0+I1+I3>-I1 -1*B4-I0 +1*B4-I1,False,False,0.0
+K23_bipartite__b8__leaf_offset0,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<Y:I0+I1+I3>+I2 | I0+I1,+1*<Y:I0+I1+I3>-I0 -1*<Y:I0+I1+I3>-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__leaf_offset0,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,B4+I2 | I0+I1,+1*B4-I0 -1*B4-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__leaf_offset1,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:<I0+I4>+I1+I2>+I2>+I3 | <I0+I4>+I1,+1*<<Y:<I0+I4>+I1+I2>+I2>-<I0+I4> -1*<<Y:<I0+I4>+I1+I2>+I2>-I1 -1*<I0+I4>-I3 +1*I1-I3,False,False,0.0
+K23_bipartite__b8__leaf_offset1,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I3>+I3>+B3 | I0+I1,+1*<<Y:I0+I1+I3>+I3>-I0 -1*<<Y:I0+I1+I3>+I3>-I1 -1*B3-I0 +1*B3-I1,False,False,0.0
+K23_bipartite__b8__leaf_offset1,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I3>+I3>+I2 | I0+I1,+1*<<Y:I0+I1+I3>+I3>-I0 -1*<<Y:I0+I1+I3>+I3>-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__leaf_offset1,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,B3+I2 | I0+I1,+1*B3-I0 -1*B3-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__leaf_offset1,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I3>+I3>+B3 | I0+I1,+1*<<Y:I0+I1+I3>+I3>-I0 -1*<<Y:I0+I1+I3>+I3>-I1 -1*B3-I0 +1*B3-I1,False,False,0.0
+K23_bipartite__b8__leaf_offset1,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I3>+I3>+I2 | I0+I1,+1*<<Y:I0+I1+I3>+I3>-I0 -1*<<Y:I0+I1+I3>+I3>-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__leaf_offset1,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,B3+I2 | I0+I1,+1*B3-I0 -1*B3-I1 -1*I0-I2 +1*I1-I2,False,False,0.0
+K23_bipartite__b8__dual_gateway,17,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:<I0+I4>+I1+I2>+I2>+I3 | <I0+I4>+I1,+1*<<Y:<I0+I4>+I1+I2>+I2>-<I0+I4> -1*<<Y:<I0+I4>+I1+I2>+I2>-I1 -1*<I0+I4>-I3 +1*I1-I3,False,False,0.0
+K23_bipartite__b8__dual_gateway,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I2>+I2>+B3 | I0+I1,+1*<<Y:I0+I1+I2>+I2>-I0 -1*<<Y:I0+I1+I2>+I2>-I1 -1*B3-I0 +1*B3-I1,False,False,0.0
+K23_bipartite__b8__dual_gateway,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,<<Y:I0+I1+I2>+I2>+I3 | I0+I1,+1*<<Y:I0+I1+I2>+I2>-I0 -1*<<Y:I0+I1+I2>+I2>-I1 -1*I0-I3 +1*I1-I3,False,False,0.0
+K23_bipartite__b8__dual_gateway,31,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,B3+I3 | I0+I1,+1*B3-I0 -1*B3-I1 -1*I0-I3 +1*I1-I3,False,False,0.0
+K23_bipartite__b8__dual_gateway,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I1 | I2+I3,+1*I0-I2 -1*I0-I3 -1*I1-I2 +1*I1-I3,False,False,0.0
+K23_bipartite__b8__dual_gateway,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I1 | I2+I4,+1*I0-I2 -1*I0-I4 -1*I1-I2 +1*I1-I4,False,False,0.0
+K23_bipartite__b8__dual_gateway,47,EXPERIMENTAL_K23_FOUR_CYCLE_TRANSPORT,True,I0+I1 | I3+I4,+1*I0-I3 -1*I0-I4 -1*I1-I3 +1*I1-I4,False,False,0.0

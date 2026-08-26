@@ -1,0 +1,118 @@
+{
+  "charge_normalization_counts": {
+    "atomic_packaging": {
+      "declared_orbits": 37,
+      "labelled": 84,
+      "primitive_normalized_orbits": 37
+    },
+    "chirality_faithfulness": {
+      "declared_orbits": 24,
+      "labelled": 52,
+      "primitive_normalized_orbits": 24
+    },
+    "closure_consistency": {
+      "declared_orbits": 27,
+      "labelled": 62,
+      "primitive_normalized_orbits": 27
+    },
+    "genuinely_chiral": {
+      "declared_orbits": 419,
+      "labelled": 1066,
+      "primitive_normalized_orbits": 195
+    }
+  },
+  "conventions": {
+    "community_facing_preference": "primitive-normalized, because overall U1 generator scale is conventional",
+    "component_cap": "six per scalar, not summed across a pair",
+    "declared_charge_orbits": "finite charges retained; factor exchange, overall conjugation, and U1 sign quotiented",
+    "headline_scalar_scope": "exactly one complex scalar; phi and phi-dagger are one singleton branch",
+    "joint_breaking": "at least one nonzero charge and at least one nontrivial nonabelian rep across the pair",
+    "joint_yukawa": "union of exact occurrence coverage from either scalar and either conjugate",
+    "primitive_normalized_orbits": "also divide all nonzero structure charges by their positive gcd",
+    "two_scalar_scope": "unordered multiset of exactly two complex scalars; repeats allowed"
+  },
+  "experiment": "S1-REPAIR-3 typed singleton conditions and two-scalar appendix",
+  "files": {
+    "s1_v3_charge_normalization_census.csv": {
+      "row_count": 4,
+      "sha256": "5718a267be0def913267665fa49db8edd616ece74f5e2db39d427a07ea7dab11"
+    },
+    "s1_v3_independent_gate.csv": {
+      "row_count": 4,
+      "sha256": "e6037713febc77fd22a29eef78200870cb0497df3140d168157915794596618b"
+    },
+    "s1_v3_independent_scalar_alphabet.csv": {
+      "row_count": 9,
+      "sha256": "031d7bfb9a83fc7a2e1ccc1f138ef0511a5d78b59aecdd309efadb184cdf70f2"
+    },
+    "s1_v3_singleton_scalar_branches.csv": {
+      "row_count": 12,
+      "sha256": "6a7173a4ef7be6f5e246dbf380388462f4f0559b44152b3e79c96d9367c09855"
+    },
+    "s1_v3_singleton_scalar_coverage.csv": {
+      "row_count": 52,
+      "sha256": "eb6e0fa00ff307a673aa1f8ff37160f75258544ee42d04674af032fe3b7495c4"
+    },
+    "s1_v3_tensor_product_golden.csv": {
+      "row_count": 14,
+      "sha256": "e5c3213f9b4084ce392201c685155aa3ec3c7e6dc342b57778f0c7dda42936fd"
+    },
+    "s1_v3_tensor_product_singlets.csv": {
+      "row_count": 368,
+      "sha256": "04820a211fe8e96f55bd43a44b33f26007a0d6f2d3a47793941c5fd5f0d82033"
+    },
+    "s1_v3_two_scalar_pair_branches.csv": {
+      "row_count": 2824,
+      "sha256": "7c17c28253356ab327074977b3076be1b6dc1ecacf752325384bb1b27ba08d1c"
+    },
+    "s1_v3_two_scalar_pair_coverage.csv": {
+      "row_count": 52,
+      "sha256": "d285bc450646fe8c9b2aa4cc751a96926a731e9b73d81c7523b5f895b077bb20"
+    }
+  },
+  "hashes": {
+    "clean_pair_branches": "5d12dae76a00990e4ed5ad096d513a1f386d0d3490a5f216a3043e7015461e44",
+    "pair_branches": "98242752fde595e6b7e3d5636a2a4373e7104db0b746bdac7f66ce24e909ee89",
+    "singleton_gate": "2a07c0ed13b43e223aeadb929357d8a84af569ac276dc736ffaf6fa370c13555"
+  },
+  "historical_v1_v2_artifacts_preserved": true,
+  "implementation_sha256": {
+    "DESIGN.md": "581ca4e279cea63e1836cfecd2079a1686926955a8cdbdca457117fa537dea9e",
+    "DESIGN_v3.md": "3692a326333e7c2429553748e6642ae0c5f14cf914c10fb8efa00cf2d130f516",
+    "build_s1_carrier_reconstruction_v3.py": "3c879ef73d190efe7cc80b073d7aa3d0ee3f68d230f17a34993d8cf57264518d",
+    "carrier_chain.py": "ab7a07cd82d8aa82c19476177ed3b99f9ca6d8af315f25f3616e646012d23586",
+    "carrier_chain_v2.py": "ba3d227e8dbaf4a64465146d3e073bec957857b2a41749addf7d786b4de5e209",
+    "carrier_chain_v3.py": "fe85f2db6df935bff93670be60c8968ebad776bba3d7f6b59f2994311bb8a89d",
+    "representation_model.py": "3a22babf413c0175a52763d67f1b7deb02e9694bc58769fa0356250b1f9beb75",
+    "run_s1_carrier_reconstruction_v3.py": "735dc80e3ba929987f422e3b75a2e530557a8497d1dffc5f5bddf9edddc84b74"
+  },
+  "independent_gate": {
+    "calls_production_factor_invariant": false,
+    "calls_production_neutral_rep_assignments": false,
+    "calls_production_scalar_representations": false,
+    "calls_production_yukawa_invariant": false,
+    "independent_singleton_key_count": 12,
+    "singleton_key_sets_equal": true,
+    "tensor_golden_count": 14,
+    "tensor_golden_pass_count": 14,
+    "tensor_triple_count": 368
+  },
+  "schema_version": 3,
+  "singleton_counts": {
+    "admissible_singleton_branches": 12,
+    "chirality_faithful_structures": 52,
+    "clean_singleton_branches": 4,
+    "structures_with_singleton_branch": 8,
+    "structures_without_singleton_branch": 44
+  },
+  "two_scalar_appendix_counts": {
+    "admissible_pair_branch_orbits": 829,
+    "admissible_pair_branches": 2824,
+    "clean_pair_branch_orbits": 17,
+    "clean_pair_branches": 68,
+    "clean_pair_structures": 4,
+    "clean_pairs_outside_2x3_su2_only": 0,
+    "formerly_singleton_none_acquiring_pair": 44,
+    "structures_with_pair_branch": 52
+  }
+}

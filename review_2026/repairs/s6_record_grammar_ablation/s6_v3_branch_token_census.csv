@@ -1,0 +1,13 @@
+evaluation_id,dimensions,branch_scope,clean_classification,scalar_branch,undressed_operator_count,operators_with_dressed_lift_count,dressed_new_operator_count,inclusive_quotient_operator_count,clean_branch_gains_dressed_tokens
+eval_034,4,singleton_active_SU(4),breaking_evaluated,antifund:1 <> fund:-1,11,29,18,29,False
+eval_042,4,singleton_active_SU(4),breaking_evaluated,antifund:-1 <> fund:1,11,29,18,29,False
+eval_044,4,singleton_active_SU(4),breaking_evaluated,antifund:1 <> fund:-1,11,29,18,29,False
+eval_045,4,singleton_active_SU(4),breaking_evaluated,antifund:-1 <> fund:1,11,29,18,29,False
+eval_048,2|3,singleton_active_SU(2),clean_evaluated,fundxsinglet:-3 <> fundxsinglet:3,11,29,18,29,True
+eval_049,2|3,singleton_active_SU(3),breaking_evaluated,singletxantifund:2 <> singletxfund:-2,16,43,27,43,False
+eval_050,2|3,singleton_active_SU(2),clean_evaluated,fundxsinglet:-3 <> fundxsinglet:3,11,29,18,29,True
+eval_051,2|3,singleton_active_SU(3),breaking_evaluated,singletxantifund:-2 <> singletxfund:2,16,43,27,43,False
+eval_052,2|3,singleton_active_SU(2),clean_evaluated,fundxsinglet:-3 <> fundxsinglet:3,11,29,18,29,True
+eval_053,2|3,singleton_active_SU(3),breaking_evaluated,singletxantifund:-2 <> singletxfund:2,16,43,27,43,False
+eval_054,2|3,singleton_active_SU(2),clean_evaluated,fundxsinglet:-3 <> fundxsinglet:3,11,29,18,29,True
+eval_055,2|3,singleton_active_SU(3),breaking_evaluated,singletxantifund:2 <> singletxfund:-2,16,43,27,43,False

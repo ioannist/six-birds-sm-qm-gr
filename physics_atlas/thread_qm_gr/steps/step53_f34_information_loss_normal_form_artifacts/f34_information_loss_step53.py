@@ -7,6 +7,7 @@ import csv
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -14,13 +15,14 @@ import numpy as np
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = Path("/home/repos/six-birds-papers")
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 THREAD_ROOT = ARTIFACT_DIR.parents[1]
 STEP42_DIR = THREAD_ROOT / "steps" / "step42_faithful_holographic_rt_enrichment_artifacts"
 STEP47_DIR = THREAD_ROOT / "steps" / "step47_common_carrier_door_test_artifacts"
 STEP42_SCRIPT = STEP42_DIR / "faithful_holographic_rt_enrichment_step42.py"
-FOUNDATIONS_IV = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
-FOUNDATIONS_III = REPO_ROOT / "Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex"
+CORPUS_ROOT_ENV = "SIX_BIRDS_PAPERS_ROOT"
+FOUNDATIONS_IV_NAME = "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex"
+FOUNDATIONS_III_NAME = "Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex"
 EXPECTED_STEP42_SHA256 = "4e204c0eae2df9a88b426c07e4bcf04ad308a3b1d18e05eac769bb64594b2d08"
 DIM = 3
 SEEDS = [101, 202, 303]
@@ -315,15 +317,25 @@ def obstruction_rows(orbit_rows: list[dict[str, Any]], partial_rows: list[dict[s
     ]
 
 
-def frozen_rows() -> list[dict[str, Any]]:
+def require_corpus_files(names: list[str]) -> list[Path]:
+    root_value = os.environ.get(CORPUS_ROOT_ENV)
+    if not root_value:
+        raise SystemExit(f"{CORPUS_ROOT_ENV} is required; missing corpus file(s): {', '.join(names)}")
+    root = Path(root_value).expanduser().resolve()
+    paths = [root / name for name in names]
+    for path in paths:
+        if not path.is_file():
+            raise SystemExit(f"{CORPUS_ROOT_ENV} missing required corpus file: {path}")
+    return paths
+
+
+def frozen_rows(foundations: list[Path]) -> list[dict[str, Any]]:
     sources = [
         STEP42_SCRIPT,
         STEP42_DIR / "step42_schema.json",
         STEP47_DIR / "step47_schema.json",
-        FOUNDATIONS_IV,
-        FOUNDATIONS_III,
     ]
-    return [
+    rows = [
         {
             "source": repo_rel(path),
             "sha256": sha256(path),
@@ -332,6 +344,16 @@ def frozen_rows() -> list[dict[str, Any]]:
         }
         for path in sources
     ]
+    rows.extend(
+        {
+            "source": path.name,
+            "sha256": sha256(path),
+            "expected_sha256": "",
+            "imported_or_read_verbatim": True,
+        }
+        for path in foundations
+    )
+    return rows
 
 
 def write_summary(schema: dict[str, Any]) -> None:
@@ -488,6 +510,7 @@ def write_mode_packet() -> None:
 
 
 def write_outputs() -> None:
+    foundations = require_corpus_files([FOUNDATIONS_IV_NAME, FOUNDATIONS_III_NAME])
     step42_hash = sha256(STEP42_SCRIPT)
     if step42_hash != EXPECTED_STEP42_SHA256:
         raise RuntimeError(f"Step42 hash mismatch: {step42_hash}")
@@ -543,7 +566,7 @@ def write_outputs() -> None:
     write_csv(ARTIFACT_DIR / "nongauge_perturbation_step53.csv", perturb_rows)
     write_csv(ARTIFACT_DIR / "partial_readout_witness_step53.csv", partial_rows)
     write_csv(ARTIFACT_DIR / "f34_obstruction_witnesses_step53.csv", obstruction)
-    write_csv(ARTIFACT_DIR / "frozen_machinery_step53.csv", frozen_rows())
+    write_csv(ARTIFACT_DIR / "frozen_machinery_step53.csv", frozen_rows(foundations))
     (ARTIFACT_DIR / "step53_schema.json").write_text(json.dumps(schema, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     write_summary(schema)
     write_nonclaim()

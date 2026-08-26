@@ -1,0 +1,53 @@
+dimensions,structure_id,support_key,admissible_singleton_branch_count,admissible_two_scalar_pair_branch_count,clean_two_scalar_pair_branch_count,had_singleton_branch,acquires_pair_branch,acquires_pair_branch_from_singleton_none
+3,3::antifund:-6 + antifund:6 + fund:-1 + fund:1,antifund:-6 + antifund:6 + fund:-1 + fund:1,0,50,0,False,True,True
+3,3::antifund:-4 + antifund:4 + fund:-3 + fund:3,antifund:-4 + antifund:4 + fund:-3 + fund:3,0,70,0,False,True,True
+3,3::antifund:-4 + antifund:4 + fund:-1 + fund:1,antifund:-4 + antifund:4 + fund:-1 + fund:1,0,70,0,False,True,True
+3,3::antifund:-3 + antifund:3 + fund:-4 + fund:4,antifund:-3 + antifund:3 + fund:-4 + fund:4,0,70,0,False,True,True
+3,3::antifund:-3 + antifund:3 + fund:-2 + fund:2,antifund:-3 + antifund:3 + fund:-2 + fund:2,0,70,0,False,True,True
+3,3::antifund:-3 + antifund:3 + fund:-1 + fund:1,antifund:-3 + antifund:3 + fund:-1 + fund:1,0,90,0,False,True,True
+3,3::antifund:-2 + antifund:2 + fund:-3 + fund:3,antifund:-2 + antifund:2 + fund:-3 + fund:3,0,70,0,False,True,True
+3,3::antifund:-2 + antifund:2 + fund:-1 + fund:1,antifund:-2 + antifund:2 + fund:-1 + fund:1,0,90,0,False,True,True
+3,3::antifund:-1 + antifund:1 + fund:-6 + fund:6,antifund:-1 + antifund:1 + fund:-6 + fund:6,0,50,0,False,True,True
+3,3::antifund:-1 + antifund:1 + fund:-4 + fund:4,antifund:-1 + antifund:1 + fund:-4 + fund:4,0,70,0,False,True,True
+3,3::antifund:-1 + antifund:1 + fund:-3 + fund:3,antifund:-1 + antifund:1 + fund:-3 + fund:3,0,90,0,False,True,True
+3,3::antifund:-1 + antifund:1 + fund:-2 + fund:2,antifund:-1 + antifund:1 + fund:-2 + fund:2,0,90,0,False,True,True
+3,3::antifund:-1 + antifund:1 + fund:0 + fund:0,antifund:-1 + antifund:1 + fund:0 + fund:0,0,70,0,False,True,True
+3,3::antifund:0 + antifund:0 + fund:-1 + fund:1,antifund:0 + antifund:0 + fund:-1 + fund:1,0,70,0,False,True,True
+3,3::conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,conj_sym2:-6 + conj_sym2:6 + sym2:-1 + sym2:1,0,25,0,False,True,True
+3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,conj_sym2:-4 + conj_sym2:4 + sym2:-3 + sym2:3,0,46,0,False,True,True
+3,3::conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,conj_sym2:-4 + conj_sym2:4 + sym2:-1 + sym2:1,0,46,0,False,True,True
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,conj_sym2:-3 + conj_sym2:3 + sym2:-4 + sym2:4,0,46,0,False,True,True
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,conj_sym2:-3 + conj_sym2:3 + sym2:-2 + sym2:2,0,46,0,False,True,True
+3,3::conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,conj_sym2:-3 + conj_sym2:3 + sym2:-1 + sym2:1,0,67,0,False,True,True
+3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,conj_sym2:-2 + conj_sym2:2 + sym2:-3 + sym2:3,0,46,0,False,True,True
+3,3::conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,conj_sym2:-2 + conj_sym2:2 + sym2:-1 + sym2:1,0,67,0,False,True,True
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,conj_sym2:-1 + conj_sym2:1 + sym2:-6 + sym2:6,0,25,0,False,True,True
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,conj_sym2:-1 + conj_sym2:1 + sym2:-4 + sym2:4,0,46,0,False,True,True
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,conj_sym2:-1 + conj_sym2:1 + sym2:-3 + sym2:3,0,67,0,False,True,True
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,conj_sym2:-1 + conj_sym2:1 + sym2:-2 + sym2:2,0,67,0,False,True,True
+3,3::conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,conj_sym2:-1 + conj_sym2:1 + sym2:0 + sym2:0,0,46,0,False,True,True
+3,3::conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,conj_sym2:0 + conj_sym2:0 + sym2:-1 + sym2:1,0,46,0,False,True,True
+4,4::antifund:-6 + antifund:6 + fund:-1 + fund:1,antifund:-6 + antifund:6 + fund:-1 + fund:1,0,20,0,False,True,True
+4,4::antifund:-4 + antifund:4 + fund:-3 + fund:3,antifund:-4 + antifund:4 + fund:-3 + fund:3,0,36,0,False,True,True
+4,4::antifund:-4 + antifund:4 + fund:-1 + fund:1,antifund:-4 + antifund:4 + fund:-1 + fund:1,0,36,0,False,True,True
+4,4::antifund:-3 + antifund:3 + fund:-4 + fund:4,antifund:-3 + antifund:3 + fund:-4 + fund:4,0,36,0,False,True,True
+4,4::antifund:-3 + antifund:3 + fund:-2 + fund:2,antifund:-3 + antifund:3 + fund:-2 + fund:2,0,36,0,False,True,True
+4,4::antifund:-3 + antifund:3 + fund:-1 + fund:1,antifund:-3 + antifund:3 + fund:-1 + fund:1,0,52,0,False,True,True
+4,4::antifund:-3 + antisym2:2 + fund:-1 + singlet:4,antifund:-3 + antisym2:2 + fund:-1 + singlet:4,1,23,0,True,True,False
+4,4::antifund:-2 + antifund:2 + fund:-3 + fund:3,antifund:-2 + antifund:2 + fund:-3 + fund:3,0,36,0,False,True,True
+4,4::antifund:-2 + antifund:2 + fund:-1 + fund:1,antifund:-2 + antifund:2 + fund:-1 + fund:1,0,52,0,False,True,True
+4,4::antifund:-1 + antifund:1 + fund:-6 + fund:6,antifund:-1 + antifund:1 + fund:-6 + fund:6,0,20,0,False,True,True
+4,4::antifund:-1 + antifund:1 + fund:-4 + fund:4,antifund:-1 + antifund:1 + fund:-4 + fund:4,0,36,0,False,True,True
+4,4::antifund:-1 + antifund:1 + fund:-3 + fund:3,antifund:-1 + antifund:1 + fund:-3 + fund:3,0,52,0,False,True,True
+4,4::antifund:-1 + antifund:1 + fund:-2 + fund:2,antifund:-1 + antifund:1 + fund:-2 + fund:2,0,52,0,False,True,True
+4,4::antifund:-1 + antifund:1 + fund:0 + fund:0,antifund:-1 + antifund:1 + fund:0 + fund:0,0,36,0,False,True,True
+4,4::antifund:-1 + antisym2:2 + fund:-3 + singlet:4,antifund:-1 + antisym2:2 + fund:-3 + singlet:4,1,23,0,True,True,False
+4,4::antifund:0 + antifund:0 + fund:-1 + fund:1,antifund:0 + antifund:0 + fund:-1 + fund:1,0,36,0,False,True,True
+4,4::antifund:1 + antisym2:-2 + fund:3 + singlet:-4,antifund:1 + antisym2:-2 + fund:3 + singlet:-4,1,23,0,True,True,False
+4,4::antifund:3 + antisym2:-2 + fund:1 + singlet:-4,antifund:3 + antisym2:-2 + fund:1 + singlet:-4,1,23,0,True,True,False
+2|3,2|3::fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,fundxantifund:0 + fundxsinglet:0 + singletxfund:-1 + singletxfund:1,0,47,0,False,True,True
+2|3,2|3::fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,fundxfund:0 + fundxsinglet:0 + singletxantifund:-1 + singletxantifund:1,0,47,0,False,True,True
+2|3,2|3::fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,fundxantifund:-1 + fundxsinglet:3 + singletxfund:-2 + singletxfund:4 + singletxsinglet:-6,2,99,17,True,True,False
+2|3,2|3::fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,fundxantifund:1 + fundxsinglet:-3 + singletxfund:-4 + singletxfund:2 + singletxsinglet:6,2,99,17,True,True,False
+2|3,2|3::fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,fundxfund:-1 + fundxsinglet:3 + singletxantifund:-2 + singletxantifund:4 + singletxsinglet:-6,2,99,17,True,True,False
+2|3,2|3::fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,fundxfund:1 + fundxsinglet:-3 + singletxantifund:-4 + singletxantifund:2 + singletxsinglet:6,2,99,17,True,True,False

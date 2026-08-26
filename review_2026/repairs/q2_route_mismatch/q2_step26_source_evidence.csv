@@ -1,0 +1,2 @@
+imported_function,density_contribution_present,gradient_contribution_present,finite_constraint,thresholding_imported
+step26.stress_energy_density,True,True,d3 = threshold(density_source + transport_gradient_source) = d0 OR d2,True

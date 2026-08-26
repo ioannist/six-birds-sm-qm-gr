@@ -10,6 +10,8 @@ from pathlib import Path
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
+THREAD_DIR = ARTIFACT_DIR.parents[1]
+REPO_ROOT = ARTIFACT_DIR.parents[3]
 
 REQUIRED_FILES = [
     "QM_GR_layer_toy_model_step29.tex",
@@ -96,11 +98,24 @@ def scan_forbidden() -> None:
                     fail(f"forbidden phrase {phrase!r} found in {path.name}")
 
 
-def source_exists(source: str) -> bool:
+def source_path(source: str) -> Path | None:
     source = source.strip()
     if not source:
+        return None
+    path = Path(source)
+    if path.is_absolute() and "physics_atlas" in path.parts:
+        atlas_index = path.parts.index("physics_atlas")
+        return REPO_ROOT.joinpath(*path.parts[atlas_index:])
+    if not path.is_absolute():
+        return THREAD_DIR / path
+    return path
+
+
+def source_exists(source: str) -> bool:
+    path = source_path(source)
+    if path is None:
         return False
-    return Path(source).exists()
+    return path.exists()
 
 
 def main() -> None:
@@ -157,9 +172,7 @@ def main() -> None:
         missing = [source for source in sources if not source_exists(source)]
         if missing:
             fail(f"claim {claim_id} has missing source artifacts: {missing}")
-    findings = Path("/home/repos/six-birds-papers/physics_atlas/thread_qm_gr/findings_qm_gr.md").read_text(
-        encoding="utf-8"
-    )
+    findings = (THREAD_DIR / "findings_qm_gr.md").read_text(encoding="utf-8")
     if "Step 29 — Consolidated QM-GR Layer Toy Model Statement" not in findings:
         fail("findings_qm_gr.md missing Step 29 entry")
 

@@ -1,0 +1,14 @@
+carrier,topology_family,seed,boundary_count,raw_edge_count,raw_exact_rank,raw_deficiency,four_move_residual_deficiency,minimum_unique_cut_margin,closure_move_count,closure_moves,fifth_move_count,reduced_edge_count,reduced_exact_rank,residual_deficiency,all_region_values_preserved,unique_after_closure,named_regression
+wheel_W4__b8__leaf_offset0,wheel_W4,47,8,14,11,3,3,4.911271389573812e-10,0,,0,14,11,3,True,True,False
+wheel_W4__b8__leaf_offset1,wheel_W4,17,8,14,10,4,4,4.1109160520136356e-10,4,delta_y|inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,2,12,10,2,True,True,False
+wheel_W4__b8__leaf_offset1,wheel_W4,31,8,14,10,4,4,0.010000000163709047,4,delta_y|inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,2,12,10,2,True,True,False
+K23_bipartite__b6__leaf_offset0,K23_bipartite,31,6,12,8,4,3,0.0399999676074367,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|series_bivalent,2,9,8,1,True,True,True
+K23_bipartite__b6__dual_gateway,K23_bipartite,47,6,12,8,4,3,0.01999996142287273,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|series_bivalent,2,9,8,1,True,True,False
+K23_bipartite__b7__leaf_offset1,K23_bipartite,47,7,13,9,4,3,0.01000001244188752,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,2,10,9,1,True,True,False
+K23_bipartite__b8__leaf_offset0,K23_bipartite,17,8,14,12,2,2,0.00999999963256414,3,y_delta|delta_y|series_bivalent,2,13,12,1,True,True,False
+K23_bipartite__b8__leaf_offset1,K23_bipartite,17,8,14,11,3,2,0.019999999741703505,3,inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,1,12,11,1,True,True,False
+K23_bipartite__b8__leaf_offset1,K23_bipartite,31,8,14,12,2,2,0.019999992269295035,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,2,13,12,1,True,True,False
+K23_bipartite__b8__leaf_offset1,K23_bipartite,47,8,14,12,2,2,0.00999997468694346,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,2,13,12,1,True,True,False
+K23_bipartite__b8__dual_gateway,K23_bipartite,17,8,14,10,4,3,0.009999999843566912,3,inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,1,12,10,2,True,True,False
+K23_bipartite__b8__dual_gateway,K23_bipartite,31,8,14,11,3,3,0.010000000280124368,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,2,13,11,2,True,True,False
+K23_bipartite__b8__dual_gateway,K23_bipartite,47,8,14,13,1,1,4.598405212163925e-09,0,,0,14,13,1,True,True,False

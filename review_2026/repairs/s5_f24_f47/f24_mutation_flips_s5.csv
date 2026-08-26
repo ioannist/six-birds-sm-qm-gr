@@ -1,0 +1,5 @@
+mutation,family,baseline_fires,mutated_fires,flip,mutation_evidence
+mutation_budget_decoupled,BudgetedRole,True,False,FIRES -> OFF,rows=468; q=161; role_obstruction=307; facet_edges=11; facet_components=2; budget_enabled=False; budget_nodes=8; budget_edges=361; fixed_steps=167
+mutation_sealed_e0_scope,BudgetedRole,True,False,FIRES -> OFF,rows=161; q=161; role_obstruction=0; facet_edges=10; facet_components=2; budget_enabled=False; budget_nodes=5; budget_edges=161; fixed_steps=19
+mutation_sealed_e0_scope,MemoryLayer,True,False,FIRES -> OFF,rows=161; q=161; role_obstruction=0; facet_edges=10; facet_components=2; step17_scale_carrier_nodes=8; active_scale_channel_nodes=2; scale_edges=161; ew_values=1; coupling_bits=0.382620856018; fixed_steps=148
+mutation_sealed_e0_scope,ScopedRole,False,True,OFF -> FIRES,rows=161; q=161; role_obstruction=0; facet_edges=10; facet_components=2; scope=e0; scope_rows=161; universe_scope_rows=161; reached_nodes=163; scope_nodes=163

@@ -48,6 +48,37 @@ The build writes:
 The root flattened TeX file is the tracked release copy of
 `paper/build/main_flat.tex`.
 
+A top-level `Makefile` wraps the same build:
+
+```bash
+make paper-build        # compile + flatten (paper/build/main.pdf, main_flat.tex)
+make paper-clean        # remove build outputs
+```
+
+### Qeios single-file bundle
+
+To produce the Qeios submission assets under `paper/build/qeios_single/`:
+
+```bash
+make paper-qeios        # or: ./scripts/build_qeios_assets.sh
+make paper-qeios-clean  # remove the qeios_single/ outputs
+```
+
+This writes:
+
+- `qeios_single.tex` — single-file source (macros inlined, bibliography
+  embedded via `.bbl`, an `orcidlink` fallback, and the self-assigned Zenodo
+  DOI removed so Qeios mints its own).
+- `qeios_single.pdf` — pre-built PDF.
+- `figures/` — the raster figures, which are not inlinable and must accompany
+  `qeios_single.tex`.
+- `qeios_source_bundle.zip` — upload/archive bundle (single-file deliverables
+  plus the full modular source and figures).
+- `Qeios_Submission_Notes.md` — copy/paste submission metadata.
+- `README_BUILD.txt` — build instructions for the bundle.
+
+The submission-notes and README templates live under `scripts/templates/`.
+
 ## Re-Derivation Checks
 
 The main prediction checks are documented in

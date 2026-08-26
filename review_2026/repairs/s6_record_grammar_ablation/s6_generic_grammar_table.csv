@@ -1,0 +1,7 @@
+dimensions,branch_scope,clean_classification,evaluation_count,stable_substrate_count,capacity_pass_count,distinguishability_pass_count,record_stability_count,counterexample_count,mesonic_token_count_set,baryonic_token_count_set,mixed_token_count_set,total_token_count_set
+2|3,no_singleton_branch,undefined_no_singleton_branch,2,0,2,2,0,0,2,0,0,2
+2|3,singleton_active_SU(2),clean_evaluated,4,4,4,4,4,0,0,2,0,2
+2|3,singleton_active_SU(3),breaking_evaluated,4,4,4,4,4,4,0,2,0,2
+3,no_singleton_branch,undefined_no_singleton_branch,28,0,2,28,0,0,0,0|4,0,0|4
+4,no_singleton_branch,undefined_no_singleton_branch,14,0,14,14,0,0,0,2|6,0,2|6
+4,singleton_active_SU(4),breaking_evaluated,4,4,0,4,0,0,0,0,1,1

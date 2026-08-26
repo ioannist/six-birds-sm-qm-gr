@@ -1,0 +1,758 @@
+{
+  "claim_status": [
+    {
+      "claim": "SU5 hypercharge direction",
+      "computed_result": "centralizer dimension 1; primitive (-2,-2,-2,3,3)",
+      "residual_assumption_or_convention": "overall sign and scale",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "k_Y and weak-angle ratio",
+      "computed_result": "k_Y=5/3; sin2(theta_W)=3/8",
+      "residual_assumption_or_convention": "weak-pair state assigned unit abelian charge; Q=T3+Y",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "SU5 X/Y coset",
+      "computed_result": "12 roots: (3,2,-5/6)+(3bar,2,5/6)",
+      "residual_assumption_or_convention": "regular 3+2 block embedding",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "step41 six-generator identity",
+      "computed_result": "ANALOGUE_AS_FIXED_WEAK_INDEX_SLICE_NOT_IDENTITY",
+      "residual_assumption_or_convention": "charge rescaling required for slice comparison",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "F27 baryon descent",
+      "computed_result": "12/12 coset generators change B; SM subalgebra 0",
+      "residual_assumption_or_convention": "B=(1/3,-1/3,0) on 3,3bar,1 left-chiral components",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "F48 monopole",
+      "computed_result": "pi2(SU5/H)=Z; SM-alone=0",
+      "residual_assumption_or_convention": "standard exact-sequence facts pi2(SU5)=pi1(SU5)=0",
+      "status": "LANDED-BY-CONSTRUCTION"
+    },
+    {
+      "claim": "unique parent",
+      "computed_result": "SU(5) uniquely selected within regular SU(n), n=5..8",
+      "residual_assumption_or_convention": "candidate class does not exhaust SO(10), E6, or non-regular embeddings",
+      "status": "REMAINING-IMPORT"
+    }
+  ],
+  "coset_quantum_numbers": [
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_03",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(1,1)",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_30",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(-1,-1)",
+      "su3_rep": "3bar",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_04",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(1,1)",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_40",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(-1,-1)",
+      "su3_rep": "3bar",
+      "t3": "-1/2"
+    },
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_13",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(-1,1)",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_31",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(1,-1)",
+      "su3_rep": "3bar",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_14",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(-1,1)",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_41",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(1,-1)",
+      "su3_rep": "3bar",
+      "t3": "-1/2"
+    },
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_23",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(0,-2)",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_32",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(0,2)",
+      "su3_rep": "3bar",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3,2,-5/6)",
+      "hypercharge": "-5/6",
+      "root_generator": "E_24",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(0,-2)",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "complex_multiplet": "(3bar,2,5/6)",
+      "hypercharge": "5/6",
+      "root_generator": "E_42",
+      "su2_rep": "2",
+      "su3_cartan_weight": "(0,2)",
+      "su3_rep": "3bar",
+      "t3": "-1/2"
+    }
+  ],
+  "f27_generator_actions": [
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_03",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_03",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_04",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_04",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_13",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_13",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_14",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_14",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_23",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_23",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_S_24",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    },
+    {
+      "delta_b_values": "-2/3|-1/3|1/3|2/3",
+      "generator_id": "X_A_24",
+      "mediates_delta_b": true,
+      "nonzero_transition_entries": 8,
+      "transition_types": "lepton->quark|quark->lepton|quark->quark"
+    }
+  ],
+  "f27_summary": {
+    "coset_generators": 12,
+    "delta_b_generators": 12,
+    "sm_clean_baryon_conserved": true,
+    "sm_subalgebra_delta_b_generators": 0
+  },
+  "f48_lattice": [
+    {
+      "central_u1_loop_index": 6,
+      "cocharacter_rank": 4,
+      "derived_coroot_rank": 3,
+      "free_rank_pi1_h": 1,
+      "global_form": "[SU(3)xSU(2)xU(1)]/Z6",
+      "primitive_loop_character": "(1, 1, 1, 0)",
+      "sm_alone_pi2_g_over_h": "0",
+      "smith_invariants": "1|1|1",
+      "su5_pi2_g_over_h": "Z",
+      "torsion_pi1_h": "none"
+    }
+  ],
+  "fermion_decomposition": [
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C1",
+      "electric_charge": "1/3",
+      "hypercharge": "1/3",
+      "irrep": "5bar",
+      "multiplet": "(3bar,1,1/3)",
+      "role": "quark",
+      "state": "5bar[0]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C1",
+      "electric_charge": "1/3",
+      "hypercharge": "1/3",
+      "irrep": "5bar",
+      "multiplet": "(3bar,1,1/3)",
+      "role": "quark",
+      "state": "5bar[1]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C1",
+      "electric_charge": "1/3",
+      "hypercharge": "1/3",
+      "irrep": "5bar",
+      "multiplet": "(3bar,1,1/3)",
+      "role": "quark",
+      "state": "5bar[2]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "0",
+      "component_id": "C2",
+      "electric_charge": "-1",
+      "hypercharge": "-1/2",
+      "irrep": "5bar",
+      "multiplet": "(1,2,-1/2)",
+      "role": "lepton",
+      "state": "5bar[3]",
+      "su2_rep": "2",
+      "su3_rep": "1",
+      "t3": "-1/2"
+    },
+    {
+      "baryon_number": "0",
+      "component_id": "C2",
+      "electric_charge": "0",
+      "hypercharge": "-1/2",
+      "irrep": "5bar",
+      "multiplet": "(1,2,-1/2)",
+      "role": "lepton",
+      "state": "5bar[4]",
+      "su2_rep": "2",
+      "su3_rep": "1",
+      "t3": "1/2"
+    },
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C3",
+      "electric_charge": "-2/3",
+      "hypercharge": "-2/3",
+      "irrep": "10",
+      "multiplet": "(3bar,1,-2/3)",
+      "role": "quark",
+      "state": "10[01]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C3",
+      "electric_charge": "-2/3",
+      "hypercharge": "-2/3",
+      "irrep": "10",
+      "multiplet": "(3bar,1,-2/3)",
+      "role": "quark",
+      "state": "10[02]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "-1/3",
+      "component_id": "C3",
+      "electric_charge": "-2/3",
+      "hypercharge": "-2/3",
+      "irrep": "10",
+      "multiplet": "(3bar,1,-2/3)",
+      "role": "quark",
+      "state": "10[12]",
+      "su2_rep": "1",
+      "su3_rep": "3bar",
+      "t3": "0"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "2/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[03]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "-1/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[04]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "2/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[13]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "-1/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[14]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "2/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[23]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "1/2"
+    },
+    {
+      "baryon_number": "1/3",
+      "component_id": "C4",
+      "electric_charge": "-1/3",
+      "hypercharge": "1/6",
+      "irrep": "10",
+      "multiplet": "(3,2,1/6)",
+      "role": "quark",
+      "state": "10[24]",
+      "su2_rep": "2",
+      "su3_rep": "3",
+      "t3": "-1/2"
+    },
+    {
+      "baryon_number": "0",
+      "component_id": "C5",
+      "electric_charge": "1",
+      "hypercharge": "1",
+      "irrep": "10",
+      "multiplet": "(1,1,1)",
+      "role": "lepton",
+      "state": "10[34]",
+      "su2_rep": "1",
+      "su3_rep": "1",
+      "t3": "0"
+    }
+  ],
+  "hypercharge": {
+    "centralizer_dimension": 1,
+    "normalization_rule": "wedge^2 weak-pair state has charge +1",
+    "primitive_pattern": "(-2,-2,-2,3,3)",
+    "standard_pattern": "(-1/3,-1/3,-1/3,1/2,1/2)",
+    "standard_scale": "1/6"
+  },
+  "mutation_tests": [
+    {
+      "expected": "rejected",
+      "mutation": "perturb_hypercharge_eigenvalue",
+      "rejection": "perturbed eigenvalue left the centralizer",
+      "result": "PASS"
+    },
+    {
+      "expected": "rejected",
+      "mutation": "swap_quark_lepton_role",
+      "rejection": "role mismatch at fermion state 0",
+      "result": "PASS"
+    },
+    {
+      "expected": "rejected",
+      "mutation": "break_generator_tracelessness",
+      "rejection": "basis contains a non-traceless matrix",
+      "result": "PASS"
+    }
+  ],
+  "parent_candidates": [
+    {
+      "candidate": "SU(5)",
+      "centralizer_dimension": 1,
+      "coset_dimension": 12,
+      "exact_single_u1_centralizer": true,
+      "exact_xy_coset_dimension_12": true,
+      "extra_fundamental_singlets": 0,
+      "no_extra_fundamental_singlets": true,
+      "parent_dimension": 24,
+      "selected": true,
+      "simple_su_parent": true,
+      "wedge2_plus_antifund_dimension_15": true
+    },
+    {
+      "candidate": "SU(6)",
+      "centralizer_dimension": 2,
+      "coset_dimension": 23,
+      "exact_single_u1_centralizer": false,
+      "exact_xy_coset_dimension_12": false,
+      "extra_fundamental_singlets": 1,
+      "no_extra_fundamental_singlets": false,
+      "parent_dimension": 35,
+      "selected": false,
+      "simple_su_parent": true,
+      "wedge2_plus_antifund_dimension_15": false
+    },
+    {
+      "candidate": "SU(7)",
+      "centralizer_dimension": 3,
+      "coset_dimension": 36,
+      "exact_single_u1_centralizer": false,
+      "exact_xy_coset_dimension_12": false,
+      "extra_fundamental_singlets": 2,
+      "no_extra_fundamental_singlets": false,
+      "parent_dimension": 48,
+      "selected": false,
+      "simple_su_parent": true,
+      "wedge2_plus_antifund_dimension_15": false
+    },
+    {
+      "candidate": "SU(8)",
+      "centralizer_dimension": 4,
+      "coset_dimension": 51,
+      "exact_single_u1_centralizer": false,
+      "exact_xy_coset_dimension_12": false,
+      "extra_fundamental_singlets": 3,
+      "no_extra_fundamental_singlets": false,
+      "parent_dimension": 63,
+      "selected": false,
+      "simple_su_parent": true,
+      "wedge2_plus_antifund_dimension_15": false
+    }
+  ],
+  "ratio_conventions": [
+    {
+      "convention": "weak-pair-unit-standard",
+      "fundamental_tr_t3_squared": "1/2",
+      "fundamental_tr_y2": "5/6",
+      "generation_tr_q2": "16/3",
+      "generation_tr_t3_squared": "2",
+      "k_y": "5/3",
+      "sin2_theta_w": "3/8",
+      "y_scale_vs_standard": "1"
+    },
+    {
+      "convention": "twice-standard-abelian-coordinate",
+      "fundamental_tr_t3_squared": "1/2",
+      "fundamental_tr_y2": "10/3",
+      "generation_tr_q2": "46/3",
+      "generation_tr_t3_squared": "2",
+      "k_y": "20/3",
+      "sin2_theta_w": "3/23",
+      "y_scale_vs_standard": "2"
+    }
+  ],
+  "su4_analogue": [
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_03",
+      "su3_rep": "3",
+      "su5_fixed_weak_index_map": "SU4:E_03->SU5:E_03",
+      "u1_charge": "-4/3"
+    },
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_30",
+      "su3_rep": "3bar",
+      "su5_fixed_weak_index_map": "SU4:E_30->SU5:E_30",
+      "u1_charge": "4/3"
+    },
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_13",
+      "su3_rep": "3",
+      "su5_fixed_weak_index_map": "SU4:E_13->SU5:E_13",
+      "u1_charge": "-4/3"
+    },
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_31",
+      "su3_rep": "3bar",
+      "su5_fixed_weak_index_map": "SU4:E_31->SU5:E_31",
+      "u1_charge": "4/3"
+    },
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_23",
+      "su3_rep": "3",
+      "su5_fixed_weak_index_map": "SU4:E_23->SU5:E_23",
+      "u1_charge": "-4/3"
+    },
+    {
+      "charge_rescaling_su4_to_su5": "5/8",
+      "root_generator": "E_32",
+      "su3_rep": "3bar",
+      "su5_fixed_weak_index_map": "SU4:E_32->SU5:E_32",
+      "u1_charge": "4/3"
+    }
+  ],
+  "su4_summary": {
+    "coset_dimension": 6,
+    "primitive_pattern": "(-1, -1, -1, 3)",
+    "u1_pattern": "(Fraction(-1, 3), Fraction(-1, 3), Fraction(-1, 3), Fraction(1, 1))",
+    "verdict": "ANALOGUE_AS_FIXED_WEAK_INDEX_SLICE_NOT_IDENTITY"
+  },
+  "su5_generators": [
+    {
+      "generator_id": "SU5_S_01",
+      "matrix": "0,1,0,0,0;1,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_01",
+      "matrix": "0,-1i,0,0,0;1i,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_02",
+      "matrix": "0,0,1,0,0;0,0,0,0,0;1,0,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_02",
+      "matrix": "0,0,-1i,0,0;0,0,0,0,0;1i,0,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_03",
+      "matrix": "0,0,0,1,0;0,0,0,0,0;0,0,0,0,0;1,0,0,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_03",
+      "matrix": "0,0,0,-1i,0;0,0,0,0,0;0,0,0,0,0;1i,0,0,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_04",
+      "matrix": "0,0,0,0,1;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;1,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_04",
+      "matrix": "0,0,0,0,-1i;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;1i,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_12",
+      "matrix": "0,0,0,0,0;0,0,1,0,0;0,1,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_12",
+      "matrix": "0,0,0,0,0;0,0,-1i,0,0;0,1i,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_13",
+      "matrix": "0,0,0,0,0;0,0,0,1,0;0,0,0,0,0;0,1,0,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_13",
+      "matrix": "0,0,0,0,0;0,0,0,-1i,0;0,0,0,0,0;0,1i,0,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_14",
+      "matrix": "0,0,0,0,0;0,0,0,0,1;0,0,0,0,0;0,0,0,0,0;0,1,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_14",
+      "matrix": "0,0,0,0,0;0,0,0,0,-1i;0,0,0,0,0;0,0,0,0,0;0,1i,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_23",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,1,0;0,0,1,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_23",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,-1i,0;0,0,1i,0,0;0,0,0,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_24",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,0,1;0,0,0,0,0;0,0,1,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_24",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,0,-1i;0,0,0,0,0;0,0,1i,0,0",
+      "sector": "coset",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_S_34",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,0,0,1;0,0,0,1,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_A_34",
+      "matrix": "0,0,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,0,0,-1i;0,0,0,1i,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_D_1",
+      "matrix": "1,0,0,0,0;0,-1,0,0,0;0,0,0,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_D_2",
+      "matrix": "1,0,0,0,0;0,1,0,0,0;0,0,-2,0,0;0,0,0,0,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_D_3",
+      "matrix": "1,0,0,0,0;0,1,0,0,0;0,0,1,0,0;0,0,0,-3,0;0,0,0,0,0",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    },
+    {
+      "generator_id": "SU5_D_4",
+      "matrix": "1,0,0,0,0;0,1,0,0,0;0,0,1,0,0;0,0,0,1,0;0,0,0,0,-4",
+      "sector": "embedded_subalgebra_span",
+      "trace": "0"
+    }
+  ]
+}

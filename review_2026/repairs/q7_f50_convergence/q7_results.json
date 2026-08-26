@@ -1,0 +1,68 @@
+{
+  "all_background_fixed_points_linearly_stable": false,
+  "all_background_solutions_exist": true,
+  "all_kappa_solutions_exist": true,
+  "background_boundary": {
+    "boundary_rho": 0.9999999989196763,
+    "estimated_offset": 3.6535352568607777,
+    "leading_eigenvalue_imag": 0.0,
+    "leading_eigenvalue_real": -0.9999999989196763,
+    "lower_offset": 3.653535256627947,
+    "lower_rho": 0.9999999993637709,
+    "mechanism": "fixed_map_eigenvalue_crosses_unit_circle",
+    "upper_offset": 3.6535352570936084,
+    "upper_rho": 1.000000000556987
+  },
+  "background_offset_count": 18,
+  "background_spectral_radius_max": 2.6323129202331015,
+  "background_spectral_radius_min": 0.013710484128570202,
+  "boundary": {
+    "boundary_rho": 0.999999999778289,
+    "estimated_kappa": 5.867484679329209,
+    "leading_eigenvalue_imag": 0.0,
+    "leading_eigenvalue_real": -0.999999999778289,
+    "lower_kappa": 5.867484678747132,
+    "lower_rho": 0.9999999998285977,
+    "mechanism": "fixed_map_eigenvalue_crosses_unit_circle",
+    "upper_kappa": 5.867484679911286,
+    "upper_rho": 1.0000000008178327
+  },
+  "budget_doubling_classification_unchanged": true,
+  "cap": 2000,
+  "case_classifications": {
+    "converged": 335,
+    "cycling": 24,
+    "stagnated": 1
+  },
+  "case_count": 360,
+  "discovered_background_branch_spectral_radius_max": 2.6323129205113096,
+  "discovered_background_branch_spectral_radius_min": 0.013710484065381572,
+  "discovered_background_fixed_point_branch_count": 20,
+  "discovered_kappa_fixed_point_branch_count": 12,
+  "genuine_fixed_map_stability_boundary": true,
+  "grid_count": 120,
+  "initial_states": [
+    "frozen",
+    "uniform",
+    "localized"
+  ],
+  "kappa_count": 12,
+  "kappa_spectral_radius_max": 5.968644637305012,
+  "kappa_spectral_radius_min": 0.0,
+  "legacy_120_pass_count": 18,
+  "legacy_60_pass_count": 15,
+  "max_mix_0_2_initial_solution_spread": 1.3955595483103858,
+  "mixes": [
+    0.2,
+    0.35,
+    0.5,
+    0.7
+  ],
+  "stable_background_fixed_point_count": 15,
+  "stable_discovered_background_branch_count": 17,
+  "supported_outcome": "MIXED_ALL_BACKGROUND_SOLUTIONS_EXIST_THREE_RAW_MAP_UNSTABLE_AND_KAPPA_STABILITY_BOUNDARY",
+  "supported_statement": "All sampled backgrounds possess fixed-point solutions, but only 15/18 are linearly stable under the undamped map; the kappa continuation likewise retains solutions while crossing a raw-map stability boundary.",
+  "tolerance": 1e-10,
+  "unstable_background_fixed_point_count": 3,
+  "unstable_discovered_background_branch_count": 3
+}

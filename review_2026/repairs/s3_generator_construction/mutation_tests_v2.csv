@@ -1,0 +1,8 @@
+mutation,expected,result,evidence
+perturb_hypercharge_eigenvalue,rejected,PASS,perturbed eigenvalue left the centralizer
+swap_quark_lepton_role,rejected,PASS,role mismatch at fermion state 0
+break_generator_tracelessness,rejected,PASS,basis contains a non-traceless matrix
+generic_SO5_conjugated_embedding,all invariants unchanged,PASS,commutant/coset/fermion ratios/F27/F48 invariant
+corrupt_extracted_coroot,rejected,PASS,F48 Smith invariants changed
+zero_one_coset_action,rejected,PASS,not every SU(5) coset generator mediates Delta B
+enlarge_SU4_fixed_slice_with_E04,rejected,PASS,SU2 action no longer proves fixed-slice non-invariance

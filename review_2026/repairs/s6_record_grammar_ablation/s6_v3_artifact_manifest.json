@@ -1,0 +1,15 @@
+{
+  "DESIGN_v3.md": "35c4d080ab5f564fb682997c26c94b154841bdb7be4d617dc1a8a604d4a9bac9",
+  "RESULTS_v3.md": "8c40e856779dc752e0e98567284bf6c2711d753212fbe38d27dcffb2068d92a8",
+  "s6_v3_branch_scores.csv": "8b3e0bcba372ee92c89ba7b03b1caedef15fb9a28968031673cc34b8dbff1cde",
+  "s6_v3_branch_token_census.csv": "2938fe64bd57b44a2097f3574d8dd6a4893a7716dfcc383b9e41d2cb53e008f7",
+  "s6_v3_dependency_pins.csv": "54be92a20b42ce024ce868964df628a4d7859e2a804960166a34ee1cc69afc33",
+  "s6_v3_eval_049_regression.csv": "d680f444ba3087a9b69ded0912f9c2f53cedf352a22ab602247fe0c0cb5428c2",
+  "s6_v3_operator_lifts.csv": "e34454361f555ba2d8a004f20f8d760c3ac436f7d684af05217f531aebc921df",
+  "s6_v3_outcome_ruling.csv": "9bd254585490ceb82ef72cfd7089dea8b06319e9c2eb5c06b9f2c19994c54ba9",
+  "s6_v3_quantifier_summary.csv": "bb1d8a6c109eff8eb702c18cc356bfc39c1080f86f9bc778aaa8da2093e25ab2",
+  "s6_v3_record_operators.csv": "c4a3079a182ff5bf401daa3b5afd07c5cd227e96aa820f927f66ad1e42f69c04",
+  "s6_v3_schema.json": "bd9dc0e8745233cfb2ba6cf4589950ad5e8245c3ceb9af667819fed82e2ef36a",
+  "s6_v3_structure_quantifiers.csv": "5a21635b783a0dd159d2fd6f4a9b78ae6e5c7bcf8812bf78d3b199b574820405",
+  "s6_v3_threshold_sensitivity.csv": "efcd8fb5f36f283b875d414bd208c1e60cb32fc12b3f81af534ffaba03193e3e"
+}

@@ -1,0 +1,11 @@
+stage,population_unit,input_labelled,population_labelled,excluded_labelled,exclusion_percent_labelled,input_orbit,population_orbit,excluded_orbit,exclusion_percent_orbit,headline_uses_orbit_percent
+neutral_carrier,structure,281241820,281241820,0,0.000000,57109009,57109009,0,0.000000,True
+genuinely_chiral,structure,281241820,1066,281240754,99.999621,57109009,419,57108590,99.999266,True
+atomic_packaging,structure,1066,84,982,92.120075,419,37,382,91.169451,True
+closure_consistency,structure,84,62,22,26.190476,37,27,10,27.027027,True
+chirality_faithfulness,structure,62,52,10,16.129032,27,24,3,11.111111,True
+higher_layer_mass_closure_proxy,structure,52,8,44,84.615385,24,2,22,91.666667,True
+admissible_scalar_branches,"(structure,scalar_branch)",12,12,0,0.000000,3,3,0,0.000000,True
+clean_scalar_branches,"(structure,scalar_branch)",12,4,8,66.666667,3,1,2,66.666667,True
+clean_separation_existential,structure,8,4,4,50.000000,2,1,1,50.000000,True
+clean_separation_universal,structure,8,0,8,100.000000,2,0,2,100.000000,True

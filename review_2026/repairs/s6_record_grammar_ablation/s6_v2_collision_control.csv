@@ -1,0 +1,2 @@
+control_id,source_evaluation_id,source_token_id,constructed_description_a,constructed_description_b,canonical_state_key_a,canonical_state_key_b,invariant_inner_product,collision_count,distinguishability_passes,expected_to_fail,control_passes
+in_carrier_reversed_description_collision,eval_034,mixed:o1[antisym2:2]+o2[fund:-1]+o2[fund:-1]::channel=0,o1[antisym2:2]+o2[fund:-1]+o2[fund:-1],o2[fund:-1]+o2[fund:-1]+o1[antisym2:2],o1[antisym2:2]+o2[fund:-1]+o2[fund:-1]::channel=0,o1[antisym2:2]+o2[fund:-1]+o2[fund:-1]::channel=0,1,1,False,True,True

@@ -1,0 +1,5 @@
+named_reduction,applicable_object_count,objects,blocks_candidate
+saturated_terminal_or_zero_column_contraction,0,,True
+inseparable_vertex_contraction_parallel_sum,0,,True
+series_bivalent_reduction,0,,True
+exact_two_terminal_module_replacement,0,,True

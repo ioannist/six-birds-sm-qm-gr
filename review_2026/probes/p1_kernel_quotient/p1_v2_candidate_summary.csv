@@ -1,0 +1,2 @@
+carrier,family,boundary_count,edge_count_after_closure,exact_rank,residual_deficiency,minimum_unique_cut_margin,closure_moves_before_candidate,remaining_named_move
+cycle_chord_m3__b6__leaf_offset0__seed17,cycle_chord_m3,6,9,8,1,0.05999998183920979,,none
