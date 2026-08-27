@@ -13,7 +13,13 @@ partition-incomparability theorem with conditional field provenance, and a corre
 recognition supported by contracted-state and monogamy controls. Every statement carries its caps, quotient conventions,
 imports, sample bounds, or depth limit.
 
-The former predictions now define three open problems: quotient-complete or state-level entanglement underdetermination;
-dynamical gravitational record formation; and dynamical persistence in the scalar-dressed record algebra. The common
-grammar has not forced their answers. Its demonstrated contribution is narrower: it organized two finite construction
-programs and, under sustained adversarial repair, helped expose exactly where their strongest claims failed.
+The Version-3 graph result adds nineteen exact same-graph fibers whose complete five-class orbits are disjoint modulo
+terminal-label-fixed exact weighted isomorphism. The state result adds six exact finite connected $C2_L1$ examples
+under the declared capacity convention and frozen family relation. Transformations outside the five graph classes,
+other tensor families or conventions, and any bulk-geometry interpretation remain open.
+
+P1's two finite routes are therefore resolved within their declared relations, while their broader physical and bulk
+interpretation remains open. P2 and P3 remain construction programs: dynamical gravitational record formation and
+dynamical persistence in the scalar-dressed record algebra. The common grammar has not forced their answers. Its
+demonstrated contribution is narrower: it organized two finite construction programs and, under sustained adversarial
+repair, helped expose exactly where their strongest claims failed.

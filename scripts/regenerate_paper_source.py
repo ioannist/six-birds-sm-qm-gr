@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the Markdown semantic mirrors from the authoritative v2 LaTeX."""
+"""Regenerate the Markdown semantic mirrors from the authoritative Version-3 LaTeX."""
 
 from __future__ import annotations
 
@@ -269,7 +269,7 @@ def main() -> None:
     front = (
         f"# {title}\n\n"
         "**Ioannis Tsiokos** · ORCID 0009-0009-7659-5964  \n"
-        "**Version 2 — corrected and re-verified, 2026-08-26**\n\n"
+        "**Version 3 — open-program results added, 2026-08-27**\n\n"
         "## Abstract\n\n"
         + abstract
         + "\n\n**Keywords:** Six Birds Theory; emergence calculus; finite structural constructions; "

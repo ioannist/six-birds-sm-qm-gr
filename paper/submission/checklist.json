@@ -1,18 +1,23 @@
 {
-  "description": "Version-2 submission readiness checklist against review_2026/CLAIMS_MAP.md revision 3.",
+  "description": "Version-3 submission readiness checklist against the Version-2 claims map and certified Version-3 closure statements.",
   "claims_map": {
     "path": "review_2026/CLAIMS_MAP.md",
     "revision": 3,
     "status": "CERTIFIED"
   },
+  "version_3_authorities": [
+    "open_programs/prog3_cut_fingerprints/CLOSURE.md",
+    "open_programs/prog3_cut_fingerprints/step2_orbit_saturation/statement.md",
+    "open_programs/prog2_state_underdetermination/CLOSURE.md"
+  ],
   "section_6": {
     "former_prediction_count": 3,
     "forcing_status": "retracted",
     "cases": [
       {
         "id": "P1",
-        "surviving_status": "open_program",
-        "statement": "Exact-quotient irreducibility and the contracted-state underdetermination question remain open."
+        "surviving_status": "finite_routes_resolved_within_declared_scope",
+        "statement": "The original physical forcing is retracted; two finite routes are resolved within declared scope; bulk-geometry interpretation and broader relations remain open."
       },
       {
         "id": "P2",
@@ -32,7 +37,7 @@
       "status": "passed"
     },
     {
-      "item": "Markdown section and appendix mirrors are regenerated from Version-2 LaTeX",
+      "item": "Markdown section and appendix mirrors are regenerated from Version-3 LaTeX",
       "status": "passed",
       "command": "python3 scripts/regenerate_paper_source.py"
     },
@@ -41,11 +46,11 @@
       "status": "passed"
     },
     {
-      "item": "Carrier denominators, branch caps, sample bounds, token sensitivity, and depth-bounded quotient search are stated at claim sites",
+      "item": "Carrier denominators, branch caps, sample bounds, token sensitivity, and complete five-class closure scope are stated at claim sites",
       "status": "passed"
     },
     {
-      "item": "Qeios notes and source bundle use the Version-2 abstract and claims architecture",
+      "item": "Qeios notes and source bundle use the Version-3 abstract and claims architecture",
       "status": "passed"
     },
     {

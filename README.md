@@ -8,12 +8,21 @@ This repository contains the public support surface for the paper:
 >
 > Archived at: https://zenodo.org/records/20713213
 
-Version 2 applies the Six Birds emergence calculus to two finite physics tracks:
+Version 3 applies the Six Birds emergence calculus to two finite physics tracks:
 Standard Model structural selection and the QM-GR interface. Post-publication
-verification retained several conditional constructions and two toy theorems,
-materially corrected or retracted stronger claims, and replaced the former
-prediction-forcing claims with three sharply typed open programs. No
-foundational grade, universality, or frame-transfer claim is made.
+verification (Version 2) retained several conditional constructions and two toy
+theorems, materially corrected or retracted stronger claims, and replaced the
+former prediction-forcing claims with three sharply typed construction programs.
+Version 3 adds the reviewer-certified resolution of the first program within
+declared scope: nineteen exact same-graph fibers on the thirteen residual
+min-cut carriers have disjoint complete queue-exhaustive orbits under the five
+declared move classes, modulo terminal-label-fixed exact weighted isomorphism,
+with undeclared transformations open. Six exact finite connected `C2_L1`
+state-level underdetermination examples also survive the declared capacity
+convention and frozen family relation (see `open_programs/`).
+The other two programs remain open, with an approved research proposal at
+`PROPOSAL_DYNAMICAL_RECORD_STABILITY.md`. No foundational grade, universality,
+or frame-transfer claim is made.
 
 ## What this repository provides
 
@@ -25,7 +34,8 @@ foundational grade, universality, or frame-transfer claim is made.
 - Physics-track construction artifacts and validator outputs under
   `physics_atlas/`.
 - The certified Version-2 claims map and machine-verifiable repairs/probes under
-  `review_2026/`.
+  `review_2026/`, plus the certified Version-3 closure records under
+  `open_programs/`.
 - Historical re-derivation pointers under
   `physics_atlas/INDEPENDENT_REDERIVATIONS.md`; superseded headline claims there
   do not override `review_2026/CLAIMS_MAP.md`.
@@ -85,7 +95,7 @@ The submission-notes and README templates live under `scripts/templates/`.
 
 ## Certified Re-Derivation Checks
 
-The Version-2 entry points include:
+The Version-2/3 entry points include:
 
 ```bash
 cd review_2026/repairs/s1_carrier_reconstruction
@@ -96,6 +106,12 @@ python3 run_active_cut_quotient_v3.py --self
 
 cd ../../repairs/q5_lp_duality
 python3 run_q5.py --self
+
+cd ../../../open_programs/prog3_cut_fingerprints/step2_orbit_saturation
+python3 run_step2.py --self
+
+cd ../../prog2_state_underdetermination/step5_family_gauge_classification
+python3 run_step5.py --self
 ```
 
 See `review_2026/CLAIMS_MAP.md` for the complete certified disposition and the
@@ -121,10 +137,14 @@ artifact directory attached to each repaired statement.
 - The 27-round adversarial campaign and 20 repairs/probes are an audit trail,
   not journal peer review or independent replication. The earlier external gate
   never issued final approval.
-- The former three forcing predictions are retracted or reduced: P1 is a
-  depth-bounded exact-quotient search with 13 unclassified residual carriers;
-  BMV-null is conditional on an assumed perfect-record channel; record-stability
-  is token-definition-sensitive. Their physical versions are open programs.
+- The former three forcing predictions are retracted or reduced. For P1,
+  nineteen exact graph fibers have disjoint complete five-class orbits modulo
+  terminal-label-fixed exact weighted isomorphism, with transformations outside
+  those classes open; six exact finite connected `C2_L1` state examples survive
+  the declared capacity convention and frozen family relation, without implying
+  a bulk-geometry theorem. BMV-null is conditional on an assumed perfect-record
+  channel, and record-stability is token-definition-sensitive; those two
+  construction programs remain open.
 - The repository is not uniformly self-verifying: some historical validators
   regenerate artifacts or validate stored summaries, and the preregistration
   freeze is a consistency gate rather than tamper-evident evidence. Run broad

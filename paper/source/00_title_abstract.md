@@ -1,7 +1,7 @@
 # To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR
 
 **Ioannis Tsiokos** · ORCID 0009-0009-7659-5964  
-**Version 2 — corrected and re-verified, 2026-08-26**
+**Version 3 — open-program results added, 2026-08-27**
 
 ## Abstract
 
@@ -22,9 +22,15 @@ claims attached to the three predictions are retracted or reduced; the generatio
 composition law, the product-parent $3/23$ control, the linearized-Einstein match, and the apparent
 cosmological-background admissibility boundary do not survive as stated. What remains includes conditional finite
 constructions, recognition landings, a witness-independent single-factor toy theorem, and several strengthened repaired
-computations. The failed forcing claims leave three sharply posed open problems: whether an active-cut kernel survives
-all exact graph quotients or occurs for contracted states; whether gravitational record formation follows dynamically;
-and which scalar-dressed invariant candidates persist as physical records. The repository records the certified claims
-map, repair artifacts, conditions, and validators. No frame-transfer to nature or universality theorem is claimed.
+computations. The failed forcing claims left three sharply posed construction programs. The first is resolved in this
+version within declared scope: all thirteen residual carriers carry exact same-graph fibers whose endpoint orbits remain
+disjoint after complete queue-exhaustive closure under the five declared exact move classes, modulo
+terminal-label-fixed exact weighted isomorphism; transformations outside those classes remain open. At the state level,
+six exact finite connected $C2_L1$ examples under the declared capacity convention and frozen family relation share
+identical complete cut fingerprints and identical contracted boundary states. These are finite,
+family- and relation-scoped examples, not a bulk-geometry theorem. The other two programs —
+whether gravitational record formation follows dynamically, and which scalar-dressed invariant candidates persist as
+physical records — remain open. The repository records the certified claims map, repair artifacts, conditions, and
+validators. No frame-transfer to nature or universality theorem is claimed.
 
 **Keywords:** Six Birds Theory; emergence calculus; finite structural constructions; Standard Model gauge selection; quantum gravity; holographic entanglement; post-publication verification

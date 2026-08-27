@@ -2,7 +2,8 @@
 \section{Constructions and reproducibility}\label{toy-constructions-reproducibility}}
 
 The historical construction tracks live under \nolinkurl{physics_atlas/}; the post-publication repairs and probes live
-under \nolinkurl{review_2026/}. The repaired results, not superseded historical headline rows, control Version 2.
+under \nolinkurl{review_2026/}; the Version-3 open-program artifacts live under \nolinkurl{open_programs/}. The repaired
+and completed results, not superseded historical headline rows, control Version 3.
 Validators are heterogeneous: many historical scripts check deterministic artifacts, while the strongest repair
 validators rebuild their entire result in memory and byte-compare every output.
 
@@ -10,7 +11,7 @@ validators rebuild their entire result in memory and byte-compare every output.
 
 \begin{longtable}[]{@{}p{0.28\linewidth}p{0.41\linewidth}p{0.23\linewidth}@{}}
 \toprule
-Version-2 result & artifact directory & validator\\
+Version-2/3 result & artifact directory & validator\\
 \midrule
 \endhead
 gauge carrier, branch census, scalar pairs &
@@ -43,6 +44,12 @@ adaptive F50 convergence and stability &
 five-class P1 quotient search &
 \nolinkurl{review_2026/probes/p1_kernel_quotient/} &
 \nolinkurl{run_active_cut_quotient_v3.py --self}\\
+PROG3 complete five-class orbit saturation &
+\nolinkurl{open_programs/prog3_cut_fingerprints/step2_orbit_saturation/} &
+\nolinkurl{run_step2.py --self}\\
+PROG2 finite \(C2\_L1\) family gauge classification &
+\nolinkurl{open_programs/prog2_state_underdetermination/step5_family_gauge_classification/} &
+\nolinkurl{run_step5.py --self}\\
 \bottomrule
 \end{longtable}
 
@@ -89,12 +96,13 @@ load-bearing computations. Step61's mathematical result survives separate review
 booleans.
 \item The preregistration \texttt{SHA256SUMS} primer entry names a file absent from the release. The freeze gate is a
 consistency validator, not a cryptographic or externally timestamped tamper-evident freeze.
-\item P1 v3 does rebuild in memory and byte-compare its tables. Its residual statement is nevertheless relative to five
-named exact reductions and a three-round \(\Delta\)--Y/Y--\(\Delta\) presentation search, not all possible quotients.
+\item The historical P1 probe used a three-round \(\Delta\)--Y/Y--\(\Delta\) presentation search. The Version-3 PROG3
+validator rebuilds nineteen exact fibers and complete queue-exhaustive closure under five declared classes, modulo
+terminal-label-fixed exact weighted isomorphism. Transformations outside those classes remain open.
 \end{itemize}
 
 \subsection{Paper build}
 
 The modular manuscript builds with \texttt{make paper-build}. That target compiles \texttt{paper/main.tex} and creates
 \nolinkurl{paper/build/main_flat.tex}; the tracked root TeX file is copied from that flattened output for release.
-The Qeios bundle is a separate submission surface regenerated from the Version-2 sources; its manuscript and notes must remain synchronized with the modular paper.
+The Qeios bundle is a separate submission surface regenerated from the Version-3 sources; its manuscript and notes must remain synchronized with the modular paper.

@@ -1,14 +1,20 @@
-# Version-2 claim audit
+# Version-2/3 claim audit
 
-Authority: `review_2026/CLAIMS_MAP.md`, revision 3, CERTIFIED (2026-08-26). The LaTeX build authority is
+Authority for Version 2: `review_2026/CLAIMS_MAP.md`, revision 3, CERTIFIED (2026-08-26). Authorities for the two
+Version-3 additions: `open_programs/prog3_cut_fingerprints/CLOSURE.md` together with
+`open_programs/prog3_cut_fingerprints/step2_orbit_saturation/statement.md`, and
+`open_programs/prog2_state_underdetermination/CLOSURE.md` (FINAL OUTCOME). The LaTeX build authority is
 `paper/main.tex` plus `paper/sections/` and `paper/appendices/`; `paper/source/` is a generated semantic mirror.
 
-The former Section-6 forcing architecture is not certified. Version 2 presents three corrected
-cases: P1 is an exact-quotient and contracted-state open program; P2 retains only the conditional result that an assumed
-perfect-record channel is LOCC and BMV-null; P3 is token-definition-sensitive and leaves dynamical record persistence
-open. None is asserted as forced by the calculus or as a prediction about nature.
+The former Section-6 forcing architecture is not certified. Version 2 presents three corrected cases. P1's two finite
+routes are resolved in Version 3 within declared scope: nineteen exact same-graph fibers have disjoint complete orbits
+under the five declared move classes modulo terminal-label-fixed exact weighted isomorphism, with undeclared
+transformations open; six exact finite connected `C2_L1` examples survive the declared capacity convention and frozen
+family relation, without a bulk-geometry claim. P2 retains only the conditional result that an assumed perfect-record
+channel is LOCC and BMV-null; P3 is token-definition-sensitive and leaves dynamical record persistence open. None is
+asserted as forced by the calculus or as a prediction about nature.
 
-| Claims-map row | Certified disposition represented in Version 2 | Principal site |
+| Claims-map row | Certified disposition represented in Versions 2-3 | Principal site |
 |---|---|---|
 | foundational-strength headline | RESTATE: finite constructions, recognition landings, two toy theorems | abstract; §§1, 11 |
 | three forcing headlines | RETRACT / OPEN-PROGRAM | abstract; §§1, 6, 11 |
@@ -36,7 +42,7 @@ open. None is asserted as forced by the calculus or as a prediction about nature
 | strict-extension discriminator | RESTATE as conditional lemma/two exemplars | §7; §9 summary |
 | G1 Lambda adjudication | RETRACT as circular archived exploration | §9 withdrawn-statements paragraph |
 | G2 singularity boundary | KEEP at contested finite-toy grade | §9 certified-scope table |
-| P1 | OPEN-PROGRAM: 365/378 full rank; 13 residual only relative to five reductions | §6.1 |
+| P1 | original physical forcing RETRACTED; two finite routes RESOLVED within declared scope; bulk-geometry interpretation and broader relations OPEN | §6.1 |
 | P2 | RETRACT forcing; KEEP conditional LOCC channel | §6.2 |
 | P3 | RETRACT forcing; OPEN-PROGRAM dynamics | §6.3 |
 | method / anti-contamination | RESTATE as heterogeneous audit and procedural self-report | §3 |
@@ -48,5 +54,5 @@ Audit checks:
 - the corrected abstract and Section 6 use conditional/open-program language;
 - the numerical carrier and record-census conventions occur at the claim sites;
 - retractions are stated at their original result sites, not only in Appendix D;
-- the root flattened TeX and Qeios assets are regenerated from the same Version-2 sources;
+- the root flattened TeX and Qeios assets are regenerated from the same Version-3 sources;
 - no mirror or submission note independently strengthens the certified wording.

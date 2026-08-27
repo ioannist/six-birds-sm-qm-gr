@@ -55,6 +55,6 @@ control.
 | CHSH | quantum $2\sqrt2$; enumerated local bound $2$; classical control $\sqrt2$ |
 | BH-information classification | rank $27 =$ internal dim; explicit-$G$ $3\times10^{-15}$; partial-readout gap $0.0097$ |
 | $\Lambda$ sweep | all sampled backgrounds/$\kappa$ have fixed points; raw-map stability crosses near offset $3.6535$, $\kappa=5.8675$ |
-| P1 five-class search | 378 carriers; 365 full-rank after declared three-round search; 13 residuals with histogram $1^8,2^4,3^1$, not proven non-gauge |
+| P1 five-class closure | 19 exact fibers on 13 carriers; complete queue-exhaustive five-class closure modulo terminal-label-fixed exact weighted isomorphism; undeclared transformations open |
 | BMV conditional | assumed perfect-record channel is LOCC and null; record-channel derivation is open |
 | record-stability status | forcing retracted; bounded broader token census is definition-sensitive |

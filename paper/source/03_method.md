@@ -25,8 +25,9 @@ A claim with no way to come out false is not a result. The principal surviving p
    (and an order-battery of 204 refinement orders, 0 flips);
 - the QM–GR directed no-go is paired with a *nested* readout for which the reduction must (and does) succeed;
 - the holographic monogamy results are paired with a GHZ state that must (and does) violate them;
-- the P1 graph search is paired with exact active-cut quotient regressions; its remaining 13 residuals are explicitly
-   not certified irreducible;
+- the historical three-round P1 graph probe is paired with exact active-cut quotient regressions; Version 3 recertifies
+   nineteen exact fibers and exhausts their five-class move queues modulo terminal-label-fixed exact weighted isomorphism,
+   while transformations outside those classes remain open;
 - the record-stability ablation requires a scalar-dressed regression operator and excludes the spurious spectator-Cartan
    token; the broader census then produces counterexamples to the former implication.
 
@@ -47,8 +48,9 @@ caught and killed (full post-mortems in Appendix C):
    dismiss the answer); one inflated by a **degeneracy artifact** (a one-sided finite-difference Jacobian taken at a
    maximally tied uniform-weight point, where the apparent kernel is first-order visible — residuals scaling linearly
    with step size betrayed it). All three were rejected. A later exact quotient analysis also showed that every published
-   null direction was local-reduction gauge. The maintained result uses exact active-cut incidence matrices and reports
-   13 unclassified residuals only relative to five reductions and a depth-bounded presentation search.
+   null direction was local-reduction gauge. The later exact program starts from the thirteen historical residual carriers,
+   constructs nineteen fibers, and completely exhausts their move queues under five declared classes modulo
+   terminal-label-fixed exact weighted isomorphism. It leaves transformations outside those classes open.
 
 We call the intended discipline **symmetric scrutiny**. The post-publication record shows why the aspiration must be
 distinguished from success: the three prediction forcings did not survive the completed campaign. Appendix C retains the

@@ -16,7 +16,8 @@ that has been withdrawn. Table \ref{tab:certified-scope} collects the certified 
 | min-cut LP identity | finite-graph recognition | unique-cut chambers, exported primal/dual matrices, exact slackness and sensitivity checks |
 | contracted-state RT evidence | finite sample | bound, $D=2,3,4$ trend, and MMI/GHZ control; no convergence or equality |
 | F50 backgrounds | sample-bounded numerics | every sampled background/$\kappa$ has a fixed point; stability boundary is criterion-dependent |
-| P1 quotient search | open program | 378 weighted carriers, five exact classes, declared three-round presentation search; 13 residuals are not certified non-gauge |
+| P1 quotient search | resolved (declared scope) | 13 carriers recertified exactly; 19 same-graph fibers with complete queue-exhaustive orbit disjointness under the five classes modulo terminal-label-fixed exact weighted isomorphism; undeclared transformations open |
+| P1 state level | six exact examples | finite connected $C2_L1$, declared capacity convention and frozen family gauge relation only; no bulk-geometry theorem |
 | BMV result | conditional LOCC statement | null only for an assumed perfect-record channel; record formation unbuilt |
 | record stability | open program | bounded monomial census is token-definition-sensitive; physical invariant algebra and dynamics unbuilt |
 | G2 singularity row | contested finite-toy grade | existential regularized example; finiteness comes from the saturating rule, not physical singularity resolution |
@@ -43,8 +44,9 @@ byte comparisons, but historical limitations remain:
    parallel-pool race was observed;
 - steps 43, 44, and 61 and analogues validate stored audit summaries rather than rebuilding all load-bearing work;
    step61's audit gates include literal booleans;
-- P1 v3 has an in-memory byte-comparing validator, but its irreducibility statement is explicitly relative to five
-   named exact reductions and the declared three-round $\Delta$–Y/Y–$\Delta$ search.
+- The historical P1 probe used a declared three-round $\Delta$--Y/Y--$\Delta$ search. P1 Version 3 instead
+   recertifies nineteen exact fibers and reaches complete queue-exhaustive closure under five declared classes, modulo
+   terminal-label-fixed exact weighted isomorphism; transformations outside those classes remain open.
 
 The missing-layer atlas is **unfit** as independent preregistration or blinding evidence: card grades exceed the
 certified claims and the external gate never gave final approval. The retrodiction atlas is
@@ -56,6 +58,7 @@ of 34 candidates have only explicitly typed missing-card coverage and require co
 
 The most direct tests are computational: regenerate the repaired carrier and branch table; reconstruct the exact
 $SU(5)$ commutant and coset action; materialize the $N$-copy mass matrices; verify the coordinate-partition lattice;
-re-solve the min-cut primal and dual; repeat the adaptive F50 grid; and re-enumerate the P1 five-class search. The three
-physical questions in Section 6 remain research programs rather than predictions of this paper. Their eventual answers
-may disagree with the conjectural motivations here without contradicting any certified Version-2 theorem.
+re-solve the min-cut primal and dual; repeat the adaptive F50 grid; and re-enumerate the P1 five-class closure. Section 6
+contains three construction programs: P1's two finite routes are resolved within their declared relations, while its
+broader physical and bulk interpretation and the P2/P3 constructions remain open. Their eventual answers may disagree
+with the conjectural motivations here without contradicting any certified finite statement.

@@ -85,5 +85,6 @@ tokens fail the build.
 - **CHSH** (§7.1): local bound $\max_{\lambda\in\{\pm1\}^4} |E_{00}+E_{01}+E_{10}-E_{11}| = 2$ (16-strategy
    enumeration); Bell state with $a_0=Z, a_1=X, b_{0,1}=(Z\pm X)/\sqrt2$ gives $2\sqrt2$.
 - **Active-cut quotient search** (§6): exact $0/1$ active-cut incidence matrices replace the published Jacobian
-   claim. After five named reduction classes and a declared three-round presentation search, 365/378 weighted carriers
-   reach full rank and 13 remain unclassified (deficiencies $1^8,2^4,3^1$).
+   claim. The historical three-round probe left 13 of 378 weighted carriers unclassified; Version 3 constructs nineteen
+   exact fibers on those carriers and exhausts their move queues under five declared classes modulo terminal-label-fixed
+   exact weighted isomorphism, with transformations outside those classes open.

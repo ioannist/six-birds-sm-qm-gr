@@ -1,11 +1,12 @@
-# Open programs from the three published predictions
+# Construction programs from the three published predictions
 
 Version 1 presented three predictions as forced and falsifiable. Post-publication verification showed that none was forced by
 the published machinery. This section retracts that headline and separates reproducible finite statements from three
-open construction problems. Falsifiability language is retained only for a specified finite model or conditional
+construction programs, the first now resolved within declared scope. Falsifiability language is retained only for a
+specified finite model or conditional
 channel; it is not transferred to nature where the required bridge has not been built.
 
-## The entanglement--geometry question (open program)
+## The entanglement--geometry question (resolved within declared scope)
 
 The published carrier had fourteen edge capacities: eight terminal leaves and three bivalent two-edge bridges. Its
 11,049-component min-cut fingerprint had raw Jacobian rank nine and nullity five. Exact series/parallel reduction shows
@@ -36,12 +37,38 @@ sixth-move ansätze are only diagnostics. Artifacts and the byte-comparing valid
 `review_2026/probes/p1_kernel_quotient/`.
 
 The finite census is directly falsifiable by re-enumeration: a different rank, cut value, uniqueness result, or named
-reduction path would refute it. The former physical prediction is not established. Two open routes remain:
+reduction path would refute it. The former physical prediction is not established. Version 2 left two open routes;
+both were executed after publication of Version 2, with reviewer-certified artifacts and byte-comparing validators
+under `open_programs/` in the repository.
 
-1. identify a further exact quotient explaining the thirteen residuals, or certify a carrier against a complete
-   quotient class rather than the present five classes and depth-bounded search;
-1. build a *state-level* example in which independently contracted boundary states, not cut fingerprints alone,
-   underdetermine a physically quotiented bulk geometry.
+*Route 1 (graph level) — resolved within the declared five-class relation.* The local-move repertoire is
+provably complete at the star-mesh level: no local $k$-star-mesh transform preserves min-cut for $k>3$
+(Kalman–Krauthgamer, arXiv:2112.06916, Thm. 3.24), so the five declared classes are not an arbitrary stopping point.
+Exact-rational recertification confirms all thirteen residual carriers (the three near-float-tolerance minimum margins
+are strictly positive; no earlier carrier classification changed). Every carrier admits at least one nondegenerate exact rational
+weight interval of same-graph fibers: nineteen kernel-basis directions in all, each yielding distinct positive
+weightings with identical complete terminal min-cut fingerprints, re-established by exhaustive enumeration, with no
+graph automorphism relating the endpoints. The two endpoint orbits of every fiber are disjoint after complete
+queue-exhaustive closure under the five declared exact fingerprint-preserving move classes, modulo terminal-label-fixed
+exact weighted isomorphism; all nonidentity admitted transitions are $\Delta$–Y/Y–$\Delta$. Transformations
+outside the declared classes remain open.
+
+*Route 2 (state level) — resolved within declared scope: six exact examples.* An explicit dense-numerical
+contracted-state entropy engine, with verified tensor-presentation moves and non-vacuous controls, first shows the
+preregistered convention-scoped negative: under the initial declared injective capacity-to-state convention, all nineteen cut-fiber pairs
+split at the state level, and across a preregistered five-member convention/tensor family every seeded-random row has
+trivial cut/state-kernel intersection. The connected-copy member $C2_L1$, however, carries six analytically symmetry-protected
+directions (its boundary state depends on capacities only through their product). Searching the complete cut kernel
+constructs six positive exact-algebraic finite continuations with identical complete cut fingerprints, exactly equal
+capacity products, and identical connected-copy boundary states. Under the frozen family gauge relation —
+terminal-fixed weighted isomorphism, tensor-presentation gauge not acting on capacities, boundary-local unitaries, and
+identity or global all-edge reciprocal as the only family-returning reciprocal actions — all six pairs are exact
+finite declared-gauge underdetermination examples, separated by the exact invariant
+$I(c)=\{\sum_e c_e,\ \sum_e c_e^{-1}\}$. Cut-preserving $\Delta$–Y moves are excluded from the state-gauge
+relation by an exact countercheck (an admitted move preserves every cut value while changing the copy product). This
+conclusion is specific to these finite carriers, the connected-copy tensor family, the declared capacity convention,
+and the frozen gauge relation; other tensor families and conventions, broader physical gauge relations, continuum
+limits, and any interpretation as underdetermination of bulk geometry remain open.
 
 ## BMV (conditional statement)
 
@@ -90,8 +117,8 @@ the algebraic census into a physical statement.
 
 ## Status summary
 
-| former prediction | Version-2 status | surviving statement |
+| former prediction | Version-3 status | surviving statement |
 | --- | --- | --- |
-| entanglement $\ne$ geometry | open program | exact five-class, three-round graph census leaves 13 unclassified residuals; no non-gauge or state-level kernel proved |
+| entanglement $\ne$ geometry | resolved within declared finite scope | 19 exact same-graph fibers have disjoint complete orbits under the five declared move classes modulo terminal-label-fixed exact weighted isomorphism; six exact finite $C2_L1$ examples survive the declared convention and frozen family gauge; undeclared transformations and bulk-geometry interpretation remain open |
 | BMV-null | forcing retracted | perfect-record channel is LOCC and BMV-null; derivation of that channel is open |
 | record-stability forcing | forcing retracted | bounded candidate census is token-definition-sensitive; dynamical record persistence is open |
