@@ -1,0 +1,4 @@
+lemma,outcome,certificate_count,scope
+L1_SERIES_NORMAL_FORM_ON_ADMISSIBLE_HOMEOMORPHIC_EXPANSIONS,PROVED_AND_CERTIFIED,13,positive exact splits of edges in the 13 pinned series-reduced carrier instances; min composition
+L2_SERIES_DELTA_Y_COHERENCE,FAILED,1,subdivided leg of an accepted Y-to-Delta move on fiber_008
+L3_SYMMETRIC_SERIES_DELTA_ORBIT_DISJOINTNESS,NOT_REACHED_BECAUSE_L2_FAILED,0,all 19 fibers

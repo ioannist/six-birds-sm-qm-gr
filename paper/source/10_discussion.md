@@ -5,7 +5,7 @@
 The strongest lesson of the verification campaign is methodological. A finite computation can be exact and still answer
 the wrong typed question: aliases can corrupt a denominator; a branch witness can be mistaken for a structure property;
 a distance can be called a commutator; a null direction can be quotient gauge; or a solver budget can masquerade as an
-existence boundary. Version 3 retains results only after those distinctions are made explicit.
+existence boundary. Version 4 retains results only after those distinctions are made explicit.
 
 The positive inventory remains useful. The repaired gauge carrier yields a branch-level selection under declared caps;
 the regular $SU(5)$ frame and its coset are explicit exact objects; the content quotient produces one selected orbit;
@@ -15,11 +15,12 @@ a theory of nature, but each is a reproducible construction with a clear failure
 
 ## Nearest upgrades
 
-The first Version-2 upgrade is complete within its declared relations: nineteen exact same-graph fibers on the 13
-residual P1 carriers have disjoint complete five-class orbits modulo terminal-label-fixed exact weighted isomorphism,
-and six exact finite connected $C2_L1$ underdetermination examples exist under the declared capacity convention and
-frozen family relation (Section 6.1). Undeclared graph transformations, other state families and conventions, and the
-broader physical or bulk-geometry interpretation remain open. Two upgrades now dominate. First, BMV relevance requires a
+P1's two finite subproblems are completed and retyped: nineteen exact same-graph fibers on the 13 residual carriers have
+disjoint forward-reachability sets under four directed reductions and bidirectional Delta-Y/Y-Delta, while
+symmetric-closure orbit disjointness remains open; six exact finite connected $C2_L1$ joint-map fibers collapse under
+the constructed exact diagonal tensor gauge (Section 6.1). Undeclared graph transformations, other state families and
+conventions, and the broader physical or bulk-geometry interpretation remain open. Two upgrades now dominate. First,
+BMV relevance requires a
 dynamical model deriving record formation, rather than stipulating a measure-and-record channel. Second, the
 record-stability program requires the physical invariant algebra and dynamics: UV-to-residual restriction ranks,
 Grassmann/EOM/syzygy relations, and a persistence criterion for candidate records. Both are specified as a
@@ -32,10 +33,17 @@ could test whether the vocabulary remains useful, but would not by itself prove 
 
 ## What kind of framework is this?
 
-The calculus is not dynamical: it has no Lagrangian, cross-sections, or continuum limit. Its present evidential role is a
-finite structural language for asking whether one readout factors through another, whether a candidate set closes, and
-which assumptions a recognition imports. The campaign shows both the value and the limit of that language. It can make
-hidden quotients and quantifiers visible; it cannot turn an unbuilt physical bridge into a prediction.
+The calculus as used here is the finite diagnostic subset stated in Section 1: obstruction, quotient,
+construction-audit, and claim governance. The corpus's strict-extension, reclosure, promotion, endogenous-repair, and
+run-level dynamical machinery is not instantiated in this paper, and no substrate-specific continuum bridge is supplied.
+This subset can make hidden quotients and quantifiers visible; it cannot turn an unbuilt physical bridge into a
+prediction.
+
+Version 4 adds two positive exact objects at that bounded level. The general $C2_L1$ gauge-collapse lemma states that,
+on any fixed connected binary-copy carrier with positive capacities, equal total edge product implies an exact diagonal
+internal-bond intertwiner up to vertex-wise scalars. The graph upgrade attempt also locates the obstruction to its proposed
+series-normal-form projection: the subdivided-Y-leg/Y-Delta interaction. Handling that interaction, or finding an
+invariant that survives it, is the successor construction target for symmetric closure.
 
 ## An invitation
 

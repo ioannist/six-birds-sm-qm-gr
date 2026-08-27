@@ -1,13 +1,13 @@
 {
-  "description": "Version-3 submission readiness checklist against the Version-2 claims map and certified Version-3 closure statements.",
+  "description": "Version-4 submission readiness checklist against the authoritative claims registry and certified retyping statements.",
   "claims_map": {
     "path": "review_2026/CLAIMS_MAP.md",
     "revision": 3,
     "status": "CERTIFIED"
   },
-  "version_3_authorities": [
+  "version_4_authorities": [
+    "review_2026/CLAIMS_REGISTRY.md",
     "open_programs/prog3_cut_fingerprints/CLOSURE.md",
-    "open_programs/prog3_cut_fingerprints/step2_orbit_saturation/statement.md",
     "open_programs/prog2_state_underdetermination/CLOSURE.md"
   ],
   "section_6": {
@@ -16,8 +16,8 @@
     "cases": [
       {
         "id": "P1",
-        "surviving_status": "finite_routes_resolved_within_declared_scope",
-        "statement": "The original physical forcing is retracted; two finite routes are resolved within declared scope; bulk-geometry interpretation and broader relations remain open."
+        "surviving_status": "finite_subproblems_completed_and_retyped",
+        "statement": "The graph result establishes forward-reachability disjointness only, with symmetric-closure orbit disjointness open; the six joint cut/state-map fibers collapse under the constructed exact diagonal tensor gauge; no bulk-geometry theorem is established."
       },
       {
         "id": "P2",
@@ -37,20 +37,21 @@
       "status": "passed"
     },
     {
-      "item": "Markdown section and appendix mirrors are regenerated from Version-3 LaTeX",
+      "item": "Markdown section and appendix mirrors are regenerated deterministically from Version-4 LaTeX",
       "status": "passed",
-      "command": "python3 scripts/regenerate_paper_source.py"
+      "command": "python3 scripts/regenerate_paper_source.py (two consecutive runs)",
+      "idempotence": "second consecutive regeneration produced zero byte differences"
     },
     {
       "item": "Former forcing claims are presented only as retractions, conditional statements, or open programs",
       "status": "passed"
     },
     {
-      "item": "Carrier denominators, branch caps, sample bounds, token sensitivity, and complete five-class closure scope are stated at claim sites",
+      "item": "Carrier denominators, branch caps, sample bounds, token sensitivity, forward-reachability scope, and the open symmetric-closure question are stated at claim sites",
       "status": "passed"
     },
     {
-      "item": "Qeios notes and source bundle use the Version-3 abstract and claims architecture",
+      "item": "Qeios notes and source bundle use the Version-4 abstract and claims architecture",
       "status": "passed"
     },
     {
@@ -66,7 +67,7 @@
       "status": "passed"
     },
     {
-      "item": "Appendix D records the incomplete external gate and the completed 27-round/20-repair-or-probe campaign",
+      "item": "Appendix D records the incomplete historical gate, the completed internal campaign, and the accepted external-adversarial-review repairs",
       "status": "passed"
     }
   ]

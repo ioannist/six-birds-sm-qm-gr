@@ -45,11 +45,17 @@ The certified cross-cutting claim is therefore:
 > nature.
 
 This bound is substantive. It makes the failed predictions informative rather than hiding them: exact quotienting turns
-the published P1 kernel into gauge, while P1's graph- and state-level finite routes are resolved within their declared
-relations by nineteen exact graph fibers and six finite connected $C2_L1$ examples; explicit channel analysis isolates
-P2's missing dynamical premise; and a broader invariant census shows P3's dependence on record definition. P1's broader
-physical and bulk-geometry interpretation remains open, and P2 and P3 remain construction programs requiring
-gravitational dynamics and invariant-ring/dynamical record machinery not supplied here.
+the published P1 kernel into gauge, while P1's two finite subproblems are completed and retyped. The graph computation
+establishes forward-reachability disjointness for nineteen exact fibers but leaves symmetric-closure orbit disjointness
+open; the six exact joint cut/state-map fibers collapse under the constructed diagonal tensor gauge. Explicit channel
+analysis isolates P2's missing dynamical premise, and a broader invariant census shows P3's dependence on record
+definition. No bulk-geometry theorem follows, and P2 and P3 remain construction programs requiring gravitational
+dynamics and invariant-ring/dynamical record machinery not supplied here.
+
+The campaign, including this version's response to an external adversarial review, is a bounded example of SBT-guided
+theory repair: typed failures generated reconstructed carriers, sharper theorem objects, exact countermodels, and
+successor construction requirements. It promotes no new physical SM/QM/GR theory; it demonstrates an
+emergence-engineering workflow at the level of a research package.
 
 ## Limits
 
@@ -62,6 +68,6 @@ gravitational dynamics and invariant-ring/dynamical record machinery not supplie
 - The missing-layer and unification atlases have unresolved public-support limitations listed in Section 9 and
    Appendix B.
 
-![**Historical one-grammar schematic.** In Version 3 this figure is read only as a map of shared formal
+![**Historical one-grammar schematic.** In Version 4 this figure is read only as a map of shared formal
 vocabulary across two finite carriers. Arrows formerly described as forced predictions are the construction programs
 of Section 6; no universality or cross-domain physical identity is inferred.](figures/fig_f1_one_grammar.png)

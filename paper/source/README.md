@@ -1,6 +1,6 @@
 # Paper — file index and reading order
 
-Version-3 semantic mirrors of the authoritative LaTeX paper. One file mirrors each section or appendix; LaTeX math is
+Version-4 semantic mirrors of the authoritative LaTeX paper. One file mirrors each section or appendix; LaTeX math is
 retained inline and figures point to `paper/figures/`. Regenerate the mirrors with
 `python3 scripts/regenerate_paper_source.py`. `ABSTRACT.md` mirrors the corrected abstract; `OUTLINE.md` records the
 corrected section architecture.
@@ -25,8 +25,8 @@ corrected section architecture.
 | D | `appendix_D_adversarial_review.md` | App. D — adversarial review record |
 | E | `appendix_E_notation.md` | App. E — notation & the six primitives at a glance |
 
-The source of truth for Version-2 claim strength is `review_2026/CLAIMS_MAP.md`, revision 3. The Version-3 additions are
-governed by `open_programs/prog3_cut_fingerprints/CLOSURE.md`, its Step-2 statement, and the FINAL OUTCOME in
+The source of truth for current claim strength is `review_2026/CLAIMS_REGISTRY.md`. The Version-4 retypings are governed
+by the STEP 3 and STEP 6 controlling statements in `open_programs/prog3_cut_fingerprints/CLOSURE.md` and
 `open_programs/prog2_state_underdetermination/CLOSURE.md`. Numerical support is in the frozen `physics_atlas/` artifacts,
 the versioned repairs/probes under `review_2026/`, and `open_programs/`; Appendix B records validator coverage and its
 exceptions.

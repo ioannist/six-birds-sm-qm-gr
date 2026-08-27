@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0",
+  "generated_view": "review_2026/CLAIMS_REGISTRY.md",
+  "records": [
+    {
+      "id": "paper_foundational_strength_headline",
+      "claim_text": "RESTATE: finite constructions, recognition landings, two toy theorems",
+      "status": "RETYPED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "foundational-strength-headline"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_three_forcing_headlines",
+      "claim_text": "RETRACT / OPEN-PROGRAM",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "three-forcing-headlines"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_external_review_settled",
+      "claim_text": "RESTATE: v7 changes, v8 open, v9 unanswered",
+      "status": "RETYPED",
+      "evidence_type": "EXTERNAL_REPRODUCED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "external-review-settled"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_su5_ratios",
+      "claim_text": "RESTATE with embedding, package, and weak-pair convention",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "su5-ratios"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"]
+    },
+    {
+      "id": "paper_five_xy_roles",
+      "claim_text": "RESTATE inside constructed SU(5) frame; step41 identity refuted",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "five-xy-roles"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"]
+    },
+    {
+      "id": "paper_carrier_exclusion",
+      "claim_text": "RESTATE: 1,066 labelled / 419 declared-orbit / 195 primitive-orbit",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "11990-carrier-exclusion"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"]
+    },
+    {
+      "id": "paper_gauge_structure_selection",
+      "claim_text": "RESTATE as branch-typed uniqueness under singleton/two-scalar caps",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "gauge-structure-selection"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"]
+    },
+    {
+      "id": "paper_window_closure",
+      "claim_text": "RESTATE with toy-grammar and validator caveats",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "window-closure"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"]
+    },
+    {
+      "id": "paper_content_blindness",
+      "claim_text": "RETRACT favorably: one selected content orbit under template",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "content-blindness"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s4_content_quotient/run_s4.py --self"]
+    },
+    {
+      "id": "paper_generation_blindness",
+      "claim_text": "RETRACT; materialized N=1..4 predicates reported",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "generation-blindness"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s4_content_quotient/run_s4.py --self"]
+    },
+    {
+      "id": "paper_mass_matrix_rank",
+      "claim_text": "RESTATE as generic symbolic ranks 14/28/42/56 with deficiencies 1/2/3/4",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "mass-matrix-rank"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s4_content_quotient/run_s4.py --self"]
+    },
+    {
+      "id": "paper_record_stability_grounding",
+      "claim_text": "RETRACT / OPEN-PROGRAM",
+      "status": "OPEN",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "record-stability-grounding"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self"]
+    },
+    {
+      "id": "paper_lstar_layer",
+      "claim_text": "KEEP at coherent-finite-construction grade with caveats",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "lstar-layer"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_budgetedrole_f47",
+      "claim_text": "RESTATE as underdetermined/convention-sensitive",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "budgetedrole-f47"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s5_f24_f47/run_s5.py --self"]
+    },
+    {
+      "id": "paper_route_noncommutation",
+      "claim_text": "RETRACT: published completions commute exactly",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "route-non-commutation"},
+      "superseded_wordings": [
+        {"path": "review_2026/repairs/q2_route_mismatch/RESULTS.md", "quote": "published E_QM and E_GR do not commute", "already_edited": false}
+      ],
+      "validators": ["review_2026/repairs/q2_route_mismatch/run_q2.py --self"]
+    },
+    {
+      "id": "paper_qg_directed_nogo",
+      "claim_text": "RESTATE: only two special routes tested",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "qg-directed-no-go"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q1_access_provenance/run_q1.py --self"]
+    },
+    {
+      "id": "paper_access_uniqueness",
+      "claim_text": "RESTATE as conditional provenance plus abstract partition theorem",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "access-uniqueness"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q1_access_provenance/run_q1.py --self"]
+    },
+    {
+      "id": "paper_fork_over_ladder",
+      "claim_text": "KEEP narrowly on declared carrier and access assumptions",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "fork-over-ladder"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q1_access_provenance/run_q1.py --self"]
+    },
+    {
+      "id": "paper_common_carrier_grounding",
+      "claim_text": "RETRACT GROUND; RESTATE as named hypothesis",
+      "status": "WITHDRAWN",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "common-carrier-grounding"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_area_shadow_price_identity",
+      "claim_text": "RESTATE as exact finite-graph LP identity with edge dual variables",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "area-shadow-price-identity"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    },
+    {
+      "id": "paper_linearized_einstein_response",
+      "claim_text": "RETRACT",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "linearized-einstein-response"},
+      "superseded_wordings": [
+        {"path": "paper/submission/claim-audit.md", "quote": "linearized Einstein response", "already_edited": false}
+      ],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    },
+    {
+      "id": "paper_one_born_area_ledger",
+      "claim_text": "RETRACT; retain shared MMI inequality class only",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "one-born-area-ledger"},
+      "superseded_wordings": [
+        {"path": "paper/submission/claim-audit.md", "quote": "one Born–area ledger", "already_edited": false}
+      ],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    },
+    {
+      "id": "paper_cosmological_background_boundary",
+      "claim_text": "RESTATE: solver artifact; sample-bounded fixed points/stability",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "cosmological-background-boundary"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q7_f50_convergence/run_q7.py --self"]
+    },
+    {
+      "id": "paper_strict_extension_discriminator",
+      "claim_text": "RESTATE as conditional lemma/two exemplars",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "strict-extension-discriminator"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_g1_lambda_adjudication",
+      "claim_text": "RETRACT as circular archived exploration",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "g1-lambda-adjudication"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_g2_singularity_boundary",
+      "claim_text": "KEEP at contested finite-toy grade",
+      "status": "CERTIFIED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "g2-singularity-boundary"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_prediction_p1",
+      "claim_text": "At graph level, for each of the 19 corresponding base/perturbed pairs, a queue-exhaustive forward search under four directed reduction rules and bidirectional Delta-Y/Y-Delta finds the two reachability sets disjoint; this establishes forward-reachability disjointness only, and symmetric-closure orbit disjointness remains open. At state level, the six constructed positive-algebraic same-graph pairs are exact noninjective fibers of the joint complete-cut/state map and exact instances of the gauge-collapse lemma: on any fixed connected binary-copy `C2_L1` carrier with positive capacities, equal-product assignments admit an exact diagonal internal-bond intertwiner up to vertex-wise scalars, so those six fibers collapse under the constructed exact diagonal tensor gauge and are not inequivalent tensor-network presentations. No physically complete bulk gauge relation or bulk-geometry underdetermination theorem is established.",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "p1-controlling-summary-2026-08-27-post-external-review"},
+      "superseded_wordings": [
+        {"path": "paper/submission/claim-audit.md", "quote": "two finite routes RESOLVED within declared scope", "already_edited": true}
+      ],
+      "validators": [
+        "open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self",
+        "open_programs/prog3_cut_fingerprints/step3_symmetric_closure/run_step3.py --self"
+      ]
+    },
+    {
+      "id": "paper_prediction_p2",
+      "claim_text": "RETRACT forcing; KEEP conditional LOCC channel",
+      "status": "RETYPED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "p2"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_prediction_p3",
+      "claim_text": "RETRACT forcing; OPEN-PROGRAM dynamics",
+      "status": "OPEN",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "p3"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self"]
+    },
+    {
+      "id": "paper_method_anti_contamination",
+      "claim_text": "RESTATE as heterogeneous audit and procedural self-report",
+      "status": "RETYPED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "method-anti-contamination"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_one_grammar",
+      "claim_text": "RETRACT forcing/universality; RESTATE as shared vocabulary on two carriers",
+      "status": "RETYPED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "one-grammar"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "paper_support_surfaces",
+      "claim_text": "State integrity caveats; do not claim uniform self-verification",
+      "status": "RETYPED",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "paper/submission/claim-audit.md", "anchor": "support-surfaces"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "prog2_step6_controlling_outcome",
+      "claim_text": "On any fixed connected binary-copy `C2_L1` carrier with positive capacities, the normalized boundary state depends only on the total edge-capacity product, and any two equal-product assignments admit an exact diagonal internal-bond intertwiner up to vertex-wise scalars. The six constructed positive-algebraic same-graph pairs are exact noninjective fibers of the joint complete-cut/state map and exact instances of this gauge-collapse lemma. They are therefore not inequivalent tensor-network presentations. Their exact `I(c)` separation survives only for the frozen capacity-label-preserving decorated-carrier relation; the literal Step-5 classification remains correct under that stipulation, while Step 6 retypes the tensor presentations after constructing the previously missing intertwiner. No physically complete bulk gauge relation or bulk-geometry underdetermination theorem is established.",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "open_programs/prog2_state_underdetermination/CLOSURE.md", "anchor": "step-6-retyping-controlling-terminal-wording"},
+      "superseded_wordings": [
+        {"path": "open_programs/prog2_state_underdetermination/CLOSURE.md", "quote": "six exact finite declared-gauge underdetermination examples", "already_edited": false}
+      ],
+      "validators": ["open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self"]
+    },
+    {
+      "id": "prog3_step3_controlling_floor",
+      "claim_text": "On 13 fixed exact-rational graph topologies, 19 kernel directions yield nondegenerate positive-capacity intervals with identical complete terminal min-cut fingerprints and unique active minimizers. Selected endpoints have different weights and are not related by terminal-label-fixed weighted automorphism. For each of the 19 corresponding base/perturbed pairs, a queue-exhaustive forward search under four directed reduction rules and bidirectional Delta-Y/Y-Delta finds the two reachability sets disjoint. The search admits only intermediate presentations with the unchanged complete fingerprint and unique active minimizers and canonicalizes them modulo terminal-label-fixed exact weighted isomorphism. This establishes forward-reachability disjointness only; it establishes no symmetric-closure, completeness, or gauge-irreducibility claim.\n\nAn exact inverse-series witness proves that the symmetric closure is strictly larger than the computed forward sets. Series removal has a unique normal form on admissible homeomorphic subdivisions of the 13 pinned series-reduced carriers. However, an exact subdivided-Y-leg counterexample refutes the attempted series/Delta-Y projection lemma. It neither connects nor separates any certified endpoint pair; symmetric-closure orbit disjointness remains open. Kalman-Krauthgamer exclude only universal local degree-k>3 star-to-clique rules, not undeclared, inverse, context-dependent, nonlocal, or degenerate-intermediate transformations.",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "provenance": "An external adversarial review supplied the exact inverse-series witness; it was reproduced on this tree, and Step 3 computed the controlling retype and failed upgrade attempt.",
+      "controlling_source": {"path": "open_programs/prog3_cut_fingerprints/CLOSURE.md", "anchor": "step-3-retyping-controlling-track-wording"},
+      "superseded_wordings": [
+        {"path": "open_programs/prog3_cut_fingerprints/CLOSURE.md", "quote": "complete five-move-orbit-disjoint", "already_edited": false},
+        {"path": "open_programs/prog3_cut_fingerprints/CLOSURE.md", "quote": "complete queue-exhaustive closure ... orbits disjoint", "already_edited": false}
+      ],
+      "validators": ["open_programs/prog3_cut_fingerprints/step3_symmetric_closure/run_step3.py --self"]
+    },
+    {
+      "id": "prog3_symmetric_closure_open",
+      "claim_text": "**Successor construction target (open door):** symmetric-closure orbit disjointness under the declared moves.",
+      "status": "OPEN",
+      "evidence_type": "STIPULATED",
+      "controlling_source": {"path": "open_programs/prog3_cut_fingerprints/CLOSURE.md", "anchor": "successor-construction-target-open-door"},
+      "superseded_wordings": [],
+      "validators": []
+    },
+    {
+      "id": "s1v3_charge_normalization_census",
+      "claim_text": "The cumulative chiral-to-faithful comparisons are therefore `1,066 -> 52 = 95.121951%` labelled, `419 -> 24 = 94.272076%` under declared-charge orbits, and `195 -> 24 = 87.692308%` under primitive-normalized orbits. Primitive-normalized orbits are preferred for the community-facing denominator because overall U(1) scale is conventional; declared-charge orbits remain the exact bounded-enumeration comparison.",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/s1_carrier_reconstruction/RESULTS_v3.md", "anchor": "charge-normalization-census"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"]
+    },
+    {
+      "id": "s1v3_branch_typed_selection",
+      "claim_text": "There are 68 clean pair branches (17 declared pair orbits), but **no clean pair occurs outside `2|3` with SU(2)-only scalar action**. Thus the two-scalar extension removes the “no admissible branch” obstruction for all 44 structures while sharpening, rather than broadening, the clean-family statement. These appendix counts do not replace the singleton headline.",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/s1_carrier_reconstruction/RESULTS_v3.md", "anchor": "two-scalar-appendix"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"]
+    },
+    {
+      "id": "s3v2_su5_ratios",
+      "claim_text": "k_Y=5/3; sin2(theta_W)=3/8",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/s3_generator_construction/RESULTS_v2.md", "anchor": "updated-claim-ledger-ky-and-weak-angle-ratio"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"]
+    },
+    {
+      "id": "s3v2_product_parent_control",
+      "claim_text": "No well-posed `3/23` product parent was found, so the paper's product-parent statement remains an unsupported import and requires correction; this does not prove that every exotic product embedding is impossible.",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/s3_generator_construction/RESULTS_v2.md", "anchor": "product-parent-control"},
+      "superseded_wordings": [
+        {"path": "review_2026/repairs/s3_generator_construction/RESULTS_v2.md", "quote": "product parent yields 3/23", "already_edited": false}
+      ],
+      "validators": ["review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"]
+    },
+    {
+      "id": "q5_exact_lp_identity",
+      "claim_text": "Corrected identity: **Area(min cut) = dual optimum = sum_e c_e y_e; y_e is the per-edge shadow price (the 0/1 cut-incidence variable in this chamber).** The optimum is a scalar; the shadow prices are the separate edge-indexed variables `y_e`.",
+      "status": "CERTIFIED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/q5_lp_duality/RESULTS.md", "anchor": "q5-lp-duality-repair-results"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    },
+    {
+      "id": "q5_linearized_response",
+      "claim_text": "Thus the frozen Step45 conclusion is not recovered at an honest generic base point when the deformation is specified independently.",
+      "status": "WITHDRAWN",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/q5_lp_duality/RESULTS.md", "anchor": "linearized-response"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    },
+    {
+      "id": "q5_shared_mmi_class",
+      "claim_text": "The actual boundary contraction obeys the computed min-plus rule on the area side, but the Born values do not obey that same rule on all probes. Verdict: **DOWNGRADED_SHARED_MMI_CLASS_DIFFERENT_DEPENDENCIES**. What survives is the weaker computed statement that the co-sourced Born and area ledgers satisfy the same MMI inequality class for the tested triple (`I3_Born=-0.0363459273725`, `I3_area=-4.4408920985e-16`), while depending on state amplitudes and graph capacities respectively.",
+      "status": "RETYPED",
+      "evidence_type": "COMPUTED",
+      "controlling_source": {"path": "review_2026/repairs/q5_lp_duality/RESULTS.md", "anchor": "composition--step50"},
+      "superseded_wordings": [],
+      "validators": ["review_2026/repairs/q5_lp_duality/run_q5.py --self"]
+    }
+  ]
+}

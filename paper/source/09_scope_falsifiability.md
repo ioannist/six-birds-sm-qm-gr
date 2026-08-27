@@ -10,14 +10,14 @@ that has been withdrawn. Table \ref{tab:certified-scope} collects the certified 
 | repaired gauge census | finite enumeration | exact alphabets/caps and quotient convention; independent regeneration can falsify counts $1{,}066/419/195$ and survivor counts $52/24/24$ |
 | branch selection | conditional finite selection | singleton/two-scalar caps; universal-over-branches fails, existential clean branch class is unique to $2\|3$ and $SU(2)$-active |
 | single-factor result | genuine toy theorem | stated grammar only; witness-independent, but historical step61 validator retains F-008 weakness |
-| $SU(5)$ ratios and coset | exact conditional construction | regular embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair convention; not a parent selector or low-energy prediction |
+| $SU(5)$ ratios and coset | exact conditional construction | regular embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair normalization; not a parent selector or low-energy prediction; Pati–Salam also gives $3/8$ |
 | content orbit and mass shadow | recognition-under-template | declared quotient and renormalizable one-scalar grammar; $N=1,\ldots,4$ only |
 | coordinate incomparability | exact abstract-carrier theorem | 16 coordinate-subset partitions, 55/120 incomparable pairs; physical provenance is a separate 54-record conditional construction |
 | min-cut LP identity | finite-graph recognition | unique-cut chambers, exported primal/dual matrices, exact slackness and sensitivity checks |
 | contracted-state RT evidence | finite sample | bound, $D=2,3,4$ trend, and MMI/GHZ control; no convergence or equality |
 | F50 backgrounds | sample-bounded numerics | every sampled background/$\kappa$ has a fixed point; stability boundary is criterion-dependent |
-| P1 quotient search | resolved (declared scope) | 13 carriers recertified exactly; 19 same-graph fibers with complete queue-exhaustive orbit disjointness under the five classes modulo terminal-label-fixed exact weighted isomorphism; undeclared transformations open |
-| P1 state level | six exact examples | finite connected $C2_L1$, declared capacity convention and frozen family gauge relation only; no bulk-geometry theorem |
+| P1 quotient search | finite forward-reachability result | 13 carriers recertified exactly; for each of 19 same-graph fibers, queue-exhaustive forward search under four directed reductions and bidirectional Delta-Y/Y-Delta finds the two reachability sets disjoint; symmetric-closure orbit disjointness remains open |
+| P1 state level | exact joint-map noninjectivity and gauge collapse | six finite connected $C2_L1$ joint complete-cut/state-map fibers; all collapse under the exact diagonal internal-bond gauge; no bulk-geometry theorem |
 | BMV result | conditional LOCC statement | null only for an assumed perfect-record channel; record formation unbuilt |
 | record stability | open program | bounded monomial census is token-definition-sensitive; physical invariant algebra and dynamics unbuilt |
 | G2 singularity row | contested finite-toy grade | existential regularized example; finiteness comes from the saturating rule, not physical singularity resolution |
@@ -44,9 +44,10 @@ byte comparisons, but historical limitations remain:
    parallel-pool race was observed;
 - steps 43, 44, and 61 and analogues validate stored audit summaries rather than rebuilding all load-bearing work;
    step61's audit gates include literal booleans;
-- The historical P1 probe used a declared three-round $\Delta$--Y/Y--$\Delta$ search. P1 Version 3 instead
-   recertifies nineteen exact fibers and reaches complete queue-exhaustive closure under five declared classes, modulo
-   terminal-label-fixed exact weighted isomorphism; transformations outside those classes remain open.
+- The historical P1 probe used a declared three-round $\Delta$--Y/Y--$\Delta$ search. The Version-4 controlling
+   result recertifies nineteen exact fibers and queue-exhausts their forward reachability under four directed reductions and
+   bidirectional Delta-Y/Y-Delta, modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
+   disjointness, paths through tied-minimizer presentations, and undeclared transformations remain open.
 
 The missing-layer atlas is **unfit** as independent preregistration or blinding evidence: card grades exceed the
 certified claims and the external gate never gave final approval. The retrodiction atlas is
@@ -58,7 +59,8 @@ of 34 candidates have only explicitly typed missing-card coverage and require co
 
 The most direct tests are computational: regenerate the repaired carrier and branch table; reconstruct the exact
 $SU(5)$ commutant and coset action; materialize the $N$-copy mass matrices; verify the coordinate-partition lattice;
-re-solve the min-cut primal and dual; repeat the adaptive F50 grid; and re-enumerate the P1 five-class closure. Section 6
-contains three construction programs: P1's two finite routes are resolved within their declared relations, while its
-broader physical and bulk interpretation and the P2/P3 constructions remain open. Their eventual answers may disagree
+re-solve the min-cut primal and dual; repeat the adaptive F50 grid; rerun the P1 Step-3 forward-reachability validator;
+and rerun the Step-6 exact gauge-collapse validator. Section 6 contains three construction programs: P1's two finite
+subproblems are completed and retyped, while symmetric-closure orbit disjointness, its broader physical and bulk
+interpretation, and the P2/P3 constructions remain open. Their eventual answers may disagree
 with the conjectural motivations here without contradicting any certified finite statement.

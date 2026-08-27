@@ -8,18 +8,20 @@ This repository contains the public support surface for the paper:
 >
 > Archived at: https://zenodo.org/records/20713213
 
-Version 3 applies the Six Birds emergence calculus to two finite physics tracks:
+Version 4 applies the Six Birds emergence calculus to two finite physics tracks:
 Standard Model structural selection and the QM-GR interface. Post-publication
 verification (Version 2) retained several conditional constructions and two toy
 theorems, materially corrected or retracted stronger claims, and replaced the
 former prediction-forcing claims with three sharply typed construction programs.
-Version 3 adds the reviewer-certified resolution of the first program within
-declared scope: nineteen exact same-graph fibers on the thirteen residual
-min-cut carriers have disjoint complete queue-exhaustive orbits under the five
-declared move classes, modulo terminal-label-fixed exact weighted isomorphism,
-with undeclared transformations open. Six exact finite connected `C2_L1`
-state-level underdetermination examples also survive the declared capacity
-convention and frozen family relation (see `open_programs/`).
+Version 4 responds to an external adversarial review. For each of nineteen exact
+same-graph fibers on the thirteen residual min-cut carriers, queue-exhaustive
+forward search under four directed reductions and bidirectional Delta-Y/Y-Delta
+finds the two endpoint reachability sets disjoint; symmetric-closure orbit
+disjointness remains open. Six exact connected `C2_L1` pairs are noninjective
+fibers of the joint complete-cut/state map, but all collapse under the constructed
+exact diagonal internal-bond gauge. The resulting general lemma says that, on any
+fixed connected binary-copy carrier, positive equal-product capacity assignments
+are gauge-related up to vertex-wise scalars. No bulk-geometry theorem is claimed.
 The other two programs remain open, with an approved research proposal at
 `PROPOSAL_DYNAMICAL_RECORD_STABILITY.md`. No foundational grade, universality,
 or frame-transfer claim is made.
@@ -33,12 +35,14 @@ or frame-transfer claim is made.
 - Mirrored Markdown source under `paper/source/` for review and editing.
 - Physics-track construction artifacts and validator outputs under
   `physics_atlas/`.
-- The certified Version-2 claims map and machine-verifiable repairs/probes under
-  `review_2026/`, plus the certified Version-3 closure records under
-  `open_programs/`.
+- The certified Version-2 claims map, Version-4 authoritative claims registry,
+  and machine-verifiable repairs/probes under `review_2026/`, plus the retyped
+  closure records under `open_programs/`.
 - Historical re-derivation pointers under
   `physics_atlas/INDEPENDENT_REDERIVATIONS.md`; superseded headline claims there
-  do not override `review_2026/CLAIMS_MAP.md`.
+  do not override the current authoritative claims registry at
+  `review_2026/CLAIMS_REGISTRY.md`. `review_2026/CLAIMS_MAP.md` is the historical
+  Version-2 disposition map.
 - Retrodiction and unification card atlases under `retrodiction_atlas/` and
   `unification_atlas/`.
 
@@ -95,7 +99,7 @@ The submission-notes and README templates live under `scripts/templates/`.
 
 ## Certified Re-Derivation Checks
 
-The Version-2/3 entry points include:
+The Version-2/3/4 entry points include:
 
 ```bash
 cd review_2026/repairs/s1_carrier_reconstruction
@@ -110,12 +114,16 @@ python3 run_q5.py --self
 cd ../../../open_programs/prog3_cut_fingerprints/step2_orbit_saturation
 python3 run_step2.py --self
 
-cd ../../prog2_state_underdetermination/step5_family_gauge_classification
-python3 run_step5.py --self
+cd ../step3_symmetric_closure
+python3 run_step3.py --self
+
+cd ../../prog2_state_underdetermination/step6_exact_gauge_collapse
+python3 run_step6.py --self
 ```
 
-See `review_2026/CLAIMS_MAP.md` for the complete certified disposition and the
-artifact directory attached to each repaired statement.
+See `review_2026/CLAIMS_REGISTRY.md` for the current authoritative claim
+dispositions, controlling sources, and validators. The earlier
+`review_2026/CLAIMS_MAP.md` remains the historical Version-2 disposition map.
 
 ## Repository Layout
 
@@ -137,12 +145,13 @@ artifact directory attached to each repaired statement.
 - The 27-round adversarial campaign and 20 repairs/probes are an audit trail,
   not journal peer review or independent replication. The earlier external gate
   never issued final approval.
-- The former three forcing predictions are retracted or reduced. For P1,
-  nineteen exact graph fibers have disjoint complete five-class orbits modulo
-  terminal-label-fixed exact weighted isomorphism, with transformations outside
-  those classes open; six exact finite connected `C2_L1` state examples survive
-  the declared capacity convention and frozen family relation, without implying
-  a bulk-geometry theorem. BMV-null is conditional on an assumed perfect-record
+- The former three forcing predictions are retracted or reduced. For P1, each of
+  nineteen exact graph fibers has disjoint endpoint forward-reachability sets
+  under four directed reductions and bidirectional Delta-Y/Y-Delta, while
+  symmetric-closure orbit disjointness remains open. Six exact connected `C2_L1`
+  joint-map fibers collapse under the exact diagonal tensor gauge; they are not
+  inequivalent tensor-network presentations and imply no bulk-geometry theorem.
+  BMV-null is conditional on an assumed perfect-record
   channel, and record-stability is token-definition-sensitive; those two
   construction programs remain open.
 - The repository is not uniformly self-verifying: some historical validators

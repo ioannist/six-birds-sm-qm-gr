@@ -44,7 +44,7 @@ control.
 | quantity | value |
 | --- | --- |
 | chiral gauge carrier; survivors | $1{,}066\to52$ labelled; $419\to24$ declared orbits; $195\to24$ primitive orbits |
-| embedding ratios (conditional exact construction) | $\sin^2\theta_W = 3/8$, $k_Y = 5/3$; regular $SU(5)$ embedding + named conventions; $3/23$ withdrawn |
+| embedding ratios (conditional exact construction) | $\sin^2\theta_W = 3/8$, $k_Y = 5/3$; regular $3+2$ embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair normalization; not a low-energy prediction; Pati–Salam also gives $3/8$; $3/23$ withdrawn |
 | branch selection quantifiers | clean branch exists only over $2\|3$, all clean branches $SU(2)$-active; every $2\|3$ also has a breaking branch |
 | record-token ablation | scalar-dressed bounded census refutes all three implication quantifiers; physical persistence open |
 | ladder/fork defects | coordinate defects $8/8$; fork $0/0$; published completions commute; $0.5$ was table distance |
@@ -55,6 +55,7 @@ control.
 | CHSH | quantum $2\sqrt2$; enumerated local bound $2$; classical control $\sqrt2$ |
 | BH-information classification | rank $27 =$ internal dim; explicit-$G$ $3\times10^{-15}$; partial-readout gap $0.0097$ |
 | $\Lambda$ sweep | all sampled backgrounds/$\kappa$ have fixed points; raw-map stability crosses near offset $3.6535$, $\kappa=5.8675$ |
-| P1 five-class closure | 19 exact fibers on 13 carriers; complete queue-exhaustive five-class closure modulo terminal-label-fixed exact weighted isomorphism; undeclared transformations open |
+| P1 graph forward closure | 19 exact fibers on 13 carriers; queue-exhaustive forward reachability under four directed reductions and bidirectional Delta-Y/Y-Delta; symmetric-closure orbit disjointness open |
+| P1 connected-copy state fibers | 6 exact joint cut/state-map fibers; equal-product pairs collapse under the exact diagonal internal-bond gauge; no bulk-geometry theorem |
 | BMV conditional | assumed perfect-record channel is LOCC and null; record-channel derivation is open |
 | record-stability status | forcing retracted; bounded broader token census is definition-sensitive |

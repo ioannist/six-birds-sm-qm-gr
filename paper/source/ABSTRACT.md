@@ -1,13 +1,19 @@
 # Abstract
 
+The title inverts the proverb deliberately: stones cannot be killed, and no open problem of physics is closed here. What
+is delivered is a common finite constructive grammar – six structural primitives – instantiated and stress-tested
+across three problem domains, with every claim bounded by an explicit verification ledger.
+
 This corrected version reports what survived a post-publication campaign of 27 adversarial review rounds and 20
 machine-verifiable repair or probe constructions. The two tracks retain sound finite constructions and two genuine toy
 theorems, but no reviewed unit warrants a foundational grade or nature-level claim. On the Standard-Model track, a
 conjugation-consistent finite carrier yields a branch-typed selection: within the declared representation, charge,
-field, and singleton/two-scalar caps, $2|3$ is the unique structure admitting a clean breaking branch, while every
-$SU(4)$ branch is breaking. Exact construction of the regular $SU(5)$ embedding derives its one-dimensional
+field, and singleton/two-scalar caps, $2|3$ is the unique declared carrier orbit/dimension family admitting a clean
+breaking branch under the inherited $SU(N)\to SU(N-1)$ residual proxy, while every $SU(4)$ branch is breaking.
+Exact construction of the regular $SU(5)$ embedding derives its one-dimensional
 hypercharge direction and recovers $\sin^2\theta_W=3/8$ and $k_Y=5/3$, conditional on the embedding,
-$\overline{\mathbf 5}+\mathbf{10}$ package, and weak-pair convention. On the QM–GR track, contracted-state
+$\overline{\mathbf 5}+\mathbf{10}$ package, and weak-pair normalization; this is not a low-energy prediction, and
+Pati–Salam also yields $3/8$. On the QM–GR track, contracted-state
 entropies, graph cuts, monogamy controls, and an explicit max-flow/min-cut dual certificate support a finite-graph
 recognition of the corrected identity
 $\operatorname{Area}(\text{min cut})=\sum_e c_e y_e$, with $y_e$ the edge shadow prices.
@@ -17,13 +23,14 @@ claims attached to the three predictions are retracted or reduced; the generatio
 composition law, the product-parent $3/23$ control, the linearized-Einstein match, and the apparent
 cosmological-background admissibility boundary do not survive as stated. What remains includes conditional finite
 constructions, recognition landings, a witness-independent single-factor toy theorem, and several strengthened repaired
-computations. The failed forcing claims left three sharply posed construction programs. The first is resolved in this
-version within declared scope: all thirteen residual carriers carry exact same-graph fibers whose endpoint orbits remain
-disjoint after complete queue-exhaustive closure under the five declared exact move classes, modulo
-terminal-label-fixed exact weighted isomorphism; transformations outside those classes remain open. At the state level,
-six exact finite connected $C2_L1$ examples under the declared capacity convention and frozen family relation share
-identical complete cut fingerprints and identical contracted boundary states. These are finite,
-family- and relation-scoped examples, not a bulk-geometry theorem. The other two programs —
+computations. Version 4 responds to an external adversarial review, with all validators public. At graph level, for each
+of nineteen base/perturbed pairs, a queue-exhaustive forward search under four directed reductions and bidirectional
+Delta-Y/Y-Delta finds the two reachability sets disjoint; this establishes forward-reachability disjointness only, and
+symmetric-closure orbit disjointness remains open. At state level, six positive-algebraic same-graph pairs are exact
+noninjective fibers of the joint complete-cut/state map, but they collapse under the constructed exact diagonal
+internal-bond tensor gauge: on any fixed connected binary-copy $C2_L1$ carrier, equal-product positive capacity
+assignments are gauge-related up to vertex-wise scalars. No physically complete bulk gauge relation or bulk-geometry
+underdetermination theorem is established. The other two programs —
 whether gravitational record formation follows dynamically, and which scalar-dressed invariant candidates persist as
-physical records — remain open. The repository records the certified claims map, repair artifacts, conditions, and
+physical records — remain open. The repository records the authoritative claims registry, repair artifacts, conditions, and
 validators. No frame-transfer to nature or universality theorem is claimed.

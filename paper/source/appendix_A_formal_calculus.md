@@ -77,7 +77,8 @@ tokens fail the build.
 - **Embedding ratios** (§4.4): the exact regular-$SU(5)$ construction derives the one-dimensional hypercharge
    direction and decomposes $\overline{\mathbf5}+\mathbf{10}$. Under the weak-pair convention it gives
    $\operatorname{Tr}T_3^2=2$, $\operatorname{Tr}Q^2=16/3$, hence $\sin^2\theta_W=3/8$, and $k_Y=5/3$.
-   Pati–Salam also gives $3/8$; the published product-parent $3/23$ control is unsupported and withdrawn.
+   These are not low-energy predictions; Pati–Salam also gives $3/8$, and the published product-parent $3/23$
+   control is unsupported and withdrawn.
 - **RT/LP duality** (§5.4): for capacities $c_e$, exact strong duality gives
    $\operatorname{Area}(\min\mathrm{cut})=\operatorname{OPT}_{\rm dual}=\sum_e c_e y_e$. The $y_e$, not the
    optimum, are the per-edge shadow prices $\partial F^*/\partial c_e$ in a unique-cut chamber.
@@ -85,6 +86,7 @@ tokens fail the build.
 - **CHSH** (§7.1): local bound $\max_{\lambda\in\{\pm1\}^4} |E_{00}+E_{01}+E_{10}-E_{11}| = 2$ (16-strategy
    enumeration); Bell state with $a_0=Z, a_1=X, b_{0,1}=(Z\pm X)/\sqrt2$ gives $2\sqrt2$.
 - **Active-cut quotient search** (§6): exact $0/1$ active-cut incidence matrices replace the published Jacobian
-   claim. The historical three-round probe left 13 of 378 weighted carriers unclassified; Version 3 constructs nineteen
-   exact fibers on those carriers and exhausts their move queues under five declared classes modulo terminal-label-fixed
-   exact weighted isomorphism, with transformations outside those classes open.
+   claim. The historical three-round probe left 13 of 378 weighted carriers unclassified; Version 4 constructs nineteen
+   exact fibers on those carriers and queue-exhausts forward reachability under four directed reductions and bidirectional
+   Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit disjointness and
+   transformations outside those classes remain open.

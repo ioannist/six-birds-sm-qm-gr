@@ -31,6 +31,7 @@ The well-posed semisimple product attempt is Pati-Salam `SU(4)xSU(2)_LxSU(2)_R`.
 
 Thus this product parent gives `3/8`, not `3/23`. Moreover, a product group does not force equality of its independent factor couplings. The only reproduced `3/23` is recomputed at the freely inserted choice `lambda=2` in the reductive `SU(3)xSU(2)xU(1)` model. That model is not semisimple and does not derive the U(1) scale. No well-posed `3/23` product parent was found, so the paper's product-parent statement remains an unsupported import and requires correction; this does not prove that every exotic product embedding is impossible.
 
+<a id="updated-claim-ledger-ky-and-weak-angle-ratio"></a>
 ## Updated claim ledger
 
 | Claim | Status | Computed result | Residual assumption or convention |

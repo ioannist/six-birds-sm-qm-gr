@@ -1,0 +1,46 @@
+{
+  "anti_bypass": "all witness and lemma fingerprints freshly recomputed by exact terminal-cut enumeration",
+  "arithmetic": "fractions.Fraction on every capacity and fingerprint path",
+  "artifact": "PROG3_STEP3_FORWARD_FLOOR_AND_SYMMETRIC_CLOSURE_UPGRADE_ATTEMPT",
+  "can_fail_controls": {
+    "all_pass": true,
+    "count": 5,
+    "required_boundaries": [
+      "forward-set intersection rejects disjoint floor",
+      "capacity mutation breaks exact fingerprint equality",
+      "terminal-fixed weighted-isomorphic relabeling is accepted",
+      "equal active-edge split fails unique-minimizer admission",
+      "non-series-reduced starting presentation reduces past itself"
+    ]
+  },
+  "canonicalization": "terminal labels fixed pointwise; interiors freely relabelled; exact weights retained",
+  "files": {
+    "dependency_pins_step3.csv": "literal read-only dependency and evidence pins",
+    "external_witness_step3.csv": "independently rebuilt inverse-series witness",
+    "fiber_forward_floor_step3.csv": "19 corrected forward-closure verdict rows",
+    "l1_series_certificates_step3.csv": "13 actual series-reduced-carrier order-independence checks",
+    "l2_counterexample_step3.csv": "exact subdivided-Y-leg obstruction",
+    "lemma_outcomes_step3.csv": "typed L1/L2/L3 outcomes",
+    "negative_controls_step3.csv": "five exact can-fail and hypothesis-necessity controls",
+    "transition_census_step3.csv": "directionality and accepted/novel transition census"
+  },
+  "literature_scope": "KK Theorem 3.24 excludes universal local degree-k>3 star-to-clique rules; no repertoire completeness",
+  "step2_retyping": {
+    "admission": "complete exact fingerprint equality and unique active minimizers",
+    "closure": "queue-exhaustive forward reachability",
+    "fiber_count": 19,
+    "floor_verdict": "FORWARD_REACHABILITY_SETS_DISJOINT__QUEUE_EXHAUSTED",
+    "transition_system": "four directed reductions plus bidirectional Delta-Y/Y-Delta"
+  },
+  "upgrade": {
+    "L1": "PROVED_AND_CERTIFIED on admissible homeomorphic subdivisions of fixed loopless simple series-reduced presentations",
+    "L2": "FAILED on stored fiber_008 subdivided-Y-leg case",
+    "L3": "NOT_REACHED_BECAUSE_L2_FAILED",
+    "classes": [
+      "series subdivision/removal",
+      "Delta-Y/Y-Delta"
+    ],
+    "verdict": "NOT_CERTIFIED__L2_SERIES_DELTA_COHERENCE_FAILED"
+  },
+  "version": 1
+}

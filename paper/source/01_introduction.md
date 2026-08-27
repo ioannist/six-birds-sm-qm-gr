@@ -8,10 +8,10 @@ data [@Weinberg1967]. The second includes perturbative non-renormalizability and
 confirmed quantum theory of gravity [@tHooftVeltman1974; @GoroffSagnotti1985]. A shared vocabulary is not itself a
 solution; it earns evidential weight only where explicit finite constructions and can-fail controls survive review.
 
-The Six Birds calculus is used here as such a vocabulary. It is a fixed catalog of structural operations describing
-one finite carrier through several readouts. Version 1 reported stronger conclusions. The post-publication campaign
-summarized in Appendix D found both genuine constructions and decisive
-defects. The certified Version-3 inventory is:
+This paper instantiates SBT's finite obstruction, quotient, construction-audit, and claim-governance subset. It does not
+instantiate SBT's strict-extension, reclosure, promotion, endogenous-repair, or run-level dynamical machinery, and it
+supplies no substrate-specific continuum bridge. Version 1 reported stronger conclusions. The post-publication campaign
+summarized in Appendix D found both genuine constructions and decisive defects. The certified Version-4 inventory is:
 
 1. **A repaired Standard-Model selection construction** (Section 4). The published $11{,}990$-row carrier was
    unsound. A conjugation-consistent replacement contains $1{,}066$ labelled genuinely-chiral structures, $419$
@@ -33,10 +33,11 @@ defects. The certified Version-3 inventory is:
    entropies, exact cuts, a fair GHZ control, and exported LP certificates support the corrected identity
    $\operatorname{Area}(\mathrm{mincut})=\sum_e c_e y_e$, with $y_e$ edge shadow prices. The published claim that the
    quantize/curve completions themselves do not commute is retracted.
-1. **Three research programs, one now resolved** (Section 6). The published forcing claims for the three predictions do not survive. The
-   first program — whether exact min-cut fibers survive the five declared graph-move classes and whether state-level
-   counterparts occur in the finite connected $C2_L1$ family under the declared convention and frozen relation — is
-   resolved in Version 3 within those declared scopes (Section 6.1). The other two remain open: whether
+1. **Three research programs, with two P1 finite subproblems retyped and completed** (Section 6). The published
+   forcing claims for the three predictions do not survive. At graph level, the completed finite computation establishes
+   forward-reachability disjointness for nineteen pairs, while symmetric-closure orbit disjointness remains open. At state
+   level, six exact joint-map fibers establish noninjectivity but collapse under the constructed exact diagonal tensor
+   gauge. The other two programs remain open: whether
    a perfect-record gravitational channel is dynamically derived, and which bounded scalar-dressed invariant candidates
    persist as physical records. Each section distinguishes a finite falsifiable statement, where one remains, from the
    unsupported universal claim.
@@ -52,6 +53,6 @@ claim was not established and that the repository now isolates the missing const
 
 **Reader's map.** Section 2 gives the calculus vocabulary; Section 3 the corrected audit method; Sections 4–5 the
 repaired track results; Section 6
-the three research programs, the first resolved within declared scope; Section 7 the bounded breadth constructions; Section 8 the cross-cutting statement; and Section
+the three research programs, including P1's two retyped finite subproblems; Section 7 the bounded breadth constructions; Section 8 the cross-cutting statement; and Section
 9 the consolidated scope table. Appendices contain formal definitions, reproducibility pointers and caveats, the audit
-trail, the Version-3 and Version-2 notes and full review history, and notation.
+trail, the Version-4, Version-3, and Version-2 notes and full review history, and notation.

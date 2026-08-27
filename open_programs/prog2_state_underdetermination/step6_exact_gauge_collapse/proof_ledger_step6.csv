@@ -1,0 +1,64 @@
+candidate_id,check,evidence_type,passes,detail
+cand_01,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_01,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_01,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_01,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_01,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_01,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_01,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_01,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 1.569e-16
+cand_01,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_01,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+cand_02,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_02,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_02,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_02,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_02,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_02,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_02,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_02,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 3.331e-16
+cand_02,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_02,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+cand_03,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_03,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_03,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_03,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_03,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_03,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_03,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_03,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 4.441e-16
+cand_03,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_03,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+cand_04,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_04,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_04,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_04,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_04,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_04,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_04,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_04,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 2.776e-16
+cand_04,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_04,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+cand_05,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_05,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_05,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_05,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_05,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_05,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_05,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_05,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 2.220e-16
+cand_05,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_05,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+cand_06,stored_algebraic_capacity_vectors_distinct,COMPUTED,True,exact QQ(alpha) coefficient comparison
+cand_06,complete_terminal_cut_fingerprint_equal,COMPUTED,True,exact min-cut enumeration on both stored endpoints
+cand_06,capacity_products_equal,COMPUTED,True,exact QQ(alpha) multiplication and division
+cand_06,connected_copy_support_is_two_global_strings,COMPUTED,True,exhaustive binary vertex-assignment enumeration
+cand_06,incidence_rank_and_left_kernel,COMPUTED,True,exact QQ matrix rank/nullspace
+cand_06,formal_exponent_monomial_identity,COMPUTED,True,exact QQ exponent-vector equality after product-log elimination
+cand_06,diagonal_tensor_intertwiner,COMPUTED,True,"follows from exact product, connectivity, and exponent certificate"
+cand_06,external_float_tensor_audit,EXTERNAL_REPRODUCED,True,maximum reproduced residual 3.456e-16
+cand_06,decorated_invariant_values_differ,COMPUTED,True,exact QQ(alpha) invariant comparison
+cand_06,decorated_carrier_inequivalence_under_frozen_capacity_label_rule,PROVED_BY_DEFINITION,True,the frozen relation stipulates that internal gauge does not act on ontic capacity labels
+CONTROL,unequal_product_real_carrier,COMPUTED,True,LEFT_KERNEL_PRODUCT_OBSTRUCTION
+CONTROL,one_edge_orientation_mutation,COMPUTED,True,ORIENTATION_DRESSING_MISMATCH_BREAKS_BX_EQ_DR
+CONTROL,disconnected_global_vs_component_products,COMPUTED,True,COMPONENTWISE_PRODUCT_OBSTRUCTION

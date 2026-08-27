@@ -1,14 +1,14 @@
 # Constructions and reproducibility
 
 The historical construction tracks live under `physics_atlas/`; the post-publication repairs and probes live
-under `review_2026/`; the Version-3 open-program artifacts live under `open_programs/`. The repaired
-and completed results, not superseded historical headline rows, control Version 3.
+under `review_2026/`; the Version-3/4 open-program artifacts live under `open_programs/`. The repaired
+and retyped results, not superseded historical headline rows, control Version 4.
 Validators are heterogeneous: many historical scripts check deterministic artifacts, while the strongest repair
 validators rebuild their entire result in memory and byte-compare every output.
 
 ## Certified repair and probe entry points
 
-| Version-2/3 result | artifact directory | validator |
+| Version-2/3/4 result | artifact directory | validator |
 | --- | --- | --- |
 | gauge carrier, branch census, scalar pairs | `review_2026/repairs/s1_carrier_reconstruction/` | `run_s1_carrier_reconstruction_v3.py –self` |
 | $SU(5)$ generators, ratios, coset, F27/F48 | `review_2026/repairs/s3_generator_construction/` | `run_s3_generator_construction_v2.py –self` |
@@ -20,8 +20,10 @@ validators rebuild their entire result in memory and byte-compare every output.
 | min-cut LP duality, response, composition | `review_2026/repairs/q5_lp_duality/` | `run_q5.py –self` |
 | adaptive F50 convergence and stability | `review_2026/repairs/q7_f50_convergence/` | `run_q7.py –self` |
 | five-class P1 quotient search | `review_2026/probes/p1_kernel_quotient/` | `run_active_cut_quotient_v3.py –self` |
-| PROG3 complete five-class orbit saturation | `open_programs/prog3_cut_fingerprints/step2_orbit_saturation/` | `run_step2.py –self` |
-| PROG2 finite $C2_L1$ family gauge classification | `open_programs/prog2_state_underdetermination/step5_family_gauge_classification/` | `run_step5.py –self` |
+| PROG3 forward five-move reachability search | `open_programs/prog3_cut_fingerprints/step2_orbit_saturation/` | `run_step2.py –self` |
+| PROG3 orbit-typing repair and symmetric-closure obstruction | `open_programs/prog3_cut_fingerprints/step3_symmetric_closure/` | `run_step3.py –self` |
+| PROG2 historical finite $C2_L1$ family classification | `open_programs/prog2_state_underdetermination/step5_family_gauge_classification/` | `run_step5.py –self` |
+| PROG2 exact connected-copy gauge-collapse lemma | `open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/` | `run_step6.py –self` |
 
 Each directory contains its design choices, literal dependency pins, schema, result tables, and findings note. The exact
 caps and conventions stated in the body are also machine-readable there.
@@ -65,12 +67,19 @@ The repository must not be described as uniformly self-verifying or as a tamper-
    booleans.
 - The preregistration `SHA256SUMS` primer entry names a file absent from the release. The freeze gate is a
    consistency validator, not a cryptographic or externally timestamped tamper-evident freeze.
-- The historical P1 probe used a three-round $\Delta$--Y/Y--$\Delta$ presentation search. The Version-3 PROG3
-   validator rebuilds nineteen exact fibers and complete queue-exhaustive closure under five declared classes, modulo
-   terminal-label-fixed exact weighted isomorphism. Transformations outside those classes remain open.
+- The historical P1 probe used a three-round $\Delta$--Y/Y--$\Delta$ presentation search. The Version-4 PROG3
+   validator rebuilds nineteen exact fibers and queue-exhausts forward reachability under four directed reductions and
+   bidirectional Delta-Y/Y-Delta, modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
+   disjointness, tied-minimizer intermediates, and transformations outside those classes remain open.
+
+The Q5 replay policy separates exact discrete artifacts, which remain byte-compared, from floating summaries, whose
+numeric fields use tight declared semantic tolerances while all nonnumeric structure remains exact; see
+`review_2026/repairs/q5_lp_duality/reproducibility_policy.md`. The authoritative current claim wording, status,
+evidence type, supersession history, controlling source, and validator entry point are consolidated in
+`review_2026/CLAIMS_REGISTRY.md`.
 
 ## Paper build
 
 The modular manuscript builds with `make paper-build`. That target compiles `paper/main.tex` and creates
 `paper/build/main_flat.tex`; the tracked root TeX file is copied from that flattened output for release.
-The Qeios bundle is a separate submission surface regenerated from the Version-3 sources; its manuscript and notes must remain synchronized with the modular paper.
+The Qeios bundle is a separate submission surface regenerated from the Version-4 sources; its manuscript and notes must remain synchronized with the modular paper.

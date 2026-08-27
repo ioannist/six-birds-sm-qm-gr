@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the Markdown semantic mirrors from the authoritative Version-3 LaTeX."""
+"""Regenerate the Markdown semantic mirrors from the authoritative Version-4 LaTeX."""
 
 from __future__ import annotations
 
@@ -243,6 +243,7 @@ def latex_to_markdown(text: str) -> str:
                 output.append(prefix + converted)
     result = "\n".join(output)
     result = re.sub(r"\n{3,}", "\n\n", result).strip() + "\n"
+    result = re.sub(r"(?m)^> $", ">", result)
     result = result.replace("foundational-grade", "foundational grade")
     result = result.replace("three forced predictions", "three formerly claimed forcing statements")
     result = result.replace("robust kernel", "claimed persistent kernel")
@@ -269,7 +270,7 @@ def main() -> None:
     front = (
         f"# {title}\n\n"
         "**Ioannis Tsiokos** · ORCID 0009-0009-7659-5964  \n"
-        "**Version 3 — open-program results added, 2026-08-27**\n\n"
+        "**Version 4 — external-review response: retyped closures, gauge-collapse lemma, claims registry, 2026-08-27**\n\n"
         "## Abstract\n\n"
         + abstract
         + "\n\n**Keywords:** Six Birds Theory; emergence calculus; finite structural constructions; "

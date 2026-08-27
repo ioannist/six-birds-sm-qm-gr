@@ -1,0 +1,6 @@
+move_class,directionality_in_step2,accepted_transition_count,novel_canonical_state_count
+series,reduction_only,0,0
+two_terminal_module,reduction_only,0,0
+saturated_or_zero_column,reduction_only,0,0
+inseparable_contraction,reduction_only,0,0
+delta_y_y_delta,bidirectional,100,50

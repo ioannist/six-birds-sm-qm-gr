@@ -104,3 +104,41 @@ frozen declared relation. The definitive track statement, reviewer-authored verb
 Artifacts: step3_kernel_test/, step4_finite_continuation/, step5_family_gauge_classification/
 (validators: run_step3.py / run_step4.py / run_step5.py, all --self). The intermediate documents
 above (the step-2 checkpoint and its reopening note) are retained as the historical record.
+
+---
+
+<a id="step-6-retyping-controlling-terminal-wording"></a>
+## STEP 6 RETYPING (2026-08-27) — CONTROLLING TERMINAL WORDING
+
+An external adversarial review of the published Version 3 constructed, for all six Step-5 pairs, an
+explicit diagonal internal-bond tensor gauge (float residuals ~1e-16; reproduced on this tree).
+Because declaration_step5.md itself admits a move into the state-gauge relation "only after an
+explicit tensor-level intertwiner is constructed," Step 6 (step6_exact_gauge_collapse/) exactified
+that intertwiner and retyped the track's theorem objects. Reviewer verdict on the packet:
+CODE/SCIENCE/GRADE PASS (fix round: general-lemma wording, portable external control, three
+can-fail negative controls; manager validator reruns pass in-place and from a foreign checkout).
+
+The literal Step-5 classification above REMAINS CORRECT under its frozen capacity-label-preserving
+decorated relation; Step 6 retypes the tensor presentations after constructing the previously
+missing intertwiner. The Step-5 statement is retained as the historical record; the CONTROLLING
+terminal wording of the track is the following, reviewer-certified verbatim (assignment: STEP6
+confirmation round):
+
+> On any fixed connected binary-copy `C2_L1` carrier with positive capacities, the normalized
+> boundary state depends only on the total edge-capacity product, and any two equal-product
+> assignments admit an exact diagonal internal-bond intertwiner up to vertex-wise scalars. The six
+> constructed positive-algebraic same-graph pairs are exact noninjective fibers of the joint
+> complete-cut/state map and exact instances of this gauge-collapse lemma. They are therefore not
+> inequivalent tensor-network presentations. Their exact `I(c)` separation survives only for the
+> frozen capacity-label-preserving decorated-carrier relation; the literal Step-5 classification
+> remains correct under that stipulation, while Step 6 retypes the tensor presentations after
+> constructing the previously missing intertwiner. No physically complete bulk gauge relation or
+> bulk-geometry underdetermination theorem is established.
+
+Retired headline: "six exact finite declared-gauge underdetermination examples." Replacement:
+"six exact fibers of the joint cut/state map, gauge-collapsible at the tensor level, separated by
+I(c) only under the frozen decorated-carrier relation."
+
+Artifacts: step6_exact_gauge_collapse/ (validator: run_step6.py --self; evidence taxonomy
+COMPUTED / PROVED_BY_DEFINITION / EXTERNAL_REPRODUCED; external review materials in
+external_input/).

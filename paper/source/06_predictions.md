@@ -2,11 +2,12 @@
 
 Version 1 presented three predictions as forced and falsifiable. Post-publication verification showed that none was forced by
 the published machinery. This section retracts that headline and separates reproducible finite statements from three
-construction programs, the first now resolved within declared scope. Falsifiability language is retained only for a
+construction programs; P1's two finite subproblems are completed and retyped in Version 4, while their broader questions
+remain open. Falsifiability language is retained only for a
 specified finite model or conditional
 channel; it is not transferred to nature where the required bridge has not been built.
 
-## The entanglement--geometry question (resolved within declared scope)
+## The entanglement--geometry question (finite subproblems completed; retyped in Version 4)
 
 The published carrier had fourteen edge capacities: eight terminal leaves and three bivalent two-edge bridges. Its
 11,049-component min-cut fingerprint had raw Jacobian rank nine and nullity five. Exact series/parallel reduction shows
@@ -41,34 +42,39 @@ reduction path would refute it. The former physical prediction is not establishe
 both were executed after publication of Version 2, with reviewer-certified artifacts and byte-comparing validators
 under `open_programs/` in the repository.
 
-*Route 1 (graph level) — resolved within the declared five-class relation.* The local-move repertoire is
-provably complete at the star-mesh level: no local $k$-star-mesh transform preserves min-cut for $k>3$
-(Kalman–Krauthgamer, arXiv:2112.06916, Thm. 3.24), so the five declared classes are not an arbitrary stopping point.
-Exact-rational recertification confirms all thirteen residual carriers (the three near-float-tolerance minimum margins
-are strictly positive; no earlier carrier classification changed). Every carrier admits at least one nondegenerate exact rational
-weight interval of same-graph fibers: nineteen kernel-basis directions in all, each yielding distinct positive
-weightings with identical complete terminal min-cut fingerprints, re-established by exhaustive enumeration, with no
-graph automorphism relating the endpoints. The two endpoint orbits of every fiber are disjoint after complete
-queue-exhaustive closure under the five declared exact fingerprint-preserving move classes, modulo terminal-label-fixed
-exact weighted isomorphism; all nonidentity admitted transitions are $\Delta$–Y/Y–$\Delta$. Transformations
-outside the declared classes remain open.
+*Route 1 (graph level) — corrected typing.* Version 3's orbit typing was corrected by the external review. The
+certified statement is:
 
-*Route 2 (state level) — resolved within declared scope: six exact examples.* An explicit dense-numerical
-contracted-state entropy engine, with verified tensor-presentation moves and non-vacuous controls, first shows the
-preregistered convention-scoped negative: under the initial declared injective capacity-to-state convention, all nineteen cut-fiber pairs
-split at the state level, and across a preregistered five-member convention/tensor family every seeded-random row has
-trivial cut/state-kernel intersection. The connected-copy member $C2_L1$, however, carries six analytically symmetry-protected
-directions (its boundary state depends on capacities only through their product). Searching the complete cut kernel
-constructs six positive exact-algebraic finite continuations with identical complete cut fingerprints, exactly equal
-capacity products, and identical connected-copy boundary states. Under the frozen family gauge relation —
-terminal-fixed weighted isomorphism, tensor-presentation gauge not acting on capacities, boundary-local unitaries, and
-identity or global all-edge reciprocal as the only family-returning reciprocal actions — all six pairs are exact
-finite declared-gauge underdetermination examples, separated by the exact invariant
-$I(c)=\{\sum_e c_e,\ \sum_e c_e^{-1}\}$. Cut-preserving $\Delta$–Y moves are excluded from the state-gauge
-relation by an exact countercheck (an admitted move preserves every cut value while changing the copy product). This
-conclusion is specific to these finite carriers, the connected-copy tensor family, the declared capacity convention,
-and the frozen gauge relation; other tensor families and conventions, broader physical gauge relations, continuum
-limits, and any interpretation as underdetermination of bulk geometry remain open.
+> On 13 fixed exact-rational graph topologies, 19 kernel directions yield nondegenerate positive-capacity intervals with
+> identical complete terminal min-cut fingerprints and unique active minimizers. Selected endpoints have different weights
+> and are not related by terminal-label-fixed weighted automorphism. For each of the 19 corresponding base/perturbed pairs,
+> a queue-exhaustive forward search under four directed reduction rules and bidirectional Delta-Y/Y-Delta finds the two
+> reachability sets disjoint. The search admits only intermediate presentations with the unchanged complete fingerprint and
+> unique active minimizers and canonicalizes them modulo terminal-label-fixed exact weighted isomorphism. This establishes
+> forward-reachability disjointness only; it establishes no symmetric-closure, completeness, or gauge-irreducibility claim.
+>
+> An exact inverse-series witness proves that the symmetric closure is strictly larger than the computed forward sets.
+> Series removal has a unique normal form on admissible homeomorphic subdivisions of the 13 pinned series-reduced carriers.
+> However, an exact subdivided-Y-leg counterexample refutes the attempted series/Delta-Y projection lemma. It neither
+> connects nor separates any certified endpoint pair; symmetric-closure orbit disjointness remains open.
+> Kalman-Krauthgamer exclude only universal local degree-k>3 star-to-clique rules, not undeclared, inverse,
+> context-dependent, nonlocal, or degenerate-intermediate transformations.
+
+*Route 2 (state level) — joint-map fibers and exact gauge collapse.* Steps 1–5 built the explicit entropy engine,
+found the initial convention-scoped splits, located the connected-copy product symmetry, constructed six exact-algebraic
+finite continuations, and classified them under a frozen capacity-label-preserving relation. Cut-preserving
+$\Delta$–Y moves remain excluded from state gauge by the exact countercheck that such a move can preserve every cut
+value while changing the copy product. The external review then constructed a diagonal internal-bond intertwiner. That
+construction met the declaration's own admission criterion for tensor-presentation gauge and forced the Step-6 retyping:
+
+> On any fixed connected binary-copy `C2_L1` carrier with positive capacities, the normalized boundary state
+> depends only on the total edge-capacity product, and any two equal-product assignments admit an exact diagonal
+> internal-bond intertwiner up to vertex-wise scalars. The six constructed positive-algebraic same-graph pairs are exact
+> noninjective fibers of the joint complete-cut/state map and exact instances of this gauge-collapse lemma. They are
+> therefore not inequivalent tensor-network presentations. Their exact $I(c)$ separation survives only for the frozen
+> capacity-label-preserving decorated-carrier relation; the literal Step-5 classification remains correct under that
+> stipulation, while Step 6 retypes the tensor presentations after constructing the previously missing intertwiner. No
+> physically complete bulk gauge relation or bulk-geometry underdetermination theorem is established.
 
 ## BMV (conditional statement)
 
@@ -117,8 +123,8 @@ the algebraic census into a physical statement.
 
 ## Status summary
 
-| former prediction | Version-3 status | surviving statement |
+| former prediction | Version-4 status | surviving statement |
 | --- | --- | --- |
-| entanglement $\ne$ geometry | resolved within declared finite scope | 19 exact same-graph fibers have disjoint complete orbits under the five declared move classes modulo terminal-label-fixed exact weighted isomorphism; six exact finite $C2_L1$ examples survive the declared convention and frozen family gauge; undeclared transformations and bulk-geometry interpretation remain open |
+| entanglement $\ne$ geometry | finite subproblems retyped | 19 exact same-graph fibers have disjoint forward-reachability sets under four directed reductions and bidirectional Delta-Y/Y-Delta; symmetric-closure orbit disjointness remains open. Six exact joint complete-cut/state-map fibers collapse under the exact diagonal tensor gauge; no bulk-geometry theorem |
 | BMV-null | forcing retracted | perfect-record channel is LOCC and BMV-null; derivation of that channel is open |
 | record-stability forcing | forcing retracted | bounded candidate census is token-definition-sensitive; dynamical record persistence is open |

@@ -1,0 +1,30 @@
+{
+  "step": "PROG2-STEP6",
+  "title": "Exact gauge-collapse theorem and retyping of six Step-5 examples",
+  "theorem_scope": "Any fixed connected C2_L1 carrier under the declared convention, with arbitrary positive equal-product capacity assignments; the six stored pairs are exact instances.",
+  "arithmetic_grades": {
+    "product_and_fingerprint": "EXACT_QQ_ALPHA",
+    "incidence_and_exponent_certificate": "EXACT_QQ",
+    "external_tensor_control": "FLOAT64_REPRODUCED_CONTROL"
+  },
+  "evidence_type_enum": [
+    "COMPUTED",
+    "PROVED_BY_DEFINITION",
+    "EXTERNAL_REPRODUCED"
+  ],
+  "generated_artifacts": {
+    "dependency_pins_step6.csv": "Hash pins for all direct theorem and external-control inputs.",
+    "product_lemma_step6.csv": "Exact per-pair products, two-support enumeration, and normalized-state equality.",
+    "intertwiner_certificates_step6.csv": "Per-pair product, connectivity, incidence, exponent, gauge-collapse, joint-map, and decorated-relation verdicts.",
+    "gauge_exponent_basis_step6.csv": "Exact rational exponent vectors for each oriented edge gauge and its inverse.",
+    "external_float_audit_step6.csv": "Parsed rerun of the staged external numerical control.",
+    "external_float_audit_step6.log": "Verbatim stdout of the staged external numerical control.",
+    "negative_controls_step6.csv": "Three exact can-fail controls with asserted mathematical failure reasons and the disconnected componentwise repair.",
+    "proof_ledger_step6.csv": "Normalized check ledger with mandatory evidence-type labels.",
+    "results_step6.md": "Generated human-readable result table and retyped outcomes."
+  },
+  "classification_enum": [
+    "EXACT_JOINT_CUT_STATE_MAP_FIBER__TENSOR_PRESENTATION_GAUGE_COLLAPSED"
+  ],
+  "anti_bypass": "run_step6.py reconstructs the six endpoints through the pinned Step-4/Step-5 path, re-enumerates cuts, rebuilds exact matrices and products, reruns the external control, writes into a temporary directory, and byte-compares every generated artifact."
+}
