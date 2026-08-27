@@ -1,0 +1,67 @@
+# PROG2 — track closure (2026-08-27)
+
+**Track question** (open program 2 of `review_2026/CLAIMS_MAP.md`, P1 route 2): build a
+state-level example in which independently contracted boundary states — not cut fingerprints
+alone — underdetermine a physically quotiented bulk geometry.
+
+**Status at closure: the question remains open; the first preregistered evaluation returned a
+convention-scoped negative at dense-numerical-evidence grade.** Two reviewer-PASSED packets (step1_engine/, step2_fiber_states/):
+
+1. **Certified infrastructure** (step1_engine/): an explicit dense numerical contracted-state
+   entropy engine — full 2^|T| entropy vectors from the contracted boundary state only, with a
+   structurally checkable anti-bypass property (tensor seeds and capacity-independent base
+   tensors are independent of cut machinery; stored cut-weight provenance cannot influence
+   dimensions, tolerances, or entropy post-processing; in Step 2, capacities enter only through
+   the declared edge-state dressing), four
+   verified state-level gauge moves, injective and degeneracy controls including a
+   survivor-scale gauge-invariant obstruction, and full numerical accountability (no silent
+   truncation; discarded mass and error reporting). All 13 PROG3 carriers were tractable for
+   random tensors at D=2,3,4 and copy tensors at D=2.
+
+2. **The fiber evaluation** (step2_fiber_states/): the same 19 exact-rational fiber pairs whose
+   endpoint orbits PROG3 saturated and found disjoint under the five declared moves were
+   confirmed cut-identical by exhaustive exact enumeration and evaluated under the preregistered
+   capacity-to-state convention sqrt(c/(1+c))|00> + sqrt(1/(1+c))|11>. Result, graded as dense
+   numerical evidence (not a certificate): **all 19 pairs SPLIT**: all 4,314 nontrivial subset
+   comparisons lie beyond the preregistered numerical allowance, while the 38 empty/full
+   comparisons coincide. The smallest nontrivial split is approximately 4.0e-6 nats against a
+   1e-10 allowance. Two named witnesses were reevaluated at 80 dps and agree with the dense
+   outputs to approximately 1e-16; the reviewer independently reconstructed the weakest
+   fiber-004 witness. Controls: a non-kernel perturbation SPLIT
+   (non-vacuousness) and a capacity-dressed gauge pair COINCIDE at ~1e-16 (degeneracy).
+
+**Reading (certified wording):** for this declared convention and tensor family, contracted-state
+entropies provide dense numerical evidence of strict refinement of the complete terminal min-cut
+fingerprint on every tested fiber. Accordingly, the graph-level fibers do not transfer to
+state-level underdetermination by this route. This is a convention-scoped negative search result,
+not a proof that no capacity-to-state map or state family can yield a candidate — and the
+reviewer's analysis notes SPLIT is the generically expected outcome for an injective
+edge-spectrum map, so the negative is informative about the route, not surprising.
+
+**Reopening condition (binding for any successor):** `step2_fiber_states/step3_contract_requirements.md`
+(reviewer-authored) — a preregistered, independently motivated convention family with a stopping
+rule and all outcomes published; a state-level kernel test characterizing
+ker J_cut ∩ ker J_state, with only symmetry-protected or certified-null directions proceeding; a
+distinct-capacity analytically coincident can-fail control; an explicit numerical-evidence or
+certificate grade; and any COINCIDE candidate must still pass state-level gauge closure and an
+independent bulk-invariant test before any underdetermination claim. Sequential convention
+shopping is excluded by construction.
+
+**What this closure does NOT claim:** no state-level underdetermination example; no canonical or
+uniquely physical capacity-to-state map; no theorem covering other tensor ensembles, bond
+dimensions, conventions, or continuum states; no RT equality; and no inference that future
+entropy-vector coincidence would establish state equality or bulk inequivalence. Such
+coincidence would remain only a candidate pending state-level gauge closure and an independent
+bulk invariant. PROG3's graph equivalence result also remains restricted to its five declared
+move classes.
+
+**Relation to the published paper:** neither the v2 paper nor `review_2026/CLAIMS_MAP.md` is
+modified by this closure. The sought contracted-state underdetermination construction remains
+unlanded: this track built the required state engine and tested the 19 graph fibers under one
+declared convention, obtaining a convention-scoped negative at dense-numerical-evidence grade.
+It does not supersede the P1 OPEN-PROGRAM disposition. Folding these results into any future
+claims map or paper version is a separate owner decision.
+
+Track artifacts: manager_log.md, step1_engine/ (with step2_contract_requirements.md),
+step2_fiber_states/ (with step3_contract_requirements.md). Validation:
+`step1_engine/run_step1.py --self` and `step2_fiber_states/run_step2.py --self`.
