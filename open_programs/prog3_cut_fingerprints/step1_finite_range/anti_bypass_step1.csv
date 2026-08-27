@@ -1,0 +1,4 @@
+gate,passes,evidence
+perturbed_fingerprint_calls_exhaustive_enumerator,True,direct call to enumerate_terminal_cuts(moved_graph)
+perturbed_fingerprint_has_no_jacobian_extrapolation,True,function accepts base analysis and moved graph only; moved values are enumerated
+all_certification_weights_are_fraction,True,enumerate_terminal_cuts raises unless every graph weight is Fraction

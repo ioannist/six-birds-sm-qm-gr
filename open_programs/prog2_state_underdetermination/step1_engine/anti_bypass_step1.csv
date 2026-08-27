@@ -1,0 +1,11 @@
+gate,passes,evidence
+entropy_module_import_isolation,True,__future__|itertools|dataclasses|typing|numpy
+complete_reachable_entropy_call_graph,True,_binary_entropy|entropy_diagnostics|full_entropy_analysis|full_entropy_vector|normalize_state|schmidt_probabilities|subset_labels
+reachable_entropy_call_graph_forbidden_identifier_scan,True,complete reachable graph has no mincut/min_cut/capacity/cut_value/area/carrier/graph identifier
+entropy_function_state_only_signature,True,"(state: 'np.ndarray', boundary_labels: 'Sequence[str]', physical_dimensions: 'Sequence[int]') -> 'dict[tuple[str, ...], float]'"
+tensor_seed_namespace_excludes_source_seed,True,"derive_tensor_seed payload=(namespace,carrier_name,D,replicate)"
+survivor_tensor_build_calls_exclude_P1_seed_and_legacy_history,True,"build_network(carrier, family, tensor_seed)"
+cut_values_excluded_from_tensor_values_and_dimensions,True,"tensor values use shape, independent tensor seed, and vertex label; leg dimensions use declared Edge.dimension only"
+cut_values_excluded_from_entropy_tolerance_and_postprocessing,True,"complete reachable entropy graph and entropy digest/symmetry post-processors accept only state-derived values, labels, dimensions, subsets, and declared numerical tolerance"
+carrier_adapter_separates_dimension_from_weight_provenance,True,cut weights populate Edge.source_weight provenance; declared dimension independently populates bond and boundary dimensions
+source_provenance_dataflow_mutation,True,"after topology freeze, changing source-seed metadata and all Edge.source_weight strings leaves state and entropy digests unchanged"

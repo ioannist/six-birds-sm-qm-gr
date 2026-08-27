@@ -1,0 +1,44 @@
+{
+  "arithmetic": "fractions.Fraction on every capacity-dependent path",
+  "artifact": "PROG3_STEP2_EXACT_FIVE_MOVE_ORBIT_SATURATION",
+  "budgets": {
+    "budget_hit_semantics": "BUDGET_TRUNCATED, never saturation",
+    "canonical_state_cap_per_endpoint": 100000,
+    "wall_clock_seconds_per_endpoint": 20.0
+  },
+  "canonicalization": {
+    "nonterminal_labels": "free under permutation",
+    "terminal_labels": "fixed pointwise",
+    "weights": "exact Fraction numerator/denominator included"
+  },
+  "files": {
+    "dependency_pins_step2.csv": "literal closed-Step-1 pins",
+    "endpoint_saturation_step2.csv": "38 endpoint saturation counts, depths, and move censuses",
+    "fiber_saturation_step2.csv": "one intersection verdict per direction fiber",
+    "fingerprint_invariance_step2.csv": "full exact admission audit coverage",
+    "structural_audit_step2.csv": "no-depth-cap, exactness, canonicalization, and budget gates"
+  },
+  "fingerprint_audit": "every admitted canonical state fully re-enumerated exactly; not sampled",
+  "headline": {
+    "budget_truncated": 0,
+    "complete_orbit_disjoint": 19,
+    "endpoint_count": 38,
+    "fiber_count": 19,
+    "gauge": 0,
+    "saturated_endpoints": 38
+  },
+  "transition_system": {
+    "admission_policy": "full exact terminal fingerprint equality plus continued unique minimizers",
+    "candidate_policy": "every applicable labelled proposal in every class",
+    "move_classes": [
+      "series",
+      "two_terminal_module",
+      "saturated_or_zero_column",
+      "inseparable_contraction",
+      "delta_y_y_delta"
+    ],
+    "replacement_depth_cap": null,
+    "search": "breadth-first closure until canonical queue exhaustion"
+  },
+  "version": 1
+}

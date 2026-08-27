@@ -1,0 +1,2 @@
+check,edge_dimensions,boundary_dimensions,contracted_state_shape,entropy_subset_count,complement_symmetry_residual,maximum_entropy,passes
+heterogeneous_per_edge_bond_dimensions,2|3,2|3,2x3,4,0,0.215643426028695,True

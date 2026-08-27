@@ -1,0 +1,60 @@
+{
+  "artifact": "PROG2_STEP1_EXPLICIT_DENSE_NUMERICAL_CONTRACTED_STATE_ENTROPY_ENGINE",
+  "carrier": {
+    "boundaries": "ordered label,vertex,positive integer physical dimension",
+    "edges": "edge_id,u,v,positive integer bond dimension,optional source-weight provenance",
+    "vertices": "labelled tensor vertices"
+  },
+  "certified_survivor_bond_dimensions": [
+    2,
+    3,
+    4
+  ],
+  "control_tolerance": 2e-12,
+  "entropy_policy": {
+    "accountability": "discarded mass, numerical rank, tolerance sweep, and Audenaert-style classical entropy continuity bound",
+    "error_bound_scope": "bounds hypothetical probability truncation only; does not certify floating-point SVD roundoff",
+    "reported_entropy": "includes every strictly positive numerical Schmidt probability",
+    "tolerance_role": "diagnostic numerical rank and hypothetical truncation accountability only"
+  },
+  "entropy_unit": "natural_logarithm_nats",
+  "entropy_vector": {
+    "anti_bypass": "complete reachable entropy call graph imports no graph/cut module and accepts no graph/capacity/cut argument",
+    "domain": "all 2^|T| boundary subsets including empty and full",
+    "method": "dense numerical SVD of the normalized contracted boundary state"
+  },
+  "files": {
+    "anti_bypass_step1.csv": "structural isolation checks",
+    "control_entropy_vectors_step1.csv": "all four subset entropies for both injective cases and the gauge-related case",
+    "control_summary_step1.csv": "injective and degeneracy control verdicts",
+    "dependency_pins_step1.csv": "literal source/data pins",
+    "engine_checks_step1.csv": "heterogeneous per-edge bond-dimension contraction check",
+    "entropy_numerical_accountability_step1.csv": "small-Schmidt tolerance sweep, discarded mass, ranks, and error bounds",
+    "gauge_verifications_step1.csv": "state and entropy residuals for every certified presentation move",
+    "legacy_seed_history_step1.csv": "pinned pre-fix digests; read as history only and never used to construct tensors",
+    "resource_envelope_step1.csv": "declared dense-runtime envelope",
+    "review_regressions_step1.csv": "three reviewer-required regression verdicts",
+    "seed_independence_regression_step1.csv": "source-seed/source-weight provenance mutation",
+    "seed_namespace_change_step1.csv": "legacy coupled versus independent tensor seeds and entropy digests",
+    "step2_contract_requirements.md": "verbatim reviewer contract for the next step",
+    "survivor_scale_control_step1.csv": "same-boundary-space D=2 survivor mutation control",
+    "survivor_tractability_step1.csv": "full-vector contraction census on all 13 P1-v3 survivors"
+  },
+  "numerical_scope": "complex128 dense contraction and SVD; not exact arithmetic",
+  "schmidt_probability_tolerance": 1e-13,
+  "tensor_families": {
+    "seeded_random_complex": "independent normalized complex Gaussian tensor at every vertex, deterministic SHA-derived local seeds",
+    "structured_copy": "deterministic equality/copy tensor; equal incident dimensions required"
+  },
+  "tensor_seed_namespace": {
+    "name": "prog2_step2_tensor_seed_v1",
+    "payload": [
+      "namespace",
+      "carrier_name_without_P1_seed",
+      "bond_dimension",
+      "replicate"
+    ],
+    "source_capacity_seed_in_payload": false
+  },
+  "version": 2
+}

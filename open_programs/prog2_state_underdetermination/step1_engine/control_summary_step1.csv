@@ -1,0 +1,3 @@
+control,case_left,case_right,max_entropy_vector_difference,left_schmidt_rank_A_B,right_schmidt_rank_A_B,gauge_library_related,reason,passes
+injective_nonvacuousness,injective_entangled_edge,injective_disconnected_product,0.693147180559945,2,1,False,Schmidt rank across A|B is invariant under internal presentation moves and boundary local unitaries,True
+degeneracy_internal_gauge,injective_entangled_edge,injective_entangled_edge__g_g_inverse,1.11022302462516e-16,2,2,True,Explicit g and inverse(g) cancel on the contracted edge,True

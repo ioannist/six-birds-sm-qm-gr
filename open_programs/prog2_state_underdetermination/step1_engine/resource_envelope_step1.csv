@@ -1,0 +1,6 @@
+bond_dimension,maximum_boundary_count,boundary_state_entries,largest_balanced_schmidt_side,subset_count,leading_full_vector_svd_scaling,full_13_survivor_census_run,status
+2,8,256,16,256,256*O(2^12),True,CERTIFIED_TRACTABLE_ALL_13
+3,8,6561,81,256,256*O(3^12),True,CERTIFIED_TRACTABLE_ALL_13
+4,8,65536,256,256,256*O(4^12),True,CERTIFIED_TRACTABLE_ALL_13
+5,8,390625,625,256,256*O(5^12),False,OUTSIDE_STEP1_RUNTIME_ENVELOPE_NOT_A_FAILURE
+6,8,1679616,1296,256,256*O(6^12),False,OUTSIDE_STEP1_RUNTIME_ENVELOPE_NOT_A_FAILURE

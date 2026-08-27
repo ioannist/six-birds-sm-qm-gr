@@ -1,0 +1,6 @@
+gate,passes,evidence
+exact_full_enumeration_before_admission,True,every accepted candidate is re-enumerated exactly before canonical admission
+terminal_fixed_exact_weighted_canonicalization,True,terminal labels fixed pointwise; non-terminals free; Fraction weights included
+no_replacement_depth_cap,True,queue drains only at fixed point or explicit state/wall budget
+hard_safety_budgets_declared,True,state_cap=100000; endpoint_wall_seconds=20
+all_recorded_capacity_paths_exact,True,every admitted edge weight is fractions.Fraction

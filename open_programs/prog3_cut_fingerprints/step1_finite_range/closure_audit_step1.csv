@@ -1,0 +1,14 @@
+carrier,seed,move_count,moves,objects,exact_fingerprint_preserved
+wheel_W4__b8__leaf_offset0,47,0,,,True
+wheel_W4__b8__leaf_offset1,17,4,delta_y|inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,I0+I1+I2|<Y:I0+I1+I2>+I1|<<Y:I0+I1+I2>+I1>+I0+I3|<Y:<<Y:I0+I1+I2>+I1>+I0+I3>+I0,True
+wheel_W4__b8__leaf_offset1,31,4,delta_y|inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,I0+I1+I2|<Y:I0+I1+I2>+I2|<<Y:I0+I1+I2>+I2>+I0+I3|<Y:<<Y:I0+I1+I2>+I2>+I0+I3>+I0,True
+K23_bipartite__b6__leaf_offset0,31,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|series_bivalent,I1+I2|I4|<I1+I2>+I0+I3|I3,True
+K23_bipartite__b6__dual_gateway,47,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|series_bivalent,I0+I4|I3|<I0+I4>+I1+I2|I2,True
+K23_bipartite__b7__leaf_offset1,47,4,inseparable_vertex_contraction_parallel_sum|y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,I0+I3|I4|<I0+I3>+I1+I2|<Y:<I0+I3>+I1+I2>+I2,True
+K23_bipartite__b8__leaf_offset0,17,3,y_delta|delta_y|series_bivalent,I4|I0+I1+I3|I3,True
+K23_bipartite__b8__leaf_offset1,17,3,inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,I0+I4|<I0+I4>+I1+I2|<Y:<I0+I4>+I1+I2>+I2,True
+K23_bipartite__b8__leaf_offset1,31,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,I4|I0+I1+I3|<Y:I0+I1+I3>+I3,True
+K23_bipartite__b8__leaf_offset1,47,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,I4|I0+I1+I3|<Y:I0+I1+I3>+I3,True
+K23_bipartite__b8__dual_gateway,17,3,inseparable_vertex_contraction_parallel_sum|delta_y|inseparable_vertex_contraction_parallel_sum,I0+I4|<I0+I4>+I1+I2|<Y:<I0+I4>+I1+I2>+I2,True
+K23_bipartite__b8__dual_gateway,31,3,y_delta|delta_y|inseparable_vertex_contraction_parallel_sum,I4|I0+I1+I2|<Y:I0+I1+I2>+I2,True
+K23_bipartite__b8__dual_gateway,47,0,,,True

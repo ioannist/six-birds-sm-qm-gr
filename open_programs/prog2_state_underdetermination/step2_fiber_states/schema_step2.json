@@ -1,0 +1,55 @@
+{
+  "artifact": "PROG2_STEP2_STATE_LEVEL_EVALUATION_OF_EXACT_CUT_FINGERPRINT_FIBERS",
+  "capacity_to_state_convention": {
+    "bond_dimension": 2,
+    "canonical_physical_map_claimed": false,
+    "domain": "strictly positive exact rational edge capacities",
+    "id": "ordered_qubit_schmidt_c_over_one_plus_c_v1",
+    "injective": "strict exact monotonicity of ordered p(c)",
+    "map": "p=c/(1+c); sqrt(p)|00>+sqrt(1-p)|11> in stored edge orientation"
+  },
+  "controls": {
+    "gauge_degeneracy": "Step-1 internal g,g^-1 pair after capacity 7/5 dressing",
+    "nonkernel": "wheel_W4__b8__leaf_offset0 seed 47, +1 on edge index 0, t=3161096009431/6871947673600"
+  },
+  "entropy_equality_policy": {
+    "allowance_is_forward_error_certificate": false,
+    "domain": "all 2^|T| subsets including empty and full",
+    "pair_verdict": "SPLIT if any split; COINCIDE if all equal; INDETERMINATE otherwise",
+    "per_state_float_allowance_nats": 5e-11,
+    "precision_escalation_dps": 80,
+    "small_schmidt_accountability": "Step-1 discarded-mass entropy contribution included in allowance",
+    "split_safety_factor": 4,
+    "unit": "nats"
+  },
+  "files": {
+    "anti_bypass_step2.csv": "inherited and capacity-dataflow structural gates",
+    "capacity_convention_checks_step2.csv": "exact injectivity and positivity checks",
+    "control_entropy_comparisons_step2.csv": "all subset comparisons for both controls",
+    "controls_step2.csv": "non-kernel and gauge-degeneracy controls",
+    "dependency_pins_step2.csv": "literal pins for every imported source/artifact",
+    "entropy_comparisons_step2.csv": "all subset-level numerical-allowance comparisons for all 19 fibers",
+    "fiber_verdicts_step2.csv": "one state/entropy verdict per exact direction fiber",
+    "high_precision_consistency_step2.csv": "80-dps consistency checks for the two named witnesses; not certificates",
+    "pairing_integrity_step2.csv": "fixed labels, seeds, and byte-identical transported tensor gates",
+    "step3_contract_requirements.md": "verbatim reviewer requirements governing Step 3"
+  },
+  "headline": {
+    "coincide": 0,
+    "fiber_count": 19,
+    "indeterminate": 0,
+    "split": 19
+  },
+  "pairing": {
+    "boundary_hilbert_space": "fixed ordered labels and qubit dimensions across each pair",
+    "capacity_independent_tensors": "built once and transported byte-identically",
+    "seed_payload": "closed Step-1 (namespace,carrier,D=2,replicate=0); no P1 source seed",
+    "tensor_family": "seeded_random_complex"
+  },
+  "result_grade": "DENSE_NUMERICAL_EVIDENCE",
+  "state_equality": {
+    "l2_norm_allowance": 5e-10,
+    "separate_from_entropy_equality": true
+  },
+  "version": 1
+}

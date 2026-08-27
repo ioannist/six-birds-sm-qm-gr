@@ -1,0 +1,13 @@
+case_id,mask,region,entropy_nats
+injective_entangled_edge,0,EMPTY,0
+injective_entangled_edge,1,A,0.693147180559945
+injective_entangled_edge,2,B,0.693147180559945
+injective_entangled_edge,3,A|B,0
+injective_disconnected_product,0,EMPTY,0
+injective_disconnected_product,1,A,0
+injective_disconnected_product,2,B,0
+injective_disconnected_product,3,A|B,0
+injective_entangled_edge__g_g_inverse,0,EMPTY,0
+injective_entangled_edge__g_g_inverse,1,A,0.693147180559945
+injective_entangled_edge__g_g_inverse,2,B,0.693147180559945
+injective_entangled_edge__g_g_inverse,3,A|B,0

@@ -1,0 +1,42 @@
+{
+  "arithmetic": "fractions.Fraction for every capacity-dependent certification computation",
+  "circular_planarity": "add an apex adjacent to every terminal and run the exact combinatorial Left-Right Planarity Test; planar iff terminals are cofacial",
+  "depth_three_orbit": {
+    "canonicalization_preregistered": "terminal labels fixed pointwise; non-terminal labels free; exact Fraction edge weights included",
+    "intersection": "exact equality of terminal-fixed weighted canonical graph keys across the two complete visited-state sets",
+    "move_classes": "all five declared v3 classes; every exact accepted Delta-Y/Y-Delta branch is explored to replacement depth three, with deterministic closure under the earlier four classes after each replacement",
+    "scope": "bounded depth-three orbit audit; no unbounded irreducibility claim"
+  },
+  "files": {
+    "anti_bypass_step1.csv": "structural exhaustive-enumeration gates",
+    "carrier_summary_step1.csv": "one exact recertification row per v3 survivor",
+    "certified_fibers_step1.csv": "interior perturbation and non-equivalence certificates",
+    "closure_audit_step1.csv": "exact five-move closure paths and fingerprint checks",
+    "dependency_pins_step1.csv": "read-only v2/v3/data SHA-256 pins",
+    "exact_cut_regions_step1.csv": "raw and reduced exact cut/minimizer/margin rows",
+    "exact_weights_step1.csv": "raw and reduced exact rational carrier definitions",
+    "kernel_intervals_step1.csv": "one exact maximal interval per integer kernel-basis direction",
+    "orbit_audit_step1.csv": "all 19 bounded closure-orbit intersections, accepted-move counts, orbit sizes, and gauge witnesses"
+  },
+  "fingerprint": "all nonempty proper terminal subsets, exhaustive interior-side assignments",
+  "headline": {
+    "certified_carrier_fibers": 13,
+    "certified_direction_fibers": 19,
+    "depth_three_gauge_fibers": 0,
+    "depth_three_orbit_disjoint_fibers": 19,
+    "kernel_basis_directions": 19,
+    "survivor_carriers": 13
+  },
+  "interval_semantics": {
+    "certified_network_interval": "intersection of the preceding intervals",
+    "fingerprint_interval": "closed maximal interval from every exact active-versus-inactive cut inequality",
+    "positive_capacity_interval": "open interval on which every edge capacity remains strictly positive"
+  },
+  "schema": "prog3_cut_fingerprints_step1",
+  "version": 2,
+  "weight_lift": {
+    "decimal_round_trip_used": false,
+    "rule": "moderate=randint(85,115)/100; tie_breaker=2^edge_index/2^(edge_count+24)",
+    "source": "pinned active_cut_quotient_v2.py seeded_weights"
+  }
+}

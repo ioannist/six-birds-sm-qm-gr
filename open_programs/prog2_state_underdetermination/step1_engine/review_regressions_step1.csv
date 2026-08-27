@@ -1,0 +1,4 @@
+regression,passes,evidence
+source_seed_independence_mutation,True,mutated P1 source-seed metadata and every source_weight; state and entropy digests unchanged
+small_schmidt_weight_tolerance_sweep,True,"p=1e-14 remains in reported entropy; ranks, discarded mass, sweeps, and error bounds exported"
+nonsymmetric_complex_boundary_unitary_left_action,True,"library result agrees with independent np.einsum('ij,jb->ib', U, psi)"

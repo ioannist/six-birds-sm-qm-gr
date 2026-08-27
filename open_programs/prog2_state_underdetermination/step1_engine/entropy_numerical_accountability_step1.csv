@@ -1,0 +1,6 @@
+case,small_probability,probability_tolerance,reported_untruncated_entropy_nats,analytic_entropy_nats,truncated_entropy_nats,numerical_rank,spectrum_dimension,discarded_probability_mass,observed_truncation_error_nats,truncation_entropy_error_bound_nats,bound_covers_observed_error,passes
+two_coefficient_small_schmidt_weight,1e-14,0,3.323539202407927e-13,3.3236191301916635e-13,3.323539202407927e-13,2,2,0,0,0,True,True
+two_coefficient_small_schmidt_weight,1e-14,1.0000000000000001e-15,3.323539202407927e-13,3.3236191301916635e-13,3.323539202407927e-13,2,2,0,0,0,True,True
+two_coefficient_small_schmidt_weight,1e-14,1e-14,3.323539202407927e-13,3.3236191301916635e-13,0,1,2,9.9999999999999984e-15,3.323539202407927e-13,3.323619130191663e-13,True,True
+two_coefficient_small_schmidt_weight,1e-14,1e-13,3.323539202407927e-13,3.3236191301916635e-13,0,1,2,9.9999999999999984e-15,3.323539202407927e-13,3.323619130191663e-13,True,True
+two_coefficient_small_schmidt_weight,1e-14,9.9999999999999998e-13,3.323539202407927e-13,3.3236191301916635e-13,0,1,2,9.9999999999999984e-15,3.323539202407927e-13,3.323619130191663e-13,True,True
