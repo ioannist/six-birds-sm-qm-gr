@@ -1,0 +1,45 @@
+{
+  "aggregate_verdict": "SIX_EXACT_CONTINUATIONS__GENERATED_GAUGE_CLOSURE_PENDING_IF_TRUNCATED",
+  "all_closures_saturated": false,
+  "artifact": "PROG2_STEP4_FIX2_GENERATED_GAUGE_CLOSURE",
+  "budgets": {
+    "canonical_state_cap_per_endpoint": 64,
+    "wall_seconds_per_endpoint": 20
+  },
+  "certified_surviving_candidate_count": 0,
+  "combined_generator_set": [
+    "series",
+    "two_terminal_module",
+    "saturated_or_zero_column",
+    "inseparable_contraction",
+    "delta_y_y_delta",
+    "single_edge_reciprocal",
+    "terminal_fixed_weighted_canonicalization"
+  ],
+  "exact_continuation_candidate_count": 6,
+  "files": {
+    "anti_bypass_step4.csv": "structural gates",
+    "candidate_outcomes_step4.csv": "six endpoints and combined-closure verdicts",
+    "dependency_pins_step4.csv": "read-only dependency and preregistration pins",
+    "endpoint_obligations_step4.csv": "60 typed obligations including 12 pending",
+    "reciprocal_first_canary_step4.csv": "reviewer-pinned generated-move regression",
+    "root_attempts_step4.csv": "exact root selection"
+  },
+  "grades": {
+    "bulk_invariant": "PENDING_BUDGET_TRUNCATED",
+    "connected_copy_state_equality": "EXACT_ANALYTIC_PLUS_DENSE_NUMERICAL_RECONTRACTION",
+    "continuation_product_fingerprint": "EXACT_ALGEBRAIC",
+    "generated_gauge_inequivalence": "PENDING_BUDGET_TRUNCATED"
+  },
+  "invariant": {
+    "name": "explored-combined-orbit capacity multiset signature",
+    "proof_status": "NOT_AN_INVARIANT_PROOF_WHILE_BUDGET_TRUNCATED"
+  },
+  "number_field_degrees": [
+    2,
+    5
+  ],
+  "number_field_representation": "polynomial residues in QQ(alpha) modulo exported minimal polynomial",
+  "pending_generated_gauge_obligation_count": 12,
+  "version": 3
+}

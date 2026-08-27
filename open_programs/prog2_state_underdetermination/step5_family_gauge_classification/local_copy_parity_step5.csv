@@ -1,0 +1,5 @@
+tensor_rank,subset_count,canonical_return_subset_count,canonical_return_masks,expected_masks,passes
+2,4,2,0|3,0|3,True
+3,8,2,0|7,0|7,True
+4,16,2,0|15,0|15,True
+5,32,2,0|31,0|31,True

@@ -1,0 +1,85 @@
+{
+  "artifact": "PROG2_STEP3_STATE_LEVEL_KERNEL_TEST",
+  "controls": {
+    "count": 2,
+    "distinct_capacities": "c and 1/c on one internal edge",
+    "required_verdict": "COINCIDE and STATE_LEVEL_GAUGE"
+  },
+  "convention_members": [
+    {
+      "alpha": 1,
+      "beta": null,
+      "dimension": 2,
+      "member_id": "R2_L1",
+      "spectrum_family": "logistic",
+      "tensor_family": "seeded_random_complex"
+    },
+    {
+      "alpha": 2,
+      "beta": null,
+      "dimension": 2,
+      "member_id": "R2_L2",
+      "spectrum_family": "logistic",
+      "tensor_family": "seeded_random_complex"
+    },
+    {
+      "alpha": 1,
+      "beta": null,
+      "dimension": 2,
+      "member_id": "C2_L1",
+      "spectrum_family": "logistic",
+      "tensor_family": "structured_copy"
+    },
+    {
+      "alpha": 1,
+      "beta": 1,
+      "dimension": 3,
+      "member_id": "R3_S11",
+      "spectrum_family": "three_level",
+      "tensor_family": "seeded_random_complex"
+    },
+    {
+      "alpha": 2,
+      "beta": 1,
+      "dimension": 3,
+      "member_id": "R3_S21",
+      "spectrum_family": "three_level",
+      "tensor_family": "seeded_random_complex"
+    }
+  ],
+  "exact_evidence": "imported exact-rational active-cut kernel bases",
+  "files": {
+    "anti_bypass_step3.csv": "inherited and Step-3 state-construction isolation gates",
+    "control_entropy_comparisons_step3.csv": "all subset comparisons for both controls",
+    "controls_step3.csv": "two analytically coincident distinct-capacity controls",
+    "convention_checks_step3.csv": "family normalization, derivative, and injectivity gates",
+    "dependency_pins_step3.csv": "literal hashes for all imported code and data",
+    "direction_classifications_step3.csv": "every nonzero intersection direction class",
+    "direction_stability_step3.csv": "three-step check for every imported basis direction/member",
+    "kernel_intersections_step3.csv": "all 95 per-fiber/per-member intersection rows"
+  },
+  "headline": {
+    "aggregate_verdict": "STEP4-CANDIDATES-PRESENT",
+    "certified_null_direction_records": 0,
+    "distinct_protected_carrier_directions": 6,
+    "numerical_artifact_records": 0,
+    "protected_direction_records": 14,
+    "rows_with_nonzero_intersection": 11
+  },
+  "jacobian": {
+    "entropy_tangent": "analytic reduced-density-matrix spectral derivative",
+    "finite_difference_check": "central h0,h0/2,h0/4 along every imported cut basis vector",
+    "numerical_allowance_is_certificate": false,
+    "rank_allowance": "max(5e-8,1e-8*sigma_max)",
+    "shape": "2^boundary_count by edge_count",
+    "state_tangent": "analytic differentiation of declared Schmidt coefficients and dense contraction"
+  },
+  "primary_census": {
+    "all_outcomes_published": true,
+    "convention_member_count": 5,
+    "fiber_count": 19,
+    "row_count": 95
+  },
+  "result_grade": "DENSE_NUMERICAL_EVIDENCE",
+  "version": 1
+}

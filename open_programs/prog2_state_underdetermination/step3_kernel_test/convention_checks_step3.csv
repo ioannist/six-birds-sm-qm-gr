@@ -1,0 +1,6 @@
+member_id,dimension,tensor_family,alpha,beta,sampled_ordered_spectra_distinct,maximum_analytic_derivative_check_residual,passes
+R2_L1,2,seeded_random_complex,1,,True,7.8625106425533886e-11,True
+R2_L2,2,seeded_random_complex,2,,True,1.1769862862109903e-10,True
+C2_L1,2,structured_copy,1,,True,7.8625106425533886e-11,True
+R3_S11,3,seeded_random_complex,1,1,True,4.1571079911761899e-11,True
+R3_S21,3,seeded_random_complex,2,1,True,1.5219892013362823e-10,True

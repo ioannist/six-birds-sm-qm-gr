@@ -1,0 +1,6 @@
+generator,capacity_action,proof,computational_check,passes
+terminal_fixed_weighted_isomorphism,permutes edge terms,both sums are symmetric in the edge multiset,exact canonical comparison per pair,True
+internal_g_g_inverse,none,tensor-presentation matrices do not alter capacity labels,capacity action encoded as identity,True
+boundary_local_unitaries,none,boundary basis changes do not alter capacity labels,capacity action encoded as identity,True
+global_all_edge_reciprocal,c_e maps to 1/c_e for every edge,exchanges the two entries of the unordered invariant pair,exact swap on all twelve endpoints,True
+explicit_step1_series_parallel_tensor_identity,only if an admitted identity applies,vacuous on these endpoints because no topology is applicable,exact topology census on all twelve endpoints,True

@@ -1,0 +1,2 @@
+candidate_id,move,triangle,complete_cut_fingerprint_equal_exact,copy_product_ratio_exact,copy_product_ratio_decimal,copy_product_ratio_not_one_exact,state_gauge_admitted,passes
+cand_01,delta_y,I0+I1+I2,True,70406080269220304893479166685119/8728637932116993396730243442760,8.06610158615485395649055156008,True,False,True

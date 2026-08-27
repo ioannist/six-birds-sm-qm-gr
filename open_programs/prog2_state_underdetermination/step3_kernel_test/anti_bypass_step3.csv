@@ -1,0 +1,6 @@
+gate,passes,evidence
+inherited_step1_entropy_anti_bypass,True,all 10 closed Step-1 gates recomputed
+convention_import_isolation,True,__future__|dataclasses|fractions|numpy
+convention_forbidden_dataflow_scan,True,convention accepts only its member record and one edge capacity
+capacity_dressing_entrypoint,True,each capacity enters only coefficients_and_derivative then one oriented edge axis
+cut_kernel_separated_from_state_construction,True,cut basis is multiplied with completed entropy Jacobian only after state construction

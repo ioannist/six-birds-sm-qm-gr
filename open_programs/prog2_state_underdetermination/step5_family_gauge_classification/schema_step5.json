@@ -1,0 +1,47 @@
+{
+  "aggregate_verdict": "SIX_SURVIVING_FINITE_C2_L1_DECLARED_GAUGE_EXAMPLES",
+  "artifact": "PROG2_STEP5_FAMILY_GAUGE_CLASSIFICATION",
+  "collapse_count": 0,
+  "countercheck": {
+    "carrier": "cand_01",
+    "copy_product_ratio_not_one": true,
+    "cut_fingerprint_equal": true,
+    "move": "Delta-Y I0+I1+I2"
+  },
+  "declared_relation": {
+    "capacity_actions": [
+      "terminal-fixed weighted isomorphism",
+      "global all-edge reciprocal with global boundary X"
+    ],
+    "cut_equivalence_is_separate": true,
+    "prog3_five_moves_are_state_gauge": false,
+    "single_edge_reciprocal_is_state_gauge": false
+  },
+  "example_count": 6,
+  "files": {
+    "classification_step5.csv": "six exact classifications and invariant values",
+    "delta_y_countercheck_step5.csv": "cut-only move countercheck",
+    "dependency_pins_step5.csv": "read-only import and declaration pins",
+    "global_copy_parity_step5.csv": "connected constraint enumeration",
+    "invariant_generator_proofs_step5.csv": "proof ledger",
+    "local_copy_parity_step5.csv": "local parity enumeration"
+  },
+  "invariant": {
+    "formula": "unordered {sum_e c_e, sum_e 1/c_e}",
+    "generator_proof_complete": true,
+    "grade": "EXACT_NUMBER_FIELD"
+  },
+  "pair_count": 6,
+  "parity_lemma": {
+    "allowed_global_assignments_per_carrier": 2,
+    "allowed_local_subsets_per_rank": 2,
+    "grade": "EXHAUSTIVE_FINITE_EXACT",
+    "local_ranks": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "version": 1
+}

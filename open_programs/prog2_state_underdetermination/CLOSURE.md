@@ -1,5 +1,9 @@
 # PROG2 — track closure (2026-08-27)
 
+> **REOPENED 2026-08-27 (owner direction):** this document stands as the certified checkpoint of
+> steps 1–2; the owner directed continuation into the successor steps the same day. Continuation
+> is recorded in manager_log.md and the step3+ packets.
+
 **Track question** (open program 2 of `review_2026/CLAIMS_MAP.md`, P1 route 2): build a
 state-level example in which independently contracted boundary states — not cut fingerprints
 alone — underdetermine a physically quotiented bulk geometry.
@@ -65,3 +69,38 @@ claims map or paper version is a separate owner decision.
 Track artifacts: manager_log.md, step1_engine/ (with step2_contract_requirements.md),
 step2_fiber_states/ (with step3_contract_requirements.md). Validation:
 `step1_engine/run_step1.py --self` and `step2_fiber_states/run_step2.py --self`.
+
+
+---
+
+# FINAL OUTCOME (2026-08-27, appended after the owner-directed continuation)
+
+The continuation (steps 3–5: kernel test, exact finite continuation, corrected family-gauge
+classification) reached a positive terminal result. Terminal reviewer verdict (assignment 51):
+CODE/SCIENCE/GRADE PASS, zero adverse findings; the word **example** is certified relative to the
+frozen declared relation. The definitive track statement, reviewer-authored verbatim:
+
+> PROG2 constructed an explicit dense-numerical contracted-state entropy engine with four verified
+> tensor-presentation moves and non-vacuous controls. Under its first declared injective
+> capacity-to-state convention, all 19 exact cut-fiber pairs split at the state level: 4,314 of
+> 4,352 subset comparisons split within the preregistered numerical allowance, while the 38
+> empty/full comparisons coincide. Across the preregistered five-member convention/tensor family,
+> all 76 seeded-random rows have trivial cut/state-kernel intersection; the connected C2_L1 copy
+> member has 11 nonzero rows representing six distinct carrier-level directions, explained
+> analytically by its product symmetry. The exact tangent-plane lemma excludes nonzero
+> product-preserving displacements within the tangent subspace but not within the complete cut
+> kernel. Searching the complete kernel constructs six positive exact-algebraic finite
+> continuations with identical complete terminal min-cut fingerprints, exactly equal copy
+> products, and identical connected-copy boundary states. Under the frozen corrected family
+> relation — terminal-fixed weighted isomorphism, tensor-presentation gauge that does not act on
+> capacities, boundary-local unitaries, and identity/global all-edge reciprocal as the only
+> family-returning reciprocal actions — all six pairs are exact finite C2_L1 declared-gauge
+> underdetermination examples, separated by the exact invariant I(c) = {sum_e c_e, sum_e 1/c_e}.
+> This conclusion remains specific to these finite carriers, the C2_L1 family, the declared
+> capacity convention, and the frozen gauge relation; other tensor families, conventions, broader
+> physical gauge relations, continuum limits, and any interpretation as underdetermination of
+> bulk geometry remain open.
+
+Artifacts: step3_kernel_test/, step4_finite_continuation/, step5_family_gauge_classification/
+(validators: run_step3.py / run_step4.py / run_step5.py, all --self). The intermediate documents
+above (the step-2 checkpoint and its reopening note) are retained as the historical record.

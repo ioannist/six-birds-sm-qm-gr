@@ -1,0 +1,7 @@
+candidate_id,connected,edge_count,assignment_count,family_returning_assignment_count,family_returning_masks,expected_masks,passes
+cand_01,True,14,16384,2,0|16383,0|16383,True
+cand_02,True,14,16384,2,0|16383,0|16383,True
+cand_03,True,12,4096,2,0|4095,0|4095,True
+cand_04,True,12,4096,2,0|4095,0|4095,True
+cand_05,True,12,4096,2,0|4095,0|4095,True
+cand_06,True,13,8192,2,0|8191,0|8191,True

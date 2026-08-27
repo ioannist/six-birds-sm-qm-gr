@@ -1,0 +1,7 @@
+gate,passes,evidence
+full_cut_kernel_not_tangent_subspace,True,each curve uses protected v plus transverse u with nonzero dlogP
+all_fingerprints_fully_reenumerated,True,all interior assignments enumerated at each algebraic endpoint and orbit presentation
+product_formula_not_state_substitute,True,both dense endpoints and all entropy subsets independently recomputed
+no_inapplicable_obligation_after_endpoint,True,ten executed-or-explicitly-pending obligation rows per endpoint
+general_number_field_inversion,True,"all combined states use exact QQ(alpha) polynomial residues, including degree-five cand_06"
+reciprocal_first_canary,True,cand_03 reciprocal edges 3/5/6/11 expose and handle newly applicable contraction moves
