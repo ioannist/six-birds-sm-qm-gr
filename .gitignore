@@ -7,6 +7,7 @@ conversation_history/
 # Local tool/process state; not part of public release artifacts.
 .codex/
 .agents/
+.claude/
 .pytest_cache/
 **/.pytest_cache/
 **/__pycache__/
@@ -39,3 +40,9 @@ ChatGPT Image *.png
 six_birds_lattice_handoff*.zip
 *_handoff.zip
 *handoff*.zip
+
+# Loose working bundles; the tree carries the canonical artifacts.
+sm-qm-gr-review.zip
+
+# Internal research proposal; not part of the public release.
+PROPOSAL_DYNAMICAL_RECORD_STABILITY.md
