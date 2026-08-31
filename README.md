@@ -4,16 +4,15 @@ This repository contains the public support surface for the paper:
 
 > **To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR**
 >
-> DOI: [10.5281/zenodo.20713213](https://doi.org/10.5281/zenodo.20713213)
+> DOI: [10.5281/zenodo.22210962](https://doi.org/10.5281/zenodo.22210962)
 >
-> Archived at: https://zenodo.org/records/20713213
+> Archived at: https://zenodo.org/records/22210962
 
-Version 4 applies the Six Birds emergence calculus to two finite physics tracks:
-Standard Model structural selection and the QM-GR interface. Post-publication
-verification (Version 2) retained several conditional constructions and two toy
-theorems, materially corrected or retracted stronger claims, and replaced the
-former prediction-forcing claims with three sharply typed construction programs.
-Version 4 responds to an external adversarial review. For each of nineteen exact
+The paper applies the Six Birds emergence calculus to two finite physics tracks:
+Standard Model structural selection and the QM-GR interface. It provides
+conditional finite constructions and two toy theorems on declared carriers, and
+states three sharply typed construction programs rather than forcing
+predictions. For each of nineteen exact
 same-graph fibers on the thirteen residual min-cut carriers, queue-exhaustive
 forward search under four directed reductions and bidirectional Delta-Y/Y-Delta
 finds the two endpoint reachability sets disjoint; symmetric-closure orbit
@@ -22,9 +21,9 @@ fibers of the joint complete-cut/state map, but all collapse under the construct
 exact diagonal internal-bond gauge. The resulting general lemma says that, on any
 fixed connected binary-copy carrier, positive equal-product capacity assignments
 are gauge-related up to vertex-wise scalars. No bulk-geometry theorem is claimed.
-The other two programs remain open, with an approved research proposal at
-`PROPOSAL_DYNAMICAL_RECORD_STABILITY.md`. No foundational grade, universality,
-or frame-transfer claim is made.
+The other two programs -- dynamical gravitational record formation, and
+persistence in the scalar-dressed record algebra -- remain open. No foundational
+grade, universality, or frame-transfer claim is made.
 
 ## What this repository provides
 
@@ -35,14 +34,15 @@ or frame-transfer claim is made.
 - Mirrored Markdown source under `paper/source/` for review and editing.
 - Physics-track construction artifacts and validator outputs under
   `physics_atlas/`.
-- The certified Version-2 claims map, Version-4 authoritative claims registry,
-  and machine-verifiable repairs/probes under `review_2026/`, plus the retyped
-  closure records under `open_programs/`.
+- The authoritative claims registry and machine-verifiable repairs/probes under
+  `review_2026/`, including the external technical review at
+  `review_2026/EXTERNAL_TECHNICAL_REVIEW.md`, plus the closure records under
+  `open_programs/`.
 - Historical re-derivation pointers under
   `physics_atlas/INDEPENDENT_REDERIVATIONS.md`; superseded headline claims there
   do not override the current authoritative claims registry at
-  `review_2026/CLAIMS_REGISTRY.md`. `review_2026/CLAIMS_MAP.md` is the historical
-  Version-2 disposition map.
+  `review_2026/CLAIMS_REGISTRY.md`. `review_2026/CLAIMS_MAP.md` records the
+  claim-by-claim disposition against the first version of the paper.
 - Retrodiction and unification card atlases under `retrodiction_atlas/` and
   `unification_atlas/`.
 
@@ -99,7 +99,7 @@ The submission-notes and README templates live under `scripts/templates/`.
 
 ## Certified Re-Derivation Checks
 
-The Version-2/3/4 entry points include:
+The principal validator entry points are:
 
 ```bash
 cd review_2026/repairs/s1_carrier_reconstruction
@@ -122,8 +122,8 @@ python3 run_step6.py --self
 ```
 
 See `review_2026/CLAIMS_REGISTRY.md` for the current authoritative claim
-dispositions, controlling sources, and validators. The earlier
-`review_2026/CLAIMS_MAP.md` remains the historical Version-2 disposition map.
+dispositions, controlling sources, and validators; `review_2026/CLAIMS_MAP.md`
+records the disposition of each claim carried over from the first version.
 
 ## Repository Layout
 
@@ -144,8 +144,11 @@ dispositions, controlling sources, and validators. The earlier
   explicitly says otherwise.
 - The 27-round adversarial campaign and 20 repairs/probes are an audit trail,
   not journal peer review or independent replication. The earlier external gate
-  never issued final approval.
-- The former three forcing predictions are retracted or reduced. For P1, each of
+  never issued final approval. The campaign was run with AI agents under a
+  manager/reviewer split; its plan, ledger, and findings are published under
+  `review_2026/`, as is the external technical review it answered.
+- No forcing prediction is claimed; the three questions are stated as
+  construction programs. For P1, each of
   nineteen exact graph fibers has disjoint endpoint forward-reachability sets
   under four directed reductions and bidirectional Delta-Y/Y-Delta, while
   symmetric-closure orbit disjointness remains open. Six exact connected `C2_L1`
