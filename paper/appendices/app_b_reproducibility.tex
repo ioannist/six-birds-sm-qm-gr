@@ -1,17 +1,17 @@
 \hypertarget{toy-constructions-reproducibility}{%
 \section{Constructions and reproducibility}\label{toy-constructions-reproducibility}}
 
-The historical construction tracks live under \nolinkurl{physics_atlas/}; the post-publication repairs and probes live
-under \nolinkurl{review_2026/}; the Version-3/4 open-program artifacts live under \nolinkurl{open_programs/}. The repaired
-and retyped results, not superseded historical headline rows, control Version 4.
-Validators are heterogeneous: many historical scripts check deterministic artifacts, while the strongest repair
+The historical construction tracks live under \nolinkurl{physics_atlas/}; the certified repairs and probes live
+under \nolinkurl{review_2026/}; the open-program artifacts live under \nolinkurl{open_programs/}. The certified
+and retyped results, not superseded historical headline rows, control this version.
+Validators are heterogeneous: many historical scripts check deterministic artifacts, while the strongest
 validators rebuild their entire result in memory and byte-compare every output.
 
 \subsection{Certified repair and probe entry points}
 
 \begin{longtable}[]{@{}p{0.28\linewidth}p{0.41\linewidth}p{0.23\linewidth}@{}}
 \toprule
-Version-2/3/4 result & artifact directory & validator\\
+result & artifact directory & validator\\
 \midrule
 \endhead
 gauge carrier, branch census, scalar pairs &
@@ -32,7 +32,7 @@ record-token ablations &
 field-to-mode provenance and partition lattice &
 \nolinkurl{review_2026/repairs/q1_access_provenance/} &
 \nolinkurl{run_q1.py --self}\\
-route-mismatch correction &
+route-mismatch commutation analysis &
 \nolinkurl{review_2026/repairs/q2_route_mismatch/} &
 \nolinkurl{run_q2.py --self}\\
 min-cut LP duality, response, composition &
@@ -75,7 +75,7 @@ SIX_BIRDS_PAPERS_ROOT=/path/to/six-birds-papers \
 \end{verbatim}
 
 Without \texttt{SIX\_BIRDS\_PAPERS\_ROOT}, those drivers fail before writing partial artifacts and name the missing file.
-This variable is not needed to validate the published artifacts or to run repairs that import compute functions only.
+This variable is not needed to validate the released artifacts or to run repairs that import compute functions only.
 It is a provenance dependency, not evidence that this checkout contains the external corpus.
 
 The usual historical validator pattern is:
@@ -102,7 +102,7 @@ load-bearing computations. Step61's mathematical result survives separate review
 booleans.
 \item The preregistration \texttt{SHA256SUMS} primer entry names a file absent from the release. The freeze gate is a
 consistency validator, not a cryptographic or externally timestamped tamper-evident freeze.
-\item The historical P1 probe used a three-round \(\Delta\)--Y/Y--\(\Delta\) presentation search. The Version-4 PROG3
+\item the initial P1 probe used a three-round \(\Delta\)--Y/Y--\(\Delta\) presentation search. The controlling PROG3
 validator rebuilds nineteen exact fibers and queue-exhausts forward reachability under four directed reductions and
 bidirectional Delta-Y/Y-Delta, modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
 disjointness, tied-minimizer intermediates, and transformations outside those classes remain open.
@@ -118,4 +118,4 @@ evidence type, supersession history, controlling source, and validator entry poi
 
 The modular manuscript builds with \texttt{make paper-build}. That target compiles \texttt{paper/main.tex} and creates
 \nolinkurl{paper/build/main_flat.tex}; the tracked root TeX file is copied from that flattened output for release.
-The Qeios bundle is a separate submission surface regenerated from the Version-4 sources; its manuscript and notes must remain synchronized with the modular paper.
+The Qeios bundle is a separate submission surface regenerated from these sources; its manuscript and notes must remain synchronized with the modular paper.

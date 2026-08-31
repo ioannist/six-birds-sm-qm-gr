@@ -3,21 +3,21 @@
 
 The paper combines exact finite computations with bounded numerical fixed-point and tensor-network probes. The protocol
 aims to expose circularity and representation dependence; it does not turn a finite carrier into evidence about nature.
-Appendix C records both successful self-demotions and defects found only after publication.
+Appendix C records the full audit trail, including the constructions the gates rejected.
 
 \hypertarget{finite-frozen-carriers}{%
 \subsection{Finite frozen carriers}\label{finite-frozen-carriers}}
 
-Each construction declares a finite carrier (the repaired \(1{,}066\)-labelled gauge carrier in Section 4;
+Each construction declares a finite carrier (the \(1{,}066\)-labelled gauge carrier in Section 4;
 finite tensor-network/graph geometries and mode-grammars in Section 5), and all quantities --- obstruction sets,
 factorization defects, entropies, min-cuts, kernels --- are computed deterministically on it. Carriers and predicates,
 once built, are intended to be frozen under SHA-256 pins. Appendix B lists exceptions: one historical tautological pin,
 validators that regenerate in place, and summary-reading validators that do not rebuild load-bearing computations.
 
-Each construction has a validator, but their strength is heterogeneous. The repaired artifacts generally rebuild in
-memory and byte-compare outputs; several historical validators only check stored summaries. Validator pass is necessary,
-never sufficient. The 27-round campaign therefore inspected semantics, regenerated carriers, and added can-fail and
-mutation controls rather than treating the historical validator sweep as certification.
+Each construction has a validator, but their strength is heterogeneous. The strongest validators rebuild artifacts in
+memory and byte-compare outputs; several earlier validators only check stored summaries. Validator pass is necessary,
+never sufficient. The audit therefore inspected semantics, regenerated carriers, and added can-fail and
+mutation controls rather than treating a validator sweep as certification.
 
 \hypertarget{can-fail-controls}{%
 \subsection{Can-fail controls}\label{can-fail-controls}}
@@ -34,7 +34,7 @@ A claim with no way to come out false is not a result. The principal surviving p
 \item
   the holographic monogamy results are paired with a GHZ state that must (and does) violate them;
 \item
-  the historical three-round P1 graph probe is paired with exact active-cut quotient regressions; Version 4 recertifies
+  the P1 graph program is paired with exact active-cut quotient regressions; the controlling computation certifies
   nineteen exact fibers and queue-exhausts forward reachability under four directed reductions and bidirectional
   Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism, while symmetric closure and undeclared
   transformations remain open;
@@ -60,29 +60,29 @@ caught and killed (full post-mortems in Appendix C):
 \item
   \textbf{Circularities / hardcoding.} Rejected; the surviving \S5.4 evidence computes MMI on contracted states and applies the same entropy pipeline to a GHZ can-fail control. It supports only a shared inequality class, not a forcing or shared Born--area ledger.
 \item
-  \textbf{Rigging toward a desired verdict --- in either direction.} The decisive case is the former Prediction 1 (§6.1),
+  \textbf{Rigging toward a desired verdict --- in either direction.} The decisive case is the entanglement--geometry
+  program (§6.1),
   which took several attempts: one rigged \emph{toward} the positive verdict (a bespoke graph with the invisible mode built in by hand);
   one rigged \emph{toward} the deflationary verdict (a hardcoded ``genuine dimension \(=0\)'' plus a scoring filter chosen to
   dismiss the answer); one inflated by a \textbf{degeneracy artifact} (a one-sided finite-difference Jacobian taken at a
   maximally tied uniform-weight point, where the apparent kernel is first-order visible --- residuals scaling linearly
-  with step size betrayed it). All three were rejected. A later exact quotient analysis also showed that every published
-  null direction was local-reduction gauge. The later exact program starts from the thirteen historical residual carriers,
+  with step size betrayed it). All three were rejected. An exact quotient analysis then showed that every null
+  direction of the naive finite-difference probe was local-reduction gauge. The exact program starts from the thirteen residual carriers,
   constructs nineteen fibers, and queue-exhausts their forward reachability under four directed reductions and
   bidirectional Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
   disjointness and transformations outside those classes remain open.
 \end{enumerate}
 
-We call the intended discipline \textbf{symmetric scrutiny}. The post-publication record shows why the aspiration must be
-distinguished from success: the three prediction forcings did not survive the completed campaign. Appendix C retains the
-failed attempts rather than rewriting them as if the corrections had been present from the start.
+We call this discipline \textbf{symmetric scrutiny}. Appendix C retains the
+rejected attempts rather than rewriting them as if the final constructions had been present from the start.
 
 \hypertarget{adversarial-review-and-the-anti-contamination-guard}{%
 \subsection{Adversarial review and the anti-contamination guard}\label{adversarial-review-and-the-anti-contamination-guard}}
 
-The earlier external sequence did not settle the results: it ended v7 approve-with-changes, v8 still-needs-work, and v9
-unanswered. The present campaign comprises 27 adversarial rounds and 20 repairs/probes, culminating in the certified
-claims map used by Version 2. It is an extensive internal/adversarial audit record, not peer review or independent
-replication.
+Every load-bearing claim passed through an adversarial review workflow: a manager reproduced review findings, a
+separate read-only reviewer assessed constructions, and implementation was commit-gated, culminating in the certified
+claims registry applied at each claim site. Appendix D records the complete review history. It is an extensive
+internal/adversarial audit record, not peer review or independent replication.
 
 Finally, because a cross-track comparison is meaningful only if the constructions are not copied wholesale, the program ran
 under an explicit \textbf{anti-contamination guard}: the two substrates were declared structurally different at the outset

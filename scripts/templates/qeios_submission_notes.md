@@ -63,7 +63,7 @@ AI tools were used for coding and build-pipeline assistance, bibliography verifi
 ## Links
 
 - **GitHub repository:** https://github.com/ioannist/six-birds-sm-qm-gr
-- **Zenodo archive:** https://doi.org/10.5281/zenodo.20713213 (record: https://zenodo.org/records/20713213)
+- **Zenodo archive:** https://doi.org/10.5281/zenodo.22210962 (record: https://zenodo.org/records/22210962)
 
 ---
 

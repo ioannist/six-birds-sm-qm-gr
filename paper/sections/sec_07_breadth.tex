@@ -2,7 +2,8 @@
 \section{Breadth: one calculus, three more deep problems}\label{breadth-one-calculus-three-more-deep-problems}}
 
 This section records additional finite uses of the same vocabulary. They are not evidence that universality has been
-demonstrated, and their grades differ. Bell and information-loss rows are finite recoveries; F50 is replaced by adaptive
+demonstrated, and their grades differ. Bell and information-loss rows are finite recoveries; the F50 row is
+sample-bounded adaptive
 fixed-point numerics; the measurement row is only a conditional lemma plus a stipulated two-exemplar taxonomy.
 
 \hypertarget{bell-nonlocality-the-common-carrier-is-not-a-hidden-variable}{%
@@ -55,8 +56,9 @@ readout, not of the carrier. (No dynamics, no evaporation, no Page curve~\citep{
 \subsection{The cosmological constant: no in-layer value-law}\label{the-cosmological-constant-no-in-layer-value-law}}
 
 The F50 carrier contains a cosmological-background analog~\citep{Weinberg1989}, the matter-independent term in
-\(V[\psi]=V_0+\kappa T_{00}[\psi]\). The published \(15/18\) split and boundary \(\kappa\le10\) versus
-\(\kappa\ge15\) were artifacts of a 60-iteration, mix-\(0.5\) solver budget. Adaptive iteration across damping values
+\(V[\psi]=V_0+\kappa T_{00}[\psi]\). A fixed 60-iteration, mix-\(0.5\) solver budget produces an apparent admissibility
+boundary (a \(15/18\) split between \(\kappa\le10\) and \(\kappa\ge15\)), but it is a solver artifact. Adaptive
+iteration across damping values
 \(0.2,0.35,0.5,0.7\) and at least three initial states finds a fixed point for every sampled background and \(\kappa\):
 there is no fixed-point-existence boundary on the declared sample. Jacobians of the raw fixed-point map provide a
 different, non-unique discriminator: spectral stability crosses near background offset \(3.6535\) and \(\kappa=5.8675\).

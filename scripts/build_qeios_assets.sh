@@ -36,7 +36,7 @@ flat_tex = flat_tex.replace(r"\usepackage{orcidlink}", orcid_fallback)
 # Drop the self-assigned preprint (Zenodo) DOI from the first-page footer;
 # Qeios mints its own DOI on acceptance. This targets only the footer string
 # (the Zenodo DOIs inside the bibliography are different numbers and are kept).
-flat_tex = flat_tex.replace(r" \quad \doi{10.5281/zenodo.20713213}", "")
+flat_tex = flat_tex.replace(r" \quad \doi{10.5281/zenodo.22210962}", "")
 
 # If the flattened source still references the external .bib (i.e. it was NOT
 # produced with `latexpand --expand-bbl`), embed the .bbl so the single file is
