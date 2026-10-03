@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the Markdown semantic mirrors from the authoritative Version-4 LaTeX."""
+"""Regenerate the Markdown semantic mirrors from the authoritative LaTeX."""
 
 from __future__ import annotations
 
@@ -33,8 +33,8 @@ MIRRORS = {
             ("A", "formal_calculus"),
             ("B", "reproducibility"),
             ("C", "audit_trail"),
-            ("D", "adversarial_review"),
-            ("E", "notation"),
+            ("D", "notation"),
+            ("E", "version_history"),
         )
     },
 }
@@ -75,7 +75,27 @@ def replace_two_arg_first(text: str, command: str) -> str:
     return text
 
 
+def load_labels() -> dict[str, str]:
+    aux = PAPER / "build" / "main.aux"
+    labels: dict[str, str] = {}
+    if aux.exists():
+        for match in re.finditer(r"\\newlabel\{([^}]+)\}\{\{([^}]*)\}", aux.read_text()):
+            labels[match.group(1)] = match.group(2)
+    return labels
+
+
+LABELS = load_labels()
+
+
+def resolve_refs(text: str) -> str:
+    text = re.sub(r"\\ref\{([^}]+)\}", lambda m: LABELS.get(m.group(1), "??"), text)
+    return text
+
+
 def inline(text: str) -> str:
+    text = resolve_refs(text)
+    text = text.replace("\\Deltafact", "\\Delta_{\\mathrm{fact}}")
+    text = text.replace("\\textperiodcentered", "·").replace("\\quad", " ")
     text = replace_two_arg_first(text, "texorpdfstring")
     for command, before, after in (
         ("textbf", "**", "**"),
@@ -133,6 +153,8 @@ def table_to_markdown(block: str) -> str:
 
 
 def convert_tables(text: str) -> str:
+    text = re.sub(r"\\begin\{tabular\}\{.*?\}\n", "\\\\begin{longtable}[]{}\n", text)
+    text = text.replace("\\end{tabular}", "\\end{longtable}")
     while "\\begin{longtable}" in text:
         start = text.index("\\begin{longtable}")
         end = text.index("\\end{longtable}", start) + len("\\end{longtable}")
@@ -150,7 +172,9 @@ def convert_figures(text: str) -> str:
         if caption_start >= 0:
             caption, _ = braced(block, caption_start + len("\\caption"))
             caption = inline(caption)
-        return f"![{caption}]({image.group(1) if image else ''})"
+        if image:
+            return f"![{caption}]({image.group(1)})"
+        return f"> **Figure (drawn in TikZ; see the PDF).** {caption}"
     return pattern.sub(replacement, text)
 
 
@@ -164,8 +188,20 @@ def heading(line: str) -> str | None:
     return None
 
 
+def expand_inputs(text: str) -> str:
+    return re.sub(r"\\input\{(figures/[^}]+)\}", lambda m: (PAPER / (m.group(1) + ".tex")).read_text(), text)
+
+
 def latex_to_markdown(text: str) -> str:
+    text = expand_inputs(text)
     text = re.sub(r"\\hypertarget\{[^}]+\}\{%\n", "", text)
+    text = re.sub(r"\\(sub)*section\*\{", lambda m: "\\" + (m.group(1) or "") * (m.group(0).count("sub")) + "section{", text)
+    text = re.sub(r"\\paragraph\{([^}]*)\}", r"\\textbf{\1}", text)
+    text = re.sub(r"\\begin\{theorem\}\[([^]]*)\]\\label\{[^}]+\}", r"\\textbf{Theorem (\1).}", text)
+    text = text.replace("\\begin{proof}", "\\emph{Proof.}").replace("\\end{proof}", "\u220e").replace("\\end{theorem}", "")
+    text = re.sub(r"\\begin\{align\*\}", "\\\\[\n\\\\begin{aligned}", text)
+    text = text.replace("\\end{align*}", "\\end{aligned}\n\\]")
+    text = re.sub(r"^\\(begin|end)\{center\}\s*$|^\\small\s*$|^\\centering\s*$", "", text, flags=re.M)
     text = convert_figures(convert_tables(text))
     # Pandoc may wrap the contents of an inline command across source lines.
     # Resolve those balanced commands before processing line structure.
@@ -270,11 +306,11 @@ def main() -> None:
     front = (
         f"# {title}\n\n"
         "**Ioannis Tsiokos** · ORCID 0009-0009-7659-5964  \n"
-        "**Version 4 — external-review response: retyped closures, gauge-collapse lemma, claims registry, 2026-08-27**\n\n"
+        "**Version 1: 17 June 2026 · Version 3: 3 October 2026**\n\n"
         "## Abstract\n\n"
         + abstract
         + "\n\n**Keywords:** Six Birds Theory; emergence calculus; finite structural constructions; "
-          "Standard Model gauge selection; quantum gravity; holographic entanglement; post-publication verification\n"
+          "Standard Model gauge selection; quantum gravity; holographic entanglement\n"
     )
     (PAPER / "source" / "00_title_abstract.md").write_text(front)
 

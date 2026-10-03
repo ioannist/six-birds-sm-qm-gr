@@ -1,0 +1,44 @@
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}[
+  pt/.style={circle, draw=black!70, line width=0.5pt, minimum size=2.6mm, inner sep=0pt},
+  ta/.style={pt, fill=evThm!70},
+  tb/.style={pt, fill=evCond!75},
+  fib/.style={draw=black!45, rounded corners=5pt, line width=0.6pt},
+  qpt/.style={circle, fill=black!70, minimum size=1.6mm, inner sep=0pt},
+  lab/.style={font=\scriptsize, align=flush center},
+  >={Stealth[length=2mm]}]
+\foreach \panel/\xo/\mixed/\title in {a/0/0/{(a) \(t\) descends}, b/7.2/1/{(b) descent fails}}{
+  \begin{scope}[xshift=\xo cm]
+    \node[font=\small\bfseries] at (2.4,3.05) {\title};
+    \node[lab, anchor=east] at (-0.15,1.75) {carrier\\\(H\)};
+    \node[lab, anchor=east] at (-0.15,-0.35) {layer\\\(Q\)};
+    \foreach \k in {0,1,2}{
+      \draw[fib] (\k*1.75-0.05,0.65) rectangle ++(1.3,2.15);
+      \node[qpt] at (\k*1.75+0.6,-0.35) {};
+      \draw[->, black!55] (\k*1.75+0.6,0.6) -- (\k*1.75+0.6,-0.22);
+    }
+    \node[lab] at (1.45,0.2) {\(q\)};
+    \node[ta] at (0.3,2.35) {}; \node[ta] at (0.95,2.0) {}; \node[ta] at (0.35,1.3) {}; \node[ta] at (0.9,1.0) {};
+    \node[tb] at (2.05,2.4) {}; \node[tb] at (2.65,1.9) {}; \node[tb] at (2.15,1.2) {};
+    \ifnum\mixed=0
+      \node[ta] at (3.85,2.35) {}; \node[ta] at (4.4,1.75) {}; \node[ta] at (3.9,1.05) {};
+      \node[lab] at (2.2,-1.05) {every fiber has one \(t\)-value, so \(t=\bar t\circ q\)\\and the obstruction set \(\mathcal O_q(t)\) is empty};
+    \else
+      \node[ta] (x1) at (3.85,2.35) {}; \node[ta] at (4.4,1.75) {}; \node[tb] (x2) at (3.9,1.05) {};
+      \draw[evCond!80!black, line width=0.9pt, <->] (x1.south west) to[bend right=40] (x2.north west);
+      \node[lab, right=0.5mm of x1] {\(h\)}; \node[lab, right=0.5mm of x2] {\(h'\)};
+      \node[lab] at (2.2,-1.05) {\(h\) and \(h'\) look identical to the layer but differ\\in \(t\), so \((h,h')\) is a witness in \(\mathcal O_q(t)\)};
+    \fi
+  \end{scope}
+}
+\node[ta, label={[lab]right:\(t=\) value 1}] at (12.7,2.3) {};
+\node[tb, label={[lab]right:\(t=\) value 2}] at (12.7,1.85) {};
+\end{tikzpicture}
+\caption{\textbf{Descent and obstruction on a toy carrier.} Boxes are the fibers of the access map \(q\): sets of
+configurations that the coarse layer cannot distinguish. Colors are values of a readout \(t\). (a) Every fiber is
+one color, so the layer can compute \(t\). (b) One fiber contains two colors; the pair \((h,h')\) is a witness in the
+obstruction set. The factorization defect \(\Deltafact(\pi_0,\pi_1)\) is the same construction with \(q=\pi_0\) and
+\(t=\pi_1\).}
+\label{fig:descent}
+\end{figure}

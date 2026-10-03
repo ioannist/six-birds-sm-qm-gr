@@ -1,0 +1,34 @@
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}[
+  pstep/.style={draw=evThm, fill=evThm!8, rounded corners=2pt, line width=0.7pt, align=flush center,
+    font=\scriptsize, text width=1.86cm, minimum height=1.35cm, inner sep=2pt},
+  rej/.style={draw=evCond, fill=evCond!8, rounded corners=2pt, line width=0.7pt, align=flush center,
+    font=\scriptsize, text width=2.9cm, inner sep=3pt},
+  badge/.style={circle, fill=evThm, text=white, font=\scriptsize\bfseries, inner sep=1pt, minimum size=3.6mm},
+  >={Stealth[length=2mm]}, node distance=2.6mm]
+\node[pstep] (a) {\textbf{declare}\\finite carrier,\\caps, conventions};
+\node[pstep, right=of a] (b) {\textbf{pin}\\inputs and imports\\(SHA-256)};
+\node[pstep, right=of b] (c) {\textbf{construct}\\exact or bounded\\computation};
+\node[pstep, right=of c] (d) {\textbf{validate}\\rebuild and compare\\(strength varies)};
+\node[pstep, right=of d] (e) {\textbf{control}\\a case on which\\the claim fails};
+\node[pstep, right=of e] (f) {\textbf{review}\\adversarial reading;\\independent oracle};
+\node[pstep, right=of f, draw=evExact, fill=evExact!10] (g) {\textbf{register}\\status, grade,\\validator};
+\foreach \u/\v in {a/b,b/c,c/d,d/e,e/f,f/g} \draw[->, line width=0.7pt, evThm] (\u) -- (\v);
+\foreach \n/\k in {a/1,b/2,c/3,d/4,e/5,f/6,g/7} \node[badge, anchor=south, yshift=1pt] at (\n.north) {\k};
+% rejection loop
+\node[rej, below=9mm of d.south east, xshift=-2mm] (r2) {\textbf{circularity / hardcoding}\\a load-bearing clause does no work};
+\node[rej, left=3mm of r2] (r1) {\textbf{tautology}\\the target equals its evidence};
+\node[rej, right=3mm of r2] (r3) {\textbf{rigging}\\a verdict forced, in either direction};
+\node[draw=evCond, rounded corners=3pt, line width=0.8pt, fit=(r1)(r2)(r3), inner sep=3pt,
+  label={[font=\scriptsize\bfseries, text=evCond]below:rejection loop}] (box) {};
+\foreach \n in {d,e,f} \draw[->, evCond, line width=0.7pt] (\n.south) -- (\n.south |- box.north);
+\draw[->, evCond, line width=0.7pt] (c.south |- box.north) -- (c.south);
+\end{tikzpicture}
+\caption{\textbf{How each result was produced and checked.} Steps 4--6 can send a construction back to step 3. The
+three defect classes caught this way are described in Section~\ref{adversarial-self-correction-in-both-directions} and
+Appendix~\ref{adversarial-audit-trail-what-was-rejected-and-why}. Validator strength varies, from full byte-level
+rebuilds to checks of stored summaries (Appendix~\ref{toy-constructions-reproducibility}); review is internal and
+model-assisted, not journal peer review.}
+\label{fig:pipeline}
+\end{figure}

@@ -1,121 +1,144 @@
-\hypertarget{toy-constructions-reproducibility}{%
-\section{Constructions and reproducibility}\label{toy-constructions-reproducibility}}
+\section{Constructions and reproducibility}\label{toy-constructions-reproducibility}
 
-The historical construction tracks live under \nolinkurl{physics_atlas/}; the certified repairs and probes live
-under \nolinkurl{review_2026/}; the open-program artifacts live under \nolinkurl{open_programs/}. The certified
-and retyped results, not superseded historical headline rows, control this version.
-Validators are heterogeneous: many historical scripts check deterministic artifacts, while the strongest
-validators rebuild their entire result in memory and byte-compare every output.
+The historical construction tracks live under \nolinkurl{physics_atlas/}; the controlling repairs and probes live under
+\nolinkurl{review_2026/}; the construction programs live under \nolinkurl{open_programs/}. Where a historical headline
+and a controlling repair disagree, the repair and the claims registry \nolinkurl{review_2026/CLAIMS_REGISTRY.md}
+control. Validators vary in strength: many historical scripts check deterministic artifacts, while the strongest
+rebuild their entire result in memory and compare every output byte for byte.
 
-\subsection{Certified repair and probe entry points}
+\subsection{Entry points for the controlling results}
 
-\begin{longtable}[]{@{}p{0.28\linewidth}p{0.41\linewidth}p{0.23\linewidth}@{}}
+\begin{center}
+\small
+\begin{longtable}[]{@{}p{0.29\linewidth}p{0.42\linewidth}p{0.21\linewidth}@{}}
 \toprule
-result & artifact directory & validator\\
+result & artifact directory & validator (\texttt{--self})\\
 \midrule
 \endhead
 gauge carrier, branch census, scalar pairs &
 \nolinkurl{review_2026/repairs/s1_carrier_reconstruction/} &
-\nolinkurl{run_s1_carrier_reconstruction_v3.py --self}\\
+\nolinkurl{run_s1_carrier_reconstruction_v3.py}\\
 \(SU(5)\) generators, ratios, coset, F27/F48 &
 \nolinkurl{review_2026/repairs/s3_generator_construction/} &
-\nolinkurl{run_s3_generator_construction_v2.py --self}\\
+\nolinkurl{run_s3_generator_construction_v2.py}\\
 content quotient, mass rank, \(N\)-copy probe &
 \nolinkurl{review_2026/repairs/s4_content_quotient/} &
-\nolinkurl{run_s4.py --self}\\
+\nolinkurl{run_s4.py}\\
 F24/F47 architecture and surface &
 \nolinkurl{review_2026/repairs/s5_f24_f47/} &
-\nolinkurl{run_s5.py --self}\\
-record-token ablations &
+\nolinkurl{run_s5.py}\\
+record-token census and ablations &
 \nolinkurl{review_2026/repairs/s6_record_grammar_ablation/} &
-\nolinkurl{run_s6_record_grammar_ablation_v3.py --self}\\
-field-to-mode provenance and partition lattice &
+\nolinkurl{run_s6_record_grammar_ablation_v3.py}\\
+field provenance and partition lattice &
 \nolinkurl{review_2026/repairs/q1_access_provenance/} &
-\nolinkurl{run_q1.py --self}\\
-route-mismatch commutation analysis &
+\nolinkurl{run_q1.py}\\
+route-mismatch commutation &
 \nolinkurl{review_2026/repairs/q2_route_mismatch/} &
-\nolinkurl{run_q2.py --self}\\
+\nolinkurl{run_q2.py}\\
 min-cut LP duality, response, composition &
 \nolinkurl{review_2026/repairs/q5_lp_duality/} &
-\nolinkurl{run_q5.py --self}\\
+\nolinkurl{run_q5.py}\\
 adaptive F50 convergence and stability &
 \nolinkurl{review_2026/repairs/q7_f50_convergence/} &
-\nolinkurl{run_q7.py --self}\\
+\nolinkurl{run_q7.py}\\
+F34 factorization theorem, rank certificates, partial-readout witness &
+\nolinkurl{review_2026/repairs/f34_exact_factorization/} &
+\nolinkurl{run_exact_factorization.py}\\
 five-class P1 quotient search &
 \nolinkurl{review_2026/probes/p1_kernel_quotient/} &
-\nolinkurl{run_active_cut_quotient_v3.py --self}\\
-PROG3 forward five-move reachability search &
+\nolinkurl{run_active_cut_quotient_v3.py}\\
+P1 graph level: forward reachability &
 \nolinkurl{open_programs/prog3_cut_fingerprints/step2_orbit_saturation/} &
-\nolinkurl{run_step2.py --self}\\
-PROG3 orbit-typing repair and symmetric-closure obstruction &
+\nolinkurl{run_step2.py}\\
+P1 graph level: symmetric-closure obstruction &
 \nolinkurl{open_programs/prog3_cut_fingerprints/step3_symmetric_closure/} &
-\nolinkurl{run_step3.py --self}\\
-PROG2 historical finite \(C2\_L1\) family classification &
+\nolinkurl{run_step3.py}\\
+P1 state level: finite \texttt{C2\_L1} classification &
 \nolinkurl{open_programs/prog2_state_underdetermination/step5_family_gauge_classification/} &
-\nolinkurl{run_step5.py --self}\\
-PROG2 exact connected-copy gauge-collapse lemma &
+\nolinkurl{run_step5.py}\\
+P1 state level: gauge-collapse lemma &
 \nolinkurl{open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/} &
-\nolinkurl{run_step6.py --self}\\
+\nolinkurl{run_step6.py}\\
 \bottomrule
 \end{longtable}
+\end{center}
 
-Each directory contains its design choices, literal dependency pins, schema, result tables, and findings note. The exact
-caps and conventions stated in the body are also machine-readable there.
+Each directory contains its design choices, literal dependency pins, schema, result tables, and a findings note; the
+caps and conventions stated in the body are also machine-readable there. The F34 directory additionally contains the
+written proof of Theorem~\ref{thm:f34} (\nolinkurl{PROOF.txt}). The proof is general linear algebra; the Python code
+checks exact finite instances and is not a Lean mechanization of the universal statement.
 
-\subsection{Historical track rebuilds and the external corpus variable}
+\subsection{Independent checks}
 
-Step validators in a clean checkout resolve repository-internal sources relative to their own files. Four historical
-QM--GR build drivers---steps 51 through 54---also reproduce hashes of Foundations III/IV corpus \texttt{.tex} files that
-are not distributed in this repository. Rebuilding those corpus-dependent rows therefore requires an explicit external
-root:
-
+The mathematics review in \nolinkurl{review_2026/mathematics_audit_20261003/} adds checks that do not reuse
+production code: the weight-character representation oracle of Section~\ref{finite-frozen-carriers}, tampering
+controls for the strengthened validators, regressions of the gauge-collapse certificate on every connected labelled
+simple graph with at most four vertices, and a per-claim coverage file for all \(42\) registry records. They are
+reproduced by
 \begin{verbatim}
-SIX_BIRDS_PAPERS_ROOT=/path/to/six-birds-papers \
-  python3 <step51--54-build-driver>.py
+python3 review_2026/mathematics_audit_20261003/run_checks.py \
+    --output /tmp/sm-qm-gr-audit.json
 \end{verbatim}
+Adding \texttt{--all} also sweeps the controlling and historical validators. The runner works in separate scratch
+copies built from tracked, non-ignored files, so a missing local artifact cannot silently supply evidence.
 
-Without \texttt{SIX\_BIRDS\_PAPERS\_ROOT}, those drivers fail before writing partial artifacts and name the missing file.
-This variable is not needed to validate the released artifacts or to run repairs that import compute functions only.
-It is a provenance dependency, not evidence that this checkout contains the external corpus.
+\subsection{Historical track rebuilds and an external corpus variable}
 
-The usual historical validator pattern is:
-
+Step validators in a clean checkout resolve repository-internal sources relative to their own files. The usual
+pattern is
 \begin{verbatim}
 cd physics_atlas/thread_<track>/steps/<step_dir>
 python3 run_stepNN.py --self
 \end{verbatim}
+Four historical QM--GR build drivers (steps 51--54) also reproduce hashes of Foundations III/IV corpus \texttt{.tex}
+files that are not distributed here. Rebuilding those rows requires an explicit external root,
+\begin{verbatim}
+SIX_BIRDS_PAPERS_ROOT=/path/to/six-birds-papers \
+  python3 <step51--54-build-driver>.py
+\end{verbatim}
+Without it, those drivers stop before writing partial artifacts and name the missing file. The variable is not needed
+to validate the released artifacts or to run repairs that only import compute functions; it is a provenance
+dependency, not evidence that this checkout contains the external corpus.
 
-Because some validators regenerate in place, full historical sweeps should be performed on a scratch copy rather than
-the release working tree.
+\subsection{Validator caveats}
 
-\subsection{Support-integrity caveats}
+The repository is not uniformly self-verifying, and it is not a tamper-evident freeze.
 
-The repository must not be described as uniformly self-verifying or as a tamper-evident freeze.
-
-\begin{itemize}
-\item \textbf{F-002, mitigated:} the historical step69 data pin was computed from the same file it purported to pin.
-A byte-identical rebuild was demonstrated, but the pin remains to be made literal.
-\item \textbf{F-003:} some \texttt{--self} validators regenerate artifacts in place and are non-idempotent as checks of a
-release tree. A parallel-pool race was observed once (N-003). Use isolated scratch copies for sweeps.
-\item \textbf{F-008:} steps 43, 44, and 61 and analogues validate stored audit tables instead of rebuilding all
-load-bearing computations. Step61's mathematical result survives separate review, but its audit gates include literal
-booleans.
-\item The preregistration \texttt{SHA256SUMS} primer entry names a file absent from the release. The freeze gate is a
-consistency validator, not a cryptographic or externally timestamped tamper-evident freeze.
-\item the initial P1 probe used a three-round \(\Delta\)--Y/Y--\(\Delta\) presentation search. The controlling PROG3
-validator rebuilds nineteen exact fibers and queue-exhausts forward reachability under four directed reductions and
-bidirectional Delta-Y/Y-Delta, modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
-disjointness, tied-minimizer intermediates, and transformations outside those classes remain open.
+\begin{itemize}\tightlist
+\item \textbf{Summary-reading validators.} The validators of the historical multi-factor window-closure steps
+  (steps 43 and 44 of the SM cluster) and some analogues check stored audit tables instead of rebuilding every
+  load-bearing computation. The step-43 numerical census counts are also stale relative to the final carrier: a
+  current-engine probe supports its \(N\le6\) family conclusion, but a final-carrier rebuild remains to be done. By
+  contrast, the step-61 validator (single-factor theorem) rebuilds every released non-code artifact in a temporary directory,
+  compares bytes, and constructs the actual witness pairs.
+\item \textbf{In-place regeneration.} Some \texttt{--self} validators regenerate artifacts in place, so they are not
+  idempotent checks of a release tree. A race in a parallel pool was observed once. Run sweeps in isolated scratch
+  copies.
+\item \textbf{Pins.} The historical step-69 score source is pinned by a literal reviewed digest, so changing the
+  source fails even if the stored conclusion is left unchanged. That step's record implication is superseded by the
+  record census of Section~\ref{record-stability-open-program}. The preregistration \texttt{SHA256SUMS} primer entry
+  names a file absent from the release, and the freeze gate is a consistency check, not a cryptographic or externally
+  timestamped freeze.
+\item \textbf{Tracked inputs only.} The QM--GR step-27 and step-28 validators reconstruct their operators and histories
+  from tracked inputs (step 28 checks every stored history state and potential), and the evidence log required by the
+  P1 state-level step-6 validator is tracked. The compatible-clock constraints of steps 27--28 are finite
+  constructions whose compatibility is engineered, not a derived clock dynamics.
+\item \textbf{P1 search scope.} The initial P1 probe used a declared three-round \(\Delta\)--Y/Y--\(\Delta\) search. The
+  controlling validator rebuilds nineteen exact fibers and exhausts their forward reachability under four directed
+  reductions and bidirectional \(\Delta\)--Y/Y--\(\Delta\), up to terminal-label-fixed exact weighted isomorphism.
+  Symmetric-closure orbit disjointness, paths through tied-minimizer presentations, and other transformations remain
+  open.
 \end{itemize}
 
-The Q5 replay policy separates exact discrete artifacts, which remain byte-compared, from floating summaries, whose
-numeric fields use tight declared semantic tolerances while all nonnumeric structure remains exact; see
-\nolinkurl{review_2026/repairs/q5_lp_duality/reproducibility_policy.md}. The authoritative current claim wording, status,
-evidence type, supersession history, controlling source, and validator entry point are consolidated in
-\nolinkurl{review_2026/CLAIMS_REGISTRY.md}.
+The Q5 replay policy separates exact discrete artifacts, which are compared byte for byte, from floating-point
+summaries, whose numeric fields use tight declared tolerances while all non-numeric structure stays exact
+(\nolinkurl{review_2026/repairs/q5_lp_duality/reproducibility_policy.md}). The registry records, for every claim, its
+wording, status, evidence type, supersession history, controlling source, and validator.
 
 \subsection{Paper build}
 
-The modular manuscript builds with \texttt{make paper-build}. That target compiles \texttt{paper/main.tex} and creates
-\nolinkurl{paper/build/main_flat.tex}; the tracked root TeX file is copied from that flattened output for release.
-The Qeios bundle is a separate submission surface regenerated from these sources; its manuscript and notes must remain synchronized with the modular paper.
+The modular manuscript builds with \texttt{make paper-build}, which compiles \nolinkurl{paper/main.tex} and writes
+\nolinkurl{paper/build/main_flat.tex}; the tracked root \texttt{.tex} file is copied from that flattened output. All
+figures are drawn in TikZ inside the source, so the flattened file needs no external image files. The Qeios bundle is
+regenerated from the same sources.

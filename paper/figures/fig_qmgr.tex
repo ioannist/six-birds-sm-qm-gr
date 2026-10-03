@@ -1,0 +1,58 @@
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}[
+  rd/.style={draw=evThm, fill=evThm!8, rounded corners=2pt, line width=0.7pt, font=\scriptsize, align=flush center, inner sep=3pt},
+  lab/.style={font=\scriptsize, align=flush center},
+  v/.style={circle, draw=black!70, fill=white, minimum size=2.4mm, inner sep=0pt, line width=0.5pt},
+  bv/.style={v, fill=evThm!60},
+  >={Stealth[length=1.8mm]}]
+% ---------------- (a) fork
+\node[font=\small\bfseries, anchor=west] at (-0.2,3.3) {(a) A fork, not a ladder};
+\node[rd] (L) at (2.3,2.5) {common refinement\\\(L=(d_0,d_1,d_2,d_3)\)};
+\node[rd] (Q) at (0.85,0.9) {QM readout \(q_{\rm QM}\)\\\((d_0,d_1,d_2)\)};
+\node[rd] (G) at (4.15,0.9) {GR readout \(q_{\rm GR}\)\\\((d_0,d_2,d_3)\)};
+\draw[->, line width=0.7pt, evThm] (L) -- (Q);
+\draw[->, line width=0.7pt, evThm] (L) -- (G);
+\draw[<->, dashed, line width=0.7pt, evCond] (Q) -- (G);
+\node[evCond, font=\bfseries] at (2.5,0.9) {\(\times\)};
+\node[lab, text width=4.8cm] at (2.5,-0.35) {neither readout factors through the other:\\\(8\) unordered witness pairs each way;\\a nested control does factor};
+% ---------------- (b) min cut
+\begin{scope}[xshift=6.0cm]
+\node[font=\small\bfseries, anchor=west] at (-0.1,3.3) {(b) Minimal cut as an LP};
+\fill[evThm!10, rounded corners=4pt] (-0.05,0.1) rectangle (0.45,2.7);
+\node[lab, text=evThm] at (0.2,2.9) {\(A\)};
+\node[bv] (a1) at (0.2,2.3) {}; \node[bv] (a2) at (0.2,1.4) {}; \node[bv] (a3) at (0.2,0.5) {};
+\node[v] (m1) at (1.5,2.0) {}; \node[v] (m2) at (1.5,0.8) {};
+\node[v] (n1) at (2.9,1.4) {};
+\node[v] (b1) at (4.0,2.3) {}; \node[v] (b2) at (4.0,1.4) {}; \node[v] (b3) at (4.0,0.5) {};
+\foreach \u/\w in {a1/m1,a2/m1,a2/m2,a3/m2,n1/b1,n1/b2,n1/b3,m1/m2}
+  \draw[black!55, line width=1.0pt] (\u) -- (\w);
+\foreach \u/\w in {m1/n1,m2/n1}
+  \draw[evCond, line width=2.0pt] (\u) -- (\w);
+\draw[evCond, dashed, line width=0.6pt] (2.2,2.75) -- (2.2,0.15);
+\node[lab, text=evCond] at (2.2,2.95) {min cut: \(y_e=1\)};
+\node[lab, text width=4.4cm] at (2.0,-0.45) {\(\mathrm{Area}=\mathrm{OPT}_{\rm dual}=\sum_e c_e\,y_e\);\\other edges have \(y_e=0\)};
+\end{scope}
+% ---------------- (c) ratios
+\begin{scope}[xshift=11.6cm]
+\node[font=\small\bfseries, anchor=west] at (-0.6,3.3) {(c) Sampled saturation};
+\draw[black!60] (0,0.2) -- (0,2.7);
+\draw[black!60] (0,0.2) -- (3.3,0.2);
+\foreach \t/\yy in {0/0.2, .5/1.4, 1/2.6}{ \draw[black!60] (-0.07,\yy) -- (0,\yy); \node[lab, anchor=east] at (-0.08,\yy) {\t}; }
+\draw[black!45, dashed] (0,2.6) -- (3.3,2.6) node[lab, anchor=west, text=black!60] {\(S=\)\\cut};
+\foreach \x/\r/\d in {0.65/0.729/2, 1.65/0.904/3, 2.65/0.941/4}{
+  \fill[evNum!70] (\x-0.27,0.2) rectangle (\x+0.27,{0.2+2.4*\r});
+  \node[font=\tiny, anchor=north, text=white] at (\x,{0.2+2.4*\r}) {\r};
+  \node[lab, anchor=north] at (\x,0.18) {\(D=\d\)};
+}
+\node[lab, rotate=90] at (-0.62,1.4) {\(S/\mathrm{mincut}\)};
+\node[lab, text width=3.8cm] at (1.6,-0.6) {five-seed means; a finite\\sampled trend, not convergence};
+\end{scope}
+\end{tikzpicture}
+\caption{\textbf{The QM--GR constructions.} (a) On the abstract Boolean carrier, the QM and GR readouts are
+incomparable, yet both factor through the common refinement \(L\). (b) A schematic boundary-anchored network: the
+minimum cut separating region \(A\) from the rest has value equal to the dual optimum, and the cut-incidence variables
+\(y_e\) are the per-edge shadow prices. (c) Entropies of independently contracted random tensor states, as a fraction of
+the min cut, at bond dimensions \(D=2,3,4\): means over five seeds on the sampled carrier.}
+\label{fig:qmgr}
+\end{figure}

@@ -1,68 +1,89 @@
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}
 
-This paper asks whether two structurally different problems---selection of Standard-Model structure and the relation
-between quantum and gravitational descriptions---can be studied with one finite grammar of quotients, closures,
-obstructions, and common refinements. The first problem includes the gauge algebra
-\(\mathfrak{su}(2)\oplus\mathfrak{su}(3)\oplus\mathfrak{u}(1)\), representations, generations, scales, and vacuum
-data~\citep{Weinberg1967}. The second includes perturbative non-renormalizability and the absence of an experimentally
-confirmed quantum theory of gravity~\citep{tHooftVeltman1974,GoroffSagnotti1985}. A shared vocabulary is not itself a
-solution; it earns evidential weight only where explicit finite constructions and can-fail controls survive review.
+Two of the deepest open problems in physics look nothing alike. The first is a \emph{selection} problem: why the
+Standard Model has the gauge algebra \(\mathfrak{su}(3)\oplus\mathfrak{su}(2)\oplus\mathfrak{u}(1)\), its particular
+representations, three generations, and its scales~\citep{Weinberg1967}. The second is a \emph{compatibility}
+problem: general relativity is perturbatively non-renormalizable~\citep{tHooftVeltman1974,GoroffSagnotti1985}, and
+no quantum theory of gravity has been confirmed experimentally. This paper asks a modest question about the two: can
+both be studied with one small, finite vocabulary, and if so, what does that vocabulary actually deliver?
 
-This paper instantiates SBT's finite obstruction, quotient, construction-audit, and claim-governance subset. It does not
-instantiate SBT's strict-extension, reclosure, promotion, endogenous-repair, or run-level dynamical machinery, and it
-supplies no substrate-specific continuum bridge. The main contributions are:
+The vocabulary comes from the Six Birds emergence calculus (Section~\ref{the-six-birds-emergence-calculus-in-brief}).
+Its working core fits in a sentence. A coarse description is a \emph{quotient} of a finer one; a quantity of interest
+either \emph{descends} through the quotient or leaves a set of
+witnesses showing that it does not; and two
+coarse descriptions may share a \emph{common refinement} that carries both. These are elementary notions. What makes
+them useful here is that they can be evaluated exactly on finite carriers, so each step can be checked, controlled,
+and, where it fails, recorded as a result.
+
+A shared vocabulary is not a solution to either problem. It earns evidential weight only where it produces explicit
+constructions that could have come out differently and that survive review. For that reason the paper is built
+around finite, declared carriers, and every result carries a grade that states what kind of result it is. We use
+the calculus's finite toolkit (obstructions, quotients, construction audit, and claim bookkeeping). We do not use its
+strict-extension, reclosure, promotion, endogenous-repair, or run-level dynamical machinery, and we supply no
+continuum bridge to a physical substrate.
+
+\subsection*{Main results}
 
 \begin{enumerate}
 \item
-  \textbf{A finite Standard-Model selection construction} (Section 4). A conjugation-consistent carrier contains
-  \(1{,}066\) labelled genuinely-chiral structures, \(419\)
-  declared quotient orbits, or \(195\) primitive-normalized orbits. Under the declared representation, charge, field,
-  and scalar caps, clean separation uniquely selects a \emph{breaking-orientation branch class}: \(2|3\) alone admits
-  clean branches, all of them \(SU(2)\)-active, while every \(SU(4)\) branch is breaking. This is not bare-structure
-  uniqueness because every \(2|3\) structure also has a breaking branch. A separate witness-independent theorem excludes
-  stable single-factor \(SU(N)\) candidates in its stated toy grammar.
+  \textbf{A branch-level selection of \(SU(2)\times SU(3)\)} (Section~\ref{result-i-the-standard-model-as-a-selection-layer-a-demarcation}).
+  A conjugation-consistent census contains \(1{,}066\) labelled genuinely chiral gauge structures (\(419\) orbits under
+  the declared symmetries, or \(195\) under an alternative charge normalization). Within the declared representation,
+  charge, field, and scalar caps, only structures with nonabelian factors of dimensions \(2\) and \(3\) (the
+  \(2|3\) family) admit a \emph{clean} breaking branch. Every clean branch breaks the \(SU(2)\) factor, and every
+  \(SU(4)\) branch is breaking. Every \(2|3\) structure also has a breaking branch, so the selection is of a
+  structure-plus-branch pair, not of a bare gauge structure. A separate witness-independent toy theorem excludes stable
+  single-factor \(SU(N)\) candidates.
 \item
-  \textbf{Constructed unification objects and a content-orbit result} (Section 4). Given the regular \(SU(5)\) embedding,
-  the \(\overline{\mathbf5}+\mathbf{10}\) package, and a weak-pair convention, exact matrices force a one-dimensional
-  hypercharge direction and yield \(\sin^2\theta_W=3/8\) and \(k_Y=5/3\). Generator action computes the \(X/Y\)
-  roles inside that frame. The ratios do not select the parent: Pati--Salam also gives \(3/8\). Under the declared
-  content quotient, the candidate SM/alternative pair
-  is one orbit; content is unique only in this recognition template.
+  \textbf{Exact unification objects, recovered rather than predicted} (Section~\ref{the-xy-coset-spine-and-the-recovered-unification-ratios}).
+  For the regular \(SU(5)\) embedding, exact matrix algebra forces a one-dimensional hypercharge direction and gives
+  \(\sin^2\theta_W=3/8\) and \(k_Y=5/3\) for the \(\overline{\mathbf5}+\mathbf{10}\) package. Generator action
+  identifies the \(X/Y\) coset roles. The ratios do not select the parent group, since Pati--Salam also gives \(3/8\).
+  Under a declared content quotient, the SM and its candidate alternative are one orbit.
 \item
-  \textbf{A conditional QM--GR access construction and finite-graph LP recognition} (Section 5). On an abstract Boolean
-  carrier, the declared QM and GR coordinate partitions are mutually non-factorizing. A separate 54-record
-  field-plus-background population realizes conditional, coarse readouts with explicit phase and potential controls;
-  this is finite provenance, not type or instance uniqueness. On a graph carrier, independently contracted-state
-  entropies, exact cuts, a fair GHZ control, and exported LP certificates support the identity
-  \(\operatorname{Area}(\mathrm{mincut})=\sum_e c_e y_e\), with \(y_e\) edge shadow prices. An exact computation also
-  shows that the paper's two conditional-mean completions --- the natural ``quantize'' and ``curve'' routes on this
-  carrier --- commute, so no route-mismatch explanation of quantum gravity's difficulty is available at this level.
+  \textbf{QM and GR readouts as siblings, and a finite min-cut duality} (Section~\ref{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification}).
+  On an abstract Boolean carrier, the declared QM and GR coordinate readouts are mutually non-factorizing: neither is a
+  coarse-graining of the other, though both factor through a common refinement. A 54-record field-plus-background
+  construction realizes such readouts under stated conditions. On finite graphs, exact LP certificates give
+  \(\operatorname{Area}(\mathrm{min\ cut})=\sum_e c_e y_e\), with the \(y_e\) the per-edge shadow prices. An exact
+  computation also shows that the natural ``quantize'' and ``curve'' completions on this carrier \emph{commute}, so
+  this level offers no route-mismatch explanation of why quantizing gravity is hard.
 \item
-  \textbf{Three research programs, with two P1 finite subproblems completed} (Section 6). At graph level, a completed
-  finite computation establishes
-  forward-reachability disjointness for nineteen pairs, while symmetric-closure orbit disjointness remains open. At state
-  level, six exact joint-map fibers establish noninjectivity but collapse under a constructed exact diagonal tensor
-  gauge. The other two programs remain open: whether
-  a perfect-record gravitational channel is dynamically derived, and which bounded scalar-dressed invariant candidates
-  persist as physical records. Each section distinguishes a finite falsifiable statement, where one exists, from the
-  unsupported universal claim.
+  \textbf{Three construction programs} (Section~\ref{open-programs-from-the-three-published-predictions}).
+  The first asks whether the same min-cut data can hide different geometries. Its graph-level subproblem shows that,
+  for nineteen exact equal-cut pairs, the two sets of presentations reachable by forward reduction moves are disjoint.
+  Whether they are disjoint under arbitrary moves in both directions remains open. Its state-level subproblem finds six
+  exact pairs with identical cut and state data, all of which turn out to be gauge-equivalent tensor networks. The
+  second and third programs, on whether gravity must act as a classical record channel and on which invariant
+  operators persist as records, remain open. Their finite precursors are, respectively, conditional on an assumed
+  channel and sensitive to how records are defined.
 \item
-  \textbf{Narrow breadth results and two toy theorems} (Sections 4 and 7). The L* layer is a coherent finite
-  construction with a one-layer and block-structure caveat. The single-factor result and the exact abstract
-  coordinate-partition incomparability result are genuine toy theorems. Other breadth claims carry only their stated
-  finite or contested grades; none establishes universality.
+  \textbf{Further applications and two toy theorems} (Sections~\ref{result-i-the-standard-model-as-a-selection-layer-a-demarcation},
+  \ref{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification},
+  and~\ref{breadth-one-calculus-three-more-deep-problems}). The single-factor exclusion and the coordinate-partition
+  incomparability are genuine theorems on their toy carriers. In a toy holographic carrier, a general factorization
+  theorem shows that the full boundary readout loses only gauge data, while a half-boundary readout provably loses
+  physical information. Bell, cosmological-constant, and measurement rows carry their own finite grades. None
+  establishes universality.
 \end{enumerate}
 
-\textbf{Scope.} Nothing here derives nature-level Standard-Model parameters, solves quantum gravity, proves a
-universal composition law, or transfers from these carriers to physical systems. ``Recognition'' means that an exact
-known structure is instantiated after all named imports are declared. ``Open program'' means that a construction is
-identified as missing and the repository isolates exactly what would have to be built.
+Figure~\ref{fig:overview} places these results side by side, colored by the kind of evidence behind each one.
 
-\textbf{Reader's map.} Section 2 gives the calculus vocabulary; Section 3 the audit method; Sections 4--5 the
-track results; Section 6
-the three research programs, including P1's two completed finite subproblems; Section 7 the bounded breadth constructions; Section 8 the cross-cutting statement; and Section
-9 the consolidated scope table. Appendices contain formal definitions, reproducibility pointers and caveats, the audit
-trail, the adversarial review record with the disposition of every claim revised since the first version, and notation.
-This is the second version of the paper; readers of the first version should consult Appendix D for the complete
-claim-by-claim revision record.
+\input{figures/fig_overview}
+
+\paragraph{Scope.} Nothing here derives Standard-Model parameters, solves quantum gravity, proves a universal
+composition law, or transfers a statement from these carriers to nature. Two words are used in a narrow sense
+throughout. A \emph{recognition} means that a known exact structure is reproduced once all named inputs are declared.
+An \emph{open program} means that the missing construction has been identified and the repository isolates exactly
+what would have to be built.
+
+\paragraph{How to read the paper.} Section~\ref{the-six-birds-emergence-calculus-in-brief} introduces the vocabulary
+with a worked picture, and Section~\ref{method-finite-audited-carriers-adversarial-self-correction} describes how
+results were checked. Sections~\ref{result-i-the-standard-model-as-a-selection-layer-a-demarcation}
+and~\ref{result-ii-quantum-mechanics-general-relativity-as-a-common-refinement-a-unification} present the two tracks,
+Section~\ref{open-programs-from-the-three-published-predictions} the three construction programs, and
+Section~\ref{breadth-one-calculus-three-more-deep-problems} four further applications.
+Section~\ref{cross-track-ties-and-the-one-grammar-thesis} asks what the two tracks share, and
+Section~\ref{scope-limits-and-falsifiability} collects every statement with its grade and its most direct test. The
+appendices give formal definitions (A), reproducibility details (B), the record of rejected constructions (C),
+notation (D), and the version history (E).

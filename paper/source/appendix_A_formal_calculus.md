@@ -1,92 +1,109 @@
-# the calculus, formally (working subset)
+# The calculus, formally (working subset)
 
-This appendix states, at usable precision, every formal object the body relies on. Full development: Foundations II–IV [@Tsiokos_FoundationsII; @Tsiokos_FoundationsIII; @Tsiokos_FoundationsIV].
+This appendix states every formal object the body relies on, at usable precision. The full development is in
+Foundations II–IV [@Tsiokos_FoundationsII; @Tsiokos_FoundationsIII; @Tsiokos_FoundationsIV].
 
 ## Descent and obstruction
 
-For a surjection $q:H\to Q$ and readout $t:H\to T$:
-
+For a surjection $q:H\to Q$ and a readout $t:H\to T$,
 $$
 t \text{ descends} \iff \mathcal O_q(t) = \{(h,h'): q(h)=q(h') \wedge t(h)\neq t(h')\} = \varnothing
 \iff \exists\,\bar t:Q\to T,\ \bar t\circ q = t .
 $$
+On a finite carrier both directions are finite checks on $H\times H$: choose a representative in each fiber, and
+note that $\bar t$ is well defined exactly when $t$ is constant on fibers. If $q$ is not surjective, the same
+statement holds with $\bar t$ defined on the image of $q$.
 
-Both directions are finite checks on $H\times H$ (choose representatives; well-definedness is exactly
-fiber-constancy).
+## The factorization defect (Foundations III, Theorems 12--13)
 
-## Strict extension and the factorization defect (FIII Thms 12--13)
-
-For maps $\pi_0:S\to O_0$, $\pi_1:S\to O_1$ on a finite carrier:
-
+For maps $\pi_0:S\to O_0$ and $\pi_1:S\to O_1$ on a finite carrier,
 $$
-\Delta_{\mathrm{fact}}(\pi_0,\pi_1) = \{(s,s'): \pi_0(s)=\pi_0(s') \wedge \pi_1(s)\neq\pi_1(s')\},
+\Deltafact(\pi_0,\pi_1) = \{(s,s'): \pi_0(s)=\pi_0(s') \wedge \pi_1(s)\neq\pi_1(s')\},
 \qquad
-\Delta_{\mathrm{fact}}\neq\varnothing \iff \nexists\,\phi:\ \pi_1 = \phi\circ\pi_0 .
+\Deltafact\neq\varnothing \iff \nexists\,\phi:\ \pi_1 = \phi\circ\pi_0 \ \text{on } S .
 $$
+It is used for the branch-level clean-separation classification
+(Section 4.3), the single-factor toy theorem,
+and the QM–GR coordinate-partition defect with eight unordered witness pairs (sixteen ordered pairs) in each direction
+(Section 5.2). Generator action separately establishes the $X/Y$ roles inside
+the constructed $SU(5)$ frame. These uses do not identify one physical object.
 
-Used as: branch-specific clean-separation classification in §4 and the abstract QM–GR coordinate-partition defect
-(eight witnesses) in §5. Generator action separately establishes the $X/Y$ roles inside the constructed $SU(5)$
-frame; these applications are not one physical object.
+## Non-commuting completions (Foundations III, Theorems 9--10)
 
-## Non-commuting completions (FIII Thms 9--10)
+There are idempotents $E_1,E_2$ on a finite carrier with $E_1E_2\neq E_2E_1$, and the route-mismatch defect
+$\Delta_3^{\mathrm{comp}}(E_1,E_2)=\{c: E_1E_2(c)\neq E_2E_1(c)\}$ is nonempty exactly when they fail to commute. A
+minimal witness: on $C=\mathcal P(\{a,b,c\})$, let $E_1(S)=S\cup\{b\}$ if $a\in S$ and $E_1(S)=S$ otherwise, and
+$E_2(S)=S\cup\{c\}$ if $b\in S$ and $E_2(S)=S$ otherwise. Then $E_1E_2(\{a\})=\{a,b\}\neq\{a,b,c\}=E_2E_1(\{a\})$.
+This is a mathematical example only. The two conditional-mean completions constructed for QM–GR commute exactly
+(Section 5.1), so no link to non-renormalizability is established.
 
-There exist idempotents $E_1,E_2$ on a finite carrier with $E_1E_2\neq E_2E_1$; the route-mismatch defect
-$\Delta_3^{\mathrm{comp}}(E_1,E_2)=\{c: E_1E_2(c)\neq E_2E_1(c)\}$ is non-empty iff they fail to commute. Minimal
-witness: $C=\mathcal P(\{a,b,c\})$, $E_1(S)=S\cup\{b\}$ if $a\in S$ else $S$; $E_2(S)=S\cup\{c\}$ if $b\in S$ else $S$;
-then $E_1E_2(\{a\})=\{a,b\}\neq\{a,b,c\}=E_2E_1(\{a\})$. This is a mathematical example only. The two
-conditional-mean completions published for QM–GR commute exactly, so no link to non-renormalizability is established.
+## The six roles and the no-algebra theorem
 
-## The six primitives and the no-algebra theorem
+$\mathbb P=\{P_1,\dots,P_6\}$ (descent, representability, route mismatch, refinement, packaging, audit) are labels for
+typed judgments. Foundations III proves that no total binary operation $*:\mathbb P^2\to\mathbb P$ decodes the status
+of a judgment. The proof exhibits two cells with the same pair of primitives and different statuses; if status were
+$\mathrm{decoder}(\mathrm{op}(\text{pair}))$, the two statuses would coincide. The theorem does not say that no
+binary operation on six symbols exists: $\mathrm{op}(x,y)=x$ is one. The corpus also makes no claim that all
+structure decomposes into the six. Directed-cell notation $P_i\leftarrow P_j$ names a typed, individually audited
+judgment, never a product. The relevant Lean declaration and its classifier countermodel build under Lean 4.28.0;
+that build does not establish any physical premise.
 
-$\mathbb P=\{P_1,\dots,P_6\}$ (descent, representability, route mismatch, refinement, packaging, audit) are role
-labels for typed judgments. Theorem-grade exclusions (FIII): no total binary operation $*:\mathbb P^2\to\mathbb P$
-decodes judgment status (no total six-symbol algebra); no universal claim that all structure decomposes into the six.
-Directed-cell notation $P_i \leftarrow P_j$ names a typed, individually-audited judgment, never a product.
+## The F-laws used in this paper
 
-## The F-laws used in this paper (one-line formal cores)
+Each law is a statement about quotients and closures that holds whenever its premises do. The third column names the
+premises that must be supplied or constructed before the law applies; the paper never treats those premises as
+consequences of the law.
 
-| law | statement (core) | used in |
+| law | statement (core) | premises to supply; use here |
 | --- | --- | --- |
-| **F23** probability | a readout unresolved on the fiber of $q$ admits a *stable* weight $\Pr_{q,r}(a,v)=m(\lambda(a))(\{h: q(h)=a, r(h)=v\})$ | §5.4 (Born ledger) |
-| **F26/F47** contingency & fine-tuning | no value-law lands on a contingent (moduli) selection; fine-tuning = small selector region | §4.6, §7.3, §8.4 |
-| **F27** conservation | a charge is conserved iff it descends through the orbit quotient (obstruction $=0$) | §4.4, §6.3 (baryon number) |
-| **F34** information loss | $\mathrm{Recoverable}(\sigma,\tau,\rho) \iff \mathcal O_\rho=\{(h,h'):\rho(\tau h)=\rho(\tau h') \wedge \sigma(h)\neq\sigma(h')\}=\varnothing$; loss legitimate iff later identifications are invisible to $\sigma$ | §7.2 |
-| **F37** complementarity | $q_A \perp q_B \iff \nexists (J,j,a,b):\ a\circ j=q_A \wedge b\circ j=q_B$ (no admissible joint quotient) | §5.3, §7.1 |
-| **F39** entropy | $E(q)$ = fiber volume; chain rule $E(q_C)=E(q_F)\odot m$; monotone under coarsening | §5.4 (area ledger) |
-| **F48** gluing/topology | global obstruction as non-trivial gluing class (monopole obstruction $=0$ in the clean branch) | §4.4, §6.3 |
-| **F49** common source | $\mathrm{LocallyExplainable}(\kappa) \iff \mathrm{CommonSource}(\sigma) \vee \mathrm{InterfaceFactorization}(\iota)$; else statused nonlocal residual | §7.1 |
-| **F50** background selection | descended background $b$: **necessary** ($b$ constant) xor **moduli** ($\exists m,m': b(m)\neq b(m')$); **vacuum** iff $V=\{m_*\}$ | §7.3 |
-| **F51** unification | parent $Q_U$ with commuting squares $\pi_A\circ q_U = q_A\circ\iota_A$, $\pi_B\circ q_U = q_B\circ\iota_B$ + status-compatible claim lifts | §4.4, §5.2, §5.4 |
+| **F23** probability | a readout unresolved on the fibers of $q$ receives the stable weight $\Pr_{q,r}(a,v)=m(\lambda(a))(\{h: q(h)=a,\ r(h)=v\})$ | a fiber-supported measure $m$ and stability data (imported, not derived; the Born rule is not derived); Born ledger, Section 5.4 |
+| **F24** role split | role split and refinement descend through the declared quotient | architecture-family names are declared statuses, not an exhaustive physical classification; Section 4.1 |
+| **F26/F47** contingency, fine-tuning | no value law lands on a contingent (moduli) selection; fine-tuning means a small selector region | a declared measure and threshold; Sections 4.6 and 7.3 |
+| **F27** conservation | a charge is conserved iff it descends through the orbit quotient | an actual supplied orbit relation; Section 4.4 |
+| **F34** information loss | $\sigma$ is recoverable from $\rho\circ\tau$ iff $\mathcal O_\rho=\{(h,h'):\rho(\tau h)=\rho(\tau h') \wedge \sigma(h)\neq\sigma(h')\}=\varnothing$, with recovery defined on the image of $\rho\circ\tau$ (or on a surjective declared codomain) | the transport, readout, and source information; Section 7.2 |
+| **F37** complementarity | $q_A\perp q_B$ iff there is no joint quotient $(J,j,a,b)$ in the declared admissible class with $a\circ j=q_A$ and $b\circ j=q_B$ | the admissible joint class; the pairing $(q_A,q_B)$ itself always exists as a map; Section 7.1 |
+| **F39** entropy | $E(q)$ is a fiber volume, with chain rule $E(q_C)=E(q_F)\odot m$, monotone under coarsening | the mixing chain rule, monotonicity of the combination, and the zero/injectivity identification; it does not identify arbitrary physical entropy with fiber volume; area ledger, Section 5.4 |
+| **F48** gluing | a global obstruction is a nontrivial gluing class | an actual gluing class; Section 4.4 |
+| **F49** common source | a correlation table $\kappa$ is locally explainable iff it factors deterministically through a common source fiber, an interface, or a declared direct route (each with its admissibility conditions); a nonlocal residual requires that all of these fail and that the declared locality package fail | the maps, admissible classes, and locality package; deterministic fiber factorization, not a probabilistic Bell theorem; Section 7.1 |
+| **F50** background selection | a descended background $b$ is *necessary* ($b$ constant) or *moduli* ($b(m)\neq b(m')$ for some $m,m'$); it is a *vacuum* iff the admissible set is a single point $\{m_*\}$ | the admissibility criterion; Section 7.3 |
+| **F51** unification | a parent $Q_U$ with commuting squares $\pi_A\circ q_U = q_A\circ\iota_A$ and $\pi_B\circ q_U = q_B\circ\iota_B$, plus status-compatible claim lifts | the parent and the maps; Sections 4.4 and 5.2 |
 
-## Landing modes and audit gates (operational definitions)
+## Grades and audit checks
 
-**Modes.** COMPUTE (value/verdict from the construction); SELECT (choice on declared conditions); PROVE-BLIND
-(invariance theorem ⇒ observed-input); GROUND (condition supplied as down-shadow of a named higher source; carries
-source-warrant + theorem-strength caveats); RECOGNITION (known result reproduced as a law-instance, non-circularly);
-FORBIDDEN-RULE/DEMARCATION (computed exclusion/classification with can-fail control).
+**Grades.** COMPUTE: a value or verdict obtained from the construction. SELECT: a choice made on declared
+conditions. PROVE-BLIND: an invariance theorem showing that a quantity is an observed input. GROUND: a condition
+supplied as the shadow of a named higher source, with its warrant and strength caveats. RECOGNITION: a known result
+reproduced as an instance of a law, non-circularly. FORBIDDEN RULE / DEMARCATION: a computed exclusion or
+classification with a can-fail control.
 
-Intended audit gates; mechanical where implemented. Validator coverage is heterogeneous and carries the exceptions in Appendix B.
-*Anti-tautology* — target not definitionally equal to its evidence;
-*anti-circularity* — each hypothesis independently satisfiable by a conclusion-violating structure (exhibited);
-*frozen-machinery* — imports SHA-256-pinned, no retuning; *can-fail control* — a configuration on which the claim fails;
-*no-overclaim* — artifact text checked against a blocklist; *anti-contamination* (cross-track) — substrate-foreign
-tokens fail the build.
+**Audit checks.** These are intended to be mechanical where implemented; validator coverage varies, with the
+exceptions listed in Appendix B. *Anti-tautology*: the target is not
+definitionally equal to its evidence. *Anti-circularity*: each hypothesis is satisfiable by an exhibited structure
+that violates the conclusion. *Frozen machinery*: imports are pinned by SHA-256 and not retuned.
+*Can-fail control*: a configuration on which the claim fails. *No overclaim*: artifact text is checked
+against a blocklist. *Anti-contamination*: tokens foreign to a track fail its build.
 
-## The key derived quantities of the body
+## Key quantities
 
-- **Embedding ratios** (§4.4): the exact regular-$SU(5)$ construction derives the one-dimensional hypercharge
-   direction and decomposes $\overline{\mathbf5}+\mathbf{10}$. Under the weak-pair convention it gives
-   $\operatorname{Tr}T_3^2=2$, $\operatorname{Tr}Q^2=16/3$, hence $\sin^2\theta_W=3/8$, and $k_Y=5/3$.
-   These are not low-energy predictions; Pati–Salam also gives $3/8$, and the published product-parent $3/23$
-   control is unsupported and withdrawn.
-- **RT/LP duality** (§5.4): for capacities $c_e$, exact strong duality gives
-   $\operatorname{Area}(\min\mathrm{cut})=\operatorname{OPT}_{\rm dual}=\sum_e c_e y_e$. The $y_e$, not the
-   optimum, are the per-edge shadow prices $\partial F^*/\partial c_e$ in a unique-cut chamber.
-- **Monogamy** (§5.4, §6.1): $I_3 \le 0$ for min-cut-realizable entropy vectors; GHZ$_4$ has $I_3 = +\log 2$.
-- **CHSH** (§7.1): local bound $\max_{\lambda\in\{\pm1\}^4} |E_{00}+E_{01}+E_{10}-E_{11}| = 2$ (16-strategy
-   enumeration); Bell state with $a_0=Z, a_1=X, b_{0,1}=(Z\pm X)/\sqrt2$ gives $2\sqrt2$.
-- **Active-cut quotient search** (§6): exact $0/1$ active-cut incidence matrices replace the published Jacobian
-   claim. The historical three-round probe left 13 of 378 weighted carriers unclassified; Version 4 constructs nineteen
-   exact fibers on those carriers and queue-exhausts forward reachability under four directed reductions and bidirectional
-   Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit disjointness and
-   transformations outside those classes remain open.
+- **Embedding ratios** (Section 4.4). The exact
+   regular-$SU(5)$ construction derives the one-dimensional hypercharge direction and decomposes
+   $\overline{\mathbf5}+\mathbf{10}$. Under the weak-pair normalization, $\operatorname{Tr}T_3^2=2$ and
+   $\operatorname{Tr}Q^2=16/3$, so $\sin^2\theta_W=3/8$; also $k_Y=5/3$. These are not low-energy predictions,
+   and Pati–Salam also gives $3/8$.
+- **Min-cut/LP duality** (Section 5.4). For
+   capacities $c_e$, exact strong duality gives
+   $\operatorname{Area}(\min\mathrm{cut})=\operatorname{OPT}_{\rm dual}=\sum_e c_e y_e$. The $y_e$, not the optimum,
+   are the per-edge shadow prices $\partial F^*/\partial c_e$ in a unique-cut chamber.
+- **Monogamy** (Section 5.4). $I_3\le0$ for
+   min-cut-realizable entropy vectors, while GHZ$_4$ has $I_3=+\log2$.
+- **CHSH** (Section 7.1). The local bound
+   $\max_{\lambda\in\{\pm1\}^4}|E_{00}+E_{01}+E_{10}-E_{11}|=2$ is found by enumerating the $16$ strategies; the Bell
+   state with $a_0=Z$, $a_1=X$, $b_{0,1}=(Z\pm X)/\sqrt2$ gives $2\sqrt2$.
+- **Full-readout factorization** (Section 7.2).
+   If $M=LR^{\mathsf T}$ has rank $d$ equal to the bond dimension, every same-size factorization of $M$ is
+   $(LG,RG^{-\mathsf T})$ for a unique $G\in GL(d)$. For normalized rays an overall scalar must also be allowed.
+- **Active-cut quotient search** (Section 6.1). Exact $0/1$
+   active-cut incidence matrices replace finite-difference Jacobians. The three-round probe leaves $13$ of $378$
+   weighted carriers unclassified; on those carriers, $19$ exact pairs have disjoint forward-reachable sets under four
+   directed reductions and bidirectional $\Delta$–Y/Y–$\Delta$, up to exact weighted isomorphism fixing the
+   terminal labels. Symmetric-closure orbit disjointness and other transformations remain open.

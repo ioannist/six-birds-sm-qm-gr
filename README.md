@@ -4,9 +4,11 @@ This repository contains the public support surface for the paper:
 
 > **To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR**
 >
-> DOI: [10.5281/zenodo.22210962](https://doi.org/10.5281/zenodo.22210962)
+> DOI (Version 3): [10.5281/zenodo.23120510](https://doi.org/10.5281/zenodo.23120510)
 >
-> Archived at: https://zenodo.org/records/22210962
+> All versions: [10.5281/zenodo.20713211](https://doi.org/10.5281/zenodo.20713211)
+>
+> Current version: Version 3 (3 October 2026); Version 1: 17 June 2026.
 
 The paper applies the Six Birds emergence calculus to two finite physics tracks:
 Standard Model structural selection and the QM-GR interface. It provides
@@ -43,6 +45,10 @@ grade, universality, or frame-transfer claim is made.
   do not override the current authoritative claims registry at
   `review_2026/CLAIMS_REGISTRY.md`. `review_2026/CLAIMS_MAP.md` records the
   claim-by-claim disposition against the first version of the paper.
+- The mathematics and mechanization review of all 42 registry records, with its
+  independent checks and repairs, under `review_2026/mathematics_audit_20261003/`
+  (reproduce with `run_checks.py`); the general F34 factorization proof and exact
+  certificates are under `review_2026/repairs/f34_exact_factorization/`.
 - Retrodiction and unification card atlases under `retrodiction_atlas/` and
   `unification_atlas/`.
 
@@ -88,8 +94,8 @@ This writes:
   embedded via `.bbl`, an `orcidlink` fallback, and the self-assigned Zenodo
   DOI removed so Qeios mints its own).
 - `qeios_single.pdf` — pre-built PDF.
-- `figures/` — the raster figures, which are not inlinable and must accompany
-  `qeios_single.tex`.
+- `figures/` — any raster figures (the current figures are TikZ and are inlined
+  into `qeios_single.tex`, so this directory is normally empty).
 - `qeios_source_bundle.zip` — upload/archive bundle (single-file deliverables
   plus the full modular source and figures).
 - `Qeios_Submission_Notes.md` — copy/paste submission metadata.
@@ -129,7 +135,7 @@ records the disposition of each claim carried over from the first version.
 
 - `paper/main.tex` - LaTeX entry point.
 - `paper/sections/` and `paper/appendices/` - modular manuscript source.
-- `paper/figures/` - figure assets used by the paper build.
+- `paper/figures/` - TikZ figure sources included by the paper build.
 - `paper/source/` - Markdown mirror of the manuscript.
 - `paper/submission/` - citation, claim, presentation, and submission audits.
 - `physics_atlas/` - construction records, validators, schemas, and diagnostic

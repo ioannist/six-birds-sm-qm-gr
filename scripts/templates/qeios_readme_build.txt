@@ -14,9 +14,8 @@ OPTION A: Single-file build (recommended, no BibTeX needed)
   Two passes are needed for cross-references. No .bib file is required;
   the bibliography is embedded in the .tex file.
 
-  NOTE: the five figures are raster images and are NOT inlined in the .tex.
-  Keep the accompanying `figures/` directory next to `qeios_single.tex`
-  (it ships in this bundle) so the `\includegraphics` calls resolve.
+  NOTE: all figures are TikZ drawings inlined in the .tex; the `figures/`
+  directory is normally empty and is kept only for any future raster figures.
 
 OPTION B: Full modular build
 
@@ -31,7 +30,7 @@ OPTION B: Full modular build
   - `paper/references.bib`
   - `paper/includes/paper_macros.tex`
   - all files under `paper/sections/` and `paper/appendices/`
-  - all images under `paper/figures/`
+  - the TikZ figure sources under `paper/figures/`
   - `paper/latexmkrc` (sets the build dir and produces main_flat.tex)
 
 OPTION C: Generate all Qeios-ready assets
@@ -45,7 +44,7 @@ OPTION C: Generate all Qeios-ready assets
     paper/build/qeios_single/qeios_source_bundle.zip
     paper/build/qeios_single/Qeios_Submission_Notes.md
     paper/build/qeios_single/README_BUILD.txt
-    paper/build/qeios_single/figures/*.png
+    paper/build/qeios_single/figures/  (normally empty)
 
 Files in this bundle
 --------------------

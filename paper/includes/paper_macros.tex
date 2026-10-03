@@ -8,3 +8,24 @@
 \newcommand{\PredictionOne}{Prediction~1}
 \newcommand{\PredictionTwo}{Prediction~2}
 \newcommand{\PredictionThree}{Prediction~3}
+
+% Evidence-type palette used consistently by every figure (colour-blind safe).
+\definecolor{evThm}{HTML}{0072B2}   % theorem (written proof)
+\definecolor{evExact}{HTML}{009E73} % exact finite computation
+\definecolor{evCond}{HTML}{D55E00}  % conditional construction / recognition
+\definecolor{evNum}{HTML}{CC79A7}   % sampled numerics
+\definecolor{evNeg}{HTML}{555555}   % negative result
+\definecolor{evOpen}{HTML}{8A6D00}  % open program
+\tikzset{
+  ev/.style={draw, rounded corners=2pt, line width=0.7pt, align=left, inner sep=3pt,
+    font=\scriptsize, text width=#1},
+  ev/.default={4.55cm},
+  thm/.style={ev, draw=evThm, fill=evThm!12},
+  exact/.style={ev, draw=evExact, fill=evExact!12},
+  cond/.style={ev, draw=evCond, fill=evCond!10},
+  num/.style={ev, draw=evNum, fill=evNum!14},
+  neg/.style={ev, draw=evNeg, fill=evNeg!10},
+  open/.style={ev, draw=evOpen, dashed, fill=white},
+  colhead/.style={font=\small\bfseries, align=center, text width=4.8cm, anchor=south},
+  key/.style={draw, rounded corners=1.5pt, line width=0.7pt, minimum width=0.45cm, minimum height=0.28cm},
+}

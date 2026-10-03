@@ -1,54 +1,58 @@
 # Discussion and outlook
 
-## What the corrections change
+## Methodological lessons
 
-The strongest lesson of the verification campaign is methodological. A finite computation can be exact and still answer
-the wrong typed question: aliases can corrupt a denominator; a branch witness can be mistaken for a structure property;
-a distance can be called a commutator; a null direction can be quotient gauge; or a solver budget can masquerade as an
-existence boundary. Version 4 retains results only after those distinctions are made explicit.
+The strongest lesson of this program is methodological. A finite computation can be exact and still answer the wrong
+question. Aliases can corrupt a denominator. A witness for one branch can be mistaken for a property of a structure. A
+distance between tables can be mistaken for a commutator. A null direction can turn out to be a reparametrization. A
+solver budget can masquerade as an existence boundary. A theorem about raw matrices can be read as one about normalized
+states. Each of these happened in the course of this work, and each result reported here is stated only after the
+relevant distinction has been made explicit.
 
-The positive inventory remains useful. The repaired gauge carrier yields a branch-level selection under declared caps;
-the regular $SU(5)$ frame and its coset are explicit exact objects; the content quotient produces one selected orbit;
-the $N$-copy probe computes real generic ranks; the Boolean access lattice supplies an exact incomparability theorem;
-and the min-cut carrier supplies an exact LP dual certificate plus independent contracted-state evidence. None alone is
-a theory of nature, but each is a reproducible construction with a clear failure condition.
+The positive inventory is nonetheless useful. The gauge carrier yields a branch-level selection under declared caps.
+The regular $SU(5)$ frame and its coset are explicit exact objects. The content quotient produces one selected orbit,
+and the $N$-copy probe computes genuine generic ranks. The Boolean access lattice supplies an exact incomparability
+theorem; the min-cut carrier supplies an exact LP certificate together with independent contracted-state evidence;
+and the toy holographic carrier supplies a general statement of where information loss lives. None of these is a
+theory of nature, but each is a reproducible construction with a clear failure condition.
 
-## Nearest upgrades
+## Nearest next steps
 
-P1's two finite subproblems are completed and retyped: nineteen exact same-graph fibers on the 13 residual carriers have
-disjoint forward-reachability sets under four directed reductions and bidirectional Delta-Y/Y-Delta, while
-symmetric-closure orbit disjointness remains open; six exact finite connected $C2_L1$ joint-map fibers collapse under
-the constructed exact diagonal tensor gauge (Section 6.1). Undeclared graph transformations, other state families and
-conventions, and the broader physical or bulk-geometry interpretation remain open. Two upgrades now dominate. First,
-BMV relevance requires a
-dynamical model deriving record formation, rather than stipulating a measure-and-record channel. Second, the
-record-stability program requires the physical invariant algebra and dynamics: UV-to-residual restriction ranks,
-Grassmann/EOM/syzygy relations, and a persistence criterion for candidate records. Both are specified as a
-preregisterable proposal in `PROPOSAL_DYNAMICAL_RECORD_STABILITY.md` in the repository.
+For P1, the next target is the symmetric closure of the graph moves. The obstruction to the obvious projection
+argument is now located precisely: the interaction of a subdivided Y-leg with a $\Delta$–Y move. Handling that
+interaction is a necessary obligation for any such upgrade, not a sufficient one: an invariant that settles orbit
+disjointness must be preserved by every move in the claimed symmetric closure and must still separate the endpoints. Other
+tensor families and capacity conventions, and the broader physical or bulk-geometric reading, remain open.
 
-Other bounded upgrades remain worthwhile: repair the step43 final-carrier counts; replace F-008 summary-reading
-validators; establish or refute large-bond RT saturation with a rate; widen the representation and scalar windows; and
-generate a physically motivated class of measurement models rather than a two-exemplar taxonomy. A third substrate
-could test whether the vocabulary remains useful, but would not by itself prove universality.
+Two further upgrades dominate. First, relevance to BMV-type experiments requires a dynamical model that derives record
+formation, rather than stipulating a measure-and-record channel. Second, the record-stability program requires the
+physical invariant algebra and its dynamics: UV-to-residual restriction maps and their ranks, nonzero images under the
+vacuum expectation value, Grassmann, equation-of-motion and syzygy relations, and a persistence criterion for candidate
+records.
+
+Smaller upgrades are also worthwhile: rebuilding the historical multi-factor census counts on the final carrier,
+replacing the remaining summary-reading validators, establishing or refuting large-bond saturation of the min-cut bound
+with a rate, widening the representation and scalar windows, and generating a physically motivated class of
+measurement models in place of a two-example taxonomy. A third substrate could test whether the vocabulary stays
+useful, though it would not by itself prove universality.
 
 ## What kind of framework is this?
 
-The calculus as used here is the finite diagnostic subset stated in Section 1: obstruction, quotient,
-construction-audit, and claim governance. The corpus's strict-extension, reclosure, promotion, endogenous-repair, and
-run-level dynamical machinery is not instantiated in this paper, and no substrate-specific continuum bridge is supplied.
-This subset can make hidden quotients and quantifiers visible; it cannot turn an unbuilt physical bridge into a
-prediction.
+As used here, the calculus is the finite diagnostic subset described in the introduction: obstructions, quotients,
+construction audit, and claim bookkeeping. The strict-extension, reclosure, promotion, endogenous-repair, and run-level
+dynamical parts of the Six Birds corpus are not used, and no continuum bridge to a physical substrate is supplied. This
+subset makes hidden quotients and quantifiers visible. It cannot turn an unbuilt physical bridge into a prediction.
 
-Version 4 adds two positive exact objects at that bounded level. The general $C2_L1$ gauge-collapse lemma states that,
-on any fixed connected binary-copy carrier with positive capacities, equal total edge product implies an exact diagonal
-internal-bond intertwiner up to vertex-wise scalars. The graph upgrade attempt also locates the obstruction to its proposed
-series-normal-form projection: the subdivided-Y-leg/Y-Delta interaction. Handling that interaction, or finding an
-invariant that survives it, is the successor construction target for symmetric closure.
+Several of the exact objects sit naturally at this level. The gauge-collapse lemma says that, on any fixed connected
+binary-copy carrier with positive capacities, equal total edge products imply an exact diagonal intertwiner on the
+internal bonds, up to vertex-wise scalars. The full-readout factorization theorem says that, at full rank, a boundary
+matrix determines its interior factors up to exactly the internal gauge. Both are general statements whose
+applicability to a given carrier is checked by exact certificate rather than by sampling.
 
 ## An invitation
 
-The most useful independent attacks are now concrete: regenerate the repaired carrier under a different declared
-quotient; test the P1 fibers under transformations outside the five declared graph classes or under other tensor
-families and capacity conventions; derive a gravitational record channel from dynamics; or compute the restriction and relation
-structure of the record invariant ring. A disagreement with any exported finite table is a direct reproducibility
-failure. A physical result addresses the open program only when the missing carrier-to-physics map is supplied.
+The most useful independent attacks are concrete: regenerate the gauge carrier under a different declared quotient;
+test the P1 pairs under transformations outside the declared move classes, or under other tensor families and capacity
+conventions; derive a gravitational record channel from dynamics; or compute the restriction maps and relations of the
+record invariant ring. A disagreement with any exported finite table is a direct reproducibility failure. A physical
+result bears on an open program only once the missing map from carrier to physics is supplied.

@@ -1,0 +1,17 @@
+{
+  "action": "created new-version draft",
+  "concept_record_id": "20713211",
+  "dashboard_url": "https://zenodo.org/uploads/23120510",
+  "doi": "10.5281/zenodo.23120510",
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23120510",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_id": 23120510,
+  "recorded_at": "2026-10-03T11:56:01+00:00",
+  "source_doi": "10.5281/zenodo.22210962",
+  "source_record_id": 22210962,
+  "source_title": "To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR"
+}

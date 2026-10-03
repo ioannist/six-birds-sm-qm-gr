@@ -1,0 +1,43 @@
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}[node distance=1.6mm]
+% --- column heads
+\node[colhead] (h1) at (0,0) {Standard-Model track\\[-1pt]{\normalfont\scriptsize Section 4}};
+\node[colhead] (h2) at (5.1,0) {QM--GR track\\[-1pt]{\normalfont\scriptsize Section 5}};
+\node[colhead] (h3) at (10.2,0) {Programs \& applications\\[-1pt]{\normalfont\scriptsize Sections 6--7}};
+% --- SM column
+\node[exact, below=2.5mm of h1] (s1) {\textbf{Gauge census.} \(1{,}066\) chiral structures; \(52\) survive three filters (\(419\to24\), \(195\to24\) as orbits).};
+\node[exact, below=of s1] (s2) {\textbf{Branch selection.} Only \(2|3\) admits a clean branch; every clean branch is \(SU(2)\)-active.};
+\node[thm, below=of s2] (s3) {\textbf{Single-factor exclusion.} No stable single-factor \(SU(N)\) is clean (toy theorem).};
+\node[cond, below=of s3] (s4) {\textbf{\(SU(5)\) frame.} Hypercharge forced; \(\sin^2\theta_W=3/8\), \(k_Y=5/3\) under named conventions.};
+\node[exact, below=of s4] (s5) {\textbf{Content and masses.} One content orbit in the template; charged ranks \(14N\), \(N\le4\).};
+\node[neg, below=of s5] (s6) {\textbf{Generations, scales.} No \(N\)-blindness, no selection of \(N=3\); naturalness surface spans \(0\)--\(40.6\%\).};
+% --- QM-GR column
+\node[neg, below=2.5mm of h2] (q1) {\textbf{Route mismatch.} The quantize and curve completions commute exactly.};
+\node[thm, below=of q1] (q2) {\textbf{Access fork.} QM and GR readouts are incomparable; a common refinement carries both.};
+\node[cond, below=of q2] (q3) {\textbf{Field provenance.} \(54\) field-plus-background records realize the fork under stated conditions.};
+\node[exact, below=of q3] (q4) {\textbf{Min-cut duality.} \(\mathrm{Area}=\mathrm{OPT}_{\rm dual}=\sum_e c_e y_e\) with exact certificates.};
+\node[num, below=of q4] (q5) {\textbf{Tensor-network entropies.} \(S\le\) min cut; mean \(S/\text{cut}=0.73,0.90,0.94\) at \(D=2,3,4\).};
+\node[neg, below=of q5] (q6) {\textbf{Linear response; one ledger.} No Einstein match at a nondegenerate point; Born fails min-plus gluing.};
+% --- programs column
+\node[exact, below=2.5mm of h3] (p1) {\textbf{P1, graphs.} \(19\) equal-cut pairs have disjoint forward-reachable sets.};
+\node[thm, below=of p1] (p2) {\textbf{P1, states.} Six equal-data pairs are gauge-equivalent (general lemma).};
+\node[cond, below=of p2] (p3) {\textbf{P2, BMV.} An assumed perfect-record channel is LOCC, hence BMV-null.};
+\node[open, below=of p3] (p4) {\textbf{Open.} Symmetric-closure separation (P1); deriving the record channel (P2); record persistence (P3).};
+\node[thm, below=of p4] (p5) {\textbf{Information loss.} Full raw boundary loses only gauge data; half boundary loses physical data.};
+\node[num, below=of p5] (p6) {\textbf{Cosmological constant.} Fixed points for every sampled background; no in-layer value law.};
+% --- legend
+\coordinate (lg) at ($(s6.south west)+(0,-0.55)$);
+\foreach \sty/\lab [count=\i from 0] in {thm/theorem (written proof), exact/exact finite computation, cond/conditional construction or recognition, num/sampled numerics, neg/negative result, open/open program}{
+  \pgfmathsetmacro{\xx}{mod(\i,3)*5.1}
+  \pgfmathsetmacro{\yy}{-floor(\i/3)*0.45}
+  \node[\sty, key, text width=, inner sep=0pt] (k\i) at ($(lg)+(\xx,\yy)+(0.25,0)$) {};
+  \node[right=1.2mm of k\i, font=\scriptsize, inner sep=0pt] {\lab};
+}
+\end{tikzpicture}
+\caption{\textbf{The results at a glance.} Each box is one statement, colored by the kind of evidence that supports
+it. ``Exact finite computation'' means an exhaustive or exact-arithmetic computation on a declared finite carrier;
+``theorem'' means a written proof whose hypotheses are stated in the text. Every statement holds only on its declared
+carrier and under its stated caps and conventions; none is a claim about nature.}
+\label{fig:overview}
+\end{figure}

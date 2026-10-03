@@ -1,0 +1,145 @@
+{
+  "title": "To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR",
+  "description": "<p>Can one small mathematical vocabulary organize two very different open problems in fundamental physics? We test this with the Six Birds emergence calculus, whose working core is simple: a coarse description is a quotient of a finer one, a quantity either passes through the quotient or leaves a checkable obstruction, and two descriptions may share a common refinement. We apply this vocabulary to two problems: why the Standard Model (SM) has its gauge structure, and how quantum (QM) and gravitational (GR) descriptions relate. Every result lives on an explicitly declared finite model (a finite enumeration, a fixed finite graph, or matrices of fixed size), holds only under the stated caps and conventions, and ships with a public validator.</p>\n<p>On the SM side, a census of 1,066 chiral gauge structures shows that, within the declared windows, only the SU(2)&times;SU(3) family admits a &ldquo;clean&rdquo; breaking branch, and every clean branch breaks the SU(2) factor. Selection is therefore a property of a structure-plus-branch pair, not of a bare gauge group. A separate toy theorem rules out single-factor SU(N) candidates. An exact construction of the regular SU(5) embedding forces the hypercharge direction and reproduces sin<sup>2</sup>&theta;<sub>W</sub> = 3/8 and k<sub>Y</sub> = 5/3. These are standard values. They are recovered under named conventions and do not single out SU(5).</p>\n<p>On the QM&ndash;GR side, an exact theorem shows that the declared QM and GR readouts of an abstract carrier are incomparable: neither is a coarse-graining of the other, although a common refinement carries both. On finite graphs, an exact max-flow/min-cut certificate realizes Area(min cut) = &sum;<sub>e</sub> c<sub>e</sub> y<sub>e</sub> with per-edge shadow prices y<sub>e</sub>, and sampled tensor-network entropies stay below the cut. In a toy holographic carrier, a general linear-algebra theorem shows that the full raw boundary readout loses only internal gauge data, while an exact witness shows that a half-boundary readout loses physical information.</p>\n<p>Three questions are developed as construction programs. For the first, nineteen exact equal-cut graph pairs cannot be joined by forward reduction moves, while six state-level pairs turn out to be gauge-equivalent. The other two concern gravitational record formation and the persistence of records; their finite precursors are, respectively, conditional on an assumed channel and sensitive to how records are defined. Negative results, such as the exact commutation of the natural &ldquo;quantize&rdquo; and &ldquo;curve&rdquo; completions, are reported as results. No claim about nature is made beyond these finite carriers.</p>\n<p><strong>Version 3</strong> follows a mathematics and mechanization review of all 42 claims-registry records: the information-loss result now rests on a general GL(d) factorization theorem with exact rank certificates and an exact partial-readout witness; the tensor gauge-collapse lemma is certified on every connected carrier; several validators were strengthened; and imported statements are scoped precisely. The text was rewritten for readability with new figures; Appendix E of the paper records the version history. Code, artifacts, validators, and the claims registry: <a href=\"https://github.com/ioannist/six-birds-sm-qm-gr\">github.com/ioannist/six-birds-sm-qm-gr</a>.</p>",
+  "publication_date": "2026-10-03",
+  "version": "v3",
+  "keywords": [
+    "Six Birds Theory",
+    "emergence calculus",
+    "finite structural constructions",
+    "Standard Model",
+    "gauge selection",
+    "grand unification",
+    "quantum mechanics",
+    "general relativity",
+    "quantum gravity",
+    "holographic entanglement",
+    "Ryu-Takayanagi formula",
+    "min-cut duality",
+    "BMV experiments",
+    "structural laws"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1103/PhysRevLett.19.1264",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.32.438",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.10.275",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://www.numdam.org/item/AIHPA_1974__20_1_69_0/",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/0370-2693(85)91470-4",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.4310/ATMP.1998.v2.n2.a1",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.96.181602",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.87.046003",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.14.2460",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.71.3743",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/RevModPhys.61.1",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.119.240401",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.119.240402",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysicsPhysiqueFizika.1.195",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.23.880",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1007/978-94-017-0849-4_10",
+      "relation": "cites",
+      "resource_type": "publication-section"
+    },
+    {
+      "identifier": "10.1126/science.177.4047.393",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.4153/CJM-1956-045-5",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.5281/zenodo.19672278",
+      "relation": "cites",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.20124594",
+      "relation": "cites",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.20713187",
+      "relation": "cites",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.18365949",
+      "relation": "cites",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.20712761",
+      "relation": "cites",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/ioannist/six-birds-sm-qm-gr",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Version 3 (3 October 2026). Version 1: 17 June 2026; Version 2: 31 August 2026. Changes are summarized in Appendix E of the paper."
+}

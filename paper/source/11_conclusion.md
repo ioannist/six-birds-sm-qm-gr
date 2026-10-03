@@ -1,26 +1,27 @@
 # Conclusion
 
-Post-publication verification materially narrows this paper. No reviewed unit remains at foundational grade, the three
-forcing predictions are withdrawn or reduced, and several advertised theorems and controls do not survive. The
-route-mismatch completions commute; the original gauge denominator is unsound; record-stability forcing is
-token-definition-sensitive; the generation theorem used surrogate gates; Born and area do not share the tested
-composition law; the linearized-Einstein match fails at an honest base point; and the F50 boundary was a solver artifact.
+We asked whether one small vocabulary of quotients, obstructions, and common refinements can usefully organize two
+very different problems in fundamental physics. On declared finite carriers, it can, and it delivers specific objects.
+These are a conjugation-consistent, branch-level selection of $SU(2)\times SU(3)$; a witness-independent toy theorem
+excluding single-factor candidates; an explicitly constructed $SU(5)$ frame and coset that recover the standard
+unification ratios; a unique content orbit under a named quotient; generic mass ranks for $N=1,\dots,4$; an exact
+incomparability theorem for the QM and GR readouts, with conditional field provenance; a finite-graph min-cut/LP
+duality supported by contracted-state and monogamy controls; and a general theorem locating information loss in a
+toy holographic carrier in the readout rather than the carrier. Every statement carries its caps, conventions, named
+inputs, sample bounds, or depth limits.
 
-What survives is more precise. On declared finite carriers, the work provides a conjugation-consistent branch-typed
-gauge selection, a witness-independent single-factor toy theorem, an explicitly constructed $SU(5)$ frame and coset,
-a unique content orbit under a named quotient, generic mass ranks for materialized $N=1,\ldots,4$, an exact abstract
-partition-incomparability theorem with conditional field provenance, and a corrected finite-graph min-cut/LP-duality
-recognition supported by contracted-state and monogamy controls. Every statement carries its caps, quotient conventions,
-imports, sample bounds, or depth limit.
+The negative results are results in their own right, and they mark what the framework cannot presently claim. The
+quantize and curve completions commute, so this level offers no route-mismatch explanation of why quantum gravity is
+hard. The bounded record-stability census is sensitive to the definition of a record. Born and area ledgers do not share
+the tested composition law. The linearized-Einstein response does not match at an honest nondegenerate point. And the
+generation grammar neither stays blind to $N$ nor selects $N=3$.
 
-The Version-4 graph result gives nineteen exact same-graph fibers whose corresponding endpoint forward-reachability sets
-are disjoint under four directed reductions and bidirectional Delta-Y/Y-Delta, with symmetric-closure orbit disjointness
-open. The state result gives six exact noninjective fibers of the joint complete-cut/state map and the general
-$C2_L1$ gauge-collapse lemma: the six pairs are not inequivalent tensor-network presentations. No physically complete
-bulk gauge relation or bulk-geometry underdetermination theorem is established.
+Of the three construction programs, P1 has two completed finite subproblems. Nineteen exact equal-cut graph pairs have
+disjoint forward-reachable sets, with disjointness under the symmetric closure still open. Six exact state-level pairs
+with identical cut and state data turn out, by a general lemma, to be gauge-equivalent tensor networks. No bulk gauge
+relation or theorem about underdetermined bulk geometry follows. P2 and P3, dynamical gravitational record formation
+and dynamical persistence of records, remain open.
 
-P1's two finite subproblems are completed and retyped at that strength, while symmetric closure and the broader physical
-and bulk interpretation remain open. P2 and P3 remain construction programs: dynamical gravitational record formation and
-dynamical persistence in the scalar-dressed record algebra. The common grammar has not forced their answers. Its
-demonstrated contribution is narrower: it organized two finite construction programs and, under sustained adversarial
-repair, helped expose exactly where their strongest claims failed.
+The common grammar has not forced the answers to these questions. Its demonstrated contribution is narrower and, we
+think, durable: it organized two finite construction programs and, under sustained adversarial scrutiny, showed exactly
+where stronger claims would fail.

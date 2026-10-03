@@ -1,76 +1,91 @@
-# Method: finite audited carriers, adversarial self-correction
+# Method: finite audited carriers
 
-The paper combines exact finite computations with bounded numerical fixed-point and tensor-network probes. The protocol
-aims to expose circularity and representation dependence; it does not turn a finite carrier into evidence about nature.
-Appendix C records both successful self-demotions and defects found only after publication.
+The paper combines exact finite computations with a smaller number of bounded numerical probes (fixed-point solvers
+and sampled tensor networks). The protocol is designed to expose circularity and dependence on arbitrary choices of
+representation. It cannot turn a finite carrier into evidence about nature, and it does not try to.
+Figure 3 summarizes the workflow; Appendix C
+records the constructions it rejected.
 
-## Finite frozen carriers
+> **Figure (drawn in TikZ; see the PDF).** **How each result was produced and checked.** Steps 4–6 can send a construction back to step 3. The
+three defect classes caught this way are described in Section 3.3 and
+Appendix C. Validator strength varies, from full byte-level
+rebuilds to checks of stored summaries (Appendix B); review is internal and
+model-assisted, not journal peer review.
 
-Each construction declares a finite carrier (the repaired $1{,}066$-labelled gauge carrier in Section 4;
-finite tensor-network/graph geometries and mode-grammars in Section 5), and all quantities — obstruction sets,
-factorization defects, entropies, min-cuts, kernels — are computed deterministically on it. Carriers and predicates,
-once built, are intended to be frozen under SHA-256 pins. Appendix B lists exceptions: one historical tautological pin,
-validators that regenerate in place, and summary-reading validators that do not rebuild load-bearing computations.
+## Declared, frozen carriers
 
-Each construction has a validator, but their strength is heterogeneous. The repaired artifacts generally rebuild in
-memory and byte-compare outputs; several historical validators only check stored summaries. Validator pass is necessary,
-never sufficient. The 27-round campaign therefore inspected semantics, regenerated carriers, and added can-fail and
-mutation controls rather than treating the historical validator sweep as certification.
+Each construction begins by declaring a finite carrier: the gauge-structure census of
+Section 4, or the graphs, tensor networks, and
+mode grammars of Section 5.
+Obstruction sets, factorization defects, entropies, min-cuts, and kernels are then computed deterministically on it.
+Carriers, predicates, and imported code are pinned by SHA-256 hashes so that they cannot be retuned after the fact;
+Appendix B lists where this pinning is incomplete.
+
+Every construction has a validator, but validators differ in strength. The strongest rebuild the entire result in
+memory and compare every output byte for byte. Some older ones check stored summaries instead of recomputing them;
+Appendix B lists exactly which. A passing validator is therefore necessary but
+never sufficient. The audit also read the constructions for meaning, regenerated carriers, and added can-fail and
+mutation controls.
+
+Two further kinds of check do not depend on the production code. An independent representation-theory oracle
+enumerates semistandard tableaux and evaluates weight characters with the Weyl denominator, instead of reusing the
+production Littlewood–Richardson routine. It reproduces the dimensions, conjugates, Dynkin indices, and cubic anomalies
+of all fourteen canonical representations, all $368$ ordered triple singlet counts, and every one of the $65$
+distinct singlet queries made by the record census of Section 6.3. Tampering controls
+confirm that the strengthened validators reject forged artifacts even when their summary counts or verdicts are left
+unchanged.
 
 ## Can-fail controls
 
-A claim with no way to come out false is not a result. The principal surviving positive computations listed below have explicit can-fail controls.
+A claim that cannot come out false is not a result. Each principal positive computation is paired with a control:
 
-- the SM selection's “collapse” verdict is paired with a broad-measure landscape control that must *not* collapse
-   (and an order-battery of 204 refinement orders, 0 flips);
-- the QM–GR directed no-go is paired with a *nested* readout for which the reduction must (and does) succeed;
-- the holographic monogamy results are paired with a GHZ state that must (and does) violate them;
-- the historical three-round P1 graph probe is paired with exact active-cut quotient regressions; Version 4 recertifies
-   nineteen exact fibers and queue-exhausts forward reachability under four directed reductions and bidirectional
-   Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism, while symmetric closure and undeclared
-   transformations remain open;
-- the record-stability ablation requires a scalar-dressed regression operator and excludes the spurious spectator-Cartan
-   token; the broader census then produces counterexamples to the former implication.
+- the SM selection's “collapse” verdict is paired with a broad-measure landscape control that must *not*
+   collapse, and with $204$ refinement orders, none of which flips the verdict;
+- the directed QM--GR non-factorization is paired with a *nested* readout for which factorization must, and
+   does, succeed;
+- the holographic monogamy inequalities are paired with a GHZ state that must, and does, violate them;
+- the P1 graph program is paired with exact active-cut quotient regressions;
+- the information-loss theorem is paired with a rank-deficient pair that has the same boundary state but is not
+   gauge-related, showing that its full-rank hypothesis is needed;
+- the record-stability census must count a scalar-dressed regression operator and must exclude a spurious
+   spectator-Cartan token.
 
-## Adversarial self-correction --- in both directions
+## Self-correction in both directions
 
-Over the course of the program the audit gates rejected our own constructions repeatedly. Three classes of defect were
-caught and killed (full post-mortems in Appendix C):
+Over the course of the program the checks rejected our own constructions many times. The defects fell into three
+classes (full accounts in Appendix C):
 
-1. **Tautologies** — a “coincidence” that is an identity. *Example:* an early area–entropy “match” computed the von
+1. **Tautologies**, where a “coincidence” is an identity. An early area--entropy “match” computed the von
    Neumann entropy from the Schmidt spectrum on one side and the Shannon entropy of the squared singular values on the
-   other — the same number twice, machine-$\epsilon$ residual. Rejected; the accepted version (§5.4) uses the
-   *geometric* min-cut, which is provably independent of the state spectrum (it is invariant under reseeding the state
-   while the entropy moves).
-1. **Circularities / hardcoding.** Rejected; the surviving §5.4 evidence computes MMI on contracted states and applies the same entropy pipeline to a GHZ can-fail control. It supports only a shared inequality class, not a forcing or shared Born–area ledger.
-1. **Rigging toward a desired verdict — in either direction.** The decisive case is the former Prediction 1 (§6.1),
-   which took several attempts: one rigged *toward* the positive verdict (a bespoke graph with the invisible mode built in by hand);
-   one rigged *toward* the deflationary verdict (a hardcoded “genuine dimension $=0$” plus a scoring filter chosen to
-   dismiss the answer); one inflated by a **degeneracy artifact** (a one-sided finite-difference Jacobian taken at a
-   maximally tied uniform-weight point, where the apparent kernel is first-order visible — residuals scaling linearly
-   with step size betrayed it). All three were rejected. A later exact quotient analysis also showed that every published
-   null direction was local-reduction gauge. The later exact program starts from the thirteen historical residual carriers,
-   constructs nineteen fibers, and queue-exhausts their forward reachability under four directed reductions and
-   bidirectional Delta-Y/Y-Delta modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
-   disjointness and transformations outside those classes remain open.
+   other: the same number twice, agreeing to machine precision. The accepted version
+   (Section 5.4) uses the geometric min-cut, which does not
+   depend on the state: it stays fixed under reseeding while the entropy moves.
+1. **Circularity and hardcoding**, where a load-bearing clause does no work, for example a compatibility flag
+   that was constantly true. The surviving evidence in Section 5.4
+   computes mutual-information inequalities on contracted states and runs the same pipeline on a GHZ control.
+1. **Rigging toward a verdict, in either direction.** The entanglement--geometry program
+   (Section 6.1) needed several attempts. One was rigged toward the
+   positive verdict (a hand-built graph with the “invisible mode” built in). One was rigged toward the negative verdict
+   (a dimension hardcoded to zero, plus a scoring filter chosen to dismiss the answer). One was inflated by a degeneracy:
+   a one-sided finite-difference Jacobian at a maximally tied point, betrayed by residuals that scaled linearly with
+   step size. All three were rejected. An exact quotient analysis then showed that every null direction of the naive
+   probe was a reparametrization, which is what led to the exact program of Section 6.1.
 
-We call the intended discipline **symmetric scrutiny**. The post-publication record shows why the aspiration must be
-distinguished from success: the three prediction forcings did not survive the completed campaign. Appendix C retains the
-failed attempts rather than rewriting them as if the corrections had been present from the start.
+We call this discipline **symmetric scrutiny**: deflationary conclusions are checked as hard as positive ones.
+Appendix C keeps the rejected attempts on record rather than
+presenting the final constructions as if they had been there from the start.
 
-## Adversarial review and the anti-contamination guard
+## Review and separation of the two tracks
 
-The earlier external sequence did not settle the results: it ended v7 approve-with-changes, v8 still-needs-work, and v9
-unanswered. The present campaign comprises 27 adversarial rounds and 20 repairs/probes, culminating in the certified
-claims map used by Version 2. It is an extensive internal/adversarial audit record, not peer review or independent
-replication.
+Every load-bearing claim went through an adversarial review workflow. One agent reproduced each review finding,
+a separate read-only reviewer assessed the constructions, and changes were committed only through a gate. The outcome
+is a claims registry, `review_2026/CLAIMS_REGISTRY.md`, which records for each claim its status, evidence
+type, controlling source, and validator, and which this paper follows at each claim site. A separate mathematics review
+re-examined all $42$ registry records. This is an extensive internal and model-assisted audit record. It is not
+journal peer review or independent replication.
 
-Finally, because a cross-track comparison is meaningful only if the constructions are not copied wholesale, the program ran
-under an explicit **anti-contamination guard**: the two substrates were declared structurally different at the outset
-(a selection/measure layer vs a co-sourcing common refinement), every SM-track step was validated against importing
-co-sourcing structure (build validators fail on field-carrier tokens), and steps that pattern-matched one substrate
-onto the other were rejected. Whatever machinery the two tracks share, they share because the *laws* are layer-agnostic
-— not because the constructions were allowed to copy each other. This guard is procedural self-report, not independent
-blinding, and it does not establish universality.
-
-![**Audit pipeline (protocol).** *One-panel schematic: declare carrier $\to$ freeze (SHA-256) $\to$ construct $\to$ validator recomputes $\to$ can-fail control $\to$ independent re-derivation $\to$ (for reviewed construction results) adversarial review. Side channel: the rejection loop, with the three defect classes of §3.3 feeding back.*](figures/fig_f0_audit_pipeline.png)
+A comparison between the tracks is meaningful only if neither construction was copied from the other. The program
+therefore ran under an **anti-contamination guard**. The two substrates were typed differently from the outset
+(a selection layer for the SM, a common refinement for QM–GR). SM-track validators fail if field-carrier tokens from the
+other track appear, and steps that pattern-matched one substrate onto the other were rejected. This guard is
+procedural self-report, not independent blinding, and it does not establish universality.

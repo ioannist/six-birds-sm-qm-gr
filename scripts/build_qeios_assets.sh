@@ -36,7 +36,7 @@ flat_tex = flat_tex.replace(r"\usepackage{orcidlink}", orcid_fallback)
 # Drop the self-assigned preprint (Zenodo) DOI from the first-page footer;
 # Qeios mints its own DOI on acceptance. This targets only the footer string
 # (the Zenodo DOIs inside the bibliography are different numbers and are kept).
-flat_tex = flat_tex.replace(r" \quad \doi{10.5281/zenodo.22210962}", "")
+flat_tex = flat_tex.replace(r" \quad \doi{10.5281/zenodo.23120510}", "")
 
 # If the flattened source still references the external .bib (i.e. it was NOT
 # produced with `latexpand --expand-bbl`), embed the .bbl so the single file is
@@ -50,10 +50,12 @@ flat_tex = flat_tex.replace(
 Path("paper/build/qeios_single/qeios_single.tex").write_text(flat_tex)
 PY
 
-# The figures are raster PNGs (not inlinable TeX), so the single-file build
-# still needs them next to qeios_single.tex.
+# Figures are TikZ sources inlined by latexpand. Any raster figures that may be
+# added later still need to sit next to qeios_single.tex.
 mkdir -p "$QEIOS_BUILD_DIR/figures"
-cp "$PAPER_DIR"/figures/*.png "$QEIOS_BUILD_DIR/figures/"
+if compgen -G "$PAPER_DIR/figures/*.png" > /dev/null; then
+  cp "$PAPER_DIR"/figures/*.png "$QEIOS_BUILD_DIR/figures/"
+fi
 
 cp "$QEIOS_NOTES_SRC" "$QEIOS_NOTES"
 cp "$QEIOS_README_SRC" "$QEIOS_README"

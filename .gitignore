@@ -3,6 +3,12 @@ __pycache__/
 .DS_Store
 conversation_history/
 .env
+# Credentials and keys (defensive; none are expected in this repository).
+.env.*
+*.pem
+*.key
+*.p12
+.netrc
 
 # Local tool/process state; not part of public release artifacts.
 .codex/

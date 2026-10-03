@@ -1,0 +1,43 @@
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}[
+  lab/.style={font=\scriptsize, align=left},
+  fam/.style={draw=black!60, rounded corners=2pt, fill=black!4, font=\scriptsize, align=flush center, text width=2.45cm, minimum height=0.75cm},
+  cleanb/.style={draw=evExact, fill=evExact!14, rounded corners=2pt, font=\scriptsize, align=flush center, text width=3.3cm, minimum height=0.55cm},
+  breakb/.style={draw=evCond, fill=evCond!10, rounded corners=2pt, font=\scriptsize, align=flush center, text width=3.3cm, minimum height=0.55cm},
+  >={Stealth[length=1.8mm]}]
+% ---------- panel (a): census bars, each normalised to its own denominator
+\node[font=\small\bfseries, anchor=west] at (-0.1,3.35) {(a) What the three filters exclude};
+\def\W{5.0}
+\foreach \y/\name/\tot/\surv/\frac in {2.5/labelled/{1{,}066\to84\to62}/52/0.0488, 1.6/declared orbits/{419\to37\to27}/24/0.0573, 0.7/primitive charges/{195\to37\to27}/24/0.1231}{
+  \node[lab, anchor=east] at (1.75,\y) {\name};
+  \fill[black!12] (1.9,\y-0.2) rectangle ++(\W,0.4);
+  \fill[evExact] (1.9,\y-0.2) rectangle ++({\frac*\W},0.4);
+  \draw[black!40] (1.9,\y-0.2) rectangle ++(\W,0.4);
+  \node[lab, anchor=west, text=black!70] at ({1.9+\frac*\W+0.08},\y) {\(\tot\to\surv\)};
+}
+\node[lab, anchor=north west, text width=7.2cm] at (-0.1,0.3) {Each bar is one counting convention, scaled to its own
+denominator; the green part survives. Percentages are tied to these exact denominators.};
+% ---------- panel (b): branch typing
+\begin{scope}[xshift=7.7cm]
+\node[font=\small\bfseries, anchor=west] at (-0.1,3.35) {(b) Clean separation types branches};
+\node[fam] (f23) at (1.35,2.3) {\(2|3\) structures\\\(SU(2)\times SU(3)\)};
+\node[cleanb, right=6mm of f23, yshift=4.6mm] (c1) {clean branches (all \(SU(2)\)-active)};
+\node[breakb, right=6mm of f23, yshift=-4.6mm] (b1) {breaking branches (every \(2|3\) structure has one)};
+\draw[->] (f23.east) -- (c1.west); \draw[->] (f23.east) -- (b1.west);
+\node[fam] (f4) at (1.35,0.95) {structures with\\an \(SU(4)\) factor};
+\node[breakb, right=6mm of f4] (b2) {every branch breaking};
+\draw[->] (f4) -- (b2);
+\node[fam] (fo) at (1.35,-0.15) {all other\\families};
+\node[breakb, right=6mm of fo] (b3) {no clean branch};
+\draw[->] (fo) -- (b3);
+\end{scope}
+\end{tikzpicture}
+\caption{\textbf{The Standard-Model census.} (a) Within the declared windows, three successive filters (atomic packaging,
+closure consistency, chirality-faithfulness) remove most candidate structures under each of three counting
+conventions. (b) A branch is a structure together with a choice of
+breaking scalar (or scalar pair). Clean branches exist only for \(2|3\) and always act on the \(SU(2)\) factor, but
+every \(2|3\) structure also has breaking branches. The selection is therefore existential over branches, not a
+property of the bare gauge structure.}
+\label{fig:sm}
+\end{figure}

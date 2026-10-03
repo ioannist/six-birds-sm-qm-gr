@@ -1,130 +1,154 @@
-# Construction programs from the three published predictions
+# Three construction programs
 
-Version 1 presented three predictions as forced and falsifiable. Post-publication verification showed that none was forced by
-the published machinery. This section retracts that headline and separates reproducible finite statements from three
-construction programs; P1's two finite subproblems are completed and retyped in Version 4, while their broader questions
-remain open. Falsifiability language is retained only for a
-specified finite model or conditional
-channel; it is not transferred to nature where the required bridge has not been built.
+Three questions arise naturally from the framework as candidate predictions:
+- **P1**: can identical entanglement (min-cut) data hide physically different geometries?
+- **P2**: must gravity act as a classical record channel, so that it cannot entangle two masses?
+- **P3**: does the stability of records force the absence of proton-decay and monopole mediators?
 
-## The entanglement--geometry question (finite subproblems completed; retyped in Version 4)
+None of the three is forced by the machinery built here. Each is therefore developed as a *construction
+program*, which separates reproducible finite statements from what remains to be built. P1 has two finite subproblems,
+both completed below; its broader question remains open. Falsifiability language is used only for a specified finite
+model or a conditional channel, never for nature when the bridge to nature has not been built.
 
-The published carrier had fourteen edge capacities: eight terminal leaves and three bivalent two-edge bridges. Its
-11,049-component min-cut fingerprint had raw Jacobian rank nine and nullity five. Exact series/parallel reduction shows
-that all six bridge capacities enter only through
+## P1: entanglement and geometry
+
+**Where the question starts.** The first carrier had fourteen edge capacities: eight terminal leaves and three
+two-edge bridges. Its $11{,}049$-component min-cut fingerprint had a numerical Jacobian of rank nine, leaving five
+apparently invisible directions. Exact series–parallel reduction explains all five. The six bridge capacities enter
+only through
 $$
-K=\sum_{i=1}^{3}\min(w_{LM_i},w_{M_iR}).
+K=\sum_{i=1}^{3}\min(w_{LM_i},w_{M_iR}),
 $$
-The nine effective coordinates—eight leaves and $K$—have rank nine and nullity zero on all three published seeds.
-Thus the published kernel is parameterization redundancy, not evidence that physically distinct geometries share one
-fingerprint.
+and the nine effective coordinates (eight leaves and $K$) have full rank nine on all three seeds. The apparent kernel
+was a redundancy of the parametrization, not evidence that different geometries share one fingerprint.
 
-The repaired graph probe replaces finite differences by the exact active-cut incidence matrix. For each boundary region
-it enumerates the unique minimizing cut, records its margin, and computes rational rank. Five exact local reduction
-classes are then applied: saturated-terminal/zero-column contraction; inseparable-vertex contraction with parallel sums;
-series reduction; exact two-terminal module replacement; and exact $\Delta$–Y/Y–$\Delta$ replacement. The fifth
-move is accepted only when complete re-enumeration preserves every rational boundary cut value and continued uniqueness.
+**An exact search.** The exact probe replaces finite differences by the exact active-cut incidence matrix: for
+each boundary region it enumerates the unique minimizing cut, records its margin, and computes the rank in rational
+arithmetic. Five exact local reduction classes are then applied: contraction of saturated terminals and zero columns;
+contraction of inseparable vertices with parallel sums; series reduction; replacement of an exact two-terminal module;
+and $\Delta$–Y/Y–$\Delta$ replacement. The last move is accepted only if complete re-enumeration preserves every
+rational boundary cut value and the uniqueness of every minimizer. Among $378$ weighted carriers, under a declared
+three-round $\Delta$–Y search, $365$ reduce to full rank. Thirteen remain, with residual-deficiency histogram
+$1^8,\,2^4,\,3^1$. Two candidate “sixth moves” (a transportation redistribution on a $K_{2,3}$ four-cycle and an
+opposite-perfect-matching redistribution on $K_4$) explain none of the thirteen survivors. This does not prove that
+the survivors are irreducible: exact graph quotients have not been exhausted, and the two candidate moves are only
+diagnostics (`review_2026/probes/p1_kernel_quotient/`). The census itself is falsifiable by re-enumeration:
+a different rank, cut value, uniqueness result, or reduction path would refute it. Two routes then push the question
+further, with artifacts and byte-comparing validators under `open_programs/`.
 
-Within 378 weighted carriers and the declared **three-round** $\Delta$–Y/Y–$\Delta$ presentation search,
-365 reduce to full rank. Thirteen remain, with residual-deficiency histogram
-$$
-1^8,\qquad 2^4,\qquad 3^1.
-$$
-The named $K_{2,3}$ carrier retains a one-dimensional kernel after the five classes; all 62 cut values and unique
-minimizers survive its accepted moves. Two equal-coefficient candidate sixth directions—a $K_{2,3}$ four-cycle
-transportation redistribution and a $K_4$ opposite-perfect-matching redistribution—explain none of the selected
-thirteen survivors. This does *not* prove irreducibility: exact graph quotients are not exhausted, and the two
-sixth-move ansätze are only diagnostics. Artifacts and the byte-comparing validator are in
-`review_2026/probes/p1_kernel_quotient/`.
+**Route 1: graph level.** The established statement is:
 
-The finite census is directly falsifiable by re-enumeration: a different rank, cut value, uniqueness result, or named
-reduction path would refute it. The former physical prediction is not established. Version 2 left two open routes;
-both were executed after publication of Version 2, with reviewer-certified artifacts and byte-comparing validators
-under `open_programs/` in the repository.
+> On $13$ fixed exact-rational graph topologies, $19$ kernel directions give nondegenerate intervals of positive
+> capacities with identical complete terminal min-cut fingerprints and unique active minimizers. The selected endpoints
+> have different weights and are not related by any weighted automorphism that fixes the terminal labels. For each of the
+> $19$ base/perturbed pairs, a queue-exhaustive forward search, using four directed reduction rules and
+> $\Delta$–Y/Y–$\Delta$ in both directions, finds the two sets of reachable presentations disjoint. The search
+> admits only intermediate presentations with the same complete fingerprint and unique active minimizers, and it
+> identifies presentations up to exact weighted isomorphism fixing the terminal labels.
 
-*Route 1 (graph level) — corrected typing.* Version 3's orbit typing was corrected by the external review. The
-certified statement is:
+This establishes disjointness of *forward* reachability only. It says nothing about orbits under the symmetric
+closure of the moves, about completeness of the move set, or about irreducibility. Indeed, an exact inverse-series
+witness shows that the symmetric closure is strictly larger than the computed forward sets. Series removal has a unique
+normal form on admissible subdivisions of the $13$ pinned series-reduced carriers, but an exact counterexample, a
+subdivided leg of a Y interacting with a $\Delta$–Y move, refutes the projection lemma that would have extended the
+result to the symmetric closure. That counterexample neither connects nor separates any of the $19$ pairs. Orbit
+disjointness under the symmetric closure therefore remains open, as do transformations that are inverse,
+context-dependent, nonlocal, or pass through degenerate intermediates.
 
-> On 13 fixed exact-rational graph topologies, 19 kernel directions yield nondegenerate positive-capacity intervals with
-> identical complete terminal min-cut fingerprints and unique active minimizers. Selected endpoints have different weights
-> and are not related by terminal-label-fixed weighted automorphism. For each of the 19 corresponding base/perturbed pairs,
-> a queue-exhaustive forward search under four directed reduction rules and bidirectional Delta-Y/Y-Delta finds the two
-> reachability sets disjoint. The search admits only intermediate presentations with the unchanged complete fingerprint and
-> unique active minimizers and canonicalizes them modulo terminal-label-fixed exact weighted isomorphism. This establishes
-> forward-reachability disjointness only; it establishes no symmetric-closure, completeness, or gauge-irreducibility claim.
->
-> An exact inverse-series witness proves that the symmetric closure is strictly larger than the computed forward sets.
-> Series removal has a unique normal form on admissible homeomorphic subdivisions of the 13 pinned series-reduced carriers.
-> However, an exact subdivided-Y-leg counterexample refutes the attempted series/Delta-Y projection lemma. It neither
-> connects nor separates any certified endpoint pair; symmetric-closure orbit disjointness remains open.
-> Kalman-Krauthgamer exclude only universal local degree-k>3 star-to-clique rules, not undeclared, inverse,
-> context-dependent, nonlocal, or degenerate-intermediate transformations.
+**Route 2: state level.** The second route asks whether two tensor networks with the same graph and the same
+cut data can produce different boundary states. A finite engine computes the states exactly. Six exact-algebraic pairs
+were constructed on the same graph, each with identical complete cut values and identical boundary state: the joint
+map from capacities to (cut data, state) is not injective. The question is then whether such pairs are genuinely
+different presentations or merely gauge copies. Cut-preserving $\Delta$–Y moves are not state gauge, since one can
+preserve every cut value while changing the state. But a diagonal intertwiner on the internal bonds can be constructed
+explicitly, and it meets the declared admission criterion for tensor-presentation gauge. The general statement is:
 
-*Route 2 (state level) — joint-map fibers and exact gauge collapse.* Steps 1–5 built the explicit entropy engine,
-found the initial convention-scoped splits, located the connected-copy product symmetry, constructed six exact-algebraic
-finite continuations, and classified them under a frozen capacity-label-preserving relation. Cut-preserving
-$\Delta$–Y moves remain excluded from state gauge by the exact countercheck that such a move can preserve every cut
-value while changing the copy product. The external review then constructed a diagonal internal-bond intertwiner. That
-construction met the declaration's own admission criterion for tensor-presentation gauge and forced the Step-6 retyping:
+> **Gauge-collapse lemma.** On any fixed, nonempty, connected binary-copy `C2_L1` carrier with positive
+> capacities, the normalized boundary state depends on the capacities only through the product of all edge capacities.
+> Any two assignments with the same product are related by an exact diagonal internal-bond intertwiner, up to
+> vertex-wise scalars.
 
-> On any fixed connected binary-copy `C2_L1` carrier with positive capacities, the normalized boundary state
-> depends only on the total edge-capacity product, and any two equal-product assignments admit an exact diagonal
-> internal-bond intertwiner up to vertex-wise scalars. The six constructed positive-algebraic same-graph pairs are exact
-> noninjective fibers of the joint complete-cut/state map and exact instances of this gauge-collapse lemma. They are
-> therefore not inequivalent tensor-network presentations. Their exact $I(c)$ separation survives only for the frozen
-> capacity-label-preserving decorated-carrier relation; the literal Step-5 classification remains correct under that
-> stipulation, while Step 6 retypes the tensor presentations after constructing the previously missing intertwiner. No
-> physically complete bulk gauge relation or bulk-geometry underdetermination theorem is established.
+The proof is an incidence-image argument. Because every vertex tensor copies its bit to all incident edges, a
+connected carrier supports only the all-zero and all-one internal assignments, so the normalized state depends only on
+the total product. For the intertwiner, the exponents of the internal-bond gauge must solve a linear system whose matrix is
+the oriented vertex–edge incidence map and whose target vector is indexed by vertices. On a connected graph, the image
+of that map consists exactly of the vertex vectors whose components sum to zero, and equal products make the target sum
+to zero. Connectedness is essential, since on a
+disconnected carrier a single global product does not control the separate components, and the certificate builder
+rejects such inputs. Carriers with zero or one edge are covered trivially (with one edge, equal products force equal
+capacities). The six constructed pairs are exact instances of the lemma, and exact regressions cover every connected
+labelled simple graph on up to four vertices ($44$ graphs) with orientation controls. The pairs are therefore exact
+non-injective fibers of the joint map but *not* inequivalent tensor-network presentations. Their separation by an
+exact invariant $I(c)$ survives only under a stricter relation that also preserves capacity labels. No physically
+complete bulk gauge relation and no theorem about underdetermination of bulk geometry is established.
 
-## BMV (conditional statement)
+## P2: does gravity have to be a classical record channel?
 
-The finite quantum-information calculation is correct under its explicit premise. If the gravitational mediator is
-assumed to be a perfect classical-record channel—measure a geometry-visible label, store it in orthogonal records,
-and condition local responses only on that label—then the induced two-mass channel is LOCC. Exact density-matrix
-calculation gives zero negativity and no CHSH violation, while a coherent-control channel entangles. This is a standard
-conditional consequence of the assumed channel.
+Proposed tabletop experiments test whether gravity can entangle two masses [@Bose2017; @MarlettoVedral2017]. The
+finite calculation here is correct under an explicit premise. Suppose the gravitational mediator is a perfect classical
+record channel: it measures a geometry-visible label, stores it in orthogonal records, and conditions local responses
+only on that label. Then the induced two-mass channel is LOCC. Exact density-matrix calculation gives zero negativity
+and no CHSH violation, while a coherent-control channel does entangle. This is a standard conditional consequence of the
+assumed channel.
 
-What fails is the forcing step. The access tuple and narrow fused-route no-go do not derive a record channel. A
-geometry-diagonal coherent countermodel preserves the declared visible information while retaining phase coherence, and
-the historical “mean-field guard” was only a six-token source grep. Therefore the claimed prohibition on
-gravitationally mediated entanglement and the corresponding BMV-null forcing [@Bose2017; @MarlettoVedral2017]
-are retracted.
+What is missing is the step that would force the premise. Neither the access structure of
+Section 5.2 nor the narrow fused-route statement derives a record channel. A
+geometry-diagonal coherent countermodel preserves the declared visible information while retaining phase coherence,
+and no mean-field guard stronger than a token-level check has been built. No prohibition on gravitationally mediated
+entanglement, and no forced null result for such experiments, is therefore claimed.
 
-Within the assumed perfect-record model, a nonzero entanglement output would falsify the implementation or the channel
-assumption. A positive physical BMV observation would rule out that channel as a model of the experiment, but would not
-falsify a derivation that this paper does not possess. The open task is dynamical: derive, or fail to derive, record
-formation and decoherence from an explicit gravitational interaction without stipulating orthogonal records.
+Within the assumed model, nonzero entanglement would falsify the implementation or the channel assumption. A positive
+experimental observation would rule out that channel as a model of the experiment, but it would not falsify a
+derivation, because this paper contains none. The open task is dynamical: derive, or fail to derive, record formation
+and decoherence from an explicit gravitational interaction without stipulating orthogonal records.
 
-## Record stability (open program)
+## P3: record stability
 
-The published implication from record stability to absence of proton-decay and monopole mediators had two successive
-problems. Its original table treated $\Delta_{\mathrm{fact}}$-undefined rows as breaking. A full-carrier repair evaluated
-the defect wherever confinement made it defined and recovered a conditional implication under a restricted record-token
-grammar. But branch-complete ablations then showed that the implication changes when the token census changes.
+The question is whether requiring stable records forces a clean branch, and with it the absence of proton-decay and
+monopole mediators. The record predicate $\mathrm{RS}(C,\phi)$ on a branch is a conjunction of persistence,
+distinguishability, and a capacity condition: at least $\theta$ record tokens of the declared kind. The reference
+threshold is $\theta=2$, and $\theta=1,\dots,4$ are reported as sensitivity checks. The comparisons below are made
+on the $12$ admissible singleton branches, which lie over $8$ of the $52$ structures; the two-scalar branches are not
+part of this census. The answer depends on what counts as a record. Under a restricted record-token grammar, built
+from a chosen set of meson and epsilon generators, the implication holds nonvacuously for $\theta=2,3,4$ (four clean
+branches satisfy $\mathrm{RS}$, no breaking branch does) and fails at $\theta=1$. Branch-complete ablations then
+show that the implication changes when the token census changes.
 
-The most inclusive certified probe enumerates residual-invariant candidate operators within a declared bound: fermion
-arity $2$ through $4$, enough to cover the largest residual epsilon arity plus one; scalar or VEV dressings
-$\phi,\phi^\dagger$ up to two insertions; and at most six total constituents. It requires exact singlet multiplicity
-under every unbroken residual factor and neutrality under the scalar-stabilizer-derived residual $U(1)$. In particular,
-the regression operator $\epsilon(o_{2c0},o_{3c0})$, with UV lift
-$\epsilon\,o_2o_3\phi^\dagger$ and charges $-2+4-2=0$, must be counted; the earlier spectator-Cartan token must not.
+The most inclusive probe enumerates candidate invariant operators within a declared bound: fermion arity $2$ to $4$
+(enough to cover the largest residual epsilon arity plus one), at most two scalar insertions $\phi$ or
+$\phi^\dagger$, and at most six constituents in total. A candidate is admitted only if two separately computed gates
+pass: exact singlet multiplicity under every UV factor and every unbroken residual factor, and zero charge under both
+the UV $U(1)$ and the residual $U(1)$ derived from the scalar's stabilizer. The census must, for example, count the
+regression candidate $\epsilon(o_{2c0},o_{3c0})$, whose candidate UV channel is $\epsilon\,o_2o_3\phi^\dagger$ with
+charges $-2+4-2=0$, and must exclude a spectator-Cartan token.
 
-With scalar-dressed candidates admitted uniformly on clean and breaking branches, all three readings—pointwise
-$RS(C,\phi)\Rightarrow\mathrm{Clean}(C,\phi)$, structure-universal, and structure-existential—have counterexamples
-at the declared thresholds. Excluding dressed candidates can restore the implication, so the result is
-**token-definition-sensitive**. The enumerated monomials are not physical-state counts: no Grassmann/EOM/syzygy
-quotient and no UV-to-residual restriction rank was computed. See
-`review_2026/repairs/s6_record_grammar_ablation/`.
+Under this complete bounded census, at $\theta=2$, all three readings of the implication fail: pointwise
+($\mathrm{RS}(C,\phi)\Rightarrow\mathrm{Clean}(C,\phi)$), universal over a structure's branches, and existential over
+them. They fail both with and without scalar-dressed candidates; the existential failures are the four
+$SU(4)$-only structures, which have selected breaking branches and no clean branch. The same failures occur at
+every tested threshold $\theta=1,\dots,4$. Among the tested definitions, the implication holds only under the
+restricted generator grammar, and there only for $\theta\ge2$. The result is therefore **token-definition-sensitive**, and the completeness of
+the undressed token definition matters as much as the treatment of dressing.
 
-Consequently, no result here presently excludes proton decay or monopoles, and an observation of either is not
-a falsifier of a theorem established here. The sharply posed open program is to define records dynamically and test
-which invariant candidates persist under the branch's actual evolution. Only such a persistence criterion could turn
-the algebraic census into a physical statement.
+These are counts of candidate channels, not of physical operators. For each candidate, the channel count is the
+smaller of the separately computed UV and residual singlet dimensions; this is only an upper bound on the rank of a
+UV-to-residual restriction map. No such restriction map, nonzero image under the vacuum expectation value,
+Grassmann or equation-of-motion quotient, or independent invariant-operator basis has been constructed. The census
+contains $556$ candidate lifts, which give $404$ candidate labels once lifts with the same residual component
+multiset and channel index, differing only by insertions of the same branch VEV, are identified by declaration. That
+identification is a counting convention, not a certified equality of operators or of VEV images
+(`review_2026/repairs/s6_record_grammar_ablation/`).
+
+Consequently, no result here excludes proton decay or monopoles, and observing either would not falsify a theorem
+established here. The open program is to define records dynamically and to test which invariant candidates actually
+persist under a branch's evolution. Only such a persistence criterion could turn the algebraic census into a physical
+statement.
 
 ## Status summary
 
-| former prediction | Version-4 status | surviving statement |
+| program | status | established statement |
 | --- | --- | --- |
-| entanglement $\ne$ geometry | finite subproblems retyped | 19 exact same-graph fibers have disjoint forward-reachability sets under four directed reductions and bidirectional Delta-Y/Y-Delta; symmetric-closure orbit disjointness remains open. Six exact joint complete-cut/state-map fibers collapse under the exact diagonal tensor gauge; no bulk-geometry theorem |
-| BMV-null | forcing retracted | perfect-record channel is LOCC and BMV-null; derivation of that channel is open |
-| record-stability forcing | forcing retracted | bounded candidate census is token-definition-sensitive; dynamical record persistence is open |
+| P1, graphs | finite subproblem completed | $19$ exact equal-cut pairs have disjoint forward-reachable sets; symmetric-closure orbit disjointness open |
+| P1, states | finite subproblem completed | six exact joint-map fibers; all gauge-equivalent by the general `C2_L1` lemma; no bulk-geometry theorem |
+| P2, BMV | conditional; forcing open | an assumed perfect-record channel is LOCC and entanglement-null; deriving the channel is open |
+| P3, records | open | on the $12$ singleton branches at $\theta=2$, the bounded candidate census is token-definition-sensitive; dynamical persistence is open |

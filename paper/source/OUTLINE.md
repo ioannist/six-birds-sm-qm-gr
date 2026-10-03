@@ -1,32 +1,25 @@
-# Version-4 paper outline
+# Paper outline (Version 3)
 
-This outline mirrors the corrected architecture. The authoritative prose is `paper/main.tex` plus the modular files in
-`paper/sections/` and `paper/appendices/`; current claim strength is governed by `review_2026/CLAIMS_REGISTRY.md`, with
-the Version-4 P1 retypings controlled by the certified PROG3 and PROG2 closure statements under `open_programs/`.
+The authoritative prose is `paper/main.tex` plus the modular files in `paper/sections/` and `paper/appendices/`;
+current claim strength is governed by `review_2026/CLAIMS_REGISTRY.md` and the mathematics review in
+`review_2026/mathematics_audit_20261003/`.
 
-1. **Introduction.** Present the repaired finite constructions, conditional recognition results, two toy theorems, and
-   three research programs, with P1's two finite subproblems completed and retyped. State the nature-level and frame-transfer limits up front.
-2. **Calculus primer.** Define carriers, quotients, descent, factorization defects, primitive roles, landing modes, and
-   anti-smuggling gates. Separate formal vocabulary from claims that require constructed bridges.
-3. **Method.** Describe finite carriers, heterogeneous validator coverage, can-fail controls, the completed adversarial
-   campaign, and the procedural anti-contamination guard.
-4. **Standard-Model track.** Report convention-declared carrier counts; branch-typed clean selection; the exact SU(5)
-   construction and its named imports; unique content-orbit recognition; real generic mass ranks; and withdrawn
-   record-grounding, generation-blindness, architecture, and fixed-percentage claims.
-5. **QM--GR track.** Correct the commuting route pair; retain the narrow directed access no-go; report conditional
-   field-to-mode provenance, the common-carrier hypothesis, exact finite-graph LP duality, fair MMI evidence, the failed
-   linear-response leg, and the sample-bounded background fixed-point result.
-6. **Construction programs.** Report graph-level forward-reachability disjointness with symmetric closure open, and
-   state-level joint-map noninjectivity with exact diagonal-gauge collapse; treat conditional BMV LOCC behavior and
-   dynamical record persistence as the two open programs. None is a forced prediction about nature or a bulk-geometry theorem.
-7. **Breadth.** Bell, black-hole, cosmological-background, and measurement examples are in Section 7, while the
-   contested singularity toy is retained in Section 9's scope table.
-8. **Cross-track statement.** Claim only a shared formal vocabulary across two finite carriers; do not infer forcing,
-   universality, or a shared physical object.
-9. **Scope and tests.** Consolidate each surviving statement, its exact carrier/sample/grammar bound, and the direct
-   computation that could fail.
-10. **Discussion and outlook.** Name the broader graph/state relations, dynamical record, and frame-transfer constructions.
-11. **Conclusion.** Summarize the corrected finite support surface, the retyped P1 finite subproblems, and the two open programs.
+1. Introduction — the question, main results, scope, reading guide; Figure 1 (results at a glance).
+2. The Six Birds emergence calculus, in brief — layers, descent, obstruction sets, the factorization defect
+   (Figure 2); six role names; structural laws and their premises; grades; anti-smuggling checks.
+3. Method — declared and pinned carriers, validators of varying strength, the independent representation oracle,
+   can-fail controls, self-correction in both directions, review and track separation; Figure 3 (pipeline).
+4. Result I — the selection layer; the carrier and its exclusions; branch-level clean-separation selection and the
+   single-factor toy theorem (Figure 4); the SU(5) frame and recovered ratios; record stability; content,
+   generations, mass ranks, naturalness.
+5. Result II — commuting completions; the access fork and its 54-record provenance; the common-carrier hypothesis;
+   min-cut LP duality and sampled entropies (Figure 5); two failed extensions.
+6. Three construction programs — P1 graph and state levels (gauge-collapse lemma); P2 BMV; P3 record stability.
+7. Further applications — Bell/F49; information loss (Theorem 7.1, Figure 6); cosmological constant; measurement.
+8. What the two tracks share — separation protocol, inventory, the bounded one-grammar statement, limits.
+9. Scope, limits, and testability — the statement table, supporting atlases, direct tests.
+10. Discussion — lessons, next steps, what kind of framework, invitation.
+11. Conclusion.
 
-Appendices give the formal calculus, reproducibility caveats, retained audit trail, Version-4, Version-3, and Version-2 review notes/history, and
-notation. The paper currently contains five image-backed figures and the certified scope table.
+Appendices: A formal calculus; B reproducibility; C audit trail and review record; D notation and key numbers;
+E version history.

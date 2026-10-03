@@ -1,66 +1,47 @@
 # Scope, limits, and testability
 
-The repaired results are finite and conditional. A validator can falsify a reported table or exact identity; that does
-not make a carrier-to-nature extrapolation valid. Conversely, a physical observation does not falsify a forcing theorem
-that has been withdrawn. Table \ref{tab:certified-scope} collects the certified statements and their sharpest bounds.
+Every result in this paper is finite and conditional: either an exhaustive or sampled computation on a finite
+carrier, or a general theorem about a fixed finite graph or fixed-size matrices whose finite instances are checked by
+validators. A validator can falsify a reported table or an exact identity, but that does not make an extrapolation from
+a carrier to nature valid. Conversely, a physical observation cannot
+falsify a forcing theorem that the paper does not contain. Table 6 collects each established
+statement with its grade and its most direct test.
 
-| statement | grade | bound or direct falsifier |
+| statement | grade | bound, or most direct falsifier |
 | --- | --- | --- |
-| L* selection layer | coherent finite construction | one-layer hypothesis and step9 block-structure caveat; a constructed admissible selector outside the typed layer tests it |
-| repaired gauge census | finite enumeration | exact alphabets/caps and quotient convention; independent regeneration can falsify counts $1{,}066/419/195$ and survivor counts $52/24/24$ |
-| branch selection | conditional finite selection | singleton/two-scalar caps; universal-over-branches fails, existential clean branch class is unique to $2\|3$ and $SU(2)$-active |
-| single-factor result | genuine toy theorem | stated grammar only; witness-independent, but historical step61 validator retains F-008 weakness |
+| selection layer (L*) | coherent finite construction | one-layer hypothesis and within-layer block structure; a constructed admissible selector outside the layer would test it |
+| gauge census | finite enumeration | exact alphabets, caps, and equivalences; independent regeneration can falsify the counts $1{,}066/419/195$ and survivors $52/24/24$ |
+| branch selection | conditional finite selection | singleton and two-scalar caps; “every branch clean” fails, while the clean branch class is unique to $2\|3$ and $SU(2)$-active |
+| single-factor exclusion | toy theorem | stated grammar only; the validator rebuilds artifacts and constructs witnesses for $N=3,\dots,12$ |
 | $SU(5)$ ratios and coset | exact conditional construction | regular embedding, $\overline{\mathbf5}+\mathbf{10}$, weak-pair normalization; not a parent selector or low-energy prediction; Pati–Salam also gives $3/8$ |
-| content orbit and mass shadow | recognition-under-template | declared quotient and renormalizable one-scalar grammar; $N=1,\ldots,4$ only |
-| coordinate incomparability | exact abstract-carrier theorem | 16 coordinate-subset partitions, 55/120 incomparable pairs; physical provenance is a separate 54-record conditional construction |
-| min-cut LP identity | finite-graph recognition | unique-cut chambers, exported primal/dual matrices, exact slackness and sensitivity checks |
-| contracted-state RT evidence | finite sample | bound, $D=2,3,4$ trend, and MMI/GHZ control; no convergence or equality |
-| F50 backgrounds | sample-bounded numerics | every sampled background/$\kappa$ has a fixed point; stability boundary is criterion-dependent |
-| P1 quotient search | finite forward-reachability result | 13 carriers recertified exactly; for each of 19 same-graph fibers, queue-exhaustive forward search under four directed reductions and bidirectional Delta-Y/Y-Delta finds the two reachability sets disjoint; symmetric-closure orbit disjointness remains open |
-| P1 state level | exact joint-map noninjectivity and gauge collapse | six finite connected $C2_L1$ joint complete-cut/state-map fibers; all collapse under the exact diagonal internal-bond gauge; no bulk-geometry theorem |
-| BMV result | conditional LOCC statement | null only for an assumed perfect-record channel; record formation unbuilt |
-| record stability | open program | bounded monomial census is token-definition-sensitive; physical invariant algebra and dynamics unbuilt |
-| G2 singularity row | contested finite-toy grade | existential regularized example; finiteness comes from the saturating rule, not physical singularity resolution |
+| content orbit and mass ranks | recognition within template | declared quotient and renormalizable one-scalar grammar; $N=1,\dots,4$ only |
+| coordinate incomparability | exact toy theorem | $16$ coordinate-subset partitions, $55/120$ incomparable pairs; field provenance is a separate conditional construction |
+| min-cut/LP identity | finite-graph recognition | unique-cut chambers, exported primal and dual matrices, exact slackness and sensitivity checks |
+| contracted-state entropies | finite sample | bound, $D=2,3,4$ trend, and monogamy with GHZ control; no convergence or equality |
+| information loss (F34) | general theorem with exact certificates | full-rank stratum and raw readout (normalized rays add an overall scale); exact rank certificates for three seeds; exact half-boundary witness; no dynamics |
+| F50 backgrounds | sample-bounded numerics | every sampled background and $\kappa$ has a fixed point; the stability boundary depends on the criterion |
+| P1, graph level | finite forward-reachability result | $19$ exact equal-cut pairs on $13$ carriers; forward-reachable sets disjoint; symmetric-closure orbit disjointness open |
+| P1, state level | exact noninjectivity and gauge collapse | six connected `C2_L1` joint-map fibers; all collapse under the general diagonal-gauge lemma; no bulk-geometry theorem |
+| P2, BMV | conditional LOCC statement | null only for an assumed perfect-record channel; record formation not built |
+| P3, record stability | open program | bounded candidate census is token-definition-sensitive; restriction maps and dynamics not built |
+| singularity row (G2) | finite toy | an existential regularized example; finiteness comes from a saturating rule, not from physical singularity resolution |
 
-## Withdrawn statements
+## Supporting atlases
 
-The following are not retained as claims: route non-commutation for the published completions; an exact explanation of
-why quantizing gravity fails; universal or adversarial uniqueness of the QM–GR parent; the computational GROUND landing
-of a common carrier; a discrete linearized-Einstein match; a universal shared Born–area composition law; unconditional
-$99.3%$ exclusion; bare-structure clean selection; record-stability grounding; the $N_{\rm gen}$-blindness theorem;
-the content-blindness comparison; the F24 architecture verdict; a stable $3.96%$ naturalness fraction; the
-product-parent $3/23$ control; the three forcing predictions; the F50 $15/18$ split and $\kappa$ existence boundary;
-and E032 as an extension-of-QM theorem. Cluster-b's E021 $\lambda$ “adjudication” is archived exploration: its
-contraction target and measure center are imported, so it is not load-bearing evidence.
-
-## Repository and atlas qualifications
-
-The repository is not uniformly self-verifying. The post-publication repairs generally use literal pins and in-memory
-byte comparisons, but historical limitations remain:
-
-- the step69 historical data pin was tautological; a byte-identical rebuild mitigates but does not replace a literal
-   historical pin;
-- some `--self` validators regenerate artifacts in place, so complete sweeps must run in scratch copies; one
-   parallel-pool race was observed;
-- steps 43, 44, and 61 and analogues validate stored audit summaries rather than rebuilding all load-bearing work;
-   step61's audit gates include literal booleans;
-- The historical P1 probe used a declared three-round $\Delta$--Y/Y--$\Delta$ search. The Version-4 controlling
-   result recertifies nineteen exact fibers and queue-exhausts their forward reachability under four directed reductions and
-   bidirectional Delta-Y/Y-Delta, modulo terminal-label-fixed exact weighted isomorphism. Symmetric-closure orbit
-   disjointness, paths through tied-minimizer presentations, and undeclared transformations remain open.
-
-The missing-layer atlas is **unfit** as independent preregistration or blinding evidence: card grades exceed the
-certified claims and the external gate never gave final approval. The retrodiction atlas is
-**fit-with-findings**: its recovery/reframe grades are honest and it makes no new-retrodiction claim. The unification
-atlas is **scientifically fit-with-findings but mechanically incomplete**; its tension ledger is useful, while 19
-of 34 candidates have only explicitly typed missing-card coverage and require completed cards before public-support use.
+The repository also contains three card atlases, which are not evidence for the claims above. The missing-layer
+atlas is **unfit** as independent preregistration or blinding evidence: its card grades exceed the established
+claims, and the external gate on it never gave final approval. The retrodiction atlas is **fit with findings**:
+its recovery and reframing grades are honest, and it claims no new retrodiction. The unification atlas is
+**scientifically fit with findings but mechanically incomplete**: its ledger of tensions is useful, but $19$ of
+its $34$ candidates have only explicitly typed missing-card coverage and need completed cards before they can serve
+as public support. Appendix B lists the remaining validator caveats.
 
 ## What can be tested now
 
-The most direct tests are computational: regenerate the repaired carrier and branch table; reconstruct the exact
-$SU(5)$ commutant and coset action; materialize the $N$-copy mass matrices; verify the coordinate-partition lattice;
-re-solve the min-cut primal and dual; repeat the adaptive F50 grid; rerun the P1 Step-3 forward-reachability validator;
-and rerun the Step-6 exact gauge-collapse validator. Section 6 contains three construction programs: P1's two finite
-subproblems are completed and retyped, while symmetric-closure orbit disjointness, its broader physical and bulk
-interpretation, and the P2/P3 constructions remain open. Their eventual answers may disagree
-with the conjectural motivations here without contradicting any certified finite statement.
+The most direct tests are computational: regenerate the gauge carrier and branch table; reconstruct the exact
+$SU(5)$ commutant and coset action; materialize the $N$-copy mass matrices; verify the coordinate-partition
+lattice; re-solve the min-cut primal and dual; recheck the F34 rank certificates and the half-boundary witness; repeat
+the adaptive F50 grid; and rerun the P1 forward-reachability and gauge-collapse validators. The open parts of the
+programs (symmetric-closure separation and the broader physical reading of P1, and the P2 and P3 constructions) may
+eventually be answered in ways that disagree with the motivations given here, without contradicting any established
+finite statement.
