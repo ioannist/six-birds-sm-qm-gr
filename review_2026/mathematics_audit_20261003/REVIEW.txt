@@ -1,0 +1,201 @@
+Mathematics and mechanization review — 2026-10-03
+
+The maintained claims survive at their declared finite, conditional, exact,
+or numerical scopes. The repairs below preserve those scopes and restore an
+unsupported universal statement in the F34 toy by a general linear-algebra
+proof. This is a self-review, with a separate adversarial pass; it is not an
+independent external review or a certificate that the toys describe nature.
+
+The initial state was committed before changes as 4d72f5c. No paper source,
+paper section, submission document, or paper include was changed. There are
+no Lean sources or Lean project/toolchain files in this repository. Its local
+mechanizations are Python computations and exact certificates, with written
+general proofs where indicated. Selected imported Lean declarations were
+inspected and their modules freshly built; those builds do not establish
+the physical applicability premises of an imported theorem.
+
+Repairs
+
+1. PROG2 connected-copy gauge certificate. The written incidence-image
+   argument covers every fixed nonempty connected carrier. The constructor
+   previously excluded zero/one-edge carriers and did not reject disconnected
+   inputs. It now handles the trivial cases, validates vertices/edges, and
+   rejects the invalid global-product argument on disconnected carriers.
+   Exact regressions cover all 44 connected labeled simple graphs through
+   four vertices, with orientation controls. The general proof remains the
+   connected-incidence image argument, rather than this finite regression.
+
+2. PROG2 reproducibility. The Step-4 renderer now emits the already-released
+   honest budget-truncation conclusion instead of its earlier unsupported
+   infinite-continuation wording. The required Step-6 audit log is now tracked
+   through a narrow ignore exception, so the validator works in a clean copy.
+   The external audit remains a floating diagnostic, not the exact gauge proof.
+
+3. Single-factor clean-separation theorem (Step 61). The validator now rebuilds
+   every released non-code artifact in a temporary directory and checks bytes.
+   It also constructs actual factorization-defect pairs for N=3..12, checks the
+   witness IDs/readout equalities/mass inequalities, and exercises same-mass and
+   multifactor controls. The written theorem's universal hinge is that a
+   passing single-factor substrate has residual N-1>=2 and 2(N-1)>0 massive
+   charged vectors. Its deliberately coarse confinement readout identifies
+   these with massless residual generators. This is a toy-grammar theorem,
+   not a theorem about confinement or the Standard Model in nature.
+
+4. S3 generator/lattice construction. The results already contained a stable
+   ledger anchor absent from the renderer. The renderer and its source/schema
+   manifests now reproduce that release. Exact commutant, charge/trace, coset,
+   generator-action and Smith-normal-form calculations retain their strength.
+   SU(5) connectedness and homotopy facts are named imports, not consequences
+   of the finite matrix computation. The Pati-Salam comparison also has 3/8;
+   this ratio does not uniquely discriminate the parent.
+
+5. S6 record census. The minimum of separately computed UV and residual
+   singlet dimensions is only an upper bound on a restriction-map rank. The
+   previous code comment and some generated prose called this a common basis
+   or actual lift. These are now explicitly candidate channels and declared
+   identifications. No UV-to-selected-component restriction map, nonzero VEV
+   image, Grassmann quotient, EOM quotient or independent invariant-operator
+   basis has been constructed. All 556 candidate lifts / 404 candidate labels
+   and branch/threshold results are unchanged. This aligns the support with
+   the caveat already in the current paper, without weakening a main theorem.
+
+6. F34 full-boundary versus partial-readout toy. Step 53 sampled SVD/gauge
+   reconstructions, which do not prove its 'any two preimages' assertion.
+   repairs/f34_exact_factorization/PROOF.txt supplies a general theorem:
+   for M=LR^T of rank d, all same-size factorizations of M form exactly one
+   GL(d) orbit, with a unique explicit change of basis. Six modular rank-27
+   certificates establish applicability to the represented seed-101/202/303
+   binary-rational frames. Exact complex-rational reconstruction and a
+   rank-deficient nongauge counterexample exercise its hinge. An exact
+   complement permutation on seed 101 preserves the left reduced state but
+   changes a right observable, supplying the partial-readout obstruction.
+   Raw matrix equality is crucial. For normalized rays one must also quotient
+   overall scalar multiplication; a GL-invariant raw norm or Gram spectrum
+   does not descend to a normalized ray without a scale convention. Both the
+   raw and projective statements, and this counterexample, are written out.
+   This is written proof plus exact Python certificates, not a Lean proof.
+
+7. QM-GR Steps 27/28. Their validators depended on ignored local NPZ files.
+   They now reconstruct the operators and histories from tracked inputs;
+   Step 28 checks every stored history state and potential against that
+   reconstruction. Compatible-clock constraints remain finite constructions:
+   compatibility is engineered, not a derived physical clock dynamics.
+
+8. Historical Step 69 source pin (old finding F-002). Its frozen score-carrier
+   expected digest was computed from the same current file it was checking.
+   Both builder and validator now use the literal reviewed digest. Changing
+   the source fails even if the stored conclusion is left unchanged. The
+   historical record implication is still superseded by the S6 candidate
+   ablation and is not revived by this integrity repair.
+
+Independent mathematical checks and adversarial self-review
+
+The independent oracle enumerates semistandard tableaux and uses weight
+characters with the Weyl denominator, rather than the production LR routine.
+It checks dimensions, conjugation, Dynkin indices and cubic anomalies for all
+14 canonical representations; all 368 ordered triple singlet counts agree.
+The same oracle checks all 65 distinct singlet queries actually made by the
+complete S6-v3 census. These checks verify representation dimensions, not
+realization of the candidate channels as physical record operators.
+
+Tampering controls reject a forged Step-61 exemplar with unchanged summary
+counts, a forged Step-28 history with unchanged verdicts, and a changed
+Step-69 score source. Existing Q1/Q2/Q5/S1/S3/S4/S5/P1 controls also ran.
+The F34 proof was reviewed for quantifiers, rank loss, transpose versus
+adjoint, raw versus projective readout, and the finite-to-universal bridge.
+
+Claim coverage and retained mathematical boundaries
+
+claim_coverage.json reviews every one of the 42 maintained registry records,
+plus the breadth/import statements omitted from that inventory. The registry
+statuses are retained; withdrawn historical claims are not acceptance targets.
+
+- S1: the finite carrier and clean-branch selection are relative to the charge,
+  representation, quotient and scalar-cap conventions. 'Admits a clean branch'
+  is not 'every branch is clean'. Higher-arity branch dynamics is not derived.
+- S2/Step 44: the three-active-factor scalar obstruction follows from 2^3>6
+  under the declared component cap. Step 43's old numerical census remains
+  stale relative to the repaired carrier. Historical Steps 43/44 still have
+  summary-based validators; they are not full regeneration certificates for
+  the maintained carrier. Step 61's corresponding weakness is now repaired.
+- S4: the template content orbit is unique under its declared equivalences.
+  Symbolic charged mass ranks 14N and neutral deficiencies N hold for the
+  materialized N=1..4 grammar. No measured Yukawas or selection of N=3 follows.
+- S5: the two constructed architecture families both close, so architecture
+  remains underdetermined. F47 percentages depend on the declared measure and
+  strict threshold; the realized score 2.75 is excluded at threshold 2.75.
+- Q1/Q2: the 54 field-plus-background records and the abstract Boolean carrier
+  are distinct. Current is part of the QM readout; the forward control changes
+  background potential. Coordinate conditional-mean completions commute
+  exactly. No quantize/curve commutator or adversarial family uniqueness follows.
+- Q5: primal/dual min-cut values, complementary slackness and chamber derivatives
+  are exact finite-graph facts. Bond-dimension entropy trends and MMI ledgers
+  are sampled floating computations. Area gluing agrees on the tested probes;
+  Born gluing fails there. Neither continuum RT equality nor Einstein response
+  is supplied by these finite ledgers.
+- Q7/G1/G2: fixed points and stability crossings are numerical, sample bounded,
+  and criterion dependent. They are not interval-certified existence or
+  bifurcation theorems, an in-layer Lambda law, or physical singularity resolution.
+- P1/PROG3: exact cut fingerprints and signed kernel intervals are certified on
+  the finite declared carriers. Bounded forward-reachable sets are not symmetric
+  move orbits: explicit subdivisions/inverse moves defeat that promotion. State
+  underdetermination and quotient irreducibility remain typed open programs.
+- P2/P3: assumed perfect-record dephasing is LOCC and therefore BMV-null.
+  Geometry diagonality alone does not force that channel. Physical record
+  formation and physical operator persistence remain unresolved dynamical inputs.
+- Bell: the CHSH construction and the local deterministic bound are valid.
+  A common mathematical carrier is not a Bell-local hidden-variable mechanism.
+  Record-access complementarity is relative to the admissible joint class.
+- E032: the definability statement is conditional on the supplied source
+  language/closure and taxonomy. It does not establish a strict physical
+  extension of QM or an operational measurement discriminator.
+
+Precise imported statements and items for the later paper pass
+
+Foundations III's no_total_algebra/no_total_decoder requires two cells with
+the same primitive pair and different statuses. If status=decoder(op(pair)),
+their statuses would be equal, a contradiction. It does not rule out arbitrary
+binary operations on six symbols: op(x,y)=x is an immediate counterexample
+to that stronger reading. Current main-paper line 342 is unqualified; the
+Appendix at line 1329 already includes 'decodes judgment status'. Use the
+qualified statement consistently in the later paper pass. The inspected
+Lean declaration and classifier countermodel build under Lean 4.28.0.
+
+F34 descent is on the readout image (or a surjective declared codomain).
+F37 requires a declared admissible joint class; the pairing always exists as
+a mathematical map. F49 is deterministic fiber factorization; it includes
+the declared DirectRoute disjunct, and a nonlocal residual additionally
+requires failure of a supplied locality package. The current Appendix's
+two-disjunct shorthand must either declare DirectRoute unavailable or restore
+that disjunct. It must not be used as a probabilistic Bell-locality theorem.
+No paper edits were made. These corrections concern import scope and do not
+require a new material downgrade of the maintained headline claims.
+
+F23 imports a fiber-supported measure and stability data; it does not derive
+the Born rule or its measure. F24 proves role-split/refinement descent; its
+architecture-family names are declared statuses rather than an exhaustive
+physical classification. F39 assumes its mixing chain rule, the relevant
+combine monotonicity, and the zero/injectivity identification. It does not
+identify arbitrary physical entropy with a fiber volume. The local finite
+min-cut/entropy recognition must carry its own tensor and measure premises.
+F27 uses an actual supplied orbit relation; F48 needs an actual gluing class.
+Neither theorem turns a candidate token census into derived physical dynamics.
+
+Validation and reproducibility
+
+validation_receipts.json records the original 19-command maintained/open
+program sweep (16 passes, 3 reproducibility failures), the historical 131-step
+sweep (129 passes, 2 missing-NPZ failures), and repaired final replays. The
+failed cases all pass after the changes. A passing historical validator only
+certifies its declared checks; it does not reverse any recorded withdrawal.
+Registry/anchor controls, three atlas node gates, atlas structural coverage,
+five atlas mutation controls, JSON parsing and Python syntax checks also pass.
+Paper-source hashes are unchanged relative to the initial checkpoint.
+
+Reproduce the changed validators and new independent/tampering checks with:
+  python3 review_2026/mathematics_audit_20261003/run_checks.py --output /tmp/sm-qm-gr-audit.json
+Add --all for the maintained/open-program and all historical validator sweep.
+The runner makes separate scratch copies using tracked and nonignored files,
+so missing ignored local artifacts cannot silently supply required evidence.
+Read the receipts alongside the stated scopes: no test substitutes for an
+unproved universal theorem, an unbuilt realization bridge, or external review.

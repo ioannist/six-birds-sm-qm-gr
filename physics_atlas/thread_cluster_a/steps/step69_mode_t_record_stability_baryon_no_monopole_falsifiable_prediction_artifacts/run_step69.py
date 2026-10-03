@@ -27,6 +27,7 @@ STEP41_BUILD = STEP41_DIR / "factorization_defect_clean_separation_step41.py"
 STEP65_BUILD = STEP65_DIR / "proton_monopole_fork_resolution_step65.py"
 
 STEP59_BUILD_SHA256 = "29dfae0b9ad223926487cdf71a6b44458f0b7b3126895f5927ae2a43574c1669"
+STEP59_SCORES_SHA256 = "36966329e900208fec1f7a062e242d8780fddac9fb566fa1215f4c02e016f27f"
 STEP41_BUILD_SHA256 = "cadc5bf72d100accd4c2cd687373edf4592c19f89c34aaa3c8838ae976d0fdee"
 STEP65_BUILD_SHA256 = "739e7c9a16bd3593283f6979f4294ff59fb333db3d5fc62c71688f236110cd63"
 
@@ -119,6 +120,8 @@ def check_required() -> None:
 def check_hashes() -> None:
     if sha256(STEP59_BUILD) != STEP59_BUILD_SHA256:
         fail("Step59 build sha mismatch")
+    if sha256(STEP59_SCORES) != STEP59_SCORES_SHA256:
+        fail("Step59 frozen score carrier sha mismatch")
     if sha256(STEP41_BUILD) != STEP41_BUILD_SHA256:
         fail("Step41 build sha mismatch")
     if sha256(STEP65_BUILD) != STEP65_BUILD_SHA256:

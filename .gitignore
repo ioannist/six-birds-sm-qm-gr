@@ -22,6 +22,8 @@ paper/build/
 *.fdb_latexmk
 *.fls
 *.log
+# Required reproducible evidence, rather than a local process log.
+!open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/external_float_audit_step6.log
 *.out
 *.synctex.gz
 *.toc

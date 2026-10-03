@@ -1,0 +1,934 @@
+{
+  "baseline_sweep": [
+    {
+      "command": "open_programs/prog2_state_underdetermination/step1_engine/run_step1.py --self",
+      "returncode": 0,
+      "seconds": 63.045
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step2_fiber_states/run_step2.py --self",
+      "returncode": 0,
+      "seconds": 45.572
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step3_kernel_test/run_step3.py --self",
+      "returncode": 0,
+      "seconds": 47.155
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step4_finite_continuation/run_step4.py --self",
+      "returncode": 1,
+      "seconds": 88.985
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step5_family_gauge_classification/run_step5.py --self",
+      "returncode": 0,
+      "seconds": 22.743
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self",
+      "returncode": 1,
+      "seconds": 45.712
+    },
+    {
+      "command": "open_programs/prog3_cut_fingerprints/step1_finite_range/run_step1.py --self",
+      "returncode": 0,
+      "seconds": 146.882
+    },
+    {
+      "command": "open_programs/prog3_cut_fingerprints/step2_orbit_saturation/run_step2.py --self",
+      "returncode": 0,
+      "seconds": 107.661
+    },
+    {
+      "command": "open_programs/prog3_cut_fingerprints/step3_symmetric_closure/run_step3.py --self",
+      "returncode": 0,
+      "seconds": 212.552
+    },
+    {
+      "command": "review_2026/probes/p1_kernel_quotient/run_active_cut_quotient_v3.py --self",
+      "returncode": 0,
+      "seconds": 99.808
+    },
+    {
+      "command": "review_2026/repairs/q1_access_provenance/run_q1.py --self",
+      "returncode": 0,
+      "seconds": 0.175
+    },
+    {
+      "command": "review_2026/repairs/q2_route_mismatch/run_q2.py --self",
+      "returncode": 0,
+      "seconds": 4.096
+    },
+    {
+      "command": "review_2026/repairs/q5_lp_duality/run_q5.py --self",
+      "returncode": 0,
+      "seconds": 4.86
+    },
+    {
+      "command": "review_2026/repairs/q7_f50_convergence/run_q7.py --self",
+      "returncode": 0,
+      "seconds": 12.595
+    },
+    {
+      "command": "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self",
+      "returncode": 0,
+      "seconds": 5.218
+    },
+    {
+      "command": "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self",
+      "returncode": 1,
+      "seconds": 5.162
+    },
+    {
+      "command": "review_2026/repairs/s4_content_quotient/run_s4.py --self",
+      "returncode": 0,
+      "seconds": 4.766
+    },
+    {
+      "command": "review_2026/repairs/s5_f24_f47/run_s5.py --self",
+      "returncode": 0,
+      "seconds": 2.028
+    },
+    {
+      "command": "review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self",
+      "returncode": 0,
+      "seconds": 4.813
+    }
+  ],
+  "historical_sweep": [
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step10_adjudication_robustness_sweep_artifacts/run_step10.py --self",
+      "returncode": 0,
+      "seconds": 1.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step11_refinement_order_battery_artifacts/run_step11.py --self",
+      "returncode": 0,
+      "seconds": 0.113
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step14_real_anomaly_enrichment_artifacts/run_step14.py --self",
+      "returncode": 0,
+      "seconds": 0.075
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step15_minimal_anomaly_support_artifacts/run_step15.py --self",
+      "returncode": 0,
+      "seconds": 0.306
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step16_content_selection_principle_artifacts/run_step16.py --self",
+      "returncode": 0,
+      "seconds": 0.075
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step17_two_layer_test_artifacts/run_step17.py --self",
+      "returncode": 0,
+      "seconds": 0.067
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step18_two_layer_stress_test_artifacts/run_step18.py --self",
+      "returncode": 0,
+      "seconds": 0.117
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step19_layer_multiplicity_F24_artifacts/run_step19.py --self",
+      "returncode": 0,
+      "seconds": 0.564
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step1_shared_selection_layer_frame_artifacts/run_step1.py --self",
+      "returncode": 0,
+      "seconds": 0.054
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step20_gut_recognition_value_relations_artifacts/run_step20.py --self",
+      "returncode": 0,
+      "seconds": 0.062
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step21_mode_b_unifying_carrier_artifacts/run_step21.py --self",
+      "returncode": 0,
+      "seconds": 0.066
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step22_mode_b_group_shape_generation_artifacts/run_step22.py --self",
+      "returncode": 0,
+      "seconds": 0.061
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step23_mode_b_factor_count_unsmuggle_artifacts/run_step23.py --self",
+      "returncode": 0,
+      "seconds": 0.331
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step24_mode_b_robustness_stress_artifacts/run_step24.py --self",
+      "returncode": 0,
+      "seconds": 0.95
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step25_mode_b_f51_descent_hierarchy_artifacts/run_step25.py --self",
+      "returncode": 0,
+      "seconds": 0.065
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step26_mode_b_integrated_normalization_artifacts/run_step26.py --self",
+      "returncode": 0,
+      "seconds": 0.065
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step27_mode_b_normalization_robustness_artifacts/run_step27.py --self",
+      "returncode": 0,
+      "seconds": 0.082
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step28_mode_b_neutral_representation_desmuggle_artifacts/run_step28.py --self",
+      "returncode": 0,
+      "seconds": 0.057
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step29_mode_b_neutral_intrinsic_discriminator_artifacts/run_step29.py --self",
+      "returncode": 0,
+      "seconds": 0.098
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step2_p2_selection_constraint_artifacts/run_step2.py --self",
+      "returncode": 0,
+      "seconds": 0.057
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step30_mode_b_conjoined_intrinsic_discriminator_artifacts/run_step30.py --self",
+      "returncode": 0,
+      "seconds": 0.12
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step31_mode_b_consistency_discriminator_artifacts/run_step31.py --self",
+      "returncode": 0,
+      "seconds": 0.125
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step32_mode_b_chirality_faithful_discriminator_artifacts/run_step32.py --self",
+      "returncode": 0,
+      "seconds": 0.095
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step33_mode_b_corrected_anomaly_chirality_artifacts/run_step33.py --self",
+      "returncode": 0,
+      "seconds": 0.064
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step34_mode_b_role_obstruction_discriminator_artifacts/run_step34.py --self",
+      "returncode": 0,
+      "seconds": 0.051
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step35_mode_b_higher_layer_descent_artifacts/run_step35.py --self",
+      "returncode": 0,
+      "seconds": 0.056
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step36_mode_b_higher_layer_refinement_artifacts/run_step36.py --self",
+      "returncode": 0,
+      "seconds": 0.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step37_mode_b_uniqueness_stress_test_artifacts/run_step37.py --self",
+      "returncode": 0,
+      "seconds": 0.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step38_mode_b_higher_layer_shadow_uniqueness_artifacts/run_step38.py --self",
+      "returncode": 0,
+      "seconds": 0.058
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step39_mode_b_clean_separation_derivation_artifacts/run_step39.py --self",
+      "returncode": 0,
+      "seconds": 0.051
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step3_p6_decaying_degeneracy_audit_artifacts/run_step3.py --self",
+      "returncode": 0,
+      "seconds": 0.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step41_mode_b_factorization_defect_clean_separation_artifacts/run_step41.py --self",
+      "returncode": 0,
+      "seconds": 0.081
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step43_mode_b_window_closure_artifacts/run_step43.py --self",
+      "returncode": 0,
+      "seconds": 0.054
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step44_mode_b_window_closure_factor_count_artifacts/run_step44.py --self",
+      "returncode": 0,
+      "seconds": 0.049
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step45_mode_b_proton_decay_F27_artifacts/run_step45.py --self",
+      "returncode": 0,
+      "seconds": 0.047
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step46_mode_b_monopole_F48_artifacts/run_step46.py --self",
+      "returncode": 0,
+      "seconds": 0.048
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step47_mode_b_gut_sm_nonfactorization_artifacts/run_step47.py --self",
+      "returncode": 0,
+      "seconds": 0.048
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step48_mode_b_content_cascade_artifacts/run_step48.py --self",
+      "returncode": 0,
+      "seconds": 0.05
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step49_mode_b_content_cascade_2_artifacts/run_step49.py --self",
+      "returncode": 0,
+      "seconds": 0.045
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step4_e043_scale_selection_artifacts/run_step4.py --self",
+      "returncode": 0,
+      "seconds": 0.054
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step51_mode_b_ngen_neutrality_artifacts/run_step51.py --self",
+      "returncode": 0,
+      "seconds": 0.045
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step52_mode_b_clean_separation_minimality_artifacts/run_step52.py --self",
+      "returncode": 0,
+      "seconds": 0.056
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step53_mode_b_competitor_structures_artifacts/run_step53.py --self",
+      "returncode": 0,
+      "seconds": 0.046
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step54_mode_b_content_cascade_3_artifacts/run_step54.py --self",
+      "returncode": 0,
+      "seconds": 0.046
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step55_mode_b_global_quotient_artifacts/run_step55.py --self",
+      "returncode": 0,
+      "seconds": 0.05
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step56_mode_b_e037_vacuum_selection_artifacts/run_step56.py --self",
+      "returncode": 0,
+      "seconds": 0.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step57_mode_b_record_stability_descent_artifacts/run_step57.py --self",
+      "returncode": 0,
+      "seconds": 0.052
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step58_mode_b_record_stability_broad_carrier_artifacts/run_step58.py --self",
+      "returncode": 0,
+      "seconds": 0.059
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step59_mode_b_record_stability_coverage_artifacts/run_step59.py --self",
+      "returncode": 0,
+      "seconds": 0.841
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step5_e009_uv_fiber_artifacts/run_step5.py --self",
+      "returncode": 0,
+      "seconds": 0.053
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step60_mode_t_record_stability_structural_theorem_artifacts/run_step60.py --self",
+      "returncode": 0,
+      "seconds": 0.067
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step61_mode_t_single_factor_clean_separation_theorem_artifacts/run_step61.py --self",
+      "returncode": 0,
+      "seconds": 3.828
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step62_mode_t_ngen_blindness_theorem_artifacts/run_step62.py --self",
+      "returncode": 0,
+      "seconds": 0.059
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step63_mode_b_unification_common_refinement_layer_artifacts/run_step63.py --self",
+      "returncode": 0,
+      "seconds": 0.038
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step64_mode_t_L60_record_capacity_leak_exclusion_artifacts/run_step64.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step65_mode_b_proton_monopole_fork_resolution_artifacts/run_step65.py --self",
+      "returncode": 0,
+      "seconds": 0.037
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step66_mode_b_e032_record_stability_definiteness_artifacts/run_step66.py --self",
+      "returncode": 0,
+      "seconds": 0.037
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step67_mode_b_e032_record_irreducibility_artifacts/run_step67.py --self",
+      "returncode": 0,
+      "seconds": 0.037
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step68_mode_b_e032_two_shape_instantiation_artifacts/run_step68.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step69_mode_t_record_stability_baryon_no_monopole_falsifiable_prediction_artifacts/run_step69.py --self",
+      "returncode": 0,
+      "seconds": 0.297
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step6_e043_horn_adjudication_artifacts/run_step6.py --self",
+      "returncode": 0,
+      "seconds": 0.056
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step7_consolidated_statement_artifacts/run_step7.py --self",
+      "returncode": 0,
+      "seconds": 0.05
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step8_structural_token_blind_selection_artifacts/run_step8.py --self",
+      "returncode": 0,
+      "seconds": 0.473
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step9_facet_factorization_test_artifacts/run_step9.py --self",
+      "returncode": 0,
+      "seconds": 1.134
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step10_e021_lambda_selection_adjudication_artifacts/run_step10.py --self",
+      "returncode": 0,
+      "seconds": 5.765
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step11_e021_adjudication_update_artifacts/run_step11.py --self",
+      "returncode": 0,
+      "seconds": 11.441
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step1_shared_substrate_frame_artifacts/run_step1.py --self",
+      "returncode": 0,
+      "seconds": 0.033
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step2_e042_singularity_resolution_artifacts/run_step2.py --self",
+      "returncode": 0,
+      "seconds": 0.033
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step3_e021_cosmological_constant_artifacts/run_step3.py --self",
+      "returncode": 0,
+      "seconds": 0.032
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step4_consolidated_statement_artifacts/run_step4.py --self",
+      "returncode": 0,
+      "seconds": 0.032
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step5_honest_regrade_artifacts/run_step5.py --self",
+      "returncode": 0,
+      "seconds": 0.168
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step6_shared_frame_robustness_artifacts/run_step6.py --self",
+      "returncode": 0,
+      "seconds": 0.382
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step7_e042_earned_continuation_artifacts/run_step7.py --self",
+      "returncode": 0,
+      "seconds": 0.708
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step8_e021_rg_measure_robustness_artifacts/run_step8.py --self",
+      "returncode": 0,
+      "seconds": 1.446
+    },
+    {
+      "command": "physics_atlas/thread_cluster_b/steps/step9_r6_consolidation_artifacts/run_step9.py --self",
+      "returncode": 0,
+      "seconds": 2.913
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step10_framework_driven_rung_map_artifacts/run_step10.py --self",
+      "returncode": 0,
+      "seconds": 0.042
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step11_build_rung1_refine_fixedpoint_artifacts/run_step11.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step12_bind_rung1_to_real_closures_artifacts/run_step12.py --self",
+      "returncode": 0,
+      "seconds": 0.246
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step13_build_rung2_neutral_currency_artifacts/run_step13.py --self",
+      "returncode": 0,
+      "seconds": 0.115
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step14_rung1_on_currency_refinement_stability_artifacts/run_step14.py --self",
+      "returncode": 0,
+      "seconds": 0.123
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step15_rung3_audit_on_currency_artifacts/run_step15.py --self",
+      "returncode": 0,
+      "seconds": 0.069
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step16_full_ladder_descent_artifacts/run_step16.py --self",
+      "returncode": 0,
+      "seconds": 0.076
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step17_native_promotion_bridge_classification_artifacts/run_step17.py --self",
+      "returncode": 0,
+      "seconds": 0.041
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step18_f37_complementarity_f24_resolution_artifacts/run_step18.py --self",
+      "returncode": 0,
+      "seconds": 0.037
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step19_f35_scale_descent_renormalization_artifacts/run_step19.py --self",
+      "returncode": 0,
+      "seconds": 0.034
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step1_mode_a_recognition_import_artifacts/run_step1.py --self",
+      "returncode": 0,
+      "seconds": 0.039
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step20_f24_predicate_construction_artifacts/run_step20.py --self",
+      "returncode": 0,
+      "seconds": 0.042
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step21_f24_structural_predicates_artifacts/run_step21.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step22_f51_unification_common_refinement_artifacts/run_step22.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step23_physical_audit_enrichment_artifacts/run_step23.py --self",
+      "returncode": 0,
+      "seconds": 0.04
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step24_derived_physical_audits_artifacts/run_step24.py --self",
+      "returncode": 0,
+      "seconds": 0.108
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step25_sourcing_unification_artifacts/run_step25.py --self",
+      "returncode": 0,
+      "seconds": 0.033
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step26_semiclassical_dynamics_artifacts/run_step26.py --self",
+      "returncode": 0,
+      "seconds": 0.032
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step27_constraint_problem_of_time_artifacts/run_step27.py --self",
+      "returncode": 1,
+      "seconds": 0.123
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step28_nonstationary_relational_histories_artifacts/run_step28.py --self",
+      "returncode": 1,
+      "seconds": 0.089
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step29_consolidated_statement_artifacts/run_step29.py --self",
+      "returncode": 0,
+      "seconds": 0.029
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step2_mode_a_complementary_import_artifacts/run_step2.py --self",
+      "returncode": 0,
+      "seconds": 0.033
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step30_qg_directed_reduction_nogo_artifacts/run_step30.py --self",
+      "returncode": 0,
+      "seconds": 0.031
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step31_qg_fused_object_nogo_artifacts/run_step31.py --self",
+      "returncode": 0,
+      "seconds": 0.031
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step32_qg_nogo_theorem_artifacts/run_step32.py --self",
+      "returncode": 0,
+      "seconds": 0.03
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step33_partb_type_uniqueness_artifacts/run_step33.py --self",
+      "returncode": 0,
+      "seconds": 0.032
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step34_partb_instance_uniqueness_artifacts/run_step34.py --self",
+      "returncode": 0,
+      "seconds": 0.033
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step35_qgr_uniqueness_theorem_artifacts/run_step35.py --self",
+      "returncode": 0,
+      "seconds": 0.035
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step36_adversarial_f24_competitors_artifacts/run_step36.py --self",
+      "returncode": 0,
+      "seconds": 0.034
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step37_noncoordinate_nonlinear_mediator_robustness_artifacts/run_step37.py --self",
+      "returncode": 0,
+      "seconds": 0.031
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step38_carrier_independence_artifacts/run_step38.py --self",
+      "returncode": 0,
+      "seconds": 0.034
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step39_currency_constraint_area_shadow_price_artifacts/run_step39.py --self",
+      "returncode": 0,
+      "seconds": 0.035
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step3_mode_a_asymptotic_safety_artifacts/run_step3.py --self",
+      "returncode": 0,
+      "seconds": 0.034
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step40_mincut_area_entanglement_shadow_price_artifacts/run_step40.py --self",
+      "returncode": 0,
+      "seconds": 0.036
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step41_tensor_network_rt_bound_artifacts/run_step41.py --self",
+      "returncode": 0,
+      "seconds": 11.933
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step42_faithful_holographic_rt_enrichment_artifacts/run_step42.py --self",
+      "returncode": 0,
+      "seconds": 0.274
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step43_entanglement_first_law_area_energy_artifacts/run_step43.py --self",
+      "returncode": 0,
+      "seconds": 0.109
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step44_holographic_mmi_entropy_cone_artifacts/run_step44.py --self",
+      "returncode": 0,
+      "seconds": 0.037
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step45_discrete_einstein_consistency_artifacts/run_step45.py --self",
+      "returncode": 0,
+      "seconds": 0.142
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step46_review_response_v1_fixes_artifacts/run_step46.py --self",
+      "returncode": 0,
+      "seconds": 12.429
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step47_common_carrier_door_test_artifacts/run_step47.py --self",
+      "returncode": 0,
+      "seconds": 0.035
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step48_ladder_vs_fork_resolution_artifacts/run_step48.py --self",
+      "returncode": 0,
+      "seconds": 0.034
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step49_batchB_review_response_fixes_artifacts/run_step49.py --self",
+      "returncode": 0,
+      "seconds": 0.105
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step4_mode_c_recombination_artifacts/run_step4.py --self",
+      "returncode": 0,
+      "seconds": 0.043
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step50_born_area_one_fiber_volume_ledger_artifacts/run_step50.py --self",
+      "returncode": 0,
+      "seconds": 0.364
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step51_f51_joint_prediction_artifacts/run_step51.py --self",
+      "returncode": 0,
+      "seconds": 0.487
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step52_f49_bell_nonlocal_residual_artifacts/run_step52.py --self",
+      "returncode": 0,
+      "seconds": 0.142
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step53_f34_information_loss_normal_form_artifacts/run_step53.py --self",
+      "returncode": 0,
+      "seconds": 0.142
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step54_f50_background_moduli_demarcation_artifacts/run_step54.py --self",
+      "returncode": 0,
+      "seconds": 0.189
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step55_f51_entanglement_underdetermines_geometry_artifacts/run_step55.py --self",
+      "returncode": 0,
+      "seconds": 16.792
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step56_gravitational_mediation_bmv_prediction_artifacts/run_step56.py --self",
+      "returncode": 0,
+      "seconds": 0.108
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step5_mode_b_coupling_design_artifacts/run_step5.py --self",
+      "returncode": 0,
+      "seconds": 0.054
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step6_mode_b_gv2_artifacts/run_step6.py --self",
+      "returncode": 0,
+      "seconds": 0.059
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step7_mode_b_gv3_triple_artifacts/run_step7.py --self",
+      "returncode": 0,
+      "seconds": 0.057
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step8_mode_b_gv4_run_triple_artifacts/run_step8.py --self",
+      "returncode": 0,
+      "seconds": 0.049
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step9_mode_t_triple_nogo_theorem_artifacts/run_step9.py --self",
+      "returncode": 0,
+      "seconds": 0.035
+    }
+  ],
+  "date": "2026-10-03",
+  "checkpoint": "4d72f5c",
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0",
+    "machine": "x86_64"
+  },
+  "evidence_notes": [
+    "Baseline and historical failed cases all passed after repair. Historical success does not reinstate withdrawn scientific claims.",
+    "First twelve final replays used separate publishable-file snapshots excluding ignored local NPZs; subsequent small checks use the tracked tree and disposable mutation copies."
+  ],
+  "final_replays": [
+    {
+      "command": "open_programs/prog2_state_underdetermination/step4_finite_continuation/run_step4.py --self",
+      "returncode": 0,
+      "seconds": 107.404,
+      "stdout": "run_step4.py: PASS: declarations=PINNED exact_algebraic_endpoints=6/6 full_fingerprints=6/6 exact_copy_state_equalities=6/6 number_fields_general=6/6 combined_orbits=12/12 combined_state_caps_hit=12/12 explored_intersections=0/6 reciprocal_first_canary=4/4 pending_generated_gauge_obligations=12/12 certified_surviving_candidates=0 runtime_seconds=104.488\n",
+      "stderr": ""
+    },
+    {
+      "command": "open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self",
+      "returncode": 0,
+      "seconds": 59.787,
+      "stdout": "NEGATIVE CONTROL PASS \u2014 unequal_product_real_carrier: LEFT_KERNEL_PRODUCT_OBSTRUCTION\nNEGATIVE CONTROL PASS \u2014 one_edge_orientation_mutation: ORIENTATION_DRESSING_MISMATCH_BREAKS_BX_EQ_DR\nNEGATIVE CONTROL PASS \u2014 disconnected_global_vs_component_products: COMPONENTWISE_PRODUCT_OBSTRUCTION; componentwise equality repair PASS\nPROG2 STEP6 SELF PASS \u2014 6/6 exact products; 6/6 connected incidence certificates; 6/6 exponent intertwiners; 6/6 external float controls; 3/3 negative controls; byte-compare PASS; 56.81s\n",
+      "stderr": ""
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step61_mode_t_single_factor_clean_separation_theorem_artifacts/run_step61.py --self",
+      "returncode": 0,
+      "seconds": 5.992,
+      "stdout": "run_step61.py: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step27_constraint_problem_of_time_artifacts/run_step27.py --self",
+      "returncode": 0,
+      "seconds": 0.592,
+      "stdout": "run_step27.py: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "physics_atlas/thread_qm_gr/steps/step28_nonstationary_relational_histories_artifacts/run_step28.py --self",
+      "returncode": 0,
+      "seconds": 0.578,
+      "stdout": "run_step28.py: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "review_2026/build_claims_registry.py --check",
+      "returncode": 0,
+      "seconds": 0.147,
+      "stdout": "CONTROL DELETED-RECORD PASS: reviewed ID inventory mismatch rejected\nCONTROL STATUS-MUTATION PASS: pinned status census mismatch rejected\nCONTROL DANGLING-ANCHOR PASS: unresolved source anchor rejected\nbuild_claims_registry.py: PASS: records=42 statuses=CERTIFIED:7,OPEN:3,RETYPED:23,WITHDRAWN:9 mode=check\n",
+      "stderr": ""
+    },
+    {
+      "command": "review_2026/mathematics_audit_20261003/test_gauge_certificate.py",
+      "returncode": 0,
+      "seconds": 1.533,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.524s\n\nOK\n"
+    },
+    {
+      "command": "review_2026/mathematics_audit_20261003/test_record_characters.py",
+      "returncode": 0,
+      "seconds": 6.325,
+      "stdout": "S6 character audit: 65 distinct queries; candidate dimensions only\n",
+      "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 5.743s\n\nOK\n"
+    },
+    {
+      "command": "review_2026/mathematics_audit_20261003/test_representation_characters.py",
+      "returncode": 0,
+      "seconds": 0.536,
+      "stdout": "",
+      "stderr": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.017s\n\nOK\n"
+    },
+    {
+      "command": "review_2026/repairs/f34_exact_factorization/run_exact_factorization.py --self",
+      "returncode": 0,
+      "seconds": 0.859,
+      "stdout": "F34 exact factorization PASS: six rank-27 certificates; exact gauge and partial-readout witness; two negative controls\n",
+      "stderr": ""
+    },
+    {
+      "command": "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self",
+      "returncode": 0,
+      "seconds": 6.339,
+      "stdout": "S3-REPAIR-1b validator: PASS\nfull commutant: PASS (24 coefficients; rank=23; nullity=1)\nF48 extracted lattice: PASS (SNF=(1, 1, 1); index=6; pi2=Z)\nSU4 fixed slice: PASS (six roots; rescale=5/8; outside-slice witness)\nproduct-parent control: PASS (Pati-Salam trace ratio=3/8; no derived 3/23)\nmutation tests: PASS (7/7 rejected, including conjugation/coroot/F27/slice tests)\nelapsed_seconds=5.836\n",
+      "stderr": ""
+    },
+    {
+      "command": "review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self",
+      "returncode": 0,
+      "seconds": 6.086,
+      "stdout": "run_s6_record_grammar_ablation_v3.py: PASS: pins=1/1 lifts=556 operators=404 eval_049_dressed=True spectator_token=False conventions=undressed_only|dressed_inclusive counterexamples_t2=8|8 elapsed_seconds=5.519\n",
+      "stderr": ""
+    },
+    {
+      "command": "physics_atlas/thread_cluster_a/steps/step69_mode_t_record_stability_baryon_no_monopole_falsifiable_prediction_artifacts/run_step69.py --self",
+      "returncode": 0,
+      "seconds": 0.329,
+      "stdout": "run_step69.py: PASS (--self)\n",
+      "stderr": ""
+    },
+    {
+      "command": "review_2026/mathematics_audit_20261003/test_artifact_guards.py",
+      "returncode": 0,
+      "seconds": 4.545,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 4.425s\n\nOK\n"
+    },
+    {
+      "command": "unification_atlas/check_atlas.py",
+      "returncode": 0,
+      "seconds": 0.045,
+      "stdout": "check_atlas.py: PASS: json_files=18 candidates=34 cards=15 missing=19 coverage=34\n",
+      "stderr": ""
+    },
+    {
+      "command": "physics_atlas/verify_mutation_tests.py",
+      "returncode": 0,
+      "seconds": 0.332,
+      "stdout": "test                                       exit  ok?  fired\nBASELINE valid scored                         0  YES  (none)\n(a) near-intra E1 pending  -> want FAIL/C9    1  YES  C9\n(b) anti-control E0 no E.7  -> want FAIL/C5    1  YES  C5\n(c-blank) recognition import -> want FAIL/C11    1  YES  C11\n(c-menu) recognition import -> want FAIL/C11    1  YES  C11\n(d) value_split tier mismatch -> want FAIL/C10    1  YES  C10\n\nALL MUTATION CHECKS BEHAVE AS REQUIRED: True\n",
+      "stderr": ""
+    }
+  ],
+  "imported_lean_builds": [
+    {
+      "cwd": "../six-birds-foundations-iii/lean/full",
+      "command": "lake build SixBirdsIII.CoreInteraction",
+      "returncode": 0,
+      "stdout": "Build completed successfully (7 jobs)."
+    },
+    {
+      "cwd": "../six-birds-meta-math/lean",
+      "command": "lake build SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.InformationLoss SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Complementarity SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Locality",
+      "returncode": 0,
+      "stdout": "Build completed successfully (5 jobs)."
+    },
+    {
+      "cwd": "../six-birds-meta-math/lean",
+      "command": "lake build SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.CommonSourceNonlocal SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.EntropyAsFiberVolume SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Topology SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.VacuumBackgroundSelection SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.FineTuning SixBirdsMetaMath.FoundationsIV.StatusRecordsCoherence SixBirdsMetaMath.FoundationsIV.Access.LayerMultiplicity",
+      "returncode": 0,
+      "stdout": "Build completed successfully (3128 jobs)."
+    }
+  ],
+  "step69_pin_renderer_rebuild": {
+    "generated_files": 12,
+    "all_byte_identical": true
+  },
+  "imported_lean_axiom_checks": [
+    {
+      "cwd": "../six-birds-foundations-iii/lean/full",
+      "source": "import SixBirdsIII.CoreInteraction\n#print axioms SixBirdsIII.no_total_decoder\n#print axioms SixBirdsIII.cm4_same_pair_classifier_countermodel\n",
+      "returncode": 0,
+      "stdout": "'SixBirdsIII.no_total_decoder' does not depend on any axioms\n'SixBirdsIII.cm4_same_pair_classifier_countermodel' does not depend on any axioms\n",
+      "stderr": ""
+    },
+    {
+      "cwd": "../six-birds-meta-math/lean",
+      "source": "import SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.InformationLoss\nimport SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Complementarity\nimport SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.CommonSourceNonlocal\n#print axioms SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.InformationLoss.information_loss_normal_form_paper\n#print axioms SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Complementarity.complementarity_split_criterion_general_unconditional\n#print axioms SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.CommonSourceNonlocal.common_source_nonlocal_correlation_repaired_strengthened_of_nonempty\n",
+      "returncode": 0,
+      "stdout": "'SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.InformationLoss.information_loss_normal_form_paper' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.Complementarity.complementarity_split_criterion_general_unconditional' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SixBirdsMetaMath.FoundationsIV.SelfReferenceLimits.CommonSourceNonlocal.common_source_nonlocal_correlation_repaired_strengthened_of_nonempty' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "import_source_hashes": {
+    "six-birds-foundations-iii/lean/full/SixBirdsIII/Mech0.lean": "4a0bd9dd1cee474bebb91204a9763f918e9a1ddc5e25808e1823abc6f5d1e9e4",
+    "six-birds-foundations-iii/lean/full/SixBirdsIII/CoreInteraction.lean": "bc20cccb609f446c4f35f39d77c0220bb1d2bb4b940b833b838b844465175b36",
+    "six-birds-meta-math/lean/SixBirdsMetaMath/FoundationsIV/SelfReferenceLimits/InformationLoss.lean": "6ad9261605adc11c227533c4404706e6a1752249e741ce715734b6f326686425",
+    "six-birds-meta-math/lean/SixBirdsMetaMath/FoundationsIV/SelfReferenceLimits/Complementarity.lean": "8cae83284c439f1744926b37ae1917c2e91cc0fe1c8affcecdcd18a052d8cbf4",
+    "six-birds-meta-math/lean/SixBirdsMetaMath/FoundationsIV/SelfReferenceLimits/CommonSourceNonlocal.lean": "c0274a59f071938ee4ad16634efdb185e547a395d7af7447ed021bc03a7e77f8"
+  },
+  "atlas_gate_logs": {
+    "prereg": "Physics Layer Atlas \u2014 freeze-gate validator\nmode=freeze  dir=physics_atlas/prereg\nloaded: 21 theory stub(s), 46 edge(s), 30 closure card(s)\n\nFREEZE-GATE: PASS \u2014 all checks clean (mode=freeze)\n",
+    "calibration": "Physics Layer Atlas \u2014 freeze-gate validator\nmode=scored  dir=physics_atlas/calibration/scored_run\nloaded: 21 theory stub(s), 46 edge(s), 30 closure card(s)\n\nFREEZE-GATE: PASS \u2014 all checks clean (mode=scored)\n",
+    "phase3": "Physics Layer Atlas \u2014 freeze-gate validator\nmode=scored  dir=physics_atlas/phase3/scored_run\nloaded: 21 theory stub(s), 46 edge(s), 30 closure card(s)\n\nFREEZE-GATE: PASS \u2014 all checks clean (mode=scored)\n"
+  }
+}

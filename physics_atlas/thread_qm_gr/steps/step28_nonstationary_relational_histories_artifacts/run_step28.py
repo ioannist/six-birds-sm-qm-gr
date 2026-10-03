@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import nonstationary_relational_history_step28 as core
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
@@ -19,7 +20,6 @@ TOL = 1e-8
 REQUIRED_FILES = [
     "nonstationary_relational_history_step28.py",
     "nonstationary_history_step28.json",
-    "constraint_operators_step28.npz",
     "nonstationary_history_diagnostics_step28.csv",
     "constraint_singular_values_step28.csv",
     "constraint_residuals_step28.csv",
@@ -69,6 +69,31 @@ def scan_forbidden() -> None:
             for phrase in FORBIDDEN_PHRASES:
                 if phrase in text:
                     fail(f"forbidden phrase {phrase!r} found in {path.name}")
+
+
+def reconstructed_operators() -> dict[str, np.ndarray]:
+    """Rebuild the history and both constraints from tracked initial data."""
+    psi0, background, kinetic, kappa, dt = core.load_sources()
+    states, potentials, _hamiltonians, unitaries = core.build_history(
+        psi0, background, kinetic, kappa, dt, core.M_CLOCK
+    )
+    stored = json.loads((ARTIFACT_DIR / "nonstationary_history_step28.json").read_text())
+    for index, (state, record) in enumerate(zip(states, stored["states"], strict=True)):
+        if record["clock_t"] != index:
+            fail("stored history clock indices differ from source reconstruction")
+        recorded = np.asarray(record["psi_re"]) + 1j * np.asarray(record["psi_im"])
+        if not np.allclose(state, recorded, rtol=0.0, atol=TOL):
+            fail(f"stored history state differs from source reconstruction at t={index}")
+    if [record["clock_t"] for record in stored["potentials"]] != list(range(core.M_CLOCK)):
+        fail("stored potential clock indices differ from source reconstruction")
+    recorded_potentials = np.asarray([record["potential"] for record in stored["potentials"]])
+    if not np.allclose(np.asarray(potentials), recorded_potentials, rtol=0.0, atol=TOL):
+        fail("stored history potentials differ from source reconstruction")
+    return {
+        "C_generated": core.build_constraint(unitaries, control="generated"),
+        "C_wrong_identity_control": core.build_constraint(unitaries, control="identity"),
+        "history_state": core.normalize(np.concatenate(states) / np.sqrt(core.M_CLOCK)),
+    }
 
 
 def main() -> None:
@@ -139,7 +164,7 @@ def main() -> None:
     if float(control["history_constraint_residual"]) <= 1e-2:
         fail("wrong-generator control residual too small")
 
-    arrays = np.load(ARTIFACT_DIR / "constraint_operators_step28.npz")
+    arrays = reconstructed_operators()
     c_generated = arrays["C_generated"]
     c_control = arrays["C_wrong_identity_control"]
     history_state = arrays["history_state"]

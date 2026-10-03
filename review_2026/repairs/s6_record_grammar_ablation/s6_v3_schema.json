@@ -6,6 +6,7 @@
     "scalar_insertion_max": 2,
     "total_constituent_cap": 6
   },
+  "channel_count_status": "min(UV singlet dimension, residual singlet dimension); upper bound, not certified map rank",
   "counting_conventions": [
     "undressed_only",
     "dressed_inclusive"
@@ -16,6 +17,7 @@
     "scores": "c2ad5593f3ff8647003ea5b0df168986a3283f1fbdd36b9c806a1a8c88256567"
   },
   "outcome": "COUNTEREXAMPLES_PERSIST_SCALAR_DRESSED_COMPLETE_BOUNDED_CENSUS",
+  "realization_status": "candidate channels only; UV-to-residual restriction map and nonzero VEV images uncomputed",
   "residual_gate": "exact LR singlet under every residual factor and computed residual-U(1) neutral",
   "row_counts": {
     "branch_census": 12,
@@ -26,6 +28,6 @@
     "thresholds": 8
   },
   "schema_version": 3,
-  "uv_lift_gate": "UV gauge invariant under every factor and original U(1)",
+  "uv_lift_gate": "separate positive UV singlet dimensions and original U(1) neutrality; candidate only",
   "vev_quotient": "same residual component multiset and invariant channel modulo insertions of the same branch VEV"
 }

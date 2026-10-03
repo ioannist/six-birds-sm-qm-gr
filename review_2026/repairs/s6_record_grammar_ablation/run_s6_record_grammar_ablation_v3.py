@@ -38,7 +38,7 @@ def validate() -> dict:
            or row["uv_singlet_multiplicity"] < 1
            or row["residual_singlet_multiplicity"] < 1
            for row in result["lifts"]):
-        fail("non-invariant operator lift entered the census")
+        fail("candidate lift failed a separate UV/residual singlet or charge gate")
     regression = result["eval_049_regression"][0]
     if not (regression["regression_passes"] and regression["required_operator_found"]
             and regression["uv_charge_equation"] == "(-2)+(4)+(-2)=0"

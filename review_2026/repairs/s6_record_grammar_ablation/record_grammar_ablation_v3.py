@@ -63,8 +63,9 @@ class Lift:
 
     @property
     def operator_key(self) -> str:
-        # Same residual operator and invariant channel: VEV insertions of the
-        # branch scalar are quotient-equivalent by the declared convention.
+        # Same residual content and candidate channel label: identify VEV
+        # insertions by convention, without asserting equality of actual
+        # invariant operators or their VEV images.
         return "+".join(sorted(self.component_keys)) + f"::channel={self.invariant_channel}"
 
     @property
@@ -212,10 +213,12 @@ def enumerate_lifts(evaluation: Any, catalog: tuple[Any, ...]) -> tuple[Lift, ..
                         fields, parent_members, evaluation.branch, phi_count, dagger_count)
                     if not uv_channels:
                         continue
-                    # The invariant basis is the exact common channel capacity
-                    # of the UV and residual singlet spaces. Relations between
-                    # different Fock contents are not imposed; VEV-equivalent
-                    # dressings of one content are quotiented below.
+                    # This is a candidate-channel convention, not the rank
+                    # of a UV-to-residual restriction map. The minimum of the
+                    # two exact dimensions is only an upper bound on that
+                    # rank; no Clebsch restriction or nonzero VEV image is
+                    # constructed. VEV-equivalent candidate dressings are
+                    # identified by the declared token convention below.
                     channel_count = min(residual_channels, uv_channels)
                     fermions = "*".join(component_keys)
                     dressing = "*".join(

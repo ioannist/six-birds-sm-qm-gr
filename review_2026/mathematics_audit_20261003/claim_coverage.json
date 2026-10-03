@@ -1,0 +1,833 @@
+{
+  "date": "2026-10-03",
+  "checkpoint": "4d72f5c",
+  "reviewer": "single-agent review with adversarial self-review and independent mathematical oracles",
+  "local_lean_sources": 0,
+  "registry_records": [
+    {
+      "id": "paper_foundational_strength_headline",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "foundational-strength-headline"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_three_forcing_headlines",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "three-forcing-headlines"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_external_review_settled",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "external-review-settled"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_su5_ratios",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s3",
+      "assessment": "Exact commutant, lattice, coset and generator calculations; named topology imports and trace conventions. Product-parent ratio also 3/8, so not a parent discriminator.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "su5-ratios"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"
+      ]
+    },
+    {
+      "id": "paper_five_xy_roles",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s3",
+      "assessment": "Exact commutant, lattice, coset and generator calculations; named topology imports and trace conventions. Product-parent ratio also 3/8, so not a parent discriminator.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "five-xy-roles"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"
+      ]
+    },
+    {
+      "id": "paper_carrier_exclusion",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s1",
+      "assessment": "Declared finite carrier and equivalences; unique structure admitting clean branches, not universally clean structure. Exact representation arithmetic checked by an independent weight-character oracle.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "11990-carrier-exclusion"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"
+      ]
+    },
+    {
+      "id": "paper_gauge_structure_selection",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s1",
+      "assessment": "Declared finite carrier and equivalences; unique structure admitting clean branches, not universally clean structure. Exact representation arithmetic checked by an independent weight-character oracle.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "gauge-structure-selection"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"
+      ]
+    },
+    {
+      "id": "paper_window_closure",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s2",
+      "assessment": "Single-factor exclusion has a written universal proof in the toy grammar. Step61 now recomputes artifacts/witnesses. Three-factor arity exclusion is cap conditional; Step43 historical counts remain stale.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "window-closure"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"
+      ]
+    },
+    {
+      "id": "paper_content_blindness",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s4",
+      "assessment": "Unique declared template-content orbit; symbolic charged rank 14N and neutral deficiency N on N=1..4. Generation-blindness surrogate remains withdrawn; measured masses/N=3 not derived.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "content-blindness"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s4_content_quotient/run_s4.py --self"
+      ]
+    },
+    {
+      "id": "paper_generation_blindness",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "s4",
+      "assessment": "Unique declared template-content orbit; symbolic charged rank 14N and neutral deficiency N on N=1..4. Generation-blindness surrogate remains withdrawn; measured masses/N=3 not derived.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "generation-blindness"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s4_content_quotient/run_s4.py --self"
+      ]
+    },
+    {
+      "id": "paper_mass_matrix_rank",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s4",
+      "assessment": "Unique declared template-content orbit; symbolic charged rank 14N and neutral deficiency N on N=1..4. Generation-blindness surrogate remains withdrawn; measured masses/N=3 not derived.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "mass-matrix-rank"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s4_content_quotient/run_s4.py --self"
+      ]
+    },
+    {
+      "id": "paper_record_stability_grounding",
+      "retained_registry_status": "OPEN",
+      "review_unit": "s6",
+      "assessment": "Separate exact UV/residual singlet and charge gates generate candidate tokens. min(dimensions) is not restriction-map rank. Physical record persistence and dynamical forcing remain open.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "record-stability-grounding"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self"
+      ]
+    },
+    {
+      "id": "paper_lstar_layer",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "lstar",
+      "assessment": "Finite survivor coupling with block-structure caveat; no single physical layer-count theorem.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "lstar-layer"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_budgetedrole_f47",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "s5",
+      "assessment": "Computed architecture-family underdetermination and convention-sensitive F47 surface. Strict threshold excludes realized score at equality.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "budgetedrole-f47"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s5_f24_f47/run_s5.py --self"
+      ]
+    },
+    {
+      "id": "paper_route_noncommutation",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q2",
+      "assessment": "Exact coordinate conditional-mean completions commute. Route-distance encoding is not a commutator.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "route-non-commutation"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q2_route_mismatch/run_q2.py --self"
+      ]
+    },
+    {
+      "id": "paper_qg_directed_nogo",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "q1",
+      "assessment": "54 field-plus-background records distinct from abstract coordinate partitions; QM includes current and forward control changes potential. Exact incomparability, conditional provenance, no family uniqueness/physical grounding.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "qg-directed-no-go"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q1_access_provenance/run_q1.py --self"
+      ]
+    },
+    {
+      "id": "paper_access_uniqueness",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "q1",
+      "assessment": "54 field-plus-background records distinct from abstract coordinate partitions; QM includes current and forward control changes potential. Exact incomparability, conditional provenance, no family uniqueness/physical grounding.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "access-uniqueness"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q1_access_provenance/run_q1.py --self"
+      ]
+    },
+    {
+      "id": "paper_fork_over_ladder",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "q1",
+      "assessment": "54 field-plus-background records distinct from abstract coordinate partitions; QM includes current and forward control changes potential. Exact incomparability, conditional provenance, no family uniqueness/physical grounding.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "fork-over-ladder"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q1_access_provenance/run_q1.py --self"
+      ]
+    },
+    {
+      "id": "paper_common_carrier_grounding",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q1",
+      "assessment": "54 field-plus-background records distinct from abstract coordinate partitions; QM includes current and forward control changes potential. Exact incomparability, conditional provenance, no family uniqueness/physical grounding.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "common-carrier-grounding"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_area_shadow_price_identity",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "area-shadow-price-identity"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    },
+    {
+      "id": "paper_linearized_einstein_response",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "linearized-einstein-response"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    },
+    {
+      "id": "paper_one_born_area_ledger",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "one-born-area-ledger"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    },
+    {
+      "id": "paper_cosmological_background_boundary",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "q7",
+      "assessment": "Numerical sample-bounded fixed points/stability; no interval-certified global existence/bifurcation or unique Lambda law. Circular G1 withdrawn; saturating G2 finite toy only.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "cosmological-background-boundary"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/q7_f50_convergence/run_q7.py --self"
+      ]
+    },
+    {
+      "id": "paper_strict_extension_discriminator",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "e032",
+      "assessment": "Definability conditional on supplied source language and closure; taxonomy stipulated, not strict physical extension of QM.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "strict-extension-discriminator"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_g1_lambda_adjudication",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q7",
+      "assessment": "Numerical sample-bounded fixed points/stability; no interval-certified global existence/bifurcation or unique Lambda law. Circular G1 withdrawn; saturating G2 finite toy only.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "g1-lambda-adjudication"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_g2_singularity_boundary",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "q7",
+      "assessment": "Numerical sample-bounded fixed points/stability; no interval-certified global existence/bifurcation or unique Lambda law. Circular G1 withdrawn; saturating G2 finite toy only.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "g2-singularity-boundary"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_prediction_p1",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "p1",
+      "assessment": "Exact finite cut-fingerprint fibers and bounded forward search. Tensor pairs gauge collapse. Forward reachability is not symmetric orbit separation; physical underdetermination/irreducibility remains open.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "p1-controlling-summary-2026-08-27-post-external-review"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self",
+        "open_programs/prog3_cut_fingerprints/step3_symmetric_closure/run_step3.py --self"
+      ]
+    },
+    {
+      "id": "paper_prediction_p2",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "p2",
+      "assessment": "Perfect-record channel is assumed local dephasing/LOCC. Geometry diagonality alone permits coherent entangling mediators; no derived BMV-null prediction.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "p2"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_prediction_p3",
+      "retained_registry_status": "OPEN",
+      "review_unit": "s6",
+      "assessment": "Separate exact UV/residual singlet and charge gates generate candidate tokens. min(dimensions) is not restriction-map rank. Physical record persistence and dynamical forcing remain open.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "p3"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": [
+        "review_2026/repairs/s6_record_grammar_ablation/run_s6_record_grammar_ablation_v3.py --self"
+      ]
+    },
+    {
+      "id": "paper_method_anti_contamination",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "method-anti-contamination"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_one_grammar",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "one-grammar"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "paper_support_surfaces",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "scope",
+      "assessment": "Bounded finite/conditional inventory; historical forcing and external-review completion are not reinstated.",
+      "controlling_source": {
+        "path": "paper/submission/claim-audit.md",
+        "anchor": "support-surfaces"
+      },
+      "source_sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014",
+      "validators": []
+    },
+    {
+      "id": "prog2_step6_controlling_outcome",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "p1",
+      "assessment": "Exact finite cut-fingerprint fibers and bounded forward search. Tensor pairs gauge collapse. Forward reachability is not symmetric orbit separation; physical underdetermination/irreducibility remains open.",
+      "controlling_source": {
+        "path": "open_programs/prog2_state_underdetermination/CLOSURE.md",
+        "anchor": "step-6-retyping-controlling-terminal-wording"
+      },
+      "source_sha256": "8084acb7ca30819abdeb0ffe1cd07183da8622d3f240fe743cdceb8b933a25dc",
+      "validators": [
+        "open_programs/prog2_state_underdetermination/step6_exact_gauge_collapse/run_step6.py --self"
+      ]
+    },
+    {
+      "id": "prog3_step3_controlling_floor",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "p1",
+      "assessment": "Exact finite cut-fingerprint fibers and bounded forward search. Tensor pairs gauge collapse. Forward reachability is not symmetric orbit separation; physical underdetermination/irreducibility remains open.",
+      "controlling_source": {
+        "path": "open_programs/prog3_cut_fingerprints/CLOSURE.md",
+        "anchor": "step-3-retyping-controlling-track-wording"
+      },
+      "source_sha256": "c95be3168d1744545409cfcb1f576adeafe900c4ab3cb0799a81c69ff7d4ec18",
+      "validators": [
+        "open_programs/prog3_cut_fingerprints/step3_symmetric_closure/run_step3.py --self"
+      ]
+    },
+    {
+      "id": "prog3_symmetric_closure_open",
+      "retained_registry_status": "OPEN",
+      "review_unit": "p1",
+      "assessment": "Exact finite cut-fingerprint fibers and bounded forward search. Tensor pairs gauge collapse. Forward reachability is not symmetric orbit separation; physical underdetermination/irreducibility remains open.",
+      "controlling_source": {
+        "path": "open_programs/prog3_cut_fingerprints/CLOSURE.md",
+        "anchor": "successor-construction-target-open-door"
+      },
+      "source_sha256": "c95be3168d1744545409cfcb1f576adeafe900c4ab3cb0799a81c69ff7d4ec18",
+      "validators": []
+    },
+    {
+      "id": "s1v3_charge_normalization_census",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "s1",
+      "assessment": "Declared finite carrier and equivalences; unique structure admitting clean branches, not universally clean structure. Exact representation arithmetic checked by an independent weight-character oracle.",
+      "controlling_source": {
+        "path": "review_2026/repairs/s1_carrier_reconstruction/RESULTS_v3.md",
+        "anchor": "charge-normalization-census"
+      },
+      "source_sha256": "11bc9fa359ee34751dcb6c2abe84723c9053249fd08b315639cf37bab8699011",
+      "validators": [
+        "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"
+      ]
+    },
+    {
+      "id": "s1v3_branch_typed_selection",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "s1",
+      "assessment": "Declared finite carrier and equivalences; unique structure admitting clean branches, not universally clean structure. Exact representation arithmetic checked by an independent weight-character oracle.",
+      "controlling_source": {
+        "path": "review_2026/repairs/s1_carrier_reconstruction/RESULTS_v3.md",
+        "anchor": "two-scalar-appendix"
+      },
+      "source_sha256": "11bc9fa359ee34751dcb6c2abe84723c9053249fd08b315639cf37bab8699011",
+      "validators": [
+        "review_2026/repairs/s1_carrier_reconstruction/run_s1_carrier_reconstruction_v3.py --self"
+      ]
+    },
+    {
+      "id": "s3v2_su5_ratios",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "s3",
+      "assessment": "Exact commutant, lattice, coset and generator calculations; named topology imports and trace conventions. Product-parent ratio also 3/8, so not a parent discriminator.",
+      "controlling_source": {
+        "path": "review_2026/repairs/s3_generator_construction/RESULTS_v2.md",
+        "anchor": "updated-claim-ledger-ky-and-weak-angle-ratio"
+      },
+      "source_sha256": "34e9f7046cce84063f161c4701fb1088943034f4486001832f42ce9875442f9a",
+      "validators": [
+        "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"
+      ]
+    },
+    {
+      "id": "s3v2_product_parent_control",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "s3",
+      "assessment": "Exact commutant, lattice, coset and generator calculations; named topology imports and trace conventions. Product-parent ratio also 3/8, so not a parent discriminator.",
+      "controlling_source": {
+        "path": "review_2026/repairs/s3_generator_construction/RESULTS_v2.md",
+        "anchor": "product-parent-control"
+      },
+      "source_sha256": "34e9f7046cce84063f161c4701fb1088943034f4486001832f42ce9875442f9a",
+      "validators": [
+        "review_2026/repairs/s3_generator_construction/run_s3_generator_construction_v2.py --self"
+      ]
+    },
+    {
+      "id": "q5_exact_lp_identity",
+      "retained_registry_status": "CERTIFIED",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "review_2026/repairs/q5_lp_duality/RESULTS.md",
+        "anchor": "q5-lp-duality-repair-results"
+      },
+      "source_sha256": "79c6c8474015a367f49e978eef51a512e181d7fa64010f68995e8d598b0158ca",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    },
+    {
+      "id": "q5_linearized_response",
+      "retained_registry_status": "WITHDRAWN",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "review_2026/repairs/q5_lp_duality/RESULTS.md",
+        "anchor": "linearized-response"
+      },
+      "source_sha256": "79c6c8474015a367f49e978eef51a512e181d7fa64010f68995e8d598b0158ca",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    },
+    {
+      "id": "q5_shared_mmi_class",
+      "retained_registry_status": "RETYPED",
+      "review_unit": "q5",
+      "assessment": "Exact finite min-cut LP primal/dual certificates, complementary slackness and chamber sensitivities. Entropy/MMI trends sampled. Born fails shared gluing probes; linearized response remains withdrawn.",
+      "controlling_source": {
+        "path": "review_2026/repairs/q5_lp_duality/RESULTS.md",
+        "anchor": "composition--step50"
+      },
+      "source_sha256": "79c6c8474015a367f49e978eef51a512e181d7fa64010f68995e8d598b0158ca",
+      "validators": [
+        "review_2026/repairs/q5_lp_duality/run_q5.py --self"
+      ]
+    }
+  ],
+  "supplemental": [
+    {
+      "id": "F34_full_rank_fiber",
+      "assessment": "Written universal GL factorization proof, exact rank-stratum certificates and exact partial-readout witness; projective readout requires additional scalar equivalence.",
+      "evidence": "review_2026/repairs/f34_exact_factorization/PROOF.txt"
+    },
+    {
+      "id": "Foundations_III_no_algebra",
+      "assessment": "No faithful status-decoding algebra under a same-pair/different-status witness, not nonexistence of arbitrary operations. Imported Lean declarations inspected and freshly built."
+    },
+    {
+      "id": "F37_F49_scope",
+      "assessment": "F37 needs admissible joint class. F49 includes DirectRoute and supplied locality package; deterministic factorization is not a probabilistic Bell theorem."
+    },
+    {
+      "id": "Bell_CHSH",
+      "assessment": "CHSH=2 sqrt(2) versus local deterministic bound 2 on declared settings; record-choice construction is conditional."
+    },
+    {
+      "id": "historical_steps_27_28_69",
+      "assessment": "Reconstructed operator/history guards and literal frozen-score pin repaired; historical theory grades not promoted."
+    }
+  ],
+  "requirement_checks": {
+    "initial_commit_before_edits": true,
+    "paper_sources_unchanged": true,
+    "all_42_registry_records_assessed": true,
+    "preserve_strength": "F34 universal statement restored; carrier-general gauge boundary cases extended; other maintained exact claims retained",
+    "downgrade_policy": "Small support typing correction for S6 and imported shorthand; no new material main-claim downgrade required",
+    "mechanization_scope": "Exact Python computations/certificates plus written general proofs; no local Lean project to repair",
+    "remaining_research": "Previously explicit physical realization, dynamical record and symmetric-orbit obligations remain open"
+  },
+  "unchanged_paper_hashes": [
+    {
+      "path": "Tsiokos_2026_To_Kill_Three_Stones_with_Six_Birds_A_Common_Grammar_for_the_SM_QM_and_GR.tex",
+      "sha256": "47ae9cc49757dadfd11d3e1dcfe36820592bad37160c01bc4b50a434d52ec3ae"
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "8e177b813d9a92eb7ce8e77028fd86e1238cbee6aee09f4fa25d2d0018585440"
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "2bef529e55c830244d0d5a592435dbe92969fe4483c2d9daa6a19d3e9a5a0aff"
+    },
+    {
+      "path": "paper/.gitignore",
+      "sha256": "5383fcc63e7c76d28e47b35bce848fe432079f5b1120aab59809040b2c25825f"
+    },
+    {
+      "path": "paper/latexmkrc",
+      "sha256": "6e0bb0913be597d565cd8f14513cbf8c5f1576300b1d034b72af137400b84b10"
+    },
+    {
+      "path": "paper/sections/sec_01_introduction.tex",
+      "sha256": "7ebe0fbd169a1637fbf57cc4988c60ec347faa7a97e43a4c5f0eb6cec4803078"
+    },
+    {
+      "path": "paper/sections/sec_04_result_sm.tex",
+      "sha256": "75461323c96f3e15721ff904cfe520307cfaaf439ae5c06e27ce43ab7938bce4"
+    },
+    {
+      "path": "paper/sections/sec_07_breadth.tex",
+      "sha256": "69d5a946625daa01305db532386a60ec2105c5943aba51ac4d0ab37ebca2bd56"
+    },
+    {
+      "path": "paper/sections/sec_06_predictions.tex",
+      "sha256": "6a931412b6ce5c2330cd6a10f0abda5f8a7e11eae684b79a339dcc2d3d384cde"
+    },
+    {
+      "path": "paper/sections/sec_03_method.tex",
+      "sha256": "847875c5315c517c088e56f4b2115bba1f08361b54d284cb6426947f492a28c2"
+    },
+    {
+      "path": "paper/sections/sec_05_result_qmgr.tex",
+      "sha256": "f128e6007397c83bf13217aacf4ccfee91718b69c43eae07844a07661d24bc98"
+    },
+    {
+      "path": "paper/sections/sec_11_conclusion.tex",
+      "sha256": "76851fe00c718554f3893fe5f3c52ea3edb5f0a7c28e76e852b2f9192aa81666"
+    },
+    {
+      "path": "paper/sections/sec_09_scope_falsifiability.tex",
+      "sha256": "b4bea513e92b3fe2760b41575b118e06054ad903f2b4804af6b568645e5795ba"
+    },
+    {
+      "path": "paper/sections/sec_08_one_grammar.tex",
+      "sha256": "55aacda102345aad8149d40d021ba2da9b42bc4151114924939621e14db0d98c"
+    },
+    {
+      "path": "paper/sections/sec_02_the_calculus.tex",
+      "sha256": "142ec22b53a1887275feb761157b3bf5d688a09fd3139c54f4c48879eb945e09"
+    },
+    {
+      "path": "paper/sections/sec_10_discussion.tex",
+      "sha256": "a4da57f386f6e82707df8ad4b2f25ce5589acee48a361a4db7ae426209149c73"
+    },
+    {
+      "path": "paper/appendices/app_a_formal_calculus.tex",
+      "sha256": "33c6d9e2fe73d91449addca455cd0c500dbf696883ad4c0cb41b8150a7df8026"
+    },
+    {
+      "path": "paper/appendices/app_e_notation.tex",
+      "sha256": "2a7a3b1c08bb082643825cb3d470f8e290ec808740335aa09f5d961ea5207c27"
+    },
+    {
+      "path": "paper/appendices/app_b_reproducibility.tex",
+      "sha256": "e937b2e873b0fe3281f628930c80f8333eea2e68cdf7d4292fabf8d29d412286"
+    },
+    {
+      "path": "paper/appendices/app_c_audit_trail.tex",
+      "sha256": "075ff99d590e3c556c9b9e2f6328071e92cd728b417005c01214f88a4fcbb1ff"
+    },
+    {
+      "path": "paper/appendices/app_d_adversarial_review.tex",
+      "sha256": "1e8c064a8e36ea997da97a8c1e58dbea850d8e66a300ceb07c2f8b23b0c5a317"
+    },
+    {
+      "path": "paper/source/07_breadth.md",
+      "sha256": "91aaeda62696dd4ddae289902a8a390a6966976be0a514b2c8c10e031a45ca65"
+    },
+    {
+      "path": "paper/source/ABSTRACT.md",
+      "sha256": "f47788939c85b57280d1b7f5369fb89a5c79e048dcae1e2a07f9dd92b7b4aeca"
+    },
+    {
+      "path": "paper/source/appendix_B_reproducibility.md",
+      "sha256": "b34761459c5e87b57cfbce96db98db226143853461e9e68de1c23267acd608d1"
+    },
+    {
+      "path": "paper/source/01_introduction.md",
+      "sha256": "e9908ef8a82dbd05c5608ca9fd13d320f2b8fca85d5aa62302c1ab0f75dbe67a"
+    },
+    {
+      "path": "paper/source/OUTLINE.md",
+      "sha256": "d1417347306f9a96da2290b6505d7ef8c5c1a166478829ded6f5c329c416af3f"
+    },
+    {
+      "path": "paper/source/appendix_E_notation.md",
+      "sha256": "06edba495ba2fe51eabaa468a3683b17d93738d546417fdc808607b8b6066c8f"
+    },
+    {
+      "path": "paper/source/appendix_A_formal_calculus.md",
+      "sha256": "d0b4551dc32d8dc7e38f6a9772100b005962317a469c730a098ecbf00b66d541"
+    },
+    {
+      "path": "paper/source/09_scope_falsifiability.md",
+      "sha256": "df2532758491f7f34c563f50248890051bf62d63655201ecb39ea3edd5ee903d"
+    },
+    {
+      "path": "paper/source/02_the_calculus.md",
+      "sha256": "a4614e30ba9fc26ceaa86a0824c86e7fde04ecfb28243f9384616bd4b522a178"
+    },
+    {
+      "path": "paper/source/05_result_qmgr.md",
+      "sha256": "590bd968512bdd4a5d1ee9134bf5e7671d0eb17a960ce34b7a08c46be371bbc1"
+    },
+    {
+      "path": "paper/source/appendix_C_audit_trail.md",
+      "sha256": "5d352ce6c7ffadb85919c0bd80d971c98a9830e870a1989c6047b29552a9d48b"
+    },
+    {
+      "path": "paper/source/appendix_D_adversarial_review.md",
+      "sha256": "ba616d2eee196b9d1883fa644d34d1557787ce3914666eab5bb72cbcf664d549"
+    },
+    {
+      "path": "paper/source/10_discussion.md",
+      "sha256": "16279e9afe003f3170f42b9cab2ae713a5ffe5813ab379b5a3c396d9ebc2d4eb"
+    },
+    {
+      "path": "paper/source/11_conclusion.md",
+      "sha256": "9c67bf5dc36579da632070984e977c9823c45b9b91daa2ed1103b4402c82a756"
+    },
+    {
+      "path": "paper/source/08_one_grammar.md",
+      "sha256": "69925afb94d2cbd6ed925a7b7269d44c90ce66789ca3db47989a5dafa3fd617b"
+    },
+    {
+      "path": "paper/source/06_predictions.md",
+      "sha256": "3fe307e55d5c0dd5b033acd9c54db1eadce12bcfb805cf147af0be817e3b9c76"
+    },
+    {
+      "path": "paper/source/04_result_sm.md",
+      "sha256": "4560ab099f310b238a53e1cebb6dda6f11b12037649b2c5044f9edfb855b907f"
+    },
+    {
+      "path": "paper/source/README.md",
+      "sha256": "a4d395b1f571f4d91af4275aa933d3da29d6d229647939865464d7eda70823a8"
+    },
+    {
+      "path": "paper/source/00_title_abstract.md",
+      "sha256": "4ac978731bbbb725b0a7907332b33d46856ccec839fcd39c207ad859bbd6f7e3"
+    },
+    {
+      "path": "paper/source/03_method.md",
+      "sha256": "ece0f61f5b43140a5e59c58ff26cfd5ff8f49a36d546ebac82e3a52f0c262998"
+    },
+    {
+      "path": "paper/tables/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/includes/paper_macros.tex",
+      "sha256": "01d7630f563af4f41960ec0c4f3ebb0377699ffa03012e974bffad2cc619efb2"
+    },
+    {
+      "path": "paper/figures/fig_f1_one_grammar.png",
+      "sha256": "07cb4f25b7e6bb156f26a042b2c8ccdc3f1d4aaa561a62660b35bc979a561b4a"
+    },
+    {
+      "path": "paper/figures/fig_f4_predictions.png",
+      "sha256": "6e573689d389e11ff31de7fea1f4044f580a84af2550f5e95d454f892ed8730b"
+    },
+    {
+      "path": "paper/figures/fig_f2_xy_coset_spine.png",
+      "sha256": "605497b8a74ef07a35d5ffcdccd5419c89dff60cf6d4cf000cb49dd5e88e8855"
+    },
+    {
+      "path": "paper/figures/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper/figures/fig_f3_fork_rt.png",
+      "sha256": "901df78324165f1c1e713eafd899c32cd34d2cf9823c937dc1cabb791ea50149"
+    },
+    {
+      "path": "paper/figures/fig_f0_audit_pipeline.png",
+      "sha256": "1033fc0a58aa7a42c64c688890d1ac4de9ac5c53f879109ab6f920224293ec73"
+    },
+    {
+      "path": "paper/submission/checklist.json",
+      "sha256": "4318316a96d1323f5d08cc8979c2620cf36abb85c5fa016dab43ff9005f80b0d"
+    },
+    {
+      "path": "paper/submission/manifest.json",
+      "sha256": "34c024f2ec3e7bc150b3c1eb6efa5edc095c725c87326c0601de28b2619fa59a"
+    },
+    {
+      "path": "paper/submission/metadata.json",
+      "sha256": "43120d9e3442b89f37fde9d29bebbba63d6a6ce49fb7e57d80fda05180f04d08"
+    },
+    {
+      "path": "paper/submission/citation-audit.md",
+      "sha256": "e2c528ed10bc8c06fab71e20fd7d552ec93a43bb74f94d85e63e30cbb656b270"
+    },
+    {
+      "path": "paper/submission/presentation-audit.md",
+      "sha256": "d9b5567664a66e7a98bbc21fb2156b7a858876a3e65dd5ccd7c90d7d9af858b3"
+    },
+    {
+      "path": "paper/submission/claim-audit.md",
+      "sha256": "cf938244895ec4b48e648fc868162d15d2b71c5b9f0b66018edd9c16ce7fd014"
+    },
+    {
+      "path": "paper/submission/submission-checklist.md",
+      "sha256": "fd6c00fdd299223985aa31e4a6852fbed6f21227b783e8ace6b272efe0914c15"
+    },
+    {
+      "path": "paper/figures/generated/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

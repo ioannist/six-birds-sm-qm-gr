@@ -123,10 +123,15 @@ def exponent_certificate(graph: Any) -> ExponentCertificate:
     """
     nodes = tuple(graph.nodes)
     edges = tuple(graph.edges)
+    if not nodes or len(set(nodes)) != len(nodes):
+        raise ValueError("a connected carrier requires nonempty, distinct vertices")
     node_index = {node: index for index, node in enumerate(nodes)}
     vertex_count, edge_count = len(nodes), len(edges)
-    if edge_count < 2:
-        raise AssertionError("Step-6 carriers require at least two edges")
+    if any(u == v or u not in node_index or v not in node_index for u, v in edges):
+        raise ValueError("carrier edges must join two distinct declared vertices")
+    if not _connected(graph)[0]:
+        raise ValueError("equal global products suffice only for connected carriers")
+    independent_count = max(edge_count - 1, 0)
 
     incidence = sp.zeros(vertex_count, edge_count)
     outgoing_half = sp.zeros(vertex_count, edge_count)
@@ -136,8 +141,8 @@ def exponent_certificate(graph: Any) -> ExponentCertificate:
         outgoing_half[node_index[u], edge_index] = sp.Rational(1, 2)
 
     # l = R l_independent, with l_last = -sum(l_0,...,l_{E-2}).
-    reduction = sp.zeros(edge_count, edge_count - 1)
-    for column in range(edge_count - 1):
+    reduction = sp.zeros(edge_count, independent_count)
+    for column in range(independent_count):
         reduction[column, column] = 1
         reduction[edge_count - 1, column] = -1
     target = outgoing_half * reduction
@@ -153,7 +158,10 @@ def exponent_certificate(graph: Any) -> ExponentCertificate:
         free = sorted(set().union(*(value.free_symbols for value in solution)), key=str)
         chosen = [sp.simplify(value.subs({symbol: 0 for symbol in free})) for value in solution]
         columns.append(sp.Matrix(chosen))
-    gauge_basis = sp.Matrix.hstack(*columns)
+    # With zero or one edge there are no independent log ratios. In the
+    # one-edge case equal products force that edge's ratio to one, so the
+    # identity gauge is the complete certificate.
+    gauge_basis = sp.Matrix.hstack(*columns) if columns else sp.zeros(edge_count, 0)
     if not _matrix_zero(incidence * gauge_basis - target):
         raise AssertionError("exact formal-log incidence identity failed")
 

@@ -12,6 +12,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -165,6 +166,70 @@ def validate_probe_and_proof() -> None:
             fail(f"bad proof status: {row}")
 
 
+def validate_recomputed_artifacts() -> None:
+    """Rebuild the probe and its witnesses without changing released artifacts.
+
+    This checks the finite diagnostic, not the universal quantifier in the
+    written parametric proof. Keep the original directory name because the
+    builder records it in its lineage and classification paths.
+    """
+    builder = load_module("step61_recomputed_builder", BUILD_SCRIPT)
+    with tempfile.TemporaryDirectory(prefix="step61_rebuild_") as temporary:
+        rebuilt = Path(temporary) / ARTIFACT_DIR.name
+        builder.ARTIFACT_DIR = rebuilt
+        builder.main()
+        for name in REQUIRED_FILES:
+            if name.endswith(".py"):
+                continue
+            if (rebuilt / name).read_bytes() != (ARTIFACT_DIR / name).read_bytes():
+                fail(f"artifact differs from recomputation: {name}")
+
+
+def validate_defect_witnesses() -> None:
+    """Exercise the proof's defect step and controls on the frozen machinery."""
+    s41 = load_module("step61_witness_s41", STEP41_BUILD)
+    # These instances exercise the symbolic N-1 / 2(N-1) proof step beyond
+    # the substrate's finite carrier. They are not a proof for all N.
+    for dimension in range(3, 13):
+        residual = dimension - 1
+        row = {
+            "dimensions": str(dimension),
+            "confining_subgroups": str(residual),
+            "broken_vector_exotic_count": str(2 * residual),
+        }
+        bosons = s41.build_bosons(row, 0)
+        pairs, witnesses = s41.compute_delta(bosons)
+        by_id = {boson["boson_id"]: boson for boson in bosons}
+        if len(pairs) != (residual * residual - 1) * 2 * residual:
+            fail(f"wrong number of actual defect pairs at N={dimension}")
+        expected_witnesses = {
+            boson["boson_id"] for boson in bosons
+            if boson["pi_mass"] == "massive" and boson["confining_nontrivial"]
+        }
+        if {item["witness_boson_id"] for item in witnesses} != expected_witnesses:
+            fail(f"defect witnesses do not match charged massive vectors at N={dimension}")
+        for pair in pairs:
+            left = by_id[pair["left_boson_id"]]
+            right = by_id[pair["right_boson_id"]]
+            if not (left["pi_conf_interference"] == right["pi_conf_interference"]
+                    and left["pi_mass"] != right["pi_mass"]):
+                fail(f"invalid factorization witness at N={dimension}: {pair}")
+        # Removing the mass distinction must remove the actual defect.
+        same_mass = [{**boson, "pi_mass": "massless"} for boson in bosons]
+        if s41.compute_delta(same_mass) != ([], []):
+            fail("same-mass negative control retained a defect")
+    # A clean multi-factor branch has an inactive confining SU(3) and
+    # only colorless massive generators; substrate alone is insufficient.
+    clean_bosons = s41.build_bosons({
+        "dimensions": "2|3", "confining_subgroups": "3",
+        "broken_vector_exotic_count": "0",
+    }, 0)
+    if not any(b["pi_mass"] == "massive" for b in clean_bosons):
+        fail("clean multi-factor control is vacuous")
+    if s41.compute_delta(clean_bosons) != ([], []):
+        fail("clean multi-factor negative control retained a defect")
+
+
 def validate_audits() -> None:
     for file_name in ("anti_circularity_step61.csv", "six_gate_audit_step61.csv"):
         for row in read_csv(file_name):
@@ -233,6 +298,8 @@ def run_chain_dependencies() -> None:
 def validate_all() -> None:
     validate_required_files()
     validate_frozen_hashes()
+    validate_recomputed_artifacts()
+    validate_defect_witnesses()
     validate_schema()
     validate_probe_and_proof()
     validate_audits()

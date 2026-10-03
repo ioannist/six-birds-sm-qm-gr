@@ -1,0 +1,70 @@
+F34 full-boundary factorization theorem
+
+Scope. Let K be any field, d>0, L in K^(m x d), R in K^(n x d),
+and M=L R^T. Assume rank(M)=d. The full readout is the raw,
+unnormalized boundary matrix, with fixed boundary bases and fixed internal
+dimension. Equality of normalized boundary rays instead requires allowing
+an overall scalar; it is not the literal equality used here.
+
+Theorem. For every L',R' of the same sizes with L' R'^T=M, there is a
+unique G in GL(d,K) such that L'=L G and R'=R G^(-T). Conversely such
+a gauge preserves M. Thus the full-readout fiber is exactly one gauge orbit
+on this stratum. Every gauge-invariant function of the pair factors through
+the full readout (on its image); no efficiency or regularity is asserted.
+
+Proof. Since rank(M)=d and each factor has d columns, L,R,L',R' all
+have full column rank. R^T is onto K^d, hence im(M)=im(L); similarly
+im(M)=im(L'). The columns of L and L' are bases of the same d-dimensional
+space. There is therefore a unique invertible change-of-basis G with L'=LG.
+Choose any left inverse A of L. From LR^T=LG R'^T, left multiplication
+by A gives R^T=G R'^T, and hence R'=R G^(-T). The converse follows by
+L G (R G^(-T))^T=L G G^(-1) R^T=L R^T. This proves the universal
+fiber statement without inferring it from finitely many reconstructed pairs.
+
+Constructive return. Select d independent rows of L and let their square
+matrix be U. Then G=U^(-1) L'[selected rows,:]. The Python constructor
+implements this return and verifies both intertwiner identities exactly.
+The proof is general linear algebra; Python checks exact finite instances,
+and is not a Lean mechanization of the universally quantified theorem.
+
+Projective version. If instead the full readout is the normalized boundary
+ray, equality means M'=c M for some nonzero scalar c (over R or C). Apply
+the theorem to L' and R'/c to obtain L'=L G and R'=c R G^(-T). Thus a
+projective full-readout fiber is one orbit only after allowing the additional
+overall scalar. Recoverability then applies to functions invariant under
+both internal GL and overall scaling. The norm-squared of M, although
+internal-GL invariant, does not descend to normalized rays: (2L,R) has the
+same ray and a fourfold norm-squared. Step53's raw Gram spectrum likewise
+cannot be recovered from a normalized ray without a scale convention.
+
+Rank-deficient control. With d=2 and m=n=2, take
+L=diag(1,0), R=I, L'=diag(1,0), R'=diag(1,0).
+Both contractions equal diag(1,0), a nonzero boundary state, but rank(R)=2
+and rank(R')=1. An invertible internal gauge preserves factor ranks, so
+the two pairs are not gauge-related. The full-rank condition is necessary
+for this universal conclusion; no conclusion about all degenerate fibers
+or general many-vertex tensor networks follows.
+
+Connection to Step 53. Its chosen carrier uses two real tensor frames
+of size 81 x 27 and raw contraction LR^T. For seeds 101,202,303, the
+new certificate reduces every represented binary-rational frame modulo
+the prime 2147483647 and finds rank 27. Nonzero modular minors prove
+exact rational column rank 27, so the exact product of those rational
+frames has rank 27 and the general theorem applies. This does not
+certify the rank of the rounded floating-point matrix product: rounding
+can introduce extra small singular values. Historical SVD and residual
+rows remain numerical controls rather than proofs of exact rank.
+
+Exact partial-readout witness. For the seed-101 binary-rational factors let U
+be the 81-dimensional permutation exchanging coordinates 0 and 1, and replace
+R by U R. Then M'=M U^T and M'M'^T=MM^T, so the normalized left reduced
+state is identical. For the right observable Z=diag(1,-1,0,...,0), write
+q_j=r_j^T(L^T L)r_j for the j-th row r_j of R and N=sum_j q_j>0.
+The expectation is (q_0-q_1)/N and changes sign after the swap. The new
+certificate evaluates these quantities with exact integer Gram arithmetic
+and finds q_0-q_1 nonzero. Thus the two full normalized rays differ while
+the left reduced readout agrees. This exact complement-unitary witness
+supplies a physical-readout obstruction for the finite toy; the historical
+random orthogonal transformation was checked only in floating arithmetic.
+Neither this witness nor the full-rank theorem supplies evaporation dynamics
+or a theorem about real black holes.

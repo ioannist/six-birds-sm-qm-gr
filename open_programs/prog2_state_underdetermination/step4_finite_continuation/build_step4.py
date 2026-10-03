@@ -26,9 +26,9 @@ def results_markdown(data: dict[str, Any]) -> str:
         "and terminal-fixed exact weighted canonicalization after every step. Weights are general elements of "
         "`QQ(alpha)` represented as polynomials modulo each endpoint's exported algebraic polynomial; inversion and "
         "sign decisions are exact, including the degree-five field for `cand_06`.", "",
-        "No finiteness theorem is available: reciprocal and graph moves can alternate indefinitely. The frozen safety "
-        "budget is 64 canonical states and 20 wall-clock seconds per endpoint. Every endpoint reaches the state cap, "
-        "so every pair is honestly budget-truncated.", "",
+        "No finiteness theorem or finite completeness bound is known; all twelve searches exceed the frozen "
+        "64-state exploration budget. Every endpoint reaches the state cap, so every pair is honestly "
+        "budget-truncated.", "",
         "| id | field degree | base states/processed | displaced states/processed | intersection | closure verdict | signature status | typed outcome |",
         "|---|---:|---:|---:|---:|---|---|---|",
     ]

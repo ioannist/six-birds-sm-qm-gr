@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import constraint_problem_of_time_step27 as core
 
 
 ARTIFACT_DIR = Path(__file__).resolve().parent
@@ -18,7 +19,6 @@ TOL = 1e-8
 
 REQUIRED_FILES = [
     "constraint_problem_of_time_step27.py",
-    "constraint_operators_step27.npz",
     "constraint_spectrum_step27.csv",
     "physical_space_residuals_step27.csv",
     "relational_time_readout_step27.csv",
@@ -70,6 +70,20 @@ def scan_forbidden() -> None:
                     fail(f"forbidden phrase {phrase!r} found in {path.name}")
 
 
+def reconstructed_operators() -> dict[str, np.ndarray]:
+    """Rebuild the actual operator from tracked sources, without a local NPZ."""
+    psi, potential, _background, kinetic, _kappa, dt, _params = core.load_step26()
+    h_field = kinetic + np.diag(potential)
+    energy = float(np.real(np.vdot(psi, h_field @ psi)))
+    p_clock, clock_vector, _eigenvalues = core.build_compatible_clock(energy, dt, core.M_CLOCK)
+    bad_clock = (abs(energy) + 0.5) * np.eye(core.M_CLOCK, dtype=complex)
+    return {
+        "C_operator": core.constraint_operator(p_clock, h_field),
+        "C_operator_control": core.constraint_operator(bad_clock, h_field),
+        "history_state": core.normalize(np.kron(clock_vector, psi)),
+    }
+
+
 def main() -> None:
     for name in REQUIRED_FILES:
         if not (ARTIFACT_DIR / name).exists():
@@ -99,7 +113,7 @@ def main() -> None:
     if out_verdict.get("relational_time_recovers_step26_stationary_dynamics") is not True:
         fail("relational time does not recover the Step 26 stationary dynamics")
 
-    arrays = np.load(ARTIFACT_DIR / "constraint_operators_step27.npz")
+    arrays = reconstructed_operators()
     c_operator = arrays["C_operator"]
     c_control = arrays["C_operator_control"]
     history_state = arrays["history_state"]
